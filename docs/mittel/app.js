@@ -303,13 +303,18 @@
     return b;
   }
 
+  /* Der Trainer kommt aus dem Kern und rechnet mit dunklem Grund unter sich —
+     im Lernzettel ist das der .trainer-Bereich. Hier stellt ihn die Insel. */
   function uebenKarten(s) {
     s.appendChild(zurueckZuUeben(s));
     s.appendChild(kopfzeile("Karteikarten", null));
+    var insel = el("div", "tr-insel");
     var faecher = el("div", "tr-faecher");
-    s.appendChild(faecher);
+    faecher.setAttribute("aria-label", "Verteilung auf die Fächer");
     var buehne = el("div", "tr-buehne");
-    s.appendChild(buehne);
+    insel.appendChild(faecher);
+    insel.appendChild(buehne);
+    s.appendChild(insel);
     AP.trainer(buehne, faecher, inhalt.karten);
   }
 

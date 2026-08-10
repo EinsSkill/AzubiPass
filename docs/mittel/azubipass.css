@@ -548,8 +548,8 @@ tr.detail td strong{color:var(--gold);}
 .bp-ende.spaet{color:#E8A594;}
 .bp-gitter{display:flex;flex-direction:column;gap:6px;}
 .bp-reihe{display:grid;grid-template-columns:180px 1fr;align-items:center;gap:12px;}
-.bp-name{background:none;border:0;padding:6px 0;text-align:left;cursor:pointer;
-  font-family:var(--sans);font-size:13px;color:rgba(245,245,240,.78);
+.bp-name{background:none;border:0;padding:6px 0;min-height:44px;text-align:left;
+  cursor:pointer;font-family:var(--sans);font-size:13px;color:rgba(245,245,240,.78);
   transition:color .2s;border-bottom:1px solid transparent;}
 .bp-name:hover{color:var(--gold);}
 .bp-reihe.an .bp-name{color:var(--gold);border-bottom-color:rgba(201,162,39,.5);}
@@ -765,6 +765,24 @@ tr.detail td strong{color:var(--gold);}
 .tr-fertig h3{font-size:30px;margin:0 0 14px;font-weight:700;letter-spacing:-.02em;}
 .tr-fertig p{color:rgba(245,245,240,.66);font-size:17px;line-height:1.6;
   margin:0 auto 30px;max-width:44ch;}
+
+/* Derselbe Trainer im Üben-Schirm der App.
+
+   Die Regeln oben rechnen alle mit dunklem Grund — im Lernzettel liefert den
+   .trainer, das ist eine der dunklen Inseln. In der App fehlte er: Merksatz und
+   „Nochmal" standen als creme Schrift auf hellem Papier und waren schlicht
+   nicht zu sehen. Es fehlte also nie Logik, nur der Grund darunter.
+
+   Deshalb hier keine zweite Farbgebung, sondern dieselbe Insel eine Nummer
+   kleiner — sie füllt keine Seite, sie sitzt in einem Schirm.                  */
+.tr-insel{background:var(--tinte-tief);color:var(--creme);padding:20px 20px 26px;}
+.tr-insel .tr-faecher{gap:6px;margin-bottom:20px;}
+.tr-insel .tr-fach{flex:1;min-width:0;padding:9px 4px 8px;}
+.tr-insel .tr-fach b{font-size:19px;margin-bottom:4px;}
+.tr-insel .tr-fach span{font-size:9.5px;letter-spacing:.07em;}
+.tr-insel .tr-buehne{flex:none;}
+.tr-insel .tr-fertig{padding:36px 4px 20px;}
+.tr-insel .tr-fertig h3{font-size:25px;}
 
 /* Einstieg im Inhaltsverzeichnis — erbt Raster und Beschriftung von .buch li,
    setzt sich nur durch die Linie darüber und die goldene Aktion ab. */
