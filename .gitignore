@@ -5,6 +5,9 @@ __pycache__/
 # Bericht der Sichtprüfung — entsteht bei jedem Lauf neu
 quellen/pruefbericht.txt
 
+# Werkzeug-Kram, der nur auf diesem Rechner Sinn ergibt
+.claude/
+
 # Betriebssystem
 Thumbs.db
 .DS_Store
