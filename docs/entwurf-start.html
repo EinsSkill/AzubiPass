@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AzubiPass · Startbildschirm</title>
+<link rel="stylesheet" href="mittel/schriften.css">
+<style>
+/* =========================================================================
+   Startbildschirm — Entwurf nach dem Konzept vom 10. August 2026.
+
+   VORÜBERGEHEND. Liegt nur in docs/, weil GitHub Pages von hier ausliefert
+   und der Entwurf am Handy angesehen werden soll. Gehört nicht zum Build:
+   build.py und build_app.py erzeugen diese Datei nicht und fassen sie nicht
+   an. Sobald die Richtung steht, wandert sie in app.js/azubipass.css und
+   diese Datei wird gelöscht.
+
+   Drei Zonen statt einer Liste:
+
+   1 · ANKUNFT   Fast der ganze erste Schirm. Kopfzeile, das Kapitel, ein Weg.
+                 Die Fläche ist der Inhalt — sie ist das Einzige, was eine
+                 billige App nicht nachmacht.
+   2 · HEUTE     Angeschnitten am unteren Rand sichtbar, damit man weiß, dass
+                 es weitergeht. Nur was zeitkritisch ist.
+   3 · STAND     Beim Scrollen. Das Feld aus 75 Strichen und die Woche.
+
+   Erst der Weg, dann die Pflicht, dann die Bilanz — heute ist es umgekehrt.
+
+   Gold ist reserviert: der Weg nach vorn, der Fortschritt, das Dringende.
+   Sobald es dekorativ wird, ist es weg.
+   ========================================================================= */
+
+:root{
+  --tinte-tief:#12301F; --tinte:#1B4332;
+  --gold:#C9A227; --gold-hell:#E3C558;
+  --creme:#F5F5F0;
+  --serif:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --leiste:56px;
+  --rand-unten:env(safe-area-inset-bottom,0px);
+  --rand-oben:env(safe-area-inset-top,0px);
+  --seite:24px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--tinte-tief);color:var(--creme);
+  font-family:var(--serif);-webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:transparent;
+  padding-bottom:calc(var(--leiste) + var(--rand-unten));}
+
+/* Licht von oben rechts. Nimmt der Fläche das Tote — das ist der warme
+   Empfang, nicht ein Begrüßungssatz. */
+body::before{content:"";position:fixed;top:0;left:0;right:0;height:70vh;
+  z-index:0;pointer-events:none;
+  background:radial-gradient(112% 70% at 82% -8%,rgba(201,162,39,.19),transparent 64%);}
+.zone{position:relative;z-index:1;padding-left:var(--seite);padding-right:var(--seite);}
+
+/* ======================================================== 1 · Ankunft ==== */
+/* Höhe so bemessen, dass von Zone 2 die obere Kante angeschnitten stehen
+   bleibt. Der alte Zeitschriftentrick: Man sieht, dass da noch was ist. */
+.ankunft{min-height:calc(100svh - var(--leiste) - var(--rand-unten) - 150px);
+  padding-top:calc(20px + var(--rand-oben));
+  display:flex;flex-direction:column;}
+
+/* Alle gedämpften Töne liegen bei mindestens 60 % Deckkraft. Darunter fällt
+   der Kontrast auf dem tiefen Grün unter 4.5:1 — 46 % sahen am Schreibtisch
+   elegant aus und waren am Handy schlicht nicht zu lesen. */
+.kopf{display:flex;justify-content:space-between;align-items:baseline;
+  font-family:var(--mono);font-size:11px;color:rgba(245,245,240,.66);}
+.kopf .marke{font-size:10px;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(245,245,240,.78);}
+.kopf .zaehler b{color:var(--gold);font-weight:500;}
+
+/* Der Titel bekommt den Platz. Alles andere ordnet sich unter. */
+.kapitel{margin-top:auto;padding-bottom:6px;}
+.kapitel .wo{font-family:var(--mono);font-size:11px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.kapitel .was{font-family:var(--serif);font-weight:600;
+  font-size:clamp(30px,8.4vw,46px);line-height:1.1;letter-spacing:-.025em;
+  margin:0 0 26px;text-wrap:balance;
+  hyphens:auto;overflow-wrap:break-word;}
+.weiter{display:inline-flex;align-items:center;gap:12px;min-height:48px;
+  font-family:var(--sans);font-size:15px;font-weight:600;color:var(--creme);
+  background:none;border:0;padding:0;cursor:pointer;
+  transition:color 180ms ease-out;}
+.weiter svg{transition:transform 200ms cubic-bezier(.22,1,.36,1);}
+.weiter:hover{color:var(--gold-hell);}
+.weiter:hover svg{transform:translateX(5px);}
+.weiter:active{transform:scale(.985);}
+
+/* ========================================================== 2 · Heute ==== */
+.heute{padding-top:26px;padding-bottom:30px;}
+.pflicht{display:flex;align-items:center;justify-content:space-between;gap:16px;
+  width:100%;min-height:52px;text-decoration:none;color:inherit;cursor:pointer;
+  background:none;border:0;border-top:1px solid rgba(245,245,240,.17);
+  padding:16px 0 0;font-family:var(--sans);font-size:15px;text-align:left;
+  transition:border-color 180ms ease-out;}
+.pflicht:hover{border-color:rgba(201,162,39,.6);}
+.pflicht .lbl{color:rgba(245,245,240,.88);}
+.pflicht .wert{font-family:var(--mono);font-size:13px;color:var(--gold);
+  white-space:nowrap;}
+.pflicht.ruht .wert{color:rgba(245,245,240,.62);}
+
+/* ========================================================== 3 · Stand ==== */
+.stand{padding-top:34px;padding-bottom:44px;}
+.titelchen{font-family:var(--sans);font-size:12.5px;font-weight:600;
+  color:rgba(245,245,240,.64);margin:0 0 18px;}
+
+/* Das Feld: ein Strich je Kapitel, eine Reihe je Lernfeld. Es zeigt echten
+   Stand, verändert sich über Monate und sieht dadurch bei jedem anders aus. */
+.feld{display:flex;flex-direction:column;gap:7px;margin:0 0 16px;}
+.reihe{display:flex;align-items:center;gap:10px;}
+.reihe .kuerzel{font-family:var(--mono);font-size:9.5px;color:rgba(245,245,240,.62);
+  width:30px;flex:none;text-align:right;letter-spacing:.03em;}
+.striche{display:flex;gap:4px;flex:1;}
+.strich{flex:1;height:15px;border-radius:1px;background:rgba(245,245,240,.13);}
+.strich.voll{background:var(--gold);
+  animation:strichAn 420ms cubic-bezier(.22,1,.36,1) both;
+  animation-delay:calc(var(--i) * 22ms);}
+@keyframes strichAn{from{opacity:0;transform:scaleY(.3);}to{opacity:1;transform:none;}}
+.reihe.fertig .kuerzel{color:var(--gold);}
+.bilanz{font-family:var(--mono);font-size:11.5px;color:rgba(245,245,240,.64);
+  margin:0 0 40px;}
+.bilanz b{color:var(--gold);font-weight:500;}
+
+/* Die Woche. Belohnung, keine Begrüßung — deshalb steht sie hier unten. */
+.woche{display:flex;gap:7px;margin:0 0 12px;}
+.wtag{flex:1;height:36px;display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:11px;color:rgba(245,245,240,.64);
+  border:1px solid rgba(245,245,240,.2);border-radius:2px;}
+.wtag.gelernt{background:var(--gold);border-color:var(--gold);color:var(--tinte-tief);
+  font-weight:500;}
+.wtag.heute{border-color:var(--creme);border-width:1.5px;}
+.wnotiz{font-family:var(--mono);font-size:11.5px;color:rgba(245,245,240,.64);margin:0;}
+
+/* ======================================================== Tab-Leiste ===== */
+.tableiste{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;
+  background:rgba(13,34,22,.95);backdrop-filter:blur(12px);
+  border-top:1px solid rgba(245,245,240,.13);padding-bottom:var(--rand-unten);}
+.tab{flex:1;display:flex;align-items:center;justify-content:center;
+  min-height:var(--leiste);font-family:var(--sans);font-size:11.5px;
+  color:rgba(245,245,240,.64);text-decoration:none;}
+.tab.an{color:var(--gold);}
+
+@media (min-width:620px){
+  :root{--seite:44px;}
+  .ankunft,.heute,.stand{max-width:640px;margin-inline:auto;}
+}
+@media (prefers-reduced-motion:reduce){
+  .strich.voll{animation:none;}
+  *{transition-duration:1ms !important;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================ Ankunft -->
+<section class="zone ankunft">
+  <div class="kopf">
+    <span class="marke">AzubiPass</span>
+    <span class="zaehler">AP2 in <b>106</b> Tagen</span>
+  </div>
+
+  <div class="kapitel">
+    <div class="wo">LF4 · Kapitel 3</div>
+    <h1 class="was" id="titel">Angebote vergleichen</h1>
+    <button class="weiter" type="button">
+      Weiterlesen
+      <svg width="18" height="10" viewBox="0 0 17 10" fill="none" aria-hidden="true">
+        <path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ============================================================== Heute -->
+<section class="zone heute">
+  <button class="pflicht" type="button">
+    <span class="lbl">Karteikarten warten</span>
+    <span class="wert">12 fällig</span>
+  </button>
+</section>
+
+<!-- ============================================================== Stand -->
+<section class="zone stand">
+  <p class="titelchen">Wo du stehst</p>
+  <div class="feld" id="feld" role="img"
+       aria-label="Fortschritt: 11 von 75 Kapiteln gelesen"></div>
+  <p class="bilanz"><b>11</b> gelesen · 64 offen</p>
+
+  <p class="titelchen">Diese Woche</p>
+  <div class="woche" id="woche"></div>
+  <p class="wnotiz">An 3 von 7 Tagen gelernt.</p>
+</section>
+
+<nav class="tableiste">
+  <span class="tab an">Heute</span>
+  <span class="tab">Lernen</span>
+  <span class="tab">Üben</span>
+  <span class="tab">Suche</span>
+  <span class="tab">Ich</span>
+</nav>
+
+<script>
+/* Echte Struktur aus inhalt.json: 13 Lernfelder, 75 Kapitel. */
+var LERNFELDER = [
+  ["LF1",7],["LF2",6],["LF3",6],["LF4",7],["LF5",6],["LF7",4],["LF8",6],
+  ["LF9",6],["LF10",6],["LF11",4],["LF12",4],["LF13",4],["BF",9]
+];
+var GELESEN = 11;
+
+(function feld() {
+  var ziel = document.getElementById("feld"), uebrig = GELESEN, n = 0;
+  LERNFELDER.forEach(function (lf) {
+    var voll = Math.min(uebrig, lf[1]);
+    uebrig -= voll;
+    var reihe = document.createElement("div");
+    reihe.className = "reihe" + (voll === lf[1] ? " fertig" : "");
+    var k = document.createElement("span");
+    k.className = "kuerzel";
+    k.textContent = lf[0];
+    reihe.appendChild(k);
+    var box = document.createElement("div");
+    box.className = "striche";
+    for (var i = 0; i < lf[1]; i++) {
+      var s = document.createElement("span");
+      s.className = "strich" + (i < voll ? " voll" : "");
+      if (i < voll) s.style.setProperty("--i", n++);
+      box.appendChild(s);
+    }
+    reihe.appendChild(box);
+    ziel.appendChild(reihe);
+  });
+})();
+
+(function woche() {
+  var ziel = document.getElementById("woche");
+  var tage = ["Mo","Di","Mi","Do","Fr","Sa","So"];
+  var gelernt = [0, 2, 3];      // Demo-Stand
+  var heute = 4;
+  tage.forEach(function (t, i) {
+    var d = document.createElement("div");
+    d.className = "wtag" + (gelernt.indexOf(i) !== -1 ? " gelernt" : "")
+                + (i === heute ? " heute" : "");
+    d.textContent = t;
+    ziel.appendChild(d);
+  });
+})();
+</script>
+</body>
+</html>
