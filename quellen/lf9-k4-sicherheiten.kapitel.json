@@ -1,0 +1,305 @@
+{
+  "id": "k4",
+  "lernfeld": "lf9",
+  "nummer": 4,
+  "titel": "Kreditsicherheiten",
+  "untertitel": "Die Bank glaubt an dich. Aber lieber schriftlich.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Personen- und Sachsicherheiten unterscheiden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Die Bürgschaft und ihre Formen erklären",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Sachsicherheiten dem passenden Zweck zuordnen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Zwei Grundformen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine Kreditsicherheit verschafft dem Kreditgeber etwas, worauf er zurückgreifen kann, wenn nicht zurückgezahlt wird. ==Die Einteilung ist einfach: Steht dahinter ein **Mensch** oder eine **Sache**?=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Art",
+            "Dahinter steht",
+            "Beispiele"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Personensicherheit",
+                "eine weitere Person haftet",
+                "{{begriff:buergschaft|Bürgschaft}}, Schuldbeitritt, Garantie"
+              ],
+              "detail": "**Der Wert hängt vollständig an der Zahlungsfähigkeit dieser Person.** Eine Bürgschaft von jemandem ohne Vermögen ist juristisch wirksam und wirtschaftlich wertlos."
+            },
+            {
+              "zellen": [
+                "Sachsicherheit",
+                "ein Gegenstand haftet",
+                "{{begriff:grundschuld|Grundschuld}}, {{begriff:sicherungsuebereignung|Sicherungsübereignung}}, Pfandrecht, Zession"
+              ],
+              "detail": "**Unabhängig von der Person des Schuldners** — aber abhängig davon, was der Gegenstand im Ernstfall noch bringt. Eine Spezialmaschine ist schwer zu verwerten."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Daneben unterscheidet man **akzessorische** und **abstrakte** Sicherheiten. Akzessorisch heißt: Die Sicherheit hängt an der Forderung und erlischt mit ihr — so bei Bürgschaft und Hypothek. Abstrakt heißt: Sie besteht unabhängig weiter, wie bei der Grundschuld."
+        },
+        {
+          "typ": "merke",
+          "text": "**Person oder Sache** ist die erste Frage, **akzessorisch oder abstrakt** die zweite. Die zweite entscheidet, ob die Sicherheit nach Tilgung automatisch erlischt.",
+          "karteikarte": "Wie unterscheiden sich Personen- und Sachsicherheiten, und was bedeutet akzessorisch?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Die Bürgschaft",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Bei der {{begriff:buergschaft|Bürgschaft}} nach {{par:bgb-765|§ 765 BGB}} verpflichtet sich ein Dritter, für die Schuld eines anderen einzustehen. **Sie ist akzessorisch** — sie kann nie größer sein als die Hauptforderung und erlischt mit ihr."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Der Ablauf",
+          "titel": "Wann muss der Bürge zahlen?",
+          "lead": "Vier Stufen — die dritte entscheidet über alles. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Bürgschaftsvertrag",
+              "satz": "§ 766 BGB · schriftlich",
+              "text": "Die Erklärung des Bürgen bedarf der Schriftform. Eine mündliche Bürgschaft ist unwirksam — es sei denn, der Bürge ist Kaufmann und die Bürgschaft gehört zu seinem Handelsgewerbe."
+            },
+            {
+              "nr": 2,
+              "titel": "Hauptschuldner zahlt nicht",
+              "satz": "Voraussetzung",
+              "text": "Ohne Ausfall des Hauptschuldners passiert nichts. Der Bürge haftet nicht zusätzlich, sondern ersatzweise."
+            },
+            {
+              "nr": 3,
+              "titel": "Einrede der Vorausklage",
+              "satz": "§ 771 BGB",
+              "text": "Der gewöhnliche Bürge darf verlangen, dass der Gläubiger zuerst erfolglos gegen den Hauptschuldner vollstreckt. Diese Einrede ist der ganze Unterschied zwischen den beiden Bürgschaftsformen."
+            },
+            {
+              "nr": 4,
+              "titel": "Bürge zahlt",
+              "satz": "und rückt nach",
+              "text": "Zahlt der Bürge, geht die Forderung gegen den Hauptschuldner auf ihn über. Er kann sich also bei diesem holen, was er aufgewendet hat — sofern dort noch etwas zu holen ist."
+            }
+          ],
+          "regel": "Im Geschäftsverkehr verlangen Banken fast immer die selbstschuldnerische Bürgschaft: Auf die Einrede der Vorausklage wird verzichtet, der Bürge kann sofort in Anspruch genommen werden."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Form",
+            "Besonderheit",
+            "Folge für den Bürgen"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Gewöhnliche Bürgschaft",
+                "Einrede der Vorausklage besteht",
+                "erst nach erfolgloser Vollstreckung"
+              ]
+            },
+            {
+              "zellen": [
+                "Selbstschuldnerische Bürgschaft",
+                "Verzicht auf die Einrede",
+                "sofort in Anspruch zu nehmen"
+              ],
+              "detail": "**Der Regelfall bei Banken.** Der Bürge steht praktisch wie der Hauptschuldner da — deshalb ist genau hinzusehen, bevor unterschrieben wird."
+            },
+            {
+              "zellen": [
+                "Ausfallbürgschaft",
+                "nur für den nachgewiesenen Ausfall",
+                "günstigste Form für den Bürgen"
+              ]
+            },
+            {
+              "zellen": [
+                "Mitbürgschaft",
+                "mehrere Bürgen",
+                "haften als Gesamtschuldner"
+              ],
+              "detail": "**Jeder haftet für das Ganze**, nicht nur für seinen Anteil. Der Gläubiger sucht sich aus, wen er in Anspruch nimmt."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Nach {{par:hgb-350|§ 350 HGB}} gilt die Schriftform **nicht**, wenn die Bürgschaft für den Bürgen ein Handelsgeschäft ist. Ein Kaufmann kann sich also mündlich wirksam verbürgen. Das ist ein beliebter Prüfungsfall — und im Alltag ein erheblicher Unterschied."
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Betriebsinhaber bürgt schriftlich selbstschuldnerisch für einen Kredit seines Betriebs. Der Betrieb zahlt nicht. Was kann die Bank tun?",
+          "optionen": [
+            {
+              "text": "Erst gegen den Betrieb vollstrecken, dann den Bürgen belangen",
+              "richtig": false,
+              "echo": "Das wäre bei der gewöhnlichen Bürgschaft so. Durch den Zusatz „selbstschuldnerisch\" ist auf die Einrede der Vorausklage gerade verzichtet worden."
+            },
+            {
+              "text": "Sofort den Bürgen in Anspruch nehmen",
+              "richtig": true,
+              "echo": "Richtig. Bei der selbstschuldnerischen Bürgschaft verzichtet der Bürge auf die Einrede der Vorausklage aus § 771 BGB. Die Bank muss also nicht erst erfolglos gegen den Hauptschuldner vollstrecken, sondern kann den Bürgen unmittelbar in Anspruch nehmen. Zahlt er, geht die Forderung gegen den Betrieb auf ihn über — praktisch bleibt er darauf aber oft sitzen."
+            },
+            {
+              "text": "Nichts — die Bürgschaft ist mangels notarieller Form unwirksam",
+              "richtig": false,
+              "echo": "Für die Bürgschaft genügt Schriftform nach § 766 BGB, eine notarielle Beurkundung ist nicht nötig. Die Bürgschaft ist wirksam."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Sachsicherheiten",
+      "inhalt": [
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Sicherheit",
+            "Betrifft",
+            "Wer behält was"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "{{begriff:sicherungsuebereignung|Sicherungsübereignung}}",
+                "bewegliche Sachen",
+                "Eigentum zur Bank, Besitz beim Betrieb"
+              ],
+              "detail": "**Der entscheidende Vorteil:** Die Maschine sichert den Kredit und produziert trotzdem weiter. Beim Pfandrecht müsste sie übergeben werden — für Betriebsmittel unbrauchbar."
+            },
+            {
+              "zellen": [
+                "Pfandrecht",
+                "bewegliche Sachen, Wertpapiere",
+                "Besitz geht über"
+              ],
+              "detail": "**Deshalb im Betrieb selten** und vor allem für Wertpapiere und Depots gebräuchlich, die man ohnehin nicht in der Hand hält."
+            },
+            {
+              "zellen": [
+                "{{begriff:grundschuld|Grundschuld}}",
+                "Grundstücke, Gebäude",
+                "Eintrag im Grundbuch"
+              ],
+              "detail": "**Abstrakt**, also nicht an eine bestimmte Forderung gebunden. Nach Tilgung bleibt sie bestehen und kann für einen neuen Kredit weiterverwendet werden — das spart Notar- und Grundbuchkosten."
+            },
+            {
+              "zellen": [
+                "Hypothek",
+                "Grundstücke, Gebäude",
+                "Eintrag im Grundbuch"
+              ],
+              "detail": "**Akzessorisch**, also an eine bestimmte Forderung gebunden. Sinkt die Schuld, sinkt die Hypothek mit. In der Praxis wurde sie weitgehend von der Grundschuld verdrängt."
+            },
+            {
+              "zellen": [
+                "Forderungsabtretung",
+                "Kundenforderungen",
+                "Anspruch geht auf die Bank über"
+              ],
+              "detail": "**Zession.** Still bedeutet, dass die Kunden nichts erfahren; offen bedeutet, dass sie direkt an die Bank zahlen. Die stille Form ist im Geschäftsverkehr üblich, weil sie keine Fragen aufwirft."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Für die Bank zählt neben der Rechtsform vor allem der **Verwertungserlös im Ernstfall**. Deshalb wird nie der volle Wert angesetzt, sondern ein Abschlag vorgenommen — bei Spezialmaschinen ein erheblicher, weil sich dafür kaum ein Käufer findet."
+        },
+        {
+          "typ": "merke",
+          "text": "**Sicherungsübereignung**: Eigentum zur Bank, Nutzung bleibt. **Grundschuld** ist abstrakt und wiederverwendbar, **Hypothek** akzessorisch. **Zession** überträgt Forderungen, still oder offen.",
+          "karteikarte": "Welche Sachsicherheiten gibt es, und worin unterscheiden sich Grundschuld und Hypothek?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Sicherheit passt?",
+          "kategorien": [
+            "Bürgschaft",
+            "Sicherungsübereignung",
+            "Grundschuld",
+            "Zession"
+          ],
+          "aufgaben": [
+            {
+              "text": "Ein Gabelstapler soll den Kredit sichern und weiter im Lager fahren.",
+              "loesung": "Sicherungsübereignung"
+            },
+            {
+              "text": "Der Inhaber steht persönlich für den Betriebskredit ein.",
+              "loesung": "Bürgschaft"
+            },
+            {
+              "text": "Das Betriebsgrundstück wird belastet.",
+              "loesung": "Grundschuld"
+            },
+            {
+              "text": "Offene Kundenrechnungen werden an die Bank übertragen.",
+              "loesung": "Zession"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Personensicherheiten stehen auf einer Person, Sachsicherheiten auf einem Gegenstand.",
+    "Akzessorisch heißt: an die Forderung gebunden und mit ihr erlöschend.",
+    "{{par:bgb-765|§ 765 BGB}}: Der Bürge steht für die Schuld eines Dritten ein.",
+    "{{par:bgb-766|§ 766 BGB}}: Schriftform — außer die Bürgschaft ist für den Bürgen ein Handelsgeschäft.",
+    "{{par:bgb-771|§ 771 BGB}}: Einrede der Vorausklage; bei der selbstschuldnerischen Bürgschaft verzichtet.",
+    "{{begriff:sicherungsuebereignung|Sicherungsübereignung}}: Eigentum wandert, der Betrieb nutzt weiter.",
+    "{{begriff:grundschuld|Grundschuld}} ist abstrakt und wiederverwendbar, die Hypothek akzessorisch.",
+    "Banken setzen nie den vollen Wert an, sondern rechnen mit einem Verwertungsabschlag."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre die Bürgschaft, ihre Formvorschrift und den Unterschied zwischen gewöhnlicher und selbstschuldnerischer Bürgschaft.",
+      "loesung": "Bei der Bürgschaft nach § 765 BGB verpflichtet sich ein Dritter gegenüber dem Gläubiger, für die Verbindlichkeit des Hauptschuldners einzustehen. Sie ist akzessorisch, kann also nie größer sein als die Hauptforderung und erlischt mit ihr. Nach § 766 BGB bedarf die Erklärung des Bürgen der Schriftform; eine mündliche Bürgschaft ist grundsätzlich unwirksam. Diese Formvorschrift gilt nach § 350 HGB jedoch nicht, wenn die Bürgschaft für den Bürgen ein Handelsgeschäft ist — ein Kaufmann kann sich damit auch mündlich wirksam verbürgen. Bei der gewöhnlichen Bürgschaft kann der Bürge nach § 771 BGB die Einrede der Vorausklage erheben und verlangen, dass der Gläubiger zunächst erfolglos gegen den Hauptschuldner vollstreckt. Bei der selbstschuldnerischen Bürgschaft wird auf diese Einrede verzichtet, sodass der Bürge sofort in Anspruch genommen werden kann; das ist im Bankgeschäft die Regel. Zahlt der Bürge, geht die Forderung gegen den Hauptschuldner auf ihn über."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum wird eine Maschine sicherungsübereignet und nicht verpfändet?",
+      "loesung": "Beim Pfandrecht an beweglichen Sachen muss der Besitz auf den Gläubiger übergehen; die Sache wird also übergeben. Für Betriebsmittel ist das unbrauchbar, weil der Betrieb die Maschine gerade zum Erwirtschaften der Rückzahlung benötigt. Bei der Sicherungsübereignung geht dagegen nur das Eigentum auf den Kreditgeber über, während der Besitz und damit die Nutzung beim Betrieb verbleiben. Die Maschine sichert also den Kredit und produziert gleichzeitig weiter. Rechtlich wird dies über ein Besitzkonstitut geregelt. Zahlt der Kreditnehmer nicht, kann der Kreditgeber die Sache herausverlangen und verwerten. Für die Höhe der Beleihung ist entscheidend, welcher Erlös im Ernstfall realistisch ist; bei Spezialmaschinen fällt der Abschlag hoch aus, weil sich kaum Käufer finden."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Euer Betrieb braucht 150.000 € für neue Fahrzeuge. Die Bank verlangt Sicherheiten. Welche kommen infrage, und was ist jeweils zu bedenken?",
+      "loesung": "Naheliegend ist die Sicherungsübereignung der Fahrzeuge selbst, weil sie weiter genutzt werden können und der Kredit ihrer Anschaffung dient. Fahrzeuge sind zudem gut verwertbar, sodass der Abschlag moderat ausfällt; die Bank wird die Zulassungsbescheinigungen verlangen. Reicht das nicht, kommt eine Grundschuld auf das Betriebsgrundstück in Betracht. Sie hat den Vorteil, abstrakt und damit nach Tilgung für weitere Kredite wiederverwendbar zu sein, verursacht aber Notar- und Grundbuchkosten, die in den Kostenvergleich gehören. Weiter möglich ist die stille Abtretung von Kundenforderungen; sie belastet keine Sachwerte und bleibt gegenüber Kunden unsichtbar, ihr Wert hängt jedoch von deren Bonität ab. Schließlich wird die Bank häufig eine selbstschuldnerische Bürgschaft des Inhabers verlangen. Hier ist besonders sorgfältig zu prüfen, weil der Bürge dann mit seinem Privatvermögen sofort einsteht und nicht erst nach erfolgloser Vollstreckung gegen den Betrieb. Sinnvoll ist, den Umfang der Bürgschaft betragsmäßig zu begrenzen und ihre Rückgabe nach Tilgung schriftlich zu vereinbaren."
+    }
+  ],
+  "pruefungstipp": "Sortiere jede Sicherheit zuerst nach Person oder Sache — damit ist die halbe Antwort geschrieben. Die drei beliebtesten Prüfungsfallen sind: die Formfreiheit der Bürgschaft unter Kaufleuten nach § 350 HGB, der Unterschied zwischen Grundschuld und Hypothek, und die Frage, warum bei Maschinen sicherungsübereignet und nicht verpfändet wird. Für alle drei lohnt sich ein auswendig gelernter Zweizeiler."
+}

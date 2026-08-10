@@ -1,0 +1,276 @@
+{
+  "id": "k5",
+  "lernfeld": "lf10",
+  "nummer": 5,
+  "titel": "Deckungsbeitrag und Break-Even",
+  "untertitel": "Ab welchem Stück verdienst du Geld?",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Den Deckungsbeitrag berechnen und deuten",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Den Break-Even-Point ermitteln",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Preisuntergrenzen kurz- und langfristig bestimmen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Der Deckungsbeitrag",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:deckungsbeitrag|Deckungsbeitrag}} ist die wichtigste Zahl der {{begriff:teilkostenrechnung|Teilkostenrechnung}}: **Erlös minus variable Kosten.** ==Er sagt, was ein Stück übrig lässt, um die Fixkosten zu decken — und was danach als Gewinn bleibt.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Größe",
+            "Rechnung",
+            "Aussage"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Deckungsbeitrag je Stück",
+                "Preis − variable Stückkosten",
+                "was ein Stück beiträgt"
+              ],
+              "detail": "**Die Grundgröße.** Bei 40 € Preis und 26 € variablen Kosten sind das 14 € je Stück — unabhängig davon, wie hoch die Fixkosten sind."
+            },
+            {
+              "zellen": [
+                "Gesamtdeckungsbeitrag",
+                "DB je Stück × Menge",
+                "was die Menge beiträgt"
+              ]
+            },
+            {
+              "zellen": [
+                "Betriebsergebnis",
+                "Gesamtdeckungsbeitrag − Fixkosten",
+                "Gewinn oder Verlust"
+              ],
+              "detail": "**Erst hier kommen die Fixkosten ins Spiel** — als ein Block, nicht auf die Stücke verteilt. Genau darin unterscheidet sich die Teil- von der Vollkostenrechnung."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein Produkt kann nach {{begriff:vollkostenrechnung|Vollkostenrechnung}} **Verlust** ausweisen und trotzdem sinnvoll sein. Solange sein Deckungsbeitrag positiv ist, trägt es zur Deckung der Fixkosten bei. Streicht man es, bleiben die Fixkosten trotzdem — und werden auf weniger Produkte verteilt."
+        },
+        {
+          "typ": "merke",
+          "text": "**Deckungsbeitrag = Erlös − variable Kosten.** Positiver Deckungsbeitrag heißt: Der Verkauf lohnt sich kurzfristig, auch wenn die Vollkostenrechnung Verlust zeigt.",
+          "karteikarte": "Wie berechnet sich der Deckungsbeitrag, und warum kann ein Produkt mit Vollkostenverlust trotzdem sinnvoll sein?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Der Break-Even-Point",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:break-even|Break-Even-Point}} ist die Menge, bei der Erlöse und Gesamtkosten gleich sind. **Break-Even = Fixkosten ÷ Deckungsbeitrag je Stück.** Darunter Verlust, darüber Gewinn."
+        },
+        {
+          "typ": "grafik",
+          "variante": "breakeven",
+          "kopf": "Der Schnittpunkt",
+          "titel": "Ab wann lohnt es sich?",
+          "lead": "Dreh an den drei Werten und sieh zu, wie der Punkt wandert.",
+          "eingaben": {
+            "fix": {
+              "label": "Fixkosten im Monat in €",
+              "start": 42000,
+              "min": 0,
+              "max": 200000,
+              "schritt": 1000
+            },
+            "var": {
+              "label": "Variable Kosten je Stück in €",
+              "start": 26,
+              "min": 0,
+              "max": 300,
+              "schritt": 1
+            },
+            "preis": {
+              "label": "Verkaufspreis je Stück in €",
+              "start": 40,
+              "min": 0,
+              "max": 400,
+              "schritt": 1
+            }
+          },
+          "regel": "Probier es aus: Ein Euro mehr beim Preis wirkt genauso stark wie ein Euro weniger bei den variablen Kosten — beide erhöhen den Deckungsbeitrag um eins. Die Fixkosten dagegen verschieben nur die Menge, nicht die Steigung."
+        },
+        {
+          "typ": "absatz",
+          "text": "Interessant wird es, wenn der Preis **unter** die variablen Kosten fällt. Dann gibt es keinen Break-Even mehr: ==Jedes zusätzlich verkaufte Stück vergrößert den Verlust.== Kein Umsatzwachstum der Welt repariert einen negativen Deckungsbeitrag."
+        },
+        {
+          "typ": "check",
+          "frage": "Fixkosten 60.000 €, Preis 50 €, variable Kosten 30 € je Stück. Wo liegt der Break-Even?",
+          "optionen": [
+            {
+              "text": "1.200 Stück",
+              "richtig": false,
+              "echo": "Hier wurde durch den Preis geteilt. Geteilt wird durch den Deckungsbeitrag, also durch Preis minus variable Kosten."
+            },
+            {
+              "text": "3.000 Stück",
+              "richtig": true,
+              "echo": "Richtig. Der Deckungsbeitrag beträgt 50 € minus 30 €, also 20 € je Stück. Der Break-Even liegt bei 60.000 € geteilt durch 20 €, also bei 3.000 Stück. Ab dem 3.001. Stück verdient der Betrieb je Stück 20 €, weil die Fixkosten dann gedeckt sind."
+            },
+            {
+              "text": "2.000 Stück",
+              "richtig": false,
+              "echo": "Hier wurden die variablen Kosten als Divisor benutzt. Maßgeblich ist der Deckungsbeitrag, also die Differenz zwischen Preis und variablen Kosten."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Break-Even = Fixkosten ÷ Deckungsbeitrag je Stück.** Geteilt wird nie durch den Preis und nie durch die variablen Kosten allein.",
+          "karteikarte": "Wie berechnet man den Break-Even-Point, und was passiert bei negativem Deckungsbeitrag?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Preisuntergrenzen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:preisuntergrenze|Preisuntergrenze}} ist der niedrigste Preis, den man noch annehmen kann. ==Sie ist kurzfristig eine andere als langfristig== — und genau diese Unterscheidung wird in Prüfungen abgefragt."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Zeithorizonte",
+          "titel": "Wie tief darfst du gehen?",
+          "lead": "Dieselbe Frage, zwei Antworten. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Kurzfristig",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Untergrenze sind die variablen Kosten",
+                  "detail": "Jeder Cent darüber deckt Fixkosten, die ohnehin anfallen. Ein Preis knapp über den variablen Kosten ist besser als kein Auftrag."
+                },
+                {
+                  "text": "Gilt bei freien Kapazitäten",
+                  "detail": "Entscheidend ist, dass keine andere Arbeit verdrängt wird. Ist die Maschine ausgelastet, gilt diese Rechnung nicht mehr."
+                },
+                {
+                  "text": "Typisch für Zusatzaufträge",
+                  "detail": "Der klassische Fall: Ein Kunde fragt eine einmalige Sonderlieferung an und bietet weniger als den Listenpreis."
+                },
+                {
+                  "text": "Risiko: Es spricht sich herum",
+                  "detail": "Erfahren Stammkunden vom Sonderpreis, wollen sie ihn auch. Deshalb wird ein solcher Auftrag begründet und abgegrenzt."
+                }
+              ]
+            },
+            {
+              "name": "Langfristig",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Untergrenze sind die Selbstkosten",
+                  "detail": "Auf Dauer müssen auch die Fixkosten verdient werden — sonst zehrt der Betrieb von seiner Substanz."
+                },
+                {
+                  "text": "Gilt für das laufende Geschäft",
+                  "detail": "Für Listenpreise und Rahmenverträge. Wer hier dauerhaft unter Selbstkosten verkauft, verschiebt nur den Zeitpunkt des Endes."
+                },
+                {
+                  "text": "Ersatzbeschaffung muss drin sein",
+                  "detail": "Die kalkulatorische Abschreibung sichert, dass die Maschine ersetzt werden kann. Fehlt sie im Preis, steht der Betrieb später ohne Anlage da."
+                },
+                {
+                  "text": "Gewinn ist kein Aufschlag, sondern Pflicht",
+                  "detail": "Er finanziert Wachstum, Risiko und die Verzinsung des Eigenkapitals — sonst wäre das Geld anderswo besser angelegt."
+                }
+              ]
+            }
+          ],
+          "regel": "Merksatz: Kurzfristig variable Kosten, langfristig Selbstkosten. Die kurzfristige Untergrenze ist eine Ausnahme mit Verfallsdatum — wird sie zur Regel, ist sie falsch."
+        },
+        {
+          "typ": "merke",
+          "text": "**Kurzfristige Preisuntergrenze = variable Kosten** bei freien Kapazitäten. **Langfristige Preisuntergrenze = Selbstkosten.**",
+          "karteikarte": "Wo liegen kurz- und langfristige Preisuntergrenze, und welche Voraussetzung hat die kurzfristige?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Annehmen oder ablehnen?",
+          "kategorien": [
+            "Annehmen",
+            "Ablehnen"
+          ],
+          "aufgaben": [
+            {
+              "text": "Zusatzauftrag zu 32 €, variable Kosten 26 €, Maschine steht still.",
+              "loesung": "Annehmen"
+            },
+            {
+              "text": "Zusatzauftrag zu 24 €, variable Kosten 26 €.",
+              "loesung": "Ablehnen"
+            },
+            {
+              "text": "Rahmenvertrag über drei Jahre zu 30 €, Selbstkosten 38 €.",
+              "loesung": "Ablehnen"
+            },
+            {
+              "text": "Einmaliger Auftrag zu 35 €, variable Kosten 26 €, freie Kapazität.",
+              "loesung": "Annehmen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "{{begriff:deckungsbeitrag|Deckungsbeitrag}} = Erlös − variable Kosten.",
+    "Betriebsergebnis = Gesamtdeckungsbeitrag − Fixkosten.",
+    "Ein Produkt mit positivem Deckungsbeitrag trägt zur Fixkostendeckung bei.",
+    "{{begriff:break-even|Break-Even}} = Fixkosten ÷ Deckungsbeitrag je Stück.",
+    "Bei negativem Deckungsbeitrag vergrößert jedes verkaufte Stück den Verlust.",
+    "Preis und variable Kosten wirken gleich stark auf den Deckungsbeitrag.",
+    "Kurzfristige {{begriff:preisuntergrenze|Preisuntergrenze}}: variable Kosten bei freien Kapazitäten.",
+    "Langfristige Preisuntergrenze: die Selbstkosten."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Berechnung",
+      "frage": "Fixkosten 84.000 € im Jahr, Verkaufspreis 60 €, variable Kosten 38 € je Stück. Berechne Deckungsbeitrag, Break-Even und das Ergebnis bei 5.000 Stück.",
+      "loesung": "Der Deckungsbeitrag je Stück beträgt 60 € minus 38 €, also 22 €. Der Break-Even-Point liegt bei 84.000 € geteilt durch 22 €, das sind rund 3.819 Stück; da nur ganze Stücke verkauft werden, ist ab 3.819 Stück die Gewinnzone erreicht. Bei 5.000 Stück beträgt der Gesamtdeckungsbeitrag 5.000 mal 22 €, also 110.000 €. Abzüglich der Fixkosten von 84.000 € ergibt sich ein Betriebsergebnis von 26.000 € Gewinn."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre, warum ein Produkt trotz ausgewiesenem Verlust in der Vollkostenrechnung weiterproduziert werden kann.",
+      "loesung": "Die Vollkostenrechnung verteilt sämtliche Kosten einschließlich der Fixkosten auf die Produkte. Fixkosten fallen jedoch unabhängig davon an, ob dieses Produkt hergestellt wird oder nicht. Entscheidend ist deshalb der Deckungsbeitrag, also Erlös minus variable Kosten. Ist er positiv, trägt jedes verkaufte Stück etwas zur Deckung der Fixkosten bei, auch wenn nach Verteilung aller Kosten rechnerisch ein Verlust entsteht. Wird das Produkt gestrichen, entfällt dieser Beitrag, die Fixkosten bleiben aber bestehen und müssen von den übrigen Produkten getragen werden. Das Gesamtergebnis verschlechtert sich dadurch. Die Entscheidung zur Einstellung ist erst dann richtig, wenn der Deckungsbeitrag negativ ist oder wenn die frei werdende Kapazität für etwas mit höherem Deckungsbeitrag genutzt werden kann."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Kunde bietet für 800 Stück einen Preis von 34 € je Stück. Die variablen Kosten betragen 29 €, die Selbstkosten 45 €. Die Fertigung ist zu 70 % ausgelastet. Wie entscheidest du?",
+      "loesung": "Der Deckungsbeitrag beträgt 34 € minus 29 €, also 5 € je Stück. Bei 800 Stück ergibt das einen zusätzlichen Deckungsbeitrag von 4.000 €, der vollständig zur Deckung der ohnehin anfallenden Fixkosten beiträgt. Da die Fertigung nur zu 70 Prozent ausgelastet ist, wird kein anderer Auftrag verdrängt, sodass die kurzfristige Preisuntergrenze von 29 € maßgeblich ist. Der Auftrag ist damit aus rein rechnerischer Sicht anzunehmen, obwohl der Preis deutlich unter den Selbstkosten von 45 € liegt. Zu bedenken sind jedoch drei Punkte: Erstens darf der Sonderpreis nicht zum Maßstab für das laufende Geschäft werden, weil langfristig die Selbstkosten die Untergrenze bilden. Zweitens ist zu prüfen, ob Stammkunden davon erfahren und denselben Preis verlangen könnten. Drittens sollten etwaige zusätzliche Kosten wie Sonderverpackung, Werkzeuge oder Mehrarbeit in die variablen Kosten einbezogen werden, weil sie den Deckungsbeitrag schmälern. Sinnvoll ist, den Auftrag ausdrücklich als einmalige Sonderlieferung zu vereinbaren."
+    }
+  ],
+  "pruefungstipp": "Break-Even und Deckungsbeitrag sind die sichersten Punkte des Lernfelds, wenn du eine Regel einhältst: Geteilt wird immer durch den Deckungsbeitrag, nie durch den Preis. Bei Zusatzauftragsfällen prüfe zuerst die Auslastung — nur bei freien Kapazitäten gilt die kurzfristige Preisuntergrenze. Schreib in der Antwort ausdrücklich hin, dass die Fixkosten ohnehin anfallen; genau darauf zielt die Musterlösung."
+}

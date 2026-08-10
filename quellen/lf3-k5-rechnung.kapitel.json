@@ -1,0 +1,206 @@
+{
+  "id": "k5",
+  "lernfeld": "lf3",
+  "nummer": 5,
+  "titel": "Lieferung und Rechnung",
+  "untertitel": "Die Ware ist raus — jetzt muss das Geld kommen.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Lieferpapiere unterscheiden und ihre Funktion erklären",
+      "abschnitt": "e1"
+    },
+    {
+      "id": "lz2",
+      "text": "Die Pflichtangaben einer Rechnung prüfen",
+      "abschnitt": "e2"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "e1",
+      "titel": "Die Ware geht raus",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Mit der Lieferung erfüllt der Verkäufer seine Hauptpflicht aus {{par:bgb-433|§ 433 BGB}}. Begleitet wird sie vom {{begriff:lieferschein|Lieferschein}} — dem einzigen Beleg im Prozess, der bewusst **keine Preise** enthält."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Papier",
+            "Zweck",
+            "Bleibt bei"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Lieferschein",
+                "Inhalt der Sendung nachweisen",
+                "Empfänger"
+              ]
+            },
+            {
+              "zellen": [
+                "Empfangsbestätigung",
+                "Erhalt quittieren",
+                "Verkäufer"
+              ]
+            },
+            {
+              "zellen": [
+                "Frachtbrief",
+                "Transportauftrag an den Frachtführer",
+                "Frachtführer"
+              ],
+              "detail": "**Nicht mit dem Lieferschein verwechseln.** Der Frachtbrief regelt das Verhältnis zwischen Absender und Frachtführer, der Lieferschein das zwischen Verkäufer und Käufer."
+            },
+            {
+              "zellen": [
+                "Rechnung",
+                "Zahlung anfordern",
+                "Empfänger"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Die Lieferung erfüllt den Vertrag, sie schließt ihn nicht. Und sie überträgt nicht automatisch das Eigentum — bei vereinbartem Eigentumsvorbehalt bleibt die Ware bis zur vollständigen Zahlung dem Verkäufer.",
+          "karteikarte": "Welche Funktion hat der Lieferschein, und warum stehen keine Preise darauf?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "e2",
+      "titel": "Die Rechnung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:rechnung|Rechnung}} ist mehr als eine Zahlungsaufforderung: Sie ist der Beleg, mit dem dein Kunde die Vorsteuer abzieht. ==Fehlt eine Pflichtangabe, verliert er diesen Abzug== — und meldet sich bei dir. Die Angaben stehen in {{par:ustg-14|§ 14 UStG}}."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Rechnungsarten",
+          "titel": "Vollständige Rechnung oder Kleinbetragsrechnung",
+          "lead": "Ab einer bestimmten Grenze genügen weniger Angaben. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Vollständige Rechnung",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Name und Anschrift beider Beteiligten",
+                  "detail": "Vollständig, nicht abgekürzt. Bei falscher Anschrift des Empfängers kippt der Vorsteuerabzug."
+                },
+                {
+                  "text": "Steuernummer oder Umsatzsteuer-Identifikationsnummer",
+                  "detail": "Eine von beiden genügt. Bei innergemeinschaftlichen Lieferungen ist die USt-IdNr. Pflicht."
+                },
+                {
+                  "text": "Ausstellungsdatum und fortlaufende Rechnungsnummer",
+                  "detail": "Die Nummer muss einmalig und lückenlos vergeben sein — daran hängt die Nachprüfbarkeit der Buchführung aus Lernfeld 6."
+                },
+                {
+                  "text": "Menge und handelsübliche Bezeichnung der Leistung",
+                  "detail": "„Diverses“ oder „Ware“ genügt nicht. Die Leistung muss identifizierbar sein."
+                },
+                {
+                  "text": "Zeitpunkt der Lieferung",
+                  "detail": "Auch dann anzugeben, wenn er mit dem Rechnungsdatum übereinstimmt — dann genügt ein entsprechender Hinweis."
+                },
+                {
+                  "text": "Entgelt, Steuersatz und Steuerbetrag",
+                  "detail": "Getrennt ausgewiesen. Bei Steuerbefreiung stattdessen ein Hinweis auf den Grund."
+                }
+              ]
+            },
+            {
+              "name": "Kleinbetragsrechnung",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Vereinfachung für kleine Beträge",
+                  "detail": "Gedacht für Bewirtungsbelege, Tankquittungen, Bahntickets — dort wäre der volle Angabenkatalog unpraktikabel."
+                },
+                {
+                  "text": "Name und Anschrift des Ausstellers",
+                  "detail": "Der Empfänger muss hier nicht genannt werden — das ist die wichtigste Erleichterung."
+                },
+                {
+                  "text": "Ausstellungsdatum",
+                  "detail": "Bleibt Pflicht."
+                },
+                {
+                  "text": "Menge und Art der Leistung",
+                  "detail": "Bleibt ebenfalls Pflicht — auch hier genügt „Diverses“ nicht."
+                },
+                {
+                  "text": "Bruttobetrag und Steuersatz",
+                  "detail": "Der Steuerbetrag muss nicht getrennt ausgewiesen werden; es reicht der Hinweis auf den Steuersatz."
+                }
+              ]
+            }
+          ],
+          "regel": "Für die Prüfung genügt die Logik: Je kleiner der Betrag, desto weniger Angaben — aber Aussteller, Datum, Leistung und Steuersatz sind immer dabei.",
+          "pruefen": "Betragsgrenze für Kleinbetragsrechnungen eintragen und gegen die geltende Fassung prüfen."
+        },
+        {
+          "typ": "absatz",
+          "text": "Wann gezahlt wird, steht in den {{begriff:zahlungsbedingungen|Zahlungsbedingungen}} aus Kapitel 4. Der Klassiker lautet „30 Tage netto, bei Zahlung innerhalb von 10 Tagen 2 % Skonto“ — die Buchung dazu kennst du aus Lernfeld 6, Kapitel 5."
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Kunde reklamiert, er könne aus deiner Rechnung keine Vorsteuer ziehen. Was prüfst du zuerst?",
+          "optionen": [
+            {
+              "text": "Ob der Betrag stimmt",
+              "richtig": false,
+              "echo": "Ein falscher Betrag wäre ärgerlich, hindert den Vorsteuerabzug aber nicht. Der scheitert an fehlenden Pflichtangaben, nicht an der Höhe."
+            },
+            {
+              "text": "Ob alle Pflichtangaben nach § 14 UStG enthalten sind",
+              "richtig": true,
+              "echo": "Richtig. Der Vorsteuerabzug setzt eine ordnungsgemäße Rechnung voraus. Typische Lücken: fehlende Steuernummer, unvollständige Anschrift des Empfängers, fehlender Lieferzeitpunkt oder eine zu unbestimmte Leistungsbeschreibung. Die Rechnung lässt sich berichtigen."
+            },
+            {
+              "text": "Ob der Kunde vorsteuerabzugsberechtigt ist",
+              "richtig": false,
+              "echo": "Das wäre der zweite Schritt und liegt nicht in deiner Verantwortung. Zuerst prüfst du, was du selbst beeinflussen kannst — die Angaben auf deiner Rechnung."
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Leg dir eine kurze Prüfliste an und geh sie vor jedem Rechnungsversand durch: beide Anschriften, Steuernummer, Datum, Nummer, Leistung, Lieferzeitpunkt, Entgelt, Steuersatz, Steuerbetrag. Zehn Sekunden — gegen einen Rückruf, eine Korrektur und einen verärgerten Kunden."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Die Lieferung erfüllt den Vertrag, sie schließt ihn nicht.",
+    "Der Lieferschein weist den Inhalt der Sendung nach und enthält keine Preise.",
+    "Der Frachtbrief regelt das Verhältnis zum Frachtführer, nicht zum Käufer.",
+    "{{par:ustg-14|§ 14 UStG}} nennt die Pflichtangaben der Rechnung.",
+    "Ohne vollständige Angaben verliert der Empfänger den Vorsteuerabzug.",
+    "Die Rechnungsnummer muss einmalig und fortlaufend sein.",
+    "Für kleine Beträge genügt die Kleinbetragsrechnung mit weniger Angaben."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne sechs Pflichtangaben einer Rechnung nach § 14 UStG.",
+      "loesung": "Vollständiger Name und Anschrift des leistenden Unternehmers und des Empfängers, die Steuernummer oder Umsatzsteuer-Identifikationsnummer, das Ausstellungsdatum, eine fortlaufende Rechnungsnummer, Menge und handelsübliche Bezeichnung der Leistung, der Zeitpunkt der Lieferung sowie das Entgelt mit Steuersatz und Steuerbetrag."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Auf deiner Rechnung fehlt der Lieferzeitpunkt. Welche Folge hat das und was tust du?",
+      "loesung": "Der Lieferzeitpunkt gehört zu den Pflichtangaben nach § 14 UStG. Fehlt er, ist die Rechnung nicht ordnungsgemäß und der Empfänger kann daraus keine Vorsteuer ziehen. Abhilfe schafft eine berichtigte Rechnung, die die fehlende Angabe ergänzt und eindeutig auf die ursprüngliche Rechnung Bezug nimmt. Stimmt der Lieferzeitpunkt mit dem Rechnungsdatum überein, genügt ein entsprechender Hinweis."
+    }
+  ],
+  "pruefungstipp": "Die Pflichtangaben werden regelmäßig abgefragt, oft als Fehlersuche in einer abgedruckten Rechnung. Präge dir die Reihenfolge Anschriften, Steuernummer, Datum, Nummer, Leistung, Lieferzeitpunkt, Entgelt und Steuer ein — und achte in der Aufgabe besonders auf den Lieferzeitpunkt, der am häufigsten fehlt."
+}

@@ -1,0 +1,291 @@
+{
+  "id": "k6",
+  "lernfeld": "lf2",
+  "nummer": 6,
+  "titel": "Informationen beschaffen und aufbereiten",
+  "untertitel": "Die Information ist da. Die Frage ist, ob du ihr trauen kannst.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Interne und externe Informationsquellen unterscheiden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Quellen auf Verlässlichkeit prüfen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Informationen empfängergerecht aufbereiten",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Woher die Information kommt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:informationsbeschaffung|Informationsbeschaffung}} beginnt mit einer Frage, die oft übersprungen wird: **Was genau will ich wissen?** ==Wer unscharf sucht, findet zu viel und entscheidet am Ende doch aus dem Bauch.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Quelle",
+            "Art",
+            "Typisch dafür"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Statistiken und Auswertungen des Betriebs",
+                "intern",
+                "Umsätze, Verbrauch, Fehlzeiten"
+              ],
+              "detail": "**Fast immer die beste erste Quelle** — sie ist kostenlos, aktuell und betrifft genau den eigenen Betrieb. Sie wird trotzdem regelmäßig übersehen."
+            },
+            {
+              "zellen": [
+                "Vorgänge, Akten, Protokolle",
+                "intern",
+                "frühere Entscheidungen, Verträge"
+              ]
+            },
+            {
+              "zellen": [
+                "Kolleginnen und Kollegen",
+                "intern",
+                "Erfahrungswissen, Zuständigkeiten"
+              ],
+              "detail": "**Die schnellste Quelle, aber die flüchtigste.** Was mündlich erfragt wurde, gehört schriftlich festgehalten — sonst ist es beim nächsten Mal wieder weg."
+            },
+            {
+              "zellen": [
+                "Gesetze, Behörden, IHK",
+                "extern",
+                "Rechtsfragen, Vorschriften"
+              ]
+            },
+            {
+              "zellen": [
+                "Fachliteratur, Verbände, Statistikämter",
+                "extern",
+                "Branchendaten, Vergleichswerte"
+              ]
+            },
+            {
+              "zellen": [
+                "Internetsuche",
+                "extern",
+                "schneller Einstieg, unsichere Güte"
+              ],
+              "detail": "**Der bequemste und riskanteste Weg.** Suchergebnisse sind nach Auffindbarkeit sortiert, nicht nach Richtigkeit — und wer eine Seite betreibt, hat meist ein Interesse."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Erst intern, dann extern.** Und vor der Suche das Ziel festlegen: Was will ich wissen, wofür brauche ich es, wie genau muss es sein?",
+          "karteikarte": "Welche internen und externen Informationsquellen gibt es, und warum wird zuerst intern gesucht?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Kann man der Quelle trauen?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:quellenkritik|Quellenkritik}} ist keine akademische Übung. ==Eine falsche Zahl in einem Angebot kostet Geld, ein veralteter Paragraf kostet mehr.== Vier Fragen genügen für den Alltag."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Vier Fragen",
+          "titel": "Prüfen, bevor du es weitergibst",
+          "lead": "Fällt eine Antwort schlecht aus, brauchst du eine zweite Quelle. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Wer sagt das?",
+              "satz": "Urheber erkennbar?",
+              "text": "Behörde, Verband, Fachverlag oder anonymer Blog? Fehlt ein Impressum oder ein Autor, ist das schon die Antwort. Bei Rechtsfragen ist die amtliche Quelle die einzige, auf die man sich stützen sollte."
+            },
+            {
+              "nr": 2,
+              "titel": "Wann?",
+              "satz": "Stand des Inhalts",
+              "text": "Gesetze, Beitragssätze und Fristen ändern sich. Eine Seite ohne Datum ist bei solchen Angaben wertlos, weil man nicht weiß, welchen Rechtsstand sie abbildet."
+            },
+            {
+              "nr": 3,
+              "titel": "Warum?",
+              "satz": "Interesse des Urhebers",
+              "text": "Ein Anbietervergleich auf der Seite eines Anbieters ist Werbung. Das macht ihn nicht automatisch falsch, aber es erklärt, was betont und was weggelassen wird."
+            },
+            {
+              "nr": 4,
+              "titel": "Steht es woanders auch?",
+              "satz": "zweite Quelle",
+              "text": "Bei allem, was Geld oder Recht betrifft, gilt das Vier-Augen-Prinzip auch für Quellen. Zwei unabhängige Belege sind der übliche Maßstab."
+            }
+          ],
+          "regel": "Faustregel: Je größer die Folge einer falschen Information, desto härter die Prüfung. Für die Wahl des Konferenzraums genügt eine Quelle, für eine Vertragsklausel nicht."
+        },
+        {
+          "typ": "achtung",
+          "text": "**Texte von KI-Werkzeugen sind keine Quelle.** Sie können beim Sortieren und Formulieren helfen, aber jede Zahl, jeder Paragraf und jede Frist gehört an der Originalquelle nachgeprüft — Gesetzestext, Behörde, Fachverlag."
+        },
+        {
+          "typ": "check",
+          "frage": "Du sollst die aktuelle Höhe einer gesetzlichen Frist ermitteln. Welche Quelle nimmst du?",
+          "optionen": [
+            {
+              "text": "Das erste Suchergebnis einer Ratgeberseite",
+              "richtig": false,
+              "echo": "Ratgeberseiten sind oft älter, als sie aussehen, und geben Rechtsstände wieder, die längst überholt sind. Für Rechtsfragen ist das zu unsicher."
+            },
+            {
+              "text": "Den Gesetzestext in der amtlichen Fassung, ergänzt um eine Fachquelle",
+              "richtig": true,
+              "echo": "Richtig. Bei Rechtsfragen ist der Gesetzestext selbst die maßgebliche Quelle, weil nur er den aktuellen Stand verbindlich wiedergibt. Eine Fachquelle wie IHK, Verband oder Fachverlag hilft beim Verstehen und dient als zweiter Beleg. Wichtig ist außerdem, den Abrufzeitpunkt festzuhalten — bei späteren Rückfragen weiß man dann, welcher Stand zugrunde lag."
+            },
+            {
+              "text": "Eine Kollegin fragen, die den Fall schon einmal hatte",
+              "richtig": false,
+              "echo": "Als Einstieg gut und schnell — aber Erfahrungswissen bildet den Stand von damals ab. Für eine verbindliche Auskunft muss die Frist am Gesetzestext geprüft werden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Aufbereiten für den Empfänger",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine Information nützt erst, wenn der Empfänger sie versteht und benutzen kann. Die entscheidende Frage lautet: **Wer bekommt das, und was soll er damit tun?** Eine Geschäftsführung braucht die Entscheidung, eine Sachbearbeitung die Einzelheiten."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Form",
+            "Passt für",
+            "Regel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Tabelle",
+                "Vergleich mehrerer Größen",
+                "eine Sortierung, klare Einheiten"
+              ],
+              "detail": "**Die unterschätzte Form.** Für einen sauberen Vergleich von drei Angeboten schlägt eine Tabelle jedes Diagramm — sie zeigt die Zahlen selbst statt ihres Bildes."
+            },
+            {
+              "zellen": [
+                "Säulen- oder Balkendiagramm",
+                "Größen nebeneinander",
+                "Achse bei null beginnen"
+              ],
+              "detail": "**Eine abgeschnittene Achse verzerrt den Eindruck erheblich** — aus einem Unterschied von drei Prozent wird optisch eine Verdopplung. Das ist der häufigste Darstellungsfehler überhaupt."
+            },
+            {
+              "zellen": [
+                "Liniendiagramm",
+                "Entwicklung über Zeit",
+                "gleichmäßige Zeitabstände"
+              ]
+            },
+            {
+              "zellen": [
+                "Kreisdiagramm",
+                "Anteile an einem Ganzen",
+                "wenige Segmente, Summe 100 %"
+              ],
+              "detail": "**Nur sinnvoll bei wenigen Teilen.** Ab etwa sechs Segmenten ist eine Tabelle lesbarer, weil sich ähnlich große Kreisstücke nicht mehr unterscheiden lassen."
+            },
+            {
+              "zellen": [
+                "Kurzbericht",
+                "Entscheidungsvorlage",
+                "Ergebnis zuerst, Details danach"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Schreib das **Ergebnis in den ersten Satz**, nicht in den letzten. Wer eine Entscheidungsvorlage liest, will zuerst wissen, was empfohlen wird — die Begründung danach. Die Reihenfolge aus dem Schulaufsatz funktioniert im Betrieb nicht."
+        },
+        {
+          "typ": "merke",
+          "text": "**Empfängergerecht heißt: passende Form, richtige Tiefe, Ergebnis zuerst.** Bei Diagrammen die Achse immer bei null beginnen — sonst täuscht das Bild.",
+          "karteikarte": "Welche Darstellungsform passt wofür, und warum muss die Achse eines Säulendiagramms bei null beginnen?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Darstellung passt am besten?",
+          "kategorien": [
+            "Tabelle",
+            "Liniendiagramm",
+            "Kreisdiagramm"
+          ],
+          "aufgaben": [
+            {
+              "text": "Umsatzentwicklung der letzten zwölf Monate.",
+              "loesung": "Liniendiagramm"
+            },
+            {
+              "text": "Anteile von vier Produktgruppen am Gesamtumsatz.",
+              "loesung": "Kreisdiagramm"
+            },
+            {
+              "text": "Drei Angebote mit Preis, Lieferzeit und Zahlungsbedingungen.",
+              "loesung": "Tabelle"
+            },
+            {
+              "text": "Krankenstand je Quartal über drei Jahre.",
+              "loesung": "Liniendiagramm"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Vor der Suche das Ziel klären: Was will ich wissen, wofür, wie genau?",
+    "Interne Quellen zuerst — sie sind kostenlos, aktuell und betreffen den eigenen Betrieb.",
+    "{{begriff:quellenkritik|Quellenkritik}} in vier Fragen: Wer, wann, warum, steht es woanders auch?",
+    "Bei Rechtsfragen ist der Gesetzestext die maßgebliche Quelle.",
+    "Texte von KI-Werkzeugen sind keine Quelle — Zahlen und Paragrafen immer nachprüfen.",
+    "Tabellen für Vergleiche, Linien für Entwicklungen, Kreise für Anteile.",
+    "Die Achse eines Säulendiagramms beginnt bei null, sonst täuscht das Bild.",
+    "In Entscheidungsvorlagen steht das Ergebnis im ersten Satz."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nach welchen Kriterien prüfst du eine Informationsquelle?",
+      "loesung": "Erstens der Urheber: Ist erkennbar, wer die Information verantwortet, und handelt es sich um eine fachlich zuständige Stelle wie eine Behörde, einen Verband oder einen Fachverlag? Fehlt ein Impressum oder ein Autor, ist Vorsicht geboten. Zweitens die Aktualität: Gesetze, Fristen und Beitragssätze ändern sich, deshalb muss der Stand der Information erkennbar sein; eine undatierte Angabe ist bei solchen Themen wertlos. Drittens das Interesse des Urhebers: Wer eine Information veröffentlicht, verfolgt oft ein Ziel, was Auswahl und Gewichtung beeinflusst. Viertens die Bestätigung durch eine zweite, unabhängige Quelle, insbesondere wenn an der Information rechtliche oder finanzielle Folgen hängen. Als Faustregel gilt: Je größer die Folge eines Fehlers, desto strenger die Prüfung."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Welche Darstellungsform wählst du wofür, und welcher Fehler ist bei Diagrammen am häufigsten?",
+      "loesung": "Eine Tabelle eignet sich für den Vergleich mehrerer Größen mit konkreten Zahlen, etwa beim Angebotsvergleich. Ein Säulen- oder Balkendiagramm zeigt Größen nebeneinander, ein Liniendiagramm Entwicklungen über die Zeit, ein Kreisdiagramm Anteile an einem Ganzen bei wenigen Segmenten. Für Entscheidungsvorlagen eignet sich ein Kurzbericht, in dem das Ergebnis zuerst steht. Der häufigste Fehler ist eine Wertachse, die nicht bei null beginnt: Dadurch wirken kleine Unterschiede optisch wie große, und der Betrachter zieht falsche Schlüsse. Weitere typische Fehler sind zu viele Segmente im Kreisdiagramm, ungleichmäßige Zeitabstände im Liniendiagramm und fehlende Einheiten."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Du sollst für die Geschäftsführung ermitteln, ob sich der Wechsel des Büromaterial-Lieferers lohnt. Wie gehst du vor?",
+      "loesung": "Zuerst kläre ich das Ziel und den Umfang: Welche Artikelgruppen, welcher Zeitraum, welche Kriterien neben dem Preis? Dann beginne ich intern: Aus den Auswertungen des Betriebs entnehme ich Verbrauchsmengen und tatsächlich gezahlte Preise des laufenden Lieferers, aus den Vorgängen die vereinbarten Konditionen und etwaige Reklamationen. Extern hole ich vergleichbare Angebote ein, wobei Art, Menge und Termin in allen Anfragen identisch sein müssen, damit die Angebote vergleichbar sind. Die Preise rechne ich über die Bezugskalkulation auf Einstandspreise um, weil erst diese vergleichbar sind. Qualitative Kriterien wie Liefertreue und Service bewerte ich zusätzlich, etwa über eine gewichtete Nutzwertanalyse. Alle Quellen prüfe ich auf Urheber, Aktualität und Interesse. Aufbereitet wird das Ergebnis als Kurzbericht mit der Empfehlung im ersten Satz, darunter eine Tabelle mit den Einstandspreisen je Anbieter und den qualitativen Kriterien. Auf ein Diagramm verzichte ich hier, weil eine Tabelle die Zahlen genauer zeigt."
+    }
+  ],
+  "pruefungstipp": "Quellenkritik wird gern als Fall gestellt: Eine Zahl stammt aus dem Internet, und du sollst beurteilen, ob man sie verwenden kann. Arbeite die vier Fragen der Reihe nach ab und nenne sie beim Namen. Beim Aufbereiten ist die sichere Antwort immer die Begründung der Form: nicht nur „Liniendiagramm\", sondern „Liniendiagramm, weil eine Entwicklung über die Zeit dargestellt wird\"."
+}

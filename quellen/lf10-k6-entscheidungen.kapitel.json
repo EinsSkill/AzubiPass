@@ -1,0 +1,331 @@
+{
+  "id": "k6",
+  "lernfeld": "lf10",
+  "nummer": 6,
+  "titel": "Entscheidungen mit Zahlen begründen",
+  "untertitel": "Selbst machen oder einkaufen? Die Antwort steht in der Rechnung.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Eigenfertigung und Fremdbezug rechnerisch vergleichen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Bei Engpässen nach dem relativen Deckungsbeitrag entscheiden",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Grenzen der reinen Zahlenbetrachtung benennen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Selbst machen oder einkaufen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Vergleich zwischen Eigenfertigung und Fremdbezug ist die häufigste Entscheidungsaufgabe der Kostenrechnung. ==Der entscheidende Punkt: Verglichen werden die **variablen** Kosten der Eigenfertigung mit dem Einkaufspreis== — nicht die Vollkosten."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Frage",
+            "Antwort",
+            "Warum"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Womit vergleichen?",
+                "variable Kosten gegen Einkaufspreis",
+                "Fixkosten fallen ohnehin an"
+              ],
+              "detail": "**Die Halle steht auch dann, wenn man einkauft.** Nur die Kosten, die bei Fremdbezug tatsächlich wegfallen, gehören in den Vergleich."
+            },
+            {
+              "zellen": [
+                "Was gehört zum Einkaufspreis?",
+                "Einstandspreis inkl. Bezugskosten",
+                "sonst wird zu günstig gerechnet"
+              ],
+              "detail": "**Fracht, Verpackung, Prüfaufwand.** Genau das Schema aus Lernfeld 4 — der Angebotspreis allein reicht auch hier nicht."
+            },
+            {
+              "zellen": [
+                "Was ist mit den Fixkosten?",
+                "bleiben, soweit sie nicht abbaubar sind",
+                "sonst falsche Entscheidung"
+              ],
+              "detail": "**Abbaubare Fixkosten gehören dazu.** Wird bei Fremdbezug eine Maschine verkauft oder eine Stelle eingespart, entfallen diese Kosten wirklich und zählen mit."
+            },
+            {
+              "zellen": [
+                "Was passiert mit der freien Kapazität?",
+                "prüfen, ob sie anders genutzt wird",
+                "sonst entgeht ein Deckungsbeitrag"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "grafik",
+          "variante": "breakeven",
+          "kopf": "Der Schnittpunkt",
+          "titel": "Ab welcher Menge lohnt sich Eigenfertigung?",
+          "lead": "Fixkosten der Eigenfertigung, variable Stückkosten, dazu der Einkaufspreis als Vergleich.",
+          "eingaben": {
+            "fix": {
+              "label": "Zusätzliche Fixkosten Eigenfertigung in €",
+              "start": 18000,
+              "min": 0,
+              "max": 100000,
+              "schritt": 1000
+            },
+            "var": {
+              "label": "Variable Kosten je Stück in €",
+              "start": 12,
+              "min": 0,
+              "max": 200,
+              "schritt": 1
+            },
+            "preis": {
+              "label": "Einkaufspreis je Stück in €",
+              "start": 18,
+              "min": 0,
+              "max": 300,
+              "schritt": 1
+            }
+          },
+          "regel": "Hier ist die Erlösgerade der Einkaufspreis: Sie zeigt, was der Fremdbezug kostet. Der Schnittpunkt ist die kritische Menge — darüber lohnt die Eigenfertigung, darunter der Einkauf. Liegt der Einkaufspreis unter den variablen Kosten, gibt es keinen Schnittpunkt und Eigenfertigung lohnt nie."
+        },
+        {
+          "typ": "merke",
+          "text": "**Kritische Menge = zusätzliche Fixkosten ÷ (Einkaufspreis − variable Stückkosten).** Darüber lohnt Eigenfertigung, darunter Fremdbezug.",
+          "karteikarte": "Wie berechnet man die kritische Menge beim Vergleich Eigenfertigung gegen Fremdbezug?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Wenn die Kapazität nicht reicht",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Sind alle Produkte gewinnbringend, aber die Maschine reicht nicht für alle, hilft der Deckungsbeitrag je Stück nicht weiter. ==Entscheidend ist der **relative Deckungsbeitrag**: Deckungsbeitrag je Einheit des Engpasses.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Produkt",
+            "DB je Stück",
+            "Maschinenminuten",
+            "DB je Minute",
+            "Rang"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "A",
+                "30,00 €",
+                "10",
+                "3,00 €",
+                "3"
+              ],
+              "mono": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "detail": "**Der höchste Deckungsbeitrag je Stück — und trotzdem der letzte Platz.** Produkt A blockiert die Maschine zu lange für das, was es einbringt."
+            },
+            {
+              "zellen": [
+                "B",
+                "20,00 €",
+                "4",
+                "5,00 €",
+                "1"
+              ],
+              "mono": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "detail": "**Der Gewinner.** Weniger Deckungsbeitrag je Stück, aber die Maschine ist schnell wieder frei — in derselben Zeit lässt sich viel mehr davon herstellen."
+            },
+            {
+              "zellen": [
+                "C",
+                "18,00 €",
+                "5",
+                "3,60 €",
+                "2"
+              ],
+              "mono": [
+                1,
+                2,
+                3,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Ohne Engpass entscheidet der **absolute** Deckungsbeitrag, mit Engpass der **relative**. Wer das verwechselt, produziert das falsche Produkt — und zwar mit voller Auslastung und schlechtem Ergebnis."
+        },
+        {
+          "typ": "check",
+          "frage": "Produkt X hat 40 € Deckungsbeitrag und braucht 8 Maschinenminuten, Produkt Y hat 25 € und braucht 4 Minuten. Die Maschine ist der Engpass. Was produzierst du zuerst?",
+          "optionen": [
+            {
+              "text": "X — der Deckungsbeitrag ist höher",
+              "richtig": false,
+              "echo": "Das gilt nur ohne Engpass. Hier zählt, was die knappe Maschinenzeit einbringt, nicht was ein einzelnes Stück einbringt."
+            },
+            {
+              "text": "Y — es bringt je Maschinenminute mehr",
+              "richtig": true,
+              "echo": "Richtig. Produkt X bringt 40 € geteilt durch 8 Minuten, also 5 € je Minute. Produkt Y bringt 25 € geteilt durch 4 Minuten, also 6,25 € je Minute. Bei knapper Maschinenzeit ist Y damit vorzuziehen, obwohl sein Deckungsbeitrag je Stück niedriger ist. In derselben Zeit lassen sich doppelt so viele Stück Y herstellen."
+            },
+            {
+              "text": "Beide gleich — der Unterschied gleicht sich aus",
+              "richtig": false,
+              "echo": "Er gleicht sich nicht aus: 5 € gegen 6,25 € je Minute ist ein Unterschied von 25 Prozent auf die knappe Ressource."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Relativer Deckungsbeitrag = DB je Stück ÷ Engpasseinheiten je Stück.** Ohne Engpass zählt der absolute, mit Engpass der relative Deckungsbeitrag.",
+          "karteikarte": "Was ist der relative Deckungsbeitrag, und wann wird er statt des absoluten verwendet?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Was die Rechnung nicht weiß",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine Rechnung liefert eine Zahl, keine Entscheidung. ==Bei Eigenfertigung gegen Fremdbezug hängen an der Zahl regelmäßig Fragen, die sie nicht beantworten kann.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Gesichtspunkt",
+            "Frage dahinter"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Abhängigkeit",
+                "Was, wenn der Lieferer ausfällt oder den Preis erhöht?"
+              ],
+              "detail": "**Wer eine Fertigung aufgibt, bekommt sie nicht schnell zurück.** Maschinen sind verkauft, Personal ist weg, Wissen ist verloren. Der Lieferer weiß das auch."
+            },
+            {
+              "zellen": [
+                "Qualität und Termine",
+                "Halten wir unsere Zusagen noch selbst in der Hand?"
+              ]
+            },
+            {
+              "zellen": [
+                "Wissen im Betrieb",
+                "Verlieren wir Fähigkeiten, die wir später brauchen?"
+              ]
+            },
+            {
+              "zellen": [
+                "Beschäftigung",
+                "Was passiert mit den Mitarbeitenden?"
+              ],
+              "detail": "**Auch mitbestimmungsrechtlich relevant.** Bei einer Betriebsänderung hat der Betriebsrat Beteiligungsrechte — die Entscheidung ist nicht allein eine Rechenaufgabe."
+            },
+            {
+              "zellen": [
+                "Zahlen sind Schätzungen",
+                "Wie sicher sind Menge und Preis überhaupt?"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Rechne bei solchen Entscheidungen immer **zwei Szenarien**: eines mit den erwarteten Werten, eines mit ungünstigeren Annahmen. Kippt das Ergebnis schon bei kleinen Abweichungen, ist die Entscheidung nicht belastbar — unabhängig davon, wie genau die erste Rechnung aussah."
+        },
+        {
+          "typ": "merke",
+          "text": "Die Rechnung liefert die **Grundlage**, nicht die Entscheidung. Abhängigkeit, Qualität, Wissen und Beschäftigung stehen in keiner Tabelle und wiegen oft schwerer als der Kostenvorteil.",
+          "karteikarte": "Welche nicht rechenbaren Gesichtspunkte gehören in eine Entscheidung über Eigenfertigung oder Fremdbezug?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Größe entscheidet hier?",
+          "kategorien": [
+            "Absoluter DB",
+            "Relativer DB",
+            "Kritische Menge"
+          ],
+          "aufgaben": [
+            {
+              "text": "Die Maschine ist voll ausgelastet, drei Produkte konkurrieren.",
+              "loesung": "Relativer DB"
+            },
+            {
+              "text": "Selbst fertigen oder zukaufen, gefragt ist die Grenzmenge.",
+              "loesung": "Kritische Menge"
+            },
+            {
+              "text": "Freie Kapazität, welches von zwei Produkten bringt mehr?",
+              "loesung": "Absoluter DB"
+            },
+            {
+              "text": "Der Engpass ist Facharbeiterzeit, nicht die Maschine.",
+              "loesung": "Relativer DB"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Eigenfertigung gegen Fremdbezug: variable Kosten gegen Einstandspreis vergleichen.",
+    "Nicht abbaubare Fixkosten bleiben außen vor, abbaubare zählen mit.",
+    "Kritische Menge = zusätzliche Fixkosten ÷ (Einkaufspreis − variable Stückkosten).",
+    "Freie Kapazität ist zu bewerten — entgangener Deckungsbeitrag ist ein echter Nachteil.",
+    "Ohne Engpass entscheidet der absolute Deckungsbeitrag.",
+    "Mit Engpass entscheidet der relative Deckungsbeitrag je Engpasseinheit.",
+    "Der höchste Deckungsbeitrag je Stück ist bei Engpass oft die falsche Wahl.",
+    "Abhängigkeit, Qualität, Wissen und Beschäftigung stehen in keiner Rechnung."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Berechnung",
+      "frage": "Ein Bauteil kann für 22 € zugekauft werden. Eigenfertigung verursacht 14 € variable Kosten je Stück und 24.000 € zusätzliche Fixkosten. Ab welcher Menge lohnt die Eigenfertigung?",
+      "loesung": "Die Ersparnis je Stück bei Eigenfertigung beträgt 22 € Einkaufspreis minus 14 € variable Kosten, also 8 €. Diese Ersparnis muss die zusätzlichen Fixkosten von 24.000 € decken. Die kritische Menge beträgt daher 24.000 € geteilt durch 8 €, also 3.000 Stück. Ab 3.000 Stück ist die Eigenfertigung günstiger, darunter der Fremdbezug. Zu prüfen bleibt, ob der Einkaufspreis tatsächlich als Einstandspreis einschließlich Bezugskosten angesetzt wurde und ob die zusätzlichen Fixkosten bei einem Ausstieg wieder abbaubar wären."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Drei Produkte, Engpass ist die Maschine: A hat 45 € DB bei 9 Minuten, B hat 28 € bei 4 Minuten, C hat 36 € bei 6 Minuten. In welcher Reihenfolge produzierst du?",
+      "loesung": "Maßgeblich ist der relative Deckungsbeitrag je Maschinenminute. Produkt A erzielt 45 € geteilt durch 9 Minuten, also 5,00 € je Minute. Produkt B erzielt 28 € geteilt durch 4 Minuten, also 7,00 € je Minute. Produkt C erzielt 36 € geteilt durch 6 Minuten, also 6,00 € je Minute. Die Rangfolge lautet damit B, dann C, dann A. Bemerkenswert ist, dass Produkt A den höchsten Deckungsbeitrag je Stück hat und dennoch zuletzt gefertigt wird, weil es die knappe Maschinenzeit am schlechtesten ausnutzt. Die vorhandene Kapazität wird zuerst vollständig für B genutzt, soweit der Absatz das hergibt, dann für C und zuletzt für A."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Die Rechnung zeigt: Fremdbezug spart jährlich 12.000 €. Die Geschäftsführung will die Fertigung sofort auflösen. Was gibst du zu bedenken?",
+      "loesung": "Die Rechnung ist zunächst auf ihre Grundlagen zu prüfen. Wurde der Einstandspreis einschließlich Fracht, Verpackung und Prüfaufwand angesetzt oder nur der Angebotspreis? Wurden nur die tatsächlich abbaubaren Fixkosten berücksichtigt oder auch solche, die ohnehin bestehen bleiben? Und wie wurde die frei werdende Kapazität bewertet — kann sie anders genutzt werden, erhöht das den Vorteil, andernfalls bleiben ihre Kosten bestehen. Darüber hinaus sind mehrere nicht rechenbare Gesichtspunkte zu bedenken. Erstens die Abhängigkeit: Nach Auflösung der Fertigung sind Maschinen verkauft, Personal abgebaut und Fachwissen verloren; eine Rückkehr ist praktisch ausgeschlossen, und der Lieferer weiß das bei künftigen Preisverhandlungen. Zweitens Qualität und Termintreue, die nicht mehr selbst gesteuert werden können. Drittens die Beschäftigten, wobei bei einer Betriebsänderung Beteiligungsrechte des Betriebsrats bestehen. Sinnvoll ist außerdem, ein zweites Szenario mit ungünstigeren Annahmen zu rechnen, etwa mit einer Preiserhöhung des Lieferers um zehn Prozent. Kippt der Vorteil dabei, ist die Entscheidung nicht belastbar. Eine mögliche Zwischenlösung ist, einen Teil selbst zu fertigen und einen Teil zuzukaufen, um Kostenvorteil und Unabhängigkeit zu verbinden."
+    }
+  ],
+  "pruefungstipp": "Bei Eigenfertigung gegen Fremdbezug ist die entscheidende Aussage, dass nur die abbaubaren Kosten in den Vergleich gehören — schreib das ausdrücklich hin. Beim Engpass ist die Formel kurz und die Falle groß: Immer durch die Engpasseinheiten teilen, nie den Deckungsbeitrag je Stück vergleichen. Und wenn nach einer Beurteilung gefragt wird, nenne mindestens zwei nicht rechenbare Gesichtspunkte."
+}

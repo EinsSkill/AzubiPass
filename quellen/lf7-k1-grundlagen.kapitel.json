@@ -1,0 +1,259 @@
+{
+  "id": "k1",
+  "lernfeld": "lf7",
+  "nummer": 1,
+  "titel": "Wie Kommunikation funktioniert",
+  "untertitel": "Vom Gedanken zum Verstandenen — und was unterwegs verloren geht.",
+  "minuten": 20,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Das Sender-Empfänger-Modell erklären und Störquellen benennen",
+      "abschnitt": "a1"
+    },
+    {
+      "id": "lz2",
+      "text": "Verbale, nonverbale und paraverbale Anteile unterscheiden",
+      "abschnitt": "a2"
+    },
+    {
+      "id": "lz3",
+      "text": "Kommunikationsstörungen erkennen und Regeln anwenden",
+      "abschnitt": "a3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "a1",
+      "titel": "Der Weg einer Nachricht",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:kommunikation|Kommunikation}} ist nicht gelungen, weil etwas gesagt wurde, sondern erst, wenn beim Empfänger ankommt, was gemeint war. ==Zwischen beidem liegen vier Stationen==, und an jeder kann die Nachricht sich verändern."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Das Grundmodell",
+          "titel": "Sender, Kanal, Empfänger",
+          "lead": "Vier Schritte, vier Fehlerquellen. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Der Sender hat einen Gedanken",
+              "satz": "noch ohne Worte",
+              "text": "Was gemeint ist, existiert zunächst nur im Kopf. Schon hier entscheidet sich, ob der Gedanke überhaupt klar ist — unklare Gedanken lassen sich nicht klar sagen."
+            },
+            {
+              "nr": 2,
+              "titel": "Er verschlüsselt ihn",
+              "satz": "Kodierung",
+              "text": "Der Gedanke wird in Worte, Tonfall und Gesten übersetzt. Der Sender benutzt dabei sein eigenes Wörterbuch aus Erfahrung, Beruf und Herkunft."
+            },
+            {
+              "nr": 3,
+              "titel": "Die Nachricht läuft über einen Kanal",
+              "satz": "Gespräch · Telefon · Mail",
+              "text": "Jeder Kanal lässt etwas weg. Am Telefon fehlt die Mimik, in der Mail zusätzlich der Tonfall. Genau deshalb eskalieren Mails schneller als Gespräche."
+            },
+            {
+              "nr": 4,
+              "titel": "Der Empfänger entschlüsselt",
+              "satz": "Dekodierung",
+              "text": "Er übersetzt zurück — mit seinem Wörterbuch, nicht mit deinem. Erst hier entsteht die Bedeutung, und sie muss nicht die gemeinte sein."
+            }
+          ],
+          "regel": "Die Nachricht, die ankommt, wird vom Empfänger gemacht — nicht vom Sender. Deshalb ist Nachfragen keine Schwäche, sondern die einzige Kontrolle, die es gibt."
+        },
+        {
+          "typ": "merke",
+          "text": "Gemeint ist nicht gesagt, gesagt ist nicht gehört, gehört ist nicht verstanden. Wer sicher sein will, lässt sich das Verstandene wiederholen.",
+          "karteikarte": "Welche vier Stationen durchläuft eine Nachricht, und wo entsteht ihre Bedeutung?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "a2",
+      "titel": "Drei Kanäle gleichzeitig",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Wer spricht, sendet auf drei Kanälen zugleich. Der Wortlaut ist dabei der schwächste — ==widersprechen sich Wort und Körper, glaubt der Empfänger dem Körper==."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kanal",
+            "Was dazugehört",
+            "Wirkung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Verbal",
+                "die Worte selbst",
+                "trägt den Sachinhalt"
+              ],
+              "detail": "**Der einzige Kanal, den man vollständig steuern kann** — und der, auf den sich fast alle konzentrieren. Genau darum entstehen die meisten Missverständnisse auf den anderen beiden."
+            },
+            {
+              "zellen": [
+                "Paraverbal",
+                "Lautstärke, Tempo, Betonung, Pausen",
+                "färbt die Aussage"
+              ],
+              "detail": "**Probier es an einem Satz:** „Das haben Sie ja schön gemacht.“ Je nach Betonung ist das ein Lob oder ein Vorwurf. Der Wortlaut ist identisch."
+            },
+            {
+              "zellen": [
+                "Nonverbal",
+                "Mimik, Gestik, Haltung, Blick, Abstand",
+                "entscheidet über Glaubwürdigkeit"
+              ],
+              "detail": "**Am Telefon fällt dieser Kanal weg** — deshalb wirkt der paraverbale dort doppelt so stark. Lächeln hört man tatsächlich, weil es die Stimme verändert."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Kollegin sagt mit verschränkten Armen und knappem Ton: „Kein Problem, mache ich.“ Was nimmt der Empfänger wahr?",
+          "optionen": [
+            {
+              "text": "Zustimmung, weil sie es so gesagt hat",
+              "richtig": false,
+              "echo": "Der Wortlaut sagt Zustimmung, Körper und Ton sagen etwas anderes. Bei einem solchen Widerspruch glaubt der Empfänger fast nie den Worten."
+            },
+            {
+              "text": "Einen Widerspruch — und er glaubt dem Körper",
+              "richtig": true,
+              "echo": "Richtig. Verbal, paraverbal und nonverbal widersprechen sich. In diesem Fall gewinnt der nonverbale Kanal, weil er als weniger steuerbar und damit ehrlicher gilt. Sinnvoll wäre jetzt, den Widerspruch anzusprechen statt ihn zu überhören."
+            },
+            {
+              "text": "Nichts Besonderes, Körpersprache ist Auslegungssache",
+              "richtig": false,
+              "echo": "Einzelne Gesten sind tatsächlich mehrdeutig. Ein Widerspruch zwischen Wort und Auftreten ist aber etwas anderes — er wird zuverlässig bemerkt, auch wenn er selten benannt wird."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "a3",
+      "titel": "Wenn es hakt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine {{begriff:kommunikationsstoerung|Kommunikationsstörung}} ist alles, was sich zwischen Gemeintes und Verstandenes schiebt. Die meisten sind banal und genau deshalb wirksam."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Störung",
+            "Beispiel",
+            "Was hilft"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Äußere Störung",
+                "Lärm, schlechte Verbindung, Unterbrechungen",
+                "Raum wechseln, Termin verschieben"
+              ]
+            },
+            {
+              "zellen": [
+                "Sprachliche Störung",
+                "Fachbegriffe, Abkürzungen, Schachtelsätze",
+                "in der Sprache des Gegenübers reden"
+              ]
+            },
+            {
+              "zellen": [
+                "Persönliche Störung",
+                "Zeitdruck, Ärger, Müdigkeit",
+                "benennen statt überspielen"
+              ]
+            },
+            {
+              "zellen": [
+                "Beziehungsstörung",
+                "alter Konflikt, Misstrauen, Hierarchie",
+                "Beziehung vor Sache klären"
+              ],
+              "detail": "**Die hartnäckigste Sorte.** Solange die Beziehung gestört ist, kommt kein Sachargument durch — der Empfänger hört nicht, *was* gesagt wird, sondern *wer* es sagt. Deshalb bringt es nichts, sachlich nachzulegen; es macht es meist schlimmer."
+            },
+            {
+              "zellen": [
+                "Wahrnehmungsstörung",
+                "Vorurteil, erster Eindruck, Erwartung",
+                "bewusst nachfragen statt annehmen"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Sechs Regeln, die fast jedes Gespräch verbessern: ausreden lassen, in der Sprache des anderen sprechen, konkret statt allgemein bleiben, {{begriff:ich-botschaft|Ich-Botschaften}} verwenden, das Verstandene zusammenfassen — und beim Thema bleiben, statt alte Punkte aufzurollen."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Art von Störung liegt vor?",
+          "kategorien": [
+            "Äußere",
+            "Sprachliche",
+            "Persönliche",
+            "Beziehungsstörung"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Kunde versteht die Abkürzungen aus deiner Abteilung nicht.",
+              "loesung": "Sprachliche"
+            },
+            {
+              "text": "Im Großraumbüro telefonieren nebenan drei Kollegen.",
+              "loesung": "Äußere"
+            },
+            {
+              "text": "Du hast gleich Feierabend und willst das Gespräch hinter dich bringen.",
+              "loesung": "Persönliche"
+            },
+            {
+              "text": "Seit dem Streit letzte Woche nimmt sie dir nichts mehr ab.",
+              "loesung": "Beziehungsstörung"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Kommunikation gelingt erst, wenn das Gemeinte auch verstanden wird.",
+    "Sender-Empfänger-Modell: Gedanke, Kodierung, Kanal, Dekodierung.",
+    "Die Bedeutung entsteht beim Empfänger, nicht beim Sender.",
+    "Drei Kanäle: verbal (Worte), paraverbal (Ton), nonverbal (Körper).",
+    "Bei Widersprüchen glaubt der Empfänger dem nonverbalen Kanal.",
+    "Störungen: äußere, sprachliche, persönliche, Beziehungs- und Wahrnehmungsstörungen.",
+    "Eine Beziehungsstörung lässt sich nicht mit Sachargumenten lösen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Beschreibe das Sender-Empfänger-Modell und nenne zwei Stellen, an denen die Nachricht sich verändern kann.",
+      "loesung": "Der Sender hat einen Gedanken, verschlüsselt ihn in Worte, Tonfall und Gesten, schickt ihn über einen Kanal, und der Empfänger entschlüsselt ihn wieder. Verändern kann die Nachricht sich zum Beispiel bei der Kodierung, weil der Sender seine eigenen Begriffe verwendet, und beim Kanal, weil dieser Anteile weglässt — am Telefon die Mimik, in der Mail zusätzlich den Tonfall. Auch bei der Dekodierung entsteht Abweichung, weil der Empfänger seine eigenen Erfahrungen zur Deutung heranzieht."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die drei Kommunikationskanäle und erkläre, welcher bei einem Widerspruch gewinnt.",
+      "loesung": "Verbal sind die Worte, paraverbal ist die Art des Sprechens mit Lautstärke, Tempo und Betonung, nonverbal sind Mimik, Gestik, Haltung und Blick. Widersprechen sich die Kanäle, glaubt der Empfänger dem nonverbalen, weil dieser als am wenigsten steuerbar und damit als ehrlicher gilt."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Kollege reagiert seit Wochen abweisend auf deine sachlichen Mails. Du schickst eine noch ausführlichere Mail. Wie beurteilst du das?",
+      "loesung": "Vermutlich liegt eine Beziehungsstörung vor. Solange die Beziehungsebene belastet ist, dringen Sachargumente nicht durch — der Empfänger hört, wer schreibt, nicht was geschrieben wird. Eine noch ausführlichere Mail verstärkt das Problem eher. Sinnvoll wäre ein persönliches Gespräch, in dem die Beziehungsebene angesprochen wird, bevor wieder über die Sache geredet wird."
+    }
+  ],
+  "pruefungstipp": "Das Sender-Empfänger-Modell wird häufig als Schaubild zum Ergänzen gestellt — präge dir die Begriffe Kodierung, Kanal und Dekodierung ein. Bei Störungen wird meist eine Liste verlangt: Merke dir die fünf Sorten und zu jeder ein Beispiel."
+}

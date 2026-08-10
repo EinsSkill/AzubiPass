@@ -1,0 +1,207 @@
+{
+  "id": "k6",
+  "lernfeld": "lf1",
+  "nummer": 6,
+  "titel": "Der Betrieb in der Wirtschaft",
+  "untertitel": "Bedürfnisse, Arbeitsteilung und der Wirtschaftskreislauf — wo dein Betrieb im Ganzen steht.",
+  "minuten": 25,
+
+  "lernziele": [
+    { "id": "lz1", "text": "Bedürfnisse, Bedarf und Nachfrage voneinander abgrenzen", "abschnitt": "f1" },
+    { "id": "lz2", "text": "Arten und Wirkungen der Arbeitsteilung erklären", "abschnitt": "f2" },
+    { "id": "lz3", "text": "Den einfachen und den erweiterten Wirtschaftskreislauf darstellen", "abschnitt": "f3" }
+  ],
+
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "f1",
+      "titel": "Warum überhaupt gewirtschaftet wird",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Am Anfang jeder wirtschaftlichen Überlegung steht ein {{begriff:beduerfnis|Bedürfnis}}: das Gefühl eines Mangels. Da Bedürfnisse praktisch unbegrenzt sind, die Mittel zu ihrer Befriedigung aber knapp, muss gewirtschaftet werden. ==Knappheit ist der Grund, warum es Wirtschaft überhaupt gibt.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Stufe", "Bedeutung", "Beispiel"],
+          "zeilen": [
+            { "zellen": ["Bedürfnis", "Gefühl eines Mangels", "Ich hätte gern ein Notebook"] },
+            { "zellen": ["Bedarf", "Bedürfnis plus Kaufkraft", "Ich habe 900 € und will ein Notebook"] },
+            {
+              "zellen": ["Nachfrage", "Bedarf, der am Markt auftritt", "Ich gehe in den Laden und kaufe"],
+              "detail": "**Warum die Kette für den Vertrieb zählt:** Werbung kann ein Bedürfnis wecken, aber ohne Kaufkraft wird daraus kein Bedarf — und ohne Marktzugang keine Nachfrage. Genau darum geht es später in Lernfeld 5."
+            }
+          ]
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Einteilung", "Arten", "Beispiel"],
+          "zeilen": [
+            { "zellen": ["Nach Dringlichkeit", "Existenz-, Kultur-, Luxusbedürfnis", "Brot · Kino · Sportwagen"] },
+            { "zellen": ["Nach Trägerschaft", "Individual- und Kollektivbedürfnis", "eigene Wohnung · Straßenbeleuchtung"] },
+            { "zellen": ["Güter nach Verfügbarkeit", "freie und wirtschaftliche Güter", "Atemluft · alles mit Preisschild"] },
+            { "zellen": ["Güter nach Verwendung", "Konsum- und Produktionsgüter", "Kaffee zu Hause · Kaffeemaschine im Betrieb"] }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Bedürfnis → Bedarf → Nachfrage. Der Unterschied zwischen den ersten beiden ist die **Kaufkraft**, der zwischen den letzten beiden der **Marktauftritt**.",
+          "karteikarte": "Wie unterscheiden sich Bedürfnis, Bedarf und Nachfrage?"
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "f2",
+      "titel": "Arbeitsteilung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Kein Betrieb stellt alles selbst her. {{begriff:arbeitsteilung|Arbeitsteilung}} bedeutet, dass ein Gesamtprozess in Teilaufgaben zerfällt, die verschiedene Personen oder Betriebe übernehmen. Das steigert die Produktivität erheblich — und erzeugt Abhängigkeit."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Art", "Was geteilt wird", "Beispiel"],
+          "zeilen": [
+            { "zellen": ["Berufsbildung", "Menschen spezialisieren sich auf Berufe", "Kauffrau für Büromanagement statt Alleskönner"] },
+            { "zellen": ["Betriebliche Arbeitsteilung", "Aufgaben innerhalb eines Betriebs", "Einkauf, Vertrieb, Buchhaltung getrennt"] },
+            { "zellen": ["Volkswirtschaftliche Arbeitsteilung", "Betriebe spezialisieren sich auf Stufen", "Rohstoff, Produktion, Handel"] },
+            {
+              "zellen": ["Internationale Arbeitsteilung", "Länder spezialisieren sich", "Bauteile aus mehreren Ländern"],
+              "detail": "**Die Kehrseite ist Verwundbarkeit.** Je feiner die Arbeitsteilung, desto größer die Abhängigkeit von funktionierenden Lieferketten — und desto härter treffen Störungen. Der Rahmenlehrplan verlangt ausdrücklich, diese Wirkungen auch unter Nachhaltigkeitsgesichtspunkten zu beurteilen."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Was ist die wichtigste Voraussetzung dafür, dass Arbeitsteilung überhaupt funktioniert?",
+          "optionen": [
+            { "text": "Ein gemeinsames Rechtssystem", "richtig": false, "echo": "Hilfreich, aber nicht der Kern. Arbeitsteilung funktioniert auch über Rechtssysteme hinweg — internationale Lieferketten sind der beste Beweis." },
+            { "text": "Tausch, und damit ein funktionierender Markt", "richtig": true, "echo": "Richtig. Wer sich spezialisiert, stellt nicht mehr her, was er selbst braucht. Er muss also tauschen können — meist über Geld als Tauschmittel. Ohne Markt wäre Spezialisierung sinnlos." },
+            { "text": "Möglichst große Betriebe", "richtig": false, "echo": "Betriebsgröße ist eine Folge der Arbeitsteilung, keine Voraussetzung. Auch sehr kleine Betriebe sind hochspezialisiert und tauschen mit anderen." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "f3",
+      "titel": "Der Wirtschaftskreislauf",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:wirtschaftskreislauf|Wirtschaftskreislauf}} ist ein Modell: Es reduziert die gesamte Volkswirtschaft auf wenige Pole und die Ströme zwischen ihnen. Die zentrale Einsicht steckt in einem Satz: ==Jedem Güterstrom steht ein entgegengesetzter Geldstrom gegenüber.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "kreislauf",
+          "kopf": "Modell",
+          "titel": "Vom einfachen zum erweiterten Kreislauf",
+          "lead": "Schalte die Pole nacheinander hinzu und sieh, wie das Modell wächst.",
+          "pole": [
+            { "id": "haushalte", "name": "Private Haushalte", "pos": "links" },
+            { "id": "unternehmen", "name": "Unternehmen", "pos": "rechts" },
+            { "id": "staat", "name": "Staat", "pos": "oben" },
+            { "id": "banken", "name": "Banken", "pos": "unten" },
+            { "id": "ausland", "name": "Ausland", "pos": "aussen" }
+          ],
+          "stufen": [
+            {
+              "name": "Einfacher Kreislauf",
+              "text": "Nur zwei Pole. Haushalte stellen Arbeit bereit und erhalten dafür Einkommen; Unternehmen liefern Güter und erhalten dafür Konsumausgaben.",
+              "pole": ["haushalte", "unternehmen"],
+              "stroeme": [
+                { "von": "haushalte", "nach": "unternehmen", "art": "guter", "label": "Arbeitsleistung" },
+                { "von": "unternehmen", "nach": "haushalte", "art": "geld", "label": "Löhne und Gehälter" },
+                { "von": "unternehmen", "nach": "haushalte", "art": "guter", "label": "Güter und Dienstleistungen" },
+                { "von": "haushalte", "nach": "unternehmen", "art": "geld", "label": "Konsumausgaben" }
+              ]
+            },
+            {
+              "name": "Mit Staat",
+              "text": "Der Staat zieht Steuern von beiden Seiten ein und gibt Leistungen zurück — Infrastruktur, Bildung, Sozialleistungen, Subventionen.",
+              "pole": ["haushalte", "unternehmen", "staat"],
+              "stroeme": [
+                { "von": "haushalte", "nach": "unternehmen", "art": "guter", "label": "Arbeitsleistung" },
+                { "von": "unternehmen", "nach": "haushalte", "art": "geld", "label": "Löhne und Gehälter" },
+                { "von": "unternehmen", "nach": "haushalte", "art": "guter", "label": "Güter" },
+                { "von": "haushalte", "nach": "unternehmen", "art": "geld", "label": "Konsumausgaben" },
+                { "von": "haushalte", "nach": "staat", "art": "geld", "label": "Steuern" },
+                { "von": "unternehmen", "nach": "staat", "art": "geld", "label": "Steuern" },
+                { "von": "staat", "nach": "haushalte", "art": "guter", "label": "Sozialleistungen" },
+                { "von": "staat", "nach": "unternehmen", "art": "guter", "label": "Subventionen, Aufträge" }
+              ]
+            },
+            {
+              "name": "Erweiterter Kreislauf",
+              "text": "Banken sammeln Ersparnisse und geben sie als Kredite weiter. Das Ausland kommt über Importe und Exporte hinzu. Damit ist das Modell vollständig.",
+              "pole": ["haushalte", "unternehmen", "staat", "banken", "ausland"],
+              "stroeme": [
+                { "von": "haushalte", "nach": "unternehmen", "art": "guter", "label": "Arbeitsleistung" },
+                { "von": "unternehmen", "nach": "haushalte", "art": "geld", "label": "Einkommen" },
+                { "von": "unternehmen", "nach": "haushalte", "art": "guter", "label": "Güter" },
+                { "von": "haushalte", "nach": "unternehmen", "art": "geld", "label": "Konsumausgaben" },
+                { "von": "haushalte", "nach": "staat", "art": "geld", "label": "Steuern" },
+                { "von": "unternehmen", "nach": "staat", "art": "geld", "label": "Steuern" },
+                { "von": "staat", "nach": "haushalte", "art": "guter", "label": "Sozialleistungen" },
+                { "von": "haushalte", "nach": "banken", "art": "geld", "label": "Ersparnisse" },
+                { "von": "banken", "nach": "unternehmen", "art": "geld", "label": "Kredite" },
+                { "von": "ausland", "nach": "unternehmen", "art": "guter", "label": "Importe" },
+                { "von": "unternehmen", "nach": "ausland", "art": "guter", "label": "Exporte" }
+              ]
+            }
+          ],
+          "regel": "Prüfungsfrage Nummer eins: Zu jedem Güterstrom gehört ein Geldstrom in die Gegenrichtung. Wer einen Pfeil einzeichnet, muss den Gegenpfeil mitdenken."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Güterstrom oder Geldstrom?",
+          "kategorien": ["Güterstrom", "Geldstrom"],
+          "aufgaben": [
+            { "text": "Ein Azubi arbeitet 8 Stunden im Betrieb.", "loesung": "Güterstrom" },
+            { "text": "Der Betrieb überweist das Gehalt.", "loesung": "Geldstrom" },
+            { "text": "Der Staat baut eine Straße.", "loesung": "Güterstrom" },
+            { "text": "Ein Haushalt zahlt Einkommensteuer.", "loesung": "Geldstrom" }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Bei Kreislaufaufgaben zeichne zuerst die zwei Pole und die vier Pfeile des einfachen Kreislaufs — die sitzen dann sicher. Alles Weitere hängst du daran an. Und beschrifte jeden Pfeil: Ein unbeschrifteter Pfeil bringt in der Prüfung keinen Punkt."
+        }
+      ]
+    }
+  ],
+
+  "zusammenfassung": [
+    "Knappheit erzwingt Wirtschaften: Bedürfnisse sind unbegrenzt, Mittel nicht.",
+    "Bedürfnis plus Kaufkraft ergibt Bedarf; Bedarf am Markt ergibt Nachfrage.",
+    "Güter: frei oder wirtschaftlich, Konsum- oder Produktionsgut.",
+    "Arbeitsteilung steigert die Produktivität und erzeugt Abhängigkeit.",
+    "Voraussetzung der Arbeitsteilung ist der Tausch über einen funktionierenden Markt.",
+    "Einfacher Kreislauf: Haushalte und Unternehmen, vier Ströme.",
+    "Erweiterter Kreislauf: zusätzlich Staat, Banken und Ausland — jedem Güterstrom steht ein Geldstrom gegenüber."
+  ],
+
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Grenze Bedürfnis, Bedarf und Nachfrage voneinander ab.",
+      "loesung": "Ein Bedürfnis ist das Gefühl eines Mangels verbunden mit dem Wunsch, ihn zu beseitigen. Trifft dieses Bedürfnis auf Kaufkraft, wird daraus ein Bedarf. Tritt der Bedarf tatsächlich am Markt auf, spricht man von Nachfrage. Der Unterschied zwischen den ersten beiden Stufen ist also das Geld, der zwischen den letzten beiden der tatsächliche Marktauftritt."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Beschreibe die vier Ströme des einfachen Wirtschaftskreislaufs.",
+      "loesung": "Die privaten Haushalte stellen den Unternehmen Arbeitsleistung zur Verfügung — ein Güterstrom. Dafür zahlen die Unternehmen Löhne und Gehälter — ein Geldstrom in die Gegenrichtung. Die Unternehmen liefern den Haushalten Güter und Dienstleistungen — wieder ein Güterstrom. Dafür zahlen die Haushalte Konsumausgaben — der vierte Strom, wieder Geld. Zu jedem Güterstrom gehört also ein entgegengesetzter Geldstrom."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Welche Pole kommen im erweiterten Wirtschaftskreislauf zum einfachen Modell hinzu, und welche Rolle spielen sie?",
+      "loesung": "Hinzu kommen der Staat, die Banken und das Ausland. Der Staat erhebt Steuern von Haushalten und Unternehmen und gibt dafür Leistungen zurück, etwa Infrastruktur, Sozialleistungen und Subventionen. Die Banken sammeln die Ersparnisse der Haushalte und leiten sie als Kredite an Unternehmen weiter. Das Ausland tritt über Importe und Exporte in den Kreislauf ein."
+    }
+  ],
+
+  "pruefungstipp": "Der Wirtschaftskreislauf wird fast immer als Zeichenaufgabe gestellt. Übe, ihn aus dem Kopf zu skizzieren — erst die beiden Pole und vier Pfeile, dann die Erweiterungen. Und achte auf die Beschriftung: Güterstrom und Geldstrom müssen unterscheidbar sein."
+}

@@ -1,0 +1,308 @@
+{
+  "id": "k3",
+  "lernfeld": "lf12",
+  "nummer": 3,
+  "titel": "Geschäftsreisen vorbereiten",
+  "untertitel": "Wer bucht, entscheidet über Kosten, Zeit und Nerven.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Eine Geschäftsreise vom Arbeitsweg abgrenzen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Verkehrsmittel und Unterkunft begründet auswählen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Reiseunterlagen vollständig zusammenstellen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Wann ist es eine Geschäftsreise?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine {{begriff:geschaeftsreise|Geschäftsreise}} ist eine vorübergehende betrieblich veranlasste Tätigkeit **außerhalb der Wohnung und der {{begriff:erste-taetigkeitsstaette|ersten Tätigkeitsstätte}}**. ==Die Abgrenzung ist keine Formalie== — sie entscheidet darüber, welche Kosten überhaupt erstattet werden dürfen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Fall",
+            "Geschäftsreise?",
+            "Begründung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Fahrt von zu Hause ins eigene Büro",
+                "nein",
+                "Weg zur ersten Tätigkeitsstätte"
+              ],
+              "detail": "**Der normale Arbeitsweg.** Er wird nicht vom Betrieb erstattet, sondern steuerlich nur über die Entfernungspauschale in der eigenen Einkommensteuererklärung berücksichtigt."
+            },
+            {
+              "zellen": [
+                "Fahrt zum Kunden in eine andere Stadt",
+                "ja",
+                "auswärtige betriebliche Tätigkeit"
+              ]
+            },
+            {
+              "zellen": [
+                "Fahrt zu einer Fortbildung",
+                "ja",
+                "betrieblich veranlasst"
+              ]
+            },
+            {
+              "zellen": [
+                "Fahrt zwischen zwei Betriebsstätten",
+                "ja",
+                "keine der beiden ist erste Tätigkeitsstätte"
+              ],
+              "detail": "**Voraussetzung ist, dass die zweite Stätte nicht dauerhaft zugeordnet ist.** Wer regelmäßig an beiden Orten arbeitet, hat trotzdem nur eine erste Tätigkeitsstätte — die legt der Arbeitgeber fest."
+            },
+            {
+              "zellen": [
+                "Private Verlängerung am Zielort",
+                "nur der berufliche Teil",
+                "private Anteile bleiben außen vor"
+              ],
+              "detail": "**Wird eine Reise privat verlängert, sind die Kosten aufzuteilen.** Die Hinfahrt bleibt in der Regel erstattungsfähig, zusätzliche Übernachtungen und Verpflegung des privaten Teils nicht."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Geschäftsreise heißt: **betrieblich veranlasst, vorübergehend, außerhalb von Wohnung und erster Tätigkeitsstätte.** Der normale Arbeitsweg zählt nicht dazu.",
+          "karteikarte": "Wann liegt eine Geschäftsreise vor, und warum ist die Abgrenzung zur ersten Tätigkeitsstätte wichtig?"
+        },
+        {
+          "typ": "achtung",
+          "text": "Die **erste Tätigkeitsstätte** wird vom Arbeitgeber festgelegt, nicht von der beschäftigten Person gewählt. Fehlt eine Festlegung, greifen gesetzliche Hilfsregeln. Wer viel auswärts arbeitet, sollte wissen, welche Stätte für ihn gilt — daran hängt jede Abrechnung."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Verkehrsmittel und Unterkunft",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Auswahl richtet sich nicht nur nach dem Preis. ==Arbeitszeit ist teurer als jedes Ticket:== Wer im Zug arbeiten kann, verliert weniger als jemand, der vier Stunden am Steuer sitzt."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Wege",
+          "titel": "Bahn oder Auto",
+          "lead": "Dieselbe Strecke, andere Rechnung. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Bahn",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Reisezeit ist nutzbar",
+                  "detail": "Mails, Vorbereitung, Telefonate. Bei vier Stunden Fahrt kann das ein halber Arbeitstag sein — der größte, meist übersehene Kostenfaktor."
+                },
+                {
+                  "text": "Preis früh buchbar, aber gebunden",
+                  "detail": "Sparpreise sind zugbunden. Verschiebt sich der Termin, verfällt das Ticket oder kostet Umbuchungsgebühr. Bei unsicheren Terminen rechnet sich der flexible Tarif."
+                },
+                {
+                  "text": "Keine Parkplatzsuche, kein Stau",
+                  "detail": "Dafür Umstiege und Verspätungsrisiko. Bei knappen Terminen einen Zug früher nehmen — das ist billiger als ein verpasster Termin."
+                },
+                {
+                  "text": "Abrechnung einfach",
+                  "detail": "Der Ticketpreis ist der Beleg. Keine Fahrtenbuchführung, keine Pauschalrechnerei."
+                }
+              ]
+            },
+            {
+              "name": "Auto",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Reisezeit ist verloren",
+                  "detail": "Am Steuer lässt sich nicht arbeiten. Diese Zeit taucht in keiner Reisekostenabrechnung auf, kostet den Betrieb aber tatsächlich Geld."
+                },
+                {
+                  "text": "Flexibel bei Terminverschiebung",
+                  "detail": "Kein gebundenes Ticket, keine Umbuchung. Bei unsicheren Terminen und mehreren Stationen an einem Tag der praktischere Weg."
+                },
+                {
+                  "text": "Sinnvoll bei Material oder schlechter Anbindung",
+                  "detail": "Messeausstattung, Muster, mehrere Orte hintereinander oder ein Ziel ohne Bahnanschluss — dann gibt es kaum eine Alternative."
+                },
+                {
+                  "text": "Mehrere Personen teilen die Kosten",
+                  "detail": "Ab drei Reisenden kippt die Rechnung häufig zugunsten des Autos, weil die Fahrtkosten nur einmal anfallen."
+                }
+              ]
+            }
+          ],
+          "regel": "Rechne immer die Arbeitszeit mit. Eine Bahnfahrt, die 40 Euro mehr kostet, aber drei nutzbare Arbeitsstunden bringt, ist die günstigere Reise — auch wenn die Reisekostenabrechnung das nicht zeigt."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Bei der Unterkunft zählt die **Lage** oft mehr als der Preis. Ein Hotel für 30 Euro mehr in Fußweite zum Termin spart Taxikosten, Zeit und den morgendlichen Stressfaktor. Buche außerdem stornierbar, wenn der Termin noch nicht endgültig steht."
+        },
+        {
+          "typ": "merke",
+          "text": "Arbeitszeit gehört in die Rechnung. **Bahn, wenn die Zeit nutzbar sein soll; Auto bei Material, mehreren Stationen oder mehreren Reisenden.** Bei der Unterkunft schlägt Lage oft den Preis.",
+          "karteikarte": "Nach welchen Gesichtspunkten wählt man das Verkehrsmittel für eine Geschäftsreise aus?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Die Reiseunterlagen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine gute Reisevorbereitung erkennt man daran, dass die reisende Person **unterwegs nichts nachfragen muss**. ==Alles, was sie braucht, liegt vorher zusammen== — und zwar auch dann noch, wenn der Akku leer ist."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Unterlage",
+            "Inhalt",
+            "Warum"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Reiseplan",
+                "Zeiten, Orte, Verbindungen, Termine",
+                "der rote Faden des Tages"
+              ],
+              "detail": "**Mit Puffern zwischen den Terminen.** Ein Reiseplan ohne Luft zerfällt beim ersten verspäteten Zug."
+            },
+            {
+              "zellen": [
+                "Tickets und Buchungen",
+                "Fahrkarte, Hotel, Mietwagen",
+                "Zugang zur Leistung"
+              ],
+              "detail": "**Zusätzlich ausgedruckt.** Ein leerer Akku am Bahnsteig ist kein seltener Sonderfall."
+            },
+            {
+              "zellen": [
+                "Kontaktdaten",
+                "Ansprechpartner, Hotel, eigener Betrieb",
+                "für Rückfragen und Störungen"
+              ]
+            },
+            {
+              "zellen": [
+                "Termininhalte",
+                "Tagesordnung, Präsentation, Unterlagen",
+                "der eigentliche Zweck der Reise"
+              ]
+            },
+            {
+              "zellen": [
+                "Formulare",
+                "Reisekostenformular, Belegumschlag",
+                "erleichtert die Abrechnung"
+              ],
+              "detail": "**Belege werden unterwegs gesammelt, nicht rekonstruiert.** Ein Umschlag in der Tasche erspart hinterher eine Stunde Suchen."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Reiseplan **mit Puffern**, Buchungen auch ausgedruckt, Kontaktdaten, Termininhalte und ein Belegumschlag. Belege werden unterwegs gesammelt, nicht hinterher gesucht.",
+          "karteikarte": "Was gehört in die Reiseunterlagen einer Geschäftsreise?"
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Kollege soll morgens um 10 Uhr in einer 300 km entfernten Stadt sein, danach zwei weitere Kunden in der Region besuchen und abends zurück. Was empfiehlst du?",
+          "optionen": [
+            {
+              "text": "Bahn — die Reisezeit lässt sich zum Arbeiten nutzen",
+              "richtig": false,
+              "echo": "Für die Hin- und Rückfahrt spräche das. Die beiden weiteren Kundenbesuche in der Region sind mit der Bahn aber kaum planbar, weil die Verbindungen zwischen kleineren Orten selten passen."
+            },
+            {
+              "text": "Auto — mehrere Stationen an einem Tag sprechen dafür",
+              "richtig": true,
+              "echo": "Richtig. Sobald an einem Tag mehrere Orte in einer Region angefahren werden, ist das Auto in der Regel die praktikablere Wahl: Die Verbindungen zwischen kleineren Orten passen selten, und jede Wartezeit auf einen Anschluss kostet mehr als die eingesparte Fahrzeit. Zu bedenken ist die lange Lenkzeit von zusammen etwa sechs bis sieben Stunden zusätzlich zu drei Terminen. Sinnvoll wäre zu prüfen, ob eine Übernachtung die Reise entzerrt — das ist oft günstiger als ein übermüdeter Mitarbeiter und ein Termin, der schlecht läuft."
+            },
+            {
+              "text": "Bahn hin, Mietwagen vor Ort",
+              "richtig": false,
+              "echo": "Eine denkbare Zwischenlösung, aber bei drei Terminen und Rückfahrt am selben Tag wird die Übergabe des Mietwagens zum zusätzlichen Zeitrisiko. Bei einer Übernachtung wäre die Variante dagegen erwägenswert."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Geschäftsreise oder nicht?",
+          "kategorien": [
+            "Geschäftsreise",
+            "Keine Geschäftsreise"
+          ],
+          "aufgaben": [
+            {
+              "text": "Fahrt von der Wohnung zum eigenen Büro.",
+              "loesung": "Keine Geschäftsreise"
+            },
+            {
+              "text": "Fahrt zu einer zweitägigen Fortbildung in Hamburg.",
+              "loesung": "Geschäftsreise"
+            },
+            {
+              "text": "Kundenbesuch in einer anderen Stadt.",
+              "loesung": "Geschäftsreise"
+            },
+            {
+              "text": "Der private Wochenendausflug im Anschluss an den Termin.",
+              "loesung": "Keine Geschäftsreise"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "{{begriff:geschaeftsreise|Geschäftsreise}}: betrieblich veranlasst, vorübergehend, außerhalb von Wohnung und erster Tätigkeitsstätte.",
+    "Die {{begriff:erste-taetigkeitsstaette|erste Tätigkeitsstätte}} legt der Arbeitgeber fest.",
+    "Der normale Arbeitsweg ist keine Geschäftsreise.",
+    "Bei privater Verlängerung sind die Kosten aufzuteilen.",
+    "Arbeitszeit gehört in den Kostenvergleich — sie ist teurer als das Ticket.",
+    "Bahn, wenn die Reisezeit nutzbar sein soll; Auto bei Material und mehreren Stationen.",
+    "Bei der Unterkunft ist die Lage oft wichtiger als der Preis.",
+    "Reiseunterlagen: Plan mit Puffern, Buchungen ausgedruckt, Kontakte, Termininhalte, Belegumschlag."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Wann liegt eine Geschäftsreise vor, und warum ist die erste Tätigkeitsstätte dafür entscheidend?",
+      "loesung": "Eine Geschäftsreise liegt vor, wenn eine beschäftigte Person vorübergehend aus betrieblichen Gründen außerhalb ihrer Wohnung und außerhalb ihrer ersten Tätigkeitsstätte tätig wird. Alle drei Merkmale müssen zusammenkommen: der betriebliche Anlass, die Vorübergehendheit und die Auswärtigkeit. Die erste Tätigkeitsstätte ist die dauerhaft zugeordnete betriebliche Einrichtung; sie wird vom Arbeitgeber festgelegt, und fehlt eine Festlegung, greifen gesetzliche Hilfsregeln. Ihre Bedeutung liegt darin, dass Fahrten dorthin der normale Arbeitsweg sind und nicht als Reisekosten erstattet werden; steuerlich wirken sie nur über die Entfernungspauschale. Erst Fahrten zu anderen Orten sind Geschäftsreisen mit erstattungsfähigen Fahrt-, Übernachtungs- und Verpflegungskosten. Wird eine Reise privat verlängert, sind die Kosten aufzuteilen; der private Anteil bleibt außen vor."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Nach welchen Gesichtspunkten wählst du Verkehrsmittel und Unterkunft aus?",
+      "loesung": "Neben dem reinen Preis ist die Arbeitszeit der wichtigste Gesichtspunkt, weil sie meist teurer ist als die Differenz zwischen zwei Tickets. Bei der Bahn ist die Reisezeit nutzbar, die Abrechnung einfach und es entfallen Parkplatzsuche und Stau; nachteilig sind Zugbindung bei Sparpreisen und das Verspätungsrisiko bei Umstiegen. Das Auto ist vorzuziehen, wenn Material transportiert werden muss, mehrere Orte an einem Tag angefahren werden, das Ziel schlecht angebunden ist oder mehrere Personen gemeinsam reisen, weil sich die Kosten dann teilen. Bei der Unterkunft ist die Lage häufig wichtiger als der Preis: Ein etwas teureres Hotel in Fußweite zum Termin spart Taxikosten, Zeit und Stress. Steht der Termin noch nicht endgültig fest, sollte stornierbar gebucht werden, weil die Stornogebühr sonst den Preisvorteil aufzehrt."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Eine Kollegin fährt Montag zu einem Kunden nach München, bleibt privat bis Mittwoch und kehrt dann zurück. Wie ordnest du das ein?",
+      "loesung": "Es liegt eine gemischt veranlasste Reise vor, die aufzuteilen ist. Betrieblich veranlasst ist der Teil, der dem Kundentermin dient, also die Hinfahrt am Montag sowie die Übernachtung und Verpflegungspauschale für den betrieblich bedingten Zeitraum. Der Aufenthalt von Montagabend bis Mittwoch ist privat veranlasst; die Übernachtungen und die Verpflegung dieser Tage sind nicht erstattungsfähig. Die Rückfahrt ist gesondert zu betrachten: Wäre sie ohne die private Verlängerung ohnehin angefallen, wird sie üblicherweise in der Höhe erstattet, in der sie bei unmittelbarer Rückkehr entstanden wäre; Mehrkosten durch den späteren Termin trägt die Kollegin. Praktisch sollte das vor Antritt der Reise schriftlich abgestimmt und in der Reisekostenabrechnung entsprechend getrennt ausgewiesen werden, damit es später keine Diskussion gibt. Da die genaue Behandlung von der betrieblichen Reisekostenregelung und den steuerlichen Vorgaben abhängt, ist im Zweifel die Personalabteilung oder die Buchhaltung einzubeziehen."
+    }
+  ],
+  "pruefungstipp": "Die Abgrenzung Geschäftsreise gegen Arbeitsweg wird fast immer abgefragt — nenne alle drei Merkmale und erwähne die erste Tätigkeitsstätte ausdrücklich. Bei Fällen zur Verkehrsmittelwahl erwartet die Musterlösung eine Begründung mit Arbeitszeit, nicht nur mit dem Ticketpreis. Und bei gemischten Reisen lautet die Antwort immer: aufteilen."
+}

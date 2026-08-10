@@ -1,0 +1,282 @@
+{
+  "id": "k1",
+  "lernfeld": "lf13",
+  "nummer": 1,
+  "titel": "Was ein Projekt ausmacht",
+  "untertitel": "Nicht jede große Aufgabe ist ein Projekt. Und das ist gut so.",
+  "minuten": 20,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Merkmale eines Projekts benennen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Das Spannungsfeld aus Zeit, Kosten und Qualität erklären",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Inhalte eines Projektauftrags aufzählen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Fünf Merkmale",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:projekt|Projekt}} unterscheidet sich vom Tagesgeschäft durch fünf Merkmale. ==Fehlt die Einmaligkeit, ist es kein Projekt, sondern ein Prozess== — und den steuert man ganz anders, nämlich mit den Mitteln aus Lernfeld 11."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Merkmal",
+            "Was es bedeutet",
+            "Gegenbeispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Einmaligkeit",
+                "so noch nie gemacht",
+                "monatliche Lohnabrechnung"
+              ],
+              "detail": "**Das entscheidende Merkmal.** Was regelmäßig wiederkehrt, gehört in einen Prozess mit Standardablauf — nicht in eine Projektorganisation mit eigener Struktur."
+            },
+            {
+              "zellen": [
+                "Klares Ziel",
+                "messbar beschrieben",
+                "„irgendwie besser werden\""
+              ]
+            },
+            {
+              "zellen": [
+                "Anfang und Ende",
+                "terminiert",
+                "laufende Kundenbetreuung"
+              ],
+              "detail": "**Ein Projekt endet.** Was kein Ende hat, ist eine Daueraufgabe — auch wenn es Projekt genannt wird."
+            },
+            {
+              "zellen": [
+                "Begrenzte Mittel",
+                "Budget, Personal, Zeit",
+                "unbegrenzte Ressourcen"
+              ]
+            },
+            {
+              "zellen": [
+                "Eigene Organisation",
+                "meist bereichsübergreifend",
+                "eine Abteilung allein"
+              ],
+              "detail": "**Daraus entsteht die typische Schwierigkeit:** Die Projektleitung führt Menschen, die ihr fachlich gar nicht unterstellt sind."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Einmalig, klares Ziel, Anfang und Ende, begrenzte Mittel, eigene Organisation.** Fehlt die Einmaligkeit, ist es ein Prozess und kein Projekt.",
+          "karteikarte": "Welche fünf Merkmale hat ein Projekt, und welches davon grenzt es vom Prozess ab?"
+        },
+        {
+          "typ": "achtung",
+          "text": "Der häufigste Fehler in Betrieben: **Alles heißt Projekt.** Das entwertet den Begriff und führt dazu, dass für echte Projekte keine eigene Organisation mehr aufgesetzt wird — sie laufen dann nebenher wie Tagesgeschäft und scheitern entsprechend."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Drei Größen, die aneinander hängen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Das {{begriff:magisches-dreieck|magische Dreieck}} beschreibt die Spannung zwischen **Zeit, Kosten und Qualität** beziehungsweise Umfang. ==Wer eine Größe verändert, verändert zwangsläufig mindestens eine andere.== Alle drei gleichzeitig zu verbessern, geht nicht."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Drei Hebel",
+          "titel": "Was passiert, wenn du drückst?",
+          "lead": "Jede Verschiebung hat einen Preis. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Termin vorziehen",
+              "satz": "schneller fertig",
+              "text": "Entweder kostet es mehr — zusätzliches Personal, Überstunden, Eilzuschläge — oder es geht zulasten des Umfangs, indem Teile später kommen. Beides ist zulässig, es muss nur entschieden werden."
+            },
+            {
+              "nr": 2,
+              "titel": "Budget kürzen",
+              "satz": "billiger machen",
+              "text": "Dann dauert es länger, weil weniger Menschen daran arbeiten, oder der Umfang wird kleiner. Ein gekürztes Budget bei gleichem Umfang und Termin ist keine Entscheidung, sondern eine Hoffnung."
+            },
+            {
+              "nr": 3,
+              "titel": "Umfang erweitern",
+              "satz": "mehr liefern",
+              "text": "Kostet Zeit oder Geld, meist beides. Der schleichende Fall ist gefährlicher als der offene: Viele kleine Zusatzwünsche, die einzeln harmlos wirken und zusammen den Plan sprengen."
+            }
+          ],
+          "regel": "Die Aufgabe der Projektleitung ist nicht, alle drei Größen zu halten — das ist selten möglich. Ihre Aufgabe ist, die Auswirkung sichtbar zu machen und den Auftraggeber entscheiden zu lassen."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Wenn ein Zusatzwunsch kommt, lautet die richtige Antwort nie „geht nicht\" und nie einfach „ja\". Sie lautet: **„Das kostet X Tage und Y Euro. Soll ich das einplanen, oder soll dafür etwas anderes entfallen?\"** Damit liegt die Entscheidung dort, wo sie hingehört."
+        },
+        {
+          "typ": "merke",
+          "text": "**Zeit, Kosten, Umfang** hängen zusammen. Wer eine Größe ändert, muss mindestens eine andere nachziehen — die Projektleitung macht das sichtbar, entscheiden tut der Auftraggeber.",
+          "karteikarte": "Was besagt das magische Dreieck, und was ist die Aufgabe der Projektleitung darin?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Der Projektauftrag",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:projektauftrag|Projektauftrag}} ist die schriftliche Grundlage. ==Ohne ihn beginnt jedes Projekt mit einem Missverständnis==, das erst kurz vor dem Endtermin auffällt — wenn die Beteiligten feststellen, dass sie verschiedene Ziele verfolgt haben."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Inhalt",
+            "Warum wichtig"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ziel, messbar formuliert",
+                "sonst weiß niemand, wann es erreicht ist"
+              ],
+              "detail": "**Messbar heißt: mit Zahl und Termin.** „Die Ablage verbessern\" ist kein Ziel. „Ab dem 1. Oktober findet jede Vertretung einen Vorgang in unter zwei Minuten\" schon."
+            },
+            {
+              "zellen": [
+                "Abgrenzung: was gehört **nicht** dazu",
+                "verhindert schleichende Ausweitung"
+              ],
+              "detail": "**Der am häufigsten vergessene Punkt** und zugleich der wirksamste. Was ausdrücklich ausgeschlossen ist, muss später nicht diskutiert werden."
+            },
+            {
+              "zellen": [
+                "Termine und Meilensteine",
+                "macht Fortschritt prüfbar"
+              ]
+            },
+            {
+              "zellen": [
+                "Budget und Ressourcen",
+                "klärt, womit gearbeitet wird"
+              ]
+            },
+            {
+              "zellen": [
+                "Projektleitung und Befugnisse",
+                "klärt, wer entscheiden darf"
+              ],
+              "detail": "**Verantwortung ohne Befugnis funktioniert nicht.** Wenn die Projektleitung keine Zusagen über Arbeitszeit machen kann, führt sie nur nominell."
+            },
+            {
+              "zellen": [
+                "Auftraggeber",
+                "wer abnimmt und entscheidet"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Der Projektauftrag enthält **Ziel, Abgrenzung, Termine, Budget, Befugnisse und Auftraggeber** — schriftlich. Die Abgrenzung ist der wirksamste und meistvergessene Teil.",
+          "karteikarte": "Welche Inhalte gehören in einen Projektauftrag, und warum ist die Abgrenzung so wichtig?"
+        },
+        {
+          "typ": "check",
+          "frage": "Der Auftraggeber sagt: „Machen Sie die Ablage mal besser, so bis zum Sommer.\" Was tust du zuerst?",
+          "optionen": [
+            {
+              "text": "Sofort anfangen — der Auftrag ist klar genug",
+              "richtig": false,
+              "echo": "Weder das Ziel noch der Termin sind bestimmt. „Besser\" ist nicht messbar, und „bis zum Sommer\" ist kein Datum. Am Ende beurteilt jeder das Ergebnis anders."
+            },
+            {
+              "text": "Einen schriftlichen Projektauftrag erarbeiten und abstimmen",
+              "richtig": true,
+              "echo": "Richtig. Der Auftrag ist in dieser Form nicht arbeitsfähig. Nötig sind ein messbares Ziel, ein konkreter Termin, das Budget, die Befugnisse und vor allem die Abgrenzung: Welche Bereiche gehören dazu, welche nicht? Erst wenn der Auftraggeber diesen Auftrag bestätigt hat, ist die gemeinsame Grundlage da. Der Aufwand dafür ist gering im Vergleich zu dem, was ein Missverständnis am Projektende kostet."
+            },
+            {
+              "text": "Ablehnen, weil der Auftrag zu unklar ist",
+              "richtig": false,
+              "echo": "Unklare Aufträge sind der Normalfall, nicht die Ausnahme. Die Aufgabe besteht gerade darin, sie gemeinsam mit dem Auftraggeber zu schärfen."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Projekt oder Prozess?",
+          "kategorien": [
+            "Projekt",
+            "Prozess"
+          ],
+          "aufgaben": [
+            {
+              "text": "Einführung eines neuen Warenwirtschaftssystems.",
+              "loesung": "Projekt"
+            },
+            {
+              "text": "Monatliche Entgeltabrechnung.",
+              "loesung": "Prozess"
+            },
+            {
+              "text": "Umzug in ein neues Bürogebäude.",
+              "loesung": "Projekt"
+            },
+            {
+              "text": "Bearbeitung eingehender Kundenaufträge.",
+              "loesung": "Prozess"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Merkmale eines {{begriff:projekt|Projekts}}: einmalig, klares Ziel, Anfang und Ende, begrenzte Mittel, eigene Organisation.",
+    "Fehlt die Einmaligkeit, handelt es sich um einen Prozess.",
+    "Das {{begriff:magisches-dreieck|magische Dreieck}} verbindet Zeit, Kosten und Umfang.",
+    "Wer eine der drei Größen ändert, muss mindestens eine andere nachziehen.",
+    "Die Projektleitung macht Auswirkungen sichtbar, entscheiden tut der Auftraggeber.",
+    "Der {{begriff:projektauftrag|Projektauftrag}} ist schriftlich und enthält Ziel, Abgrenzung, Termine, Budget und Befugnisse.",
+    "Ziele werden messbar formuliert — mit Zahl und Termin.",
+    "Verantwortung ohne Befugnis funktioniert nicht."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die Merkmale eines Projekts und erkläre, wie es sich vom Prozess unterscheidet.",
+      "loesung": "Ein Projekt ist erstens einmalig, also in dieser Form noch nicht durchgeführt worden. Zweitens hat es ein klares, messbar formuliertes Ziel. Drittens ist es zeitlich befristet, hat also einen definierten Anfang und ein definiertes Ende. Viertens stehen ihm nur begrenzte Mittel an Budget, Personal und Zeit zur Verfügung. Fünftens erhält es eine eigene, meist bereichsübergreifende Organisation. Das entscheidende Abgrenzungsmerkmal gegenüber dem Prozess ist die Einmaligkeit. Ein Prozess ist eine wiederkehrende Folge von Tätigkeiten, etwa die monatliche Entgeltabrechnung oder die Bearbeitung von Kundenaufträgen; er wird standardisiert und laufend verbessert. Ein Projekt dagegen wird einmal geplant, durchgeführt und abgeschlossen. Die Unterscheidung ist praktisch bedeutsam, weil beide völlig unterschiedlich gesteuert werden: der Prozess über Standards und Kennzahlen, das Projekt über Struktur-, Termin- und Kostenplanung."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre das magische Dreieck und was daraus für die Projektleitung folgt.",
+      "loesung": "Das magische Dreieck beschreibt die wechselseitige Abhängigkeit von Zeit, Kosten und Qualität beziehungsweise Umfang. Die drei Größen lassen sich nicht unabhängig voneinander festlegen: Wird der Termin vorgezogen, steigen entweder die Kosten durch zusätzliches Personal und Überstunden, oder der Umfang muss verringert werden. Wird das Budget gekürzt, verlängert sich die Dauer oder der Umfang schrumpft. Wird der Umfang erweitert, kostet das Zeit, Geld oder beides. Für die Projektleitung folgt daraus, dass es nicht ihre Aufgabe sein kann, alle drei Größen gleichzeitig zu halten; das ist bei einer Änderung schlicht unmöglich. Ihre Aufgabe ist es, die Auswirkung jeder gewünschten Änderung konkret zu beziffern und dem Auftraggeber die Entscheidung vorzulegen. Besonders zu beachten ist die schleichende Ausweitung des Umfangs durch viele kleine Zusatzwünsche, die einzeln harmlos wirken und in der Summe den Plan sprengen."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Du sollst die Einführung eines digitalen Dokumentenmanagements leiten. Der Auftraggeber nennt Ziel und Termin, sagt aber nichts zu Budget und Befugnissen. Was tust du?",
+      "loesung": "Ich würde einen schriftlichen Projektauftrag erarbeiten und ihn abstimmen, bevor die eigentliche Planung beginnt. Zunächst schärfe ich das Ziel so, dass es messbar ist, also mit Zahl und Termin, und ergänze die Abgrenzung: Welche Abteilungen, welche Dokumentenarten und welche Altbestände gehören dazu, und was ausdrücklich nicht? Gerade dieser Punkt verhindert später die schleichende Ausweitung. Anschließend kläre ich das Budget, und zwar sowohl für Lizenzen und externe Leistungen als auch für die interne Arbeitszeit, die häufig vergessen wird. Zu den Befugnissen frage ich konkret nach: Darf ich Arbeitszeit von Beschäftigten anderer Abteilungen verbindlich einplanen, bis zu welchem Betrag darf ich selbst beauftragen, und wer entscheidet bei Konflikten mit dem Tagesgeschäft? Verantwortung ohne diese Befugnisse wäre nur nominell. Schließlich halte ich fest, wer Auftraggeber ist und damit abnimmt, und vereinbare Meilensteine, an denen der Fortschritt überprüfbar ist. Erst nach der Bestätigung dieses Auftrags beginne ich mit dem Projektstrukturplan."
+    }
+  ],
+  "pruefungstipp": "Die fünf Projektmerkmale werden häufig als Aufzählung abgefragt — lerne sie auswendig und betone die Einmaligkeit als Abgrenzung zum Prozess. Beim magischen Dreieck lautet die erwartete Antwort immer, dass sich eine Größe nicht isoliert ändern lässt; ergänze ein konkretes Beispiel. Und wenn im Fall ein unklarer Auftrag beschrieben wird, ist die richtige erste Handlung praktisch immer der schriftliche Projektauftrag."
+}

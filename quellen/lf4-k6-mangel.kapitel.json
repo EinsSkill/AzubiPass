@@ -1,0 +1,337 @@
+{
+  "id": "k6",
+  "lernfeld": "lf4",
+  "nummer": 6,
+  "titel": "Wenn die Ware mangelhaft ist",
+  "untertitel": "Erst prüfen, dann rügen — sonst gilt sie als genehmigt.",
+  "minuten": 35,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Einen Sachmangel nach den drei Anforderungen bestimmen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Die Untersuchungs- und Rügepflicht beim Handelskauf anwenden",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die Mängelrechte in der richtigen Reihenfolge ableiten",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Wann ist Ware mangelhaft?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Seit der Reform vom 1. Januar 2022 prüft {{par:bgb-434|§ 434 BGB}} einen {{begriff:sachmangel|Sachmangel}} an drei Maßstäben. ==Neu ist dabei vor allem, dass die objektiven Anforderungen nicht mehr einfach wegvereinbart werden können== — was üblich ist, zählt auch dann, wenn im Vertrag nichts dazu steht."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Anforderung",
+            "Prüffrage",
+            "Beispiel für einen Mangel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Subjektiv",
+                "Was wurde vereinbart?",
+                "220 g/m² bestellt, 160 g/m² geliefert"
+              ],
+              "detail": "**Die vereinbarte Beschaffenheit** samt Menge, Art, Qualität und der vertraglich vorausgesetzten Verwendung. Auch zugesagtes Zubehör und Anleitungen gehören dazu."
+            },
+            {
+              "zellen": [
+                "Objektiv",
+                "Was darf man erwarten?",
+                "Druckerpapier staubt und verklebt die Walze"
+              ],
+              "detail": "**Eignung für die gewöhnliche Verwendung** und die übliche Beschaffenheit vergleichbarer Ware. Auch wenn nichts vereinbart wurde: Papier muss durch einen Drucker laufen."
+            },
+            {
+              "zellen": [
+                "Montage",
+                "Wurde richtig montiert oder erklärt?",
+                "Regal kippt wegen falscher Anleitung"
+              ],
+              "detail": "**Auch die fehlerhafte Anleitung ist ein Sachmangel** — im Volksmund die IKEA-Klausel. Voraussetzung ist, dass die falsche Anleitung tatsächlich zum Schaden führt."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Daneben stellt {{par:bgb-434|§ 434 BGB}} zwei Fälle dem Sachmangel ausdrücklich gleich: die **Falschlieferung** — geliefert wird etwas anderes als bestellt — und die **Zuweniglieferung**. Beides wird also nach denselben Regeln behandelt wie schlechte Qualität."
+        },
+        {
+          "typ": "merke",
+          "text": "Drei Maßstäbe: **vereinbart, üblich, richtig montiert.** Falsch- und Zuweniglieferung gelten ebenfalls als Sachmangel. Entscheidend ist immer der Zustand bei **Gefahrübergang**.",
+          "karteikarte": "An welchen drei Anforderungen misst § 434 BGB einen Sachmangel, und welche zwei Fälle stehen ihm gleich?"
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein Mangel muss **bei Gefahrübergang** vorgelegen haben. Was der Käufer später selbst kaputt macht, ist kein Mangel. Bei „ab Werk\" ist der maßgebliche Zeitpunkt die Übergabe an den Frachtführer — ein Transportschaden ist deshalb kein Sachmangel, sondern ein Fall für den Frachtführer."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Die Rügepflicht unter Kaufleuten",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Zwischen Kaufleuten gilt eine Regel, die im Verbrauchergeschäft fehlt und die viele Rechte kostet: {{par:hgb-377|§ 377 HGB}}. Der Käufer muss die Ware **unverzüglich untersuchen** und Mängel **unverzüglich anzeigen**. ==Wer schweigt, verliert seine Mängelrechte vollständig — die Ware gilt als genehmigt.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Die Frist",
+          "titel": "Untersuchen, rügen, Rechte behalten",
+          "lead": "Vier Schritte nach dem Wareneingang. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Wareneingang",
+              "satz": "die Uhr läuft",
+              "text": "Mit der Ablieferung beginnt die Pflicht. „Unverzüglich\" heißt ohne schuldhaftes Zögern — je nach Ware und Betriebsgröße sind das Stunden bis wenige Tage, keine Wochen."
+            },
+            {
+              "nr": 2,
+              "titel": "Untersuchen",
+              "satz": "soweit tunlich",
+              "text": "Verlangt wird eine im ordnungsgemäßen Geschäftsgang zumutbare Prüfung — bei größeren Mengen genügt eine Stichprobe. Niemand muss jede einzelne Schraube einzeln messen."
+            },
+            {
+              "nr": 3,
+              "titel": "Offene Mängel rügen",
+              "satz": "unverzüglich",
+              "text": "Was bei dieser Untersuchung erkennbar ist, muss sofort angezeigt werden. Die Rüge braucht keine Form, sollte aber beweisbar sein — also schriftlich, mit Angabe von Art und Umfang des Mangels."
+            },
+            {
+              "nr": 4,
+              "titel": "Versteckte Mängel",
+              "satz": "unverzüglich nach Entdeckung",
+              "text": "Zeigt sich der Mangel erst später im Gebrauch, läuft die Frist ab der Entdeckung neu. Die Verjährung nach § 438 BGB läuft davon unabhängig weiter — sie wird durch die Rüge nicht verlängert."
+            }
+          ],
+          "regel": "Die Ausnahme: Hat der Verkäufer den Mangel arglistig verschwiegen, kann er sich auf eine versäumte Rüge nicht berufen. Wer täuscht, soll aus der Nachlässigkeit des anderen keinen Vorteil ziehen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Situation",
+            "Gilt § 377 HGB?",
+            "Folge bei Schweigen"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Betrieb kauft bei Betrieb",
+                "ja",
+                "Rechte verloren, Ware genehmigt"
+              ],
+              "detail": "**Der beiderseitige Handelskauf** — beide Seiten sind Kaufleute. Genau der Normalfall in der Beschaffung."
+            },
+            {
+              "zellen": [
+                "Verbraucher kauft bei Betrieb",
+                "nein",
+                "Rechte bleiben bis zur Verjährung"
+              ],
+              "detail": "**Privatkunden trifft keine Rügepflicht.** Sie haben zwei Jahre Zeit — deshalb ist die Rechtslage im Verbrauchergeschäft für den Käufer deutlich komfortabler."
+            },
+            {
+              "zellen": [
+                "Verkäufer hat den Mangel arglistig verschwiegen",
+                "Berufung ausgeschlossen",
+                "Rechte bleiben trotz Schweigen"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Eure Lieferung Kopierpapier kommt am Montag. Am Freitag fällt beim Auspacken der dritten Palette auf, dass die Bögen zu dünn sind. Ihr rügt am folgenden Montag. Was gilt?",
+          "optionen": [
+            {
+              "text": "Alles in Ordnung — zwei Jahre Gewährleistung laufen ja",
+              "richtig": false,
+              "echo": "Die zwei Jahre aus § 438 BGB sind die Verjährungsfrist. Beim Handelskauf steht davor die Rügepflicht aus § 377 HGB, und die ist viel kürzer."
+            },
+            {
+              "text": "Kritisch — die zu dünne Ware wäre bei einer zumutbaren Prüfung sofort aufgefallen",
+              "richtig": true,
+              "echo": "Richtig. Die Papierstärke ist ein offener Mangel, den eine stichprobenartige Prüfung beim Wareneingang gezeigt hätte. Eine Woche später ist nicht mehr unverzüglich — die Ware gilt als genehmigt und die Mängelrechte sind verloren. Anders läge es nur, wenn der Lieferer den Mangel arglistig verschwiegen hätte."
+            },
+            {
+              "text": "Unproblematisch — versteckte Mängel dürfen später gerügt werden",
+              "richtig": false,
+              "echo": "Ein versteckter Mangel ist einer, den man bei zumutbarer Untersuchung nicht erkennen kann. Eine abweichende Papierstärke gehört nicht dazu, die sieht und fühlt man beim ersten Griff."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Welche Rechte der Käufer hat",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{par:bgb-437|§ 437 BGB}} zählt die Rechte auf — aber sie stehen **nicht gleichrangig nebeneinander**. Die {{begriff:nacherfuellung|Nacherfüllung}} kommt zuerst. Der Verkäufer soll die Chance bekommen, seinen Fehler selbst zu beheben, bevor der Vertrag angetastet wird."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Die Stufen",
+          "titel": "In dieser Reihenfolge, nicht anders",
+          "lead": "Wer Stufe 1 überspringt, verliert im Streit. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Nacherfüllung verlangen",
+              "satz": "§ 439 BGB · Käufer wählt",
+              "text": "Reparatur oder Ersatzlieferung — die Wahl hat der Käufer. Alle nötigen Aufwendungen wie Transport, Arbeit und Material trägt der Verkäufer. Dazu gehört eine angemessene Frist."
+            },
+            {
+              "nr": 2,
+              "titel": "Frist verstreicht erfolglos",
+              "satz": "oder Nacherfüllung schlägt fehl",
+              "text": "Erst jetzt öffnet sich die zweite Stufe. Die Frist ist entbehrlich, wenn der Verkäufer die Nacherfüllung ernsthaft verweigert oder sie zweimal misslungen ist."
+            },
+            {
+              "nr": 3,
+              "titel": "Rücktritt oder Minderung",
+              "satz": "§ 323 · § 441 BGB",
+              "text": "Rücktritt löst den Vertrag auf, beide geben zurück. Minderung behält die Ware und senkt den Preis. Bei nur unerheblichem Mangel ist der Rücktritt ausgeschlossen — die Minderung bleibt."
+            },
+            {
+              "nr": 4,
+              "titel": "Schadensersatz",
+              "satz": "zusätzlich möglich",
+              "text": "Deckt, was über die Ware hinaus entstanden ist: Produktionsausfall, Mehrkosten des Deckungskaufs, vergebliche Aufwendungen. Setzt in der Regel Verschulden des Verkäufers voraus."
+            }
+          ],
+          "regel": "Merksatz: Nacherfüllung zuerst, alles andere danach. Wer sofort mindert oder zurücktritt, ohne dem Verkäufer die Nachbesserung angeboten zu haben, steht im Streit schlecht da."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Recht",
+            "Vertrag",
+            "Passt, wenn"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "{{begriff:nacherfuellung|Nacherfüllung}}",
+                "bleibt bestehen",
+                "die Ware weiter gebraucht wird"
+              ]
+            },
+            {
+              "zellen": [
+                "{{begriff:minderung|Minderung}}",
+                "bleibt bestehen",
+                "die Ware trotz Mangel brauchbar ist"
+              ],
+              "detail": "**Der Kaufpreis sinkt im Verhältnis der Werte** nach {{par:bgb-441|§ 441 BGB}}. Praktisch wird meist ein Prozentsatz verhandelt — das ist schneller als jedes Gutachten."
+            },
+            {
+              "zellen": [
+                "Rücktritt",
+                "wird rückabgewickelt",
+                "die Ware unbrauchbar ist"
+              ],
+              "detail": "**Ausgeschlossen bei unerheblicher Pflichtverletzung.** Ein kleiner Kratzer an der Rückwand rechtfertigt keine Rückabwicklung des ganzen Vertrags."
+            },
+            {
+              "zellen": [
+                "Schadensersatz",
+                "je nach Art",
+                "über die Ware hinaus Schaden entstand"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Zeitlich begrenzt {{par:bgb-438|§ 438 BGB}} die Ansprüche: **zwei Jahre ab Ablieferung** bei beweglichen Sachen, **fünf Jahre** bei Bauwerken und dafür verwendetem Material. Hat der Verkäufer arglistig getäuscht, gilt die regelmäßige {{begriff:verjaehrung|Verjährung}} von drei Jahren nach {{par:bgb-195|§ 195 BGB}}."
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Warum Verjährung und Rügefrist zwei verschiedene Dinge sind",
+          "absaetze": [
+            "Die **Rügefrist** aus {{par:hgb-377|§ 377 HGB}} entscheidet, ob Rechte überhaupt entstehen. Wer nicht rechtzeitig rügt, hat gar keine Ansprüche — die Ware gilt als genehmigt.",
+            "Die **Verjährungsfrist** aus {{par:bgb-438|§ 438 BGB}} entscheidet, wie lange bestehende Ansprüche durchsetzbar bleiben. Sie läuft ab Ablieferung, unabhängig davon, wann der Mangel entdeckt wurde.",
+            "Beides zusammen heißt: Ein versteckter Mangel, der nach 23 Monaten auffällt, muss zwar unverzüglich gerügt werden — aber einen Monat später ist der Anspruch trotzdem verjährt. Die Rüge verlängert die Verjährung nicht."
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welches Recht passt hier am besten?",
+          "kategorien": [
+            "Nacherfüllung",
+            "Minderung",
+            "Rücktritt"
+          ],
+          "aufgaben": [
+            {
+              "text": "Von 500 Ordnern haben 20 einen Kratzer, verwendbar sind sie alle.",
+              "loesung": "Minderung"
+            },
+            {
+              "text": "Der gelieferte Drucker läuft nicht, der Lieferer bietet Austausch an.",
+              "loesung": "Nacherfüllung"
+            },
+            {
+              "text": "Zweimal Ersatz geliefert, beide Male defekt, Termin längst vorbei.",
+              "loesung": "Rücktritt"
+            },
+            {
+              "text": "Statt 220 g/m² kam 160 g/m² — der Lieferer will sofort umtauschen.",
+              "loesung": "Nacherfüllung"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "{{par:bgb-434|§ 434 BGB}}: Sachmangel bei Abweichung von subjektiven, objektiven oder Montageanforderungen.",
+    "Falschlieferung und Zuweniglieferung stehen dem Sachmangel gleich.",
+    "Maßgeblich ist der Zustand bei Gefahrübergang, nicht bei Entdeckung.",
+    "{{par:hgb-377|§ 377 HGB}}: Beim beiderseitigen Handelskauf unverzüglich untersuchen und rügen.",
+    "Offene Mängel sofort, versteckte unverzüglich nach Entdeckung — sonst gilt die Ware als genehmigt.",
+    "Bei arglistigem Verschweigen kann sich der Verkäufer nicht auf die versäumte Rüge berufen.",
+    "{{par:bgb-437|§ 437 BGB}}: Nacherfüllung zuerst, danach Rücktritt oder Minderung, dazu Schadensersatz.",
+    "{{par:bgb-438|§ 438 BGB}}: zwei Jahre ab Ablieferung, fünf Jahre bei Bauwerken."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre die Untersuchungs- und Rügepflicht nach § 377 HGB und ihre Folgen.",
+      "loesung": "Beim beiderseitigen Handelskauf muss der Käufer die Ware unverzüglich nach der Ablieferung untersuchen, soweit dies im ordnungsgemäßen Geschäftsgang tunlich ist, und einen dabei erkennbaren Mangel unverzüglich anzeigen. Unverzüglich bedeutet ohne schuldhaftes Zögern, nicht sofort. Bei größeren Mengen genügt eine stichprobenartige Prüfung. Unterlässt der Käufer die Anzeige, gilt die Ware als genehmigt und sämtliche Mängelrechte sind verloren. Zeigt sich ein Mangel erst später und war er bei der Untersuchung nicht erkennbar, muss er unverzüglich nach der Entdeckung gerügt werden. Hat der Verkäufer den Mangel arglistig verschwiegen, kann er sich auf eine versäumte Rüge nicht berufen. Für Verbraucher gilt diese Pflicht nicht."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "In welcher Reihenfolge stehen die Mängelrechte, und warum ist die Reihenfolge wichtig?",
+      "loesung": "Vorrangig ist die Nacherfüllung nach § 439 BGB; der Käufer wählt zwischen Beseitigung des Mangels und Lieferung einer mangelfreien Sache, die erforderlichen Aufwendungen trägt der Verkäufer. Erst wenn eine angemessene Frist zur Nacherfüllung erfolglos verstrichen ist oder die Nacherfüllung fehlschlägt oder verweigert wird, kann der Käufer nach § 323 BGB zurücktreten oder nach § 441 BGB den Kaufpreis mindern. Schadensersatz kann daneben verlangt werden. Die Reihenfolge ist wichtig, weil der Verkäufer die Gelegenheit haben soll, seinen Fehler selbst zu beheben, bevor der Vertrag rückabgewickelt wird. Wer sofort zurücktritt, ohne Nacherfüllung verlangt zu haben, hat im Streit die schlechtere Position. Bei nur unerheblichem Mangel ist der Rücktritt zudem ausgeschlossen, die Minderung bleibt möglich."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ihr erhaltet am 3. Mai 40 Bürostühle. Am 4. Mai fällt bei der Prüfung auf, dass 12 Stühle eine defekte Gasdruckfeder haben. Ihr rügt am 5. Mai schriftlich. Der Lieferer bietet Reparatur an, ihr wollt lieber Ersatz. Wie ist die Lage?",
+      "loesung": "Die Rügepflicht ist eingehalten: Der Mangel wurde bei der Untersuchung nach der Ablieferung entdeckt und einen Tag später angezeigt, das ist unverzüglich im Sinne des § 377 HGB. Die Mängelrechte bleiben also erhalten. Es liegt ein Sachmangel nach § 434 BGB vor, weil die Stühle nicht die übliche Beschaffenheit aufweisen, die man erwarten kann. Nach § 437 BGB steht zunächst die Nacherfüllung im Vordergrund, und das Wahlrecht zwischen Beseitigung des Mangels und Lieferung einer mangelfreien Sache liegt nach § 439 BGB beim Käufer. Ihr könnt also auf Ersatzlieferung für die zwölf Stühle bestehen; der Lieferer kann die gewählte Art nur verweigern, wenn sie mit unverhältnismäßigen Kosten verbunden wäre. Dafür ist ihm eine angemessene Frist zu setzen. Erst wenn diese erfolglos verstreicht, kommen Rücktritt oder Minderung in Betracht — wobei sich der Rücktritt hier sinnvollerweise nur auf die zwölf mangelhaften Stühle bezöge."
+    }
+  ],
+  "pruefungstipp": "Dieses Kapitel liefert die häufigste Fallaufgabe des Lernfelds. Arbeite immer in drei Schritten: Erstens, liegt überhaupt ein Sachmangel nach § 434 BGB vor? Zweitens, wurde rechtzeitig gerügt — beim Handelskauf ist das die entscheidende Hürde. Drittens, welche Rechte folgen daraus, und zwar in der Reihenfolge des § 437 BGB. Wer Schritt zwei überspringt, verliert Punkte, obwohl die Rechtsfolgen stimmen."
+}

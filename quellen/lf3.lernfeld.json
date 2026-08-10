@@ -1,0 +1,62 @@
+{
+  "id": "lf3",
+  "titel": "Aufträge bearbeiten",
+  "kurztitel": "Lernfeld 3",
+  "untertitel": "1. Ausbildungsjahr · Zeitrichtwert 80 Stunden",
+  "linie": "A",
+  "stand": "2026-07",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Von der Anfrage bis zur *Rechnung*.",
+    "lead": "Wie aus zwei Sätzen ein Vertrag wird, welcher Beleg wann entsteht und wer woran gebunden ist. Das komplette Lernfeld 3.",
+    "fakten": [
+      "6 Kapitel",
+      "80 Stunden",
+      "1. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf3-k1-prozess.kapitel.json",
+      "titel": "Der Auftragsprozess im Überblick",
+      "minuten": 20,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf3-k2-vertrag.kapitel.json",
+      "titel": "Wie ein Vertrag entsteht",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf3-k3-angebot.kapitel.json",
+      "titel": "Anfrage und Angebot",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf3-k4-bestellung.kapitel.json",
+      "titel": "Bestellung und Auftragsbestätigung",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k5",
+      "datei": "lf3-k5-rechnung.kapitel.json",
+      "titel": "Lieferung und Rechnung",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k6",
+      "datei": "lf3-k6-din5008.kapitel.json",
+      "titel": "Geschäftsbriefe nach DIN 5008",
+      "minuten": 25,
+      "frei": false
+    }
+  ]
+}

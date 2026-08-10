@@ -1,0 +1,277 @@
+{
+  "id": "k6",
+  "lernfeld": "lf5",
+  "nummer": 6,
+  "titel": "Kommunikationspolitik und Kundenbindung",
+  "untertitel": "Wie du gehört wirst — und warum das Halten günstiger ist als das Gewinnen.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Die Instrumente der Kommunikationspolitik unterscheiden",
+      "abschnitt": "f1"
+    },
+    {
+      "id": "lz2",
+      "text": "Eine Werbemaßnahme nach der AIDA-Formel planen und rechtliche Grenzen beachten",
+      "abschnitt": "f2"
+    },
+    {
+      "id": "lz3",
+      "text": "Maßnahmen der Kundenbindung begründen und Beschwerden nutzen",
+      "abschnitt": "f3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "f1",
+      "titel": "Vier Arten zu sprechen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:kommunikationspolitik|Kommunikationspolitik}} ist alles, womit ein Betrieb über sich und seine Leistung spricht. Werbung ist nur ein Teil davon — und selten der wirksamste."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Instrument",
+            "Was es tut",
+            "Beispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Werbung",
+                "bezahlte Botschaft an viele",
+                "Anzeige, Plakat, Onlinewerbung"
+              ]
+            },
+            {
+              "zellen": [
+                "Verkaufsförderung",
+                "kurzfristiger Anstoß am Verkaufsort",
+                "Aktionspreis, Warenprobe, Display"
+              ],
+              "detail": "**{{begriff:verkaufsfoerderung|Verkaufsförderung}} ist immer befristet.** Wird sie dauerhaft, gewöhnt sich der Kunde daran und sie verliert ihre Wirkung — dann ist sie faktisch eine Preissenkung."
+            },
+            {
+              "zellen": [
+                "Öffentlichkeitsarbeit",
+                "Ansehen des Betriebs pflegen",
+                "Pressemitteilung, Tag der offenen Tür, Sponsoring"
+              ],
+              "detail": "**Der Unterschied zur Werbung:** {{begriff:oeffentlichkeitsarbeit|Öffentlichkeitsarbeit}} bewirbt kein Produkt, sondern den Betrieb als Ganzes. Sie wirkt langsamer, dafür glaubwürdiger — weil sie nicht wie Werbung aussieht."
+            },
+            {
+              "zellen": [
+                "Persönlicher Verkauf",
+                "direktes Gespräch mit dem Kunden",
+                "Außendienst, Beratung, Messe"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Werbung erreicht viele oberflächlich, der persönliche Verkauf wenige gründlich. Je erklärungsbedürftiger und teurer das Produkt, desto weiter verschiebt sich das Gewicht zum Gespräch.",
+          "karteikarte": "Welche vier Instrumente hat die Kommunikationspolitik, und wodurch unterscheidet sich Öffentlichkeitsarbeit von Werbung?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "f2",
+      "titel": "Werbung planen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Werbung wirkt nicht, weil sie schön ist, sondern weil sie eine Reihenfolge einhält. Die bekannteste Beschreibung dieser Reihenfolge ist die {{begriff:aida|AIDA-Formel}}. Sie ist über hundert Jahre alt und beschreibt trotzdem noch, warum die meisten Anzeigen scheitern: ==Sie springen von der Aufmerksamkeit direkt zur Handlung.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Vier Stufen",
+          "titel": "Die AIDA-Formel",
+          "lead": "Jede Stufe setzt die vorherige voraus. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Attention — Aufmerksamkeit",
+              "satz": "Wahrgenommen werden",
+              "text": "Ohne diesen Schritt passiert nichts Weiteres. Auffälliges Bild, ungewöhnliche Zahl, direkte Frage. Die schwierigste Stufe, weil hier alle anderen Botschaften konkurrieren."
+            },
+            {
+              "nr": 2,
+              "titel": "Interest — Interesse",
+              "satz": "Relevanz zeigen",
+              "text": "Der Empfänger muss erkennen, dass es um ihn geht. Hier entscheidet sich, ob er weiterliest — mit einem Nutzen, nicht mit einer Produkteigenschaft."
+            },
+            {
+              "nr": 3,
+              "titel": "Desire — Wunsch",
+              "satz": "Besitzen wollen",
+              "text": "Aus „interessant“ wird „das will ich“. Dafür braucht es einen konkreten Vorteil und meist einen Beweis: Zahl, Beispiel, Testergebnis."
+            },
+            {
+              "nr": 4,
+              "titel": "Action — Handlung",
+              "satz": "Den nächsten Schritt möglich machen",
+              "text": "Bestellnummer, Link, Telefonnummer, Öffnungszeit. Wer keinen klaren nächsten Schritt anbietet, verliert genau hier alle, die er überzeugt hat."
+            }
+          ],
+          "regel": "Der häufigste Fehler ist die übersprungene dritte Stufe: Aufmerksamkeit erzeugen und sofort zum Kauf auffordern, ohne je einen Grund geliefert zu haben."
+        },
+        {
+          "typ": "absatz",
+          "text": "Werbung hat rechtliche Grenzen, und zwei davon trifft jeder Azubi im Büroalltag. {{par:uwg-5|§ 5 UWG}} verbietet irreführende Angaben — auch Übertreibungen, die als Tatsache erscheinen. Und {{par:uwg-7|§ 7 UWG}} verlangt für Werbung per E-Mail, Telefon oder Fax grundsätzlich die ==vorherige ausdrückliche Einwilligung==."
+        },
+        {
+          "typ": "achtung",
+          "text": "Eine Werbemail an einen Geschäftskunden, der nie eingewilligt hat, ist keine Bagatelle: Sie ist eine unzumutbare Belästigung im Sinne des Gesetzes und kann abgemahnt werden. Auch die Adressen aus einer gekauften Liste ändern daran nichts — die Einwilligung muss dir gegenüber erteilt worden sein."
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Anzeige zeigt ein auffälliges Bild und darunter groß „Jetzt bestellen!“ — sonst nichts. Welche AIDA-Stufe fehlt?",
+          "optionen": [
+            {
+              "text": "Attention",
+              "richtig": false,
+              "echo": "Die ist vorhanden: Das auffällige Bild erzeugt Aufmerksamkeit. Genau daran scheitert die Anzeige aber nicht."
+            },
+            {
+              "text": "Interest und Desire",
+              "richtig": true,
+              "echo": "Richtig. Zwischen Aufmerksamkeit und Handlungsaufforderung fehlt jeder Grund: kein Nutzen, kein Vorteil, kein Beleg. Der Empfänger weiß nicht, worum es geht und warum es ihn betrifft — die Aufforderung läuft deshalb ins Leere."
+            },
+            {
+              "text": "Action",
+              "richtig": false,
+              "echo": "„Jetzt bestellen“ ist die Handlungsaufforderung — sie ist da. Nur fehlt jeder Grund, ihr zu folgen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "f3",
+      "titel": "Kunden halten",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Titel dieses Lernfelds nennt zwei Dinge: akquirieren **und** binden. Der zweite Teil wird meist unterschätzt, obwohl er der wirtschaftlichere ist — ==einen bestehenden Kunden zu halten kostet ein Vielfaches weniger, als einen neuen zu gewinnen==, weil Erstansprache, Vertrauensaufbau und Erstberatung entfallen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Art der Bindung",
+            "Wie sie wirkt",
+            "Beispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Wirtschaftlich",
+                "ein Wechsel kostet Geld",
+                "Rahmenvertrag, Bonusprogramm"
+              ]
+            },
+            {
+              "zellen": [
+                "Technisch",
+                "ein Wechsel kostet Aufwand",
+                "eingebundene Schnittstelle, geschulte Mitarbeiter"
+              ]
+            },
+            {
+              "zellen": [
+                "Vertraglich",
+                "ein Wechsel ist zeitweise ausgeschlossen",
+                "Laufzeit, Kündigungsfrist"
+              ],
+              "detail": "**Vorsicht mit dieser Form.** Wer nur bleibt, weil er muss, ist kein gebundener Kunde, sondern ein wartender. Sobald die Frist abläuft, ist er weg — und er erzählt anderen davon."
+            },
+            {
+              "zellen": [
+                "Emotional",
+                "ein Wechsel lohnt nicht",
+                "Zufriedenheit, persönlicher Ansprechpartner, Vertrauen"
+              ],
+              "detail": "**Die einzige Bindung, die freiwillig ist** — und deshalb die einzige, die auch Empfehlungen erzeugt. Sie entsteht nicht durch Programme, sondern durch verlässliche Erfahrungen."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Die technische Grundlage dafür ist das {{begriff:crm|Kundenbeziehungsmanagement}}: eine Datenbank, in der Kontakte, Käufe, Angebote und Anliegen zusammenlaufen. Sie ersetzt keine Beziehung, aber sie ermöglicht sie — weil jeder im Betrieb weiß, was zuletzt besprochen wurde."
+        },
+        {
+          "typ": "merke",
+          "text": "Ein {{begriff:beschwerdemanagement|gut behandelter Beschwerdeführer}} ist danach oft treuer als ein Kunde, der nie ein Problem hatte. Der Grund: Er hat erlebt, dass du auch dann verlässlich bist, wenn etwas schiefgeht — und genau das kann keine Werbung behaupten.",
+          "karteikarte": "Warum kann eine gut bearbeitete Beschwerde die Kundenbindung stärken?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Art der Kundenbindung liegt vor?",
+          "kategorien": [
+            "Wirtschaftlich",
+            "Technisch",
+            "Vertraglich",
+            "Emotional"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Kunde hat eine Mindestlaufzeit von 24 Monaten unterschrieben.",
+              "loesung": "Vertraglich"
+            },
+            {
+              "text": "Die Bestellsoftware des Kunden ist an unser System angebunden.",
+              "loesung": "Technisch"
+            },
+            {
+              "text": "Ab dem dritten Jahr steigt der Treuerabatt.",
+              "loesung": "Wirtschaftlich"
+            },
+            {
+              "text": "Der Kunde ruft immer denselben Ansprechpartner an und vertraut ihm.",
+              "loesung": "Emotional"
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Wenn eine Beschwerde eingeht, entscheiden die ersten Minuten. Vier Schritte, die fast immer funktionieren: zuhören ohne zu unterbrechen, den Ärger anerkennen, eine konkrete Lösung mit Termin nennen, und nachfassen, ob sie gewirkt hat. Der letzte Schritt wird fast immer vergessen — und ist der, an den sich der Kunde erinnert."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Kommunikationspolitik: Werbung, Verkaufsförderung, Öffentlichkeitsarbeit, persönlicher Verkauf.",
+    "Verkaufsförderung ist immer befristet; dauerhaft wird sie zur Preissenkung.",
+    "Öffentlichkeitsarbeit bewirbt den Betrieb, nicht das Produkt.",
+    "AIDA: Attention, Interest, Desire, Action — jede Stufe setzt die vorherige voraus.",
+    "{{par:uwg-5|§ 5 UWG}} verbietet irreführende Werbung.",
+    "{{par:uwg-7|§ 7 UWG}} verlangt für Werbung per Mail, Telefon oder Fax die vorherige Einwilligung.",
+    "Kundenbindung: wirtschaftlich, technisch, vertraglich, emotional — nur die emotionale ist freiwillig.",
+    "Einen Kunden zu halten ist deutlich günstiger, als einen neuen zu gewinnen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre die vier Stufen der AIDA-Formel und nenne für jede eine konkrete Umsetzung.",
+      "loesung": "Attention: Aufmerksamkeit gewinnen, etwa durch ein auffälliges Bild oder eine überraschende Zahl. Interest: Interesse wecken, indem der Nutzen für den Empfänger benannt wird. Desire: den Wunsch erzeugen, das Produkt zu besitzen, meist über einen konkreten Vorteil mit Beleg. Action: die Handlung ermöglichen, durch Bestellnummer, Link, Telefonnummer oder Öffnungszeit. Jede Stufe setzt die vorherige voraus."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die vier Arten der Kundenbindung und beurteile, welche am tragfähigsten ist.",
+      "loesung": "Wirtschaftliche Bindung über Rabatte und Bonusprogramme, technische Bindung über eingebundene Systeme, vertragliche Bindung über Laufzeiten und emotionale Bindung über Zufriedenheit und Vertrauen. Am tragfähigsten ist die emotionale Bindung, weil sie freiwillig ist: Der Kunde bleibt, weil er will, nicht weil ein Wechsel Kosten oder Aufwand verursacht. Nur sie führt außerdem zu Weiterempfehlungen."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Kollege will eine Werbemail an 500 Adressen aus einer gekauften Liste schicken. Wie beurteilst du das?",
+      "loesung": "Das ist unzulässig. Nach § 7 UWG setzt Werbung per E-Mail grundsätzlich die vorherige ausdrückliche Einwilligung des Empfängers voraus; ohne sie liegt eine unzumutbare Belästigung vor, die abgemahnt werden kann. Eine gekaufte Adressliste ändert daran nichts, weil die Einwilligung gegenüber dem werbenden Betrieb erteilt sein muss. Zulässig wären stattdessen Empfänger, die selbst eingewilligt haben, oder Werbewege ohne Einwilligungserfordernis wie Anzeigen oder Postwurfsendungen."
+    }
+  ],
+  "pruefungstipp": "AIDA wird fast immer abgefragt — oft, indem eine misslungene Anzeige gezeigt und nach der fehlenden Stufe gefragt wird. Meist fehlt Desire. Beim Werberecht reichen zwei Merksätze: nichts Irreführendes, und für Mail, Telefon und Fax braucht es die Einwilligung vorher."
+}

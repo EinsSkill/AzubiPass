@@ -1,0 +1,299 @@
+{
+  "id": "k2",
+  "lernfeld": "lf7",
+  "nummer": 2,
+  "titel": "Was in einer Nachricht steckt",
+  "untertitel": "Vier Botschaften auf einmal — und fünf Regeln, die immer gelten.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Die vier Seiten einer Nachricht unterscheiden und anwenden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Missverständnisse mit dem Vier-Ohren-Modell erklären",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die Axiome von Watzlawick auf Gesprächssituationen beziehen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Vier Botschaften in einem Satz",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Friedemann Schulz von Thun hat beschrieben, dass jede Nachricht ==vier Botschaften gleichzeitig== enthält. Der Sender spricht mit vier Schnäbeln, der Empfänger hört mit vier Ohren — und beide betonen selten dasselbe. Genau daraus entstehen die meisten Missverständnisse im Büro."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Vier Seiten",
+          "titel": "„Der Drucker ist schon wieder leer.“",
+          "lead": "Ein einziger Satz, gesagt von einer Kollegin. Vier Botschaften. Jede anklicken.",
+          "seiten": [
+            {
+              "name": "Sachinhalt · Worüber ich informiere",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Im Drucker ist kein Papier mehr.",
+                  "detail": "Die reine Tatsache, überprüfbar, ohne Wertung. Diese Ebene ist die einzige, über die sich streiten lässt, ohne dass es persönlich wird."
+                },
+                {
+                  "text": "„schon wieder“ deutet auf Wiederholung",
+                  "detail": "Auch ein sachliches Detail — es sagt, dass der Zustand nicht zum ersten Mal auftritt."
+                }
+              ]
+            },
+            {
+              "name": "Selbstoffenbarung · Was ich von mir zeige",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Mich stört das.",
+                  "detail": "Jede Nachricht verrät etwas über den Sender — hier Ärger oder Erschöpfung. Der Sender will das meist gar nicht mitteilen, tut es aber unvermeidlich."
+                },
+                {
+                  "text": "Ich achte darauf, dass Dinge funktionieren.",
+                  "detail": "Auch das ist Selbstoffenbarung: ein Bild davon, wie jemand sich selbst sieht und gesehen werden möchte."
+                }
+              ]
+            },
+            {
+              "name": "Beziehung · Wie ich zu dir stehe",
+              "ton": "rot",
+              "punkte": [
+                {
+                  "text": "Ich traue dir zu, dass du dich kümmerst.",
+                  "detail": "Wohlwollend gehört. Diese Ebene wird fast nie ausgesprochen und trotzdem immer mitgehört — an Tonfall, Blick und Wortwahl."
+                },
+                {
+                  "text": "Oder: Du bist dafür zuständig und hast es versäumt.",
+                  "detail": "Derselbe Satz, feindlich gehört. Wer auf diesem Ohr empfindlich ist, hört fast überall einen Vorwurf — und reagiert entsprechend."
+                }
+              ]
+            },
+            {
+              "name": "Appell · Wozu ich dich bringen will",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Füll bitte Papier nach.",
+                  "detail": "Der Wunsch, der hinter der Nachricht steht. Er wird häufig nicht ausgesprochen, weil eine direkte Bitte unhöflich wirken könnte."
+                },
+                {
+                  "text": "Genau das ist die Falle.",
+                  "detail": "Ein unausgesprochener Appell wird oft nicht erkannt — und der Sender ärgert sich dann, dass nichts passiert ist, obwohl er nie darum gebeten hat."
+                }
+              ]
+            }
+          ],
+          "regel": "Merkhilfe: Sachinhalt = worüber. Selbstoffenbarung = was ich von mir preisgebe. Beziehung = was ich von dir halte. Appell = was du tun sollst."
+        },
+        {
+          "typ": "merke",
+          "text": "Der Sender entscheidet, auf welcher Seite er **sendet** — der Empfänger, auf welcher er **hört**. Sind das verschiedene, entsteht ein Missverständnis, obwohl beide ehrlich sind.",
+          "karteikarte": "Welche vier Seiten hat eine Nachricht nach Schulz von Thun?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Warum das im Büro ständig passiert",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die häufigste Konstellation: Der Sender meint den **Sachinhalt**, der Empfänger hört auf dem **Beziehungsohr**. Der eine sagt „Die Rechnung ist noch nicht raus“ und meint eine Information — der andere hört „Du arbeitest zu langsam“."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Empfänger hört vor allem auf",
+            "Typische Reaktion",
+            "Was hilft"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Sachohr",
+                "fragt nach Details, wirkt kühl",
+                "Beziehungssignale bewusst dazugeben"
+              ]
+            },
+            {
+              "zellen": [
+                "Beziehungsohr",
+                "fühlt sich schnell angegriffen",
+                "Wertschätzung ausdrücklich aussprechen"
+              ],
+              "detail": "**Das empfindlichste Ohr** — und in Betrieben mit Hierarchie das aktivste. Wer weiß, dass sein Gegenüber so hört, sagt den Sachverhalt und die Beziehungsbotschaft getrennt: erst „Wir arbeiten hier gut zusammen“, dann die Kritik."
+            },
+            {
+              "zellen": [
+                "Selbstoffenbarungsohr",
+                "analysiert den anderen statt zuzuhören",
+                "zurück zur Sache lenken"
+              ]
+            },
+            {
+              "zellen": [
+                "Appellohr",
+                "erledigt sofort alles, auch Ungefragtes",
+                "klar sagen, ob etwas zu tun ist"
+              ],
+              "detail": "**Der freundliche Dauerstress.** Wer alles als Auftrag hört, arbeitet ständig Dinge ab, um die niemand gebeten hat — und ist irgendwein überlastet, ohne dass jemand es bemerkt hat."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Dein Ausbilder sagt beim Vorbeigehen: „Der Ordner steht seit gestern hier.“ Du antwortest sofort gereizt. Auf welchem Ohr hast du gehört?",
+          "optionen": [
+            {
+              "text": "Sachohr",
+              "richtig": false,
+              "echo": "Auf dem Sachohr hättest du die Information aufgenommen — ein Ordner steht seit gestern da — und höchstens nachgefragt. Eine gereizte Reaktion deutet auf etwas anderes."
+            },
+            {
+              "text": "Beziehungsohr",
+              "richtig": true,
+              "echo": "Richtig. Du hast einen Vorwurf gehört: „Du räumst nicht auf.“ Ob er gemeint war, weiß nur der Sender. Genau deshalb lohnt hier die Rückfrage — „Soll ich den wegräumen?“ klärt Appell und Beziehung in einem Satz."
+            },
+            {
+              "text": "Appellohr",
+              "richtig": false,
+              "echo": "Auf dem Appellohr hättest du den Ordner wortlos weggeräumt. Gereiztheit entsteht dort, wo eine Botschaft über die Beziehung gehört wird."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Fünf Regeln, die immer gelten",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Paul Watzlawick hat fünf Grundannahmen formuliert, die {{begriff:watzlawick|Axiome}} heißen — also Sätze, die nicht bewiesen werden, sondern vorausgesetzt. Für die Prüfung zählt vor allem das erste."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Axiom",
+            "Bedeutung",
+            "Im Büro"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Man kann nicht nicht kommunizieren",
+                "Auch Schweigen ist eine Botschaft",
+                "Wer eine Mail nicht beantwortet, sagt damit etwas"
+              ],
+              "detail": "**Das bekannteste und prüfungsrelevanteste Axiom.** Es bedeutet: Es gibt kein Verhalten, das keine Mitteilung wäre. Wegsehen, Schweigen, den Raum verlassen — alles wird gedeutet, ob man will oder nicht."
+            },
+            {
+              "zellen": [
+                "Jede Kommunikation hat Inhalts- und Beziehungsaspekt",
+                "Die Beziehung bestimmt, wie der Inhalt verstanden wird",
+                "Derselbe Satz vom Freund oder vom Chef"
+              ]
+            },
+            {
+              "zellen": [
+                "Kommunikation ist von Interpunktion abhängig",
+                "Jeder sieht seinen Beitrag als Reaktion",
+                "„Ich melde mich nicht, weil du nie antwortest“"
+              ],
+              "detail": "**Der klassische Teufelskreis.** Beide halten sich für die reagierende Seite und den anderen für die auslösende. Wer den Kreis durchbrechen will, muss auf die Schuldfrage verzichten."
+            },
+            {
+              "zellen": [
+                "Kommunikation ist digital und analog",
+                "Worte sind eindeutig, Körpersprache ist deutungsoffen",
+                "Ein Lächeln kann vieles heißen"
+              ]
+            },
+            {
+              "zellen": [
+                "Kommunikation ist symmetrisch oder komplementär",
+                "Auf Augenhöhe oder mit Gefälle",
+                "Kollege gegen Vorgesetzter"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Wenn du dir nur einen Satz aus diesem Kapitel merkst, dann diesen: **Man kann nicht nicht kommunizieren.** Auch wer nichts sagt, sendet — und wird gedeutet.",
+          "karteikarte": "Was besagt das erste Axiom von Watzlawick, und was folgt daraus für den Büroalltag?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Seite der Nachricht ist gemeint?",
+          "kategorien": [
+            "Sachinhalt",
+            "Selbstoffenbarung",
+            "Beziehung",
+            "Appell"
+          ],
+          "aufgaben": [
+            {
+              "text": "„Die Lieferung kommt am Dienstag.“",
+              "loesung": "Sachinhalt"
+            },
+            {
+              "text": "„Ich bin damit gerade überfordert.“",
+              "loesung": "Selbstoffenbarung"
+            },
+            {
+              "text": "„Können Sie das bis morgen erledigen?“",
+              "loesung": "Appell"
+            },
+            {
+              "text": "„Auf Sie ist eben Verlass.“",
+              "loesung": "Beziehung"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Jede Nachricht hat vier Seiten: Sachinhalt, Selbstoffenbarung, Beziehung, Appell.",
+    "Der Sender wählt die Seite, auf der er sendet — der Empfänger die, auf der er hört.",
+    "Missverständnisse entstehen, wenn beide unterschiedliche Seiten betonen.",
+    "Das Beziehungsohr ist das empfindlichste; das Appellohr führt zu ungefragter Mehrarbeit.",
+    "Watzlawick: Man kann nicht nicht kommunizieren — auch Schweigen ist eine Botschaft.",
+    "Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.",
+    "Interpunktion: Jeder hält sich für die reagierende Seite."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre die vier Seiten einer Nachricht am Satz „Die Kaffeekanne ist leer.“",
+      "loesung": "Sachinhalt: In der Kanne ist kein Kaffee mehr. Selbstoffenbarung: Ich hätte gern Kaffee, oder mich stört das. Beziehung: Ich gehe davon aus, dass du dich darum kümmerst — je nach Ton wohlwollend oder vorwurfsvoll. Appell: Koch bitte neuen Kaffee. Der Sender meint meist nur eine dieser Seiten, gesendet werden aber alle vier."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Was bedeutet „Man kann nicht nicht kommunizieren“?",
+      "loesung": "Dass es kein Verhalten gibt, das keine Mitteilung wäre. Auch Schweigen, Wegsehen oder eine unbeantwortete Mail werden vom Gegenüber gedeutet und wirken damit wie eine Botschaft. Man kann sich also nicht entscheiden, nicht zu kommunizieren — nur, was man sendet, lässt sich beeinflussen."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Eine Kundin sagt am Telefon: „Ich habe jetzt zum dritten Mal angerufen.“ Analysiere die vier Seiten und leite ab, wie du antwortest.",
+      "loesung": "Sachinhalt: Sie hat dreimal angerufen. Selbstoffenbarung: Sie ist verärgert und fühlt sich nicht ernst genommen. Beziehung: Sie unterstellt dem Betrieb Nachlässigkeit. Appell: Kümmern Sie sich jetzt und wiederholen Sie das nicht. Sinnvoll ist eine Antwort, die zuerst die Selbstoffenbarungs- und Beziehungsebene bedient — den Ärger anerkennen und sich entschuldigen — und erst danach zur Sache kommt. Wer sofort sachlich antwortet, verstärkt den Ärger."
+    }
+  ],
+  "pruefungstipp": "Das Vier-Ohren-Modell ist der sicherste Kandidat dieses Lernfelds: Meist wird ein Satz vorgegeben und alle vier Seiten sollen formuliert werden. Übe das an Alltagssätzen, bis es schnell geht. Von Watzlawick reicht in der Regel das erste Axiom — aber wörtlich."
+}

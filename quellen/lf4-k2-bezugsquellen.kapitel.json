@@ -1,0 +1,279 @@
+{
+  "id": "k2",
+  "lernfeld": "lf4",
+  "nummer": 2,
+  "titel": "Bezugsquellen finden und anfragen",
+  "untertitel": "Wer nicht fragt, zahlt den Listenpreis.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Bezugsquellen ermitteln und Lieferer bewerten",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Eine vollständige Anfrage aufbauen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die Bindungswirkung eines Angebots beurteilen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Woher die Lieferer kommen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Bevor angefragt wird, muss klar sein, wen man überhaupt anfragt. Betriebsinterne Quellen sind schneller und billiger als externe — ==die eigene Lieferantenkartei ist fast immer die erste Adresse, weil dort steht, wer in der Vergangenheit zuverlässig war.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Quelle",
+            "Art",
+            "Stärke"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Lieferantenkartei, alte Rechnungen",
+                "intern",
+                "kostenlos, Erfahrung liegt vor"
+              ],
+              "detail": "**Der billigste Weg.** Wer schon einmal geliefert hat, ist bekannt: Preise, Termintreue, Reklamationsverhalten. Diese Information hat kein Katalog."
+            },
+            {
+              "zellen": [
+                "Branchenverzeichnisse, Onlineportale",
+                "extern",
+                "breite Übersicht, schnell"
+              ]
+            },
+            {
+              "zellen": [
+                "Messen und Fachausstellungen",
+                "extern",
+                "Ware sehen, Menschen kennenlernen"
+              ],
+              "detail": "**Besonders bei erklärungsbedürftigen Gütern.** Man sieht Verarbeitung und Qualität, statt sie aus Datenblättern zu erraten."
+            },
+            {
+              "zellen": [
+                "IHK, Fachverbände",
+                "extern",
+                "geprüfte Adressen, neutral"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Bei bekannten Lieferern hilft die {{begriff:lieferantenbewertung|Lieferantenbewertung}}: Preis, Qualität, Termintreue und Service werden laufend erfasst. Sie ist die Grundlage dafür, wen man beim nächsten Bedarf überhaupt noch anfragt."
+        },
+        {
+          "typ": "merke",
+          "text": "**Erst intern suchen, dann extern.** Und die Zahl der Anfragen richtet sich nach dem Wert: Bei A-Gütern lohnen sich mehrere Angebote, bei C-Gütern genügt der bekannte Lieferer.",
+          "karteikarte": "Welche internen und externen Bezugsquellen gibt es, und warum sucht man zuerst intern?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Ein einziger Lieferer ist bequem und gefährlich. Fällt er aus, steht die Beschaffung. Bei wichtigen Materialien lohnt sich ein zweiter Lieferer, auch wenn er etwas teurer ist — das ist der Preis der Unabhängigkeit."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Die Anfrage",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:anfrage|Anfrage}} ist rechtlich **unverbindlich**. Sie ist kein Antrag im Sinne des {{par:bgb-145|§ 145 BGB}}, sondern die Bitte um ein Angebot — man verpflichtet sich zu nichts. Trotzdem entscheidet ihre Qualität darüber, ob die Angebote später vergleichbar sind."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Vier Angaben",
+          "titel": "Was in jede Anfrage gehört",
+          "lead": "Fehlt eine davon, kommen Angebote zurück, die man nicht vergleichen kann. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Art und Güte der Ware",
+              "satz": "möglichst genau",
+              "text": "Artikelbezeichnung, Norm, Materialstärke, Farbe. Je unschärfer die Beschreibung, desto unterschiedlicher die angebotenen Qualitäten — und desto sinnloser der Preisvergleich."
+            },
+            {
+              "nr": 2,
+              "titel": "Menge",
+              "satz": "mit Einheit",
+              "text": "500 Stück, 20 Pakete, 3 Paletten. Die Menge beeinflusst den Preis über Mengenrabatte erheblich, deshalb muss sie in allen Anfragen gleich sein."
+            },
+            {
+              "nr": 3,
+              "titel": "Liefertermin und Lieferort",
+              "satz": "wann und wohin",
+              "text": "Ein billiges Angebot mit acht Wochen Lieferzeit nützt nichts, wenn die Ware in zwei Wochen gebraucht wird. Der Ort entscheidet außerdem über die Frachtkosten."
+            },
+            {
+              "nr": 4,
+              "titel": "Gewünschte Bedingungen",
+              "satz": "Zahlung und Lieferung",
+              "text": "Zahlungsziel, Skonto, Verpackung, wer den Transport trägt. Wer danach nicht fragt, bekommt die Bedingungen des Lieferers — und die sind selten die günstigsten."
+            }
+          ],
+          "regel": "Regel für den Vergleich: In allen Anfragen müssen Ware, Menge und Termin identisch sein. Nur dann vergleicht man am Ende Preise und nicht Äpfel mit Birnen."
+        },
+        {
+          "typ": "achtung",
+          "text": "Verwechsle **Anfrage** und **Bestellung** nicht. Die Anfrage bindet niemanden. Die Bestellung ist ein Antrag nach {{par:bgb-145|§ 145 BGB}} und bindet dich. In Prüfungsfällen ist genau das oft die Falle: Ein Betrieb „fragt an\" und meint dabei längst eine Bestellung."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Das Angebot und seine Bindung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:angebot|Angebot}} auf eine Anfrage ist ein Antrag — und der Lieferer ist daran nach {{par:bgb-145|§ 145 BGB}} gebunden. Er kann es nicht zurückziehen, nur weil ihm der Preis später zu niedrig erscheint. Genau deshalb schränken Lieferer die Bindung fast immer ein."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Formulierung",
+            "Wirkung",
+            "Für dich als Käufer"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "ohne Zusatz",
+                "voll bindend",
+                "sicher — Annahme genügt"
+              ]
+            },
+            {
+              "zellen": [
+                "„freibleibend\", „unverbindlich\"",
+                "keine Bindung",
+                "deine Bestellung ist erst der Antrag"
+              ],
+              "detail": "**Die häufigste {{begriff:freizeichnungsklausel|Freizeichnungsklausel}}.** Das Angebot ist dann nur eine Einladung, selbst ein Angebot abzugeben. Der Vertrag kommt erst zustande, wenn der Lieferer deine Bestellung bestätigt."
+            },
+            {
+              "zellen": [
+                "„solange Vorrat reicht\"",
+                "Bindung nur bei Verfügbarkeit",
+                "Menge vorher zusichern lassen"
+              ]
+            },
+            {
+              "zellen": [
+                "„Preise freibleibend\"",
+                "nur der Preis ist offen",
+                "der Rest gilt weiter"
+              ],
+              "detail": "**Teilweise Freizeichnung.** Ware, Menge und Termin binden, der Preis kann sich ändern. Bei langen Lieferzeiten und schwankenden Rohstoffpreisen üblich."
+            },
+            {
+              "zellen": [
+                "„gültig bis 30.09.\"",
+                "Bindung mit fester Frist",
+                "rechtzeitig entscheiden"
+              ],
+              "detail": "**Eine gesetzte Frist geht immer vor** {{par:bgb-147|§ 147 BGB}}. Nach Fristablauf ist das Angebot erloschen — eine spätere Annahme ist ein neuer Antrag."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Ein Angebot **ohne** Einschränkung bindet. Steht „freibleibend\" dabei, bindet es nicht — dann ist deine Bestellung der Antrag und du wartest auf die Auftragsbestätigung.",
+          "karteikarte": "Was bedeutet ein „freibleibendes\" Angebot, und wer gibt in diesem Fall den bindenden Antrag ab?"
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Lieferer schickt ein Angebot über 500 Ordner zu 2,10 € mit dem Zusatz „freibleibend\". Du bestellst genau diese 500 Ordner. Was gilt?",
+          "optionen": [
+            {
+              "text": "Der Vertrag ist geschlossen — du hast das Angebot angenommen",
+              "richtig": false,
+              "echo": "Nein. Ein freibleibendes Angebot ist kein bindender Antrag, sondern nur eine Aufforderung, selbst eines abzugeben. Es gibt also nichts, was du annehmen könntest."
+            },
+            {
+              "text": "Deine Bestellung ist der Antrag — der Vertrag entsteht erst mit der Bestätigung",
+              "richtig": true,
+              "echo": "Richtig. Durch das Wort „freibleibend\" hat der Lieferer die Bindung ausgeschlossen. Deine Bestellung ist damit der bindende Antrag nach § 145 BGB. Der Vertrag kommt erst zustande, wenn der Lieferer sie annimmt — meist per Auftragsbestätigung."
+            },
+            {
+              "text": "Es kommt gar kein Vertrag zustande, weil das Angebot unverbindlich war",
+              "richtig": false,
+              "echo": "Zu weit gedacht. Unverbindlich heißt nur, dass der Lieferer nicht gebunden ist — nicht, dass kein Vertrag möglich wäre. Er kann deine Bestellung jederzeit annehmen."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Bindet das Angebot?",
+          "kategorien": [
+            "Bindend",
+            "Nicht bindend"
+          ],
+          "aufgaben": [
+            {
+              "text": "„Wir bieten Ihnen 200 Ordner zu 2,30 € an.\"",
+              "loesung": "Bindend"
+            },
+            {
+              "text": "„Angebot freibleibend.\"",
+              "loesung": "Nicht bindend"
+            },
+            {
+              "text": "„Dieses Angebot gilt bis zum 15. Oktober.\"",
+              "loesung": "Bindend"
+            },
+            {
+              "text": "„Lieferung solange der Vorrat reicht.\"",
+              "loesung": "Nicht bindend"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Erst interne Bezugsquellen prüfen, dann externe — die eigene Kartei kennt die Zuverlässigkeit.",
+    "Die {{begriff:lieferantenbewertung|Lieferantenbewertung}} misst Preis, Qualität, Termintreue und Service.",
+    "Die {{begriff:anfrage|Anfrage}} ist unverbindlich und kein Antrag nach {{par:bgb-145|§ 145 BGB}}.",
+    "In jede Anfrage gehören Art, Menge, Termin und die gewünschten Bedingungen.",
+    "Nur bei identischen Anfragen sind die Angebote später vergleichbar.",
+    "Ein Angebot ohne Einschränkung bindet den Lieferer nach {{par:bgb-145|§ 145 BGB}}.",
+    "„Freibleibend\" schließt die Bindung aus — dann ist die Bestellung der Antrag.",
+    "Eine ausdrücklich gesetzte Frist geht der Regel des {{par:bgb-147|§ 147 BGB}} vor."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Welche Angaben gehören in eine Anfrage, und warum müssen sie in allen Anfragen gleich sein?",
+      "loesung": "Art und Güte der Ware, die Menge mit Einheit, der gewünschte Liefertermin und Lieferort sowie die gewünschten Liefer- und Zahlungsbedingungen. Sie müssen in allen Anfragen identisch sein, weil sonst unterschiedliche Leistungen angeboten werden: Andere Qualität, andere Menge oder ein anderer Termin führen zu anderen Preisen. Ein Preisvergleich wäre dann wertlos, weil er nicht denselben Gegenstand vergleicht."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Unterschied zwischen einem bindenden und einem freibleibenden Angebot.",
+      "loesung": "Ein Angebot ohne Einschränkung ist ein Antrag nach § 145 BGB; der Lieferer ist daran gebunden und kann es nicht einseitig zurückziehen. Nimmt der Käufer innerhalb der Frist des § 147 BGB unverändert an, ist der Vertrag geschlossen. Enthält das Angebot dagegen eine Freizeichnungsklausel wie „freibleibend\" oder „unverbindlich\", ist es kein bindender Antrag, sondern nur eine Aufforderung zur Abgabe eines Angebots. Dann gibt die Bestellung des Käufers den bindenden Antrag ab, und der Vertrag entsteht erst mit der Annahme durch den Lieferer, in der Regel durch die Auftragsbestätigung."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ihr fragt bei drei Lieferern an. Lieferer A bietet 500 Ordner zu 2,10 €, Lieferer B bietet 400 Ordner zu 2,00 €, Lieferer C bietet 500 Ordner zu 2,15 € mit acht Wochen Lieferzeit. Die Ware wird in drei Wochen gebraucht. Was fällt dir auf?",
+      "loesung": "Die Angebote sind nicht vergleichbar. Lieferer B bietet eine andere Menge an — 400 statt 500 Ordner. Der niedrigere Stückpreis kann daran liegen, dass eine andere Menge kalkuliert wurde; außerdem fehlen 100 Ordner, die anderweitig beschafft werden müssten. Lieferer C liegt zwar preislich nah an A, scheidet aber wegen der Lieferzeit von acht Wochen aus, weil die Ware in drei Wochen gebraucht wird. Ein billiges Angebot nützt nichts, wenn es zu spät kommt. Sinnvoll ist, bei B nachzufragen, ob 500 Stück zu welchem Preis lieferbar sind, und erst dann die Bezugskalkulation für die vergleichbaren Angebote zu rechnen."
+    }
+  ],
+  "pruefungstipp": "Die Freizeichnungsklauseln kommen fast immer als Fall: Ein Angebot ist „freibleibend\", der Käufer bestellt, und gefragt wird, ob ein Vertrag zustande gekommen ist. Die Antwort lautet nie einfach ja oder nein, sondern: Die Bestellung ist der Antrag, der Vertrag entsteht mit der Auftragsbestätigung. Merk dir außerdem, dass die Anfrage rechtlich folgenlos ist — das wird gern mit der Bestellung verwechselt."
+}

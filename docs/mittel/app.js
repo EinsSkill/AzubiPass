@@ -1,0 +1,922 @@
+/* AzubiPass · App
+   ---------------------------------------------------------------------------
+   Die fünf Schirme: Heute, Lernen, Üben, Suche, Ich.
+
+   Der Inhalt kommt aus mittel/inhalt.json, das build_app.py aus denselben
+   Kapiteldateien erzeugt wie die Lernzettel. Nichts wird doppelt gepflegt.    */
+
+(function () {
+  "use strict";
+
+  var AP = window.AP;
+  var el = AP.el, mkEl = AP.mkEl, stand = AP.stand, sichern = AP.sichern;
+
+  var inhalt = null;
+  var suchdaten = null;                       // wird erst beim Suchen geholt
+  var schirme = {};
+  var verteiler = null;
+
+  var PFEIL = '<svg width="17" height="10" viewBox="0 0 17 10" fill="none" aria-hidden="true">'
+            + '<path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>';
+
+  var TITEL = { heute: "AzubiPass", lernen: "Lernfelder", ueben: "Üben",
+                suche: "Suche", ich: "Ich" };
+
+  /* ================================================== Rechnen auf dem Konto */
+
+  function kapitelFertig(lfId, kapId) {
+    var f = stand.fortschritt[lfId + "-" + kapId];
+    return !!(f && f.fertig);
+  }
+
+  function lernfeldstand(lf) {
+    var fertig = lf.kapitel.filter(function (k) { return kapitelFertig(lf.id, k.id); }).length;
+    return { fertig: fertig, gesamt: lf.kapitel.length,
+             anteil: lf.kapitel.length ? fertig / lf.kapitel.length : 0 };
+  }
+
+  function gesamtstand() {
+    var fertig = 0, gesamt = 0;
+    inhalt.lernfelder.forEach(function (lf) {
+      var s = lernfeldstand(lf);
+      fertig += s.fertig; gesamt += s.gesamt;
+    });
+    return { fertig: fertig, gesamt: gesamt, anteil: gesamt ? fertig / gesamt : 0 };
+  }
+
+  function faelligeKarten() {
+    return inhalt.karten.filter(function (k) { return AP.istFaellig(k.id); });
+  }
+
+  /* Was saß nicht? Drei Quellen, die es längst gibt und die nie jemand
+     ausgewertet hat: falsch angeklickte Checks im Kapitel, falsch beantwortete
+     Übungsfragen und jedes „Weiß ich nicht" im Selbsttest. */
+  function schwachstellen() {
+    var raus = [];
+    var nachId = {};
+    inhalt.quiz.forEach(function (q) { nachId[q.id] = q; });
+    inhalt.tests.forEach(function (t) { nachId[t.id] = t; });
+
+    Object.keys(stand.fortschritt).forEach(function (schluessel) {
+      var f = stand.fortschritt[schluessel];
+      Object.keys(f.checks || {}).forEach(function (id) {
+        if (f.checks[id].r === false && nachId[id]) {
+          raus.push({ q: nachId[id], grund: "falsch beantwortet" });
+        }
+      });
+      Object.keys(f.zuordnen || {}).forEach(function (id) {
+        if (f.zuordnen[id].f > 0 && nachId[id]) {
+          raus.push({ q: nachId[id], grund: f.zuordnen[id].f + "× daneben" });
+        }
+      });
+      Object.keys(f.test || {}).forEach(function (id) {
+        if (f.test[id].z === "luecke" && nachId[id]) {
+          raus.push({ q: nachId[id], grund: "als Lücke gemerkt" });
+        }
+      });
+    });
+
+    Object.keys(stand.quiz || {}).forEach(function (id) {
+      if (stand.quiz[id].r === false && nachId[id]) {
+        raus.push({ q: nachId[id], grund: "im Üben daneben" });
+      }
+    });
+
+    var gesehen = {};
+    return raus.filter(function (e) {
+      if (gesehen[e.q.id]) return false;
+      gesehen[e.q.id] = true;
+      return true;
+    });
+  }
+
+  function wochentage() {
+    var raus = [];
+    for (var i = 6; i >= 0; i--) {
+      var d = new Date();
+      d.setDate(d.getDate() - i);
+      var s = AP.tagesschluessel(d);
+      raus.push({ schluessel: s, heute: i === 0,
+                  kurz: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"][d.getDay()],
+                  gelernt: stand.aktivitaet.indexOf(s) !== -1 });
+    }
+    return raus;
+  }
+
+  /* ================================================== Bausteine */
+
+  function kopfzeile(titel, unter) {
+    var k = el("div", "schirm-kopf");
+    k.appendChild(el("h1", null, titel));
+    if (unter) k.appendChild(el("p", null, unter));
+    return k;
+  }
+
+  function balken(anteil) {
+    var m = el("div", "messlatte");
+    var s = el("span");
+    m.appendChild(s);
+    requestAnimationFrame(function () { s.style.width = Math.round(anteil * 100) + "%"; });
+    return m;
+  }
+
+  function zahlenfeld(wert, einheit, beschriftung, dringend) {
+    var z = el("div", "zahl" + (dringend ? " dringend" : ""));
+    var b = el("b", null, String(wert));
+    if (einheit) b.appendChild(el("small", null, einheit));
+    z.appendChild(b);
+    z.appendChild(el("span", null, beschriftung));
+    return z;
+  }
+
+  function reihe(ziel, aufbau) {
+    var a = el("a", "reihe");
+    a.href = ziel;
+    aufbau(a);
+    return a;
+  }
+
+  function leerkasten(text, knopftext, beiKlick) {
+    var k = el("div", "leer");
+    k.appendChild(el("p", null, text));
+    if (knopftext) {
+      var b = el("button", "start", knopftext);
+      b.addEventListener("click", beiKlick);
+      k.appendChild(b);
+    }
+    return k;
+  }
+
+  /* ================================================== Heute */
+
+  function zeigeHeute(s) {
+    s.innerHTML = "";
+    var tage = AP.tageBis(inhalt.pruefung);
+    var g = gesamtstand();
+    var faellig = faelligeKarten();
+    var woche = wochentage();
+    var gelernt = woche.filter(function (t) { return t.gelernt; }).length;
+
+    if (stand.uebernommen) {
+      var hinweis = el("div", "meldung");
+      hinweis.textContent = "Dein bisheriger Fortschritt aus den einzelnen Lernzetteln "
+        + "wurde übernommen. Der Karteikartenstand fängt neu an — er hing vorher an der "
+        + "Position im Stapel und war dadurch verrutscht.";
+      s.appendChild(hinweis);
+      stand.uebernommen = false;
+      sichern();
+    }
+
+    s.appendChild(einbauhinweis());
+    s.appendChild(kopfzeile("Guten Tag.",
+      tage > 0 ? "Noch " + tage + " Tage bis zur schriftlichen Abschlussprüfung."
+               : inhalt.pruefungName));
+
+    /* Der eine große Knopf */
+    var z = stand.zuletzt;
+    if (z && z.zu) {
+      var k = el("a", "fortsetzen");
+      k.href = z.zu;
+      k.appendChild(el("div", "wo", (z.nummer ? z.nummer + " · " : "") + lernfeldName(z.lernfeld)));
+      k.appendChild(el("div", "was", z.titel || "Weiterlesen"));
+      var w = el("div", "weiterhin");
+      w.appendChild(el("span", null, "Weiterlernen"));
+      w.insertAdjacentHTML("beforeend", PFEIL);
+      k.appendChild(w);
+      s.appendChild(k);
+    } else {
+      var erstes = inhalt.lernfelder[0];
+      s.appendChild(leerkasten(
+        "Noch nichts angefangen. Fang mit " + erstes.titel + " an — "
+        + "das erste Kapitel dauert " + (erstes.kapitel[0] || {}).minuten + " Minuten.",
+        "Erstes Kapitel öffnen",
+        function () { location.href = erstes.seite; }));
+    }
+
+    var zahlen = el("div", "zahlenreihe");
+    zahlen.appendChild(zahlenfeld(Math.round(g.anteil * 100), "%", "geschafft"));
+    zahlen.appendChild(zahlenfeld(faellig.length, "", "Karten fällig", faellig.length > 0));
+    zahlen.appendChild(zahlenfeld(g.fertig, " / " + g.gesamt, "Kapitel"));
+    zahlen.appendChild(zahlenfeld(tage > 0 ? tage : 0, "", "Tage bis AP2", tage <= 30));
+    s.appendChild(zahlen);
+
+    s.appendChild(el("div", "abschnittstitel", "Diese Woche · " + gelernt + " von 7 Tagen"));
+    var w7 = el("div", "woche");
+    woche.forEach(function (t) {
+      var f = el("div", "wtag" + (t.gelernt ? " gelernt" : "") + (t.heute ? " heute" : ""), t.kurz);
+      f.setAttribute("title", t.schluessel + (t.gelernt ? " · gelernt" : ""));
+      w7.appendChild(f);
+    });
+    s.appendChild(w7);
+
+    if (faellig.length) {
+      s.appendChild(el("div", "abschnittstitel", "Fällig"));
+      var ue = el("a", "reihe");
+      ue.href = "#ueben";
+      var oben = el("div", "reihe-oben");
+      oben.appendChild(el("span", "reihe-titel",
+        faellig.length + (faellig.length === 1 ? " Karte wartet" : " Karten warten")));
+      oben.appendChild(el("span", "reihe-meta", "üben"));
+      ue.appendChild(oben);
+      s.appendChild(ue);
+    }
+  }
+
+  function lernfeldName(id) {
+    var lf = inhalt.lernfelder.filter(function (x) { return x.id === id; })[0];
+    return lf ? lf.titel : id;
+  }
+
+  /* ================================================== Lernen */
+
+  function zeigeLernen(s) {
+    s.innerHTML = "";
+    var g = gesamtstand();
+    s.appendChild(kopfzeile("Lernfelder",
+      inhalt.lernfelder.length + " Lernfelder, " + g.gesamt + " Kapitel · "
+      + g.fertig + " geschafft"));
+
+    /* Bewusst in der gewohnten Reihenfolge und nicht nach Fortschritt sortiert:
+       Eine Liste, die ihre Reihenfolge ändert, muss man jedes Mal neu lesen.
+       Wo es weitergeht, steht auf dem Startbildschirm. */
+    var liste = el("ul", "liste-schlicht");
+    inhalt.lernfelder.forEach(function (lf) {
+      var st = lernfeldstand(lf);
+      var li = el("li");
+      li.appendChild(reihe(lf.seite, function (a) {
+        var oben = el("div", "reihe-oben");
+        oben.appendChild(el("span", "reihe-nr", lf.id.toUpperCase()));
+        oben.appendChild(el("span", "reihe-titel", lf.titel));
+        oben.appendChild(el("span", "reihe-meta", st.fertig + "/" + st.gesamt));
+        a.appendChild(oben);
+        a.appendChild(balken(st.anteil));
+      }));
+      liste.appendChild(li);
+    });
+    s.appendChild(liste);
+  }
+
+  /* ================================================== Üben */
+
+  var uebenAnsicht = "start";
+
+  function zeigeUeben(s) {
+    s.innerHTML = "";
+    if (uebenAnsicht === "karten") return uebenKarten(s);
+    if (uebenAnsicht === "quiz") return uebenQuiz(s);
+    if (uebenAnsicht === "schwach") return uebenSchwach(s);
+
+    var faellig = faelligeKarten();
+    var schwach = schwachstellen();
+    s.appendChild(kopfzeile("Üben",
+      inhalt.karten.length + " Karteikarten und " + inhalt.quiz.length
+      + " Übungsfragen aus allen Lernfeldern."));
+
+    var liste = el("ul", "liste-schlicht");
+    [["karten", "Fällige Karteikarten", faellig.length
+        ? faellig.length + " warten" : "für heute durch"],
+     ["quiz", "Übungsfragen", inhalt.quiz.length + " Fragen"],
+     ["schwach", "Deine Schwachstellen", schwach.length
+        ? schwach.length + " offen" : "nichts offen"]
+    ].forEach(function (e) {
+      var li = el("li");
+      var a = el("a", "reihe");
+      a.href = "#ueben";
+      var oben = el("div", "reihe-oben");
+      oben.appendChild(el("span", "reihe-titel", e[1]));
+      oben.appendChild(el("span", "reihe-meta", e[2]));
+      a.appendChild(oben);
+      a.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        uebenAnsicht = e[0];
+        zeigeUeben(s);
+      });
+      li.appendChild(a);
+      liste.appendChild(li);
+    });
+    s.appendChild(liste);
+  }
+
+  function zurueckZuUeben(s) {
+    var b = el("button", "kn-neben", "‹ Übersicht");
+    b.addEventListener("click", function () { uebenAnsicht = "start"; zeigeUeben(s); });
+    return b;
+  }
+
+  function uebenKarten(s) {
+    s.appendChild(zurueckZuUeben(s));
+    s.appendChild(kopfzeile("Karteikarten", null));
+    var faecher = el("div", "tr-faecher");
+    s.appendChild(faecher);
+    var buehne = el("div", "tr-buehne");
+    s.appendChild(buehne);
+    AP.trainer(buehne, faecher, inhalt.karten);
+  }
+
+  /* Der Übungsteil greift die Checks und Zuordnungen auf, die in den Kapiteln
+     stehen. Absichtlich getrennt vom Kapitelstand gespeichert: Im Kapitel ist
+     eine Frage einmal beantwortet und bleibt es, hier soll man sie beliebig oft
+     wiederholen können. */
+  function uebenQuiz(s) {
+    s.appendChild(zurueckZuUeben(s));
+    s.appendChild(kopfzeile("Übungsfragen", null));
+    var buehne = el("div");
+    s.appendChild(buehne);
+
+    var reihenfolge = inhalt.quiz.slice().sort(function () { return Math.random() - 0.5; });
+    var pos = 0;
+
+    function naechste() {
+      buehne.innerHTML = "";
+      if (pos >= reihenfolge.length) {
+        buehne.appendChild(leerkasten("Alle Fragen einmal durch.", "Noch einmal mischen",
+          function () { pos = 0; reihenfolge.sort(function () { return Math.random() - 0.5; }); naechste(); }));
+        return;
+      }
+      var q = reihenfolge[pos];
+      var kasten = el("div", "check");
+      kasten.appendChild(el("div", "check-kopf",
+        (pos + 1) + " von " + reihenfolge.length + " · " + q.lernfeldTitel));
+      kasten.appendChild(mkEl("p", "check-frage", q.frage));
+
+      if (q.art === "check") frageCheck(kasten, q, weiter);
+      else frageZuordnen(kasten, q, weiter);
+      buehne.appendChild(kasten);
+    }
+
+    function weiter() {
+      var reihe2 = el("div", "knopfreihe");
+      var w = el("button", "kn-haupt", "Nächste Frage");
+      w.addEventListener("click", function () { pos++; naechste(); });
+      var hin = el("a", "kn-neben");
+      hin.href = reihenfolge[pos].zu;
+      hin.textContent = "Im Kapitel nachlesen";
+      reihe2.appendChild(w);
+      reihe2.appendChild(hin);
+      buehne.querySelector(".check").appendChild(reihe2);
+      w.focus({ preventScroll: true });
+    }
+
+    function merke(id, richtig) {
+      var e = stand.quiz[id] || { n: 0 };
+      e.n++; e.r = richtig;
+      stand.quiz[id] = e;
+      AP.heuteGelernt();
+      sichern();
+    }
+
+    function frageCheck(kasten, q, fertig) {
+      var opts = el("div", "optionen");
+      var echo = el("p", "check-echo");
+      echo.setAttribute("role", "status");
+      q.optionen.forEach(function (o) {
+        var b = el("button", "opt");
+        b.innerHTML = AP.mk(o.text);
+        b.addEventListener("click", function () {
+          opts.querySelectorAll(".opt").forEach(function (x) { x.disabled = true; });
+          b.classList.add(o.richtig ? "richtig" : "falsch");
+          if (!o.richtig) {
+            q.optionen.forEach(function (x, i) {
+              if (x.richtig) opts.children[i].classList.add("richtig");
+            });
+          }
+          echo.textContent = o.echo;
+          echo.classList.add("da");
+          merke(q.id, !!o.richtig);
+          fertig();
+        });
+        opts.appendChild(b);
+      });
+      kasten.appendChild(opts);
+      kasten.appendChild(echo);
+    }
+
+    function frageZuordnen(kasten, q, fertig) {
+      var offen = q.aufgaben.length, daneben = 0;
+      q.aufgaben.forEach(function (a) {
+        var r = el("div", "zu-reihe");
+        r.appendChild(mkEl("span", "zu-text", a.text));
+        var kn = el("span", "zu-knoepfe");
+        q.kategorien.forEach(function (kat) {
+          var b = el("button", "zu-btn", kat);
+          b.addEventListener("click", function () {
+            kn.querySelectorAll(".zu-btn").forEach(function (x) { x.disabled = true; });
+            var ok = kat === a.loesung;
+            b.classList.add(ok ? "richtig" : "falsch");
+            if (!ok) {
+              kn.querySelectorAll(".zu-btn").forEach(function (x) {
+                if (x.textContent === a.loesung) x.classList.add("richtig");
+              });
+              daneben++;
+            }
+            if (--offen === 0) { merke(q.id, daneben === 0); fertig(); }
+          });
+          kn.appendChild(b);
+        });
+        r.appendChild(kn);
+        kasten.appendChild(r);
+      });
+    }
+
+    naechste();
+  }
+
+  function uebenSchwach(s) {
+    s.appendChild(zurueckZuUeben(s));
+    var liste = schwachstellen();
+    s.appendChild(kopfzeile("Deine Schwachstellen",
+      liste.length ? "Was du falsch hattest oder nicht wusstest — aus Kapiteln, "
+                     + "Übungen und Selbsttests zusammengetragen."
+                   : null));
+
+    if (!liste.length) {
+      s.appendChild(leerkasten(
+        "Noch nichts daneben — oder noch nichts beantwortet. Sobald du eine "
+        + "Übungsfrage falsch hast oder im Selbsttest „Weiß ich nicht" + "“"
+        + " drückst, steht sie hier.",
+        "Übungsfragen starten",
+        function () { uebenAnsicht = "quiz"; zeigeUeben(s); }));
+      return;
+    }
+
+    var ul = el("ul", "liste-schlicht");
+    liste.forEach(function (e) {
+      var li = el("li");
+      li.appendChild(reihe(e.q.zu, function (a) {
+        var oben = el("div", "reihe-oben");
+        oben.appendChild(el("span", "reihe-titel", AP.mk(e.q.frage).replace(/<[^>]+>/g, "")));
+        a.appendChild(oben);
+        a.appendChild(el("div", "reihe-quelle",
+          e.q.lernfeldTitel + " · " + e.q.kapitel + " · " + e.grund));
+      }));
+      ul.appendChild(li);
+    });
+    s.appendChild(ul);
+  }
+
+  /* ================================================== Suche */
+
+  function zeigeSuche(s) {
+    if (s.dataset.gebaut) { s.querySelector("input").focus({ preventScroll: true }); return; }
+    s.dataset.gebaut = "1";
+    s.appendChild(kopfzeile("Suche", "Über alle Lernfelder, Begriffe und Paragraphen."));
+
+    var feld = el("div", "suchfeld");
+    feld.insertAdjacentHTML("beforeend",
+      '<svg viewBox="0 0 24 24" width="19" height="19" fill="none" aria-hidden="true">'
+      + '<circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/>'
+      + '<path d="M16.3 16.3 21 21" stroke="currentColor" stroke-width="1.6" '
+      + 'stroke-linecap="round"/></svg>');
+    var eingabe = el("input");
+    eingabe.type = "search";
+    eingabe.placeholder = "Zahlungsverzug, § 377 HGB, Skonto …";
+    eingabe.setAttribute("aria-label", "Suchbegriff");
+    feld.appendChild(eingabe);
+    s.appendChild(feld);
+
+    var zahl = el("p", "such-zahl");
+    s.appendChild(zahl);
+    var raus = el("div");
+    s.appendChild(raus);
+
+    function vorschlaege() {
+      raus.innerHTML = "";
+      raus.appendChild(el("div", "abschnittstitel", "Häufig gebraucht"));
+      var ul = el("ul", "liste-schlicht");
+      ["Zahlungsverzug", "Skonto", "Deckungsbeitrag", "§ 377 HGB", "DIN 5008"]
+        .forEach(function (w) {
+          var li = el("li");
+          var a = el("a", "reihe");
+          a.href = "#suche";
+          a.appendChild(el("div", "reihe-titel", w));
+          a.addEventListener("click", function (ev) {
+            ev.preventDefault();
+            eingabe.value = w;
+            suchen();
+          });
+          li.appendChild(a);
+          ul.appendChild(li);
+        });
+      raus.appendChild(ul);
+    }
+
+    function hervorheben(text, worte) {
+      var e = el("span");
+      var rest = text, teile = [];
+      var muster = new RegExp("(" + worte.map(function (w) {
+        return w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      }).join("|") + ")", "ig");
+      rest.replace(muster, function (treffer, _g, index) {
+        teile.push([index, treffer]);
+        return treffer;
+      });
+      if (!teile.length) { e.textContent = text; return e; }
+      var pos = 0;
+      teile.forEach(function (t) {
+        e.appendChild(document.createTextNode(text.slice(pos, t[0])));
+        e.appendChild(el("mark", null, t[1]));
+        pos = t[0] + t[1].length;
+      });
+      e.appendChild(document.createTextNode(text.slice(pos)));
+      return e;
+    }
+
+    function ausschnitt(text, wort) {
+      var i = text.toLowerCase().indexOf(wort.toLowerCase());
+      if (i < 0) return text.slice(0, 150) + (text.length > 150 ? " …" : "");
+      var von = Math.max(0, i - 60);
+      return (von ? "… " : "") + text.slice(von, von + 190)
+             + (von + 190 < text.length ? " …" : "");
+    }
+
+    var laeuft = null;
+    function suchen() {
+      var frage = eingabe.value.trim();
+      if (frage.length < 2) { zahl.textContent = ""; vorschlaege(); return; }
+      if (!suchdaten) {
+        zahl.textContent = "Suchindex wird geladen …";
+        holeSuche().then(suchen);
+        return;
+      }
+
+      var worte = frage.toLowerCase().split(/\s+/).filter(Boolean);
+      var treffer = [];
+
+      inhalt.begriffe.forEach(function (b) {
+        var heu = (b.titel + " " + b.text).toLowerCase();
+        if (worte.every(function (w) { return heu.indexOf(w) !== -1; })) {
+          treffer.push({ art: "begriff", b: b,
+                         rang: b.titel.toLowerCase().indexOf(worte[0]) === 0 ? 0 : 2 });
+        }
+      });
+
+      suchdaten.forEach(function (e) {
+        var heu = (e.t + " " + e.x).toLowerCase();
+        if (worte.every(function (w) { return heu.indexOf(w) !== -1; })) {
+          treffer.push({ art: "text", e: e,
+                         rang: e.t.toLowerCase().indexOf(worte[0]) !== -1 ? 1 : 3 });
+        }
+      });
+
+      treffer.sort(function (a, b) { return a.rang - b.rang; });
+      zahl.textContent = treffer.length
+        ? treffer.length + (treffer.length === 1 ? " Treffer" : " Treffer")
+        : "Nichts gefunden.";
+
+      raus.innerHTML = "";
+      if (!treffer.length) {
+        raus.appendChild(leerkasten(
+          "Für „" + frage + "“ gibt es keinen Treffer. Vielleicht ein anderes "
+          + "Wort — die Suche findet nur, was wörtlich vorkommt."));
+        return;
+      }
+
+      var ul = el("ul", "liste-schlicht");
+      treffer.slice(0, 60).forEach(function (t) {
+        var li = el("li");
+        if (t.art === "begriff") {
+          li.appendChild(reihe("#suche", function (a) {
+            var oben = el("div", "reihe-oben");
+            oben.appendChild(el("span", "reihe-nr", t.b.art === "Begriff" ? "Begriff" : "Gesetz"));
+            var titel = el("span", "reihe-titel");
+            titel.appendChild(hervorheben(t.b.titel, worte));
+            oben.appendChild(titel);
+            a.appendChild(oben);
+            a.appendChild(el("div", "reihe-quelle", t.b.text));
+            a.addEventListener("click", function (ev) { ev.preventDefault(); });
+          }));
+        } else {
+          li.appendChild(reihe(t.e.zu, function (a) {
+            var oben = el("div", "reihe-oben");
+            var titel = el("span", "reihe-titel");
+            titel.appendChild(hervorheben(t.e.t, worte));
+            oben.appendChild(titel);
+            a.appendChild(oben);
+            var aus = el("div", "reihe-quelle");
+            aus.appendChild(hervorheben(ausschnitt(t.e.x, worte[0]), worte));
+            a.appendChild(aus);
+            a.appendChild(el("div", "reihe-quelle", t.e.lft + " · " + t.e.k));
+          }));
+        }
+        ul.appendChild(li);
+      });
+      raus.appendChild(ul);
+    }
+
+    eingabe.addEventListener("input", function () {
+      clearTimeout(laeuft);
+      laeuft = setTimeout(suchen, 140);
+    });
+    vorschlaege();
+    eingabe.focus({ preventScroll: true });
+  }
+
+  function holeSuche() {
+    return fetch("mittel/suche.json")
+      .then(function (a) { return a.json(); })
+      .then(function (d) { suchdaten = d; })
+      .catch(function () { suchdaten = []; });
+  }
+
+  /* ================================================== Ich */
+
+  function zeigeIch(s) {
+    s.innerHTML = "";
+    var g = gesamtstand();
+    s.appendChild(kopfzeile("Ich", "Fortschritt, Sicherung und Einstellungen."));
+
+    var zahlen = el("div", "zahlenreihe");
+    zahlen.appendChild(zahlenfeld(g.fertig, " / " + g.gesamt, "Kapitel geschafft"));
+    zahlen.appendChild(zahlenfeld(
+      Object.keys(stand.karten).filter(function (id) {
+        return stand.karten[id].fach >= AP.FAECHER;
+      }).length, " / " + inhalt.karten.length, "Karten sitzen"));
+    s.appendChild(zahlen);
+
+    s.appendChild(el("div", "abschnittstitel", "Fortschritt je Lernfeld"));
+    var ul = el("ul", "liste-schlicht");
+    inhalt.lernfelder.forEach(function (lf) {
+      var st = lernfeldstand(lf);
+      var li = el("li");
+      li.appendChild(reihe(lf.seite, function (a) {
+        var oben = el("div", "reihe-oben");
+        oben.appendChild(el("span", "reihe-nr", lf.id.toUpperCase()));
+        oben.appendChild(el("span", "reihe-titel", lf.titel));
+        oben.appendChild(el("span", "reihe-meta", Math.round(st.anteil * 100) + " %"));
+        a.appendChild(oben);
+        a.appendChild(balken(st.anteil));
+      }));
+      ul.appendChild(li);
+    });
+    s.appendChild(ul);
+
+    /* Lesezeichen */
+    s.appendChild(el("div", "abschnittstitel", "Lesezeichen"));
+    if (!stand.lesezeichen.length) {
+      s.appendChild(leerkasten("Noch keine. Im Kapitel oben rechts auf das Zeichen "
+        + "tippen, dann steht es hier."));
+    } else {
+      var lz = el("ul", "liste-schlicht");
+      stand.lesezeichen.slice().reverse().forEach(function (e) {
+        var li = el("li");
+        li.appendChild(reihe(e.zu, function (a) {
+          var oben = el("div", "reihe-oben");
+          oben.appendChild(el("span", "reihe-titel", e.titel || e.zu));
+          a.appendChild(oben);
+          a.appendChild(el("div", "reihe-quelle", lernfeldName(e.lernfeld)));
+        }));
+        lz.appendChild(li);
+      });
+      s.appendChild(lz);
+    }
+
+    /* Einstellungen */
+    s.appendChild(el("div", "abschnittstitel", "Einstellungen"));
+    var stimmung = el("div", "stellreihe");
+    var links = el("div");
+    links.appendChild(el("b", null, "Farben"));
+    links.appendChild(el("small", null,
+      "„System“ folgt der Einstellung deines Handys."));
+    stimmung.appendChild(links);
+    var schalter = el("div", "schalterfeld");
+    [["system", "System"], ["hell", "Hell"], ["dunkel", "Dunkel"]].forEach(function (w) {
+      var b = el("button", (stand.stimmung || "system") === w[0] ? "an" : "", w[1]);
+      b.addEventListener("click", function () {
+        AP.stimmungSetzen(w[0]);
+        zeigeIch(s);
+      });
+      schalter.appendChild(b);
+    });
+    stimmung.appendChild(schalter);
+    s.appendChild(stimmung);
+
+    /* Sicherung */
+    s.appendChild(el("div", "abschnittstitel", "Deine Daten"));
+    var erklaerung = el("p");
+    erklaerung.style.cssText = "color:var(--text-sek);font-size:15.5px;margin:0 0 4px";
+    erklaerung.textContent = "Dein Lernstand liegt nur in diesem Browser. Löschst du die "
+      + "Websitedaten oder wechselst das Gerät, ist er weg — außer du sicherst ihn hier.";
+    s.appendChild(erklaerung);
+
+    var meldung = el("p", "meldung");
+    var knoepfe = el("div", "knopfreihe-weit");
+
+    var raus = el("button", "kn-haupt", "Fortschritt sichern");
+    raus.addEventListener("click", function () { sichere(meldung); });
+
+    var rein = el("button", "kn-neben breit", "Sicherung einspielen");
+    var datei = el("input");
+    datei.type = "file";
+    datei.accept = "application/json,.json";
+    datei.hidden = true;
+    rein.addEventListener("click", function () { datei.click(); });
+    datei.addEventListener("change", function () {
+      if (datei.files && datei.files[0]) spieleEin(datei.files[0], meldung, s);
+    });
+
+    var weg = el("button", "kn-neben breit", "Alles zurücksetzen");
+    weg.addEventListener("click", function () { zuruecksetzen(meldung, s); });
+
+    knoepfe.appendChild(raus);
+    knoepfe.appendChild(rein);
+    knoepfe.appendChild(weg);
+    knoepfe.appendChild(datei);
+    s.appendChild(knoepfe);
+    s.appendChild(meldung);
+
+    var rechts = el("p");
+    rechts.style.cssText = "margin:30px 0 0;font-size:13.5px";
+    rechts.innerHTML = '<a href="impressum.html">Impressum</a> · '
+      + '<a href="datenschutz.html">Datenschutz</a>';
+    s.appendChild(rechts);
+
+    var gebaut = el("p", "reihe-quelle");
+    gebaut.textContent = "Inhalt vom " + (inhalt.gebaut || "").slice(0, 10).split("-").reverse().join(".");
+    s.appendChild(gebaut);
+  }
+
+  function sichere(meldung) {
+    var text = JSON.stringify(stand, null, 1);
+    var blob = new Blob([text], { type: "application/json" });
+    var a = el("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "azubipass-fortschritt-" + AP.tagesschluessel() + ".json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+    meldung.className = "meldung";
+    meldung.textContent = "Gesichert. Leg die Datei irgendwohin, wo du sie wiederfindest — "
+      + "mit ihr holst du deinen Stand auf jedes Gerät zurück.";
+  }
+
+  function spieleEin(datei, meldung, s) {
+    var leser = new FileReader();
+    leser.onload = function () {
+      var neu;
+      try { neu = JSON.parse(leser.result); } catch (e) { neu = null; }
+      if (!neu || typeof neu !== "object" || !neu.fortschritt) {
+        meldung.className = "meldung fehler";
+        meldung.textContent = "Das sieht nicht nach einer AzubiPass-Sicherung aus. "
+          + "Nichts geändert.";
+        return;
+      }
+      /* Zusammenführen statt überschreiben: Wer auf zwei Geräten gelernt hat,
+         soll nicht die Hälfte verlieren. Bei Karten gewinnt das höhere Fach. */
+      Object.keys(neu.fortschritt || {}).forEach(function (k) {
+        stand.fortschritt[k] = neu.fortschritt[k];
+      });
+      Object.keys(neu.karten || {}).forEach(function (id) {
+        var alt = stand.karten[id];
+        if (!alt || (neu.karten[id].fach || 0) > alt.fach) stand.karten[id] = neu.karten[id];
+      });
+      Object.keys(neu.quiz || {}).forEach(function (id) { stand.quiz[id] = neu.quiz[id]; });
+      (neu.aktivitaet || []).forEach(function (t) {
+        if (stand.aktivitaet.indexOf(t) === -1) stand.aktivitaet.push(t);
+      });
+      (neu.lesezeichen || []).forEach(function (e) {
+        if (!stand.lesezeichen.some(function (x) { return x.zu === e.zu; })) {
+          stand.lesezeichen.push(e);
+        }
+      });
+      if (neu.zuletzt) stand.zuletzt = neu.zuletzt;
+      sichern();
+      meldung.className = "meldung";
+      meldung.textContent = "Eingespielt und mit dem zusammengeführt, was schon hier war.";
+      setTimeout(function () { zeigeIch(s); }, 900);
+    };
+    leser.readAsText(datei);
+  }
+
+  function zuruecksetzen(meldung, s) {
+    if (!window.confirm("Wirklich alles zurücksetzen? Fortschritt, Karteikarten, "
+        + "Lesezeichen und Notizen sind dann weg. Das lässt sich nicht rückgängig machen.")) {
+      return;
+    }
+    var neu = AP.frisch();
+    Object.keys(stand).forEach(function (k) { delete stand[k]; });
+    Object.keys(neu).forEach(function (k) { stand[k] = neu[k]; });
+    try { localStorage.removeItem(AP.SCHLUESSEL); } catch (e) {}
+    sichern();
+    meldung.className = "meldung";
+    meldung.textContent = "Zurückgesetzt.";
+    setTimeout(function () { zeigeIch(s); }, 600);
+  }
+
+  /* ================================================== Einbauen & Erneuern */
+
+  var einbauEreignis = null;
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault();
+    einbauEreignis = e;
+    if (verteiler && location.hash.replace("#", "") === "heute") zeige("heute");
+  });
+
+  function amIPhone() {
+    return /iPhone|iPad|iPod/.test(navigator.userAgent);
+  }
+
+  function eingebaut() {
+    return window.matchMedia("(display-mode: standalone)").matches ||
+           window.navigator.standalone === true;
+  }
+
+  function einbauhinweis() {
+    var kasten = el("div", "einbau");
+    if (eingebaut()) { kasten.hidden = true; return kasten; }
+
+    if (einbauEreignis) {
+      kasten.appendChild(el("p", null,
+        "Leg AzubiPass auf den Startbildschirm — dann startet es ohne Browserleiste "
+        + "und funktioniert auch ohne Netz."));
+      var b = el("button", "start", "Installieren");
+      b.addEventListener("click", function () {
+        einbauEreignis.prompt();
+        einbauEreignis = null;
+      });
+      kasten.appendChild(b);
+    } else if (amIPhone()) {
+      kasten.appendChild(el("p", null,
+        "Tipp fürs iPhone: unten auf „Teilen“ und dann „Zum Home-Bildschirm“. "
+        + "Danach läuft AzubiPass ohne Netz — und Safari räumt deinen Lernstand "
+        + "nicht mehr nach sieben Tagen weg."));
+    } else {
+      kasten.hidden = true;
+    }
+    return kasten;
+  }
+
+  function erneuerung() {
+    AP.sw().then(function (reg) {
+      if (!reg) return;
+      reg.addEventListener("updatefound", function () {
+        var neu = reg.installing;
+        if (!neu) return;
+        neu.addEventListener("statechange", function () {
+          if (neu.state === "installed" && navigator.serviceWorker.controller) {
+            zeigeErneuerung(reg);
+          }
+        });
+      });
+    });
+
+    if (!("serviceWorker" in navigator)) return;
+    var laedtNeu = false;
+    navigator.serviceWorker.addEventListener("controllerchange", function () {
+      if (laedtNeu) return;
+      laedtNeu = true;
+      location.reload();
+    });
+  }
+
+  /* Nicht mitten im Lesen austauschen — fragen. */
+  function zeigeErneuerung(reg) {
+    var k = el("div", "einbau");
+    k.appendChild(el("p", null, "Es gibt eine neue Fassung der Lernzettel."));
+    var b = el("button", "start", "Jetzt laden");
+    b.addEventListener("click", function () {
+      if (reg.waiting) reg.waiting.postMessage("uebernehmen");
+    });
+    k.appendChild(b);
+    var ziel = document.getElementById("heute");
+    ziel.insertBefore(k, ziel.firstChild);
+  }
+
+  /* ================================================== Verteiler */
+
+  var bauer = { heute: zeigeHeute, lernen: zeigeLernen, ueben: zeigeUeben,
+                suche: zeigeSuche, ich: zeigeIch };
+
+  function zeige(wunsch) {
+    var id = bauer[wunsch] ? wunsch : "heute";
+    Object.keys(schirme).forEach(function (k) { schirme[k].hidden = k !== id; });
+    document.querySelectorAll(".tab").forEach(function (t) {
+      var an = t.getAttribute("href") === "app.html#" + id;
+      t.classList.toggle("an", an);
+      if (an) t.setAttribute("aria-current", "page");
+      else t.removeAttribute("aria-current");
+    });
+    document.getElementById("kopfMeta").textContent = TITEL[id];
+    if (id !== "ueben") uebenAnsicht = "start";
+    bauer[id](schirme[id]);
+    if (wunsch === id) window.scrollTo(0, 0);
+  }
+
+  function start() {
+    ["heute", "lernen", "ueben", "suche", "ich"].forEach(function (k) {
+      schirme[k] = document.getElementById(k);
+    });
+    verteiler = AP.verteiler(zeige, "heute");
+    erneuerung();
+  }
+
+  fetch("mittel/inhalt.json")
+    .then(function (a) { return a.json(); })
+    .then(function (d) { inhalt = d; start(); })
+    .catch(function () {
+      var h = document.getElementById("heute");
+      h.appendChild(kopfzeile("Inhalt nicht gefunden",
+        "mittel/inhalt.json ließ sich nicht laden. Wurde build_app.py schon "
+        + "ausgeführt — und läuft die Seite über einen Server statt per Doppelklick?"));
+    });
+})();

@@ -1,0 +1,62 @@
+{
+  "id": "lf8",
+  "titel": "Personalwirtschaftliche Aufgaben wahrnehmen",
+  "kurztitel": "Lernfeld 8",
+  "untertitel": "2. Ausbildungsjahr · Zeitrichtwert 80 Stunden",
+  "linie": "B",
+  "stand": "2026-07",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Vom Bedarf bis zum *Zeugnis*.",
+    "lead": "Wie ein Betrieb Personal plant, beschafft, bezahlt, entwickelt — und wie er sich rechtssicher wieder trennt. Das komplette Lernfeld 8.",
+    "fakten": [
+      "6 Kapitel",
+      "80 Stunden",
+      "2. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf8-k1-bedarf.kapitel.json",
+      "titel": "Personalbedarf ermitteln",
+      "minuten": 25,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf8-k2-beschaffung.kapitel.json",
+      "titel": "Personal beschaffen",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf8-k3-auswahl.kapitel.json",
+      "titel": "Auswählen und einstellen",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf8-k4-entgelt.kapitel.json",
+      "titel": "Entgelt und Abrechnung",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k5",
+      "datei": "lf8-k5-einsatz.kapitel.json",
+      "titel": "Einsatz und Entwicklung",
+      "minuten": 20,
+      "frei": false
+    },
+    {
+      "id": "k6",
+      "datei": "lf8-k6-trennung.kapitel.json",
+      "titel": "Trennung und Zeugnis",
+      "minuten": 30,
+      "frei": false
+    }
+  ]
+}

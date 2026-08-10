@@ -1,0 +1,269 @@
+{
+  "id": "k2",
+  "lernfeld": "buchfuehrung",
+  "nummer": 2,
+  "titel": "Die Bilanz",
+  "untertitel": "Aufbau, Bilanzgleichung und die vier Veränderungsarten.",
+  "minuten": 20,
+
+  "lernziele": [
+    { "id": "lz1", "text": "Den Aufbau einer Bilanz aus Aktiva und Passiva beschreiben können", "abschnitt": "b1" },
+    { "id": "lz2", "text": "Aktiva korrekt in Anlage- und Umlaufvermögen einteilen", "abschnitt": "b2" },
+    { "id": "lz3", "text": "Eigenkapital, Rückstellungen und Verbindlichkeiten unterscheiden", "abschnitt": "b3" },
+    { "id": "lz4", "text": "Die vier Bilanzveränderungsarten erkennen und begründen", "abschnitt": "b4" }
+  ],
+
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Was ist die Bilanz?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Bilanz ist eine Gegenüberstellung: Auf der einen Seite das gesamte Vermögen eines Unternehmens, auf der anderen die Herkunft dieses Vermögens. Sie wird immer auf einen {{begriff:bilanzstichtag|Bilanzstichtag}} aufgestellt — in der Regel den 31. Dezember — und ist nach {{par:hgb-242|§ 242 HGB}} Pflichtbestandteil des Jahresabschlusses."
+        },
+        {
+          "typ": "absatz",
+          "text": "Die linke Seite heißt **Aktiva** und zeigt, wie das Kapital verwendet wurde. Die rechte Seite heißt **Passiva** und zeigt, woher es stammt. Weil es sich um dasselbe Kapital handelt, nur aus zwei Blickwinkeln betrachtet, gilt zwangsläufig: ==Aktiva = Passiva==."
+        },
+        {
+          "typ": "merke",
+          "text": "Aktiva zeigt, **wo** das Geld steckt. Passiva zeigt, **woher** es kommt. Es ist dasselbe Geld — deshalb sind beide Seiten immer gleich hoch, nach jeder einzelnen Buchung.",
+          "karteikarte": "Was zeigt die Aktivseite, was die Passivseite — und warum sind beide zwangsläufig gleich hoch?"
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Aktiva · Mittelverwendung", "Passiva · Mittelherkunft"],
+          "zeilen": [
+            { "zellen": ["A. Anlagevermögen", "A. Eigenkapital"] },
+            { "zellen": ["Immaterielle Vermögensgegenstände", "Gezeichnetes Kapital"] },
+            { "zellen": ["Sachanlagen", "Gewinnrücklagen"] },
+            { "zellen": ["Finanzanlagen", "Jahresüberschuss / -fehlbetrag"] },
+            { "zellen": ["B. Umlaufvermögen", "B. Rückstellungen"] },
+            { "zellen": ["Vorräte", "z. B. Urlaubsrückstellung"] },
+            { "zellen": ["Forderungen aus LuL", "C. Verbindlichkeiten"] },
+            { "zellen": ["Bankguthaben, Kasse", "Bankdarlehen, Verbindlichkeiten LuL"] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Aktiva — was der Betrieb besitzt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Aktivseite ist in zwei Gruppen geteilt: {{begriff:anlagevermoegen|Anlagevermögen}} und {{begriff:umlaufvermoegen|Umlaufvermögen}}. Der Unterschied ist die Verweildauer im Betrieb — und daran hängt später die Frage, ob abgeschrieben wird oder nicht."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Gruppe", "Verweildauer", "Typische Positionen"],
+          "zeilen": [
+            {
+              "zellen": ["Anlagevermögen (AV)", "dauerhaft, > 1 Jahr", "Grundstücke, Gebäude, Maschinen, Fuhrpark, Patente, Beteiligungen"],
+              "detail": "**Warum die Trennung zählt:** Nur Anlagevermögen wird über die Nutzungsdauer abgeschrieben. Die Zuordnung entscheidet also darüber, ob eine Anschaffung den Gewinn sofort mindert oder über Jahre verteilt."
+            },
+            {
+              "zellen": ["Umlaufvermögen (UV)", "kurzfristig, < 1 Jahr", "Vorräte, Waren, Forderungen aus LuL, Bank, Kasse"],
+              "detail": "**Achtung, Denkfalle:** Entscheidend ist nicht, *was* ein Gegenstand ist, sondern *wozu* der Betrieb ihn hält. Ein Auto ist beim Autohändler Ware (UV), im Fuhrpark einer Spedition Anlagevermögen (AV)."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Nicht der Gegenstand entscheidet, sondern die Absicht. Dasselbe Fahrzeug kann bei einem Betrieb Anlagevermögen und bei einem anderen Umlaufvermögen sein.",
+          "karteikarte": "Wovon hängt es ab, ob ein Gegenstand zum Anlage- oder zum Umlaufvermögen gehört?"
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Passiva — woher das Kapital kommt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Passivseite beantwortet die Frage, wem das Kapital gehört. {{begriff:eigenkapital|Eigenkapital}} stammt von den Eigentümern, {{begriff:fremdkapital|Fremdkapital}} von Dritten und muss zurückgezahlt werden. Wichtig für die Prüfung: Das HGB kennt dazwischen eine eigene Kategorie."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Position", "Was sie ist", "Beispiele"],
+          "zeilen": [
+            { "zellen": ["Eigenkapital", "Kapital der Eigentümer; steigt mit Gewinn, sinkt mit Verlust", "Stammkapital, Gewinnrücklagen"] },
+            { "zellen": ["Rückstellungen", "Schulden mit ungewisser Höhe oder ungewissem Zeitpunkt", "Urlaub, Prozesskosten, Steuern"] },
+            { "zellen": ["Verbindlichkeiten", "Sichere Schulden mit bekanntem Betrag und Fälligkeit", "Bankdarlehen, Verbindlichkeiten LuL"] }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "{{begriff:rueckstellung|Rückstellungen}} gehören **nicht** zu den {{begriff:verbindlichkeit|Verbindlichkeiten}}. Nach {{par:hgb-249|§ 249 HGB}} bilden sie eine eigene Bilanzposition. Der Unterschied liegt allein in der Gewissheit: Verbindlichkeiten sind dem Grunde *und* der Höhe nach sicher, Rückstellungen nicht."
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Mitarbeiter hat zum 31.12. noch acht Urlaubstage offen. Wie wird das in der Bilanz erfasst?",
+          "optionen": [
+            { "text": "Als Verbindlichkeit", "richtig": false, "echo": "Naheliegend, aber falsch. Eine Verbindlichkeit setzt voraus, dass Betrag und Fälligkeit feststehen. Wann der Mitarbeiter den Urlaub nimmt und was er dann kostet, ist am 31.12. offen." },
+            { "text": "Als Rückstellung", "richtig": true, "echo": "Richtig. Die Verpflichtung ist dem Grunde nach entstanden — der Urlaubsanspruch besteht —, aber Höhe und Zeitpunkt sind ungewiss. Genau das ist die Definition der Rückstellung nach § 249 HGB." },
+            { "text": "Gar nicht, weil noch nichts gezahlt wurde", "richtig": false, "echo": "Das würde gegen das Vorsichtsprinzip aus K1 verstoßen. Die Kosten gehören wirtschaftlich in das Jahr, in dem der Anspruch entstanden ist — nicht in das Jahr der Auszahlung." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "b4",
+      "titel": "Die vier Bilanzveränderungsarten",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Jeder Geschäftsvorfall verändert die Bilanz — aber immer so, dass beide Seiten gleich hoch bleiben. Dafür gibt es genau vier Möglichkeiten. Wer sie kennt, kann jeden Buchungssatz auf Plausibilität prüfen: Stimmt danach noch Aktiva = Passiva?"
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Art", "Was passiert", "Bilanzsumme"],
+          "zeilen": [
+            {
+              "zellen": ["Aktiv-Tausch", "Ein Aktivposten steigt, ein anderer sinkt", "unverändert"],
+              "detail": "**Beispiel:** Barabhebung von 5.000 € vom Bankkonto. Bank sinkt, Kasse steigt. Es hat sich nur die Form des Vermögens geändert, nicht seine Höhe — und die Passivseite bleibt völlig unberührt."
+            },
+            {
+              "zellen": ["Passiv-Tausch", "Ein Passivposten steigt, ein anderer sinkt", "unverändert"],
+              "detail": "**Beispiel:** Ein kurzfristiger Kredit über 10.000 € wird in ein langfristiges Darlehen umgeschuldet. Der Betrieb schuldet weiterhin dasselbe Geld — nur jemand anderem oder zu anderen Bedingungen."
+            },
+            {
+              "zellen": ["Aktiv-Passiv-Mehrung", "Ein Aktiv- und ein Passivposten steigen", "steigt"],
+              "detail": "**Beispiel:** Warenkauf auf Ziel über 8.000 €. Der Betrieb hat mehr Waren, schuldet aber auch mehr. Die Bilanz wird länger — was nicht bedeutet, dass es dem Betrieb besser geht."
+            },
+            {
+              "zellen": ["Aktiv-Passiv-Minderung", "Ein Aktiv- und ein Passivposten sinken", "sinkt"],
+              "detail": "**Beispiel:** Bezahlung einer Lieferantenrechnung über 8.000 € per Bank. Geld fließt ab, die Schuld verschwindet. Die Bilanz wird kürzer — auch das sagt nichts über Erfolg oder Misserfolg."
+            }
+          ]
+        },
+        {
+          "typ": "grafik",
+          "variante": "veraenderung",
+          "kopf": "Vier Wege, dieselbe Regel",
+          "titel": "Muster GmbH · Ausgangsbilanz 100.000 €",
+          "lead": "Wähle einen Geschäftsvorfall und sieh zu, was mit beiden Seiten passiert.",
+          "ausgang": {
+            "aktiva": [
+              { "id": "av", "name": "Anlagevermögen", "wert": 60000 },
+              { "id": "waren", "name": "Waren", "wert": 20000 },
+              { "id": "bank", "name": "Bank", "wert": 18000 },
+              { "id": "kasse", "name": "Kasse", "wert": 2000 }
+            ],
+            "passiva": [
+              { "id": "ek", "name": "Eigenkapital", "wert": 55000 },
+              { "id": "darlehen", "name": "Darlehen langfristig", "wert": 30000 },
+              { "id": "verb", "name": "Verbindlichkeiten LuL", "wert": 15000 }
+            ]
+          },
+          "vorfaelle": [
+            {
+              "text": "5.000 € von der Bank abheben und in die Kasse legen",
+              "art": "Aktiv-Tausch",
+              "bewegungen": [
+                { "posten": "bank", "delta": -5000 },
+                { "posten": "kasse", "delta": 5000 }
+              ],
+              "echo": "Beide Bewegungen liegen auf der Aktivseite. Das Vermögen wechselt nur die Form — die Bilanzsumme bleibt bei 100.000 €."
+            },
+            {
+              "text": "10.000 € kurzfristigen Kredit in ein langfristiges Darlehen umwandeln",
+              "art": "Passiv-Tausch",
+              "bewegungen": [
+                { "posten": "verb", "delta": -10000 },
+                { "posten": "darlehen", "delta": 10000 }
+              ],
+              "echo": "Beide Bewegungen liegen auf der Passivseite. Der Betrieb schuldet dasselbe Geld — nur anders strukturiert. Die Bilanzsumme bleibt bei 100.000 €."
+            },
+            {
+              "text": "Waren für 8.000 € auf Ziel kaufen",
+              "art": "Aktiv-Passiv-Mehrung",
+              "bewegungen": [
+                { "posten": "waren", "delta": 8000 },
+                { "posten": "verb", "delta": 8000 }
+              ],
+              "echo": "Je eine Bewegung auf beiden Seiten, beide nach oben. Die Bilanz wird länger: 108.000 €. Mehr Vermögen, aber auch mehr Schulden — das Eigenkapital hat sich nicht verändert."
+            },
+            {
+              "text": "Lieferantenrechnung über 8.000 € per Bank bezahlen",
+              "art": "Aktiv-Passiv-Minderung",
+              "bewegungen": [
+                { "posten": "bank", "delta": -8000 },
+                { "posten": "verb", "delta": -8000 }
+              ],
+              "echo": "Je eine Bewegung auf beiden Seiten, beide nach unten. Die Bilanz wird kürzer: 92.000 €. Geld weg, Schuld weg — dem Betrieb geht es deshalb weder besser noch schlechter."
+            }
+          ],
+          "regel": "Prüfstrategie: Welche zwei Positionen ändert der Vorgang? Beide auf einer Seite → Tausch. Auf beiden Seiten → Mehrung oder Minderung."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Veränderungsart liegt vor?",
+          "kategorien": ["Aktiv-Tausch", "Passiv-Tausch", "Mehrung", "Minderung"],
+          "aufgaben": [
+            { "text": "Ein Kunde bezahlt eine offene Rechnung per Überweisung.", "loesung": "Aktiv-Tausch" },
+            { "text": "Der Betrieb kauft einen Laptop für 1.200 € auf Rechnung.", "loesung": "Mehrung" },
+            { "text": "Ein Gesellschafter wandelt sein Darlehen in Eigenkapital um.", "loesung": "Passiv-Tausch" },
+            { "text": "Ein Bankdarlehen wird per Überweisung getilgt.", "loesung": "Minderung" }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Bilanzverlängerung heißt nicht Erfolg und Bilanzverkürzung nicht Misserfolg. Ob ein Betrieb Gewinn gemacht hat, sieht man nicht an der Bilanzsumme, sondern am {{begriff:eigenkapital|Eigenkapital}}.",
+          "karteikarte": "Warum sagt eine steigende Bilanzsumme nichts über den Erfolg eines Betriebs aus?"
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Warum genau vier — und nicht fünf?",
+          "absaetze": [
+            "Weil jeder Geschäftsvorfall mindestens zwei Positionen berührt und jede Position entweder links oder rechts steht. Daraus ergeben sich vier Kombinationen: beide links, beide rechts, oder je eine pro Seite — und diese letzte Möglichkeit zerfällt in zwei Richtungen, nach oben und nach unten.",
+            "Buchungen, die mehr als zwei Konten berühren, sind keine fünfte Art. Sie lassen sich immer in mehrere der vier Grundfälle zerlegen."
+          ]
+        }
+      ]
+    }
+  ],
+
+  "zusammenfassung": [
+    "Bilanz = Gegenüberstellung von Aktiva (Mittelverwendung) und Passiva (Mittelherkunft) auf einen Stichtag.",
+    "{{par:hgb-242|§ 242 HGB}} — die Bilanz ist Pflichtbestandteil des Jahresabschlusses.",
+    "Aktiva: Anlagevermögen (dauerhaft) und Umlaufvermögen (kurzfristig). Entscheidend ist die Absicht, nicht der Gegenstand.",
+    "Passiva: Eigenkapital · Rückstellungen · Verbindlichkeiten.",
+    "{{par:hgb-249|§ 249 HGB}} — Rückstellungen sind eine eigene Position, keine Verbindlichkeiten.",
+    "Vier Veränderungsarten: Aktiv-Tausch · Passiv-Tausch · Aktiv-Passiv-Mehrung · Aktiv-Passiv-Minderung.",
+    "Aktiva = Passiva gilt nach jeder einzelnen Buchung."
+  ],
+
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Was ist der Unterschied zwischen Anlage- und Umlaufvermögen — und woran entscheidet er sich?",
+      "loesung": "Anlagevermögen dient dem Betrieb dauerhaft, also länger als ein Jahr; Umlaufvermögen schlägt sich kurzfristig um. Entscheidend ist nicht die Art des Gegenstands, sondern die Absicht des Betriebs: Dasselbe Fahrzeug ist beim Autohändler Ware (Umlaufvermögen) und bei einer Spedition Fuhrpark (Anlagevermögen)."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum gehören Rückstellungen nicht zu den Verbindlichkeiten?",
+      "loesung": "Weil bei ihnen entweder die Höhe oder der Zeitpunkt der Zahlung ungewiss ist (§ 249 HGB). Verbindlichkeiten sind dagegen dem Grunde und der Höhe nach sicher, und die Fälligkeit steht fest. Deshalb bilden Rückstellungen im HGB eine eigene Bilanzposition zwischen Eigenkapital und Verbindlichkeiten."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Die Muster GmbH kauft einen Laptop für 1.200 € auf Ziel. Welche Veränderungsart liegt vor, und wie ändert sich die Bilanzsumme?",
+      "loesung": "Eine Aktiv-Passiv-Mehrung. Die Aktiva steigen um 1.200 € (Betriebs- und Geschäftsausstattung), die Passiva steigen um 1.200 € (Verbindlichkeiten). Die Bilanzsumme steigt um 1.200 €. Das Eigenkapital bleibt unverändert."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Betrieb überweist 3.000 € an einen Lieferanten zur Begleichung einer offenen Rechnung. Welche Positionen ändern sich, und was passiert mit der Bilanzsumme?",
+      "loesung": "Das Bankkonto auf der Aktivseite sinkt um 3.000 €, die Verbindlichkeiten auf der Passivseite sinken um 3.000 €. Es liegt eine Aktiv-Passiv-Minderung vor, die Bilanzsumme sinkt um 3.000 €. Wirtschaftlich hat sich die Lage des Betriebs nicht verändert — er hat Geld gegen eine weggefallene Schuld getauscht."
+    }
+  ],
+
+  "pruefungstipp": "Die vier Veränderungsarten kommen regelmäßig als Zuordnungsaufgabe. Arbeite immer in zwei Schritten: Erst fragen, welche zwei Positionen sich ändern — dann, ob sie auf derselben Seite liegen (Tausch) oder auf beiden (Mehrung oder Minderung). Zweiter Klassiker: Rückstellung oder Verbindlichkeit? Das Stichwort ist immer „ungewiss“."
+}

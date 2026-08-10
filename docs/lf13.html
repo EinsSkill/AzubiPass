@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ein Projekt planen und durchführen · AzubiPass</title>
+<meta name="description" content="Vom Auftrag über den Strukturplan zum Termin — und was zu tun ist, wenn es trotzdem klemmt. Das Lernfeld, das im praktischen Prüfungsteil am meisten bringt.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F5F5F0" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#141614" media="(prefers-color-scheme:dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="mittel/symbol.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="mittel/symbol-180.png">
+<meta name="apple-mobile-web-app-title" content="AzubiPass">
+<link rel="stylesheet" href="mittel/schriften.css">
+<link rel="stylesheet" href="mittel/azubipass.css">
+<script src="mittel/kern.js" defer></script>
+<script src="mittel/azubipass.js" defer></script>
+</head>
+<body data-lernfeld="lf13" data-bereich="lernen">
+<a class="sprung" href="#inhalt">Zum Inhalt springen</a>
+<div class="fortschritt"><span id="balken"></span></div>
+<header class="kopf" id="kopf">
+  <button class="zurueck" id="zurueck" aria-label="Eine Ebene zurück">
+    <svg viewBox="0 0 24 24" width="21" height="21" fill="none" aria-hidden="true">
+      <path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="kopf-meta" id="kopfMeta">Ein Projekt planen und durchführen</div>
+  <button class="kopf-suche" id="merken" aria-label="Kapitel merken" aria-pressed="false" hidden>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+      <path d="M6.5 3.5h11v17l-5.5-4-5.5 4z" stroke="currentColor" stroke-width="1.6"
+            stroke-linejoin="round"/></svg>
+  </button>
+  <a class="kopf-suche" href="app.html#suche" aria-label="Suchen"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M16.3 16.3 21 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+</header>
+<main id="inhalt">
+<section class="hero kapitel" id="start">
+  <div class="hero-links">
+    <div class="augenbraue">Lernfeld · Ein Projekt planen und durchführen</div>
+    <h1>Zeit, Kosten, Qualität. <em>Zwei davon</em> darfst du wählen.</h1>
+    <p class="hero-lead">Vom Auftrag über den Strukturplan zum Termin — und was zu tun ist, wenn es trotzdem klemmt. Das Lernfeld, das im praktischen Prüfungsteil am meisten bringt.</p>
+    <div class="hero-fakten"><span>4 Kapitel</span><span>40 Stunden</span><span>3. Lehrjahr</span></div>
+    <button class="start" data-zu="k1">Mit Kapitel 1 starten<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button>
+  </div>
+  <div class="hero-rechts">
+    <div class="buch-titel">Inhalt</div>
+    <ul class="buch"><li data-zu="k1"><span class="kn">K1</span><span class="kt">Was ein Projekt ausmacht</span><span class="ks">20 Min</span></li><li data-zu="k2"><span class="kn">K2</span><span class="kt">Struktur und Termine planen</span><span class="ks">30 Min</span></li><li data-zu="k3"><span class="kn">K3</span><span class="kt">Steuern und Risiken beherrschen</span><span class="ks">25 Min</span></li><li data-zu="k4"><span class="kn">K4</span><span class="kt">Abschließen und präsentieren</span><span class="ks">25 Min</span></li><li class="buch-extra" data-zu="trainer"><span class="kn">12</span><span class="kt">Karteikarten aus allen Kapiteln</span><span class="ks">üben</span></li></ul>
+    
+  </div>
+</section><section class="kapitel" id="k1" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K1<small>Kapitel</small></div>
+    <div>
+      <h2>Was ein Projekt ausmacht</h2>
+      <p>Nicht jede große Aufgabe ist ein Projekt. Und das ist gut so.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/3 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="b1"><span class="haken"></span><span>Merkmale eines Projekts benennen</span></li><li data-fuer="b2"><span class="haken"></span><span>Das Spannungsfeld aus Zeit, Kosten und Qualität erklären</span></li><li data-fuer="b3"><span class="haken"></span><span>Inhalte eines Projektauftrags aufzählen</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K1</b>Was ein Projekt ausmacht</aside>
+    <article class="inhalt">
+      <h3 id="k1-b1">Fünf Merkmale</h3><p class="rein">Ein <button class="begriff" data-art="Begriff" data-titel="Projekt" data-text="Ein einmaliges Vorhaben mit klarem Ziel, festem Anfang und Ende, begrenzten Mitteln und meist bereichsübergreifender Besetzung. Fehlt die Einmaligkeit, ist es kein Projekt, sondern ein Prozess.">Projekt</button> unterscheidet sich vom Tagesgeschäft durch fünf Merkmale. <mark>Fehlt die Einmaligkeit, ist es kein Projekt, sondern ein Prozess</mark> — und den steuert man ganz anders, nämlich mit den Mitteln aus Lernfeld 11.</p><div class="tab-huelle rein"><table><thead><tr><th>Merkmal</th><th>Was es bedeutet</th><th>Gegenbeispiel</th></tr></thead><tbody><tr class="klappbar"><td>Einmaligkeit</td><td>so noch nie gemacht</td><td>monatliche Lohnabrechnung</td></tr><tr class="detail"><td colspan="3"><strong>Das entscheidende Merkmal.</strong> Was regelmäßig wiederkehrt, gehört in einen Prozess mit Standardablauf — nicht in eine Projektorganisation mit eigener Struktur.</td></tr><tr><td>Klares Ziel</td><td>messbar beschrieben</td><td>„irgendwie besser werden"</td></tr><tr class="klappbar"><td>Anfang und Ende</td><td>terminiert</td><td>laufende Kundenbetreuung</td></tr><tr class="detail"><td colspan="3"><strong>Ein Projekt endet.</strong> Was kein Ende hat, ist eine Daueraufgabe — auch wenn es Projekt genannt wird.</td></tr><tr><td>Begrenzte Mittel</td><td>Budget, Personal, Zeit</td><td>unbegrenzte Ressourcen</td></tr><tr class="klappbar"><td>Eigene Organisation</td><td>meist bereichsübergreifend</td><td>eine Abteilung allein</td></tr><tr class="detail"><td colspan="3"><strong>Daraus entsteht die typische Schwierigkeit:</strong> Die Projektleitung führt Menschen, die ihr fachlich gar nicht unterstellt sind.</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k1-b1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p><strong>Einmalig, klares Ziel, Anfang und Ende, begrenzte Mittel, eigene Organisation.</strong> Fehlt die Einmaligkeit, ist es ein Prozess und kein Projekt.</p>
+      <button class="dreher" data-karte="lf13-k1-b1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Welche fünf Merkmale hat ein Projekt, und welches davon grenzt es vom Prozess ab?</p>
+      <button class="dreher" data-karte="lf13-k1-b1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Der häufigste Fehler in Betrieben: <strong>Alles heißt Projekt.</strong> Das entwertet den Begriff und führt dazu, dass für echte Projekte keine eigene Organisation mehr aufgesetzt wird — sie laufen dann nebenher wie Tagesgeschäft und scheitern entsprechend.</p></div><h3 id="k1-b2">Drei Größen, die aneinander hängen</h3><p class="rein">Das <button class="begriff" data-art="Begriff" data-titel="Magisches Dreieck" data-text="Die Spannung zwischen Zeit, Kosten und Qualität beziehungsweise Umfang. Wer eine Größe verändert, verändert zwangsläufig mindestens eine andere — alle drei gleichzeitig zu optimieren, ist nicht möglich.">magische Dreieck</button> beschreibt die Spannung zwischen <strong>Zeit, Kosten und Qualität</strong> beziehungsweise Umfang. <mark>Wer eine Größe verändert, verändert zwangsläufig mindestens eine andere.</mark> Alle drei gleichzeitig zu verbessern, geht nicht.</p><div class="sig rein" data-grafik="kette"><script type="application/json">{"typ": "grafik", "variante": "kette", "kopf": "Drei Hebel", "titel": "Was passiert, wenn du drückst?", "lead": "Jede Verschiebung hat einen Preis. Klick dich durch.", "schritte": [{"nr": 1, "titel": "Termin vorziehen", "satz": "schneller fertig", "text": "Entweder kostet es mehr — zusätzliches Personal, Überstunden, Eilzuschläge — oder es geht zulasten des Umfangs, indem Teile später kommen. Beides ist zulässig, es muss nur entschieden werden."}, {"nr": 2, "titel": "Budget kürzen", "satz": "billiger machen", "text": "Dann dauert es länger, weil weniger Menschen daran arbeiten, oder der Umfang wird kleiner. Ein gekürztes Budget bei gleichem Umfang und Termin ist keine Entscheidung, sondern eine Hoffnung."}, {"nr": 3, "titel": "Umfang erweitern", "satz": "mehr liefern", "text": "Kostet Zeit oder Geld, meist beides. Der schleichende Fall ist gefährlicher als der offene: Viele kleine Zusatzwünsche, die einzeln harmlos wirken und zusammen den Plan sprengen."}], "regel": "Die Aufgabe der Projektleitung ist nicht, alle drei Größen zu halten — das ist selten möglich. Ihre Aufgabe ist, die Auswirkung sichtbar zu machen und den Auftraggeber entscheiden zu lassen."}</script><div class="sig-kopf">Drei Hebel</div><h4>Was passiert, wenn du drückst?</h4><p class="sig-lead">Jede Verschiebung hat einen Preis. Klick dich durch.</p><div class="buehne"></div><p class="sig-regel">Die Aufgabe der Projektleitung ist nicht, alle drei Größen zu halten — das ist selten möglich. Ihre Aufgabe ist, die Auswirkung sichtbar zu machen und den Auftraggeber entscheiden zu lassen.</p></div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Wenn ein Zusatzwunsch kommt, lautet die richtige Antwort nie „geht nicht" und nie einfach „ja". Sie lautet: <strong>„Das kostet X Tage und Y Euro. Soll ich das einplanen, oder soll dafür etwas anderes entfallen?"</strong> Damit liegt die Entscheidung dort, wo sie hingehört.</p></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k1-b2-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p><strong>Zeit, Kosten, Umfang</strong> hängen zusammen. Wer eine Größe ändert, muss mindestens eine andere nachziehen — die Projektleitung macht das sichtbar, entscheiden tut der Auftraggeber.</p>
+      <button class="dreher" data-karte="lf13-k1-b2-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Was besagt das magische Dreieck, und was ist die Aufgabe der Projektleitung darin?</p>
+      <button class="dreher" data-karte="lf13-k1-b2-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k1-b3">Der Projektauftrag</h3><p class="rein">Der <button class="begriff" data-art="Begriff" data-titel="Projektauftrag" data-text="Die schriftliche Grundlage eines Projekts: Ziel, Umfang, Termine, Budget, Befugnisse und Auftraggeber. Ohne ihn beginnt jedes Projekt mit einem Missverständnis.">Projektauftrag</button> ist die schriftliche Grundlage. <mark>Ohne ihn beginnt jedes Projekt mit einem Missverständnis</mark>, das erst kurz vor dem Endtermin auffällt — wenn die Beteiligten feststellen, dass sie verschiedene Ziele verfolgt haben.</p><div class="tab-huelle rein"><table><thead><tr><th>Inhalt</th><th>Warum wichtig</th></tr></thead><tbody><tr class="klappbar"><td>Ziel, messbar formuliert</td><td>sonst weiß niemand, wann es erreicht ist</td></tr><tr class="detail"><td colspan="2"><strong>Messbar heißt: mit Zahl und Termin.</strong> „Die Ablage verbessern" ist kein Ziel. „Ab dem 1. Oktober findet jede Vertretung einen Vorgang in unter zwei Minuten" schon.</td></tr><tr class="klappbar"><td>Abgrenzung: was gehört <strong>nicht</strong> dazu</td><td>verhindert schleichende Ausweitung</td></tr><tr class="detail"><td colspan="2"><strong>Der am häufigsten vergessene Punkt</strong> und zugleich der wirksamste. Was ausdrücklich ausgeschlossen ist, muss später nicht diskutiert werden.</td></tr><tr><td>Termine und Meilensteine</td><td>macht Fortschritt prüfbar</td></tr><tr><td>Budget und Ressourcen</td><td>klärt, womit gearbeitet wird</td></tr><tr class="klappbar"><td>Projektleitung und Befugnisse</td><td>klärt, wer entscheiden darf</td></tr><tr class="detail"><td colspan="2"><strong>Verantwortung ohne Befugnis funktioniert nicht.</strong> Wenn die Projektleitung keine Zusagen über Arbeitszeit machen kann, führt sie nur nominell.</td></tr><tr><td>Auftraggeber</td><td>wer abnimmt und entscheidet</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k1-b3-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Der Projektauftrag enthält <strong>Ziel, Abgrenzung, Termine, Budget, Befugnisse und Auftraggeber</strong> — schriftlich. Die Abgrenzung ist der wirksamste und meistvergessene Teil.</p>
+      <button class="dreher" data-karte="lf13-k1-b3-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Welche Inhalte gehören in einen Projektauftrag, und warum ist die Abgrenzung so wichtig?</p>
+      <button class="dreher" data-karte="lf13-k1-b3-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="check rein" id="lf13-k1-b3-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Der Auftraggeber sagt: „Machen Sie die Ablage mal besser, so bis zum Sommer." Was tust du zuerst?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Weder das Ziel noch der Termin sind bestimmt. „Besser&quot; ist nicht messbar, und „bis zum Sommer&quot; ist kein Datum. Am Ende beurteilt jeder das Ergebnis anders.">Sofort anfangen — der Auftrag ist klar genug</button><button class="opt" data-richtig="1" data-echo="Richtig. Der Auftrag ist in dieser Form nicht arbeitsfähig. Nötig sind ein messbares Ziel, ein konkreter Termin, das Budget, die Befugnisse und vor allem die Abgrenzung: Welche Bereiche gehören dazu, welche nicht? Erst wenn der Auftraggeber diesen Auftrag bestätigt hat, ist die gemeinsame Grundlage da. Der Aufwand dafür ist gering im Vergleich zu dem, was ein Missverständnis am Projektende kostet.">Einen schriftlichen Projektauftrag erarbeiten und abstimmen</button><button class="opt" data-richtig="" data-echo="Unklare Aufträge sind der Normalfall, nicht die Ausnahme. Die Aufgabe besteht gerade darin, sie gemeinsam mit dem Auftraggeber zu schärfen.">Ablehnen, weil der Auftrag zu unklar ist</button></div><p class="check-echo" role="status"></p></div><div class="zuordnen rein" id="lf13-k1-b3-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">Projekt oder Prozess?</p><div class="zu-reihe" id="lf13-k1-b3-z1-1" data-loesung="Projekt"><span class="zu-text">Einführung eines neuen Warenwirtschaftssystems.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Projekt">Projekt</button><button class="zu-btn" data-w="Prozess">Prozess</button></span></div><div class="zu-reihe" id="lf13-k1-b3-z1-2" data-loesung="Prozess"><span class="zu-text">Monatliche Entgeltabrechnung.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Projekt">Projekt</button><button class="zu-btn" data-w="Prozess">Prozess</button></span></div><div class="zu-reihe" id="lf13-k1-b3-z1-3" data-loesung="Projekt"><span class="zu-text">Umzug in ein neues Bürogebäude.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Projekt">Projekt</button><button class="zu-btn" data-w="Prozess">Prozess</button></span></div><div class="zu-reihe" id="lf13-k1-b3-z1-4" data-loesung="Prozess"><span class="zu-text">Bearbeitung eingehender Kundenaufträge.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Projekt">Projekt</button><button class="zu-btn" data-w="Prozess">Prozess</button></span></div></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K1</div>
+        <ul><li>Merkmale eines <button class="begriff" data-art="Begriff" data-titel="Projekt" data-text="Ein einmaliges Vorhaben mit klarem Ziel, festem Anfang und Ende, begrenzten Mitteln und meist bereichsübergreifender Besetzung. Fehlt die Einmaligkeit, ist es kein Projekt, sondern ein Prozess.">Projekts</button>: einmalig, klares Ziel, Anfang und Ende, begrenzte Mittel, eigene Organisation.</li><li>Fehlt die Einmaligkeit, handelt es sich um einen Prozess.</li><li>Das <button class="begriff" data-art="Begriff" data-titel="Magisches Dreieck" data-text="Die Spannung zwischen Zeit, Kosten und Qualität beziehungsweise Umfang. Wer eine Größe verändert, verändert zwangsläufig mindestens eine andere — alle drei gleichzeitig zu optimieren, ist nicht möglich.">magische Dreieck</button> verbindet Zeit, Kosten und Umfang.</li><li>Wer eine der drei Größen ändert, muss mindestens eine andere nachziehen.</li><li>Die Projektleitung macht Auswirkungen sichtbar, entscheiden tut der Auftraggeber.</li><li>Der <button class="begriff" data-art="Begriff" data-titel="Projektauftrag" data-text="Die schriftliche Grundlage eines Projekts: Ziel, Umfang, Termine, Budget, Befugnisse und Auftraggeber. Ohne ihn beginnt jedes Projekt mit einem Missverständnis.">Projektauftrag</button> ist schriftlich und enthält Ziel, Abgrenzung, Termine, Budget und Befugnisse.</li><li>Ziele werden messbar formuliert — mit Zahl und Termin.</li><li>Verantwortung ohne Befugnis funktioniert nicht.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/3 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="lf13-k1-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="lf13-k1-t1-f">Nenne die Merkmale eines Projekts und erkläre, wie es sich vom Prozess unterscheidet.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k1-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Ein Projekt ist erstens einmalig, also in dieser Form noch nicht durchgeführt worden. Zweitens hat es ein klares, messbar formuliertes Ziel. Drittens ist es zeitlich befristet, hat also einen definierten Anfang und ein definiertes Ende. Viertens stehen ihm nur begrenzte Mittel an Budget, Personal und Zeit zur Verfügung. Fünftens erhält es eine eigene, meist bereichsübergreifende Organisation. Das entscheidende Abgrenzungsmerkmal gegenüber dem Prozess ist die Einmaligkeit. Ein Prozess ist eine wiederkehrende Folge von Tätigkeiten, etwa die monatliche Entgeltabrechnung oder die Bearbeitung von Kundenaufträgen; er wird standardisiert und laufend verbessert. Ein Projekt dagegen wird einmal geplant, durchgeführt und abgeschlossen. Die Unterscheidung ist praktisch bedeutsam, weil beide völlig unterschiedlich gesteuert werden: der Prozess über Standards und Kennzahlen, das Projekt über Struktur-, Termin- und Kostenplanung.</p></div>
+</div><div class="frage" id="lf13-k1-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="lf13-k1-t2-f">Erkläre das magische Dreieck und was daraus für die Projektleitung folgt.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k1-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Das magische Dreieck beschreibt die wechselseitige Abhängigkeit von Zeit, Kosten und Qualität beziehungsweise Umfang. Die drei Größen lassen sich nicht unabhängig voneinander festlegen: Wird der Termin vorgezogen, steigen entweder die Kosten durch zusätzliches Personal und Überstunden, oder der Umfang muss verringert werden. Wird das Budget gekürzt, verlängert sich die Dauer oder der Umfang schrumpft. Wird der Umfang erweitert, kostet das Zeit, Geld oder beides. Für die Projektleitung folgt daraus, dass es nicht ihre Aufgabe sein kann, alle drei Größen gleichzeitig zu halten; das ist bei einer Änderung schlicht unmöglich. Ihre Aufgabe ist es, die Auswirkung jeder gewünschten Änderung konkret zu beziffern und dem Auftraggeber die Entscheidung vorzulegen. Besonders zu beachten ist die schleichende Ausweitung des Umfangs durch viele kleine Zusatzwünsche, die einzeln harmlos wirken und in der Summe den Plan sprengen.</p></div>
+</div><div class="frage" id="lf13-k1-t3">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="lf13-k1-t3-f">Du sollst die Einführung eines digitalen Dokumentenmanagements leiten. Der Auftraggeber nennt Ziel und Termin, sagt aber nichts zu Budget und Befugnissen. Was tust du?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k1-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Ich würde einen schriftlichen Projektauftrag erarbeiten und ihn abstimmen, bevor die eigentliche Planung beginnt. Zunächst schärfe ich das Ziel so, dass es messbar ist, also mit Zahl und Termin, und ergänze die Abgrenzung: Welche Abteilungen, welche Dokumentenarten und welche Altbestände gehören dazu, und was ausdrücklich nicht? Gerade dieser Punkt verhindert später die schleichende Ausweitung. Anschließend kläre ich das Budget, und zwar sowohl für Lizenzen und externe Leistungen als auch für die interne Arbeitszeit, die häufig vergessen wird. Zu den Befugnissen frage ich konkret nach: Darf ich Arbeitszeit von Beschäftigten anderer Abteilungen verbindlich einplanen, bis zu welchem Betrag darf ich selbst beauftragen, und wer entscheidet bei Konflikten mit dem Tagesgeschäft? Verantwortung ohne diese Befugnisse wäre nur nominell. Schließlich halte ich fest, wer Auftraggeber ist und damit abnimmt, und vereinbare Meilensteine, an denen der Fortschritt überprüfbar ist. Erst nach der Bestätigung dieses Auftrags beginne ich mit dem Projektstrukturplan.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Die fünf Projektmerkmale werden häufig als Aufzählung abgefragt — lerne sie auswendig und betone die Einmaligkeit als Abgrenzung zum Prozess. Beim magischen Dreieck lautet die erwartete Antwort immer, dass sich eine Größe nicht isoliert ändern lässt; ergänze ein konkretes Beispiel. Und wenn im Fall ein unklarer Auftrag beschrieben wird, ist die richtige erste Handlung praktisch immer der schriftliche Projektauftrag.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K2 · Struktur und Termine planen</b></div><button class="start" data-zu="k2">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k2" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K2<small>Kapitel</small></div>
+    <div>
+      <h2>Struktur und Termine planen</h2>
+      <p>Erst zerlegen, dann schätzen, dann terminieren. Nie andersherum.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/3 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="b1"><span class="haken"></span><span>Einen Projektstrukturplan aufbauen</span></li><li data-fuer="b2"><span class="haken"></span><span>Aufwand schätzen und Arbeitspakete beschreiben</span></li><li data-fuer="b3"><span class="haken"></span><span>Einen Balkenplan lesen und den kritischen Pfad erkennen</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K2</b>Struktur und Termine planen</aside>
+    <article class="inhalt">
+      <h3 id="k2-b1">Das Projekt zerlegen</h3><p class="rein">Der <button class="begriff" data-art="Begriff" data-titel="Projektstrukturplan" data-text="Zerlegung des Projekts in Teilaufgaben und Arbeitspakete. Er beantwortet die Frage, was alles zu tun ist — noch ohne Termine und Reihenfolge.">Projektstrukturplan</button> beantwortet genau eine Frage: <strong>Was ist alles zu tun?</strong> <mark>Noch ohne Termine, noch ohne Reihenfolge</mark> — wer beides vermischt, vergisst zuverlässig Aufgaben.</p><div class="tab-huelle rein"><table><thead><tr><th>Ebene</th><th>Inhalt</th><th>Beispiel Messeauftritt</th></tr></thead><tbody><tr><td>Projekt</td><td>das Ganze</td><td>Messeauftritt Frühjahr</td></tr><tr class="klappbar"><td>Teilaufgaben</td><td>große Blöcke</td><td>Standbau, Personal, Werbung, Logistik</td></tr><tr class="detail"><td colspan="3"><strong>Drei bis sieben Blöcke reichen.</strong> Mehr wird unübersichtlich, weniger versteckt zu viel in einem Block.</td></tr><tr class="klappbar"><td><button class="begriff" data-art="Begriff" data-titel="Arbeitspaket" data-text="Die kleinste Einheit des Strukturplans: eine abgrenzbare Aufgabe mit einem Verantwortlichen, geschätztem Aufwand und einem überprüfbaren Ergebnis.">Arbeitspakete</button></td><td>kleinste Einheit</td><td>Standdesign beauftragen, Standpersonal einteilen</td></tr><tr class="detail"><td colspan="3"><strong>Jedes Arbeitspaket hat einen Verantwortlichen, einen geschätzten Aufwand und ein überprüfbares Ergebnis.</strong> Fehlt eines davon, ist es kein Arbeitspaket, sondern eine Absichtserklärung.</td></tr></tbody></table></div><p class="rein">Gegliedert wird entweder nach <strong>Aufgaben</strong> — was ist zu tun —, nach <strong>Objekten</strong> — welche Teile entstehen — oder nach <strong>Phasen</strong> — was passiert nacheinander. Für Büroprojekte ist die Gliederung nach Aufgaben meist die brauchbarste.</p><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k2-b1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Der Strukturplan sagt <strong>was</strong>, nicht <strong>wann</strong>. Ein <button class="begriff" data-art="Begriff" data-titel="Arbeitspaket" data-text="Die kleinste Einheit des Strukturplans: eine abgrenzbare Aufgabe mit einem Verantwortlichen, geschätztem Aufwand und einem überprüfbaren Ergebnis.">Arbeitspaket</button> braucht drei Dinge: Verantwortlicher, geschätzter Aufwand, überprüfbares Ergebnis.</p>
+      <button class="dreher" data-karte="lf13-k2-b1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Welche Frage beantwortet der Projektstrukturplan, und was gehört zu einem vollständigen Arbeitspaket?</p>
+      <button class="dreher" data-karte="lf13-k2-b1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Prüf jedes Arbeitspaket mit der Frage: <strong>Woran erkenne ich, dass es fertig ist?</strong> Lässt sich das nicht in einem Satz sagen, ist das Paket zu unscharf — und wird später zum Streitpunkt.</p></div><h3 id="k2-b2">Aufwand schätzen</h3><p class="rein">Schätzungen sind systematisch zu optimistisch. <mark>Das ist keine Charakterschwäche, sondern ein bekanntes Muster</mark> — geschätzt wird der störungsfreie Idealfall, gearbeitet wird im Alltag mit Rückfragen und Unterbrechungen.</p><div class="tab-huelle rein"><table><thead><tr><th>Vorgehen</th><th>Wie es geht</th><th>Wann sinnvoll</th></tr></thead><tbody><tr class="klappbar"><td>Erfahrungswerte</td><td>Vergleich mit früheren Projekten</td><td>wenn Ähnliches schon lief</td></tr><tr class="detail"><td colspan="3"><strong>Die zuverlässigste Grundlage</strong> — vorausgesetzt, jemand hat die tatsächlichen Zeiten damals festgehalten. Genau daran scheitert es meistens.</td></tr><tr class="klappbar"><td>Befragung der Ausführenden</td><td>die schätzen, die es machen</td><td>fast immer</td></tr><tr class="detail"><td colspan="3"><strong>Wer die Arbeit macht, schätzt sie besser als die Projektleitung</strong> — und trägt die Schätzung anschließend mit, weil sie seine eigene ist.</td></tr><tr class="klappbar"><td>Drei-Werte-Schätzung</td><td>optimistisch, wahrscheinlich, pessimistisch</td><td>bei unsicheren Paketen</td></tr><tr class="detail"><td colspan="3"><strong>Der gewichtete Mittelwert ist realistischer als eine Einzelschätzung</strong>, weil er das Risiko sichtbar macht statt es zu verstecken.</td></tr><tr class="klappbar"><td>Puffer einplanen</td><td>am Projektende, nicht je Paket</td><td>immer</td></tr><tr class="detail"><td colspan="3"><strong>Puffer je Paket wird aufgebraucht</strong>, weil die Arbeit sich nach der verfügbaren Zeit ausdehnt. Ein gemeinsamer Puffer am Ende bleibt dagegen verfügbar für das, was ihn wirklich braucht.</td></tr></tbody></table></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Verwechsle <strong>Aufwand</strong> und <strong>Dauer</strong> nicht. Ein Arbeitspaket mit 16 Stunden Aufwand dauert bei halber Verfügbarkeit vier Arbeitstage. Der Balkenplan braucht die <strong>Dauer</strong>, die Kostenrechnung den <strong>Aufwand</strong>.</p></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k2-b2-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p><strong>Aufwand ist Arbeitszeit, Dauer ist Kalenderzeit.</strong> Geschätzt wird von denen, die es machen. Puffer gehört ans Projektende, nicht in jedes Paket.</p>
+      <button class="dreher" data-karte="lf13-k2-b2-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Worin unterscheiden sich Aufwand und Dauer, und warum gehört der Puffer ans Projektende?</p>
+      <button class="dreher" data-karte="lf13-k2-b2-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k2-b3">Der Balkenplan</h3><p class="rein">Der <button class="begriff" data-art="Begriff" data-titel="Balkenplan" data-text="Darstellung der Vorgänge als Balken auf einer Zeitachse. Zeigt Dauer, Reihenfolge und Überschneidungen auf einen Blick — die gebräuchlichste Form der Terminplanung.">Balkenplan</button> setzt die Arbeitspakete auf eine Zeitachse. <mark>Sein eigentlicher Wert liegt in den Abhängigkeiten:</mark> Manche Vorgänge können erst beginnen, wenn andere fertig sind — und genau daraus entsteht der <button class="begriff" data-art="Begriff" data-titel="Kritischer Pfad" data-text="Die Kette von Vorgängen ohne Puffer. Verzögert sich einer davon, verschiebt sich das Projektende unmittelbar. Alles außerhalb dieses Pfads hat Spielraum.">kritische Pfad</button>.</p><div class="sig rein" data-grafik="balkenplan"><script type="application/json">{"typ": "grafik", "variante": "balkenplan", "kopf": "Der Terminplan", "titel": "Wo verschiebt eine Verzögerung das Ende?", "lead": "Vorgang anklicken und verzögern. Manche wirken sofort, andere gar nicht.", "einheit": "Tage", "einheit_eins": "Tag", "plan": 34, "vorgaenge": [{"id": "konzept", "name": "Konzept und Ziele", "dauer": 5, "nach": []}, {"id": "budget", "name": "Budget freigeben lassen", "dauer": 4, "nach": ["konzept"]}, {"id": "stand", "name": "Standbau beauftragen", "dauer": 18, "nach": ["budget"]}, {"id": "werbung", "name": "Werbemittel gestalten", "dauer": 9, "nach": ["budget"]}, {"id": "personal", "name": "Standpersonal einteilen", "dauer": 3, "nach": ["budget"]}, {"id": "schulung", "name": "Personal schulen", "dauer": 2, "nach": ["personal", "werbung"]}, {"id": "aufbau", "name": "Aufbau vor Ort", "dauer": 3, "nach": ["stand", "schulung"]}, {"id": "generalprobe", "name": "Generalprobe", "dauer": 1, "nach": ["aufbau"]}], "regel": "Der Standbau dauert 18 Tage und hängt am Budget — er liegt auf dem kritischen Pfad. Die Personaleinteilung mit 3 Tagen hat dagegen Puffer: Sie kann sich um mehrere Tage verspäten, ohne dass das Projektende wandert."}</script><div class="sig-kopf">Der Terminplan</div><h4>Wo verschiebt eine Verzögerung das Ende?</h4><p class="sig-lead">Vorgang anklicken und verzögern. Manche wirken sofort, andere gar nicht.</p><div class="buehne"></div><p class="sig-regel">Der Standbau dauert 18 Tage und hängt am Budget — er liegt auf dem kritischen Pfad. Die Personaleinteilung mit 3 Tagen hat dagegen Puffer: Sie kann sich um mehrere Tage verspäten, ohne dass das Projektende wandert.</p></div><p class="rein">Ein <strong><button class="begriff" data-art="Begriff" data-titel="Meilenstein" data-text="Ein Zeitpunkt im Projekt, an dem ein überprüfbares Zwischenergebnis vorliegt. Er hat keine Dauer und dient dazu, den Fortschritt ehrlich zu messen statt zu schätzen.">Meilenstein</button></strong> ist ein Zeitpunkt ohne Dauer, an dem ein überprüfbares Zwischenergebnis vorliegt. <mark>Seine Aufgabe ist nicht das Feiern, sondern das ehrliche Messen:</mark> Ist das Ergebnis da oder nicht — dazwischen gibt es nichts.</p><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k2-b3-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Der <button class="begriff" data-art="Begriff" data-titel="Kritischer Pfad" data-text="Die Kette von Vorgängen ohne Puffer. Verzögert sich einer davon, verschiebt sich das Projektende unmittelbar. Alles außerhalb dieses Pfads hat Spielraum.">kritische Pfad</button> ist die Kette ohne Puffer. <strong>Verzögert sich dort etwas, verschiebt sich das Projektende sofort</strong> — außerhalb davon nicht.</p>
+      <button class="dreher" data-karte="lf13-k2-b3-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Was ist der kritische Pfad, und wie unterscheidet er sich von Vorgängen mit Puffer?</p>
+      <button class="dreher" data-karte="lf13-k2-b3-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="check rein" id="lf13-k2-b3-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Ein Vorgang mit fünf Tagen Puffer verspätet sich um zwei Tage. Was passiert mit dem Projektende?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Das gilt nur für Vorgänge auf dem kritischen Pfad. Hier ist Puffer vorhanden, der die Verzögerung auffängt.">Es verschiebt sich um zwei Tage</button><button class="opt" data-richtig="1" data-echo="Richtig. Puffer ist genau die Zeit, um die sich ein Vorgang verspäten darf, ohne dass sich das Projektende verschiebt. Von fünf Tagen Puffer werden zwei verbraucht, drei bleiben. Wichtig ist aber, das im Blick zu behalten: Verspätet sich derselbe Vorgang noch einmal um vier Tage, ist der Puffer aufgebraucht und der Vorgang wird selbst kritisch.">Es bleibt gleich, der Puffer schrumpft auf drei Tage</button><button class="opt" data-richtig="" data-echo="Eine Verzögerung macht ein Projekt nie schneller. Puffer bedeutet nur, dass sie sich nicht auf das Ende auswirkt.">Das Projekt wird zwei Tage früher fertig</button></div><p class="check-echo" role="status"></p></div><div class="zuordnen rein" id="lf13-k2-b3-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">Strukturplan oder Terminplan?</p><div class="zu-reihe" id="lf13-k2-b3-z1-1" data-loesung="Strukturplan"><span class="zu-text">Das Projekt wird in Teilaufgaben und Arbeitspakete zerlegt.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Strukturplan">Strukturplan</button><button class="zu-btn" data-w="Terminplan">Terminplan</button></span></div><div class="zu-reihe" id="lf13-k2-b3-z1-2" data-loesung="Terminplan"><span class="zu-text">Es wird festgelegt, welcher Vorgang wann beginnt.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Strukturplan">Strukturplan</button><button class="zu-btn" data-w="Terminplan">Terminplan</button></span></div><div class="zu-reihe" id="lf13-k2-b3-z1-3" data-loesung="Terminplan"><span class="zu-text">Der kritische Pfad wird bestimmt.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Strukturplan">Strukturplan</button><button class="zu-btn" data-w="Terminplan">Terminplan</button></span></div><div class="zu-reihe" id="lf13-k2-b3-z1-4" data-loesung="Strukturplan"><span class="zu-text">Für jedes Paket wird ein Verantwortlicher benannt.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Strukturplan">Strukturplan</button><button class="zu-btn" data-w="Terminplan">Terminplan</button></span></div></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K2</div>
+        <ul><li>Der <button class="begriff" data-art="Begriff" data-titel="Projektstrukturplan" data-text="Zerlegung des Projekts in Teilaufgaben und Arbeitspakete. Er beantwortet die Frage, was alles zu tun ist — noch ohne Termine und Reihenfolge.">Projektstrukturplan</button> beantwortet, was zu tun ist — noch ohne Termine.</li><li>Gegliedert wird nach Aufgaben, Objekten oder Phasen.</li><li>Ein <button class="begriff" data-art="Begriff" data-titel="Arbeitspaket" data-text="Die kleinste Einheit des Strukturplans: eine abgrenzbare Aufgabe mit einem Verantwortlichen, geschätztem Aufwand und einem überprüfbaren Ergebnis.">Arbeitspaket</button> hat Verantwortlichen, geschätzten Aufwand und überprüfbares Ergebnis.</li><li>Schätzungen sind systematisch zu optimistisch — schätzen sollen die Ausführenden.</li><li>Aufwand ist Arbeitszeit, Dauer ist Kalenderzeit.</li><li>Puffer gehört ans Projektende, nicht in jedes einzelne Paket.</li><li>Der <button class="begriff" data-art="Begriff" data-titel="Kritischer Pfad" data-text="Die Kette von Vorgängen ohne Puffer. Verzögert sich einer davon, verschiebt sich das Projektende unmittelbar. Alles außerhalb dieses Pfads hat Spielraum.">kritische Pfad</button> ist die Kette ohne Puffer.</li><li>Ein <button class="begriff" data-art="Begriff" data-titel="Meilenstein" data-text="Ein Zeitpunkt im Projekt, an dem ein überprüfbares Zwischenergebnis vorliegt. Er hat keine Dauer und dient dazu, den Fortschritt ehrlich zu messen statt zu schätzen.">Meilenstein</button> hat keine Dauer und misst ein überprüfbares Zwischenergebnis.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/3 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="lf13-k2-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="lf13-k2-t1-f">Erkläre Aufbau und Zweck des Projektstrukturplans und nenne die Bestandteile eines Arbeitspakets.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k2-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Der Projektstrukturplan zerlegt das Projekt von oben nach unten in Teilaufgaben und schließlich in Arbeitspakete. Er beantwortet ausschließlich die Frage, was alles zu tun ist, und enthält bewusst noch keine Termine und keine Reihenfolge; beides wird erst im Terminplan festgelegt. Werden beide Fragen vermischt, gehen erfahrungsgemäß Aufgaben verloren. Gegliedert werden kann nach Aufgaben, nach Objekten oder nach Phasen, wobei sich für Büroprojekte die Gliederung nach Aufgaben meist am besten eignet. Ein vollständiges Arbeitspaket enthält drei Angaben: einen namentlich benannten Verantwortlichen, einen geschätzten Aufwand und ein überprüfbares Ergebnis. Der Prüfstein für die Formulierung lautet, ob sich in einem Satz sagen lässt, woran man erkennt, dass das Paket fertig ist. Ist das nicht möglich, ist es zu unscharf beschrieben.</p></div>
+</div><div class="frage" id="lf13-k2-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="lf13-k2-t2-f">Was ist der kritische Pfad, und welche Bedeutung hat er für die Projektsteuerung?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k2-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Der kritische Pfad ist die Kette von Vorgängen, die keinen Puffer besitzt und deren Gesamtdauer damit die Projektdauer bestimmt. Verzögert sich ein Vorgang auf diesem Pfad, verschiebt sich das Projektende unmittelbar um denselben Zeitraum. Vorgänge außerhalb des kritischen Pfads besitzen dagegen Puffer und können sich in dessen Umfang verspäten, ohne dass sich am Endtermin etwas ändert. Für die Steuerung bedeutet das dreierlei. Erstens ist die Aufmerksamkeit auf die kritischen Vorgänge zu richten, weil dort jede Verzögerung sofort durchschlägt. Zweitens lohnt es sich, zusätzliche Mittel dorthin zu lenken statt auf Vorgänge mit Puffer. Drittens ist der kritische Pfad nicht dauerhaft festgelegt: Wird ein kritischer Vorgang verkürzt oder ein Vorgang mit Puffer stark verzögert, kann eine andere Kette kritisch werden. Der Plan muss deshalb fortgeschrieben werden.</p></div>
+</div><div class="frage" id="lf13-k2-t3">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="lf13-k2-t3-f">In deinem Messeprojekt teilt der Standbauer mit, dass er statt 18 nun 24 Tage braucht. Die Personaleinteilung verzögert sich gleichzeitig um drei Tage. Wie reagierst du?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k2-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Zunächst ist zu unterscheiden, welcher der beiden Vorgänge auf dem kritischen Pfad liegt. Der Standbau mit ursprünglich 18 Tagen ist der längste Vorgang nach der Budgetfreigabe und damit kritisch; seine Verlängerung um sechs Tage verschiebt das Projektende unmittelbar um sechs Tage. Die Personaleinteilung mit drei Tagen Dauer hat dagegen erheblichen Puffer, weil sie parallel zum viel längeren Standbau läuft; ihre Verzögerung um drei Tage wirkt sich auf das Projektende nicht aus, solange der Puffer reicht. Die Aufmerksamkeit gehört deshalb ausschließlich dem Standbau. Mögliche Maßnahmen sind, mit dem Standbauer über eine Verkürzung zu verhandeln, gegebenenfalls gegen Mehrkosten, nachfolgende Vorgänge wie Aufbau und Generalprobe zu straffen oder Vorgänge zu überlappen, soweit fachlich vertretbar. Reicht das nicht, ist der Endtermin gefährdet, und der Auftraggeber muss unverzüglich informiert werden; das ist keine Formalie, sondern Voraussetzung dafür, dass er selbst entscheiden kann. Anschließend ist der Terminplan fortzuschreiben und zu prüfen, ob durch die Verschiebung eine andere Kette kritisch geworden ist.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Der kritische Pfad ist die sichere Frage dieses Kapitels und wird meist an einem kleinen Netz- oder Balkenplan abgefragt. Suche die längste Kette vom Anfang bis zum Ende — ihre Dauer ist die Projektdauer. Merk dir außerdem die Unterscheidung von Aufwand und Dauer; sie wird gern in Rechenaufgaben eingebaut, in denen jemand nur zur Hälfte für das Projekt verfügbar ist.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K3 · Steuern und Risiken beherrschen</b></div><button class="start" data-zu="k3">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k3" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K3<small>Kapitel</small></div>
+    <div>
+      <h2>Steuern und Risiken beherrschen</h2>
+      <p>Ein Plan ist keine Vorhersage. Er ist etwas, woran man Abweichungen erkennt.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/3 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="b1"><span class="haken"></span><span>Fortschritt messen und Abweichungen erkennen</span></li><li data-fuer="b2"><span class="haken"></span><span>Risiken bewerten und Maßnahmen ableiten</span></li><li data-fuer="b3"><span class="haken"></span><span>Änderungswünsche geordnet behandeln</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K3</b>Steuern und Risiken beherrschen</aside>
+    <article class="inhalt">
+      <h3 id="k3-b1">Fortschritt ehrlich messen</h3><p class="rein">Die gefährlichste Antwort im Projekt lautet <strong>„etwa 90 Prozent fertig"</strong>. <mark>Sie ist unüberprüfbar und bleibt erfahrungsgemäß wochenlang gleich.</mark> Deshalb wird Fortschritt an fertigen Arbeitspaketen gemessen, nicht an Selbsteinschätzungen.</p><div class="tab-huelle rein"><table><thead><tr><th>Methode</th><th>Wie sie funktioniert</th><th>Taugt sie?</th></tr></thead><tbody><tr class="klappbar"><td>Selbsteinschätzung in Prozent</td><td>„gefühlt 80 Prozent"</td><td>kaum</td></tr><tr class="detail"><td colspan="3"><strong>Nicht überprüfbar und systematisch zu optimistisch.</strong> Die letzten 10 Prozent enthalten regelmäßig die Hälfte der Arbeit.</td></tr><tr class="klappbar"><td>Fertig oder nicht fertig</td><td>Arbeitspaket zählt erst, wenn es abgeschlossen ist</td><td>gut</td></tr><tr class="detail"><td colspan="3"><strong>Streng, aber ehrlich.</strong> Ein Paket ist entweder fertig oder nicht — Zwischenstände gibt es nicht. Voraussetzung ist, dass die Pakete klein genug geschnitten sind.</td></tr><tr><td><button class="begriff" data-art="Begriff" data-titel="Meilenstein" data-text="Ein Zeitpunkt im Projekt, an dem ein überprüfbares Zwischenergebnis vorliegt. Er hat keine Dauer und dient dazu, den Fortschritt ehrlich zu messen statt zu schätzen.">Meilensteine</button></td><td>überprüfbares Zwischenergebnis liegt vor</td><td>sehr gut</td></tr><tr class="klappbar"><td>Aufwandsvergleich</td><td>verbrauchte gegen geplante Stunden</td><td>nur zusammen mit dem Ergebnis</td></tr><tr class="detail"><td colspan="3"><strong>Allein irreführend:</strong> Die Hälfte der Stunden verbraucht zu haben, sagt nichts darüber, ob die Hälfte des Ergebnisses vorliegt.</td></tr></tbody></table></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Wer schlechte Nachrichten bestraft, bekommt keine mehr — bis es zu spät ist. <strong>Eine früh gemeldete Verzögerung ist eine gute Nachricht</strong>, weil sie noch Handlungsspielraum lässt. Das gehört ausdrücklich gesagt, sonst wird beschönigt.</p></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k3-b1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Fortschritt wird an <strong>fertigen Arbeitspaketen und erreichten Meilensteinen</strong> gemessen, nicht an Prozentschätzungen. Verbrauchte Stunden allein sagen nichts über das Ergebnis.</p>
+      <button class="dreher" data-karte="lf13-k3-b1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Woran misst man Projektfortschritt zuverlässig, und warum taugen Prozentschätzungen dafür nicht?</p>
+      <button class="dreher" data-karte="lf13-k3-b1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k3-b2">Risiken</h3><p class="rein">Ein <button class="begriff" data-art="Begriff" data-titel="Projektrisiko" data-text="Ein mögliches Ereignis, das Ziel, Termin oder Budget gefährdet. Bewertet wird es nach Eintrittswahrscheinlichkeit und Auswirkung; daraus ergibt sich, was vorbeugend zu tun ist.">Risiko</button> ist ein mögliches Ereignis, das Ziel, Termin oder Budget gefährdet. <mark>Bewertet wird es nach zwei Größen: Wie wahrscheinlich ist es, und wie schwer wären die Folgen?</mark> Aus der Kombination ergibt sich, was zu tun ist.</p><div class="sig rein" data-grafik="matrix"><script type="application/json">{"typ": "grafik", "variante": "matrix", "kopf": "Vier Felder", "titel": "Welches Risiko wie behandeln?", "lead": "Risiko oben antippen, dann das passende Feld anklicken.", "achsen": {"x": "Eintrittswahrscheinlichkeit →", "y": "Auswirkung →"}, "felder": [{"id": "vermeiden", "name": "Vermeiden oder absichern", "x": 1, "y": 1}, {"id": "vorsorgen", "name": "Notfallplan bereithalten", "x": 0, "y": 1}, {"id": "mindern", "name": "Eintritt verringern", "x": 1, "y": 0}, {"id": "hinnehmen", "name": "Hinnehmen", "x": 0, "y": 0}], "aufgaben": [{"text": "Der einzige Lieferant der Kernkomponente fällt aus", "feld": "vermeiden", "echo": "Schwere Folgen und bei einem einzigen Lieferanten durchaus wahrscheinlich. Hier wird das Risiko aktiv beseitigt — durch einen zweiten Lieferanten oder eine vertragliche Absicherung."}, {"text": "Ein Serverausfall am Tag der Umstellung", "feld": "vorsorgen", "echo": "Unwahrscheinlich, aber die Folgen wären erheblich. Dagegen hilft kein Vermeiden, sondern ein vorbereiteter Notfallplan mit Rückfallebene."}, {"text": "Einzelne Beschäftigte melden sich krank", "feld": "mindern", "echo": "Passiert mit hoher Wahrscheinlichkeit, die Folgen sind aber begrenzt. Vertretungsregelungen und Puffer verringern die Auswirkung, ohne großen Aufwand."}, {"text": "Die Druckerei liefert die Handbücher einen Tag später", "feld": "hinnehmen", "echo": "Weder wahrscheinlich noch folgenschwer. Solche Risiken werden bewusst hingenommen — Maßnahmen dagegen kosten mehr, als der Schaden je betragen würde."}, {"text": "Die Projektleitung fällt für mehrere Wochen aus", "feld": "vorsorgen", "echo": "Selten, aber gravierend. Deshalb gehören Vertretung, dokumentierter Stand und Zugriff auf alle Unterlagen von Anfang an geregelt."}, {"text": "Das Budget wird um zwei Prozent überschritten", "feld": "hinnehmen", "echo": "Kleine Abweichungen sind in jedem Projekt normal. Dafür ist der Puffer da — jede Gegenmaßnahme wäre teurer als die Abweichung selbst."}], "regel": "Merksatz: Hohe Auswirkung entscheidet über die Aufmerksamkeit, hohe Wahrscheinlichkeit über die Art der Maßnahme. Und: Risiken werden am Anfang gesammelt, aber laufend fortgeschrieben."}</script><div class="sig-kopf">Vier Felder</div><h4>Welches Risiko wie behandeln?</h4><p class="sig-lead">Risiko oben antippen, dann das passende Feld anklicken.</p><div class="buehne"></div><p class="sig-regel">Merksatz: Hohe Auswirkung entscheidet über die Aufmerksamkeit, hohe Wahrscheinlichkeit über die Art der Maßnahme. Und: Risiken werden am Anfang gesammelt, aber laufend fortgeschrieben.</p></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k3-b2-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Risiken werden nach <strong>Wahrscheinlichkeit</strong> und <strong>Auswirkung</strong> bewertet. Daraus folgen vier Wege: vermeiden, vorsorgen, mindern, hinnehmen.</p>
+      <button class="dreher" data-karte="lf13-k3-b2-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Nach welchen zwei Größen werden Projektrisiken bewertet, und welche vier Umgangsweisen ergeben sich daraus?</p>
+      <button class="dreher" data-karte="lf13-k3-b2-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Sammle Risiken <strong>zu Projektbeginn im Team</strong>, nicht allein am Schreibtisch. Die Ausführenden kennen die Stolpersteine, die in keinem Plan stehen — und wer ein Risiko selbst benannt hat, meldet es später auch, wenn es eintritt.</p></div><h3 id="k3-b3">Änderungen</h3><p class="rein">Änderungswünsche sind normal — <mark>unkontrollierte Änderungen sind der häufigste Grund, warum Projekte scheitern.</mark> Deshalb braucht jeder Wunsch denselben geordneten Weg, egal wie klein er wirkt.</p><div class="sig rein" data-grafik="kette"><script type="application/json">{"typ": "grafik", "variante": "kette", "kopf": "Vier Schritte", "titel": "So behandelst du einen Änderungswunsch", "lead": "Immer gleich, auch bei Kleinigkeiten. Klick dich durch.", "schritte": [{"nr": 1, "titel": "Schriftlich aufnehmen", "satz": "wer will was, warum", "text": "Mündliche Zusagen zwischen Tür und Angel sind der Anfang jeder Ausweitung. Aufgeschrieben wird, was gewünscht ist und welchen Zweck es erfüllen soll."}, {"nr": 2, "titel": "Auswirkung beziffern", "satz": "Zeit, Kosten, Umfang", "text": "Wie viele Tage, wie viel Geld, welche anderen Arbeitspakete sind betroffen? Ohne Zahl kann niemand entscheiden — und ohne Entscheidung wird stillschweigend zugesagt."}, {"nr": 3, "titel": "Entscheiden lassen", "satz": "vom Auftraggeber", "text": "Drei Möglichkeiten: annehmen mit angepasstem Plan, ablehnen, oder für später vormerken. Die Projektleitung entscheidet das nicht selbst — sie liefert die Grundlage."}, {"nr": 4, "titel": "Plan anpassen", "satz": "und alle informieren", "text": "Wird die Änderung angenommen, werden Struktur-, Termin- und Kostenplan fortgeschrieben. Eine Änderung ohne Plananpassung ist eine Änderung, die niemand steuert."}], "regel": "Der wirksamste Satz der Projektleitung lautet: „Gern — das kostet X Tage und Y Euro. Soll es dazukommen, oder soll dafür etwas anderes entfallen?\""}</script><div class="sig-kopf">Vier Schritte</div><h4>So behandelst du einen Änderungswunsch</h4><p class="sig-lead">Immer gleich, auch bei Kleinigkeiten. Klick dich durch.</p><div class="buehne"></div><p class="sig-regel">Der wirksamste Satz der Projektleitung lautet: „Gern — das kostet X Tage und Y Euro. Soll es dazukommen, oder soll dafür etwas anderes entfallen?"</p></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k3-b3-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Jede Änderung: <strong>aufnehmen, beziffern, entscheiden lassen, Plan anpassen.</strong> Eine Änderung ohne Plananpassung wird von niemandem gesteuert.</p>
+      <button class="dreher" data-karte="lf13-k3-b3-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Welche vier Schritte hat der Umgang mit einem Änderungswunsch im Projekt?</p>
+      <button class="dreher" data-karte="lf13-k3-b3-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="check rein" id="lf13-k3-b3-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Eine Fachabteilung bittet dich im Vorbeigehen um „eine Kleinigkeit noch". Was tust du?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Genau so entsteht die schleichende Ausweitung. Viele Kleinigkeiten wirken einzeln harmlos und sprengen zusammen Termin und Budget.">Zusagen — es ist ja nur eine Kleinigkeit</button><button class="opt" data-richtig="1" data-echo="Richtig. Auch kleine Wünsche durchlaufen den geordneten Weg: schriftlich aufnehmen, Auswirkung auf Zeit, Kosten und Umfang beziffern, den Auftraggeber entscheiden lassen und bei Annahme den Plan fortschreiben. Das ist keine Bürokratie, sondern der einzige Weg, die Übersicht zu behalten. Nebenbei zeigt die Zahl der abgelehnten Wünsche später, wie realistisch der ursprüngliche Auftrag war.">Aufnehmen, Aufwand beziffern und den Auftraggeber entscheiden lassen</button><button class="opt" data-richtig="" data-echo="Zu starr. Der Wunsch kann durchaus berechtigt sein — nur entscheidet darüber nicht die Projektleitung, sondern der Auftraggeber auf Grundlage der bezifferten Auswirkung.">Ablehnen mit Verweis auf den Projektauftrag</button></div><p class="check-echo" role="status"></p></div><div class="zuordnen rein" id="lf13-k3-b3-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">Wie gehst du mit dem Risiko um?</p><div class="zu-reihe" id="lf13-k3-b3-z1-1" data-loesung="Vermeiden"><span class="zu-text">Wahrscheinlich und mit schweren Folgen.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Vermeiden">Vermeiden</button><button class="zu-btn" data-w="Vorsorgen">Vorsorgen</button><button class="zu-btn" data-w="Mindern">Mindern</button><button class="zu-btn" data-w="Hinnehmen">Hinnehmen</button></span></div><div class="zu-reihe" id="lf13-k3-b3-z1-2" data-loesung="Vorsorgen"><span class="zu-text">Unwahrscheinlich, aber mit schweren Folgen.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Vermeiden">Vermeiden</button><button class="zu-btn" data-w="Vorsorgen">Vorsorgen</button><button class="zu-btn" data-w="Mindern">Mindern</button><button class="zu-btn" data-w="Hinnehmen">Hinnehmen</button></span></div><div class="zu-reihe" id="lf13-k3-b3-z1-3" data-loesung="Mindern"><span class="zu-text">Wahrscheinlich, aber mit geringen Folgen.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Vermeiden">Vermeiden</button><button class="zu-btn" data-w="Vorsorgen">Vorsorgen</button><button class="zu-btn" data-w="Mindern">Mindern</button><button class="zu-btn" data-w="Hinnehmen">Hinnehmen</button></span></div><div class="zu-reihe" id="lf13-k3-b3-z1-4" data-loesung="Hinnehmen"><span class="zu-text">Unwahrscheinlich und mit geringen Folgen.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Vermeiden">Vermeiden</button><button class="zu-btn" data-w="Vorsorgen">Vorsorgen</button><button class="zu-btn" data-w="Mindern">Mindern</button><button class="zu-btn" data-w="Hinnehmen">Hinnehmen</button></span></div></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K3</div>
+        <ul><li>Fortschritt wird an fertigen Arbeitspaketen und Meilensteinen gemessen.</li><li>Prozentschätzungen sind unüberprüfbar und systematisch zu optimistisch.</li><li>Verbrauchte Stunden allein sagen nichts über das erreichte Ergebnis.</li><li>Früh gemeldete Verzögerungen sind gute Nachrichten — sie lassen Handlungsspielraum.</li><li><button class="begriff" data-art="Begriff" data-titel="Projektrisiko" data-text="Ein mögliches Ereignis, das Ziel, Termin oder Budget gefährdet. Bewertet wird es nach Eintrittswahrscheinlichkeit und Auswirkung; daraus ergibt sich, was vorbeugend zu tun ist.">Risiken</button> werden nach Wahrscheinlichkeit und Auswirkung bewertet.</li><li>Vier Umgangsweisen: vermeiden, vorsorgen, mindern, hinnehmen.</li><li>Risiken werden zu Beginn im Team gesammelt und laufend fortgeschrieben.</li><li>Änderungen: aufnehmen, beziffern, entscheiden lassen, Plan anpassen.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/3 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="lf13-k3-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="lf13-k3-t1-f">Wie misst man Projektfortschritt zuverlässig, und welche Methoden taugen dafür nicht?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k3-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Zuverlässig ist die Messung an fertiggestellten Arbeitspaketen und an erreichten Meilensteinen. Ein Arbeitspaket zählt erst, wenn es vollständig abgeschlossen ist; Zwischenstände werden nicht gewertet. Voraussetzung dafür ist, dass die Pakete klein genug geschnitten sind, damit regelmäßig etwas fertig wird. Meilensteine haben keine Dauer und liegen genau dann vor, wenn ein überprüfbares Zwischenergebnis existiert. Nicht geeignet ist die Selbsteinschätzung in Prozent, weil sie nicht überprüfbar und systematisch zu optimistisch ist; die berüchtigten letzten zehn Prozent enthalten häufig die Hälfte der verbleibenden Arbeit. Ebenfalls unzureichend ist der reine Aufwandsvergleich zwischen verbrauchten und geplanten Stunden: Die Hälfte des Budgets verbraucht zu haben, sagt nichts darüber, ob die Hälfte des Ergebnisses vorliegt. Sinnvoll ist er nur zusammen mit der Betrachtung des tatsächlich Erreichten.</p></div>
+</div><div class="frage" id="lf13-k3-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="lf13-k3-t2-f">Wie werden Projektrisiken bewertet, und welche Maßnahmen ergeben sich daraus?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k3-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Bewertet wird jedes Risiko nach zwei Größen: der Eintrittswahrscheinlichkeit und der Auswirkung auf Ziel, Termin oder Budget. Aus der Kombination beider Größen ergeben sich vier grundsätzliche Umgangsweisen. Ist ein Risiko wahrscheinlich und hätte schwere Folgen, wird es vermieden oder abgesichert, etwa durch einen zweiten Lieferanten oder eine vertragliche Regelung. Ist es unwahrscheinlich, hätte aber schwere Folgen, wird vorgesorgt, indem ein Notfallplan mit Rückfallebene bereitgehalten wird. Ist es wahrscheinlich, aber mit begrenzten Folgen, wird die Auswirkung gemindert, etwa durch Vertretungsregelungen und Puffer. Ist es weder wahrscheinlich noch folgenschwer, wird es bewusst hingenommen, weil jede Maßnahme mehr kosten würde als der mögliche Schaden. Wichtig ist, Risiken zu Projektbeginn gemeinsam im Team zu sammeln und die Liste laufend fortzuschreiben, weil im Verlauf neue hinzukommen und andere entfallen.</p></div>
+</div><div class="frage" id="lf13-k3-t3">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="lf13-k3-t3-f">Zur Halbzeit sind 60 Prozent des Budgets verbraucht, aber erst 3 von 8 Arbeitspaketen abgeschlossen. Der Teamleiter sagt, man liege „im Plan". Wie bewertest du das?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k3-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Die Aussage ist nicht haltbar. Der Aufwandsverbrauch ist deutlich weiter fortgeschritten als das Ergebnis: 60 Prozent des Budgets stehen 37,5 Prozent der abgeschlossenen Arbeitspakete gegenüber. Rechnet man diese Entwicklung fort, würde das Projekt das Budget erheblich überschreiten. Zunächst würde ich prüfen, ob die Arbeitspakete gleich groß sind, denn bei stark unterschiedlichem Umfang wäre die reine Stückzahl irreführend; maßgeblich wäre dann der geplante Aufwand der abgeschlossenen Pakete. Anschließend wäre zu klären, ob die Restpakete tatsächlich weniger aufwendig sind, was die Lage entschärfen würde, oder ob der Mehrverbrauch aus unterschätzten Aufwänden stammt, was sich fortsetzen wird. Wichtig ist außerdem zu klären, ob die drei fertigen Pakete wirklich abgeschlossen sind oder nur als solche gemeldet wurden. Unabhängig vom Ergebnis dieser Prüfung muss der Auftraggeber informiert werden, solange noch Handlungsspielraum besteht. Mögliche Maßnahmen sind Umfangsreduzierung, Budgeterhöhung oder Terminverschiebung — welche davon greift, entscheidet der Auftraggeber auf Grundlage bezifferter Auswirkungen.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Die Risikobewertung nach Wahrscheinlichkeit und Auswirkung wird gern als Zuordnungsaufgabe gestellt — merke dir die vier Felder mit je einem Beispiel. Beim Fortschritt ist die erwartete Antwort immer, dass an fertigen Ergebnissen gemessen wird und nicht an Prozentangaben. Und bei Änderungswünschen nenne alle vier Schritte, besonders die Bezifferung der Auswirkung.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K4 · Abschließen und präsentieren</b></div><button class="start" data-zu="k4">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k4" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K4<small>Kapitel</small></div>
+    <div>
+      <h2>Abschließen und präsentieren</h2>
+      <p>Ein Projekt ist erst fertig, wenn jemand es abgenommen hat.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/3 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="b1"><span class="haken"></span><span>Den Projektabschluss ordnungsgemäß durchführen</span></li><li data-fuer="b2"><span class="haken"></span><span>Erfahrungen sichern und auswerten</span></li><li data-fuer="b3"><span class="haken"></span><span>Ergebnisse adressatengerecht präsentieren</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K4</b>Abschließen und präsentieren</aside>
+    <article class="inhalt">
+      <h3 id="k4-b1">Der Abschluss</h3><p class="rein">Viele Projekte hören einfach auf. <mark>Ein Abschluss ist etwas anderes:</mark> Das Ergebnis wird übergeben, ausdrücklich abgenommen und die Verantwortung geht an den Betrieb zurück.</p><div class="tab-huelle rein"><table><thead><tr><th>Schritt</th><th>Was passiert</th><th>Warum</th></tr></thead><tbody><tr class="klappbar"><td>Ergebnis prüfen</td><td>gegen den Projektauftrag</td><td>das Ziel war messbar formuliert</td></tr><tr class="detail"><td colspan="3"><strong>Hier zahlt sich das messbare Ziel aus Kapitel 1 aus.</strong> Ohne es gäbe es jetzt nur Meinungen darüber, ob das Projekt gelungen ist.</td></tr><tr class="klappbar"><td>Abnahme durch den Auftraggeber</td><td>schriftlich</td><td>beendet die Verantwortung der Projektleitung</td></tr><tr class="detail"><td colspan="3"><strong>Ohne Abnahme läuft das Projekt weiter</strong> — mit Nachforderungen, die niemand budgetiert hat. Die Unterschrift ist keine Formalie.</td></tr><tr><td>Restpunkte festhalten</td><td>was offen bleibt, mit Termin</td><td>sonst verschwinden sie</td></tr><tr class="klappbar"><td>Übergabe an den Betrieb</td><td>wer betreut es künftig?</td><td>aus dem Projekt wird ein Prozess</td></tr><tr class="detail"><td colspan="3"><strong>Der häufigste Bruch:</strong> Das System läuft, aber niemand ist zuständig. Betrieb, Pflege und Schulung neuer Beschäftigter gehören ausdrücklich übergeben.</td></tr><tr><td>Unterlagen ablegen</td><td>nach den Regeln aus Lernfeld 2</td><td>Nachvollziehbarkeit</td></tr><tr><td>Team entlasten</td><td>formell auflösen, Dank aussprechen</td><td>sonst hängt es zwischen zwei Aufgaben</td></tr></tbody></table></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Ein Projekt endet mit der <strong>Abnahme</strong>, nicht mit der letzten Tätigkeit. Solange nicht abgenommen ist, kommen Nachforderungen — und die Projektleitung bleibt zuständig, ohne dass dafür noch Zeit eingeplant ist.</p></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k4-b1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p><strong>Prüfen, abnehmen lassen, Restpunkte festhalten, übergeben, ablegen, Team entlasten.</strong> Aus dem Projekt wird ein Prozess — und der braucht einen Zuständigen.</p>
+      <button class="dreher" data-karte="lf13-k4-b1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Welche Schritte gehören zum Projektabschluss, und warum ist die schriftliche Abnahme entscheidend?</p>
+      <button class="dreher" data-karte="lf13-k4-b1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k4-b2">Erfahrungen sichern</h3><p class="rein">Die Auswertung am Ende ist der Teil, der am häufigsten ausfällt — <mark>und der einzige, von dem das nächste Projekt etwas hat.</mark> Sie kostet zwei Stunden und spart im nächsten Projekt Wochen.</p><div class="sig rein" data-grafik="kette"><script type="application/json">{"typ": "grafik", "variante": "kette", "kopf": "Vier Fragen", "titel": "Die Auswertung", "lead": "Im Team, nicht allein — und ohne Schuldsuche. Klick dich durch.", "schritte": [{"nr": 1, "titel": "Was lief gut?", "satz": "zuerst", "text": "Bewusst als Erstes, damit die Runde nicht zur Fehlersuche wird. Was funktioniert hat, soll man beim nächsten Mal wieder tun — dafür muss es benannt sein."}, {"nr": 2, "titel": "Was lief schlecht?", "satz": "sachlich", "text": "Es geht um Ursachen, nicht um Personen. Die Frage lautet, was der Ablauf schwierig gemacht hat, nicht wer einen Fehler gemacht hat."}, {"nr": 3, "titel": "Woran lag es?", "satz": "mehrfach nachfragen", "text": "Dieselbe Technik wie in Lernfeld 11: mehrfach nach dem Warum fragen, bis die Ursache erreicht ist. Der Termin platzte, weil die Freigabe fehlte, weil die Vertretung nicht geregelt war — dort liegt die Lehre."}, {"nr": 4, "titel": "Was machen wir künftig anders?", "satz": "konkret und schriftlich", "text": "Nicht „besser kommunizieren\", sondern „Vertretung für Freigaben im Projektauftrag festlegen\". Nur so findet die Erkenntnis ins nächste Projekt."}], "regel": "Die Auswertung gehört an einen Ort, an dem die nächste Projektleitung sie findet — nicht in ein Postfach. Sonst wiederholt der Betrieb dieselben Fehler in bemerkenswerter Zuverlässigkeit."}</script><div class="sig-kopf">Vier Fragen</div><h4>Die Auswertung</h4><p class="sig-lead">Im Team, nicht allein — und ohne Schuldsuche. Klick dich durch.</p><div class="buehne"></div><p class="sig-regel">Die Auswertung gehört an einen Ort, an dem die nächste Projektleitung sie findet — nicht in ein Postfach. Sonst wiederholt der Betrieb dieselben Fehler in bemerkenswerter Zuverlässigkeit.</p></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k4-b2-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p><strong>Was lief gut, was schlecht, woran lag es, was machen wir anders?</strong> Ergebnisse werden konkret formuliert und dort abgelegt, wo das nächste Projekt sie findet.</p>
+      <button class="dreher" data-karte="lf13-k4-b2-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Welche vier Fragen strukturieren die Projektauswertung, und wie müssen die Ergebnisse formuliert sein?</p>
+      <button class="dreher" data-karte="lf13-k4-b2-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Führ die Auswertung <strong>vor</strong> der Abschlusspräsentation durch. Dann kannst du im Vortrag ehrlich sagen, was ihr gelernt habt — das wirkt souveräner als eine Darstellung, in der alles glatt lief.</p></div><h3 id="k4-b3">Die Abschlusspräsentation</h3><p class="rein">Die Präsentation ist keine Chronik. <mark>Sie beantwortet drei Fragen: Was war das Ziel, was ist herausgekommen, wie geht es weiter.</mark> Alles andere ist optional.</p><div class="tab-huelle rein"><table><thead><tr><th>Teil</th><th>Inhalt</th><th>Anteil</th></tr></thead><tbody><tr class="klappbar"><td>Ausgangslage und Ziel</td><td>warum das Projekt nötig war</td><td>kurz</td></tr><tr class="detail"><td colspan="3"><strong>Zwei bis drei Sätze genügen.</strong> Die Zuhörenden waren dabei, als das Projekt beauftragt wurde — sie brauchen keine Wiederholung des Auftrags.</td></tr><tr class="klappbar"><td>Ergebnis</td><td>was jetzt vorliegt</td><td>der größte Teil</td></tr><tr class="detail"><td colspan="3"><strong>Am Ziel gemessen, mit Zahlen.</strong> Nicht was ihr getan habt, sondern was jetzt anders ist — das ist der Unterschied zwischen Tätigkeitsbericht und Ergebnisbericht.</td></tr><tr class="klappbar"><td>Abweichungen</td><td>was anders lief, offen benannt</td><td>kurz und ehrlich</td></tr><tr class="detail"><td colspan="3"><strong>Verschweigen fällt auf und kostet Glaubwürdigkeit.</strong> Wer Abweichungen selbst benennt und begründet, wirkt souverän — wer sie kaschiert, wird in der Fragerunde zerlegt.</td></tr><tr><td>Ausblick</td><td>Restpunkte, Betrieb, Empfehlung</td><td>mittel</td></tr></tbody></table></div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Nenn im <strong>ersten Satz</strong> das Ergebnis, nicht im letzten. Dieselbe Regel wie bei der Entscheidungsvorlage aus Lernfeld 2: Zuhörende wollen zuerst wissen, was herauskam — die Begründung danach.</p></div><div class="karte-huelle rein">
+  <div class="karte" id="lf13-k4-b3-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Die Präsentation beantwortet <strong>Ziel, Ergebnis, Ausblick</strong> — Ergebnis zuerst und am Ziel gemessen. Abweichungen werden offen benannt, nicht kaschiert.</p>
+      <button class="dreher" data-karte="lf13-k4-b3-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Welche Teile hat eine Abschlusspräsentation, und warum werden Abweichungen offen benannt?</p>
+      <button class="dreher" data-karte="lf13-k4-b3-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="check rein" id="lf13-k4-b3-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Das Projekt hat den Termin um zwei Wochen überschritten. Wie gehst du in der Abschlusspräsentation damit um?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Der Auftraggeber kennt den Termin und wird nachfragen. Wer die Abweichung erst auf Nachfrage einräumt, verliert die Deutungshoheit und wirkt unaufrichtig.">Nicht erwähnen — das Ergebnis stimmt ja</button><button class="opt" data-richtig="1" data-echo="Richtig. Abweichungen gehören in jede Abschlusspräsentation, und zwar von dir benannt, nicht auf Nachfrage. Nenne die Abweichung, die Ursache und die Konsequenz für künftige Projekte — etwa dass Vertretungsregelungen für Freigaben in den Projektauftrag gehören. Das wirkt souverän und macht die Auswertung nutzbar, statt sie zu verstecken.">Offen benennen, Ursache erklären und die Lehre daraus nennen</button><button class="opt" data-richtig="" data-echo="Schuldzuweisungen gehören nicht in eine Abschlusspräsentation. Interessant ist die Ursache im Ablauf und was daraus folgt, nicht wer verantwortlich war.">Ausführlich rechtfertigen, wer die Verzögerung verursacht hat</button></div><p class="check-echo" role="status"></p></div><div class="zuordnen rein" id="lf13-k4-b3-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">Wohin gehört das?</p><div class="zu-reihe" id="lf13-k4-b3-z1-1" data-loesung="Abschluss"><span class="zu-text">Der Auftraggeber unterschreibt die Abnahme.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Abschluss">Abschluss</button><button class="zu-btn" data-w="Auswertung">Auswertung</button><button class="zu-btn" data-w="Präsentation">Präsentation</button></span></div><div class="zu-reihe" id="lf13-k4-b3-z1-2" data-loesung="Auswertung"><span class="zu-text">Das Team bespricht, woran der geplatzte Termin lag.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Abschluss">Abschluss</button><button class="zu-btn" data-w="Auswertung">Auswertung</button><button class="zu-btn" data-w="Präsentation">Präsentation</button></span></div><div class="zu-reihe" id="lf13-k4-b3-z1-3" data-loesung="Präsentation"><span class="zu-text">Das Ergebnis wird am ursprünglichen Ziel gemessen dargestellt.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Abschluss">Abschluss</button><button class="zu-btn" data-w="Auswertung">Auswertung</button><button class="zu-btn" data-w="Präsentation">Präsentation</button></span></div><div class="zu-reihe" id="lf13-k4-b3-z1-4" data-loesung="Abschluss"><span class="zu-text">Offene Restpunkte werden mit Termin festgehalten.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Abschluss">Abschluss</button><button class="zu-btn" data-w="Auswertung">Auswertung</button><button class="zu-btn" data-w="Präsentation">Präsentation</button></span></div></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K4</div>
+        <ul><li>Ein Projekt endet mit der schriftlichen Abnahme, nicht mit der letzten Tätigkeit.</li><li>Das Ergebnis wird gegen den <button class="begriff" data-art="Begriff" data-titel="Projektauftrag" data-text="Die schriftliche Grundlage eines Projekts: Ziel, Umfang, Termine, Budget, Befugnisse und Auftraggeber. Ohne ihn beginnt jedes Projekt mit einem Missverständnis.">Projektauftrag</button> geprüft.</li><li>Restpunkte werden mit Termin und Verantwortlichem festgehalten.</li><li>Die Übergabe an den Betrieb macht aus dem Projekt einen Prozess.</li><li>Die Auswertung fragt: Was lief gut, was schlecht, woran lag es, was ändern wir?</li><li>Ergebnisse der Auswertung werden konkret formuliert und auffindbar abgelegt.</li><li>Die Präsentation beantwortet Ziel, Ergebnis und Ausblick — Ergebnis zuerst.</li><li>Abweichungen werden offen benannt, nicht kaschiert.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/3 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="lf13-k4-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="lf13-k4-t1-f">Welche Schritte gehören zu einem ordnungsgemäßen Projektabschluss?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k4-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Zuerst wird das Ergebnis gegen den Projektauftrag geprüft, wobei sich das messbar formulierte Ziel auszahlt, weil es eine sachliche Beurteilung ermöglicht. Anschließend erfolgt die Abnahme durch den Auftraggeber, und zwar schriftlich; sie beendet die Verantwortung der Projektleitung und verhindert spätere Nachforderungen. Offene Restpunkte werden mit Termin und Verantwortlichem festgehalten, damit sie nicht verschwinden. Danach folgt die Übergabe an den Betrieb: Es muss geklärt sein, wer das Ergebnis künftig betreut, pflegt und neue Beschäftigte einweist, denn aus dem Projekt wird ein Prozess. Die Unterlagen werden nach den betrieblichen Ablageregeln abgelegt, damit die Entscheidungen später nachvollziehbar bleiben. Zum Schluss wird das Projektteam formell aufgelöst und entlastet, damit die Beteiligten nicht zwischen zwei Aufgaben hängen. Ergänzend gehört die Auswertung der Erfahrungen dazu.</p></div>
+</div><div class="frage" id="lf13-k4-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="lf13-k4-t2-f">Wie ist eine Abschlusspräsentation aufgebaut, und worauf kommt es dabei an?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k4-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Sie beantwortet drei Fragen: Was war das Ziel, was ist herausgekommen und wie geht es weiter. Die Ausgangslage und das Ziel werden nur kurz umrissen, weil die Zuhörenden das Projekt beauftragt haben. Den größten Teil nimmt das Ergebnis ein, dargestellt am ursprünglichen Ziel gemessen und mit Zahlen belegt; entscheidend ist, was jetzt anders ist, nicht was das Team getan hat. Abweichungen bei Termin, Budget oder Umfang werden kurz und offen benannt, mit Ursache und Konsequenz, aber ohne Schuldzuweisungen. Den Abschluss bildet der Ausblick mit Restpunkten, der Übergabe an den Betrieb und einer Empfehlung. Wichtig ist, das Ergebnis bereits im ersten Satz zu nennen und nicht erst am Ende. Die Darstellung wird auf die Zuhörenden zugeschnitten: Eine Geschäftsführung braucht Ergebnis und Empfehlung, eine Fachabteilung zusätzlich die Einzelheiten des künftigen Ablaufs.</p></div>
+</div><div class="frage" id="lf13-k4-t3">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="lf13-k4-t3-f">Dein Projekt ist inhaltlich fertig, aber der Auftraggeber hat drei Wochen keine Zeit für die Abnahme. Das Team wird bereits für andere Aufgaben eingeplant. Was tust du?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="lf13-k4-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Ohne Abnahme ist das Projekt formal nicht beendet, und die Verantwortung bleibt bei der Projektleitung, während gleichzeitig keine Kapazität mehr eingeplant ist — das ist die riskanteste Konstellation. Ich würde zunächst den erreichten Stand vollständig dokumentieren: Ergebnis gegen die Ziele des Projektauftrags, offene Restpunkte mit Verantwortlichen und Terminen sowie den Stand von Budget und Terminen. Diese Unterlage würde ich dem Auftraggeber schriftlich zusenden, verbunden mit der Bitte um einen Abnahmetermin und dem ausdrücklichen Hinweis, dass das Team ab einem bestimmten Datum anderweitig gebunden ist. Parallel sichere ich die Übergabe an den Betrieb, damit das Ergebnis unabhängig von der Abnahme nutzbar bleibt und ein Zuständiger benannt ist. Die Auswertung mit dem Team führe ich sofort durch, solange alle noch verfügbar sind und die Erinnerung frisch ist — sie ist später kaum nachzuholen. Sinnvoll ist außerdem, für die Zeit bis zur Abnahme einen begrenzten Aufwand für Rückfragen zu vereinbaren, damit klar ist, was in dieser Phase noch geleistet wird.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Der Projektabschluss wird oft als Aufzählung abgefragt — merke dir die Reihenfolge prüfen, abnehmen, Restpunkte, übergeben, ablegen, entlasten. Die erwartete Kernaussage ist immer, dass die schriftliche Abnahme das Projekt beendet. Bei Fragen zur Präsentation lautet die Musterlösung: Ergebnis zuerst, am Ziel gemessen, Abweichungen offen benennen.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Lernfeld<b>Alle Kapitel durchgearbeitet</b></div><button class="start" data-zu="trainer">Karteikarten trainieren<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel trainer" id="trainer" hidden>
+  <div class="tr-kopf">
+    <div>
+      <div class="augenbraue">Karteikarten</div>
+      <h2>Alles, was du dir merken musst.</h2>
+      <p class="tr-lead">12 Merksätze aus allen Kapiteln. Was du kannst,
+      wandert weiter; was du nicht kannst, kommt zurück. Der Stand bleibt gespeichert.</p>
+    </div>
+    <div class="tr-faecher" aria-label="Verteilung auf die Fächer"></div>
+  </div>
+  <script type="application/json" id="karten-daten">[{"id": "lf13-k1-b1-m1", "frage": "Welche fünf Merkmale hat ein Projekt, und welches davon grenzt es vom Prozess ab?", "antwort": "**Einmalig, klares Ziel, Anfang und Ende, begrenzte Mittel, eigene Organisation.** Fehlt die Einmaligkeit, ist es ein Prozess und kein Projekt.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K1 · Was ein Projekt ausmacht", "zu": "lf13.html#k1"}, {"id": "lf13-k1-b2-m1", "frage": "Was besagt das magische Dreieck, und was ist die Aufgabe der Projektleitung darin?", "antwort": "**Zeit, Kosten, Umfang** hängen zusammen. Wer eine Größe ändert, muss mindestens eine andere nachziehen — die Projektleitung macht das sichtbar, entscheiden tut der Auftraggeber.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K1 · Was ein Projekt ausmacht", "zu": "lf13.html#k1"}, {"id": "lf13-k1-b3-m1", "frage": "Welche Inhalte gehören in einen Projektauftrag, und warum ist die Abgrenzung so wichtig?", "antwort": "Der Projektauftrag enthält **Ziel, Abgrenzung, Termine, Budget, Befugnisse und Auftraggeber** — schriftlich. Die Abgrenzung ist der wirksamste und meistvergessene Teil.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K1 · Was ein Projekt ausmacht", "zu": "lf13.html#k1"}, {"id": "lf13-k2-b1-m1", "frage": "Welche Frage beantwortet der Projektstrukturplan, und was gehört zu einem vollständigen Arbeitspaket?", "antwort": "Der Strukturplan sagt **was**, nicht **wann**. Ein {{begriff:arbeitspaket|Arbeitspaket}} braucht drei Dinge: Verantwortlicher, geschätzter Aufwand, überprüfbares Ergebnis.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K2 · Struktur und Termine planen", "zu": "lf13.html#k2"}, {"id": "lf13-k2-b2-m1", "frage": "Worin unterscheiden sich Aufwand und Dauer, und warum gehört der Puffer ans Projektende?", "antwort": "**Aufwand ist Arbeitszeit, Dauer ist Kalenderzeit.** Geschätzt wird von denen, die es machen. Puffer gehört ans Projektende, nicht in jedes Paket.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K2 · Struktur und Termine planen", "zu": "lf13.html#k2"}, {"id": "lf13-k2-b3-m1", "frage": "Was ist der kritische Pfad, und wie unterscheidet er sich von Vorgängen mit Puffer?", "antwort": "Der {{begriff:kritischer-pfad|kritische Pfad}} ist die Kette ohne Puffer. **Verzögert sich dort etwas, verschiebt sich das Projektende sofort** — außerhalb davon nicht.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K2 · Struktur und Termine planen", "zu": "lf13.html#k2"}, {"id": "lf13-k3-b1-m1", "frage": "Woran misst man Projektfortschritt zuverlässig, und warum taugen Prozentschätzungen dafür nicht?", "antwort": "Fortschritt wird an **fertigen Arbeitspaketen und erreichten Meilensteinen** gemessen, nicht an Prozentschätzungen. Verbrauchte Stunden allein sagen nichts über das Ergebnis.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K3 · Steuern und Risiken beherrschen", "zu": "lf13.html#k3"}, {"id": "lf13-k3-b2-m1", "frage": "Nach welchen zwei Größen werden Projektrisiken bewertet, und welche vier Umgangsweisen ergeben sich daraus?", "antwort": "Risiken werden nach **Wahrscheinlichkeit** und **Auswirkung** bewertet. Daraus folgen vier Wege: vermeiden, vorsorgen, mindern, hinnehmen.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K3 · Steuern und Risiken beherrschen", "zu": "lf13.html#k3"}, {"id": "lf13-k3-b3-m1", "frage": "Welche vier Schritte hat der Umgang mit einem Änderungswunsch im Projekt?", "antwort": "Jede Änderung: **aufnehmen, beziffern, entscheiden lassen, Plan anpassen.** Eine Änderung ohne Plananpassung wird von niemandem gesteuert.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K3 · Steuern und Risiken beherrschen", "zu": "lf13.html#k3"}, {"id": "lf13-k4-b1-m1", "frage": "Welche Schritte gehören zum Projektabschluss, und warum ist die schriftliche Abnahme entscheidend?", "antwort": "**Prüfen, abnehmen lassen, Restpunkte festhalten, übergeben, ablegen, Team entlasten.** Aus dem Projekt wird ein Prozess — und der braucht einen Zuständigen.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K4 · Abschließen und präsentieren", "zu": "lf13.html#k4"}, {"id": "lf13-k4-b2-m1", "frage": "Welche vier Fragen strukturieren die Projektauswertung, und wie müssen die Ergebnisse formuliert sein?", "antwort": "**Was lief gut, was schlecht, woran lag es, was machen wir anders?** Ergebnisse werden konkret formuliert und dort abgelegt, wo das nächste Projekt sie findet.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K4 · Abschließen und präsentieren", "zu": "lf13.html#k4"}, {"id": "lf13-k4-b3-m1", "frage": "Welche Teile hat eine Abschlusspräsentation, und warum werden Abweichungen offen benannt?", "antwort": "Die Präsentation beantwortet **Ziel, Ergebnis, Ausblick** — Ergebnis zuerst und am Ziel gemessen. Abweichungen werden offen benannt, nicht kaschiert.", "lernfeld": "lf13", "lernfeldTitel": "Ein Projekt planen und durchführen", "kapitel": "K4 · Abschließen und präsentieren", "zu": "lf13.html#k4"}]</script>
+  <div class="tr-buehne"></div>
+</section>
+</main>
+<footer class="fussleiste"><a href="impressum.html">Hinweise</a><a href="datenschutz.html">Datenschutz</a><span>AzubiPass</span></footer>
+<nav class="tableiste" aria-label="Hauptbereiche"><a class="tab" href="app.html#heute"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20H4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Heute</span></a><a class="tab an" href="app.html#lernen" aria-current="page"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" aria-hidden="true"><path d="M4 5h5.5A2.5 2.5 0 0 1 12 7.5V20a2.2 2.2 0 0 0-2.2-2H4zm16 0h-5.5A2.5 2.5 0 0 0 12 7.5V20a2.2 2.2 0 0 1 2.2-2H20z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lernen</span></a><a class="tab" href="app.html#ueben"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" aria-hidden="true"><path d="M9 8h11v11H9zM5.5 5H16M4 8.5v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Üben</span></a><a class="tab" href="app.html#ich"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" aria-hidden="true"><path d="M12 12.5a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4zM4.5 20.5a7.5 7.5 0 0 1 15 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ich</span></a></nav>
+</body>
+</html>

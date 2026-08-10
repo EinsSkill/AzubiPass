@@ -1,0 +1,48 @@
+{
+  "id": "lf7",
+  "titel": "Gesprächssituationen gestalten",
+  "kurztitel": "Lernfeld 7",
+  "untertitel": "2. Ausbildungsjahr · Zeitrichtwert 40 Stunden",
+  "linie": "B",
+  "stand": "2026-07",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Man kann nicht *nicht* kommunizieren.",
+    "lead": "Warum Gespräche schiefgehen, obwohl beide sich Mühe geben — und was du dagegen tun kannst. Das komplette Lernfeld 7.",
+    "fakten": [
+      "4 Kapitel",
+      "40 Stunden",
+      "2. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf7-k1-grundlagen.kapitel.json",
+      "titel": "Wie Kommunikation funktioniert",
+      "minuten": 20,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf7-k2-modelle.kapitel.json",
+      "titel": "Was in einer Nachricht steckt",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf7-k3-gespraeche.kapitel.json",
+      "titel": "Gespräche führen",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf7-k4-schwierig.kapitel.json",
+      "titel": "Schwierige Gespräche und Feedback",
+      "minuten": 25,
+      "frei": false
+    }
+  ]
+}

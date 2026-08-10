@@ -1,0 +1,350 @@
+{
+  "id": "k4",
+  "lernfeld": "lf2",
+  "nummer": 4,
+  "titel": "Ablegen und aufbewahren",
+  "untertitel": "Ablegen kann jeder. Wiederfinden ist die Kunst.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Ordnungssysteme unterscheiden und passend auswählen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Aufbewahrungsfristen zuordnen und ihren Beginn bestimmen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Anforderungen an digitale Ablage erklären",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Ordnungssysteme",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine {{begriff:registratur|Registratur}} ist nur so gut wie ihre Wiederauffindbarkeit. ==Der Prüfstein ist einfach: Findet eine Vertretung den Vorgang, ohne zu fragen?== Wenn nicht, ist das System zu persönlich gedacht."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "System",
+            "Sortiert nach",
+            "Passt für"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Alphabetisch",
+                "Name, Firma",
+                "Kunden-, Lieferanten-, Personalakten"
+              ],
+              "detail": "**Das gebräuchlichste System.** Wichtig sind einheitliche Regeln: Wird nach Nachname oder Firmenname sortiert, was passiert mit Umlauten und Artikeln? Ohne Festlegung ordnet jeder anders."
+            },
+            {
+              "zellen": [
+                "Numerisch",
+                "laufende Nummer",
+                "Rechnungen, Belege, Aufträge"
+              ],
+              "detail": "**Eindeutig und erweiterbar** — neue Vorgänge kommen immer hinten dran. Der Nachteil: Ohne Verzeichnis findet man nichts, weil die Nummer nichts über den Inhalt sagt."
+            },
+            {
+              "zellen": [
+                "Chronologisch",
+                "Datum",
+                "Kontoauszüge, Protokolle, Post"
+              ]
+            },
+            {
+              "zellen": [
+                "Sachlich",
+                "Thema, Sachgebiet",
+                "Verträge, Projekte, Schriftwechsel"
+              ],
+              "detail": "**Am nächsten an der Denkweise der Nutzer** und zugleich am schwierigsten: Die Abgrenzung der Sachgebiete muss festgelegt sein, sonst passt ein Vorgang in drei Ordner."
+            },
+            {
+              "zellen": [
+                "Geografisch",
+                "Region, Gebiet",
+                "Vertriebsgebiete, Filialen"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "In der Praxis werden Systeme **kombiniert**: erst sachlich nach Gebiet, darin alphabetisch nach Kunde, darin chronologisch nach Datum. Wichtig ist nur, dass die Reihenfolge festgelegt und für alle gleich ist."
+        },
+        {
+          "typ": "merke",
+          "text": "Fünf Systeme: **alphabetisch, numerisch, chronologisch, sachlich, geografisch.** Sie werden meist kombiniert — entscheidend ist eine schriftlich festgelegte, für alle gleiche Ordnung.",
+          "karteikarte": "Welche fünf Ordnungssysteme gibt es in der Registratur, und wofür eignet sich jedes?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Bevor abgelegt wird, wird **ausgesondert**. Entwürfe, Mehrfachkopien und überholte Fassungen gehören nicht in die Ablage. Wer alles aufhebt, macht das Wiederfinden schwerer, nicht sicherer."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Wie lange aufbewahren?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Kaufleute dürfen Unterlagen nicht nach Gutdünken vernichten. {{par:hgb-257|§ 257 HGB}} regelt die handelsrechtliche, {{par:ao-147|§ 147 AO}} die steuerliche {{begriff:aufbewahrungsfrist|Aufbewahrungsfrist}}. Beide laufen parallel — **maßgeblich ist immer die längere**."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Unterlage",
+            "Frist",
+            "Grundlage"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Handelsbücher, Inventare, Jahresabschlüsse, Bilanzen",
+                "10 Jahre",
+                "{{par:hgb-257|§ 257 HGB}}, {{par:ao-147|§ 147 AO}}"
+              ],
+              "mono": [
+                1
+              ],
+              "detail": "**Die lange Frist gilt für alles, was den Jahresabschluss trägt** — einschließlich der Arbeitsanweisungen und Organisationsunterlagen, die zu seinem Verständnis nötig sind."
+            },
+            {
+              "zellen": [
+                "Buchungsbelege",
+                "siehe Hinweis",
+                "{{par:hgb-257|§ 257 HGB}}, {{par:ao-147|§ 147 AO}}"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "Empfangene Handelsbriefe",
+                "6 Jahre",
+                "{{par:hgb-257|§ 257 HGB}}"
+              ],
+              "mono": [
+                1
+              ],
+              "detail": "**Handelsbrief ist jedes Schreiben, das ein Handelsgeschäft betrifft** — Angebot, Auftrag, Reklamation, Kündigung. Interne Notizen gehören nicht dazu."
+            },
+            {
+              "zellen": [
+                "Kopien abgesandter Handelsbriefe",
+                "6 Jahre",
+                "{{par:hgb-257|§ 257 HGB}}"
+              ],
+              "mono": [
+                1
+              ]
+            }
+          ],
+          "pruefen": "Die Aufbewahrungsfrist für Buchungsbelege wurde durch das Vierte Bürokratieentlastungsgesetz verkürzt. Vor Veröffentlichung den aktuellen Stand von § 257 HGB und § 147 AO prüfen und die genaue Jahreszahl samt Anwendungszeitpunkt hier eintragen."
+        },
+        {
+          "typ": "achtung",
+          "text": "Die Frist beginnt **nicht mit dem Datum des Belegs**, sondern mit dem **Schluss des Kalenderjahres**, in dem die letzte Eintragung gemacht oder der Brief empfangen beziehungsweise abgesandt wurde. Eine Rechnung vom März 2020 mit zehnjähriger Frist darf also erst nach dem 31. Dezember 2030 vernichtet werden."
+        },
+        {
+          "typ": "grafik",
+          "variante": "staffel",
+          "kopf": "Der Fristbeginn",
+          "titel": "Ab wann läuft die Aufbewahrung?",
+          "lead": "Trag ein Jahr ein und sieh, wann frühestens vernichtet werden darf.",
+          "eingaben": {
+            "jahre": {
+              "label": "Aufbewahrungsdauer in Jahren",
+              "start": 10
+            }
+          },
+          "stufen": [
+            {
+              "ab": 0,
+              "frist": "keine Aufbewahrungspflicht",
+              "termin": "Werbung, Entwürfe, interne Notizen",
+              "monate": 0
+            },
+            {
+              "ab": 6,
+              "frist": "sechs Jahre",
+              "termin": "empfangene und abgesandte Handelsbriefe",
+              "monate": 3
+            },
+            {
+              "ab": 10,
+              "frist": "zehn Jahre",
+              "termin": "Bücher, Inventare, Jahresabschlüsse",
+              "monate": 6
+            }
+          ],
+          "regel": "Der Beginn ist immer der 31. Dezember des Jahres, in dem der Vorgang abgeschlossen wurde. Deshalb wird in der Praxis erst im Januar ausgesondert — und zwar streng nach Jahrgang."
+        },
+        {
+          "typ": "merke",
+          "text": "**Zehn Jahre** für alles, was den Jahresabschluss trägt. **Sechs Jahre** für Handelsbriefe. Die Frist beginnt mit dem **Schluss des Kalenderjahres**, nicht mit dem Belegdatum.",
+          "karteikarte": "Welche Aufbewahrungsfristen gelten für Jahresabschlüsse und für Handelsbriefe, und wann beginnen sie?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Digitale Ablage",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:dokumentenmanagement|Dokumentenmanagementsystem}} ersetzt den Aktenschrank — aber nur, wenn es {{begriff:revisionssicherheit|revisionssicher}} ist. ==Eine PDF-Datei auf einem Netzlaufwerk erfüllt das nicht, weil sie sich jederzeit überschreiben lässt.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Anforderung",
+            "Was das heißt",
+            "Praktisch"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Unveränderbar",
+                "nachträgliche Änderung erkennbar",
+                "Versionierung, Schreibschutz"
+              ]
+            },
+            {
+              "zellen": [
+                "Vollständig",
+                "nichts fehlt, nichts doppelt",
+                "geregelter Erfassungsweg"
+              ],
+              "detail": "**Der häufigste Fehler ist die halbe Digitalisierung**: Ein Teil liegt im System, ein Teil im Papierordner, ein Teil im Postfach eines Kollegen. Dann ist nichts vollständig."
+            },
+            {
+              "zellen": [
+                "Nachvollziehbar",
+                "wer hat wann was getan",
+                "Protokollierung"
+              ]
+            },
+            {
+              "zellen": [
+                "Auffindbar",
+                "in angemessener Zeit lesbar",
+                "Verschlagwortung, Volltextsuche"
+              ],
+              "detail": "**Hier liegt der eigentliche Gewinn.** Über Schlagworte findet man einen Vorgang in Sekunden, über Ordnerpfade nur, wenn man weiß, wie der Ablegende gedacht hat."
+            },
+            {
+              "zellen": [
+                "Maschinell auswertbar",
+                "für die Betriebsprüfung",
+                "Originalformat behalten"
+              ],
+              "detail": "**Eine eingescannte Rechnung als Bild reicht nicht**, wenn sie ursprünglich elektronisch war. Elektronisch empfangene Belege sind in ihrem Originalformat aufzubewahren."
+            }
+          ]
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Warum Papier ausdrucken das Problem nicht löst",
+          "absaetze": [
+            "Wird eine Rechnung elektronisch empfangen, ist sie auch elektronisch aufzubewahren. Ein Ausdruck ist kein gleichwertiger Ersatz, weil die maschinelle Auswertbarkeit verloren geht.",
+            "Umgekehrt darf Papier unter bestimmten Voraussetzungen ersetzend eingescannt und danach vernichtet werden. Voraussetzung ist ein dokumentierter Ablauf, der die bildliche Übereinstimmung sichert — und dass niemand mitten im Prozess Ausnahmen macht.",
+            "Für beides gilt: Der Betrieb muss den Ablauf schriftlich festhalten. Diese Verfahrensdokumentation ist bei einer Betriebsprüfung eines der ersten Dinge, nach denen gefragt wird."
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Kollege scannt Eingangsrechnungen ein, legt sie im DMS ab und wirft das Papier weg. Was fehlt?",
+          "optionen": [
+            {
+              "text": "Nichts — digital ist digital",
+              "richtig": false,
+              "echo": "Der Ablauf kann richtig sein, aber nicht ohne Grundlage. Ersetzendes Scannen setzt einen dokumentierten und eingehaltenen Ablauf voraus."
+            },
+            {
+              "text": "Eine schriftliche Verfahrensdokumentation des Scan-Ablaufs",
+              "richtig": true,
+              "echo": "Richtig. Ersetzendes Scannen ist zulässig, verlangt aber einen festgelegten und dokumentierten Ablauf: wer scannt, wie die bildliche Übereinstimmung geprüft wird, wie Fehler behandelt werden und wann das Papier vernichtet werden darf. Ohne diese Verfahrensdokumentation fehlt der Nachweis, und bei einer Betriebsprüfung wird genau danach gefragt."
+            },
+            {
+              "text": "Das Papier muss zusätzlich zehn Jahre aufbewahrt werden",
+              "richtig": false,
+              "echo": "Gerade nicht — das wäre der Sinn des ersetzenden Scannens. Es fehlt nicht das Papier, sondern die dokumentierte Grundlage für sein Vernichten."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Aufbewahrungsfrist gilt?",
+          "kategorien": [
+            "10 Jahre",
+            "6 Jahre",
+            "Keine Pflicht"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Jahresabschluss 2025.",
+              "loesung": "10 Jahre"
+            },
+            {
+              "text": "Ein empfangenes Angebot eines Lieferers.",
+              "loesung": "6 Jahre"
+            },
+            {
+              "text": "Ein Werbeprospekt aus dem Posteingang.",
+              "loesung": "Keine Pflicht"
+            },
+            {
+              "text": "Das Inventar zum 31.12.2025.",
+              "loesung": "10 Jahre"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Ordnungssysteme: alphabetisch, numerisch, chronologisch, sachlich, geografisch.",
+    "In der Praxis werden sie kombiniert — die Reihenfolge muss festgelegt sein.",
+    "Prüfstein jeder Ablage: Findet eine Vertretung den Vorgang ohne Rückfrage?",
+    "Vor dem Ablegen wird ausgesondert — Entwürfe und Mehrfachkopien gehören nicht hinein.",
+    "{{par:hgb-257|§ 257 HGB}}: zehn Jahre für Bücher, Inventare und Jahresabschlüsse.",
+    "Sechs Jahre für empfangene und abgesandte Handelsbriefe.",
+    "Die Frist beginnt mit dem Schluss des Kalenderjahres, nicht mit dem Belegdatum.",
+    "Digitale Ablage muss unveränderbar, vollständig, nachvollziehbar und auffindbar sein."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die Ordnungssysteme der Registratur und erkläre, warum die Ordnung schriftlich festgelegt sein muss.",
+      "loesung": "Es gibt fünf Grundsysteme: alphabetisch nach Namen, numerisch nach laufender Nummer, chronologisch nach Datum, sachlich nach Themengebiet und geografisch nach Region. In der Praxis werden sie kombiniert, etwa erst sachlich, darin alphabetisch und darin chronologisch. Die Ordnung muss schriftlich festgelegt sein, weil eine Ablage nicht am Ablegen scheitert, sondern am Wiederfinden. Ohne einheitliche Regeln ordnet jeder nach eigener Logik: Der eine sortiert nach Firmenname, der andere nach Nachname des Ansprechpartners, der dritte nach Projekt. Im Vertretungsfall oder nach einem Personalwechsel ist der Vorgang dann praktisch verloren. Der Prüfstein ist, ob eine Vertretung einen Vorgang ohne Rückfrage findet."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Eine Eingangsrechnung stammt vom 12. März 2024 und wurde im selben Jahr verbucht. Wann darf sie frühestens vernichtet werden, wenn eine zehnjährige Frist gilt?",
+      "loesung": "Die Aufbewahrungsfrist beginnt nicht mit dem Belegdatum, sondern mit dem Schluss des Kalenderjahres, in dem die letzte Eintragung dazu gemacht wurde. Das ist hier der 31. Dezember 2024. Von diesem Zeitpunkt an laufen zehn Jahre, die Frist endet also mit Ablauf des 31. Dezember 2034. Vernichtet werden darf der Beleg damit frühestens ab dem 1. Januar 2035. Zu beachten ist außerdem, dass die Frist nicht endet, solange die Unterlagen für eine laufende Außenprüfung oder ein offenes Verfahren von Bedeutung sind."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Euer Betrieb will auf ein Dokumentenmanagementsystem umstellen und Papier künftig vernichten. Worauf müsst ihr achten?",
+      "loesung": "Erstens muss das System revisionssicher sein: Dokumente müssen unveränderbar gespeichert, vollständig erfasst, in ihrer Bearbeitung nachvollziehbar protokolliert und in angemessener Zeit auffindbar sein. Zweitens sind elektronisch empfangene Belege in ihrem Originalformat aufzubewahren, weil sonst die maschinelle Auswertbarkeit verloren geht; ein Ausdruck oder ein reines Bild genügt dafür nicht. Drittens ist für das ersetzende Scannen von Papier ein festgelegter Ablauf nötig, der die bildliche Übereinstimmung sichert und den Umgang mit Fehlern regelt. Dieser Ablauf muss in einer Verfahrensdokumentation schriftlich festgehalten werden — sie ist bei einer Betriebsprüfung eines der ersten angeforderten Dokumente. Viertens bleiben die gesetzlichen Aufbewahrungsfristen unverändert; die Umstellung ändert nur das Medium, nicht die Dauer. Schließlich sind die Zugriffsrechte zu regeln, weil viele Dokumente personenbezogene Daten enthalten."
+    }
+  ],
+  "pruefungstipp": "Der Fristbeginn ist die meistgestellte Frage und die häufigste Fehlerquelle: Es wird ab dem Schluss des Kalenderjahres gerechnet, nicht ab dem Belegdatum. Schreib diesen Satz in jede Antwort. Merk dir außerdem die klare Zweiteilung zehn Jahre für alles rund um den Jahresabschluss, sechs Jahre für Handelsbriefe — und dass ein Werbeprospekt kein Handelsbrief ist."
+}

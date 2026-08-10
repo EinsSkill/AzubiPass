@@ -1,0 +1,69 @@
+{
+  "id": "lf4",
+  "titel": "Sachgüter und Dienstleistungen beschaffen und Verträge schließen",
+  "kurztitel": "Lernfeld 4",
+  "untertitel": "1. Ausbildungsjahr · Zeitrichtwert 120 Stunden",
+  "linie": "A",
+  "stand": "2026-08",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Einkaufen kann jeder. *Richtig* einkaufen nicht.",
+    "lead": "Bedarf ermitteln, Angebote vergleichbar machen, den Vertrag schließen — und wissen, was gilt, wenn die Ware zu spät kommt, kaputt ist oder niemand zahlt. Das größte Lernfeld des ersten Lehrjahrs.",
+    "fakten": [
+      "7 Kapitel",
+      "120 Stunden",
+      "1. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf4-k1-bedarf.kapitel.json",
+      "titel": "Bedarf ermitteln und Bestände steuern",
+      "minuten": 30,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf4-k2-bezugsquellen.kapitel.json",
+      "titel": "Bezugsquellen finden und anfragen",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf4-k3-angebotsvergleich.kapitel.json",
+      "titel": "Angebote vergleichen",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf4-k4-kaufvertrag.kapitel.json",
+      "titel": "Der Kaufvertrag und seine Bedingungen",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k5",
+      "datei": "lf4-k5-lieferungsverzug.kapitel.json",
+      "titel": "Wenn der Lieferer zu spät kommt",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k6",
+      "datei": "lf4-k6-mangel.kapitel.json",
+      "titel": "Wenn die Ware mangelhaft ist",
+      "minuten": 35,
+      "frei": false
+    },
+    {
+      "id": "k7",
+      "datei": "lf4-k7-zahlungsverzug.kapitel.json",
+      "titel": "Wenn der Kunde nicht zahlt",
+      "minuten": 30,
+      "frei": false
+    }
+  ]
+}

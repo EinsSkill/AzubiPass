@@ -1,0 +1,272 @@
+{
+  "id": "k5",
+  "lernfeld": "lf4",
+  "nummer": 5,
+  "titel": "Wenn der Lieferer zu spät kommt",
+  "untertitel": "Verspätet ist nicht dasselbe wie im Verzug.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Die Voraussetzungen des Lieferungsverzugs prüfen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Beurteilen, wann eine Mahnung entbehrlich ist",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die Rechte des Käufers bei Verzug ableiten",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Vier Voraussetzungen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine verspätete Lieferung ist noch kein {{begriff:lieferungsverzug|Lieferungsverzug}}. ==Erst wenn vier Dinge zusammenkommen, hat der Käufer überhaupt Rechte.== Das ist der Punkt, an dem in Prüfungsfällen die meisten Antworten schiefgehen: Sie springen sofort zum Rücktritt, ohne die Voraussetzungen zu prüfen."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Die Prüfung",
+          "titel": "Liegt Verzug vor?",
+          "lead": "Vier Fragen in dieser Reihenfolge. Fällt eine aus, gibt es keinen Verzug. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Fälligkeit",
+              "satz": "Leistungszeit ist da",
+              "text": "Der vereinbarte Termin ist erreicht. Ohne Vereinbarung ist die Leistung sofort fällig. Vor der Fälligkeit gibt es keinen Verzug — auch dann nicht, wenn absehbar ist, dass es knapp wird."
+            },
+            {
+              "nr": 2,
+              "titel": "Nichtleistung trotz Möglichkeit",
+              "satz": "die Ware gibt es noch",
+              "text": "Ist die Leistung dauerhaft unmöglich geworden — das bestellte Einzelstück ist verbrannt — liegt kein Verzug vor, sondern Unmöglichkeit. Das ist ein anderer Fall mit anderen Rechtsfolgen."
+            },
+            {
+              "nr": 3,
+              "titel": "Mahnung",
+              "satz": "§ 286 BGB",
+              "text": "Die eindeutige Aufforderung zu liefern, nach Eintritt der Fälligkeit. In bestimmten Fällen ist sie entbehrlich — dazu gleich mehr. Eine Mahnung vor Fälligkeit geht ins Leere."
+            },
+            {
+              "nr": 4,
+              "titel": "Vertretenmüssen",
+              "satz": "Vorsatz oder Fahrlässigkeit",
+              "text": "Der Lieferer muss die Verzögerung zu verantworten haben. Bei höherer Gewalt oder unverschuldeter Betriebsstörung fehlt es daran. Das Verschulden wird allerdings vermutet — der Lieferer muss sich entlasten, nicht der Käufer es beweisen."
+            }
+          ],
+          "regel": "Merksatz: Fällig — nicht geliefert — gemahnt — verschuldet. Erst wenn alle vier stehen, beginnt der Verzug, und erst ab da laufen die Rechte des Käufers."
+        },
+        {
+          "typ": "merke",
+          "text": "Verspätung allein reicht nicht. **Verzug beginnt frühestens mit der Mahnung** — und die kann erst nach Fälligkeit wirksam ausgesprochen werden.",
+          "karteikarte": "Welche vier Voraussetzungen müssen für Lieferungsverzug vorliegen?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Wann die Mahnung entfällt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{par:bgb-286|§ 286 BGB}} nennt Fälle, in denen keine Mahnung nötig ist. Der wichtigste für den Betriebsalltag: **Der Termin steht kalendermäßig fest.** Dann mahnt der Kalender."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Formulierung im Vertrag",
+            "Mahnung nötig?",
+            "Warum"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "„Lieferung am 15. Oktober\"",
+                "nein",
+                "kalendermäßig bestimmt"
+              ],
+              "detail": "**Der Termin ist datumsgenau festgelegt.** Am 16. Oktober ist der Lieferer automatisch im Verzug, ohne dass jemand etwas schreiben muss."
+            },
+            {
+              "zellen": [
+                "„Lieferung in der 42. Kalenderwoche\"",
+                "nein",
+                "kalendermäßig bestimmbar"
+              ]
+            },
+            {
+              "zellen": [
+                "„Lieferung 14 Tage nach Auftragseingang\"",
+                "nein",
+                "berechenbar ab einem Ereignis"
+              ],
+              "detail": "**Auch das ist kalendermäßig bestimmbar**: Ein Ereignis plus eine feste Frist ergibt ein berechenbares Datum."
+            },
+            {
+              "zellen": [
+                "„Lieferung schnellstmöglich\"",
+                "ja",
+                "kein bestimmter Termin"
+              ],
+              "detail": "**Unbestimmte Formulierungen helfen niemandem.** Wer „baldmöglichst\" oder „schnellstmöglich\" vereinbart, muss später mahnen und läuft dem Termin hinterher."
+            },
+            {
+              "zellen": [
+                "Lieferer sagt: „Wir liefern nicht.\"",
+                "nein",
+                "ernsthafte, endgültige Verweigerung"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein häufiger Denkfehler: Eine **Auftragsbestätigung mit Liefertermin** genügt für die kalendermäßige Bestimmung nur, wenn dieser Termin auch Vertragsinhalt geworden ist. Schickt der Lieferer einseitig einen Termin, den der Käufer nie akzeptiert hat, ist die Lage weniger eindeutig."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Genau hier zahlt sich Kapitel 4 aus: Wer im Vertrag ein festes Datum vereinbart statt „schnellstmöglich\", spart sich später die Mahnung und ist sofort im Recht. Zwei Minuten beim Bestellen, Wochen gespart beim Streit."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Was der Käufer jetzt darf",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Steht der Verzug fest, hat der Käufer drei Wege. Wichtig ist die Reihenfolge: **Rücktritt und Schadensersatz statt der Leistung setzen fast immer eine Fristsetzung voraus** — ohne sie geht es nicht."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Recht",
+            "Voraussetzung",
+            "Wirkung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Auf Lieferung bestehen",
+                "Verzug liegt vor",
+                "Vertrag bleibt, plus Verzögerungsschaden"
+              ],
+              "detail": "**Der Normalfall.** Der Käufer will die Ware ja haben. Zusätzlich kann er den Schaden ersetzt verlangen, der durch die Verspätung entstanden ist — etwa Kosten für eine Ersatzanmietung."
+            },
+            {
+              "zellen": [
+                "Rücktritt vom Vertrag",
+                "angemessene Frist erfolglos verstrichen",
+                "Vertrag rückabgewickelt"
+              ],
+              "detail": "**{{par:bgb-323|§ 323 BGB}}.** Beide Seiten geben zurück, was sie erhalten haben. Wer zurücktritt, kann die Ware nicht mehr verlangen — das ist eine endgültige Entscheidung."
+            },
+            {
+              "zellen": [
+                "Schadensersatz statt der Leistung",
+                "angemessene Frist erfolglos verstrichen",
+                "Ersatz des Nichterfüllungsschadens"
+              ],
+              "detail": "**Der Weg zum {{begriff:deckungskauf|Deckungskauf}}:** Der Käufer besorgt die Ware woanders und verlangt den Mehrpreis. Kostet die Ersatzware 1.200 € statt 1.000 €, sind die 200 € der Schaden."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Eine Besonderheit gilt beim **Fixgeschäft** — wenn die Einhaltung des Termins nach dem Vertrag so wesentlich ist, dass eine spätere Lieferung sinnlos wäre. Beim beiderseitigen Handelskauf kann der Käufer dann sofort zurücktreten oder Schadensersatz verlangen, ohne Frist zu setzen."
+        },
+        {
+          "typ": "achtung",
+          "text": "Beim handelsrechtlichen Fixgeschäft dreht sich die Pflicht um: Will der Käufer **trotzdem** die Lieferung haben, muss er das dem Verkäufer **unverzüglich** anzeigen. Schweigt er, gilt der Vertrag als aufgehoben — Schweigen ist hier ausnahmsweise eine Erklärung."
+        },
+        {
+          "typ": "check",
+          "frage": "Vereinbart war Lieferung am 10. März. Am 20. März ist noch nichts da. Der Einkäufer will sofort zurücktreten und woanders kaufen. Geht das?",
+          "optionen": [
+            {
+              "text": "Ja — der Termin war überschritten, das genügt",
+              "richtig": false,
+              "echo": "Verzug liegt zwar vor, weil der Termin kalendermäßig bestimmt war. Für den Rücktritt braucht es aber zusätzlich eine erfolglos verstrichene Nachfrist."
+            },
+            {
+              "text": "Nein — erst muss eine angemessene Frist gesetzt werden",
+              "richtig": true,
+              "echo": "Richtig. Der Verzug ist am 11. März ohne Mahnung eingetreten, weil der Termin kalendermäßig bestimmt war. Für Rücktritt oder Schadensersatz statt der Leistung verlangt § 323 BGB aber zusätzlich eine angemessene Nachfrist. Erst wenn die fruchtlos verstreicht, darf zurückgetreten und ein Deckungskauf abgerechnet werden."
+            },
+            {
+              "text": "Nein — ohne Mahnung ist gar kein Verzug eingetreten",
+              "richtig": false,
+              "echo": "Doch. Bei einem kalendermäßig bestimmten Termin ist die Mahnung nach § 286 BGB entbehrlich. Der Verzug lief also bereits — es fehlt nur die Nachfrist für den Rücktritt."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Mahnung nötig oder entbehrlich?",
+          "kategorien": [
+            "Mahnung nötig",
+            "Entbehrlich"
+          ],
+          "aufgaben": [
+            {
+              "text": "„Lieferung bis spätestens 30. April.\"",
+              "loesung": "Entbehrlich"
+            },
+            {
+              "text": "„Lieferung erfolgt zeitnah.\"",
+              "loesung": "Mahnung nötig"
+            },
+            {
+              "text": "Der Lieferer teilt schriftlich mit, er werde nicht liefern.",
+              "loesung": "Entbehrlich"
+            },
+            {
+              "text": "Im Vertrag steht kein Termin, die Ware fehlt seit Wochen.",
+              "loesung": "Mahnung nötig"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Verzug braucht vier Dinge: Fälligkeit, Nichtleistung trotz Möglichkeit, Mahnung, Vertretenmüssen.",
+    "Ist die Leistung dauerhaft unmöglich, liegt kein Verzug vor, sondern Unmöglichkeit.",
+    "{{par:bgb-286|§ 286 BGB}}: Die Mahnung entfällt bei kalendermäßig bestimmtem Termin.",
+    "Auch „14 Tage nach Auftragseingang\" ist kalendermäßig bestimmbar.",
+    "Bei ernsthafter, endgültiger Leistungsverweigerung ist die Mahnung ebenfalls entbehrlich.",
+    "Auf Lieferung bestehen geht sofort; Verzögerungsschaden kommt hinzu.",
+    "{{par:bgb-323|§ 323 BGB}}: Rücktritt erst nach erfolglos verstrichener angemessener Frist.",
+    "Beim handelsrechtlichen Fixgeschäft muss der Käufer die gewünschte Erfüllung unverzüglich anzeigen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die Voraussetzungen des Lieferungsverzugs und erkläre, wann die Mahnung entbehrlich ist.",
+      "loesung": "Der Lieferungsverzug setzt voraus, dass die Leistung fällig ist, dass der Lieferer trotz Möglichkeit nicht leistet, dass er gemahnt wurde und dass er die Verzögerung zu vertreten hat. Das Vertretenmüssen wird vermutet; der Lieferer muss sich entlasten. Nach § 286 BGB ist die Mahnung insbesondere entbehrlich, wenn für die Leistung eine Zeit nach dem Kalender bestimmt ist, wenn sich der Termin aus einem Ereignis und einer angemessenen Frist berechnen lässt, wenn der Lieferer die Leistung ernsthaft und endgültig verweigert oder wenn besondere Gründe den sofortigen Eintritt des Verzugs rechtfertigen. Ist die Leistung dauerhaft unmöglich geworden, liegt kein Verzug vor, sondern Unmöglichkeit."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Welche Rechte hat der Käufer bei Lieferungsverzug, und welche Voraussetzung haben sie jeweils?",
+      "loesung": "Erstens kann er weiterhin auf Lieferung bestehen und zusätzlich Ersatz des Verzögerungsschadens verlangen; dafür genügt der Verzug selbst. Zweitens kann er nach § 323 BGB vom Vertrag zurücktreten, allerdings erst nachdem er dem Lieferer erfolglos eine angemessene Frist zur Leistung gesetzt hat. Drittens kann er Schadensersatz statt der Leistung verlangen, ebenfalls nach erfolglosem Fristablauf; praktisch bedeutet das den Deckungskauf, bei dem er die Ware anderweitig beschafft und den Mehrpreis ersetzt verlangt. Beim Fixgeschäft im beiderseitigen Handelskauf entfällt die Fristsetzung, dafür muss der Käufer unverzüglich anzeigen, wenn er trotzdem Erfüllung will."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ihr habt 200 Bürostühle zum 1. Juni bestellt, Lieferung „bis 1. Juni\". Am 8. Juni ist nichts da. Ihr braucht die Stühle für einen Umzug am 20. Juni. Wie geht ihr vor?",
+      "loesung": "Der Verzug ist bereits am 2. Juni eingetreten, weil der Termin kalendermäßig bestimmt war und die Mahnung deshalb nach § 286 BGB entbehrlich ist. Da die Stühle weiterhin gebraucht werden, ist der sinnvolle erste Schritt, dem Lieferer schriftlich eine angemessene Nachfrist zu setzen — hier etwa bis zum 15. Juni, damit vor dem Umzug noch Zeit bleibt. Zugleich kann der bereits entstandene Verzögerungsschaden geltend gemacht werden. Liefert der Lieferer bis zum Fristablauf nicht, kann nach § 323 BGB zurückgetreten oder Schadensersatz statt der Leistung verlangt werden. In diesem Fall wäre ein Deckungskauf sinnvoll: Die Stühle werden anderweitig beschafft, und der Mehrpreis gegenüber dem ursprünglichen Preis wird als Schaden geltend gemacht."
+    }
+  ],
+  "pruefungstipp": "Prüfe Verzugsfälle immer streng in der Reihenfolge fällig, nicht geliefert, gemahnt, verschuldet — und schreib diese vier Punkte auch hin. Danach erst die Rechtsfolgen. Die häufigste Falle ist der sofortige Rücktritt ohne Nachfrist: Der Verzug allein reicht dafür nicht, es braucht die erfolglos verstrichene Frist nach § 323 BGB."
+}

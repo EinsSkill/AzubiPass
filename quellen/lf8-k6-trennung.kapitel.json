@@ -1,0 +1,409 @@
+{
+  "id": "k6",
+  "lernfeld": "lf8",
+  "nummer": 6,
+  "titel": "Trennung und Zeugnis",
+  "untertitel": "Kündigungsarten, Fristen, Schutz — und was am Ende im Zeugnis steht.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Wege der Personalfreisetzung und Beendigungsarten unterscheiden",
+      "abschnitt": "f1"
+    },
+    {
+      "id": "lz2",
+      "text": "Kündigungsfristen berechnen und den Kündigungsschutz prüfen",
+      "abschnitt": "f2"
+    },
+    {
+      "id": "lz3",
+      "text": "Ein Arbeitszeugnis beurteilen",
+      "abschnitt": "f3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "f1",
+      "titel": "Nicht jede Trennung ist eine Kündigung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:personalfreisetzung|Personalfreisetzung}} beginnt nicht mit der Kündigung, sondern lange davor. ==Die Kündigung ist das letzte Mittel==, nicht das erste — und im Geltungsbereich des Kündigungsschutzgesetzes muss der Betrieb das auch belegen können."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Stufe",
+            "Maßnahme",
+            "Wirkung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ohne Personalabbau",
+                "Überstunden abbauen, Urlaub einbringen, Kurzarbeit",
+                "Kapazität sinkt, Stellen bleiben"
+              ]
+            },
+            {
+              "zellen": [
+                "Natürliche Fluktuation",
+                "frei werdende Stellen nicht nachbesetzen",
+                "langsam, aber ohne Konflikt"
+              ],
+              "detail": "**Die schmerzloseste Form** — und die langsamste. Sie funktioniert nur, wenn die {{begriff:fluktuation|Fluktuation}} hoch genug und der Abbaubedarf nicht dringend ist."
+            },
+            {
+              "zellen": [
+                "Einvernehmlich",
+                "Aufhebungsvertrag, Altersteilzeit",
+                "schnell, aber teuer"
+              ]
+            },
+            {
+              "zellen": [
+                "Einseitig",
+                "Kündigung durch den Arbeitgeber",
+                "letztes Mittel, rechtlich riskant"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Beendigungsart",
+            "Wer entscheidet",
+            "Besonderheit"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Fristablauf",
+                "niemand — der Vertrag endet",
+                "nur bei Befristung"
+              ]
+            },
+            {
+              "zellen": [
+                "{{begriff:aufhebungsvertrag|Aufhebungsvertrag}}",
+                "beide gemeinsam",
+                "keine Fristen, kein Kündigungsschutz"
+              ],
+              "detail": "**Vorsicht für den Arbeitnehmer:** Wer freiwillig zustimmt, riskiert eine Sperrzeit beim Arbeitslosengeld — in der Regel zwölf Wochen. Deshalb ist ein Aufhebungsvertrag selten so vorteilhaft, wie er im Gespräch klingt."
+            },
+            {
+              "zellen": [
+                "Ordentliche Kündigung",
+                "eine Seite",
+                "Frist einhalten, Grund nötig im KSchG-Bereich"
+              ]
+            },
+            {
+              "zellen": [
+                "Außerordentliche Kündigung",
+                "eine Seite",
+                "fristlos, wichtiger Grund, zwei Wochen Frist"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Nach {{par:bgb-623|§ 623 BGB}} bedarf jede Kündigung und jeder Aufhebungsvertrag der **Schriftform** — eigenhändig unterschrieben auf Papier. Eine Kündigung per E-Mail, Messenger oder Fax ist unwirksam, auch wenn sie zugegangen ist und alle sie verstanden haben."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "f2",
+      "titel": "Fristen und Schutz",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Grundfrist nach {{par:bgb-622|§ 622 BGB}} beträgt vier Wochen zum Fünfzehnten oder zum Monatsende und gilt für **beide** Seiten. Kündigt der Arbeitgeber, verlängert sie sich mit der Betriebszugehörigkeit — für den Arbeitnehmer bleibt es bei vier Wochen, sofern nichts anderes vereinbart ist."
+        },
+        {
+          "typ": "grafik",
+          "variante": "staffel",
+          "kopf": "Die Staffelung",
+          "titel": "Welche Frist gilt — und wann ist Schluss?",
+          "lead": "Trag die Betriebszugehörigkeit und das Zugangsdatum ein. Genau so wird die Aufgabe in der Prüfung gestellt.",
+          "eingaben": {
+            "jahre": {
+              "label": "Betriebszugehörigkeit in Jahren",
+              "start": 6
+            },
+            "datum": {
+              "label": "Kündigung geht zu am",
+              "start": "2026-03-10"
+            }
+          },
+          "stufen": [
+            {
+              "ab": 0,
+              "frist": "4 Wochen",
+              "termin": "zum 15. oder Monatsende",
+              "wochen": 4
+            },
+            {
+              "ab": 2,
+              "frist": "1 Monat",
+              "termin": "zum Monatsende",
+              "monate": 1
+            },
+            {
+              "ab": 5,
+              "frist": "2 Monate",
+              "termin": "zum Monatsende",
+              "monate": 2
+            },
+            {
+              "ab": 8,
+              "frist": "3 Monate",
+              "termin": "zum Monatsende",
+              "monate": 3
+            },
+            {
+              "ab": 10,
+              "frist": "4 Monate",
+              "termin": "zum Monatsende",
+              "monate": 4
+            },
+            {
+              "ab": 12,
+              "frist": "5 Monate",
+              "termin": "zum Monatsende",
+              "monate": 5
+            },
+            {
+              "ab": 15,
+              "frist": "6 Monate",
+              "termin": "zum Monatsende",
+              "monate": 6
+            },
+            {
+              "ab": 20,
+              "frist": "7 Monate",
+              "termin": "zum Monatsende",
+              "monate": 7
+            }
+          ],
+          "regel": "Merke die Sprünge: 2, 5, 8, 10, 12, 15, 20 Jahre — die Monate laufen dabei schlicht von 1 bis 7. Die verlängerten Fristen gelten nur für den Arbeitgeber und enden ausschließlich zum Monatsende. In der Probezeit sind es zwei Wochen ohne Termin."
+        },
+        {
+          "typ": "absatz",
+          "text": "Ob überhaupt ein Grund nötig ist, entscheidet der {{begriff:kuendigungsschutz|Kündigungsschutz}}. Er greift nach {{par:kschg-23|§ 23 KSchG}} erst in Betrieben mit **mehr als zehn** Arbeitnehmern und nach {{par:kschg-1|§ 1 KSchG}} erst, wenn das Arbeitsverhältnis länger als sechs Monate bestanden hat."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kündigungsgrund",
+            "Bedeutung",
+            "Beispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Personenbedingt",
+                "in der Person liegend, ohne Verschulden",
+                "dauerhafte Krankheit, entzogene Fahrerlaubnis"
+              ]
+            },
+            {
+              "zellen": [
+                "Verhaltensbedingt",
+                "steuerbares Fehlverhalten",
+                "wiederholte Unpünktlichkeit trotz Abmahnung"
+              ],
+              "detail": "**In der Regel erst nach Abmahnung.** Sie muss das Fehlverhalten konkret benennen, zur Änderung auffordern und die Kündigung für den Wiederholungsfall ankündigen. Ohne diese drei Bestandteile ist sie wirkungslos."
+            },
+            {
+              "zellen": [
+                "Betriebsbedingt",
+                "dringende betriebliche Erfordernisse",
+                "Auftragseinbruch, Wegfall der Stelle"
+              ],
+              "detail": "**Hier ist zusätzlich die Sozialauswahl zu beachten:** Unter vergleichbaren Mitarbeitern trifft es den, der sie am ehesten verkraftet — nach Dauer der Betriebszugehörigkeit, Lebensalter, Unterhaltspflichten und Schwerbehinderung."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Mitarbeiter ist seit sechs Jahren im Betrieb. Der Arbeitgeber kündigt am 10. März. Wann endet das Arbeitsverhältnis?",
+          "optionen": [
+            {
+              "text": "Am 7. April, vier Wochen später",
+              "richtig": false,
+              "echo": "Die Grundfrist von vier Wochen gilt nur bis zu zwei Jahren Betriebszugehörigkeit. Nach sechs Jahren greift bereits die verlängerte Frist."
+            },
+            {
+              "text": "Am 31. Mai",
+              "richtig": true,
+              "echo": "Richtig. Bei sechs Jahren Betriebszugehörigkeit gilt die Stufe „ab 5 Jahre“ mit zwei Monaten zum Monatsende. Zugang am 10. März bedeutet also Ende am 31. Mai — nicht am 10. Mai, weil die verlängerten Fristen ausschließlich zum Monatsende laufen."
+            },
+            {
+              "text": "Am 10. Mai",
+              "richtig": false,
+              "echo": "Die Länge stimmt, der Termin nicht. Die gestaffelten Fristen des § 622 Abs. 2 BGB enden immer zum Monatsende — der Fünfzehnte ist nur bei der Grundfrist möglich."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Vor jeder Kündigung ist nach {{par:betrvg-102|§ 102 BetrVG}} der Betriebsrat anzuhören. Eine ohne Anhörung ausgesprochene Kündigung ist **unwirksam** — unabhängig davon, wie berechtigt sie sonst wäre.",
+          "karteikarte": "Welche drei Kündigungsgründe kennt das KSchG, und was ist bei betriebsbedingter Kündigung zusätzlich zu beachten?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "f3",
+      "titel": "Das Zeugnis",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Nach {{par:gewo-109|§ 109 GewO}} besteht bei Beendigung Anspruch auf ein {{begriff:arbeitszeugnis|Arbeitszeugnis}}. Es muss **wahr** und zugleich **wohlwollend** sein — zwei Anforderungen, die sich widersprechen. Aus diesem Widerspruch ist die berüchtigte Zeugnissprache entstanden."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Formulierung",
+            "Bedeutung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "stets zu unserer vollsten Zufriedenheit",
+                "sehr gut"
+              ],
+              "mono": []
+            },
+            {
+              "zellen": [
+                "stets zu unserer vollen Zufriedenheit",
+                "gut"
+              ]
+            },
+            {
+              "zellen": [
+                "zu unserer vollen Zufriedenheit",
+                "befriedigend"
+              ],
+              "detail": "**Ein einziges Wort macht den Unterschied.** „Stets“ steht für Dauerhaftigkeit, „voll“ für den Grad. Fehlt „stets“, fehlt eine Note. Genau deshalb liest man ein Zeugnis Wort für Wort und nicht dem Sinn nach."
+            },
+            {
+              "zellen": [
+                "zu unserer Zufriedenheit",
+                "ausreichend"
+              ]
+            },
+            {
+              "zellen": [
+                "hat sich bemüht",
+                "mangelhaft"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Zeugnisart",
+            "Inhalt",
+            "Wann"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Einfaches Zeugnis",
+                "Art und Dauer der Tätigkeit",
+                "auf Verlangen"
+              ]
+            },
+            {
+              "zellen": [
+                "Qualifiziertes Zeugnis",
+                "zusätzlich Leistung und Verhalten",
+                "nur auf ausdrückliches Verlangen"
+              ]
+            },
+            {
+              "zellen": [
+                "Zwischenzeugnis",
+                "bei Vorgesetztenwechsel, interner Bewerbung",
+                "bei berechtigtem Interesse"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Verboten sind Geheimzeichen jeder Art — auffällige Zeichensetzung, Ausrufezeichen, ungewöhnliche Schreibweisen oder Auslassungen, die etwas mitteilen sollen. Ebenso unzulässig ist der Hinweis auf Krankheiten, Gewerkschaftszugehörigkeit oder die Ausübung von Betriebsratstätigkeit."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Prüfe jedes Zeugnis auf drei Dinge: Ist die **Schlussformel** vorhanden — Dank, Bedauern über das Ausscheiden, Zukunftswünsche? Fehlt sie, ist das ein deutliches Signal. Ist die **Tätigkeitsbeschreibung** vollständig, oder wurden wichtige Aufgaben weggelassen? Und stimmt das **Austrittsdatum** mit dem Ende des Arbeitsverhältnisses überein?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welcher Kündigungsgrund liegt vor?",
+          "kategorien": [
+            "Personenbedingt",
+            "Verhaltensbedingt",
+            "Betriebsbedingt"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Betrieb schließt eine ganze Abteilung.",
+              "loesung": "Betriebsbedingt"
+            },
+            {
+              "text": "Ein Mitarbeiter kommt trotz zweier Abmahnungen weiter zu spät.",
+              "loesung": "Verhaltensbedingt"
+            },
+            {
+              "text": "Einem Berufskraftfahrer wird die Fahrerlaubnis dauerhaft entzogen.",
+              "loesung": "Personenbedingt"
+            },
+            {
+              "text": "Ein Auftrag entfällt, die Stelle wird nicht mehr gebraucht.",
+              "loesung": "Betriebsbedingt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Freisetzung stufenweise: Überstunden, Kurzarbeit, Fluktuation, Aufhebungsvertrag, dann Kündigung.",
+    "{{par:bgb-623|§ 623 BGB}}: Kündigung und Aufhebungsvertrag nur schriftlich — Mail ist unwirksam.",
+    "{{par:bgb-622|§ 622 BGB}}: Grundfrist vier Wochen zum 15. oder Monatsende, für beide Seiten.",
+    "Verlängerte Fristen nur für den Arbeitgeber: 2, 5, 8, 10, 12, 15, 20 Jahre → 1 bis 7 Monate zum Monatsende.",
+    "Probezeit: zwei Wochen ohne Termin, Probezeit höchstens sechs Monate.",
+    "{{par:kschg-23|§ 23 KSchG}}: Kündigungsschutz erst ab mehr als zehn Arbeitnehmern, nach sechs Monaten.",
+    "Drei Kündigungsgründe: personen-, verhaltens- und betriebsbedingt; bei betriebsbedingt zusätzlich Sozialauswahl.",
+    "{{par:betrvg-102|§ 102 BetrVG}}: ohne Anhörung des Betriebsrats ist die Kündigung unwirksam.",
+    "{{par:gewo-109|§ 109 GewO}}: einfaches oder qualifiziertes Zeugnis, wahr und wohlwollend."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Berechnung",
+      "frage": "Eine Mitarbeiterin ist seit elf Jahren im Betrieb. Der Arbeitgeber kündigt am 20. Juni. Zu welchem Termin endet das Arbeitsverhältnis?",
+      "loesung": "Bei elf Jahren Betriebszugehörigkeit greift die Stufe „ab 10 Jahre“ mit einer Frist von vier Monaten zum Monatsende. Zugang am 20. Juni bedeutet damit ein Ende am 31. Oktober. Der Fünfzehnte kommt als Termin nicht in Betracht, weil die gestaffelten Fristen ausschließlich zum Monatsende laufen."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Unter welchen Voraussetzungen greift der allgemeine Kündigungsschutz, und welche Folge hat das?",
+      "loesung": "Er greift nach § 23 KSchG in Betrieben mit mehr als zehn Arbeitnehmern und nach § 1 KSchG erst, wenn das Arbeitsverhältnis länger als sechs Monate bestanden hat. Folge ist, dass eine Kündigung des Arbeitgebers sozial gerechtfertigt sein muss — also personen-, verhaltens- oder betriebsbedingt. Ohne einen solchen Grund ist sie unwirksam; der Arbeitnehmer muss dafür allerdings binnen drei Wochen Kündigungsschutzklage erheben."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Arbeitgeber schickt eine Kündigung per E-Mail an einen Mitarbeiter, der seit acht Monaten im Betrieb mit 30 Beschäftigten arbeitet. Beurteile die Kündigung.",
+      "loesung": "Die Kündigung ist bereits aus formalen Gründen unwirksam: Nach § 623 BGB bedarf sie der Schriftform, die elektronische Form ist ausdrücklich ausgeschlossen. Unabhängig davon greift hier auch der Kündigungsschutz, weil der Betrieb mehr als zehn Arbeitnehmer hat und die sechsmonatige Wartezeit abgelaufen ist — es wäre also zusätzlich ein sozial gerechtfertigter Grund nötig gewesen. Ebenso hätte der Betriebsrat nach § 102 BetrVG angehört werden müssen."
+    }
+  ],
+  "pruefungstipp": "Die Fristenberechnung ist die häufigste Rechenaufgabe dieses Lernfelds. Zwei Fallen: Die verlängerten Fristen gelten nur für den Arbeitgeber, und sie enden immer zum Monatsende. Die Zeugnissprache wird gern als Übersetzungsaufgabe gestellt — merke dir die Kette stets vollsten, stets vollen, vollen, Zufriedenheit, bemüht."
+}

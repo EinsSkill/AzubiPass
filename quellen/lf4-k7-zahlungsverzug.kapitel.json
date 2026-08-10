@@ -1,0 +1,293 @@
+{
+  "id": "k7",
+  "lernfeld": "lf4",
+  "nummer": 7,
+  "titel": "Wenn der Kunde nicht zahlt",
+  "untertitel": "Vom freundlichen Hinweis bis zum Gerichtsvollzieher.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Annahmeverzug und Zahlungsverzug unterscheiden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Den Eintritt des Zahlungsverzugs bestimmen und Ansprüche berechnen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Das gerichtliche Mahnverfahren in seinen Stufen erklären",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Zwei Störungen auf der Käuferseite",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Käufer schuldet nach {{par:bgb-433|§ 433 BGB}} zweierlei: **zahlen und abnehmen**. Verletzt er die eine Pflicht, entsteht {{begriff:zahlungsverzug|Zahlungsverzug}}; verletzt er die andere, {{begriff:annahmeverzug|Annahmeverzug}}. ==Die beiden werden in Prüfungen gern vermischt, haben aber völlig verschiedene Folgen.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Pflichten",
+          "titel": "Nicht abgenommen oder nicht bezahlt?",
+          "lead": "Dieselbe Rechnung, zwei ganz unterschiedliche Lagen. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Annahmeverzug",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Ware wird nicht angenommen",
+                  "detail": "Der Verkäufer hat ordnungsgemäß angeboten — richtige Ware, richtiger Ort, richtige Zeit — und der Käufer nimmt sie nicht."
+                },
+                {
+                  "text": "Gefahr geht auf den Käufer über",
+                  "detail": "Geht die Ware danach unter, muss der Käufer trotzdem zahlen. Das ist die schärfste Folge des Annahmeverzugs."
+                },
+                {
+                  "text": "Verkäufer haftet nur noch eingeschränkt",
+                  "detail": "Für die Ware haftet er ab jetzt nur bei Vorsatz und grober Fahrlässigkeit. Leichte Fahrlässigkeit bei der Lagerung schadet ihm nicht mehr."
+                },
+                {
+                  "text": "Mehraufwendungen sind zu ersetzen",
+                  "detail": "Lagerkosten, erneute Anfahrt, Kühlung. Bei Handelsgeschäften kommt der Selbsthilfeverkauf in Betracht — die Ware wird verwertet und abgerechnet."
+                }
+              ]
+            },
+            {
+              "name": "Zahlungsverzug",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Rechnung wird nicht bezahlt",
+                  "detail": "Die Forderung ist fällig, der Käufer zahlt nicht — und er hat es zu vertreten. Liquiditätsprobleme entschuldigen nicht, Geld muss man haben."
+                },
+                {
+                  "text": "Verzugszinsen laufen",
+                  "detail": "Ab dem Eintritt des Verzugs, nicht erst ab der Mahnung im Betrieb. Das macht bei großen Beträgen schnell einen spürbaren Unterschied."
+                },
+                {
+                  "text": "Verzugsschaden ist zu ersetzen",
+                  "detail": "Mahnkosten, Kosten des Inkassos oder Anwalts, entgangene Zinsen. Alles, was durch die verspätete Zahlung tatsächlich entstanden ist."
+                },
+                {
+                  "text": "Notfalls gerichtlich durchsetzen",
+                  "detail": "Mahnbescheid, Vollstreckungsbescheid, Zwangsvollstreckung. Der letzte Schritt, wenn das kaufmännische Mahnwesen nichts bringt."
+                }
+              ]
+            }
+          ],
+          "regel": "Merksatz: Annahmeverzug betrifft die Ware, Zahlungsverzug das Geld. Beide können gleichzeitig vorliegen — wer nicht abnimmt, zahlt oft auch nicht."
+        },
+        {
+          "typ": "merke",
+          "text": "**Annahmeverzug** verschiebt die Gefahr auf den Käufer und mildert die Haftung des Verkäufers. **Zahlungsverzug** löst Zinsen und Schadensersatz aus.",
+          "karteikarte": "Worin unterscheiden sich Annahmeverzug und Zahlungsverzug, und was ist jeweils die wichtigste Folge?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Ab wann läuft der Zahlungsverzug?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{par:bgb-286|§ 286 BGB}} kennt drei Wege in den Zahlungsverzug. Der dritte ist der, den viele nicht kennen — und er greift ohne jede Mahnung."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Weg",
+            "Voraussetzung",
+            "Verzug beginnt"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Mahnung",
+                "Aufforderung nach Fälligkeit",
+                "mit Zugang der Mahnung"
+              ],
+              "detail": "**Der Grundfall.** Eine Mahnung vor Fälligkeit wirkt nicht. Die erste Mahnung setzt den Verzug in Gang — sie ist noch nicht selbst Verzugsschaden und deshalb in der Regel nicht ersatzfähig."
+            },
+            {
+              "zellen": [
+                "Kalendermäßig bestimmt",
+                "„zahlbar bis 30. Juni\"",
+                "am Tag danach, ohne Mahnung"
+              ]
+            },
+            {
+              "zellen": [
+                "30-Tage-Regel",
+                "Rechnung zugegangen und fällig",
+                "spätestens 30 Tage danach"
+              ],
+              "detail": "**Gegenüber Verbrauchern nur, wenn sie in der Rechnung darauf hingewiesen wurden.** Zwischen Betrieben gilt sie ohne diesen Hinweis — das wird in Prüfungen gern abgefragt."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Steht der Verzug fest, schuldet der Käufer Zinsen nach {{par:bgb-288|§ 288 BGB}}. Die Höhe hängt davon ab, **ob ein Verbraucher beteiligt ist**: fünf Prozentpunkte über dem Basiszinssatz, wenn ja — neun Prozentpunkte, wenn beide Seiten Unternehmer sind. Dazu kommt bei Entgeltforderungen zwischen Unternehmen eine Pauschale von 40 Euro.",
+          "pruefen": "Der Basiszinssatz ändert sich zum 1. Januar und 1. Juli jedes Jahres. Vor Veröffentlichung den aktuellen Wert der Deutschen Bundesbank einsetzen und das Rechenbeispiel unten daran anpassen."
+        },
+        {
+          "typ": "achtung",
+          "text": "Die **40-Euro-Pauschale** gibt es nur, wenn der Schuldner **kein Verbraucher** ist. Und sie wird auf einen später geltend gemachten Schadensersatz für Rechtsverfolgungskosten angerechnet — man bekommt sie also nicht zusätzlich obendrauf."
+        },
+        {
+          "typ": "merke",
+          "text": "Verzugszinsen: **fünf** Prozentpunkte über Basiszinssatz mit Verbraucher, **neun** Prozentpunkte ohne. Die 40-Euro-Pauschale gilt nur zwischen Unternehmen.",
+          "karteikarte": "Wie hoch sind die Verzugszinsen nach § 288 BGB, und wovon hängt der Unterschied ab?"
+        },
+        {
+          "typ": "check",
+          "frage": "Ihr habt einem Geschäftskunden am 2. Mai eine Rechnung über 5.000 € geschickt, zahlbar sofort. Es steht kein Datum und kein Hinweis auf Verzug drauf. Wann ist er spätestens im Verzug?",
+          "optionen": [
+            {
+              "text": "Gar nicht — ohne Mahnung gibt es keinen Verzug",
+              "richtig": false,
+              "echo": "Das gilt nur als Grundregel. § 286 BGB kennt daneben die 30-Tage-Regel für Entgeltforderungen, die ohne Mahnung greift."
+            },
+            {
+              "text": "Spätestens 30 Tage nach Zugang der Rechnung",
+              "richtig": true,
+              "echo": "Richtig. Bei Entgeltforderungen tritt der Verzug spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung ein. Der besondere Hinweis in der Rechnung ist nur gegenüber Verbrauchern nötig — hier ist der Kunde ein Unternehmen. Ab dann laufen neun Prozentpunkte über dem Basiszinssatz, dazu die Pauschale von 40 €."
+            },
+            {
+              "text": "Sofort am 2. Mai, weil „zahlbar sofort\" draufsteht",
+              "richtig": false,
+              "echo": "„Sofort\" macht die Forderung fällig, bestimmt aber keinen Kalendertag im Sinne des § 286 BGB. Für den Verzug braucht es entweder eine Mahnung oder den Ablauf der 30 Tage."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Vom Mahnbrief zur Zwangsvollstreckung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Das **kaufmännische** Mahnwesen ist eine betriebliche Entscheidung: Wie viele Mahnungen, in welchem Ton, mit welcher Frist. ==Rechtlich genügt eine einzige.== Erst wenn das nichts bringt, folgt das **gerichtliche** Mahnverfahren."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Der gerichtliche Weg",
+          "titel": "Vier Stufen bis zum Geld",
+          "lead": "Jede Stufe hat ihre eigene Frist. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Antrag auf Mahnbescheid",
+              "satz": "beim Mahngericht",
+              "text": "Der Gläubiger beantragt den {{begriff:mahnbescheid|Mahnbescheid}}, ohne die Forderung begründen zu müssen. Das Gericht prüft nur die Form, nicht ob die Forderung berechtigt ist. Deshalb geht es schnell und ist vergleichsweise billig."
+            },
+            {
+              "nr": 2,
+              "titel": "Widerspruch möglich",
+              "satz": "zwei Wochen",
+              "text": "Widerspricht der Schuldner fristgerecht, endet das Mahnverfahren. Es geht dann in das normale Streitverfahren über, in dem die Forderung tatsächlich geprüft wird. Widerspricht er nicht, geht es weiter."
+            },
+            {
+              "nr": 3,
+              "titel": "Vollstreckungsbescheid",
+              "satz": "auf Antrag",
+              "text": "Er wirkt wie ein Urteil und ist dreißig Jahre lang vollstreckbar. Auch dagegen kann sich der Schuldner wehren — durch Einspruch, ebenfalls binnen zwei Wochen."
+            },
+            {
+              "nr": 4,
+              "titel": "Zwangsvollstreckung",
+              "satz": "Gerichtsvollzieher",
+              "text": "Pfändung von Konto, Lohn oder Sachen. Ob dabei Geld herauskommt, hängt allein davon ab, ob der Schuldner etwas hat — ein Titel gegen einen Mittellosen bleibt Papier."
+            }
+          ],
+          "regel": "Beide Fristen betragen zwei Wochen: Widerspruch gegen den Mahnbescheid, Einspruch gegen den Vollstreckungsbescheid. Wer sie verstreichen lässt, verliert die Möglichkeit, die Forderung inhaltlich prüfen zu lassen."
+        },
+        {
+          "typ": "absatz",
+          "text": "Zeitlich begrenzt {{par:bgb-195|§ 195 BGB}} die Forderung auf **drei Jahre**. Sie beginnt nach {{par:bgb-199|§ 199 BGB}} aber nicht mit der Rechnung, sondern **mit dem Schluss des Jahres**, in dem der Anspruch entstanden ist — eine Rechnung aus dem März 2026 verjährt also erst Ende 2029."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Deshalb häufen sich Mahnbescheide im Dezember. Wer eine alte Forderung hat, muss vor dem Jahreswechsel handeln — der Mahnbescheid hemmt die Verjährung. Ein Blick in die offene Postenliste im November gehört in jedem Betrieb zum Jahresabschluss."
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Warum Vorbeugen billiger ist als Mahnen",
+          "absaetze": [
+            "Jede Mahnstufe kostet Arbeitszeit, und jeder Tag Verzug kostet Zinsen, die selten vollständig hereingeholt werden. Der {{begriff:eigentumsvorbehalt|Eigentumsvorbehalt}} aus Kapitel 4 ist deshalb kein Papierkram, sondern die billigste Sicherheit, die es gibt.",
+            "Weitere übliche Mittel: Vorkasse oder Anzahlung bei Neukunden, Bonitätsauskunft vor größeren Aufträgen, Kreditlimits je Kunde, und Skonto als Anreiz für schnelle Zahlung.",
+            "Rechnerisch lohnt sich Skonto für den Verkäufer oft trotz des Abschlags: Zwei Prozent Nachlass sind billiger als sechzig Tage Kapitalbindung plus das Ausfallrisiko."
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Störung liegt vor?",
+          "kategorien": [
+            "Annahmeverzug",
+            "Zahlungsverzug",
+            "Lieferungsverzug"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Kunde lässt die angelieferte Ware an der Rampe stehen.",
+              "loesung": "Annahmeverzug"
+            },
+            {
+              "text": "Die Rechnung ist seit sechs Wochen fällig, es kam nichts.",
+              "loesung": "Zahlungsverzug"
+            },
+            {
+              "text": "Der vereinbarte Liefertermin war vor zehn Tagen, die Ware fehlt.",
+              "loesung": "Lieferungsverzug"
+            },
+            {
+              "text": "Der Kunde verweigert die Unterschrift auf dem Lieferschein und schickt den Fahrer weg.",
+              "loesung": "Annahmeverzug"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Der Käufer schuldet nach {{par:bgb-433|§ 433 BGB}} Zahlung und Abnahme — daraus folgen zwei Störungen.",
+    "Annahmeverzug: Gefahr geht über, Verkäufer haftet nur noch für Vorsatz und grobe Fahrlässigkeit.",
+    "Mehraufwendungen im Annahmeverzug sind zu ersetzen, beim Handelskauf ist der Selbsthilfeverkauf möglich.",
+    "{{par:bgb-286|§ 286 BGB}}: Verzug durch Mahnung, kalendermäßige Bestimmung oder die 30-Tage-Regel.",
+    "Die 30-Tage-Regel greift gegenüber Verbrauchern nur mit Hinweis in der Rechnung.",
+    "{{par:bgb-288|§ 288 BGB}}: fünf Prozentpunkte über Basiszinssatz mit Verbraucher, neun ohne, plus 40 € Pauschale.",
+    "Gerichtliches Mahnverfahren: Mahnbescheid, Widerspruch, Vollstreckungsbescheid, Zwangsvollstreckung.",
+    "{{par:bgb-195|§ 195 BGB}} und {{par:bgb-199|§ 199 BGB}}: drei Jahre ab Schluss des Entstehungsjahres."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Unterscheide Annahmeverzug und Zahlungsverzug nach Voraussetzungen und Folgen.",
+      "loesung": "Annahmeverzug liegt vor, wenn der Verkäufer die Ware ordnungsgemäß anbietet und der Käufer sie nicht annimmt. Folge ist vor allem der Übergang der Gefahr auf den Käufer: Geht die Ware danach unter, muss er dennoch zahlen. Außerdem haftet der Verkäufer nur noch für Vorsatz und grobe Fahrlässigkeit, und er kann Ersatz seiner Mehraufwendungen wie Lagerkosten verlangen; beim Handelskauf kommt der Selbsthilfeverkauf in Betracht. Zahlungsverzug liegt vor, wenn die Forderung fällig ist, der Käufer nicht zahlt und dies zu vertreten hat, und wenn zusätzlich eine Mahnung vorliegt oder diese entbehrlich ist. Folge sind Verzugszinsen nach § 288 BGB sowie der Ersatz des weiteren Verzugsschadens, etwa Mahn- und Rechtsverfolgungskosten. Beide Störungen können nebeneinander bestehen."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Beschreibe die Stufen des gerichtlichen Mahnverfahrens und die jeweiligen Fristen.",
+      "loesung": "Zuerst beantragt der Gläubiger beim zuständigen Mahngericht den Mahnbescheid. Das Gericht prüft dabei nur die Formalien, nicht ob die Forderung berechtigt ist. Gegen den zugestellten Mahnbescheid kann der Schuldner innerhalb von zwei Wochen Widerspruch einlegen; tut er das, geht die Sache in das streitige Verfahren über, in dem die Forderung inhaltlich geprüft wird. Widerspricht er nicht, kann der Gläubiger den Vollstreckungsbescheid beantragen. Dieser wirkt wie ein Urteil und ist dreißig Jahre vollstreckbar. Gegen ihn ist innerhalb von zwei Wochen der Einspruch möglich. Bleibt auch dieser aus, folgt die Zwangsvollstreckung durch den Gerichtsvollzieher, etwa als Konto-, Lohn- oder Sachpfändung."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Geschäftskunde hat eine Rechnung über 8.000 € vom 10. März nicht bezahlt. Die Rechnung ging am 12. März zu und war sofort fällig. Heute ist der 20. Mai. Welche Ansprüche habt ihr, und wie geht ihr vor?",
+      "loesung": "Der Verzug ist ohne Mahnung eingetreten: Bei einer Entgeltforderung tritt er nach § 286 BGB spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung ein, hier also am 11. April. Der Hinweis in der Rechnung wäre nur gegenüber einem Verbraucher nötig gewesen. Ab dem 11. April könnt ihr Verzugszinsen nach § 288 BGB verlangen, und zwar in Höhe von neun Prozentpunkten über dem Basiszinssatz, weil kein Verbraucher beteiligt ist. Hinzu kommt die Pauschale von 40 €, die allerdings auf später geltend gemachte Rechtsverfolgungskosten angerechnet wird. Weitere Verzugsschäden wie Mahnkosten oder Anwaltskosten sind ebenfalls ersatzfähig. Praktisch würde man zunächst eine Mahnung mit kurzer Frist schicken, die Zinsen und die Pauschale bereits ausweisen, und bei fruchtlosem Ablauf den Mahnbescheid beantragen. Die Forderung selbst verjährt nach §§ 195, 199 BGB erst mit Ablauf des dritten Jahres nach dem Schluss des Entstehungsjahres, hier also Ende 2029."
+    }
+  ],
+  "pruefungstipp": "Die 30-Tage-Regel ist der Klassiker: Es steht keine Mahnung im Sachverhalt, und die falsche Antwort lautet dann „kein Verzug\". Prüfe deshalb immer alle drei Wege des § 286 BGB. Beim Zinssatz gilt die einfache Eselsbrücke: fünf, wenn ein Verbraucher dabei ist, neun unter Unternehmen. Und merke dir, dass die Verjährung erst am Jahresende zu laufen beginnt — das wird fast immer falsch gerechnet."
+}

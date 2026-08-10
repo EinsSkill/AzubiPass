@@ -1,0 +1,342 @@
+{
+  "id": "k6",
+  "lernfeld": "lf9",
+  "nummer": 6,
+  "titel": "Investitionen beurteilen",
+  "untertitel": "Drei Rechenwege, drei verschiedene Antworten auf dieselbe Frage.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Einen Kostenvergleich durchführen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Gewinnvergleich und Amortisationsrechnung anwenden",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Grenzen der statischen Verfahren benennen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Der Kostenvergleich",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Kostenvergleich beantwortet die einfachste Frage: **Welche Anlage kostet im Jahr weniger?** ==Er taugt nur, wenn beide Anlagen dasselbe leisten== — bei unterschiedlichem Ausstoß muss auf Stückkosten umgerechnet werden."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kostenart",
+            "Berechnung",
+            "Anlage A",
+            "Anlage B"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Abschreibung",
+                "(Anschaffung − Restwert) ÷ Nutzungsdauer",
+                "16.000",
+                "22.000"
+              ],
+              "mono": [
+                2,
+                3
+              ],
+              "detail": "**A: 80.000 € auf 5 Jahre. B: 110.000 € auf 5 Jahre.** Ohne Restwert entspricht die Abschreibung dem Wertverzehr je Jahr."
+            },
+            {
+              "zellen": [
+                "Kalkulatorische Zinsen",
+                "durchschnittlich gebundenes Kapital × Zinssatz",
+                "2.000",
+                "2.750"
+              ],
+              "mono": [
+                2,
+                3
+              ],
+              "detail": "**Das durchschnittlich gebundene Kapital ist die halbe Anschaffung**, weil der Wert gleichmäßig von voll auf null sinkt. Bei 5 % ergibt das für A: 40.000 × 5 % = 2.000 €."
+            },
+            {
+              "zellen": [
+                "Betriebskosten",
+                "Energie, Wartung, Personal",
+                "34.000",
+                "26.000"
+              ],
+              "mono": [
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "**Gesamtkosten je Jahr**",
+                "",
+                "**52.000**",
+                "**50.750**"
+              ],
+              "mono": [
+                2,
+                3
+              ],
+              "detail": "**B ist trotz höherem Kaufpreis günstiger**, weil die niedrigeren Betriebskosten den höheren Kapitaleinsatz mehr als ausgleichen. Genau das ist die Aussage des Verfahrens."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Kalkulatorische Zinsen rechnen mit dem halben Anschaffungswert**, weil das gebundene Kapital über die Nutzungsdauer gleichmäßig auf null sinkt. Das ist der meistvergessene Schritt.",
+          "karteikarte": "Wie berechnet man die kalkulatorischen Zinsen im Kostenvergleich, und warum wird mit dem halben Anschaffungswert gerechnet?"
+        },
+        {
+          "typ": "achtung",
+          "text": "Der Kostenvergleich kennt **keine Erlöse**. Eine Anlage kann günstiger sein und trotzdem die schlechtere Entscheidung, wenn sie weniger produziert oder schlechtere Qualität liefert. Bei unterschiedlichen Mengen immer auf **Kosten je Stück** umrechnen."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Gewinn und Amortisation",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der **Gewinnvergleich** stellt den Kosten die Erlöse gegenüber und beantwortet damit die Frage, die der Kostenvergleich offenlässt. Die {{begriff:amortisation|Amortisationsrechnung}} fragt etwas ganz anderes: **Wie lange dauert es, bis das Geld wieder drin ist?**"
+        },
+        {
+          "typ": "grafik",
+          "variante": "kalkulationsleiter",
+          "kopf": "Die Leiter",
+          "titel": "Vom Erlös zum Rückfluss",
+          "lead": "Ändere die Werte und sieh, wie sich der jährliche Rückfluss verschiebt.",
+          "richtungen": [
+            "vorwaerts"
+          ],
+          "start": {
+            "id": "erloes",
+            "name": "Jahreserlös",
+            "wert": 95000
+          },
+          "stufen": [
+            {
+              "id": "betrieb",
+              "name": "Betriebskosten",
+              "art": "zuschlag-absolut",
+              "betrag": -34000,
+              "ergebnis": "Deckungsbeitrag"
+            },
+            {
+              "id": "zins",
+              "name": "Kalkulatorische Zinsen",
+              "art": "zuschlag-absolut",
+              "betrag": -2000,
+              "ergebnis": "Gewinn vor Abschreibung"
+            },
+            {
+              "id": "afa",
+              "name": "Abschreibung",
+              "art": "zuschlag-absolut",
+              "betrag": -16000,
+              "ergebnis": "Gewinn",
+              "marke": true
+            }
+          ],
+          "regel": "Für die Amortisation zählt der Rückfluss, also Gewinn plus Abschreibung. Die Abschreibung ist Aufwand ohne Auszahlung — das Geld bleibt im Betrieb und steht für die Rückzahlung zur Verfügung."
+        },
+        {
+          "typ": "absatz",
+          "text": "**Amortisationsdauer = Anschaffungswert ÷ jährlicher Rückfluss.** Der Rückfluss ist dabei Gewinn **plus** Abschreibung — nicht der Gewinn allein. ==Diesen Zusatz vergisst in Prüfungen fast jeder.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Verfahren",
+            "Frage",
+            "Entscheidung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Kostenvergleich",
+                "Welche kostet weniger?",
+                "die mit den geringeren Jahreskosten"
+              ]
+            },
+            {
+              "zellen": [
+                "Gewinnvergleich",
+                "Welche bringt mehr Gewinn?",
+                "die mit dem höheren Jahresgewinn"
+              ],
+              "detail": "**Setzt voraus, dass sich die Erlöse überhaupt zuordnen lassen.** Bei einer Maschine im Produktionsverbund ist das oft nicht möglich — dann bleibt nur der Kostenvergleich."
+            },
+            {
+              "zellen": [
+                "Rentabilitätsvergleich",
+                "Welche verzinst das Kapital besser?",
+                "die mit der höheren Rendite"
+              ],
+              "detail": "**Gewinn ÷ durchschnittlich gebundenes Kapital × 100.** Wichtig, wenn die Investitionen unterschiedlich viel Geld binden — der absolute Gewinn allein wäre dann irreführend."
+            },
+            {
+              "zellen": [
+                "{{begriff:amortisation|Amortisationsrechnung}}",
+                "Wie schnell ist es wieder drin?",
+                "die mit der kürzeren Dauer"
+              ],
+              "detail": "**Ein Risikomaß, kein Rentabilitätsmaß.** Je kürzer die Dauer, desto geringer das Risiko einer Fehlinvestition — über die Gesamtrendite sagt sie fast nichts."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Anlage kostet 90.000 €, bringt 12.000 € Gewinn im Jahr und wird über 6 Jahre abgeschrieben. Wie hoch ist die Amortisationsdauer?",
+          "optionen": [
+            {
+              "text": "7,5 Jahre — 90.000 geteilt durch 12.000",
+              "richtig": false,
+              "echo": "Hier wurde nur der Gewinn angesetzt. Der Rückfluss umfasst zusätzlich die Abschreibung, weil ihr keine Auszahlung gegenübersteht."
+            },
+            {
+              "text": "3,3 Jahre — Rückfluss ist Gewinn plus Abschreibung",
+              "richtig": true,
+              "echo": "Richtig. Die jährliche Abschreibung beträgt 90.000 € geteilt durch 6 Jahre, also 15.000 €. Der Rückfluss ist damit 12.000 € Gewinn plus 15.000 € Abschreibung, zusammen 27.000 €. Die Amortisationsdauer beträgt 90.000 € geteilt durch 27.000 €, also rund 3,3 Jahre. Die Abschreibung zählt mit, weil sie den Gewinn mindert, ohne dass Geld abfließt."
+            },
+            {
+              "text": "6 Jahre — so lange wird abgeschrieben",
+              "richtig": false,
+              "echo": "Die Nutzungsdauer ist eine Vorgabe für die Abschreibung, kein Ergebnis der Rechnung. Die Amortisationsdauer ergibt sich aus dem tatsächlichen Rückfluss."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Was diese Verfahren nicht können",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Alle vier Verfahren heißen **statisch**, weil sie mit Durchschnittswerten eines einzelnen Jahres rechnen. ==Sie ignorieren, dass ein Euro heute mehr wert ist als ein Euro in fünf Jahren.== Für den Alltag reicht das oft — man sollte nur wissen, wo die Grenze liegt."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Schwäche",
+            "Was das bedeutet"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Zeitpunkt der Zahlungen bleibt unberücksichtigt",
+                "späte Rückflüsse werden überbewertet"
+              ],
+              "detail": "**Dafür gibt es die dynamischen Verfahren** wie die Kapitalwertmethode, die jede Zahlung auf den heutigen Wert abzinst. Sie sind genauer und aufwendiger."
+            },
+            {
+              "zellen": [
+                "Nur ein Durchschnittsjahr wird betrachtet",
+                "schwankende Erträge fallen unter den Tisch"
+              ]
+            },
+            {
+              "zellen": [
+                "Zahlen sind Schätzungen",
+                "das Ergebnis ist nur so gut wie die Annahme"
+              ],
+              "detail": "**Der praktisch wichtigste Punkt.** Die Rechnung wirkt exakt, beruht aber auf geschätzten Absatzmengen und Betriebskosten. Deshalb gehört zu jeder Investitionsrechnung eine Überlegung, wie sich das Ergebnis bei ungünstigeren Annahmen verändert."
+            },
+            {
+              "zellen": [
+                "Nicht messbares bleibt außen vor",
+                "Qualität, Image, Arbeitssicherheit"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Wann sich der Aufwand einer dynamischen Rechnung lohnt",
+          "absaetze": [
+            "Je länger die Laufzeit und je ungleichmäßiger die Rückflüsse, desto größer der Fehler der statischen Verfahren. Bei einer Investition über zwölf Jahre mit stark schwankenden Erträgen führt die Durchschnittsbetrachtung leicht in die Irre.",
+            "Die **Kapitalwertmethode** zinst alle künftigen Ein- und Auszahlungen auf den Zeitpunkt der Investition ab. Ist der Kapitalwert positiv, verzinst sich das eingesetzte Kapital höher als der angesetzte Zinssatz.",
+            "Für kurze Laufzeiten und gleichmäßige Rückflüsse liefern die statischen Verfahren praktisch dasselbe Ergebnis bei deutlich weniger Aufwand. Deshalb sind sie im betrieblichen Alltag weit verbreitet — und deshalb stehen sie auch im Rahmenlehrplan."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Statische Verfahren rechnen mit einem Durchschnittsjahr und ohne Zinseszins.** Sie sind schnell und ausreichend genau bei kurzen Laufzeiten — bei langen führen sie in die Irre.",
+          "karteikarte": "Warum heißen Kostenvergleich, Gewinnvergleich und Amortisationsrechnung statische Verfahren, und wo liegt ihre Grenze?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welches Verfahren beantwortet die Frage?",
+          "kategorien": [
+            "Kostenvergleich",
+            "Gewinnvergleich",
+            "Amortisationsrechnung",
+            "Rentabilitätsvergleich"
+          ],
+          "aufgaben": [
+            {
+              "text": "Nach wie vielen Jahren habe ich mein Geld zurück?",
+              "loesung": "Amortisationsrechnung"
+            },
+            {
+              "text": "Welche Maschine verursacht im Jahr weniger Kosten?",
+              "loesung": "Kostenvergleich"
+            },
+            {
+              "text": "Welche Investition verzinst das eingesetzte Kapital besser?",
+              "loesung": "Rentabilitätsvergleich"
+            },
+            {
+              "text": "Welche Anlage bringt bei gleichen Erlösen mehr Überschuss?",
+              "loesung": "Gewinnvergleich"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Der Kostenvergleich betrachtet Abschreibung, kalkulatorische Zinsen und Betriebskosten.",
+    "Kalkulatorische Zinsen rechnen mit dem halben Anschaffungswert als gebundenem Kapital.",
+    "Bei unterschiedlichen Mengen ist auf Kosten je Stück umzurechnen.",
+    "Der Gewinnvergleich stellt den Kosten die Erlöse gegenüber.",
+    "Der Rentabilitätsvergleich setzt den Gewinn ins Verhältnis zum gebundenen Kapital.",
+    "Amortisationsdauer = Anschaffungswert ÷ Rückfluss.",
+    "Der Rückfluss ist Gewinn **plus** Abschreibung, nicht der Gewinn allein.",
+    "Statische Verfahren rechnen ohne Zeitwert des Geldes und mit einem Durchschnittsjahr."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Berechnung",
+      "frage": "Eine Anlage kostet 120.000 €, Nutzungsdauer 8 Jahre, kein Restwert, kalkulatorischer Zinssatz 5 %, Betriebskosten 41.000 € im Jahr. Berechne die jährlichen Gesamtkosten.",
+      "loesung": "Die Abschreibung beträgt 120.000 € geteilt durch 8 Jahre, also 15.000 € pro Jahr. Für die kalkulatorischen Zinsen wird das durchschnittlich gebundene Kapital angesetzt; da der Wert gleichmäßig von 120.000 € auf null sinkt, sind das 60.000 €. Bei 5 % ergeben sich daraus 3.000 € Zinsen pro Jahr. Zusammen mit den Betriebskosten von 41.000 € betragen die jährlichen Gesamtkosten 15.000 € plus 3.000 € plus 41.000 €, also 59.000 €."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Dieselbe Anlage erzielt einen Jahreserlös von 78.000 €. Berechne Gewinn, Rentabilität und Amortisationsdauer.",
+      "loesung": "Der Gewinn ergibt sich aus dem Erlös von 78.000 € abzüglich der Gesamtkosten von 59.000 €, also 19.000 € pro Jahr. Die Rentabilität wird auf das durchschnittlich gebundene Kapital bezogen: 19.000 € geteilt durch 60.000 € ergibt rund 31,7 %. Für die Amortisationsdauer wird der Rückfluss benötigt, also Gewinn plus Abschreibung: 19.000 € plus 15.000 € ergibt 34.000 €. Die Amortisationsdauer beträgt damit 120.000 € geteilt durch 34.000 €, also rund 3,5 Jahre. Anzumerken ist, dass bei der Rentabilitätsberechnung teilweise auch ein Gewinn vor kalkulatorischen Zinsen angesetzt wird; die verwendete Variante sollte in der Lösung angegeben werden."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Anlage A kostet 80.000 € und amortisiert sich in 2,5 Jahren, Anlage B kostet 150.000 € und amortisiert sich in 4 Jahren, bringt aber doppelt so viel Gewinn. Wofür entscheidest du dich?",
+      "loesung": "Die Amortisationsrechnung allein trägt die Entscheidung nicht, weil sie ein Risikomaß und kein Rentabilitätsmaß ist. Sie sagt nur, wie schnell das eingesetzte Geld zurückfließt, und begünstigt damit systematisch die kleinere Investition. Anlage A ist die risikoärmere Wahl: Das Kapital ist schneller zurück, Fehleinschätzungen bei der Absatzprognose wirken sich weniger stark aus, und die Liquidität wird geringer belastet. Anlage B bringt jedoch den höheren absoluten Gewinn und ist deshalb zu bevorzugen, wenn die Nutzungsdauer deutlich über vier Jahre liegt, die Absatzprognose belastbar ist und die Finanzierung gesichert werden kann. Für eine tragfähige Entscheidung sollte zusätzlich der Rentabilitätsvergleich gerechnet werden, weil er den Gewinn ins Verhältnis zum gebundenen Kapital setzt und damit die unterschiedlichen Größenordnungen berücksichtigt. Bei langer Laufzeit ist außerdem eine dynamische Rechnung sinnvoll. Nicht messbare Gesichtspunkte wie Kapazitätsreserve, Qualität und Abhängigkeit vom Lieferer gehören ebenfalls in die Abwägung."
+    }
+  ],
+  "pruefungstipp": "Die Amortisationsdauer ist die häufigste Rechenaufgabe und hat genau eine Falle: Der Rückfluss ist Gewinn plus Abschreibung. Schreib die Formel hin, bevor du einsetzt. Beim Kostenvergleich ist der zweite Klassiker die kalkulatorische Verzinsung — immer auf das halbe Anschaffungskapital. Wenn nach der Beurteilung gefragt wird, nenne ausdrücklich, dass es sich um statische Verfahren ohne Zeitwert des Geldes handelt; das gibt fast immer einen zusätzlichen Punkt."
+}

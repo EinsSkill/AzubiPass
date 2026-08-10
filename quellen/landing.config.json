@@ -1,0 +1,161 @@
+{
+  "marke": "AzubiPass",
+  "claim": "Bestehen. Nicht büffeln.",
+  "person": {
+    "name": "Lukes Schmitz",
+    "rolle": "Auszubildender Kaufmann für Büromanagement, 2. Lehrjahr",
+    "betrieb": "Logistikunternehmen in NRW",
+    "hinweis": "Ausbildungsbetrieb wird bewusst nicht namentlich genannt."
+  },
+  "produktion": {
+    "start": "2026-08-03",
+    "wochen_pro_groesse": {
+      "40": 1,
+      "80": 2,
+      "120": 3
+    },
+    "reihenfolge": [
+      3,
+      4,
+      2
+    ]
+  },
+  "preise": {
+    "klein": "6,99 €",
+    "gross": "11,99 €",
+    "komplett": "54,99 €",
+    "abo_monat": "8,99 €",
+    "abo_endspurt": "22,99 €",
+    "abo_jahr": "79,99 €"
+  },
+  "pruefung": {
+    "naechster_termin": "2026-11-24",
+    "bezeichnung": "AP2 · schriftliche Prüfung am 24. und 25. November 2026",
+    "quelle": "Bundeseinheitlicher AkA-Termin, bestätigt über mehrere IHKs"
+  },
+  "lernfelder": [
+    {
+      "nr": 1,
+      "titel": "Die eigene Rolle im Betrieb mitgestalten und den Betrieb präsentieren",
+      "jahr": 1,
+      "stunden": 40,
+      "teil": "AP1",
+      "status": "frei",
+      "quelle": "lf1.lernfeld.json"
+    },
+    {
+      "nr": 2,
+      "titel": "Büroprozesse gestalten und Arbeitsvorgänge organisieren",
+      "jahr": 1,
+      "stunden": 80,
+      "teil": "AP1",
+      "status": "fertig",
+      "quelle": "lf2.lernfeld.json"
+    },
+    {
+      "nr": 3,
+      "titel": "Aufträge bearbeiten",
+      "jahr": 1,
+      "stunden": 80,
+      "teil": "AP1",
+      "status": "fertig",
+      "quelle": "lf3.lernfeld.json"
+    },
+    {
+      "nr": 4,
+      "titel": "Sachgüter und Dienstleistungen beschaffen und Verträge schließen",
+      "jahr": 1,
+      "stunden": 120,
+      "teil": "AP1",
+      "status": "fertig",
+      "quelle": "lf4.lernfeld.json"
+    },
+    {
+      "nr": 5,
+      "titel": "Kunden akquirieren und binden",
+      "jahr": 2,
+      "stunden": 80,
+      "teil": "AP2",
+      "status": "fertig",
+      "quelle": "lf5.lernfeld.json"
+    },
+    {
+      "nr": 6,
+      "titel": "Werteströme erfassen und beurteilen",
+      "jahr": 2,
+      "stunden": 80,
+      "teil": "AP2",
+      "status": "fertig",
+      "quelle": "buchfuehrung.lernfeld.json"
+    },
+    {
+      "nr": 7,
+      "titel": "Gesprächssituationen gestalten",
+      "jahr": 2,
+      "stunden": 40,
+      "teil": "AP2",
+      "status": "fertig",
+      "quelle": "lf7.lernfeld.json"
+    },
+    {
+      "nr": 8,
+      "titel": "Personalwirtschaftliche Aufgaben wahrnehmen",
+      "jahr": 2,
+      "stunden": 80,
+      "teil": "AP2",
+      "status": "fertig",
+      "quelle": "lf8.lernfeld.json"
+    },
+    {
+      "nr": 9,
+      "titel": "Liquidität sichern und Finanzierung vorbereiten",
+      "jahr": 3,
+      "stunden": 80,
+      "teil": "AP2",
+      "status": "fertig",
+      "quelle": "lf9.lernfeld.json"
+    },
+    {
+      "nr": 10,
+      "titel": "Wertschöpfungsprozesse erfolgsorientiert steuern",
+      "jahr": 3,
+      "stunden": 80,
+      "teil": "AP2",
+      "status": "fertig",
+      "quelle": "lf10.lernfeld.json"
+    },
+    {
+      "nr": 11,
+      "titel": "Geschäftsprozesse darstellen und optimieren",
+      "jahr": 3,
+      "stunden": 40,
+      "teil": "AP2",
+      "status": "fertig",
+      "quelle": "lf11.lernfeld.json"
+    },
+    {
+      "nr": 12,
+      "titel": "Veranstaltungen und Geschäftsreisen organisieren",
+      "jahr": 3,
+      "stunden": 40,
+      "teil": "AP2",
+      "status": "fertig",
+      "quelle": "lf12.lernfeld.json"
+    },
+    {
+      "nr": 13,
+      "titel": "Ein Projekt planen und durchführen",
+      "jahr": 3,
+      "stunden": 40,
+      "teil": "AP2",
+      "status": "fertig",
+      "quelle": "lf13.lernfeld.json"
+    }
+  ],
+  "hinweis_teil": "Die Zuordnung zu AP1 und AP2 folgt der zeitlichen Lage der Lernfelder und ist eine Orientierung, keine amtliche Festlegung.",
+  "ziel": {
+    "text": "Alle 13 Lernfelder vollständig",
+    "bis": "2026-09-01",
+    "hinweis": "Erstes, zweites und drittes Lehrjahr sind inhaltlich fertig."
+  }
+}

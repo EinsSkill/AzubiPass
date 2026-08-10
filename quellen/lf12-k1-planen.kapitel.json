@@ -1,0 +1,356 @@
+{
+  "id": "k1",
+  "lernfeld": "lf12",
+  "nummer": 1,
+  "titel": "Veranstaltungen planen",
+  "untertitel": "Erst das Ziel, dann der Raum. Nie umgekehrt.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Ein Veranstaltungskonzept aufstellen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Einen Zeitplan mit Vorlauf erstellen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Ein Budget kalkulieren und überwachen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Das Konzept",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Das {{begriff:veranstaltungskonzept|Veranstaltungskonzept}} beantwortet sechs Fragen, bevor irgendetwas gebucht wird. ==Wer mit der Raumsuche beginnt, hat die wichtigste Frage übersprungen:== Woran soll man hinterher erkennen, dass es sich gelohnt hat?"
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Frage",
+            "Was zu klären ist",
+            "Häufiger Fehler"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Warum?",
+                "Ziel, messbar formuliert",
+                "„weil wir das jedes Jahr machen\""
+              ],
+              "detail": "**Ohne Ziel kein Maßstab.** „30 qualifizierte Kontakte\" oder „alle 80 Beschäftigten kennen den neuen Ablauf\" sind Ziele. „Eine schöne Veranstaltung\" ist keines."
+            },
+            {
+              "zellen": [
+                "Für wen?",
+                "Zielgruppe und Zahl",
+                "Zielgruppe zu weit gefasst"
+              ],
+              "detail": "**Die Zielgruppe bestimmt fast alles Weitere:** Ort, Termin, Ansprache, Verpflegung. Wer alle einlädt, plant für niemanden."
+            },
+            {
+              "zellen": [
+                "Was?",
+                "Art und Ablauf",
+                "Programm ohne Pausen"
+              ]
+            },
+            {
+              "zellen": [
+                "Wann?",
+                "Termin und Dauer",
+                "Ferien, Feiertage, Branchentermine übersehen"
+              ],
+              "detail": "**Der Termin entscheidet über die Teilnahme** mehr als das Programm. Ein Prüfungstermin, eine Messe oder Schulferien können eine Veranstaltung leer machen."
+            },
+            {
+              "zellen": [
+                "Wo?",
+                "Ort, Erreichbarkeit, Größe",
+                "Raum vor dem Konzept gebucht"
+              ]
+            },
+            {
+              "zellen": [
+                "Womit?",
+                "Budget",
+                "Nebenkosten vergessen"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Warum, für wen, was, wann, wo, womit** — in dieser Reihenfolge. Das Ziel wird messbar formuliert, sonst lässt sich der Erfolg hinterher nicht beurteilen.",
+          "karteikarte": "Welche sechs Fragen klärt ein Veranstaltungskonzept, und warum steht das Ziel am Anfang?"
+        },
+        {
+          "typ": "achtung",
+          "text": "Der Raum wird **zuletzt** gebucht, nicht zuerst. Wer mit dem Raum beginnt, passt danach das Programm an die Räumlichkeit an — statt umgekehrt. Und ein früh gebuchter Raum, der nicht passt, kostet Stornogebühren."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Der Zeitplan",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Veranstaltungen scheitern selten am Tag selbst, sondern am **Vorlauf**. ==Manche Aufgaben brauchen Wochen und lassen sich nicht beschleunigen== — Einladungsfristen, Druckzeiten, Vertragsfristen bei Referenten."
+        },
+        {
+          "typ": "grafik",
+          "variante": "balkenplan",
+          "kopf": "Der Vorlauf",
+          "titel": "Was wann fertig sein muss",
+          "lead": "Vorgang anklicken und verzögern. Manche verschieben den Termin, andere nicht.",
+          "einheit": "Tage",
+          "einheit_eins": "Tag",
+          "plan": 60,
+          "vorgaenge": [
+            {
+              "id": "konzept",
+              "name": "Konzept und Ziel festlegen",
+              "dauer": 5,
+              "nach": []
+            },
+            {
+              "id": "budget",
+              "name": "Budget freigeben lassen",
+              "dauer": 5,
+              "nach": [
+                "konzept"
+              ]
+            },
+            {
+              "id": "termin",
+              "name": "Termin und Ort festlegen",
+              "dauer": 7,
+              "nach": [
+                "budget"
+              ]
+            },
+            {
+              "id": "referenten",
+              "name": "Referenten gewinnen",
+              "dauer": 21,
+              "nach": [
+                "termin"
+              ]
+            },
+            {
+              "id": "einladung",
+              "name": "Einladungen versenden",
+              "dauer": 3,
+              "nach": [
+                "referenten"
+              ]
+            },
+            {
+              "id": "anmeldung",
+              "name": "Anmeldefrist läuft",
+              "dauer": 14,
+              "nach": [
+                "einladung"
+              ]
+            },
+            {
+              "id": "catering",
+              "name": "Bewirtung beauftragen",
+              "dauer": 4,
+              "nach": [
+                "anmeldung"
+              ]
+            },
+            {
+              "id": "unterlagen",
+              "name": "Unterlagen drucken",
+              "dauer": 6,
+              "nach": [
+                "anmeldung"
+              ]
+            },
+            {
+              "id": "aufbau",
+              "name": "Raum und Technik herrichten",
+              "dauer": 1,
+              "nach": [
+                "catering",
+                "unterlagen"
+              ]
+            }
+          ],
+          "regel": "Beachte die Referentensuche mit 21 Tagen: Sie liegt auf dem kritischen Pfad und lässt sich kaum beschleunigen. Die Bewirtung mit 4 Tagen hat dagegen Puffer — dort später zu buchen kostet nichts."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Plan **rückwärts vom Veranstaltungstag**, nicht vorwärts vom heutigen Datum. Nur so merkst du rechtzeitig, dass ein Termin in sechs Wochen für eine Veranstaltung mit externen Referenten schlicht zu knapp ist."
+        },
+        {
+          "typ": "merke",
+          "text": "Rückwärts vom Veranstaltungstag planen. Aufgaben mit langem Vorlauf — **Referenten, Druck, Einladungsfrist** — bestimmen den frühestmöglichen Termin.",
+          "karteikarte": "Warum plant man Veranstaltungen rückwärts, und welche Aufgaben haben typischerweise langen Vorlauf?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Das Budget",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein Veranstaltungsbudget besteht aus **fixen und mengenabhängigen Posten** — genau die Unterscheidung aus Lernfeld 10. ==Der Raum kostet gleich viel, ob 40 oder 80 Personen kommen. Das Essen nicht.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Posten",
+            "Art",
+            "Zu beachten"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Raummiete",
+                "fix",
+                "Nebenkosten und Reinigung getrennt prüfen"
+              ]
+            },
+            {
+              "zellen": [
+                "Technik",
+                "fix",
+                "Betreuung vor Ort oft extra"
+              ],
+              "detail": "**Der klassisch übersehene Posten.** Die Anlage kostet X, jemand der sie bedient und im Notfall repariert, kostet noch einmal so viel — und ohne ihn nützt die Anlage nichts."
+            },
+            {
+              "zellen": [
+                "Referentenhonorar",
+                "fix",
+                "Reisekosten gesondert vereinbaren"
+              ]
+            },
+            {
+              "zellen": [
+                "Bewirtung",
+                "je Person",
+                "Mindestabnahme und Stornofrist"
+              ],
+              "detail": "**Der größte mengenabhängige Posten** — und der mit dem größten Risiko: Mindestabnahmen werden fällig, auch wenn weniger Gäste kommen."
+            },
+            {
+              "zellen": [
+                "Unterlagen, Namensschilder",
+                "je Person",
+                "Nachdruck ist teuer"
+              ]
+            },
+            {
+              "zellen": [
+                "Puffer",
+                "5 bis 10 Prozent",
+                "es kommt immer etwas dazu"
+              ],
+              "detail": "**Kein Luxus, sondern Erfahrung.** Kurzfristige Technikmiete, ein zusätzlicher Referent, Taxifahrten — irgendetwas kommt immer."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "**Stornofristen** sind der teuerste blinde Fleck. Wer die Bewirtung für 80 Personen bestellt und drei Tage vorher 50 Zusagen hat, zahlt trotzdem für 80, wenn die Frist abgelaufen ist. Diese Fristen gehören in den Zeitplan wie jeder andere Termin."
+        },
+        {
+          "typ": "check",
+          "frage": "Ihr habt für 100 Personen Bewirtung bestellt, es haben sich 62 angemeldet. Die Stornofrist läuft heute ab. Was tust du?",
+          "optionen": [
+            {
+              "text": "Abwarten — vielleicht kommen noch Anmeldungen",
+              "richtig": false,
+              "echo": "Nach Ablauf der Frist zahlt der Betrieb für 100 Personen, unabhängig davon, wie viele kommen. Abwarten kostet hier bares Geld."
+            },
+            {
+              "text": "Heute auf die realistische Zahl reduzieren, mit kleinem Aufschlag",
+              "richtig": true,
+              "echo": "Richtig. Die Stornofrist ist der letzte Zeitpunkt, an dem sich die Zahl kostenfrei anpassen lässt. Sinnvoll ist, nicht exakt auf 62 zu gehen, sondern einen Aufschlag für kurzfristige Anmeldungen und Begleitpersonen einzuplanen — etwa 70. Zusätzlich lohnt die Frage beim Anbieter, ob eine spätere Erhöhung noch möglich ist; nach oben ist meist mehr Spielraum als nach unten."
+            },
+            {
+              "text": "Auf exakt 62 reduzieren",
+              "richtig": false,
+              "echo": "Zu knapp. Erfahrungsgemäß kommen kurzfristige Anmeldungen und Begleitpersonen hinzu, und zu wenig Essen fällt deutlich unangenehmer auf als etwas zu viel."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Budget aus **fixen und mengenabhängigen Posten** plus 5 bis 10 Prozent Puffer. **Stornofristen** gehören in den Zeitplan — sie sind der teuerste vergessene Termin.",
+          "karteikarte": "Wie ist ein Veranstaltungsbudget aufgebaut, und warum sind Stornofristen so wichtig?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Fixer oder mengenabhängiger Posten?",
+          "kategorien": [
+            "Fix",
+            "Je Person"
+          ],
+          "aufgaben": [
+            {
+              "text": "Miete für den Veranstaltungsraum.",
+              "loesung": "Fix"
+            },
+            {
+              "text": "Mittagessen und Getränke.",
+              "loesung": "Je Person"
+            },
+            {
+              "text": "Honorar für den Hauptredner.",
+              "loesung": "Fix"
+            },
+            {
+              "text": "Gedruckte Tagungsmappen.",
+              "loesung": "Je Person"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Das {{begriff:veranstaltungskonzept|Konzept}} klärt: warum, für wen, was, wann, wo, womit.",
+    "Das Ziel wird messbar formuliert, sonst ist der Erfolg nicht beurteilbar.",
+    "Die Zielgruppe bestimmt Ort, Termin, Ansprache und Verpflegung.",
+    "Der Raum wird zuletzt gebucht, nicht zuerst.",
+    "Geplant wird rückwärts vom Veranstaltungstag.",
+    "Referentensuche, Druck und Einladungsfrist haben langen Vorlauf.",
+    "Das Budget besteht aus fixen und mengenabhängigen Posten plus 5 bis 10 Prozent Puffer.",
+    "Stornofristen gehören in den Zeitplan wie jeder andere Termin."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Welche Fragen klärt ein Veranstaltungskonzept, und in welcher Reihenfolge?",
+      "loesung": "Zuerst das Warum, also das Ziel der Veranstaltung, und zwar messbar formuliert; ohne Ziel gibt es keinen Maßstab für den Erfolg. Dann das Für wen, also Zielgruppe und erwartete Teilnehmerzahl, weil die Zielgruppe fast alles Weitere bestimmt: Ort, Termin, Ansprache und Verpflegung. Anschließend das Was, also Art und Ablauf der Veranstaltung einschließlich ausreichender Pausen. Danach das Wann mit Termin und Dauer, wobei Ferien, Feiertage und wichtige Branchentermine zu prüfen sind, weil der Termin über die Teilnahme oft mehr entscheidet als das Programm. Dann das Wo mit Ort, Erreichbarkeit und Raumgröße; der Raum wird bewusst erst jetzt gesucht, damit das Programm nicht an die Räumlichkeit angepasst werden muss. Zuletzt das Womit, also das Budget mit allen fixen und mengenabhängigen Posten sowie einem Puffer."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum plant man Veranstaltungen rückwärts, und welche Aufgaben bestimmen den frühestmöglichen Termin?",
+      "loesung": "Bei der Rückwärtsplanung geht man vom feststehenden Veranstaltungstag aus und arbeitet sich entlang der Abhängigkeiten nach vorn zum heutigen Datum. Dadurch wird sofort sichtbar, ob der geplante Termin überhaupt erreichbar ist oder ob der Vorlauf nicht ausreicht. Bei einer Vorwärtsplanung merkt man das erst, wenn bereits Zeit verstrichen ist. Den frühestmöglichen Termin bestimmen die Aufgaben mit langem, kaum verkürzbarem Vorlauf. Dazu gehören die Gewinnung externer Referenten, die mehrere Wochen dauern kann und von der Verfügbarkeit anderer abhängt, die Einladungsfrist mit einer angemessenen Anmeldezeit, sowie Produktionszeiten für Druckerzeugnisse. Diese Vorgänge liegen typischerweise auf dem kritischen Pfad. Aufgaben wie die Bewirtung haben dagegen Puffer und lassen sich später erledigen, ohne dass sich der Termin verschiebt."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Die Geschäftsführung möchte in sechs Wochen eine Kundenveranstaltung mit externem Fachreferenten und 80 Gästen. Wie reagierst du?",
+      "loesung": "Ich würde zunächst rückwärts vom gewünschten Termin planen und die Abhängigkeiten prüfen. Kritisch ist die Gewinnung des externen Referenten, die erfahrungsgemäß mehrere Wochen dauert, weil Termin und Honorar abgestimmt werden müssen und die Person ihrerseits gebunden ist. Erst danach kann eingeladen werden, denn ohne feststehendes Programm sinkt die Anmeldequote deutlich. Anschließend braucht die Anmeldefrist selbst zwei bis drei Wochen, und erst mit belastbaren Zahlen lassen sich Bewirtung und Unterlagen beauftragen. Rechnet man diese Kette zusammen, sind sechs Wochen sehr knapp bis nicht machbar. Ich würde das mit dem Zeitplan belegt darstellen und drei Möglichkeiten anbieten: den Termin um einige Wochen verschieben; die Veranstaltung ohne externen Referenten mit einem internen Beitrag durchführen, wodurch der längste Vorgang entfällt; oder den Kreis verkleinern und persönlich einladen, was die Einladungsfrist verkürzt. Zusätzlich würde ich auf die Stornofristen der Bewirtung hinweisen, weil bei knappem Vorlauf mit unsicheren Anmeldezahlen zu rechnen ist. Die Entscheidung trifft die Geschäftsführung auf Grundlage dieser Auswirkungen."
+    }
+  ],
+  "pruefungstipp": "Die sechs Konzeptfragen werden gern in genau dieser Reihenfolge abgefragt — merke sie dir als Kette warum, für wen, was, wann, wo, womit. Bei Fallaufgaben mit knappem Termin lautet die erwartete Antwort, rückwärts zu planen und den Vorgang mit dem längsten Vorlauf zu benennen. Und vergiss im Budget weder den Puffer noch die Stornofristen."
+}

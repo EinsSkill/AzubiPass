@@ -1,0 +1,266 @@
+{
+  "id": "k1",
+  "lernfeld": "lf10",
+  "nummer": 1,
+  "titel": "Wozu eine zweite Rechnung",
+  "untertitel": "Die Buchführung schreibt fürs Finanzamt. Die Kostenrechnung für dich.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Aufgaben der Kosten- und Leistungsrechnung benennen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Aufwand und Kosten voneinander abgrenzen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die drei Stufen der Kostenrechnung erklären",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Zwei Rechnungen, zwei Adressaten",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:doppelte-buchfuehrung|Buchführung}} aus Lernfeld 6 richtet sich nach außen: Finanzamt, Banken, Gesellschafter. Sie ist gesetzlich geregelt und darf nicht frei gestaltet werden. Die {{begriff:kostenrechnung|Kosten- und Leistungsrechnung}} richtet sich nach innen — ==sie ist an keine Vorschrift gebunden und darf deshalb genau das rechnen, was der Betrieb wissen muss.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Welten",
+          "titel": "Extern oder intern",
+          "lead": "Dieselben Belege, andere Fragen. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Buchführung",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Für Externe",
+                  "detail": "Finanzamt, Banken, Gesellschafter. Sie wollen wissen, wie es um den Betrieb steht — nach einheitlichen Regeln, damit man vergleichen kann."
+                },
+                {
+                  "text": "Gesetzlich geregelt",
+                  "detail": "HGB und Steuerrecht schreiben vor, was wie zu bewerten ist. Wahlrechte gibt es, Willkür nicht."
+                },
+                {
+                  "text": "Rechnet mit Aufwand und Ertrag",
+                  "detail": "Alle Geschäftsvorfälle des Betriebs, auch die, die mit dem eigentlichen Zweck nichts zu tun haben — etwa Kursgewinne aus Wertpapieren."
+                },
+                {
+                  "text": "Zeitraum: das Geschäftsjahr",
+                  "detail": "Einmal jährlich abgeschlossen. Für die Steuerung viel zu grob und viel zu spät."
+                }
+              ]
+            },
+            {
+              "name": "Kostenrechnung",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Für den Betrieb selbst",
+                  "detail": "Geschäftsführung, Kalkulation, Vertrieb. Niemand außerhalb bekommt sie zu sehen, deshalb muss sie auch nichts beweisen."
+                },
+                {
+                  "text": "Frei gestaltbar",
+                  "detail": "Keine Vorschrift, kein Prüfer. Der einzige Maßstab ist, ob sie brauchbare Entscheidungen ermöglicht."
+                },
+                {
+                  "text": "Rechnet mit Kosten und Leistungen",
+                  "detail": "Nur was mit dem Betriebszweck zu tun hat — dafür auch Größen, die es in der Buchführung gar nicht gibt."
+                },
+                {
+                  "text": "Zeitraum: Monat, Auftrag, Stück",
+                  "detail": "So kurz, wie die Entscheidung es verlangt. Deshalb ist sie das Werkzeug der Steuerung."
+                }
+              ]
+            }
+          ],
+          "regel": "Merksatz: Die Buchführung sagt, was war. Die Kostenrechnung sagt, was ein Stück kostet und was sich lohnt. Beide nutzen dieselben Belege und beantworten verschiedene Fragen."
+        },
+        {
+          "typ": "merke",
+          "text": "Die {{begriff:kostenrechnung|Kostenrechnung}} beantwortet drei Fragen: **Was kostet ein Stück? Welcher Bereich trägt sich? Lohnt sich dieser Auftrag?** Keine davon beantwortet die Buchführung.",
+          "karteikarte": "Worin unterscheiden sich Buchführung und Kostenrechnung nach Adressat, Regelung und Zeitraum?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Aufwand ist nicht gleich Kosten",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "**Aufwand** ist jeder Werteverzehr des Betriebs. **Kosten** sind nur der Werteverzehr, der für den eigentlichen Betriebszweck anfällt. ==Die beiden Begriffe überschneiden sich weitgehend — aber nicht vollständig, und genau die Ränder werden geprüft.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Begriff",
+            "Bedeutung",
+            "Beispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Zweckaufwand",
+                "Aufwand, der zugleich Kosten ist",
+                "Materialverbrauch, Löhne"
+              ],
+              "detail": "**Der Normalfall** und der weitaus größte Teil. Diese Beträge werden unverändert aus der Buchführung übernommen — man nennt sie deshalb auch Grundkosten."
+            },
+            {
+              "zellen": [
+                "Neutraler Aufwand",
+                "Aufwand ohne Kostencharakter",
+                "Spende, Verlust aus Wertpapieren, Brandschaden"
+              ],
+              "detail": "**Drei Gruppen:** betriebsfremd wie Spenden, außerordentlich wie ein Brandschaden, periodenfremd wie eine Steuernachzahlung für ein Vorjahr. Alle drei gehören nicht in die Kalkulation."
+            },
+            {
+              "zellen": [
+                "{{begriff:kalkulatorische-kosten|Kalkulatorische Kosten}}",
+                "Kosten ohne Aufwand in gleicher Höhe",
+                "Unternehmerlohn, Eigenkapitalzinsen, Wagnisse"
+              ],
+              "detail": "**Sie machen Betriebe vergleichbar.** Ein Einzelunternehmer zahlt sich kein Gehalt — trotzdem ist seine Arbeit etwas wert. Ohne kalkulatorischen Unternehmerlohn erschiene er günstiger als eine GmbH mit angestelltem Geschäftsführer."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein Brandschaden ist **Aufwand, aber keine Kosten**. Würde man ihn in die Kalkulation nehmen, wären die Produkte im Schadensjahr plötzlich teurer — obwohl sich an der Herstellung nichts geändert hat. Genau deshalb wird er ausgesondert."
+        },
+        {
+          "typ": "merke",
+          "text": "**Neutraler Aufwand** ist betriebsfremd, außerordentlich oder periodenfremd. **Kalkulatorische Kosten** haben keinen Aufwand in gleicher Höhe — sie machen den Vergleich erst fair.",
+          "karteikarte": "Was ist neutraler Aufwand, und wozu dienen kalkulatorische Kosten?"
+        },
+        {
+          "typ": "check",
+          "frage": "Der Betrieb spendet 5.000 € an einen Sportverein. Wie behandelt die Kostenrechnung das?",
+          "optionen": [
+            {
+              "text": "Als Kosten — es ist ja Geld abgeflossen",
+              "richtig": false,
+              "echo": "Der Geldabfluss allein macht noch keine Kosten. Entscheidend ist, ob der Werteverzehr dem eigentlichen Betriebszweck dient."
+            },
+            {
+              "text": "Als neutraler Aufwand, nicht als Kosten",
+              "richtig": true,
+              "echo": "Richtig. Die Spende ist betriebsfremder Aufwand: Sie steht in keinem Zusammenhang mit der Erstellung der betrieblichen Leistung. In der Buchführung ist sie Aufwand und mindert den Gewinn, in der Kostenrechnung bleibt sie außen vor. Andernfalls würden die Produkte im Spendenjahr rechnerisch teurer, ohne dass sich an der Herstellung etwas geändert hätte."
+            },
+            {
+              "text": "Als kalkulatorische Kosten",
+              "richtig": false,
+              "echo": "Kalkulatorische Kosten sind Kosten ohne entsprechenden Aufwand. Hier ist es genau umgekehrt: Aufwand ohne Kostencharakter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Drei Stufen",
+      "inhalt": [
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Der Weg",
+          "titel": "Von der Kostenart zum Stückpreis",
+          "lead": "Drei Fragen, in dieser Reihenfolge. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "{{begriff:kostenartenrechnung|Kostenartenrechnung}}",
+              "satz": "Was ist angefallen?",
+              "text": "Alle Kosten werden nach Arten erfasst: Material, Personal, Abschreibungen, Fremdleistungen, kalkulatorische Kosten. Grundlage ist die Buchführung, bereinigt um neutralen Aufwand und ergänzt um kalkulatorische Größen."
+            },
+            {
+              "nr": 2,
+              "titel": "{{begriff:kostenstellenrechnung|Kostenstellenrechnung}}",
+              "satz": "Wo ist es angefallen?",
+              "text": "Die Gemeinkosten werden auf Bereiche verteilt — Material, Fertigung, Verwaltung, Vertrieb. Das geschieht im {{begriff:bab|Betriebsabrechnungsbogen}} und liefert die Zuschlagssätze für die nächste Stufe."
+            },
+            {
+              "nr": 3,
+              "titel": "{{begriff:kostentraegerrechnung|Kostenträgerrechnung}}",
+              "satz": "Wofür ist es angefallen?",
+              "text": "Einzelkosten direkt, Gemeinkosten über Zuschlagssätze — daraus entstehen die Selbstkosten je Stück. Das ist die Grundlage jeder Kalkulation und jeder Preisentscheidung."
+            }
+          ],
+          "regel": "Merksatz für die Reihenfolge: Was, wo, wofür. Jede Stufe braucht das Ergebnis der vorherigen — deshalb kann man keine überspringen."
+        },
+        {
+          "typ": "merke",
+          "text": "**Was — wo — wofür.** Kostenarten, Kostenstellen, Kostenträger. Diese drei Wörter in dieser Reihenfolge sind das Gerüst des ganzen Lernfelds.",
+          "karteikarte": "Welche drei Stufen hat die Kostenrechnung, und welche Frage beantwortet jede?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Kosten oder neutraler Aufwand?",
+          "kategorien": [
+            "Kosten",
+            "Neutraler Aufwand"
+          ],
+          "aufgaben": [
+            {
+              "text": "Verbrauch von Fertigungsmaterial im laufenden Monat.",
+              "loesung": "Kosten"
+            },
+            {
+              "text": "Verlust aus dem Verkauf von Wertpapieren.",
+              "loesung": "Neutraler Aufwand"
+            },
+            {
+              "text": "Löhne der Fertigungsmitarbeiter.",
+              "loesung": "Kosten"
+            },
+            {
+              "text": "Steuernachzahlung für das Jahr davor.",
+              "loesung": "Neutraler Aufwand"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Die Buchführung richtet sich nach außen und ist gesetzlich geregelt.",
+    "Die {{begriff:kostenrechnung|Kostenrechnung}} richtet sich nach innen und ist frei gestaltbar.",
+    "Sie beantwortet: Was kostet ein Stück, welcher Bereich trägt sich, lohnt ein Auftrag?",
+    "Zweckaufwand ist zugleich Kosten und wird unverändert übernommen.",
+    "Neutraler Aufwand ist betriebsfremd, außerordentlich oder periodenfremd.",
+    "{{begriff:kalkulatorische-kosten|Kalkulatorische Kosten}} haben keinen Aufwand in gleicher Höhe.",
+    "Der kalkulatorische Unternehmerlohn macht Betriebe unterschiedlicher Rechtsform vergleichbar.",
+    "Drei Stufen: Kostenarten, Kostenstellen, Kostenträger — was, wo, wofür."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Grenze Aufwand und Kosten voneinander ab und nenne je ein Beispiel für neutralen Aufwand und kalkulatorische Kosten.",
+      "loesung": "Aufwand ist jeder in der Buchführung erfasste Werteverzehr einer Periode. Kosten sind demgegenüber nur der Werteverzehr, der für die Erstellung der betrieblichen Leistung anfällt. Der überwiegende Teil ist Zweckaufwand, also gleichzeitig Aufwand und Kosten, etwa der Materialverbrauch oder die Fertigungslöhne. Neutraler Aufwand ist Aufwand ohne Kostencharakter; er ist entweder betriebsfremd wie eine Spende, außerordentlich wie ein Brandschaden oder periodenfremd wie eine Steuernachzahlung für ein Vorjahr. Solche Beträge werden aus der Kostenrechnung ausgesondert, weil sie die Kalkulation sonst zufällig verzerren würden. Kalkulatorische Kosten sind umgekehrt Kosten, denen kein Aufwand in gleicher Höhe gegenübersteht, etwa der kalkulatorische Unternehmerlohn, kalkulatorische Zinsen auf das Eigenkapital oder kalkulatorische Wagnisse. Sie sorgen dafür, dass Betriebe unterschiedlicher Rechtsform und Finanzierung vergleichbar werden."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Beschreibe die drei Stufen der Kostenrechnung und ihre Aufgaben.",
+      "loesung": "Die erste Stufe ist die Kostenartenrechnung. Sie erfasst, welche Kosten in welcher Höhe angefallen sind, gegliedert nach Arten wie Material, Personal, Abschreibungen und Fremdleistungen. Grundlage sind die Zahlen der Buchführung, bereinigt um den neutralen Aufwand und ergänzt um die kalkulatorischen Kosten. Die zweite Stufe ist die Kostenstellenrechnung. Sie beantwortet, wo die Kosten angefallen sind, und verteilt die Gemeinkosten mithilfe des Betriebsabrechnungsbogens auf Bereiche wie Material, Fertigung, Verwaltung und Vertrieb. Daraus ergeben sich die Zuschlagssätze. Die dritte Stufe ist die Kostenträgerrechnung. Sie beantwortet, wofür die Kosten angefallen sind, indem sie die Einzelkosten direkt und die Gemeinkosten über die Zuschlagssätze auf die Produkte verrechnet. Ergebnis sind die Selbstkosten je Stück als Grundlage der Kalkulation."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Einzelunternehmer sagt: „Meine Kalkulation stimmt, ich rechne genau die Zahlen aus der Buchführung.\" Was entgegnest du?",
+      "loesung": "Die Buchführungszahlen allein führen zu einer Kalkulation, die zu niedrig ansetzt. Zwei Korrekturen fehlen. Erstens ist der neutrale Aufwand herauszunehmen, also betriebsfremde, außerordentliche und periodenfremde Beträge wie Spenden, Schadensfälle oder Steuernachzahlungen für Vorjahre. Sie haben mit der Leistungserstellung nichts zu tun und würden die Stückkosten je nach Zufall des Jahres verzerren. Zweitens fehlen die kalkulatorischen Kosten. Besonders wichtig ist beim Einzelunternehmer der kalkulatorische Unternehmerlohn: Er zahlt sich kein Gehalt, seine Arbeit ist aber ein Kostenfaktor. Rechnet er ihn nicht ein, erscheinen seine Produkte günstiger, als sie sind, und er arbeitet unter Umständen für weniger als ein angestellter Mitarbeiter verdienen würde. Ebenso fehlen kalkulatorische Zinsen auf das eingesetzte Eigenkapital und kalkulatorische Wagnisse für erfahrungsgemäß eintretende Risiken. Erst mit diesen Korrekturen zeigt die Kalkulation, was ein Stück tatsächlich kostet."
+    }
+  ],
+  "pruefungstipp": "Die Abgrenzung von Aufwand und Kosten ist die meistgestellte Frage dieses Kapitels und wird fast immer als Zuordnungsaufgabe gestellt. Präge dir die drei Gruppen des neutralen Aufwands ein — betriebsfremd, außerordentlich, periodenfremd — und nenne sie beim Namen. Beim kalkulatorischen Unternehmerlohn lautet die erwartete Begründung immer: Vergleichbarkeit mit Betrieben anderer Rechtsform."
+}

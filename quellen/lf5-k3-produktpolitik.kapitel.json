@@ -1,0 +1,272 @@
+{
+  "id": "k3",
+  "lernfeld": "lf5",
+  "nummer": 3,
+  "titel": "Marketingkonzeption und Produktpolitik",
+  "untertitel": "Vom Ziel zur Maßnahme — und was mit dem Produkt selbst geschieht.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Die Marketingkonzeption von Zielen bis Maßnahmen aufbauen",
+      "abschnitt": "c1"
+    },
+    {
+      "id": "lz2",
+      "text": "Die vier Instrumente des Marketing-Mix benennen",
+      "abschnitt": "c2"
+    },
+    {
+      "id": "lz3",
+      "text": "Produktpolitische Maßnahmen und den Produktlebenszyklus anwenden",
+      "abschnitt": "c3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "c1",
+      "titel": "Erst das Ziel, dann die Maßnahme",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:marketing|Marketing}} ist nicht Werbung. Es ist die Ausrichtung des ganzen Betriebs am Markt — und beginnt nicht mit einer Anzeige, sondern mit einem Ziel. Der Weg dorthin heißt Marketingkonzeption und hat drei Stufen: ==Ziel, Strategie, Maßnahme==."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Stufe",
+            "Frage",
+            "Beispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Marketingziel",
+                "Was wollen wir erreichen?",
+                "Marktanteil in NRW von 6 auf 8 % steigern, binnen zwei Jahren"
+              ],
+              "detail": "**Ein Ziel ohne Zahl und Frist ist kein Ziel.** „Mehr verkaufen“ lässt sich nicht überprüfen und damit auch nicht steuern. Prüfbare Ziele nennen Größe, Höhe und Zeitraum."
+            },
+            {
+              "zellen": [
+                "Marketingstrategie",
+                "Auf welchem Weg?",
+                "Konzentration auf Geschäftskunden statt Privatkunden"
+              ]
+            },
+            {
+              "zellen": [
+                "Marketingmaßnahmen",
+                "Womit konkret?",
+                "Außendienst aufstocken, Staffelrabatte, Fachanzeigen"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Ziel, Strategie, Maßnahme — in dieser Reihenfolge. Wer mit der Maßnahme beginnt, macht Werbung ohne Richtung und kann hinterher nicht sagen, ob sie gewirkt hat.",
+          "karteikarte": "Aus welchen drei Stufen besteht die Marketingkonzeption, und warum ist die Reihenfolge zwingend?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c2",
+      "titel": "Die vier Instrumente",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Für die Maßnahmen stehen vier Werkzeugkästen bereit, zusammen der {{begriff:marketing-mix|Marketing-Mix}}. Sie wirken nur gemeinsam: Ein hervorragendes Produkt zum falschen Preis über den falschen Weg verkauft sich nicht."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Instrument",
+            "Regelt",
+            "Typische Fragen"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Produktpolitik",
+                "das Angebot selbst",
+                "Was bieten wir an? In welcher Qualität und Verpackung?"
+              ]
+            },
+            {
+              "zellen": [
+                "Preispolitik",
+                "Preis und Konditionen",
+                "Was kostet es? Welche Rabatte, welche Zahlungsziele?"
+              ]
+            },
+            {
+              "zellen": [
+                "Distributionspolitik",
+                "den Weg zum Kunden",
+                "Direkt oder über den Handel? Eigenes Lager oder Spediteur?"
+              ]
+            },
+            {
+              "zellen": [
+                "Kommunikationspolitik",
+                "das Sprechen darüber",
+                "Wie erfährt der Kunde davon? Über welchen Kanal?"
+              ],
+              "detail": "**Im Englischen die vier P:** Product, Price, Place, Promotion. Diese Merkhilfe wird in Prüfungsaufgaben gern vorausgesetzt, ohne sie zu erklären."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Betrieb führt eine Kundenkarte mit Treuepunkten ein. Zu welchem Instrument gehört das?",
+          "optionen": [
+            {
+              "text": "Produktpolitik",
+              "richtig": false,
+              "echo": "Das Produkt selbst bleibt unverändert. Die Kundenkarte ändert nichts am Angebot, sondern an dem, was der Kunde dafür zahlt."
+            },
+            {
+              "text": "Preispolitik",
+              "richtig": true,
+              "echo": "Richtig. Treuepunkte sind ein nachträglicher Preisnachlass, also eine Konditionenentscheidung — und Konditionen gehören zur Preispolitik. Dass die Karte auch beworben wird, macht sie nicht zur Kommunikationspolitik."
+            },
+            {
+              "text": "Distributionspolitik",
+              "richtig": false,
+              "echo": "Der Weg der Ware zum Kunden ändert sich nicht. Distribution betrifft Absatzwege, Lager und Transport."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c3",
+      "titel": "Produktpolitik",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:produktpolitik|Produktpolitik}} entscheidet über das Angebot selbst. Vier Maßnahmen stehen zur Wahl — und die vierte fällt am schwersten."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Maßnahme",
+            "Was geschieht",
+            "Beispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Produktinnovation",
+                "etwas Neues kommt ins Sortiment",
+                "erstmals nachhaltige Papierlinie"
+              ]
+            },
+            {
+              "zellen": [
+                "Produktvariation",
+                "ein bestehendes Produkt wird verändert und ersetzt das alte",
+                "neue Rezeptur, altes Produkt entfällt"
+              ]
+            },
+            {
+              "zellen": [
+                "Produktdifferenzierung",
+                "eine Variante tritt neben das bestehende Produkt",
+                "zusätzlich eine XL-Packung"
+              ],
+              "detail": "**Der Unterschied zur Variation ist die häufigste Prüfungsfalle:** Bei der Variation gibt es danach *ein* Produkt, bei der Differenzierung *zwei*."
+            },
+            {
+              "zellen": [
+                "Produktelimination",
+                "ein Produkt fliegt aus dem Sortiment",
+                "Ladenhüter wird ausgelistet"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Wann welche Maßnahme sinnvoll ist, hängt davon ab, wo das Produkt in seinem Leben steht. Dafür gibt es den {{begriff:produktlebenszyklus|Produktlebenszyklus}}."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Fünf Phasen",
+          "titel": "Der Produktlebenszyklus",
+          "lead": "Jede Phase verlangt andere Maßnahmen. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Einführung",
+              "satz": "Umsatz niedrig · Gewinn negativ",
+              "text": "Das Produkt ist neu und unbekannt. Hohe Kosten für Werbung und Vertrieb, noch kein Gewinn. Ziel ist Bekanntheit, nicht Ertrag."
+            },
+            {
+              "nr": 2,
+              "titel": "Wachstum",
+              "satz": "Umsatz steigt stark · Gewinn wird positiv",
+              "text": "Der Markt nimmt das Produkt an, die Stückzahlen steigen. Jetzt kommen die ersten Nachahmer — der Preis gerät unter Druck."
+            },
+            {
+              "nr": 3,
+              "titel": "Reife",
+              "satz": "Umsatz steigt langsamer · Gewinn am höchsten",
+              "text": "Die ertragreichste Phase. Der Markt ist weitgehend erschlossen, die Kosten sind gesunken. Hier wird das Geld verdient, mit dem Neues finanziert wird."
+            },
+            {
+              "nr": 4,
+              "titel": "Sättigung",
+              "satz": "Umsatz erreicht den Höhepunkt",
+              "text": "Jeder, der das Produkt will, hat es. Wachstum nur noch über Ersatzkäufe. Typische Reaktion: Produktvariation oder -differenzierung, um den Zyklus zu strecken."
+            },
+            {
+              "nr": 5,
+              "titel": "Rückgang",
+              "satz": "Umsatz und Gewinn fallen",
+              "text": "Das Produkt verliert an Bedeutung. Jetzt ist die Entscheidung fällig: relaunchen oder eliminieren. Beides zu spät zu tun kostet am meisten."
+            }
+          ],
+          "regel": "Die Kurve zeigt den Umsatz, nicht den Gewinn — beide erreichen ihren Höhepunkt zu unterschiedlichen Zeiten. Der Gewinn kippt früher."
+        },
+        {
+          "typ": "merke",
+          "text": "{{begriff:sortiment|Sortimentsbreite}} = wie viele verschiedene Warengruppen. **Sortimentstiefe** = wie viele Varianten je Gruppe. Ein Fachgeschäft ist schmal und tief, ein Discounter breit und flach.",
+          "karteikarte": "Was ist der Unterschied zwischen Sortimentsbreite und Sortimentstiefe?"
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Marketingkonzeption: erst Ziel, dann Strategie, dann Maßnahme.",
+    "Ein Marketingziel braucht Größe, Höhe und Frist — sonst ist es nicht überprüfbar.",
+    "Marketing-Mix: Produkt-, Preis-, Distributions- und Kommunikationspolitik (die vier P).",
+    "Produktpolitik: Innovation, Variation, Differenzierung, Elimination.",
+    "Variation ersetzt das alte Produkt, Differenzierung stellt eine Variante daneben.",
+    "Produktlebenszyklus: Einführung, Wachstum, Reife, Sättigung, Rückgang.",
+    "Sortimentsbreite = Zahl der Warengruppen, Sortimentstiefe = Varianten je Gruppe."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Unterschied zwischen Produktvariation und Produktdifferenzierung.",
+      "loesung": "Bei der Produktvariation wird ein bestehendes Produkt verändert und das bisherige dadurch ersetzt — nach der Maßnahme gibt es weiterhin ein Produkt. Bei der Produktdifferenzierung tritt eine zusätzliche Variante neben das bestehende Produkt, das im Sortiment bleibt — danach gibt es zwei. Beispiel: Eine geänderte Rezeptur, die die alte ablöst, ist Variation; eine zusätzliche XL-Packung neben der Standardgröße ist Differenzierung."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die fünf Phasen des Produktlebenszyklus und die jeweils typische Reaktion.",
+      "loesung": "Einführung: Bekanntheit schaffen, Gewinn ist noch negativ. Wachstum: Kapazitäten ausbauen, erste Wettbewerber erscheinen. Reife: Gewinn am höchsten, Position halten. Sättigung: Umsatz stagniert, mit Produktvariation oder -differenzierung gegensteuern. Rückgang: relaunchen oder eliminieren."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Schreibwarenhersteller nimmt zusätzlich zum klassischen Kugelschreiber eine Variante mit nachfüllbarer Mine ins Sortiment. Ordne die Maßnahme ein und begründe.",
+      "loesung": "Es handelt sich um eine Produktdifferenzierung, weil die neue Variante neben das bestehende Produkt tritt und dieses im Sortiment bleibt. Damit wächst zugleich die Sortimentstiefe, nicht die Breite — es kommt keine neue Warengruppe hinzu, sondern eine Variante innerhalb der bestehenden."
+    }
+  ],
+  "pruefungstipp": "Die vier produktpolitischen Maßnahmen werden fast immer als Zuordnungsaufgabe gestellt. Der Prüfstein ist immer derselbe: Gibt es danach ein Produkt oder zwei? Und beim Lebenszyklus wird gern gefragt, in welcher Phase der Gewinn am höchsten ist — es ist die Reife, nicht die Sättigung."
+}

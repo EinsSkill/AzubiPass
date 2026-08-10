@@ -1,0 +1,191 @@
+{
+  "id": "k7",
+  "lernfeld": "lf1",
+  "nummer": 7,
+  "titel": "Den Betrieb präsentieren",
+  "untertitel": "Quellen prüfen, Inhalt aufbauen, Regeln einhalten — und die eigene Präsentation bewerten.",
+  "minuten": 25,
+
+  "lernziele": [
+    { "id": "lz1", "text": "Informationsquellen recherchieren und ihre Validität beurteilen", "abschnitt": "g1" },
+    { "id": "lz2", "text": "Eine Präsentation aufbauen und die Gestaltungsregeln anwenden", "abschnitt": "g2" },
+    { "id": "lz3", "text": "Urheberrecht und Datenschutz bei Präsentationen berücksichtigen und einen Kriterienkatalog anwenden", "abschnitt": "g3" }
+  ],
+
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "g1",
+      "titel": "Quellen prüfen, bevor du sie benutzt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Rahmenlehrplan verlangt ausdrücklich, die **Validität** von Informationen zu überprüfen — also ihre Belastbarkeit. Das ist mehr als googeln. {{begriff:quellenkritik|Quellenkritik}} heißt: vier Fragen an jede Quelle stellen, bevor sie in deine Präsentation kommt."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Frage", "Worauf du achtest"],
+          "zeilen": [
+            { "zellen": ["Wer sagt es?", "Impressum, Autorenname, Institution. Anonyme Quellen sind keine Quellen"] },
+            { "zellen": ["Woher weiß die Person es?", "Eigene Erhebung, zitierte Studie oder nur abgeschrieben"] },
+            { "zellen": ["Wann wurde es veröffentlicht?", "Datum prüfen — bei Gesetzen und Zahlen entscheidend"] },
+            {
+              "zellen": ["Wer profitiert davon?", "Werbung, Lobbyarbeit und Eigenwerbung sind keine neutralen Quellen"],
+              "detail": "**Das schließt die eigene Firmenwebsite nicht aus** — für die Selbstdarstellung des Betriebs ist sie sogar die beste Quelle. Du musst nur wissen, dass sie eine interessengeleitete ist, und darfst Werbeaussagen nicht als geprüfte Fakten weitergeben."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Für eine Betriebspräsentation sind die besten Quellen meist gar nicht im Netz: der Geschäftsbericht, das Organigramm aus K5, das Intranet — und Kolleginnen und Kollegen, die seit zwanzig Jahren dort arbeiten."
+        },
+        {
+          "typ": "merke",
+          "text": "Vier Fragen an jede Quelle: **Wer** sagt es, **woher** weiß er es, **wann** war das, **wem** nützt es. Wenn du eine davon nicht beantworten kannst, gehört die Information nicht in deine Präsentation.",
+          "karteikarte": "Welche vier Fragen stellst du an jede Informationsquelle?"
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "g2",
+      "titel": "Aufbau und Gestaltung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine Präsentation hat eine feste Grundstruktur. Sie zu kennen spart Zeit, weil du nicht bei jedem Thema neu über den Ablauf nachdenken musst — sondern nur noch über den Inhalt."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Der Ablauf",
+          "titel": "Fünf Phasen einer Präsentation",
+          "lead": "Klick dich durch — jede Phase hat eine eigene Aufgabe.",
+          "schritte": [
+            { "nr": 1, "titel": "Zielgruppe und Ziel klären", "satz": "vor der ersten Folie", "text": "Wer sitzt im Raum, was weiß die Person schon, was soll sie danach wissen oder tun? Ohne diese Antwort ist jede Folie geraten." },
+            { "nr": 2, "titel": "Einstieg", "satz": "die ersten 30 Sekunden", "text": "Aufmerksamkeit gewinnen und den roten Faden ankündigen. Eine Zahl, eine Frage oder ein konkretes Beispiel wirken besser als eine Agenda-Folie." },
+            { "nr": 3, "titel": "Hauptteil", "satz": "der rote Faden", "text": "Wenige Kernaussagen, jede mit einem Beleg. Nicht mehr als eine Aussage pro Folie — die Folie unterstützt dich, sie ersetzt dich nicht." },
+            { "nr": 4, "titel": "Schluss", "satz": "Zusammenfassung und Ausblick", "text": "Die Kernbotschaft noch einmal, dann Raum für Fragen. Der letzte Satz bleibt hängen — überlass ihn nicht dem Zufall." },
+            { "nr": 5, "titel": "Reflexion", "satz": "mit dem Kriterienkatalog", "text": "Nach der Präsentation bewerten, was funktioniert hat. Genau das verlangt der Rahmenlehrplan — und genau das überspringen die meisten." }
+          ],
+          "regel": "Der häufigste Fehler ist nicht schlechte Gestaltung, sondern eine ungeklärte Zielgruppe. Phase 1 entscheidet über alles Weitere."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Regel", "Konkret"],
+          "zeilen": [
+            { "zellen": ["Eine Aussage pro Folie", "Die Überschrift formuliert die Aussage, nicht das Thema"] },
+            { "zellen": ["Wenig Text", "Stichworte statt Sätze — vorgelesene Folien sind der sicherste Weg zur Langeweile"] },
+            { "zellen": ["Lesbare Schrift", "Groß genug für die letzte Reihe, höchstens zwei Schriftarten"] },
+            { "zellen": ["Ruhige Gestaltung", "Einheitliche Farben, keine Effekte ohne Grund"] },
+            {
+              "zellen": ["Diagramme statt Zahlenkolonnen", "Ein Balken sagt mehr als eine Tabelle mit 30 Werten"],
+              "detail": "**Aber die Achse muss bei null beginnen.** Ein abgeschnittener Nullpunkt lässt kleine Unterschiede riesig aussehen — das ist in einer Betriebspräsentation unseriös und in einer Prüfungspräsentation ein Abzug."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "g3",
+      "titel": "Recht und Bewertung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Zwei Rechtsgebiete reden bei jeder Präsentation mit. Das {{begriff:urheberrecht|Urheberrecht}} schützt fremde Inhalte, der Datenschutz schützt Personen. ==Beides gilt auch für eine Schulpräsentation== — und erst recht, wenn sie im Betrieb gezeigt wird."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Rechtsgebiete",
+          "titel": "Urheberrecht und Datenschutz",
+          "lead": "Beide betreffen dieselbe Folie — aber aus unterschiedlichen Gründen.",
+          "seiten": [
+            {
+              "name": "Urheberrecht",
+              "ton": "gold",
+              "punkte": [
+                { "text": "Schützt Werke", "detail": "Texte, Fotos, Grafiken, Musik, Videos, Software — alles, was eine persönliche geistige Schöpfung ist." },
+                { "text": "Ein Bild aus der Google-Suche ist nicht frei", "detail": "Die Suchmaschine zeigt es nur an. Rechte hat weiterhin der Urheber. Das ist der häufigste Fehler in Azubi-Präsentationen." },
+                { "text": "Quellen angeben ersetzt keine Erlaubnis", "detail": "Ein Bildnachweis ist Pflicht, aber er macht eine unerlaubte Nutzung nicht erlaubt. Beides ist nötig." },
+                { "text": "Sichere Wege", "detail": "Eigene Fotos, lizenzfreie Bilddatenbanken, Material des eigenen Betriebs oder ausdrücklich freie Lizenzen — Lizenzbedingungen trotzdem lesen." },
+                { "text": "Firmenlogos sind zusätzlich markenrechtlich geschützt", "detail": "Das eigene Logo darfst du nach den Vorgaben des Corporate Design verwenden, fremde nicht ohne Weiteres." }
+              ]
+            },
+            {
+              "name": "Datenschutz",
+              "ton": "gruen",
+              "punkte": [
+                { "text": "Schützt Personen", "detail": "Alle Angaben, die sich auf eine identifizierbare Person beziehen — Name, Foto, Telefonnummer, Personalnummer." },
+                { "text": "Fotos von Kolleginnen und Kollegen nur mit Einwilligung", "detail": "Und die Einwilligung ist freiwillig und widerruflich. Ein Gruppenfoto vom Betriebsfest ist kein Freibrief." },
+                { "text": "Keine echten Personaldaten in Beispielen", "detail": "Wenn du eine Gehaltsabrechnung oder eine Kundenliste zeigen willst: anonymisieren oder erfinden." },
+                { "text": "Datensparsamkeit", "detail": "Nur zeigen, was die Aussage wirklich braucht. Ein Organigramm funktioniert meist auch mit Funktionen statt Namen." },
+                { "text": "Betriebsgeheimnisse bleiben drin", "detail": "Umsätze, Kundenlisten und Kalkulationen gehören nicht in eine Schulpräsentation — das ist zusätzlich deine Schweigepflicht aus § 13 BBiG." }
+              ]
+            }
+          ],
+          "regel": "Kurz: Urheberrecht fragt „darf ich dieses Werk benutzen?“, Datenschutz fragt „darf ich über diese Person sprechen?“"
+        },
+        {
+          "typ": "absatz",
+          "text": "Zum Schluss verlangt der Rahmenlehrplan etwas, das leicht zu übersehen ist: einen **Kriterienkatalog**, mit dem Präsentationen bewertet und reflektiert werden. Er wird vorher erstellt, nicht hinterher — sonst bewertet man nur den Eindruck."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Kriterium", "Leitfrage"],
+          "zeilen": [
+            { "zellen": ["Inhalt", "War die Kernaussage klar und belegt?"] },
+            { "zellen": ["Struktur", "Gab es einen erkennbaren roten Faden?"] },
+            { "zellen": ["Medieneinsatz", "Haben die Folien unterstützt oder abgelenkt?"] },
+            { "zellen": ["Vortrag", "Sprechtempo, Blickkontakt, freie Rede?"] },
+            { "zellen": ["Zeit", "Wurde der Rahmen eingehalten?"] },
+            { "zellen": ["Rechtliches", "Quellen angegeben, Rechte geklärt?"] }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Du findest über die Bildersuche ein passendes Foto und gibst darunter ordentlich die Quelle an. Ist das in Ordnung?",
+          "optionen": [
+            { "text": "Ja, mit Quellenangabe ist alles erlaubt", "richtig": false, "echo": "Ein verbreiteter Irrtum. Die Quellenangabe erfüllt eine eigene Pflicht, ersetzt aber nicht die Nutzungserlaubnis. Beides ist nötig." },
+            { "text": "Nein, du brauchst zusätzlich eine Nutzungserlaubnis", "richtig": true, "echo": "Richtig. Das Urheberrecht schützt das Bild unabhängig davon, wo du es gefunden hast. Du brauchst eine Lizenz oder eine ausdrückliche Erlaubnis — und gibst zusätzlich die Quelle an. Sicherer sind eigene Fotos oder Material aus dem Betrieb." },
+            { "text": "Ja, weil es nur eine Schulpräsentation ist", "richtig": false, "echo": "Für den Unterricht gibt es eng begrenzte gesetzliche Ausnahmen, aber sie decken keineswegs alles ab — und sobald die Präsentation im Betrieb gezeigt oder verschickt wird, greifen sie ohnehin nicht mehr." }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "zusammenfassung": [
+    "Quellenkritik: Wer sagt es, woher weiß er es, wann war das, wem nützt es.",
+    "Die eigene Firmenwebsite ist eine gute, aber interessengeleitete Quelle.",
+    "Präsentationsablauf: Zielgruppe klären, Einstieg, Hauptteil, Schluss, Reflexion.",
+    "Eine Aussage pro Folie; die Folie unterstützt den Vortrag, sie ersetzt ihn nicht.",
+    "Diagrammachsen beginnen bei null.",
+    "Urheberrecht schützt Werke — Quellenangabe ersetzt keine Nutzungserlaubnis.",
+    "Datenschutz schützt Personen — Fotos nur mit Einwilligung, keine echten Personaldaten in Beispielen.",
+    "Der Kriterienkatalog wird vor der Präsentation erstellt, nicht danach."
+  ],
+
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Welche vier Fragen stellst du an eine Quelle, um ihre Validität zu prüfen?",
+      "loesung": "Erstens: Wer sagt es — gibt es Autor, Institution und Impressum? Zweitens: Woher weiß die Person es — eigene Erhebung, belegte Studie oder ungeprüft übernommen? Drittens: Wann wurde es veröffentlicht — gerade bei Gesetzen, Zahlen und Preisen entscheidend. Viertens: Wer profitiert davon — Werbung und Lobbymaterial sind keine neutralen Quellen."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Worin unterscheiden sich Urheberrecht und Datenschutz in Bezug auf eine Präsentation?",
+      "loesung": "Das Urheberrecht schützt Werke, also Texte, Bilder, Grafiken, Musik und Videos. Es beantwortet die Frage, ob du ein bestimmtes Material überhaupt verwenden darfst. Der Datenschutz schützt dagegen Personen und alle Angaben, die sich einer identifizierbaren Person zuordnen lassen. Er beantwortet die Frage, ob du über eine bestimmte Person etwas zeigen oder sagen darfst — Fotos von Kolleginnen und Kollegen etwa nur mit deren Einwilligung."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Du sollst deinen Ausbildungsbetrieb vor der Klasse präsentieren und möchtest das Organigramm mit den Namen aller Abteilungsleiter sowie die Umsatzzahlen des letzten Jahres zeigen. Was ist zu beachten?",
+      "loesung": "Beim Organigramm greift der Datenschutz: Namen sind personenbezogene Daten. Nach dem Grundsatz der Datensparsamkeit reicht in der Regel die Funktionsbezeichnung, also Leitung Einkauf statt des Namens. Die Umsatzzahlen sind ein anderes Problem: Sie fallen unter die Schweigepflicht über Betriebsgeheimnisse nach § 13 BBiG. Solche Zahlen gehören nur dann in eine Präsentation, wenn sie ohnehin veröffentlicht sind, etwa im Geschäftsbericht — sonst ist vorher die Freigabe des Betriebs einzuholen."
+    }
+  ],
+
+  "pruefungstipp": "Die Präsentationsregeln werden selten direkt abgefragt, dafür umso häufiger angewendet — im Fachgespräch der AP2 präsentierst du selbst. Sicher abgefragt wird dagegen der Unterschied zwischen Urheberrecht und Datenschutz. Merke: Urheberrecht schützt Werke, Datenschutz schützt Personen."
+}

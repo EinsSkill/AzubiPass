@@ -1,0 +1,312 @@
+{
+  "id": "k5",
+  "lernfeld": "lf9",
+  "nummer": 5,
+  "titel": "Leasing, Factoring und Alternativen",
+  "untertitel": "Nicht alles, was man braucht, muss einem gehören.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Leasing und Kauf gegenüberstellen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Factoring erklären und seine Funktionen unterscheiden",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Eine Finanzierungsform begründet auswählen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Leasing",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Beim {{begriff:leasing|Leasing}} wird ein Gegenstand genutzt, ohne ihn zu kaufen. ==Der entscheidende Punkt für die Liquidität: Statt einer großen Einmalzahlung entstehen gleichmäßige Raten== — das Geld bleibt für anderes verfügbar."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Wege",
+          "titel": "Kaufen oder leasen",
+          "lead": "Dieselbe Maschine, andere Folgen für Bilanz und Konto. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Kauf",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Große Einmalzahlung",
+                  "detail": "Der volle Betrag verlässt auf einen Schlag das Konto oder wird über ein Darlehen finanziert. Für die Liquidität der härteste Weg."
+                },
+                {
+                  "text": "Gegenstand steht in der Bilanz",
+                  "detail": "Er erscheint im Anlagevermögen und wird abgeschrieben. Die Bilanzsumme steigt, die Eigenkapitalquote sinkt rechnerisch."
+                },
+                {
+                  "text": "Eigentum von Anfang an",
+                  "detail": "Der Betrieb kann frei verfügen, umbauen, verkaufen — und die Sache als Sicherheit einsetzen."
+                },
+                {
+                  "text": "Über die Nutzungsdauer meist günstiger",
+                  "detail": "Es fällt keine Marge des Leasinggebers an. Wer die Sache lange nutzt, fährt mit Kauf besser."
+                }
+              ]
+            },
+            {
+              "name": "Leasing",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Gleichmäßige Raten",
+                  "detail": "Planbar und liquiditätsschonend. Gerade für junge Betriebe oft der einzig gangbare Weg zu moderner Ausstattung."
+                },
+                {
+                  "text": "Meist nicht in der Bilanz des Nutzers",
+                  "detail": "Beim üblichen Operating-Leasing bleibt der Gegenstand beim Leasinggeber bilanziert. Die Bilanzkennzahlen des Nutzers bleiben unberührt."
+                },
+                {
+                  "text": "Raten sind Betriebsausgaben",
+                  "detail": "Sie mindern den Gewinn sofort in voller Höhe, während beim Kauf nur die Abschreibung wirkt. Der Vorteil ist eine Frage des Zeitpunkts, nicht der Gesamthöhe."
+                },
+                {
+                  "text": "Über die Laufzeit teurer",
+                  "detail": "Der Leasinggeber verdient an der Überlassung. Bequemlichkeit und Planbarkeit haben ihren Preis."
+                }
+              ]
+            }
+          ],
+          "regel": "Die praktische Faustregel: Was schnell veraltet und regelmäßig ersetzt wird — Fahrzeuge, IT — spricht für Leasing. Was lange und unverändert genutzt wird, spricht für Kauf.",
+          "pruefen": "Zurechnung und Bilanzierung des Leasinggegenstands hängen von der Vertragsgestaltung ab. Vor Veröffentlichung die aktuellen Leasingerlasse und die handelsrechtliche Behandlung prüfen und die Aussage zur Bilanzierung entsprechend präzisieren."
+        },
+        {
+          "typ": "achtung",
+          "text": "Am Ende der Laufzeit steht die entscheidende Frage: **Was passiert mit dem Gegenstand?** Rückgabe, Kauf zum Restwert oder Anschlussvertrag. Besonders bei Fahrzeugen sind Rückgabebedingungen und Kilometerbegrenzungen ein häufiger Streitpunkt — sie gehören vor Vertragsschluss geprüft."
+        },
+        {
+          "typ": "merke",
+          "text": "**Leasing schont die Liquidität und kostet über die Laufzeit mehr.** Es ist Nutzung, nicht Eigentum — deshalb taugt der Gegenstand auch nicht als eigene Sicherheit.",
+          "karteikarte": "Welche Vor- und Nachteile hat Leasing gegenüber dem Kauf?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Factoring",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Beim {{begriff:factoring|Factoring}} verkauft der Betrieb seine Forderungen an einen Dienstleister und bekommt sofort Geld. ==Aus einer Forderung mit 60 Tagen Zahlungsziel wird binnen weniger Tage Liquidität== — abzüglich einer Gebühr."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Drei Leistungen",
+          "titel": "Was Factoring alles übernimmt",
+          "lead": "Je nach Vertrag eine, zwei oder alle drei. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Finanzierung",
+              "satz": "sofort Geld",
+              "text": "Der Factor zahlt den Rechnungsbetrag abzüglich Gebühr und eines Sicherheitseinbehalts sofort aus. Das ist die Kernfunktion und der Grund, warum Betriebe Factoring nutzen."
+            },
+            {
+              "nr": 2,
+              "titel": "Ausfallschutz",
+              "satz": "echtes Factoring",
+              "text": "Der Factor übernimmt das Risiko, dass der Kunde nicht zahlt. Beim unechten Factoring bleibt dieses Risiko beim Betrieb — dort ist es wirtschaftlich eher ein Kredit."
+            },
+            {
+              "nr": 3,
+              "titel": "Dienstleistung",
+              "satz": "Debitorenbuchhaltung",
+              "text": "Der Factor übernimmt Überwachung, Mahnwesen und Inkasso. Für kleine Betriebe oft der unterschätzte Nutzen, weil dafür Personal und Systeme entfallen."
+            }
+          ],
+          "regel": "Echtes Factoring heißt: Der Factor trägt den Ausfall. Unechtes Factoring heißt: Der Betrieb trägt ihn weiter. Diese beiden Wörter entscheiden über den ganzen Charakter des Vertrags."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Vorteil",
+            "Nachteil"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Sofortige Liquidität ohne Kredit",
+                "Gebühr schmälert die Marge"
+              ]
+            },
+            {
+              "zellen": [
+                "Ausfallrisiko kann abgegeben werden",
+                "nur bei echtem Factoring"
+              ]
+            },
+            {
+              "zellen": [
+                "Entlastung der Debitorenbuchhaltung",
+                "Kontrolle über Kundenkontakt geht ab"
+              ],
+              "detail": "**Der weichste, aber wichtigste Punkt:** Wenn ein Dritter die Zahlungserinnerungen schreibt, prägt er den Ton gegenüber deinen Kunden. Bei langjährigen Beziehungen ist das heikel."
+            },
+            {
+              "zellen": [
+                "Planbare Zahlungseingänge",
+                "nicht jede Forderung wird angekauft"
+              ],
+              "detail": "**Der Factor prüft die Bonität der Kunden** und lehnt schlechte Risiken ab. Ausgerechnet die Forderungen, die am meisten Sorgen machen, bleiben oft liegen."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Betrieb hat volle Auftragsbücher, aber ständig Liquiditätsprobleme, weil Großkunden erst nach 60 Tagen zahlen. Was passt am besten?",
+          "optionen": [
+            {
+              "text": "Ein langfristiges Darlehen aufnehmen",
+              "richtig": false,
+              "echo": "Das verstößt gegen die Fristenkongruenz. Der Bedarf entsteht kurzfristig und immer wieder aus dem Umlaufvermögen — dafür ist ein langfristiges Darlehen das falsche Werkzeug."
+            },
+            {
+              "text": "Factoring prüfen, ergänzt um Skonto für schnelle Zahler",
+              "richtig": true,
+              "echo": "Richtig. Das Problem liegt in den Forderungslaufzeiten, also genau dort, wo Factoring ansetzt: Die Forderungen werden sofort zu Geld, und beim echten Factoring geht zusätzlich das Ausfallrisiko ab. Ergänzend wirkt Skonto, weil es Kunden zu früherer Zahlung bewegt. Beide Wege kosten Marge, weshalb vorher zu rechnen ist, ob die Ersparnis an Zinsen und Mahnaufwand das aufwiegt."
+            },
+            {
+              "text": "Die Zahlungsziele einseitig auf 14 Tage verkürzen",
+              "richtig": false,
+              "echo": "Bei Großkunden ist das meist nicht durchsetzbar — sie diktieren die Konditionen. Wer es versucht, riskiert den Auftrag statt der Verspätung."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Die Auswahl begründen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Keine Finanzierungsform ist grundsätzlich besser. **Die Wahl folgt dem Zweck**, und vier Fragen führen fast immer zur richtigen Antwort."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Frage",
+            "Wenn ja",
+            "Wenn nein"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ist der Bedarf dauerhaft?",
+                "langfristige Finanzierung",
+                "Kontokorrent oder Factoring"
+              ]
+            },
+            {
+              "zellen": [
+                "Veraltet der Gegenstand schnell?",
+                "Leasing",
+                "Kauf"
+              ]
+            },
+            {
+              "zellen": [
+                "Sind Sicherheiten vorhanden?",
+                "Darlehen möglich",
+                "Leasing oder Beteiligung prüfen"
+              ],
+              "detail": "**Ohne Sicherheiten wird ein Darlehen teuer oder unerreichbar.** Leasing braucht sie nicht in gleichem Maß, weil der Gegenstand dem Leasinggeber gehört."
+            },
+            {
+              "zellen": [
+                "Liegt das Problem bei den Forderungen?",
+                "Factoring",
+                "andere Ursache suchen"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Prüfe zuerst, ob überhaupt zusätzliches Geld nötig ist. Oft liegt die Ursache in zu langen Zahlungszielen, zu hohen Lagerbeständen oder einem laschen Mahnwesen. **Diese drei Hebel kosten keine Zinsen** — und wirken schneller als jedes Bankgespräch."
+        },
+        {
+          "typ": "merke",
+          "text": "**Der Zweck bestimmt die Form:** dauerhaft langfristig, schnell veraltend Leasing, Forderungsproblem Factoring, Spitzen Kontokorrent.",
+          "karteikarte": "Nach welchen vier Fragen wählt man die passende Finanzierungsform aus?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Form passt hier?",
+          "kategorien": [
+            "Leasing",
+            "Factoring",
+            "Darlehen",
+            "Kontokorrent"
+          ],
+          "aufgaben": [
+            {
+              "text": "Zehn Firmenwagen, die alle drei Jahre getauscht werden.",
+              "loesung": "Leasing"
+            },
+            {
+              "text": "Ein Lagergebäude mit 30 Jahren Nutzungsdauer.",
+              "loesung": "Darlehen"
+            },
+            {
+              "text": "Offene Kundenforderungen mit 60 Tagen Zahlungsziel.",
+              "loesung": "Factoring"
+            },
+            {
+              "text": "Der eine Monat im Jahr, in dem Steuern und Weihnachtsgeld zusammenfallen.",
+              "loesung": "Kontokorrent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "{{begriff:leasing|Leasing}} ist Nutzung ohne Eigentum und schont die Liquidität.",
+    "Über die Laufzeit ist Leasing meist teurer als der Kauf.",
+    "Leasingraten sind sofort Betriebsausgaben, beim Kauf wirkt nur die Abschreibung.",
+    "Faustregel: schnell veraltende Güter leasen, langlebige kaufen.",
+    "{{begriff:factoring|Factoring}} hat drei Funktionen: Finanzierung, Ausfallschutz, Dienstleistung.",
+    "Echtes Factoring übernimmt das Ausfallrisiko, unechtes nicht.",
+    "Der Factor prüft die Bonität und kauft nicht jede Forderung an.",
+    "Vor jeder Finanzierung prüfen, ob Zahlungsziele, Lager und Mahnwesen das Problem lösen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Stelle Leasing und Kauf gegenüber und nenne je zwei Vor- und Nachteile.",
+      "loesung": "Beim Kauf erwirbt der Betrieb Eigentum. Vorteile sind die freie Verfügung über den Gegenstand, seine Verwendbarkeit als Kreditsicherheit und die über die Nutzungsdauer meist geringeren Gesamtkosten, weil keine Marge eines Leasinggebers anfällt. Nachteile sind die hohe Einmalbelastung der Liquidität und die Bindung von Kapital in einem Gegenstand, der an Wert verliert. Beim Leasing erwirbt der Betrieb nur das Nutzungsrecht gegen gleichmäßige Raten. Vorteile sind die Schonung der Liquidität, die gute Planbarkeit und der einfachere Zugang, weil weniger eigene Sicherheiten nötig sind. Nachteile sind die insgesamt höheren Kosten über die Laufzeit und die fehlende Eigentümerstellung, wodurch der Gegenstand nicht als eigene Sicherheit dienen kann. Als Faustregel gilt: Was schnell veraltet und regelmäßig ersetzt wird, spricht für Leasing; was lange unverändert genutzt wird, für Kauf."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre die drei Funktionen des Factoring und den Unterschied zwischen echtem und unechtem Factoring.",
+      "loesung": "Die Finanzierungsfunktion bedeutet, dass der Factor den Rechnungsbetrag abzüglich Gebühr und eines Sicherheitseinbehalts sofort auszahlt; aus einer Forderung mit langem Zahlungsziel wird damit unmittelbar Liquidität. Die Delkrederefunktion bedeutet, dass der Factor das Risiko übernimmt, dass der Kunde nicht zahlt. Die Dienstleistungsfunktion umfasst die Debitorenbuchhaltung mit Überwachung, Mahnwesen und Inkasso. Beim echten Factoring übernimmt der Factor das Ausfallrisiko, sodass der Betrieb endgültig entlastet ist. Beim unechten Factoring verbleibt das Risiko beim Betrieb; zahlt der Kunde nicht, muss der Betrieb den Betrag zurückerstatten. Wirtschaftlich ist das unechte Factoring deshalb eher ein Kredit gegen Forderungsabtretung als ein Verkauf."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Betrieb braucht acht neue Transporter. Die Bank würde ein Darlehen geben, der Händler bietet Leasing an. Wie entscheidest du?",
+      "loesung": "Zunächst ist die Nutzungsdauer zu klären. Werden die Fahrzeuge nach drei bis vier Jahren ohnehin getauscht, spricht das deutlich für Leasing: Der Wertverlust ist in dieser Zeit am höchsten, die Raten sind planbar, und der Betrieb bleibt technisch aktuell. Werden die Fahrzeuge dagegen acht bis zehn Jahre gefahren, ist der Kauf über die Gesamtdauer günstiger, weil keine Marge des Leasinggebers anfällt. Zweitens ist die Liquiditätslage zu prüfen: Ist sie angespannt oder stehen weitere Investitionen an, wiegt die Schonung durch Leasing schwer. Drittens die Sicherheitenlage: Reichen die vorhandenen Sicherheiten für ein Darlehen, oder werden sie besser für andere Vorhaben aufgespart? Viertens ist der reine Kostenvergleich zu rechnen, also Summe aller Leasingraten zuzüglich Restwert gegen Kaufpreis zuzüglich Finanzierungskosten abzüglich erwartetem Restwert. Beim Leasingvertrag sind schließlich Kilometerbegrenzung, Rückgabebedingungen und Regelungen zu Schäden genau zu prüfen, weil dort die üblichen Nachforderungen entstehen."
+    }
+  ],
+  "pruefungstipp": "Leasing gegen Kauf ist eine klassische Aufgabe mit vorgegebenen Zahlen. Rechne beide Wege vollständig durch und vergiss beim Leasing den Restwert und beim Kauf die Finanzierungskosten nicht. Beim Factoring wird fast immer nach den drei Funktionen gefragt — merke sie dir als Finanzierung, Ausfallschutz, Dienstleistung, und ergänze den Unterschied echt gegen unecht."
+}

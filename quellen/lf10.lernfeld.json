@@ -1,0 +1,62 @@
+{
+  "id": "lf10",
+  "titel": "Wertschöpfungsprozesse erfolgsorientiert steuern",
+  "kurztitel": "Lernfeld 10",
+  "untertitel": "3. Ausbildungsjahr · Zeitrichtwert 80 Stunden",
+  "linie": "B",
+  "stand": "2026-08",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Was kostet das *wirklich*?",
+    "lead": "Die Buchführung sagt, was war. Die Kostenrechnung sagt, was ein Stück kostet, welcher Auftrag sich lohnt und ab wann Gewinn beginnt. Das komplette Lernfeld 10.",
+    "fakten": [
+      "6 Kapitel",
+      "80 Stunden",
+      "3. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf10-k1-grundlagen.kapitel.json",
+      "titel": "Wozu eine zweite Rechnung",
+      "minuten": 25,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf10-k2-kostenarten.kapitel.json",
+      "titel": "Kostenarten unterscheiden",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf10-k3-bab.kapitel.json",
+      "titel": "Der Betriebsabrechnungsbogen",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf10-k4-kalkulation.kapitel.json",
+      "titel": "Kalkulieren mit Zuschlagssätzen",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k5",
+      "datei": "lf10-k5-deckungsbeitrag.kapitel.json",
+      "titel": "Deckungsbeitrag und Break-Even",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k6",
+      "datei": "lf10-k6-entscheidungen.kapitel.json",
+      "titel": "Entscheidungen mit Zahlen begründen",
+      "minuten": 25,
+      "frei": false
+    }
+  ]
+}

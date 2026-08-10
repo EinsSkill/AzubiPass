@@ -1,0 +1,272 @@
+{
+  "id": "k4",
+  "lernfeld": "lf5",
+  "nummer": 4,
+  "titel": "Preispolitik",
+  "untertitel": "Der Preis ist das einzige Instrument, das Geld einbringt statt kostet.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Kosten- und marktorientierte Preisbildung unterscheiden",
+      "abschnitt": "d1"
+    },
+    {
+      "id": "lz2",
+      "text": "Preisstrategien für neue Produkte auswählen und begründen",
+      "abschnitt": "d2"
+    },
+    {
+      "id": "lz3",
+      "text": "Konditionen als Teil der Preispolitik einordnen",
+      "abschnitt": "d3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "d1",
+      "titel": "Wie ein Preis entsteht",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:preispolitik|Preispolitik}} ist unter den vier Instrumenten die schnellste: Eine Preisänderung wirkt sofort, während ein neues Produkt Monate braucht. Sie ist auch die gefährlichste — ==ein Prozent Preisnachlass kostet direkt ein Prozent Umsatz==, während ein Prozent mehr Werbung nur Kosten verursacht."
+        },
+        {
+          "typ": "absatz",
+          "text": "Für die Preisfindung gibt es zwei Denkrichtungen, und in der Praxis treffen sie sich in der Mitte."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Ansatz",
+            "Ausgangspunkt",
+            "Grenze"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Kostenorientiert",
+                "eigene Selbstkosten plus Gewinnzuschlag",
+                "der Markt zahlt es womöglich nicht"
+              ],
+              "detail": "**Das ist die Handelskalkulation aus Lernfeld 6:** vom Einstandspreis über die Selbstkosten zum Listenverkaufspreis. Sie sagt dir, was du mindestens verlangen musst — nicht, was du verlangen kannst."
+            },
+            {
+              "zellen": [
+                "Marktorientiert",
+                "Preis der Konkurrenz, Zahlungsbereitschaft",
+                "deckt womöglich die Kosten nicht"
+              ],
+              "detail": "**Hier arbeitet die Rückwärtskalkulation:** Der Markt gibt den Preis vor, du rechnest zurück und erfährst, was der Einkauf höchstens kosten darf. Passt es nicht, ist das Produkt nicht machbar — nicht der Preis zu niedrig."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Die kostenorientierte Rechnung liefert die **Preisuntergrenze**, der Markt die **Preisobergrenze**. Zwischen beiden liegt der Spielraum. Liegt die Untergrenze über der Obergrenze, gibt es keinen Spielraum — dann muss an den Kosten gearbeitet werden, nicht am Preis.",
+          "karteikarte": "Was liefert die kostenorientierte, was die marktorientierte Preisbildung — und was passiert, wenn beide sich nicht treffen?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "d2",
+      "titel": "Zwei Wege bei neuen Produkten",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Wer ein neues Produkt einführt, hat eine Grundsatzentscheidung zu treffen: hoch einsteigen und langsam senken — oder tief einsteigen und den Markt schnell besetzen."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Strategien",
+          "titel": "Abschöpfung oder Durchdringung",
+          "lead": "Dasselbe Produkt, zwei gegensätzliche Preisstrategien.",
+          "seiten": [
+            {
+              "name": "Abschöpfung (Skimming)",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Hoher Einstiegspreis, schrittweise Senkung",
+                  "detail": "Zuerst wird bei denen abgeschöpft, die bereit sind, viel zu zahlen — danach werden preisbewusstere Käufer nachgeholt."
+                },
+                {
+                  "text": "Entwicklungskosten kommen schnell zurück",
+                  "detail": "Gerade bei Technik mit hohem Forschungsaufwand ist das oft der einzige Weg, die Investition zu refinanzieren."
+                },
+                {
+                  "text": "Setzt einen Vorsprung voraus",
+                  "detail": "Funktioniert nur, solange es keinen gleichwertigen Wettbewerber gibt — sonst kauft niemand den hohen Preis."
+                },
+                {
+                  "text": "Risiko: lockt Nachahmer an",
+                  "detail": "Hohe Preise signalisieren hohe Margen. Genau das zieht Wettbewerber an, und zwar schnell."
+                }
+              ]
+            },
+            {
+              "name": "Durchdringung (Penetration)",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Niedriger Einstiegspreis, später Anhebung",
+                  "detail": "Der Preis liegt anfangs nahe an den Kosten oder darunter, um schnell viele Kunden zu gewinnen."
+                },
+                {
+                  "text": "Schneller Marktanteil",
+                  "detail": "Wer früh viele Kunden hat, profitiert von Bekanntheit, Gewohnheit und sinkenden Stückkosten."
+                },
+                {
+                  "text": "Schreckt Wettbewerber ab",
+                  "detail": "Ein niedriger Marktpreis macht den Einstieg für andere unattraktiv — die Margen sind von Anfang an dünn."
+                },
+                {
+                  "text": "Risiko: der Preis lässt sich schwer erhöhen",
+                  "detail": "Kunden gewöhnen sich an den Einstiegspreis. Spätere Anhebungen werden als Verschlechterung empfunden."
+                }
+              ]
+            }
+          ],
+          "regel": "Faustregel: Abschöpfung bei technischem Vorsprung, Durchdringung bei austauschbaren Produkten in einem Massenmarkt."
+        },
+        {
+          "typ": "absatz",
+          "text": "Wie stark eine Preisänderung überhaupt wirkt, beschreibt die {{begriff:preiselastizitaet|Preiselastizität}}. Reagiert die Nachfrage stark, ist sie elastisch — dann kostet schon eine kleine Erhöhung viel Absatz. Bei unelastischer Nachfrage, etwa bei Grundnahrungsmitteln oder Medikamenten, ändert sich kaum etwas."
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Hersteller bringt ein technisch überlegenes Gerät auf den Markt, das es so noch nicht gibt. Welche Strategie liegt nahe?",
+          "optionen": [
+            {
+              "text": "Penetration, um schnell Marktanteil zu holen",
+              "richtig": false,
+              "echo": "Möglich, aber es verschenkt Geld. Solange kein Wettbewerber existiert, gibt es Käufer, die deutlich mehr zahlen würden — ein niedriger Einstiegspreis lässt diesen Ertrag liegen."
+            },
+            {
+              "text": "Skimming, weil ein Vorsprung besteht",
+              "richtig": true,
+              "echo": "Richtig. Ein technischer Vorsprung ist genau die Voraussetzung für die Abschöpfungsstrategie: Zuerst zahlen die Interessierten den hohen Preis, danach wird schrittweise gesenkt und die nächste Käuferschicht erschlossen. Der Nachteil bleibt: hohe Preise ziehen Nachahmer an."
+            },
+            {
+              "text": "Preis genau auf Höhe der Konkurrenz",
+              "richtig": false,
+              "echo": "Es gibt keine vergleichbare Konkurrenz — daran lässt sich also gar nicht anknüpfen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "d3",
+      "titel": "Konditionen sind auch Preis",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Zur Preispolitik gehört mehr als die Zahl auf dem Etikett. Rabatte, Skonto, Zahlungsziele und Lieferbedingungen verändern den tatsächlich gezahlten Preis — oft stärker als eine Preisänderung selbst, und deutlich unauffälliger."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kondition",
+            "Wirkung",
+            "Aus Lernfeld 6"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Mengenrabatt",
+                "Anreiz für größere Bestellmengen",
+                "mindert den Rechnungsbetrag sofort"
+              ]
+            },
+            {
+              "zellen": [
+                "Treuerabatt",
+                "bindet den Kunden über Zeit",
+                "wird nicht separat gebucht"
+              ]
+            },
+            {
+              "zellen": [
+                "Skonto",
+                "Anreiz für schnelle Zahlung",
+                "separat gebucht als Aufwand oder Ertrag"
+              ],
+              "detail": "**Der Zusammenhang mit Lernfeld 6:** Zwei Prozent Skonto bei zwanzig Tagen entsprechen etwa 36 Prozent Jahreszins. Für den Kunden ist das ein starker Anreiz — für dich als Anbieter ein teures Instrument, das du bewusst einsetzen solltest."
+            },
+            {
+              "zellen": [
+                "Zahlungsziel",
+                "verschafft dem Kunden Liquidität",
+                "bindet deine eigene"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Zu welchem Instrument des Marketing-Mix gehört die Maßnahme?",
+          "kategorien": [
+            "Produkt",
+            "Preis",
+            "Distribution",
+            "Kommunikation"
+          ],
+          "aufgaben": [
+            {
+              "text": "Ab 500 Stück gibt es 5 % Nachlass.",
+              "loesung": "Preis"
+            },
+            {
+              "text": "Die Ware wird künftig auch über einen Onlineshop verkauft.",
+              "loesung": "Distribution"
+            },
+            {
+              "text": "Die Verpackung wird auf Recyclingmaterial umgestellt.",
+              "loesung": "Produkt"
+            },
+            {
+              "text": "Eine Anzeige erscheint in der Branchenzeitschrift.",
+              "loesung": "Kommunikation"
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Rabatte wirken sofort und lassen sich schwer zurücknehmen. Wer regelmäßig nachlässt, erzieht seine Kunden dazu, auf den nächsten Nachlass zu warten — und verkauft danach nichts mehr zum Listenpreis. Zeitlich befristete Aktionen sind deshalb weniger schädlich als dauerhafte Nachlässe."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Preispolitik wirkt am schnellsten und am gefährlichsten von allen vier Instrumenten.",
+    "Kostenorientiert liefert die Preisuntergrenze, marktorientiert die Preisobergrenze.",
+    "Liegt die Untergrenze über der Obergrenze, muss an den Kosten gearbeitet werden.",
+    "Skimming: hoch einsteigen, langsam senken — bei technischem Vorsprung.",
+    "Penetration: tief einsteigen, Marktanteil holen — bei austauschbaren Massenprodukten.",
+    "Preiselastizität misst, wie stark die Nachfrage auf Preisänderungen reagiert.",
+    "Rabatte, Skonto und Zahlungsziele sind Preispolitik, auch wenn der Listenpreis gleich bleibt."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre Abschöpfungs- und Durchdringungsstrategie mit je einer Voraussetzung.",
+      "loesung": "Bei der Abschöpfungsstrategie wird mit einem hohen Preis eingestiegen, der schrittweise gesenkt wird. Voraussetzung ist ein Vorsprung — technisch oder zeitlich —, denn nur ohne gleichwertige Konkurrenz zahlt jemand den hohen Einstiegspreis. Bei der Durchdringungsstrategie wird mit einem niedrigen Preis eingestiegen, um schnell Marktanteil zu gewinnen. Voraussetzung ist ein Massenmarkt mit austauschbaren Produkten, in dem Stückzahlen die Kosten senken."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum gehören Rabatte und Zahlungsziele zur Preispolitik und nicht zur Kommunikationspolitik, obwohl sie beworben werden?",
+      "loesung": "Weil sie den Betrag verändern, den der Kunde tatsächlich zahlt oder zu dem er zahlt. Der Listenpreis mag gleich bleiben, der effektive Preis sinkt. Dass eine Rabattaktion beworben wird, ist eine kommunikationspolitische Maßnahme über eine preispolitische Entscheidung — die Entscheidung selbst bleibt Preispolitik."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Die Selbstkosten eines Artikels liegen bei 82 €. Der Markt zahlt höchstens 75 €. Wie beurteilst du die Lage und was ist zu tun?",
+      "loesung": "Die Preisuntergrenze aus der Kostenrechnung liegt über der Preisobergrenze des Marktes — es gibt keinen Preisspielraum. Der Artikel ist zu diesen Kosten nicht am Markt darstellbar. Zu prüfen ist deshalb die Kostenseite: günstiger einkaufen, Handlungskosten senken oder größere Mengen. Erst wenn die Selbstkosten unter 75 € liegen, ist ein tragfähiger Preis möglich."
+    }
+  ],
+  "pruefungstipp": "Skimming und Penetration werden fast immer über ein Fallbeispiel abgefragt — achte auf das Stichwort Vorsprung oder Massenmarkt. Und merke dir die Richtung: Preisuntergrenze kommt aus den Kosten, Preisobergrenze aus dem Markt."
+}

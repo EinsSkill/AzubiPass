@@ -1,0 +1,276 @@
+/* Dieselbe Zweiteilung wie in azubipass.css: --creme heißt „helles Licht auf
+   dunklem Grund" und wechselt nie, --grund ist die Farbe der Seite selbst.
+   Die dunklen Bänder bleiben dunkel, sie werden im dunklen Modus nur eine
+   Stufe heller als der Grund. */
+:root{
+  --tinte:#1B4332; --tinte-tief:#12301F; --tinte-hell:#2A5A44;
+  --gold:#C9A227; --gold-matt:#A88A2C;
+  --gold-text:#7A5F0E;
+  --gold-gross:#A38219; --gruen-hell:#7FC4A0;
+  --creme:#F5F5F0; --grund:#F5F5F0; --papier:#FBFBF8;
+  --text:#1A1D1A; --text-sek:#63685F; --linie:#DDDCD2; --warn:#8C3A2B;
+  --feld:#FFFFFF; --kopf-grund:rgba(245,245,240,.94);
+  /* Dunkle Fläche mit hellem Text darauf — bleibt in beiden Stimmungen dunkel.
+     --tinte ist die Schriftfarbe und dreht sich um, --insel nicht. */
+  --insel:#1B4332;
+  --serif:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --mass:1180px;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --tinte:#7FC4A0; --tinte-tief:#21251F; --tinte-hell:#95D3B2;
+    --gold:#D6B44A; --gold-matt:#B79A3C; --gold-text:#D9B85A; --gold-gross:#C9A227;
+    --grund:#141614; --papier:#1C1F1C;
+    --text:#E8E8E2; --text-sek:#9BA197; --linie:#31362F;
+    --feld:#232722; --kopf-grund:rgba(20,22,20,.94);
+    --insel:#252A23;
+  }
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--grund);color:var(--text);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:rgba(201,162,39,.22);}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+button,input,textarea{font:inherit;}
+a{color:inherit;}
+h1,h2,h3{letter-spacing:-.02em;margin:0;}
+.mitte{max-width:var(--mass);margin:0 auto;padding:0 40px;}
+.mitte.schmal{max-width:760px;}
+.band{padding:96px 0;}
+
+/* Kopf */
+/* Die Polsterung wechselt ohne Übergang: Sie an einem feststehenden Kopf zu
+   animieren heißt, bei jedem Bild das Layout neu zu rechnen — und zwar
+   während gescrollt wird. Der Farbübergang trägt die Bewegung ohnehin. */
+.kopf{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:16px 40px;color:var(--creme);transition:background .4s,color .4s,border-color .4s;border-bottom:1px solid transparent;}
+.kopf.fest{background:var(--kopf-grund);backdrop-filter:blur(10px);color:var(--text);border-bottom-color:var(--linie);padding-top:11px;padding-bottom:11px;}
+.kopf.fest .wortmarke i{color:var(--gold-text);}
+.wortmarke{font-family:var(--serif);font-size:21px;font-weight:600;text-decoration:none;letter-spacing:-.015em;display:inline-flex;align-items:center;min-height:44px;}
+.wortmarke i{font-style:normal;color:var(--gold);}
+.nav{display:flex;align-items:center;gap:26px;font-family:var(--sans);font-size:14px;}
+.nav a{text-decoration:none;opacity:.82;display:inline-flex;align-items:center;min-height:44px;}
+.nav a:hover{opacity:1;}
+
+/* Knöpfe */
+.kn-gold,.kn-leer,.kn-dunkel,.kn-text{font-family:var(--sans);font-weight:600;border-radius:2px;cursor:pointer;display:inline-flex;align-items:center;gap:12px;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s,opacity .2s;}
+.kn-gold{background:var(--gold);color:var(--tinte-tief);border:1px solid var(--gold);padding:15px 26px;font-size:15px;}
+.kn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(18,48,31,.28);}
+.kn-gold svg{transition:transform .2s;}
+.kn-gold:hover svg{transform:translateX(4px);}
+.kn-gold.klein{padding:11px 16px;min-height:44px;font-size:13.5px;}
+.kn-gold.gross-kn{padding:17px 32px;font-size:16px;margin:22px 0 14px;}
+.kn-leer{background:transparent;color:inherit;border:1px solid currentColor;padding:15px 24px;font-size:15px;opacity:.75;}
+.kn-leer:hover{opacity:1;}
+.kn-dunkel{background:var(--insel);color:var(--creme);border:1px solid var(--insel);padding:13px 20px;min-height:44px;font-size:14px;}
+.kn-dunkel:disabled{opacity:.32;cursor:not-allowed;}
+.kn-dunkel:not(:disabled):hover{background:var(--tinte-tief);}
+.kn-text{background:none;border:1px solid var(--linie);color:var(--text-sek);padding:10px 17px;font-size:13.5px;}
+.kn-text:hover{border-color:var(--text-sek);color:var(--text);}
+
+/* ---------------- HERO ---------------- */
+.hero{min-height:100vh;background:var(--tinte-tief);color:var(--creme);display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:64px;align-items:center;padding:130px 40px 70px;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(70% 60% at 8% 25%,rgba(201,162,39,.15),transparent 62%);}
+.hero-links,.hero-rechts{position:relative;z-index:2;}
+.hero-links{max-width:560px;justify-self:end;}
+.augenbraue{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 26px;display:flex;align-items:center;gap:13px;}
+.augenbraue::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--gold-matt),transparent);}
+.hero h1{font-size:clamp(46px,5.6vw,80px);line-height:.98;font-weight:700;letter-spacing:-.03em;margin-bottom:26px;}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-lead{font-size:19px;line-height:1.6;color:rgba(245,245,240,.75);margin:0 0 34px;max-width:46ch;}
+.hero-knoepfe{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px;}
+.hero-fakten{list-style:none;display:flex;margin:0;padding:26px 0 0;border-top:1px solid rgba(245,245,240,.16);gap:0;}
+.hero-fakten li{font-family:var(--sans);font-size:12px;color:rgba(245,245,240,.55);padding-right:30px;margin-right:30px;border-right:1px solid rgba(245,245,240,.14);}
+.hero-fakten li:last-child{border-right:0;}
+.hero-fakten b{display:block;font-family:var(--serif);font-size:30px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:5px;font-variant-numeric:tabular-nums;}
+
+.hero-rechts{margin:0;max-width:620px;}
+.rahmen{background:rgba(245,245,240,.045);border:1px solid rgba(245,245,240,.16);border-radius:3px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.35);}
+.rahmen-kopf{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid rgba(245,245,240,.13);font-family:var(--sans);font-size:12px;color:rgba(245,245,240,.55);}
+.rahmen-punkt{width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none;animation:pulsen 2.6s ease-in-out infinite;}
+@keyframes pulsen{0%,100%{opacity:.4;}50%{opacity:1;}}
+.rahmen-fuss{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 16px;border-top:1px solid rgba(245,245,240,.13);font-family:var(--sans);font-size:12px;flex-wrap:wrap;}
+.stufe-name{color:var(--gold);font-weight:600;}
+.legende{color:rgba(245,245,240,.5);}
+.legende i{display:inline-block;width:20px;border-top:2px solid;margin:0 7px 0 16px;vertical-align:middle;}
+.legende i:first-child{margin-left:0;}
+.legende .g{border-color:var(--gold);}
+.legende .m{border-color:var(--gruen-hell);border-top-style:dashed;}
+.hero-rechts figcaption{font-family:var(--sans);font-size:12.5px;color:rgba(245,245,240,.42);margin-top:13px;text-align:right;}
+#kreislauf svg{width:100%;height:auto;display:block;overflow:visible;}
+.kp rect{fill:rgba(201,162,39,.13);stroke:var(--gold);stroke-width:1.3;}
+.kp text{fill:var(--gold);font-family:var(--sans);font-size:13px;font-weight:600;}
+.kpfeil{fill:none;stroke-width:1.8;stroke-linecap:round;}
+.kpfeil.guter{stroke:var(--gold);}
+.kpfeil.geld{stroke:var(--gruen-hell);stroke-width:1.5;stroke-dasharray:6 5;}
+.kschild rect{fill:#12301F;}
+.kschild text{font-family:var(--sans);font-size:11.5px;font-weight:500;}
+.kschild.guter text{fill:var(--gold);}
+.kschild.geld text{fill:var(--gruen-hell);}
+
+/* ---------------- Bänder ---------------- */
+h2{font-size:clamp(30px,3.4vw,42px);font-weight:700;line-height:1.12;}
+.unter{font-size:19px;color:var(--text-sek);margin:14px 0 46px;max-width:62ch;}
+.gross{font-size:23px;line-height:1.5;}
+.klein-grau{font-family:var(--sans);font-size:13.5px;color:var(--text-sek);}
+.problem{background:var(--papier);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie);padding:80px 0;}
+.problem .gross{margin:0 0 18px;}
+.problem p:last-child{margin:0;color:var(--text-sek);}
+
+/* Beweis */
+.beweis-zeile{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:center;padding:44px 0;border-top:1px solid var(--linie);}
+.beweis-zeile.umgekehrt .beweis-text{order:2;}
+.marke{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid var(--gold-text);color:var(--gold-text);margin-bottom:16px;}
+.beweis-text h3{font-size:25px;line-height:1.22;margin-bottom:12px;}
+.beweis-text p{color:var(--text-sek);margin:0;font-size:17px;}
+.beweis-box{background:var(--papier);border:1px solid var(--linie);border-left:3px solid var(--gold);padding:24px 26px;}
+.beweis-box.dunkel{background:var(--tinte-tief);border-color:rgba(245,245,240,.14);border-left-color:var(--gold);color:var(--creme);}
+.frage-typ{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-text);margin:0 0 9px;}
+.frage-text{font-size:19px;margin:0 0 15px;}
+.beweis-box textarea{width:100%;min-height:78px;padding:12px 14px;border:1px solid var(--linie);background:var(--feld);font-family:var(--serif);font-size:16.5px;line-height:1.5;resize:vertical;color:var(--text);}
+.beweis-box textarea:focus{border-color:var(--tinte);outline:none;box-shadow:0 0 0 3px rgba(27,67,50,.1);}
+.knopfreihe{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;}
+.loesung{display:none;margin-top:15px;padding:17px 20px;background:var(--feld);border-left:3px solid var(--tinte);font-size:16px;}
+.loesung.offen{display:block;animation:auf .4s ease;}
+.loesung.luecke{border-left-color:var(--warn);}
+.loesung .lk{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--tinte);margin:0 0 7px;}
+.loesung.luecke .lk{color:var(--warn);}
+.loesung p:last-child{margin:0;}
+@keyframes auf{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
+.kauf-hinweis{display:none;margin-top:14px;padding-top:14px;border-top:1px dashed var(--linie);font-family:var(--sans);font-size:14px;color:var(--text-sek);align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+.kauf-hinweis.offen{display:flex;animation:auf .5s ease;}
+
+.regler{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;}
+.regler label{font-family:var(--sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,245,240,.5);display:block;}
+.regler input{width:100%;margin-top:9px;accent-color:var(--gold);}
+.bilanz{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end;}
+.saeule-kopf{font-family:var(--sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:0 0 9px;}
+.saeule{display:flex;flex-direction:column;justify-content:flex-end;height:170px;}
+.blk{display:flex;flex-direction:column;justify-content:center;padding:0 12px;font-family:var(--sans);font-size:12px;color:var(--creme);height:0;overflow:hidden;transition:height .45s cubic-bezier(.3,.8,.3,1);}
+.blk span{font-family:var(--mono);font-size:12.5px;opacity:.75;font-variant-numeric:tabular-nums;}
+/* Feste Töne, keine Variablen: Die Säulen liegen auf einer dunklen Fläche und
+   tragen helle Schrift — sie dürfen sich in der dunklen Stimmung nicht
+   aufhellen, sonst steht Creme auf Hellgrün. */
+.b1{background:#2A5A44;} .b2{background:#3A6E55;}
+.b3{background:#CFA829;color:#0E2517;} .b4{background:#7A6420;}
+.waage{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12.5px;color:var(--gold);border-top:1.5px solid var(--gold);margin:11px 0 0;padding-top:9px;font-variant-numeric:tabular-nums;}
+.warn{display:none;font-family:var(--sans);font-size:13.5px;color:#E8B4A6;margin:12px 0 0;}
+.warn.da{display:block;}
+
+.pruefzeile{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+.pruef-links b{display:block;font-family:var(--sans);font-size:14.5px;margin-bottom:4px;}
+.pruef-links span{font-family:var(--mono);font-size:12.5px;color:var(--text-sek);}
+.melde-echo{display:none;font-family:var(--sans);font-size:14px;color:var(--text-sek);margin:15px 0 0;padding-left:13px;border-left:2px solid var(--gold);}
+.melde-echo.da{display:block;animation:auf .4s ease;}
+
+/* Person */
+.person{background:var(--insel);color:var(--creme);text-align:center;}
+.portrait{width:96px;height:96px;margin:0 auto 26px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:32px;font-weight:600;color:var(--gold);background:rgba(201,162,39,.1);}
+.person h2{margin-bottom:20px;}
+.person .gross{color:rgba(245,245,240,.9);margin:0 0 16px;}
+.person .zitat{color:var(--gold);}
+.person p{color:rgba(245,245,240,.62);}
+.zitat{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--gold-gross);border-left:2px solid var(--gold);padding-left:20px;text-align:left;display:inline-block;margin-top:26px;}
+
+/* Countdown */
+.countdown{background:var(--papier);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie);}
+.cd-box{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;}
+.cd-zahl{text-align:center;border-right:1px solid var(--linie);padding-right:48px;}
+.cd-zahl b{display:block;font-family:var(--serif);font-size:86px;font-weight:700;line-height:.9;color:var(--gold-gross);font-variant-numeric:tabular-nums;}
+.cd-zahl span{font-family:var(--sans);font-size:12.5px;color:var(--text-sek);display:block;margin-top:12px;max-width:190px;}
+.cd-text p{margin:0 0 12px;color:var(--text-sek);}
+.cd-text p b{color:var(--text);}
+
+/* Katalog */
+.filter{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:26px;}
+.filter-gruppe{display:flex;gap:6px;flex-wrap:wrap;}
+.filter button{font-family:var(--sans);font-size:13px;padding:10px 14px;min-height:44px;border:1px solid var(--linie);background:var(--papier);cursor:pointer;border-radius:2px;color:var(--text-sek);transition:border-color .2s,background .2s,color .2s;}
+.filter button:hover{border-color:var(--tinte);color:var(--text);}
+.filter button.an{background:var(--insel);border-color:var(--insel);color:var(--creme);}
+.lf-liste{list-style:none;margin:0;padding:0;border-top:1px solid var(--linie);}
+.lf{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:center;padding:16px 0;border-bottom:1px solid var(--linie);transition:background .2s;}
+.lf.offen:hover{background:rgba(27,67,50,.045);}
+.lf.weg{display:none;}
+.lf-nr{font-family:var(--mono);font-size:12.5px;color:var(--gold-text);}
+.lf-titel{font-size:18px;text-decoration:none;display:flex;align-items:center;min-height:44px;transition:color .2s;}
+.lf-titel:hover{color:var(--gold-text);}
+.lf-titel.gesperrt{color:var(--text-sek);}
+.lf-umfang{white-space:nowrap;}
+.lf-oeffnen{display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-size:13px;font-weight:600;color:var(--tinte);text-decoration:none;border:1px solid var(--linie);border-radius:2px;padding:10px 14px;min-height:44px;transition:border-color .2s,background .2s;}
+.lf.offen:hover .lf-oeffnen{border-color:var(--insel);background:var(--insel);color:var(--creme);}
+.lf-oeffnen svg{transition:transform .2s;}
+.lf.offen:hover .lf-oeffnen svg{transform:translateX(3px);}
+.lf-merken{font-family:var(--sans);font-size:12.5px;color:var(--text-sek);background:none;border:1px dashed var(--linie);border-radius:2px;padding:10px 13px;min-height:44px;cursor:pointer;transition:border-color .2s,color .2s;}
+.lf-merken:hover{border-color:var(--gold-text);color:var(--gold-text);}
+.pill.spaeter{color:var(--text-sek);border-color:var(--linie);opacity:.7;}
+.einwilligung{width:100%;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:rgba(245,245,240,.5);margin:10px 0 0;max-width:52ch;}
+.einwilligung a{color:rgba(245,245,240,.7);}
+.lf-meta{font-family:var(--mono);font-size:11.5px;color:var(--text-sek);display:block;margin-top:3px;}
+.lf-rechts{display:flex;align-items:center;gap:14px;justify-content:flex-end;flex-wrap:wrap;min-width:0;}
+.pill{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border:1px solid;}
+.pill.frei{color:var(--gold-text);border-color:var(--gold-text);background:rgba(201,162,39,.1);}
+.pill.fertig{color:var(--tinte);border-color:var(--tinte);background:rgba(42,107,74,.08);}
+.pill.geplant{color:var(--text-sek);border-color:var(--linie);}
+.termin{font-family:var(--mono);font-size:12px;color:var(--text-sek);}
+.lf-preis{font-family:var(--mono);font-size:13.5px;min-width:76px;text-align:right;}
+.leer-hinweis{display:none;font-family:var(--sans);font-size:14px;color:var(--text-sek);padding:26px 0;}
+.leer-hinweis.da{display:block;}
+.bescheid{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;margin-top:34px;padding:24px 26px;background:var(--insel);color:var(--creme);}
+.bescheid b{display:block;font-family:var(--sans);font-size:15px;margin-bottom:4px;}
+.bescheid span{font-family:var(--sans);font-size:13.5px;color:rgba(245,245,240,.62);}
+.bescheid-form{display:flex;gap:9px;flex-wrap:wrap;}
+/* Ein Schieberegler ist 16 px hoch — mit dem Daumen kaum zu fassen. Die Bahn
+   bleibt schmal, der greifbare Bereich wird hoch genug. */
+.regler input[type=range]{width:100%;height:44px;}
+.bescheid-form input::placeholder{color:rgba(245,245,240,.4);}
+.bescheid-form input:focus{outline:none;border-color:var(--gold);}
+.bescheid-echo{display:none;width:100%;font-family:var(--sans);font-size:13.5px;color:var(--gold);margin:0;padding-top:14px;border-top:1px solid rgba(245,245,240,.14);}
+.bescheid-echo.da{display:block;animation:auf .4s ease;}
+
+/* Stimmen & Abschluss */
+.stimmen{text-align:center;padding:76px 0;}
+.stimmen .zitat{text-align:left;color:var(--gold-gross);}
+.stimmen .klein-grau{margin-top:22px;}
+.abschluss{background:var(--tinte-tief);color:var(--creme);text-align:center;}
+.abschluss .gross{color:rgba(245,245,240,.72);margin:16px 0 0;}
+.abschluss .klein-grau{color:rgba(245,245,240,.42);}
+
+/* Fuß */
+.fuss{background:var(--tinte-tief);color:rgba(245,245,240,.5);padding:34px 0 46px;border-top:1px solid rgba(245,245,240,.12);font-family:var(--sans);font-size:13px;}
+.fuss .mitte{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;}
+.fuss .wortmarke{color:var(--creme);}
+.fuss nav{display:flex;gap:20px;flex-wrap:wrap;}
+.fuss nav a{display:inline-flex;align-items:center;min-height:44px;}
+.fuss a{text-decoration:none;}
+.fuss a:hover{color:var(--gold);}
+.fuss p{width:100%;margin:0;font-size:12px;opacity:.6;line-height:1.6;}
+
+/* Scroll-Auftritt */
+.rein{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1);}
+.rein.da{opacity:1;transform:none;}
+
+@media (max-width:1000px){
+  .hero{grid-template-columns:1fr;gap:44px;padding:110px 24px 60px;min-height:auto;}
+  .hero-links{justify-self:stretch;max-width:none;order:1;}
+  .hero-rechts{order:2;max-width:none;}
+  .beweis-zeile{grid-template-columns:1fr;gap:26px;}
+  .beweis-zeile.umgekehrt .beweis-text{order:0;}
+  .cd-box{grid-template-columns:1fr;gap:26px;}
+  .cd-zahl{border-right:0;border-bottom:1px solid var(--linie);padding:0 0 22px;text-align:left;}
+  .cd-zahl span{margin-left:0;}
+  .mitte{padding:0 24px;}
+  .band{padding:64px 0;}
+  .kopf{padding:12px 20px;}
+  .nav a:not(.kn-gold){display:none;}
+  .lf{grid-template-columns:52px 1fr;gap:12px;}
+  .lf-rechts{grid-column:2;justify-content:flex-start;}
+  .lf-preis{min-width:0;text-align:left;}
+  .hero-fakten{flex-wrap:wrap;gap:14px 0;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms !important;transition-duration:.01ms !important;}
+  html{scroll-behavior:auto;}
+  .rein{opacity:1;transform:none;}
+  .klabel{opacity:1;}
+}

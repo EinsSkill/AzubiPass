@@ -1,0 +1,278 @@
+{
+  "id": "k2",
+  "lernfeld": "lf11",
+  "nummer": 2,
+  "titel": "Prozesse darstellen",
+  "untertitel": "Ein Bild, über das drei Abteilungen streiten können — das ist der Sinn.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Symbole des Flussdiagramms richtig verwenden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Eine Zuständigkeitsdarstellung lesen und erstellen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die passende Darstellungsform auswählen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Das Flussdiagramm",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein Prozess in Worten ist schwer zu prüfen. ==Als Bild fällt sofort auf, wo eine Rückfrage im Kreis läuft oder ein Fall nicht abgedeckt ist.== Das Flussdiagramm nutzt dafür wenige, feste Symbole."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Symbol",
+            "Bedeutung",
+            "Regel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Abgerundetes Rechteck",
+                "Start oder Ende",
+                "genau ein Start, mindestens ein Ende"
+              ],
+              "detail": "**Jeder Prozess braucht einen eindeutigen Anfang.** Mehrere Enden sind erlaubt — etwa erfolgreicher Abschluss und Abbruch."
+            },
+            {
+              "zellen": [
+                "Rechteck",
+                "Tätigkeit",
+                "eine Tätigkeit je Kasten"
+              ],
+              "detail": "**Formuliert als Verb plus Gegenstand:** „Angebot erstellen\", nicht „Angebot\". Wer nur Substantive schreibt, verliert die Information, was eigentlich getan wird."
+            },
+            {
+              "zellen": [
+                "Raute",
+                "Entscheidung",
+                "genau eine Frage, mindestens zwei Ausgänge"
+              ],
+              "detail": "**Die Frage muss eindeutig beantwortbar sein.** Jeder Ausgang wird beschriftet — meist mit ja und nein. Ein unbeschrifteter Ausgang ist ein Fehler."
+            },
+            {
+              "zellen": [
+                "Parallelogramm",
+                "Ein- oder Ausgabe",
+                "Daten, Formulare, Belege"
+              ]
+            },
+            {
+              "zellen": [
+                "Pfeil",
+                "Reihenfolge",
+                "immer gerichtet"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Zwei Fehler machen jedes Flussdiagramm unbrauchbar: **ein Entscheidungsausgang ohne Beschriftung** und **ein Pfeil, der ins Leere führt**. Prüfe am Ende jeden Weg — jeder muss an einem Ende ankommen."
+        },
+        {
+          "typ": "merke",
+          "text": "**Rechteck ist Tätigkeit, Raute ist Entscheidung.** Tätigkeiten heißen Verb plus Gegenstand, Entscheidungsausgänge werden immer beschriftet.",
+          "karteikarte": "Welche Symbole nutzt das Flussdiagramm, und welche zwei Fehler machen es unbrauchbar?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Wer macht was",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein Flussdiagramm zeigt die Reihenfolge, aber nicht die Zuständigkeit. Dafür wird die Darstellung in **Bahnen** geteilt — je Beteiligtem eine. ==Der Nutzen zeigt sich sofort: Jeder Wechsel der Bahn ist eine Schnittstelle.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Fünf Schritte",
+          "titel": "So nimmst du einen Prozess auf",
+          "lead": "Nicht am Schreibtisch erfinden — bei den Beteiligten erheben. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Grenzen festlegen",
+              "satz": "wo beginnt, wo endet er?",
+              "text": "Ohne klare Grenzen wächst die Aufnahme ins Uferlose. Erst den Auslöser und das Ergebnis festlegen, dann alles dazwischen betrachten."
+            },
+            {
+              "nr": 2,
+              "titel": "Beteiligte befragen",
+              "satz": "wie es wirklich läuft",
+              "text": "Nicht wie es in der Arbeitsanweisung steht, sondern wie tatsächlich gearbeitet wird. Die Abweichung zwischen beidem ist oft schon das interessanteste Ergebnis."
+            },
+            {
+              "nr": 3,
+              "titel": "Schritte ordnen",
+              "satz": "in Bahnen je Beteiligtem",
+              "text": "Jeder Beteiligte bekommt eine Bahn, jeder Schritt wandert in die Bahn dessen, der ihn ausführt. Die Pfeile zwischen den Bahnen sind die Schnittstellen."
+            },
+            {
+              "nr": 4,
+              "titel": "Sonderfälle ergänzen",
+              "satz": "was, wenn nicht?",
+              "text": "Was passiert bei fehlenden Unterlagen, bei Abwesenheit, bei einer Reklamation? Prozesse scheitern selten am Normalfall, fast immer an der Ausnahme."
+            },
+            {
+              "nr": 5,
+              "titel": "Gemeinsam prüfen",
+              "satz": "erkennen sich alle wieder?",
+              "text": "Das Bild wird mit den Beteiligten durchgesprochen. Erkennt jemand seine Arbeit nicht wieder, stimmt die Aufnahme nicht — oder es gibt zwei verschiedene Arbeitsweisen, die niemand kannte."
+            }
+          ],
+          "regel": "Der eigentliche Nutzen entsteht in Schritt 5: Beim gemeinsamen Draufschauen stellt sich regelmäßig heraus, dass zwei Abteilungen völlig verschiedene Vorstellungen vom selben Ablauf hatten."
+        },
+        {
+          "typ": "merke",
+          "text": "**Bahnen je Beteiligtem, jeder Bahnwechsel ist eine Schnittstelle.** Aufgenommen wird, wie tatsächlich gearbeitet wird — nicht, wie es vorgeschrieben ist.",
+          "karteikarte": "Wozu dienen Bahnen in einer Prozessdarstellung, und warum nimmt man den Ist-Zustand auf statt des Soll-Zustands?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Welche Darstellung wofür",
+      "inhalt": [
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Form",
+            "Stärke",
+            "Passt für"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Flussdiagramm",
+                "zeigt Verzweigungen klar",
+                "Abläufe mit Entscheidungen"
+              ]
+            },
+            {
+              "zellen": [
+                "Darstellung in Bahnen",
+                "zeigt Zuständigkeiten und Schnittstellen",
+                "abteilungsübergreifende Prozesse"
+              ],
+              "detail": "**Die beste Wahl für Verbesserungsprojekte**, weil sie genau das sichtbar macht, wo die Probleme sitzen."
+            },
+            {
+              "zellen": [
+                "Checkliste",
+                "einfach, sofort nutzbar",
+                "kurze Abläufe ohne Verzweigung"
+              ],
+              "detail": "**Unterschätzt.** Für einen Ablauf ohne Entscheidungen ist ein Diagramm Aufwand ohne Nutzen — eine Liste tut es besser."
+            },
+            {
+              "zellen": [
+                "Arbeitsanweisung",
+                "verbindlich, prüfbar",
+                "Qualitätsmanagement, Nachweise"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Zeichne den Prozess so, dass er auf **eine Seite** passt. Was mehr Platz braucht, ist entweder zu fein aufgenommen oder in Wahrheit mehrere Prozesse. Ein Diagramm, das niemand überblickt, wird auch von niemandem genutzt."
+        },
+        {
+          "typ": "check",
+          "frage": "Ihr wollt herausfinden, warum die Auftragsbearbeitung zwischen Vertrieb, Lager und Buchhaltung so lange dauert. Welche Darstellung wählst du?",
+          "optionen": [
+            {
+              "text": "Eine Checkliste der Arbeitsschritte",
+              "richtig": false,
+              "echo": "Eine Liste zeigt die Reihenfolge, aber weder Zuständigkeiten noch Übergaben. Genau dort liegt hier aber die Frage."
+            },
+            {
+              "text": "Eine Darstellung in Bahnen je Abteilung",
+              "richtig": true,
+              "echo": "Richtig. Bei einem abteilungsübergreifenden Prozess ist die Frage nach der Dauer fast immer eine Frage nach den Übergaben. Die Bahnendarstellung ordnet jeden Schritt der ausführenden Stelle zu, und jeder Pfeil zwischen zwei Bahnen ist eine Schnittstelle mit Wartezeit. Damit wird auf einen Blick sichtbar, wie oft der Vorgang die Zuständigkeit wechselt — und das ist der übliche Grund für lange Durchlaufzeiten."
+            },
+            {
+              "text": "Eine Arbeitsanweisung je Abteilung",
+              "richtig": false,
+              "echo": "Arbeitsanweisungen beschreiben, wie innerhalb einer Stelle gearbeitet werden soll. Sie erklären gerade nicht, was zwischen den Stellen passiert."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welches Symbol gehört dazu?",
+          "kategorien": [
+            "Rechteck",
+            "Raute",
+            "Abgerundetes Rechteck"
+          ],
+          "aufgaben": [
+            {
+              "text": "Bestellung im System erfassen.",
+              "loesung": "Rechteck"
+            },
+            {
+              "text": "Ist die Ware auf Lager?",
+              "loesung": "Raute"
+            },
+            {
+              "text": "Bestellung geht ein.",
+              "loesung": "Abgerundetes Rechteck"
+            },
+            {
+              "text": "Rechnung an den Kunden senden.",
+              "loesung": "Rechteck"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Abgerundetes Rechteck ist Start oder Ende, Rechteck ist Tätigkeit, Raute ist Entscheidung.",
+    "Tätigkeiten werden als Verb plus Gegenstand formuliert.",
+    "Jeder Entscheidungsausgang wird beschriftet, jeder Weg endet an einem Ende.",
+    "Bahnen je Beteiligtem machen Zuständigkeiten und Schnittstellen sichtbar.",
+    "Aufgenommen wird der tatsächliche Ablauf, nicht der vorgeschriebene.",
+    "Sonderfälle gehören dazu — Prozesse scheitern an der Ausnahme, nicht am Normalfall.",
+    "Die Darstellung wird gemeinsam mit den Beteiligten geprüft.",
+    "Ein Prozessbild sollte auf eine Seite passen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die Symbole des Flussdiagramms mit ihrer Bedeutung und den wichtigsten Regeln.",
+      "loesung": "Das abgerundete Rechteck steht für Start und Ende; ein Prozess hat genau einen Start und mindestens ein Ende, wobei mehrere Enden etwa für Abschluss und Abbruch zulässig sind. Das Rechteck steht für eine Tätigkeit, wobei je Kasten genau eine Tätigkeit steht und die Beschriftung aus Verb und Gegenstand besteht, etwa Angebot erstellen. Die Raute steht für eine Entscheidung; sie enthält genau eine eindeutig beantwortbare Frage und hat mindestens zwei Ausgänge, die sämtlich beschriftet werden müssen. Das Parallelogramm steht für Ein- und Ausgaben wie Formulare, Belege oder Daten. Pfeile geben die Reihenfolge an und sind immer gerichtet. Zwei Fehler machen ein Diagramm unbrauchbar: ein unbeschrifteter Entscheidungsausgang und ein Pfeil, der nicht an einem Ende ankommt. Deshalb wird zum Schluss jeder mögliche Weg durchgeprüft."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Beschreibe, wie ein Prozess aufgenommen wird.",
+      "loesung": "Zuerst werden die Grenzen festgelegt, also der auslösende Vorgang und das Ergebnis; ohne diese Festlegung wächst die Aufnahme ins Uferlose. Danach werden die Beteiligten befragt, und zwar danach, wie tatsächlich gearbeitet wird, nicht danach, was in der Arbeitsanweisung steht. Die Abweichung zwischen beidem ist häufig bereits ein wichtiges Ergebnis. Anschließend werden die Schritte geordnet, üblicherweise in Bahnen je Beteiligtem, sodass jeder Schritt der ausführenden Stelle zugeordnet ist und jeder Bahnwechsel als Schnittstelle sichtbar wird. Danach werden die Sonderfälle ergänzt, etwa fehlende Unterlagen, Abwesenheiten oder Reklamationen, weil Prozesse selten am Normalfall und fast immer an der Ausnahme scheitern. Zum Schluss wird die Darstellung gemeinsam mit den Beteiligten geprüft. Erkennt jemand seine Arbeit nicht wieder, ist entweder die Aufnahme falsch, oder es existieren zwei unterschiedliche Arbeitsweisen, von denen bisher niemand wusste."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Du sollst den Prozess „Urlaubsantrag\" darstellen. Wie gehst du vor, und welche Sonderfälle bedenkst du?",
+      "loesung": "Zunächst lege ich die Grenzen fest: Auslöser ist der eingereichte Urlaubsantrag der beschäftigten Person, Ergebnis ist der genehmigte oder abgelehnte und im System erfasste Urlaub. Beteiligte sind die antragstellende Person, die Führungskraft und die Personalabteilung, sodass sich eine Darstellung in drei Bahnen anbietet. Der Normalablauf umfasst das Einreichen des Antrags, die Prüfung des Resturlaubs, die Entscheidung der Führungskraft, die Erfassung durch die Personalabteilung und die Rückmeldung an die antragstellende Person. Die Entscheidung wird als Raute mit den beschrifteten Ausgängen genehmigt und abgelehnt dargestellt, und beide Wege müssen an einem Ende ankommen. An Sonderfällen sind zu bedenken: Der Resturlaub reicht nicht aus; die Führungskraft ist abwesend, sodass eine Vertretungsregelung greifen muss; mehrere Anträge überschneiden sich und die Besetzung wäre nicht gesichert; der Antrag wird nachträglich zurückgezogen; und der Antrag bleibt unbearbeitet, sodass eine Frist oder Erinnerung nötig ist. Gerade der Fall der Abwesenheit ist wichtig, weil er in der Praxis die häufigste Ursache für liegengebliebene Anträge ist. Abschließend bespreche ich die Darstellung mit allen drei Beteiligten."
+    }
+  ],
+  "pruefungstipp": "Häufig ist ein kleines Flussdiagramm selbst zu zeichnen oder ein fehlerhaftes zu korrigieren. Achte auf drei Dinge: genau ein Start, beschriftete Ausgänge an jeder Raute, und jeder Weg endet. Bei der Frage nach der passenden Darstellungsform lautet die Antwort bei abteilungsübergreifenden Abläufen fast immer die Bahnendarstellung — mit der Begründung, dass sie Schnittstellen sichtbar macht."
+}

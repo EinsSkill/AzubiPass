@@ -1,0 +1,48 @@
+{
+  "id": "lf11",
+  "titel": "Geschäftsprozesse darstellen und optimieren",
+  "kurztitel": "Lernfeld 11",
+  "untertitel": "3. Ausbildungsjahr · Zeitrichtwert 40 Stunden",
+  "linie": "A",
+  "stand": "2026-08",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Der Vorgang liegt. *Neun von zehn Tagen.*",
+    "lead": "Wie man Abläufe sichtbar macht, misst und schneller macht — und warum die Antwort fast nie lautet, dass jemand schneller arbeiten muss.",
+    "fakten": [
+      "4 Kapitel",
+      "40 Stunden",
+      "3. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf11-k1-prozesse.kapitel.json",
+      "titel": "Was ein Geschäftsprozess ist",
+      "minuten": 20,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf11-k2-darstellen.kapitel.json",
+      "titel": "Prozesse darstellen",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf11-k3-messen.kapitel.json",
+      "titel": "Prozesse messen",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf11-k4-verbessern.kapitel.json",
+      "titel": "Prozesse verbessern",
+      "minuten": 25,
+      "frei": false
+    }
+  ]
+}

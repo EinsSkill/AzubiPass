@@ -1,0 +1,342 @@
+{
+  "id": "k4",
+  "lernfeld": "lf7",
+  "nummer": 4,
+  "titel": "Schwierige Gespräche und Feedback",
+  "untertitel": "Reklamation, Konflikt, Rückmeldung — und wo Kulturen sich unterscheiden.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Ein Reklamationsgespräch strukturiert führen",
+      "abschnitt": "d1"
+    },
+    {
+      "id": "lz2",
+      "text": "Feedback nach festen Regeln geben und annehmen",
+      "abschnitt": "d2"
+    },
+    {
+      "id": "lz3",
+      "text": "Interkulturelle Besonderheiten berücksichtigen und Gespräche bewerten",
+      "abschnitt": "d3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "d1",
+      "titel": "Die Reklamation",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine {{begriff:reklamation|Reklamation}} ist rechtlich ein Mängelanspruch — im Gespräch aber vor allem ein Beziehungsereignis. Der Kunde ist verärgert, und ==Ärger lässt sich nicht mit Argumenten auflösen==. Wer sofort sachlich antwortet, verstärkt ihn."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Fünf Schritte",
+          "titel": "Das Reklamationsgespräch",
+          "lead": "Die Reihenfolge entscheidet. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Ausreden lassen",
+              "satz": "nicht unterbrechen",
+              "text": "Der Ärger muss raus, bevor irgendetwas anderes möglich ist. Jede Unterbrechung setzt den Kunden zurück auf Anfang — und verlängert das Gespräch."
+            },
+            {
+              "nr": 2,
+              "titel": "Verständnis zeigen",
+              "satz": "den Ärger anerkennen",
+              "text": "„Das kann ich verstehen, das wäre mir auch unangenehm.“ Das ist kein Schuldeingeständnis, sondern eine Aussage über die Lage. Genau hier kippt das Gespräch — oder nicht."
+            },
+            {
+              "nr": 3,
+              "titel": "Sachverhalt klären",
+              "satz": "offene Fragen",
+              "text": "Erst jetzt zur Sache: Was genau ist passiert, wann, mit welcher Bestellung? Vorher gestellte Sachfragen wirken wie Ausweichen."
+            },
+            {
+              "nr": 4,
+              "titel": "Lösung anbieten",
+              "satz": "konkret mit Termin",
+              "text": "Was geschieht, durch wen, bis wann. „Wir kümmern uns“ ist keine Lösung. Wenn du nicht entscheiden darfst, sag, wer entscheidet und wann er sich meldet."
+            },
+            {
+              "nr": 5,
+              "titel": "Nachfassen",
+              "satz": "prüfen, ob es gewirkt hat",
+              "text": "Der Schritt, den fast alle auslassen — und der einzige, an den der Kunde sich erinnert. Ein kurzer Anruf drei Tage später macht aus einem Beschwerdeführer einen Stammkunden."
+            }
+          ],
+          "regel": "Reihenfolge merken: erst Gefühl, dann Sache. Wer mit Schritt 3 anfängt, hat den Kunden schon verloren."
+        },
+        {
+          "typ": "achtung",
+          "text": "Nie mitschimpfen und nie Kollegen belasten — „Da hat die Kollegin wieder geschlafen“ wirkt kurz entlastend und beschädigt dauerhaft das Vertrauen in den ganzen Betrieb. Nach außen bist du der Betrieb, nicht du selbst."
+        },
+        {
+          "typ": "merke",
+          "text": "Ein gut bearbeiteter Beschwerdeführer ist danach oft treuer als ein Kunde, der nie ein Problem hatte — weil er erlebt hat, dass du auch dann verlässlich bist, wenn etwas schiefgeht.",
+          "karteikarte": "In welcher Reihenfolge führst du ein Reklamationsgespräch, und warum steht das Sachliche nicht am Anfang?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "d2",
+      "titel": "Feedback geben und nehmen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:feedback|Feedback}} ist eine Rückmeldung über wahrgenommenes Verhalten — nicht über einen Menschen. ==Der Unterschied zwischen „Sie sind unzuverlässig“ und „Der Bericht kam zwei Tage nach dem Termin“== ist der Unterschied zwischen Angriff und Rückmeldung."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Rollen",
+          "titel": "Geben und Annehmen",
+          "lead": "Feedback hat auf beiden Seiten Regeln. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Feedback geben",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Beschreibend statt bewertend",
+                  "detail": "Sag, was du beobachtet hast, nicht was du daraus schließt. „Du warst dreimal zu spät“ ist überprüfbar, „Du nimmst das nicht ernst“ ist eine Unterstellung."
+                },
+                {
+                  "text": "Konkret statt allgemein",
+                  "detail": "„Immer“ und „nie“ sind fast nie wahr und lösen sofort Widerspruch aus. Nenne eine Situation, ein Datum, ein Beispiel."
+                },
+                {
+                  "text": "Zeitnah",
+                  "detail": "Feedback zu einem drei Monate alten Vorgang hilft niemandem und wirkt wie gesammelter Groll."
+                },
+                {
+                  "text": "Unter vier Augen",
+                  "detail": "Kritik vor anderen zwingt den Empfänger, sein Gesicht zu wahren — er muss sich verteidigen, auch wenn du recht hast."
+                },
+                {
+                  "text": "Ich-Botschaften verwenden",
+                  "detail": "„Mir fehlt die Rückmeldung“ statt „Sie melden sich nie“. Die eigene Wahrnehmung kann niemand bestreiten, eine Behauptung über den anderen schon."
+                }
+              ]
+            },
+            {
+              "name": "Feedback annehmen",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Zuhören, nicht rechtfertigen",
+                  "detail": "Die erste Regel und die schwerste. Rechtfertigen unterbricht den Geber und sorgt dafür, dass du die Hälfte nicht hörst."
+                },
+                {
+                  "text": "Nachfragen bei Unklarheit",
+                  "detail": "„Kannst du mir ein Beispiel nennen?“ ist erlaubt und hilfreich — es ist keine Verteidigung, sondern Verständnissicherung."
+                },
+                {
+                  "text": "Bedanken",
+                  "detail": "Auch für unangenehmes Feedback. Wer Kritik übt, geht ein Risiko ein; wer sie abwehrt, bekommt beim nächsten Mal keine mehr — und erfährt Probleme erst, wenn sie groß sind."
+                },
+                {
+                  "text": "Später entscheiden, was du übernimmst",
+                  "detail": "Feedback ist ein Angebot, kein Urteil. Du musst es nicht sofort annehmen — aber auch nicht sofort zurückweisen."
+                }
+              ]
+            }
+          ],
+          "regel": "Beide Rollen haben dieselbe Grundlage: Es geht um Verhalten in einer Situation, nicht um die Person."
+        },
+        {
+          "typ": "check",
+          "frage": "Welche Rückmeldung entspricht den Feedbackregeln?",
+          "optionen": [
+            {
+              "text": "„Du bist immer so unorganisiert.“",
+              "richtig": false,
+              "echo": "Zwei Fehler auf einmal: „immer“ ist eine unhaltbare Verallgemeinerung, „unorganisiert“ bewertet die Person statt ein Verhalten. Der Empfänger wird sich verteidigen, nicht zuhören."
+            },
+            {
+              "text": "„Die letzten zwei Protokolle kamen nach dem Termin — mir fehlt dadurch die Grundlage für den Versand.“",
+              "richtig": true,
+              "echo": "Richtig. Beschreibend, konkret, mit Zeitbezug und als Ich-Botschaft formuliert. Der Empfänger erfährt, was passiert ist und welche Folge es hatte — beides lässt sich nicht bestreiten und ist damit besprechbar."
+            },
+            {
+              "text": "„Alle finden, dass du zu langsam arbeitest.“",
+              "richtig": false,
+              "echo": "Feedback aus zweiter Hand im Namen anonymer Dritter. Es ist weder überprüfbar noch klärbar — und beschädigt zusätzlich das Verhältnis zu allen Kollegen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "d3",
+      "titel": "Andere Länder, andere Regeln",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Rahmenlehrplan verlangt ausdrücklich, interkulturelle Besonderheiten zu berücksichtigen. {{begriff:interkulturelle-kommunikation|Interkulturelle Kommunikation}} bedeutet nicht, Länderlisten auswendig zu lernen — sondern zu wissen, ==auf welchen Feldern Unterschiede überhaupt auftreten==."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Feld",
+            "Worin sich Kulturen unterscheiden",
+            "Folge im Geschäftsalltag"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Direktheit",
+                "offene Kritik oder Andeutung",
+                "Ein „schwierig“ kann ein Nein sein"
+              ],
+              "detail": "**Der häufigste Stolperstein für deutsche Betriebe.** In vielen Kulturen gilt ein direktes Nein als unhöflich; ausgedrückt wird es durch Zögern, Ausweichen oder ein sehr höfliches „wir prüfen das“. Wer das als Zustimmung liest, wartet vergeblich."
+            },
+            {
+              "zellen": [
+                "Zeitverständnis",
+                "Termin als Zusage oder als Orientierung",
+                "Pünktlichkeit wird unterschiedlich streng gesehen"
+              ]
+            },
+            {
+              "zellen": [
+                "Hierarchie",
+                "Entscheidung im Team oder an der Spitze",
+                "Der Gesprächspartner darf womöglich nichts entscheiden"
+              ]
+            },
+            {
+              "zellen": [
+                "Beziehung vor Sache",
+                "erst Vertrauen, dann Geschäft",
+                "Small Talk ist nicht Zeitverschwendung, sondern Teil der Verhandlung"
+              ]
+            },
+            {
+              "zellen": [
+                "Körpersprache",
+                "Abstand, Blickkontakt, Begrüßung",
+                "Was Nähe zeigt, kann Aufdringlichkeit bedeuten"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Die brauchbarste Haltung ist nicht Wissen, sondern Zurückhaltung im Deuten: Wenn dich etwas irritiert, ist die erste Erklärung selten die richtige. Nachfragen statt interpretieren — und im Zweifel förmlicher bleiben, als du müsstest."
+        },
+        {
+          "typ": "absatz",
+          "text": "Zum Schluss verlangt der Lehrplan etwas, das nach der Präsentation aus Lernfeld 1 bekannt vorkommt: einen **Kriterienkatalog zur Beurteilung von Gesprächssituationen**. Er wird vorher aufgestellt, nicht hinterher."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kriterium",
+            "Leitfrage"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Vorbereitung",
+                "War das Ziel vorher klar? Lagen die Unterlagen bereit?"
+              ]
+            },
+            {
+              "zellen": [
+                "Gesprächsführung",
+                "Wurden offene Fragen gestellt? Wurde ausreden gelassen?"
+              ]
+            },
+            {
+              "zellen": [
+                "Zuhören",
+                "Wurde zusammengefasst und nachgefragt?"
+              ]
+            },
+            {
+              "zellen": [
+                "Sprache",
+                "Verständlich, ohne Fachjargon, in Ich-Botschaften?"
+              ]
+            },
+            {
+              "zellen": [
+                "Ergebnis",
+                "Steht am Ende fest, wer was bis wann tut?"
+              ]
+            },
+            {
+              "zellen": [
+                "Nachbereitung",
+                "Wurde eine Notiz erstellt und Zugesagtes angestoßen?"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Feedbackregel wird verletzt?",
+          "kategorien": [
+            "Nicht beschreibend",
+            "Nicht konkret",
+            "Nicht zeitnah",
+            "Nicht unter vier Augen"
+          ],
+          "aufgaben": [
+            {
+              "text": "„Du bist unzuverlässig.“",
+              "loesung": "Nicht beschreibend"
+            },
+            {
+              "text": "„Im März lief da schon mal was schief.“",
+              "loesung": "Nicht zeitnah"
+            },
+            {
+              "text": "Kritik im Meeting vor acht Kollegen.",
+              "loesung": "Nicht unter vier Augen"
+            },
+            {
+              "text": "„Irgendwie klappt das mit dir nie so richtig.“",
+              "loesung": "Nicht konkret"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Reklamationsgespräch: ausreden lassen, Verständnis zeigen, Sachverhalt klären, Lösung anbieten, nachfassen.",
+    "Erst das Gefühl, dann die Sache — sachliche Fragen zu früh wirken wie Ausweichen.",
+    "Nie mitschimpfen, nie Kollegen belasten: nach außen bist du der Betrieb.",
+    "Feedback geben: beschreibend, konkret, zeitnah, unter vier Augen, als Ich-Botschaft.",
+    "Feedback annehmen: zuhören statt rechtfertigen, nachfragen, bedanken.",
+    "Interkulturelle Unterschiede zeigen sich bei Direktheit, Zeit, Hierarchie, Beziehung und Körpersprache.",
+    "Der Kriterienkatalog zur Gesprächsbeurteilung wird vorher aufgestellt."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die fünf Schritte eines Reklamationsgesprächs und begründe die Reihenfolge.",
+      "loesung": "Ausreden lassen, Verständnis zeigen, Sachverhalt klären, Lösung mit Termin anbieten, nachfassen. Die Reihenfolge ergibt sich daraus, dass der Kunde zunächst verärgert ist und Ärger sich nicht mit Argumenten auflösen lässt. Erst wenn er sich gehört und ernst genommen fühlt, ist er aufnahmefähig für die Sachebene. Sachfragen zu Beginn wirken wie Ausweichen und verstärken den Ärger."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Nenne fünf Regeln für das Geben von Feedback.",
+      "loesung": "Beschreibend statt bewertend — beobachtetes Verhalten schildern, nicht die Person beurteilen. Konkret statt allgemein — mit Situation und Beispiel statt „immer“ und „nie“. Zeitnah, damit die Rückmeldung noch nützt. Unter vier Augen, damit der Empfänger sein Gesicht nicht wahren muss. Und in Ich-Botschaften, weil die eigene Wahrnehmung nicht bestreitbar ist."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Geschäftspartner aus dem Ausland antwortet auf deinen Terminvorschlag mit „Das ist sehr interessant, wir schauen uns das an.“ Zwei Wochen später kommt nichts. Wie deutest du das?",
+      "loesung": "Möglicherweise war das bereits eine Absage. In vielen Kulturen gilt ein direktes Nein als unhöflich und wird durch Zögern, ausweichende Höflichkeit oder unverbindliche Zusagen ausgedrückt. Statt weiter zu warten oder Druck aufzubauen, ist eine freundliche, konkrete Rückfrage sinnvoll, die eine Absage leicht macht — etwa mit zwei klaren Alternativen und einem Zeitpunkt, bis wann eine Rückmeldung hilfreich wäre."
+    }
+  ],
+  "pruefungstipp": "Die Feedbackregeln und der Ablauf des Reklamationsgesprächs sind die beiden sicheren Kandidaten dieses Kapitels — beide werden meist als Aufzählung verlangt. Bei Fallaufgaben zu Beschwerden wird fast immer geprüft, ob du mit dem Gefühl beginnst und nicht mit der Sache."
+}

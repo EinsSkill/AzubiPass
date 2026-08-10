@@ -1,0 +1,254 @@
+{
+  "id": "k1",
+  "lernfeld": "lf8",
+  "nummer": 1,
+  "titel": "Personalbedarf ermitteln",
+  "untertitel": "Wie viele — und mit welchen Fähigkeiten.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Quantitativen und qualitativen Personalbedarf unterscheiden",
+      "abschnitt": "a1"
+    },
+    {
+      "id": "lz2",
+      "text": "Den Nettopersonalbedarf berechnen",
+      "abschnitt": "a2"
+    },
+    {
+      "id": "lz3",
+      "text": "Stellenbeschreibung und Anforderungsprofil erstellen",
+      "abschnitt": "a3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "a1",
+      "titel": "Zwei Fragen, nicht eine",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:personalbedarf|Personalbedarf}} zerfällt in zwei Fragen, die getrennt beantwortet werden müssen: ==Wie viele Menschen== braucht der Betrieb — und ==welche Fähigkeiten== müssen diese Menschen mitbringen. Wer nur die erste beantwortet, stellt Leute ein, die die Arbeit nicht können."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Art",
+            "Frage",
+            "Grundlage"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Quantitativ",
+                "Wie viele Mitarbeiter?",
+                "Arbeitsmenge, Zeitbedarf, Ausfallzeiten"
+              ]
+            },
+            {
+              "zellen": [
+                "Qualitativ",
+                "Welche Qualifikation?",
+                "Stellenbeschreibung, Anforderungsprofil"
+              ]
+            },
+            {
+              "zellen": [
+                "Zeitlich",
+                "Wann und wie lange?",
+                "Auftragslage, Saison, Projekte"
+              ],
+              "detail": "**Wird oft vergessen und ist der teuerste Fehler.** Wer den Bedarf richtig berechnet, ihn aber zum falschen Zeitpunkt deckt, zahlt entweder Leerlauf oder verliert Aufträge. Bei saisonalen Spitzen ist deshalb häufig Befristung oder Zeitarbeit die Antwort, nicht die Festanstellung."
+            },
+            {
+              "zellen": [
+                "Örtlich",
+                "An welchem Standort?",
+                "Aufbauorganisation, Filialstruktur"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Quantitativ ist eine **Zahl**, qualitativ ist ein **Profil**. Beide gehören zusammen: Drei Mitarbeiter zu suchen, ohne zu wissen, was sie können müssen, führt zu drei falschen Einstellungen.",
+          "karteikarte": "Welche vier Dimensionen hat der Personalbedarf?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "a2",
+      "titel": "Die Rechnung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der quantitative Bedarf wird in zwei Schritten ermittelt. Zuerst der **Bruttopersonalbedarf**: wie viele Kräfte theoretisch nötig sind. Davon wird der vorhandene Bestand abgezogen und um erwartete Zu- und Abgänge bereinigt — das Ergebnis ist der **Nettopersonalbedarf**, also die Zahl, die tatsächlich eingestellt oder abgebaut werden muss."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kalkulationsleiter",
+          "kopf": "Die Bedarfsrechnung",
+          "titel": "Vom Bestand zum Nettobedarf",
+          "lead": "Ändere die Werte und sieh, wie sich der tatsächliche Einstellungsbedarf verschiebt.",
+          "richtungen": [
+            "vorwaerts"
+          ],
+          "start": {
+            "id": "brutto",
+            "name": "Bruttopersonalbedarf",
+            "wert": 48
+          },
+          "stufen": [
+            {
+              "id": "bestand",
+              "name": "− vorhandener Personalbestand",
+              "art": "zuschlag-absolut",
+              "betrag": -42,
+              "ergebnis": "nach Abzug des Bestands"
+            },
+            {
+              "id": "abgaenge",
+              "name": "+ erwartete Abgänge (Rente, Kündigung)",
+              "art": "zuschlag-absolut",
+              "betrag": 5,
+              "ergebnis": "nach Abgängen"
+            },
+            {
+              "id": "zugaenge",
+              "name": "− feststehende Zugänge (Übernahme Azubis)",
+              "art": "zuschlag-absolut",
+              "betrag": -3,
+              "ergebnis": "Nettopersonalbedarf",
+              "marke": true
+            }
+          ],
+          "regel": "Nettopersonalbedarf = Bruttobedarf − Bestand + Abgänge − Zugänge. Ein negatives Ergebnis bedeutet Überdeckung — dann geht es um Freisetzung statt um Beschaffung.",
+          "einheit": "Personen",
+          "spaltenkopf": "Personen"
+        },
+        {
+          "typ": "check",
+          "frage": "Der Bruttobedarf liegt bei 40 Stellen, der Bestand bei 38. Es gehen 4 Mitarbeiter in Rente, 2 Azubis werden übernommen. Wie hoch ist der Nettobedarf?",
+          "optionen": [
+            {
+              "text": "2 Stellen",
+              "richtig": false,
+              "echo": "Das ist nur die Differenz aus Brutto und Bestand. Die Abgänge und Zugänge fehlen — dabei verändern gerade sie das Ergebnis erheblich."
+            },
+            {
+              "text": "4 Stellen",
+              "richtig": true,
+              "echo": "Richtig. 40 − 38 = 2, plus 4 Abgänge = 6, minus 2 Zugänge = 4. Es müssen also vier Personen eingestellt werden, obwohl die reine Differenz nur zwei ergäbe."
+            },
+            {
+              "text": "6 Stellen",
+              "richtig": false,
+              "echo": "Die übernommenen Auszubildenden sind vergessen. Sie decken bereits zwei der offenen Stellen ab und müssen abgezogen werden."
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Für den Bruttobedarf hilft eine einfache Rechnung: Arbeitsmenge geteilt durch die Leistung je Kraft. Wer 12.000 Vorgänge im Jahr hat und je Kraft 500 schafft, braucht 24 Kräfte — allerdings bezogen auf die **tatsächliche** Arbeitszeit nach Abzug von Urlaub, Krankheit und Fortbildung, nicht auf die vertragliche."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "a3",
+      "titel": "Was die Stelle verlangt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der qualitative Bedarf entsteht aus zwei Dokumenten, die aufeinander aufbauen. Die {{begriff:stellenbeschreibung|Stellenbeschreibung}} beschreibt die **Stelle**, das {{begriff:anforderungsprofil|Anforderungsprofil}} beschreibt die **Person**, die sie ausfüllen soll."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Dokument",
+            "Enthält",
+            "Wird gebraucht für"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Stellenbeschreibung",
+                "Bezeichnung, Ziel, Aufgaben, Befugnisse, Einordnung, Vertretung",
+                "Organisation, Eingruppierung, Zeugnis"
+              ],
+              "detail": "**Sie überlebt den Stelleninhaber.** Wechselt jemand, bleibt die Stelle — deshalb ist sie unabhängig von der Person formuliert. Sie liefert später auch die Grundlage für das Arbeitszeugnis."
+            },
+            {
+              "zellen": [
+                "Anforderungsprofil",
+                "Ausbildung, Erfahrung, Kenntnisse, persönliche Eignung",
+                "Stellenanzeige, Bewerberauswahl"
+              ],
+              "detail": "**Trenne Muss und Kann.** Wer alle Wünsche zu Mussanforderungen erklärt, bekommt keine Bewerbungen. Drei bis fünf harte Kriterien reichen, der Rest ist wünschenswert."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Beide Dokumente müssen mit dem {{par:agg-1|AGG}} vereinbar sein. Anforderungen wie ein bestimmtes Alter, eine Nationalität oder ein Geschlecht sind unzulässig, solange sie nicht ausnahmsweise für die Tätigkeit wesentlich sind. Schon eine Formulierung wie „junges, dynamisches Team sucht Verstärkung“ kann als Hinweis auf eine Altersbenachteiligung gewertet werden."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Stellenbeschreibung oder Anforderungsprofil?",
+          "kategorien": [
+            "Stellenbeschreibung",
+            "Anforderungsprofil"
+          ],
+          "aufgaben": [
+            {
+              "text": "„Bearbeitet eingehende Rechnungen und pflegt die Kreditorenstammdaten.“",
+              "loesung": "Stellenbeschreibung"
+            },
+            {
+              "text": "„Abgeschlossene kaufmännische Ausbildung, sicherer Umgang mit Tabellenkalkulation.“",
+              "loesung": "Anforderungsprofil"
+            },
+            {
+              "text": "„Berichtet an die Leitung Rechnungswesen, vertritt die Debitorenbuchhaltung.“",
+              "loesung": "Stellenbeschreibung"
+            },
+            {
+              "text": "„Sorgfältige Arbeitsweise, Bereitschaft zur Einarbeitung in neue Software.“",
+              "loesung": "Anforderungsprofil"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Personalbedarf hat vier Dimensionen: quantitativ, qualitativ, zeitlich, örtlich.",
+    "Bruttopersonalbedarf = theoretisch benötigte Kräfte.",
+    "Nettopersonalbedarf = Bruttobedarf − Bestand + Abgänge − Zugänge.",
+    "Ein negativer Nettobedarf bedeutet Überdeckung und damit Freisetzung.",
+    "Die Stellenbeschreibung beschreibt die Stelle, das Anforderungsprofil die Person.",
+    "Die Stellenbeschreibung überlebt den Stelleninhaber und liefert später die Grundlage fürs Zeugnis.",
+    "{{par:agg-1|AGG}}: Anforderungen dürfen nicht an Alter, Geschlecht, Herkunft oder ähnliche Merkmale anknüpfen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Unterschied zwischen quantitativem und qualitativem Personalbedarf.",
+      "loesung": "Der quantitative Personalbedarf beantwortet, wie viele Mitarbeiter der Betrieb braucht; er wird aus Arbeitsmenge, Leistung je Kraft und Ausfallzeiten berechnet und ist eine Zahl. Der qualitative Personalbedarf beantwortet, welche Qualifikationen diese Mitarbeiter mitbringen müssen; er ergibt sich aus Stellenbeschreibung und Anforderungsprofil und ist ein Profil. Beide müssen zusammen ermittelt werden, sonst werden Stellen mit ungeeigneten Personen besetzt."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Bruttopersonalbedarf 55 Stellen, Bestand 51, erwartete Abgänge 6, feststehende Zugänge 2. Berechne den Nettopersonalbedarf.",
+      "loesung": "55 − 51 = 4. Plus 6 Abgänge = 10. Minus 2 Zugänge = 8. Der Nettopersonalbedarf beträgt 8 Stellen, die extern oder intern zu besetzen sind."
+    },
+    {
+      "typ": "Fall",
+      "frage": "In einer Stellenanzeige steht: „Für unser junges Team suchen wir eine Sekretärin bis 30 Jahre.“ Beurteile die Formulierung.",
+      "loesung": "Die Anzeige verstößt gleich mehrfach gegen das AGG. Die Altersgrenze „bis 30 Jahre“ und der Hinweis auf ein „junges Team“ knüpfen an das Merkmal Alter an, die Bezeichnung „Sekretärin“ an das Geschlecht. Zulässig wäre eine geschlechtsneutrale Ausschreibung ohne Altersbezug, etwa „Assistenz (m/w/d)“. Bewerber, die wegen solcher Merkmale abgelehnt werden, können Entschädigung verlangen."
+    }
+  ],
+  "pruefungstipp": "Die Nettobedarfsrechnung kommt regelmäßig als Rechenaufgabe — merke dir das Vorzeichen: Abgänge erhöhen den Bedarf, Zugänge senken ihn. Und bei Stellenanzeigen wird fast immer nach AGG-Verstößen gesucht: Achte auf Alter, Geschlecht und Herkunft."
+}

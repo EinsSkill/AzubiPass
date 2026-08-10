@@ -1,0 +1,265 @@
+{
+  "id": "k2",
+  "lernfeld": "lf9",
+  "nummer": 2,
+  "titel": "Woher das Geld kommt",
+  "untertitel": "Zwei Fragen genügen, um jede Finanzierung einzuordnen.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Finanzierungsarten nach Herkunft und Rechtsstellung ordnen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Formen der Innenfinanzierung erklären",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Eigen- und Fremdkapital gegenüberstellen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Zwei Fragen, vier Felder",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Jede Finanzierung lässt sich mit zwei Fragen einordnen. **Erstens: Kommt das Geld von außen oder entsteht es im Betrieb?** **Zweitens: Ist es Eigen- oder Fremdkapital?** ==Wer diese beiden Fragen trennt, hat die ganze Systematik dieses Lernfelds.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "",
+            "Eigenkapital",
+            "Fremdkapital"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "**Von außen**",
+                "Einlagen, neue Gesellschafter",
+                "Bankkredit, Anleihe, Lieferantenkredit"
+              ],
+              "detail": "**Beides ist {{begriff:aussenfinanzierung|Außenfinanzierung}}** — Kapital fließt in den Betrieb hinein. Der Unterschied liegt in der Rechtsstellung des Gebers: Miteigentümer oder Gläubiger."
+            },
+            {
+              "zellen": [
+                "**Von innen**",
+                "einbehaltener Gewinn",
+                "Rückstellungen"
+              ],
+              "detail": "**Beides ist {{begriff:innenfinanzierung|Innenfinanzierung}}** — es fließt kein Geld von außen zu, der Betrieb erwirtschaftet die Mittel selbst. Das ist die unauffälligste und oft wichtigste Finanzierungsquelle."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Herkunft** trennt innen von außen. **Rechtsstellung** trennt Eigen- von Fremdkapital. Beide Fragen sind unabhängig voneinander — es gibt alle vier Kombinationen.",
+          "karteikarte": "Nach welchen zwei Kriterien werden Finanzierungsarten geordnet, und welche vier Kombinationen ergeben sich?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "In Prüfungen wird gern nach einem Beispiel für **Innenfinanzierung durch Fremdkapital** gefragt — das wirkt widersprüchlich. Die Antwort sind Rückstellungen: Der Betrieb behält Geld für eine künftige Verpflichtung im Haus, ohne dass jemand von außen etwas gibt."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Innenfinanzierung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:innenfinanzierung|Innenfinanzierung}} kostet keine Zinsen, verlangt keine Sicherheiten und muss niemandem erklärt werden. ==Ihre Grenze ist ebenso klar: Sie ist nur so groß wie das, was der Betrieb selbst erwirtschaftet.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Vier Quellen",
+          "titel": "Geld, das im Betrieb entsteht",
+          "lead": "Vier Wege, alle ohne Bank. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Einbehaltener Gewinn",
+              "satz": "Selbstfinanzierung",
+              "text": "Der Gewinn wird nicht ausgeschüttet, sondern bleibt im Betrieb. Die sauberste Form: Sie stärkt das Eigenkapital und verbessert damit zugleich die Aussicht auf künftige Kredite."
+            },
+            {
+              "nr": 2,
+              "titel": "Abschreibungsgegenwerte",
+              "satz": "über die Verkaufspreise",
+              "text": "Abschreibungen mindern den Gewinn, ohne dass Geld abfließt. Da sie über die Verkaufspreise wieder hereinkommen, steht dieser Betrag bis zur Ersatzbeschaffung zur Verfügung."
+            },
+            {
+              "nr": 3,
+              "titel": "{{begriff:rueckstellung|Rückstellungen}}",
+              "satz": "Fremdkapital von innen",
+              "text": "Für ungewisse Verpflichtungen wie Pensionen oder Prozesskosten wird Aufwand gebucht, das Geld bleibt aber vorerst im Betrieb. Bis zur Inanspruchnahme wirkt es wie ein zinsloser Kredit."
+            },
+            {
+              "nr": 4,
+              "titel": "Vermögensumschichtung",
+              "satz": "Verkauf von Nichtbetriebsnotwendigem",
+              "text": "Nicht mehr gebrauchte Maschinen, ungenutzte Grundstücke, Beteiligungen. Wirkt einmalig und ist deshalb kein tragfähiges Dauerkonzept."
+            }
+          ],
+          "regel": "Vorsicht bei den Abschreibungsgegenwerten: Sie stehen nur zur Verfügung, wenn die Abschreibungen tatsächlich über die Preise verdient wurden. Bei Verlusten ist dieser Effekt eine Rechengröße ohne Deckung."
+        },
+        {
+          "typ": "achtung",
+          "text": "Innenfinanzierung ist **nicht kostenlos**, nur zinsfrei. Einbehaltener Gewinn steht den Inhabern nicht zur Verfügung — sie verzichten auf Ausschüttung und damit auf eine anderweitige Anlage. Diese entgangene Rendite ist der eigentliche Preis."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Eigen oder fremd",
+      "inhalt": [
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Rechtsstellungen",
+          "titel": "Miteigentümer oder Gläubiger",
+          "lead": "Derselbe Betrag, völlig verschiedene Folgen. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Eigenkapital",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Keine feste Verzinsung",
+                  "detail": "Der Geber wird am Gewinn beteiligt. Läuft es schlecht, bekommt er nichts — das entlastet den Betrieb genau dann, wenn er es braucht."
+                },
+                {
+                  "text": "Unbefristet, keine Rückzahlung",
+                  "detail": "Es steht dauerhaft zur Verfügung. Kein Tilgungsplan, keine Fälligkeit, kein Anschlussrisiko."
+                },
+                {
+                  "text": "Haftet für Verluste",
+                  "detail": "Deshalb erhöht viel Eigenkapital die Kreditwürdigkeit: Es ist der Puffer, den die Bank vor ihrem eigenen Geld sehen will."
+                },
+                {
+                  "text": "Mitsprache",
+                  "detail": "Wer Eigenkapital gibt, redet mit. Genau das ist für viele Betriebsinhaber der entscheidende Nachteil."
+                }
+              ]
+            },
+            {
+              "name": "Fremdkapital",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Fester Zins, unabhängig vom Erfolg",
+                  "detail": "Der Zins ist auch im Verlustjahr fällig. Das ist die Belastung, die in schlechten Zeiten am schwersten wiegt."
+                },
+                {
+                  "text": "Befristet, muss zurückgezahlt werden",
+                  "detail": "Mit festem Tilgungsplan. Läuft der Kredit aus, muss verlängert oder abgelöst werden — ein eigenes Risiko."
+                },
+                {
+                  "text": "Haftet nicht",
+                  "detail": "Der Gläubiger trägt kein unternehmerisches Risiko und verlangt deshalb Sicherheiten statt Gewinnbeteiligung."
+                },
+                {
+                  "text": "Keine Mitsprache",
+                  "detail": "Die Entscheidungsmacht bleibt ungeteilt — der große Vorteil gegenüber neuen Gesellschaftern."
+                }
+              ]
+            }
+          ],
+          "regel": "Zinsen mindern den Gewinn und damit die Steuerlast, Ausschüttungen an Eigenkapitalgeber nicht. Fremdkapital ist deshalb auch steuerlich anders zu betrachten — allerdings nützt der Vorteil nur, wenn überhaupt Gewinn da ist."
+        },
+        {
+          "typ": "merke",
+          "text": "**Eigenkapital haftet, ist unbefristet und redet mit. Fremdkapital kostet Zinsen, ist befristet und schweigt.** Beides zusammen ergibt die Kapitalstruktur.",
+          "karteikarte": "Welche vier Unterschiede bestehen zwischen Eigen- und Fremdkapital?"
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Betrieb bildet eine Rückstellung für einen laufenden Prozess. Wie ordnest du das ein?",
+          "optionen": [
+            {
+              "text": "Außenfinanzierung mit Fremdkapital",
+              "richtig": false,
+              "echo": "Es fließt kein Geld von außen zu. Der Betrieb bucht lediglich Aufwand für eine Verpflichtung, deren Höhe noch ungewiss ist."
+            },
+            {
+              "text": "Innenfinanzierung mit Fremdkapital",
+              "richtig": true,
+              "echo": "Richtig. Die Rückstellung ist Fremdkapital, weil sie eine Verpflichtung gegenüber Dritten abbildet. Zugleich ist sie Innenfinanzierung, weil kein Kapital von außen zufließt: Der Aufwand mindert den Gewinn, das Geld bleibt aber bis zur Inanspruchnahme im Betrieb und wirkt so lange wie ein zinsloser Kredit."
+            },
+            {
+              "text": "Innenfinanzierung mit Eigenkapital",
+              "richtig": false,
+              "echo": "Innenfinanzierung stimmt, Eigenkapital nicht. Eine Rückstellung steht für eine Verpflichtung gegenüber einem Dritten und gehört damit zum Fremdkapital."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Innen oder außen, eigen oder fremd?",
+          "kategorien": [
+            "Innen/Eigen",
+            "Innen/Fremd",
+            "Außen/Eigen",
+            "Außen/Fremd"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Gewinn wird nicht ausgeschüttet, sondern einbehalten.",
+              "loesung": "Innen/Eigen"
+            },
+            {
+              "text": "Die Bank gewährt ein Darlehen über 200.000 €.",
+              "loesung": "Außen/Fremd"
+            },
+            {
+              "text": "Ein neuer Gesellschafter zahlt eine Einlage ein.",
+              "loesung": "Außen/Eigen"
+            },
+            {
+              "text": "Für Pensionsverpflichtungen wird eine Rückstellung gebildet.",
+              "loesung": "Innen/Fremd"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Zwei Fragen ordnen jede Finanzierung: Herkunft und Rechtsstellung.",
+    "{{begriff:innenfinanzierung|Innenfinanzierung}}: Mittel entstehen im Betrieb, es fließt nichts von außen zu.",
+    "{{begriff:aussenfinanzierung|Außenfinanzierung}}: Kapital kommt von außen, als Einlage oder als Kredit.",
+    "Quellen der Innenfinanzierung: einbehaltener Gewinn, Abschreibungsgegenwerte, Rückstellungen, Vermögensumschichtung.",
+    "Rückstellungen sind Innenfinanzierung mit Fremdkapital — ein häufiger Prüfungsfall.",
+    "Eigenkapital haftet, ist unbefristet, hat Mitsprache und keine feste Verzinsung.",
+    "Fremdkapital kostet Zinsen unabhängig vom Erfolg, ist befristet und hat keine Mitsprache.",
+    "Viel Eigenkapital verbessert die Kreditwürdigkeit, weil es als Haftungspuffer dient."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre die Systematik der Finanzierungsarten und nenne zu jeder Kombination ein Beispiel.",
+      "loesung": "Finanzierungsarten werden nach zwei unabhängigen Kriterien geordnet. Das erste ist die Herkunft der Mittel: Bei der Außenfinanzierung fließt Kapital von außen zu, bei der Innenfinanzierung entstehen die Mittel im Betrieb selbst. Das zweite ist die Rechtsstellung des Kapitalgebers: Eigenkapital haftet und ist am Gewinn beteiligt, Fremdkapital wird verzinst und zurückgezahlt. Daraus ergeben sich vier Kombinationen. Außen und Eigen sind Einlagen der Inhaber oder die Aufnahme neuer Gesellschafter. Außen und Fremd sind Bankkredite, Anleihen und der Lieferantenkredit. Innen und Eigen ist der einbehaltene Gewinn, auch Selbstfinanzierung genannt. Innen und Fremd sind Rückstellungen, weil sie eine Verpflichtung gegenüber Dritten darstellen, das Geld aber bis zur Inanspruchnahme im Betrieb bleibt."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Welche Vor- und Nachteile hat die Finanzierung mit Eigenkapital gegenüber Fremdkapital?",
+      "loesung": "Eigenkapital hat keine feste Verzinsung; der Geber wird am Gewinn beteiligt und erhält in schlechten Jahren nichts, was den Betrieb gerade dann entlastet, wenn es eng wird. Es steht unbefristet zur Verfügung, muss nicht zurückgezahlt werden und erspart damit Tilgungsbelastung und Anschlussrisiko. Da es für Verluste haftet, verbessert es zugleich die Kreditwürdigkeit, weil es der Puffer ist, den Kreditgeber vor ihrem eigenen Geld sehen wollen. Nachteilig ist die Mitsprache: Wer Eigenkapital gibt, erhält Einfluss auf Entscheidungen, und der Gewinn muss geteilt werden. Fremdkapital lässt die Entscheidungsmacht ungeteilt und ist steuerlich anders zu behandeln, weil Zinsen den Gewinn mindern. Dafür ist der Zins auch im Verlustjahr fällig, es sind Sicherheiten zu stellen und die Rückzahlung ist terminiert."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Betrieb braucht 300.000 € für eine neue Anlage. Die Hausbank verlangt mehr Eigenkapital, die Inhaber wollen keine neuen Gesellschafter aufnehmen. Welche Wege siehst du?",
+      "loesung": "Zunächst ist die Innenfinanzierung auszuschöpfen, weil sie weder Zinsen kostet noch Mitsprache erfordert. In Betracht kommen der Verzicht auf Gewinnausschüttung, wodurch zugleich das Eigenkapital und damit die von der Bank geforderte Quote steigt, sowie die Vermögensumschichtung durch Verkauf nicht betriebsnotwendiger Gegenstände. Auch die Abschreibungsgegenwerte stehen zur Verfügung, soweit sie über die Verkaufspreise tatsächlich verdient wurden. Reicht das nicht, sind Alternativen zum klassischen Darlehen zu prüfen: Leasing vermeidet die große Einmalzahlung und schont die Liquidität, wobei die Anlage über die Laufzeit teurer wird. Ein öffentliches Förderdarlehen kann günstigere Konditionen und teilweise Haftungsfreistellung bieten. Möglich ist außerdem stilles Beteiligungskapital, das wirtschaftlich wie Eigenkapital wirkt, ohne dass der Geber in die Geschäftsführung eingreift — damit ließe sich die Forderung der Bank erfüllen, ohne die Entscheidungsmacht zu teilen."
+    }
+  ],
+  "pruefungstipp": "Zeichne dir die Vierfeldertafel auf den Schmierzettel, bevor du antwortest — Herkunft waagerecht, Rechtsstellung senkrecht. Damit ordnest du jedes Beispiel zuverlässig ein. Der Klassiker unter den Stolpersteinen ist die Rückstellung: Innenfinanzierung, aber Fremdkapital. Der zweite ist die Behauptung, Innenfinanzierung sei kostenlos — sie ist zinsfrei, aber nicht kostenlos."
+}

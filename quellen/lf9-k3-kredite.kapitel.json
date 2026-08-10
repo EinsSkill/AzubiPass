@@ -1,0 +1,390 @@
+{
+  "id": "k3",
+  "lernfeld": "lf9",
+  "nummer": 3,
+  "titel": "Kreditarten und Kosten",
+  "untertitel": "Kurzfristiger Bedarf, kurzfristiger Kredit. Alles andere wird teuer.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Kreditarten nach Fristigkeit und Zweck zuordnen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Raten- und Annuitätendarlehen unterscheiden",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Kreditkosten beurteilen und vergleichen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Die goldene Regel",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die wichtigste Regel der Finanzierung heißt **Fristenkongruenz**: Langfristig gebundenes Vermögen wird langfristig finanziert, kurzfristiger Bedarf kurzfristig. ==Wer eine Maschine mit dem Kontokorrentkredit bezahlt, zahlt jahrelang den teuersten Zinssatz, den es gibt.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kreditart",
+            "Frist",
+            "Wofür gedacht"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Lieferantenkredit",
+                "sehr kurz",
+                "laufender Wareneinkauf"
+              ],
+              "detail": "**Das Zahlungsziel des Lieferers.** Scheinbar kostenlos — tatsächlich zahlt man den Preis in Form des verlorenen Skontos, und der ist aufs Jahr gerechnet hoch."
+            },
+            {
+              "zellen": [
+                "{{begriff:kontokorrentkredit|Kontokorrentkredit}}",
+                "kurz",
+                "Liquiditätsspitzen"
+              ],
+              "detail": "**Flexibel und teuer.** Zinsen fallen nur für den beanspruchten Betrag an, der Satz liegt aber deutlich über dem eines Darlehens. Wer die Linie dauerhaft ausschöpft, finanziert falsch."
+            },
+            {
+              "zellen": [
+                "{{begriff:darlehen|Darlehen}}",
+                "mittel bis lang",
+                "Maschinen, Fahrzeuge, Gebäude"
+              ],
+              "detail": "**Der Normalfall der Investitionsfinanzierung.** Fester Zins, fester Tilgungsplan, meist mit Sicherheiten unterlegt."
+            },
+            {
+              "zellen": [
+                "Förderdarlehen",
+                "lang",
+                "Investitionen, Gründung"
+              ],
+              "detail": "**Öffentlich gefördert**, oft mit günstigerem Zins, tilgungsfreien Anlaufjahren und teilweiser Haftungsfreistellung. Wird über die Hausbank beantragt, nicht direkt."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Fristenkongruenz:** Die Laufzeit des Kredits passt zur Nutzungsdauer des Finanzierten. Anlagevermögen langfristig, Umlaufvermögen kurzfristig.",
+          "karteikarte": "Was besagt die Fristenkongruenz, und was passiert bei Verstoß dagegen?"
+        },
+        {
+          "typ": "achtung",
+          "text": "Der Lieferantenkredit wirkt gratis, weil keine Zinsen berechnet werden. Er kostet aber das entgangene Skonto — und dieser Satz liegt aufs Jahr hochgerechnet regelmäßig über dem eines Bankkredits. **Wer Skonto ziehen kann, sollte es tun, notfalls über den Kontokorrent.**"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Zwei Tilgungsformen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Bei einem Darlehen wird nicht nur der Zins vereinbart, sondern auch **wie getilgt wird**. Die beiden gängigen Formen führen zu sehr unterschiedlichen Belastungen im Zeitverlauf."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Wege",
+          "titel": "Ratendarlehen oder Annuität",
+          "lead": "Gleiche Summe, gleicher Zins, andere Belastung. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Ratendarlehen",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Tilgung bleibt gleich",
+                  "detail": "Bei 100.000 € auf 10 Jahre werden jedes Jahr 10.000 € getilgt — unabhängig davon, wie hoch die Restschuld ist."
+                },
+                {
+                  "text": "Zins sinkt jedes Jahr",
+                  "detail": "Er wird auf die Restschuld gerechnet, und die wird kleiner. Deshalb sinkt auch die Gesamtbelastung von Jahr zu Jahr."
+                },
+                {
+                  "text": "Anfangs die höchste Belastung",
+                  "detail": "Genau dann, wenn eine neue Investition oft noch wenig einbringt. Das ist der praktische Nachteil."
+                },
+                {
+                  "text": "Insgesamt weniger Zinsen",
+                  "detail": "Weil schneller getilgt wird, sinkt die Restschuld früher — über die Laufzeit die günstigere Variante."
+                }
+              ]
+            },
+            {
+              "name": "Annuitätendarlehen",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Rate bleibt gleich",
+                  "detail": "Jedes Jahr derselbe Betrag. Für die Planung der Liquidität ist das der entscheidende Vorteil."
+                },
+                {
+                  "text": "Zinsanteil sinkt, Tilgungsanteil steigt",
+                  "detail": "Innerhalb der gleichbleibenden Rate verschiebt sich das Verhältnis — anfangs viel Zins, später viel Tilgung."
+                },
+                {
+                  "text": "Gleichmäßige Belastung",
+                  "detail": "Planbar über die gesamte Laufzeit. Deshalb bei Gebäuden und langen Laufzeiten die übliche Form."
+                },
+                {
+                  "text": "Insgesamt mehr Zinsen",
+                  "detail": "Weil anfangs weniger getilgt wird, bleibt die Restschuld länger hoch. Der Preis für die Planbarkeit."
+                }
+              ]
+            }
+          ],
+          "regel": "Merksatz: Beim Ratendarlehen bleibt die Tilgung gleich, bei der Annuität die Rate. Genau diese beiden Wörter werden in Prüfungen vertauscht."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Jahr",
+            "Restschuld",
+            "Zins 5 %",
+            "Tilgung",
+            "Rate"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "1",
+                "100.000",
+                "5.000",
+                "20.000",
+                "25.000"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "zellen": [
+                "2",
+                "80.000",
+                "4.000",
+                "20.000",
+                "24.000"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "zellen": [
+                "3",
+                "60.000",
+                "3.000",
+                "20.000",
+                "23.000"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "detail": "**Ratendarlehen über 5 Jahre.** Der Zins wird immer auf die Restschuld zu Beginn des Jahres gerechnet. Die Rate sinkt jedes Jahr um genau 5 % von 20.000 €, also um 1.000 €."
+            },
+            {
+              "zellen": [
+                "4",
+                "40.000",
+                "2.000",
+                "20.000",
+                "22.000"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "zellen": [
+                "5",
+                "20.000",
+                "1.000",
+                "20.000",
+                "21.000"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Zins immer auf die Restschuld zu Jahresbeginn.** Beim Ratendarlehen sinkt die Rate gleichmäßig, bei der Annuität bleibt sie konstant und verschiebt sich nur innerlich.",
+          "karteikarte": "Wie unterscheiden sich Raten- und Annuitätendarlehen, und welches ist über die Laufzeit günstiger?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Was ein Kredit wirklich kostet",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der genannte Zinssatz ist selten der ganze Preis. **Bearbeitungsgebühren, Bereitstellungszinsen, Kosten der Sicherheiten und ein etwaiges Disagio** gehören dazu. Vergleichbar werden Angebote erst über den Effektivzins, der all das einrechnet."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kostenbestandteil",
+            "Wofür",
+            "Beachten"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Nominalzins",
+                "die Kapitalüberlassung",
+                "sagt allein wenig aus"
+              ]
+            },
+            {
+              "zellen": [
+                "Disagio",
+                "Abschlag bei der Auszahlung",
+                "senkt den Nominalzins optisch"
+              ],
+              "detail": "**Bei 98 % Auszahlung werden 100 % verzinst und zurückgezahlt.** Der Nominalzins wirkt dadurch niedriger, der Effektivzins nicht."
+            },
+            {
+              "zellen": [
+                "Bereitstellungszins",
+                "für abgerufene, aber nicht genutzte Mittel",
+                "bei Bauvorhaben relevant"
+              ]
+            },
+            {
+              "zellen": [
+                "Kosten der Sicherheiten",
+                "Notar, Grundbuch, Gutachten",
+                "fallen einmalig an"
+              ],
+              "detail": "**Bei grundpfandrechtlicher Sicherung schnell vierstellig.** Sie gehören in den Vergleich, auch wenn sie nicht die Bank erhält."
+            },
+            {
+              "zellen": [
+                "Effektivzins",
+                "alles zusammen",
+                "die einzige Vergleichsgröße"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Vor jedem Bankgespräch gehören drei Dinge auf den Tisch: **Zweck, Betrag, Laufzeit** — und die Antwort auf die Frage, woraus zurückgezahlt werden soll. Wer das nicht beantworten kann, bekommt entweder keinen Kredit oder einen teuren."
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Betrieb finanziert eine Maschine mit zehn Jahren Nutzungsdauer über den Kontokorrentkredit. Was ist das Problem?",
+          "optionen": [
+            {
+              "text": "Nichts — Hauptsache, die Maschine ist bezahlt",
+              "richtig": false,
+              "echo": "Kurzfristig funktioniert es, dauerhaft wird es teuer und riskant. Genau davor warnt die Fristenkongruenz."
+            },
+            {
+              "text": "Verstoß gegen die Fristenkongruenz — teuer und jederzeit kündbar",
+              "richtig": true,
+              "echo": "Richtig. Langfristig gebundenes Vermögen wird mit dem teuersten kurzfristigen Kredit finanziert. Zwei Folgen: Erstens ist der Zinssatz deutlich höher als bei einem Darlehen, und das über Jahre. Zweitens ist die Kreditlinie kurzfristig kündbar oder kürzbar — dann müsste der Betrieb die Maschine sofort anders finanzieren. Richtig wäre ein Darlehen mit einer Laufzeit, die zur Nutzungsdauer passt."
+            },
+            {
+              "text": "Der Kontokorrentkredit ist für Investitionen gesetzlich nicht zulässig",
+              "richtig": false,
+              "echo": "Ein rechtliches Verbot gibt es nicht. Das Problem ist rein kaufmännisch: falscher Preis und falsche Sicherheit der Finanzierung."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Kreditart passt?",
+          "kategorien": [
+            "Lieferantenkredit",
+            "Kontokorrentkredit",
+            "Darlehen"
+          ],
+          "aufgaben": [
+            {
+              "text": "Eine neue Produktionsanlage mit zwölf Jahren Nutzungsdauer.",
+              "loesung": "Darlehen"
+            },
+            {
+              "text": "Der Monat, in dem Steuervorauszahlung und Löhne zusammentreffen.",
+              "loesung": "Kontokorrentkredit"
+            },
+            {
+              "text": "Das Zahlungsziel von 30 Tagen beim Wareneinkauf.",
+              "loesung": "Lieferantenkredit"
+            },
+            {
+              "text": "Ein Firmenwagen, der fünf Jahre gefahren wird.",
+              "loesung": "Darlehen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Fristenkongruenz: Kreditlaufzeit passt zur Nutzungsdauer des Finanzierten.",
+    "Der Lieferantenkredit wirkt kostenlos, kostet aber das entgangene {{begriff:skonto|Skonto}}.",
+    "Der {{begriff:kontokorrentkredit|Kontokorrentkredit}} ist flexibel, teuer und kurzfristig kündbar.",
+    "Beim Ratendarlehen bleibt die Tilgung gleich, die Rate sinkt.",
+    "Beim Annuitätendarlehen bleibt die Rate gleich, der Tilgungsanteil steigt.",
+    "Der Zins wird immer auf die Restschuld zu Beginn der Periode gerechnet.",
+    "Das Ratendarlehen kostet über die Laufzeit weniger Zinsen als die Annuität.",
+    "Vergleichbar sind Kredite nur über den Effektivzins, nicht über den Nominalzins."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Berechnung",
+      "frage": "Ein Ratendarlehen über 60.000 € läuft vier Jahre bei 6 % Zinsen. Berechne Zins, Tilgung und Rate für die ersten beiden Jahre.",
+      "loesung": "Die jährliche Tilgung beträgt 60.000 € geteilt durch 4 Jahre, also 15.000 €. Im ersten Jahr wird der Zins auf die volle Restschuld von 60.000 € gerechnet: 6 % davon sind 3.600 €. Die Rate im ersten Jahr beträgt damit 15.000 € Tilgung plus 3.600 € Zins, also 18.600 €. Zu Beginn des zweiten Jahres beträgt die Restschuld 45.000 €. Der Zins darauf sind 6 % von 45.000 €, also 2.700 €. Die Rate im zweiten Jahr beträgt 15.000 € plus 2.700 €, also 17.700 €. Die Rate sinkt jedes Jahr um 6 % von 15.000 €, das sind 900 €."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre die Fristenkongruenz und begründe, warum ein Verstoß gefährlich ist.",
+      "loesung": "Die Fristenkongruenz verlangt, dass die Laufzeit der Finanzierung zur Nutzungsdauer des finanzierten Vermögens passt. Langfristig gebundenes Anlagevermögen wie Gebäude und Maschinen wird langfristig finanziert, kurzfristig gebundenes Umlaufvermögen wie Vorräte kurzfristig. Ein Verstoß ist aus zwei Gründen gefährlich. Erstens kostet er Geld: Kurzfristige Kredite, insbesondere der Kontokorrentkredit, haben einen deutlich höheren Zinssatz als langfristige Darlehen; über mehrere Jahre summiert sich das erheblich. Zweitens gefährdet er die Existenz: Kurzfristige Kreditlinien können von der Bank gekürzt oder gekündigt werden. Wird eine Maschine mit einer solchen Linie finanziert und die Linie fällt weg, muss der Betrieb den Betrag sofort anderweitig beschaffen, was in einer angespannten Lage kaum gelingt."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Zwei Angebote für 200.000 €: Bank A mit 4,2 % Nominalzins und 2 % Disagio, Bank B mit 4,6 % Nominalzins ohne Disagio. Wie beurteilst du das?",
+      "loesung": "Der Nominalzins allein erlaubt keine Entscheidung. Bei Bank A werden bei 2 % Disagio nur 196.000 € ausgezahlt, verzinst und zurückgezahlt werden aber 200.000 €. Der Betrieb zahlt also Zinsen auf Geld, das er nie erhalten hat, und muss zusätzlich den Abschlag zurückzahlen. Dadurch liegt der tatsächliche Preis deutlich über den genannten 4,2 %. Bank B verlangt zwar nominal mehr, zahlt aber den vollen Betrag aus. Entscheidend ist deshalb der Effektivzins, der Disagio, Bearbeitungsgebühren, Bereitstellungszinsen und die Zahlungsweise der Raten einrechnet; nur er macht die Angebote vergleichbar. Zusätzlich zu prüfen sind die Kosten der geforderten Sicherheiten, etwa Notar- und Grundbuchkosten, sowie die Bedingungen für Sondertilgungen. Falls der Betrieb tatsächlich 200.000 € benötigt, müsste er bei Bank A entsprechend mehr aufnehmen, was den Vergleich weiter zu deren Nachteil verschiebt."
+    }
+  ],
+  "pruefungstipp": "Der Tilgungsplan ist eine sichere Rechenaufgabe, wenn du drei Dinge einhältst: Zins immer auf die Restschuld zu Periodenbeginn, Tilgung nach der vereinbarten Form, Rate ist die Summe aus beidem. Lege eine Tabelle mit den Spalten Restschuld, Zins, Tilgung, Rate an — damit kannst du dich kaum verrechnen. Und merk dir den Satz: Ratendarlehen gleiche Tilgung, Annuität gleiche Rate."
+}

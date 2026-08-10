@@ -1,0 +1,302 @@
+{
+  "id": "k2",
+  "lernfeld": "lf2",
+  "nummer": 2,
+  "titel": "Zeit und Aufgaben planen",
+  "untertitel": "Der Tag hat acht Stunden. Verplanen kannst du fünf.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Einen Tag nach der ALPEN-Methode planen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Aufgaben nach Wichtigkeit und Dringlichkeit einordnen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Zeitdiebe erkennen und begrenzen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Der Tag nach ALPEN",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:alpen-methode|ALPEN-Methode}} ist die bekannteste Tagesplanung — und der einzige Punkt, an dem die meisten scheitern, ist der Puffer. ==Wer acht Stunden verplant, hat nach der ersten Störung einen Plan, der nicht mehr stimmt.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Schritt",
+            "Was passiert",
+            "Häufiger Fehler"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "**A** — Aufgaben notieren",
+                "alles aufschreiben, was ansteht",
+                "im Kopf behalten wollen"
+              ],
+              "detail": "**Erst auf Papier wird eine Aufgabe planbar.** Solange sie nur gedacht ist, kostet sie ständig Aufmerksamkeit, ohne dass sie erledigt wird."
+            },
+            {
+              "zellen": [
+                "**L** — Länge schätzen",
+                "jeder Aufgabe eine Dauer geben",
+                "systematisch zu optimistisch"
+              ],
+              "detail": "**Schätzungen sind fast immer zu kurz.** Wer seine eigenen Schätzungen eine Woche lang mit der Wirklichkeit vergleicht, lernt seinen persönlichen Faktor kennen."
+            },
+            {
+              "zellen": [
+                "**P** — Pufferzeiten",
+                "nur rund 60 % verplanen",
+                "den ganzen Tag füllen"
+              ],
+              "detail": "**Der Kern der Methode.** Etwa 40 Prozent bleiben frei für Störungen, Rückfragen und Unvorhergesehenes. Das ist keine Faulheit, sondern Erfahrung."
+            },
+            {
+              "zellen": [
+                "**E** — Entscheidungen",
+                "Prioritäten setzen, kürzen, delegieren",
+                "alles gleich wichtig nehmen"
+              ]
+            },
+            {
+              "zellen": [
+                "**N** — Nachkontrolle",
+                "abends prüfen und Offenes übertragen",
+                "einfach aufhören"
+              ],
+              "detail": "**Ohne Nachkontrolle lernt die Planung nichts.** Erst der Abgleich zeigt, ob die Schätzungen stimmen und was ständig liegen bleibt."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Dazu kommt die {{begriff:tagesleistungskurve|Tagesleistungskurve}}: Die Leistungsfähigkeit ist am Vormittag am höchsten, fällt nach dem Mittag deutlich ab und steigt am späten Nachmittag noch einmal leicht an. **Schwierige Aufgaben gehören in das Vormittagshoch**, Routine wie Ablage und Post in das Tief."
+        },
+        {
+          "typ": "merke",
+          "text": "**ALPEN: Aufgaben, Länge, Puffer, Entscheidungen, Nachkontrolle.** Verplant wird nur etwa 60 Prozent des Tages — der Rest gehört den Störungen, die sicher kommen.",
+          "karteikarte": "Wofür stehen die fünf Buchstaben der ALPEN-Methode, und wie viel Prozent des Tages sollten verplant werden?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Wichtig ist nicht dasselbe wie dringend",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:eisenhower|Eisenhower-Matrix}} trennt zwei Dinge, die im Alltag ständig verwechselt werden. **Dringend** heißt: Es drängt zeitlich. **Wichtig** heißt: Es zahlt auf ein Ziel ein. ==Das Problem ist das Feld wichtig, aber nicht dringend — es wird dauerhaft verdrängt und rächt sich später.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "matrix",
+          "kopf": "Vier Felder",
+          "titel": "Wohin gehört welche Aufgabe?",
+          "lead": "Aufgabe oben antippen, dann das passende Feld anklicken.",
+          "achsen": {
+            "x": "Dringlichkeit →",
+            "y": "Wichtigkeit →"
+          },
+          "felder": [
+            {
+              "id": "sofort",
+              "name": "Sofort selbst tun",
+              "x": 1,
+              "y": 1
+            },
+            {
+              "id": "termin",
+              "name": "Terminieren",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "id": "delegieren",
+              "name": "Delegieren",
+              "x": 1,
+              "y": 0
+            },
+            {
+              "id": "streichen",
+              "name": "Streichen",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "aufgaben": [
+            {
+              "text": "Angebot für Großkunden, Frist läuft heute ab",
+              "feld": "sofort",
+              "echo": "Wichtig für den Umsatz und zeitlich zwingend — das ist der klassische A-Fall, den niemand abgeben kann."
+            },
+            {
+              "text": "Ablagesystem für das nächste Quartal überarbeiten",
+              "feld": "termin",
+              "echo": "Wichtig, aber ohne Zeitdruck. Genau solche Aufgaben verschwinden, wenn man sie nicht fest einplant — und rächen sich Monate später als Chaos."
+            },
+            {
+              "text": "Kopierpapier nachbestellen, Vorrat fast leer",
+              "feld": "delegieren",
+              "echo": "Zeitlich dringend, aber inhaltlich anspruchslos. Solche Aufgaben gehören an jemanden, der sie genauso gut erledigen kann."
+            },
+            {
+              "text": "Zum dritten Mal denselben Werbenewsletter durchlesen",
+              "feld": "streichen",
+              "echo": "Weder wichtig noch dringend. Der ehrlichste Umgang damit ist, ihn abzubestellen — Zeitdiebe verschwinden nicht durch bessere Planung."
+            },
+            {
+              "text": "Reklamation eines langjährigen Kunden, seit gestern offen",
+              "feld": "sofort",
+              "echo": "Wichtig, weil eine Kundenbeziehung auf dem Spiel steht, und dringend, weil jeder weitere Tag den Ärger vergrößert."
+            },
+            {
+              "text": "Eigene Fortbildung für das kommende Jahr planen",
+              "feld": "termin",
+              "echo": "Hoher Wert, kein Zeitdruck — deshalb landet sie zuverlässig ganz unten, wenn man ihr keinen festen Termin gibt."
+            }
+          ],
+          "regel": "Das gefährlichste Feld ist oben links: wichtig, aber nicht dringend. Wer es ignoriert, arbeitet dauerhaft nur noch an Dringendem — und das ist genau die Beschreibung von Stress."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Delegieren heißt nicht abschieben. Wer eine Aufgabe abgibt, muss drei Dinge mitgeben: **das Ziel, die Frist und die Befugnis**. Fehlt eine davon, kommt die Aufgabe zurück — meist zum ungünstigsten Zeitpunkt."
+        },
+        {
+          "typ": "absatz",
+          "text": "Ergänzend hilft das {{begriff:pareto|Pareto-Prinzip}}: Ein kleiner Teil des Aufwands bringt den größten Teil des Ergebnisses. Als Denkhilfe brauchbar — **aber es ist eine Beobachtung, kein Naturgesetz.** Die Zahlen 80 und 20 sind Faustwerte, keine Rechengrößen."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Zeitdiebe",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:zeitdieb|Zeitdieb}} ist eine wiederkehrende Störung, die Zeit ohne Ergebnis verbraucht. Sie lassen sich selten abschaffen — aber fast immer begrenzen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Zeitdieb",
+            "Ursache",
+            "Gegenmittel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ständige Benachrichtigungen",
+                "jede Mail unterbricht sofort",
+                "feste Zeiten fürs Postfach"
+              ],
+              "detail": "**Nach jeder Unterbrechung dauert es spürbar, bis man wieder im Thema ist.** Zwei bis drei feste Blöcke am Tag reichen für fast jede Bürotätigkeit."
+            },
+            {
+              "zellen": [
+                "Unangekündigte Besuche",
+                "Tür steht immer offen",
+                "stille Stunde vereinbaren"
+              ]
+            },
+            {
+              "zellen": [
+                "Besprechungen ohne Tagesordnung",
+                "Ziel und Ende unklar",
+                "Tagesordnung und Zeitrahmen vorab"
+              ],
+              "detail": "**Ohne Tagesordnung dauert jede Besprechung genau so lange, wie Zeit eingeplant wurde.** Wer Beginn, Ziel und Ende festlegt, halbiert sie regelmäßig."
+            },
+            {
+              "zellen": [
+                "Suchen von Unterlagen",
+                "keine einheitliche Ablage",
+                "festes Ablagesystem, Kapitel 4"
+              ]
+            },
+            {
+              "zellen": [
+                "Nicht Nein sagen können",
+                "Prioritäten sind nicht geklärt",
+                "Aufgaben mit Vorgesetzten priorisieren"
+              ],
+              "detail": "**Nein sagen ist keine Verweigerung.** Die sachliche Formulierung lautet: Was von den laufenden Aufgaben soll dafür warten?"
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Zeitmanagement schafft **keine** zusätzliche Zeit. Es verteilt die vorhandene besser. Wer dauerhaft mehr Aufgaben hat, als in die Arbeitszeit passen, hat kein Planungsproblem, sondern ein Kapazitätsproblem — und das löst keine Methode."
+        },
+        {
+          "typ": "merke",
+          "text": "Zeitdiebe werden **begrenzt, nicht abgeschafft**: feste Zeiten fürs Postfach, stille Stunde, Tagesordnung mit Zeitrahmen, einheitliche Ablage, geklärte Prioritäten.",
+          "karteikarte": "Nenne vier typische Zeitdiebe im Büro und jeweils ein passendes Gegenmittel."
+        },
+        {
+          "typ": "check",
+          "frage": "Deine Chefin gibt dir eine neue dringende Aufgabe, obwohl dein Tag schon voll ist. Was ist die beste Reaktion?",
+          "optionen": [
+            {
+              "text": "Zusagen und die anderen Aufgaben abends nacharbeiten",
+              "richtig": false,
+              "echo": "Das verschiebt das Problem nur und macht es unsichtbar. Auf Dauer entstehen Überstunden, Fehler und der Eindruck, alles gehe irgendwie."
+            },
+            {
+              "text": "Zusagen und fragen, welche der laufenden Aufgaben dafür warten soll",
+              "richtig": true,
+              "echo": "Richtig. Damit machst du die Kapazitätsgrenze sichtbar, ohne die Aufgabe abzulehnen. Die Priorisierung trifft die Führungskraft — sie kennt den Gesamtzusammenhang. Wichtig ist, konkret zu benennen, was ansteht und wie lange es dauert."
+            },
+            {
+              "text": "Ablehnen mit Verweis auf den vollen Tagesplan",
+              "richtig": false,
+              "echo": "Die Einschätzung stimmt womöglich, die Entscheidung steht dir aber nicht zu. Priorisieren ist Aufgabe der Führungskraft — du lieferst die Grundlage dafür."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "{{begriff:alpen-methode|ALPEN}}: Aufgaben, Länge, Puffer, Entscheidungen, Nachkontrolle.",
+    "Nur etwa 60 Prozent des Tages verplanen — der Rest ist Puffer für Störungen.",
+    "Die {{begriff:tagesleistungskurve|Tagesleistungskurve}} hat ihr Hoch am Vormittag und ihr Tief nach dem Mittag.",
+    "Schwierige Aufgaben in die Hochphase, Routine in das Tief.",
+    "{{begriff:eisenhower|Eisenhower}}: wichtig und dringend selbst tun, wichtig allein terminieren.",
+    "Dringend, aber unwichtig wird delegiert; weder noch wird gestrichen.",
+    "Delegieren braucht Ziel, Frist und Befugnis — sonst kommt die Aufgabe zurück.",
+    "Zeitmanagement schafft keine Zeit, es verteilt die vorhandene."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre die ALPEN-Methode und begründe, warum der Puffer so wichtig ist.",
+      "loesung": "ALPEN steht für fünf Schritte. A: Alle Aufgaben des Tages schriftlich notieren. L: Für jede Aufgabe die voraussichtliche Länge schätzen. P: Pufferzeiten einplanen, sodass nur etwa 60 Prozent der Arbeitszeit fest verplant sind. E: Entscheidungen über Prioritäten treffen, also kürzen, verschieben oder delegieren. N: Am Tagesende eine Nachkontrolle durchführen und Unerledigtes übertragen. Der Puffer ist entscheidend, weil Störungen im Büroalltag die Regel und nicht die Ausnahme sind: Rückfragen, Telefonate, kurzfristige Aufträge. Wer den Tag zu hundert Prozent verplant, hat nach der ersten Unterbrechung einen Plan, der nicht mehr stimmt, und verliert dadurch die Steuerung. Die Nachkontrolle sorgt außerdem dafür, dass die eigenen Zeitschätzungen mit der Erfahrung besser werden."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Beschreibe die vier Felder der Eisenhower-Matrix und nenne je ein Beispiel.",
+      "loesung": "Erstes Feld, wichtig und dringend: sofort selbst erledigen, zum Beispiel ein Angebot, dessen Frist heute abläuft. Zweites Feld, wichtig, aber nicht dringend: terminieren und fest einplanen, zum Beispiel die Überarbeitung des Ablagesystems oder die eigene Fortbildungsplanung. Drittes Feld, dringend, aber nicht wichtig: delegieren, zum Beispiel das Nachbestellen von Büromaterial. Viertes Feld, weder wichtig noch dringend: streichen, zum Beispiel das mehrfache Lesen von Werbenachrichten. Das zweite Feld ist das entscheidende: Diese Aufgaben haben hohen Wert, aber keinen Zeitdruck und werden deshalb ständig verdrängt. Wer sie nicht terminiert, arbeitet dauerhaft nur noch an dringenden Dingen und gerät in einen Zustand ständiger Belastung."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Du sollst bis Freitag eine Auswertung erstellen, dafür Zahlen aus zwei Abteilungen einholen und nebenbei die Tagespost bearbeiten. Wie planst du die Woche?",
+      "loesung": "Zunächst alle Aufgaben notieren und ihre Dauer schätzen. Die Auswertung selbst ist wichtig und terminiert, sie gehört in die Vormittagsstunden mit der höchsten Leistungsfähigkeit. Entscheidend ist die Reihenfolge: Die Zahlen aus den beiden Abteilungen müssen sofort am Montag angefordert werden, weil ich von der Zuarbeit anderer abhängig bin und diese Wartezeit nicht steuern kann. Dafür setze ich eine eigene Frist, zum Beispiel Mittwochmittag, und lege eine Wiedervorlage an, um rechtzeitig nachfassen zu können. Die Tagespost ist Routine und gehört in das Nachmittagstief, am besten in zwei festen Blöcken statt laufend. Verplant werden nur rund 60 Prozent der Zeit, damit Rückfragen und Unvorhergesehenes Platz haben. Donnerstag bleibt als Puffer für die Fertigstellung, sodass Freitag nicht der erste Tag ist, an dem etwas schiefgehen darf. Am Ende jedes Tages folgt die Nachkontrolle."
+    }
+  ],
+  "pruefungstipp": "ALPEN und Eisenhower kommen fast sicher dran, oft kombiniert in einem Fall: Ein voller Tag wird beschrieben, und du sollst planen. Nenne die Methode beim Namen, arbeite die Schritte der Reihe nach ab und begründe den Puffer ausdrücklich — genau darauf zielt die Musterlösung. Bei der Matrix achte auf die Falle „dringend gleich wichtig\": Der leere Toner ist dringend, aber nicht wichtig."
+}

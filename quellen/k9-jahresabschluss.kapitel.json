@@ -1,0 +1,173 @@
+{
+  "id": "k9",
+  "lernfeld": "buchfuehrung",
+  "nummer": 9,
+  "titel": "Jahresabschluss",
+  "untertitel": "Abschlussschritte, Rückstellungen und Rechnungsabgrenzung — das Jahr sauber zumachen.",
+  "minuten": 30,
+
+  "lernziele": [
+    { "id": "lz1", "text": "Die Abschlussschritte in der richtigen Reihenfolge durchführen", "abschnitt": "i1" },
+    { "id": "lz2", "text": "Rückstellungen bilden und auflösen", "abschnitt": "i2" },
+    { "id": "lz3", "text": "Aktive und passive Rechnungsabgrenzungsposten unterscheiden und buchen", "abschnitt": "i3" }
+  ],
+
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "i1",
+      "titel": "Die Reihenfolge des Abschlusses",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "In K4 ging es um die Abschlusskette der Konten. Der vollständige Jahresabschluss hat einen Schritt davor: die Inventur aus K1. Erst wenn feststeht, was tatsächlich vorhanden ist, kann korrigiert und abgeschlossen werden."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Fünf Schritte, feste Folge",
+          "titel": "Der Jahresabschluss",
+          "lead": "Jeder Schritt setzt den vorherigen voraus. Klick dich durch.",
+          "schritte": [
+            { "nr": 1, "titel": "Inventur", "satz": "keine Buchung", "text": "Körperliche und buchmäßige Bestandsaufnahme. Erst danach ist bekannt, was wirklich da ist." },
+            { "nr": 2, "titel": "Korrekturbuchungen", "satz": "AfA · Rückstellungen · RAP", "text": "Abschreibungen aus K8, Rückstellungen und Rechnungsabgrenzung. Alles, was das Ergebnis noch verändert, passiert jetzt." },
+            { "nr": 3, "titel": "Erfolgskonten über GuV", "satz": "GuV an Aufwand · Ertrag an GuV", "text": "Wie in K4: Aufwendungen ins Soll der GuV, Erträge ins Haben." },
+            { "nr": 4, "titel": "Ergebnis ins Eigenkapital", "satz": "GuV an Eigenkapital", "text": "Der Jahreserfolg wandert ins Eigenkapital. Erst jetzt steht dessen endgültiger Stand fest." },
+            { "nr": 5, "titel": "Bestandskonten über SBK", "satz": "SBK an Aktivkonto · Passivkonto an SBK", "text": "Zum Schluss alle Bestandskonten ins Schlussbilanzkonto. Das Ergebnis ist die Schlussbilanz." }
+          ],
+          "regel": "Korrekturbuchungen immer vor dem Abschluss der Erfolgskonten. Wer erst abschließt und dann korrigiert, muss von vorn anfangen."
+        },
+        {
+          "typ": "achtung",
+          "text": "In der Prüfung wird häufig nicht nach dem Buchungssatz gefragt, sondern nach der Reihenfolge: „Welcher Schritt kommt zuerst?“ Die Antwort ist fast immer die Inventur — und der zweithäufigste Fehler ist, die Korrekturbuchungen zu vergessen."
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "i2",
+      "titel": "Rückstellungen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine {{begriff:rueckstellung|Rückstellung}} erfasst eine Verpflichtung, die wirtschaftlich schon zum laufenden Jahr gehört, deren Höhe oder Zeitpunkt aber noch offen ist. Das Vorsichtsprinzip aus K1 verlangt genau das: ==Drohende Belastungen werden gebucht, sobald sie absehbar sind== — nicht erst, wenn sie eintreten."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Art", "Anlass", "Was ungewiss ist"],
+          "zeilen": [
+            { "zellen": ["Urlaubsrückstellung", "offene Urlaubstage zum 31.12.", "Zeitpunkt und genaue Kosten"] },
+            { "zellen": ["Steuerrückstellung", "erwartete Nachzahlung", "die Höhe"] },
+            { "zellen": ["Prozesskostenrückstellung", "laufender Rechtsstreit", "Ausgang und Höhe"] },
+            {
+              "zellen": ["Gewährleistungsrückstellung", "erfahrungsgemäße Garantiefälle", "ob und in welcher Höhe"],
+              "detail": "**Wie schätzt man das?** Über Erfahrungswerte: Wenn erfahrungsgemäß 2 % des Jahresumsatzes als Garantiefall zurückkommen, wird dieser Anteil zurückgestellt. Die Schätzung muss nachvollziehbar sein — willkürliche Beträge erkennt jede Betriebsprüfung."
+            }
+          ]
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Vorgang", "Buchungssatz"],
+          "zeilen": [
+            { "zellen": ["Rückstellung bilden (5.000 €)", "Rückstellungsaufwand 5.000 € an Rückstellungen 5.000 €"], "mono": [1] },
+            { "zellen": ["Auflösung, tatsächlich 4.800 €", "Rückstellungen 5.000 € an Bank 4.800 € + Sonstige Erträge 200 €"], "mono": [1] },
+            { "zellen": ["Auflösung, tatsächlich 5.300 €", "Rückstellungen 5.000 € + Sonstiger Aufwand 300 € an Bank 5.300 €"], "mono": [1] }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Rückstellung und Verbindlichkeit unterscheiden sich nur in einem Punkt: der Gewissheit. Steht der Betrag fest und ist die Fälligkeit bekannt, ist es eine {{begriff:verbindlichkeit|Verbindlichkeit}}. Sonst eine Rückstellung.",
+          "karteikarte": "Woran erkennst du, ob ein Sachverhalt eine Rückstellung oder eine Verbindlichkeit ist?"
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "i3",
+      "titel": "Rechnungsabgrenzung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Zahlungen und Leistungen fallen nicht immer ins gleiche Jahr. Die {{begriff:periodenabgrenzung|periodengerechte Zuordnung}} verlangt, dass Aufwand und Ertrag dorthin gehören, wo sie wirtschaftlich hingehören. Dafür gibt es zwei Posten — und man verwechselt sie nur, solange man sie sich nicht an einem Beispiel merkt."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Posten", "Situation", "Beispiel", "Buchung am 31.12."],
+          "zeilen": [
+            {
+              "zellen": ["ARAP", "Ausgabe jetzt, Aufwand nächstes Jahr", "Jahresversicherung im Dezember gezahlt", "ARAP an Versicherungsaufwand"],
+              "mono": [3],
+              "detail": "**Warum aktiv?** Der Betrieb hat bezahlt und bekommt die Leistung erst noch — er hat also eine Art Anspruch. Ansprüche stehen links, auf der Aktivseite."
+            },
+            {
+              "zellen": ["PRAP", "Einnahme jetzt, Ertrag nächstes Jahr", "Januarmiete im Dezember erhalten", "Mietertrag an PRAP"],
+              "mono": [3],
+              "detail": "**Warum passiv?** Der Betrieb hat Geld bekommen und muss die Leistung erst noch erbringen — das ist eine Verpflichtung. Verpflichtungen stehen rechts, auf der Passivseite."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Betrieb zahlt am 1. Dezember die Kfz-Versicherung für das komplette Folgejahr: 2.400 €. Was ist am 31.12. zu buchen?",
+          "optionen": [
+            { "text": "Nichts, die Zahlung ist erfolgt", "richtig": false, "echo": "Damit läge der komplette Aufwand im falschen Jahr. Das laufende Jahr würde um 2.400 € zu schlecht dargestellt und das Folgejahr um denselben Betrag zu gut." },
+            { "text": "ARAP 2.400 € an Versicherungsaufwand 2.400 €", "richtig": true, "echo": "Richtig. Die Leistung betrifft ausschließlich das Folgejahr, also wird der volle Betrag abgegrenzt. Im nächsten Jahr wird der ARAP monatlich aufgelöst: Versicherungsaufwand 200 € an ARAP 200 €." },
+            { "text": "PRAP 2.400 € an Versicherungsaufwand 2.400 €", "richtig": false, "echo": "Falsche Seite. Ein PRAP entsteht bei einer Einnahme, nicht bei einer Ausgabe. Hier hat der Betrieb gezahlt — daraus wird ein aktiver Posten." }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "ARAP oder PRAP?",
+          "kategorien": ["ARAP", "PRAP"],
+          "aufgaben": [
+            { "text": "Die Miete für Januar geht schon im Dezember auf dem Konto ein.", "loesung": "PRAP" },
+            { "text": "Die Zeitschriftenabos fürs nächste Jahr werden im November bezahlt.", "loesung": "ARAP" },
+            { "text": "Ein Kunde zahlt im Dezember eine Wartungspauschale für das erste Quartal.", "loesung": "PRAP" },
+            { "text": "Die Kfz-Steuer für das Folgejahr wird im Dezember abgebucht.", "loesung": "ARAP" }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Zwei Fragen genügen: Ist Geld raus- oder reingegangen? Und gehört die Leistung ins nächste Jahr? Geld raus plus Leistung später ergibt ARAP. Geld rein plus Leistung später ergibt PRAP. Alles andere ist keine Abgrenzung."
+        }
+      ]
+    }
+  ],
+
+  "zusammenfassung": [
+    "Abschlussfolge: Inventur → Korrekturbuchungen → Erfolgskonten über GuV → Ergebnis ins Eigenkapital → Bestandskonten über SBK.",
+    "Korrekturbuchungen sind Abschreibungen, Rückstellungen und Rechnungsabgrenzung.",
+    "Rückstellung: Verpflichtung entstanden, Höhe oder Zeitpunkt ungewiss.",
+    "Verbindlichkeit: Betrag und Fälligkeit stehen fest.",
+    "ARAP: Ausgabe jetzt, Aufwand nächstes Jahr — Aktivseite.",
+    "PRAP: Einnahme jetzt, Ertrag nächstes Jahr — Passivseite.",
+    "Beide RAP werden im Folgejahr wieder aufgelöst."
+  ],
+
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "In welcher Reihenfolge wird der Jahresabschluss erstellt?",
+      "loesung": "Zuerst die Inventur, um die tatsächlichen Bestände zu ermitteln. Dann die Korrekturbuchungen: Abschreibungen, Rückstellungen und Rechnungsabgrenzungsposten. Anschließend werden die Erfolgskonten über die GuV abgeschlossen, der Jahreserfolg ins Eigenkapital übertragen und zuletzt alle Bestandskonten über das SBK abgeschlossen. Daraus entsteht die Schlussbilanz."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Was unterscheidet eine Rückstellung von einer Verbindlichkeit?",
+      "loesung": "Bei einer Verbindlichkeit sind Betrag und Fälligkeit bekannt — etwa eine offene Lieferantenrechnung über 1.000 €. Bei einer Rückstellung ist die Verpflichtung dem Grunde nach entstanden, aber Höhe oder Zeitpunkt sind ungewiss, etwa bei offenen Urlaubsansprüchen oder einem laufenden Prozess. Beide stehen auf der Passivseite, aber als getrennte Positionen."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Ein Mitarbeiter hat zum 31.12. noch acht Urlaubstage offen, der Tagessatz beträgt 120 €. Bilde die Rückstellung.",
+      "loesung": "8 × 120 € = 960 €. Buchungssatz: Rückstellungsaufwand 960 € an Rückstellungen 960 €. Der Aufwand belastet das laufende Jahr, weil der Urlaubsanspruch in diesem Jahr entstanden ist."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Kunde zahlt im Dezember bereits die Miete für Januar: 800 €. Welcher Posten liegt vor und wie wird gebucht?",
+      "loesung": "Ein passiver Rechnungsabgrenzungsposten. Die Einnahme ist im laufenden Jahr eingegangen, der Ertrag gehört wirtschaftlich ins Folgejahr. Buchung am 31.12.: Mietertrag 800 € an PRAP 800 €. Im Januar wird aufgelöst: PRAP 800 € an Mietertrag 800 €."
+    }
+  ],
+
+  "pruefungstipp": "Bei RAP-Aufgaben immer zwei Fragen stellen: Wann war die Zahlung, und wohin gehört die Leistung? Zahlung jetzt und Aufwand später ergibt ARAP, Einnahme jetzt und Ertrag später ergibt PRAP. Bei Rückstellungen ist das Schlüsselwort „ungewiss“ — steht es in der Aufgabe, ist es keine Verbindlichkeit."
+}

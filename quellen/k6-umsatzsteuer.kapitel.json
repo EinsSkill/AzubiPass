@@ -1,0 +1,402 @@
+{
+  "id": "k6",
+  "lernfeld": "buchfuehrung",
+  "nummer": 6,
+  "titel": "Umsatzsteuer",
+  "untertitel": "Durchlaufprinzip, Vorsteuer, Zahllast — und warum der Betrieb nur Kassierer ist.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Das Durchlaufprinzip der Umsatzsteuer erklären können",
+      "abschnitt": "f1"
+    },
+    {
+      "id": "lz2",
+      "text": "Vorsteuer und Umsatzsteuer als Konten korrekt einordnen",
+      "abschnitt": "f2"
+    },
+    {
+      "id": "lz3",
+      "text": "Buchungen mit Umsatzsteuer formulieren und die Zahllast berechnen",
+      "abschnitt": "f3"
+    },
+    {
+      "id": "lz4",
+      "text": "Die Kleinunternehmerregelung einordnen",
+      "abschnitt": "f4"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "f1",
+      "titel": "Wer zahlt die Umsatzsteuer wirklich?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Umsatzsteuer ist eine Verbrauchsteuer: Wirtschaftlich tragen soll sie der Endverbraucher. Unternehmen sind nur Inkassostelle — sie kassieren die Steuer vom Kunden, führen sie ab und holen sich die Steuer zurück, die sie selbst beim Einkauf gezahlt haben."
+        },
+        {
+          "typ": "absatz",
+          "text": "Das nennt man das **Durchlaufprinzip**. In einer Lieferkette zahlt jedes Glied Umsatzsteuer und bekommt {{begriff:vorsteuer|Vorsteuer}} erstattet. ==Übrig bleibt bei jedem nur die Steuer auf den eigenen Wertschöpfungsanteil== — und am Ende der Kette steht jemand, der nichts zurückholen kann: der Privatkunde."
+        },
+        {
+          "typ": "merke",
+          "text": "Für den Betrieb ist die Umsatzsteuer ein durchlaufender Posten, kein Aufwand. Deshalb wird sie nie über die GuV gebucht, sondern immer über Bestandskonten.",
+          "karteikarte": "Warum ist die Umsatzsteuer für einen Betrieb kein Aufwand?"
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Warum der Staat es so kompliziert macht",
+          "absaetze": [
+            "Weil eine einfache Endverbrauchersteuer schwer zu kontrollieren wäre: Der Staat müsste jedem einzelnen Ladengeschäft glauben, was es an Privatkunden verkauft hat.",
+            "Beim Durchlaufprinzip kontrolliert sich die Kette dagegen weitgehend selbst. Jeder Betrieb hat ein Interesse daran, dass sein Lieferant die Steuer korrekt ausweist — sonst bekommt er selbst keine Vorsteuer erstattet."
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "f2",
+      "titel": "Zwei Konten, zwei Richtungen",
+      "inhalt": [
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "",
+            "Vorsteuer",
+            "Umsatzsteuer"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Entsteht beim",
+                "Einkauf",
+                "Verkauf"
+              ]
+            },
+            {
+              "zellen": [
+                "Gegenüber dem Finanzamt",
+                "Forderung",
+                "Verbindlichkeit"
+              ]
+            },
+            {
+              "zellen": [
+                "In der Bilanz",
+                "Aktivseite",
+                "Passivseite"
+              ]
+            },
+            {
+              "zellen": [
+                "Gebucht im",
+                "Soll",
+                "Haben"
+              ],
+              "mono": [
+                1,
+                2
+              ],
+              "detail": "**Das ist keine Extraregel:** Die Vorsteuer ist ein Aktivkonto, und Aktivkonten wachsen im Soll — genau wie in K3. Die Umsatzsteuer ist ein Passivkonto und wächst im Haben. Wer K3 sitzen hat, muss hier nichts Neues lernen."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "In Deutschland gelten zwei Steuersätze: 19 % als Regelsatz und 7 % für bestimmte Grundgüter. Daneben gibt es steuerfreie Umsätze mit 0 %."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Satz",
+            "Gilt für",
+            "Beispiele"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "19 %",
+                "alle übrigen Umsätze",
+                "Elektronik, Kleidung, Dienstleistungen"
+              ],
+              "mono": [
+                0
+              ]
+            },
+            {
+              "zellen": [
+                "7 %",
+                "bestimmte Grundgüter",
+                "Lebensmittel, Bücher, Zeitungen, ÖPNV"
+              ],
+              "mono": [
+                0
+              ]
+            },
+            {
+              "zellen": [
+                "0 %",
+                "gesetzlich befreite Umsätze",
+                "Ausfuhr, Arztleistungen, Wohnraummiete"
+              ],
+              "mono": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Bruttobetrag von 1.190 € enthält 19 % Umsatzsteuer. Wie hoch ist der Nettobetrag?",
+          "optionen": [
+            {
+              "text": "1.190 € − 19 % = 963,90 €",
+              "richtig": false,
+              "echo": "Ein häufiger Fehler. Die 19 % beziehen sich auf den Nettobetrag, nicht auf den Bruttobetrag — deshalb darf man sie nicht einfach vom Brutto abziehen."
+            },
+            {
+              "text": "1.190 € ÷ 1,19 = 1.000 €",
+              "richtig": true,
+              "echo": "Richtig. Der Bruttobetrag entspricht 119 % des Nettobetrags. Also teilt man durch 1,19. Die Steuer ist dann die Differenz: 1.190 − 1.000 = 190 €. Bei 7 % entsprechend durch 1,07."
+            },
+            {
+              "text": "1.190 € × 0,81 = 963,90 €",
+              "richtig": false,
+              "echo": "Derselbe Denkfehler in anderer Form: Auch hier wird der Prozentsatz auf den falschen Grundwert bezogen. Bei Abzügen im Hundert wird immer dividiert."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "f3",
+      "titel": "Buchen mit Umsatzsteuer",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Alle Warenbewegungen werden netto gebucht, die Steuer läuft über eigene Konten. Am Ende des Voranmeldungszeitraums stehen sich Umsatzsteuer und Vorsteuer gegenüber; die Differenz ist die {{begriff:zahllast|Zahllast}}."
+        },
+        {
+          "typ": "grafik",
+          "variante": "t-konto",
+          "kopf": "Buchen, live",
+          "titel": "Ein Zyklus mit Umsatzsteuer",
+          "lead": "Drei Vorfälle nacheinander: einkaufen, verkaufen, ans Finanzamt abführen.",
+          "konten": [
+            {
+              "id": "waren",
+              "name": "Wareneinkauf",
+              "art": "aufwand",
+              "ab": 0
+            },
+            {
+              "id": "vst",
+              "name": "Vorsteuer",
+              "art": "aktiv",
+              "ab": 0
+            },
+            {
+              "id": "verb",
+              "name": "Verbindlichkeiten LuL",
+              "art": "passiv",
+              "ab": 0
+            },
+            {
+              "id": "ford",
+              "name": "Forderungen LuL",
+              "art": "aktiv",
+              "ab": 0
+            },
+            {
+              "id": "erloese",
+              "name": "Umsatzerlöse",
+              "art": "ertrag",
+              "ab": 0
+            },
+            {
+              "id": "ust",
+              "name": "Umsatzsteuer",
+              "art": "passiv",
+              "ab": 0
+            },
+            {
+              "id": "bank",
+              "name": "Bank",
+              "art": "aktiv",
+              "ab": 20000
+            }
+          ],
+          "vorfaelle": [
+            {
+              "text": "Wareneinkauf auf Ziel: 1.000 € netto",
+              "satz": "Wareneinkauf 1.000 € + Vorsteuer 190 € an Verbindlichkeiten LuL 1.190 €",
+              "soll": [
+                {
+                  "konto": "waren",
+                  "betrag": 1000
+                },
+                {
+                  "konto": "vst",
+                  "betrag": 190
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "verb",
+                  "betrag": 1190
+                }
+              ],
+              "echo": "Die Ware kostet 1.000 €, geschuldet werden 1.190 €. Die Differenz ist keine Ausgabe, sondern eine Forderung ans Finanzamt — deshalb ein eigenes Aktivkonto."
+            },
+            {
+              "text": "Warenverkauf auf Ziel: 2.000 € netto",
+              "satz": "Forderungen LuL 2.380 € an Umsatzerlöse 2.000 € + Umsatzsteuer 380 €",
+              "soll": [
+                {
+                  "konto": "ford",
+                  "betrag": 2380
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "erloese",
+                  "betrag": 2000
+                },
+                {
+                  "konto": "ust",
+                  "betrag": 380
+                }
+              ],
+              "echo": "Der Kunde schuldet 2.380 €, verdient hat der Betrieb aber nur 2.000 €. Die 380 € gehören dem Finanzamt und stehen deshalb als Verbindlichkeit im Haben."
+            },
+            {
+              "text": "Zahllast ans Finanzamt überweisen",
+              "satz": "Umsatzsteuer 380 € an Vorsteuer 190 € + Bank 190 €",
+              "soll": [
+                {
+                  "konto": "ust",
+                  "betrag": 380
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "vst",
+                  "betrag": 190
+                },
+                {
+                  "konto": "bank",
+                  "betrag": 190
+                }
+              ],
+              "echo": "Zuerst wird die Vorsteuer gegen die Umsatzsteuer verrechnet, dann fließt der Rest. Beide Steuerkonten stehen danach auf null — genau so soll es sein."
+            }
+          ],
+          "regel": "Zahllast = Umsatzsteuer − Vorsteuer. Positiv heißt zahlen, negativ heißt Erstattung."
+        },
+        {
+          "typ": "merke",
+          "text": "Der Betrieb hat 2.380 € eingenommen und 1.190 € ausgegeben, aber nur 1.000 € verdient und 190 € ans Finanzamt abgeführt. Die Umsatzsteuer taucht im Ergebnis nirgends auf — sie ist durchgelaufen.",
+          "karteikarte": "Wie berechnet sich die Zahllast, und was bedeutet ein negativer Wert?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "f4",
+      "titel": "Die Kleinunternehmerregelung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Wer nur geringe Umsätze hat, ist nach {{par:ustg-19|§ 19 UStG}} von der Umsatzsteuer befreit. Die Grenzen liegen seit 2025 bei ==25.000 Euro Vorjahresumsatz und 100.000 Euro im laufenden Jahr==. Ein {{begriff:kleinunternehmer|Kleinunternehmer}} weist keine Umsatzsteuer aus, muss keine Voranmeldung abgeben — und bekommt im Gegenzug keine Vorsteuer erstattet."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "",
+            "Kleinunternehmer",
+            "Regelbesteuerung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Umsatzgrenzen",
+                "25.000 € Vorjahr · 100.000 € laufendes Jahr",
+                "keine — Regelbesteuerung ab dem ersten Euro"
+              ],
+              "detail": "**Zwei Grenzen, zwei Wirkungen:** Die 25.000 Euro betreffen den Vorjahresumsatz — wird sie überschritten, wechselt man zum 1. Januar in die Regelbesteuerung. Die 100.000 Euro gelten für das laufende Jahr und sind seit 2025 **keine Prognose mehr**: Schon der Umsatz, mit dem die Grenze überschritten wird, unterliegt in voller Höhe der Umsatzsteuer."
+            },
+            {
+              "zellen": [
+                "Umsatzsteuer auf Rechnungen",
+                "nein",
+                "ja"
+              ]
+            },
+            {
+              "zellen": [
+                "Vorsteuerabzug",
+                "nein",
+                "ja"
+              ]
+            },
+            {
+              "zellen": [
+                "Vorteil",
+                "weniger Bürokratie, günstiger für Privatkunden",
+                "Vorsteuererstattung möglich"
+              ],
+              "detail": "**Wann sich was lohnt:** Wer überwiegend an Privatkunden verkauft und wenig einkauft, fährt als Kleinunternehmer besser — sein Preis wirkt für den Kunden günstiger. Wer viel investiert oder an andere Unternehmen verkauft, verzichtet auf die Regelung, weil die Vorsteuererstattung mehr wert ist."
+            },
+            {
+              "zellen": [
+                "Nachteil",
+                "höhere Einkaufskosten",
+                "monatliche oder vierteljährliche Voranmeldung"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein Kleinunternehmer darf **keine** Umsatzsteuer auf Rechnungen ausweisen. Tut er es trotzdem, schuldet er den ausgewiesenen Betrag dem Finanzamt — ohne dafür Vorsteuer abziehen zu dürfen. Seit 2025 sind seine Umsätze zudem echt **steuerfrei** und nicht mehr nur „nicht erhoben“; auf der Rechnung braucht es deshalb einen Hinweis auf die Steuerbefreiung."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Durchlaufprinzip: Der Betrieb kassiert und führt ab — wirtschaftlich trägt der Endverbraucher die Steuer.",
+    "Vorsteuer entsteht beim Einkauf, ist eine Forderung ans Finanzamt und wird im Soll gebucht.",
+    "Umsatzsteuer entsteht beim Verkauf, ist eine Verbindlichkeit und wird im Haben gebucht.",
+    "Steuersätze: 19 % Regelsatz, 7 % ermäßigt, 0 % steuerfrei.",
+    "Netto aus Brutto: durch 1,19 teilen — niemals 19 % vom Brutto abziehen.",
+    "Zahllast = Umsatzsteuer − Vorsteuer. Positiv: zahlen. Negativ: Erstattung.",
+    "{{par:ustg-19|§ 19 UStG}}: Kleinunternehmer bis 25.000 € Vorjahres- und 100.000 € Jahresumsatz — steuerfrei, ohne Vorsteuerabzug."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre das Durchlaufprinzip. Warum ist der Betrieb kein echter Steuerzahler?",
+      "loesung": "Der Betrieb kassiert die Umsatzsteuer von seinen Kunden und führt sie ans Finanzamt ab. Gleichzeitig bekommt er die beim Einkauf gezahlte Vorsteuer erstattet. Per Saldo zahlt er nur die Steuer auf seinen eigenen Wertschöpfungsanteil. Wirtschaftlich belastet ist der Endverbraucher, weil er als Einziger keinen Vorsteuerabzug geltend machen kann."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Wo stehen Vorsteuer und Umsatzsteuer in der Bilanz und warum?",
+      "loesung": "Die Vorsteuer ist eine Forderung gegenüber dem Finanzamt und steht daher auf der Aktivseite; sie wird als Aktivkonto im Soll gebucht. Die Umsatzsteuer ist eine Verbindlichkeit gegenüber dem Finanzamt und steht auf der Passivseite; sie wird als Passivkonto im Haben gebucht."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Verkäufe netto 8.000 €, Einkäufe netto 5.000 €, jeweils 19 %. Berechne Umsatzsteuer, Vorsteuer und Zahllast.",
+      "loesung": "Umsatzsteuer = 8.000 × 19 % = 1.520 €. Vorsteuer = 5.000 × 19 % = 950 €. Zahllast = 1.520 − 950 = 570 €. Dieser Betrag wird ans Finanzamt überwiesen."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Betrieb kauft Waren für 3.000 € netto auf Ziel. Formuliere den Buchungssatz mit 19 % Umsatzsteuer.",
+      "loesung": "Wareneinkauf 3.000 € und Vorsteuer 570 € an Verbindlichkeiten LuL 3.570 €. Der Wareneinkauf erfasst nur den Nettobetrag, weil nur er wirtschaftlich Aufwand ist. Die 570 € Vorsteuer sind eine Forderung ans Finanzamt und werden separat im Soll gebucht."
+    }
+  ],
+  "pruefungstipp": "Die beiden Buchungssätze auswendig: Einkauf → Wareneinkauf plus Vorsteuer an Verbindlichkeiten. Verkauf → Forderungen an Umsatzerlöse plus Umsatzsteuer. Und beim Rechnen: aus Brutto wird Netto durch Division, nie durch Prozentabzug."
+}

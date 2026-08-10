@@ -1,0 +1,301 @@
+{
+  "id": "k3",
+  "lernfeld": "lf10",
+  "nummer": 3,
+  "titel": "Der Betriebsabrechnungsbogen",
+  "untertitel": "Wo die Gemeinkosten hingehören — und wie man daraus Prozentsätze macht.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Aufbau und Zweck des BAB erklären",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Gemeinkosten mit Schlüsseln auf Kostenstellen verteilen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Zuschlagssätze berechnen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Wozu der BAB da ist",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Einzelkosten wandern direkt ins Produkt. Für {{begriff:gemeinkosten|Gemeinkosten}} braucht es einen Umweg — und der heißt {{begriff:bab|Betriebsabrechnungsbogen}}. ==Er verteilt die Gemeinkosten auf Bereiche und errechnet daraus die Prozentsätze, mit denen später kalkuliert wird.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Vier Schritte",
+          "titel": "Wie der BAB arbeitet",
+          "lead": "Von der Kostenart zum fertigen Zuschlagssatz. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Kosten übernehmen",
+              "satz": "aus der Kostenartenrechnung",
+              "text": "Die Gemeinkosten des Zeitraums werden nach Arten in den BAB übertragen: Hilfslöhne, Gehälter, Miete, Energie, Abschreibungen, kalkulatorische Kosten."
+            },
+            {
+              "nr": 2,
+              "titel": "Verteilen",
+              "satz": "über Schlüssel",
+              "text": "Jede Kostenart wird mit einem passenden Schlüssel auf die Kostenstellen verteilt. Die Miete etwa nach Quadratmetern, die Energie nach installierter Leistung, Gehälter nach Zugehörigkeit."
+            },
+            {
+              "nr": 3,
+              "titel": "Summen bilden",
+              "satz": "je Kostenstelle",
+              "text": "Am Ende jeder Spalte stehen die gesamten Gemeinkosten dieses Bereichs — Material, Fertigung, Verwaltung, Vertrieb."
+            },
+            {
+              "nr": 4,
+              "titel": "Zuschlagssatz rechnen",
+              "satz": "Gemeinkosten ÷ Bezugsgröße",
+              "text": "Jede Stelle bekommt eine Bezugsgröße: Material bezieht sich auf das Fertigungsmaterial, Fertigung auf die Fertigungslöhne. Das Verhältnis mal 100 ergibt den Prozentsatz."
+            }
+          ],
+          "regel": "Merksatz: Der BAB macht aus Euro-Beträgen Prozentsätze. Diese Prozentsätze sind das einzige Ergebnis, das die Kalkulation später braucht."
+        },
+        {
+          "typ": "merke",
+          "text": "Der {{begriff:bab|BAB}} verbindet Kostenarten- und Kostenträgerrechnung. **Sein einziges Ergebnis sind die Zuschlagssätze** — alles davor ist Vorarbeit.",
+          "karteikarte": "Welche Aufgabe hat der Betriebsabrechnungsbogen, und was ist sein Ergebnis?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Verteilen mit Schlüsseln",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein **Verteilungsschlüssel** ist die Größe, nach der eine Gemeinkostenart auf die Stellen aufgeteilt wird. ==Er muss zur Kostenart passen, sonst wird die spätere Kalkulation systematisch falsch.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kostenart",
+            "Sinnvoller Schlüssel",
+            "Warum"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Miete, Heizung, Reinigung",
+                "Quadratmeter",
+                "die Fläche verursacht die Kosten"
+              ],
+              "detail": "**Die klassische Schlüsselgröße.** Wer mehr Fläche belegt, trägt mehr Miete. Einfach zu erheben und schwer zu bestreiten."
+            },
+            {
+              "zellen": [
+                "Strom für Maschinen",
+                "installierte Leistung oder Laufstunden",
+                "Verbrauch folgt der Leistung"
+              ]
+            },
+            {
+              "zellen": [
+                "Hilfslöhne, Sozialkosten",
+                "Zahl der Beschäftigten",
+                "Personalkosten folgen den Köpfen"
+              ]
+            },
+            {
+              "zellen": [
+                "Abschreibungen",
+                "Anlagenwert je Stelle",
+                "wo die Anlagen stehen, entsteht der Wertverzehr"
+              ],
+              "detail": "**Anlagenbuchhaltung liefert das direkt.** Deshalb ist dieser Schlüssel meist am genauesten von allen."
+            },
+            {
+              "zellen": [
+                "Versicherungen",
+                "Versicherungswert",
+                "Prämie folgt dem versicherten Wert"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein unpassender Schlüssel verzerrt die Kalkulation **dauerhaft und unsichtbar**. Wird der Strom nach Quadratmetern verteilt, subventioniert die maschinenarme Verwaltung die Fertigung — und deren Produkte erscheinen billiger, als sie sind."
+        },
+        {
+          "typ": "check",
+          "frage": "Nach welchem Schlüssel verteilst du die Gebäudeversicherung auf die Kostenstellen?",
+          "optionen": [
+            {
+              "text": "Nach der Zahl der Beschäftigten",
+              "richtig": false,
+              "echo": "Die Prämie einer Gebäudeversicherung hängt nicht daran, wie viele Menschen im Raum arbeiten, sondern am versicherten Wert beziehungsweise an der Fläche."
+            },
+            {
+              "text": "Nach Quadratmetern oder Versicherungswert",
+              "richtig": true,
+              "echo": "Richtig. Der Schlüssel muss die Kostenverursachung abbilden. Bei einer Gebäudeversicherung richtet sich die Prämie nach dem versicherten Wert des Gebäudes; ersatzweise wird nach Fläche verteilt, weil sie damit eng zusammenhängt und leicht zu erheben ist. Ein Schlüssel nach Beschäftigtenzahl würde die Kosten dorthin lenken, wo viele Menschen sitzen, statt dorthin, wo Werte stehen."
+            },
+            {
+              "text": "Nach den Fertigungslöhnen",
+              "richtig": false,
+              "echo": "Fertigungslöhne sind die Bezugsgröße für den Fertigungsgemeinkostenzuschlag, nicht der Verteilungsschlüssel für eine Gebäudeversicherung."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Zuschlagssätze berechnen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Jede Kostenstelle bekommt eine **Bezugsgröße**, auf die ihre Gemeinkosten bezogen werden. ==Der {{begriff:zuschlagssatz|Zuschlagssatz}} ist dann nichts anderes als Gemeinkosten geteilt durch Bezugsgröße, mal hundert.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kostenstelle",
+            "Gemeinkosten",
+            "Bezugsgröße",
+            "Zuschlagssatz"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Material",
+                "24.000",
+                "Fertigungsmaterial 160.000",
+                "15,0 %"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ],
+              "detail": "**24.000 ÷ 160.000 × 100 = 15 %.** Auf jeden Euro Fertigungsmaterial kommen also 15 Cent Materialgemeinkosten."
+            },
+            {
+              "zellen": [
+                "Fertigung",
+                "126.000",
+                "Fertigungslöhne 90.000",
+                "140,0 %"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ],
+              "detail": "**Zuschlagssätze über 100 % sind normal.** In der Fertigung stecken Maschinen, Meister und Halle — das ist regelmäßig ein Vielfaches der reinen Löhne."
+            },
+            {
+              "zellen": [
+                "Verwaltung",
+                "40.000",
+                "Herstellkosten 400.000",
+                "10,0 %"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "Vertrieb",
+                "32.000",
+                "Herstellkosten 400.000",
+                "8,0 %"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ],
+              "detail": "**Verwaltung und Vertrieb beziehen sich beide auf die Herstellkosten** — nicht auf die Löhne. Das ist die häufigste Verwechslung."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Zuschlagssatz = Gemeinkosten ÷ Bezugsgröße × 100.** Material bezieht sich auf das Fertigungsmaterial, Fertigung auf die Fertigungslöhne, Verwaltung und Vertrieb auf die Herstellkosten.",
+          "karteikarte": "Wie berechnet man einen Zuschlagssatz, und welche Bezugsgröße gehört zu welcher Kostenstelle?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Die Zuschlagssätze stammen immer aus einem **vergangenen** Zeitraum. Ändert sich die Struktur — neue Maschine, weniger Personal, andere Produkte — sind sie überholt. Deshalb wird der BAB regelmäßig neu gerechnet, üblicherweise monatlich."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Bezugsgröße gehört dazu?",
+          "kategorien": [
+            "Fertigungsmaterial",
+            "Fertigungslöhne",
+            "Herstellkosten"
+          ],
+          "aufgaben": [
+            {
+              "text": "Materialgemeinkosten.",
+              "loesung": "Fertigungsmaterial"
+            },
+            {
+              "text": "Fertigungsgemeinkosten.",
+              "loesung": "Fertigungslöhne"
+            },
+            {
+              "text": "Verwaltungsgemeinkosten.",
+              "loesung": "Herstellkosten"
+            },
+            {
+              "text": "Vertriebsgemeinkosten.",
+              "loesung": "Herstellkosten"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Der {{begriff:bab|BAB}} verteilt Gemeinkosten auf Kostenstellen und liefert Zuschlagssätze.",
+    "Er verbindet Kostenarten- und Kostenträgerrechnung.",
+    "Verteilungsschlüssel müssen die Kostenverursachung abbilden.",
+    "Miete nach Fläche, Strom nach Leistung, Sozialkosten nach Köpfen, Abschreibungen nach Anlagenwert.",
+    "Ein unpassender Schlüssel verzerrt die Kalkulation dauerhaft und unsichtbar.",
+    "{{begriff:zuschlagssatz|Zuschlagssatz}} = Gemeinkosten ÷ Bezugsgröße × 100.",
+    "Material bezieht sich auf Fertigungsmaterial, Fertigung auf Fertigungslöhne.",
+    "Verwaltung und Vertrieb beziehen sich beide auf die Herstellkosten."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Berechnung",
+      "frage": "Materialgemeinkosten 18.000 € bei Fertigungsmaterial von 120.000 €; Fertigungsgemeinkosten 96.000 € bei Fertigungslöhnen von 80.000 €. Berechne beide Zuschlagssätze.",
+      "loesung": "Der Materialgemeinkostenzuschlagssatz ergibt sich aus 18.000 € geteilt durch 120.000 €, das sind 0,15 beziehungsweise 15 Prozent. Auf jeden Euro Fertigungsmaterial entfallen also 15 Cent Materialgemeinkosten. Der Fertigungsgemeinkostenzuschlagssatz ergibt sich aus 96.000 € geteilt durch 80.000 €, das sind 1,2 beziehungsweise 120 Prozent. Zuschlagssätze über hundert Prozent sind in der Fertigung üblich, weil dort Maschinen, Hallenanteile und Aufsichtspersonal zusammenkommen, deren Kosten ein Vielfaches der reinen Fertigungslöhne betragen."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre, warum Verteilungsschlüssel sorgfältig gewählt werden müssen.",
+      "loesung": "Der Verteilungsschlüssel bestimmt, welche Kostenstelle welchen Anteil einer Gemeinkostenart trägt. Er soll die Kostenverursachung abbilden: Die Miete wird nach Quadratmetern verteilt, weil die belegte Fläche die Kosten verursacht, der Maschinenstrom nach installierter Leistung oder Laufstunden, Sozialkosten nach der Zahl der Beschäftigten und Abschreibungen nach dem Anlagenwert je Stelle. Wird ein unpassender Schlüssel gewählt, verschieben sich die Gemeinkosten zwischen den Stellen, und damit verändern sich auch die daraus abgeleiteten Zuschlagssätze. Die Folge ist eine dauerhaft verzerrte Kalkulation: Produkte einer Stelle erscheinen zu billig, die einer anderen zu teuer. Besonders heikel ist, dass dieser Fehler unsichtbar bleibt, weil die Summe aller Gemeinkosten unverändert stimmt. Auffallen kann er erst, wenn Aufträge systematisch unter Wert angenommen werden."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Betrieb hat vor einem halben Jahr eine große Fertigungsmaschine angeschafft und arbeitet weiter mit den alten Zuschlagssätzen. Was passiert?",
+      "loesung": "Die Zuschlagssätze stammen aus einem Zeitraum, in dem die Maschine noch nicht vorhanden war. Durch die Anschaffung sind die Fertigungsgemeinkosten deutlich gestiegen, weil Abschreibung, kalkulatorische Zinsen, Energie, Wartung und gegebenenfalls Versicherung hinzugekommen sind. Gleichzeitig sind die Fertigungslöhne als Bezugsgröße möglicherweise sogar gesunken, wenn die Maschine Handarbeit ersetzt. Der tatsächliche Fertigungsgemeinkostenzuschlagssatz liegt damit erheblich über dem alten Wert. Rechnet der Betrieb weiter mit dem alten Satz, werden die Herstellkosten und in der Folge die Selbstkosten zu niedrig ausgewiesen. Angebote werden zu günstig kalkuliert, und der Betrieb verdient an jedem Auftrag weniger als gedacht oder macht sogar Verlust, ohne dass es auffällt. Notwendig ist deshalb, den BAB mit den aktuellen Zahlen neu zu rechnen und die Zuschlagssätze anzupassen. Grundsätzlich sollte der BAB regelmäßig, üblicherweise monatlich, fortgeschrieben werden, und bei wesentlichen Änderungen der Kostenstruktur sofort. Zusätzlich empfiehlt sich zu prüfen, ob die Bezugsgröße Fertigungslöhne für eine nun maschinenintensive Fertigung überhaupt noch geeignet ist."
+    }
+  ],
+  "pruefungstipp": "Der BAB kommt fast immer als ausgefüllte oder halb ausgefüllte Tabelle, aus der Zuschlagssätze zu berechnen sind. Merke dir die vier Bezugsgrößen auswendig — Material auf Fertigungsmaterial, Fertigung auf Fertigungslöhne, Verwaltung und Vertrieb auf Herstellkosten. Die häufigste Falle ist, Verwaltung und Vertrieb versehentlich auf die Löhne zu beziehen."
+}

@@ -1,0 +1,269 @@
+{
+  "id": "k3",
+  "lernfeld": "lf2",
+  "nummer": 3,
+  "titel": "Termine und Fristen im Griff",
+  "untertitel": "Ein vergessener Termin ist peinlich. Eine versäumte Frist kostet Geld.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Termine planen und Terminarten unterscheiden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Eine Wiedervorlage einrichten und nutzen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Fristen berechnen und überwachen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Termine planen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Termine unterscheiden sich in einem Punkt, der alles andere bestimmt: **Wer darf sie verschieben?** ==Ein interner Besprechungstermin lässt sich verlegen, ein Gerichtstermin nicht.== Danach richtet sich, wie viel Puffer drumherum gehört."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Terminart",
+            "Beispiel",
+            "Verschiebbar?"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Fester Termin",
+                "Kundenbesuch, Prüfung, Gerichtstermin",
+                "nein oder nur mit Absprache"
+              ],
+              "detail": "**Diese Termine bilden das Gerüst des Kalenders.** Alles andere wird um sie herum geplant, nicht umgekehrt."
+            },
+            {
+              "zellen": [
+                "Beweglicher Termin",
+                "interne Besprechung, Ablagezeit",
+                "ja"
+              ]
+            },
+            {
+              "zellen": [
+                "Wiederkehrender Termin",
+                "Monatsabschluss, Teamrunde",
+                "meist nicht sinnvoll"
+              ],
+              "detail": "**Serientermine gehören einmal richtig angelegt.** Wer sie jedes Mal neu einträgt, vergisst irgendwann einen — und merkt es erst, wenn er fehlt."
+            },
+            {
+              "zellen": [
+                "Frist",
+                "Zahlungsziel, Widerspruchsfrist",
+                "nein"
+              ],
+              "detail": "**Eine Frist ist kein Termin, sondern ein Stichtag mit Rechtsfolge.** Wer sie versäumt, verliert ein Recht — das ist der Unterschied zum vergessenen Meeting."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Feste Termine zuerst eintragen**, danach bewegliche einplanen. Fristen gehören nicht in denselben Topf wie Termine — sie brauchen eine eigene Überwachung.",
+          "karteikarte": "Welche Terminarten gibt es, und warum werden feste Termine zuerst eingetragen?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Trag bei auswärtigen Terminen immer die **Wegzeit mit ein**, in beide Richtungen. Ein Termin von 14 bis 15 Uhr in einer anderen Stadt blockiert nicht eine Stunde, sondern drei — und genau daran scheitern Tagespläne."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Die Wiedervorlage",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:wiedervorlage|Wiedervorlage}} löst ein Problem, das jeder kennt: Ein Vorgang ist erledigt, **aber noch nicht abgeschlossen** — man wartet auf eine Antwort, eine Lieferung, eine Zahlung. Ohne System verschwindet er im Stapel und taucht erst wieder auf, wenn sich jemand beschwert."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Der Kreislauf",
+          "titel": "So läuft eine Wiedervorlage",
+          "lead": "Vier Schritte, danach beginnt es von vorn. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Vorgang abgeben",
+              "satz": "mit Datum",
+              "text": "Ein Vorgang wartet auf etwas von außen. Er bekommt ein Wiedervorlagedatum — nicht das Datum, an dem die Antwort erwartet wird, sondern das Datum, an dem nachgefasst werden soll."
+            },
+            {
+              "nr": 2,
+              "titel": "Einsortieren",
+              "satz": "31 Tage, 12 Monate",
+              "text": "Klassisch in eine Mappe mit einem Fach je Tag des laufenden Monats und je Monat des Jahres. Digital genauso: ein Ordner oder eine Aufgabe mit Fälligkeitsdatum."
+            },
+            {
+              "nr": 3,
+              "titel": "Täglich ziehen",
+              "satz": "morgens, immer",
+              "text": "Das Fach des Tages wird geleert und bearbeitet. Dieser Schritt ist der einzige, an dem das System scheitern kann — eine Wiedervorlage, in die niemand schaut, ist nur ein anderer Stapel."
+            },
+            {
+              "nr": 4,
+              "titel": "Erledigen oder neu legen",
+              "satz": "der Kreis schließt sich",
+              "text": "Ist die Antwort da, wird der Vorgang abgeschlossen und abgelegt. Ist sie es nicht, wird nachgefasst und ein neues Wiedervorlagedatum gesetzt."
+            }
+          ],
+          "regel": "Der Monatswechsel ist der wunde Punkt: Am Ende des Monats wird das Fach des nächsten Monats auf die Tagesfächer verteilt. Wer das vergisst, verliert einen ganzen Monat an Vorgängen."
+        },
+        {
+          "typ": "achtung",
+          "text": "Eine Wiedervorlage ersetzt **keine** Fristenkontrolle. Sie erinnert daran, nachzufassen. Eine Frist mit Rechtsfolge gehört zusätzlich in ein eigenes Verzeichnis — mit einer Vorfrist, die deutlich vor dem letzten Tag liegt."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Fristen berechnen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Fristen werden nicht nach Gefühl gerechnet. Die Grundregel: **Der Tag des Ereignisses zählt nicht mit.** Geht eine Rechnung am 3. Mai zu und beträgt das Zahlungsziel 30 Tage, beginnt die Frist am 4. Mai."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Regel",
+            "Bedeutung",
+            "Beispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ereignistag zählt nicht",
+                "Fristbeginn ist der Folgetag",
+                "Zugang 3. Mai → Beginn 4. Mai"
+              ]
+            },
+            {
+              "zellen": [
+                "Wochen- und Monatsfristen",
+                "enden am gleichnamigen Tag",
+                "3. Mai + 1 Monat → 3. Juni"
+              ],
+              "detail": "**Bei Monatsfristen zählt der gleiche Kalendertag**, nicht 30 Tage. Fehlt dieser Tag im Zielmonat — etwa der 31. — endet die Frist am letzten Tag des Monats."
+            },
+            {
+              "zellen": [
+                "Wochenende und Feiertag",
+                "Ende verschiebt sich nach hinten",
+                "Ende Samstag → Ende Montag"
+              ],
+              "detail": "**Fällt das Fristende auf einen Samstag, Sonntag oder gesetzlichen Feiertag, endet die Frist am nächsten Werktag.** Das gilt für Fristen mit rechtlicher Wirkung, nicht automatisch für jede betriebliche Absprache."
+            },
+            {
+              "zellen": [
+                "Zugang zählt, nicht Absendung",
+                "entscheidend ist der Eingang",
+                "Poststempel hilft nicht"
+              ],
+              "detail": "**Deshalb der Eingangsstempel im {{begriff:posteingang|Posteingang}}.** Er beweist, wann eine Frist zu laufen begann — und ist im Streit oft das einzige Beweismittel."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Ereignistag zählt nicht, Zugang zählt, Wochenende schiebt nach hinten.** Und immer eine Vorfrist setzen — wer erst am letzten Tag anfängt, hat keine Reserve.",
+          "karteikarte": "Nach welchen Regeln wird eine Frist berechnet, und was passiert, wenn das Fristende auf einen Sonntag fällt?"
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Rechnung mit 14 Tagen Zahlungsziel geht am Donnerstag, 5. Juni zu. Wann endet die Frist?",
+          "optionen": [
+            {
+              "text": "Am 18. Juni — 14 Tage ab dem 5. Juni",
+              "richtig": false,
+              "echo": "Der Tag des Zugangs zählt nicht mit. Gerechnet wird ab dem Folgetag, hier also ab dem 6. Juni."
+            },
+            {
+              "text": "Am 19. Juni, sofern das ein Werktag ist",
+              "richtig": true,
+              "echo": "Richtig. Der Zugangstag am 5. Juni zählt nicht mit, die Frist beginnt am 6. Juni und endet nach 14 Tagen am 19. Juni. Fällt dieser Tag auf einen Samstag, Sonntag oder gesetzlichen Feiertag, verschiebt sich das Ende auf den nächsten Werktag. Praktisch würde man eine Vorfrist auf den 16. oder 17. Juni legen."
+            },
+            {
+              "text": "Am 20. Juni — der letzte Tag zählt auch nicht mit",
+              "richtig": false,
+              "echo": "Der letzte Tag zählt vollständig mit. Nur der Tag des Ereignisses bleibt bei der Berechnung außen vor."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Termin oder Frist?",
+          "kategorien": [
+            "Termin",
+            "Frist"
+          ],
+          "aufgaben": [
+            {
+              "text": "Teambesprechung am Dienstag um 10 Uhr.",
+              "loesung": "Termin"
+            },
+            {
+              "text": "Skonto nur bei Zahlung innerhalb von 10 Tagen.",
+              "loesung": "Frist"
+            },
+            {
+              "text": "Widerspruch gegen einen Mahnbescheid innerhalb von zwei Wochen.",
+              "loesung": "Frist"
+            },
+            {
+              "text": "Jährliches Mitarbeitergespräch im November.",
+              "loesung": "Termin"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Feste Termine bilden das Gerüst, bewegliche werden darum herum geplant.",
+    "Bei auswärtigen Terminen gehört die Wegzeit in beide Richtungen in den Kalender.",
+    "Die {{begriff:wiedervorlage|Wiedervorlage}} hat 31 Tagesfächer und 12 Monatsfächer.",
+    "Sie funktioniert nur, wenn das Tagesfach jeden Morgen tatsächlich geleert wird.",
+    "Am Monatsende wird das Monatsfach auf die Tagesfächer verteilt.",
+    "Fristberechnung: Der Tag des Ereignisses zählt nicht mit.",
+    "Fällt das Fristende auf Samstag, Sonntag oder Feiertag, endet sie am nächsten Werktag.",
+    "Maßgeblich ist der Zugang, nicht die Absendung — deshalb der Eingangsstempel."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre Aufbau und Ablauf einer Wiedervorlage und nenne ihre Schwachstelle.",
+      "loesung": "Die Wiedervorlage besteht klassisch aus 31 Tagesfächern für den laufenden Monat und 12 Monatsfächern für das Jahr. Ein Vorgang, der auf eine Antwort, Lieferung oder Zahlung wartet, erhält ein Wiedervorlagedatum und wird in das entsprechende Fach einsortiert. Jeden Morgen wird das Tagesfach geleert und die enthaltenen Vorgänge werden bearbeitet: Ist die erwartete Reaktion eingetroffen, wird der Vorgang abgeschlossen und abgelegt; ist sie ausgeblieben, wird nachgefasst und ein neues Datum gesetzt. Am Ende jedes Monats wird das Fach des Folgemonats auf die Tagesfächer verteilt. Die Schwachstelle ist der tägliche Zugriff: Eine Wiedervorlage, in die niemand hineinschaut, ist nur ein weiterer Stapel. Zudem ersetzt sie keine Fristenkontrolle für Termine mit Rechtsfolge."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Ein Angebot geht am Montag, 8. September zu und gilt zwei Wochen. Wann endet die Bindungsfrist, wenn der 22. September ein Montag ist?",
+      "loesung": "Der Tag des Zugangs, also der 8. September, zählt bei der Fristberechnung nicht mit. Die Frist beginnt daher am 9. September. Eine Frist von zwei Wochen endet am gleichnamigen Wochentag der übernächsten Woche, hier also am Montag, dem 22. September. Da dieser Tag ein Werktag ist, tritt keine Verschiebung ein. Praktisch sollte eine Vorfrist etwa auf den 18. September gelegt werden, damit die Entscheidung nicht am letzten Tag getroffen werden muss."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ihr habt einem Lieferer am 2. April eine Mängelrüge geschickt und um Stellungnahme binnen zehn Tagen gebeten. Bis heute, dem 20. April, kam nichts. Wie hättet ihr das organisatorisch absichern sollen?",
+      "loesung": "Der Vorgang hätte am 2. April eine Wiedervorlage bekommen müssen, und zwar nicht auf den 12. April als reines Fristende, sondern mit etwas Vorlauf auf etwa den 14. April, um nach Ablauf der gesetzten Frist unverzüglich nachfassen zu können. Zusätzlich gehört die Angelegenheit in die Fristenkontrolle, weil an der Mängelrüge Rechte hängen: Die Verjährung der Mängelansprüche läuft unabhängig davon weiter. Sinnvoll ist außerdem, den Zugang der Rüge beim Lieferer nachweisbar zu machen, etwa durch Sendungsnachweis oder Lesebestätigung, weil im Streitfall der Zugang und nicht die Absendung zählt. Da die Frist nun bereits acht Tage überschritten ist, sollte sofort schriftlich nachgefasst und eine neue, kurze Frist gesetzt werden."
+    }
+  ],
+  "pruefungstipp": "Fristberechnungen sind sichere Punkte, wenn du die drei Regeln hinschreibst, bevor du rechnest: Ereignistag zählt nicht, letzter Tag zählt voll, Wochenende und Feiertag schieben nach hinten. Die häufigste Falle ist die Monatsfrist — dort wird nicht mit 30 Tagen gerechnet, sondern mit dem gleichnamigen Kalendertag."
+}

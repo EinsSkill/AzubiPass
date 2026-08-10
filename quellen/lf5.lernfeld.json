@@ -1,0 +1,62 @@
+{
+  "id": "lf5",
+  "titel": "Kunden akquirieren und binden",
+  "kurztitel": "Lernfeld 5",
+  "untertitel": "2. Ausbildungsjahr · Zeitrichtwert 80 Stunden",
+  "linie": "B",
+  "stand": "2026-07",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Erst *verstehen*, wen du vor dir hast.",
+    "lead": "Marktforschung, die vier Marketinginstrumente und der Unterschied zwischen einem Kunden gewinnen und einen Kunden behalten. Das komplette Lernfeld 5.",
+    "fakten": [
+      "6 Kapitel",
+      "80 Stunden",
+      "2. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf5-k1-markt.kapitel.json",
+      "titel": "Der Markt und die Marktsituation",
+      "minuten": 20,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf5-k2-marktforschung.kapitel.json",
+      "titel": "Marktforschung",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf5-k3-produktpolitik.kapitel.json",
+      "titel": "Marketingkonzeption und Produktpolitik",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf5-k4-preispolitik.kapitel.json",
+      "titel": "Preispolitik",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k5",
+      "datei": "lf5-k5-distribution.kapitel.json",
+      "titel": "Distributionspolitik",
+      "minuten": 20,
+      "frei": false
+    },
+    {
+      "id": "k6",
+      "datei": "lf5-k6-kommunikation.kapitel.json",
+      "titel": "Kommunikationspolitik und Kundenbindung",
+      "minuten": 30,
+      "frei": false
+    }
+  ]
+}

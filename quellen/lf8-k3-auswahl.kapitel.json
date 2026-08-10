@@ -1,0 +1,295 @@
+{
+  "id": "k3",
+  "lernfeld": "lf8",
+  "nummer": 3,
+  "titel": "Auswählen und einstellen",
+  "untertitel": "Vom Bewerbungseingang bis zum unterschriebenen Vertrag.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Ein Auswahlverfahren strukturiert durchführen",
+      "abschnitt": "c1"
+    },
+    {
+      "id": "lz2",
+      "text": "Zulässige von unzulässigen Fragen im Vorstellungsgespräch unterscheiden",
+      "abschnitt": "c2"
+    },
+    {
+      "id": "lz3",
+      "text": "Den Arbeitsvertrag und die Beteiligung des Betriebsrats einordnen",
+      "abschnitt": "c3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "c1",
+      "titel": "Der Ablauf",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein Auswahlverfahren ist ein Trichter: Aus vielen Bewerbungen wird eine Entscheidung. Der Maßstab bleibt auf jeder Stufe derselbe — das Anforderungsprofil aus Kapitel 1."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Sechs Stufen",
+          "titel": "Vom Eingang bis zur Zusage",
+          "lead": "Klick dich durch — jede Stufe hat eine eigene Aufgabe.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Eingangsbestätigung",
+              "satz": "innerhalb weniger Tage",
+              "text": "Keine Formalie, sondern Teil des Auftritts nach außen. Wer wochenlang nichts hört, erzählt das weiter — und bewirbt sich nicht noch einmal."
+            },
+            {
+              "nr": 2,
+              "titel": "Vorauswahl anhand der Unterlagen",
+              "satz": "Muss-Kriterien prüfen",
+              "text": "Anschreiben, Lebenslauf, Zeugnisse gegen das Anforderungsprofil halten. Ergebnis sind drei Stapel: einladen, Warteschleife, absagen."
+            },
+            {
+              "nr": 3,
+              "titel": "Vorstellungsgespräch",
+              "satz": "strukturiert, nicht spontan",
+              "text": "Feste Fragen für alle Bewerber machen die Ergebnisse vergleichbar — und schützen davor, dass der Eindruck der ersten Minute entscheidet."
+            },
+            {
+              "nr": 4,
+              "titel": "Weitere Verfahren",
+              "satz": "Arbeitsprobe · Test · Assessment",
+              "text": "Je nach Stelle. Eine Arbeitsprobe sagt in der Regel mehr über die künftige Leistung aus als jedes Gespräch."
+            },
+            {
+              "nr": 5,
+              "titel": "Entscheidung und Beteiligung",
+              "satz": "Betriebsrat anhören",
+              "text": "Vor der Einstellung ist in größeren Betrieben die Zustimmung des Betriebsrats einzuholen — dazu gleich mehr."
+            },
+            {
+              "nr": 6,
+              "titel": "Zusage und Absage",
+              "satz": "beides zeitnah",
+              "text": "Erst zusagen, wenn die Zusage angenommen wurde, dann den anderen absagen. Absagen ohne Begründung — Begründungen können als Anknüpfungspunkt für AGG-Ansprüche dienen."
+            }
+          ],
+          "regel": "Der Maßstab ist auf jeder Stufe das Anforderungsprofil. Wer ohne festen Maßstab auswählt, wählt nach Sympathie — und begründet es hinterher fachlich."
+        },
+        {
+          "typ": "merke",
+          "text": "Strukturierte Gespräche mit denselben Fragen für alle sind nicht bürokratisch, sondern die einzige Möglichkeit, Bewerber tatsächlich zu vergleichen — und der beste Schutz gegen Diskriminierungsvorwürfe.",
+          "karteikarte": "Warum werden Vorstellungsgespräche strukturiert geführt?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c2",
+      "titel": "Was gefragt werden darf",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Im Vorstellungsgespräch gilt ein einfacher Grundsatz: Zulässig ist, was für die **konkrete Stelle** von Bedeutung ist. Alles andere ist unzulässig — und auf unzulässige Fragen darf der Bewerber ==bewusst falsch antworten==, ohne dass ihm daraus ein Nachteil entsteht."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Die Fragegrenze",
+          "titel": "Zulässig und unzulässig",
+          "lead": "Links, was gefragt werden darf. Rechts, was nicht — und was der Bewerber darf.",
+          "seiten": [
+            {
+              "name": "Zulässig",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Ausbildung, beruflicher Werdegang, Zeugnisse",
+                  "detail": "Der Kern jeder Eignungsprüfung — hier darf umfassend nachgefragt werden."
+                },
+                {
+                  "text": "Fachkenntnisse und Fähigkeiten für die Stelle",
+                  "detail": "Sprachen, Software, Führerschein, wenn die Tätigkeit es verlangt."
+                },
+                {
+                  "text": "Bisheriges Gehalt, wenn es für die Eingruppierung zählt",
+                  "detail": "Zulässig, aber nur mit Bezug zur ausgeschriebenen Stelle."
+                },
+                {
+                  "text": "Wettbewerbsverbote aus dem alten Arbeitsverhältnis",
+                  "detail": "Weil sie die Beschäftigung tatsächlich hindern könnten."
+                },
+                {
+                  "text": "Krankheiten, die die Tätigkeit unmöglich machen",
+                  "detail": "Eng zu verstehen: Es geht um die konkrete Eignung für diese Stelle, nicht um den Gesundheitszustand allgemein."
+                }
+              ]
+            },
+            {
+              "name": "Unzulässig",
+              "ton": "rot",
+              "punkte": [
+                {
+                  "text": "Schwangerschaft",
+                  "detail": "Auch dann unzulässig, wenn die Stelle befristet oder körperlich fordernd ist. Auf diese Frage darf die Bewerberin falsch antworten."
+                },
+                {
+                  "text": "Familienplanung, Familienstand, Kinderwunsch",
+                  "detail": "Ohne Bezug zur Eignung und mittelbar geschlechtsbezogen."
+                },
+                {
+                  "text": "Religion, Weltanschauung, Parteizugehörigkeit",
+                  "detail": "Ausnahme nur bei kirchlichen Trägern und Tendenzbetrieben, und auch dort eng begrenzt."
+                },
+                {
+                  "text": "Gewerkschaftszugehörigkeit",
+                  "detail": "Sie geht den Arbeitgeber nichts an und ist über die Koalitionsfreiheit geschützt."
+                },
+                {
+                  "text": "Vorstrafen ohne Bezug zur Tätigkeit",
+                  "detail": "Bei einer Buchhaltungsstelle darf nach Vermögensdelikten gefragt werden, bei einer Lagerstelle nicht."
+                },
+                {
+                  "text": "Vermögensverhältnisse und Schulden",
+                  "detail": "Ausnahme nur bei Stellen mit besonderer Vermögensverantwortung."
+                }
+              ]
+            }
+          ],
+          "regel": "Das Recht zur Lüge bei unzulässigen Fragen ist kein Betrug, sondern Notwehr — sonst wäre das Frageverbot wertlos, weil jedes Schweigen als Bestätigung gelesen würde."
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Bewerberin wird gefragt, ob sie schwanger ist, und verneint. Sie ist schwanger. Kann der Arbeitgeber den Vertrag später anfechten?",
+          "optionen": [
+            {
+              "text": "Ja, wegen arglistiger Täuschung",
+              "richtig": false,
+              "echo": "Eine Täuschung liegt rechtlich nicht vor, weil die Frage unzulässig war. Wer unzulässig fragt, kann sich auf die Antwort nicht berufen."
+            },
+            {
+              "text": "Nein, die Frage war unzulässig",
+              "richtig": true,
+              "echo": "Richtig. Die Frage nach einer Schwangerschaft ist unzulässig, weil sie mittelbar an das Geschlecht anknüpft. Die Bewerberin durfte sie wahrheitswidrig beantworten; eine Anfechtung wegen arglistiger Täuschung scheidet aus."
+            },
+            {
+              "text": "Nur wenn die Stelle befristet war",
+              "richtig": false,
+              "echo": "Auch bei Befristung bleibt die Frage unzulässig. Die Rechtsprechung macht hier keine Ausnahme — sonst wäre der Schutz gerade dort ausgehebelt, wo er am nötigsten ist."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c3",
+      "titel": "Vertrag und Mitbestimmung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ist die Entscheidung gefallen, folgt der {{begriff:arbeitsvertrag|Arbeitsvertrag}}. Nach {{par:bgb-611a|§ 611a BGB}} verpflichtet er zu weisungsgebundener Arbeit in persönlicher Abhängigkeit — genau das unterscheidet ihn vom Auftrag an einen Selbstständigen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Punkt",
+            "Regelung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Form",
+                "formfrei möglich, die wesentlichen Bedingungen sind aber schriftlich niederzulegen"
+              ]
+            },
+            {
+              "zellen": [
+                "Inhalt",
+                "Beginn, Tätigkeit, Ort, Arbeitszeit, Entgelt, Urlaub, Kündigungsfristen, Probezeit"
+              ]
+            },
+            {
+              "zellen": [
+                "Probezeit",
+                "bis zu sechs Monate, Kündigungsfrist dann zwei Wochen"
+              ],
+              "detail": "**Nicht verwechseln mit der Probezeit in der Ausbildung** — dort sind es nach dem BBiG höchstens vier Monate. Im Arbeitsverhältnis sind es sechs."
+            },
+            {
+              "zellen": [
+                "Befristung",
+                "nur mit Sachgrund oder als sachgrundlose Befristung im gesetzlichen Rahmen"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Bevor eingestellt wird, ist in Betrieben ab einer bestimmten Größe der Betriebsrat zu beteiligen. Nach {{par:betrvg-99|§ 99 BetrVG}} braucht die Einstellung seine **Zustimmung** — anders als bei der Kündigung, wo eine Anhörung genügt."
+        },
+        {
+          "typ": "merke",
+          "text": "Bei der **Einstellung** braucht es die Zustimmung des Betriebsrats, bei der **Kündigung** nur seine Anhörung. Beides ist Pflicht — fehlt es, ist die Maßnahme angreifbar.",
+          "karteikarte": "Wie unterscheidet sich die Beteiligung des Betriebsrats bei Einstellung und Kündigung?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Zulässige oder unzulässige Frage im Vorstellungsgespräch?",
+          "kategorien": [
+            "Zulässig",
+            "Unzulässig"
+          ],
+          "aufgaben": [
+            {
+              "text": "„Beherrschen Sie die Tabellenkalkulation sicher?“",
+              "loesung": "Zulässig"
+            },
+            {
+              "text": "„Planen Sie in nächster Zeit eine Familie?“",
+              "loesung": "Unzulässig"
+            },
+            {
+              "text": "„Sind Sie wegen eines Vermögensdelikts vorbestraft?“ — für eine Kassenstelle",
+              "loesung": "Zulässig"
+            },
+            {
+              "text": "„In welcher Gewerkschaft sind Sie?“",
+              "loesung": "Unzulässig"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Auswahlverfahren: Eingangsbestätigung, Vorauswahl, Gespräch, weitere Verfahren, Entscheidung, Zu- und Absage.",
+    "Maßstab auf jeder Stufe ist das Anforderungsprofil.",
+    "Strukturierte Gespräche machen Bewerber vergleichbar und schützen vor Diskriminierungsvorwürfen.",
+    "Zulässig sind Fragen mit Bezug zur konkreten Stelle.",
+    "Unzulässig: Schwangerschaft, Familienplanung, Religion, Gewerkschaft, Vorstrafen ohne Bezug.",
+    "Auf unzulässige Fragen darf wahrheitswidrig geantwortet werden.",
+    "{{par:bgb-611a|§ 611a BGB}}: weisungsgebundene Arbeit in persönlicher Abhängigkeit.",
+    "{{par:betrvg-99|§ 99 BetrVG}}: Einstellung braucht die Zustimmung des Betriebsrats."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne drei zulässige und drei unzulässige Fragen im Vorstellungsgespräch.",
+      "loesung": "Zulässig sind Fragen nach Ausbildung und beruflichem Werdegang, nach Fachkenntnissen und Fähigkeiten, die für die Stelle gebraucht werden, sowie nach bestehenden Wettbewerbsverboten aus dem bisherigen Arbeitsverhältnis. Unzulässig sind Fragen nach einer Schwangerschaft, nach der Familienplanung sowie nach Religion, Weltanschauung oder Gewerkschaftszugehörigkeit. Auf unzulässige Fragen darf der Bewerber wahrheitswidrig antworten."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Worin unterscheidet sich die Beteiligung des Betriebsrats bei Einstellung und Kündigung?",
+      "loesung": "Bei der Einstellung ist nach § 99 BetrVG die Zustimmung des Betriebsrats erforderlich; verweigert er sie, kann der Arbeitgeber sie nur über das Arbeitsgericht ersetzen lassen. Bei der Kündigung genügt nach § 102 BetrVG die Anhörung — der Betriebsrat kann widersprechen, die Kündigung aber nicht verhindern. Fehlt die Anhörung ganz, ist die Kündigung allerdings unwirksam."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Bewerber wird abgelehnt und verlangt eine schriftliche Begründung. Wie reagierst du?",
+      "loesung": "Eine Begründung ist rechtlich nicht geschuldet und sollte auch nicht gegeben werden. Angaben zu den Ablehnungsgründen können später als Anhaltspunkt für eine Benachteiligung nach dem AGG herangezogen werden. Sachgerecht ist eine freundliche Absage ohne Begründung, verbunden mit dem Hinweis, dass die Entscheidung für einen anderen Bewerber gefallen ist. Intern sollten die Auswahlunterlagen dagegen dokumentiert und aufbewahrt werden, um im Streitfall die sachliche Auswahl belegen zu können."
+    }
+  ],
+  "pruefungstipp": "Die zulässigen und unzulässigen Fragen sind ein sicherer Prüfungskandidat, meist als Zuordnung. Der Prüfstein ist immer: Hat die Frage mit dieser konkreten Stelle zu tun? Und merke dir das Paar Zustimmung bei Einstellung, Anhörung bei Kündigung."
+}

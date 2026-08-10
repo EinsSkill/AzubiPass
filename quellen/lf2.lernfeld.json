@@ -1,0 +1,62 @@
+{
+  "id": "lf2",
+  "titel": "Büroprozesse gestalten und Arbeitsvorgänge organisieren",
+  "kurztitel": "Lernfeld 2",
+  "untertitel": "1. Ausbildungsjahr · Zeitrichtwert 80 Stunden",
+  "linie": "A",
+  "stand": "2026-08",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Ordnung ist kein Charakterzug. Sie ist ein *System*.",
+    "lead": "Arbeitsplatz, Zeit, Termine, Ablage, Datenschutz. Die Dinge, die niemand sieht, solange sie funktionieren — und die alles aufhalten, sobald sie fehlen.",
+    "fakten": [
+      "6 Kapitel",
+      "80 Stunden",
+      "1. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf2-k1-arbeitsplatz.kapitel.json",
+      "titel": "Der Arbeitsplatz",
+      "minuten": 25,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf2-k2-zeitmanagement.kapitel.json",
+      "titel": "Zeit und Aufgaben planen",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf2-k3-termine.kapitel.json",
+      "titel": "Termine und Fristen im Griff",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf2-k4-ablage.kapitel.json",
+      "titel": "Ablegen und aufbewahren",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k5",
+      "datei": "lf2-k5-datenschutz.kapitel.json",
+      "titel": "Datenschutz und Datensicherheit",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k6",
+      "datei": "lf2-k6-information.kapitel.json",
+      "titel": "Informationen beschaffen und aufbereiten",
+      "minuten": 25,
+      "frei": false
+    }
+  ]
+}

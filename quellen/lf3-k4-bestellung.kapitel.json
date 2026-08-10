@@ -1,0 +1,261 @@
+{
+  "id": "k4",
+  "lernfeld": "lf3",
+  "nummer": 4,
+  "titel": "Bestellung und Auftragsbestätigung",
+  "untertitel": "Der Vertrag steht — jetzt zählt, was genau vereinbart wurde.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Bestellung und Auftragsbestätigung rechtlich einordnen",
+      "abschnitt": "d1"
+    },
+    {
+      "id": "lz2",
+      "text": "Die Wirksamkeit von AGB beurteilen",
+      "abschnitt": "d2"
+    },
+    {
+      "id": "lz3",
+      "text": "Liefer- und Zahlungsbedingungen unterscheiden",
+      "abschnitt": "d3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "d1",
+      "titel": "Zwei Schreiben, zwei Bedeutungen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:bestellung|Bestellung}} ist die Willenserklärung des Kunden — aber ob sie Antrag oder Annahme ist, hängt davon ab, was vorher passiert ist. Dasselbe gilt für die {{begriff:auftragsbestaetigung|Auftragsbestätigung}}."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Ausgangslage",
+            "Bestellung ist",
+            "Auftragsbestätigung ist"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Bindendes Angebot ging voraus",
+                "die Annahme — Vertrag steht",
+                "nur Bestätigung des Vereinbarten"
+              ],
+              "detail": "**Praktisch trotzdem sinnvoll.** Sie dokumentiert, was gilt, und deckt Missverständnisse früh auf. Rechtlich ändert sie nichts mehr."
+            },
+            {
+              "zellen": [
+                "Freibleibendes Angebot ging voraus",
+                "der Antrag",
+                "die Annahme — Vertrag steht"
+              ]
+            },
+            {
+              "zellen": [
+                "Kein Angebot ging voraus",
+                "der Antrag",
+                "die Annahme — Vertrag steht"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Weicht die Auftragsbestätigung inhaltlich von der Bestellung ab — anderer Termin, andere Menge —, ist sie keine Annahme, sondern ein neuer Antrag. Der Kunde muss dann seinerseits zustimmen. Kommentarlose Abweichungen in Auftragsbestätigungen sind eine der häufigsten Streitursachen im Alltag."
+        },
+        {
+          "typ": "merke",
+          "text": "Die Frage lautet immer: **Wer hat zuletzt etwas Bindendes erklärt?** Wer abweicht, macht ein neues Angebot — egal, wie das Schreiben überschrieben ist.",
+          "karteikarte": "Wann ist die Auftragsbestätigung rechtlich die Annahme und wann nur eine Bestätigung?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "d2",
+      "titel": "Das Kleingedruckte",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:agb|Allgemeine Geschäftsbedingungen}} sind vorformulierte Bedingungen für eine Vielzahl von Verträgen. Nach {{par:bgb-305|§ 305 BGB}} gelten sie nur unter zwei Voraussetzungen — und beide werden im Alltag oft übersehen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Voraussetzung",
+            "Was das heißt",
+            "Typischer Fehler"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ausdrücklicher Hinweis vor Vertragsschluss",
+                "Der Kunde muss wissen, dass es AGB gibt",
+                "Hinweis erst auf der Rechnung"
+              ],
+              "detail": "**Zu spät ist zu spät.** AGB, die erstmals auf der Rechnung auftauchen, sind nicht Vertragsbestandteil geworden — der Vertrag war da längst geschlossen."
+            },
+            {
+              "zellen": [
+                "Zumutbare Möglichkeit der Kenntnisnahme",
+                "lesbar, verfügbar, verständlich",
+                "Verweis auf eine Website ohne Link"
+              ]
+            },
+            {
+              "zellen": [
+                "Keine überraschenden Klauseln",
+                "Was niemand erwarten muss, gilt nicht",
+                "versteckte Zusatzkosten"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Betrieb druckt seine AGB erstmals auf die Rechnung. Gelten sie?",
+          "optionen": [
+            {
+              "text": "Ja, sie sind ja schriftlich mitgeteilt",
+              "richtig": false,
+              "echo": "Schriftlichkeit genügt nicht. Entscheidend ist der Zeitpunkt: Der Hinweis muss vor oder bei Vertragsschluss erfolgen."
+            },
+            {
+              "text": "Nein, der Hinweis kam nach Vertragsschluss",
+              "richtig": true,
+              "echo": "Richtig. Nach § 305 BGB muss der Verwender bei Vertragsschluss ausdrücklich auf die AGB hinweisen. Die Rechnung kommt erst nach Vertragsschluss und nach der Lieferung — die Bedingungen sind damit nicht Vertragsbestandteil geworden."
+            },
+            {
+              "text": "Nur gegenüber Verbrauchern nicht",
+              "richtig": false,
+              "echo": "Die Einbeziehungsregel gilt im Grundsatz für beide. Unter Kaufleuten sind die Anforderungen zwar niedriger, aber ein Hinweis erst auf der Rechnung reicht auch dort nicht."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "d3",
+      "titel": "Liefern und zahlen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Zwei Blöcke regeln, wie der Vertrag praktisch abgewickelt wird. Sie werden gern verwechselt, obwohl sie ganz verschiedene Fragen beantworten: ==Wer bringt die Ware und trägt das Risiko — und wann kommt das Geld?=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Blöcke",
+          "titel": "Liefer- und Zahlungsbedingungen",
+          "lead": "Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Lieferbedingungen",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "ab Werk — der Käufer holt und zahlt alles",
+                  "detail": "Kosten und Gefahr gehen bereits am Werkstor über. Für den Verkäufer die günstigste Variante, für den Käufer die aufwendigste."
+                },
+                {
+                  "text": "frei Haus — der Verkäufer trägt Kosten bis zur Tür",
+                  "detail": "Die im Handel häufigste Vereinbarung. Sie ist ein Verkaufsargument und wird in den Preis einkalkuliert."
+                },
+                {
+                  "text": "unfrei — der Empfänger zahlt die Fracht",
+                  "detail": "Die Ware wird versandt, die Frachtkosten stellt der Frachtführer dem Empfänger in Rechnung."
+                },
+                {
+                  "text": "Verpackung, Versicherung, Teillieferungen",
+                  "detail": "Auch das gehört hierher — besonders die Frage, ob Teillieferungen zulässig sind, spart später Streit."
+                }
+              ]
+            },
+            {
+              "name": "Zahlungsbedingungen",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Vorkasse — Geld zuerst",
+                  "detail": "Üblich bei Neukunden ohne Bonitätsprüfung oder bei Sonderanfertigungen."
+                },
+                {
+                  "text": "Zahlungsziel — etwa 30 Tage netto",
+                  "detail": "Ein Kredit, den du dem Kunden gewährst. Er kostet dich Liquidität, deshalb steht er im Angebot und nicht im Belieben des Kunden."
+                },
+                {
+                  "text": "Skonto — Abzug bei schneller Zahlung",
+                  "detail": "Zwei Prozent bei zehn Tagen entsprechen rund 36 Prozent Jahreszins — die Rechnung kennst du aus Lernfeld 6. Ein starker Anreiz, aber ein teurer."
+                },
+                {
+                  "text": "Ratenzahlung, Nachnahme, Lastschrift",
+                  "detail": "Je nach Kundengruppe und Betrag. Die Wahl ist immer auch eine Entscheidung über das Ausfallrisiko."
+                }
+              ]
+            }
+          ],
+          "regel": "Merkfrage zur Unterscheidung: Geht es um die **Ware** oder um das **Geld**? Lieferbedingungen betreffen Transport, Kosten und Gefahrübergang — Zahlungsbedingungen den Zeitpunkt und die Art der Zahlung."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Liefer- oder Zahlungsbedingung?",
+          "kategorien": [
+            "Lieferbedingung",
+            "Zahlungsbedingung"
+          ],
+          "aufgaben": [
+            {
+              "text": "„Frei Haus ab einem Bestellwert von 100 €“",
+              "loesung": "Lieferbedingung"
+            },
+            {
+              "text": "„30 Tage netto, bei 10 Tagen 2 % Skonto“",
+              "loesung": "Zahlungsbedingung"
+            },
+            {
+              "text": "„Teillieferungen sind zulässig“",
+              "loesung": "Lieferbedingung"
+            },
+            {
+              "text": "„Zahlbar per Lastschrift“",
+              "loesung": "Zahlungsbedingung"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Ob Bestellung Antrag oder Annahme ist, hängt vom vorausgegangenen Angebot ab.",
+    "Nach bindendem Angebot ist die Bestellung die Annahme — der Vertrag steht sofort.",
+    "Nach freibleibendem oder ohne Angebot ist die Bestellung der Antrag.",
+    "Eine abweichende Auftragsbestätigung ist keine Annahme, sondern ein neuer Antrag.",
+    "{{par:bgb-305|§ 305 BGB}}: AGB gelten nur bei Hinweis vor Vertragsschluss und zumutbarer Kenntnisnahme.",
+    "AGB auf der Rechnung kommen zu spät.",
+    "Lieferbedingungen betreffen Ware, Kosten und Gefahr; Zahlungsbedingungen Zeitpunkt und Art der Zahlung."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Wann ist die Auftragsbestätigung rechtlich die Annahme?",
+      "loesung": "Immer dann, wenn die Bestellung des Kunden der Antrag war — also wenn kein bindendes Angebot vorausging oder das Angebot freibleibend war. Ging ein bindendes Angebot voraus und hat der Kunde es unverändert angenommen, ist der Vertrag bereits mit der Bestellung zustande gekommen; die Auftragsbestätigung bestätigt dann nur noch das Vereinbarte."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Unter welchen Voraussetzungen werden AGB Vertragsbestandteil?",
+      "loesung": "Nach § 305 BGB muss der Verwender bei Vertragsschluss ausdrücklich auf die AGB hinweisen und der anderen Seite die Möglichkeit verschaffen, in zumutbarer Weise von ihrem Inhalt Kenntnis zu nehmen. Zusätzlich dürfen sie keine überraschenden Klauseln enthalten. Ein Hinweis erst auf der Rechnung genügt nicht, weil der Vertrag zu diesem Zeitpunkt bereits geschlossen ist."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Der Kunde bestellt 200 Ordner mit Liefertermin 15. September. Deine Auftragsbestätigung nennt den 29. September. Was gilt?",
+      "loesung": "Die Auftragsbestätigung weicht von der Bestellung ab und ist deshalb keine Annahme, sondern eine Ablehnung verbunden mit einem neuen Antrag. Ein Vertrag ist damit noch nicht zustande gekommen. Er entsteht erst, wenn der Kunde dem neuen Termin zustimmt — ausdrücklich oder durch schlüssiges Verhalten, etwa indem er die Lieferung zum 29. September widerspruchslos annimmt."
+    }
+  ],
+  "pruefungstipp": "Beliebt ist der Fall, in dem die Auftragsbestätigung vom Bestellten abweicht — Antwort: neuer Antrag, kein Vertrag. Und die AGB-Frage läuft praktisch immer auf den Zeitpunkt hinaus: vor Vertragsschluss, sonst gelten sie nicht."
+}

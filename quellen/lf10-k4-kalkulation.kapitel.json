@@ -1,0 +1,361 @@
+{
+  "id": "k4",
+  "lernfeld": "lf10",
+  "nummer": 4,
+  "titel": "Kalkulieren mit Zuschlagssätzen",
+  "untertitel": "Vom Material zum Angebotspreis, Stufe für Stufe.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Das Schema der Zuschlagskalkulation anwenden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Vom Selbstkostenpreis zum Angebotspreis rechnen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Rückwärts- und Differenzkalkulation durchführen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Das Schema",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Zuschlagskalkulation setzt zusammen, was die drei Stufen geliefert haben: **Einzelkosten direkt, Gemeinkosten über die Zuschlagssätze aus dem BAB.** ==Das Schema ist immer gleich, und genau darin liegt seine Stärke.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Stufe",
+            "Rechnung",
+            "Ergibt"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Fertigungsmaterial",
+                "aus der Stückliste",
+                "Einzelkosten"
+              ]
+            },
+            {
+              "zellen": [
+                "+ Materialgemeinkosten",
+                "% vom Fertigungsmaterial",
+                "**Materialkosten**"
+              ],
+              "detail": "**Erster Block abgeschlossen.** Alles, was mit dem Beschaffen und Bereitstellen des Materials zu tun hat, steckt jetzt in einer Zahl."
+            },
+            {
+              "zellen": [
+                "Fertigungslöhne",
+                "aus der Zeiterfassung",
+                "Einzelkosten"
+              ]
+            },
+            {
+              "zellen": [
+                "+ Fertigungsgemeinkosten",
+                "% von den Fertigungslöhnen",
+                "**Fertigungskosten**"
+              ]
+            },
+            {
+              "zellen": [
+                "Materialkosten + Fertigungskosten",
+                "addieren",
+                "**Herstellkosten**"
+              ],
+              "detail": "**Die wichtigste Zwischensumme.** Auf sie beziehen sich Verwaltung und Vertrieb, und sie ist zugleich der Wert, mit dem fertige Erzeugnisse in der Bilanz stehen."
+            },
+            {
+              "zellen": [
+                "+ Verwaltungsgemeinkosten",
+                "% von den Herstellkosten",
+                ""
+              ]
+            },
+            {
+              "zellen": [
+                "+ Vertriebsgemeinkosten",
+                "% von den Herstellkosten",
+                "**Selbstkosten**"
+              ],
+              "detail": "**Hier endet die Kostenrechnung.** Alles Weitere ist eine Entscheidung über den Preis, keine Rechnung über Kosten."
+            }
+          ]
+        },
+        {
+          "typ": "grafik",
+          "variante": "kalkulationsleiter",
+          "kopf": "Die Leiter",
+          "titel": "Vom Material zum Angebotspreis",
+          "lead": "Ändere die Zuschlagssätze und sieh, wie sich der Preis verschiebt.",
+          "richtungen": [
+            "vorwaerts",
+            "rueckwaerts"
+          ],
+          "start": {
+            "id": "fm",
+            "name": "Fertigungsmaterial",
+            "wert": 400
+          },
+          "stufen": [
+            {
+              "id": "mgk",
+              "name": "Materialgemeinkosten",
+              "art": "aufschlag",
+              "satz": 15,
+              "ergebnis": "Materialkosten"
+            },
+            {
+              "id": "fl",
+              "name": "Fertigungslöhne",
+              "art": "zuschlag-absolut",
+              "betrag": 260,
+              "ergebnis": "Zwischensumme"
+            },
+            {
+              "id": "fgk",
+              "name": "Fertigungsgemeinkosten (auf die Löhne)",
+              "art": "zuschlag-absolut",
+              "betrag": 364,
+              "ergebnis": "Herstellkosten",
+              "marke": true
+            },
+            {
+              "id": "vwgk",
+              "name": "Verwaltungsgemeinkosten",
+              "art": "aufschlag",
+              "satz": 10,
+              "ergebnis": "Zwischensumme"
+            },
+            {
+              "id": "vtgk",
+              "name": "Vertriebsgemeinkosten",
+              "art": "aufschlag",
+              "satz": 8,
+              "ergebnis": "Selbstkosten"
+            },
+            {
+              "id": "gewinn",
+              "name": "Gewinnzuschlag",
+              "art": "aufschlag",
+              "satz": 12,
+              "ergebnis": "Barverkaufspreis"
+            }
+          ],
+          "regel": "Achtung bei der Reihenfolge: Verwaltungs- und Vertriebsgemeinkosten werden beide auf die Herstellkosten gerechnet, nicht nacheinander aufeinander. In der Leiter oben sind sie der Anschaulichkeit halber gestaffelt dargestellt."
+        },
+        {
+          "typ": "merke",
+          "text": "**Materialkosten + Fertigungskosten = Herstellkosten.** Darauf Verwaltung und Vertrieb, das ergibt die **Selbstkosten**. Alles danach ist Preispolitik, nicht Kostenrechnung.",
+          "karteikarte": "Wie lautet das Schema der Zuschlagskalkulation von den Materialkosten bis zu den Selbstkosten?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Vom Selbstkostenpreis zum Angebot",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ab den Selbstkosten geht es um Nachlässe, die man **einplanen** muss, weil man sie später gewährt. ==Der entscheidende Punkt: Skonto und Rabatt werden vom jeweiligen Endpreis gerechnet, nicht von den Selbstkosten== — deshalb wird mit dem Im-Hundert-Ansatz gearbeitet."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Stufe",
+            "Bezug",
+            "Ergibt"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Selbstkosten",
+                "",
+                "Ausgangspunkt"
+              ]
+            },
+            {
+              "zellen": [
+                "+ Gewinnzuschlag",
+                "auf die Selbstkosten",
+                "**Barverkaufspreis**"
+              ],
+              "detail": "**Der Gewinn wird aufgeschlagen**, weil er kein Nachlass ist. Er ist der einzige Posten, über den der Betrieb frei entscheidet."
+            },
+            {
+              "zellen": [
+                "+ Kundenskonto",
+                "im Hundert vom Zielverkaufspreis",
+                "**Zielverkaufspreis**"
+              ],
+              "detail": "**Hier ist die Falle.** Bei 2 % Skonto wird nicht mit 2 % vom Barverkaufspreis gerechnet, sondern der Barverkaufspreis entspricht 98 % des Zielverkaufspreises."
+            },
+            {
+              "zellen": [
+                "+ Kundenrabatt",
+                "im Hundert vom Angebotspreis",
+                "**Angebotspreis**"
+              ],
+              "detail": "**Dieselbe Logik.** Bei 10 % Rabatt entspricht der Zielverkaufspreis 90 % des Angebotspreises — der Rabatt wird ja später vom Listenpreis abgezogen."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "**Im Hundert, nicht auf Hundert.** Wer 2 % Skonto einfach auf den Barverkaufspreis aufschlägt, kommt auf einen zu niedrigen Preis — und verdient nach Skontoabzug weniger als kalkuliert. Rechne: Barverkaufspreis ÷ 98 × 100."
+        },
+        {
+          "typ": "check",
+          "frage": "Der Barverkaufspreis beträgt 490 €, es sollen 2 % Skonto gewährt werden. Wie hoch ist der Zielverkaufspreis?",
+          "optionen": [
+            {
+              "text": "499,80 € — 2 % auf 490 € aufgeschlagen",
+              "richtig": false,
+              "echo": "Das ist die Rechnung auf Hundert. Zieht der Kunde davon 2 % ab, bleiben nur 489,80 € — knapp unter dem kalkulierten Barverkaufspreis."
+            },
+            {
+              "text": "500,00 € — 490 geteilt durch 98, mal 100",
+              "richtig": true,
+              "echo": "Richtig. Der Barverkaufspreis entspricht 98 Prozent des Zielverkaufspreises, weil der Kunde später 2 Prozent abzieht. Also 490 € geteilt durch 98 mal 100 gleich 500 €. Zieht der Kunde davon 2 Prozent, also 10 €, ab, bleiben genau die kalkulierten 490 €. Das nennt man Rechnen im Hundert."
+            },
+            {
+              "text": "480,20 € — 2 % abgezogen",
+              "richtig": false,
+              "echo": "Die Richtung stimmt nicht. Auf dem Weg von den Selbstkosten zum Angebotspreis werden Nachlässe hinzugerechnet, nicht abgezogen — sie sollen ja im Preis Platz finden."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Gewinn wird **auf** die Selbstkosten gerechnet. Skonto und Rabatt werden **im Hundert** gerechnet, weil sie später vom Endpreis abgezogen werden.",
+          "karteikarte": "Warum werden Kundenskonto und Kundenrabatt im Hundert gerechnet und nicht auf Hundert?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Rückwärts und dazwischen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Dasselbe Schema lässt sich in beide Richtungen lesen. **Vorwärtskalkulation** rechnet von den Kosten zum Preis. **Rückwärtskalkulation** rechnet vom Marktpreis zurück und beantwortet die Frage: Was darf das Material höchstens kosten?"
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Verfahren",
+            "Gegeben",
+            "Gesucht",
+            "Typische Frage"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Vorwärts",
+                "Kosten",
+                "Preis",
+                "Was müssen wir verlangen?"
+              ]
+            },
+            {
+              "zellen": [
+                "Rückwärts",
+                "Preis",
+                "Kosten",
+                "Was darf es höchstens kosten?"
+              ],
+              "detail": "**Der wichtigere Fall in gesättigten Märkten.** Der Preis ist vom Markt vorgegeben, und der Betrieb muss ermitteln, ob er zu diesen Kosten überhaupt produzieren kann."
+            },
+            {
+              "zellen": [
+                "Differenz",
+                "Kosten und Preis",
+                "Gewinn",
+                "Was bleibt uns?"
+              ],
+              "detail": "**Beide Enden stehen fest.** Die Differenzkalkulation rechnet von unten bis zu den Selbstkosten und von oben bis zum Barverkaufspreis — dazwischen steht der tatsächlich erzielte Gewinn."
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Bei der Rückwärtskalkulation gilt jede Rechenrichtung umgekehrt: Aus **auf Hundert** wird **vom Hundert**, aus Zuschlag wird Abzug. Schreib das Schema untereinander und arbeite dich Zeile für Zeile nach oben — dann kann kaum etwas schiefgehen."
+        },
+        {
+          "typ": "merke",
+          "text": "**Vorwärts** von den Kosten zum Preis, **rückwärts** vom Preis zu den zulässigen Kosten, **Differenz** zum tatsächlichen Gewinn. Immer dasselbe Schema, nur andere Leserichtung.",
+          "karteikarte": "Welche drei Kalkulationsrichtungen gibt es, und welche Frage beantwortet jede?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Kalkulation ist gefragt?",
+          "kategorien": [
+            "Vorwärts",
+            "Rückwärts",
+            "Differenz"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Marktpreis liegt bei 89 €. Was darf das Material kosten?",
+              "loesung": "Rückwärts"
+            },
+            {
+              "text": "Material und Löhne stehen fest. Welchen Preis bieten wir an?",
+              "loesung": "Vorwärts"
+            },
+            {
+              "text": "Kosten und erzielter Preis sind bekannt. Wie hoch war der Gewinn?",
+              "loesung": "Differenz"
+            },
+            {
+              "text": "Der Kunde nennt sein Budget. Passt unsere Fertigung da hinein?",
+              "loesung": "Rückwärts"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Einzelkosten direkt, Gemeinkosten über die Zuschlagssätze aus dem BAB.",
+    "Materialkosten + Fertigungskosten = Herstellkosten.",
+    "Verwaltungs- und Vertriebsgemeinkosten werden beide auf die Herstellkosten gerechnet.",
+    "Herstellkosten + Verwaltung + Vertrieb = Selbstkosten.",
+    "Der Gewinnzuschlag wird auf die Selbstkosten gerechnet.",
+    "Kundenskonto und Kundenrabatt werden im Hundert gerechnet.",
+    "Vorwärtskalkulation geht von den Kosten zum Preis, Rückwärtskalkulation umgekehrt.",
+    "Die Differenzkalkulation ermittelt den tatsächlich erzielten Gewinn."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Berechnung",
+      "frage": "Fertigungsmaterial 500 €, MGK 15 %, Fertigungslöhne 300 €, FGK 120 %, VwGK 10 %, VtGK 8 %. Berechne die Selbstkosten.",
+      "loesung": "Die Materialgemeinkosten betragen 15 Prozent von 500 €, also 75 €; die Materialkosten damit 575 €. Die Fertigungsgemeinkosten betragen 120 Prozent von 300 €, also 360 €; die Fertigungskosten damit 660 €. Die Herstellkosten ergeben sich aus 575 € plus 660 €, also 1.235 €. Die Verwaltungsgemeinkosten betragen 10 Prozent von 1.235 €, das sind 123,50 €. Die Vertriebsgemeinkosten betragen 8 Prozent von 1.235 €, das sind 98,80 €. Beide werden auf die Herstellkosten bezogen, nicht aufeinander. Die Selbstkosten betragen damit 1.235 € plus 123,50 € plus 98,80 €, also 1.457,30 €."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Die Selbstkosten betragen 1.457,30 €. Es sollen 12 % Gewinn, 2 % Kundenskonto und 10 % Kundenrabatt einkalkuliert werden. Berechne den Angebotspreis.",
+      "loesung": "Der Gewinnzuschlag beträgt 12 Prozent von 1.457,30 €, also 174,88 €; der Barverkaufspreis damit 1.632,18 €. Das Kundenskonto wird im Hundert gerechnet, weil der Kunde es später vom Zielverkaufspreis abzieht: 1.632,18 € geteilt durch 98 mal 100 ergibt einen Zielverkaufspreis von 1.665,49 €. Der Kundenrabatt wird ebenfalls im Hundert gerechnet: 1.665,49 € geteilt durch 90 mal 100 ergibt einen Angebotspreis von 1.850,54 €. Zur Probe: 10 Prozent Rabatt von 1.850,54 € sind 185,05 €, es bleiben 1.665,49 €; davon 2 Prozent Skonto sind 33,31 €, es bleiben 1.632,18 € — genau der kalkulierte Barverkaufspreis."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Der Wettbewerb bietet ein vergleichbares Produkt für 1.600 € an. Eure Vorwärtskalkulation kommt auf 1.850 €. Was tust du?",
+      "loesung": "Zunächst ist eine Rückwärtskalkulation zu rechnen: Ausgehend von 1.600 € Angebotspreis werden Rabatt und Skonto vom Hundert abgezogen und anschließend der Gewinnzuschlag herausgerechnet, um die zulässigen Selbstkosten zu ermitteln. Daraus ergibt sich, wie weit die tatsächlichen Kosten über dem Zielwert liegen. Danach ist zu prüfen, an welcher Stelle Spielraum besteht. Beim Material kann über Angebotsvergleich, größere Bestellmengen oder eine andere Ausführung verhandelt werden. Bei den Fertigungskosten ist zu prüfen, ob Arbeitsschritte entfallen oder zusammengelegt werden können. Bei den Gemeinkostenzuschlägen ist zu klären, ob die Sätze noch aktuell sind, denn veraltete Sätze verzerren das Ergebnis. Auch der Gewinnzuschlag und die einkalkulierten Nachlässe lassen sich für diesen Auftrag anpassen. Führt all das nicht zum Ziel, ist die Frage, ob wenigstens ein positiver Deckungsbeitrag erzielt wird und freie Kapazität besteht; dann kann der Auftrag kurzfristig sinnvoll sein. Dauerhaft unter Selbstkosten zu verkaufen ist dagegen keine Lösung, weil dann die Fixkosten nicht verdient werden. Zu prüfen bleibt schließlich, ob die Produkte überhaupt vergleichbar sind — ein höherer Preis kann durch Qualität, Lieferzeit oder Service gerechtfertigt sein."
+    }
+  ],
+  "pruefungstipp": "Die Zuschlagskalkulation ist die zuverlässigste Punktequelle des Lernfelds, weil sie immer gleich läuft. Schreib das Schema als Spalte untereinander, bevor du rechnest, und markiere dir die Herstellkosten — sie sind die Bezugsgröße für Verwaltung und Vertrieb. Die beiden Fallen sind: Verwaltung und Vertrieb aufeinander statt beide auf die Herstellkosten zu beziehen, und Skonto oder Rabatt auf Hundert statt im Hundert zu rechnen."
+}

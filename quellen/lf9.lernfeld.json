@@ -1,0 +1,62 @@
+{
+  "id": "lf9",
+  "titel": "Liquidität sichern und Finanzierung vorbereiten",
+  "kurztitel": "Lernfeld 9",
+  "untertitel": "3. Ausbildungsjahr · Zeitrichtwert 80 Stunden",
+  "linie": "B",
+  "stand": "2026-08",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Gewinn ist eine Meinung. *Liquidität* ist eine Tatsache.",
+    "lead": "Warum rentable Betriebe pleitegehen, woher Geld kommt, was Kredite kosten und welche Sicherheit welchem Zweck dient. Das komplette Lernfeld 9.",
+    "fakten": [
+      "6 Kapitel",
+      "80 Stunden",
+      "3. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf9-k1-liquiditaet.kapitel.json",
+      "titel": "Liquidität planen und sichern",
+      "minuten": 30,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf9-k2-finanzierungsarten.kapitel.json",
+      "titel": "Woher das Geld kommt",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf9-k3-kredite.kapitel.json",
+      "titel": "Kreditarten und Kosten",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf9-k4-sicherheiten.kapitel.json",
+      "titel": "Kreditsicherheiten",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k5",
+      "datei": "lf9-k5-leasing.kapitel.json",
+      "titel": "Leasing, Factoring und Alternativen",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k6",
+      "datei": "lf9-k6-investition.kapitel.json",
+      "titel": "Investitionen beurteilen",
+      "minuten": 30,
+      "frei": false
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "id": "k4",
+  "lernfeld": "lf4",
+  "nummer": 4,
+  "titel": "Der Kaufvertrag und seine Bedingungen",
+  "untertitel": "Was drinsteht, entscheidet später — nicht das Gespräch davor.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Den Inhalt eines Kaufvertrags nach Muss- und Kann-Bestandteilen ordnen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Lieferungs- und Zahlungsbedingungen beurteilen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die Wirkung von AGB und Eigentumsvorbehalt erklären",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Was im Vertrag stehen muss",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:kaufvertrag|Kaufvertrag}} kommt nach {{par:bgb-433|§ 433 BGB}} zustande, sobald sich beide Seiten über Ware und Preis einig sind. ==Alles Weitere ist freiwillig — aber genau dort entscheidet sich, wer bei Störungen den Schaden trägt.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Bestandteil",
+            "Muss oder kann",
+            "Wenn er fehlt"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Art und Güte der Ware",
+                "muss",
+                "kein wirksamer Vertrag"
+              ],
+              "detail": "**Ohne bestimmbaren Kaufgegenstand kein Vertrag.** „Irgendwelche Ordner\" reicht nicht — Art, Ausführung und Qualität müssen wenigstens bestimmbar sein."
+            },
+            {
+              "zellen": [
+                "Menge",
+                "muss",
+                "kein wirksamer Vertrag"
+              ]
+            },
+            {
+              "zellen": [
+                "Preis",
+                "muss",
+                "kein wirksamer Vertrag"
+              ],
+              "detail": "**Bestimmbar genügt.** „Zum Listenpreis am Liefertag\" ist zulässig, weil sich der Preis daraus errechnen lässt."
+            },
+            {
+              "zellen": [
+                "Lieferzeit und Lieferort",
+                "kann",
+                "gesetzliche Regel greift: sofort, beim Verkäufer"
+              ],
+              "detail": "**Ohne Vereinbarung ist die Leistung sofort fällig**, und Leistungsort ist der Sitz des Verkäufers. Das bedeutet: Der Käufer müsste die Ware abholen. In der Praxis wird deshalb fast immer etwas anderes vereinbart."
+            },
+            {
+              "zellen": [
+                "Zahlungsbedingungen",
+                "kann",
+                "Zahlung sofort, ohne Abzug"
+              ]
+            },
+            {
+              "zellen": [
+                "Verpackung, Transport, Gefahrübergang",
+                "kann",
+                "gesetzliche Grundregel gilt"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Ware, Menge, Preis** sind die drei Muss-Bestandteile. Alles andere kann vereinbart werden — fehlt es, greift das Gesetz, und das ist selten das, was der Käufer sich vorgestellt hat.",
+          "karteikarte": "Welche drei Bestandteile muss ein Kaufvertrag mindestens enthalten, und was passiert, wenn Lieferzeit und Zahlungsbedingungen fehlen?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Lieferung und Zahlung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:lieferbedingungen|Lieferbedingungen}} regeln zwei Fragen, die man nicht verwechseln darf: **Wer zahlt den Transport** und **wer trägt die Gefahr**, wenn unterwegs etwas passiert. Die {{begriff:handelsklausel|Handelsklauseln}} fassen beides in kurze Formeln."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Enden",
+          "titel": "Ab Werk oder frei Haus",
+          "lead": "Dieselbe Ware, entgegengesetzte Lastenverteilung. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Ab Werk",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Käufer zahlt den Transport",
+                  "detail": "Die Frachtkosten kommen zum Angebotspreis dazu. Genau deshalb wirkt ein Angebot ab Werk im Vergleich billiger, als es ist."
+                },
+                {
+                  "text": "Gefahr geht früh über",
+                  "detail": "Ab Übergabe an den Frachtführer trägt der Käufer das Risiko. Geht die Ware unterwegs kaputt, muss er trotzdem zahlen."
+                },
+                {
+                  "text": "Käufer organisiert",
+                  "detail": "Spediteur beauftragen, Termine abstimmen, Versicherung prüfen. Mehr Aufwand, dafür Kontrolle über den Transportweg."
+                }
+              ]
+            },
+            {
+              "name": "Frei Haus",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Verkäufer zahlt den Transport",
+                  "detail": "Die Fracht steckt im Preis. Für den Angebotsvergleich heißt das: keine Bezugskosten mehr addieren."
+                },
+                {
+                  "text": "Gefahr geht spät über",
+                  "detail": "Erst mit der Ankunft beim Käufer. Geht unterwegs etwas kaputt, ist das das Problem des Verkäufers."
+                },
+                {
+                  "text": "Verkäufer organisiert",
+                  "detail": "Bequem für den Käufer. Der Verkäufer lässt sich diese Bequemlichkeit über den Preis bezahlen."
+                }
+              ]
+            }
+          ],
+          "regel": "Im Auslandsgeschäft übernehmen die Incoterms diese Aufgabe — dieselbe Logik, nur international einheitlich benannt und wesentlich feiner abgestuft."
+        },
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:zahlungsbedingungen|Zahlungsbedingungen}} legen fest, wann und mit welchem Abzug gezahlt wird. Die übliche Formel „**30 Tage netto, 10 Tage 2 % Skonto**\" heißt: Der volle Betrag ist nach 30 Tagen fällig, bei Zahlung binnen 10 Tagen dürfen 2 % abgezogen werden."
+        },
+        {
+          "typ": "check",
+          "frage": "Ihr kauft Ware ab Werk. Der Spediteur beschädigt die Sendung unterwegs. Wer trägt den Schaden?",
+          "optionen": [
+            {
+              "text": "Der Verkäufer — er hat mangelhafte Ware geliefert",
+              "richtig": false,
+              "echo": "Die Ware war beim Gefahrübergang in Ordnung. Der Schaden entstand danach, also nicht mehr in seinem Verantwortungsbereich."
+            },
+            {
+              "text": "Der Käufer — die Gefahr ging mit der Übergabe an den Frachtführer über",
+              "richtig": true,
+              "echo": "Richtig. Bei „ab Werk\" trägt der Käufer ab Übergabe an den Frachtführer die Gefahr. Er muss den Kaufpreis trotzdem zahlen und sich wegen des Schadens an den Frachtführer oder dessen Versicherung halten. Genau deshalb gehört zu einer Beschaffung ab Werk auch die Frage nach der Transportversicherung."
+            },
+            {
+              "text": "Der Frachtführer zahlt automatisch an den Verkäufer",
+              "richtig": false,
+              "echo": "Der Frachtführer haftet zwar, aber gegenüber seinem Auftraggeber — und der ist bei „ab Werk\" der Käufer. Automatisch passiert außerdem nichts, der Anspruch muss geltend gemacht werden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Das Kleingedruckte",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:agb|Allgemeine Geschäftsbedingungen}} sind vorformulierte Vertragsbedingungen für eine Vielzahl von Verträgen. Nach {{par:bgb-305|§ 305 BGB}} werden sie nur Vertragsbestandteil, wenn der Verwender **ausdrücklich darauf hinweist** und der andere Teil die Möglichkeit hatte, sie zur Kenntnis zu nehmen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Frage",
+            "Antwort",
+            "Folge"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Beide Seiten verwenden AGB — welche gelten?",
+                "nur der übereinstimmende Teil",
+                "Widersprüchliches fällt weg, das Gesetz greift"
+              ],
+              "detail": "**Der Klassiker im Geschäftsverkehr.** Einkaufs- und Verkaufsbedingungen prallen aufeinander. Was sich widerspricht, gilt nicht — an dieser Stelle entscheidet dann das BGB."
+            },
+            {
+              "zellen": [
+                "Individuelle Absprache gegen AGB?",
+                "die Absprache gewinnt",
+                "Vorrang der Individualabrede"
+              ],
+              "detail": "**Was einzeln ausgehandelt wurde, schlägt das Kleingedruckte** — auch wenn es nur mündlich vereinbart war. Deshalb sollte man solche Zusagen schriftlich festhalten."
+            },
+            {
+              "zellen": [
+                "Überraschende Klausel",
+                "wird nicht Vertragsbestandteil",
+                "unwirksam"
+              ]
+            },
+            {
+              "zellen": [
+                "Zweifel bei der Auslegung",
+                "gehen zulasten des Verwenders",
+                "wer sie schreibt, trägt das Risiko"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Die wichtigste Klausel für den Verkäufer ist der {{begriff:eigentumsvorbehalt|Eigentumsvorbehalt}} nach {{par:bgb-449|§ 449 BGB}}: Die Ware bleibt bis zur vollständigen Zahlung sein Eigentum, obwohl der Käufer sie längst besitzt und benutzt."
+        },
+        {
+          "typ": "achtung",
+          "text": "Der Eigentumsvorbehalt allein berechtigt **nicht** zur Wegnahme. Der Verkäufer muss erst vom Vertrag zurücktreten, bevor er die Ware herausverlangen kann — so steht es ausdrücklich in {{par:bgb-449|§ 449 BGB}}. Wer einfach abholt, begeht verbotene Eigenmacht."
+        },
+        {
+          "typ": "merke",
+          "text": "AGB gelten nur bei **Hinweis und Kenntnisnahmemöglichkeit**. Individuelle Absprachen gehen immer vor, Unklarheiten gehen zulasten dessen, der die AGB gestellt hat.",
+          "karteikarte": "Unter welchen Voraussetzungen werden AGB Vertragsbestandteil, und was gilt bei widersprechenden AGB beider Seiten?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Wirksam oder nicht?",
+          "kategorien": [
+            "Wirksam",
+            "Unwirksam"
+          ],
+          "aufgaben": [
+            {
+              "text": "In den AGB steht der Eigentumsvorbehalt bis zur vollständigen Zahlung.",
+              "loesung": "Wirksam"
+            },
+            {
+              "text": "Die AGB werden erst mit der Rechnung nach Vertragsschluss übersandt.",
+              "loesung": "Unwirksam"
+            },
+            {
+              "text": "Mündlich wurde „frei Haus\" zugesagt, die AGB sagen „ab Werk\".",
+              "loesung": "Wirksam"
+            },
+            {
+              "text": "Versteckt zwischen Lieferklauseln steht eine Vertragsstrafe von 5.000 €.",
+              "loesung": "Unwirksam"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Muss-Bestandteile sind Art und Güte der Ware, Menge und Preis.",
+    "Fehlen Lieferzeit und Zahlungsbedingungen, gilt: sofort fällig, Leistungsort beim Verkäufer.",
+    "{{begriff:handelsklausel|Handelsklauseln}} regeln Transportkosten und Transportgefahr getrennt voneinander.",
+    "Ab Werk: Käufer zahlt und trägt die Gefahr ab Übergabe an den Frachtführer.",
+    "Frei Haus: Verkäufer zahlt und trägt die Gefahr bis zur Ankunft.",
+    "{{par:bgb-305|§ 305 BGB}}: AGB gelten nur bei ausdrücklichem Hinweis und Kenntnisnahmemöglichkeit.",
+    "Individualabreden gehen AGB vor; Unklarheiten gehen zulasten des Verwenders.",
+    "{{par:bgb-449|§ 449 BGB}}: Eigentumsvorbehalt — Herausgabe erst nach Rücktritt vom Vertrag."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Unterschied zwischen „ab Werk\" und „frei Haus\" hinsichtlich Kosten und Gefahr.",
+      "loesung": "Bei „ab Werk\" trägt der Käufer die Transportkosten, und die Gefahr geht bereits mit der Übergabe der Ware an den Frachtführer auf ihn über. Wird die Ware unterwegs beschädigt oder geht sie verloren, muss er den Kaufpreis dennoch zahlen und sich an den Frachtführer halten. Bei „frei Haus\" trägt der Verkäufer die Transportkosten, und die Gefahr geht erst mit der Ankunft beim Käufer über; ein Transportschaden geht damit zu Lasten des Verkäufers. Für den Angebotsvergleich folgt daraus, dass bei „ab Werk\" die Frachtkosten als Bezugskosten hinzugerechnet werden müssen, bei „frei Haus\" dagegen nicht."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Wann werden AGB Vertragsbestandteil, und was passiert, wenn beide Vertragspartner eigene AGB verwenden?",
+      "loesung": "Nach § 305 BGB werden AGB nur Vertragsbestandteil, wenn der Verwender bei Vertragsschluss ausdrücklich auf sie hinweist, der andere Teil in zumutbarer Weise von ihrem Inhalt Kenntnis nehmen kann und mit ihrer Geltung einverstanden ist. Überraschende Klauseln werden nicht Bestandteil des Vertrags, und Zweifel bei der Auslegung gehen zulasten des Verwenders. Verwenden beide Seiten eigene AGB, gilt nur der Teil, in dem sie übereinstimmen. Soweit sie sich widersprechen, fallen beide Regelungen weg und an ihre Stelle treten die gesetzlichen Vorschriften. Individuell ausgehandelte Vereinbarungen haben in jedem Fall Vorrang vor den AGB."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ihr habt Büromöbel unter Eigentumsvorbehalt geliefert. Der Kunde zahlt seit drei Monaten nicht. Ein Mitarbeiter schlägt vor, die Möbel einfach abzuholen. Was sagst du?",
+      "loesung": "Das geht so nicht. Der Eigentumsvorbehalt nach § 449 BGB bewirkt zwar, dass die Möbel bis zur vollständigen Zahlung unser Eigentum bleiben. Er berechtigt aber nicht ohne Weiteres zur Wegnahme: Der Verkäufer kann die Sache erst herausverlangen, wenn er vom Vertrag zurückgetreten ist. Der richtige Weg ist deshalb, den Kunden zunächst in Verzug zu setzen und ihm eine angemessene Frist zur Zahlung zu setzen. Verstreicht sie erfolglos, kann der Rücktritt nach § 323 BGB erklärt und anschließend die Herausgabe verlangt werden. Wer die Möbel eigenmächtig abholt, begeht verbotene Eigenmacht und macht sich gegebenenfalls schadensersatzpflichtig."
+    }
+  ],
+  "pruefungstipp": "Die Handelsklauseln werden fast immer über den Transportschaden abgefragt: Ware geht unterwegs kaputt, wer zahlt? Antworte immer in zwei Schritten — erst wer die Kosten trägt, dann wer die Gefahr trägt. Beim Eigentumsvorbehalt ist die häufigste Falle die Herausgabe: erst Rücktritt, dann Wegnahme. Wer das in der richtigen Reihenfolge nennt, hat die Aufgabe."
+}

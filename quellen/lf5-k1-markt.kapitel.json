@@ -1,0 +1,268 @@
+{
+  "id": "k1",
+  "lernfeld": "lf5",
+  "nummer": 1,
+  "titel": "Der Markt und die Marktsituation",
+  "untertitel": "Wo Angebot und Nachfrage sich treffen — und wer dabei am längeren Hebel sitzt.",
+  "minuten": 20,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Markt, Marktformen und Marktanteil erklären",
+      "abschnitt": "a1"
+    },
+    {
+      "id": "lz2",
+      "text": "Käufer- und Verkäufermarkt unterscheiden und Folgen ableiten",
+      "abschnitt": "a2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die Marktsituation des eigenen Betriebs einschätzen",
+      "abschnitt": "a3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "a1",
+      "titel": "Was ein Markt ist",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:markt|Markt}} ist kein Ort mehr, sondern ein Zustand: Überall dort, wo Angebot und Nachfrage aufeinandertreffen, entsteht ein Preis. ==Der Preis ist das Ergebnis, nicht die Vorgabe== — er stellt sich dort ein, wo beide Seiten sich einigen."
+        },
+        {
+          "typ": "absatz",
+          "text": "Wie viel Spielraum ein Betrieb bei diesem Preis hat, hängt davon ab, wie viele Anbieter und Nachfrager es gibt. Diese Zahl bestimmt die Marktform."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Wenige Nachfrager",
+            "Viele Nachfrager",
+            "Marktform"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "ein Anbieter",
+                "viele Nachfrager",
+                "Angebotsmonopol"
+              ],
+              "detail": "**Größter Preisspielraum.** Wer als Einziger anbietet, setzt den Preis fast frei — begrenzt nur durch die Zahlungsbereitschaft und die Aufsicht des Kartellamts."
+            },
+            {
+              "zellen": [
+                "wenige Anbieter",
+                "viele Nachfrager",
+                "Angebotsoligopol"
+              ],
+              "detail": "**Der häufigste Fall bei großen Marken.** Jeder beobachtet die anderen; eine Preissenkung löst sofort Reaktionen aus. Deshalb wird hier eher über Werbung als über den Preis gekämpft."
+            },
+            {
+              "zellen": [
+                "viele Anbieter",
+                "viele Nachfrager",
+                "Polypol"
+              ],
+              "detail": "**Der Normalfall im Handel.** Der einzelne Anbieter ist zu klein, um den Preis zu beeinflussen — er muss den Marktpreis nehmen oder sich durch etwas anderes unterscheiden."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Je weniger Anbieter, desto größer der Preisspielraum. Wer im Polypol sitzt, verkauft nicht über den Preis, sondern über Qualität, Service oder Nähe.",
+          "karteikarte": "Welche drei Marktformen gibt es nach der Zahl der Anbieter, und wie wirkt sich das auf den Preisspielraum aus?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "a2",
+      "titel": "Käufermarkt oder Verkäufermarkt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die zweite Frage ist wichtiger als die Marktform: Wer ist knapp? Wenn mehr angeboten als nachgefragt wird, herrscht ein {{begriff:kaeufermarkt|Käufermarkt}} — der Kunde hat die Wahl. Umgekehrt entsteht ein {{begriff:verkaeufermarkt|Verkäufermarkt}}."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Marktlagen",
+          "titel": "Wer sitzt am längeren Hebel?",
+          "lead": "Dieselbe Ware, zwei völlig unterschiedliche Verhaltensweisen. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Käufermarkt",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Angebot größer als Nachfrage",
+                  "detail": "Es gibt mehr Ware als Interessenten. Der Normalfall in fast allen Konsumgütermärkten."
+                },
+                {
+                  "text": "Der Kunde bestimmt",
+                  "detail": "Er vergleicht, verhandelt, wechselt. Wer ihn halten will, muss ihm einen Grund geben."
+                },
+                {
+                  "text": "Marketing wird überlebenswichtig",
+                  "detail": "Genau hier entsteht der Bedarf für alles, was in diesem Lernfeld folgt. Ohne Käufermarkt bräuchte niemand Marketing."
+                },
+                {
+                  "text": "Preise unter Druck, Service wird zum Argument",
+                  "detail": "Wenn alle dasselbe anbieten, entscheidet, was drumherum passiert: Beratung, Lieferzeit, Erreichbarkeit."
+                }
+              ]
+            },
+            {
+              "name": "Verkäufermarkt",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Nachfrage größer als Angebot",
+                  "detail": "Die Ware ist knapp. Typisch bei Lieferengpässen, neuen Technologien oder in Krisenzeiten."
+                },
+                {
+                  "text": "Der Anbieter bestimmt",
+                  "detail": "Er kann Preise und Bedingungen weitgehend vorgeben — und tut es meist auch."
+                },
+                {
+                  "text": "Werbung wird nebensächlich",
+                  "detail": "Wer ohnehin alles verkauft, muss niemanden überzeugen. Marketing beschränkt sich auf Verwaltung der Nachfrage."
+                },
+                {
+                  "text": "Wartelisten statt Rabatte",
+                  "detail": "Statt um Kunden zu werben, wird zugeteilt. Das kehrt die gesamte Verkaufslogik um."
+                }
+              ]
+            }
+          ],
+          "regel": "Merksatz: Im Käufermarkt sucht der Anbieter den Kunden, im Verkäufermarkt sucht der Kunde die Ware."
+        },
+        {
+          "typ": "check",
+          "frage": "In deiner Branche gibt es plötzlich Lieferengpässe, die Ware wird knapp. Was verändert sich für das Marketing?",
+          "optionen": [
+            {
+              "text": "Die Werbung muss verstärkt werden",
+              "richtig": false,
+              "echo": "Umgekehrt. Bei Knappheit verkauft sich die Ware von selbst — Werbebudget wäre hier verschwendet. Nötig wird eher die Steuerung, wer wie viel bekommt."
+            },
+            {
+              "text": "Der Markt kippt zum Verkäufermarkt, Werbung tritt zurück",
+              "richtig": true,
+              "echo": "Richtig. Übersteigt die Nachfrage das Angebot, sitzt der Anbieter am längeren Hebel. Marketing verschiebt sich von der Gewinnung zur Verwaltung — Wartelisten, Zuteilung, Kommunikation von Lieferzeiten."
+            },
+            {
+              "text": "Nichts, Marketing ist von der Marktlage unabhängig",
+              "richtig": false,
+              "echo": "Marketing ist die Ausrichtung am Markt. Ändert sich der Markt grundlegend, ändern sich zwangsläufig auch die sinnvollen Maßnahmen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "a3",
+      "titel": "Die eigene Lage einschätzen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Rahmenlehrplan verlangt, die Marktsituation entlang von drei Größen zu betrachten: **Kundenstruktur**, **Konkurrenz** und **konjunkturelle Lage**. Alle drei lassen sich mit Zahlen fassen, die im Betrieb bereits vorliegen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Größe",
+            "Leitfrage",
+            "Wo die Zahlen liegen"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Kundenstruktur",
+                "Wer kauft — Alter, Region, Branche, Größe?",
+                "eigene Kundendatenbank, Rechnungen"
+              ]
+            },
+            {
+              "zellen": [
+                "Konkurrenz",
+                "Wie viele Anbieter, wie stark?",
+                "Branchenberichte, IHK, Webseiten der Mitbewerber"
+              ]
+            },
+            {
+              "zellen": [
+                "Konjunkturelle Lage",
+                "Wächst der Gesamtmarkt oder schrumpft er?",
+                "Statistisches Bundesamt, Verbandsstatistiken"
+              ],
+              "detail": "**Warum das zusammengehört:** Ein steigender eigener Umsatz sagt wenig, solange der Gesamtmarkt noch schneller wächst. Dann hast du trotz Wachstum {{begriff:marktanteil|Marktanteil}} verloren."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "{{begriff:marktanteil|Marktanteil}} = eigener Umsatz ÷ Gesamtumsatz des Marktes × 100. Er ist die einzige Zahl, die den eigenen Erfolg ins Verhältnis zur Konkurrenz setzt.",
+          "karteikarte": "Wie berechnet sich der Marktanteil, und warum sagt der eigene Umsatz allein zu wenig?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche der drei Größen ist gemeint?",
+          "kategorien": [
+            "Kundenstruktur",
+            "Konkurrenz",
+            "Konjunktur"
+          ],
+          "aufgaben": [
+            {
+              "text": "Zwei Drittel unserer Aufträge kommen aus dem Rheinland.",
+              "loesung": "Kundenstruktur"
+            },
+            {
+              "text": "Der Branchenumsatz ist im dritten Quartal um 4 % gesunken.",
+              "loesung": "Konjunktur"
+            },
+            {
+              "text": "Ein neuer Anbieter unterbietet uns systematisch um 10 %.",
+              "loesung": "Konkurrenz"
+            },
+            {
+              "text": "Der Anteil unserer Kunden über 60 wächst stetig.",
+              "loesung": "Kundenstruktur"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Markt = Zusammentreffen von Angebot und Nachfrage; der Preis ist das Ergebnis.",
+    "Marktformen nach Anbieterzahl: Monopol, Oligopol, Polypol — je weniger Anbieter, desto mehr Preisspielraum.",
+    "Käufermarkt: Angebot > Nachfrage, der Kunde bestimmt — hier entsteht der Bedarf für Marketing.",
+    "Verkäufermarkt: Nachfrage > Angebot, der Anbieter bestimmt.",
+    "Marktsituation beurteilen über Kundenstruktur, Konkurrenz und konjunkturelle Lage.",
+    "Marktanteil = eigener Umsatz ÷ Marktumsatz × 100."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Unterschied zwischen Käufer- und Verkäufermarkt und nenne je eine Folge für das Marketing.",
+      "loesung": "Im Käufermarkt übersteigt das Angebot die Nachfrage; der Kunde hat die Auswahl und bestimmt die Bedingungen. Folge: Der Betrieb muss werben, sich unterscheiden und den Kunden binden. Im Verkäufermarkt übersteigt die Nachfrage das Angebot; die Ware ist knapp und der Anbieter bestimmt Preis und Konditionen. Folge: Werbung tritt in den Hintergrund, an ihre Stelle treten Zuteilung und Wartelisten."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Der Gesamtmarkt für Bürobedarf in der Region umfasst 12,5 Mio. €. Dein Betrieb setzt 750.000 € um. Wie hoch ist der Marktanteil?",
+      "loesung": "Marktanteil = 750.000 ÷ 12.500.000 × 100 = 6 %."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Der Umsatz deines Betriebs ist um 5 % gestiegen, der Gesamtmarkt aber um 9 %. Wie beurteilst du das?",
+      "loesung": "Trotz Umsatzwachstum hat der Betrieb Marktanteil verloren, weil er langsamer gewachsen ist als der Markt. Der eigene Umsatz allein ist deshalb kein Erfolgsmaßstab — erst der Vergleich mit der Marktentwicklung zeigt die tatsächliche Position gegenüber der Konkurrenz."
+    }
+  ],
+  "pruefungstipp": "Die Unterscheidung Käufer- gegen Verkäufermarkt wird fast immer als Fallaufgabe gestellt: Eine Situation wird beschrieben, gefragt ist die Marktlage und ihre Folgen. Merke: Wer knapp ist, hat die Macht. Und beim Marktanteil immer ins Verhältnis zum Gesamtmarkt setzen, nie den eigenen Umsatz für sich betrachten."
+}

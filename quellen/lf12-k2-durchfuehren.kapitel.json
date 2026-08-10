@@ -1,0 +1,296 @@
+{
+  "id": "k2",
+  "lernfeld": "lf12",
+  "nummer": 2,
+  "titel": "Raum, Technik, Bewirtung",
+  "untertitel": "Die Bestuhlung entscheidet, ob geredet oder zugehört wird.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Die passende Bestuhlung zum Veranstaltungszweck wählen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Technik und Ausstattung vollständig planen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Mit Checklisten am Veranstaltungstag arbeiten",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Die Bestuhlung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:raumplan|Bestuhlung}} ist keine Geschmacksfrage. ==Sie steuert, wer mit wem spricht== — und ob überhaupt gesprochen wird. Wer eine Diskussion in Reihenbestuhlung ansetzt, bekommt keine Diskussion."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Absichten",
+          "titel": "Zuhören oder mitreden",
+          "lead": "Dieselben Menschen, anderes Verhalten. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Reihen und Blockform",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Reihenbestuhlung: alle nach vorn",
+                  "detail": "Größtmögliche Personenzahl auf kleiner Fläche. Alle schauen zum Redner, kaum jemand zueinander — ideal für Vorträge und Informationsveranstaltungen."
+                },
+                {
+                  "text": "Blockform: geschlossener Tisch",
+                  "detail": "Alle sitzen um einen Tisch, jeder sieht jeden. Für Verhandlungen und Sitzungen, bei denen alle gleichrangig beteiligt sind."
+                },
+                {
+                  "text": "Wenig Bewegung erwünscht",
+                  "detail": "Beide Formen legen die Sitzordnung fest. Wer wechseln will, stört — das ist gewollt, wenn Konzentration im Vordergrund steht."
+                },
+                {
+                  "text": "Platzsparend",
+                  "detail": "Reihenbestuhlung bringt die meisten Personen in einen Raum. Bei begrenzter Fläche oft die einzige Möglichkeit."
+                }
+              ]
+            },
+            {
+              "name": "U-Form und Inseln",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "U-Form: offen nach vorn",
+                  "detail": "Alle sehen einander und die Leitung. Für Schulungen und moderierte Diskussionen bis etwa 25 Personen — darüber wird das U zu groß."
+                },
+                {
+                  "text": "Inseln: Gruppen zu vier bis sechs",
+                  "detail": "Für Workshops und Gruppenarbeit. Der Nachteil: Ein Teil der Gruppe sitzt mit dem Rücken zur Bühne und muss sich für Vorträge umdrehen."
+                },
+                {
+                  "text": "Gespräch ist erwünscht",
+                  "detail": "Beide Formen erzeugen Beteiligung, weil man einander ansieht. Wer nur Informationen senden will, ist damit schlecht bedient."
+                },
+                {
+                  "text": "Braucht deutlich mehr Fläche",
+                  "detail": "Für dieselbe Personenzahl etwa das Doppelte. Das gehört in die Raumplanung, sonst passt am Ende die Bestuhlung nicht zum gebuchten Raum."
+                }
+              ]
+            }
+          ],
+          "regel": "Die Frage lautet immer: Sollen die Leute zuhören oder miteinander reden? Danach richtet sich die Form — und erst danach die Raumgröße, denn dieselbe Personenzahl braucht je nach Bestuhlung sehr unterschiedlich viel Platz."
+        },
+        {
+          "typ": "merke",
+          "text": "**Reihen für Vorträge, U-Form für Schulungen, Inseln für Gruppenarbeit, Blockform für Verhandlungen.** Gesprächsfördernde Formen brauchen etwa doppelt so viel Fläche.",
+          "karteikarte": "Welche Bestuhlungsform passt zu welchem Veranstaltungszweck, und welche Folge hat das für die Raumgröße?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Technik und Ausstattung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Technik fällt nie auf, wenn sie funktioniert, und ruiniert eine Veranstaltung, wenn nicht. ==Die drei häufigsten Pannen sind banal:== fehlender Adapter, leerer Akku am Mikrofon, kein Netz für die Online-Zuschaltung."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Bereich",
+            "Was gebraucht wird",
+            "Rückfallebene"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Projektion",
+                "Beamer, Leinwand, Kabel und Adapter",
+                "Präsentation zusätzlich auf USB-Stick"
+              ],
+              "detail": "**Adapter sind das Standardproblem.** Verschiedene Laptops brauchen verschiedene Anschlüsse — ein Sortiment gehört in die Ausstattung, nicht in die Hoffnung."
+            },
+            {
+              "zellen": [
+                "Ton",
+                "Mikrofone, Ersatzbatterien",
+                "zweites Mikrofon bereithalten"
+              ]
+            },
+            {
+              "zellen": [
+                "Netz",
+                "WLAN mit ausreichender Kapazität",
+                "Zugangsdaten ausgedruckt bereitlegen"
+              ],
+              "detail": "**Ein WLAN für zehn Personen bricht bei achtzig zusammen.** Die Kapazität ist beim Anbieter zu erfragen, nicht anzunehmen."
+            },
+            {
+              "zellen": [
+                "Moderation",
+                "Flipchart, Stifte, Karten",
+                "genug Ersatzstifte"
+              ]
+            },
+            {
+              "zellen": [
+                "Betreuung",
+                "jemand, der die Technik bedient",
+                "Ansprechpartner des Hauses klären"
+              ],
+              "detail": "**Der wichtigste Punkt.** Eine Anlage ohne jemanden, der sie im Notfall bedient, ist im Notfall nutzlos. Diese Betreuung kostet extra und wird regelmäßig vergessen."
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Mach einen **Technikcheck am Vortag oder mindestens 90 Minuten vorher** — mit dem Gerät, das tatsächlich benutzt wird, und mit der Datei, die tatsächlich gezeigt wird. Ein Test mit einem anderen Laptop testet nichts."
+        },
+        {
+          "typ": "merke",
+          "text": "Zu jeder Technik gehört eine **Rückfallebene** und **jemand, der sie bedient**. Der Check erfolgt mit dem echten Gerät und der echten Datei, nicht mit einem Ersatz.",
+          "karteikarte": "Was gehört zur Technikplanung einer Veranstaltung, und was ist eine Rückfallebene?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Der Tag selbst",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Am Veranstaltungstag ist keine Zeit zum Nachdenken. ==Deshalb arbeitet man mit {{begriff:checkliste|Checklisten}}== — und deren Wert liegt nicht im Erinnern, sondern im Nachweis: Was abgehakt ist, muss niemand zweimal prüfen."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Drei Phasen",
+          "titel": "Vorher, währenddessen, danach",
+          "lead": "Für jede Phase eine eigene Liste. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Vor Ort ankommen",
+              "satz": "deutlich vor den Gästen",
+              "text": "Raum und Bestuhlung prüfen, Technik testen, Beschilderung anbringen, Empfangstisch aufbauen, Namensschilder auslegen, Ansprechpartner des Hauses kennenlernen. Wer erst mit den Gästen ankommt, hat keine Reserve."
+            },
+            {
+              "nr": 2,
+              "titel": "Empfang",
+              "satz": "der erste Eindruck",
+              "text": "Anmeldeliste, Namensschilder, Garderobe, Wegweiser zu Räumen und Toiletten. Jeder Gast soll wissen, wo er hin muss, ohne fragen zu müssen."
+            },
+            {
+              "nr": 3,
+              "titel": "Während der Veranstaltung",
+              "satz": "unauffällig steuern",
+              "text": "Zeit im Blick behalten, Pausen anstoßen, Bewirtung koordinieren, auf Nachzügler reagieren. Eine feste Person bleibt ansprechbar und wird nicht in Gespräche eingebunden."
+            },
+            {
+              "nr": 4,
+              "titel": "Nachbereitung",
+              "satz": "am selben oder nächsten Tag",
+              "text": "Raum übergeben, Leihgeräte zurück, Teilnehmerliste sichern, Rückmeldungen einholen, Rechnungen prüfen, Dank versenden. Und die Auswertung, solange die Erinnerung frisch ist."
+            }
+          ],
+          "regel": "Eine gute Checkliste nennt zu jedem Punkt einen Verantwortlichen und eine Uhrzeit. Ohne beides ist sie eine Wunschliste."
+        },
+        {
+          "typ": "achtung",
+          "text": "Die **Nachbereitung** ist der Teil, der ausfällt, weil alle erschöpft sind. Genau dort entscheidet sich aber, ob die Veranstaltung etwas gebracht hat: Rückmeldungen, Kontakte und Zusagen verfallen, wenn sie nicht binnen weniger Tage aufgegriffen werden."
+        },
+        {
+          "typ": "merke",
+          "text": "Drei Listen: **vorher, währenddessen, danach.** Jeder Punkt hat Verantwortlichen und Uhrzeit. Die Nachbereitung entscheidet über den Nutzen.",
+          "karteikarte": "Welche drei Phasen deckt die Checklistenarbeit bei Veranstaltungen ab, und was gehört zu jedem Punkt?"
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Schulung für 20 Personen mit viel Diskussion und Gruppenarbeit. Welche Bestuhlung wählst du?",
+          "optionen": [
+            {
+              "text": "Reihenbestuhlung — sie ist am platzsparendsten",
+              "richtig": false,
+              "echo": "Platzsparend ja, aber sie verhindert genau das, was gewollt ist. In Reihen sieht niemand die anderen, und eine Diskussion kommt kaum zustande."
+            },
+            {
+              "text": "U-Form, für die Gruppenphasen ergänzt um Inseln",
+              "richtig": true,
+              "echo": "Richtig. Die U-Form eignet sich für Schulungen bis etwa 25 Personen: Alle sehen einander und die Leitung, was Beteiligung fördert. Für Gruppenarbeitsphasen lassen sich zusätzliche Inseln nutzen oder die Teilnehmenden wechseln an vorbereitete Gruppentische. Wichtig ist, den Raum entsprechend größer zu buchen, weil gesprächsfördernde Formen etwa die doppelte Fläche je Person brauchen."
+            },
+            {
+              "text": "Blockform — alle sitzen an einem Tisch",
+              "richtig": false,
+              "echo": "Die Blockform passt zu Verhandlungen unter Gleichrangigen. Für eine Schulung mit Leitung und Gruppenphasen ist sie zu starr, weil sich die Sitzordnung nicht auflösen lässt."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Bestuhlung passt?",
+          "kategorien": [
+            "Reihen",
+            "U-Form",
+            "Inseln",
+            "Blockform"
+          ],
+          "aufgaben": [
+            {
+              "text": "Vortrag vor 120 Personen.",
+              "loesung": "Reihen"
+            },
+            {
+              "text": "Workshop mit wechselnden Kleingruppen.",
+              "loesung": "Inseln"
+            },
+            {
+              "text": "Vertragsverhandlung mit acht Beteiligten.",
+              "loesung": "Blockform"
+            },
+            {
+              "text": "Moderierte Schulung mit 18 Teilnehmenden.",
+              "loesung": "U-Form"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Die {{begriff:raumplan|Bestuhlung}} steuert, ob zugehört oder miteinander geredet wird.",
+    "Reihen für Vorträge, U-Form für Schulungen, Inseln für Gruppenarbeit, Blockform für Verhandlungen.",
+    "Gesprächsfördernde Formen brauchen etwa die doppelte Fläche je Person.",
+    "Zu jeder Technik gehört eine Rückfallebene und jemand, der sie bedient.",
+    "Der Technikcheck erfolgt mit dem echten Gerät und der echten Datei.",
+    "WLAN-Kapazität beim Anbieter erfragen, nicht annehmen.",
+    "Drei {{begriff:checkliste|Checklisten}}: vorher, währenddessen, danach — je Punkt Verantwortlicher und Uhrzeit.",
+    "Die Nachbereitung entscheidet darüber, ob die Veranstaltung Nutzen bringt."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Welche Bestuhlungsformen gibt es, wofür eignen sie sich, und welche Folge hat die Wahl für die Raumplanung?",
+      "loesung": "Die Reihenbestuhlung richtet alle nach vorn und bringt die meisten Personen auf die kleinste Fläche; sie eignet sich für Vorträge und Informationsveranstaltungen, verhindert aber Gespräche untereinander. Die U-Form ist nach vorn offen, alle sehen einander und die Leitung; sie eignet sich für Schulungen und moderierte Diskussionen bis etwa 25 Personen, darüber wird sie zu groß. Inselbestuhlung mit Gruppen von vier bis sechs Personen eignet sich für Workshops und Gruppenarbeit, hat aber den Nachteil, dass ein Teil der Gruppe für Vorträge mit dem Rücken zur Bühne sitzt. Die Blockform mit einem geschlossenen Tisch eignet sich für Verhandlungen und Sitzungen unter Gleichrangigen. Für die Raumplanung folgt daraus, dass gesprächsfördernde Formen wie U-Form und Inseln etwa die doppelte Fläche je Person benötigen; die Bestuhlung muss deshalb vor der Raumbuchung feststehen."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Was gehört zur Technikplanung einer Veranstaltung?",
+      "loesung": "Für die Projektion werden Beamer, Leinwand sowie Kabel und ein Sortiment an Adaptern benötigt, weil unterschiedliche Geräte unterschiedliche Anschlüsse haben; als Rückfallebene sollte die Präsentation zusätzlich auf einem Speicherstick vorliegen. Für den Ton sind Mikrofone samt Ersatzbatterien und möglichst ein zweites Mikrofon vorzuhalten. Beim Netzzugang ist die Kapazität des WLAN beim Anbieter zu erfragen, weil ein für wenige Personen ausgelegtes Netz bei einer größeren Veranstaltung zusammenbricht; Zugangsdaten sollten ausgedruckt bereitliegen. Für Moderation werden Flipchart, Stifte und Karten benötigt, jeweils mit Ersatz. Der wichtigste und am häufigsten vergessene Punkt ist die Betreuung: Es muss jemand da sein, der die Technik bedient und im Störungsfall eingreift; diese Leistung kostet in der Regel extra. Ein Technikcheck erfolgt am Vortag oder mindestens neunzig Minuten vorher, und zwar mit dem tatsächlich genutzten Gerät und der tatsächlich zu zeigenden Datei."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Zwanzig Minuten vor Beginn fällt der Beamer aus, der Haustechniker ist nicht erreichbar. 60 Gäste sind unterwegs. Was tust du?",
+      "loesung": "Zuerst prüfe ich die einfachen Ursachen systematisch: Stromversorgung, Kabelverbindung, richtiger Eingangskanal am Gerät, Anzeigeeinstellung am Laptop und ein anderer Adapter. Diese vier Punkte lösen die meisten Fälle. Parallel setze ich die Rückfallebenen in Gang: Ich versuche über die Rezeption oder den vereinbarten Ansprechpartner des Hauses einen Ersatzbeamer zu bekommen und lasse gleichzeitig prüfen, ob ein anderer Raum mit funktionierender Technik frei ist. Führt beides nicht zum Ziel, bereite ich eine Durchführung ohne Projektion vor: Die Kernaussagen lassen sich am Flipchart festhalten, und die Präsentation kann im Nachgang per Mail an alle Teilnehmenden versendet werden. Sind Handouts vorhanden, werden sie jetzt verteilt. Wichtig ist außerdem, den Referenten unverzüglich zu informieren, damit er sich umstellen kann, und die Gäste bei Beginn kurz und sachlich zu unterrichten, statt die Panne unkommentiert zu lassen. Für die Nachbereitung halte ich fest, dass ein Ersatzgerät und eine erreichbare Technikbetreuung künftig fest einzuplanen sind."
+    }
+  ],
+  "pruefungstipp": "Die Bestuhlungsformen mit ihren Einsatzzwecken sind eine sichere Zuordnungsaufgabe — lerne alle vier mit je einem Beispiel. Bei Fallaufgaben zu Pannen erwartet die Musterlösung ein systematisches Vorgehen: erst die einfachen Ursachen prüfen, dann Rückfallebene, dann Beteiligte informieren. Und nenne bei der Technikplanung immer die Betreuung mit, sie wird am häufigsten vergessen."
+}

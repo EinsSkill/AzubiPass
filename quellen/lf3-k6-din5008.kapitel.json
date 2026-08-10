@@ -1,0 +1,309 @@
+{
+  "id": "k6",
+  "lernfeld": "lf3",
+  "nummer": 6,
+  "titel": "Geschäftsbriefe nach DIN 5008",
+  "untertitel": "Wo was steht — und warum das keine Geschmacksfrage ist.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Den Aufbau eines Geschäftsbriefs benennen",
+      "abschnitt": "f1"
+    },
+    {
+      "id": "lz2",
+      "text": "Schreibregeln für Datum, Zahlen und Anschriften anwenden",
+      "abschnitt": "f2"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "f1",
+      "titel": "Der Aufbau",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:din5008|DIN 5008}} legt fest, wie ein Geschäftsbrief aufgebaut ist. Das ist keine Formsache: Die Anschrift muss im Fenster des Briefumschlags erscheinen, und ein Sachbearbeiter muss die Bezugszeichen finden, ohne zu suchen. ==In der AP1 wird die Norm direkt am Rechner geprüft.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "brief",
+          "kopf": "Der Geschäftsbrief",
+          "titel": "Aufbau nach DIN 5008",
+          "lead": "Klick auf einen Bereich — jeder hat eine feste Position und eine Aufgabe.",
+          "zonen": [
+            {
+              "id": "kopf",
+              "name": "Briefkopf",
+              "x": 24,
+              "y": 6,
+              "b": 162,
+              "h": 32,
+              "art": "pflicht",
+              "notiz": "Absenderangaben und Logo. Er reicht bis zum Beginn des Anschriftfelds und wird meist als Vorlage einmal angelegt."
+            },
+            {
+              "id": "anschrift",
+              "name": "Anschriftfeld",
+              "x": 24,
+              "y": 40,
+              "b": 85,
+              "h": 45,
+              "art": "pflicht",
+              "notiz": "Muss im Fenster des Briefumschlags sichtbar sein. Oben die Zusatz- und Vermerkzone für Angaben wie „Einschreiben“ oder die Rücksendeangabe, darunter die Anschrift selbst — **ohne Leerzeile** zwischen Straße und Ort."
+            },
+            {
+              "id": "info",
+              "name": "Informationsblock",
+              "x": 125,
+              "y": 40,
+              "b": 61,
+              "h": 45,
+              "art": "frei",
+              "notiz": "Rechts neben dem Anschriftfeld: Ihr Zeichen, Ihre Nachricht vom, Unser Zeichen, Telefon, E-Mail und das Datum. Er ersetzt die früher übliche Bezugszeichenzeile."
+            },
+            {
+              "id": "betreff",
+              "name": "Betreff",
+              "x": 24,
+              "y": 92,
+              "b": 162,
+              "h": 8,
+              "art": "pflicht",
+              "notiz": "Kurz und ohne das Wort „Betreff“. Er wird hervorgehoben, meist fett, und endet **ohne Punkt**."
+            },
+            {
+              "id": "anrede",
+              "name": "Anrede",
+              "x": 24,
+              "y": 104,
+              "b": 162,
+              "h": 8,
+              "art": "pflicht",
+              "notiz": "Nach der Anrede folgt ein Komma, der Text beginnt danach klein. Zwischen Betreff und Anrede sowie zwischen Anrede und Text steht jeweils eine Leerzeile."
+            },
+            {
+              "id": "text",
+              "name": "Brieftext",
+              "x": 24,
+              "y": 116,
+              "b": 162,
+              "h": 92,
+              "art": "pflicht",
+              "notiz": "Linksbündig, ohne Einzug, Absätze durch Leerzeilen getrennt. Der erste Satz sagt, worum es geht — nicht „Bezug nehmend auf Ihr Schreiben“."
+            },
+            {
+              "id": "gruss",
+              "name": "Grußformel",
+              "x": 24,
+              "y": 212,
+              "b": 162,
+              "h": 8,
+              "art": "pflicht",
+              "notiz": "Eine Leerzeile nach dem Text, **ohne Komma** am Ende. Danach folgen Firmenbezeichnung, Raum für die Unterschrift und der maschinenschriftliche Name."
+            },
+            {
+              "id": "unterschrift",
+              "name": "Firma · Unterschrift · Name",
+              "x": 24,
+              "y": 224,
+              "b": 100,
+              "h": 26,
+              "art": "pflicht",
+              "notiz": "Hier zeigt sich die Vertretungsmacht aus Lernfeld 1: **ppa.** beim Prokuristen, **i. V.** oder **i. A.** bei Handlungsvollmacht."
+            },
+            {
+              "id": "anlage",
+              "name": "Anlagenvermerk",
+              "x": 24,
+              "y": 254,
+              "b": 100,
+              "h": 8,
+              "art": "frei",
+              "notiz": "Das Wort „Anlagen“ wird hervorgehoben, die einzelnen Anlagen darunter aufgeführt. Er steht nach dem Namen, nicht am Seitenende."
+            },
+            {
+              "id": "fuss",
+              "name": "Geschäftsangaben",
+              "x": 24,
+              "y": 268,
+              "b": 162,
+              "h": 22,
+              "art": "frei",
+              "notiz": "Rechtsform, Sitz, Registergericht, Handelsregisternummer, Geschäftsführung und Bankverbindung. Für Kaufleute sind diese Pflichtangaben im Geschäftsbrief gesetzlich vorgeschrieben."
+            }
+          ],
+          "masse": [
+            {
+              "bei": 40,
+              "text": "Anschriftfeld"
+            },
+            {
+              "bei": 92,
+              "text": "Betreff"
+            },
+            {
+              "bei": 212,
+              "text": "Gruß"
+            }
+          ],
+          "regel": "Zwei Formen gibt es: Bei **Form A** beginnt das Anschriftfeld höher, bei **Form B** tiefer — Form B lässt mehr Platz für einen aufwendigen Briefkopf und ist im Geschäftsverkehr die übliche.",
+          "pruefen": "Die genauen Millimeterangaben für Seitenränder, Form A und Form B vor Veröffentlichung gegen die geltende DIN 5008 prüfen und in die Maßlinien eintragen."
+        },
+        {
+          "typ": "merke",
+          "text": "Der Betreff endet **ohne Punkt**, die Grußformel **ohne Komma**, und nach der Anrede steht ein **Komma** mit anschließender Kleinschreibung. Diese drei Kleinigkeiten kosten in der Prüfung regelmäßig Punkte.",
+          "karteikarte": "Welche Zeichensetzung gilt bei Betreff, Anrede und Grußformel?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "f2",
+      "titel": "Schreibregeln",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Norm regelt nicht nur den Aufbau, sondern auch die Schreibweise im Text. Diese Regeln sind der Teil, der in der AP1 direkt am Rechner abgefragt wird."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Was",
+            "Richtig",
+            "Falsch"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Datum, numerisch",
+                "2026-09-01 oder 01.09.2026",
+                "1.9.26"
+              ],
+              "detail": "**Beide Formen sind zulässig.** Die numerische Schreibweise mit Punkten braucht führende Nullen und die vierstellige Jahreszahl. Die Form nach ISO beginnt mit dem Jahr und wird international verwendet."
+            },
+            {
+              "zellen": [
+                "Datum, alphanumerisch",
+                "1. September 2026",
+                "01. September 2026"
+              ]
+            },
+            {
+              "zellen": [
+                "Telefonnummer",
+                "0211 12345-67",
+                "0211 / 12 34 5 - 67"
+              ],
+              "detail": "**Gegliedert wird von rechts nach links in Zweiergruppen — außer bei Durchwahlen.** Die Durchwahl wird mit Bindestrich angehängt. Klammern und Schrägstriche sind nicht mehr vorgesehen."
+            },
+            {
+              "zellen": [
+                "Betrag",
+                "1.250,00 EUR",
+                "1250,-- €uro"
+              ]
+            },
+            {
+              "zellen": [
+                "Prozent",
+                "25 % der Menge",
+                "25% der Menge"
+              ],
+              "detail": "**Zwischen Zahl und Zeichen steht ein Leerzeichen** — bei Prozent, Grad und Einheiten. Nur beim Gradzeichen für Winkel entfällt es."
+            },
+            {
+              "zellen": [
+                "Anschrift",
+                "keine Leerzeile vor dem Ort",
+                "Leerzeile zwischen Straße und Ort"
+              ]
+            },
+            {
+              "zellen": [
+                "Auslassungspunkte",
+                "Text ...",
+                "Text..."
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Welche Schreibweise entspricht der DIN 5008?",
+          "optionen": [
+            {
+              "text": "Wir liefern 25% der Menge bis zum 1.9.26.",
+              "richtig": false,
+              "echo": "Zwei Fehler: Zwischen Zahl und Prozentzeichen gehört ein Leerzeichen, und das Datum braucht führende Nullen sowie die vierstellige Jahreszahl."
+            },
+            {
+              "text": "Wir liefern 25 % der Menge bis zum 01.09.2026.",
+              "richtig": true,
+              "echo": "Richtig. Leerzeichen vor dem Prozentzeichen, Datum mit führenden Nullen und vierstelliger Jahreszahl. Ebenfalls zulässig wäre die Schreibweise 2026-09-01."
+            },
+            {
+              "text": "Wir liefern 25 %-der Menge bis zum 01.09.26.",
+              "richtig": false,
+              "echo": "Der Bindestrich hat dort nichts zu suchen, und die Jahreszahl muss vierstellig sein."
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Stell die Vorlage einmal richtig ein, statt bei jedem Brief nachzudenken: Seitenränder, Briefkopf, Anschriftfeld und Informationsblock als Formatvorlage speichern. Dann bleibt bei jedem Schreiben nur noch der Inhalt zu tun — und genau das wird in der AP1 auch bewertet: nicht Schönheit, sondern normgerechte Einrichtung."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Entspricht die Schreibweise der Norm?",
+          "kategorien": [
+            "Richtig",
+            "Falsch"
+          ],
+          "aufgaben": [
+            {
+              "text": "Sehr geehrte Frau Meyer, / wir bestätigen …",
+              "loesung": "Richtig"
+            },
+            {
+              "text": "Mit freundlichen Grüßen,",
+              "loesung": "Falsch"
+            },
+            {
+              "text": "Betreff: Ihre Bestellung vom 01.09.2026.",
+              "loesung": "Falsch"
+            },
+            {
+              "text": "Der Rechnungsbetrag lautet 1.250,00 EUR.",
+              "loesung": "Richtig"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "DIN 5008 regelt Aufbau und Schreibweisen im Geschäftsbrief.",
+    "Reihenfolge: Briefkopf, Anschriftfeld, Informationsblock, Betreff, Anrede, Text, Gruß, Unterschrift, Anlagen, Geschäftsangaben.",
+    "Das Anschriftfeld muss im Umschlagfenster sichtbar sein — ohne Leerzeile vor dem Ort.",
+    "Betreff ohne Punkt, Grußformel ohne Komma, nach der Anrede ein Komma und Kleinschreibung.",
+    "Unterschrift zeigt die Vertretungsmacht: ppa. bei Prokura, i. V. oder i. A. bei Handlungsvollmacht.",
+    "Datum als 01.09.2026 oder 2026-09-01, Prozentzeichen mit Leerzeichen davor.",
+    "Kaufleute müssen im Geschäftsbrief Rechtsform, Sitz und Registerangaben nennen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die Bestandteile eines Geschäftsbriefs nach DIN 5008 in der richtigen Reihenfolge.",
+      "loesung": "Briefkopf, Anschriftfeld, Informationsblock, Betreff, Anrede, Brieftext, Grußformel, Firmenbezeichnung mit Unterschrift und maschinenschriftlichem Namen, Anlagenvermerk und Geschäftsangaben im Fußbereich."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Kollege schreibt: „Betreff: Angebot Nr. 4711.“ — Anrede „Sehr geehrte Damen und Herren:“ — Gruß „Mit freundlichen Grüßen,“. Was ist zu korrigieren?",
+      "loesung": "Drei Fehler. Das Wort „Betreff“ entfällt und der Betreff endet ohne Punkt. Nach der Anrede steht ein Komma, kein Doppelpunkt, und der Text beginnt danach klein. Die Grußformel steht ohne Satzzeichen am Ende. Richtig wäre also: „Angebot Nr. 4711“, „Sehr geehrte Damen und Herren,“ und „Mit freundlichen Grüßen“."
+    }
+  ],
+  "pruefungstipp": "DIN 5008 ist AP1-Kernstoff und wird direkt am Rechner geprüft — dort zählt die normgerechte Einrichtung, nicht das Aussehen. Lerne die Reihenfolge der Bestandteile und die drei Zeichensetzungsregeln bei Betreff, Anrede und Gruß auswendig; damit sind die meisten Punkte geholt."
+}

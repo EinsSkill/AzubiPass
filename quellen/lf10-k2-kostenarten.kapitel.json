@@ -1,0 +1,329 @@
+{
+  "id": "k2",
+  "lernfeld": "lf10",
+  "nummer": 2,
+  "titel": "Kostenarten unterscheiden",
+  "untertitel": "Zwei Einteilungen, die nichts miteinander zu tun haben.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Einzel- und Gemeinkosten unterscheiden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Fixe und variable Kosten unterscheiden",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die Fixkostendegression erklären",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Zurechenbar oder nicht",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die erste Einteilung fragt: **Lässt sich diese Kostenart einem einzelnen Produkt direkt zuordnen?** ==Wenn ja, sind es {{begriff:einzelkosten|Einzelkosten}}. Wenn nein, {{begriff:gemeinkosten|Gemeinkosten}}== — und die müssen über Zuschlagssätze verteilt werden."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Art",
+            "Merkmal",
+            "Beispiele"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "{{begriff:einzelkosten|Einzelkosten}}",
+                "direkt zurechenbar",
+                "Fertigungsmaterial, Fertigungslöhne, Sondereinzelkosten"
+              ],
+              "detail": "**Man kann sie am Produkt ablesen.** Für einen Schrank braucht es eine bestimmte Menge Holz und eine bestimmte Zahl Arbeitsminuten — beides lässt sich messen."
+            },
+            {
+              "zellen": [
+                "{{begriff:gemeinkosten|Gemeinkosten}}",
+                "nur indirekt verteilbar",
+                "Miete, Verwaltung, Meistergehalt, Strom"
+              ],
+              "detail": "**Die Miete lässt sich keinem Schrank zuordnen.** Sie fällt für die ganze Werkstatt an. Deshalb wird sie über einen Schlüssel verteilt — und dabei entsteht jede Ungenauigkeit der Kalkulation."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Eine Zwischenform sind die **Sondereinzelkosten**: Sie lassen sich zwar zuordnen, aber nicht dem einzelnen Stück, sondern dem Auftrag. Ein eigens gebautes Werkzeug für einen Kundenauftrag ist so ein Fall — es wird auf die Stückzahl des Auftrags verteilt."
+        },
+        {
+          "typ": "achtung",
+          "text": "Ob etwas Einzel- oder Gemeinkosten sind, hängt vom **Bezugsobjekt** ab. Das Gehalt eines Meisters ist Gemeinkosten bezogen auf das einzelne Stück, aber Einzelkosten bezogen auf die Kostenstelle Fertigung. Die Frage lautet also immer: zurechenbar **wozu**?"
+        },
+        {
+          "typ": "merke",
+          "text": "**Einzelkosten** lassen sich direkt zurechnen, **Gemeinkosten** nur über einen Schlüssel verteilen. Die Zuordnung hängt vom Bezugsobjekt ab.",
+          "karteikarte": "Wie unterscheiden sich Einzel- und Gemeinkosten, und wovon hängt die Zuordnung ab?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Beschäftigungsabhängig oder nicht",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die zweite Einteilung fragt etwas völlig anderes: **Ändern sich diese Kosten, wenn mehr produziert wird?** ==Beide Einteilungen sind unabhängig voneinander — eine Kostenart kann fix und gleichzeitig Gemeinkosten sein, oder variabel und Einzelkosten.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Verhaltensweisen",
+          "titel": "Fix oder variabel",
+          "lead": "Was passiert bei doppelter Menge? Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Fixkosten",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Gesamt: bleiben gleich",
+                  "detail": "Ob 100 oder 1.000 Stück produziert werden — die Miete für die Halle ändert sich nicht. Das ist die Definition."
+                },
+                {
+                  "text": "Je Stück: sinken",
+                  "detail": "Dieselbe Miete verteilt sich auf mehr Stücke. Genau daraus entsteht die Fixkostendegression im nächsten Abschnitt."
+                },
+                {
+                  "text": "Beispiele",
+                  "detail": "Miete, Gehälter, Versicherungen, lineare Abschreibung, Grundgebühren."
+                },
+                {
+                  "text": "Sprungfixe Sonderform",
+                  "detail": "Manche Fixkosten bleiben nur innerhalb einer Kapazitätsstufe gleich. Ist die Halle voll, braucht es eine zweite — dann springen die Fixkosten auf ein neues Niveau."
+                }
+              ]
+            },
+            {
+              "name": "Variable Kosten",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Gesamt: steigen mit der Menge",
+                  "detail": "Doppelt so viele Schränke brauchen doppelt so viel Holz. Bei proportionalem Verlauf verdoppeln sich die Kosten genau mit."
+                },
+                {
+                  "text": "Je Stück: bleiben gleich",
+                  "detail": "Jeder Schrank braucht dieselbe Menge Material — unabhängig davon, wie viele gebaut werden. Das ist der Spiegel zu den Fixkosten."
+                },
+                {
+                  "text": "Beispiele",
+                  "detail": "Fertigungsmaterial, Akkordlohn, Energie der Maschinen, Verpackung, Versandkosten."
+                },
+                {
+                  "text": "Nicht immer proportional",
+                  "detail": "Bei Mengenrabatten steigen die Materialkosten unterproportional, bei Überstundenzuschlägen überproportional. Für die Prüfung wird meist proportionaler Verlauf angenommen."
+                }
+              ]
+            }
+          ],
+          "regel": "Die Merkhilfe: Fixkosten sind gesamt konstant und je Stück fallend, variable Kosten gesamt steigend und je Stück konstant. Wer diese vier Aussagen kennt, beantwortet jede Frage dazu."
+        },
+        {
+          "typ": "merke",
+          "text": "**Fixkosten:** gesamt gleich, je Stück fallend. **Variable Kosten:** gesamt steigend, je Stück gleich. Die Einteilung fix/variabel hat nichts mit Einzel/Gemein zu tun.",
+          "karteikarte": "Wie verhalten sich fixe und variable Kosten jeweils gesamt und je Stück?"
+        },
+        {
+          "typ": "check",
+          "frage": "Das Gehalt des Fertigungsmeisters — wie ordnest du es ein?",
+          "optionen": [
+            {
+              "text": "Einzelkosten und variabel",
+              "richtig": false,
+              "echo": "Beides nicht. Der Meister lässt sich keinem einzelnen Stück zurechnen, und sein Gehalt ändert sich nicht mit der Produktionsmenge."
+            },
+            {
+              "text": "Gemeinkosten und fix",
+              "richtig": true,
+              "echo": "Richtig, und zwar aus zwei unabhängigen Gründen. Gemeinkosten, weil sich das Gehalt keinem einzelnen Produkt direkt zurechnen lässt — er beaufsichtigt die ganze Fertigung. Fix, weil es unabhängig von der produzierten Menge in gleicher Höhe anfällt. Bezogen auf die Kostenstelle Fertigung wären es allerdings Einzelkosten der Stelle."
+            },
+            {
+              "text": "Gemeinkosten und variabel",
+              "richtig": false,
+              "echo": "Gemeinkosten stimmt. Variabel nicht: Ein Festgehalt ändert sich nicht, wenn mehr produziert wird."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Warum große Mengen billiger sind",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die **Fixkostendegression** ist der Grund, warum Massenware günstiger ist als Einzelanfertigung. ==Die Fixkosten bleiben gleich und verteilen sich auf mehr Stücke== — die Stückkosten sinken, ohne dass irgendetwas effizienter geworden wäre."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Menge",
+            "Fixkosten gesamt",
+            "Fixkosten je Stück",
+            "Variable je Stück",
+            "Stückkosten"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "100",
+                "40.000",
+                "400,00",
+                "60,00",
+                "460,00"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "zellen": [
+                "500",
+                "40.000",
+                "80,00",
+                "60,00",
+                "140,00"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "detail": "**Die Stückkosten fallen von 460 auf 140 €**, obwohl kein einziger Handgriff besser geworden ist. Allein die Verteilung der Fixkosten macht den Unterschied."
+            },
+            {
+              "zellen": [
+                "1.000",
+                "40.000",
+                "40,00",
+                "60,00",
+                "100,00"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "zellen": [
+                "2.000",
+                "40.000",
+                "20,00",
+                "60,00",
+                "80,00"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "detail": "**Der Effekt wird immer kleiner.** Von 1.000 auf 2.000 Stück sinken die Stückkosten nur noch um 20 € — die Kurve nähert sich den variablen Kosten von 60 €, ohne sie je zu erreichen."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Die Stückkosten können also **nie unter die variablen Stückkosten** sinken. Sie nähern sich ihnen nur an. Das ist der rechnerische Grund für die kurzfristige Preisuntergrenze in Kapitel 5."
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Warum sprungfixe Kosten die Rechnung stören",
+          "absaetze": [
+            "Die schöne gleichmäßige Degression gilt nur innerhalb einer Kapazitätsstufe. Ist die Halle voll, die Maschine ausgelastet oder die Schicht besetzt, braucht die nächste Einheit eine zusätzliche Anlage, eine zweite Schicht oder mehr Fläche.",
+            "An dieser Stelle **springen** die Fixkosten auf ein neues Niveau, und die Stückkosten steigen zunächst wieder an, bevor sie erneut zu sinken beginnen.",
+            "Praktisch bedeutet das: Vor jeder Mengenausweitung ist zu prüfen, ob die vorhandene Kapazität reicht. Ein Zusatzauftrag, der die Grenze überschreitet, ist deutlich teurer als einer, der sie noch ausnutzt — auch wenn beide gleich groß sind."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Fixkostendegression:** Mehr Menge senkt die Fixkosten je Stück, nicht insgesamt. Die Stückkosten nähern sich den variablen Kosten an, erreichen sie aber nie.",
+          "karteikarte": "Was ist die Fixkostendegression, und welche Untergrenze haben die Stückkosten?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Fix oder variabel?",
+          "kategorien": [
+            "Fix",
+            "Variabel"
+          ],
+          "aufgaben": [
+            {
+              "text": "Miete für die Lagerhalle.",
+              "loesung": "Fix"
+            },
+            {
+              "text": "Fertigungsmaterial je hergestelltem Stück.",
+              "loesung": "Variabel"
+            },
+            {
+              "text": "Gehalt der Buchhalterin.",
+              "loesung": "Fix"
+            },
+            {
+              "text": "Verpackung und Versand je Sendung.",
+              "loesung": "Variabel"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "{{begriff:einzelkosten|Einzelkosten}} sind direkt zurechenbar, {{begriff:gemeinkosten|Gemeinkosten}} nur über Schlüssel verteilbar.",
+    "Sondereinzelkosten lassen sich dem Auftrag, nicht dem Stück zurechnen.",
+    "Die Zuordnung hängt vom Bezugsobjekt ab — zurechenbar wozu?",
+    "{{begriff:fixkosten|Fixkosten}} bleiben gesamt gleich und sinken je Stück.",
+    "{{begriff:variable-kosten|Variable Kosten}} steigen gesamt und bleiben je Stück gleich.",
+    "Die Einteilungen Einzel/Gemein und fix/variabel sind voneinander unabhängig.",
+    "Fixkostendegression: Mehr Menge senkt die Fixkosten je Stück.",
+    "Die Stückkosten nähern sich den variablen Stückkosten an, unterschreiten sie aber nie."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre die beiden Kosteneinteilungen und weise nach, dass sie voneinander unabhängig sind.",
+      "loesung": "Die erste Einteilung unterscheidet nach der Zurechenbarkeit. Einzelkosten lassen sich einem Produkt direkt zuordnen, etwa Fertigungsmaterial und Fertigungslöhne. Gemeinkosten lassen sich nur über Schlüssel verteilen, etwa Miete oder Verwaltungsgehälter. Die zweite Einteilung unterscheidet nach dem Verhalten bei Beschäftigungsänderung. Fixe Kosten bleiben in der Summe gleich, variable Kosten steigen mit der Menge. Beide Einteilungen sind unabhängig, weil alle Kombinationen vorkommen: Fertigungsmaterial ist Einzelkosten und variabel; das Gehalt des Fertigungsmeisters ist Gemeinkosten und fix; Energie für Maschinen ist Gemeinkosten und variabel; ein eigens für einen Auftrag gefertigtes Werkzeug ist Sondereinzelkosten und im Verhältnis zur Auftragsmenge fix. Die erste Einteilung wird für die Kalkulation gebraucht, die zweite für Entscheidungen über Mengen und Preise."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Fixkosten 90.000 €, variable Kosten 45 € je Stück. Berechne die Stückkosten bei 600, 1.500 und 3.000 Stück.",
+      "loesung": "Bei 600 Stück entfallen 90.000 € geteilt durch 600, also 150 € Fixkosten auf jedes Stück. Zuzüglich der variablen 45 € ergeben sich Stückkosten von 195 €. Bei 1.500 Stück betragen die anteiligen Fixkosten 90.000 € geteilt durch 1.500, also 60 €; die Stückkosten liegen bei 105 €. Bei 3.000 Stück sind es 30 € anteilige Fixkosten und damit 75 € Stückkosten. Die Stückkosten sinken also von 195 € über 105 € auf 75 €, obwohl sich an der Fertigung selbst nichts geändert hat. Sie nähern sich dabei den variablen Kosten von 45 € an, können diese aber nie unterschreiten."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Die Geschäftsführung möchte die Stückkosten senken und schlägt vor, einfach die doppelte Menge zu produzieren. Was gibst du zu bedenken?",
+      "loesung": "Rechnerisch stimmt der Ansatz: Durch die Fixkostendegression verteilen sich die unveränderten Fixkosten auf mehr Stücke, sodass die Stückkosten sinken. Drei Einschränkungen sind jedoch zu beachten. Erstens die Kapazität: Reicht die vorhandene Anlage, Fläche und Personalstärke nicht aus, entstehen sprungfixe Kosten. Die Fixkosten springen dann auf ein höheres Niveau, und die Stückkosten steigen zunächst wieder an, statt zu sinken. Zweitens der Absatz: Produzierte Ware, die nicht verkauft wird, senkt keine Kosten, sondern bindet Kapital im Lager und verursacht zusätzliche Lagerkosten. Die Mengenausweitung setzt also voraus, dass der Markt sie aufnimmt. Drittens der abnehmende Effekt: Die Degression wird mit steigender Menge immer schwächer, weil sich die Stückkosten den variablen Kosten annähern. Ab einem gewissen Punkt bringt eine weitere Verdopplung kaum noch Ersparnis. Sinnvoll ist deshalb, zuerst die vorhandene Kapazität auszulasten und die Absatzmöglichkeiten realistisch zu prüfen."
+    }
+  ],
+  "pruefungstipp": "Die beiden Einteilungen werden gern in einer Aufgabe vermischt: Eine Tabelle mit Kostenarten soll doppelt eingeordnet werden. Prüfe jede Zeile getrennt mit zwei Fragen — zurechenbar auf ein Stück? und ändert sich das mit der Menge? Der Fertigungsmeister ist der Klassiker, an dem sich zeigt, dass beide Antworten unabhängig sind. Bei der Fixkostendegression wird oft nach der Untergrenze gefragt: die variablen Stückkosten."
+}

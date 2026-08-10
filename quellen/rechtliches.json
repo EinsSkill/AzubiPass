@@ -1,0 +1,54 @@
+{
+  "_hinweis": "Solange nur_privat auf false steht und BITTE_AUSFUELLEN drinsteht, warnt der Build und die Seiten tragen einen sichtbaren Hinweis.",
+
+  "nur_privat": true,
+  "_nur_privat_hinweis": "true = die Seite ist für den Eigengebrauch und wird nicht beworben oder weitergegeben. § 5 DDG verlangt eine Anbieterkennzeichnung nur für geschäftsmäßige Dienste; eine reine Privatseite fällt nicht darunter. SOBALD DU DEN LINK WEITERGIBST — Klassengruppe, Social Media, irgendwo verlinkt — stell das auf false und trag Anschrift und E-Mail ein. Das ist keine Rechtsberatung, aber die Grenze verläuft genau da.",
+
+  "anbieter": {
+    "name": "Lukes Schmitz",
+    "strasse": "BITTE_AUSFUELLEN",
+    "plz_ort": "BITTE_AUSFUELLEN",
+    "land": "Deutschland",
+    "email": "BITTE_AUSFUELLEN",
+    "telefon": "",
+    "_telefon_hinweis": "Nicht zwingend. § 5 DDG verlangt eine schnelle elektronische Kontaktaufnahme — E-Mail plus ein zweiter, ebenso schneller Weg (z. B. ein Kontaktformular) genügt.",
+    "umsatzsteuer_id": "",
+    "_ust_hinweis": "Nur angeben, wenn tatsächlich vorhanden. Wer nichts verkauft, hat in der Regel keine."
+  },
+
+  "hosting": {
+    "anbieter": "GitHub, Inc.",
+    "anschrift": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA",
+    "dienst": "GitHub Pages",
+    "grundlage": "Art. 6 Abs. 1 lit. f DSGVO",
+    "_hinweis": "Wenn du woanders hostest, hier ändern. Bei GitHub Pages werden beim Aufruf Server-Protokolle inklusive IP-Adresse verarbeitet; das muss in der Datenschutzerklärung stehen. Für die Übermittlung in die USA stützt sich GitHub auf das EU-US Data Privacy Framework."
+  },
+
+  "aufsicht": {
+    "name": "Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen",
+    "web": "https://www.ldi.nrw.de",
+    "_hinweis": "Zuständig ist die Behörde des Bundeslandes, in dem der Verantwortliche wohnt. NRW passt zu Neuss — bei Umzug ändern."
+  },
+
+  "inhalt": {
+    "verkauf": false,
+    "_verkauf_hinweis": "Auf true stellen, sobald etwas gegen Geld abgegeben wird. Dann kommen Widerrufsbelehrung, AGB und Verbraucherstreitbeilegung dazu — das ist ein eigener Schritt und wird hier bewusst NICHT automatisch erzeugt.",
+    "lizenz": "Alle Rechte vorbehalten",
+    "lizenz_hinweis": "Die Texte, Grafiken und Aufgaben stammen von mir. Weitergabe nur mit Zustimmung."
+  },
+
+  "schriften": [
+    {
+      "name": "IBM Plex Sans und IBM Plex Mono",
+      "rechte": "Copyright © 2017 IBM Corp.",
+      "lizenz": "SIL Open Font License 1.1",
+      "web": "https://openfontlicense.org"
+    },
+    {
+      "name": "Source Serif 4",
+      "rechte": "Copyright © 2014–2023 Adobe (http://www.adobe.com/)",
+      "lizenz": "SIL Open Font License 1.1",
+      "web": "https://openfontlicense.org"
+    }
+  ]
+}

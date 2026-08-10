@@ -1,0 +1,274 @@
+{
+  "id": "k3",
+  "lernfeld": "lf3",
+  "nummer": 3,
+  "titel": "Anfrage und Angebot",
+  "untertitel": "Was drinstehen muss — und wie du dich aus der Bindung nimmst.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Anfragearten unterscheiden und beantworten",
+      "abschnitt": "c1"
+    },
+    {
+      "id": "lz2",
+      "text": "Ein vollständiges Angebot aufbauen",
+      "abschnitt": "c2"
+    },
+    {
+      "id": "lz3",
+      "text": "Bindung und Freizeichnung beurteilen",
+      "abschnitt": "c3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "c1",
+      "titel": "Die Anfrage",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine {{begriff:anfrage|Anfrage}} kostet nichts und verpflichtet niemanden — aber sie ist der Moment, in dem ein Kunde entscheidet, ob er weitermacht. ==Wie schnell und wie genau du antwortest, ist deshalb ein Verkaufsargument==, lange bevor über Preise gesprochen wird."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Art",
+            "Was der Kunde will",
+            "Deine Antwort"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Allgemeine Anfrage",
+                "Überblick über das Sortiment",
+                "Katalog, Preisliste, Prospekt"
+              ],
+              "detail": "**Hier ist noch nichts entschieden.** Der Kunde sondiert. Ein Katalog ist rechtlich kein Angebot, sondern eine Aufforderung, selbst eines abzugeben — sonst wäre jeder Anbieter an jeden gedruckten Preis gebunden."
+            },
+            {
+              "zellen": [
+                "Bestimmte Anfrage",
+                "konkrete Ware, Menge, Termin",
+                "individuelles Angebot"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Katalog, Prospekt und Schaufenster sind **keine** Angebote im Rechtssinn, sondern Aufforderungen zur Abgabe eines Angebots. Erst dein individuelles Angebot bindet dich.",
+          "karteikarte": "Warum ist ein Katalog rechtlich kein Angebot?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c2",
+      "titel": "Was ins Angebot gehört",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:angebot|Angebot}} muss so bestimmt sein, dass ein schlichtes Ja genügt. Fehlt eine wesentliche Angabe, kommt kein Vertrag zustande — sondern eine Rückfrage, und damit Verzögerung."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Angabe",
+            "Warum sie nötig ist"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Art und Güte der Ware",
+                "Ohne genaue Bezeichnung ist unklar, worüber Einigkeit besteht"
+              ]
+            },
+            {
+              "zellen": [
+                "Menge",
+                "Bestimmt Preis und Lieferfähigkeit"
+              ]
+            },
+            {
+              "zellen": [
+                "Preis",
+                "Netto, zuzüglich Umsatzsteuer, mit Rabatten"
+              ]
+            },
+            {
+              "zellen": [
+                "Liefer- und Zahlungsbedingungen",
+                "Wer trägt Fracht, wann ist zu zahlen"
+              ]
+            },
+            {
+              "zellen": [
+                "Liefertermin",
+                "Datum oder Frist ab Bestellung"
+              ]
+            },
+            {
+              "zellen": [
+                "Bindungsfrist",
+                "Bis wann gilt das Angebot"
+              ],
+              "detail": "**Der am häufigsten vergessene Punkt.** Ohne eigene Frist gilt § 147 BGB — also die Zeit, in der du mit einer Antwort rechnen darfst. Das ist unbestimmt und im Streitfall Auslegungssache. Eine Zeile wie „gültig bis 31.08.“ erspart dir das."
+            },
+            {
+              "zellen": [
+                "Erfüllungsort und Gerichtsstand",
+                "meist über die AGB geregelt"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Rechne das Angebot nicht frei Hand. Der Weg vom Einstandspreis zum Angebotspreis ist die Handelskalkulation aus Lernfeld 6 — Selbstkosten, Gewinnzuschlag, dann Kundenskonto und Kundenrabatt im Hundert aufschlagen. Wer den Rabatt einfach draufrechnet statt dividiert, verschenkt bei jedem Auftrag Geld."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c3",
+      "titel": "Gebunden oder nicht",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Nach {{par:bgb-145|§ 145 BGB}} bist du an dein Angebot gebunden — es sei denn, du schließt die Bindung aus. Genau dafür gibt es die {{begriff:freizeichnungsklausel|Freizeichnungsklausel}}. Sie ist kein Trick, sondern schlicht nötig, wenn du nicht garantieren kannst, dass die Ware noch da ist."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Angebotsarten",
+          "titel": "Bindend oder freibleibend",
+          "lead": "Derselbe Text, ein Zusatz — und die Rollen tauschen.",
+          "seiten": [
+            {
+              "name": "Bindendes Angebot",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Der Regelfall nach § 145 BGB",
+                  "detail": "Wer nichts dazuschreibt, ist gebunden. Das gilt auch dann, wenn dir hinterher auffällt, dass du dich verkalkuliert hast."
+                },
+                {
+                  "text": "Die Bestellung ist die Annahme",
+                  "detail": "Bestellt der Kunde unverändert, steht der Vertrag sofort — ohne dass du noch etwas tun musst."
+                },
+                {
+                  "text": "Du musst liefern können",
+                  "detail": "Deshalb vor Abgabe die Verfügbarkeit prüfen. Ein bindendes Angebot über Ware, die es nicht mehr gibt, führt geradewegs in die Vertragsstörung."
+                },
+                {
+                  "text": "Bindung endet mit der Frist",
+                  "detail": "Mit eigener Frist zum genannten Datum, ohne eigene Frist nach § 147 BGB."
+                }
+              ]
+            },
+            {
+              "name": "Freibleibendes Angebot",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Zusatz wie freibleibend, unverbindlich, Preis freibleibend",
+                  "detail": "Auch „solange der Vorrat reicht“ oder „Zwischenverkauf vorbehalten“ wirken so. Der Zusatz muss deutlich sein, nicht im Kleingedruckten versteckt."
+                },
+                {
+                  "text": "Rechtlich kein Antrag",
+                  "detail": "Es ist nur eine Aufforderung, selbst ein Angebot abzugeben — wie der Katalog."
+                },
+                {
+                  "text": "Die Bestellung wird zum Antrag",
+                  "detail": "Damit dreht sich die Bindung um: Jetzt ist der Kunde gebunden und wartet auf deine Annahme."
+                },
+                {
+                  "text": "Du musst unverzüglich reagieren",
+                  "detail": "Willst du nicht annehmen, sag ab. Unter Kaufleuten in laufender Geschäftsverbindung kann Schweigen sonst nach § 362 HGB als Zustimmung gelten."
+                }
+              ]
+            }
+          ],
+          "regel": "Die Faustregel für den Alltag: Ist die Ware sicher da, biete bindend an — das ist verbindlicher und verkauft besser. Ist sie es nicht, zeichne dich frei."
+        },
+        {
+          "typ": "check",
+          "frage": "Dein Angebot enthält den Zusatz „freibleibend“. Der Kunde bestellt daraufhin. Wer ist jetzt gebunden?",
+          "optionen": [
+            {
+              "text": "Du, weil du das Angebot gemacht hast",
+              "richtig": false,
+              "echo": "Gerade nicht. Durch die Freizeichnung war dein Schreiben rechtlich kein Antrag, sondern nur eine Aufforderung, selbst eines abzugeben."
+            },
+            {
+              "text": "Der Kunde, seine Bestellung ist der Antrag",
+              "richtig": true,
+              "echo": "Richtig. Beim freibleibenden Angebot dreht sich die Rollenverteilung um: Die Bestellung ist der Antrag, der Kunde ist daran gebunden und wartet auf deine Annahme. Achtung: Reagierst du unter Kaufleuten in laufender Geschäftsverbindung gar nicht, kann dein Schweigen nach § 362 HGB als Annahme gelten."
+            },
+            {
+              "text": "Niemand, es fehlt eine Willenserklärung",
+              "richtig": false,
+              "echo": "Die Bestellung ist sehr wohl eine Willenserklärung — sie ist nur der Antrag statt der Annahme."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Bindendes Angebot oder nicht?",
+          "kategorien": [
+            "Bindend",
+            "Nicht bindend"
+          ],
+          "aufgaben": [
+            {
+              "text": "Individuelles Angebot über 200 Ordner zu 3,50 €, gültig bis 31.08.",
+              "loesung": "Bindend"
+            },
+            {
+              "text": "Preisliste im Katalog",
+              "loesung": "Nicht bindend"
+            },
+            {
+              "text": "Angebot mit dem Zusatz „solange der Vorrat reicht“",
+              "loesung": "Nicht bindend"
+            },
+            {
+              "text": "Schriftliches Angebot ohne weiteren Zusatz",
+              "loesung": "Bindend"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Allgemeine Anfrage: Katalog und Preisliste. Bestimmte Anfrage: individuelles Angebot.",
+    "Katalog, Prospekt und Schaufenster sind keine Angebote, sondern Aufforderungen dazu.",
+    "Ein Angebot braucht Art, Menge, Preis, Liefer- und Zahlungsbedingungen, Termin und Bindungsfrist.",
+    "{{par:bgb-145|§ 145 BGB}}: Ohne Freizeichnung bist du gebunden.",
+    "Freizeichnung durch Zusätze wie freibleibend oder solange der Vorrat reicht.",
+    "Beim freibleibenden Angebot wird die Bestellung zum Antrag — der Kunde ist gebunden.",
+    "Reagiere trotzdem unverzüglich: {{par:hgb-362|§ 362 HGB}} kann Schweigen als Zustimmung werten."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne sechs Angaben, die ein vollständiges Angebot enthalten muss.",
+      "loesung": "Art und Güte der Ware, Menge, Preis einschließlich Rabatten und Umsatzsteuer, Liefer- und Zahlungsbedingungen, Liefertermin sowie die Bindungsfrist. Häufig kommen Erfüllungsort und Gerichtsstand über die Allgemeinen Geschäftsbedingungen hinzu. Fehlt eine wesentliche Angabe, ist das Angebot nicht bestimmt genug, um durch ein bloßes Ja angenommen zu werden."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Was bewirkt der Zusatz „freibleibend“ in einem Angebot?",
+      "loesung": "Er hebt die Bindung nach § 145 BGB auf. Das Schreiben ist dann rechtlich kein Antrag mehr, sondern nur eine Aufforderung an den Kunden, selbst ein Angebot abzugeben. Bestellt der Kunde, ist seine Bestellung der Antrag und er ist daran gebunden; der Vertrag kommt erst mit der Annahme des Verkäufers zustande."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Betrieb gibt ein bindendes Angebot ohne Bindungsfrist per E-Mail ab. Der Kunde meldet sich nach drei Wochen und will bestellen. Wie ist die Lage?",
+      "loesung": "Ohne eigene Frist gilt § 147 BGB: Der Antrag kann nur so lange angenommen werden, wie der Antragende unter regelmäßigen Umständen mit einer Antwort rechnen darf. Bei einer E-Mail sind das üblicherweise wenige Tage, nicht drei Wochen. Die Bindung ist damit erloschen; die verspätete Bestellung gilt als neuer Antrag, den der Betrieb annehmen kann, aber nicht muss. Genau solche Fälle vermeidet eine ausdrückliche Bindungsfrist im Angebot."
+    }
+  ],
+  "pruefungstipp": "Bindend gegen freibleibend ist der Kern dieses Kapitels und kommt fast immer als Fall. Zwei Merksätze reichen: Ohne Zusatz bist du gebunden. Mit Freizeichnung wird die Bestellung zum Antrag und der Kunde ist gebunden."
+}

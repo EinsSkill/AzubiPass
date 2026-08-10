@@ -1,0 +1,293 @@
+{
+  "id": "k4",
+  "lernfeld": "lf13",
+  "nummer": 4,
+  "titel": "Abschließen und präsentieren",
+  "untertitel": "Ein Projekt ist erst fertig, wenn jemand es abgenommen hat.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Den Projektabschluss ordnungsgemäß durchführen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Erfahrungen sichern und auswerten",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Ergebnisse adressatengerecht präsentieren",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Der Abschluss",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Viele Projekte hören einfach auf. ==Ein Abschluss ist etwas anderes:== Das Ergebnis wird übergeben, ausdrücklich abgenommen und die Verantwortung geht an den Betrieb zurück."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Schritt",
+            "Was passiert",
+            "Warum"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ergebnis prüfen",
+                "gegen den Projektauftrag",
+                "das Ziel war messbar formuliert"
+              ],
+              "detail": "**Hier zahlt sich das messbare Ziel aus Kapitel 1 aus.** Ohne es gäbe es jetzt nur Meinungen darüber, ob das Projekt gelungen ist."
+            },
+            {
+              "zellen": [
+                "Abnahme durch den Auftraggeber",
+                "schriftlich",
+                "beendet die Verantwortung der Projektleitung"
+              ],
+              "detail": "**Ohne Abnahme läuft das Projekt weiter** — mit Nachforderungen, die niemand budgetiert hat. Die Unterschrift ist keine Formalie."
+            },
+            {
+              "zellen": [
+                "Restpunkte festhalten",
+                "was offen bleibt, mit Termin",
+                "sonst verschwinden sie"
+              ]
+            },
+            {
+              "zellen": [
+                "Übergabe an den Betrieb",
+                "wer betreut es künftig?",
+                "aus dem Projekt wird ein Prozess"
+              ],
+              "detail": "**Der häufigste Bruch:** Das System läuft, aber niemand ist zuständig. Betrieb, Pflege und Schulung neuer Beschäftigter gehören ausdrücklich übergeben."
+            },
+            {
+              "zellen": [
+                "Unterlagen ablegen",
+                "nach den Regeln aus Lernfeld 2",
+                "Nachvollziehbarkeit"
+              ]
+            },
+            {
+              "zellen": [
+                "Team entlasten",
+                "formell auflösen, Dank aussprechen",
+                "sonst hängt es zwischen zwei Aufgaben"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein Projekt endet mit der **Abnahme**, nicht mit der letzten Tätigkeit. Solange nicht abgenommen ist, kommen Nachforderungen — und die Projektleitung bleibt zuständig, ohne dass dafür noch Zeit eingeplant ist."
+        },
+        {
+          "typ": "merke",
+          "text": "**Prüfen, abnehmen lassen, Restpunkte festhalten, übergeben, ablegen, Team entlasten.** Aus dem Projekt wird ein Prozess — und der braucht einen Zuständigen.",
+          "karteikarte": "Welche Schritte gehören zum Projektabschluss, und warum ist die schriftliche Abnahme entscheidend?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Erfahrungen sichern",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Auswertung am Ende ist der Teil, der am häufigsten ausfällt — ==und der einzige, von dem das nächste Projekt etwas hat.== Sie kostet zwei Stunden und spart im nächsten Projekt Wochen."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Vier Fragen",
+          "titel": "Die Auswertung",
+          "lead": "Im Team, nicht allein — und ohne Schuldsuche. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Was lief gut?",
+              "satz": "zuerst",
+              "text": "Bewusst als Erstes, damit die Runde nicht zur Fehlersuche wird. Was funktioniert hat, soll man beim nächsten Mal wieder tun — dafür muss es benannt sein."
+            },
+            {
+              "nr": 2,
+              "titel": "Was lief schlecht?",
+              "satz": "sachlich",
+              "text": "Es geht um Ursachen, nicht um Personen. Die Frage lautet, was der Ablauf schwierig gemacht hat, nicht wer einen Fehler gemacht hat."
+            },
+            {
+              "nr": 3,
+              "titel": "Woran lag es?",
+              "satz": "mehrfach nachfragen",
+              "text": "Dieselbe Technik wie in Lernfeld 11: mehrfach nach dem Warum fragen, bis die Ursache erreicht ist. Der Termin platzte, weil die Freigabe fehlte, weil die Vertretung nicht geregelt war — dort liegt die Lehre."
+            },
+            {
+              "nr": 4,
+              "titel": "Was machen wir künftig anders?",
+              "satz": "konkret und schriftlich",
+              "text": "Nicht „besser kommunizieren\", sondern „Vertretung für Freigaben im Projektauftrag festlegen\". Nur so findet die Erkenntnis ins nächste Projekt."
+            }
+          ],
+          "regel": "Die Auswertung gehört an einen Ort, an dem die nächste Projektleitung sie findet — nicht in ein Postfach. Sonst wiederholt der Betrieb dieselben Fehler in bemerkenswerter Zuverlässigkeit."
+        },
+        {
+          "typ": "merke",
+          "text": "**Was lief gut, was schlecht, woran lag es, was machen wir anders?** Ergebnisse werden konkret formuliert und dort abgelegt, wo das nächste Projekt sie findet.",
+          "karteikarte": "Welche vier Fragen strukturieren die Projektauswertung, und wie müssen die Ergebnisse formuliert sein?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Führ die Auswertung **vor** der Abschlusspräsentation durch. Dann kannst du im Vortrag ehrlich sagen, was ihr gelernt habt — das wirkt souveräner als eine Darstellung, in der alles glatt lief."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Die Abschlusspräsentation",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Präsentation ist keine Chronik. ==Sie beantwortet drei Fragen: Was war das Ziel, was ist herausgekommen, wie geht es weiter.== Alles andere ist optional."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Teil",
+            "Inhalt",
+            "Anteil"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ausgangslage und Ziel",
+                "warum das Projekt nötig war",
+                "kurz"
+              ],
+              "detail": "**Zwei bis drei Sätze genügen.** Die Zuhörenden waren dabei, als das Projekt beauftragt wurde — sie brauchen keine Wiederholung des Auftrags."
+            },
+            {
+              "zellen": [
+                "Ergebnis",
+                "was jetzt vorliegt",
+                "der größte Teil"
+              ],
+              "detail": "**Am Ziel gemessen, mit Zahlen.** Nicht was ihr getan habt, sondern was jetzt anders ist — das ist der Unterschied zwischen Tätigkeitsbericht und Ergebnisbericht."
+            },
+            {
+              "zellen": [
+                "Abweichungen",
+                "was anders lief, offen benannt",
+                "kurz und ehrlich"
+              ],
+              "detail": "**Verschweigen fällt auf und kostet Glaubwürdigkeit.** Wer Abweichungen selbst benennt und begründet, wirkt souverän — wer sie kaschiert, wird in der Fragerunde zerlegt."
+            },
+            {
+              "zellen": [
+                "Ausblick",
+                "Restpunkte, Betrieb, Empfehlung",
+                "mittel"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Nenn im **ersten Satz** das Ergebnis, nicht im letzten. Dieselbe Regel wie bei der Entscheidungsvorlage aus Lernfeld 2: Zuhörende wollen zuerst wissen, was herauskam — die Begründung danach."
+        },
+        {
+          "typ": "merke",
+          "text": "Die Präsentation beantwortet **Ziel, Ergebnis, Ausblick** — Ergebnis zuerst und am Ziel gemessen. Abweichungen werden offen benannt, nicht kaschiert.",
+          "karteikarte": "Welche Teile hat eine Abschlusspräsentation, und warum werden Abweichungen offen benannt?"
+        },
+        {
+          "typ": "check",
+          "frage": "Das Projekt hat den Termin um zwei Wochen überschritten. Wie gehst du in der Abschlusspräsentation damit um?",
+          "optionen": [
+            {
+              "text": "Nicht erwähnen — das Ergebnis stimmt ja",
+              "richtig": false,
+              "echo": "Der Auftraggeber kennt den Termin und wird nachfragen. Wer die Abweichung erst auf Nachfrage einräumt, verliert die Deutungshoheit und wirkt unaufrichtig."
+            },
+            {
+              "text": "Offen benennen, Ursache erklären und die Lehre daraus nennen",
+              "richtig": true,
+              "echo": "Richtig. Abweichungen gehören in jede Abschlusspräsentation, und zwar von dir benannt, nicht auf Nachfrage. Nenne die Abweichung, die Ursache und die Konsequenz für künftige Projekte — etwa dass Vertretungsregelungen für Freigaben in den Projektauftrag gehören. Das wirkt souverän und macht die Auswertung nutzbar, statt sie zu verstecken."
+            },
+            {
+              "text": "Ausführlich rechtfertigen, wer die Verzögerung verursacht hat",
+              "richtig": false,
+              "echo": "Schuldzuweisungen gehören nicht in eine Abschlusspräsentation. Interessant ist die Ursache im Ablauf und was daraus folgt, nicht wer verantwortlich war."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Wohin gehört das?",
+          "kategorien": [
+            "Abschluss",
+            "Auswertung",
+            "Präsentation"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Auftraggeber unterschreibt die Abnahme.",
+              "loesung": "Abschluss"
+            },
+            {
+              "text": "Das Team bespricht, woran der geplatzte Termin lag.",
+              "loesung": "Auswertung"
+            },
+            {
+              "text": "Das Ergebnis wird am ursprünglichen Ziel gemessen dargestellt.",
+              "loesung": "Präsentation"
+            },
+            {
+              "text": "Offene Restpunkte werden mit Termin festgehalten.",
+              "loesung": "Abschluss"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Ein Projekt endet mit der schriftlichen Abnahme, nicht mit der letzten Tätigkeit.",
+    "Das Ergebnis wird gegen den {{begriff:projektauftrag|Projektauftrag}} geprüft.",
+    "Restpunkte werden mit Termin und Verantwortlichem festgehalten.",
+    "Die Übergabe an den Betrieb macht aus dem Projekt einen Prozess.",
+    "Die Auswertung fragt: Was lief gut, was schlecht, woran lag es, was ändern wir?",
+    "Ergebnisse der Auswertung werden konkret formuliert und auffindbar abgelegt.",
+    "Die Präsentation beantwortet Ziel, Ergebnis und Ausblick — Ergebnis zuerst.",
+    "Abweichungen werden offen benannt, nicht kaschiert."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Welche Schritte gehören zu einem ordnungsgemäßen Projektabschluss?",
+      "loesung": "Zuerst wird das Ergebnis gegen den Projektauftrag geprüft, wobei sich das messbar formulierte Ziel auszahlt, weil es eine sachliche Beurteilung ermöglicht. Anschließend erfolgt die Abnahme durch den Auftraggeber, und zwar schriftlich; sie beendet die Verantwortung der Projektleitung und verhindert spätere Nachforderungen. Offene Restpunkte werden mit Termin und Verantwortlichem festgehalten, damit sie nicht verschwinden. Danach folgt die Übergabe an den Betrieb: Es muss geklärt sein, wer das Ergebnis künftig betreut, pflegt und neue Beschäftigte einweist, denn aus dem Projekt wird ein Prozess. Die Unterlagen werden nach den betrieblichen Ablageregeln abgelegt, damit die Entscheidungen später nachvollziehbar bleiben. Zum Schluss wird das Projektteam formell aufgelöst und entlastet, damit die Beteiligten nicht zwischen zwei Aufgaben hängen. Ergänzend gehört die Auswertung der Erfahrungen dazu."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Wie ist eine Abschlusspräsentation aufgebaut, und worauf kommt es dabei an?",
+      "loesung": "Sie beantwortet drei Fragen: Was war das Ziel, was ist herausgekommen und wie geht es weiter. Die Ausgangslage und das Ziel werden nur kurz umrissen, weil die Zuhörenden das Projekt beauftragt haben. Den größten Teil nimmt das Ergebnis ein, dargestellt am ursprünglichen Ziel gemessen und mit Zahlen belegt; entscheidend ist, was jetzt anders ist, nicht was das Team getan hat. Abweichungen bei Termin, Budget oder Umfang werden kurz und offen benannt, mit Ursache und Konsequenz, aber ohne Schuldzuweisungen. Den Abschluss bildet der Ausblick mit Restpunkten, der Übergabe an den Betrieb und einer Empfehlung. Wichtig ist, das Ergebnis bereits im ersten Satz zu nennen und nicht erst am Ende. Die Darstellung wird auf die Zuhörenden zugeschnitten: Eine Geschäftsführung braucht Ergebnis und Empfehlung, eine Fachabteilung zusätzlich die Einzelheiten des künftigen Ablaufs."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Dein Projekt ist inhaltlich fertig, aber der Auftraggeber hat drei Wochen keine Zeit für die Abnahme. Das Team wird bereits für andere Aufgaben eingeplant. Was tust du?",
+      "loesung": "Ohne Abnahme ist das Projekt formal nicht beendet, und die Verantwortung bleibt bei der Projektleitung, während gleichzeitig keine Kapazität mehr eingeplant ist — das ist die riskanteste Konstellation. Ich würde zunächst den erreichten Stand vollständig dokumentieren: Ergebnis gegen die Ziele des Projektauftrags, offene Restpunkte mit Verantwortlichen und Terminen sowie den Stand von Budget und Terminen. Diese Unterlage würde ich dem Auftraggeber schriftlich zusenden, verbunden mit der Bitte um einen Abnahmetermin und dem ausdrücklichen Hinweis, dass das Team ab einem bestimmten Datum anderweitig gebunden ist. Parallel sichere ich die Übergabe an den Betrieb, damit das Ergebnis unabhängig von der Abnahme nutzbar bleibt und ein Zuständiger benannt ist. Die Auswertung mit dem Team führe ich sofort durch, solange alle noch verfügbar sind und die Erinnerung frisch ist — sie ist später kaum nachzuholen. Sinnvoll ist außerdem, für die Zeit bis zur Abnahme einen begrenzten Aufwand für Rückfragen zu vereinbaren, damit klar ist, was in dieser Phase noch geleistet wird."
+    }
+  ],
+  "pruefungstipp": "Der Projektabschluss wird oft als Aufzählung abgefragt — merke dir die Reihenfolge prüfen, abnehmen, Restpunkte, übergeben, ablegen, entlasten. Die erwartete Kernaussage ist immer, dass die schriftliche Abnahme das Projekt beendet. Bei Fragen zur Präsentation lautet die Musterlösung: Ergebnis zuerst, am Ziel gemessen, Abweichungen offen benennen."
+}

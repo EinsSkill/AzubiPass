@@ -1,0 +1,269 @@
+{
+  "id": "k3",
+  "lernfeld": "lf7",
+  "nummer": 3,
+  "titel": "Gespräche führen",
+  "untertitel": "Phasen, Fragen, Zuhören — was ein Gespräch von einem Wortwechsel unterscheidet.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Ein Gespräch entlang seiner Phasen vorbereiten und führen",
+      "abschnitt": "c1"
+    },
+    {
+      "id": "lz2",
+      "text": "Fragetechniken gezielt einsetzen",
+      "abschnitt": "c2"
+    },
+    {
+      "id": "lz3",
+      "text": "Aktiv zuhören und Gespräche am Telefon sicher führen",
+      "abschnitt": "c3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "c1",
+      "titel": "Die Phasen eines Gesprächs",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein geführtes Gespräch unterscheidet sich von einem zufälligen Wortwechsel durch eines: Es hat einen Ablauf. Die {{begriff:gespraechsphasen|fünf Phasen}} gelten für das Kundengespräch ebenso wie für das Personalgespräch."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Fünf Phasen",
+          "titel": "Vom Ziel bis zur Nachbereitung",
+          "lead": "Die meiste Arbeit liegt außerhalb des Gesprächs. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Vorbereitung",
+              "satz": "Ziel · Informationen · Rahmen",
+              "text": "Was will ich am Ende erreicht haben? Welche Unterlagen brauche ich, wer nimmt teil, wie viel Zeit ist da? Ohne Ziel lässt sich hinterher nicht sagen, ob das Gespräch erfolgreich war."
+            },
+            {
+              "nr": 2,
+              "titel": "Eröffnung",
+              "satz": "Kontakt herstellen",
+              "text": "Begrüßung, kurzer persönlicher Einstieg, dann der Rahmen: Anlass, Ablauf, Zeit. Diese Phase wird oft übersprungen — und fehlt dann am Ende, wenn es unangenehm wird."
+            },
+            {
+              "nr": 3,
+              "titel": "Kernphase",
+              "satz": "Informationen austauschen",
+              "text": "Anliegen klären, Fragen stellen, zuhören, Argumente austauschen. Hier gilt die wichtigste Regel: erst verstehen, dann überzeugen."
+            },
+            {
+              "nr": 4,
+              "titel": "Abschluss",
+              "satz": "Ergebnis festhalten",
+              "text": "Zusammenfassen, was vereinbart wurde — wer macht was bis wann. Wer diesen Schritt auslässt, hat später zwei verschiedene Erinnerungen an dasselbe Gespräch."
+            },
+            {
+              "nr": 5,
+              "titel": "Nachbereitung",
+              "satz": "Notiz · Wiedervorlage",
+              "text": "Gesprächsnotiz anlegen, Termine eintragen, Zugesagtes anstoßen. Das ist der Teil, an dem sich Verlässlichkeit tatsächlich entscheidet."
+            }
+          ],
+          "regel": "Der Abschluss ist die am häufigsten übersprungene Phase — und die, aus der die meisten späteren Konflikte entstehen."
+        },
+        {
+          "typ": "merke",
+          "text": "Ein Gespräch ohne Ziel ist ein Gespräch ohne Ergebnis. Formuliere vorher einen Satz: „Am Ende soll … feststehen.“",
+          "karteikarte": "Welche fünf Phasen hat ein geführtes Gespräch?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c2",
+      "titel": "Fragen, die weiterbringen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Wer fragt, führt — aber nur mit der richtigen Art von Frage. Die Grundunterscheidung ist einfach: ==Offene Fragen öffnen, geschlossene schließen.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Fragetyp",
+            "Beispiel",
+            "Wozu"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Offene Frage",
+                "„Wie stellen Sie sich das vor?“",
+                "Informationen sammeln, Gespräch öffnen"
+              ],
+              "detail": "**{{begriff:offene-frage|Offene Fragen}} beginnen mit W** — wer, was, wie, wann, wo, warum. Sie liefern mehr als eine Antwort und zeigen dem Gegenüber, dass seine Sicht zählt. In der Eröffnungs- und Kernphase das Mittel der Wahl."
+            },
+            {
+              "zellen": [
+                "Geschlossene Frage",
+                "„Passt Ihnen Dienstag?“",
+                "absichern, entscheiden, abschließen"
+              ],
+              "detail": "**{{begriff:geschlossene-frage|Geschlossene Fragen}} lassen nur ja oder nein zu.** Am Anfang eines Gesprächs würgen sie es ab, am Ende bringen sie es zum Abschluss."
+            },
+            {
+              "zellen": [
+                "Alternativfrage",
+                "„Lieber Dienstag oder Donnerstag?“",
+                "Entscheidung erleichtern"
+              ]
+            },
+            {
+              "zellen": [
+                "Kontrollfrage",
+                "„Habe ich Sie richtig verstanden, dass …?“",
+                "Verständnis prüfen"
+              ]
+            },
+            {
+              "zellen": [
+                "Suggestivfrage",
+                "„Das sehen Sie doch sicher auch so?“",
+                "besser vermeiden"
+              ],
+              "detail": "**Sie legt die Antwort in den Mund** und erzeugt Zustimmung ohne Überzeugung. Der Gesprächspartner merkt es meist — und das kostet Vertrauen. Dieselbe Falle wie beim Fragebogen in Lernfeld 5."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Kunde ruft an und beschreibt unklar ein Problem. Womit steigst du ein?",
+          "optionen": [
+            {
+              "text": "Geschlossene Frage: „Ist das Gerät kaputt?“",
+              "richtig": false,
+              "echo": "Zu früh. Eine geschlossene Frage liefert ein Wort und verengt sofort auf deine Vermutung — womöglich auf die falsche."
+            },
+            {
+              "text": "Offene Frage: „Was genau passiert, wenn Sie es einschalten?“",
+              "richtig": true,
+              "echo": "Richtig. Offene Fragen bringen in dieser Phase die meisten Informationen und zeigen dem Kunden, dass du zuhörst. Geschlossene Fragen kommen später, wenn es ums Eingrenzen und Entscheiden geht."
+            },
+            {
+              "text": "Suggestivfrage: „Sie haben es sicher schon neu gestartet?“",
+              "richtig": false,
+              "echo": "Sie legt eine Antwort nahe und macht es dem Kunden peinlich, zu widersprechen. Wenn er es nicht getan hat, sagt er es jetzt eher nicht — und ihr sucht am falschen Ende."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c3",
+      "titel": "Zuhören und telefonieren",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:aktives-zuhoeren|Aktives Zuhören}} bedeutet, das Zuhören sichtbar zu machen: nachfragen, mit eigenen Worten zusammenfassen, das Gefühl dahinter ansprechen. Es kostet zwanzig Sekunden und verhindert die meisten Missverständnisse aus Kapitel 1."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Statt",
+            "Besser",
+            "Warum"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "„Verstehe.“",
+                "„Sie brauchen die Lieferung also vor Freitag?“",
+                "prüft, statt zu unterstellen"
+              ]
+            },
+            {
+              "zellen": [
+                "„Das stimmt nicht.“",
+                "„Ich sehe das anders, weil …“",
+                "{{begriff:ich-botschaft|Ich-Botschaft}} statt Vorwurf"
+              ]
+            },
+            {
+              "zellen": [
+                "„Sie sind zu spät dran.“",
+                "„Mir fehlt die Rückmeldung, um weiterzuarbeiten.“",
+                "beschreibt Wirkung statt Person"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Am Telefon fällt der nonverbale Kanal weg — der paraverbale trägt dann alles. Deshalb gelten dort ein paar Regeln zusätzlich."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Telefonleitfaden: Mit **Betrieb, Name und Gruß** melden. Stift und Notiz bereitlegen, **bevor** du abhebst. Namen des Anrufers notieren und im Gespräch verwenden. Beim Verbinden ankündigen, zu wem und warum. Kann niemand helfen, **selbst zurückrufen** statt den Anrufer erneut anrufen zu lassen. Und zum Schluss das Ergebnis wiederholen — am Telefon hat niemand etwas mitgelesen."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Fragetechnik liegt vor?",
+          "kategorien": [
+            "Offen",
+            "Geschlossen",
+            "Alternativ",
+            "Suggestiv"
+          ],
+          "aufgaben": [
+            {
+              "text": "„Wie ist das Problem entstanden?“",
+              "loesung": "Offen"
+            },
+            {
+              "text": "„Möchten Sie Rechnung oder Lastschrift?“",
+              "loesung": "Alternativ"
+            },
+            {
+              "text": "„Sind Sie damit einverstanden?“",
+              "loesung": "Geschlossen"
+            },
+            {
+              "text": "„Sie wollen doch sicher die größere Menge?“",
+              "loesung": "Suggestiv"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Gesprächsphasen: Vorbereitung, Eröffnung, Kernphase, Abschluss, Nachbereitung.",
+    "Ohne vorher formuliertes Ziel lässt sich der Erfolg nicht beurteilen.",
+    "Der Abschluss hält fest, wer was bis wann tut — er wird am häufigsten vergessen.",
+    "Offene Fragen öffnen das Gespräch, geschlossene schließen es.",
+    "Alternativfragen erleichtern Entscheidungen, Kontrollfragen sichern das Verständnis.",
+    "Suggestivfragen erzeugen Zustimmung ohne Überzeugung und kosten Vertrauen.",
+    "Aktives Zuhören: nachfragen, zusammenfassen, Gefühl ansprechen.",
+    "Am Telefon trägt der paraverbale Kanal alles — melden, notieren, Ergebnis wiederholen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die fünf Gesprächsphasen und beschreibe, was in der Abschlussphase geschieht.",
+      "loesung": "Vorbereitung, Eröffnung, Kernphase, Abschluss und Nachbereitung. In der Abschlussphase wird zusammengefasst, was vereinbart wurde — konkret wer was bis wann erledigt. Damit wird sichergestellt, dass beide Seiten dasselbe Ergebnis mitnehmen; ohne diesen Schritt entstehen später zwei unterschiedliche Erinnerungen an dasselbe Gespräch."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Wann setzt du offene, wann geschlossene Fragen ein?",
+      "loesung": "Offene Fragen zu Beginn und in der Kernphase, um Informationen zu sammeln und das Gespräch zu öffnen; sie beginnen mit einem W-Wort und lassen sich nicht mit ja oder nein beantworten. Geschlossene Fragen gegen Ende, um abzusichern, einzugrenzen und zu einer Entscheidung zu kommen. Wer früh geschlossen fragt, würgt das Gespräch ab."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Anrufer möchte jemanden sprechen, der nicht im Haus ist. Beschreibe, wie du das Gespräch führst.",
+      "loesung": "Mit Betrieb, Namen und Gruß melden, den Namen des Anrufers notieren und verwenden. Mitteilen, dass die Person nicht erreichbar ist, ohne unnötige Einzelheiten. Anbieten, das Anliegen aufzunehmen oder einen Rückruf zu vereinbaren — mit Zeitraum, nicht mit „irgendwann“. Anliegen, Name, Telefonnummer und Uhrzeit in einer Gesprächsnotiz festhalten, das Ergebnis am Ende wiederholen und die Notiz sicher an den Kollegen weiterleiten. Wichtig ist, den Rückruf selbst anzustoßen statt den Anrufer erneut anrufen zu lassen."
+    }
+  ],
+  "pruefungstipp": "Die Fragearten werden fast immer als Zuordnung abgefragt — merke dir vor allem, dass offene Fragen mit einem W beginnen und dass Suggestivfragen zu vermeiden sind. Beim Telefonat wird gern eine Gesprächsnotiz verlangt: Name, Datum, Uhrzeit, Anliegen, vereinbarte Rückmeldung."
+}

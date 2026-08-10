@@ -1,0 +1,265 @@
+{
+  "id": "k1",
+  "lernfeld": "lf11",
+  "nummer": 1,
+  "titel": "Was ein Geschäftsprozess ist",
+  "untertitel": "Abteilungen denken senkrecht. Prozesse laufen quer.",
+  "minuten": 20,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Den Begriff Geschäftsprozess erklären",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Kern-, Unterstützungs- und Führungsprozesse unterscheiden",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Schnittstellen als Schwachstelle erkennen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Vom Auslöser zum Ergebnis",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:geschaeftsprozess|Geschäftsprozess}} ist eine Folge von Tätigkeiten, die durch ein Ereignis ausgelöst wird und zu einem Ergebnis für einen Kunden führt. ==Entscheidend ist das Wort *quer*: Ein Prozess hält sich nicht an Abteilungsgrenzen.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Bestandteil",
+            "Frage",
+            "Beispiel Auftragsabwicklung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Auslöser",
+                "Was startet den Prozess?",
+                "Bestellung geht ein"
+              ],
+              "detail": "**Ohne klaren Auslöser kein Prozess.** Wer nicht sagen kann, wann er beginnt, kann auch nicht messen, wie lange er dauert."
+            },
+            {
+              "zellen": [
+                "Eingaben",
+                "Was wird gebraucht?",
+                "Kundendaten, Artikelstamm, Lagerbestand"
+              ]
+            },
+            {
+              "zellen": [
+                "Tätigkeiten",
+                "Was passiert?",
+                "prüfen, bestätigen, kommissionieren, liefern, fakturieren"
+              ]
+            },
+            {
+              "zellen": [
+                "Ergebnis",
+                "Was kommt heraus?",
+                "gelieferte Ware und gestellte Rechnung"
+              ],
+              "detail": "**Aus Sicht des Kunden formuliert**, nicht aus Sicht der Abteilung. „Rechnung gebucht\" ist kein Ergebnis für den Kunden."
+            },
+            {
+              "zellen": [
+                "Beteiligte",
+                "Wer wirkt mit?",
+                "Vertrieb, Lager, Versand, Buchhaltung"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Ein Prozess hat einen **Auslöser**, definierte **Tätigkeiten** und ein **Ergebnis für einen Kunden** — intern oder extern. Er läuft quer durch die Abteilungen.",
+          "karteikarte": "Welche Bestandteile hat ein Geschäftsprozess, und was bedeutet es, dass er quer verläuft?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Ein Prozess braucht einen **Verantwortlichen für den ganzen Weg**, nicht nur je Abteilung. Sonst ist am Ende jede Stelle für sich zufrieden, und der Kunde wartet trotzdem drei Wochen."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Drei Arten von Prozessen",
+      "inhalt": [
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Drei Ebenen",
+          "titel": "Welcher Prozess wofür",
+          "lead": "Nicht alle sind gleich wichtig — und nicht alle gleich behandelt. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Kernprozesse",
+              "satz": "verdienen das Geld",
+              "text": "Sie erzeugen unmittelbar Leistung für den externen Kunden: Auftragsabwicklung, Beschaffung, Kundenbetreuung. Hier lohnt Verbesserung am meisten, weil jede Sekunde direkt beim Kunden ankommt."
+            },
+            {
+              "nr": 2,
+              "titel": "Unterstützungsprozesse",
+              "satz": "machen es möglich",
+              "text": "Personalwesen, Buchhaltung, IT, Instandhaltung. Sie haben interne Kunden. Sie sollen zuverlässig und günstig laufen — Spitzenleistung ist hier selten den Aufwand wert."
+            },
+            {
+              "nr": 3,
+              "titel": "Führungsprozesse",
+              "satz": "geben die Richtung",
+              "text": "Planung, Steuerung, Controlling, Qualitätsmanagement. Sie greifen nicht selbst zu, sondern entscheiden, was die anderen tun und woran der Erfolg gemessen wird."
+            }
+          ],
+          "regel": "Die praktische Folgerung: Kernprozesse werden optimiert, Unterstützungsprozesse standardisiert oder ausgelagert. Wer beides gleich behandelt, verteilt seinen Aufwand falsch."
+        },
+        {
+          "typ": "achtung",
+          "text": "„Unterstützungsprozess\" heißt nicht **unwichtig**. Fällt die Entgeltabrechnung aus, steht der Betrieb — sie schafft nur keinen Wert, für den ein Kunde zahlt. Die Einteilung sagt etwas über die Rolle, nicht über die Bedeutung."
+        },
+        {
+          "typ": "merke",
+          "text": "**Kernprozesse** schaffen Kundennutzen, **Unterstützungsprozesse** ermöglichen ihn, **Führungsprozesse** steuern beides.",
+          "karteikarte": "Welche drei Prozessarten gibt es, und wie unterscheiden sie sich in ihrer Behandlung?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Die Bruchstellen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine **{{begriff:schnittstelle|Schnittstelle}}** ist jede Stelle, an der ein Vorgang die Zuständigkeit wechselt. ==Fast alle Prozessprobleme sitzen genau dort== — nicht innerhalb der Abteilungen, sondern zwischen ihnen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Was an Schnittstellen passiert",
+            "Folge"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Der Vorgang wartet auf Bearbeitung",
+                "Liegezeit, oft der größte Zeitblock"
+              ],
+              "detail": "**Jede Übergabe erzeugt eine Warteschlange.** Die nächste Stelle arbeitet ihren eigenen Stapel ab, nicht den eingehenden Vorgang."
+            },
+            {
+              "zellen": [
+                "Informationen gehen verloren",
+                "Rückfragen, Fehler, Doppelarbeit"
+              ]
+            },
+            {
+              "zellen": [
+                "Daten werden erneut erfasst",
+                "Tippfehler, Medienbrüche"
+              ],
+              "detail": "**Der {{begriff:medienbruch|Medienbruch}} ist der teuerste Fall:** Ein digital eingegangener Auftrag wird ausgedruckt, handschriftlich ergänzt und wieder eingetippt. Jeder Wechsel des Mediums kostet Zeit und erzeugt Fehler."
+            },
+            {
+              "zellen": [
+                "Zuständigkeit ist unklar",
+                "der Vorgang bleibt liegen"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Je weniger Schnittstellen, desto schneller und fehlerärmer der Prozess.** Der Medienbruch ist die teuerste Form der Schnittstelle.",
+          "karteikarte": "Was ist eine Schnittstelle im Prozess, und welche vier Probleme entstehen dort typischerweise?"
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Bestellung geht per E-Mail ein, wird ausgedruckt, an das Lager gegeben, dort handschriftlich ergänzt und anschließend ins System getippt. Was ist das Hauptproblem?",
+          "optionen": [
+            {
+              "text": "Die Mitarbeitenden arbeiten zu langsam",
+              "richtig": false,
+              "echo": "Das ist die häufigste und meist falsche Schlussfolgerung. Hier liegt es am Ablauf, nicht an der Arbeitsgeschwindigkeit."
+            },
+            {
+              "text": "Medienbrüche und Schnittstellen erzeugen Zeitverlust und Fehler",
+              "richtig": true,
+              "echo": "Richtig. Die Bestellung liegt bereits digital vor, wird aber zweimal das Medium wechseln: von digital auf Papier und wieder zurück. Jeder Wechsel kostet Zeit, erzeugt Übertragungsfehler und macht den Vorgang zwischendurch unauffindbar. Dazu kommen zwei Schnittstellen mit Warteschlangen. Die Lösung liegt in der durchgehenden digitalen Bearbeitung, nicht in schnellerem Arbeiten."
+            },
+            {
+              "text": "Es fehlt eine Prüfung der Bestelldaten",
+              "richtig": false,
+              "echo": "Eine Prüfung mag fehlen, aber sie ist nicht das Hauptproblem. Zusätzliche Prüfschritte würden den Ablauf sogar weiter verlängern."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Prozessart ist das?",
+          "kategorien": [
+            "Kernprozess",
+            "Unterstützungsprozess",
+            "Führungsprozess"
+          ],
+          "aufgaben": [
+            {
+              "text": "Kundenaufträge annehmen und ausliefern.",
+              "loesung": "Kernprozess"
+            },
+            {
+              "text": "Löhne und Gehälter abrechnen.",
+              "loesung": "Unterstützungsprozess"
+            },
+            {
+              "text": "Die Jahresplanung aufstellen und Ziele festlegen.",
+              "loesung": "Führungsprozess"
+            },
+            {
+              "text": "Reklamationen von Kunden bearbeiten.",
+              "loesung": "Kernprozess"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Ein Geschäftsprozess hat Auslöser, Tätigkeiten und ein Ergebnis für einen Kunden.",
+    "Prozesse laufen quer durch die Abteilungen, nicht innerhalb einer Abteilung.",
+    "Das Ergebnis wird aus Kundensicht formuliert, nicht aus Abteilungssicht.",
+    "Kernprozesse schaffen unmittelbar Kundennutzen und werden optimiert.",
+    "Unterstützungsprozesse ermöglichen die Kernprozesse und werden standardisiert.",
+    "Führungsprozesse planen, steuern und kontrollieren.",
+    "Schnittstellen sind die typischen Schwachstellen: Warten, Informationsverlust, Doppelerfassung.",
+    "Der Medienbruch ist die teuerste Form der Schnittstelle."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Begriff Geschäftsprozess und nenne seine Bestandteile am Beispiel der Auftragsabwicklung.",
+      "loesung": "Ein Geschäftsprozess ist eine zeitlich und sachlich zusammenhängende Folge von Tätigkeiten, die durch ein Ereignis ausgelöst wird und zu einem Ergebnis für einen internen oder externen Kunden führt. Er verläuft quer durch die Abteilungen, richtet sich also nicht nach der Aufbauorganisation. Am Beispiel der Auftragsabwicklung ist der Auslöser der Eingang der Kundenbestellung. Eingaben sind Kundendaten, Artikelstammdaten und der Lagerbestand. Die Tätigkeiten umfassen das Prüfen der Bestellung, die Auftragsbestätigung, das Kommissionieren, den Versand und die Rechnungsstellung. Beteiligt sind Vertrieb, Lager, Versand und Buchhaltung. Das Ergebnis ist die gelieferte Ware zusammen mit der gestellten Rechnung, also ein Ergebnis, das der Kunde wahrnimmt. Wichtig ist, dass für den gesamten Weg eine Verantwortung besteht und nicht nur je Abteilung, weil sonst niemand für die Gesamtdauer einsteht."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum entstehen die meisten Prozessprobleme an Schnittstellen?",
+      "loesung": "Eine Schnittstelle ist jede Stelle, an der ein Vorgang die Zuständigkeit wechselt. Dort treten vier typische Probleme auf. Erstens entsteht Wartezeit, weil die aufnehmende Stelle ihren eigenen Stapel abarbeitet und der Vorgang sich einreiht; diese Liegezeit ist meist der größte Anteil der Durchlaufzeit. Zweitens gehen Informationen verloren, weil nicht alles weitergegeben wird, was die nächste Stelle braucht, was Rückfragen und Nacharbeit auslöst. Drittens werden Daten erneut erfasst, insbesondere bei Medienbrüchen, wenn also zwischen digital und Papier gewechselt wird; das kostet Zeit und erzeugt Übertragungsfehler. Viertens ist die Zuständigkeit an der Übergabe oft unklar, sodass der Vorgang schlicht liegen bleibt. Innerhalb einer Abteilung treten diese Probleme kaum auf, weil dort Informationen und Zuständigkeit beisammen sind. Deshalb setzt Prozessverbesserung zuerst an der Zahl und Gestaltung der Schnittstellen an."
+    },
+    {
+      "typ": "Fall",
+      "frage": "In eurem Betrieb beschwert sich der Vertrieb über das Lager, das Lager über die Buchhaltung und die Buchhaltung über den Vertrieb. Jede Abteilung hält ihre eigene Arbeit für einwandfrei. Was schließt du daraus?",
+      "loesung": "Das Muster deutet darauf hin, dass die Abteilungen jeweils ihre eigene Leistung optimieren, der Gesamtprozess aber niemandem gehört. Jede Stelle erfüllt ihre Kennzahlen und gibt den Vorgang weiter; die Probleme entstehen an den Übergängen, für die sich niemand zuständig fühlt. Sinnvoll ist deshalb, den Prozess zunächst als Ganzes darzustellen, vom auslösenden Ereignis bis zum Ergebnis beim Kunden, und dabei alle Schnittstellen sichtbar zu machen. Anschließend wird gemessen, wie viel Zeit auf Bearbeitung und wie viel auf Warten, Transport und Prüfung entfällt; erfahrungsgemäß liegt der größte Teil an den Übergaben. Auf dieser Grundlage lässt sich sachlich statt gegenseitig schuldzuweisend diskutieren. Organisatorisch braucht der Prozess einen Verantwortlichen für den gesamten Weg sowie gemeinsame Kennzahlen, die den Gesamtdurchlauf messen und nicht nur die Leistung einzelner Abteilungen. Zusätzlich ist zu klären, welche Informationen an jeder Übergabe vollständig mitgegeben werden müssen, damit Rückfragen entfallen."
+    }
+  ],
+  "pruefungstipp": "Die Definition des Geschäftsprozesses wird oft wörtlich abgefragt — merke dir Auslöser, Tätigkeiten, Ergebnis für einen Kunden und den Zusatz, dass er quer durch die Abteilungen läuft. Bei Fallaufgaben zu Schwachstellen ist die erwartete Antwort fast immer die Schnittstelle, insbesondere der Medienbruch. Nenne ihn beim Namen, das gibt Punkte."
+}

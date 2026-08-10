@@ -1,0 +1,233 @@
+{
+  "id": "k4",
+  "lernfeld": "lf8",
+  "nummer": 4,
+  "titel": "Entgelt und Abrechnung",
+  "untertitel": "Wonach bezahlt wird — und was am Ende auf der Abrechnung steht.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Entgeltformen unterscheiden und ihren Einsatz begründen",
+      "abschnitt": "d1"
+    },
+    {
+      "id": "lz2",
+      "text": "Eine Entgeltabrechnung lesen und die Bestandteile zuordnen",
+      "abschnitt": "d2"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "d1",
+      "titel": "Wonach bezahlt wird",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Grundfrage jeder Entgeltform lautet: Wird die **Zeit** bezahlt oder die **Leistung**? Beide Wege haben ihren Ort — und wer sie vertauscht, bekommt entweder schlechte Qualität oder gar keine Bewerber."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Grundformen",
+          "titel": "Zeitlohn oder Akkordlohn",
+          "lead": "Dieselbe Arbeit, zwei völlig verschiedene Anreize.",
+          "seiten": [
+            {
+              "name": "Zeitlohn",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Bezahlt wird die Anwesenheitszeit",
+                  "detail": "Stunden- oder Monatslohn. Die häufigste Form im Büro und überall dort, wo Leistung sich nicht sinnvoll zählen lässt."
+                },
+                {
+                  "text": "Fördert Sorgfalt statt Tempo",
+                  "detail": "Wer für Zeit bezahlt wird, hat keinen Anreiz zu hetzen — genau richtig bei Beratung, Buchhaltung oder Pflege."
+                },
+                {
+                  "text": "Planbar für beide Seiten",
+                  "detail": "Der Mitarbeiter kennt sein Einkommen, der Betrieb seine Personalkosten."
+                },
+                {
+                  "text": "Aber: kein Leistungsanreiz",
+                  "detail": "Wer schneller arbeitet, verdient nicht mehr. Deshalb wird Zeitlohn häufig mit Prämien oder Zielvereinbarungen kombiniert."
+                }
+              ]
+            },
+            {
+              "name": "Akkordlohn",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Bezahlt wird die Leistungsmenge",
+                  "detail": "Stückakkord nach Menge oder Zeitakkord nach vorgegebenen Zeiten je Stück."
+                },
+                {
+                  "text": "Nur bei akkordfähiger Arbeit zulässig",
+                  "detail": "Die Leistung muss messbar, vom Mitarbeiter beeinflussbar und regelmäßig wiederholbar sein. Trifft im Büro fast nie zu."
+                },
+                {
+                  "text": "Mindestlohn bleibt garantiert",
+                  "detail": "Auch im Akkord darf das Entgelt den gesetzlichen und tariflichen Mindestlohn nicht unterschreiten — der Akkordrichtsatz sichert das ab."
+                },
+                {
+                  "text": "Aber: Tempo geht vor Qualität",
+                  "detail": "Der Anreiz wirkt auf die Menge, nicht auf die Sorgfalt. Deshalb ist Akkord für Jugendliche verboten und in vielen Bereichen tariflich ausgeschlossen."
+                }
+              ]
+            }
+          ],
+          "regel": "Faustregel: Zeitlohn, wenn Sorgfalt zählt. Akkord, wenn Menge zählt und messbar ist. Prämienlohn, wenn beides zählt."
+        },
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:praemienlohn|Prämienlohn}} ist der Kompromiss: ein sicherer Grundlohn plus eine Prämie für messbare Zusatzleistungen — Qualität, Termintreue, Materialersparnis oder Mengenleistung. Im kaufmännischen Bereich begegnet er dir als Zielvereinbarung oder Bonus."
+        },
+        {
+          "typ": "merke",
+          "text": "Für Jugendliche unter 18 ist Akkordarbeit nach dem Jugendarbeitsschutzgesetz **verboten** — genau wie jede Arbeit, bei der das Tempo von außen vorgegeben wird und den Schutz gefährdet.",
+          "karteikarte": "Welche drei Entgeltformen gibt es, und wann passt welche?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "d2",
+      "titel": "Die Abrechnung lesen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:entgeltabrechnung|Entgeltabrechnung}} führt vom Bruttoentgelt zum Auszahlungsbetrag. Die Rechnung dahinter kennst du bereits — sie steht in Lernfeld 6, Kapitel 7. ==Hier geht es um die andere Seite: nicht ums Buchen, sondern ums Verstehen und Erklären.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Block",
+            "Was darin steht",
+            "Wer es bekommt"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Bruttoentgelt",
+                "Grundentgelt, Zulagen, Zuschläge, geldwerte Vorteile",
+                "Ausgangspunkt der Rechnung"
+              ],
+              "detail": "**Geldwerte Vorteile werden mitversteuert.** Ein Dienstwagen zur privaten Nutzung, ein Job-Ticket oder ein Zuschuss erhöhen das steuerpflichtige Brutto, ohne dass Geld fließt — deshalb fällt das Netto niedriger aus, als der Mitarbeiter erwartet."
+            },
+            {
+              "zellen": [
+                "Gesetzliche Abzüge",
+                "Lohnsteuer, Solidaritätszuschlag, ggf. Kirchensteuer",
+                "Finanzamt"
+              ]
+            },
+            {
+              "zellen": [
+                "Sozialversicherung",
+                "Arbeitnehmeranteile zu KV, RV, AV, PV",
+                "Krankenkasse als Einzugsstelle"
+              ],
+              "detail": "**Die Krankenkasse zieht alles ein**, auch die Renten- und Arbeitslosenversicherungsbeiträge, und verteilt sie weiter. Deshalb heißt sie Einzugsstelle — eine beliebte Prüfungsfrage."
+            },
+            {
+              "zellen": [
+                "Sonstige Abzüge",
+                "Vermögenswirksame Leistungen, Pfändungen, Vorschüsse",
+                "je nach Fall"
+              ]
+            },
+            {
+              "zellen": [
+                "Auszahlungsbetrag",
+                "was tatsächlich überwiesen wird",
+                "Mitarbeiter"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Mitarbeiter fragt, warum sein Netto gesunken ist, obwohl das Bruttogehalt gleich geblieben ist. Was prüfst du zuerst?",
+          "optionen": [
+            {
+              "text": "Ob er zu wenig gearbeitet hat",
+              "richtig": false,
+              "echo": "Bei gleichem Bruttogehalt spielt die Arbeitszeit keine Rolle mehr — das Brutto steht ja fest."
+            },
+            {
+              "text": "Steuerklasse, Beitragssätze und geldwerte Vorteile",
+              "richtig": true,
+              "echo": "Richtig. Bei unverändertem Brutto kann das Netto nur über die Abzüge sinken: eine geänderte Steuerklasse etwa nach Heirat oder Scheidung, ein gestiegener Zusatzbeitrag der Krankenkasse, der Pflegeversicherungszuschlag für Kinderlose ab 23 — oder ein neu hinzugekommener geldwerter Vorteil wie ein Dienstwagen."
+            },
+            {
+              "text": "Ob der Arbeitgeberanteil gestiegen ist",
+              "richtig": false,
+              "echo": "Der Arbeitgeberanteil wird nicht vom Gehalt abgezogen, sondern kommt obendrauf. Er belastet den Betrieb, nicht das Netto des Mitarbeiters."
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Wenn ein Kollege mit seiner Abrechnung zu dir kommt, geh sie von oben nach unten durch und benenne jeden Block. Die meisten Rückfragen erledigen sich, sobald jemand versteht, dass Steuer und Sozialversicherung zwei getrennte Systeme mit unterschiedlichen Bemessungsgrundlagen sind."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welcher Entgeltform ist die Situation zuzuordnen?",
+          "kategorien": [
+            "Zeitlohn",
+            "Akkordlohn",
+            "Prämienlohn"
+          ],
+          "aufgaben": [
+            {
+              "text": "Feste 2.800 € im Monat für eine Sachbearbeiterin.",
+              "loesung": "Zeitlohn"
+            },
+            {
+              "text": "Grundgehalt plus Bonus bei Erreichen der Jahresziele.",
+              "loesung": "Prämienlohn"
+            },
+            {
+              "text": "Bezahlung je gefertigtem Bauteil.",
+              "loesung": "Akkordlohn"
+            },
+            {
+              "text": "Stundenlohn für eine Aushilfe im Lager.",
+              "loesung": "Zeitlohn"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Zeitlohn vergütet Anwesenheitszeit, Akkordlohn Leistungsmenge, Prämienlohn beides.",
+    "Akkord setzt messbare, beeinflussbare und wiederholbare Leistung voraus.",
+    "Für Jugendliche unter 18 ist Akkordarbeit verboten.",
+    "Auch im Akkord gilt der Mindestlohn.",
+    "Abrechnung: Brutto, gesetzliche Abzüge, Sozialversicherung, sonstige Abzüge, Auszahlungsbetrag.",
+    "Geldwerte Vorteile erhöhen das steuerpflichtige Brutto, ohne dass Geld fließt.",
+    "Die Krankenkasse ist Einzugsstelle für alle Sozialversicherungsbeiträge."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Unterschied zwischen Zeit- und Akkordlohn und nenne je einen typischen Einsatzbereich.",
+      "loesung": "Beim Zeitlohn wird die Anwesenheitszeit vergütet, unabhängig von der erbrachten Menge; er passt überall dort, wo Sorgfalt wichtiger ist als Tempo und die Leistung sich nicht sinnvoll zählen lässt — etwa im kaufmännischen Bereich. Beim Akkordlohn wird die Leistungsmenge vergütet; er setzt voraus, dass die Leistung messbar, beeinflussbar und wiederholbar ist, und passt in der Serienfertigung. Für Jugendliche ist Akkordarbeit verboten."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Welche Bestandteile hat eine Entgeltabrechnung, und warum ist der Arbeitgeberanteil dort nicht abgezogen?",
+      "loesung": "Sie führt vom Bruttoentgelt über die gesetzlichen Abzüge — Lohnsteuer, Solidaritätszuschlag, gegebenenfalls Kirchensteuer — und die Arbeitnehmeranteile zur Sozialversicherung sowie sonstige Abzüge zum Auszahlungsbetrag. Der Arbeitgeberanteil erscheint dort nicht als Abzug, weil er nicht vom Gehalt des Arbeitnehmers einbehalten, sondern zusätzlich vom Betrieb gezahlt wird. Er ist Bestandteil der Personalkosten, nicht des Bruttoentgelts."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Betrieb möchte die Sachbearbeitung im Rechnungswesen auf Akkordlohn umstellen, um die Bearbeitungszahlen zu steigern. Wie beurteilst du das?",
+      "loesung": "Ungeeignet. Akkordlohn setzt voraus, dass die Leistung messbar, beeinflussbar und regelmäßig wiederholbar ist. Im Rechnungswesen unterscheiden sich die Vorgänge stark, und Fehler haben erhebliche Folgen. Ein mengenbezogener Anreiz würde Tempo vor Sorgfalt setzen und die Fehlerquote erhöhen. Sachgerechter wäre Zeitlohn, gegebenenfalls ergänzt um eine Prämie, die an Qualitätskennzahlen wie Fehlerquote oder Termintreue anknüpft."
+    }
+  ],
+  "pruefungstipp": "Die drei Entgeltformen kommen als Zuordnungsaufgabe. Merke dir die drei Voraussetzungen für Akkord — messbar, beeinflussbar, wiederholbar — und dass Jugendliche davon ausgenommen sind. Bei der Abrechnung wird oft nach der Einzugsstelle gefragt: Das ist die Krankenkasse."
+}

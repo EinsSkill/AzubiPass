@@ -1,0 +1,305 @@
+{
+  "id": "k3",
+  "lernfeld": "lf13",
+  "nummer": 3,
+  "titel": "Steuern und Risiken beherrschen",
+  "untertitel": "Ein Plan ist keine Vorhersage. Er ist etwas, woran man Abweichungen erkennt.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Fortschritt messen und Abweichungen erkennen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Risiken bewerten und Maßnahmen ableiten",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Änderungswünsche geordnet behandeln",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Fortschritt ehrlich messen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die gefährlichste Antwort im Projekt lautet **„etwa 90 Prozent fertig\"**. ==Sie ist unüberprüfbar und bleibt erfahrungsgemäß wochenlang gleich.== Deshalb wird Fortschritt an fertigen Arbeitspaketen gemessen, nicht an Selbsteinschätzungen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Methode",
+            "Wie sie funktioniert",
+            "Taugt sie?"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Selbsteinschätzung in Prozent",
+                "„gefühlt 80 Prozent\"",
+                "kaum"
+              ],
+              "detail": "**Nicht überprüfbar und systematisch zu optimistisch.** Die letzten 10 Prozent enthalten regelmäßig die Hälfte der Arbeit."
+            },
+            {
+              "zellen": [
+                "Fertig oder nicht fertig",
+                "Arbeitspaket zählt erst, wenn es abgeschlossen ist",
+                "gut"
+              ],
+              "detail": "**Streng, aber ehrlich.** Ein Paket ist entweder fertig oder nicht — Zwischenstände gibt es nicht. Voraussetzung ist, dass die Pakete klein genug geschnitten sind."
+            },
+            {
+              "zellen": [
+                "{{begriff:meilenstein|Meilensteine}}",
+                "überprüfbares Zwischenergebnis liegt vor",
+                "sehr gut"
+              ]
+            },
+            {
+              "zellen": [
+                "Aufwandsvergleich",
+                "verbrauchte gegen geplante Stunden",
+                "nur zusammen mit dem Ergebnis"
+              ],
+              "detail": "**Allein irreführend:** Die Hälfte der Stunden verbraucht zu haben, sagt nichts darüber, ob die Hälfte des Ergebnisses vorliegt."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Wer schlechte Nachrichten bestraft, bekommt keine mehr — bis es zu spät ist. **Eine früh gemeldete Verzögerung ist eine gute Nachricht**, weil sie noch Handlungsspielraum lässt. Das gehört ausdrücklich gesagt, sonst wird beschönigt."
+        },
+        {
+          "typ": "merke",
+          "text": "Fortschritt wird an **fertigen Arbeitspaketen und erreichten Meilensteinen** gemessen, nicht an Prozentschätzungen. Verbrauchte Stunden allein sagen nichts über das Ergebnis.",
+          "karteikarte": "Woran misst man Projektfortschritt zuverlässig, und warum taugen Prozentschätzungen dafür nicht?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Risiken",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:projektrisiko|Risiko}} ist ein mögliches Ereignis, das Ziel, Termin oder Budget gefährdet. ==Bewertet wird es nach zwei Größen: Wie wahrscheinlich ist es, und wie schwer wären die Folgen?== Aus der Kombination ergibt sich, was zu tun ist."
+        },
+        {
+          "typ": "grafik",
+          "variante": "matrix",
+          "kopf": "Vier Felder",
+          "titel": "Welches Risiko wie behandeln?",
+          "lead": "Risiko oben antippen, dann das passende Feld anklicken.",
+          "achsen": {
+            "x": "Eintrittswahrscheinlichkeit →",
+            "y": "Auswirkung →"
+          },
+          "felder": [
+            {
+              "id": "vermeiden",
+              "name": "Vermeiden oder absichern",
+              "x": 1,
+              "y": 1
+            },
+            {
+              "id": "vorsorgen",
+              "name": "Notfallplan bereithalten",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "id": "mindern",
+              "name": "Eintritt verringern",
+              "x": 1,
+              "y": 0
+            },
+            {
+              "id": "hinnehmen",
+              "name": "Hinnehmen",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "aufgaben": [
+            {
+              "text": "Der einzige Lieferant der Kernkomponente fällt aus",
+              "feld": "vermeiden",
+              "echo": "Schwere Folgen und bei einem einzigen Lieferanten durchaus wahrscheinlich. Hier wird das Risiko aktiv beseitigt — durch einen zweiten Lieferanten oder eine vertragliche Absicherung."
+            },
+            {
+              "text": "Ein Serverausfall am Tag der Umstellung",
+              "feld": "vorsorgen",
+              "echo": "Unwahrscheinlich, aber die Folgen wären erheblich. Dagegen hilft kein Vermeiden, sondern ein vorbereiteter Notfallplan mit Rückfallebene."
+            },
+            {
+              "text": "Einzelne Beschäftigte melden sich krank",
+              "feld": "mindern",
+              "echo": "Passiert mit hoher Wahrscheinlichkeit, die Folgen sind aber begrenzt. Vertretungsregelungen und Puffer verringern die Auswirkung, ohne großen Aufwand."
+            },
+            {
+              "text": "Die Druckerei liefert die Handbücher einen Tag später",
+              "feld": "hinnehmen",
+              "echo": "Weder wahrscheinlich noch folgenschwer. Solche Risiken werden bewusst hingenommen — Maßnahmen dagegen kosten mehr, als der Schaden je betragen würde."
+            },
+            {
+              "text": "Die Projektleitung fällt für mehrere Wochen aus",
+              "feld": "vorsorgen",
+              "echo": "Selten, aber gravierend. Deshalb gehören Vertretung, dokumentierter Stand und Zugriff auf alle Unterlagen von Anfang an geregelt."
+            },
+            {
+              "text": "Das Budget wird um zwei Prozent überschritten",
+              "feld": "hinnehmen",
+              "echo": "Kleine Abweichungen sind in jedem Projekt normal. Dafür ist der Puffer da — jede Gegenmaßnahme wäre teurer als die Abweichung selbst."
+            }
+          ],
+          "regel": "Merksatz: Hohe Auswirkung entscheidet über die Aufmerksamkeit, hohe Wahrscheinlichkeit über die Art der Maßnahme. Und: Risiken werden am Anfang gesammelt, aber laufend fortgeschrieben."
+        },
+        {
+          "typ": "merke",
+          "text": "Risiken werden nach **Wahrscheinlichkeit** und **Auswirkung** bewertet. Daraus folgen vier Wege: vermeiden, vorsorgen, mindern, hinnehmen.",
+          "karteikarte": "Nach welchen zwei Größen werden Projektrisiken bewertet, und welche vier Umgangsweisen ergeben sich daraus?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Sammle Risiken **zu Projektbeginn im Team**, nicht allein am Schreibtisch. Die Ausführenden kennen die Stolpersteine, die in keinem Plan stehen — und wer ein Risiko selbst benannt hat, meldet es später auch, wenn es eintritt."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Änderungen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Änderungswünsche sind normal — ==unkontrollierte Änderungen sind der häufigste Grund, warum Projekte scheitern.== Deshalb braucht jeder Wunsch denselben geordneten Weg, egal wie klein er wirkt."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Vier Schritte",
+          "titel": "So behandelst du einen Änderungswunsch",
+          "lead": "Immer gleich, auch bei Kleinigkeiten. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Schriftlich aufnehmen",
+              "satz": "wer will was, warum",
+              "text": "Mündliche Zusagen zwischen Tür und Angel sind der Anfang jeder Ausweitung. Aufgeschrieben wird, was gewünscht ist und welchen Zweck es erfüllen soll."
+            },
+            {
+              "nr": 2,
+              "titel": "Auswirkung beziffern",
+              "satz": "Zeit, Kosten, Umfang",
+              "text": "Wie viele Tage, wie viel Geld, welche anderen Arbeitspakete sind betroffen? Ohne Zahl kann niemand entscheiden — und ohne Entscheidung wird stillschweigend zugesagt."
+            },
+            {
+              "nr": 3,
+              "titel": "Entscheiden lassen",
+              "satz": "vom Auftraggeber",
+              "text": "Drei Möglichkeiten: annehmen mit angepasstem Plan, ablehnen, oder für später vormerken. Die Projektleitung entscheidet das nicht selbst — sie liefert die Grundlage."
+            },
+            {
+              "nr": 4,
+              "titel": "Plan anpassen",
+              "satz": "und alle informieren",
+              "text": "Wird die Änderung angenommen, werden Struktur-, Termin- und Kostenplan fortgeschrieben. Eine Änderung ohne Plananpassung ist eine Änderung, die niemand steuert."
+            }
+          ],
+          "regel": "Der wirksamste Satz der Projektleitung lautet: „Gern — das kostet X Tage und Y Euro. Soll es dazukommen, oder soll dafür etwas anderes entfallen?\""
+        },
+        {
+          "typ": "merke",
+          "text": "Jede Änderung: **aufnehmen, beziffern, entscheiden lassen, Plan anpassen.** Eine Änderung ohne Plananpassung wird von niemandem gesteuert.",
+          "karteikarte": "Welche vier Schritte hat der Umgang mit einem Änderungswunsch im Projekt?"
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Fachabteilung bittet dich im Vorbeigehen um „eine Kleinigkeit noch\". Was tust du?",
+          "optionen": [
+            {
+              "text": "Zusagen — es ist ja nur eine Kleinigkeit",
+              "richtig": false,
+              "echo": "Genau so entsteht die schleichende Ausweitung. Viele Kleinigkeiten wirken einzeln harmlos und sprengen zusammen Termin und Budget."
+            },
+            {
+              "text": "Aufnehmen, Aufwand beziffern und den Auftraggeber entscheiden lassen",
+              "richtig": true,
+              "echo": "Richtig. Auch kleine Wünsche durchlaufen den geordneten Weg: schriftlich aufnehmen, Auswirkung auf Zeit, Kosten und Umfang beziffern, den Auftraggeber entscheiden lassen und bei Annahme den Plan fortschreiben. Das ist keine Bürokratie, sondern der einzige Weg, die Übersicht zu behalten. Nebenbei zeigt die Zahl der abgelehnten Wünsche später, wie realistisch der ursprüngliche Auftrag war."
+            },
+            {
+              "text": "Ablehnen mit Verweis auf den Projektauftrag",
+              "richtig": false,
+              "echo": "Zu starr. Der Wunsch kann durchaus berechtigt sein — nur entscheidet darüber nicht die Projektleitung, sondern der Auftraggeber auf Grundlage der bezifferten Auswirkung."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Wie gehst du mit dem Risiko um?",
+          "kategorien": [
+            "Vermeiden",
+            "Vorsorgen",
+            "Mindern",
+            "Hinnehmen"
+          ],
+          "aufgaben": [
+            {
+              "text": "Wahrscheinlich und mit schweren Folgen.",
+              "loesung": "Vermeiden"
+            },
+            {
+              "text": "Unwahrscheinlich, aber mit schweren Folgen.",
+              "loesung": "Vorsorgen"
+            },
+            {
+              "text": "Wahrscheinlich, aber mit geringen Folgen.",
+              "loesung": "Mindern"
+            },
+            {
+              "text": "Unwahrscheinlich und mit geringen Folgen.",
+              "loesung": "Hinnehmen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Fortschritt wird an fertigen Arbeitspaketen und Meilensteinen gemessen.",
+    "Prozentschätzungen sind unüberprüfbar und systematisch zu optimistisch.",
+    "Verbrauchte Stunden allein sagen nichts über das erreichte Ergebnis.",
+    "Früh gemeldete Verzögerungen sind gute Nachrichten — sie lassen Handlungsspielraum.",
+    "{{begriff:projektrisiko|Risiken}} werden nach Wahrscheinlichkeit und Auswirkung bewertet.",
+    "Vier Umgangsweisen: vermeiden, vorsorgen, mindern, hinnehmen.",
+    "Risiken werden zu Beginn im Team gesammelt und laufend fortgeschrieben.",
+    "Änderungen: aufnehmen, beziffern, entscheiden lassen, Plan anpassen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Wie misst man Projektfortschritt zuverlässig, und welche Methoden taugen dafür nicht?",
+      "loesung": "Zuverlässig ist die Messung an fertiggestellten Arbeitspaketen und an erreichten Meilensteinen. Ein Arbeitspaket zählt erst, wenn es vollständig abgeschlossen ist; Zwischenstände werden nicht gewertet. Voraussetzung dafür ist, dass die Pakete klein genug geschnitten sind, damit regelmäßig etwas fertig wird. Meilensteine haben keine Dauer und liegen genau dann vor, wenn ein überprüfbares Zwischenergebnis existiert. Nicht geeignet ist die Selbsteinschätzung in Prozent, weil sie nicht überprüfbar und systematisch zu optimistisch ist; die berüchtigten letzten zehn Prozent enthalten häufig die Hälfte der verbleibenden Arbeit. Ebenfalls unzureichend ist der reine Aufwandsvergleich zwischen verbrauchten und geplanten Stunden: Die Hälfte des Budgets verbraucht zu haben, sagt nichts darüber, ob die Hälfte des Ergebnisses vorliegt. Sinnvoll ist er nur zusammen mit der Betrachtung des tatsächlich Erreichten."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Wie werden Projektrisiken bewertet, und welche Maßnahmen ergeben sich daraus?",
+      "loesung": "Bewertet wird jedes Risiko nach zwei Größen: der Eintrittswahrscheinlichkeit und der Auswirkung auf Ziel, Termin oder Budget. Aus der Kombination beider Größen ergeben sich vier grundsätzliche Umgangsweisen. Ist ein Risiko wahrscheinlich und hätte schwere Folgen, wird es vermieden oder abgesichert, etwa durch einen zweiten Lieferanten oder eine vertragliche Regelung. Ist es unwahrscheinlich, hätte aber schwere Folgen, wird vorgesorgt, indem ein Notfallplan mit Rückfallebene bereitgehalten wird. Ist es wahrscheinlich, aber mit begrenzten Folgen, wird die Auswirkung gemindert, etwa durch Vertretungsregelungen und Puffer. Ist es weder wahrscheinlich noch folgenschwer, wird es bewusst hingenommen, weil jede Maßnahme mehr kosten würde als der mögliche Schaden. Wichtig ist, Risiken zu Projektbeginn gemeinsam im Team zu sammeln und die Liste laufend fortzuschreiben, weil im Verlauf neue hinzukommen und andere entfallen."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Zur Halbzeit sind 60 Prozent des Budgets verbraucht, aber erst 3 von 8 Arbeitspaketen abgeschlossen. Der Teamleiter sagt, man liege „im Plan\". Wie bewertest du das?",
+      "loesung": "Die Aussage ist nicht haltbar. Der Aufwandsverbrauch ist deutlich weiter fortgeschritten als das Ergebnis: 60 Prozent des Budgets stehen 37,5 Prozent der abgeschlossenen Arbeitspakete gegenüber. Rechnet man diese Entwicklung fort, würde das Projekt das Budget erheblich überschreiten. Zunächst würde ich prüfen, ob die Arbeitspakete gleich groß sind, denn bei stark unterschiedlichem Umfang wäre die reine Stückzahl irreführend; maßgeblich wäre dann der geplante Aufwand der abgeschlossenen Pakete. Anschließend wäre zu klären, ob die Restpakete tatsächlich weniger aufwendig sind, was die Lage entschärfen würde, oder ob der Mehrverbrauch aus unterschätzten Aufwänden stammt, was sich fortsetzen wird. Wichtig ist außerdem zu klären, ob die drei fertigen Pakete wirklich abgeschlossen sind oder nur als solche gemeldet wurden. Unabhängig vom Ergebnis dieser Prüfung muss der Auftraggeber informiert werden, solange noch Handlungsspielraum besteht. Mögliche Maßnahmen sind Umfangsreduzierung, Budgeterhöhung oder Terminverschiebung — welche davon greift, entscheidet der Auftraggeber auf Grundlage bezifferter Auswirkungen."
+    }
+  ],
+  "pruefungstipp": "Die Risikobewertung nach Wahrscheinlichkeit und Auswirkung wird gern als Zuordnungsaufgabe gestellt — merke dir die vier Felder mit je einem Beispiel. Beim Fortschritt ist die erwartete Antwort immer, dass an fertigen Ergebnissen gemessen wird und nicht an Prozentangaben. Und bei Änderungswünschen nenne alle vier Schritte, besonders die Bezifferung der Auswirkung."
+}

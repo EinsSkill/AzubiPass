@@ -1,0 +1,293 @@
+{
+  "id": "k2",
+  "lernfeld": "lf3",
+  "nummer": 2,
+  "titel": "Wie ein Vertrag entsteht",
+  "untertitel": "Zwei Sätze genügen — wenn sie zusammenpassen.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Willenserklärung und Rechtsgeschäft erklären",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Das Zustandekommen eines Kaufvertrags nachvollziehen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die Geschäftsfähigkeit prüfen und Folgen ableiten",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Der Baustein: die Willenserklärung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Jeder Vertrag besteht aus {{begriff:willenserklaerung|Willenserklärungen}} — Äußerungen, die auf eine Rechtsfolge gerichtet sind. Sie brauchen weder Schriftform noch Unterschrift. ==Ein Nicken an der Auktion, das Auflegen der Ware aufs Kassenband, das Einsteigen in den Bus== sind vollwertige Willenserklärungen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Form",
+            "Beispiel",
+            "Wirksam?"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ausdrücklich mündlich",
+                "„Ich nehme die 200 Ordner.“",
+                "ja"
+              ]
+            },
+            {
+              "zellen": [
+                "Schriftlich",
+                "unterschriebene Bestellung",
+                "ja"
+              ]
+            },
+            {
+              "zellen": [
+                "Durch schlüssiges Handeln",
+                "Ware aufs Kassenband legen",
+                "ja"
+              ],
+              "detail": "**Konkludentes Handeln nennt die Rechtssprache das.** Es zählt genauso wie das gesprochene Wort — deshalb kommt an der Supermarktkasse ein Kaufvertrag zustande, ohne dass jemand ein Wort sagt."
+            },
+            {
+              "zellen": [
+                "Schweigen",
+                "keine Reaktion auf ein Angebot",
+                "in der Regel nein"
+              ],
+              "detail": "**Die kaufmännische Ausnahme:** Nach {{par:hgb-362|§ 362 HGB}} kann Schweigen unter Kaufleuten in laufender Geschäftsverbindung als Zustimmung gelten. Für Verbraucher gilt das nie — unbestellte Ware muss niemand bezahlen."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Ein {{begriff:rechtsgeschaeft|Rechtsgeschäft}} besteht aus mindestens einer Willenserklärung. **Einseitig** wie Kündigung oder Testament, **zweiseitig** wie Kauf, Miete oder Arbeitsvertrag.",
+          "karteikarte": "Was ist eine Willenserklärung, und in welchen Formen kann sie abgegeben werden?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Antrag und Annahme",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:kaufvertrag|Kaufvertrag}} entsteht aus genau zwei Willenserklärungen: {{begriff:antrag|Antrag}} und {{begriff:annahme|Annahme}}. Nach {{par:bgb-145|§ 145 BGB}} ist der Antragende an seinen Antrag gebunden — er kann ihn nicht einfach zurückziehen, wenn ihm der Preis nachträglich zu niedrig erscheint."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Zwei Erklärungen",
+          "titel": "So entsteht der Vertrag",
+          "lead": "Vier Schritte, und der Vertrag steht. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Antrag",
+              "satz": "§ 145 BGB · bindend",
+              "text": "Eine Willenserklärung, die so bestimmt ist, dass ein schlichtes Ja zum Vertrag führt. Ware, Menge und Preis müssen also feststehen. „Was kosten Ordner?“ ist kein Antrag, sondern eine Anfrage."
+            },
+            {
+              "nr": 2,
+              "titel": "Bindungsfrist läuft",
+              "satz": "§ 147 BGB",
+              "text": "Unter Anwesenden muss sofort angenommen werden. Unter Abwesenden so lange, wie der Antragende mit einer Antwort rechnen darf — bei einer Mail also Tage, nicht Wochen. Eine ausdrücklich genannte Frist geht immer vor."
+            },
+            {
+              "nr": 3,
+              "titel": "Annahme",
+              "satz": "muss vollständig entsprechen",
+              "text": "Jede Abweichung — andere Menge, anderer Termin, anderer Preis — gilt als Ablehnung verbunden mit einem neuen Antrag. Dann dreht sich die Rollenverteilung um."
+            },
+            {
+              "nr": 4,
+              "titel": "Vertrag",
+              "satz": "§ 433 BGB",
+              "text": "Beide Erklärungen stimmen überein, der Vertrag ist geschlossen. Der Verkäufer schuldet Übergabe und Eigentumsverschaffung, der Käufer Zahlung und Abnahme."
+            }
+          ],
+          "regel": "Merksatz: Wer abweicht, nimmt nicht an — er macht ein neues Angebot. Damit wandert die Bindung auf die andere Seite."
+        },
+        {
+          "typ": "achtung",
+          "text": "Verwechsle nicht **Vertragsschluss** und **Eigentumsübergang**. Der Vertrag verpflichtet nur; das Eigentum geht erst mit Einigung und Übergabe über. Deshalb gehört gelieferte, aber noch nicht bezahlte Ware unter Eigentumsvorbehalt weiterhin dem Verkäufer."
+        },
+        {
+          "typ": "check",
+          "frage": "Du bietest 200 Ordner zu 3,50 € an. Der Kunde bestellt 200 Ordner zu 3,20 €. Was ist passiert?",
+          "optionen": [
+            {
+              "text": "Der Vertrag ist zu 3,20 € geschlossen",
+              "richtig": false,
+              "echo": "Dafür fehlt deine Zustimmung. Eine Annahme muss dem Antrag vollständig entsprechen — beim Preis ändert sich das nicht."
+            },
+            {
+              "text": "Der Vertrag ist zu 3,50 € geschlossen",
+              "richtig": false,
+              "echo": "Auch das nicht. Der Kunde hat dein Angebot gerade nicht angenommen, sondern abgelehnt."
+            },
+            {
+              "text": "Kein Vertrag — die Bestellung ist ein neuer Antrag",
+              "richtig": true,
+              "echo": "Richtig. Die Abweichung beim Preis macht aus der Annahme eine Ablehnung verbunden mit einem neuen Antrag. Jetzt bist du am Zug: Nimmst du an, gilt 3,20 €. Schweigst du, kommt in der Regel kein Vertrag zustande."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Wer darf überhaupt?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine Willenserklärung wirkt nur, wenn derjenige {{begriff:geschaeftsfaehigkeit|geschäftsfähig}} ist. Das Gesetz kennt drei Stufen — und die mittlere ist die, mit der du im Betrieb tatsächlich zu tun hast."
+        },
+        {
+          "typ": "grafik",
+          "variante": "staffel",
+          "kopf": "Drei Stufen",
+          "titel": "Geschäftsfähigkeit nach Alter",
+          "lead": "Trag ein Alter ein und sieh, was gilt.",
+          "eingaben": {
+            "jahre": {
+              "label": "Alter der Person in Jahren",
+              "start": 16
+            }
+          },
+          "stufen": [
+            {
+              "ab": 0,
+              "frist": "geschäftsunfähig",
+              "termin": "§ 104 BGB — Erklärungen sind nichtig",
+              "monate": 0
+            },
+            {
+              "ab": 7,
+              "frist": "beschränkt geschäftsfähig",
+              "termin": "§ 106 BGB — schwebend unwirksam ohne Einwilligung",
+              "monate": 2
+            },
+            {
+              "ab": 18,
+              "frist": "voll geschäftsfähig",
+              "termin": "unbeschränkt wirksam",
+              "monate": 5
+            }
+          ],
+          "regel": "Beschränkt geschäftsfähig heißt: Der Vertrag ist schwebend unwirksam. Er wird rückwirkend wirksam, wenn die Eltern zustimmen — und endgültig unwirksam, wenn sie es verweigern."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Fall",
+            "Regel",
+            "Ergebnis"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Lediglich rechtlicher Vorteil",
+                "{{par:bgb-107|§ 107 BGB}}",
+                "wirksam ohne Zustimmung"
+              ],
+              "detail": "**Ein echtes Geschenk ist wirksam** — der Minderjährige bekommt etwas, ohne eine Pflicht zu übernehmen. Sobald er etwas zahlen oder pflegen muss, ist es kein lediglich rechtlicher Vorteil mehr."
+            },
+            {
+              "zellen": [
+                "Mit Einwilligung der Eltern",
+                "{{par:bgb-107|§ 107 BGB}}",
+                "wirksam"
+              ]
+            },
+            {
+              "zellen": [
+                "Vollständig mit Taschengeld bezahlt",
+                "{{par:bgb-110|§ 110 BGB}}",
+                "wirksam"
+              ],
+              "detail": "**Der Taschengeldparagraf greift erst, wenn tatsächlich bezahlt wurde** — und zwar vollständig. Eine Ratenzahlung aus dem Taschengeld reicht nicht, solange noch etwas offen ist."
+            },
+            {
+              "zellen": [
+                "Ohne Zustimmung, auf Rechnung",
+                "{{par:bgb-106|§ 106 BGB}}",
+                "schwebend unwirksam"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Wirksam oder nicht?",
+          "kategorien": [
+            "Wirksam",
+            "Schwebend unwirksam",
+            "Nichtig"
+          ],
+          "aufgaben": [
+            {
+              "text": "Ein 15-Jähriger kauft ein Buch und bezahlt bar mit seinem Taschengeld.",
+              "loesung": "Wirksam"
+            },
+            {
+              "text": "Ein 5-Jähriger bestellt online ein Spielzeug.",
+              "loesung": "Nichtig"
+            },
+            {
+              "text": "Ein 16-Jähriger schließt ohne Zustimmung der Eltern einen Handyvertrag ab.",
+              "loesung": "Schwebend unwirksam"
+            },
+            {
+              "text": "Ein 17-Jähriger bekommt ein Fahrrad geschenkt.",
+              "loesung": "Wirksam"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Willenserklärungen können mündlich, schriftlich oder durch schlüssiges Handeln abgegeben werden.",
+    "Schweigen bedeutet grundsätzlich keine Zustimmung — Ausnahme {{par:hgb-362|§ 362 HGB}} unter Kaufleuten.",
+    "{{par:bgb-145|§ 145 BGB}}: Der Antragende ist an seinen Antrag gebunden.",
+    "{{par:bgb-147|§ 147 BGB}}: sofort unter Anwesenden, sonst innerhalb der regelmäßigen Antwortzeit.",
+    "Eine Annahme muss vollständig entsprechen — jede Abweichung ist ein neuer Antrag.",
+    "{{par:bgb-433|§ 433 BGB}}: Verkäufer übergibt und verschafft Eigentum, Käufer zahlt und nimmt ab.",
+    "Geschäftsfähigkeit: unter 7 nichtig, 7 bis 17 beschränkt, ab 18 unbeschränkt.",
+    "{{par:bgb-110|§ 110 BGB}}: vollständig mit eigenen Mitteln bezahlt ist wirksam."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Wie kommt ein Kaufvertrag zustande? Nenne die beiden Bestandteile und ihre gesetzlichen Grundlagen.",
+      "loesung": "Durch zwei übereinstimmende Willenserklärungen: den Antrag nach § 145 BGB und die Annahme. Der Antragende ist an seinen Antrag gebunden, sofern er die Bindung nicht ausgeschlossen hat. Die Annahme muss dem Antrag vollständig entsprechen und innerhalb der Frist des § 147 BGB erfolgen — unter Anwesenden sofort, unter Abwesenden innerhalb der Zeit, in der mit einer Antwort zu rechnen ist. Die Pflichten aus dem geschlossenen Vertrag regelt § 433 BGB."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Was bedeutet „schwebend unwirksam“?",
+      "loesung": "Der Vertrag ist zunächst weder wirksam noch endgültig unwirksam — sein Schicksal hängt in der Schwebe. Stimmt der gesetzliche Vertreter nachträglich zu, wird er rückwirkend von Anfang an wirksam. Verweigert er die Zustimmung, ist er endgültig unwirksam und bereits erbrachte Leistungen sind zurückzugewähren. Betroffen sind Verträge beschränkt Geschäftsfähiger, die nicht lediglich rechtlich vorteilhaft sind und nicht vollständig aus eigenen Mitteln bezahlt wurden."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein 16-jähriger Azubi bestellt in eurem Onlineshop Büromaterial für 89 € auf Rechnung. Die Eltern verweigern die Zustimmung. Wie ist die Lage?",
+      "loesung": "Der Vertrag war schwebend unwirksam, weil der Minderjährige beschränkt geschäftsfähig ist und der Kauf auf Rechnung nicht lediglich rechtlich vorteilhaft war. Der Taschengeldparagraf greift nicht, weil nicht bezahlt wurde. Mit der Verweigerung der Zustimmung ist der Vertrag endgültig unwirksam. Bereits gelieferte Ware ist zurückzugeben, ein Zahlungsanspruch besteht nicht."
+    }
+  ],
+  "pruefungstipp": "Das Zustandekommen des Vertrags ist die meistgeprüfte Frage dieses Lernfelds — meist als Fall, in dem eine Bestellung vom Angebot abweicht. Antwort: kein Vertrag, sondern neuer Antrag. Bei der Geschäftsfähigkeit sind die drei Altersgrenzen und der Taschengeldparagraf zu merken."
+}

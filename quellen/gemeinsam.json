@@ -1,0 +1,1427 @@
+{
+  "_hinweis": "Gemeinsamer Speicher für alle Lernfelder. Begriffe und Paragraphen werden hier einmal geschrieben und von jedem Lernfeld referenziert. Ein Lernfeld darf eigene Einträge ergänzen — bei gleicher ID gewinnt der lernfeldeigene Eintrag.",
+  "begriffe": {
+    "abc-analyse": {
+      "titel": "ABC-Analyse",
+      "text": "Ordnet Materialien nach ihrem wertmäßigen Anteil am Gesamtverbrauch. A-Güter machen wenig Menge, aber viel Wert aus und werden genau geplant. C-Güter sind viele Teile mit geringem Wert — dort lohnt sich der Planungsaufwand nicht."
+    },
+    "ablauforganisation": {
+      "titel": "Ablauforganisation",
+      "text": "Wie Arbeit im Betrieb zeitlich und räumlich abläuft. Sie beantwortet die Frage nach dem Wann und Wie."
+    },
+    "absatzmittler": {
+      "titel": "Absatzmittler",
+      "text": "Ein rechtlich selbstständiges Glied zwischen Hersteller und Kunde — Groß- und Einzelhandel. Es kauft auf eigene Rechnung."
+    },
+    "afa": {
+      "titel": "Abschreibung (AfA)",
+      "text": "Absetzung für Abnutzung: die planmäßige Verteilung der Anschaffungskosten eines Anlageguts über seine Nutzungsdauer."
+    },
+    "agb": {
+      "titel": "Allgemeine Geschäftsbedingungen",
+      "text": "Vorformulierte Vertragsbedingungen für eine Vielzahl von Verträgen. Sie gelten nur, wenn vor Vertragsschluss darauf hingewiesen wurde und der andere sie zur Kenntnis nehmen konnte."
+    },
+    "agg": {
+      "titel": "Allgemeines Gleichbehandlungsgesetz (AGG)",
+      "text": "Verbietet Benachteiligungen wegen bestimmter Merkmale bei Einstellung, Beschäftigung und Beendigung. Es prägt die Formulierung jeder Stellenanzeige und die Fragen im Vorstellungsgespräch."
+    },
+    "aida": {
+      "titel": "AIDA-Formel",
+      "text": "Vier Stufen, die Werbung beim Empfänger auslösen soll: Attention, Interest, Desire, Action — Aufmerksamkeit, Interesse, Wunsch, Handlung."
+    },
+    "akkordlohn": {
+      "titel": "Akkordlohn",
+      "text": "Das Entgelt richtet sich nach der Menge der erbrachten Leistung. Nur zulässig, wo die Leistung messbar, beeinflussbar und wiederholbar ist."
+    },
+    "aktives-zuhoeren": {
+      "titel": "Aktives Zuhören",
+      "text": "Zuhören, das sichtbar wird: nachfragen, mit eigenen Worten zusammenfassen, Gefühle ansprechen. Es prüft das Verständnis, statt es zu unterstellen."
+    },
+    "alpen-methode": {
+      "titel": "ALPEN-Methode",
+      "text": "Fünf Schritte der Tagesplanung: Aufgaben notieren, Länge schätzen, Pufferzeiten einplanen, Entscheidungen über Prioritäten treffen, Nachkontrolle am Tagesende. Der Kern ist der Puffer — verplant wird nur etwa die Hälfte des Tages."
+    },
+    "amortisation": {
+      "titel": "Amortisationsrechnung",
+      "text": "Ermittelt, nach welcher Zeit eine Investition durch ihre Rückflüsse wieder hereingeholt ist. Je kürzer die Amortisationsdauer, desto geringer das Risiko — über die Rentabilität sagt sie allerdings wenig."
+    },
+    "anfangsbestand": {
+      "titel": "Anfangsbestand",
+      "text": "Der Wert, mit dem ein Bestandskonto ins Geschäftsjahr startet. Er stammt aus der Schlussbilanz des Vorjahres."
+    },
+    "anforderungsprofil": {
+      "titel": "Anforderungsprofil",
+      "text": "Die Beschreibung dessen, was eine Person für eine Stelle mitbringen muss: Ausbildung, Erfahrung, Kenntnisse, persönliche Eignung. Es ist der Maßstab, an dem Bewerber gemessen werden."
+    },
+    "anfrage": {
+      "titel": "Anfrage",
+      "text": "Die Bitte um ein Angebot. Sie ist rechtlich unverbindlich und noch keine Willenserklärung — sie löst keine Pflichten aus."
+    },
+    "angebot": {
+      "titel": "Angebot",
+      "text": "Im kaufmännischen Sprachgebrauch die Antwort auf eine Anfrage, rechtlich der Antrag auf Abschluss eines Vertrags. Wer es abgibt, ist daran gebunden, sofern er sich nicht freigezeichnet hat."
+    },
+    "anlagevermoegen": {
+      "titel": "Anlagevermögen",
+      "text": "Alles, was dem Betrieb dauerhaft dient — Nutzungsdauer länger als ein Jahr. Maschinen, Fahrzeuge, Gebäude, Software."
+    },
+    "annahme": {
+      "titel": "Annahme",
+      "text": "Die zweite Willenserklärung. Sie muss dem Antrag vollständig entsprechen — jede Abweichung gilt als Ablehnung verbunden mit einem neuen Antrag."
+    },
+    "annahmeverzug": {
+      "titel": "Annahmeverzug",
+      "text": "Der Käufer nimmt die ordnungsgemäß angebotene Ware nicht an. Die Gefahr geht auf ihn über, und der Verkäufer haftet nur noch für Vorsatz und grobe Fahrlässigkeit."
+    },
+    "antrag": {
+      "titel": "Antrag",
+      "text": "Die erste Willenserklärung beim Vertragsschluss, im Alltag Angebot genannt. Sie muss so bestimmt sein, dass ein schlichtes Ja genügt, um den Vertrag zu schließen."
+    },
+    "arap": {
+      "titel": "Aktiver RAP",
+      "text": "Ausgabe jetzt, Aufwand gehört ins nächste Jahr — etwa eine im Dezember gezahlte Jahresversicherung. Steht als Forderung auf künftige Leistung auf der Aktivseite."
+    },
+    "arbeitgeberanteil": {
+      "titel": "Arbeitgeberanteil",
+      "text": "Der Beitrag zur Sozialversicherung, den der Betrieb zusätzlich zum Bruttolohn zahlt. Er wird nicht abgezogen, sondern kommt obendrauf — rund 20 Prozent des Bruttolohns."
+    },
+    "arbeitgeberverband": {
+      "titel": "Arbeitgeberverband",
+      "text": "Zusammenschluss von Arbeitgebern einer Branche. Er verhandelt auf der Gegenseite die Tarifverträge und kann mit Aussperrung reagieren."
+    },
+    "arbeitspaket": {
+      "titel": "Arbeitspaket",
+      "text": "Die kleinste Einheit des Strukturplans: eine abgrenzbare Aufgabe mit einem Verantwortlichen, geschätztem Aufwand und einem überprüfbaren Ergebnis."
+    },
+    "arbeitsteilung": {
+      "titel": "Arbeitsteilung",
+      "text": "Die Aufspaltung eines Gesamtprozesses in Teilaufgaben, die verschiedene Personen oder Betriebe übernehmen. Sie steigert die Produktivität und erzeugt Abhängigkeit."
+    },
+    "arbeitsvertrag": {
+      "titel": "Arbeitsvertrag",
+      "text": "Der Vertrag, durch den sich jemand zu weisungsgebundener Arbeit gegen Entgelt verpflichtet. Er kann formfrei geschlossen werden, die wesentlichen Bedingungen sind aber schriftlich niederzulegen."
+    },
+    "arbeitszeugnis": {
+      "titel": "Arbeitszeugnis",
+      "text": "Die schriftliche Beurteilung nach Beendigung des Arbeitsverhältnisses. Es muss wahr und wohlwollend zugleich sein — daraus entstand die bekannte Zeugnissprache."
+    },
+    "aufbauorganisation": {
+      "titel": "Aufbauorganisation",
+      "text": "Wer im Betrieb welche Aufgaben und Weisungsbefugnisse hat. Sie wird im Organigramm dargestellt und beantwortet die Frage nach dem Wer."
+    },
+    "aufbewahrungsfrist": {
+      "titel": "Aufbewahrungsfrist",
+      "text": "Der Zeitraum, für den Unterlagen gesetzlich aufzubewahren sind. Sie beginnt erst mit dem Schluss des Kalenderjahres, in dem der Vorgang abgeschlossen wurde — nicht mit dem Datum des Belegs selbst."
+    },
+    "aufhebungsvertrag": {
+      "titel": "Aufhebungsvertrag",
+      "text": "Eine einvernehmliche Beendigung des Arbeitsverhältnisses. Anders als bei der Kündigung müssen beide Seiten zustimmen — dafür entfallen Fristen und Kündigungsschutz."
+    },
+    "auftragsbearbeitung": {
+      "titel": "Auftragsbearbeitung",
+      "text": "Der Geschäftsprozess von der Anfrage des Kunden bis zum Zahlungseingang — mit den Belegen Angebot, Bestellung, Auftragsbestätigung, Lieferschein und Rechnung."
+    },
+    "auftragsbestaetigung": {
+      "titel": "Auftragsbestätigung",
+      "text": "Die Bestätigung des Verkäufers gegenüber dem Besteller. Rechtlich ist sie die Annahme, wenn die Bestellung der Antrag war — sonst nur eine Wiederholung des bereits Vereinbarten."
+    },
+    "aufwand": {
+      "titel": "Aufwand",
+      "text": "Der Wert aller im Geschäftsjahr verbrauchten Güter und Leistungen. Aufwand mindert den Gewinn und wird im Soll gebucht."
+    },
+    "ausbildender": {
+      "titel": "Ausbildender",
+      "text": "Der Vertragspartner des Auszubildenden — meist der Betrieb als Ganzes. Nicht zu verwechseln mit dem Ausbilder, der die Ausbildung tatsächlich durchführt."
+    },
+    "ausbilder": {
+      "titel": "Ausbilder",
+      "text": "Die Person, die im Betrieb ausbildet. Sie muss persönlich und fachlich geeignet sein; die fachliche Eignung wird meist über die Ausbildereignungsprüfung nachgewiesen."
+    },
+    "ausbildungsordnung": {
+      "titel": "Ausbildungsordnung",
+      "text": "Die bundesweit einheitliche Rechtsverordnung für einen Ausbildungsberuf. Sie legt Bezeichnung, Dauer, Berufsbild, Ausbildungsrahmenplan und Prüfungsanforderungen fest."
+    },
+    "ausbildungsplan": {
+      "titel": "Betrieblicher Ausbildungsplan",
+      "text": "Die Übersetzung des Ausbildungsrahmenplans auf den eigenen Betrieb: welche Abteilung wann welchen Inhalt vermittelt. Er ist Teil des Ausbildungsvertrags."
+    },
+    "ausbildungsrahmenplan": {
+      "titel": "Ausbildungsrahmenplan",
+      "text": "Anlage zur Ausbildungsordnung. Er beschreibt sachlich und zeitlich gegliedert, was der Betrieb wann vermitteln muss."
+    },
+    "ausbildungsvertrag": {
+      "titel": "Berufsausbildungsvertrag",
+      "text": "Der Vertrag zwischen Ausbildendem und Auszubildendem. Er muss vor Beginn schriftlich niedergelegt und bei der zuständigen Stelle eingetragen werden."
+    },
+    "aussenfinanzierung": {
+      "titel": "Außenfinanzierung",
+      "text": "Mittel kommen von außen — als Eigenkapital durch Einlagen und Beteiligungen oder als Fremdkapital durch Kredite und Anleihen."
+    },
+    "ausserordentliche-kuendigung": {
+      "titel": "Außerordentliche Kündigung",
+      "text": "Fristlose Beendigung aus wichtigem Grund. Sie setzt voraus, dass die Fortsetzung bis zum Ablauf der Frist unzumutbar ist — und muss binnen zwei Wochen ab Kenntnis erklärt werden."
+    },
+    "bab": {
+      "titel": "Betriebsabrechnungsbogen",
+      "text": "Tabelle, in der die Gemeinkosten auf Kostenstellen verteilt und daraus Zuschlagssätze berechnet werden. Das Werkzeug, das Kostenarten- und Kostenträgerrechnung verbindet."
+    },
+    "balkenplan": {
+      "titel": "Balkenplan",
+      "text": "Darstellung der Vorgänge als Balken auf einer Zeitachse. Zeigt Dauer, Reihenfolge und Überschneidungen auf einen Blick — die gebräuchlichste Form der Terminplanung."
+    },
+    "bbig": {
+      "titel": "Berufsbildungsgesetz (BBiG)",
+      "text": "Das Grundgesetz der Berufsausbildung. Es regelt Vertrag, Rechte und Pflichten, Probezeit, Vergütung, Zeugnis, Prüfungen und die Rolle der zuständigen Stellen."
+    },
+    "bedarfsermittlung": {
+      "titel": "Bedarfsermittlung",
+      "text": "Die Feststellung, welches Material in welcher Menge zu welchem Zeitpunkt gebraucht wird. Deterministisch heißt: aus dem konkreten Auftrag gerechnet. Stochastisch heißt: aus dem Verbrauch der Vergangenheit geschätzt."
+    },
+    "beduerfnis": {
+      "titel": "Bedürfnis",
+      "text": "Das Gefühl eines Mangels mit dem Wunsch, ihn zu beseitigen. Trifft es auf Kaufkraft, wird daraus ein Bedarf; äußert es sich am Markt, eine Nachfrage."
+    },
+    "beleg": {
+      "titel": "Beleg",
+      "text": "Der schriftliche Nachweis eines Geschäftsvorfalls. Grundregel der Buchführung: keine Buchung ohne Beleg. Buchungsbelege sind zehn Jahre aufzubewahren."
+    },
+    "berichtsheft": {
+      "titel": "Berichtsheft",
+      "text": "Der schriftliche Ausbildungsnachweis. Er wird während der Arbeitszeit geführt und ist Zulassungsvoraussetzung für die Abschlussprüfung."
+    },
+    "beschwerdemanagement": {
+      "titel": "Beschwerdemanagement",
+      "text": "Der geordnete Umgang mit Reklamationen. Ein gut behandelter Beschwerdeführer ist danach oft treuer als ein Kunde, der nie ein Problem hatte."
+    },
+    "bestandskonto": {
+      "titel": "Bestandskonto",
+      "text": "Ein Konto, das eine Bilanzposition abbildet — Vermögen oder Kapital. Sein Endbestand wird ins nächste Geschäftsjahr fortgeführt."
+    },
+    "bestellung": {
+      "titel": "Bestellung",
+      "text": "Die Willenserklärung des Kunden. Auf ein bindendes Angebot hin ist sie die Annahme, ohne vorheriges Angebot der Antrag."
+    },
+    "betriebsrat": {
+      "titel": "Betriebsrat",
+      "text": "Die gewählte Interessenvertretung der Beschäftigten in einem Betrieb der Privatwirtschaft. Im öffentlichen Dienst heißt das Gegenstück Personalrat."
+    },
+    "bezugskalkulation": {
+      "titel": "Bezugskalkulation",
+      "text": "Der Rechenweg vom Listeneinkaufspreis zum Einstandspreis: Rabatt und Skonto abziehen, Bezugskosten addieren. Erst der Einstandspreis macht Angebote wirklich vergleichbar."
+    },
+    "bezugskosten": {
+      "titel": "Bezugskosten",
+      "text": "Kosten, die beim Beschaffen zusätzlich anfallen: Fracht, Verpackung, Zoll, Transportversicherung. Sie gehören zum Einstandspreis der Ware."
+    },
+    "bilanzstichtag": {
+      "titel": "Bilanzstichtag",
+      "text": "Der Tag, auf den sich die Bilanz bezieht — meist der 31. Dezember. Die Bilanz zeigt immer nur diesen einen Moment, nicht den Verlauf des Jahres."
+    },
+    "bilanzsumme": {
+      "titel": "Bilanzsumme",
+      "text": "Die Summe einer Bilanzseite. Weil beide Seiten gleich hoch sind, gibt es nur eine Bilanzsumme — sie steht für die Größe des eingesetzten Kapitals."
+    },
+    "bildschirmarbeitsplatz": {
+      "titel": "Bildschirmarbeitsplatz",
+      "text": "Arbeitsplatz mit Bildschirmgerät samt Zubehör und Arbeitsumgebung. Für ihn gelten besondere Anforderungen an Beleuchtung, Reflexionsfreiheit, Sehabstand und die Möglichkeit, die Tätigkeit regelmäßig zu unterbrechen."
+    },
+    "break-even": {
+      "titel": "Break-Even-Point",
+      "text": "Die Menge, bei der Erlöse und Gesamtkosten gleich hoch sind. Darunter Verlust, darüber Gewinn. Berechnet als Fixkosten geteilt durch den Deckungsbeitrag je Stück."
+    },
+    "bruttolohn": {
+      "titel": "Bruttolohn",
+      "text": "Das im Arbeitsvertrag vereinbarte Gehalt, bevor Steuern und Sozialabgaben abgezogen werden. Für den Betrieb ist es noch nicht der volle Kostenbetrag."
+    },
+    "buchungssatz": {
+      "titel": "Buchungssatz",
+      "text": "Die schriftliche Form einer Buchung nach dem Muster Sollkonto an Habenkonto Betrag. Soll- und Habenbetrag sind immer gleich hoch."
+    },
+    "buchwert": {
+      "titel": "Buchwert",
+      "text": "Anschaffungskosten minus aller bisher gebuchten Abschreibungen. Der Wert, mit dem ein Anlagegut aktuell in der Bilanz steht."
+    },
+    "buergschaft": {
+      "titel": "Bürgschaft",
+      "text": "Ein Dritter verpflichtet sich, für die Schuld eines anderen einzustehen. Sie ist von der Hauptforderung abhängig: Erlischt diese, erlischt auch die Bürgschaft."
+    },
+    "cashflow": {
+      "titel": "Cashflow",
+      "text": "Der Überschuss der Einzahlungen über die Auszahlungen einer Periode. Er zeigt die Innenfinanzierungskraft eines Betriebs und ist schwerer zu beschönigen als der ausgewiesene Gewinn."
+    },
+    "checkliste": {
+      "titel": "Checkliste",
+      "text": "Aufstellung aller Schritte mit Termin und Verantwortlichem. Ihr Wert liegt nicht im Erinnern, sondern im Nachweis: Was abgehakt ist, muss niemand zweimal prüfen."
+    },
+    "corporate-identity": {
+      "titel": "Corporate Identity",
+      "text": "Das geschlossene Selbstbild eines Betriebs nach innen und außen — Erscheinungsbild, Verhalten und Kommunikation aus einem Guss."
+    },
+    "crm": {
+      "titel": "Kundenbeziehungsmanagement (CRM)",
+      "text": "Die systematische Pflege der Kundenbeziehungen mit Hilfe einer Datenbank, in der alle Kontakte, Käufe und Anliegen zusammenlaufen."
+    },
+    "darlehen": {
+      "titel": "Darlehen",
+      "text": "Langfristiger Kredit mit festem Rückzahlungsplan. Beim Ratendarlehen bleibt die Tilgung gleich und die Rate sinkt; beim Annuitätendarlehen bleibt die Rate gleich und der Tilgungsanteil steigt."
+    },
+    "datensparsamkeit": {
+      "titel": "Datenminimierung",
+      "text": "Grundsatz, nur die Daten zu erheben, die für den Zweck wirklich nötig sind. Das Geburtsdatum eines Newsletter-Empfängers ist danach ebenso wenig zulässig wie die Telefonnummer bei einer reinen E-Mail-Bestellung."
+    },
+    "deckungsbeitrag": {
+      "titel": "Deckungsbeitrag",
+      "text": "Erlös minus variable Kosten. Er zeigt, was ein Produkt zur Deckung der Fixkosten und zum Gewinn beiträgt. Solange er positiv ist, lohnt sich der Verkauf — auch wenn das Produkt nach Vollkostenrechnung Verlust macht."
+    },
+    "deckungskauf": {
+      "titel": "Deckungskauf",
+      "text": "Der Käufer besorgt sich die nicht gelieferte Ware bei einem anderen Lieferer. Ist der Lieferer im Verzug, kann der Käufer den Mehrpreis als Schadensersatz verlangen."
+    },
+    "din5008": {
+      "titel": "DIN 5008",
+      "text": "Die Norm für Schreib- und Gestaltungsregeln in der Textverarbeitung. Sie legt Seitenränder, Zonen des Geschäftsbriefs und die Schreibweise von Zahlen, Datum und Adressen fest."
+    },
+    "distributionspolitik": {
+      "titel": "Distributionspolitik",
+      "text": "Alle Entscheidungen darüber, wie die Ware zum Kunden kommt: Absatzwege, Absatzmittler, Lager und Transport."
+    },
+    "dokumentenmanagement": {
+      "titel": "Dokumentenmanagementsystem",
+      "text": "Software zum Erfassen, Verschlagworten, Suchen und Archivieren von Dokumenten. Der eigentliche Gewinn liegt weniger im Speichern als im Wiederfinden über Schlagworte statt über Ordnerpfade."
+    },
+    "doppelte-buchfuehrung": {
+      "titel": "Doppelte Buchführung",
+      "text": "Jeder Geschäftsvorfall wird auf mindestens zwei Konten gebucht — einmal im Soll, einmal im Haben. Daher bleibt die Bilanzgleichung nach jeder Buchung erhalten."
+    },
+    "duale-ausbildung": {
+      "titel": "Duale Ausbildung",
+      "text": "Ausbildung an zwei Lernorten: im Betrieb und in der Berufsschule. Beide vermitteln unterschiedliche Teile derselben Qualifikation und stimmen sich über abgestimmte Pläne ab."
+    },
+    "durchlaufzeit": {
+      "titel": "Durchlaufzeit",
+      "text": "Die gesamte Zeit vom Auslöser bis zum Abschluss eines Vorgangs. Sie setzt sich aus Bearbeitungs-, Liege-, Transport- und Prüfzeit zusammen — wobei die Bearbeitung meist der kleinste Teil ist."
+    },
+    "ebk": {
+      "titel": "Eröffnungsbilanzkonto (EBK)",
+      "text": "Ein technisches Hilfskonto, über das zu Jahresbeginn alle Bestandskonten eröffnet werden. Es ist kein Sachkonto und taucht in keiner Bilanz auf."
+    },
+    "eigenfinanzierung": {
+      "titel": "Eigenfinanzierung",
+      "text": "Zufuhr von Eigenkapital durch Einlagen der Inhaber oder Aufnahme neuer Gesellschafter. Kein Zins, keine Rückzahlungspflicht — dafür Mitsprache und Gewinnbeteiligung."
+    },
+    "eigenkapital": {
+      "titel": "Eigenkapital",
+      "text": "Das Kapital der Eigentümer. Es wächst durch Gewinne und Einlagen, es sinkt durch Verluste und Entnahmen. Rechnerisch: Vermögen minus Schulden."
+    },
+    "eigentumsvorbehalt": {
+      "titel": "Eigentumsvorbehalt",
+      "text": "Die Ware bleibt bis zur vollständigen Bezahlung Eigentum des Verkäufers, obwohl der Käufer sie schon besitzt. Die wichtigste Sicherheit des Lieferers im Alltagsgeschäft."
+    },
+    "einstandspreis": {
+      "titel": "Einstandspreis",
+      "text": "Was die Ware den Betrieb tatsächlich gekostet hat — nach allen Nachlässen und einschließlich der Bezugskosten. Er ist die Basis jeder Kalkulation."
+    },
+    "einzelkosten": {
+      "titel": "Einzelkosten",
+      "text": "Kosten, die sich einem Produkt direkt zurechnen lassen — Fertigungsmaterial, Fertigungslöhne. Sie wandern ohne Umweg in die Kalkulation."
+    },
+    "eisenhower": {
+      "titel": "Eisenhower-Matrix",
+      "text": "Ordnet Aufgaben nach Wichtigkeit und Dringlichkeit in vier Felder: sofort selbst erledigen, terminieren, delegieren, streichen. Der Nutzen liegt im zweiten Feld — wichtige, aber nicht dringende Aufgaben werden sonst dauerhaft verdrängt."
+    },
+    "engpass": {
+      "titel": "Engpass",
+      "text": "Der Prozessschritt mit der geringsten Kapazität. Er bestimmt die Leistung des gesamten Ablaufs: Alles davor staut sich, alles danach wartet. Verbesserungen an anderen Stellen bringen nichts."
+    },
+    "entgeltabrechnung": {
+      "titel": "Entgeltabrechnung",
+      "text": "Die monatliche Aufstellung vom Bruttoentgelt über Steuern und Sozialabgaben bis zum Auszahlungsbetrag. Der Arbeitgeber muss sie in Textform erteilen."
+    },
+    "erfolgskonto": {
+      "titel": "Erfolgskonto",
+      "text": "Ein Konto für Aufwendungen oder Erträge. Es startet jedes Jahr bei null und wird über die GuV abgeschlossen."
+    },
+    "ergonomie": {
+      "titel": "Ergonomie",
+      "text": "Die Anpassung der Arbeit an den Menschen statt umgekehrt. Am Büroarbeitsplatz betrifft das Tisch- und Stuhlhöhe, Bildschirmabstand, Beleuchtung und Bewegungsraum. Ziel ist nicht Bequemlichkeit, sondern die Vermeidung dauerhafter Schäden."
+    },
+    "erste-taetigkeitsstaette": {
+      "titel": "Erste Tätigkeitsstätte",
+      "text": "Die dauerhaft zugeordnete betriebliche Einrichtung einer beschäftigten Person. Fahrten dorthin sind keine Dienstreise — das ist der übliche Arbeitsweg."
+    },
+    "ertrag": {
+      "titel": "Ertrag",
+      "text": "Der Wert aller im Geschäftsjahr erwirtschafteten Leistungen. Ertrag erhöht den Gewinn und wird im Haben gebucht."
+    },
+    "factoring": {
+      "titel": "Factoring",
+      "text": "Verkauf von Forderungen an einen Dienstleister, der sofort auszahlt und je nach Vereinbarung das Ausfallrisiko übernimmt. Verschafft schnell Liquidität und kostet eine Gebühr."
+    },
+    "feedback": {
+      "titel": "Feedback",
+      "text": "Eine Rückmeldung über wahrgenommenes Verhalten. Sie beschreibt, was war, statt zu bewerten, wer jemand ist."
+    },
+    "fixkosten": {
+      "titel": "Fixkosten",
+      "text": "Kosten, die unabhängig von der Ausbringungsmenge anfallen — Miete, Gehälter, Versicherungen. Je mehr produziert wird, desto weniger Fixkosten entfallen auf das einzelne Stück."
+    },
+    "fluktuation": {
+      "titel": "Fluktuation",
+      "text": "Die Personalbewegung in einem Betrieb, meist als Quote ausgedrückt: Abgänge im Verhältnis zum durchschnittlichen Personalbestand."
+    },
+    "flussgrad": {
+      "titel": "Flussgrad",
+      "text": "Anteil der wertschöpfenden Bearbeitungszeit an der Durchlaufzeit, in Prozent. In Büroprozessen liegt er häufig im einstelligen Bereich — je niedriger, desto größer der Verbesserungshebel."
+    },
+    "fortbildung": {
+      "titel": "Fortbildung",
+      "text": "Baut auf einem bestehenden Abschluss auf. Die Anpassungsfortbildung hält Kenntnisse aktuell, die Aufstiegsfortbildung führt zu einem höheren Abschluss wie dem Fachwirt."
+    },
+    "freizeichnungsklausel": {
+      "titel": "Freizeichnungsklausel",
+      "text": "Ein Zusatz, der die Bindung an das Angebot aufhebt — etwa freibleibend, unverbindlich oder solange der Vorrat reicht. Dann wird erst die Bestellung des Kunden zum Antrag."
+    },
+    "fremdfinanzierung": {
+      "titel": "Fremdfinanzierung",
+      "text": "Zufuhr von Fremdkapital durch Kredite. Kostet Zinsen, ist zurückzuzahlen und verlangt meist Sicherheiten — dafür bleibt die Entscheidungsmacht ungeteilt."
+    },
+    "fremdkapital": {
+      "titel": "Fremdkapital",
+      "text": "Kapital, das von Dritten stammt — Banken, Lieferanten, Finanzamt — und zurückgezahlt werden muss. Umfasst Rückstellungen und Verbindlichkeiten."
+    },
+    "fristenkontrolle": {
+      "titel": "Fristenkontrolle",
+      "text": "Die systematische Überwachung von Terminen, deren Versäumnis Rechte kostet — Zahlungsziele, Kündigungs- und Widerspruchsfristen, Skontofristen. Sie gehört in ein geführtes Verzeichnis, nicht in den Kopf."
+    },
+    "gefaehrdungsbeurteilung": {
+      "titel": "Gefährdungsbeurteilung",
+      "text": "Die systematische Ermittlung aller Gefährdungen an einem Arbeitsplatz und der daraus nötigen Schutzmaßnahmen. Sie ist Pflicht des Arbeitgebers, muss dokumentiert werden und ist bei Änderungen zu wiederholen."
+    },
+    "gemeinkosten": {
+      "titel": "Gemeinkosten",
+      "text": "Kosten, die sich keinem einzelnen Produkt direkt zuordnen lassen — Miete, Verwaltung, Strom. Sie werden über Zuschlagssätze verteilt, und genau dabei entstehen die Ungenauigkeiten jeder Kalkulation."
+    },
+    "geschaeftsfaehigkeit": {
+      "titel": "Geschäftsfähigkeit",
+      "text": "Die Fähigkeit, Rechtsgeschäfte wirksam selbst vorzunehmen. Bis 7 Jahre besteht sie nicht, von 7 bis 17 nur beschränkt, ab 18 unbeschränkt."
+    },
+    "geschaeftsprozess": {
+      "titel": "Geschäftsprozess",
+      "text": "Eine Folge von Tätigkeiten, die durch ein Ereignis ausgelöst wird und zu einem Ergebnis für einen Kunden führt. Er verläuft quer durch die Abteilungen und richtet sich nicht nach der Aufbauorganisation."
+    },
+    "geschaeftsreise": {
+      "titel": "Geschäftsreise",
+      "text": "Eine vorübergehende Tätigkeit außerhalb der ersten Tätigkeitsstätte und der Wohnung, veranlasst durch den Betrieb. Die Abgrenzung entscheidet darüber, welche Kosten erstattet werden dürfen."
+    },
+    "geschaeftsvorfall": {
+      "titel": "Geschäftsvorfall",
+      "text": "Jeder Vorgang, der das Vermögen oder das Kapital eines Betriebs verändert und sich mit einem Beleg nachweisen lässt — ein Einkauf, eine Zahlung, eine Lohnabrechnung."
+    },
+    "geschlossene-frage": {
+      "titel": "Geschlossene Frage",
+      "text": "Eine Frage, auf die nur ja oder nein folgt. Sie schließt das Gespräch und eignet sich zum Absichern und für Entscheidungen."
+    },
+    "gespraechsphasen": {
+      "titel": "Gesprächsphasen",
+      "text": "Der übliche Ablauf eines geführten Gesprächs: Vorbereitung, Eröffnung, Kern, Abschluss, Nachbereitung."
+    },
+    "gestreckte-pruefung": {
+      "titel": "Gestreckte Abschlussprüfung",
+      "text": "Die Prüfung besteht aus zwei Teilen zu verschiedenen Zeitpunkten. Teil 1 wird nicht wiederholt, sondern geht mit festem Gewicht in das Gesamtergebnis ein."
+    },
+    "gewerkschaft": {
+      "titel": "Gewerkschaft",
+      "text": "Zusammenschluss von Arbeitnehmern zur gemeinsamen Vertretung ihrer Interessen. Sie ist Tarifpartei und kann zum Arbeitskampf aufrufen."
+    },
+    "gleitzeit": {
+      "titel": "Gleitzeit",
+      "text": "Arbeitszeitmodell mit fester Kernzeit und beweglichem Rahmen. Der Mitarbeiter bestimmt Beginn und Ende innerhalb vorgegebener Grenzen selbst."
+    },
+    "grundgesamtheit": {
+      "titel": "Grundgesamtheit",
+      "text": "Alle Personen, über die eine Aussage getroffen werden soll. Aus ihr wird die Stichprobe gezogen."
+    },
+    "grundschuld": {
+      "titel": "Grundschuld",
+      "text": "Belastung eines Grundstücks zur Sicherung eines Kredits. Anders als die Hypothek ist sie nicht an eine bestimmte Forderung gebunden und kann nach Tilgung für einen neuen Kredit weiterverwendet werden."
+    },
+    "guenstigkeitsprinzip": {
+      "titel": "Günstigkeitsprinzip",
+      "text": "Eine Einzelabrede darf vom Tarifvertrag abweichen, wenn sie für den Beschäftigten günstiger ist. Schlechtere Abweichungen sind unwirksam."
+    },
+    "guv": {
+      "titel": "GuV-Konto",
+      "text": "Das Sammelkonto für alle Erfolgskonten. Aufwendungen landen im Soll, Erträge im Haben; die Differenz ist der Jahreserfolg."
+    },
+    "gwg": {
+      "titel": "Geringwertiges Wirtschaftsgut (GWG)",
+      "text": "Ein abnutzbares Anlagegut mit geringen Netto-Anschaffungskosten, das im Jahr des Kaufs sofort vollständig abgeschrieben werden darf."
+    },
+    "haben": {
+      "titel": "Haben",
+      "text": "Die rechte Seite eines Kontos. Vom lateinischen credit. Auch hier gilt: Es ist eine Ortsangabe, keine Wertung."
+    },
+    "handelsklausel": {
+      "titel": "Handelsklausel",
+      "text": "Kurzformel für Lieferbedingungen, die regelt, wer Transportkosten und Transportgefahr trägt — etwa „ab Werk\" oder „frei Haus\". Im Auslandsgeschäft übernehmen die Incoterms diese Rolle."
+    },
+    "handlungskosten": {
+      "titel": "Handlungskosten",
+      "text": "Alle Kosten des Betriebs außer dem Wareneinsatz: Miete, Löhne, Energie, Versicherungen. Im Kalkulationsschema werden sie als Prozentzuschlag auf den Einstandspreis aufgeschlagen."
+    },
+    "handlungsvollmacht": {
+      "titel": "Handlungsvollmacht",
+      "text": "Die kleinere Schwester der Prokura: Sie deckt die gewöhnlichen Geschäfte des Betriebs oder einen abgegrenzten Bereich ab und steht nicht im Handelsregister."
+    },
+    "hoechstbestand": {
+      "titel": "Höchstbestand",
+      "text": "Die Obergrenze des Lagers, meist Mindestbestand plus Bestellmenge. Alles darüber bindet Kapital und Lagerfläche ohne Nutzen."
+    },
+    "ich-botschaft": {
+      "titel": "Ich-Botschaft",
+      "text": "Eine Aussage über die eigene Wahrnehmung statt über den anderen. „Mir fehlt die Rückmeldung“ statt „Sie melden sich nie“ — schwerer angreifbar, weil niemand die eigene Wahrnehmung bestreiten kann."
+    },
+    "informationsbeschaffung": {
+      "titel": "Informationsbeschaffung",
+      "text": "Das gezielte Suchen und Bewerten von Informationen für eine Aufgabe. Interne Quellen sind Statistiken und Vorgänge des Betriebs, externe etwa Fachliteratur, Behörden und Verbände. Entscheidend ist die Prüfung der Quelle."
+    },
+    "innenfinanzierung": {
+      "titel": "Innenfinanzierung",
+      "text": "Mittel entstehen im Betrieb selbst: einbehaltene Gewinne, Abschreibungsgegenwerte, Verkauf nicht betriebsnotwendiger Gegenstände, Rückstellungen. Es fließt kein Kapital von außen zu."
+    },
+    "interkulturelle-kommunikation": {
+      "titel": "Interkulturelle Kommunikation",
+      "text": "Verständigung zwischen Menschen unterschiedlicher kultureller Prägung. Unterschiede zeigen sich in Direktheit, Abstand, Begrüßung und im Umgang mit Zeit und Hierarchie."
+    },
+    "istkosten": {
+      "titel": "Istkosten",
+      "text": "Die tatsächlich angefallenen Kosten einer vergangenen Periode. Genau, aber immer rückwärts gewandt — für die Steuerung kommt die Information zu spät."
+    },
+    "jahresueberschuss": {
+      "titel": "Jahresüberschuss",
+      "text": "Der Gewinn eines Geschäftsjahres: Erträge größer als Aufwendungen. Er erhöht das Eigenkapital. Der umgekehrte Fall heißt Jahresfehlbetrag."
+    },
+    "jarbschg": {
+      "titel": "Jugendarbeitsschutzgesetz",
+      "text": "Schutzgesetz für Beschäftigte unter 18 Jahren. Es begrenzt Arbeitszeit, schreibt Pausen und Ruhezeiten vor und verbietet bestimmte gefährliche Tätigkeiten."
+    },
+    "jav": {
+      "titel": "Jugend- und Auszubildendenvertretung (JAV)",
+      "text": "Die eigene Interessenvertretung der jungen Beschäftigten und Auszubildenden. Sie hat kein eigenes Beschlussrecht, sondern wirkt über den Betriebsrat."
+    },
+    "jugendlicher": {
+      "titel": "Jugendlicher",
+      "text": "Im Sinne des Jugendarbeitsschutzgesetzes: wer 15, aber noch nicht 18 Jahre alt ist. Ab 18 gilt stattdessen das Arbeitszeitgesetz."
+    },
+    "just-in-time": {
+      "titel": "Just-in-time",
+      "text": "Beschaffung genau zum Zeitpunkt des Bedarfs, ohne nennenswerten Lagerbestand. Spart Kapital und Fläche, macht den Betrieb aber vollständig von der Zuverlässigkeit des Lieferers abhängig."
+    },
+    "kaeufermarkt": {
+      "titel": "Käufermarkt",
+      "text": "Das Angebot übersteigt die Nachfrage. Der Käufer hat die Auswahl und damit die Macht — der Anbieter muss um ihn werben."
+    },
+    "kalkulatorische-kosten": {
+      "titel": "Kalkulatorische Kosten",
+      "text": "Kosten, denen kein Aufwand in gleicher Höhe gegenübersteht — kalkulatorischer Unternehmerlohn, Zinsen auf Eigenkapital, kalkulatorische Wagnisse. Sie machen den Betriebsvergleich erst aussagekräftig."
+    },
+    "kaufmann": {
+      "titel": "Kaufmann",
+      "text": "Wer ein Handelsgewerbe betreibt (§ 1 HGB). Entscheidend sind Art und Umfang des Gewerbes — nicht der Umsatz."
+    },
+    "kaufvertrag": {
+      "titel": "Kaufvertrag",
+      "text": "Zwei übereinstimmende Willenserklärungen über Ware und Preis. Der Verkäufer schuldet Übergabe und Eigentumsverschaffung, der Käufer Zahlung und Abnahme."
+    },
+    "kleinunternehmer": {
+      "titel": "Kleinunternehmer",
+      "text": "Ein Unternehmer, dessen Umsätze nach § 19 UStG steuerfrei sind: bis 25.000 Euro Vorjahresumsatz und 100.000 Euro im laufenden Jahr. Er weist keine Umsatzsteuer aus und kann im Gegenzug keine Vorsteuer geltend machen."
+    },
+    "kodierung": {
+      "titel": "Kodierung",
+      "text": "Das Übersetzen eines Gedankens in Wörter, Gesten oder Bilder. Beim Empfänger läuft das Gegenteil ab — und beide benutzen dabei ihre eigenen Erfahrungen als Wörterbuch."
+    },
+    "kommunikation": {
+      "titel": "Kommunikation",
+      "text": "Der Austausch von Informationen zwischen mindestens zwei Beteiligten. Sie gelingt erst, wenn beim Empfänger ankommt, was der Sender gemeint hat — nicht schon, wenn etwas gesagt wurde."
+    },
+    "kommunikationspolitik": {
+      "titel": "Kommunikationspolitik",
+      "text": "Alles, womit der Betrieb über sich und seine Leistung spricht: Werbung, Verkaufsförderung, Öffentlichkeitsarbeit, persönlicher Verkauf."
+    },
+    "kommunikationsstoerung": {
+      "titel": "Kommunikationsstörung",
+      "text": "Alles, was zwischen Gemeintem und Verstandenem steht: Lärm, Fachbegriffe, Vorurteile, Zeitdruck, unterschiedliche Erfahrungen oder eine belastete Beziehung."
+    },
+    "kontokorrentkredit": {
+      "titel": "Kontokorrentkredit",
+      "text": "Eingeräumte Überziehungslinie auf dem Geschäftskonto. Flexibel und teuer: Zinsen fallen nur für den beanspruchten Betrag an, der Zinssatz liegt aber deutlich über dem eines Darlehens. Gedacht für kurzfristige Spitzen, nicht für Dauerbedarf."
+    },
+    "kostenartenrechnung": {
+      "titel": "Kostenartenrechnung",
+      "text": "Erste Stufe: Welche Kosten sind entstanden? Material, Personal, Abschreibungen, Fremdleistungen. Sie beantwortet die Frage nach dem Was."
+    },
+    "kostenrechnung": {
+      "titel": "Kosten- und Leistungsrechnung",
+      "text": "Das interne Rechnungswesen. Sie fragt nicht, was das Gesetz verlangt, sondern was der Betrieb wissen muss: Was kostet ein Stück, welcher Bereich trägt sich, lohnt ein Auftrag. Sie ist an keine Vorschrift gebunden."
+    },
+    "kostenstellenrechnung": {
+      "titel": "Kostenstellenrechnung",
+      "text": "Zweite Stufe: Wo sind die Kosten entstanden? Die Gemeinkosten werden über den Betriebsabrechnungsbogen auf Bereiche verteilt. Sie beantwortet die Frage nach dem Wo."
+    },
+    "kostentraegerrechnung": {
+      "titel": "Kostenträgerrechnung",
+      "text": "Dritte Stufe: Wofür sind die Kosten entstanden? Sie verrechnet die Kosten auf Produkte und Aufträge und liefert damit die Grundlage jeder Kalkulation."
+    },
+    "kreditwuerdigkeit": {
+      "titel": "Kreditwürdigkeit",
+      "text": "Die persönliche Zuverlässigkeit eines Kreditnehmers — Erfahrung, Zahlungsverhalten, Führung des Betriebs. Zu unterscheiden von der Kreditfähigkeit, die nur fragt, ob jemand rechtlich wirksam Kredite aufnehmen kann."
+    },
+    "kritischer-pfad": {
+      "titel": "Kritischer Pfad",
+      "text": "Die Kette von Vorgängen ohne Puffer. Verzögert sich einer davon, verschiebt sich das Projektende unmittelbar. Alles außerhalb dieses Pfads hat Spielraum."
+    },
+    "kuendigungsschutz": {
+      "titel": "Kündigungsschutz",
+      "text": "Der Schutz vor sozial ungerechtfertigter Kündigung nach dem Kündigungsschutzgesetz. Er gilt in Betrieben mit mehr als zehn Arbeitnehmern nach sechs Monaten Beschäftigung."
+    },
+    "kundenbindung": {
+      "titel": "Kundenbindung",
+      "text": "Maßnahmen, die einen bestehenden Kunden halten. Sie sind in der Regel deutlich günstiger als die Gewinnung eines neuen."
+    },
+    "kvp": {
+      "titel": "Kontinuierlicher Verbesserungsprozess",
+      "text": "Die Haltung, Abläufe in kleinen Schritten dauerhaft zu verbessern, statt selten große Projekte aufzusetzen. Getragen von denen, die die Arbeit täglich machen."
+    },
+    "leasing": {
+      "titel": "Leasing",
+      "text": "Nutzung eines Gegenstands gegen laufende Raten, ohne ihn zu kaufen. Schont die Liquidität und ist planbar, ist über die Laufzeit aber meist teurer als der Kauf."
+    },
+    "lieferantenbewertung": {
+      "titel": "Lieferantenbewertung",
+      "text": "Die laufende Beurteilung bestehender Lieferer nach Preis, Qualität, Liefertreue und Service. Sie liefert die Grundlage dafür, wen man beim nächsten Bedarf überhaupt anfragt."
+    },
+    "lieferbedingungen": {
+      "titel": "Lieferbedingungen",
+      "text": "Regeln darüber, wer Transport und Kosten trägt und wann die Gefahr übergeht — etwa ab Werk, frei Haus oder unfrei."
+    },
+    "lieferschein": {
+      "titel": "Lieferschein",
+      "text": "Der Beleg, der die Sendung begleitet und ihren Inhalt aufführt. Er enthält keine Preise und dient dem Empfänger zur Prüfung der Lieferung."
+    },
+    "lieferungsverzug": {
+      "titel": "Lieferungsverzug",
+      "text": "Der Lieferer liefert nicht rechtzeitig, obwohl die Leistung fällig und möglich ist und er es zu vertreten hat. In der Regel braucht es dafür eine Mahnung — außer der Termin stand kalendermäßig fest."
+    },
+    "liquiditaet": {
+      "titel": "Liquidität",
+      "text": "Die Fähigkeit, fällige Zahlungen jederzeit leisten zu können. Sie ist nicht dasselbe wie Gewinn: Ein Betrieb kann rentabel arbeiten und trotzdem zahlungsunfähig werden, wenn das Geld erst nach den Auszahlungen eingeht."
+    },
+    "liquiditaetsplan": {
+      "titel": "Liquiditätsplan",
+      "text": "Gegenüberstellung erwarteter Ein- und Auszahlungen je Periode samt fortgeschriebenem Bestand. Er zeigt nicht, ob sich etwas lohnt, sondern ob das Geld zum richtigen Zeitpunkt da ist."
+    },
+    "lohnsteuer": {
+      "titel": "Lohnsteuer",
+      "text": "Eine Vorauszahlung auf die Einkommensteuer. Der Arbeitgeber behält sie vom Bruttolohn ein und führt sie ans Finanzamt ab — er haftet dafür."
+    },
+    "magisches-dreieck": {
+      "titel": "Magisches Dreieck",
+      "text": "Die Spannung zwischen Zeit, Kosten und Qualität beziehungsweise Umfang. Wer eine Größe verändert, verändert zwangsläufig mindestens eine andere — alle drei gleichzeitig zu optimieren, ist nicht möglich."
+    },
+    "mahnbescheid": {
+      "titel": "Mahnbescheid",
+      "text": "Der erste Schritt des gerichtlichen Mahnverfahrens. Widerspricht der Schuldner nicht innerhalb von zwei Wochen, folgt der Vollstreckungsbescheid — daraus kann vollstreckt werden."
+    },
+    "mahnung": {
+      "titel": "Mahnung",
+      "text": "Die eindeutige Aufforderung zu leisten, nach Fälligkeit. Sie setzt den Verzug in Gang. Wie viele Mahnungen ein Betrieb schreibt, ist eine kaufmännische Entscheidung — rechtlich genügt eine."
+    },
+    "marketing": {
+      "titel": "Marketing",
+      "text": "Die Ausrichtung des gesamten Betriebs am Markt. Nicht nur Werbung, sondern alle marktbezogenen Entscheidungen — von der Produktidee bis zum Kundenservice."
+    },
+    "marketing-mix": {
+      "titel": "Marketing-Mix",
+      "text": "Die Kombination der vier Instrumente Produkt-, Preis-, Distributions- und Kommunikationspolitik. Im Englischen die vier P."
+    },
+    "markt": {
+      "titel": "Markt",
+      "text": "Der Ort, an dem Angebot und Nachfrage zusammentreffen — heute meist kein Ort, sondern ein Zustand. Der Preis entsteht dort, wo beide sich treffen."
+    },
+    "marktanteil": {
+      "titel": "Marktanteil",
+      "text": "Der eigene Umsatz im Verhältnis zum Umsatz des Gesamtmarktes, in Prozent. Er zeigt die Stellung gegenüber der Konkurrenz."
+    },
+    "marktforschung": {
+      "titel": "Marktforschung",
+      "text": "Die systematische Beschaffung und Auswertung von Informationen über einen Markt. Sie liefert die Grundlage für Marketingentscheidungen."
+    },
+    "medienbruch": {
+      "titel": "Medienbruch",
+      "text": "Wechsel des Trägermediums innerhalb eines Vorgangs, etwa von digital auf Papier und zurück. Die teuerste Form der Schnittstelle: Sie kostet Zeit, erzeugt Übertragungsfehler und macht den Vorgang zwischenzeitlich unauffindbar."
+    },
+    "meilenstein": {
+      "titel": "Meilenstein",
+      "text": "Ein Zeitpunkt im Projekt, an dem ein überprüfbares Zwischenergebnis vorliegt. Er hat keine Dauer und dient dazu, den Fortschritt ehrlich zu messen statt zu schätzen."
+    },
+    "meldebestand": {
+      "titel": "Meldebestand",
+      "text": "Der Bestand, bei dessen Erreichen bestellt werden muss. Er berechnet sich aus Tagesverbrauch × Lieferzeit + Mindestbestand — also genau so viel, dass der Vorrat bis zur Ankunft der neuen Lieferung reicht."
+    },
+    "minderung": {
+      "titel": "Minderung",
+      "text": "Der Käufer behält die mangelhafte Ware und zahlt weniger. Der Vertrag bleibt bestehen — anders als beim Rücktritt, bei dem beide Seiten zurückgeben, was sie bekommen haben."
+    },
+    "mindestbestand": {
+      "titel": "Mindestbestand",
+      "text": "Der eiserne Bestand, der das Lager gegen Störungen absichert: verspätete Lieferung, höherer Verbrauch als geplant. Er soll im Normalfall nicht angetastet werden."
+    },
+    "mitbestimmung": {
+      "titel": "Mitbestimmung",
+      "text": "Die stärkste Beteiligungsform: Ohne Zustimmung des Betriebsrats darf der Arbeitgeber die Maßnahme nicht durchführen. Schwächere Stufen sind Mitwirkung und Information."
+    },
+    "nacherfuellung": {
+      "titel": "Nacherfüllung",
+      "text": "Das vorrangige Recht bei einem Mangel: Der Käufer wählt zwischen Reparatur und Ersatzlieferung. Erst wenn sie fehlschlägt oder verweigert wird, kommen Rücktritt, Minderung und Schadensersatz in Betracht."
+    },
+    "nettolohn": {
+      "titel": "Nettolohn",
+      "text": "Was tatsächlich auf dem Konto des Arbeitnehmers ankommt: Brutto abzüglich Lohnsteuer, Solidaritätszuschlag, gegebenenfalls Kirchensteuer und der Arbeitnehmeranteile zur Sozialversicherung."
+    },
+    "nonverbale-kommunikation": {
+      "titel": "Nonverbale Kommunikation",
+      "text": "Mimik, Gestik, Körperhaltung, Blickkontakt, Abstand, Kleidung. Sie wirkt stärker als das Wort und lässt sich kaum abschalten."
+    },
+    "nutzungsdauer": {
+      "titel": "Nutzungsdauer",
+      "text": "Die Zeitspanne, über die ein Anlagegut voraussichtlich genutzt wird. Für die meisten Güter ist sie in den AfA-Tabellen des Bundesfinanzministeriums festgelegt."
+    },
+    "nutzwertanalyse": {
+      "titel": "Nutzwertanalyse",
+      "text": "Verfahren für den qualitativen Angebotsvergleich. Kriterien wie Qualität, Liefertreue oder Service werden gewichtet, jedes Angebot bekommt Punkte, und Punkte mal Gewichtung ergibt den Nutzwert."
+    },
+    "oeffentlichkeitsarbeit": {
+      "titel": "Öffentlichkeitsarbeit",
+      "text": "Pflege des Ansehens in der Öffentlichkeit — anders als Werbung nicht auf ein Produkt gerichtet, sondern auf den Betrieb als Ganzes."
+    },
+    "oekonomisches-prinzip": {
+      "titel": "Ökonomisches Prinzip",
+      "text": "Das Gebot des vernünftigen Wirtschaftens: mit gegebenen Mitteln möglichst viel erreichen oder ein gegebenes Ziel mit möglichst wenig Mitteln."
+    },
+    "offene-frage": {
+      "titel": "Offene Frage",
+      "text": "Eine Frage, die sich nicht mit ja oder nein beantworten lässt. Sie beginnt mit W — wer, was, wie, warum — und öffnet das Gespräch."
+    },
+    "optimale-bestellmenge": {
+      "titel": "Optimale Bestellmenge",
+      "text": "Die Menge, bei der die Summe aus Bestellkosten und Lagerkosten am kleinsten ist. Große Mengen senken die Bestellkosten je Stück, treiben aber die Lagerkosten — die optimale Menge liegt dazwischen."
+    },
+    "ordentliche-kuendigung": {
+      "titel": "Ordentliche Kündigung",
+      "text": "Beendigung des Arbeitsverhältnisses unter Einhaltung der Kündigungsfrist. Sie ist die Regel und braucht im Geltungsbereich des Kündigungsschutzgesetzes einen Grund."
+    },
+    "organigramm": {
+      "titel": "Organigramm",
+      "text": "Die grafische Darstellung der Aufbauorganisation. Es zeigt Stellen, Abteilungen und die Linien der Weisungsbefugnis."
+    },
+    "paraverbale-kommunikation": {
+      "titel": "Paraverbale Kommunikation",
+      "text": "Wie etwas gesagt wird: Lautstärke, Tempo, Betonung, Pausen. Derselbe Satz kann damit freundlich oder abweisend klingen."
+    },
+    "pareto": {
+      "titel": "Pareto-Prinzip",
+      "text": "Faustregel, nach der etwa 20 Prozent des Aufwands rund 80 Prozent des Ergebnisses bringen. Als Planungshilfe brauchbar, als Naturgesetz missverstanden — die Zahlen sind eine Beobachtung, keine Rechenvorschrift."
+    },
+    "periodenabgrenzung": {
+      "titel": "Periodengerechte Zuordnung",
+      "text": "Aufwendungen und Erträge gehören in das Geschäftsjahr, zu dem sie wirtschaftlich zählen — unabhängig davon, wann gezahlt wurde."
+    },
+    "personalbedarf": {
+      "titel": "Personalbedarf",
+      "text": "Die Zahl und die Qualifikation der Mitarbeiter, die ein Betrieb braucht, um seine Aufgaben zu erfüllen — getrennt nach quantitativ (wie viele) und qualitativ (welche Fähigkeiten)."
+    },
+    "personalbeschaffung": {
+      "titel": "Personalbeschaffung",
+      "text": "Die Deckung des Personalbedarfs — intern aus der eigenen Belegschaft oder extern über den Arbeitsmarkt."
+    },
+    "personalentwicklung": {
+      "titel": "Personalentwicklung",
+      "text": "Alle Maßnahmen, die Mitarbeiter für ihre jetzige oder eine künftige Aufgabe qualifizieren — Einarbeitung, Schulung, Fortbildung, Aufstieg."
+    },
+    "personalfreisetzung": {
+      "titel": "Personalfreisetzung",
+      "text": "Der Abbau von Personalüberdeckung. Sie beginnt nicht mit der Kündigung, sondern mit milderen Mitteln wie Abbau von Überstunden, Kurzarbeit oder Nichtbesetzung frei werdender Stellen."
+    },
+    "personenbezogene-daten": {
+      "titel": "Personenbezogene Daten",
+      "text": "Alle Angaben, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen — Name, Anschrift, Kundennummer, IP-Adresse, Personalnummer. Auch Angaben, die erst zusammen eine Person identifizierbar machen, gehören dazu."
+    },
+    "plankosten": {
+      "titel": "Plankosten",
+      "text": "Im Voraus festgelegte Kosten für eine bestimmte Leistung. Der Vergleich mit den Istkosten deckt Abweichungen auf und macht die Kostenrechnung zum Steuerungsinstrument."
+    },
+    "posteingang": {
+      "titel": "Posteingangsbearbeitung",
+      "text": "Der geregelte Weg vom Briefkasten zum Bearbeiter: annehmen, sortieren, öffnen, Eingangsstempel setzen, erfassen und weiterleiten. Der Eingangsstempel ist kein Ritual — er beweist, wann eine Frist zu laufen begann."
+    },
+    "praemienlohn": {
+      "titel": "Prämienlohn",
+      "text": "Ein Grundlohn plus eine Prämie für messbare Zusatzleistungen — Qualität, Menge, Termintreue oder Materialersparnis."
+    },
+    "prap": {
+      "titel": "Passiver RAP",
+      "text": "Einnahme jetzt, Ertrag gehört ins nächste Jahr — etwa im Dezember eingegangene Januarmiete. Steht als noch zu erbringende Leistung auf der Passivseite."
+    },
+    "preiselastizitaet": {
+      "titel": "Preiselastizität",
+      "text": "Wie stark die Nachfrage auf eine Preisänderung reagiert. Bei elastischer Nachfrage kostet eine kleine Preiserhöhung viel Absatz."
+    },
+    "preispolitik": {
+      "titel": "Preispolitik",
+      "text": "Alle Entscheidungen über den Preis und die Konditionen — Rabatte, Zahlungsziele, Skonto, Liefer- und Zahlungsbedingungen."
+    },
+    "preisuntergrenze": {
+      "titel": "Preisuntergrenze",
+      "text": "Der niedrigste vertretbare Preis. Kurzfristig sind das die variablen Kosten, weil jeder Cent darüber Fixkosten deckt. Langfristig sind es die Selbstkosten, weil sonst der Betrieb schrumpft."
+    },
+    "primaerforschung": {
+      "titel": "Primärforschung",
+      "text": "Daten werden für den konkreten Zweck neu erhoben — durch Befragung, Beobachtung, Test oder Experiment. Genau, aber teuer und langsam."
+    },
+    "probezeit": {
+      "titel": "Probezeit",
+      "text": "Der Beginn jedes Ausbildungsverhältnisses. In dieser Zeit können beide Seiten jederzeit ohne Angabe von Gründen und ohne Frist kündigen."
+    },
+    "produktionsfaktoren": {
+      "titel": "Betriebliche Produktionsfaktoren",
+      "text": "Die Mittel, mit denen ein Betrieb leistet: menschliche Arbeit, Betriebsmittel und Werkstoffe. Als vierter Faktor gilt die dispositive Arbeit, also Leitung und Planung."
+    },
+    "produktlebenszyklus": {
+      "titel": "Produktlebenszyklus",
+      "text": "Das Modell, nach dem jedes Produkt fünf Phasen durchläuft: Einführung, Wachstum, Reife, Sättigung, Rückgang."
+    },
+    "produktpolitik": {
+      "titel": "Produktpolitik",
+      "text": "Alle Entscheidungen über das Leistungsangebot: was angeboten wird, in welcher Qualität, Verpackung und Ausstattung — und was aus dem Sortiment fliegt."
+    },
+    "projekt": {
+      "titel": "Projekt",
+      "text": "Ein einmaliges Vorhaben mit klarem Ziel, festem Anfang und Ende, begrenzten Mitteln und meist bereichsübergreifender Besetzung. Fehlt die Einmaligkeit, ist es kein Projekt, sondern ein Prozess."
+    },
+    "projektauftrag": {
+      "titel": "Projektauftrag",
+      "text": "Die schriftliche Grundlage eines Projekts: Ziel, Umfang, Termine, Budget, Befugnisse und Auftraggeber. Ohne ihn beginnt jedes Projekt mit einem Missverständnis."
+    },
+    "projektrisiko": {
+      "titel": "Projektrisiko",
+      "text": "Ein mögliches Ereignis, das Ziel, Termin oder Budget gefährdet. Bewertet wird es nach Eintrittswahrscheinlichkeit und Auswirkung; daraus ergibt sich, was vorbeugend zu tun ist."
+    },
+    "projektstrukturplan": {
+      "titel": "Projektstrukturplan",
+      "text": "Zerlegung des Projekts in Teilaufgaben und Arbeitspakete. Er beantwortet die Frage, was alles zu tun ist — noch ohne Termine und Reihenfolge."
+    },
+    "prokura": {
+      "titel": "Prokura",
+      "text": "Die weitreichendste kaufmännische Vollmacht. Sie erlaubt fast alle Geschäfte, die ein Handelsgewerbe mit sich bringt, und wird ins Handelsregister eingetragen."
+    },
+    "quellenkritik": {
+      "titel": "Quellenkritik",
+      "text": "Die Prüfung, wie belastbar eine Information ist: Wer sagt es, woher weiß die Person es, wann wurde es veröffentlicht und wer profitiert davon."
+    },
+    "rabatt": {
+      "titel": "Rabatt",
+      "text": "Ein sofortiger Preisnachlass beim Kauf, etwa als Mengen- oder Treuerabatt. Er mindert den Rechnungsbetrag direkt und wird nicht separat gebucht."
+    },
+    "rahmenlehrplan": {
+      "titel": "Rahmenlehrplan",
+      "text": "Das Gegenstück für die Berufsschule, beschlossen von der Kultusministerkonferenz. Er gliedert den Unterricht in Lernfelder und ist mit der Ausbildungsordnung abgestimmt."
+    },
+    "raumplan": {
+      "titel": "Bestuhlung",
+      "text": "Die Anordnung der Sitzplätze im Raum. Sie steuert, wie kommuniziert wird: Reihen für Vorträge, U-Form für Diskussionen, Inseln für Gruppenarbeit, Blockform für Verhandlungen."
+    },
+    "rechnung": {
+      "titel": "Rechnung",
+      "text": "Die Aufforderung zur Zahlung mit gesetzlich vorgeschriebenen Pflichtangaben. Ohne diese Angaben kann der Empfänger keine Vorsteuer abziehen."
+    },
+    "rechtsgeschaeft": {
+      "titel": "Rechtsgeschäft",
+      "text": "Ein Vorgang, der aus mindestens einer Willenserklärung besteht und eine gewollte Rechtsfolge auslöst. Einseitig wie die Kündigung, zweiseitig wie der Kaufvertrag."
+    },
+    "registratur": {
+      "titel": "Registratur",
+      "text": "Das geordnete Ablegen und Aufbewahren von Schriftgut nach einem festen System. Ohne einheitliche Ordnung findet nur derjenige etwas wieder, der es abgelegt hat — und der ist im Urlaub."
+    },
+    "reinvermoegen": {
+      "titel": "Reinvermögen",
+      "text": "Vermögen minus Schulden. Im Inventar heißt es Reinvermögen, in der Bilanz Eigenkapital — dieselbe Zahl, zwei Namen."
+    },
+    "reisekostenabrechnung": {
+      "titel": "Reisekostenabrechnung",
+      "text": "Die Aufstellung aller erstattungsfähigen Kosten einer Dienstreise: Fahrt, Übernachtung, Verpflegungspauschale und Nebenkosten. Grundlage für Erstattung und steuerliche Behandlung."
+    },
+    "reklamation": {
+      "titel": "Reklamation",
+      "text": "Die Beanstandung einer Leistung durch den Kunden. Rechtlich ein Mängelanspruch, im Gespräch vor allem ein Beziehungsereignis."
+    },
+    "rentabilitaet": {
+      "titel": "Rentabilität",
+      "text": "Verhältnis des Gewinns zum eingesetzten Kapital. Sie sagt, ob sich etwas lohnt — nicht, ob das Geld zum Zahlungszeitpunkt vorhanden ist. Genau diese Verwechslung ruiniert Betriebe."
+    },
+    "revisionssicherheit": {
+      "titel": "Revisionssicherheit",
+      "text": "Eigenschaft einer Ablage, bei der Dokumente unveränderbar, vollständig, nachvollziehbar und jederzeit auffindbar gespeichert sind. Ein PDF im Netzlaufwerk erfüllt das nicht, weil es sich überschreiben lässt."
+    },
+    "rohertrag": {
+      "titel": "Rohertrag",
+      "text": "Umsatzerlöse minus Wareneinsatz. Er zeigt, was der Handel selbst verdient hat — bevor Miete, Löhne und alle übrigen Kosten abgezogen werden."
+    },
+    "rueckstellung": {
+      "titel": "Rückstellung",
+      "text": "Eine Schuld, die dem Grunde nach entstanden ist, bei der aber Höhe oder Zeitpunkt noch ungewiss sind — etwa offene Urlaubstage oder ein laufender Prozess."
+    },
+    "ruegepflicht": {
+      "titel": "Rügepflicht",
+      "text": "Beim Handelskauf zwischen Kaufleuten muss der Käufer die Ware unverzüglich prüfen und Mängel sofort anzeigen. Wer schweigt, verliert seine Mängelrechte — die Ware gilt als genehmigt."
+    },
+    "sachmangel": {
+      "titel": "Sachmangel",
+      "text": "Die Ware weicht bei Gefahrübergang von dem ab, was vereinbart war, was üblich ist oder was der Käufer erwarten durfte. Auch eine falsche Montageanleitung oder eine Zuweniglieferung ist ein Sachmangel."
+    },
+    "saldo": {
+      "titel": "Saldo",
+      "text": "Die Differenz zwischen der Soll- und der Habenseite eines Kontos. Er wird auf der schwächeren Seite eingetragen, damit beide Seiten am Ende gleich hoch sind."
+    },
+    "sbk": {
+      "titel": "Schlussbilanzkonto (SBK)",
+      "text": "Das Gegenstück zum EBK: Über das SBK werden am Jahresende alle Bestandskonten abgeschlossen. Daraus entsteht die Schlussbilanz."
+    },
+    "schnittstelle": {
+      "titel": "Schnittstelle",
+      "text": "Jede Stelle, an der ein Vorgang die Zuständigkeit wechselt. Dort entstehen Wartezeit, Informationsverlust und Doppelerfassung — die meisten Prozessprobleme sitzen genau hier."
+    },
+    "sekundaerforschung": {
+      "titel": "Sekundärforschung",
+      "text": "Auswertung bereits vorhandener Daten: eigene Verkaufszahlen, Statistiken, Branchenberichte. Schnell und günstig, aber nicht immer passgenau."
+    },
+    "sender-empfaenger": {
+      "titel": "Sender-Empfänger-Modell",
+      "text": "Das Grundmodell: Der Sender verschlüsselt eine Nachricht, schickt sie über einen Kanal, der Empfänger entschlüsselt sie. Auf jedem dieser Schritte kann sie sich verändern."
+    },
+    "sicherungsuebereignung": {
+      "titel": "Sicherungsübereignung",
+      "text": "Das Eigentum an einer beweglichen Sache geht auf den Kreditgeber über, während der Kreditnehmer sie weiter nutzt. So kann eine Maschine als Sicherheit dienen, ohne dass die Produktion stillsteht."
+    },
+    "skonto": {
+      "titel": "Skonto",
+      "text": "Ein Preisnachlass für schnelle Zahlung, typisch zwei Prozent innerhalb von zehn Tagen. Er entsteht erst im Moment der Zahlung und wird separat gebucht."
+    },
+    "soll": {
+      "titel": "Soll",
+      "text": "Die linke Seite eines Kontos. Vom lateinischen debet. Der Begriff sagt nichts darüber aus, ob etwas gut oder schlecht für den Betrieb ist — er bezeichnet nur eine Seite."
+    },
+    "sortiment": {
+      "titel": "Sortiment",
+      "text": "Die Gesamtheit aller angebotenen Waren. Die Breite meint die Zahl der Warengruppen, die Tiefe die Zahl der Varianten je Gruppe."
+    },
+    "sozialversicherung": {
+      "titel": "Sozialversicherung",
+      "text": "Fünf Zweige: Kranken-, Renten-, Arbeitslosen-, Pflege- und Unfallversicherung. Die ersten vier teilen sich Arbeitnehmer und Arbeitgeber, die Unfallversicherung trägt der Arbeitgeber allein."
+    },
+    "stellenbeschreibung": {
+      "titel": "Stellenbeschreibung",
+      "text": "Die Beschreibung der Stelle selbst: Aufgaben, Ziele, Befugnisse, Einordnung im Organigramm. Aus ihr wird das Anforderungsprofil abgeleitet."
+    },
+    "stichprobe": {
+      "titel": "Stichprobe",
+      "text": "Ein Ausschnitt der Grundgesamtheit. Sie muss repräsentativ sein — also in ihrer Zusammensetzung dem Ganzen entsprechen."
+    },
+    "t-konto": {
+      "titel": "T-Konto",
+      "text": "Die Darstellungsform eines Kontos: ein senkrechter Strich unter einem waagerechten, daher das T. Links steht Soll, rechts Haben."
+    },
+    "tagesleistungskurve": {
+      "titel": "Tagesleistungskurve",
+      "text": "Der typische Verlauf der Leistungsfähigkeit über den Tag mit einem Hoch am Vormittag, einem Tief nach dem Mittag und einem schwächeren zweiten Hoch. Schwierige Aufgaben gehören in die Hochphasen, Routine in das Tief."
+    },
+    "tarifautonomie": {
+      "titel": "Tarifautonomie",
+      "text": "Das im Grundgesetz verankerte Recht der Tarifparteien, Arbeitsbedingungen ohne staatliche Einmischung selbst auszuhandeln."
+    },
+    "tarifvertrag": {
+      "titel": "Tarifvertrag",
+      "text": "Ein Vertrag zwischen Gewerkschaft und Arbeitgeberverband oder einzelnem Arbeitgeber. Er regelt Entgelt und Arbeitsbedingungen für ganze Branchen."
+    },
+    "teilkostenrechnung": {
+      "titel": "Teilkostenrechnung",
+      "text": "Rechnet nur mit den variablen Kosten und behandelt die Fixkosten als Block. Sie beantwortet kurzfristige Fragen — Zusatzauftrag annehmen, Eigenfertigung oder Fremdbezug — besser als die Vollkostenrechnung."
+    },
+    "tom": {
+      "titel": "Technische und organisatorische Maßnahmen",
+      "text": "Alles, womit Daten praktisch geschützt werden. Technisch sind das Verschlüsselung, Zugriffsrechte und Datensicherung; organisatorisch Regelungen wie der verschlossene Aktenschrank, die Bildschirmsperre und die Verpflichtung der Beschäftigten."
+    },
+    "umlaufvermoegen": {
+      "titel": "Umlaufvermögen",
+      "text": "Alles, was sich kurzfristig umschlägt: Waren werden verkauft, Forderungen werden bezahlt, das Bankkonto bewegt sich täglich."
+    },
+    "umsatzsteuer": {
+      "titel": "Umsatzsteuer",
+      "text": "Die Steuer, die ein Betrieb beim Verkauf von seinen Kunden kassiert und ans Finanzamt abführt. Sie ist eine Verbindlichkeit und steht auf der Passivseite."
+    },
+    "umschulung": {
+      "titel": "Umschulung",
+      "text": "Der Wechsel in einen anderen Beruf mit dem Ziel eines neuen anerkannten Abschlusses — im Unterschied zur Fortbildung, die auf dem alten aufbaut."
+    },
+    "urheberrecht": {
+      "titel": "Urheberrecht",
+      "text": "Schützt persönliche geistige Schöpfungen — Texte, Bilder, Musik, Software. Fremde Inhalte dürfen nur mit Erlaubnis oder im Rahmen erlaubter Ausnahmen genutzt werden."
+    },
+    "variable-kosten": {
+      "titel": "Variable Kosten",
+      "text": "Kosten, die mit der Menge steigen — Material, Akkordlohn, Energie der Maschinen. Je Stück bleiben sie gleich, in der Summe wachsen sie."
+    },
+    "veranstaltungskonzept": {
+      "titel": "Veranstaltungskonzept",
+      "text": "Die schriftliche Festlegung von Ziel, Zielgruppe, Ablauf, Ort, Termin und Budget einer Veranstaltung. Es beantwortet vor allem die Frage, woran der Erfolg gemessen wird."
+    },
+    "verarbeitungsverzeichnis": {
+      "titel": "Verzeichnis von Verarbeitungstätigkeiten",
+      "text": "Übersicht darüber, welche personenbezogenen Daten der Betrieb zu welchem Zweck, auf welcher Rechtsgrundlage und wie lange verarbeitet. Es ist der erste Nachweis, den eine Aufsichtsbehörde anfordert."
+    },
+    "verbale-kommunikation": {
+      "titel": "Verbale Kommunikation",
+      "text": "Alles, was mit Worten gesagt oder geschrieben wird — der Inhalt im engeren Sinn."
+    },
+    "verbindlichkeit": {
+      "titel": "Verbindlichkeit",
+      "text": "Eine sichere Schuld: Betrag und Fälligkeit stehen fest. Eine unbezahlte Lieferantenrechnung über 1.000 €, fällig am 30.06."
+    },
+    "verjaehrung": {
+      "titel": "Verjährung",
+      "text": "Nach Ablauf der Frist kann der Schuldner die Leistung verweigern. Der Anspruch erlischt nicht, er wird nur undurchsetzbar — und das Gericht prüft es nur, wenn der Schuldner sich darauf beruft."
+    },
+    "verkaeufermarkt": {
+      "titel": "Verkäufermarkt",
+      "text": "Die Nachfrage übersteigt das Angebot. Der Verkäufer bestimmt weitgehend die Bedingungen, weil die Ware knapp ist."
+    },
+    "verkaufsfoerderung": {
+      "titel": "Verkaufsförderung",
+      "text": "Zeitlich begrenzte Maßnahmen direkt am Verkaufsort: Proben, Displays, Aktionspreise, Schulung des Verkaufspersonals."
+    },
+    "verpflegungspauschale": {
+      "titel": "Verpflegungsmehraufwand",
+      "text": "Pauschalbetrag für Mehrkosten der Verpflegung auf Dienstreisen, gestaffelt nach Abwesenheitsdauer. Er wird pauschal gewährt, weil Einzelbelege für Essen nicht praktikabel wären."
+    },
+    "vier-ohren-modell": {
+      "titel": "Vier-Ohren-Modell",
+      "text": "Modell von Friedemann Schulz von Thun: Jede Nachricht enthält vier Botschaften — Sachinhalt, Selbstoffenbarung, Beziehung und Appell. Der Empfänger hört mit vier Ohren und wählt oft ein anderes als das gemeinte."
+    },
+    "vollkostenrechnung": {
+      "titel": "Vollkostenrechnung",
+      "text": "Verteilt sämtliche Kosten auf die Produkte, auch die fixen. Nötig für langfristige Preisuntergrenzen und die Bewertung von Beständen, für kurzfristige Entscheidungen aber irreführend."
+    },
+    "vorsteuer": {
+      "titel": "Vorsteuer",
+      "text": "Die Umsatzsteuer, die ein Betrieb beim Einkauf an seinen Lieferanten zahlt. Er bekommt sie vom Finanzamt zurück — sie ist eine Forderung und steht auf der Aktivseite."
+    },
+    "watzlawick": {
+      "titel": "Axiome von Watzlawick",
+      "text": "Fünf Grundannahmen über Kommunikation. Das bekannteste: Man kann nicht nicht kommunizieren — auch Schweigen und Wegsehen sind Botschaften."
+    },
+    "weisungsrecht": {
+      "titel": "Weisungsrecht",
+      "text": "Das Recht des Betriebs, Anweisungen zu Inhalt, Ort und Zeit der Tätigkeit zu geben. Es endet dort, wo die Weisung nichts mit dem Ausbildungszweck zu tun hat."
+    },
+    "wiedervorlage": {
+      "titel": "Wiedervorlage",
+      "text": "Ein Vorgang wird zu einem festgelegten Termin erneut vorgelegt, damit er nicht vergessen wird. Klassisch als Mappe mit 31 Tagesfächern und 12 Monatsfächern, heute meist digital im Postfach oder Vorgangssystem."
+    },
+    "willenserklaerung": {
+      "titel": "Willenserklärung",
+      "text": "Die Äußerung eines Willens, der auf eine Rechtsfolge gerichtet ist. Sie kann ausdrücklich, schriftlich oder durch schlüssiges Handeln erfolgen — der Griff zur Ware an der Kasse genügt."
+    },
+    "wirtschaftskreislauf": {
+      "titel": "Wirtschaftskreislauf",
+      "text": "Modell der Geld- und Güterströme zwischen den Wirtschaftsteilnehmern. Jedem Güterstrom steht ein entgegengesetzter Geldstrom gegenüber."
+    },
+    "zahllast": {
+      "titel": "Zahllast",
+      "text": "Umsatzsteuer minus Vorsteuer. Ist sie positiv, zahlt der Betrieb ans Finanzamt; ist sie negativ, erstattet das Finanzamt."
+    },
+    "zahlungsbedingungen": {
+      "titel": "Zahlungsbedingungen",
+      "text": "Regeln über Zeitpunkt und Art der Zahlung: Vorkasse, Zahlungsziel, Skonto, Ratenzahlung."
+    },
+    "zahlungsunfaehigkeit": {
+      "titel": "Zahlungsunfähigkeit",
+      "text": "Dauerhafte Unfähigkeit, fällige Zahlungspflichten zu erfüllen. Sie ist ein Insolvenzgrund und verpflichtet die Geschäftsführung zum Handeln — anders als eine bloß vorübergehende Stockung."
+    },
+    "zahlungsverzug": {
+      "titel": "Zahlungsverzug",
+      "text": "Der Käufer zahlt nicht rechtzeitig. Der Verkäufer kann Verzugszinsen, Mahnkosten und weiteren Verzugsschaden verlangen und die Forderung notfalls gerichtlich durchsetzen."
+    },
+    "zeitdieb": {
+      "titel": "Zeitdieb",
+      "text": "Wiederkehrende Störung, die Arbeitszeit ohne Ergebnis verbraucht: unangekündigte Besuche, ständige Benachrichtigungen, unklare Zuständigkeiten, Besprechungen ohne Tagesordnung. Zeitdiebe werden nicht wegorganisiert, sondern bewusst begrenzt."
+    },
+    "zeitlohn": {
+      "titel": "Zeitlohn",
+      "text": "Das Entgelt richtet sich nach der Anwesenheitszeit, nicht nach der Leistungsmenge. Üblich überall dort, wo Sorgfalt wichtiger ist als Tempo."
+    },
+    "zuschlagssatz": {
+      "titel": "Zuschlagssatz",
+      "text": "Prozentsatz, mit dem Gemeinkosten auf eine Bezugsgröße aufgeschlagen werden — etwa Materialgemeinkosten auf das Fertigungsmaterial. Er entsteht aus dem Verhältnis beider Größen im vergangenen Zeitraum."
+    },
+    "zustaendige-stelle": {
+      "titel": "Zuständige Stelle",
+      "text": "Überwacht die Ausbildung, führt das Verzeichnis der Ausbildungsverhältnisse und nimmt die Prüfungen ab. Für kaufmännische Berufe ist das in der Regel die IHK."
+    }
+  },
+  "paragraphen": {
+    "agg-1": {
+      "titel": "§ 1 AGG",
+      "text": "Ziel des Gesetzes ist, Benachteiligungen aus Gründen der Rasse oder wegen der ethnischen Herkunft, des Geschlechts, der Religion oder Weltanschauung, einer Behinderung, des Alters oder der sexuellen Identität zu verhindern oder zu beseitigen.",
+      "kurz": "Die geschützten Merkmale des Gleichbehandlungsgesetzes."
+    },
+    "agg-7": {
+      "titel": "§ 7 AGG",
+      "text": "Beschäftigte dürfen nicht wegen eines in § 1 genannten Grundes benachteiligt werden; dies gilt auch, wenn die Person das Vorliegen eines solchen Grundes bei der Benachteiligung nur annimmt.",
+      "kurz": "Benachteiligungsverbot — auch bei bloßer Annahme des Merkmals."
+    },
+    "ao-140": {
+      "titel": "§ 140 AO",
+      "text": "Wer nach anderen Gesetzen als den Steuergesetzen Bücher und Aufzeichnungen zu führen hat, hat die Verpflichtungen auch für die Besteuerung zu erfüllen.",
+      "kurz": "Derivative Buchführungspflicht — leitet sich aus dem HGB ab."
+    },
+    "ao-141": {
+      "titel": "§ 141 AO",
+      "text": "Gewerbliche Unternehmer sowie Land- und Forstwirte sind auch dann zur Buchführung verpflichtet, wenn sie die gesetzlichen Schwellenwerte für Umsatz oder Gewinn überschreiten.",
+      "kurz": "Originäre steuerliche Pflicht ab 600.000 € Umsatz oder 60.000 € Gewinn."
+    },
+    "ao-147": {
+      "titel": "§ 147 AO — Ordnungsvorschriften für die Aufbewahrung",
+      "text": "Die Abgabenordnung verlangt dieselbe geordnete Aufbewahrung wie das Handelsrecht, allerdings für steuerliche Zwecke. Die Unterlagen müssen während der gesamten Frist jederzeit verfügbar, unverzüglich lesbar und maschinell auswertbar sein. Läuft eine Außenprüfung, endet die Frist nicht, bevor die Steuerbescheide bestandskräftig sind."
+    },
+    "ao-162": {
+      "titel": "§ 162 AO",
+      "text": "Soweit die Finanzbehörde die Besteuerungsgrundlagen nicht ermitteln oder berechnen kann, hat sie sie zu schätzen. Zu schätzen ist insbesondere dann, wenn die Buchführung der Besteuerung nicht zugrunde gelegt werden kann.",
+      "kurz": "Grundlage für die Gewinnschätzung bei mangelhafter Buchführung."
+    },
+    "arbschg-5": {
+      "titel": "§ 5 ArbSchG — Gefährdungsbeurteilung",
+      "text": "Der Arbeitgeber muss durch eine Beurteilung der Arbeitsbedingungen ermitteln, welche Maßnahmen des Arbeitsschutzes erforderlich sind. Bei Bildschirmarbeitsplätzen sind dabei ausdrücklich auch die Belastungen für Augen sowie körperliche und psychische Belastungen zu berücksichtigen."
+    },
+    "bbig-10": {
+      "titel": "§ 10 BBiG",
+      "text": "Wer andere Personen zur Berufsausbildung einstellt, hat mit ihnen einen Berufsausbildungsvertrag zu schließen. Auf den Vertrag sind die Vorschriften für den Arbeitsvertrag anzuwenden, soweit sich aus Wesen und Zweck der Ausbildung nichts anderes ergibt.",
+      "kurz": "Pflicht zum Abschluss eines Ausbildungsvertrags."
+    },
+    "bbig-11": {
+      "titel": "§ 11 BBiG",
+      "text": "Der wesentliche Inhalt des Ausbildungsvertrags ist unverzüglich nach Abschluss, spätestens vor Beginn der Ausbildung, schriftlich niederzulegen — unter anderem Art und Ziel der Ausbildung, Beginn und Dauer, tägliche Ausbildungszeit, Probezeit, Vergütung und Urlaub.",
+      "kurz": "Was zwingend im Ausbildungsvertrag stehen muss."
+    },
+    "bbig-13": {
+      "titel": "§ 13 BBiG",
+      "text": "Auszubildende haben sich zu bemühen, die berufliche Handlungsfähigkeit zu erwerben. Sie sind insbesondere verpflichtet, die aufgetragenen Aufgaben sorgfältig auszuführen, am Berufsschulunterricht teilzunehmen, den Weisungen zu folgen, die Betriebsordnung zu beachten, Werkzeuge und Material pfleglich zu behandeln und über Betriebsgeheimnisse zu schweigen.",
+      "kurz": "Die Pflichten der Auszubildenden."
+    },
+    "bbig-14": {
+      "titel": "§ 14 BBiG",
+      "text": "Ausbildende haben dafür zu sorgen, dass die berufliche Handlungsfähigkeit vermittelt wird, selbst auszubilden oder eine geeignete Person zu beauftragen, die Ausbildungsmittel kostenlos bereitzustellen, für den Berufsschulbesuch freizustellen und nur Aufgaben zu übertragen, die dem Ausbildungszweck dienen.",
+      "kurz": "Die Pflichten des Betriebs."
+    },
+    "bbig-15": {
+      "titel": "§ 15 BBiG",
+      "text": "Ausbildende haben Auszubildende für die Teilnahme am Berufsschulunterricht und an Prüfungen freizustellen. Die Zeiten werden auf die Ausbildungszeit angerechnet.",
+      "kurz": "Freistellung für Berufsschule und Prüfungen."
+    },
+    "bbig-16": {
+      "titel": "§ 16 BBiG",
+      "text": "Bei Beendigung des Ausbildungsverhältnisses ist ein schriftliches Zeugnis auszustellen. Es enthält Angaben zu Art, Dauer und Ziel der Ausbildung sowie zu den erworbenen Fertigkeiten und Kenntnissen; auf Verlangen auch zu Führung, Leistung und besonderen fachlichen Fähigkeiten.",
+      "kurz": "Anspruch auf ein Ausbildungszeugnis."
+    },
+    "bbig-17": {
+      "titel": "§ 17 BBiG",
+      "text": "Ausbildenden ist eine angemessene Vergütung zu gewähren. Sie muss mindestens der gesetzlichen Mindestvergütung entsprechen und mit fortschreitender Ausbildung ansteigen.",
+      "kurz": "Mindestausbildungsvergütung für 2026 begonnene Ausbildungen: 724 € im ersten Jahr, 854 € im zweiten, 977 € im dritten, 1.014 € im vierten. Die Aufschläge betragen 18, 35 und 40 Prozent."
+    },
+    "bbig-20": {
+      "titel": "§ 20 BBiG",
+      "text": "Das Berufsausbildungsverhältnis beginnt mit der Probezeit. Sie muss mindestens einen Monat und darf höchstens vier Monate betragen.",
+      "kurz": "Probezeit von einem bis vier Monaten."
+    },
+    "bbig-21": {
+      "titel": "§ 21 BBiG",
+      "text": "Das Ausbildungsverhältnis endet mit Ablauf der Ausbildungszeit. Bestehen Auszubildende die Abschlussprüfung vorher, endet es mit Bekanntgabe des Ergebnisses durch den Prüfungsausschuss.",
+      "kurz": "Ende der Ausbildung — auch vorzeitig bei bestandener Prüfung."
+    },
+    "bbig-22": {
+      "titel": "§ 22 BBiG",
+      "text": "Während der Probezeit kann jederzeit ohne Einhalten einer Kündigungsfrist gekündigt werden. Danach nur noch aus wichtigem Grund ohne Frist — oder von Auszubildenden mit vier Wochen Frist bei Aufgabe oder Wechsel der Berufsausbildung.",
+      "kurz": "Kündigung in und nach der Probezeit."
+    },
+    "betrvg-102": {
+      "titel": "§ 102 BetrVG",
+      "text": "Der Betriebsrat ist vor jeder Kündigung zu hören. Eine ohne Anhörung des Betriebsrats ausgesprochene Kündigung ist unwirksam.",
+      "kurz": "Ohne Anhörung des Betriebsrats ist jede Kündigung unwirksam."
+    },
+    "betrvg-60": {
+      "titel": "§ 60 BetrVG",
+      "text": "In Betrieben mit in der Regel mindestens fünf Beschäftigten, die das 18. Lebensjahr noch nicht vollendet haben oder zu ihrer Berufsausbildung beschäftigt sind, werden Jugend- und Auszubildendenvertretungen gewählt.",
+      "kurz": "Wann eine JAV gewählt wird."
+    },
+    "betrvg-99": {
+      "titel": "§ 99 BetrVG",
+      "text": "In Betrieben mit mehr als zwanzig wahlberechtigten Arbeitnehmern hat der Arbeitgeber den Betriebsrat vor jeder Einstellung, Eingruppierung, Umgruppierung und Versetzung zu unterrichten und seine Zustimmung einzuholen.",
+      "kurz": "Mitbestimmung des Betriebsrats bei personellen Einzelmaßnahmen."
+    },
+    "bgb-104": {
+      "titel": "§ 104 BGB",
+      "text": "Geschäftsunfähig ist, wer nicht das siebente Lebensjahr vollendet hat.",
+      "kurz": "Unter 7 Jahren sind Willenserklärungen nichtig."
+    },
+    "bgb-106": {
+      "titel": "§ 106 BGB",
+      "text": "Ein Minderjähriger, der das siebente Lebensjahr vollendet hat, ist in der Geschäftsfähigkeit beschränkt.",
+      "kurz": "Von 7 bis 17 Jahren nur beschränkt geschäftsfähig."
+    },
+    "bgb-107": {
+      "titel": "§ 107 BGB",
+      "text": "Der Minderjährige bedarf zu einer Willenserklärung, durch die er nicht lediglich einen rechtlichen Vorteil erlangt, der Einwilligung seines gesetzlichen Vertreters.",
+      "kurz": "Ohne Einwilligung nur, was rechtlich lediglich vorteilhaft ist."
+    },
+    "bgb-110": {
+      "titel": "§ 110 BGB",
+      "text": "Ein von dem Minderjährigen ohne Zustimmung geschlossener Vertrag gilt als wirksam, wenn er die vertragsmäßige Leistung mit Mitteln bewirkt, die ihm zu diesem Zweck oder zur freien Verfügung überlassen worden sind.",
+      "kurz": "Der Taschengeldparagraf — bezahlt ist wirksam."
+    },
+    "bgb-145": {
+      "titel": "§ 145 BGB",
+      "text": "Wer einem anderen die Schließung eines Vertrags anträgt, ist an den Antrag gebunden, es sei denn, dass er die Gebundenheit ausgeschlossen hat.",
+      "kurz": "Bindung an den Antrag — außer bei Freizeichnung."
+    },
+    "bgb-147": {
+      "titel": "§ 147 BGB",
+      "text": "Der einem Anwesenden gemachte Antrag kann nur sofort angenommen werden. Der einem Abwesenden gemachte Antrag kann nur bis zu dem Zeitpunkt angenommen werden, in welchem der Antragende den Eingang der Antwort erwarten darf.",
+      "kurz": "Annahmefrist: sofort unter Anwesenden, sonst regelmäßige Antwortzeit."
+    },
+    "bgb-195": {
+      "titel": "§ 195 BGB — Regelmäßige Verjährungsfrist",
+      "text": "Die regelmäßige Verjährungsfrist beträgt drei Jahre."
+    },
+    "bgb-199": {
+      "titel": "§ 199 BGB — Beginn der regelmäßigen Verjährungsfrist",
+      "text": "Die regelmäßige Verjährungsfrist beginnt mit dem Schluss des Jahres, in dem der Anspruch entstanden ist und der Gläubiger von den anspruchsbegründenden Umständen und der Person des Schuldners Kenntnis erlangt hat oder ohne grobe Fahrlässigkeit hätte erlangen müssen."
+    },
+    "bgb-241a": {
+      "titel": "§ 241a BGB — Unbestellte Leistungen",
+      "text": "Wer einem Verbraucher unbestellt Waren zusendet oder Dienstleistungen erbringt, erwirbt dadurch keinen Anspruch. Der Verbraucher muss die Ware weder bezahlen noch zurücksenden und auch nicht aufbewahren."
+    },
+    "bgb-286": {
+      "titel": "§ 286 BGB — Verzug des Schuldners",
+      "text": "Leistet der Schuldner nach Fälligkeit auf eine Mahnung des Gläubigers nicht, kommt er in Verzug. Die Mahnung ist entbehrlich, wenn für die Leistung eine Zeit nach dem Kalender bestimmt ist. Bei Entgeltforderungen tritt Verzug spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung ein — gegenüber einem Verbraucher allerdings nur, wenn er in der Rechnung darauf hingewiesen wurde."
+    },
+    "bgb-288": {
+      "titel": "§ 288 BGB — Verzugszinsen",
+      "text": "Eine Geldschuld ist während des Verzugs zu verzinsen. Der Verzugszinssatz liegt fünf Prozentpunkte über dem Basiszinssatz. Ist an dem Rechtsgeschäft kein Verbraucher beteiligt, sind es neun Prozentpunkte; hinzu kommt bei Entgeltforderungen eine Pauschale von 40 Euro."
+    },
+    "bgb-305": {
+      "titel": "§ 305 BGB",
+      "text": "Allgemeine Geschäftsbedingungen werden nur dann Bestandteil eines Vertrags, wenn der Verwender bei Vertragsschluss ausdrücklich auf sie hinweist und der anderen Vertragspartei die Möglichkeit verschafft, in zumutbarer Weise von ihrem Inhalt Kenntnis zu nehmen.",
+      "kurz": "AGB gelten nur bei Hinweis vor Vertragsschluss."
+    },
+    "bgb-323": {
+      "titel": "§ 323 BGB — Rücktritt wegen nicht erbrachter Leistung",
+      "text": "Erbringt der Schuldner eine fällige Leistung nicht oder nicht vertragsgemäß, kann der Gläubiger vom Vertrag zurücktreten, nachdem er erfolglos eine angemessene Frist zur Leistung gesetzt hat. In bestimmten Fällen — etwa bei ernsthafter Leistungsverweigerung oder einem Fixgeschäft — ist die Fristsetzung entbehrlich."
+    },
+    "bgb-433": {
+      "titel": "§ 433 BGB",
+      "text": "Durch den Kaufvertrag wird der Verkäufer verpflichtet, dem Käufer die Sache zu übergeben und das Eigentum an der Sache zu verschaffen. Der Käufer ist verpflichtet, den vereinbarten Kaufpreis zu zahlen und die gekaufte Sache abzunehmen.",
+      "kurz": "Die beiderseitigen Pflichten aus dem Kaufvertrag."
+    },
+    "bgb-434": {
+      "titel": "§ 434 BGB — Sachmangel",
+      "text": "Die Sache ist frei von Sachmängeln, wenn sie bei Gefahrübergang den subjektiven Anforderungen (der vereinbarten Beschaffenheit), den objektiven Anforderungen (der üblichen Beschaffenheit, die der Käufer erwarten kann) und den Montageanforderungen entspricht. Diese Fassung gilt seit dem 1. Januar 2022."
+    },
+    "bgb-437": {
+      "titel": "§ 437 BGB — Rechte des Käufers bei Mängeln",
+      "text": "Ist die Sache mangelhaft, kann der Käufer Nacherfüllung nach § 439 verlangen, nach § 323 vom Vertrag zurücktreten oder den Kaufpreis nach § 441 mindern sowie Schadensersatz oder Ersatz vergeblicher Aufwendungen verlangen."
+    },
+    "bgb-438": {
+      "titel": "§ 438 BGB — Verjährung der Mängelansprüche",
+      "text": "Mängelansprüche verjähren bei beweglichen Sachen in zwei Jahren ab Ablieferung. Bei Bauwerken und bei Sachen, die für ein Bauwerk verwendet wurden, sind es fünf Jahre. Hat der Verkäufer den Mangel arglistig verschwiegen, gilt die regelmäßige Verjährungsfrist."
+    },
+    "bgb-439": {
+      "titel": "§ 439 BGB — Nacherfüllung",
+      "text": "Der Käufer kann als Nacherfüllung nach seiner Wahl die Beseitigung des Mangels oder die Lieferung einer mangelfreien Sache verlangen. Die zum Zweck der Nacherfüllung erforderlichen Aufwendungen — insbesondere Transport-, Wege-, Arbeits- und Materialkosten — trägt der Verkäufer."
+    },
+    "bgb-441": {
+      "titel": "§ 441 BGB — Minderung",
+      "text": "Statt zurückzutreten kann der Käufer den Kaufpreis mindern. Der Kaufpreis wird in dem Verhältnis herabgesetzt, in dem zum Zeitpunkt des Vertragsschlusses der Wert der mangelfreien Sache zum wirklichen Wert gestanden hätte. Anders als beim Rücktritt bleibt der Vertrag bestehen."
+    },
+    "bgb-449": {
+      "titel": "§ 449 BGB — Eigentumsvorbehalt",
+      "text": "Hat sich der Verkäufer einer beweglichen Sache das Eigentum bis zur Zahlung des Kaufpreises vorbehalten, geht das Eigentum erst mit der vollständigen Zahlung über. Der Verkäufer kann die Sache aufgrund des Vorbehalts nur herausverlangen, wenn er vom Vertrag zurückgetreten ist."
+    },
+    "bgb-488": {
+      "titel": "§ 488 BGB — Darlehensvertrag",
+      "text": "Der Darlehensgeber stellt dem Darlehensnehmer einen Geldbetrag zur Verfügung; dieser schuldet den vereinbarten Zins und die Rückzahlung bei Fälligkeit. Der Zins ist, soweit nichts anderes vereinbart ist, nach Ablauf je eines Jahres zu entrichten."
+    },
+    "bgb-611a": {
+      "titel": "§ 611a BGB",
+      "text": "Durch den Arbeitsvertrag wird der Arbeitnehmer im Dienste eines anderen zur Leistung weisungsgebundener, fremdbestimmter Arbeit in persönlicher Abhängigkeit verpflichtet. Der Arbeitgeber ist zur Zahlung der vereinbarten Vergütung verpflichtet.",
+      "kurz": "Was einen Arbeitsvertrag ausmacht: Weisungsgebundenheit und persönliche Abhängigkeit."
+    },
+    "bgb-622": {
+      "titel": "§ 622 BGB",
+      "text": "Das Arbeitsverhältnis kann mit einer Frist von vier Wochen zum Fünfzehnten oder zum Ende eines Kalendermonats gekündigt werden. Für eine Kündigung durch den Arbeitgeber verlängert sich die Frist gestaffelt nach der Dauer der Betriebszugehörigkeit.",
+      "kurz": "Grundfrist vier Wochen; die Staffelung nach Betriebszugehörigkeit gilt nur für den Arbeitgeber."
+    },
+    "bgb-623": {
+      "titel": "§ 623 BGB",
+      "text": "Die Beendigung von Arbeitsverhältnissen durch Kündigung oder Auflösungsvertrag bedarf zu ihrer Wirksamkeit der Schriftform; die elektronische Form ist ausgeschlossen.",
+      "kurz": "Kündigung nur schriftlich — per Mail oder Messenger ist sie unwirksam."
+    },
+    "bgb-626": {
+      "titel": "§ 626 BGB",
+      "text": "Das Arbeitsverhältnis kann aus wichtigem Grund ohne Einhaltung einer Kündigungsfrist gekündigt werden, wenn dem Kündigenden die Fortsetzung bis zum Ablauf der Frist nicht zugemutet werden kann. Die Kündigung kann nur innerhalb von zwei Wochen ab Kenntnis der maßgebenden Tatsachen erfolgen.",
+      "kurz": "Fristlose Kündigung nur aus wichtigem Grund und binnen zwei Wochen."
+    },
+    "bgb-765": {
+      "titel": "§ 765 BGB — Bürgschaft",
+      "text": "Durch den Bürgschaftsvertrag verpflichtet sich der Bürge gegenüber dem Gläubiger eines Dritten, für dessen Verbindlichkeit einzustehen. Die Bürgschaft setzt eine bestehende Hauptforderung voraus und erlischt mit ihr."
+    },
+    "bgb-766": {
+      "titel": "§ 766 BGB — Schriftform der Bürgschaft",
+      "text": "Die Bürgschaftserklärung bedarf der Schriftform. Eine mündliche Bürgschaft ist unwirksam. Die Formvorschrift gilt nicht, wenn der Bürge Kaufmann ist und die Bürgschaft zu seinem Handelsgewerbe gehört."
+    },
+    "bgb-771": {
+      "titel": "§ 771 BGB — Einrede der Vorausklage",
+      "text": "Der Bürge kann die Befriedigung des Gläubigers verweigern, solange dieser nicht erfolglos gegen den Hauptschuldner vollstreckt hat. Auf diese Einrede kann verzichtet werden — dann liegt eine selbstschuldnerische Bürgschaft vor, die im Geschäftsverkehr die Regel ist."
+    },
+    "dsgvo-15": {
+      "titel": "Art. 15 DSGVO — Auskunftsrecht",
+      "text": "Jede betroffene Person kann verlangen zu erfahren, ob und welche Daten über sie verarbeitet werden, zu welchem Zweck, wie lange sie gespeichert werden und an wen sie weitergegeben wurden. Sie hat außerdem Anspruch auf eine Kopie der Daten."
+    },
+    "dsgvo-17": {
+      "titel": "Art. 17 DSGVO — Recht auf Löschung",
+      "text": "Daten sind unverzüglich zu löschen, wenn sie für ihren Zweck nicht mehr nötig sind, die Einwilligung widerrufen wurde oder sie unrechtmäßig verarbeitet wurden. Die Löschung entfällt, soweit gesetzliche Aufbewahrungspflichten entgegenstehen — dann werden die Daten stattdessen für die weitere Verwendung gesperrt."
+    },
+    "dsgvo-32": {
+      "titel": "Art. 32 DSGVO — Sicherheit der Verarbeitung",
+      "text": "Verantwortliche müssen technische und organisatorische Maßnahmen treffen, die dem Risiko angemessen sind — etwa Verschlüsselung, Zugriffsbeschränkungen, Wiederherstellbarkeit nach einem Zwischenfall und regelmäßige Überprüfung der Wirksamkeit."
+    },
+    "dsgvo-5": {
+      "titel": "Art. 5 DSGVO — Grundsätze der Verarbeitung",
+      "text": "Personenbezogene Daten dürfen nur rechtmäßig, nach Treu und Glauben und nachvollziehbar verarbeitet werden. Sie sind zweckgebunden zu erheben, auf das notwendige Maß zu beschränken, richtig zu halten, nur so lange wie nötig zu speichern und angemessen zu sichern. Der Verantwortliche muss die Einhaltung nachweisen können."
+    },
+    "dsgvo-6": {
+      "titel": "Art. 6 DSGVO — Rechtmäßigkeit der Verarbeitung",
+      "text": "Eine Verarbeitung ist nur zulässig, wenn mindestens eine Rechtsgrundlage vorliegt: Einwilligung der betroffenen Person, Erfüllung eines Vertrags, eine rechtliche Verpflichtung, lebenswichtige Interessen, eine Aufgabe im öffentlichen Interesse oder ein überwiegendes berechtigtes Interesse. Ohne eine dieser Grundlagen ist die Verarbeitung verboten."
+    },
+    "gewo-109": {
+      "titel": "§ 109 GewO",
+      "text": "Der Arbeitnehmer hat bei Beendigung eines Arbeitsverhältnisses Anspruch auf ein schriftliches Zeugnis. Es muss mindestens Angaben zu Art und Dauer der Tätigkeit enthalten; auf Verlangen erstreckt es sich auch auf Leistung und Verhalten.",
+      "kurz": "Anspruch auf ein einfaches oder qualifiziertes Arbeitszeugnis."
+    },
+    "hgb-238": {
+      "titel": "§ 238 Abs. 1 HGB",
+      "text": "Jeder Kaufmann ist verpflichtet, Bücher zu führen und in diesen seine Handelsgeschäfte und die Lage seines Vermögens nach den Grundsätzen ordnungsmäßiger Buchführung ersichtlich zu machen.",
+      "kurz": "Buchführungspflicht für alle Kaufleute — ohne Schwellenwert."
+    },
+    "hgb-240": {
+      "titel": "§ 240 HGB",
+      "text": "Jeder Kaufmann hat zu Beginn seines Handelsgewerbes und für den Schluss eines jeden Geschäftsjahres seine Vermögensgegenstände und Schulden genau zu verzeichnen.",
+      "kurz": "Pflicht zur Inventur und zum Inventar."
+    },
+    "hgb-242": {
+      "titel": "§ 242 HGB",
+      "text": "Der Kaufmann hat zu Beginn seines Handelsgewerbes und für den Schluss eines jeden Geschäftsjahres einen das Verhältnis seines Vermögens und seiner Schulden darstellenden Abschluss aufzustellen.",
+      "kurz": "Die Bilanz als Pflichtbestandteil des Jahresabschlusses."
+    },
+    "hgb-249": {
+      "titel": "§ 249 Abs. 1 HGB",
+      "text": "Rückstellungen sind für ungewisse Verbindlichkeiten und für drohende Verluste aus schwebenden Geschäften zu bilden.",
+      "kurz": "Rückstellungen sind eine eigene Bilanzposition — keine Verbindlichkeiten."
+    },
+    "hgb-257": {
+      "titel": "§ 257 HGB — Aufbewahrung von Unterlagen",
+      "text": "Kaufleute müssen Handelsbücher, Inventare, Eröffnungsbilanzen, Jahresabschlüsse und Buchungsbelege geordnet aufbewahren. Für empfangene Handelsbriefe und Kopien abgesandter Handelsbriefe gilt eine kürzere Frist. Die Frist beginnt mit dem Schluss des Kalenderjahres, in dem die letzte Eintragung gemacht oder der Handelsbrief empfangen oder abgesandt wurde."
+    },
+    "hgb-350": {
+      "titel": "§ 350 HGB — Formfreiheit unter Kaufleuten",
+      "text": "Ist die Bürgschaft für den Bürgen ein Handelsgeschäft, gilt die Schriftform des § 766 BGB nicht. Ein Kaufmann kann sich damit auch mündlich wirksam verbürgen — ein häufiger Prüfungsfall."
+    },
+    "hgb-362": {
+      "titel": "§ 362 HGB",
+      "text": "Geht einem Kaufmann, dessen Gewerbebetrieb die Besorgung von Geschäften für andere mit sich bringt, ein Antrag über die Besorgung solcher Geschäfte von jemandem zu, mit dem er in Geschäftsverbindung steht, so ist er verpflichtet, unverzüglich zu antworten; sein Schweigen gilt als Annahme des Antrags.",
+      "kurz": "Unter Kaufleuten kann Schweigen ausnahmsweise Zustimmung bedeuten."
+    },
+    "hgb-377": {
+      "titel": "§ 377 HGB — Untersuchungs- und Rügepflicht",
+      "text": "Beim beiderseitigen Handelskauf muss der Käufer die Ware unverzüglich nach der Ablieferung untersuchen und einen Mangel unverzüglich anzeigen. Unterlässt er die Anzeige, gilt die Ware als genehmigt — die Mängelrechte sind verloren. Zeigt sich ein versteckter Mangel erst später, muss er unverzüglich nach der Entdeckung gerügt werden."
+    },
+    "hgb-48": {
+      "titel": "§ 48 HGB",
+      "text": "Die Prokura kann nur von dem Inhaber des Handelsgeschäfts und nur mittels ausdrücklicher Erklärung erteilt werden.",
+      "kurz": "Erteilung der Prokura."
+    },
+    "hgb-54": {
+      "titel": "§ 54 HGB",
+      "text": "Die Handlungsvollmacht erstreckt sich auf alle Geschäfte und Rechtshandlungen, die der Betrieb eines derartigen Handelsgewerbes oder die Vornahme derartiger Geschäfte gewöhnlich mit sich bringt.",
+      "kurz": "Umfang der Handlungsvollmacht."
+    },
+    "jarbschg-11": {
+      "titel": "§ 11 JArbSchG",
+      "text": "Jugendlichen sind Ruhepausen von mindestens 30 Minuten bei einer Arbeitszeit von mehr als viereinhalb bis zu sechs Stunden und von mindestens 60 Minuten bei mehr als sechs Stunden zu gewähren.",
+      "kurz": "Pausenregelung für Jugendliche."
+    },
+    "jarbschg-19": {
+      "titel": "§ 19 JArbSchG",
+      "text": "Der Urlaub beträgt jährlich mindestens 30 Werktage, wenn der Jugendliche zu Beginn des Kalenderjahres noch nicht 16 Jahre alt ist, mindestens 27 Werktage bei noch nicht 17 Jahren und mindestens 25 Werktage bei noch nicht 18 Jahren.",
+      "kurz": "Mindesturlaub: 30, 27 oder 25 Werktage — je nach Alter am 1. Januar."
+    },
+    "jarbschg-8": {
+      "titel": "§ 8 JArbSchG",
+      "text": "Jugendliche dürfen nicht mehr als acht Stunden täglich und nicht mehr als 40 Stunden wöchentlich beschäftigt werden.",
+      "kurz": "Höchstarbeitszeit für Jugendliche."
+    },
+    "kschg-1": {
+      "titel": "§ 1 KSchG",
+      "text": "Die Kündigung ist rechtsunwirksam, wenn sie sozial ungerechtfertigt ist. Sozial gerechtfertigt ist sie nur, wenn sie durch Gründe in der Person, im Verhalten des Arbeitnehmers oder durch dringende betriebliche Erfordernisse bedingt ist.",
+      "kurz": "Drei zulässige Kündigungsgründe: personen-, verhaltens- oder betriebsbedingt."
+    },
+    "kschg-23": {
+      "titel": "§ 23 KSchG",
+      "text": "Die Vorschriften über den allgemeinen Kündigungsschutz gelten nicht in Betrieben, in denen in der Regel zehn oder weniger Arbeitnehmer beschäftigt werden.",
+      "kurz": "Kündigungsschutz erst ab mehr als zehn Arbeitnehmern."
+    },
+    "tvg-1": {
+      "titel": "§ 1 TVG",
+      "text": "Der Tarifvertrag regelt die Rechte und Pflichten der Tarifvertragsparteien und enthält Rechtsnormen über Inhalt, Abschluss und Beendigung von Arbeitsverhältnissen. Er bedarf der Schriftform.",
+      "kurz": "Was ein Tarifvertrag ist und regelt."
+    },
+    "ustg-14": {
+      "titel": "§ 14 UStG",
+      "text": "Eine Rechnung muss unter anderem den vollständigen Namen und die Anschrift beider Beteiligten, die Steuernummer oder Umsatzsteuer-Identifikationsnummer, das Ausstellungsdatum, eine fortlaufende Rechnungsnummer, Menge und Art der Leistung, den Zeitpunkt der Lieferung, das Entgelt sowie den Steuersatz und den Steuerbetrag enthalten.",
+      "kurz": "Die Pflichtangaben einer Rechnung — ohne sie kein Vorsteuerabzug."
+    },
+    "ustg-19": {
+      "titel": "§ 19 UStG",
+      "text": "Von einem im Inland ansässigen Unternehmer bewirkte Umsätze sind steuerfrei, wenn der Gesamtumsatz im vorangegangenen Kalenderjahr 25.000 Euro nicht überschritten hat und im laufenden Kalenderjahr 100.000 Euro nicht überschreitet.",
+      "kurz": "Kleinunternehmerregelung: seit 2025 eine echte Steuerbefreiung — keine Umsatzsteuer, dafür kein Vorsteuerabzug."
+    },
+    "uwg-5": {
+      "titel": "§ 5 UWG",
+      "text": "Unlauter handelt, wer eine irreführende geschäftliche Handlung vornimmt, die geeignet ist, den Verbraucher zu einer geschäftlichen Entscheidung zu veranlassen, die er andernfalls nicht getroffen hätte.",
+      "kurz": "Verbot irreführender Werbung."
+    },
+    "uwg-7": {
+      "titel": "§ 7 UWG",
+      "text": "Eine geschäftliche Handlung, durch die ein Marktteilnehmer in unzumutbarer Weise belästigt wird, ist unzulässig. Werbung per Telefon, E-Mail oder Fax setzt grundsätzlich die vorherige ausdrückliche Einwilligung voraus.",
+      "kurz": "Werbung braucht eine Einwilligung — sonst ist sie unzumutbare Belästigung."
+    }
+  }
+}

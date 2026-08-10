@@ -1,0 +1,279 @@
+{
+  "id": "k2",
+  "lernfeld": "lf8",
+  "nummer": 2,
+  "titel": "Personal beschaffen",
+  "untertitel": "Von innen oder von außen — und wie eine Anzeige aussehen muss, die niemanden ausschließt.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Interne und externe Beschaffung gegeneinander abwägen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Beschaffungswege auswählen und begründen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Eine rechtssichere Stellenanzeige aufbauen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Innen oder außen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Steht der Bedarf fest, gibt es zwei Richtungen: Die Stelle wird aus der eigenen Belegschaft besetzt oder über den Arbeitsmarkt. ==Beides hat einen Preis== — der eine kostet eine Nachfolgelücke, der andere Einarbeitungszeit und Risiko."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Wege",
+          "titel": "Interne oder externe Beschaffung",
+          "lead": "Dieselbe offene Stelle, zwei Wege. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Intern",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Versetzung, Aufstieg, Mehrarbeit, Übernahme von Azubis",
+                  "detail": "Auch die Übernahme nach der Ausbildung zählt hierher — für deinen Betrieb der günstigste Weg überhaupt, weil die Einarbeitung längst gelaufen ist."
+                },
+                {
+                  "text": "Der Betrieb kennt die Person",
+                  "detail": "Leistung, Verhalten und Einarbeitungsbedarf sind bekannt. Das senkt das Fehlbesetzungsrisiko erheblich."
+                },
+                {
+                  "text": "Motiviert die Belegschaft",
+                  "detail": "Wer sieht, dass Aufstieg möglich ist, bleibt eher. Interne Ausschreibung ist deshalb auch ein Bindungsinstrument."
+                },
+                {
+                  "text": "Schnell und günstig",
+                  "detail": "Keine Anzeigenkosten, kürzere Verfahren, keine Probezeit-Unsicherheit."
+                },
+                {
+                  "text": "Aber: die Lücke wandert nur",
+                  "detail": "Die frei gewordene Stelle muss ebenfalls besetzt werden. Und es kommen keine neuen Ideen von außen — Betriebsblindheit ist die typische Folge."
+                }
+              ]
+            },
+            {
+              "name": "Extern",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Stellenanzeige, Arbeitsagentur, Portale, Personalberatung",
+                  "detail": "Dazu kommen Initiativbewerbungen, Praktika, Messen und Empfehlungen aus der Belegschaft."
+                },
+                {
+                  "text": "Größere Auswahl",
+                  "detail": "Der Arbeitsmarkt ist deutlich größer als die eigene Belegschaft — bei speziellen Qualifikationen oft der einzige Weg."
+                },
+                {
+                  "text": "Neue Sichtweisen",
+                  "detail": "Wer von außen kommt, stellt Fragen, die intern niemand mehr stellt. Genau das kann ein Betrieb brauchen — und genau das stört manchmal auch."
+                },
+                {
+                  "text": "Keine Folgelücke",
+                  "detail": "Die Stelle wird tatsächlich geschlossen, statt verschoben zu werden."
+                },
+                {
+                  "text": "Aber: teuer, langsam, riskant",
+                  "detail": "Anzeigenkosten, Auswahlverfahren, Einarbeitung — und die Unsicherheit, ob die Person zum Betrieb passt, zeigt sich erst nach Monaten."
+                }
+              ]
+            }
+          ],
+          "regel": "Faustregel: Erst intern prüfen, dann extern ausschreiben. Viele Betriebe sind dazu ohnehin durch Betriebsvereinbarung verpflichtet."
+        },
+        {
+          "typ": "merke",
+          "text": "Interne Beschaffung schließt die Stelle nicht, sie **verschiebt** sie. Rechne bei der Planung immer die Folgestelle mit — sonst hast du am Ende zwei Vakanzen statt einer.",
+          "karteikarte": "Nenne je zwei Vor- und Nachteile der internen Personalbeschaffung."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Welcher Weg wofür",
+      "inhalt": [
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Weg",
+            "Passt bei",
+            "Kosten"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Interne Ausschreibung",
+                "Aufstiegsstellen, bekannte Aufgaben",
+                "gering"
+              ]
+            },
+            {
+              "zellen": [
+                "Agentur für Arbeit",
+                "breite Suche, geförderte Gruppen",
+                "kostenlos"
+              ]
+            },
+            {
+              "zellen": [
+                "Onlineportale",
+                "kaufmännische Standardstellen",
+                "mittel"
+              ]
+            },
+            {
+              "zellen": [
+                "Eigene Website und Social Media",
+                "Nachwuchs, Ausbildungsplätze",
+                "gering"
+              ],
+              "detail": "**Für Ausbildungsplätze inzwischen der wichtigste Kanal.** Wer Sechzehnjährige erreichen will, findet sie nicht in der Zeitung — dieselbe Logik wie bei deinem eigenen Vertriebskanal."
+            },
+            {
+              "zellen": [
+                "Personalberatung",
+                "Führungspositionen, seltene Qualifikationen",
+                "hoch"
+              ]
+            },
+            {
+              "zellen": [
+                "Zeitarbeit",
+                "kurzfristige Spitzen, Vertretungen",
+                "mittel bis hoch"
+              ],
+              "detail": "**Kein Beschaffungsweg im engeren Sinn:** Der Zeitarbeitnehmer bleibt Arbeitnehmer des Verleihers. Der Einsatzbetrieb hat das Weisungsrecht, aber keinen Arbeitsvertrag mit ihm."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Betrieb braucht für drei Monate Vertretung während einer Elternzeit. Welcher Weg passt am besten?",
+          "optionen": [
+            {
+              "text": "Externe Ausschreibung einer unbefristeten Stelle",
+              "richtig": false,
+              "echo": "Das würde eine dauerhafte Stelle für einen vorübergehenden Bedarf schaffen. Nach drei Monaten hätte der Betrieb eine Überdeckung — und die Rückkehrerin keinen Platz."
+            },
+            {
+              "text": "Befristete Einstellung oder Zeitarbeit",
+              "richtig": true,
+              "echo": "Richtig. Der Bedarf ist zeitlich begrenzt, also muss auch die Lösung befristet sein. Eine Vertretung während der Elternzeit ist zudem ein anerkannter Sachgrund für eine Befristung — die Alternative Zeitarbeit ist schneller, aber teurer."
+            },
+            {
+              "text": "Interne Versetzung ohne Ersatz",
+              "richtig": false,
+              "echo": "Dann fehlt die versetzte Kraft an ihrer bisherigen Stelle. Die Lücke wäre nur verschoben — bei einem befristeten Bedarf besonders unpraktisch."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Die Stellenanzeige",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine Stellenanzeige ist Werbung — dieselben Regeln wie in Lernfeld 5. Sie muss auffallen, den Nutzen zeigen und einen klaren nächsten Schritt anbieten. Zusätzlich muss sie rechtssicher sein."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Teil",
+            "Inhalt"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Betrieb",
+                "Wer sucht — kurz, konkret, ohne Superlative"
+              ]
+            },
+            {
+              "zellen": [
+                "Stelle",
+                "Bezeichnung, Beginn, Umfang, Befristung, Standort"
+              ]
+            },
+            {
+              "zellen": [
+                "Aufgaben",
+                "aus der Stellenbeschreibung, drei bis fünf Punkte"
+              ]
+            },
+            {
+              "zellen": [
+                "Anforderungen",
+                "aus dem Anforderungsprofil, Muss und Kann getrennt"
+              ]
+            },
+            {
+              "zellen": [
+                "Angebot",
+                "was der Betrieb bietet — Entgelt, Entwicklung, Arbeitszeit"
+              ],
+              "detail": "**Der am häufigsten fehlende Teil.** Viele Anzeigen listen nur, was verlangt wird. Auf einem Arbeitsmarkt, auf dem Bewerber die Auswahl haben, ist das ein Käufermarkt aus Sicht des Betriebs — und dann muss geworben werden."
+            },
+            {
+              "zellen": [
+                "Kontakt",
+                "Ansprechpartner mit Namen, Weg, Frist"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Nach {{par:agg-7|§ 7 AGG}} darf die Anzeige nicht an Alter, Geschlecht, Herkunft, Religion, Behinderung oder sexuelle Identität anknüpfen. Deshalb der Zusatz **(m/w/d)** und deshalb keine Altersangaben. Wer dagegen verstößt, riskiert Entschädigungsansprüche abgelehnter Bewerber — auch dann, wenn die Person die Stelle ohnehin nicht bekommen hätte."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Prüfe jede Anzeige mit einer einzigen Frage: Würde sich jemand ausgeschlossen fühlen, der die Arbeit könnte? „Belastbarer junger Mann für unser dynamisches Team“ schließt drei Gruppen auf einmal aus — und keine davon wegen fehlender Eignung."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Interne Beschaffung: Versetzung, Aufstieg, Mehrarbeit, Übernahme von Azubis.",
+    "Vorteile intern: bekannte Person, motivierend, schnell und günstig.",
+    "Nachteil intern: die Lücke wandert nur, wenig neue Impulse.",
+    "Externe Wege: Anzeige, Arbeitsagentur, Portale, eigene Kanäle, Personalberatung, Zeitarbeit.",
+    "Zeitarbeitnehmer bleiben Arbeitnehmer des Verleihers.",
+    "Die Stellenanzeige enthält Betrieb, Stelle, Aufgaben, Anforderungen, Angebot und Kontakt.",
+    "{{par:agg-7|§ 7 AGG}}: keine Anknüpfung an geschützte Merkmale — daher (m/w/d) und keine Altersgrenzen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne je drei Wege der internen und der externen Personalbeschaffung.",
+      "loesung": "Intern zum Beispiel Versetzung auf eine andere Stelle, Beförderung beziehungsweise Aufstieg, Anordnung von Mehrarbeit oder Überstunden sowie die Übernahme von Auszubildenden. Extern zum Beispiel Stellenanzeigen in Portalen oder Zeitungen, Vermittlung über die Agentur für Arbeit, Ausschreibung über die eigene Website und Social Media, Personalberatung oder Zeitarbeit."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum schließt eine interne Besetzung den Personalbedarf nicht endgültig?",
+      "loesung": "Weil die Person, die auf die neue Stelle wechselt, ihre bisherige Stelle frei macht. Der Bedarf ist damit nicht gedeckt, sondern nur verschoben — es entsteht eine Folgevakanz, die ebenfalls besetzt werden muss. Erst wenn die Kette am Ende extern geschlossen oder eine Stelle gestrichen wird, ist der Bedarf tatsächlich gedeckt."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Eine Anzeige lautet: „Wir suchen eine engagierte Bürokraft, max. 35 Jahre, deutsche Muttersprache.“ Welche Probleme siehst du und wie formulierst du um?",
+      "loesung": "Drei AGG-Verstöße: „Bürokraft“ in weiblicher Form knüpft an das Geschlecht an, die Altersgrenze an das Alter, „deutsche Muttersprache“ mittelbar an die ethnische Herkunft. Zulässig wäre: „Kaufmännische Mitarbeit (m/w/d)“ mit der Anforderung „sehr gute Deutschkenntnisse in Wort und Schrift“, weil hier die tatsächlich benötigte Fähigkeit beschrieben wird statt eines Merkmals der Person."
+    }
+  ],
+  "pruefungstipp": "Die Gegenüberstellung intern und extern wird fast immer als Vor- und Nachteilsaufgabe gestellt — lerne je drei Punkte pro Seite. Bei Stellenanzeigen sucht die Prüfung nach AGG-Verstößen: Alter, Geschlecht, Herkunft. Und merke dir, dass Zeitarbeitnehmer keinen Arbeitsvertrag mit dem Einsatzbetrieb haben."
+}

@@ -1,0 +1,160 @@
+{
+  "id": "k1",
+  "lernfeld": "lf1",
+  "nummer": 1,
+  "titel": "Das System der dualen Ausbildung",
+  "untertitel": "Zwei Lernorte, vier Regelwerke, eine Prüfung in zwei Teilen.",
+  "minuten": 20,
+
+  "lernziele": [
+    { "id": "lz1", "text": "Die Beteiligten der dualen Ausbildung und ihre Aufgaben benennen", "abschnitt": "a1" },
+    { "id": "lz2", "text": "Ausbildungsordnung, Ausbildungsrahmenplan, Rahmenlehrplan und betrieblichen Ausbildungsplan unterscheiden", "abschnitt": "a2" },
+    { "id": "lz3", "text": "Den Ablauf der Ausbildung bis zur gestreckten Abschlussprüfung erklären", "abschnitt": "a3" }
+  ],
+
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "a1",
+      "titel": "Zwei Lernorte, ein Ziel",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:duale-ausbildung|duale Ausbildung}} heißt so, weil du an zwei Orten gleichzeitig lernst: im Betrieb und in der Berufsschule. Das ist kein Zufall und keine Verwaltungslaune — beide vermitteln unterschiedliche Teile derselben Qualifikation. ==Der Betrieb bringt dir bei, wie es gemacht wird. Die Schule erklärt, warum es so gemacht wird.=="
+        },
+        {
+          "typ": "absatz",
+          "text": "Dazu kommt eine dritte Instanz, die viele Azubis erst kurz vor der Prüfung wahrnehmen: die {{begriff:zustaendige-stelle|zuständige Stelle}}. Für kaufmännische Berufe ist das die Industrie- und Handelskammer."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Beteiligter", "Aufgabe", "Rechtsgrundlage"],
+          "zeilen": [
+            {
+              "zellen": ["Ausbildungsbetrieb", "vermittelt die praktischen Inhalte, zahlt die Vergütung", "Berufsbildungsgesetz"],
+              "detail": "**Wichtige Unterscheidung:** Der {{begriff:ausbildender|Ausbildende}} ist dein Vertragspartner — meist der Betrieb als Ganzes. Der {{begriff:ausbilder|Ausbilder}} ist die Person, die dich tatsächlich anleitet. In der Prüfung werden die beiden Begriffe gern vertauscht."
+            },
+            { "zellen": ["Berufsschule", "vermittelt die theoretischen Inhalte in Lernfeldern", "Schulgesetze der Länder"] },
+            {
+              "zellen": ["Zuständige Stelle (IHK)", "überwacht, registriert, prüft", "Berufsbildungsgesetz"],
+              "detail": "**Was die IHK konkret tut:** Sie trägt deinen Vertrag ins Verzeichnis der Ausbildungsverhältnisse ein, überwacht die Eignung von Betrieb und Ausbildern, beruft die Prüfungsausschüsse und stellt am Ende dein Prüfungszeugnis aus."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Der Ausbildende ist der Vertragspartner, der Ausbilder die ausbildende Person. Und die IHK ist nicht dein Arbeitgeber — sie ist die Aufsicht über das Ganze.",
+          "karteikarte": "Wer sind die drei Beteiligten der dualen Ausbildung und was macht jeder?"
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "a2",
+      "titel": "Vier Pläne, die zusammengehören",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Was du lernen musst, steht nicht in einem Dokument, sondern in vier ineinandergreifenden. Wer sie einmal auseinanderhält, hat eine der klassischen Prüfungsfragen sicher."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Dokument", "Wer erlässt es", "Was steht drin"],
+          "zeilen": [
+            { "zellen": ["Ausbildungsordnung", "Bund (Rechtsverordnung)", "Berufsbezeichnung, Dauer, Berufsbild, Prüfungsanforderungen"] },
+            { "zellen": ["Ausbildungsrahmenplan", "Bund, Anlage zur Ausbildungsordnung", "Was der Betrieb wann vermitteln muss"] },
+            { "zellen": ["Rahmenlehrplan", "Kultusministerkonferenz", "Die Lernfelder der Berufsschule mit Zeitrichtwerten"] },
+            {
+              "zellen": ["Betrieblicher Ausbildungsplan", "der einzelne Betrieb", "Welche Abteilung wann welchen Inhalt übernimmt"],
+              "detail": "**Der einzige Plan, der auf dich persönlich zugeschnitten ist.** Er ist Anlage deines Ausbildungsvertrags — und wenn du das Gefühl hast, dass du Inhalte gar nicht siehst, ist er das Dokument, mit dem du das ansprichst."
+            }
+          ]
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Warum Bund und Länder sich das teilen",
+          "absaetze": [
+            "Weil das Grundgesetz die Zuständigkeiten trennt: Die berufliche Bildung im Betrieb ist Sache des Bundes, das Schulwesen Sache der Länder. Eine einzige Behörde für beides gibt es also gar nicht.",
+            "Damit trotzdem nichts auseinanderläuft, werden Ausbildungsordnung und Rahmenlehrplan in einem gemeinsamen Verfahren abgestimmt. Für deinen Beruf ist beides zuletzt 2025 neu gefasst worden — die Ausbildungsordnung vom 25. Februar 2025, der Rahmenlehrplan in der Fassung vom 20. März 2025."
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Merkformel: **Ordnung** und **Rahmenplan** kommen vom Bund für den Betrieb, der **Lehrplan** von den Ländern für die Schule, und der **betriebliche Plan** ist deine persönliche Fassung davon.",
+          "karteikarte": "Welche vier Pläne steuern deine Ausbildung — und wer erlässt jeweils welchen?"
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "a3",
+      "titel": "Der Weg bis zum Abschluss",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Deine Ausbildung ist ein Ablauf mit festen Stationen. Besonders wichtig ist die {{begriff:gestreckte-pruefung|gestreckte Abschlussprüfung}}: ==Es gibt keine Zwischenprüfung mehr, die man einfach mitnimmt.== Teil 1 zählt bereits zur Endnote und kann nicht wiederholt werden."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Dein Ausbildungsverlauf",
+          "titel": "Von der Unterschrift bis zum Zeugnis",
+          "lead": "Fünf Stationen, jede mit eigenen Rechtsfolgen. Klick dich durch.",
+          "schritte": [
+            { "nr": 1, "titel": "Vertragsschluss", "satz": "vor Beginn · schriftlich · Eintrag bei der IHK", "text": "Der Vertrag muss schriftlich niedergelegt und ins Verzeichnis der Ausbildungsverhältnisse eingetragen werden. Ohne Eintragung keine Prüfungszulassung." },
+            { "nr": 2, "titel": "Probezeit", "satz": "1 bis 4 Monate", "text": "Beide Seiten können jederzeit fristlos und ohne Begründung kündigen. Danach ist eine Kündigung durch den Betrieb nur noch aus wichtigem Grund möglich." },
+            { "nr": 3, "titel": "Teil 1 der Abschlussprüfung", "satz": "Mitte des 2. Ausbildungsjahres", "text": "Informationstechnisches Büromanagement. Das Ergebnis fließt fest in die Endnote ein und wird nicht wiederholt — auch dann nicht, wenn Teil 2 wiederholt werden muss." },
+            { "nr": 4, "titel": "Teil 2 der Abschlussprüfung", "satz": "Ende des 3. Ausbildungsjahres", "text": "Schriftliche Prüfungsbereiche plus das Fachgespräch zu den beiden gewählten Wahlqualifikationen." },
+            { "nr": 5, "titel": "Ende des Ausbildungsverhältnisses", "satz": "Ablauf der Zeit — oder früher", "text": "Mit Ablauf der vereinbarten Ausbildungszeit. Bestehst du die Prüfung vorher, endet die Ausbildung bereits mit der Bekanntgabe des Ergebnisses durch den Prüfungsausschuss." }
+          ],
+          "regel": "Merke dir Station 3: Teil 1 ist keine Übung. Wer ihn verpatzt, schleppt das bis zum Schluss mit."
+        },
+        {
+          "typ": "check",
+          "frage": "Du bestehst die Abschlussprüfung vier Wochen vor dem im Vertrag genannten Enddatum. Wann endet dein Ausbildungsverhältnis?",
+          "optionen": [
+            { "text": "Am vereinbarten Enddatum", "richtig": false, "echo": "Das gilt nur, wenn du die Prüfung nicht vorher bestehst. Nach § 21 BBiG endet die Ausbildung mit dem Bestehen — der Vertrag läuft nicht künstlich weiter." },
+            { "text": "Mit Bekanntgabe des Prüfungsergebnisses", "richtig": true, "echo": "Richtig. Nach § 21 BBiG endet das Ausbildungsverhältnis mit der Bekanntgabe des Ergebnisses durch den Prüfungsausschuss. Ab diesem Tag bist du kein Azubi mehr — was auch bedeutet, dass die Ausbildungsvergütung endet." },
+            { "text": "Mit dem Tag der schriftlichen Prüfung", "richtig": false, "echo": "Zu früh. Solange das Ergebnis nicht feststeht und bekannt gegeben ist, läuft die Ausbildung weiter — schließlich könnte die Prüfung auch nicht bestanden sein." }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Nach bestandener Prüfung endet auch dein Anspruch auf Ausbildungsvergütung. Wenn du übernommen wirst, sollte der Arbeitsvertrag also nahtlos anschließen — sprich das rechtzeitig an, nicht erst am Tag der Bekanntgabe."
+        }
+      ]
+    }
+  ],
+
+  "zusammenfassung": [
+    "Duale Ausbildung = Betrieb (Praxis) plus Berufsschule (Theorie), überwacht von der zuständigen Stelle.",
+    "Ausbildender = Vertragspartner. Ausbilder = die ausbildende Person.",
+    "Ausbildungsordnung und Ausbildungsrahmenplan kommen vom Bund, der Rahmenlehrplan von der KMK.",
+    "Der betriebliche Ausbildungsplan überträgt den Rahmenplan auf deinen Betrieb.",
+    "{{par:bbig-20|§ 20 BBiG}} — Probezeit von einem bis vier Monaten.",
+    "Gestreckte Abschlussprüfung: Teil 1 Mitte des 2. Jahres, Teil 2 am Ende. Teil 1 zählt und wird nicht wiederholt.",
+    "{{par:bbig-21|§ 21 BBiG}} — die Ausbildung endet mit Bekanntgabe des Prüfungsergebnisses, wenn das früher liegt."
+  ],
+
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Was ist der Unterschied zwischen dem Ausbildenden und dem Ausbilder?",
+      "loesung": "Der Ausbildende ist der Vertragspartner des Auszubildenden, also in der Regel der Betrieb oder das Unternehmen selbst. Der Ausbilder ist die konkrete Person, die die Ausbildung im Betrieb durchführt und dafür persönlich und fachlich geeignet sein muss. Ein Betrieb kann Ausbildender sein, ohne selbst auszubilden — dann beauftragt er einen Ausbilder."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die vier Pläne, die die Inhalte deiner Ausbildung festlegen, und wer sie jeweils erlässt.",
+      "loesung": "Die Ausbildungsordnung und der als Anlage dazugehörige Ausbildungsrahmenplan werden vom Bund als Rechtsverordnung erlassen und gelten für den Betrieb. Der Rahmenlehrplan wird von der Kultusministerkonferenz beschlossen und gilt für die Berufsschule. Der betriebliche Ausbildungsplan wird vom einzelnen Betrieb erstellt und überträgt den Ausbildungsrahmenplan auf die eigenen Abteilungen."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Azubi im dritten Monat bekommt vom Betrieb eine fristlose Kündigung ohne Begründung. Ist das zulässig?",
+      "loesung": "Ja, sofern die Probezeit noch läuft. Nach § 20 BBiG dauert sie mindestens einen und höchstens vier Monate; im dritten Monat ist sie also regelmäßig noch nicht beendet. Während der Probezeit kann nach § 22 BBiG jede Seite jederzeit ohne Einhaltung einer Frist und ohne Angabe von Gründen kündigen. Nach der Probezeit wäre eine Kündigung durch den Betrieb nur noch aus wichtigem Grund möglich."
+    }
+  ],
+
+  "pruefungstipp": "Zwei Dauerbrenner: die Abgrenzung Ausbildender gegen Ausbilder, und die Frage, welches Dokument was regelt. Und merke dir die Zahlen zur Probezeit — ein bis vier Monate — sowie dass Teil 1 der Abschlussprüfung nicht wiederholbar ist."
+}

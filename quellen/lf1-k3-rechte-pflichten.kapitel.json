@@ -1,0 +1,358 @@
+{
+  "id": "k3",
+  "lernfeld": "lf1",
+  "nummer": 3,
+  "titel": "Rechte, Pflichten und Jugendarbeitsschutz",
+  "untertitel": "Was du schuldest, was der Betrieb schuldet — und was für dich gilt, solange du unter 18 bist.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Die Pflichten der Auszubildenden und des Betriebs gegenüberstellen",
+      "abschnitt": "c1"
+    },
+    {
+      "id": "lz2",
+      "text": "Die Grenzen des Weisungsrechts erkennen",
+      "abschnitt": "c2"
+    },
+    {
+      "id": "lz3",
+      "text": "Die Schutzvorschriften des Jugendarbeitsschutzgesetzes anwenden",
+      "abschnitt": "c3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "c1",
+      "titel": "Zwei Seiten, zwei Pflichtenkataloge",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein Ausbildungsverhältnis ist ein Austauschverhältnis. {{par:bbig-13|§ 13 BBiG}} listet auf, was du schuldest, {{par:bbig-14|§ 14 BBiG}} was der Betrieb schuldet. ==Beide Kataloge stehen im selben Gesetz und sind gleich verbindlich== — das ist kein Wohlwollen des Betriebs, sondern Recht."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Die Pflichtenkataloge",
+          "titel": "§ 13 gegen § 14 BBiG",
+          "lead": "Jede Zeile anklicken für die Erläuterung.",
+          "seiten": [
+            {
+              "name": "Du als Auszubildender",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Lernpflicht",
+                  "detail": "Du musst dich bemühen, die berufliche Handlungsfähigkeit zu erwerben. Das ist die Oberpflicht, aus der alle anderen folgen."
+                },
+                {
+                  "text": "Sorgfaltspflicht",
+                  "detail": "Aufgetragene Arbeiten sorgfältig ausführen — gemessen an deinem Ausbildungsstand, nicht an dem einer Fachkraft."
+                },
+                {
+                  "text": "Teilnahme an Berufsschule und Prüfungen",
+                  "detail": "Keine Kür, sondern gesetzliche Pflicht. Fehlzeiten in der Schule sind auch gegenüber dem Betrieb ein Problem."
+                },
+                {
+                  "text": "Weisungsgebundenheit",
+                  "detail": "Du folgst Weisungen des Ausbilders oder anderer weisungsbefugter Personen — solange sie dem Ausbildungszweck dienen."
+                },
+                {
+                  "text": "Beachtung der Betriebsordnung",
+                  "detail": "Arbeitszeiten, Kleiderordnung, IT-Regeln, Zutrittsregelungen."
+                },
+                {
+                  "text": "Pfleglicher Umgang mit Werkzeug und Material",
+                  "detail": "Auch mit Laptop, Diensthandy und Zugangsdaten."
+                },
+                {
+                  "text": "Schweigepflicht über Betriebsgeheimnisse",
+                  "detail": "Gilt weiter, auch nach dem Ende der Ausbildung. Praktisch relevant bei Social Media und beim Wechsel zur Konkurrenz."
+                }
+              ]
+            },
+            {
+              "name": "Der Ausbildungsbetrieb",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Ausbildungspflicht",
+                  "detail": "Er muss dafür sorgen, dass die berufliche Handlungsfähigkeit tatsächlich vermittelt wird — nach dem betrieblichen Ausbildungsplan."
+                },
+                {
+                  "text": "Selbst ausbilden oder Ausbilder bestellen",
+                  "detail": "Die ausbildende Person muss persönlich und fachlich geeignet sein."
+                },
+                {
+                  "text": "Ausbildungsmittel kostenlos stellen",
+                  "detail": "Werkzeuge, Materialien, Fachliteratur und alles, was für Prüfungen gebraucht wird — auf Kosten des Betriebs."
+                },
+                {
+                  "text": "Freistellung für Schule und Prüfungen",
+                  "detail": "Nach {{par:bbig-15|§ 15 BBiG}}, und die Zeit wird auf die Ausbildungszeit angerechnet."
+                },
+                {
+                  "text": "Nur ausbildungsdienliche Aufgaben übertragen",
+                  "detail": "Die zentrale Schranke des Weisungsrechts — dazu gleich mehr."
+                },
+                {
+                  "text": "Angemessene Vergütung zahlen",
+                  "detail": "Nach {{par:bbig-17|§ 17 BBiG}}, mindestens in Höhe der gesetzlichen Mindestvergütung und jährlich steigend."
+                },
+                {
+                  "text": "Zeugnis ausstellen",
+                  "detail": "Nach {{par:bbig-16|§ 16 BBiG}} bei Beendigung, auf Verlangen qualifiziert."
+                }
+              ]
+            }
+          ],
+          "regel": "Merkhilfe: § 13 ist dreizehn — dein Katalog. § 14 ist vierzehn — der des Betriebs. Die Reihenfolge im Gesetz ist auch die in der Prüfung."
+        },
+        {
+          "typ": "merke",
+          "text": "Deine Sorgfaltspflicht misst sich an deinem **Ausbildungsstand**. Ein Fehler im dritten Monat ist etwas anderes als derselbe Fehler im dritten Jahr — genau darum ist es eine Ausbildung.",
+          "karteikarte": "Woran bemisst sich die Sorgfaltspflicht eines Auszubildenden?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c2",
+      "titel": "Wo das Weisungsrecht endet",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Das {{begriff:weisungsrecht|Weisungsrecht}} erlaubt dem Betrieb, dir zu sagen, was du wann und wo tust. Es hat aber eine harte Grenze: Aufgaben müssen **dem Ausbildungszweck dienen** und deinen Kräften angemessen sein. Was das praktisch heißt, ist die häufigste Streitfrage im ersten Lehrjahr."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Aufgabe",
+            "Zulässig?",
+            "Warum"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Ablage sortieren",
+                "ja",
+                "Gehört zum Berufsbild, auch wenn es langweilig ist"
+              ]
+            },
+            {
+              "zellen": [
+                "Kaffee für eine Besprechung vorbereiten",
+                "in Maßen ja",
+                "Als Teil der Sitzungsvorbereitung; nicht als Dauerbeschäftigung"
+              ]
+            },
+            {
+              "zellen": [
+                "Täglich zwei Stunden die Küche putzen",
+                "nein",
+                "Kein Bezug zum Ausbildungsberufsbild"
+              ],
+              "detail": "**Die Grenze verläuft nicht bei „unangenehm“, sondern bei „berufsfremd“.** Einmal die Spülmaschine ausräumen ist Betriebsalltag. Eine feste tägliche Reinigungsschicht ist eine andere Tätigkeit — und dafür wärst du nicht eingestellt worden."
+            },
+            {
+              "zellen": [
+                "Private Besorgungen für den Chef",
+                "nein",
+                "Dient nicht dem Ausbildungszweck"
+              ]
+            },
+            {
+              "zellen": [
+                "Schwere Kisten dauerhaft schleppen",
+                "nein",
+                "Nicht den Kräften angemessen, bei Jugendlichen zusätzlich vom JArbSchG erfasst"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Wenn dir Aufgaben dauerhaft berufsfremd vorkommen, ist der erste Schritt nicht die Beschwerde bei der IHK, sondern der betriebliche Ausbildungsplan. Frag nach ihm und vergleiche. Ein sachliches Gespräch mit dem Ausbilder auf Basis des Plans löst die meisten Fälle."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c3",
+      "titel": "Jugendarbeitsschutz",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Solange du noch keine 18 bist, gilt für dich das {{begriff:jarbschg|Jugendarbeitsschutzgesetz}} statt des Arbeitszeitgesetzes. Als {{begriff:jugendlicher|Jugendlicher}} gilt, wer 15, aber noch nicht 18 Jahre alt ist. ==Mit dem 18. Geburtstag fallen die Sonderregeln weg== — das ist einer der beliebtesten Prüfungsstolpersteine."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Bereich",
+            "Regel für Jugendliche",
+            "Grundlage"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Tägliche Arbeitszeit",
+                "höchstens 8 Stunden",
+                "§ 8 JArbSchG"
+              ],
+              "mono": [
+                2
+              ]
+            },
+            {
+              "zellen": [
+                "Wöchentliche Arbeitszeit",
+                "höchstens 40 Stunden",
+                "§ 8 JArbSchG"
+              ],
+              "mono": [
+                2
+              ]
+            },
+            {
+              "zellen": [
+                "Pause bei 4,5 bis 6 Stunden",
+                "mindestens 30 Minuten",
+                "§ 11 JArbSchG"
+              ],
+              "mono": [
+                2
+              ]
+            },
+            {
+              "zellen": [
+                "Pause bei mehr als 6 Stunden",
+                "mindestens 60 Minuten",
+                "§ 11 JArbSchG"
+              ],
+              "mono": [
+                2
+              ],
+              "detail": "**Und sie müssen echte Pausen sein:** in Blöcken von mindestens 15 Minuten, frühestens eine Stunde nach Beginn und spätestens eine Stunde vor Ende der Arbeitszeit."
+            },
+            {
+              "zellen": [
+                "Fünf-Tage-Woche",
+                "Samstag und Sonntag grundsätzlich frei",
+                "§§ 15–17 JArbSchG"
+              ],
+              "mono": [
+                2
+              ]
+            },
+            {
+              "zellen": [
+                "Urlaub",
+                "30 · 27 · 25 Werktage, je nach Alter am 1. Januar",
+                "§ 19 JArbSchG"
+              ],
+              "mono": [
+                2
+              ],
+              "detail": "**Die Staffelung im Wortlaut:** mindestens 30 Werktage, wenn der Jugendliche zu Beginn des Kalenderjahres noch nicht 16 ist; 27 Werktage, wenn noch nicht 17; 25 Werktage, wenn noch nicht 18. Entscheidend ist das Alter am 1. Januar, nicht zum Zeitpunkt des Urlaubs — wer am 2. Januar 18 wird, hat für das ganze Jahr noch den Anspruch eines 17-Jährigen. Volljährige Auszubildende fallen unter das Bundesurlaubsgesetz mit mindestens 24 Werktagen."
+            },
+            {
+              "zellen": [
+                "Berufsschultag",
+                "Anrechnung auf die Arbeitszeit, Freistellung",
+                "§§ 9, 15 JArbSchG"
+              ],
+              "mono": [
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Eine 17-jährige Auszubildende hat an einem Tag 7 Stunden Arbeitszeit. Wie lange muss ihre Pause mindestens sein?",
+          "optionen": [
+            {
+              "text": "30 Minuten",
+              "richtig": false,
+              "echo": "30 Minuten genügen nur bei einer Arbeitszeit von mehr als viereinhalb bis sechs Stunden. Bei sieben Stunden ist die Schwelle überschritten."
+            },
+            {
+              "text": "60 Minuten",
+              "richtig": true,
+              "echo": "Richtig. § 11 JArbSchG verlangt bei mehr als sechs Stunden Arbeitszeit mindestens 60 Minuten Ruhepause. Diese darf in Blöcke aufgeteilt werden, aber jeder Block muss mindestens 15 Minuten dauern."
+            },
+            {
+              "text": "45 Minuten",
+              "richtig": false,
+              "echo": "Diese Zwischenstufe gibt es im Jugendarbeitsschutzgesetz nicht. Es kennt nur zwei Schwellen: 30 Minuten und 60 Minuten."
+            }
+          ]
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Und wenn ich volljährig bin?",
+          "absaetze": [
+            "Dann gilt das Arbeitszeitgesetz. Die werktägliche Arbeitszeit darf acht Stunden betragen und auf bis zu zehn Stunden verlängert werden, wenn im Durchschnitt von sechs Monaten acht Stunden nicht überschritten werden.",
+            "Auch die Pausen ändern sich: mindestens 30 Minuten bei mehr als sechs Stunden und 45 Minuten bei mehr als neun Stunden. Der Urlaub richtet sich dann nach dem Bundesurlaubsgesetz oder — meistens günstiger — nach deinem Tarifvertrag."
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welches Gesetz regelt den Sachverhalt?",
+          "kategorien": [
+            "BBiG",
+            "JArbSchG",
+            "Vertrag"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Betrieb muss die Ausbildungsmittel kostenlos stellen.",
+              "loesung": "BBiG"
+            },
+            {
+              "text": "Eine 16-Jährige darf höchstens 40 Stunden pro Woche arbeiten.",
+              "loesung": "JArbSchG"
+            },
+            {
+              "text": "Die Probezeit dauert genau drei Monate.",
+              "loesung": "Vertrag"
+            },
+            {
+              "text": "Nach mehr als sechs Stunden Arbeit stehen 60 Minuten Pause zu.",
+              "loesung": "JArbSchG"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "{{par:bbig-13|§ 13 BBiG}} — Pflichten der Auszubildenden: Lernen, Sorgfalt, Berufsschule, Weisungen, Betriebsordnung, Pfleglichkeit, Schweigen.",
+    "{{par:bbig-14|§ 14 BBiG}} — Pflichten des Betriebs: ausbilden, Ausbilder stellen, Mittel kostenlos, freistellen, nur ausbildungsdienliche Aufgaben, vergüten, Zeugnis.",
+    "Die Sorgfaltspflicht bemisst sich am Ausbildungsstand, nicht am Maßstab einer Fachkraft.",
+    "Das Weisungsrecht endet bei berufsfremden Aufgaben und bei Überforderung.",
+    "{{par:jarbschg-8|§ 8 JArbSchG}} — höchstens 8 Stunden täglich und 40 Stunden wöchentlich.",
+    "{{par:jarbschg-11|§ 11 JArbSchG}} — 30 Minuten Pause ab 4,5 Stunden, 60 Minuten ab mehr als 6 Stunden.",
+    "{{par:jarbschg-19|§ 19 JArbSchG}} — Urlaub 30, 27 oder 25 Werktage, je nach Alter am 1. Januar."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne je drei Pflichten aus § 13 und § 14 BBiG.",
+      "loesung": "Aus § 13 BBiG etwa: sich um den Erwerb der beruflichen Handlungsfähigkeit bemühen, aufgetragene Aufgaben sorgfältig ausführen, am Berufsschulunterricht teilnehmen, Weisungen befolgen, die Betriebsordnung beachten, Werkzeuge pfleglich behandeln, über Betriebsgeheimnisse schweigen. Aus § 14 BBiG etwa: die berufliche Handlungsfähigkeit vermitteln, selbst ausbilden oder eine geeignete Person beauftragen, Ausbildungsmittel kostenlos stellen, für Berufsschule und Prüfungen freistellen, nur ausbildungsdienliche Aufgaben übertragen."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Azubi soll jeden Morgen eine Stunde lang die Firmenwagen waschen. Er ist im Büromanagement ausgebildet. Muss er das tun?",
+      "loesung": "Nein. Nach § 14 BBiG dürfen nur Aufgaben übertragen werden, die dem Ausbildungszweck dienen. Autowaschen gehört nicht zum Berufsbild der Kaufleute für Büromanagement, und eine tägliche einstündige Tätigkeit ist auch keine gelegentliche Nebenaufgabe. Der Azubi sollte das Gespräch anhand des betrieblichen Ausbildungsplans suchen; hilft das nicht, sind Ausbildungsberater der IHK oder die JAV die nächsten Ansprechpartner."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Eine 17-jährige Auszubildende arbeitet montags bis donnerstags je 8 Stunden. Wie viele Stunden darf sie freitags noch arbeiten?",
+      "loesung": "Höchstens 8 Stunden — allerdings begrenzt § 8 JArbSchG die Woche zusätzlich auf 40 Stunden. Nach vier Tagen à 8 Stunden sind bereits 32 Stunden erreicht, es bleiben also 8 Stunden. Sie darf freitags folglich die vollen 8 Stunden arbeiten, aber keine Minute mehr."
+    }
+  ],
+  "pruefungstipp": "Die Pflichtenkataloge werden fast immer als Gegenüberstellung abgefragt — lerne sie paarweise, nicht als eine lange Liste. Beim Jugendarbeitsschutz sind vier Zahlen prüfungsrelevant: 8 Stunden täglich, 40 Stunden wöchentlich, 30 und 60 Minuten Pause. Und prüfe bei jeder Aufgabe zuerst das Alter."
+}

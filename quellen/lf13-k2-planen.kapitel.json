@@ -1,0 +1,318 @@
+{
+  "id": "k2",
+  "lernfeld": "lf13",
+  "nummer": 2,
+  "titel": "Struktur und Termine planen",
+  "untertitel": "Erst zerlegen, dann schätzen, dann terminieren. Nie andersherum.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Einen Projektstrukturplan aufbauen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Aufwand schätzen und Arbeitspakete beschreiben",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Einen Balkenplan lesen und den kritischen Pfad erkennen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Das Projekt zerlegen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:projektstrukturplan|Projektstrukturplan}} beantwortet genau eine Frage: **Was ist alles zu tun?** ==Noch ohne Termine, noch ohne Reihenfolge== — wer beides vermischt, vergisst zuverlässig Aufgaben."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Ebene",
+            "Inhalt",
+            "Beispiel Messeauftritt"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Projekt",
+                "das Ganze",
+                "Messeauftritt Frühjahr"
+              ]
+            },
+            {
+              "zellen": [
+                "Teilaufgaben",
+                "große Blöcke",
+                "Standbau, Personal, Werbung, Logistik"
+              ],
+              "detail": "**Drei bis sieben Blöcke reichen.** Mehr wird unübersichtlich, weniger versteckt zu viel in einem Block."
+            },
+            {
+              "zellen": [
+                "{{begriff:arbeitspaket|Arbeitspakete}}",
+                "kleinste Einheit",
+                "Standdesign beauftragen, Standpersonal einteilen"
+              ],
+              "detail": "**Jedes Arbeitspaket hat einen Verantwortlichen, einen geschätzten Aufwand und ein überprüfbares Ergebnis.** Fehlt eines davon, ist es kein Arbeitspaket, sondern eine Absichtserklärung."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Gegliedert wird entweder nach **Aufgaben** — was ist zu tun —, nach **Objekten** — welche Teile entstehen — oder nach **Phasen** — was passiert nacheinander. Für Büroprojekte ist die Gliederung nach Aufgaben meist die brauchbarste."
+        },
+        {
+          "typ": "merke",
+          "text": "Der Strukturplan sagt **was**, nicht **wann**. Ein {{begriff:arbeitspaket|Arbeitspaket}} braucht drei Dinge: Verantwortlicher, geschätzter Aufwand, überprüfbares Ergebnis.",
+          "karteikarte": "Welche Frage beantwortet der Projektstrukturplan, und was gehört zu einem vollständigen Arbeitspaket?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Prüf jedes Arbeitspaket mit der Frage: **Woran erkenne ich, dass es fertig ist?** Lässt sich das nicht in einem Satz sagen, ist das Paket zu unscharf — und wird später zum Streitpunkt."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Aufwand schätzen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Schätzungen sind systematisch zu optimistisch. ==Das ist keine Charakterschwäche, sondern ein bekanntes Muster== — geschätzt wird der störungsfreie Idealfall, gearbeitet wird im Alltag mit Rückfragen und Unterbrechungen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Vorgehen",
+            "Wie es geht",
+            "Wann sinnvoll"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Erfahrungswerte",
+                "Vergleich mit früheren Projekten",
+                "wenn Ähnliches schon lief"
+              ],
+              "detail": "**Die zuverlässigste Grundlage** — vorausgesetzt, jemand hat die tatsächlichen Zeiten damals festgehalten. Genau daran scheitert es meistens."
+            },
+            {
+              "zellen": [
+                "Befragung der Ausführenden",
+                "die schätzen, die es machen",
+                "fast immer"
+              ],
+              "detail": "**Wer die Arbeit macht, schätzt sie besser als die Projektleitung** — und trägt die Schätzung anschließend mit, weil sie seine eigene ist."
+            },
+            {
+              "zellen": [
+                "Drei-Werte-Schätzung",
+                "optimistisch, wahrscheinlich, pessimistisch",
+                "bei unsicheren Paketen"
+              ],
+              "detail": "**Der gewichtete Mittelwert ist realistischer als eine Einzelschätzung**, weil er das Risiko sichtbar macht statt es zu verstecken."
+            },
+            {
+              "zellen": [
+                "Puffer einplanen",
+                "am Projektende, nicht je Paket",
+                "immer"
+              ],
+              "detail": "**Puffer je Paket wird aufgebraucht**, weil die Arbeit sich nach der verfügbaren Zeit ausdehnt. Ein gemeinsamer Puffer am Ende bleibt dagegen verfügbar für das, was ihn wirklich braucht."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Verwechsle **Aufwand** und **Dauer** nicht. Ein Arbeitspaket mit 16 Stunden Aufwand dauert bei halber Verfügbarkeit vier Arbeitstage. Der Balkenplan braucht die **Dauer**, die Kostenrechnung den **Aufwand**."
+        },
+        {
+          "typ": "merke",
+          "text": "**Aufwand ist Arbeitszeit, Dauer ist Kalenderzeit.** Geschätzt wird von denen, die es machen. Puffer gehört ans Projektende, nicht in jedes Paket.",
+          "karteikarte": "Worin unterscheiden sich Aufwand und Dauer, und warum gehört der Puffer ans Projektende?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Der Balkenplan",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:balkenplan|Balkenplan}} setzt die Arbeitspakete auf eine Zeitachse. ==Sein eigentlicher Wert liegt in den Abhängigkeiten:== Manche Vorgänge können erst beginnen, wenn andere fertig sind — und genau daraus entsteht der {{begriff:kritischer-pfad|kritische Pfad}}."
+        },
+        {
+          "typ": "grafik",
+          "variante": "balkenplan",
+          "kopf": "Der Terminplan",
+          "titel": "Wo verschiebt eine Verzögerung das Ende?",
+          "lead": "Vorgang anklicken und verzögern. Manche wirken sofort, andere gar nicht.",
+          "einheit": "Tage",
+          "einheit_eins": "Tag",
+          "plan": 34,
+          "vorgaenge": [
+            {
+              "id": "konzept",
+              "name": "Konzept und Ziele",
+              "dauer": 5,
+              "nach": []
+            },
+            {
+              "id": "budget",
+              "name": "Budget freigeben lassen",
+              "dauer": 4,
+              "nach": [
+                "konzept"
+              ]
+            },
+            {
+              "id": "stand",
+              "name": "Standbau beauftragen",
+              "dauer": 18,
+              "nach": [
+                "budget"
+              ]
+            },
+            {
+              "id": "werbung",
+              "name": "Werbemittel gestalten",
+              "dauer": 9,
+              "nach": [
+                "budget"
+              ]
+            },
+            {
+              "id": "personal",
+              "name": "Standpersonal einteilen",
+              "dauer": 3,
+              "nach": [
+                "budget"
+              ]
+            },
+            {
+              "id": "schulung",
+              "name": "Personal schulen",
+              "dauer": 2,
+              "nach": [
+                "personal",
+                "werbung"
+              ]
+            },
+            {
+              "id": "aufbau",
+              "name": "Aufbau vor Ort",
+              "dauer": 3,
+              "nach": [
+                "stand",
+                "schulung"
+              ]
+            },
+            {
+              "id": "generalprobe",
+              "name": "Generalprobe",
+              "dauer": 1,
+              "nach": [
+                "aufbau"
+              ]
+            }
+          ],
+          "regel": "Der Standbau dauert 18 Tage und hängt am Budget — er liegt auf dem kritischen Pfad. Die Personaleinteilung mit 3 Tagen hat dagegen Puffer: Sie kann sich um mehrere Tage verspäten, ohne dass das Projektende wandert."
+        },
+        {
+          "typ": "absatz",
+          "text": "Ein **{{begriff:meilenstein|Meilenstein}}** ist ein Zeitpunkt ohne Dauer, an dem ein überprüfbares Zwischenergebnis vorliegt. ==Seine Aufgabe ist nicht das Feiern, sondern das ehrliche Messen:== Ist das Ergebnis da oder nicht — dazwischen gibt es nichts."
+        },
+        {
+          "typ": "merke",
+          "text": "Der {{begriff:kritischer-pfad|kritische Pfad}} ist die Kette ohne Puffer. **Verzögert sich dort etwas, verschiebt sich das Projektende sofort** — außerhalb davon nicht.",
+          "karteikarte": "Was ist der kritische Pfad, und wie unterscheidet er sich von Vorgängen mit Puffer?"
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Vorgang mit fünf Tagen Puffer verspätet sich um zwei Tage. Was passiert mit dem Projektende?",
+          "optionen": [
+            {
+              "text": "Es verschiebt sich um zwei Tage",
+              "richtig": false,
+              "echo": "Das gilt nur für Vorgänge auf dem kritischen Pfad. Hier ist Puffer vorhanden, der die Verzögerung auffängt."
+            },
+            {
+              "text": "Es bleibt gleich, der Puffer schrumpft auf drei Tage",
+              "richtig": true,
+              "echo": "Richtig. Puffer ist genau die Zeit, um die sich ein Vorgang verspäten darf, ohne dass sich das Projektende verschiebt. Von fünf Tagen Puffer werden zwei verbraucht, drei bleiben. Wichtig ist aber, das im Blick zu behalten: Verspätet sich derselbe Vorgang noch einmal um vier Tage, ist der Puffer aufgebraucht und der Vorgang wird selbst kritisch."
+            },
+            {
+              "text": "Das Projekt wird zwei Tage früher fertig",
+              "richtig": false,
+              "echo": "Eine Verzögerung macht ein Projekt nie schneller. Puffer bedeutet nur, dass sie sich nicht auf das Ende auswirkt."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Strukturplan oder Terminplan?",
+          "kategorien": [
+            "Strukturplan",
+            "Terminplan"
+          ],
+          "aufgaben": [
+            {
+              "text": "Das Projekt wird in Teilaufgaben und Arbeitspakete zerlegt.",
+              "loesung": "Strukturplan"
+            },
+            {
+              "text": "Es wird festgelegt, welcher Vorgang wann beginnt.",
+              "loesung": "Terminplan"
+            },
+            {
+              "text": "Der kritische Pfad wird bestimmt.",
+              "loesung": "Terminplan"
+            },
+            {
+              "text": "Für jedes Paket wird ein Verantwortlicher benannt.",
+              "loesung": "Strukturplan"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Der {{begriff:projektstrukturplan|Projektstrukturplan}} beantwortet, was zu tun ist — noch ohne Termine.",
+    "Gegliedert wird nach Aufgaben, Objekten oder Phasen.",
+    "Ein {{begriff:arbeitspaket|Arbeitspaket}} hat Verantwortlichen, geschätzten Aufwand und überprüfbares Ergebnis.",
+    "Schätzungen sind systematisch zu optimistisch — schätzen sollen die Ausführenden.",
+    "Aufwand ist Arbeitszeit, Dauer ist Kalenderzeit.",
+    "Puffer gehört ans Projektende, nicht in jedes einzelne Paket.",
+    "Der {{begriff:kritischer-pfad|kritische Pfad}} ist die Kette ohne Puffer.",
+    "Ein {{begriff:meilenstein|Meilenstein}} hat keine Dauer und misst ein überprüfbares Zwischenergebnis."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre Aufbau und Zweck des Projektstrukturplans und nenne die Bestandteile eines Arbeitspakets.",
+      "loesung": "Der Projektstrukturplan zerlegt das Projekt von oben nach unten in Teilaufgaben und schließlich in Arbeitspakete. Er beantwortet ausschließlich die Frage, was alles zu tun ist, und enthält bewusst noch keine Termine und keine Reihenfolge; beides wird erst im Terminplan festgelegt. Werden beide Fragen vermischt, gehen erfahrungsgemäß Aufgaben verloren. Gegliedert werden kann nach Aufgaben, nach Objekten oder nach Phasen, wobei sich für Büroprojekte die Gliederung nach Aufgaben meist am besten eignet. Ein vollständiges Arbeitspaket enthält drei Angaben: einen namentlich benannten Verantwortlichen, einen geschätzten Aufwand und ein überprüfbares Ergebnis. Der Prüfstein für die Formulierung lautet, ob sich in einem Satz sagen lässt, woran man erkennt, dass das Paket fertig ist. Ist das nicht möglich, ist es zu unscharf beschrieben."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Was ist der kritische Pfad, und welche Bedeutung hat er für die Projektsteuerung?",
+      "loesung": "Der kritische Pfad ist die Kette von Vorgängen, die keinen Puffer besitzt und deren Gesamtdauer damit die Projektdauer bestimmt. Verzögert sich ein Vorgang auf diesem Pfad, verschiebt sich das Projektende unmittelbar um denselben Zeitraum. Vorgänge außerhalb des kritischen Pfads besitzen dagegen Puffer und können sich in dessen Umfang verspäten, ohne dass sich am Endtermin etwas ändert. Für die Steuerung bedeutet das dreierlei. Erstens ist die Aufmerksamkeit auf die kritischen Vorgänge zu richten, weil dort jede Verzögerung sofort durchschlägt. Zweitens lohnt es sich, zusätzliche Mittel dorthin zu lenken statt auf Vorgänge mit Puffer. Drittens ist der kritische Pfad nicht dauerhaft festgelegt: Wird ein kritischer Vorgang verkürzt oder ein Vorgang mit Puffer stark verzögert, kann eine andere Kette kritisch werden. Der Plan muss deshalb fortgeschrieben werden."
+    },
+    {
+      "typ": "Fall",
+      "frage": "In deinem Messeprojekt teilt der Standbauer mit, dass er statt 18 nun 24 Tage braucht. Die Personaleinteilung verzögert sich gleichzeitig um drei Tage. Wie reagierst du?",
+      "loesung": "Zunächst ist zu unterscheiden, welcher der beiden Vorgänge auf dem kritischen Pfad liegt. Der Standbau mit ursprünglich 18 Tagen ist der längste Vorgang nach der Budgetfreigabe und damit kritisch; seine Verlängerung um sechs Tage verschiebt das Projektende unmittelbar um sechs Tage. Die Personaleinteilung mit drei Tagen Dauer hat dagegen erheblichen Puffer, weil sie parallel zum viel längeren Standbau läuft; ihre Verzögerung um drei Tage wirkt sich auf das Projektende nicht aus, solange der Puffer reicht. Die Aufmerksamkeit gehört deshalb ausschließlich dem Standbau. Mögliche Maßnahmen sind, mit dem Standbauer über eine Verkürzung zu verhandeln, gegebenenfalls gegen Mehrkosten, nachfolgende Vorgänge wie Aufbau und Generalprobe zu straffen oder Vorgänge zu überlappen, soweit fachlich vertretbar. Reicht das nicht, ist der Endtermin gefährdet, und der Auftraggeber muss unverzüglich informiert werden; das ist keine Formalie, sondern Voraussetzung dafür, dass er selbst entscheiden kann. Anschließend ist der Terminplan fortzuschreiben und zu prüfen, ob durch die Verschiebung eine andere Kette kritisch geworden ist."
+    }
+  ],
+  "pruefungstipp": "Der kritische Pfad ist die sichere Frage dieses Kapitels und wird meist an einem kleinen Netz- oder Balkenplan abgefragt. Suche die längste Kette vom Anfang bis zum Ende — ihre Dauer ist die Projektdauer. Merk dir außerdem die Unterscheidung von Aufwand und Dauer; sie wird gern in Rechenaufgaben eingebaut, in denen jemand nur zur Hälfte für das Projekt verfügbar ist."
+}

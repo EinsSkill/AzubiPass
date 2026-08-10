@@ -1,0 +1,289 @@
+{
+  "id": "k1",
+  "lernfeld": "lf2",
+  "nummer": 1,
+  "titel": "Der Arbeitsplatz",
+  "untertitel": "Acht Stunden am Tag. Da lohnt es sich, ihn richtig einzustellen.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Anforderungen an einen Büroarbeitsplatz benennen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Einen Bildschirmarbeitsplatz ergonomisch einrichten",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Pflichten des Arbeitgebers im Arbeitsschutz erklären",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Was ein Arbeitsplatz braucht",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein Büroarbeitsplatz ist mehr als Tisch und Stuhl. ==Die Umgebung entscheidet mit darüber, wie schnell jemand ermüdet und wie viele Fehler passieren.== {{begriff:ergonomie|Ergonomie}} bedeutet dabei immer: Die Arbeit wird an den Menschen angepasst, nicht umgekehrt."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Faktor",
+            "Worauf es ankommt",
+            "Wenn es fehlt"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Licht",
+                "genug Helligkeit, blendfrei, Tageslicht",
+                "Augen ermüden, Kopfschmerzen"
+              ],
+              "detail": "**Der Bildschirm steht seitlich zum Fenster** — nicht davor, sonst blendet es, und nicht mit dem Rücken dazu, sonst spiegelt es. Diese eine Regel löst die meisten Beschwerden."
+            },
+            {
+              "zellen": [
+                "Lärm",
+                "möglichst wenig störende Geräusche",
+                "Konzentration bricht ein"
+              ],
+              "detail": "**Für Bürotätigkeit gelten deutlich strengere Werte als in der Produktion**, weil geistige Arbeit empfindlicher auf Geräusche reagiert als körperliche."
+            },
+            {
+              "zellen": [
+                "Klima",
+                "angenehme Temperatur, keine Zugluft",
+                "Erkältungen, Unwohlsein"
+              ]
+            },
+            {
+              "zellen": [
+                "Platz",
+                "Bewegungsfläche, freie Verkehrswege",
+                "Unfallgefahr, Enge"
+              ],
+              "detail": "**Verkehrswege müssen frei bleiben** — der Karton neben dem Schreibtisch ist im Alltag harmlos und im Brandfall ein Problem."
+            },
+            {
+              "zellen": [
+                "Farbe und Gestaltung",
+                "ruhige Farben, Pflanzen",
+                "Reizarmut, geringes Wohlbefinden"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Ergonomie heißt: Die Arbeit passt sich dem Menschen an.** Licht, Lärm, Klima, Platz und Gestaltung sind die fünf Stellschrauben eines Büroarbeitsplatzes.",
+          "karteikarte": "Was bedeutet Ergonomie, und welche fünf Umgebungsfaktoren bestimmen einen Büroarbeitsplatz?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Den Bildschirmarbeitsplatz einstellen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Für den {{begriff:bildschirmarbeitsplatz|Bildschirmarbeitsplatz}} gibt es klare Vorgaben. Die wichtigste Faustregel lautet: **Ober-, Unter- und Beinbereich bilden jeweils einen rechten Winkel** — Ellenbogen, Hüfte und Knie liegen bei etwa 90 Grad."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Von unten nach oben",
+          "titel": "In dieser Reihenfolge einstellen",
+          "lead": "Wer oben anfängt, stellt dreimal nach. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Stuhlhöhe",
+              "satz": "Füße flach am Boden",
+              "text": "Ober- und Unterschenkel bilden etwa einen rechten Winkel, die Füße stehen vollständig auf dem Boden. Reicht der Stuhl nicht tief genug oder der Tisch nicht hoch genug, hilft eine Fußstütze."
+            },
+            {
+              "nr": 2,
+              "titel": "Tischhöhe",
+              "satz": "Unterarme waagerecht",
+              "text": "Die Unterarme liegen locker auf, die Schultern bleiben unten. Ein höhenverstellbarer Tisch erlaubt zusätzlich den Wechsel zwischen Sitzen und Stehen — genau der Wechsel ist das Ziel, nicht die eine perfekte Haltung."
+            },
+            {
+              "nr": 3,
+              "titel": "Bildschirm",
+              "satz": "oberste Zeile auf oder unter Augenhöhe",
+              "text": "Der Blick geht leicht nach unten, der Nacken bleibt entspannt. Der Sehabstand liegt bei üblichen Bildschirmgrößen etwa bei einer Armlänge, größere Bildschirme brauchen mehr."
+            },
+            {
+              "nr": 4,
+              "titel": "Tastatur und Maus",
+              "satz": "nah am Körper",
+              "text": "Vor der Tastatur bleibt eine Handballenauflage von rund zehn bis fünfzehn Zentimetern frei. Die Maus liegt direkt daneben, damit der Arm nicht dauerhaft ausgestreckt wird."
+            }
+          ],
+          "regel": "Die beste Haltung ist die nächste: Kein Sitzen ist so gut, dass es acht Stunden am Stück trägt. Regelmäßiger Wechsel schlägt jede Einstellung."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Merk dir für die Prüfung die **Reihenfolge von unten nach oben**: Stuhl, Tisch, Bildschirm, Eingabegeräte. Wer den Bildschirm zuerst einstellt und danach den Stuhl höher dreht, fängt wieder von vorn an."
+        },
+        {
+          "typ": "check",
+          "frage": "Der Bildschirm steht direkt vor dem Fenster, weil dort das meiste Licht ist. Was sagst du?",
+          "optionen": [
+            {
+              "text": "Gut so — viel Tageslicht ist ergonomisch erwünscht",
+              "richtig": false,
+              "echo": "Tageslicht ist erwünscht, diese Anordnung aber nicht. Das helle Fenster hinter dem Bildschirm zwingt die Augen zu ständigem Anpassen zwischen hell und dunkel."
+            },
+            {
+              "text": "Ungünstig — der Bildschirm sollte seitlich zum Fenster stehen",
+              "richtig": true,
+              "echo": "Richtig. Steht der Bildschirm vor dem Fenster, blendet der helle Hintergrund. Steht er mit dem Rücken zum Fenster, spiegelt sich das Licht auf der Oberfläche. Beides ermüdet die Augen. Die Lösung ist die seitliche Anordnung, ergänzt um eine Blendschutzvorrichtung wie Jalousien."
+            },
+            {
+              "text": "Egal — moderne Bildschirme sind entspiegelt",
+              "richtig": false,
+              "echo": "Entspiegelung hilft gegen Reflexionen, nicht gegen den Helligkeitsunterschied. Gegen ein sonnenbeschienenes Fenster im Rücken des Bildschirms kommt keine Beschichtung an."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Wer wofür verantwortlich ist",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Arbeitsschutz ist keine Freundlichkeit des Arbeitgebers, sondern Pflicht. Kern ist die {{begriff:gefaehrdungsbeurteilung|Gefährdungsbeurteilung}} nach {{par:arbschg-5|§ 5 ArbSchG}}: Der Arbeitgeber muss ermitteln, welche Gefährdungen bestehen und welche Maßnahmen nötig sind — **und das schriftlich festhalten**."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Seiten",
+          "titel": "Pflichten im Arbeitsschutz",
+          "lead": "Schutz funktioniert nur, wenn beide mitmachen. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Arbeitgeber",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Gefährdungen beurteilen und dokumentieren",
+                  "detail": "Für jeden Arbeitsplatz, bei Änderungen erneut. Bei Bildschirmarbeit gehören ausdrücklich auch Augenbelastung und psychische Belastung dazu."
+                },
+                {
+                  "text": "Arbeitsplatz einrichten und ausstatten",
+                  "detail": "Geeignete Möbel, Beleuchtung, Bildschirme. Die Kosten trägt der Betrieb — Arbeitsschutz darf nicht auf Beschäftigte abgewälzt werden."
+                },
+                {
+                  "text": "Unterweisen",
+                  "detail": "Vor Aufnahme der Tätigkeit und danach regelmäßig, mindestens jährlich. Bei Jugendlichen gelten zusätzliche Vorschriften."
+                },
+                {
+                  "text": "Augenuntersuchung anbieten",
+                  "detail": "Bei Bildschirmarbeit ist eine angemessene Untersuchung der Augen anzubieten. Ist eine spezielle Sehhilfe für die Arbeit nötig, trägt sie der Arbeitgeber."
+                }
+              ]
+            },
+            {
+              "name": "Beschäftigte",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Weisungen befolgen",
+                  "detail": "Schutzmaßnahmen sind keine Empfehlung. Wer sie ignoriert, verletzt seine arbeitsvertraglichen Pflichten."
+                },
+                {
+                  "text": "Gefahren melden",
+                  "detail": "Der defekte Stuhl, das lose Kabel, die abgelaufene Verlängerung. Wer es sieht, muss es melden — und darf deshalb keine Nachteile haben."
+                },
+                {
+                  "text": "Einrichtungen bestimmungsgemäß nutzen",
+                  "detail": "Der höhenverstellbare Tisch nützt nichts, wenn niemand ihn verstellt. Ausstattung wirkt nur, wenn sie auch genutzt wird."
+                },
+                {
+                  "text": "An Unterweisungen teilnehmen",
+                  "detail": "Sie sind Arbeitszeit und Pflicht, kein freiwilliges Angebot."
+                }
+              ]
+            }
+          ],
+          "regel": "Die Jugend- und Auszubildendenvertretung und der Betriebsrat wachen darüber, dass diese Pflichten eingehalten werden — Arbeitsschutz ist ein Mitbestimmungsthema."
+        },
+        {
+          "typ": "achtung",
+          "text": "Für **Jugendliche unter 18** gelten schärfere Regeln aus dem {{begriff:jarbschg|Jugendarbeitsschutzgesetz}}: kürzere Arbeitszeit, längere Pausen, Beschäftigungsverbote für gefährliche Arbeiten. Wer noch keine 18 ist, darf im Betrieb nicht wie ein Erwachsener eingesetzt werden."
+        },
+        {
+          "typ": "merke",
+          "text": "{{par:arbschg-5|§ 5 ArbSchG}}: Der Arbeitgeber **beurteilt die Gefährdungen und dokumentiert sie**. Beschäftigte müssen die Maßnahmen befolgen und Gefahren melden.",
+          "karteikarte": "Was verlangt die Gefährdungsbeurteilung, und welche Pflichten haben Arbeitgeber und Beschäftigte im Arbeitsschutz?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Wessen Pflicht ist das?",
+          "kategorien": [
+            "Arbeitgeber",
+            "Beschäftigte"
+          ],
+          "aufgaben": [
+            {
+              "text": "Den wackeligen Bürostuhl in der Werkstatt melden.",
+              "loesung": "Beschäftigte"
+            },
+            {
+              "text": "Die Gefährdungsbeurteilung schriftlich festhalten.",
+              "loesung": "Arbeitgeber"
+            },
+            {
+              "text": "Eine Bildschirmbrille bezahlen, die nur für die Arbeit gebraucht wird.",
+              "loesung": "Arbeitgeber"
+            },
+            {
+              "text": "An der jährlichen Sicherheitsunterweisung teilnehmen.",
+              "loesung": "Beschäftigte"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "{{begriff:ergonomie|Ergonomie}} passt die Arbeit an den Menschen an, nicht umgekehrt.",
+    "Die fünf Umgebungsfaktoren sind Licht, Lärm, Klima, Platz und Gestaltung.",
+    "Der Bildschirm steht seitlich zum Fenster — weder davor noch mit dem Rücken dazu.",
+    "Einstellen von unten nach oben: Stuhl, Tisch, Bildschirm, Tastatur und Maus.",
+    "Ellenbogen, Hüfte und Knie bilden jeweils etwa einen rechten Winkel.",
+    "Die oberste Bildschirmzeile liegt auf oder unter Augenhöhe.",
+    "{{par:arbschg-5|§ 5 ArbSchG}}: Der Arbeitgeber beurteilt Gefährdungen und dokumentiert sie.",
+    "Für Jugendliche unter 18 gelten die strengeren Regeln des Jugendarbeitsschutzgesetzes."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Beschreibe, wie ein Bildschirmarbeitsplatz eingerichtet wird, und begründe die Reihenfolge.",
+      "loesung": "Eingestellt wird von unten nach oben. Zuerst die Stuhlhöhe, sodass die Füße vollständig auf dem Boden stehen und Ober- und Unterschenkel etwa einen rechten Winkel bilden. Danach die Tischhöhe, sodass die Unterarme waagerecht aufliegen und die Schultern locker bleiben; reicht die Verstellung nicht, hilft eine Fußstütze. Anschließend der Bildschirm: Die oberste Zeile liegt auf oder unter Augenhöhe, der Blick geht leicht nach unten, der Sehabstand beträgt etwa eine Armlänge. Zuletzt Tastatur und Maus nah am Körper mit einer Handballenauflage von etwa zehn bis fünfzehn Zentimetern. Die Reihenfolge ist wichtig, weil jede Einstellung die folgende beeinflusst: Wer den Bildschirm zuerst ausrichtet und danach den Stuhl verstellt, muss von vorn beginnen. Der Bildschirm steht außerdem seitlich zum Fenster, um Blendung und Spiegelung zu vermeiden."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Was ist eine Gefährdungsbeurteilung, und wer ist dafür verantwortlich?",
+      "loesung": "Die Gefährdungsbeurteilung nach § 5 ArbSchG ist die systematische Ermittlung aller Gefährdungen an einem Arbeitsplatz und der daraus abzuleitenden Schutzmaßnahmen. Verantwortlich ist der Arbeitgeber. Er muss sie vor Aufnahme der Tätigkeit durchführen, bei wesentlichen Änderungen wiederholen und das Ergebnis dokumentieren. Bei Bildschirmarbeitsplätzen sind ausdrücklich auch die Belastung der Augen sowie körperliche und psychische Belastungen einzubeziehen. Die Beschäftigten sind zu unterweisen und müssen die Maßnahmen befolgen sowie erkannte Gefahren melden. Betriebsrat und Jugend- und Auszubildendenvertretung haben Mitbestimmungs- und Überwachungsrechte."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Eine neue Kollegin klagt nach zwei Wochen über Nacken- und Augenschmerzen. Ihr Bildschirm steht auf einem Stapel Ordner, der Stuhl lässt sich nicht verstellen, das Fenster liegt hinter ihr. Was schlägst du vor?",
+      "loesung": "Drei Punkte sind falsch eingestellt. Erstens der Bildschirm: Auf Ordnern gestapelt steht er zu hoch, sodass der Blick nach oben geht und der Nacken überstreckt wird. Die oberste Zeile gehört auf oder unter Augenhöhe. Zweitens der Stuhl: Ohne Verstellmöglichkeit lässt sich die Sitzhöhe nicht an Tisch und Körpergröße anpassen; hier ist ein geeigneter Bürodrehstuhl bereitzustellen, dessen Kosten der Arbeitgeber trägt. Drittens die Fensterlage: Liegt das Fenster hinter der Person, spiegelt sich das Licht im Bildschirm. Der Arbeitsplatz sollte so gedreht werden, dass der Bildschirm seitlich zum Fenster steht, ergänzt um eine Blendschutzvorrichtung. Formal gehört der Fall in die Gefährdungsbeurteilung nach § 5 ArbSchG; die Kollegin sollte die Mängel melden, und der Arbeitgeber muss abhelfen. Zusätzlich ist ihr die angebotene Augenuntersuchung zu ermöglichen."
+    }
+  ],
+  "pruefungstipp": "Die Einstellreihenfolge von unten nach oben ist die sicherste Antwort auf jede Frage zum Bildschirmarbeitsplatz — nenne sie immer vollständig mit Begründung. Bei Fällen mit Beschwerden gehe die Punkte systematisch durch: Sitzhöhe, Tischhöhe, Bildschirmhöhe, Lichteinfall. Und vergiss die Gefährdungsbeurteilung nicht: Sie ist die Rechtsgrundlage, nach der in Prüfungen gern gefragt wird."
+}

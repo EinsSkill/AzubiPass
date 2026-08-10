@@ -1,0 +1,305 @@
+{
+  "id": "k5",
+  "lernfeld": "lf2",
+  "nummer": 5,
+  "titel": "Datenschutz und Datensicherheit",
+  "untertitel": "Zwei verschiedene Dinge — und beide gehen dich an.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Personenbezogene Daten erkennen und die Grundsätze der DSGVO anwenden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Rechte betroffener Personen benennen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Technische und organisatorische Maßnahmen unterscheiden",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Was geschützt wird und warum",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "**Datenschutz** schützt Menschen davor, dass mit ihren Daten etwas geschieht, das sie nicht wollen. **Datensicherheit** schützt die Daten selbst — vor Verlust, Diebstahl und Zerstörung. ==Datenschutz ohne Datensicherheit ist ein Versprechen ohne Deckung.=="
+        },
+        {
+          "typ": "absatz",
+          "text": "Geschützt sind {{begriff:personenbezogene-daten|personenbezogene Daten}}: alle Angaben, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen. Das ist weiter, als die meisten denken — auch eine Kundennummer, eine IP-Adresse oder ein Kfz-Kennzeichen gehört dazu, sobald sich damit eine Person zuordnen lässt."
+        },
+        {
+          "typ": "achtung",
+          "text": "Daten von **Unternehmen** sind keine personenbezogenen Daten. Die Firmenanschrift der Meyer GmbH fällt nicht unter die DSGVO — der Name des dortigen Einkäufers und seine Durchwahl aber schon."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Die Grundsätze",
+          "titel": "Vier Regeln aus Art. 5 DSGVO",
+          "lead": "Sie gelten für jede Verarbeitung, ohne Ausnahme. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Rechtmäßigkeit",
+              "satz": "Art. 6 DSGVO",
+              "text": "Ohne Rechtsgrundlage ist jede Verarbeitung verboten. In Betracht kommen Einwilligung, Vertragserfüllung, rechtliche Verpflichtung oder ein überwiegendes berechtigtes Interesse. Das Verbot ist die Regel, die Erlaubnis die Ausnahme."
+            },
+            {
+              "nr": 2,
+              "titel": "Zweckbindung",
+              "satz": "erhoben wofür?",
+              "text": "Daten dürfen nur für den Zweck genutzt werden, für den sie erhoben wurden. Eine Adresse aus einer Bestellung darf nicht ohne Weiteres für Werbung verwendet werden — das ist ein anderer Zweck."
+            },
+            {
+              "nr": 3,
+              "titel": "Datenminimierung",
+              "satz": "so wenig wie möglich",
+              "text": "Erhoben wird nur, was für den Zweck wirklich nötig ist. Das Geburtsdatum für einen Newsletter ist es nicht, die Telefonnummer bei einer reinen E-Mail-Bestellung auch nicht."
+            },
+            {
+              "nr": 4,
+              "titel": "Speicherbegrenzung",
+              "satz": "so kurz wie möglich",
+              "text": "Daten werden gelöscht, sobald der Zweck erfüllt ist. Gegenläufig wirken die gesetzlichen Aufbewahrungsfristen aus Kapitel 4 — dann wird nicht gelöscht, sondern für die weitere Nutzung gesperrt."
+            }
+          ],
+          "regel": "Dazu kommen Richtigkeit, Integrität und Vertraulichkeit sowie die Rechenschaftspflicht: Der Betrieb muss die Einhaltung nicht nur schaffen, sondern auch nachweisen können."
+        },
+        {
+          "typ": "merke",
+          "text": "**Verbot mit Erlaubnisvorbehalt:** Jede Verarbeitung ist verboten, außer es gibt eine Rechtsgrundlage nach {{par:dsgvo-6|Art. 6 DSGVO}}. Zweckbindung, Datenminimierung und Speicherbegrenzung gelten immer.",
+          "karteikarte": "Was bedeutet „Verbot mit Erlaubnisvorbehalt\", und welche Rechtsgrundlagen nennt Art. 6 DSGVO?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Was Betroffene verlangen können",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Wer von einer Verarbeitung betroffen ist, hat durchsetzbare Rechte. ==Im Büroalltag ist vor allem eines wichtig: Solche Anfragen haben Fristen und dürfen nicht auf dem Stapel liegen bleiben.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Recht",
+            "Was verlangt werden kann",
+            "Grundlage"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Auskunft",
+                "welche Daten, wozu, wie lange, an wen",
+                "{{par:dsgvo-15|Art. 15 DSGVO}}"
+              ],
+              "detail": "**Einschließlich einer Kopie der Daten.** Das ist das am häufigsten geltend gemachte Recht — und das, an dem Betriebe am häufigsten scheitern, weil sie selbst nicht wissen, wo überall Daten liegen."
+            },
+            {
+              "zellen": [
+                "Berichtigung",
+                "falsche Daten korrigieren",
+                "DSGVO"
+              ]
+            },
+            {
+              "zellen": [
+                "Löschung",
+                "Daten entfernen lassen",
+                "{{par:dsgvo-17|Art. 17 DSGVO}}"
+              ],
+              "detail": "**Die Löschung entfällt, soweit Aufbewahrungspflichten entgegenstehen.** Dann werden die Daten für jede weitere Verwendung gesperrt und erst nach Fristablauf gelöscht."
+            },
+            {
+              "zellen": [
+                "Einschränkung",
+                "Verarbeitung vorläufig stoppen",
+                "DSGVO"
+              ]
+            },
+            {
+              "zellen": [
+                "Datenübertragbarkeit",
+                "Daten in gängigem Format erhalten",
+                "DSGVO"
+              ]
+            },
+            {
+              "zellen": [
+                "Widerspruch",
+                "gegen Verarbeitung widersprechen",
+                "DSGVO"
+              ],
+              "detail": "**Bei Direktwerbung gilt der Widerspruch ohne Begründung und ausnahmslos.** Danach darf die Person nicht mehr beworben werden — dafür wird eine Sperrliste geführt."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Eine Auskunftsanfrage ist **kein Kundenanliegen wie jedes andere**. Sie ist fristgebunden und wird in der Regel unverzüglich, spätestens innerhalb eines Monats beantwortet. Wer sie liegen lässt, riskiert eine Beschwerde bei der Aufsichtsbehörde.",
+          "pruefen": "Die genaue Antwortfrist und die Verlängerungsmöglichkeit aus Art. 12 DSGVO vor Veröffentlichung im Verordnungstext gegenprüfen und hier präzise angeben."
+        },
+        {
+          "typ": "check",
+          "frage": "Ein ehemaliger Kunde verlangt, dass ihr alle seine Daten löscht. Es gibt noch Rechnungen aus dem letzten Jahr. Wie reagierst du?",
+          "optionen": [
+            {
+              "text": "Alles sofort löschen — er hat das Recht darauf",
+              "richtig": false,
+              "echo": "Das Löschrecht gilt nicht unbegrenzt. Gegen die Löschung stehen hier die handels- und steuerrechtlichen Aufbewahrungsfristen für die Rechnungen."
+            },
+            {
+              "text": "Werbedaten löschen, Rechnungen sperren und nach Fristablauf löschen",
+              "richtig": true,
+              "echo": "Richtig. Das Löschrecht aus Art. 17 DSGVO tritt zurück, soweit gesetzliche Aufbewahrungspflichten bestehen. Die Rechnungen müssen also bis zum Ablauf der Frist aufbewahrt, dürfen aber für keinen anderen Zweck mehr genutzt werden — sie werden gesperrt. Alles, wofür keine Pflicht besteht, etwa Werbe- und Kontaktdaten, ist zu löschen. Über beides ist der Kunde zu informieren."
+            },
+            {
+              "text": "Ablehnen — wegen der Aufbewahrungsfristen geht gar nichts",
+              "richtig": false,
+              "echo": "Zu pauschal. Die Fristen betreffen nur die aufbewahrungspflichtigen Unterlagen. Werbe- und Kontaktdaten fallen nicht darunter und sind zu löschen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Wie im Alltag geschützt wird",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:tom|Technische und organisatorische Maßnahmen}} sind das, was aus dem Gesetz Praxis macht. **Technisch** ist alles, was Technik erledigt; **organisatorisch** alles, was Menschen und Regeln erledigen. {{par:dsgvo-32|Art. 32 DSGVO}} verlangt beides, angemessen zum Risiko."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Hebel",
+          "titel": "Technik und Organisation",
+          "lead": "Beides zusammen wirkt, einzeln kaum. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Technisch",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Zugriffsrechte nach Bedarf",
+                  "detail": "Jeder sieht nur, was er für seine Aufgabe braucht. Der Praktikant im Einkauf braucht keinen Zugriff auf Personalakten."
+                },
+                {
+                  "text": "Verschlüsselung",
+                  "detail": "Auf Datenträgern und beim Versand. Ein verschlüsselter verlorener Laptop ist ein Sachschaden, ein unverschlüsselter ist eine Datenpanne."
+                },
+                {
+                  "text": "Datensicherung",
+                  "detail": "Regelmäßig, automatisch und getrennt vom Original. Eine Sicherung, die noch nie zurückgespielt wurde, ist keine Sicherung, sondern eine Hoffnung."
+                },
+                {
+                  "text": "Automatische Bildschirmsperre",
+                  "detail": "Greift auch dann, wenn jemand den Arbeitsplatz vergisst zu sperren. Technik fängt menschliche Nachlässigkeit ab."
+                }
+              ]
+            },
+            {
+              "name": "Organisatorisch",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Verpflichtung der Beschäftigten",
+                  "detail": "Schriftlich auf Vertraulichkeit verpflichtet, bevor der Zugriff eingerichtet wird. Gilt auch für Auszubildende und Aushilfen."
+                },
+                {
+                  "text": "Clean Desk und verschlossene Schränke",
+                  "detail": "Personalunterlagen liegen nicht offen auf dem Schreibtisch, wenn der Raum verlassen wird. Der einfachste und meistvergessene Schutz."
+                },
+                {
+                  "text": "Besucherregelung",
+                  "detail": "Fremde bewegen sich nicht unbegleitet durch Büros. Der freundliche Handwerker im Serverraum ist ein Sicherheitsproblem."
+                },
+                {
+                  "text": "Sichere Vernichtung",
+                  "detail": "Aktenvernichter mit passender Sicherheitsstufe statt Papierkorb. Bei Personaldaten reicht der einfache Streifenschnitt nicht."
+                }
+              ]
+            }
+          ],
+          "regel": "Der Betrieb führt zusätzlich ein {{begriff:verarbeitungsverzeichnis|Verzeichnis von Verarbeitungstätigkeiten}} — es ist der erste Nachweis, den eine Aufsichtsbehörde anfordert."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Die drei häufigsten Datenpannen im Büro sind unspektakulär: **offener E-Mail-Verteiler statt Blindkopie**, Unterlagen im Drucker liegen gelassen, und die Mail an den falschen Empfänger mit ähnlichem Namen. Alle drei kosten keine Technik, nur Aufmerksamkeit."
+        },
+        {
+          "typ": "merke",
+          "text": "**Technisch** sind Zugriffsrechte, Verschlüsselung, Sicherung, Bildschirmsperre. **Organisatorisch** sind Verpflichtung, Clean Desk, Besucherregelung, sichere Vernichtung.",
+          "karteikarte": "Nenne je drei technische und organisatorische Maßnahmen zum Schutz personenbezogener Daten."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Technisch oder organisatorisch?",
+          "kategorien": [
+            "Technisch",
+            "Organisatorisch"
+          ],
+          "aufgaben": [
+            {
+              "text": "Der Bildschirm sperrt sich nach fünf Minuten automatisch.",
+              "loesung": "Technisch"
+            },
+            {
+              "text": "Neue Beschäftigte werden schriftlich auf Vertraulichkeit verpflichtet.",
+              "loesung": "Organisatorisch"
+            },
+            {
+              "text": "Personalakten stehen in einem abschließbaren Schrank.",
+              "loesung": "Organisatorisch"
+            },
+            {
+              "text": "Die Festplatte des Dienstlaptops ist verschlüsselt.",
+              "loesung": "Technisch"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Datenschutz schützt Menschen, Datensicherheit schützt die Daten.",
+    "{{begriff:personenbezogene-daten|Personenbezogene Daten}} beziehen sich auf bestimmte oder bestimmbare natürliche Personen.",
+    "Daten von Unternehmen fallen nicht unter die DSGVO, Daten ihrer Beschäftigten schon.",
+    "{{par:dsgvo-6|Art. 6 DSGVO}}: Verbot mit Erlaubnisvorbehalt — ohne Rechtsgrundlage keine Verarbeitung.",
+    "Grundsätze: Zweckbindung, Datenminimierung, Speicherbegrenzung, Richtigkeit, Vertraulichkeit.",
+    "Betroffenenrechte: Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit, Widerspruch.",
+    "{{par:dsgvo-17|Art. 17 DSGVO}}: Löschung entfällt bei Aufbewahrungspflicht — die Daten werden gesperrt.",
+    "{{begriff:tom|Technische und organisatorische Maßnahmen}} wirken nur gemeinsam."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Unterschied zwischen Datenschutz und Datensicherheit und nenne je zwei Beispiele.",
+      "loesung": "Datenschutz schützt das Recht natürlicher Personen auf informationelle Selbstbestimmung, also den Menschen hinter den Daten. Er regelt, ob und wozu Daten überhaupt verarbeitet werden dürfen. Beispiele sind die Prüfung einer Rechtsgrundlage nach Art. 6 DSGVO und die Beachtung der Zweckbindung, etwa dass eine Bestelladresse nicht ohne Weiteres für Werbung genutzt wird. Datensicherheit schützt dagegen die Daten selbst vor Verlust, Veränderung, Zerstörung und unbefugtem Zugriff, unabhängig davon, ob es sich um personenbezogene Daten handelt. Beispiele sind die verschlüsselte Festplatte des Dienstlaptops und die regelmäßige, getrennt aufbewahrte Datensicherung. Beide gehören zusammen: Datenschutz ohne Datensicherheit bleibt ein Versprechen ohne technische Deckung."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die Rechte betroffener Personen nach der DSGVO.",
+      "loesung": "Betroffene haben das Recht auf Auskunft darüber, ob und welche Daten über sie verarbeitet werden, zu welchem Zweck, wie lange sie gespeichert werden und an wen sie weitergegeben wurden, einschließlich einer Kopie der Daten. Weiter bestehen das Recht auf Berichtigung unrichtiger Daten, das Recht auf Löschung, das Recht auf Einschränkung der Verarbeitung, das Recht auf Datenübertragbarkeit in einem gängigen Format sowie das Widerspruchsrecht. Bei Direktwerbung wirkt der Widerspruch ohne Begründung und ausnahmslos. Das Löschrecht tritt zurück, soweit gesetzliche Aufbewahrungspflichten bestehen; die Daten werden dann für die weitere Verwendung gesperrt und erst nach Ablauf der Frist gelöscht."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Eine Kollegin schickt eine Einladung an 80 Kunden und setzt alle Adressen in das An-Feld. Was ist passiert, und was ist zu tun?",
+      "loesung": "Es liegt eine Datenschutzverletzung vor: Jeder Empfänger sieht die E-Mail-Adressen aller anderen. E-Mail-Adressen sind personenbezogene Daten, sofern sich daraus eine Person zuordnen lässt, und es fehlt eine Rechtsgrundlage für diese Offenlegung gegenüber Dritten. Richtig wäre das Blindkopie-Feld gewesen oder ein Versand über ein System, das jede Nachricht einzeln zustellt. Zu tun ist Folgendes: Der Vorfall wird unverzüglich intern gemeldet, in der Regel an die für den Datenschutz zuständige Stelle oder den Datenschutzbeauftragten. Diese prüft, ob eine Meldung an die Aufsichtsbehörde erforderlich ist und ob die Betroffenen zu informieren sind; das hängt vom Risiko für die betroffenen Personen ab. Der Vorfall wird intern dokumentiert. Anschließend sollten organisatorische Maßnahmen folgen, etwa eine Unterweisung zum Serienversand und, wo möglich, eine technische Begrenzung der Empfängerzahl im An-Feld."
+    }
+  ],
+  "pruefungstipp": "Der Klassiker ist die Abgrenzung Datenschutz gegen Datensicherheit — nenne für beide je zwei Beispiele, dann ist die Antwort vollständig. Die zweite sichere Frage ist das Verbot mit Erlaubnisvorbehalt: Jede Verarbeitung braucht eine Rechtsgrundlage. Und merk dir den Konflikt zwischen Löschrecht und Aufbewahrungspflicht, denn genau daraus werden gern Fälle gebaut."
+}

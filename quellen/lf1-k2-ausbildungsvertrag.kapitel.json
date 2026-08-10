@@ -1,0 +1,172 @@
+{
+  "id": "k2",
+  "lernfeld": "lf1",
+  "nummer": 2,
+  "titel": "Der Ausbildungsvertrag",
+  "untertitel": "Was drinstehen muss, was nicht drinstehen darf — und wie er endet.",
+  "minuten": 25,
+
+  "lernziele": [
+    { "id": "lz1", "text": "Die zwingenden Inhalte des Ausbildungsvertrags benennen", "abschnitt": "b1" },
+    { "id": "lz2", "text": "Unzulässige Vertragsklauseln erkennen", "abschnitt": "b2" },
+    { "id": "lz3", "text": "Die Beendigungsgründe und Kündigungsmöglichkeiten unterscheiden", "abschnitt": "b3" }
+  ],
+
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Was im Vertrag stehen muss",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:ausbildungsvertrag|Berufsausbildungsvertrag}} ist kein normaler Arbeitsvertrag. Nach {{par:bbig-10|§ 10 BBiG}} gelten die Regeln des Arbeitsvertrags nur, soweit der Ausbildungszweck nichts anderes verlangt — und der verlangt oft etwas anderes. ==Der Vertrag muss vor Beginn schriftlich niedergelegt und bei der IHK eingetragen werden.=="
+        },
+        {
+          "typ": "absatz",
+          "text": "{{par:bbig-11|§ 11 BBiG}} zählt auf, was mindestens drinstehen muss. Fehlt etwas davon, ist der Vertrag nicht automatisch ungültig — aber der Betrieb verletzt seine Pflicht, und im Streitfall geht die Unklarheit zu seinen Lasten."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Pflichtangabe", "Warum sie zählt"],
+          "zeilen": [
+            { "zellen": ["Art, sachliche und zeitliche Gliederung der Ausbildung", "Verweist auf den betrieblichen Ausbildungsplan als Anlage"] },
+            { "zellen": ["Beginn und Dauer", "Bestimmt zugleich das reguläre Ende nach § 21 BBiG"] },
+            { "zellen": ["Ausbildungsmaßnahmen außerhalb der Ausbildungsstätte", "Etwa überbetriebliche Lehrgänge oder Verbundpartner"] },
+            { "zellen": ["Dauer der täglichen Ausbildungszeit", "Grundlage für Überstunden- und Pausenfragen"] },
+            {
+              "zellen": ["Dauer der Probezeit", "Muss zwischen einem und vier Monaten liegen"],
+              "detail": "**Fehlt die Angabe?** Dann gilt trotzdem die gesetzliche Mindestprobezeit von einem Monat. Eine vereinbarte Probezeit von sechs Monaten wäre dagegen unwirksam und würde auf vier Monate gekürzt."
+            },
+            { "zellen": ["Zahlung und Höhe der Vergütung", "Muss angemessen sein und jährlich steigen"] },
+            { "zellen": ["Dauer des Urlaubs", "Bei Jugendlichen nach Alter gestaffelt"] },
+            { "zellen": ["Voraussetzungen für eine Kündigung", "Verweis auf § 22 BBiG"] }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Schriftform, Eintragung bei der zuständigen Stelle, Beginn erst danach. Ohne Eintragung im Verzeichnis der Ausbildungsverhältnisse wirst du am Ende nicht zur Prüfung zugelassen.",
+          "karteikarte": "Welche drei formalen Voraussetzungen muss ein Ausbildungsvertrag erfüllen, bevor die Ausbildung beginnt?"
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Was nicht drinstehen darf",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Das BBiG schützt Auszubildende auch vor Klauseln, denen sie selbst zugestimmt haben. Bestimmte Vereinbarungen sind schlicht **nichtig** — sie gelten nicht, selbst wenn beide Seiten unterschrieben haben. Das ist der Unterschied zu einem gewöhnlichen Vertrag, in dem gilt, was vereinbart wurde."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zulässig und nichtig",
+          "titel": "Zwei Sorten Klauseln",
+          "lead": "Links, was vereinbart werden darf. Rechts, was auch mit deiner Unterschrift nicht gilt.",
+          "seiten": [
+            {
+              "name": "Wirksam vereinbar",
+              "ton": "gruen",
+              "punkte": [
+                { "text": "Probezeit von einem bis vier Monaten", "detail": "Innerhalb dieses Rahmens ist jede Länge zulässig — auch die vollen vier Monate." },
+                { "text": "Höhere Vergütung als der Tarif", "detail": "Abweichungen nach oben sind immer erlaubt. Das ist das Günstigkeitsprinzip aus K4." },
+                { "text": "Mehr Urlaub als das Gesetz verlangt", "detail": "Auch hier gilt: besser als der Mindeststandard ist immer möglich." },
+                { "text": "Verpflichtung zum Führen des Berichtshefts", "detail": "Es ist ohnehin Pflicht und Zulassungsvoraussetzung zur Prüfung." }
+              ]
+            },
+            {
+              "name": "Nichtig",
+              "ton": "rot",
+              "punkte": [
+                { "text": "Beschränkung der Berufsausübung nach der Ausbildung", "detail": "Du darfst nach dem Abschluss arbeiten, wo du willst. Eine Ausnahme gibt es nur, wenn innerhalb der letzten sechs Monate ein Arbeitsvertrag für die Zeit danach geschlossen wird." },
+                { "text": "Entschädigung für die Ausbildung", "detail": "Der Betrieb darf sich die Ausbildung nicht bezahlen lassen — weder direkt noch über eine Rückzahlungsklausel bei vorzeitigem Ausscheiden." },
+                { "text": "Vertragsstrafen", "detail": "Eine Klausel wie „bei Abbruch werden 2.000 € fällig“ ist unwirksam, egal wie sie formuliert ist." },
+                { "text": "Ausschluss oder Beschränkung von Schadensersatzansprüchen", "detail": "Deine gesetzlichen Ansprüche lassen sich nicht wegvereinbaren." },
+                { "text": "Pauschalierung von Schadensersatz", "detail": "Auch ein fester Betrag „für den Fall der Fälle“ ist nichtig." }
+              ]
+            }
+          ],
+          "regel": "Faustregel: Alles, was dich besserstellt als das Gesetz, ist erlaubt. Alles, was dich schlechterstellt, ist es nicht — auch mit Unterschrift."
+        },
+        {
+          "typ": "achtung",
+          "text": "Nichtig heißt: von Anfang an unwirksam. Du musst eine solche Klausel nicht anfechten und keine Frist einhalten — sie hat nie gegolten. Wenn dein Betrieb auf einer Vertragsstrafe besteht, ist die IHK die richtige Adresse."
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Wie das Ausbildungsverhältnis endet",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Es gibt genau zwei reguläre Wege aus der Ausbildung und zwei außerordentliche. {{par:bbig-21|§ 21 BBiG}} regelt das reguläre Ende, {{par:bbig-22|§ 22 BBiG}} die Kündigung."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Weg", "Voraussetzung", "Frist"],
+          "zeilen": [
+            { "zellen": ["Zeitablauf", "die vereinbarte Ausbildungszeit ist um", "keine — endet automatisch"] },
+            { "zellen": ["Bestandene Prüfung", "Bekanntgabe des Ergebnisses vor Zeitablauf", "endet sofort mit der Bekanntgabe"] },
+            {
+              "zellen": ["Kündigung in der Probezeit", "beide Seiten, ohne Grund", "keine Frist"],
+              "detail": "**Formfrage:** Auch die Probezeitkündigung muss schriftlich erfolgen und bei Minderjährigen an die gesetzlichen Vertreter gerichtet sein. Eine mündliche Kündigung ist unwirksam."
+            },
+            {
+              "zellen": ["Kündigung nach der Probezeit", "Betrieb: nur aus wichtigem Grund · Azubi: auch bei Berufsaufgabe oder -wechsel", "fristlos bzw. vier Wochen"],
+              "detail": "**Die Asymmetrie ist Absicht.** Der Betrieb braucht einen wichtigen Grund, du nicht — es genügt, dass du die Ausbildung aufgeben oder in einem anderen Beruf fortsetzen willst. Dann gilt eine Frist von vier Wochen."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Du bist im 14. Monat deiner Ausbildung und möchtest in einen anderen Beruf wechseln. Wie kommst du aus dem Vertrag?",
+          "optionen": [
+            { "text": "Gar nicht, der Vertrag läuft bis zum Ende", "richtig": false, "echo": "Ein Ausbildungsvertrag ist kein Käfig. § 22 BBiG gibt Auszubildenden ausdrücklich ein eigenes Kündigungsrecht bei Berufswechsel oder Aufgabe der Ausbildung." },
+            { "text": "Kündigung mit vierwöchiger Frist", "richtig": true, "echo": "Richtig. Nach § 22 Absatz 2 BBiG kannst du mit einer Frist von vier Wochen kündigen, wenn du die Ausbildung aufgeben oder in einem anderen Beruf fortsetzen willst. Ein wichtiger Grund ist dafür nicht nötig — die Kündigung muss aber schriftlich erfolgen und den Grund angeben." },
+            { "text": "Fristlose Kündigung ohne Angabe von Gründen", "richtig": false, "echo": "Das gilt nur in der Probezeit. Danach ist eine fristlose Kündigung deinerseits nur aus wichtigem Grund möglich — beim Berufswechsel gilt stattdessen die Vier-Wochen-Frist." }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Nach {{par:bbig-16|§ 16 BBiG}} hast du bei Beendigung Anspruch auf ein schriftliches Zeugnis — auch bei Abbruch. Verlange auf Wunsch die qualifizierte Fassung mit Angaben zu Führung, Leistung und besonderen Fähigkeiten; das einfache Zeugnis nennt nur Art, Dauer und Ziel."
+        }
+      ]
+    }
+  ],
+
+  "zusammenfassung": [
+    "{{par:bbig-11|§ 11 BBiG}} — Schriftform vor Beginn, Eintragung bei der zuständigen Stelle.",
+    "Pflichtangaben: Gliederung, Beginn und Dauer, tägliche Ausbildungszeit, Probezeit, Vergütung, Urlaub, Kündigung.",
+    "Nichtig sind unter anderem Vertragsstrafen, Entschädigungen für die Ausbildung und Beschränkungen der späteren Berufsausübung.",
+    "Nichtig bedeutet: von Anfang an unwirksam, auch mit Unterschrift.",
+    "{{par:bbig-21|§ 21 BBiG}} — Ende durch Zeitablauf oder mit Bekanntgabe der bestandenen Prüfung.",
+    "{{par:bbig-22|§ 22 BBiG}} — in der Probezeit fristlos ohne Grund; danach Betrieb nur aus wichtigem Grund, Azubi bei Berufswechsel mit vier Wochen Frist.",
+    "{{par:bbig-16|§ 16 BBiG}} — Anspruch auf ein Zeugnis, auf Verlangen qualifiziert."
+  ],
+
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne vier Angaben, die nach § 11 BBiG zwingend im Ausbildungsvertrag stehen müssen.",
+      "loesung": "Zum Beispiel: Art, sachliche und zeitliche Gliederung der Ausbildung; Beginn und Dauer der Ausbildung; Dauer der täglichen Ausbildungszeit; Dauer der Probezeit; Zahlung und Höhe der Vergütung; Dauer des Urlaubs; Voraussetzungen für eine Kündigung. Der Vertrag muss vor Beginn schriftlich niedergelegt werden."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Im Vertrag steht: „Bei vorzeitiger Beendigung durch den Auszubildenden sind 1.500 € Ausbildungskosten zu erstatten.“ Der Azubi hat unterschrieben. Muss er zahlen?",
+      "loesung": "Nein. Eine solche Klausel ist nach dem BBiG nichtig, weil sie eine Entschädigung für die Berufsausbildung und zugleich eine Vertragsstrafe darstellt. Nichtig bedeutet, dass sie von Anfang an unwirksam ist — die Unterschrift ändert daran nichts, und der Azubi muss die Klausel weder anfechten noch eine Frist beachten."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Eine Auszubildende erhält im fünften Monat eine fristlose Kündigung mit der Begründung, sie passe nicht ins Team. Ist die Kündigung wirksam?",
+      "loesung": "Nein. Die Probezeit darf höchstens vier Monate dauern, ist im fünften Monat also beendet. Danach kann der Betrieb nur noch aus wichtigem Grund fristlos kündigen. Dass jemand „nicht ins Team passt“, ist kein wichtiger Grund im Sinne des § 22 BBiG — dafür wäre eine schwere Pflichtverletzung nötig, in der Regel nach vorheriger Abmahnung."
+    }
+  ],
+
+  "pruefungstipp": "Die Liste der nichtigen Vereinbarungen wird gern als Fallaufgabe verpackt: Eine Klausel wird zitiert, gefragt ist, ob sie gilt. Präge dir vor allem Vertragsstrafe, Entschädigung für die Ausbildung und Beschränkung der späteren Berufstätigkeit ein. Und die Zahlen: Probezeit ein bis vier Monate, Azubi-Kündigung vier Wochen."
+}

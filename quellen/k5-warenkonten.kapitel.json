@@ -1,0 +1,433 @@
+{
+  "id": "k5",
+  "lernfeld": "buchfuehrung",
+  "nummer": 5,
+  "titel": "Warenkonten & Kalkulation",
+  "untertitel": "Wareneinkauf und -verkauf, Bezugskosten, Rabatt und Skonto — und der Weg vom Einkaufs- zum Verkaufspreis.",
+  "minuten": 35,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Wareneinkauf und Umsatzerlöse als Erfolgskonten buchen",
+      "abschnitt": "e1"
+    },
+    {
+      "id": "lz2",
+      "text": "Bezugskosten, Rabatte und Rücksendungen richtig behandeln",
+      "abschnitt": "e2"
+    },
+    {
+      "id": "lz3",
+      "text": "Skonto auf Einkaufs- und Verkaufsseite unterscheiden und buchen",
+      "abschnitt": "e3"
+    },
+    {
+      "id": "lz4",
+      "text": "Den Einstandspreis berechnen und vorwärts kalkulieren",
+      "abschnitt": "e4"
+    },
+    {
+      "id": "lz5",
+      "text": "Rückwärts vom Marktpreis zum zulässigen Einkaufspreis rechnen",
+      "abschnitt": "e5"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "e1",
+      "titel": "Warenkonten im Handel",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Im Handelsbetrieb stehen zwei Konten im Mittelpunkt, und beide sind {{begriff:erfolgskonto|Erfolgskonten}} aus K4: Der **Wareneinkauf** ist ein Aufwandskonto, die **Umsatzerlöse** sind ein Ertragskonto. Ein- und Verkauf werden getrennt erfasst, nicht verrechnet — nur so sieht man jederzeit, wie viel insgesamt eingekauft und verkauft wurde."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Vorgang",
+            "Buchungssatz",
+            "Kontoart"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Warenkauf auf Ziel, 3.000 €",
+                "Wareneinkauf an Verbindlichkeiten LuL",
+                "Aufwand entsteht im Soll"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "Warenverkauf auf Ziel, 5.000 €",
+                "Forderungen LuL an Umsatzerlöse",
+                "Ertrag entsteht im Haben"
+              ],
+              "mono": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "{{begriff:rohertrag|Rohertrag}} = Umsatzerlöse − Wareneinsatz. Bei 5.000 € Erlös und 3.000 € Einsatz bleiben 2.000 € — davon müssen erst noch Miete, Löhne und alles Übrige bezahlt werden.",
+          "karteikarte": "Wie berechnet sich der Rohertrag, und was ist er noch nicht?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "e2",
+      "titel": "Bezugskosten, Rabatt, Rücksendung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Was die Ware wirklich gekostet hat, steht selten auf der Rechnung. {{begriff:bezugskosten|Bezugskosten}} wie Fracht und Verpackung kommen hinzu, ein {{begriff:rabatt|Rabatt}} geht ab. Das Ergebnis ist der {{begriff:einstandspreis|Einstandspreis}} — die Zahl, mit der später kalkuliert wird."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Schritt",
+            "Betrag"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Listenpreis der Ware",
+                "5.000,00 €"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "− Rabatt 5 %",
+                "− 250,00 €"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "= Zieleinkaufspreis",
+                "4.750,00 €"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "+ Bezugskosten (Fracht)",
+                "+ 150,00 €"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "= Einstandspreis",
+                "4.900,00 €"
+              ],
+              "mono": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein Rabatt wird **nicht** separat gebucht. Er mindert den Rechnungsbetrag sofort, also wird von vornherein nur der geminderte Betrag erfasst. Skonto dagegen wird separat gebucht — das ist der Unterschied, der in der Prüfung am häufigsten verwechselt wird."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Vorgang",
+            "Buchungssatz"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Bezugskosten (sofort bezahlt)",
+                "Wareneinkauf an Bank"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "Einkaufsrücksendung",
+                "Verbindlichkeiten an Wareneinkauf"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "Verkaufsrücksendung",
+                "Umsatzerlöse an Forderungen"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "Nachträglicher Nachlass beim Einkauf",
+                "Verbindlichkeiten an Wareneinkauf"
+              ],
+              "mono": [
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "e3",
+      "titel": "Skonto — der teuerste Kredit der Welt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:skonto|Skonto}} entsteht erst im Moment der Zahlung — vorher weiß niemand, ob die Frist genutzt wird. Deshalb wird die ursprüngliche Buchung nicht korrigiert, sondern die Differenz separat erfasst. ==Beim Einkauf spart der Betrieb Geld, das ist ein Ertrag. Beim Verkauf verliert er welches, das ist ein Aufwand.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Fall",
+            "Ausgangslage",
+            "Buchung bei Zahlung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Einkaufsskonto",
+                "Verbindlichkeit 1.000 €, 2 % Skonto",
+                "Verbindlichkeiten 1.000 € an Bank 980 € + Skontoertrag 20 €"
+              ],
+              "mono": [
+                2
+              ],
+              "detail": "**Was hier passiert:** Die Schuld war 1.000 € und verschwindet vollständig — deshalb steht sie voll im Soll. Überwiesen werden aber nur 980 €. Die Lücke von 20 € ist ein wirtschaftlicher Vorteil und wird als Ertrag gebucht."
+            },
+            {
+              "zellen": [
+                "Verkaufsskonto",
+                "Forderung 2.000 €, 2 % Skonto",
+                "Bank 1.960 € + Skontoaufwand 40 € an Forderungen 2.000 €"
+              ],
+              "mono": [
+                2
+              ],
+              "detail": "**Spiegelbildlich:** Die Forderung von 2.000 € verschwindet vollständig, eingegangen sind nur 1.960 €. Die Differenz ist ein Verlust und wird als Aufwand gebucht."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Einkauf → Skonto**ertrag**. Verkauf → Skonto**aufwand**. Eselsbrücke: Wer einkauft, verdient am Skonto. Wer verkauft, bezahlt dafür.",
+          "karteikarte": "Ist Skonto beim Einkauf ein Ertrag oder ein Aufwand — und warum?"
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Rechnung über 2.000 € bietet „2 % Skonto bei Zahlung in 10 Tagen, sonst 30 Tage netto“. Lohnt es sich, den Skonto zu ziehen?",
+          "optionen": [
+            {
+              "text": "Nein, 2 % sind zu wenig",
+              "richtig": false,
+              "echo": "Der Prozentsatz täuscht, weil er sich auf nur 20 Tage bezieht. Rechnet man ihn aufs Jahr hoch, liegt er weit über jedem Kontokorrentzins."
+            },
+            {
+              "text": "Ja, das entspricht etwa 36 % Zins pro Jahr",
+              "richtig": true,
+              "echo": "Richtig. 2 % für 20 Tage früher zahlen entspricht rund 36 % Jahreszins (2 % × 360 ÷ 20). Selbst ein teurer Bankkredit ist günstiger — deshalb lohnt sich Skonto fast immer, notfalls über den Dispo."
+            },
+            {
+              "text": "Nur bei Beträgen über 10.000 €",
+              "richtig": false,
+              "echo": "Die Höhe spielt keine Rolle. Der Vorteil ist prozentual und damit bei jedem Betrag gleich groß."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "e4",
+      "titel": "Vorwärtskalkulation",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Handelskalkulation führt vom Listeneinkaufspreis zum Angebotspreis. Sie ist ein festes Schema, das man von oben nach unten durchrechnet. Der {{begriff:einstandspreis|Einstandspreis}} ist die Nahtstelle: Alles darüber betrifft den Einkauf, alles darunter den Verkauf."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kalkulationsleiter",
+          "kopf": "Die Leiter",
+          "titel": "Vom Einkaufspreis zum Angebotspreis",
+          "lead": "Ändere die Prozentsätze und sieh zu, wie sich der Angebotspreis verschiebt. Unten kannst du auf Rückwärtskalkulation umschalten.",
+          "richtungen": [
+            "vorwaerts",
+            "rueckwaerts"
+          ],
+          "start": {
+            "id": "lep",
+            "name": "Listeneinkaufspreis",
+            "wert": 500
+          },
+          "stufen": [
+            {
+              "id": "lief-rabatt",
+              "name": "Lieferantenrabatt",
+              "art": "abzug",
+              "satz": 20,
+              "ergebnis": "Zieleinkaufspreis"
+            },
+            {
+              "id": "lief-skonto",
+              "name": "Lieferantenskonto",
+              "art": "abzug",
+              "satz": 2,
+              "ergebnis": "Bareinkaufspreis"
+            },
+            {
+              "id": "bezug",
+              "name": "Bezugskosten",
+              "art": "zuschlag-absolut",
+              "betrag": 8,
+              "ergebnis": "Einstandspreis",
+              "marke": true
+            },
+            {
+              "id": "hkz",
+              "name": "Handlungskostenzuschlag",
+              "art": "aufschlag",
+              "satz": 50,
+              "ergebnis": "Selbstkosten"
+            },
+            {
+              "id": "gewinn",
+              "name": "Gewinnzuschlag",
+              "art": "aufschlag",
+              "satz": 20,
+              "ergebnis": "Barverkaufspreis"
+            },
+            {
+              "id": "kd-skonto",
+              "name": "Kundenskonto",
+              "art": "im-hundert",
+              "satz": 4,
+              "ergebnis": "Zielverkaufspreis"
+            },
+            {
+              "id": "kd-rabatt",
+              "name": "Kundenrabatt",
+              "art": "im-hundert",
+              "satz": 25,
+              "ergebnis": "Listenverkaufspreis"
+            }
+          ],
+          "regel": "Kundenskonto und Kundenrabatt werden „im Hundert“ aufgeschlagen, also dividiert statt multipliziert. Grund: Der Kunde zieht sie später vom Listenpreis ab — der muss also hoch genug sein, dass danach noch der Barverkaufspreis übrig bleibt.",
+          "einheit": "€"
+        },
+        {
+          "typ": "achtung",
+          "text": "Der häufigste Rechenfehler der ganzen Prüfung: Kundenrabatt mit 25 % aufschlagen statt durch 0,75 teilen. Beides klingt gleich, ergibt aber unterschiedliche Zahlen — und nur die Division führt zurück zum richtigen Barverkaufspreis."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "e5",
+      "titel": "Rückwärtskalkulation",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Manchmal steht der Verkaufspreis fest, weil der Markt ihn vorgibt. Dann läuft dasselbe Schema rückwärts: Vom Listenverkaufspreis rechnet man nach oben und erfährt, wie teuer die Ware höchstens eingekauft werden darf, damit die Kalkulation noch aufgeht."
+        },
+        {
+          "typ": "absatz",
+          "text": "Technisch dreht sich dabei jede Rechenrichtung um: Aus Abzügen werden Aufschläge, aus „im Hundert“ wird „vom Hundert“. Das Schema selbst bleibt identisch — deshalb lohnt es sich, es einmal richtig zu lernen statt zweimal halb."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Vorwärts oder rückwärts?",
+          "kategorien": [
+            "Vorwärts",
+            "Rückwärts"
+          ],
+          "aufgaben": [
+            {
+              "text": "Ein Lieferant nennt seinen Preis, gesucht ist unser Angebotspreis.",
+              "loesung": "Vorwärts"
+            },
+            {
+              "text": "Der Konkurrent verlangt 89 €, wir wollen mithalten.",
+              "loesung": "Rückwärts"
+            },
+            {
+              "text": "Gesucht ist der höchstzulässige Einstandspreis.",
+              "loesung": "Rückwärts"
+            },
+            {
+              "text": "Der Einstandspreis steht fest, gesucht sind die Selbstkosten.",
+              "loesung": "Vorwärts"
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Schreib das Schema in der Prüfung zuerst leer untereinander, bevor du rechnest — alle acht Zeilen. Dann trägst du ein, was gegeben ist, und siehst sofort, in welche Richtung du arbeiten musst. Das kostet dreißig Sekunden und verhindert den teuersten Fehler: in der falschen Richtung loszurechnen."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Wareneinkauf = Aufwandskonto, Umsatzerlöse = Ertragskonto. Beide werden getrennt geführt.",
+    "Bezugskosten erhöhen den Einstandspreis, Rabatte mindern ihn.",
+    "Rabatt wird nicht separat gebucht — es wird nur der geminderte Betrag erfasst.",
+    "Skonto wird separat gebucht, erst im Moment der Zahlung.",
+    "Einkaufsskonto = Skontoertrag. Verkaufsskonto = Skontoaufwand.",
+    "Skonto ziehen lohnt fast immer: 2 % bei 20 Tagen entsprechen etwa 36 % Jahreszins.",
+    "Kalkulation: Einstandspreis ist die Basis; Kundenskonto und -rabatt werden im Hundert gerechnet."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Was ist der Unterschied zwischen Rabatt und Skonto?",
+      "loesung": "Der Rabatt ist ein sofortiger Preisnachlass beim Kauf. Er mindert den Rechnungsbetrag direkt und wird nicht separat gebucht — es wird von vornherein nur der geminderte Betrag erfasst. Skonto ist ein Nachlass für schnelle Zahlung. Er entsteht erst im Moment der Zahlung, weil vorher nicht feststeht, ob die Frist genutzt wird, und wird separat als Skontoertrag oder Skontoaufwand gebucht."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum ist Einkaufsskonto ein Ertrag und Verkaufsskonto ein Aufwand?",
+      "loesung": "Beim Einkaufsskonto zahlt der Betrieb weniger, als er laut Verbindlichkeit schuldet — er behält Geld, das sonst abgeflossen wäre. Das ist ein wirtschaftlicher Vorteil, also ein Ertrag. Beim Verkaufsskonto erhält der Betrieb weniger, als seine Forderung betrug. Das ist ein Nachteil, also ein Aufwand."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Listenpreis 4.000 €, 5 % Rabatt, 100 € Frachtkosten. Berechne den Einstandspreis.",
+      "loesung": "4.000 € − 5 % (200 €) = 3.800 € Zieleinkaufspreis. Plus 100 € Bezugskosten = 3.900 € Einstandspreis."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Einstandspreis 600 €, Handlungskostenzuschlag 25 %, Gewinnzuschlag 20 %, kein Kundenskonto und kein Kundenrabatt. Wie hoch ist der Barverkaufspreis?",
+      "loesung": "Selbstkosten = 600 € + 25 % = 750 €. Barverkaufspreis = 750 € + 20 % = 900 €."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Eine Verbindlichkeit von 2.000 € wird innerhalb der Skontofrist mit 2 % Skonto per Bank beglichen. Formuliere den Buchungssatz.",
+      "loesung": "Skontobetrag = 2 % von 2.000 € = 40 €. Überwiesen werden 1.960 €. Buchungssatz: Verbindlichkeiten LuL 2.000 € an Bank 1.960 € und Skontoertrag 40 €. Die Verbindlichkeit ist vollständig ausgeglichen, obwohl weniger geflossen ist."
+    }
+  ],
+  "pruefungstipp": "Skonto-Buchungen kommen fast immer dran. Lerne die zwei Sätze wörtlich: Einkauf → Verbindlichkeiten an Bank plus Skontoertrag. Verkauf → Bank plus Skontoaufwand an Forderungen. Bei der Kalkulation gilt: Einstandspreis markieren, dann erst rechnen — er trennt Einkaufs- von Verkaufsseite."
+}

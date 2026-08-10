@@ -1,0 +1,409 @@
+{
+  "id": "k1",
+  "lernfeld": "lf4",
+  "nummer": 1,
+  "titel": "Bedarf ermitteln und Bestände steuern",
+  "untertitel": "Zu wenig kostet den Auftrag. Zu viel kostet Geld.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Bedarfsarten unterscheiden und Ermittlungsverfahren zuordnen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Eine ABC-Analyse durchführen und begründen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Meldebestand berechnen und Bestandsgrößen erklären",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Was gebraucht wird — und wie man es herausfindet",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Jede Beschaffung beginnt mit einer Frage: Was brauchen wir, wie viel davon, und wann? Die {{begriff:bedarfsermittlung|Bedarfsermittlung}} beantwortet sie. ==Wer sie überspringt, bestellt entweder zu spät und legt die Produktion still, oder zu früh und bindet Geld in Regalen.=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Verfahren",
+            "Grundlage",
+            "Passt zu"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Deterministisch",
+                "konkreter Auftrag, Stückliste",
+                "A-Güter, teure Teile"
+              ],
+              "detail": "**Gerechnet, nicht geschätzt.** Aus dem Kundenauftrag ergibt sich exakt, wie viel Material nötig ist. Für 300 Ordner brauchst du 300 Rückenschilder — das muss niemand schätzen."
+            },
+            {
+              "zellen": [
+                "Stochastisch",
+                "Verbrauch der Vergangenheit",
+                "C-Güter, Verbrauchsmaterial"
+              ],
+              "detail": "**Aus Erfahrungswerten hochgerechnet.** Wie viel Kopierpapier im letzten Quartal wegging, sagt gut voraus, wie viel im nächsten weggeht. Genauigkeit ist hier weniger wichtig als der geringe Aufwand."
+            },
+            {
+              "zellen": [
+                "Subjektiv",
+                "Schätzung, Erfahrung",
+                "Neues ohne Vergangenheitswerte"
+              ],
+              "detail": "**Die schwächste Methode** — aber bei einem neuen Produkt gibt es keine Zahlen, auf die man sich stützen könnte. Wird ersetzt, sobald echte Verbrauchsdaten vorliegen."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Deterministisch heißt **gerechnet**, stochastisch heißt **aus dem Verbrauch geschätzt**. Der Aufwand muss zum Wert des Materials passen: Für Schreibblöcke rechnet niemand mit Stücklisten.",
+          "karteikarte": "Welche drei Verfahren der Bedarfsermittlung gibt es, und wovon hängt die Wahl ab?"
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Merk dir die Verfahren über den Preis des Materials, nicht über die Namen. Teuer und planbar heißt rechnen. Billig und ständig gebraucht heißt schätzen. Damit ordnest du in der Prüfung jedes Beispiel richtig zu."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Nicht alles ist gleich wichtig: die ABC-Analyse",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "In fast jedem Lager gilt dasselbe Muster: Wenige Materialarten machen den größten Teil des Einkaufswerts aus, und sehr viele Materialarten machen fast nichts aus. Die {{begriff:abc-analyse|ABC-Analyse}} macht dieses Muster sichtbar und leitet daraus ab, wo sich Planungsaufwand lohnt."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Drei Klassen",
+          "titel": "Wo sich Aufwand lohnt",
+          "lead": "Die Anteile sind Richtwerte, keine Gesetze. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "A-Güter",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Wenig Menge, viel Wert",
+                  "detail": "Grob etwa ein Fünftel der Materialarten, aber rund vier Fünftel des Einkaufswerts. Hier liegt das Geld."
+                },
+                {
+                  "text": "Deterministisch planen",
+                  "detail": "Bedarf wird gerechnet, nicht geschätzt. Der Aufwand lohnt sich, weil jeder Prozentpunkt Einsparung viel Geld bedeutet."
+                },
+                {
+                  "text": "Sorgfältig verhandeln",
+                  "detail": "Angebotsvergleich, Preisverhandlung, mehrere Bezugsquellen. Bei A-Gütern rechnet sich der Aufwand fast immer."
+                },
+                {
+                  "text": "Kleine Bestellmengen, häufig",
+                  "detail": "Weniger Kapital im Lager gebunden. Bei hohem Wert je Stück wiegt das schwerer als die höheren Bestellkosten."
+                }
+              ]
+            },
+            {
+              "name": "C-Güter",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Viel Menge, wenig Wert",
+                  "detail": "Etwa die Hälfte der Materialarten, aber nur ein kleiner einstelliger Prozentsatz des Werts. Schrauben, Klebeband, Notizblöcke."
+                },
+                {
+                  "text": "Stochastisch planen",
+                  "detail": "Aus dem Verbrauch geschätzt. Eine genaue Planung würde mehr kosten, als sie einspart."
+                },
+                {
+                  "text": "Vereinfacht beschaffen",
+                  "detail": "Rahmenverträge, Sammelbestellungen, ein fester Lieferer. Für 4 Euro Klebeband holt niemand drei Angebote ein."
+                },
+                {
+                  "text": "Große Mengen, selten",
+                  "detail": "Genau umgekehrt zu den A-Gütern: Das gebundene Kapital ist gering, die Bestellkosten fallen dagegen ins Gewicht."
+                }
+              ]
+            }
+          ],
+          "regel": "B-Güter liegen dazwischen und werden nach Bedarf mal wie A, mal wie C behandelt. Die Zahlen sind Faustwerte — in der Prüfung wird die Einteilung gerechnet, nicht auswendig gewusst."
+        },
+        {
+          "typ": "absatz",
+          "text": "Gerechnet wird die Analyse immer gleich: **Jahresverbrauch mal Preis** ergibt den Jahreswert je Material. Danach sortiert man absteigend, bildet die Summe von oben nach unten und schaut, wo die Grenzen liegen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Material",
+            "Menge/Jahr",
+            "Preis",
+            "Jahreswert",
+            "Klasse"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Kopierer-Toner",
+                "120",
+                "180,00 €",
+                "21.600,00 €",
+                "A"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "Aktenordner",
+                "2.400",
+                "2,10 €",
+                "5.040,00 €",
+                "B"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "Kopierpapier (Paket)",
+                "900",
+                "3,40 €",
+                "3.060,00 €",
+                "B"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "Kugelschreiber",
+                "3.000",
+                "0,35 €",
+                "1.050,00 €",
+                "C"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "Haftnotizen",
+                "1.800",
+                "0,45 €",
+                "810,00 €",
+                "C"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Die Klasse hängt am **Wert**, nicht an der Menge. Kugelschreiber sind mit 3.000 Stück die zweitgrößte Menge im Lager und trotzdem C-Gut. Wer nach Stückzahl sortiert, bekommt in der Prüfung die Analyse falsch herum."
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Material hat einen Jahresverbrauch von 40 Stück bei 950 € je Stück. Wie behandelst du es?",
+          "optionen": [
+            {
+              "text": "C-Gut — die Menge ist sehr klein",
+              "richtig": false,
+              "echo": "Die Menge sagt nichts. 40 × 950 € sind 38.000 € Jahreswert — das ist mit Abstand ein A-Gut."
+            },
+            {
+              "text": "A-Gut — hoher Jahreswert, also genau planen",
+              "richtig": true,
+              "echo": "Richtig. 38.000 € Jahreswert bei nur 40 Stück ist das typische A-Gut: wenig Menge, viel Wert. Bedarf deterministisch rechnen, Angebote sorgfältig vergleichen, eher kleine Mengen häufiger bestellen."
+            },
+            {
+              "text": "Lässt sich ohne die Werte der anderen Materialien nicht sagen",
+              "richtig": false,
+              "echo": "Formal stimmt das — die Klassen ergeben sich aus dem Vergleich. In der Prüfung genügt aber die Größenordnung, und 38.000 € bei 40 Stück ist eindeutig oben."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Wann muss bestellt werden?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:meldebestand|Meldebestand}} ist die wichtigste Zahl der Lagersteuerung. Er beantwortet nicht, *wie viel* bestellt wird, sondern *wann*. ==Er ist genau so bemessen, dass der verbleibende Vorrat noch bis zur Ankunft der neuen Lieferung reicht.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "lagerkurve",
+          "kopf": "Der Sägezahn",
+          "titel": "Wann muss bestellt werden?",
+          "lead": "Vier Zahlen, ein Bild. Schieb die Werte und sieh, wie die Meldelinie wandert.",
+          "eingaben": {
+            "verbrauch": {
+              "label": "Tagesverbrauch in Stück",
+              "start": 50,
+              "min": 5,
+              "max": 300,
+              "schritt": 5
+            },
+            "lieferzeit": {
+              "label": "Lieferzeit in Tagen",
+              "start": 6,
+              "min": 1,
+              "max": 30,
+              "schritt": 1
+            },
+            "mindest": {
+              "label": "Mindestbestand in Stück",
+              "start": 200,
+              "min": 0,
+              "max": 1500,
+              "schritt": 50
+            },
+            "menge": {
+              "label": "Bestellmenge in Stück",
+              "start": 1200,
+              "min": 100,
+              "max": 4000,
+              "schritt": 100
+            }
+          },
+          "regel": "Meldebestand = Tagesverbrauch × Lieferzeit + Mindestbestand. Verlängert sich die Lieferzeit, muss früher bestellt werden — die Meldelinie wandert nach oben, ohne dass sich am Verbrauch etwas ändert."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Größe",
+            "Bedeutung",
+            "Wenn sie fehlt"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "{{begriff:mindestbestand|Mindestbestand}}",
+                "eiserner Vorrat als Puffer",
+                "jede Störung führt zum Stillstand"
+              ],
+              "detail": "**Der Puffer für den Ausnahmefall:** Lieferer kommt zwei Tage später, Verbrauch steigt unerwartet. Wird er regelmäßig angetastet, ist er zu niedrig angesetzt."
+            },
+            {
+              "zellen": [
+                "{{begriff:meldebestand|Meldebestand}}",
+                "Auslöser für die Bestellung",
+                "man bestellt zu spät"
+              ],
+              "detail": "**Die einzige Größe, die gerechnet wird:** Tagesverbrauch × Lieferzeit + Mindestbestand. Alles andere sind Festlegungen."
+            },
+            {
+              "zellen": [
+                "{{begriff:hoechstbestand|Höchstbestand}}",
+                "Obergrenze des Lagers",
+                "Kapital und Fläche werden gebunden"
+              ],
+              "detail": "**Meist Mindestbestand plus Bestellmenge.** Was darüber liegt, kostet Lagerkosten und Zinsen, ohne die Lieferfähigkeit zu verbessern."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Meldebestand = Tagesverbrauch × Lieferzeit + Mindestbestand.** Die Formel ist die meistgerechnete Aufgabe dieses Lernfelds — und sie ist die einzige, die du wirklich auswendig brauchst.",
+          "karteikarte": "Wie berechnet sich der Meldebestand, und was passiert mit ihm, wenn sich die Lieferzeit verlängert?"
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Warum es eine optimale Bestellmenge gibt",
+          "absaetze": [
+            "Zwei Kostenarten laufen gegeneinander. Je größer die Bestellmenge, desto seltener wird bestellt — die **Bestellkosten je Stück** sinken. Gleichzeitig liegt mehr Ware länger im Lager, die **Lagerkosten** steigen.",
+            "Die {{begriff:optimale-bestellmenge|optimale Bestellmenge}} ist der Punkt, an dem die Summe beider Kosten am kleinsten ist. Grafisch ist es der tiefste Punkt der Gesamtkostenkurve, rechnerisch die Stelle, an der Bestell- und Lagerkosten gleich hoch sind.",
+            "Für die Prüfung im ersten Lehrjahr genügt meist das Verständnis dieses Zielkonflikts. Die Andlersche Formel selbst wird eher im dritten Lehrjahr verlangt — sie unterstellt gleichmäßigen Verbrauch und feste Preise, was in der Praxis selten zutrifft."
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welche Bestandsgröße ist gemeint?",
+          "kategorien": [
+            "Mindestbestand",
+            "Meldebestand",
+            "Höchstbestand"
+          ],
+          "aufgaben": [
+            {
+              "text": "Wird bei Erreichen unterschritten und löst die Bestellung aus.",
+              "loesung": "Meldebestand"
+            },
+            {
+              "text": "Soll im Normalbetrieb gar nicht angetastet werden.",
+              "loesung": "Mindestbestand"
+            },
+            {
+              "text": "Wird direkt nach dem Wareneingang erreicht.",
+              "loesung": "Höchstbestand"
+            },
+            {
+              "text": "Steigt, wenn der Lieferer länger braucht.",
+              "loesung": "Meldebestand"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Deterministische Bedarfsermittlung rechnet aus Aufträgen, stochastische schätzt aus dem Verbrauch.",
+    "Der Planungsaufwand richtet sich nach dem Wert des Materials, nicht nach der Menge.",
+    "ABC-Analyse: Jahresverbrauch × Preis, absteigend sortieren, Klassen bilden.",
+    "A-Güter sind wenige Arten mit hohem Wert — genau planen und verhandeln.",
+    "C-Güter sind viele Arten mit geringem Wert — vereinfacht beschaffen.",
+    "{{begriff:mindestbestand|Mindestbestand}} ist der Puffer, {{begriff:hoechstbestand|Höchstbestand}} die Obergrenze.",
+    "Meldebestand = Tagesverbrauch × Lieferzeit + Mindestbestand.",
+    "Längere Lieferzeit hebt den Meldebestand, auch wenn der Verbrauch gleich bleibt."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Berechnung",
+      "frage": "Der Tagesverbrauch beträgt 80 Stück, die Lieferzeit 7 Tage, der Mindestbestand 350 Stück. Berechne den Meldebestand.",
+      "loesung": "Meldebestand = Tagesverbrauch × Lieferzeit + Mindestbestand = 80 × 7 + 350 = 560 + 350 = 910 Stück. Sobald der Bestand 910 Stück erreicht, muss bestellt werden. Bis zur Ankunft der Lieferung werden noch 560 Stück verbraucht, sodass rechnerisch genau der Mindestbestand von 350 Stück übrig bleibt."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre, wozu die ABC-Analyse dient und wie sie durchgeführt wird.",
+      "loesung": "Sie ordnet Materialien nach ihrem Anteil am Einkaufswert, um den Planungsaufwand dort einzusetzen, wo er sich lohnt. Durchführung: Für jedes Material Jahresverbrauch mal Preis rechnen, die Ergebnisse absteigend sortieren, die Werte von oben aufsummieren und daraus die Klassen bilden. A-Güter sind wenige Arten mit dem größten Wertanteil — sie werden deterministisch geplant und sorgfältig verhandelt. C-Güter sind viele Arten mit geringem Wert und werden vereinfacht beschafft, etwa über Rahmenverträge. B-Güter liegen dazwischen."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Euer Lieferer teilt mit, dass sich seine Lieferzeit von 5 auf 12 Tage verlängert. Der Tagesverbrauch bleibt bei 60 Stück, der Mindestbestand bei 200 Stück. Was ändert sich, und welche Möglichkeiten hast du?",
+      "loesung": "Der Meldebestand steigt von 60 × 5 + 200 = 500 Stück auf 60 × 12 + 200 = 920 Stück. Es muss also deutlich früher bestellt werden, und im Durchschnitt liegt mehr Ware im Lager — das bindet zusätzliches Kapital. Möglichkeiten: den höheren Meldebestand akzeptieren und die Kapitalbindung tragen; die Bestellmenge erhöhen, um seltener zu bestellen; einen zweiten Lieferer aufbauen, um die Abhängigkeit zu verringern; oder mit dem Lieferer über verbindliche Termine oder ein Konsignationslager verhandeln. Wichtig ist außerdem zu prüfen, ob die Bestellmenge überhaupt noch für die längere Lieferzeit reicht."
+    }
+  ],
+  "pruefungstipp": "Die Meldebestandsformel ist gesetzt — sie kommt fast jedes Mal, meist mit einer kleinen Änderung wie verlängerter Lieferzeit oder erhöhtem Verbrauch. Rechne immer in dieser Reihenfolge und schreib die Formel hin, bevor du einsetzt: Das gibt Punkte, auch wenn du dich verrechnest. Bei der ABC-Analyse ist die häufigste Falle die Sortierung nach Menge statt nach Wert."
+}

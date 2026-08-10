@@ -1,0 +1,224 @@
+{
+  "id": "k5",
+  "lernfeld": "lf8",
+  "nummer": 5,
+  "titel": "Einsatz und Entwicklung",
+  "untertitel": "Arbeitszeit gestalten und Menschen weiterbringen.",
+  "minuten": 20,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Arbeitszeitmodelle unterscheiden und passend auswählen",
+      "abschnitt": "e1"
+    },
+    {
+      "id": "lz2",
+      "text": "Maßnahmen der Personalentwicklung einordnen",
+      "abschnitt": "e2"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "e1",
+      "titel": "Wann gearbeitet wird",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Arbeitszeitmodelle sind längst ein Wettbewerbsfaktor. Auf einem Arbeitsmarkt, auf dem Bewerber die Auswahl haben, entscheidet oft nicht das Gehalt, sondern die Frage, ==wie frei jemand über seine Zeit verfügt=="
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Modell",
+            "Wie es funktioniert",
+            "Passt bei"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Feste Arbeitszeit",
+                "gleicher Beginn und gleiches Ende",
+                "Schalter, Produktion, Schichtbetrieb"
+              ]
+            },
+            {
+              "zellen": [
+                "Gleitzeit",
+                "Kernzeit fest, Rahmen beweglich",
+                "Büro mit gleichmäßiger Auslastung"
+              ],
+              "detail": "**{{begriff:gleitzeit|Gleitzeit}} braucht ein Zeitkonto** und klare Regeln, wie viele Plus- oder Minusstunden zulässig sind und wann sie ausgeglichen werden. Ohne diese Regeln entstehen Berge, die niemand mehr abbauen kann."
+            },
+            {
+              "zellen": [
+                "Vertrauensarbeitszeit",
+                "keine Zeiterfassung im klassischen Sinn, Ergebnis zählt",
+                "eigenverantwortliche Tätigkeiten"
+              ],
+              "detail": "**Achtung, Rechtsentwicklung:** Auch bei Vertrauensarbeitszeit besteht eine Pflicht zur Arbeitszeiterfassung. Vertrauen bezieht sich auf die Lage der Arbeitszeit, nicht auf ihre Dokumentation."
+            },
+            {
+              "zellen": [
+                "Teilzeit",
+                "reduzierte Wochenstunden",
+                "Vereinbarkeit, stufenweise Rückkehr"
+              ]
+            },
+            {
+              "zellen": [
+                "Schichtarbeit",
+                "Wechsel in festen Schichten",
+                "durchgehender Betrieb"
+              ]
+            },
+            {
+              "zellen": [
+                "Mobiles Arbeiten",
+                "Arbeit außerhalb des Betriebs",
+                "Tätigkeiten ohne Ortsbindung"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Alle Modelle bewegen sich im Rahmen des Arbeitszeitgesetzes: werktäglich acht Stunden, Verlängerung auf zehn nur, wenn im Schnitt von sechs Monaten acht nicht überschritten werden. Für Jugendliche gilt weiterhin das strengere Jugendarbeitsschutzgesetz aus Lernfeld 1.",
+          "karteikarte": "Nenne vier Arbeitszeitmodelle und je einen passenden Einsatzbereich."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "e2",
+      "titel": "Menschen weiterbringen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:personalentwicklung|Personalentwicklung}} ist kein Wohlfahrtsprogramm, sondern die günstigste Form der Personalbeschaffung: Wer intern qualifiziert, muss extern nicht suchen. Sie wird nach dem Zeitpunkt gegliedert."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Zeitpunkt",
+            "Maßnahme",
+            "Beispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Into the job",
+                "Vorbereitung auf eine Stelle",
+                "Ausbildung, Einarbeitungsplan, Traineeprogramm"
+              ]
+            },
+            {
+              "zellen": [
+                "On the job",
+                "Lernen am Arbeitsplatz",
+                "Unterweisung, Job-Rotation, Projektarbeit"
+              ],
+              "detail": "**Die wirksamste und billigste Form.** Job-Rotation heißt planmäßiger Wechsel zwischen Aufgaben — genau das, was dein betrieblicher Ausbildungsplan mit dir macht."
+            },
+            {
+              "zellen": [
+                "Off the job",
+                "Lernen außerhalb des Arbeitsplatzes",
+                "Seminar, Fortbildung, Fachwirt"
+              ]
+            },
+            {
+              "zellen": [
+                "Along the job",
+                "begleitende Förderung",
+                "Mentoring, Coaching, Mitarbeitergespräch"
+              ]
+            },
+            {
+              "zellen": [
+                "Out of the job",
+                "Vorbereitung auf das Ausscheiden",
+                "Altersteilzeit, Ruhestandsvorbereitung"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Grundlage jeder Entwicklung ist das **Mitarbeitergespräch**: einmal jährlich, vorbereitet von beiden Seiten, mit Rückblick, Beurteilung und Zielvereinbarung. Es folgt denselben Regeln wie jedes Feedback aus Lernfeld 7 — beschreibend, konkret, unter vier Augen."
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Sachbearbeiterin soll auf eine Teamleitung vorbereitet werden. Welche Maßnahme passt am besten?",
+          "optionen": [
+            {
+              "text": "Off the job: ein Führungsseminar",
+              "richtig": false,
+              "echo": "Sinnvoll als Ergänzung, aber allein zu wenig. Führung lernt man nicht im Seminarraum, sondern in Situationen — das Seminar liefert Begriffe, keine Erfahrung."
+            },
+            {
+              "text": "Eine Kombination aus Seminar und begleitendem Mentoring",
+              "richtig": true,
+              "echo": "Richtig. Off the job vermittelt die Grundlagen, along the job sichert die Übertragung in den Alltag. Ergänzt um erste Führungsaufgaben in einem Projekt entsteht daraus eine echte Vorbereitung statt eines Zertifikats."
+            },
+            {
+              "text": "Gar keine — Führung lernt man durch Machen",
+              "richtig": false,
+              "echo": "Lernen am Arbeitsplatz ist wirksam, aber ohne Begleitung teuer: Die Fehler macht die Person an echten Mitarbeitern. Genau dafür gibt es Mentoring."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welcher Form der Personalentwicklung ist die Maßnahme zuzuordnen?",
+          "kategorien": [
+            "Into the job",
+            "On the job",
+            "Off the job",
+            "Along the job"
+          ],
+          "aufgaben": [
+            {
+              "text": "Ein Azubi durchläuft planmäßig alle Abteilungen.",
+              "loesung": "On the job"
+            },
+            {
+              "text": "Ein Mitarbeiter besucht ein zweitägiges Seminar zur neuen Software.",
+              "loesung": "Off the job"
+            },
+            {
+              "text": "Eine neue Kollegin bekommt einen strukturierten Einarbeitungsplan.",
+              "loesung": "Into the job"
+            },
+            {
+              "text": "Ein erfahrener Kollege begleitet einen Nachwuchskraft über ein Jahr.",
+              "loesung": "Along the job"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Arbeitszeitmodelle: feste Zeit, Gleitzeit, Vertrauensarbeitszeit, Teilzeit, Schicht, mobiles Arbeiten.",
+    "Gleitzeit braucht ein Zeitkonto und Regeln für den Ausgleich.",
+    "Auch bei Vertrauensarbeitszeit besteht die Pflicht zur Arbeitszeiterfassung.",
+    "Arbeitszeitgesetz: werktäglich acht Stunden, bis zehn bei Ausgleich im Halbjahresschnitt.",
+    "Personalentwicklung: into, on, off, along und out of the job.",
+    "On the job ist die wirksamste und günstigste Form.",
+    "Das jährliche Mitarbeitergespräch verbindet Rückblick, Beurteilung und Zielvereinbarung."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre Gleitzeit und nenne zwei Voraussetzungen, damit sie funktioniert.",
+      "loesung": "Bei Gleitzeit gibt es eine feste Kernzeit, in der alle anwesend sein müssen, und einen beweglichen Rahmen, innerhalb dessen Beginn und Ende frei gewählt werden. Damit sie funktioniert, braucht es erstens ein Zeitkonto, auf dem Plus- und Minusstunden erfasst werden, und zweitens klare Regeln, wie hoch der Saldo werden darf und in welchem Zeitraum er auszugleichen ist. Ohne diese Regeln entstehen Salden, die praktisch nicht mehr abgebaut werden können."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die fünf Formen der Personalentwicklung nach dem Zeitpunkt mit je einem Beispiel.",
+      "loesung": "Into the job als Vorbereitung auf eine Stelle, etwa Ausbildung oder Einarbeitungsplan. On the job als Lernen am Arbeitsplatz, etwa Job-Rotation. Off the job außerhalb des Arbeitsplatzes, etwa ein Seminar. Along the job als begleitende Förderung, etwa Mentoring. Out of the job als Vorbereitung auf das Ausscheiden, etwa Altersteilzeit."
+    }
+  ],
+  "pruefungstipp": "Die Formen der Personalentwicklung werden fast immer als Zuordnung abgefragt — merke dir die fünf englischen Präpositionen und je ein Beispiel. Bei Arbeitszeitmodellen wird gern nach den Voraussetzungen der Gleitzeit gefragt: Zeitkonto und Ausgleichsregeln."
+}

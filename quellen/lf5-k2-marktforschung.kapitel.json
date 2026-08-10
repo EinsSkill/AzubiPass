@@ -1,0 +1,289 @@
+{
+  "id": "k2",
+  "lernfeld": "lf5",
+  "nummer": 2,
+  "titel": "Marktforschung",
+  "untertitel": "Woher du weißt, was Kunden wollen — statt es zu vermuten.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Primär- und Sekundärforschung unterscheiden und einsetzen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Erhebungsmethoden auswählen und begründen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Einen Fragebogen aufbauen und typische Fehler vermeiden",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Zwei Wege zu Daten",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:marktforschung|Marktforschung}} beantwortet Fragen, die sonst im Bauchgefühl enden. Dafür gibt es genau zwei Wege: Daten neu erheben oder vorhandene auswerten. ==Die Reihenfolge ist fast immer dieselbe== — erst schauen, was schon da ist, und nur die Lücke neu erheben."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Wege",
+          "titel": "Primär- oder Sekundärforschung",
+          "lead": "Beide beantworten dieselbe Frage — mit sehr unterschiedlichem Aufwand.",
+          "seiten": [
+            {
+              "name": "Sekundärforschung",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Vorhandene Daten auswerten",
+                  "detail": "Sie wurden für einen anderen Zweck erhoben und liegen bereits vor."
+                },
+                {
+                  "text": "Betriebsintern",
+                  "detail": "Umsatzstatistik, Kundendatei, Reklamationen, Außendienstberichte, Angebote und deren Erfolgsquote."
+                },
+                {
+                  "text": "Betriebsextern",
+                  "detail": "Statistisches Bundesamt, IHK- und Verbandsberichte, Fachzeitschriften, Geschäftsberichte der Konkurrenz."
+                },
+                {
+                  "text": "Schnell und günstig",
+                  "detail": "Oft an einem Nachmittag zu haben und meist kostenlos — deshalb immer der erste Schritt."
+                },
+                {
+                  "text": "Aber: nicht passgenau und womöglich veraltet",
+                  "detail": "Die Daten wurden für eine andere Frage erhoben. Prüfe Alter, Herkunft und Interesse der Quelle — dieselbe Quellenkritik wie in Lernfeld 1."
+                }
+              ]
+            },
+            {
+              "name": "Primärforschung",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Daten neu erheben",
+                  "detail": "Speziell für die eigene Fragestellung, deshalb genau passend."
+                },
+                {
+                  "text": "Befragung",
+                  "detail": "Schriftlich, telefonisch, persönlich oder online. Die häufigste Methode — und die mit den meisten Fehlerquellen."
+                },
+                {
+                  "text": "Beobachtung",
+                  "detail": "Zusehen statt fragen: Laufwege im Laden, Klickpfade im Shop. Vorteil: Menschen verhalten sich anders, als sie sagen."
+                },
+                {
+                  "text": "Test und Experiment",
+                  "detail": "Produkttest, Markttest in einer Region, A/B-Test zweier Varianten. Liefert Ursache-Wirkung statt bloßer Zusammenhänge."
+                },
+                {
+                  "text": "Teuer und langsam",
+                  "detail": "Deshalb erst dann, wenn die Sekundärforschung die Frage nicht beantworten konnte."
+                }
+              ]
+            }
+          ],
+          "regel": "Faustregel: Sekundär zuerst, primär nur für die verbleibende Lücke. Wer neu erhebt, was längst vorliegt, verbrennt Geld."
+        },
+        {
+          "typ": "merke",
+          "text": "**Sekundär** heißt nicht zweitrangig, sondern zweitverwertet. Es ist der erste Schritt, nicht der schlechtere.",
+          "karteikarte": "Was unterscheidet Primär- von Sekundärforschung, und womit fängt man an?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Wen fragen — und wie viele?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Alle zu befragen ist unmöglich. Deshalb wird aus der {{begriff:grundgesamtheit|Grundgesamtheit}} eine {{begriff:stichprobe|Stichprobe}} gezogen. Entscheidend ist nicht ihre Größe, sondern ob sie ==repräsentativ== ist: Sie muss in ihrer Zusammensetzung dem Ganzen entsprechen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Auswahlverfahren",
+            "Wie ausgewählt wird",
+            "Repräsentativ?"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Zufallsauswahl",
+                "jeder hat dieselbe Chance, gezogen zu werden",
+                "ja, bei ausreichender Größe"
+              ]
+            },
+            {
+              "zellen": [
+                "Quotenauswahl",
+                "die Stichprobe bildet bekannte Anteile nach, etwa Alter und Geschlecht",
+                "ja, wenn die Quoten stimmen"
+              ]
+            },
+            {
+              "zellen": [
+                "Willkürliche Auswahl",
+                "wer gerade greifbar ist",
+                "nein"
+              ],
+              "detail": "**Der häufigste Fehler in Schülerbefragungen.** Wer vormittags in der Fußgängerzone fragt, erreicht überwiegend Menschen, die vormittags Zeit haben — und hält das Ergebnis anschließend für die Meinung der Bevölkerung."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Du befragst 200 Personen vor deiner Berufsschule zu Bürobedarf. Was ist das Hauptproblem?",
+          "optionen": [
+            {
+              "text": "Die Stichprobe ist zu klein",
+              "richtig": false,
+              "echo": "200 Antworten sind für viele Fragestellungen ausreichend. Die Zahl ist selten das Problem — die Zusammensetzung schon."
+            },
+            {
+              "text": "Die Stichprobe ist nicht repräsentativ",
+              "richtig": true,
+              "echo": "Richtig. Vor einer Berufsschule triffst du fast ausschließlich Auszubildende zwischen 16 und 21. Sie sind kein Abbild der Käufer von Bürobedarf — die sitzen in Einkaufsabteilungen. Die Auswahl ist willkürlich, nicht zufällig."
+            },
+            {
+              "text": "Befragungen sind grundsätzlich unzuverlässig",
+              "richtig": false,
+              "echo": "Zu pauschal. Befragungen sind ein anerkanntes Verfahren — sie stehen und fallen mit der Auswahl der Befragten und der Formulierung der Fragen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Den Fragebogen bauen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Rahmenlehrplan verlangt ausdrücklich, einen Fragebogen mit den Mitteln eines Textverarbeitungsprogramms zu gestalten — also mit Formularfeldern, Ankreuzkästchen und Auswahllisten. Inhaltlich folgt er einem festen Aufbau."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Teil",
+            "Zweck",
+            "Beispiel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Einleitung",
+                "Zweck nennen, Anonymität zusichern, Dauer angeben",
+                "„Fünf Minuten, anonym, für unsere Sortimentsplanung.“"
+              ]
+            },
+            {
+              "zellen": [
+                "Eisbrecherfrage",
+                "leicht zu beantworten, senkt die Hemmschwelle",
+                "„Wie oft kaufen Sie Büromaterial ein?“"
+              ]
+            },
+            {
+              "zellen": [
+                "Sachfragen",
+                "der eigentliche Kern",
+                "Zufriedenheit, Wünsche, Preisbereitschaft"
+              ]
+            },
+            {
+              "zellen": [
+                "Statistische Angaben",
+                "zum Schluss, weil persönlich",
+                "Alter, Betriebsgröße, Branche"
+              ],
+              "detail": "**Warum ans Ende:** Wer gleich zu Beginn nach Alter und Einkommen gefragt wird, bricht eher ab. Am Ende hat der Befragte schon investiert und beantwortet auch die unangenehmen Fragen."
+            },
+            {
+              "zellen": [
+                "Dank",
+                "Abschluss, ggf. Hinweis auf Ergebnisse",
+                "„Danke — auf Wunsch schicken wir Ihnen die Auswertung.“"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Vier Fehler, die jeden Fragebogen entwerten: **Suggestivfragen** („Finden Sie unseren Service nicht auch hervorragend?“), **Doppelfragen** (zwei Sachen in einer Frage), **Fachbegriffe**, die der Befragte nicht kennt, und **fehlende Ausweichmöglichkeit** — ohne „weiß nicht“ raten die Leute einfach."
+        },
+        {
+          "typ": "merke",
+          "text": "Geschlossene Fragen mit Ankreuzkästchen sind schnell auswertbar, offene Fragen liefern Antworten, an die niemand gedacht hat. Ein guter Bogen hat viele geschlossene und ein bis zwei offene am Ende.",
+          "karteikarte": "Wann setzt du offene, wann geschlossene Fragen ein?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welcher Fragebogen-Fehler liegt vor?",
+          "kategorien": [
+            "Suggestivfrage",
+            "Doppelfrage",
+            "Fachjargon"
+          ],
+          "aufgaben": [
+            {
+              "text": "„Wie zufrieden sind Sie mit Preis und Lieferzeit?“",
+              "loesung": "Doppelfrage"
+            },
+            {
+              "text": "„Wie beurteilen Sie unsere Konditionenpolitik?“",
+              "loesung": "Fachjargon"
+            },
+            {
+              "text": "„Stimmen Sie zu, dass unser Service besser geworden ist?“",
+              "loesung": "Suggestivfrage"
+            },
+            {
+              "text": "„Wie bewerten Sie Sortiment und Beratung?“",
+              "loesung": "Doppelfrage"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Sekundärforschung wertet vorhandene Daten aus — intern und extern, schnell und günstig.",
+    "Primärforschung erhebt neu: Befragung, Beobachtung, Test und Experiment.",
+    "Reihenfolge: erst sekundär, dann primär für die verbleibende Lücke.",
+    "Die Stichprobe muss repräsentativ sein, nicht groß.",
+    "Zufalls- und Quotenauswahl sind repräsentativ, willkürliche Auswahl nicht.",
+    "Fragebogenaufbau: Einleitung, Eisbrecher, Sachfragen, statistische Angaben, Dank.",
+    "Vermeide Suggestiv- und Doppelfragen, Fachjargon und fehlende Ausweichmöglichkeit."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne je zwei Quellen der internen und der externen Sekundärforschung.",
+      "loesung": "Intern zum Beispiel die Umsatzstatistik, die Kundendatei, Reklamationsauswertungen oder Berichte des Außendienstes. Extern zum Beispiel Veröffentlichungen des Statistischen Bundesamts, Branchenberichte von IHK und Verbänden, Fachzeitschriften oder Geschäftsberichte der Konkurrenz."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum werden statistische Angaben wie Alter und Einkommen ans Ende eines Fragebogens gestellt?",
+      "loesung": "Weil sie als persönlich empfunden werden. Am Anfang erhöhen sie die Abbruchquote, weil der Befragte noch nichts investiert hat. Am Ende hat er den Bogen bereits weitgehend ausgefüllt und beantwortet auch die heiklen Fragen eher."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Betrieb will wissen, ob ein neues Produkt am Markt Chancen hat. Welche Methode empfiehlst du und warum?",
+      "loesung": "Zuerst Sekundärforschung: Branchenzahlen, Marktentwicklung und Angebote der Konkurrenz zeigen kostenlos, ob überhaupt Bedarf besteht. Bleibt die Frage offen, folgt Primärforschung — am aussagekräftigsten ein Markttest in einer begrenzten Region oder ein Produkttest mit einer repräsentativen Gruppe, weil damit tatsächliches Verhalten statt bloßer Absichtserklärungen gemessen wird."
+    }
+  ],
+  "pruefungstipp": "Die Abgrenzung Primär gegen Sekundär und die Zuordnung konkreter Quellen kommen sehr häufig. Merke: Sekundär = schon vorhanden, primär = neu erhoben. Beim Fragebogen wird meist nach Fehlern in vorgegebenen Formulierungen gefragt — achte auf Suggestion und auf zwei Fragen in einem Satz."
+}

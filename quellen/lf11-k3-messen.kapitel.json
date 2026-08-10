@@ -1,0 +1,311 @@
+{
+  "id": "k3",
+  "lernfeld": "lf11",
+  "nummer": 3,
+  "titel": "Prozesse messen",
+  "untertitel": "Was man nicht misst, kann man nicht verbessern — nur behaupten.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Durchlaufzeit in ihre Bestandteile zerlegen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Prozesskennzahlen berechnen und deuten",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Engpässe im Prozess erkennen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Woraus Durchlaufzeit besteht",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:durchlaufzeit|Durchlaufzeit}} ist die Spanne vom Eingang bis zum Abschluss eines Vorgangs. ==Sie besteht nur zu einem kleinen Teil aus tatsächlicher Bearbeitung== — der Rest ist Warten, Weiterreichen und Prüfen. Wie viel davon echte Arbeit ist, misst der {{begriff:flussgrad|Flussgrad}}."
+        },
+        {
+          "typ": "grafik",
+          "variante": "durchlauf",
+          "kopf": "Der Balken",
+          "titel": "Wo die Zeit tatsächlich hingeht",
+          "lead": "Ein Angebotsvorgang über acht Arbeitstage. Ändere die Werte und beobachte den Flussgrad.",
+          "einheit": "Std",
+          "abschnitte": [
+            {
+              "name": "Bearbeitung",
+              "art": "wert",
+              "wert": 4.5,
+              "schritt": 0.5
+            },
+            {
+              "name": "Liegezeit",
+              "art": "liege",
+              "wert": 48,
+              "schritt": 1
+            },
+            {
+              "name": "Transport und Weiterleitung",
+              "art": "transport",
+              "wert": 6,
+              "schritt": 0.5
+            },
+            {
+              "name": "Prüfung und Freigabe",
+              "art": "pruef",
+              "wert": 5.5,
+              "schritt": 0.5
+            }
+          ],
+          "regel": "Der Flussgrad ist der Anteil wertschöpfender Zeit an der Durchlaufzeit. In Büroprozessen liegt er typischerweise im einstelligen Prozentbereich — dort steckt der ganze Verbesserungsspielraum."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Zeitart",
+            "Was passiert",
+            "Wertschöpfend?"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Bearbeitungszeit",
+                "am Vorgang wird gearbeitet",
+                "ja"
+              ],
+              "detail": "**Der einzige Teil, für den ein Kunde zahlen würde.** Alles andere ist aus seiner Sicht Verschwendung — auch wenn es intern begründet ist."
+            },
+            {
+              "zellen": [
+                "Liegezeit",
+                "der Vorgang wartet",
+                "nein"
+              ],
+              "detail": "**Der mit Abstand größte Block.** Der Vorgang liegt im Postfach, im Ablagekorb, in der Warteschlange vor einer Freigabe."
+            },
+            {
+              "zellen": [
+                "Transportzeit",
+                "der Vorgang wechselt die Stelle",
+                "nein"
+              ]
+            },
+            {
+              "zellen": [
+                "Prüf- und Rüstzeit",
+                "kontrollieren, vorbereiten",
+                "nein, aber oft nötig"
+              ],
+              "detail": "**Nicht wertschöpfend heißt nicht überflüssig.** Eine Vier-Augen-Prüfung bei Zahlungen ist sinnvoll — sie sollte nur nicht drei Tage dauern."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Durchlaufzeit = Bearbeitung + Liegezeit + Transport + Prüfung.** Der **Flussgrad** ist der Anteil der Bearbeitung daran — meist erschreckend klein.",
+          "karteikarte": "Aus welchen Bestandteilen besteht die Durchlaufzeit, und was sagt der Flussgrad aus?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Kennzahlen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Eine Kennzahl ist erst brauchbar, wenn klar ist, **womit man sie vergleicht**. ==Eine Durchlaufzeit von sechs Tagen ist weder gut noch schlecht== — sie ist gut gegenüber acht Tagen im Vormonat und schlecht gegenüber zwei Tagen beim Wettbewerb."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Kennzahl",
+            "Berechnung",
+            "Sagt etwas über"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Durchlaufzeit",
+                "Ende − Anfang",
+                "Schnelligkeit"
+              ]
+            },
+            {
+              "zellen": [
+                "Flussgrad",
+                "Bearbeitungszeit ÷ Durchlaufzeit × 100",
+                "Verbesserungsspielraum"
+              ],
+              "detail": "**Je niedriger, desto größer der Hebel.** Ein Flussgrad von 5 % heißt: 95 % der Zeit ließe sich theoretisch streichen, ohne dass jemand schneller arbeiten müsste."
+            },
+            {
+              "zellen": [
+                "Fehlerquote",
+                "fehlerhafte ÷ alle Vorgänge × 100",
+                "Qualität"
+              ],
+              "detail": "**Jeder Fehler kostet doppelt:** einmal die Nacharbeit und einmal die Liegezeit, bis der Fehler überhaupt auffällt."
+            },
+            {
+              "zellen": [
+                "Termintreue",
+                "pünktliche ÷ alle Vorgänge × 100",
+                "Verlässlichkeit"
+              ]
+            },
+            {
+              "zellen": [
+                "Prozesskosten je Vorgang",
+                "Gesamtkosten ÷ Zahl der Vorgänge",
+                "Wirtschaftlichkeit"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Kennzahlen steuern Verhalten — auch das falsche. Wird nur die **Durchlaufzeit** gemessen, sinkt sie zuverlässig, notfalls durch weniger sorgfältige Prüfung. Deshalb gehören Tempo- und Qualitätskennzahlen immer zusammen."
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Vorgang dauert insgesamt 60 Stunden, davon 4,5 Stunden echte Bearbeitung. Wie hoch ist der Flussgrad, und was folgt daraus?",
+          "optionen": [
+            {
+              "text": "7,5 % — der Spielraum liegt bei den Liege- und Prüfzeiten",
+              "richtig": true,
+              "echo": "Richtig. 4,5 geteilt durch 60 mal 100 ergibt 7,5 Prozent. Das heißt: In 92,5 Prozent der Durchlaufzeit passiert mit dem Vorgang nichts Wertschöpfendes. Wer die Durchlaufzeit halbieren will, muss also nicht die Bearbeitung beschleunigen — selbst wenn sie auf null sänke, blieben noch 55,5 Stunden. Der Hebel liegt bei Warteschlangen, Weiterleitungen und Freigaben."
+            },
+            {
+              "text": "7,5 % — die Mitarbeitenden müssen schneller arbeiten",
+              "richtig": false,
+              "echo": "Die Zahl stimmt, die Folgerung nicht. Selbst bei doppelt so schneller Bearbeitung sänke die Durchlaufzeit nur von 60 auf 57,75 Stunden — die Bearbeitung ist gar nicht das Problem."
+            },
+            {
+              "text": "13,3 % — 60 geteilt durch 4,5",
+              "richtig": false,
+              "echo": "Die Division ist umgekehrt. Der Flussgrad setzt die Bearbeitungszeit ins Verhältnis zur Durchlaufzeit, also den kleineren Wert zum größeren."
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Flussgrad = Bearbeitungszeit ÷ Durchlaufzeit × 100.** Ein niedriger Flussgrad ist keine schlechte Nachricht, sondern ein großer Hebel.",
+          "karteikarte": "Wie berechnet man den Flussgrad, und warum ist ein niedriger Wert ein Hinweis auf Verbesserungspotenzial?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Engpässe finden",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein **{{begriff:engpass|Engpass}}** ist die Stelle mit der geringsten Kapazität. ==Sie bestimmt die Leistung des ganzen Prozesses== — alles davor staut sich, alles danach wartet."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Vier Schritte",
+          "titel": "So findest du den Engpass",
+          "lead": "Der Reihe nach vorgehen, sonst optimiert man die falsche Stelle. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Wo staut sich etwas?",
+              "satz": "Warteschlangen sichtbar machen",
+              "text": "Vor dem Engpass sammeln sich unerledigte Vorgänge. Der volle Ablagekorb, der überlaufende Freigabe-Ordner, die lange Warteliste — sie zeigen die Stelle zuverlässiger als jede Statistik."
+            },
+            {
+              "nr": 2,
+              "titel": "Kapazität je Schritt messen",
+              "satz": "Vorgänge pro Tag",
+              "text": "Wie viele Vorgänge schafft jeder Schritt tatsächlich? Der kleinste Wert ist der Engpass — und er begrenzt die Leistung des gesamten Prozesses, egal wie schnell alle anderen sind."
+            },
+            {
+              "nr": 3,
+              "titel": "Engpass entlasten",
+              "satz": "nicht die anderen beschleunigen",
+              "text": "Mehr Kapazität, Aufgaben verlagern, Vorarbeit abnehmen. Alles, was den Engpass entlastet, wirkt sofort — alles andere vergrößert nur den Stau davor."
+            },
+            {
+              "nr": 4,
+              "titel": "Neu messen",
+              "satz": "der Engpass wandert",
+              "text": "Ist die Stelle entlastet, ist eine andere die neue Grenze. Prozessverbesserung ist deshalb kein Projekt mit Ende, sondern ein Kreislauf."
+            }
+          ],
+          "regel": "Merksatz: Eine Verbesserung außerhalb des Engpasses verbessert gar nichts — sie erzeugt nur größere Stapel vor derselben Stelle."
+        },
+        {
+          "typ": "merke",
+          "text": "**Der Engpass bestimmt die Leistung des ganzen Prozesses.** Optimierungen an anderen Stellen vergrößern nur den Stau vor ihm.",
+          "karteikarte": "Was ist ein Engpass im Prozess, und warum bringen Verbesserungen an anderen Stellen nichts?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Wertschöpfend oder nicht?",
+          "kategorien": [
+            "Wertschöpfend",
+            "Nicht wertschöpfend"
+          ],
+          "aufgaben": [
+            {
+              "text": "Das Angebot wird kalkuliert und geschrieben.",
+              "loesung": "Wertschöpfend"
+            },
+            {
+              "text": "Der Vorgang liegt zwei Tage im Postfach der Leitung.",
+              "loesung": "Nicht wertschöpfend"
+            },
+            {
+              "text": "Die Akte wird in eine andere Abteilung gebracht.",
+              "loesung": "Nicht wertschöpfend"
+            },
+            {
+              "text": "Die Kundendaten werden erfasst.",
+              "loesung": "Wertschöpfend"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Durchlaufzeit = Bearbeitung + Liegezeit + Transport + Prüfung.",
+    "Nur die Bearbeitungszeit ist aus Kundensicht wertschöpfend.",
+    "Flussgrad = Bearbeitungszeit ÷ Durchlaufzeit × 100.",
+    "In Büroprozessen liegt der Flussgrad meist im einstelligen Prozentbereich.",
+    "Ein niedriger Flussgrad zeigt großen Verbesserungsspielraum.",
+    "Kennzahlen brauchen einen Vergleichsmaßstab — Vormonat, Ziel oder Wettbewerb.",
+    "Tempo- und Qualitätskennzahlen gehören zusammen, sonst steuern sie falsch.",
+    "Der Engpass bestimmt die Leistung des gesamten Prozesses."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Berechnung",
+      "frage": "Ein Vorgang hat 3 Stunden Bearbeitung, 36 Stunden Liegezeit, 4 Stunden Transport und 5 Stunden Prüfung. Berechne Durchlaufzeit und Flussgrad.",
+      "loesung": "Die Durchlaufzeit ist die Summe aller Bestandteile: 3 plus 36 plus 4 plus 5 ergibt 48 Stunden. Wertschöpfend ist allein die Bearbeitungszeit von 3 Stunden. Der Flussgrad beträgt damit 3 geteilt durch 48 mal 100, also 6,25 Prozent. Das bedeutet, dass an dem Vorgang in nur gut sechs Prozent der Durchlaufzeit tatsächlich gearbeitet wird. Selbst wenn die Bearbeitung vollständig entfiele, sänke die Durchlaufzeit nur von 48 auf 45 Stunden. Der Hebel für eine Verkürzung liegt deshalb eindeutig bei den Liege-, Transport- und Prüfzeiten."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum sollte man Prozesskennzahlen nie einzeln betrachten?",
+      "loesung": "Kennzahlen steuern Verhalten. Wird ausschließlich die Durchlaufzeit gemessen und bewertet, sinkt sie zuverlässig — allerdings möglicherweise dadurch, dass Prüfungen verkürzt oder übersprungen werden. Die Folge sind mehr Fehler, die später Nacharbeit und zusätzliche Durchlaufzeit verursachen, sodass der Vorteil verschwindet oder sich ins Gegenteil verkehrt. Deshalb gehören Tempokennzahlen wie Durchlaufzeit und Termintreue immer mit Qualitätskennzahlen wie der Fehlerquote zusammen, ergänzt um eine Kostenkennzahl wie die Prozesskosten je Vorgang. Zusätzlich braucht jede Kennzahl einen Vergleichsmaßstab: den eigenen Vorzeitraum, ein gesetztes Ziel oder einen Vergleichswert von außen. Eine Zahl ohne Vergleich ist nicht deutbar."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Die Bearbeitung von Reisekostenabrechnungen dauert im Schnitt neun Arbeitstage. Die Geschäftsführung fordert, dass die Sachbearbeitung schneller arbeitet. Wie gehst du vor?",
+      "loesung": "Bevor irgendetwas gefordert wird, ist der Prozess zu messen. Ich würde die Durchlaufzeit in ihre Bestandteile zerlegen und je Schritt erfassen, wie viel Zeit auf Bearbeitung, Liegen, Transport und Prüfung entfällt. Erfahrungsgemäß entfällt der weitaus größte Teil auf Liegezeiten, etwa das Warten auf fehlende Belege, auf die Freigabe durch Vorgesetzte oder auf den nächsten Zahlungslauf. Ist der Flussgrad niedrig, ist die Forderung nach schnellerer Bearbeitung wirkungslos: Selbst eine Halbierung der reinen Bearbeitungszeit würde die Durchlaufzeit kaum verändern. Als Nächstes ist der Engpass zu bestimmen, also der Schritt mit der geringsten Kapazität, weil er die Leistung des gesamten Prozesses begrenzt. Verbesserungen setzen dann dort an: klare Vorgaben für vollständige Einreichung, feste Freigabezeitpunkte statt Warten auf Gelegenheit, Vertretungsregelungen bei Abwesenheit, gegebenenfalls Wertgrenzen, unterhalb derer keine gesonderte Freigabe nötig ist. Die Ergebnisse sind erneut zu messen, weil der Engpass nach der Entlastung an eine andere Stelle wandert. Wichtig ist außerdem, neben der Durchlaufzeit auch die Fehlerquote zu beobachten, damit Tempo nicht auf Kosten der Richtigkeit geht."
+    }
+  ],
+  "pruefungstipp": "Der Flussgrad ist die zentrale Rechenaufgabe dieses Kapitels und die Division wird häufig vertauscht — Bearbeitungszeit steht im Zähler. Bei Fällen, in denen jemand schnelleres Arbeiten fordert, lautet die erwartete Antwort fast immer: Erst messen, wo die Zeit hingeht. Nenne dabei ausdrücklich die vier Bestandteile der Durchlaufzeit."
+}

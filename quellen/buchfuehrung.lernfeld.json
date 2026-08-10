@@ -1,0 +1,82 @@
+{
+  "id": "buchfuehrung",
+  "titel": "Buchführung",
+  "untertitel": "Von der Buchführungspflicht bis zum Jahresabschluss",
+  "linie": "B",
+  "stand": "2026-07",
+  "ausbildungsordnung": "2025",
+  "hero": {
+    "ueberschrift": "Das finanzielle *Gedächtnis* eines Betriebs.",
+    "lead": "Neun Kapitel von der Buchführungspflicht bis zum fertigen Jahresabschluss. Alles, was die IHK dazu prüft — und nichts, was sie nicht prüft.",
+    "fakten": [
+      "9 Kapitel",
+      "Neue AO 2025",
+      "ca. 6 Std."
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "k1-grundlagen.kapitel.json",
+      "titel": "Grundlagen & Buchführungspflicht",
+      "minuten": 15,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "k2-bilanz.kapitel.json",
+      "titel": "Die Bilanz",
+      "minuten": 20,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "k3-konten.kapitel.json",
+      "titel": "Konten & Buchungssätze",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "k4-erfolgskonten.kapitel.json",
+      "titel": "Erfolgskonten & GuV",
+      "minuten": 20,
+      "frei": false
+    },
+    {
+      "id": "k5",
+      "datei": "k5-warenkonten.kapitel.json",
+      "titel": "Warenkonten & Kalkulation",
+      "minuten": 35,
+      "frei": false
+    },
+    {
+      "id": "k6",
+      "datei": "k6-umsatzsteuer.kapitel.json",
+      "titel": "Umsatzsteuer",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k7",
+      "datei": "k7-personal.kapitel.json",
+      "titel": "Personalkosten & Gehaltsbuchung",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k8",
+      "datei": "k8-afa.kapitel.json",
+      "titel": "Anlagevermögen & Abschreibungen",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k9",
+      "datei": "k9-jahresabschluss.kapitel.json",
+      "titel": "Jahresabschluss",
+      "minuten": 30,
+      "frei": false
+    }
+  ]
+}

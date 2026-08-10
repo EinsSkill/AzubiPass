@@ -1,0 +1,312 @@
+{
+  "id": "k4",
+  "lernfeld": "lf12",
+  "nummer": 4,
+  "titel": "Reisekosten abrechnen",
+  "untertitel": "Vier Bausteine, eine Reihenfolge, ein paar Fallen.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Die vier Bestandteile der Reisekosten unterscheiden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Verpflegungspauschalen nach Abwesenheitsdauer ermitteln",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Eine Reisekostenabrechnung prüfen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Vier Bausteine",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Jede {{begriff:reisekostenabrechnung|Reisekostenabrechnung}} besteht aus denselben vier Teilen. ==Drei davon werden mit Beleg abgerechnet, einer pauschal== — und genau der pauschale ist der, bei dem die meisten Fehler passieren."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Baustein",
+            "Wie abgerechnet",
+            "Zu beachten"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Fahrtkosten",
+                "Beleg oder Kilometerpauschale",
+                "Bahnticket, Flug, Taxi, eigener Pkw"
+              ],
+              "detail": "**Beim eigenen Pkw** wird entweder die Kilometerpauschale angesetzt oder ein individuell ermittelter Kilometersatz. Die Fahrten sind mit Datum, Ziel, Anlass und Kilometerstand nachzuweisen."
+            },
+            {
+              "zellen": [
+                "Verpflegungsmehraufwand",
+                "ausschließlich pauschal",
+                "gestaffelt nach Abwesenheitsdauer"
+              ],
+              "detail": "**Hier zählt kein Beleg.** Auch wer für 80 Euro isst, bekommt nur die Pauschale — und wer gar nichts isst, bekommt sie trotzdem. Deshalb heißt sie Pauschale."
+            },
+            {
+              "zellen": [
+                "Übernachtungskosten",
+                "mit Beleg",
+                "Frühstücksanteil ist herauszurechnen"
+              ],
+              "detail": "**Die klassische Falle.** Enthält die Hotelrechnung ein Frühstück, gehört es nicht zu den Übernachtungskosten — es wird stattdessen von der Verpflegungspauschale abgezogen."
+            },
+            {
+              "zellen": [
+                "Reisenebenkosten",
+                "mit Beleg",
+                "Parken, Maut, Gepäck, Telefon"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Fahrt, Verpflegung, Übernachtung, Nebenkosten.** Nur die Verpflegung wird pauschal abgerechnet — für die anderen drei braucht es Belege.",
+          "karteikarte": "Aus welchen vier Bausteinen besteht eine Reisekostenabrechnung, und welcher davon wird pauschal abgerechnet?"
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein häufiger Fehler: **Bewirtungskosten sind keine Reisekosten.** Lädt jemand auf der Reise einen Kunden ein, ist das eine Bewirtung mit eigenen Nachweispflichten — Anlass, Teilnehmer und Datum gehören auf den Beleg."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Die Verpflegungspauschale",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:verpflegungspauschale|Verpflegungsmehraufwand}} wird nach der **Abwesenheitsdauer** gestaffelt. Bei mehrtägigen Reisen gelten für An- und Abreisetag eigene Regeln — dort kommt es auf die Dauer gar nicht an, sondern nur darauf, dass auswärts übernachtet wurde.",
+          "pruefen": "Die aktuellen Pauschbeträge für Verpflegungsmehraufwand im Inland und die Staffelung nach Abwesenheitsdauer vor Veröffentlichung gegen § 9 Abs. 4a EStG und die geltende Verwaltungsanweisung prüfen und die Euro-Beträge in der folgenden Tabelle eintragen."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Fall",
+            "Voraussetzung",
+            "Pauschale"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Eintägige Reise",
+                "Abwesenheit über der kleinen Schwelle",
+                "kleiner Satz"
+              ],
+              "detail": "**Bleibt die Abwesenheit unter der Schwelle, gibt es gar nichts.** Der Gesetzgeber unterstellt, dass bei kurzer Abwesenheit kein Mehraufwand entsteht."
+            },
+            {
+              "zellen": [
+                "Ganzer Tag einer mehrtägigen Reise",
+                "volle 24 Stunden abwesend",
+                "großer Satz"
+              ]
+            },
+            {
+              "zellen": [
+                "An- und Abreisetag",
+                "auswärtige Übernachtung",
+                "kleiner Satz"
+              ],
+              "detail": "**Ohne Prüfung der Stundenzahl.** Entscheidend ist allein, dass am Vortag oder Folgetag auswärts übernachtet wurde — die tatsächliche Dauer des An- oder Abreisetags spielt keine Rolle."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Stellt der Arbeitgeber oder ein Dritter eine Mahlzeit, wird die Pauschale **gekürzt** — und zwar um feste Anteile des vollen Tagessatzes: **20 Prozent für ein Frühstück, je 40 Prozent für Mittag- und Abendessen.** ==Diese Prozentsätze beziehen sich immer auf den großen Satz==, auch am An- oder Abreisetag."
+        },
+        {
+          "typ": "grafik",
+          "variante": "durchlauf",
+          "kopf": "Die Kürzung",
+          "titel": "Was von der Pauschale übrig bleibt",
+          "lead": "Trag ein, was gestellt wurde. Die Anteile beziehen sich auf den vollen Tagessatz.",
+          "einheit": "%",
+          "abschnitte": [
+            {
+              "name": "Bleibt ausgezahlt",
+              "art": "wert",
+              "wert": 40,
+              "schritt": 5
+            },
+            {
+              "name": "Frühstück gestellt (20 %)",
+              "art": "pruef",
+              "wert": 20,
+              "schritt": 20
+            },
+            {
+              "name": "Mittagessen gestellt (40 %)",
+              "art": "liege",
+              "wert": 40,
+              "schritt": 40
+            },
+            {
+              "name": "Abendessen gestellt (40 %)",
+              "art": "transport",
+              "wert": 0,
+              "schritt": 40
+            }
+          ],
+          "regel": "Rechenweg: Voller Tagessatz minus 20 Prozent je Frühstück minus 40 Prozent je Mittag- oder Abendessen. Werden alle drei Mahlzeiten gestellt, bleibt nichts übrig — die Kürzung kann die Pauschale aber nie unter null drücken."
+        },
+        {
+          "typ": "merke",
+          "text": "Kürzung um **20 Prozent für Frühstück**, **je 40 Prozent für Mittag- und Abendessen** — immer bezogen auf den vollen Tagessatz. Die Pauschale wird nie negativ.",
+          "karteikarte": "Um welche Anteile wird die Verpflegungspauschale bei gestellten Mahlzeiten gekürzt, und worauf beziehen sich diese Prozentsätze?"
+        },
+        {
+          "typ": "check",
+          "frage": "Auf einer dreitägigen Reise ist im Hotelpreis Frühstück enthalten. Wie wirkt sich das aus?",
+          "optionen": [
+            {
+              "text": "Gar nicht — das Frühstück steht ja auf der Hotelrechnung",
+              "richtig": false,
+              "echo": "Doch. Ein gestelltes Frühstück kürzt die Verpflegungspauschale, unabhängig davon, ob es gesondert ausgewiesen ist oder im Zimmerpreis steckt."
+            },
+            {
+              "text": "Die Verpflegungspauschale wird je Frühstück um 20 Prozent des vollen Tagessatzes gekürzt",
+              "richtig": true,
+              "echo": "Richtig. Ein vom Arbeitgeber oder auf dessen Veranlassung gestelltes Frühstück kürzt die Pauschale um 20 Prozent des vollen Tagessatzes — an jedem Tag, an dem es gestellt wurde. Gleichzeitig gehört der Frühstücksanteil nicht zu den Übernachtungskosten und ist aus der Hotelrechnung herauszurechnen. Beides zusammen ist die häufigste Fehlerquelle in Reisekostenabrechnungen."
+            },
+            {
+              "text": "Die Übernachtungskosten werden um 20 Prozent gekürzt",
+              "richtig": false,
+              "echo": "Verwechslung zweier Vorgänge. Aus den Übernachtungskosten wird der Frühstücksanteil herausgerechnet; gekürzt um 20 Prozent wird dagegen die Verpflegungspauschale."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Die Abrechnung prüfen",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Wer Reisekostenabrechnungen prüft, arbeitet eine feste Liste ab. ==Dieselben fünf Fehler machen den größten Teil aller Beanstandungen aus.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Fünf Prüfpunkte",
+          "titel": "Worauf du achtest",
+          "lead": "In dieser Reihenfolge. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Anlass und Genehmigung",
+              "satz": "war die Reise betrieblich?",
+              "text": "Ohne betrieblichen Anlass gibt es keine Reisekosten. Prüfe außerdem, ob die Reise genehmigt war — bei nachträglich angezeigten Reisen ist zuerst das zu klären."
+            },
+            {
+              "nr": 2,
+              "titel": "Zeiten",
+              "satz": "Beginn und Ende mit Uhrzeit",
+              "text": "Die Abwesenheitsdauer entscheidet über die Verpflegungspauschale. Fehlen Uhrzeiten, lässt sich sie nicht ermitteln — die Abrechnung geht zurück."
+            },
+            {
+              "nr": 3,
+              "titel": "Belege",
+              "satz": "vollständig und im Original",
+              "text": "Fahrt, Übernachtung und Nebenkosten brauchen Belege. Für die Verpflegungspauschale ausdrücklich nicht — ein beigelegter Restaurantbeleg ändert an ihrer Höhe nichts."
+            },
+            {
+              "nr": 4,
+              "titel": "Gestellte Mahlzeiten",
+              "satz": "Kürzung vorgenommen?",
+              "text": "Frühstück im Hotelpreis, Mittagessen bei der Fortbildung, Abendessen beim Kunden. Jede gestellte Mahlzeit kürzt die Pauschale — das wird am häufigsten übersehen."
+            },
+            {
+              "nr": 5,
+              "titel": "Rechnerische Richtigkeit",
+              "satz": "und Frühstücksanteil",
+              "text": "Summen nachrechnen und prüfen, ob der Frühstücksanteil aus den Übernachtungskosten herausgenommen wurde. Erst dann zeichnen und zur Zahlung geben."
+            }
+          ],
+          "regel": "Die beiden mit Abstand häufigsten Fehler: fehlende Uhrzeiten und nicht berücksichtigte gestellte Mahlzeiten. Wer nur diese beiden Punkte konsequent prüft, fängt den größten Teil der Beanstandungen ab."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Gib den Reisenden das Formular **vor** der Reise mit und weise auf die Uhrzeiten hin. Eine Abrechnung, die vollständig eingeht, kostet Minuten — eine, die zweimal hin und her geht, kostet auf beiden Seiten eine halbe Stunde."
+        },
+        {
+          "typ": "merke",
+          "text": "Prüfe **Anlass, Zeiten, Belege, gestellte Mahlzeiten, Rechnerisches**. Die häufigsten Fehler sind fehlende Uhrzeiten und vergessene Mahlzeitenkürzungen.",
+          "karteikarte": "Welche fünf Punkte prüfst du an einer Reisekostenabrechnung, und welche zwei Fehler sind am häufigsten?"
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Mit Beleg oder pauschal?",
+          "kategorien": [
+            "Mit Beleg",
+            "Pauschal"
+          ],
+          "aufgaben": [
+            {
+              "text": "Bahnfahrkarte zweiter Klasse.",
+              "loesung": "Mit Beleg"
+            },
+            {
+              "text": "Verpflegungsmehraufwand für einen ganzen Reisetag.",
+              "loesung": "Pauschal"
+            },
+            {
+              "text": "Hotelrechnung ohne Frühstück.",
+              "loesung": "Mit Beleg"
+            },
+            {
+              "text": "Parkgebühr am Bahnhof.",
+              "loesung": "Mit Beleg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Vier Bausteine: Fahrtkosten, Verpflegungsmehraufwand, Übernachtung, Reisenebenkosten.",
+    "Nur der {{begriff:verpflegungspauschale|Verpflegungsmehraufwand}} wird pauschal abgerechnet.",
+    "Die Pauschale richtet sich nach der Abwesenheitsdauer.",
+    "An- und Abreisetag erhalten den kleinen Satz ohne Prüfung der Stundenzahl.",
+    "Gestellte Mahlzeiten kürzen die Pauschale: 20 Prozent Frühstück, je 40 Prozent Mittag und Abend.",
+    "Die Prozentsätze beziehen sich immer auf den vollen Tagessatz.",
+    "Der Frühstücksanteil gehört nicht zu den Übernachtungskosten.",
+    "Bewirtungskosten sind keine Reisekosten und haben eigene Nachweispflichten."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Aus welchen Bestandteilen setzen sich Reisekosten zusammen, und wie wird jeder abgerechnet?",
+      "loesung": "Reisekosten bestehen aus vier Bestandteilen. Die Fahrtkosten werden mit Beleg abgerechnet, etwa Bahnticket, Flug oder Taxiquittung; bei Nutzung des eigenen Pkw wird stattdessen die Kilometerpauschale oder ein individuell ermittelter Kilometersatz angesetzt, wobei Datum, Ziel, Anlass und gefahrene Kilometer nachzuweisen sind. Der Verpflegungsmehraufwand wird ausschließlich pauschal abgerechnet und richtet sich nach der Abwesenheitsdauer; Belege spielen dabei keine Rolle. Die Übernachtungskosten werden mit Beleg abgerechnet, wobei ein enthaltener Frühstücksanteil herauszurechnen ist. Die Reisenebenkosten wie Parkgebühren, Maut, Gepäckaufbewahrung oder beruflich veranlasste Telefonkosten werden ebenfalls mit Beleg abgerechnet. Nicht zu den Reisekosten gehören Bewirtungskosten; sie unterliegen eigenen Nachweispflichten mit Angabe von Anlass und Teilnehmern."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Wie wirken sich gestellte Mahlzeiten auf die Verpflegungspauschale aus?",
+      "loesung": "Stellt der Arbeitgeber oder auf dessen Veranlassung ein Dritter eine Mahlzeit, wird die Verpflegungspauschale gekürzt. Die Kürzung beträgt 20 Prozent des vollen Tagessatzes für ein Frühstück und jeweils 40 Prozent für ein Mittag- oder Abendessen. Diese Prozentsätze beziehen sich stets auf den vollen Tagessatz, auch dann, wenn für den betreffenden Tag nur der kleinere Satz zusteht, etwa am An- oder Abreisetag. Werden alle drei Mahlzeiten gestellt, entfällt die Pauschale vollständig; die Kürzung kann jedoch nie dazu führen, dass ein negativer Betrag entsteht. Es kommt nicht darauf an, ob die Mahlzeit tatsächlich eingenommen wurde, sondern darauf, dass sie zur Verfügung gestellt wurde. Ein im Hotelpreis enthaltenes Frühstück löst die Kürzung deshalb auch dann aus, wenn es nicht gesondert berechnet wird; zugleich ist der Frühstücksanteil aus den Übernachtungskosten herauszunehmen."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Eine Kollegin war von Dienstag 7 Uhr bis Donnerstag 19 Uhr auf Dienstreise. Im Hotel war Frühstück enthalten, am Mittwoch gab es bei der Fortbildung ein Mittagessen. Wie rechnest du die Verpflegung ab, ohne die konkreten Beträge zu kennen?",
+      "loesung": "Zunächst ist die Reise in drei Tage zu zerlegen. Der Dienstag ist Anreisetag mit auswärtiger Übernachtung und erhält deshalb den kleinen Satz, ohne dass die Stundenzahl geprüft wird. Der Mittwoch ist ein voller Zwischentag mit 24 Stunden Abwesenheit und erhält den großen Satz. Der Donnerstag ist Abreisetag und erhält ebenfalls den kleinen Satz. Anschließend sind die gestellten Mahlzeiten zu berücksichtigen. Das Frühstück war im Hotelpreis enthalten, also an Mittwoch und Donnerstag gestellt; für jeden dieser Tage wird die Pauschale um 20 Prozent des vollen Tagessatzes gekürzt. Das Mittagessen am Mittwoch führt zusätzlich zu einer Kürzung um 40 Prozent des vollen Tagessatzes. Am Dienstag erfolgt keine Kürzung, weil an diesem Tag keine Mahlzeit gestellt wurde. Zu beachten ist außerdem, dass der Frühstücksanteil aus der Hotelrechnung herauszurechnen und nicht als Übernachtungskosten anzusetzen ist. Die konkreten Euro-Beträge ergeben sich aus den jeweils geltenden Pauschbeträgen."
+    }
+  ],
+  "pruefungstipp": "Die Reisekostenabrechnung ist eine typische Rechenaufgabe. Geh immer in derselben Reihenfolge vor: Tage einzeln betrachten, je Tag den zutreffenden Satz bestimmen, dann die Kürzungen für gestellte Mahlzeiten abziehen. Die beiden Fallen sind der An- und Abreisetag, bei dem die Stundenzahl keine Rolle spielt, und die Kürzung, die sich immer auf den vollen Tagessatz bezieht — auch an Tagen mit dem kleinen Satz."
+}

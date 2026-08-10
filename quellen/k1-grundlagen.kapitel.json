@@ -1,0 +1,247 @@
+{
+  "id": "k1",
+  "lernfeld": "buchfuehrung",
+  "nummer": 1,
+  "titel": "Grundlagen & Buchführungspflicht",
+  "untertitel": "Was Buchführung ist, warum sie Pflicht ist und welche Regeln dabei gelten.",
+  "minuten": 15,
+
+  "lernziele": [
+    { "id": "lz1", "text": "Zweck und Bedeutung der Buchführung erklären können", "abschnitt": "a1" },
+    { "id": "lz2", "text": "Die Buchführungspflicht nach HGB und AO benennen und abgrenzen", "abschnitt": "a2" },
+    { "id": "lz3", "text": "Die Grundsätze ordnungsgemäßer Buchführung kennen und anwenden", "abschnitt": "a3" },
+    { "id": "lz4", "text": "Inventur, Inventar und Bilanz voneinander unterscheiden", "abschnitt": "a4" }
+  ],
+
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "a1",
+      "titel": "Was ist Buchführung?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Buchführung ist die systematische, lückenlose und zeitgerechte Aufzeichnung aller {{begriff:geschaeftsvorfall|Geschäftsvorfälle}} in Geldeinheiten. Sie ist das ==finanzielle Gedächtnis== eines Betriebs: Ohne sie wäre nicht nachvollziehbar, woher das Geld stammt, wohin es fließt und wie es dem Unternehmen wirtschaftlich geht."
+        },
+        {
+          "typ": "absatz",
+          "text": "Jede Zahlung, jede Lieferung, jeder Kauf hinterlässt einen {{begriff:beleg|Beleg}}, der erfasst und aufbewahrt werden muss. Daraus ergeben sich fünf Aufgaben, die regelmäßig geprüft werden:"
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Aufgabe", "Zweck", "Beispiel"],
+          "zeilen": [
+            { "zellen": ["Dokumentation", "Nachweis aller Geschäftsvorfälle", "Lieferantenrechnung archivieren"] },
+            { "zellen": ["Steuerermittlung", "Berechnungsgrundlage fürs Finanzamt", "Jahresgewinn als Steuerbasis"] },
+            { "zellen": ["Gläubigerschutz", "Transparenz über die Vermögenslage", "Bank prüft Bonität vor Kredit"] },
+            { "zellen": ["Information", "Entscheidungsgrundlage fürs Management", "Ist die Investition rentabel?"] },
+            { "zellen": ["Selbstschutz", "Beweismittel bei Streitigkeiten", "Nachweis bei der Steuerprüfung"] }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "Buchführung ist kein bürokratischer Selbstzweck. Wer ordentlich Buch führt, schützt sich selbst, seine Gläubiger — und handelt gesetzeskonform.",
+          "karteikarte": "Nenne drei Gründe, warum Buchführung mehr ist als Bürokratie."
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "a2",
+      "titel": "Wer muss Bücher führen?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Nicht jeder Unternehmer betreibt automatisch eine vollständige {{begriff:doppelte-buchfuehrung|doppelte Buchführung}}. Die wichtigste Grundlage im Handelsrecht ist {{par:hgb-238|§ 238 HGB}}: Jeder {{begriff:kaufmann|Kaufmann}} ist verpflichtet, Bücher zu führen — ==ohne jede Umsatz- oder Gewinnschwelle==."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Grundlage", "Für wen?", "Schwellenwert"],
+          "zeilen": [
+            { "zellen": ["§ 238 HGB", "Jeder Kaufmann (Handelsgewerbe)", "keiner — gilt automatisch"], "mono": [0] },
+            { "zellen": ["§ 140 AO", "Wer nach anderem Gesetz pflichtig ist", "folgt aus § 238 HGB"], "mono": [0] },
+            { "zellen": ["§ 141 AO", "Gewerbetreibende, Land- u. Forstwirte", "> 600.000 € Umsatz oder > 60.000 € Gewinn"], "mono": [0, 2] }
+          ]
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Wozu zwei Gesetze für dieselbe Pflicht?",
+          "absaetze": [
+            "Weil Handelsrecht und Steuerrecht unterschiedliche Ziele haben. Das HGB schützt Gläubiger, die AO sichert das Steueraufkommen.",
+            "**§ 140 AO** heißt *derivative* Pflicht — sie leitet sich ab: Wer schon handelsrechtlich Bücher führen muss, muss es auch steuerlich. **§ 141 AO** heißt *originäre* Pflicht — sie entsteht eigenständig und greift genau dort, wo das HGB nicht greift: bei Gewerbetreibenden, die keine Kaufleute sind, aber groß genug geworden sind."
+          ]
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "a3",
+      "titel": "Die GoB — Spielregeln der Buchführung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Grundsätze ordnungsgemäßer Buchführung stehen nicht vollständig im Gesetz. Sie haben sich aus Handelsbräuchen und Rechtsprechung entwickelt."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Grundsatz", "Bedeutung", "In der Praxis"],
+          "zeilen": [
+            {
+              "zellen": ["Richtigkeit", "Buchungen entsprechen dem echten Vorgang", "Keine erfundenen Buchungen"],
+              "detail": "**Verstoß:** Eine Privatrechnung wird als Betriebsausgabe gebucht. Das ist nicht nur ein GoB-Verstoß, sondern je nach Höhe und Vorsatz bereits Steuerhinterziehung."
+            },
+            {
+              "zellen": ["Vollständigkeit", "Alle Geschäftsvorfälle werden erfasst", "Auch Kleinbeträge buchen"],
+              "detail": "**Verstoß:** Barumsätze werden „vergessen\". Genau hier setzen Kassennachschauen an — eine lückenhafte Kasse ist der häufigste Anlass für eine Gewinnschätzung."
+            },
+            {
+              "zellen": ["Klarheit", "Buchungen sind eindeutig und lesbar", "Klare Kontobezeichnungen"],
+              "detail": "**Verstoß:** Buchungstext „Diverses\". Ein sachverständiger Dritter muss sich in angemessener Zeit zurechtfinden — das ist der Maßstab aus § 238 Abs. 1 HGB."
+            },
+            {
+              "zellen": ["Vorsicht", "Im Zweifel niedrig bewerten", "Verluste sofort, Gewinne erst bei Realisierung"],
+              "detail": "**Anwendung:** Ein Kunde ist zahlungsunfähig geworden — die Forderung wird sofort abgeschrieben. Ein Grundstück ist im Wert gestiegen — der Gewinn wird erst beim Verkauf gebucht."
+            },
+            {
+              "zellen": ["Stetigkeit", "Gewählte Methoden beibehalten", "Bewertung nicht willkürlich wechseln"],
+              "detail": "**Warum:** Nur so sind zwei Geschäftsjahre vergleichbar. Ohne Stetigkeit könnte ein Betrieb sein Ergebnis durch Methodenwechsel jedes Jahr schönrechnen."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Betrieb bucht einen Umsatz erst im Januar, obwohl die Leistung im Dezember erbracht und berechnet wurde. Welcher Grundsatz ist verletzt?",
+          "optionen": [
+            { "text": "Klarheit", "richtig": false, "echo": "Klarheit betrifft die Verständlichkeit von Buchungstexten und Kontobezeichnungen — hier ist aber die zeitliche Zuordnung das Problem." },
+            { "text": "Vollständigkeit", "richtig": true, "echo": "Richtig. Vollständigkeit verlangt die lückenlose und zeitgerechte Erfassung. Ein Vorfall aus dem Dezember gehört ins Dezember-Geschäftsjahr — sonst stimmt das Jahresergebnis nicht." },
+            { "text": "Stetigkeit", "richtig": false, "echo": "Stetigkeit betrifft Bewertungs- und Abschreibungsmethoden, die über Jahre gleich bleiben sollen — nicht den Zeitpunkt einer einzelnen Buchung." }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein Verstoß gegen die GoB berechtigt das Finanzamt, den Gewinn selbst zu schätzen ({{par:ao-162|§ 162 AO}}) — und geschätzt wird fast immer zu deinen Ungunsten."
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "a4",
+      "titel": "Inventur, Inventar, Bilanz",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Diese drei Begriffe werden in der Prüfung häufiger verwechselt als alles andere in diesem Kapitel — dabei bauen sie schlicht aufeinander auf."
+        },
+        {
+          "typ": "grafik",
+          "variante": "stufen",
+          "kopf": "Vom Zählen zur Bilanz",
+          "titel": "Muster GmbH · Abschluss zum 31.12.",
+          "lead": "Dieselben Werte, drei Verarbeitungsstufen.",
+          "stufen": [
+            {
+              "name": "Inventur",
+              "text": "Die **Inventur** ist der *Vorgang*: zählen, wiegen, messen — und für alles Unkörperliche die Unterlagen auswerten.",
+              "darstellung": "zaehlen",
+              "posten": [
+                { "name": "Maschinen", "wert": 60000 },
+                { "name": "Fuhrpark", "wert": 40000 },
+                { "name": "Waren", "wert": 32000 },
+                { "name": "Bank", "wert": 15000 },
+                { "name": "Kasse", "wert": 3000 },
+                { "name": "Darlehen", "wert": 50000 },
+                { "name": "Verb. LuL", "wert": 30000 }
+              ]
+            },
+            {
+              "name": "Inventar",
+              "text": "Das **Inventar** ist das *Ergebnis*: ein Verzeichnis, das jede Position einzeln mit Wert aufführt. Unten steht das {{begriff:reinvermoegen|Reinvermögen}} — das spätere Eigenkapital.",
+              "darstellung": "verzeichnis",
+              "gruppen": [
+                {
+                  "titel": "I. Vermögen",
+                  "posten": [
+                    { "name": "Maschinen", "wert": 60000 },
+                    { "name": "Fuhrpark", "wert": 40000 },
+                    { "name": "Waren", "wert": 32000 },
+                    { "name": "Bank & Kasse", "wert": 18000 }
+                  ],
+                  "summe": { "name": "Gesamtvermögen", "wert": 150000 }
+                },
+                {
+                  "titel": "II. Schulden",
+                  "posten": [
+                    { "name": "Bankdarlehen", "wert": 50000 },
+                    { "name": "Verbindlichkeiten LuL", "wert": 30000 }
+                  ],
+                  "summe": { "name": "Gesamtschulden", "wert": 80000 }
+                }
+              ],
+              "ergebnis": { "name": "III. Reinvermögen", "wert": 70000 }
+            },
+            {
+              "name": "Bilanz",
+              "text": "Die **Bilanz** ist die *Verdichtung*. Ändere die Werte — die beiden Seiten bleiben immer gleich hoch. Das ist keine Behauptung, sondern die Definition des Eigenkapitals.",
+              "darstellung": "bilanz-rechner",
+              "eingaben": [
+                { "id": "av", "label": "Anlagevermögen", "start": 100000, "seite": "aktiva" },
+                { "id": "uv", "label": "Umlaufvermögen", "start": 50000, "seite": "aktiva" },
+                { "id": "dl", "label": "Bankdarlehen", "start": 50000, "seite": "passiva" },
+                { "id": "vb", "label": "Verbindlichkeiten", "start": 30000, "seite": "passiva" }
+              ],
+              "hinweis_negativ": "Die Schulden übersteigen das Vermögen: Das Eigenkapital ist negativ. In der Bilanz erscheint dann ein *nicht durch Eigenkapital gedeckter Fehlbetrag* auf der Aktivseite — die Gleichung gilt weiterhin."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Inventur, Inventar oder Bilanz — was ist gemeint?",
+          "kategorien": ["Inventur", "Inventar", "Bilanz"],
+          "aufgaben": [
+            { "text": "Das Lager wird am 31.12. Stück für Stück durchgezählt.", "loesung": "Inventur" },
+            { "text": "Eine Liste führt 340 Einzelpositionen mit Menge und Wert auf.", "loesung": "Inventar" },
+            { "text": "Zwei Seiten stehen sich gegenüber und sind gleich hoch.", "loesung": "Bilanz" },
+            { "text": "Pflichtbestandteil des Jahresabschlusses nach § 242 HGB.", "loesung": "Bilanz" }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Der Dreisatz für die Prüfung: **Inventur** = der Vorgang des Zählens. **Inventar** = das schriftliche Ergebnis. **Bilanz** = die verdichtete Gegenüberstellung. Und quer dazu: Reinvermögen = Vermögen − Schulden = Eigenkapital."
+        }
+      ]
+    }
+  ],
+
+  "zusammenfassung": [
+    "Buchführung = systematische Erfassung aller Geschäftsvorfälle in Geldeinheiten.",
+    "{{par:hgb-238|§ 238 HGB}} — Pflicht für alle Kaufleute, ohne Schwellenwert.",
+    "{{par:ao-140|§ 140 AO}} — wer handelsrechtlich pflichtig ist, ist es auch steuerlich.",
+    "{{par:ao-141|§ 141 AO}} — Gewerbetreibende ab 600.000 € Umsatz oder 60.000 € Gewinn.",
+    "GoB: Richtigkeit · Vollständigkeit · Klarheit · Vorsicht · Stetigkeit.",
+    "Inventur = Vorgang · Inventar = Verzeichnis · Bilanz = verdichtete Übersicht.",
+    "Eigenkapital = Gesamtvermögen − Gesamtschulden."
+  ],
+
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Was ist der Unterschied zwischen Inventur, Inventar und Bilanz?",
+      "loesung": "Die Inventur ist der Vorgang der körperlichen und buchmäßigen Bestandsaufnahme. Das Inventar ist das schriftliche Ergebnis — eine detaillierte Liste aller Vermögensgegenstände und Schulden mit Mengen und Werten. Die Bilanz ist die nach HGB-Schema verdichtete Gegenüberstellung von Aktiva und Passiva; sie entsteht aus dem Inventar, zeigt aber keine Einzelpositionen."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Worin unterscheiden sich § 238 HGB und § 141 AO?",
+      "loesung": "§ 238 HGB verpflichtet alle Kaufleute zur Buchführung — ohne Umsatz- oder Gewinnschwelle; es genügt, dass ein Handelsgewerbe betrieben wird. § 141 AO verpflichtet Gewerbetreibende, die kein Kaufmann im HGB-Sinne sind, erst ab bestimmten Schwellen: über 600.000 € Umsatz oder über 60.000 € Gewinn. Für Kaufleute greift immer zuerst § 238 HGB."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Die Muster GmbH hat: Maschinen 80.000 €, Waren 25.000 €, Bank 12.000 €, Kasse 3.000 €, Bankdarlehen 50.000 €, Verbindlichkeiten LuL 18.000 €. Wie hoch ist das Eigenkapital?",
+      "loesung": "Gesamtvermögen = 80.000 + 25.000 + 12.000 + 3.000 = 120.000 €. Gesamtschulden = 50.000 + 18.000 = 68.000 €. Eigenkapital = 120.000 − 68.000 = 52.000 €."
+    }
+  ],
+
+  "pruefungstipp": "Häufig geprüft: § 238 HGB gegen § 141 AO — merke dir die Schwellenwerte der AO. Außerdem: Inventur ≠ Inventar ≠ Bilanz. Und: Ein GoB-Verstoß berechtigt das Finanzamt zur Gewinnschätzung nach § 162 AO."
+}

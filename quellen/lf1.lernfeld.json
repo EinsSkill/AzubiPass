@@ -1,0 +1,70 @@
+{
+  "id": "lf1",
+  "titel": "Die eigene Rolle im Betrieb mitgestalten und den Betrieb präsentieren",
+  "kurztitel": "Lernfeld 1",
+  "untertitel": "1. Ausbildungsjahr · Zeitrichtwert 40 Stunden",
+  "linie": "A",
+  "stand": "2026-07",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. der Bildungsministerkonferenz vom 20.03.2025, abgestimmt auf die Büromanagementkaufleute-Ausbildungsverordnung vom 25.02.2025",
+  "pruefen": "Gesetzestexte sind sinngemäß wiedergegeben. Jahresabhängige Werte sind auf dem Stand 2026 und jährlich neu zu prüfen: Mindestausbildungsvergütung, Sozialversicherungsbeitragssätze.",
+  "hero": {
+    "ueberschrift": "Deine Rolle. Dein *Betrieb*. Dein erstes Lernfeld.",
+    "lead": "Wer du im Betrieb bist, welche Rechte dich schützen, wie dein Betrieb funktioniert — und wie du ihn so präsentierst, dass es sitzt. Das komplette Lernfeld 1 nach dem Rahmenlehrplan 2025.",
+    "fakten": [
+      "7 Kapitel",
+      "40 Stunden",
+      "1. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf1-k1-duale-ausbildung.kapitel.json",
+      "titel": "Das System der dualen Ausbildung",
+      "minuten": 20,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf1-k2-ausbildungsvertrag.kapitel.json",
+      "titel": "Der Ausbildungsvertrag",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf1-k3-rechte-pflichten.kapitel.json",
+      "titel": "Rechte, Pflichten und Jugendarbeitsschutz",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf1-k4-tarif-mitbestimmung.kapitel.json",
+      "titel": "Tarifrecht und Mitbestimmung",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k5",
+      "datei": "lf1-k5-betrieb-innen.kapitel.json",
+      "titel": "Der Betrieb von innen",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k6",
+      "datei": "lf1-k6-wirtschaftskreislauf.kapitel.json",
+      "titel": "Der Betrieb in der Wirtschaft",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k7",
+      "datei": "lf1-k7-praesentieren.kapitel.json",
+      "titel": "Den Betrieb präsentieren",
+      "minuten": 25,
+      "frei": false
+    }
+  ]
+}

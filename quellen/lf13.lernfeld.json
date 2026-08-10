@@ -1,0 +1,48 @@
+{
+  "id": "lf13",
+  "titel": "Ein Projekt planen und durchführen",
+  "kurztitel": "Lernfeld 13",
+  "untertitel": "3. Ausbildungsjahr · Zeitrichtwert 40 Stunden",
+  "linie": "A",
+  "stand": "2026-08",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Zeit, Kosten, Qualität. *Zwei davon* darfst du wählen.",
+    "lead": "Vom Auftrag über den Strukturplan zum Termin — und was zu tun ist, wenn es trotzdem klemmt. Das Lernfeld, das im praktischen Prüfungsteil am meisten bringt.",
+    "fakten": [
+      "4 Kapitel",
+      "40 Stunden",
+      "3. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf13-k1-auftrag.kapitel.json",
+      "titel": "Was ein Projekt ausmacht",
+      "minuten": 20,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf13-k2-planen.kapitel.json",
+      "titel": "Struktur und Termine planen",
+      "minuten": 30,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf13-k3-steuern.kapitel.json",
+      "titel": "Steuern und Risiken beherrschen",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf13-k4-abschluss.kapitel.json",
+      "titel": "Abschließen und präsentieren",
+      "minuten": 25,
+      "frei": false
+    }
+  ]
+}

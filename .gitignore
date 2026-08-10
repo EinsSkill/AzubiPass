@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Bericht der Sichtprüfung — entsteht bei jedem Lauf neu
+quellen/pruefbericht.txt
+
+# Betriebssystem
+Thumbs.db
+.DS_Store
+desktop.ini

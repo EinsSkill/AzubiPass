@@ -1,0 +1,175 @@
+{
+  "id": "k5",
+  "lernfeld": "lf5",
+  "nummer": 5,
+  "titel": "Distributionspolitik",
+  "untertitel": "Wie die Ware zum Kunden kommt — und wer daran verdient.",
+  "minuten": 20,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Direkten und indirekten Absatzweg unterscheiden und bewerten",
+      "abschnitt": "e1"
+    },
+    {
+      "id": "lz2",
+      "text": "Absatzmittler und Absatzhelfer voneinander abgrenzen",
+      "abschnitt": "e2"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "e1",
+      "titel": "Direkt oder über andere",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:distributionspolitik|Distributionspolitik}} beantwortet eine einzige große Frage: Verkaufst du selbst an den Endkunden oder schaltest du jemanden dazwischen? ==Beides hat einen Preis== — der eine kostet Aufwand, der andere Marge."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Absatzwege",
+          "titel": "Direkt oder indirekt",
+          "lead": "Dieselbe Ware, zwei Wege zum Kunden.",
+          "seiten": [
+            {
+              "name": "Direkter Absatz",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Hersteller verkauft unmittelbar an den Kunden",
+                  "detail": "Über eigenen Außendienst, eigene Filialen, den eigenen Onlineshop oder ab Werk."
+                },
+                {
+                  "text": "Voller Kundenkontakt",
+                  "detail": "Du weißt, wer kauft, warum und was er reklamiert. Diese Daten sind die Grundlage jeder Kundenbindung."
+                },
+                {
+                  "text": "Keine Handelsspanne abzugeben",
+                  "detail": "Die Marge, die sonst beim Händler bleibt, bleibt im Haus."
+                },
+                {
+                  "text": "Aber: hoher eigener Aufwand",
+                  "detail": "Vertrieb, Lager, Versand, Rechnungsstellung und Reklamationen müssen selbst organisiert werden — bei vielen kleinen Kunden schnell teurer als die Handelsspanne."
+                }
+              ]
+            },
+            {
+              "name": "Indirekter Absatz",
+              "ton": "gruen",
+              "punkte": [
+                {
+                  "text": "Über Groß- und Einzelhandel",
+                  "detail": "Der {{begriff:absatzmittler|Absatzmittler}} kauft auf eigene Rechnung und verkauft weiter."
+                },
+                {
+                  "text": "Große Reichweite ohne eigenen Aufbau",
+                  "detail": "Der Handel hat Standorte, Kunden und Logistik bereits — du nutzt sie mit."
+                },
+                {
+                  "text": "Weniger Verwaltung",
+                  "detail": "Statt tausend Endkunden hast du ein paar Händler als Rechnungsempfänger."
+                },
+                {
+                  "text": "Aber: Handelsspanne und Abstand zum Kunden",
+                  "detail": "Du verdienst weniger je Stück und erfährst kaum, was am Ende der Kette passiert. Preis- und Auftrittsgestaltung liegen teilweise nicht mehr in deiner Hand."
+                }
+              ]
+            }
+          ],
+          "regel": "Faustregel: Wenige große Kunden sprechen für den direkten Weg, viele kleine für den indirekten. Erklärungsbedürftige Produkte ebenfalls für direkt."
+        },
+        {
+          "typ": "merke",
+          "text": "Der indirekte Weg kostet dich die Handelsspanne, der direkte den Aufwand. Die Frage ist nie, welcher billiger ist, sondern welcher bei *deiner* Kundenzahl billiger ist.",
+          "karteikarte": "Wann lohnt der direkte, wann der indirekte Absatzweg?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "e2",
+      "titel": "Mittler und Helfer",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Zwischen Hersteller und Kunde treten zwei verschiedene Sorten von Beteiligten auf, und sie werden regelmäßig verwechselt. Der Unterschied liegt darin, ==wem die Ware unterwegs gehört==."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Rolle",
+            "Wird Eigentümer?",
+            "Beispiele"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Absatzmittler",
+                "ja — kauft auf eigene Rechnung",
+                "Großhandel, Einzelhandel"
+              ],
+              "detail": "**Er trägt das Risiko.** Weil ihm die Ware gehört, bleibt er auf ihr sitzen, wenn sie sich nicht verkauft. Deshalb verlangt er eine Spanne — sie ist der Preis für dieses Risiko."
+            },
+            {
+              "zellen": [
+                "Absatzhelfer",
+                "nein — vermittelt oder transportiert nur",
+                "Handelsvertreter, Makler, Spediteur"
+              ],
+              "detail": "**Er trägt kein Warenrisiko** und erhält deshalb keine Spanne, sondern Provision oder Entgelt. Der Handelsvertreter verkauft in fremdem Namen auf fremde Rechnung."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Handelsvertreter verkauft im Namen deines Betriebs an Geschäftskunden. Was ist er?",
+          "optionen": [
+            {
+              "text": "Absatzmittler, weil er verkauft",
+              "richtig": false,
+              "echo": "Verkaufen allein macht ihn nicht zum Mittler. Entscheidend ist, ob ihm die Ware zwischenzeitlich gehört — beim Handelsvertreter nicht."
+            },
+            {
+              "text": "Absatzhelfer, weil er kein Eigentum erwirbt",
+              "richtig": true,
+              "echo": "Richtig. Der Handelsvertreter handelt in fremdem Namen auf fremde Rechnung und wird nie Eigentümer. Er trägt kein Warenrisiko und erhält deshalb Provision statt Handelsspanne. Der Vertrag kommt direkt zwischen deinem Betrieb und dem Kunden zustande — der Absatz bleibt damit ein direkter."
+            },
+            {
+              "text": "Weder noch, er ist Angestellter",
+              "richtig": false,
+              "echo": "Ein Handelsvertreter ist selbstständig. Ein angestellter Verkäufer wäre Teil des eigenen Vertriebs — der Handelsvertreter arbeitet auf eigene Rechnung, verkauft aber fremde Ware."
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Für die Prüfung reicht eine einzige Frage zur Einordnung: Gehört die Ware unterwegs jemand anderem als dir? Wenn ja, ist es ein Absatzmittler und der Weg ist indirekt. Wenn nein, bleibt es dein direkter Absatz — auch wenn jemand anderes ihn abwickelt."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Distributionspolitik regelt den Weg der Ware zum Kunden.",
+    "Direkter Absatz: Hersteller verkauft selbst — voller Kundenkontakt, keine Handelsspanne, hoher Aufwand.",
+    "Indirekter Absatz: über Groß- und Einzelhandel — große Reichweite, weniger Verwaltung, geringere Marge.",
+    "Absatzmittler kaufen auf eigene Rechnung und werden Eigentümer; sie tragen das Warenrisiko.",
+    "Absatzhelfer wie Handelsvertreter, Makler und Spediteure werden nicht Eigentümer.",
+    "Merkfrage: Gehört die Ware unterwegs jemand anderem? Dann ist der Weg indirekt."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Grenze Absatzmittler und Absatzhelfer voneinander ab.",
+      "loesung": "Der Absatzmittler kauft die Ware auf eigene Rechnung und wird ihr Eigentümer — Groß- und Einzelhandel. Er trägt damit das Absatzrisiko und verdient an der Handelsspanne. Der Absatzhelfer wird nie Eigentümer; er vermittelt oder transportiert nur, etwa der Handelsvertreter, der Makler oder der Spediteur. Er trägt kein Warenrisiko und erhält Provision oder ein Entgelt."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Hersteller von Spezialmaschinen mit zwölf Kunden weltweit überlegt, künftig über den Großhandel zu verkaufen. Wie beurteilst du das?",
+      "loesung": "Bei zwölf Kunden spricht alles für den direkten Absatz. Der Verwaltungsaufwand ist gering, weil es nur zwölf Rechnungsempfänger gibt, und Spezialmaschinen sind erklärungsbedürftig — Beratung, Einweisung und Service lassen sich über den Handel kaum abbilden. Der Großhandel würde eine Spanne verlangen, ohne einen erkennbaren Vorteil zu bringen, und der direkte Kundenkontakt ginge verloren."
+    }
+  ],
+  "pruefungstipp": "Die Abgrenzung Absatzmittler gegen Absatzhelfer ist ein sicherer Prüfungskandidat, meist als Zuordnung mehrerer Beteiligter. Prüfe jedes Mal nur eine Sache: Wird derjenige zwischenzeitlich Eigentümer der Ware?"
+}

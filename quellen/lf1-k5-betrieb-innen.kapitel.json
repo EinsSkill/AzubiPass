@@ -1,0 +1,186 @@
+{
+  "id": "k5",
+  "lernfeld": "lf1",
+  "nummer": 5,
+  "titel": "Der Betrieb von innen",
+  "untertitel": "Produktionsfaktoren, Ziele, Aufbauorganisation — und wie weit deine Unterschrift reicht.",
+  "minuten": 25,
+
+  "lernziele": [
+    { "id": "lz1", "text": "Die betrieblichen Produktionsfaktoren benennen und zuordnen", "abschnitt": "e1" },
+    { "id": "lz2", "text": "Die Aufbauorganisation eines Betriebs lesen und darstellen", "abschnitt": "e2" },
+    { "id": "lz3", "text": "Prokura und Handlungsvollmacht voneinander abgrenzen", "abschnitt": "e3" }
+  ],
+
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "e1",
+      "titel": "Womit ein Betrieb arbeitet",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Jeder Betrieb kombiniert dieselben Grundmittel, um eine Leistung zu erzeugen. Diese {{begriff:produktionsfaktoren|Produktionsfaktoren}} sind die betriebswirtschaftliche Antwort auf die Frage, was ein Unternehmen eigentlich braucht — und sie tauchen im Rahmenlehrplan ausdrücklich unter dem Blickwinkel der Nachhaltigkeit auf."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": ["Faktor", "Was gemeint ist", "Beispiel im Büro"],
+          "zeilen": [
+            { "zellen": ["Menschliche Arbeit", "ausführende Tätigkeit", "Rechnungen kontieren, Termine koordinieren"] },
+            { "zellen": ["Betriebsmittel", "was genutzt, aber nicht verbraucht wird", "Laptop, Gebäude, Software-Lizenz"] },
+            { "zellen": ["Werkstoffe", "was verbraucht oder eingebaut wird", "Papier, Toner, Handelsware"] },
+            {
+              "zellen": ["Dispositive Arbeit", "planen, leiten, entscheiden, kontrollieren", "Budgetplanung, Personaleinsatz"],
+              "detail": "**Der vierte Faktor ist der besondere:** Er verbindet die drei anderen. Erst die dispositive Arbeit entscheidet, welche Werkstoffe mit welchen Betriebsmitteln von welchen Menschen bearbeitet werden. In manchen Lehrbüchern heißt er deshalb auch der kombinierende Faktor."
+            }
+          ]
+        },
+        {
+          "typ": "absatz",
+          "text": "Beim Einsatz dieser Faktoren gilt das {{begriff:oekonomisches-prinzip|ökonomische Prinzip}}. Es hat zwei Ausprägungen, und die werden in der Prüfung gern vertauscht: ==Maximalprinzip== heißt, mit gegebenen Mitteln möglichst viel zu erreichen. ==Minimalprinzip== heißt, ein festes Ziel mit möglichst wenig Mitteln zu erreichen."
+        },
+        {
+          "typ": "merke",
+          "text": "Vier Faktoren: menschliche Arbeit, Betriebsmittel, Werkstoffe — und dispositive Arbeit, die die anderen drei kombiniert. Betriebsmittel werden **genutzt**, Werkstoffe werden **verbraucht**.",
+          "karteikarte": "Nenne die vier betrieblichen Produktionsfaktoren und den Unterschied zwischen Betriebsmitteln und Werkstoffen."
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "e2",
+      "titel": "Wer wem etwas zu sagen hat",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:aufbauorganisation|Aufbauorganisation}} beantwortet die Frage nach dem **Wer**: Welche Stellen gibt es, wie sind sie zu Abteilungen gebündelt, wer darf wem Weisungen erteilen. Dargestellt wird sie im {{begriff:organigramm|Organigramm}}. Ihr Gegenstück ist die {{begriff:ablauforganisation|Ablauforganisation}}, die nach dem **Wann und Wie** fragt."
+        },
+        {
+          "typ": "grafik",
+          "variante": "organigramm",
+          "kopf": "Aufbauorganisation",
+          "titel": "Nordlicht Bürobedarf GmbH",
+          "lead": "Ein Einliniensystem mit Stabsstelle. Klick auf eine Stelle für die Erläuterung.",
+          "ebenen": [
+            {
+              "stellen": [
+                { "id": "gf", "name": "Geschäftsführung", "art": "leitung", "notiz": "Die Instanzenspitze. Sie trägt die dispositive Arbeit und vertritt den Betrieb nach außen." }
+              ]
+            },
+            {
+              "stab": [
+                { "id": "recht", "name": "Rechtsabteilung", "art": "stab", "notiz": "Eine Stabsstelle berät, hat aber keine Weisungsbefugnis gegenüber den Abteilungen. Sie hängt seitlich an der Linie — genau daran erkennt man sie im Organigramm." }
+              ],
+              "stellen": [
+                { "id": "einkauf", "name": "Einkauf", "art": "abteilung", "notiz": "Beschaffung von Handelsware und Betriebsmitteln. Zuständig für Lernfeld 4." },
+                { "id": "vertrieb", "name": "Vertrieb", "art": "abteilung", "notiz": "Angebote, Aufträge, Kundenbeziehungen. Zuständig für die Lernfelder 3 und 5." },
+                { "id": "verwaltung", "name": "Verwaltung", "art": "abteilung", "notiz": "Rechnungswesen, Personal, Organisation. Hier sind die meisten Kaufleute für Büromanagement zu Hause." }
+              ]
+            },
+            {
+              "stellen": [
+                { "id": "buchhaltung", "name": "Buchhaltung", "art": "stelle", "eltern": "verwaltung", "notiz": "Erfasst die Wertströme des Betriebs — das ist Lernfeld 6." },
+                { "id": "personal", "name": "Personal", "art": "stelle", "eltern": "verwaltung", "notiz": "Personalbeschaffung, Entgeltabrechnung, Personalakten — Lernfeld 8." },
+                { "id": "assistenz", "name": "Assistenz", "art": "stelle", "eltern": "verwaltung", "notiz": "Termine, Korrespondenz, Veranstaltungen und Reisen — Lernfelder 2 und 12." }
+              ]
+            }
+          ],
+          "regel": "Einliniensystem: Jede Stelle hat genau einen direkten Vorgesetzten. Klar, aber langsam — jede Information muss den ganzen Dienstweg gehen."
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Einlinien-, Mehrlinien-, Stabliniensystem",
+          "absaetze": [
+            "Im **Einliniensystem** erhält jede Stelle Weisungen von genau einem Vorgesetzten. Das ist eindeutig und leicht zu kontrollieren, macht die Wege aber lang.",
+            "Im **Mehrliniensystem** kann eine Stelle von mehreren Fachvorgesetzten Weisungen bekommen. Das ist schneller und fachlich besser, erzeugt aber Zuständigkeitskonflikte.",
+            "Das **Stabliniensystem** ist der Kompromiss: eine klare Linie plus Stabsstellen, die beraten, aber nicht anweisen dürfen. Genau das zeigt das Organigramm oben."
+          ]
+        }
+      ]
+    },
+
+    {
+      "typ": "abschnitt",
+      "id": "e3",
+      "titel": "Wie weit deine Unterschrift reicht",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Nicht jeder im Betrieb darf für ihn Verträge schließen. Der Rahmenlehrplan nennt das deinen eigenen Handlungsrahmen — juristisch geht es um Vertretungsvollmachten. Die beiden wichtigsten kaufmännischen Formen sind {{begriff:prokura|Prokura}} und {{begriff:handlungsvollmacht|Handlungsvollmacht}}."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Vollmachten",
+          "titel": "Prokura gegen Handlungsvollmacht",
+          "lead": "Beide erlauben, für den Betrieb zu handeln — aber in sehr unterschiedlichem Umfang.",
+          "seiten": [
+            {
+              "name": "Prokura",
+              "ton": "gold",
+              "punkte": [
+                { "text": "Umfang gesetzlich festgelegt und sehr weit", "detail": "Sie deckt fast alle Geschäfte ab, die ein Handelsgewerbe mit sich bringt — auch ungewöhnliche. Nach außen ist sie nicht beschränkbar." },
+                { "text": "Nur vom Inhaber ausdrücklich erteilbar", "detail": "Nach {{par:hgb-48|§ 48 HGB}}. Eine stillschweigende Prokura gibt es nicht." },
+                { "text": "Eintragung ins Handelsregister", "detail": "Deklaratorisch, also nur klarstellend — wirksam ist sie schon mit der Erteilung. Aber jeder Geschäftspartner kann sie im Register nachschlagen." },
+                { "text": "Zeichnung mit ppa.", "detail": "Von lateinisch per procura autoritate. Wer so unterschreibt, gibt sich als Prokurist zu erkennen." },
+                { "text": "Nicht erlaubt: Grundstücke veräußern, Bilanz unterzeichnen, Insolvenz anmelden", "detail": "Diese Geschäfte bleiben dem Inhaber vorbehalten. Grundstücksverkäufe nur mit ausdrücklicher Zusatzbefugnis." }
+              ]
+            },
+            {
+              "name": "Handlungsvollmacht",
+              "ton": "gruen",
+              "punkte": [
+                { "text": "Umfang: gewöhnliche Geschäfte", "detail": "Nach {{par:hgb-54|§ 54 HGB}} deckt sie das ab, was der Betrieb üblicherweise mit sich bringt — nichts Außergewöhnliches." },
+                { "text": "Formlos erteilbar, auch stillschweigend", "detail": "Wer im Einkauf sitzt und regelmäßig bestellt, hat faktisch Handlungsvollmacht, auch ohne Schreiben." },
+                { "text": "Keine Eintragung ins Handelsregister", "detail": "Deshalb ist sie für Außenstehende schwerer zu erkennen." },
+                { "text": "Zeichnung mit i. V. oder i. A.", "detail": "In Vollmacht bei allgemeiner Handlungsvollmacht, im Auftrag bei enger begrenzten Befugnissen." },
+                { "text": "Drei Stufen", "detail": "Allgemein für den ganzen Betrieb, Art-Vollmacht für einen bestimmten Geschäftsbereich, Spezial-Vollmacht für ein einzelnes Geschäft." }
+              ]
+            }
+          ],
+          "regel": "Faustregel: Prokura steht im Handelsregister und zeichnet mit ppa. Handlungsvollmacht steht nirgends und zeichnet mit i. V. oder i. A."
+        },
+        {
+          "typ": "check",
+          "frage": "Eine Auszubildende bestellt für ihre Abteilung regelmäßig Büromaterial. Welche Vertretungsmacht hat sie?",
+          "optionen": [
+            { "text": "Prokura", "richtig": false, "echo": "Prokura muss ausdrücklich vom Inhaber erteilt und ins Handelsregister eingetragen werden. Beides passiert bei einer Azubi-Bestellung nicht." },
+            { "text": "Handlungsvollmacht, konkret eine Art-Vollmacht", "richtig": true, "echo": "Richtig. Sie handelt im Rahmen der gewöhnlichen Geschäfte eines abgegrenzten Bereichs. Diese Vollmacht kann formlos und sogar stillschweigend entstehen — dadurch, dass der Betrieb sie regelmäßig bestellen lässt." },
+            { "text": "Gar keine, weil sie Auszubildende ist", "richtig": false, "echo": "Der Ausbildungsstatus schließt Vertretungsmacht nicht aus. Entscheidend ist, welche Aufgaben der Betrieb tatsächlich überträgt — und wie das für Außenstehende aussieht." }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "zusammenfassung": [
+    "Produktionsfaktoren: menschliche Arbeit, Betriebsmittel, Werkstoffe, dispositive Arbeit.",
+    "Betriebsmittel werden genutzt, Werkstoffe verbraucht.",
+    "Ökonomisches Prinzip: Maximalprinzip (gegebene Mittel, maximales Ergebnis) und Minimalprinzip (festes Ziel, minimale Mittel).",
+    "Aufbauorganisation fragt nach dem Wer, Ablauforganisation nach dem Wann und Wie.",
+    "Stabsstellen beraten, ohne Weisungsbefugnis zu haben.",
+    "{{par:hgb-48|§ 48 HGB}} — Prokura: ausdrücklich vom Inhaber, im Handelsregister, Zeichnung ppa.",
+    "{{par:hgb-54|§ 54 HGB}} — Handlungsvollmacht: gewöhnliche Geschäfte, formlos, Zeichnung i. V. oder i. A."
+  ],
+
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Unterschied zwischen Betriebsmitteln und Werkstoffen mit je einem Beispiel.",
+      "loesung": "Betriebsmittel werden im Leistungsprozess genutzt, aber nicht verbraucht — sie stehen dem Betrieb über längere Zeit zur Verfügung, etwa ein Laptop, ein Gebäude oder eine Maschine. Werkstoffe gehen dagegen in die Leistung ein oder werden verbraucht, etwa Papier, Toner oder Handelsware. Der Unterschied entspricht später der Trennung von Anlage- und Umlaufvermögen in der Bilanz."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Nenne drei Unterschiede zwischen Prokura und Handlungsvollmacht.",
+      "loesung": "Erstens der Umfang: Die Prokura deckt nach § 48 ff. HGB fast alle Geschäfte eines Handelsgewerbes ab, die Handlungsvollmacht nach § 54 HGB nur die gewöhnlichen. Zweitens die Erteilung: Die Prokura muss ausdrücklich vom Inhaber erteilt werden, die Handlungsvollmacht kann formlos und sogar stillschweigend entstehen. Drittens die Publizität: Die Prokura wird ins Handelsregister eingetragen und mit ppa. gezeichnet, die Handlungsvollmacht nicht und wird mit i. V. oder i. A. gezeichnet."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Prokurist verkauft ohne Rücksprache ein Betriebsgrundstück. Ist das Geschäft wirksam?",
+      "loesung": "Nein, nicht ohne besondere Befugnis. Die Prokura umfasst nach dem HGB zwar nahezu alle Geschäfte des Handelsgewerbes, ausdrücklich aber nicht die Veräußerung und Belastung von Grundstücken — dafür braucht der Prokurist eine gesonderte Ermächtigung. Ebenfalls ausgenommen sind unter anderem die Unterzeichnung der Bilanz und die Anmeldung der Insolvenz."
+    }
+  ],
+
+  "pruefungstipp": "Die Gegenüberstellung Prokura und Handlungsvollmacht ist ein sicherer Prüfungskandidat — merke dir die drei Achsen Umfang, Erteilung und Handelsregister. Beim Organigramm wird meist gefragt, woran man eine Stabsstelle erkennt: Sie hängt seitlich an der Linie und darf beraten, aber nicht anweisen."
+}

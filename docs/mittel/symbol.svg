@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img"
+     aria-label="AzubiPass">
+  <rect width="512" height="512" rx="114" fill="#12301F"/>
+  <rect x="148" y="148" width="216" height="216" transform="rotate(45 256 256)"
+        fill="none" stroke="#C9A227" stroke-width="24"/>
+  <rect x="217" y="217" width="78" height="78" transform="rotate(45 256 256)"
+        fill="#C9A227"/>
+</svg>

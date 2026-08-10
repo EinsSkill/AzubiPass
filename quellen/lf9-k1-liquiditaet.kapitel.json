@@ -1,0 +1,329 @@
+{
+  "id": "k1",
+  "lernfeld": "lf9",
+  "nummer": 1,
+  "titel": "Liquidität planen und sichern",
+  "untertitel": "Am Gewinn ist noch keiner gestorben. An fehlendem Geld schon.",
+  "minuten": 30,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Liquidität und Rentabilität unterscheiden",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Einen Liquiditätsplan lesen und beurteilen",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Maßnahmen zur Liquiditätssicherung ableiten",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Zwei Größen, die ständig verwechselt werden",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:rentabilitaet|Rentabilität}} fragt: **Lohnt sich das?** {{begriff:liquiditaet|Liquidität}} fragt: **Kann ich am Freitag die Löhne zahlen?** ==Die zweite Frage bringt Betriebe um, nicht die erste.== Ein Auftrag kann glänzend kalkuliert sein und den Betrieb trotzdem in die Knie zwingen, wenn das Material sofort bezahlt werden muss und der Kunde erst in 60 Tagen überweist."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Fragen",
+          "titel": "Lohnt es sich — oder ist Geld da?",
+          "lead": "Zwei völlig verschiedene Größen. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Rentabilität",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Bezieht Gewinn auf eingesetztes Kapital",
+                  "detail": "Eine Erfolgsgröße aus der Buchführung. Sie sagt, ob sich der Einsatz gelohnt hat — rückblickend und rechnerisch."
+                },
+                {
+                  "text": "Zeitpunkt spielt keine Rolle",
+                  "detail": "Ein Ertrag zählt, sobald die Leistung erbracht ist. Ob das Geld schon geflossen ist, ändert am Gewinn nichts."
+                },
+                {
+                  "text": "Wird jährlich gemessen",
+                  "detail": "Über die Gewinn- und Verlustrechnung. Ein Jahr ist lang — dazwischen kann viel passieren."
+                },
+                {
+                  "text": "Fehlt sie, stirbt der Betrieb langsam",
+                  "detail": "Dauerhafte Verluste zehren das Eigenkapital auf. Das dauert Jahre und ist meist rechtzeitig sichtbar."
+                }
+              ]
+            },
+            {
+              "name": "Liquidität",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Vergleicht Zahlungsmittel mit fälligen Zahlungen",
+                  "detail": "Eine Bestandsgröße im Hier und Jetzt. Sie kennt keine Periodenabgrenzung, nur Kontostand und Fälligkeit."
+                },
+                {
+                  "text": "Der Zeitpunkt ist alles",
+                  "detail": "Dieselben Beträge in anderer Reihenfolge entscheiden über zahlungsfähig oder nicht. Das ist der ganze Unterschied."
+                },
+                {
+                  "text": "Wird täglich gemessen",
+                  "detail": "Jeden Morgen aufs Neue. Deshalb ist der Liquiditätsplan ein laufendes Werkzeug und kein Jahresabschluss."
+                },
+                {
+                  "text": "Fehlt sie, ist sofort Schluss",
+                  "detail": "{{begriff:zahlungsunfaehigkeit|Zahlungsunfähigkeit}} ist ein Insolvenzgrund. Sie kann einen kerngesunden Betrieb binnen Wochen beenden."
+                }
+              ]
+            }
+          ],
+          "regel": "Merksatz: Rentabilität entscheidet, ob der Betrieb einen Sinn hat. Liquidität entscheidet, ob er morgen noch existiert. Von beidem braucht man das Zweite zuerst."
+        },
+        {
+          "typ": "merke",
+          "text": "**Gewinn ist eine Rechengröße, Liquidität ein Kontostand.** Ein rentabler Betrieb kann zahlungsunfähig werden — umgekehrt hilft viel Geld auf dem Konto einem dauerhaft unrentablen Betrieb auch nicht.",
+          "karteikarte": "Worin unterscheiden sich Rentabilität und Liquidität, und warum kann ein rentabler Betrieb insolvent werden?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Der Liquiditätsplan",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:liquiditaetsplan|Liquiditätsplan}} stellt je Periode die erwarteten Einzahlungen den Auszahlungen gegenüber und schreibt den Bestand fort. **Er rechnet mit Zahlungen, nicht mit Erträgen und Aufwendungen** — eine gestellte Rechnung taucht erst auf, wenn das Geld erwartet wird."
+        },
+        {
+          "typ": "grafik",
+          "variante": "liquiditaet",
+          "kopf": "Sechs Monate",
+          "titel": "Wann wird es eng?",
+          "lead": "Schieb das Zahlungsziel der Kunden und sieh, was mit dem Bestand passiert. Die Summen bleiben dabei gleich.",
+          "eingaben": {
+            "start": {
+              "label": "Anfangsbestand in €",
+              "start": 40000,
+              "min": 0,
+              "max": 200000,
+              "schritt": 5000
+            },
+            "ziel": {
+              "label": "Kunden zahlen später (Tage)",
+              "start": 0,
+              "min": 0,
+              "max": 90,
+              "schritt": 30
+            }
+          },
+          "monate": [
+            {
+              "name": "Jan",
+              "ein": 95000,
+              "aus": 88000
+            },
+            {
+              "name": "Feb",
+              "ein": 92000,
+              "aus": 90000
+            },
+            {
+              "name": "Mär",
+              "ein": 88000,
+              "aus": 112000
+            },
+            {
+              "name": "Apr",
+              "ein": 105000,
+              "aus": 95000
+            },
+            {
+              "name": "Mai",
+              "ein": 98000,
+              "aus": 91000
+            },
+            {
+              "name": "Jun",
+              "ein": 110000,
+              "aus": 94000
+            }
+          ],
+          "regel": "Beachte: Beim Verschieben ändert sich der Gesamtgewinn nicht um einen Cent — es ist dasselbe Geld, nur später. Ein Teil rutscht dabei hinter den geplanten Zeitraum; verloren ist er nicht, aber im März hilft er auch nicht. Genau daran gehen Betriebe mit vollen Auftragsbüchern zugrunde."
+        },
+        {
+          "typ": "absatz",
+          "text": "Der März ist in diesem Beispiel der kritische Monat: Eine große Auszahlung trifft auf normale Einnahmen. **Solche Spitzen sind planbar** — Steuervorauszahlung, Versicherungsbeitrag, Weihnachtsgeld stehen im Kalender, lange bevor sie fällig werden."
+        },
+        {
+          "typ": "achtung",
+          "text": "Ein Liquiditätsplan ist keine Buchführung. Er darf schätzen und muss dafür **rechtzeitig** vorliegen. Ein exakter Plan, der erst nach dem kritischen Monat fertig ist, hat keinen Wert."
+        },
+        {
+          "typ": "check",
+          "frage": "Der Betrieb erwartet für das Jahr einen Gewinn von 80.000 €. Im März fehlen laut Plan trotzdem 24.000 €. Wie ist das möglich?",
+          "optionen": [
+            {
+              "text": "Der Gewinn muss falsch berechnet sein",
+              "richtig": false,
+              "echo": "Nicht nötig. Gewinn und Zahlungsfähigkeit sind zwei verschiedene Größen, die problemlos auseinanderfallen können."
+            },
+            {
+              "text": "Gewinn und Zahlungszeitpunkte fallen auseinander",
+              "richtig": true,
+              "echo": "Richtig. Der Gewinn entsteht, sobald Leistungen erbracht sind — unabhängig davon, wann gezahlt wird. Fallen im März große Auszahlungen wie Steuervorauszahlung oder Materialrechnungen an, während die zugehörigen Kundenzahlungen erst später eingehen, entsteht eine Lücke. Der Jahresgewinn bleibt davon unberührt. Abhilfe schaffen eine Kreditlinie, kürzere Zahlungsziele für Kunden oder das Strecken eigener Zahlungen."
+            },
+            {
+              "text": "Der Betrieb arbeitet unrentabel",
+              "richtig": false,
+              "echo": "Bei 80.000 € Gewinn gerade nicht. Genau das ist der Kern: Ein rentabler Betrieb kann zahlungsunfähig werden, wenn die Zeitpunkte nicht passen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Was man dagegen tun kann",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Liquidität lässt sich an drei Stellen beeinflussen: **Geld schneller hereinholen, Geld später hinausgeben, Reserve bereithalten.** Alle drei kosten etwas — deshalb ist die Reihenfolge wichtig."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Maßnahme",
+            "Wirkung",
+            "Preis dafür"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Skonto anbieten",
+                "Kunden zahlen früher",
+                "Erlösschmälerung"
+              ],
+              "detail": "**Wirkt schnell und zuverlässig**, kostet aber je nach Satz mehr, als vielen bewusst ist — aufs Jahr gerechnet ein zweistelliger Zinssatz. Trotzdem oft günstiger als ein Ausfall."
+            },
+            {
+              "zellen": [
+                "Konsequentes Mahnwesen",
+                "Forderungen laufen nicht aus dem Ruder",
+                "Arbeitszeit, ggf. Kundenärger"
+              ]
+            },
+            {
+              "zellen": [
+                "{{begriff:factoring|Factoring}}",
+                "Forderungen sofort zu Geld machen",
+                "Gebühr, Abhängigkeit"
+              ],
+              "detail": "**Verschafft sofort Liquidität und nimmt je nach Vereinbarung das Ausfallrisiko ab.** Dafür geht ein Teil der Marge weg — und die Kunden merken es."
+            },
+            {
+              "zellen": [
+                "Eigene Zahlungsziele ausnutzen",
+                "Geld bleibt länger im Betrieb",
+                "kein Skontoabzug möglich"
+              ],
+              "detail": "**Der stille Zielkonflikt:** Wer das volle Zahlungsziel ausschöpft, verzichtet auf Skonto. Bei knapper Liquidität kann das trotzdem die richtige Entscheidung sein."
+            },
+            {
+              "zellen": [
+                "{{begriff:kontokorrentkredit|Kontokorrentkredit}}",
+                "deckt kurzfristige Spitzen",
+                "hoher Zinssatz"
+              ],
+              "detail": "**Für Spitzen gedacht, nicht für Dauerbedarf.** Wer die Linie dauerhaft ausschöpft, finanziert langfristigen Bedarf mit dem teuersten verfügbaren Geld."
+            },
+            {
+              "zellen": [
+                "{{begriff:leasing|Leasing}} statt Kauf",
+                "keine große Einmalzahlung",
+                "über die Laufzeit teurer"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Erst die eigenen Abläufe, dann fremdes Geld.** Skonto, Mahnwesen und Zahlungsziele kosten weniger als jeder Kredit — und wirken bei knapper Kasse oft schneller.",
+          "karteikarte": "Mit welchen Maßnahmen lässt sich die Liquidität verbessern, und welche sollte man zuerst prüfen?"
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Die drei Liquiditätsgrade",
+          "absaetze": [
+            "**Liquidität 1. Grades** setzt die flüssigen Mittel ins Verhältnis zu den kurzfristigen Verbindlichkeiten. Sie zeigt, was sofort verfügbar ist.",
+            "**Liquidität 2. Grades** rechnet die kurzfristigen Forderungen hinzu — also das Geld, das absehbar eingeht. Dieser Grad wird in der Praxis am häufigsten betrachtet.",
+            "**Liquidität 3. Grades** nimmt zusätzlich die Vorräte auf. Sie ist der weiteste Maßstab und zugleich der unschärfste, weil Vorräte sich nicht kurzfristig zu Geld machen lassen, ohne dass der Preis leidet.",
+            "Für alle drei kursieren Faustwerte, die je nach Branche stark abweichen. Wichtiger als der absolute Wert ist die Entwicklung über die Zeit und der Vergleich mit ähnlichen Betrieben."
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Verbessert das die Liquidität sofort?",
+          "kategorien": [
+            "Ja, sofort",
+            "Nein oder erst später"
+          ],
+          "aufgaben": [
+            {
+              "text": "Offene Forderungen konsequent anmahnen.",
+              "loesung": "Ja, sofort"
+            },
+            {
+              "text": "Die Verkaufspreise zum nächsten Jahr erhöhen.",
+              "loesung": "Nein oder erst später"
+            },
+            {
+              "text": "Eine große Maschine leasen statt kaufen.",
+              "loesung": "Ja, sofort"
+            },
+            {
+              "text": "Kosten senken, indem weniger Überstunden bezahlt werden.",
+              "loesung": "Nein oder erst später"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "{{begriff:rentabilitaet|Rentabilität}} fragt, ob sich etwas lohnt; {{begriff:liquiditaet|Liquidität}}, ob gezahlt werden kann.",
+    "Ein rentabler Betrieb kann zahlungsunfähig werden, wenn die Zeitpunkte nicht passen.",
+    "{{begriff:zahlungsunfaehigkeit|Zahlungsunfähigkeit}} ist ein Insolvenzgrund und wirkt sofort.",
+    "Der {{begriff:liquiditaetsplan|Liquiditätsplan}} rechnet mit Zahlungen, nicht mit Erträgen und Aufwendungen.",
+    "Große Auszahlungsspitzen wie Steuern und Sonderzahlungen sind planbar.",
+    "Drei Hebel: schneller einnehmen, später ausgeben, Reserve bereithalten.",
+    "Erst die eigenen Abläufe verbessern, dann fremdes Geld aufnehmen.",
+    "Der {{begriff:kontokorrentkredit|Kontokorrentkredit}} ist für Spitzen gedacht, nicht für Dauerbedarf."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre, warum ein Betrieb mit hohem Gewinn zahlungsunfähig werden kann.",
+      "loesung": "Gewinn und Zahlungsfähigkeit werden nach unterschiedlichen Regeln ermittelt. Der Gewinn entsteht in dem Zeitraum, in dem die Leistung erbracht wird, unabhängig davon, wann Geld fließt; er ist eine Rechengröße aus Erträgen und Aufwendungen. Die Liquidität dagegen vergleicht die tatsächlich vorhandenen Zahlungsmittel mit den fällig werdenden Zahlungen zu einem bestimmten Zeitpunkt. Räumt ein Betrieb seinen Kunden lange Zahlungsziele ein, muss aber Material, Löhne und Steuern sofort bezahlen, entsteht eine zeitliche Lücke. Kommt eine Auszahlungsspitze wie eine Steuervorauszahlung hinzu, kann das vorhandene Geld nicht reichen, obwohl das Jahr insgesamt mit Gewinn abschließt. Da Zahlungsunfähigkeit ein Insolvenzgrund ist, wirkt dieses Problem sofort, während sich fehlende Rentabilität erst über Jahre auswirkt."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Welche Maßnahmen verbessern die Liquidität, und wo liegen ihre Kosten?",
+      "loesung": "Auf der Einzahlungsseite: Skonto anbieten, damit Kunden früher zahlen, was allerdings die Erlöse schmälert; konsequentes Mahnwesen, das Arbeitszeit kostet und Kunden verärgern kann; Factoring, das Forderungen sofort zu Geld macht, aber Gebühren kostet und die Kunden bemerken. Auf der Auszahlungsseite: eigene Zahlungsziele ausschöpfen, wodurch jedoch Skontovorteile verloren gehen; Leasing statt Kauf, was große Einmalzahlungen vermeidet, über die Laufzeit aber teurer ist. Als Reserve dient der Kontokorrentkredit, der flexibel, aber teuer ist und nur kurzfristige Spitzen abdecken sollte. Sinnvoll ist, zuerst die eigenen Abläufe zu verbessern, weil diese Maßnahmen weniger kosten als jede Form der Fremdfinanzierung."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Der Liquiditätsplan zeigt für März eine Unterdeckung von 24.000 €. Ursache ist eine Steuervorauszahlung, die mit der Zahlung des Weihnachtsgeldes zusammentrifft. Was schlägst du vor?",
+      "loesung": "Zunächst ist zu prüfen, ob die Lücke einmalig oder wiederkehrend ist. Handelt es sich um eine planbare Spitze, ist eine Kreditlinie in ausreichender Höhe das passende Mittel, weil sie nur für den beanspruchten Betrag und nur für die tatsächliche Dauer Zinsen kostet. Diese Linie sollte rechtzeitig vor dem kritischen Monat mit der Bank vereinbart werden, denn im Zustand akuter Knappheit verhandelt es sich schlecht. Parallel lassen sich beide Seiten beeinflussen: Auf der Einzahlungsseite können Forderungen konsequent angemahnt und für den betroffenen Zeitraum Skonti angeboten werden; auf der Auszahlungsseite können nicht dringende Investitionen verschoben und eigene Zahlungsziele ausgeschöpft werden. Bei der Steuervorauszahlung ist zu prüfen, ob eine Anpassung beantragt werden kann, wenn die Ertragslage das rechtfertigt. Grundsätzlich sollte der Liquiditätsplan rollierend fortgeschrieben werden, damit solche Spitzen künftig mehrere Monate im Voraus sichtbar sind."
+    }
+  ],
+  "pruefungstipp": "Die Unterscheidung Rentabilität gegen Liquidität ist die Kernfrage dieses Lernfelds und kommt fast sicher dran — meist als Fall mit hohem Gewinn und leerer Kasse. Antworte immer mit dem Zeitargument: Gewinn entsteht mit der Leistung, Liquidität mit der Zahlung. Beim Liquiditätsplan achte darauf, nur Zahlungen anzusetzen; Abschreibungen etwa tauchen dort nicht auf, weil ihnen keine Auszahlung gegenübersteht."
+}

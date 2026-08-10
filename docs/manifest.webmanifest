@@ -1,0 +1,49 @@
+{
+  "name": "AzubiPass · Lernzettel",
+  "short_name": "AzubiPass",
+  "description": "Lernzettel und Prüfungstraining für Kaufleute für Büromanagement.",
+  "start_url": "app.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "lang": "de",
+  "dir": "ltr",
+  "background_color": "#F5F5F0",
+  "theme_color": "#12301F",
+  "categories": [
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "mittel/symbol.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "mittel/symbol-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "mittel/symbol-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Weiterlernen",
+      "url": "app.html#heute"
+    },
+    {
+      "name": "Karteikarten",
+      "url": "app.html#ueben"
+    },
+    {
+      "name": "Suche",
+      "url": "app.html#suche"
+    }
+  ]
+}

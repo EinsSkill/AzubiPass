@@ -1,0 +1,289 @@
+{
+  "id": "k1",
+  "lernfeld": "lf3",
+  "nummer": 1,
+  "titel": "Der Auftragsprozess im Überblick",
+  "untertitel": "Sechs Belege, eine Kette — und du sitzt mittendrin.",
+  "minuten": 20,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Den Geschäftsprozess der Auftragsbearbeitung beschreiben",
+      "abschnitt": "a1"
+    },
+    {
+      "id": "lz2",
+      "text": "Belege dem richtigen Prozessschritt zuordnen",
+      "abschnitt": "a2"
+    },
+    {
+      "id": "lz3",
+      "text": "Den eigenen Handlungsrahmen im Prozess einordnen",
+      "abschnitt": "a3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "a1",
+      "titel": "Die Kette",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die {{begriff:auftragsbearbeitung|Auftragsbearbeitung}} ist der Prozess, in dem du als Kaufmann für Büromanagement die meiste Zeit verbringst. Sie beginnt nicht mit dem Vertrag, sondern lange davor — und endet nicht mit der Lieferung, sondern erst mit dem Geldeingang."
+        },
+        {
+          "typ": "absatz",
+          "text": "==Wichtig ist die Blickrichtung:== In diesem Lernfeld bist du der **Verkäufer**. Ein Kunde fragt bei dir an. Die Gegenrichtung — du beschaffst selbst etwas — ist Lernfeld 4."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Der Prozess",
+          "titel": "Von der Anfrage bis zum Geldeingang",
+          "lead": "Sechs Stationen, jede mit eigenem Beleg. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Anfrage",
+              "satz": "Kunde → Betrieb · unverbindlich",
+              "text": "Der Kunde bittet um ein Angebot. Rechtlich passiert dabei noch gar nichts — eine Anfrage verpflichtet niemanden zu irgendetwas."
+            },
+            {
+              "nr": 2,
+              "titel": "Angebot",
+              "satz": "Betrieb → Kunde · bindend",
+              "text": "Jetzt wird es ernst. Das Angebot ist rechtlich der Antrag, und daran bist du gebunden, solange du dich nicht ausdrücklich freigezeichnet hast."
+            },
+            {
+              "nr": 3,
+              "titel": "Bestellung",
+              "satz": "Kunde → Betrieb · der Vertrag steht",
+              "text": "Nimmt der Kunde dein Angebot unverändert an, ist der Kaufvertrag geschlossen. Ohne Unterschrift, ohne Papier, allein durch zwei übereinstimmende Erklärungen."
+            },
+            {
+              "nr": 4,
+              "titel": "Auftragsbestätigung",
+              "satz": "Betrieb → Kunde",
+              "text": "Sie schafft Klarheit über das Vereinbarte. Rechtlich ist sie nur dann die Annahme, wenn kein bindendes Angebot vorausging — sonst wiederholt sie nur, was schon gilt."
+            },
+            {
+              "nr": 5,
+              "titel": "Lieferung",
+              "satz": "mit Lieferschein",
+              "text": "Die Ware geht raus, begleitet vom Lieferschein. Er enthält bewusst keine Preise — er dient dem Empfänger zur Prüfung, ob die Sendung vollständig ist."
+            },
+            {
+              "nr": 6,
+              "titel": "Rechnung und Zahlung",
+              "satz": "Betrieb → Kunde → Geldeingang",
+              "text": "Erst mit dem Zahlungseingang ist der Prozess abgeschlossen. Bleibt er aus, beginnt das Mahnwesen — und damit ein Thema aus Lernfeld 9."
+            }
+          ],
+          "regel": "Merke die Reihenfolge über die Richtung: Anfrage und Bestellung kommen vom Kunden, Angebot, Bestätigung, Lieferschein und Rechnung von dir."
+        },
+        {
+          "typ": "merke",
+          "text": "Der Vertrag entsteht bei **Schritt 3**, nicht bei der Auftragsbestätigung und schon gar nicht bei der Lieferung. Das ist die häufigste Fehlvorstellung im ganzen Lernfeld.",
+          "karteikarte": "An welcher Stelle des Auftragsprozesses kommt der Kaufvertrag zustande?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "a2",
+      "titel": "Welcher Beleg wozu",
+      "inhalt": [
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Beleg",
+            "Von wem",
+            "Enthält",
+            "Rechtliche Wirkung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Anfrage",
+                "Kunde",
+                "Bedarf, Menge, Termin",
+                "keine"
+              ],
+              "detail": "**Deshalb kostet eine Anfrage nichts** — weder Geld noch Bindung. Du darfst sie ignorieren, auch wenn das geschäftlich unklug wäre."
+            },
+            {
+              "zellen": [
+                "Angebot",
+                "Betrieb",
+                "Ware, Preis, Menge, Liefer- und Zahlungsbedingungen",
+                "Antrag, bindend"
+              ]
+            },
+            {
+              "zellen": [
+                "Bestellung",
+                "Kunde",
+                "Bezug auf das Angebot, Menge, Termin",
+                "Annahme oder Antrag"
+              ]
+            },
+            {
+              "zellen": [
+                "Auftragsbestätigung",
+                "Betrieb",
+                "alle vereinbarten Punkte",
+                "Annahme oder Bestätigung"
+              ]
+            },
+            {
+              "zellen": [
+                "Lieferschein",
+                "Betrieb",
+                "Menge und Art, keine Preise",
+                "Nachweis der Lieferung"
+              ],
+              "detail": "**Warum keine Preise:** Der Lieferschein geht durch viele Hände — Spediteur, Poststelle, Lager. Preise gehen diese Beteiligten nichts an, und in Konzernen ist die Trennung sogar vorgeschrieben."
+            },
+            {
+              "zellen": [
+                "Rechnung",
+                "Betrieb",
+                "Pflichtangaben nach dem Umsatzsteuergesetz",
+                "Zahlungsaufforderung"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Kunde bestellt auf ein bindendes Angebot hin, ohne etwas zu ändern. Wann ist der Vertrag geschlossen?",
+          "optionen": [
+            {
+              "text": "Mit dem Zugang der Bestellung",
+              "richtig": true,
+              "echo": "Richtig. Das Angebot war der Antrag, die unveränderte Bestellung ist die Annahme. Damit liegen zwei übereinstimmende Willenserklärungen vor — der Vertrag steht. Eine Auftragsbestätigung ist dann nur noch Höflichkeit und Dokumentation."
+            },
+            {
+              "text": "Mit der Auftragsbestätigung",
+              "richtig": false,
+              "echo": "Ein verbreiteter Irrtum. Die Auftragsbestätigung wiederholt hier nur, was bereits gilt — der Vertrag ist mit der Bestellung entstanden. Rechtlich die Annahme ist sie nur, wenn kein bindendes Angebot vorausging."
+            },
+            {
+              "text": "Mit der Lieferung",
+              "richtig": false,
+              "echo": "Die Lieferung ist die Erfüllung des Vertrags, nicht sein Abschluss. Wäre es anders, könnte sich niemand darauf verlassen, dass bestellte Ware auch kommt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "a3",
+      "titel": "Dein Platz im Prozess",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Rahmenlehrplan verlangt ausdrücklich, den **eigenen Verantwortungsbereich und die eigenen Befugnisse** in diesem Prozess einzuordnen. Praktisch heißt das: Was darfst du selbst entscheiden, und wo musst du fragen?"
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Handlung",
+            "Meist erlaubt",
+            "Meist genehmigungspflichtig"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Anfrage beantworten",
+                "Standardangebot aus dem System",
+                "abweichende Konditionen"
+              ]
+            },
+            {
+              "zellen": [
+                "Preis nennen",
+                "Listenpreis",
+                "Rabatt über den festgelegten Rahmen hinaus"
+              ],
+              "detail": "**Hier greift die Handlungsvollmacht aus Lernfeld 1:** Sie deckt die gewöhnlichen Geschäfte ab. Ein außergewöhnlicher Nachlass gehört nicht dazu — und wer ihn trotzdem zusagt, bindet den Betrieb möglicherweise gegenüber dem Kunden, muss sich aber intern verantworten."
+            },
+            {
+              "zellen": [
+                "Liefertermin zusagen",
+                "aus der Verfügbarkeitsanzeige",
+                "Zusage trotz fehlender Ware"
+              ]
+            },
+            {
+              "zellen": [
+                "Auftrag annehmen",
+                "im üblichen Rahmen",
+                "Großaufträge, Neukunden ohne Bonität"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Wenn du unsicher bist, ob du etwas zusagen darfst, hilft eine Formulierung, die nichts verschenkt und trotzdem freundlich ist: „Das kläre ich und melde mich bis morgen Mittag zurück.“ Ein Rückruf mit Termin wirkt professioneller als eine schnelle Zusage, die zurückgenommen werden muss."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Wer erstellt den Beleg?",
+          "kategorien": [
+            "Kunde",
+            "Betrieb"
+          ],
+          "aufgaben": [
+            {
+              "text": "Angebot",
+              "loesung": "Betrieb"
+            },
+            {
+              "text": "Bestellung",
+              "loesung": "Kunde"
+            },
+            {
+              "text": "Lieferschein",
+              "loesung": "Betrieb"
+            },
+            {
+              "text": "Anfrage",
+              "loesung": "Kunde"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Auftragsprozess: Anfrage, Angebot, Bestellung, Auftragsbestätigung, Lieferung, Rechnung und Zahlung.",
+    "In Lernfeld 3 bist du der Verkäufer — die Beschaffungsseite ist Lernfeld 4.",
+    "Anfrage und Bestellung kommen vom Kunden, die übrigen Belege vom Betrieb.",
+    "Die Anfrage hat keine rechtliche Wirkung.",
+    "Der Vertrag entsteht mit der Annahme, in der Regel also mit der Bestellung.",
+    "Der Lieferschein enthält keine Preise.",
+    "Der eigene Handlungsrahmen ergibt sich aus der Handlungsvollmacht — im Zweifel nachfragen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Nenne die sechs Stationen des Auftragsprozesses und gib jeweils an, wer den Beleg erstellt.",
+      "loesung": "Anfrage vom Kunden, Angebot vom Betrieb, Bestellung vom Kunden, Auftragsbestätigung vom Betrieb, Lieferschein vom Betrieb, Rechnung vom Betrieb. Abgeschlossen ist der Prozess erst mit dem Zahlungseingang."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum enthält ein Lieferschein keine Preise?",
+      "loesung": "Weil er die Sendung begleitet und dabei durch viele Hände geht — Lager, Spediteur, Poststelle, Warenannahme des Kunden. Preisinformationen gehen diese Beteiligten nichts an. Der Lieferschein dient dem Empfänger allein dazu, die Vollständigkeit und Richtigkeit der Lieferung zu prüfen; die Preise stehen in der separat versandten Rechnung."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Eine Kundin ruft an und bittet um ein Angebot über 200 Ordner. Am nächsten Tag ruft sie erneut an und sagt, sie habe sich anders entschieden. Welche Folgen hat das?",
+      "loesung": "Keine. Die Anfrage war rechtlich unverbindlich und hat keine Willenserklärung dargestellt. Auch wenn der Betrieb bereits Arbeit in die Angebotserstellung gesteckt hat, entsteht daraus kein Anspruch. Anders läge es erst, wenn ein Angebot abgegeben und von der Kundin angenommen worden wäre — dann bestünde ein Kaufvertrag."
+    }
+  ],
+  "pruefungstipp": "Die Zuordnung der Belege zu den Prozessschritten ist eine sichere Prüfungsaufgabe. Merke dir die Richtung: Was vom Kunden kommt, sind Anfrage und Bestellung — alles andere kommt von dir. Und der Klassiker: Der Vertrag entsteht mit der Annahme, nicht mit der Auftragsbestätigung."
+}

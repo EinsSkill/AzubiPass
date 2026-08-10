@@ -1,0 +1,383 @@
+{
+  "id": "k3",
+  "lernfeld": "buchfuehrung",
+  "nummer": 3,
+  "titel": "Konten & Buchungssätze",
+  "untertitel": "T-Konten, Aktiv- und Passivkonten, EBK und SBK — und die Regel „Soll an Haben“.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Das T-Konto aufbauen und Soll von Haben unterscheiden",
+      "abschnitt": "c1"
+    },
+    {
+      "id": "lz2",
+      "text": "Buchungen auf Aktiv- und Passivkonten korrekt zuordnen",
+      "abschnitt": "c2"
+    },
+    {
+      "id": "lz3",
+      "text": "Konten über EBK und SBK eröffnen und abschließen",
+      "abschnitt": "c3"
+    },
+    {
+      "id": "lz4",
+      "text": "Buchungssätze nach „Soll an Haben“ formulieren",
+      "abschnitt": "c4"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "c1",
+      "titel": "Warum Konten?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die Bilanz aus K2 ist eine Momentaufnahme. Sie zeigt den 31. Dezember — nicht, was im Jahr passiert ist. Genau dafür gibt es Konten: Für jede Bilanzposition wird ein eigenes Konto geführt, das alle Bewegungen des Jahres aufzeichnet. Am Jahresende setzt man daraus wieder eine Bilanz zusammen."
+        },
+        {
+          "typ": "absatz",
+          "text": "Jedes Konto hat die Form eines T — daher {{begriff:t-konto|T-Konto}}. Die linke Seite heißt {{begriff:soll|Soll}}, die rechte {{begriff:haben|Haben}}. Diese Wörter sind historisch und bedeuten heute nichts mehr. ==Soll und Haben sind Ortsangaben, keine Wertungen==: Ein Betrag im Soll ist weder gut noch schlecht, er steht einfach links."
+        },
+        {
+          "typ": "merke",
+          "text": "Soll = links. Haben = rechts. Wer versucht, sich die Begriffe inhaltlich herzuleiten, verliert Zeit — sie sind reine Konvention und müssen einfach sitzen.",
+          "karteikarte": "Was bedeuten Soll und Haben — und was bedeuten sie ausdrücklich nicht?"
+        },
+        {
+          "typ": "vertiefung",
+          "titel": "Woher die seltsamen Wörter kommen",
+          "absaetze": [
+            "Aus der italienischen Kaufmannsbuchführung des 15. Jahrhunderts. Die Konten waren ursprünglich Personenkonten: Links stand, was der Kunde *soll* — also schuldet. Rechts stand, was er *hat* — also bereits geleistet hat.",
+            "Als das System auf Sachkonten übertragen wurde, blieben die Namen. Der ursprüngliche Sinn ging verloren, die Bezeichnungen nicht. Genau deshalb hilft es nicht, sie logisch verstehen zu wollen."
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c2",
+      "titel": "Aktivkonto und Passivkonto — spiegelverkehrt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die entscheidende Frage bei jedem Konto lautet: Auf welcher Seite beginnt der {{begriff:anfangsbestand|Anfangsbestand}}, und wo werden Zugänge gebucht? Die Antwort steht in der Bilanz. Ein {{begriff:bestandskonto|Bestandskonto}} verhält sich genau so, wie seine Position in der Bilanz steht — Aktivposten links, Passivposten rechts."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "",
+            "Aktivkonto",
+            "Passivkonto"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Bildet ab",
+                "Vermögen (Bilanz links)",
+                "Kapital und Schulden (Bilanz rechts)"
+              ]
+            },
+            {
+              "zellen": [
+                "Anfangsbestand",
+                "Soll",
+                "Haben"
+              ],
+              "mono": [
+                1,
+                2
+              ]
+            },
+            {
+              "zellen": [
+                "Zugänge",
+                "Soll",
+                "Haben"
+              ],
+              "mono": [
+                1,
+                2
+              ]
+            },
+            {
+              "zellen": [
+                "Abgänge",
+                "Haben",
+                "Soll"
+              ],
+              "mono": [
+                1,
+                2
+              ]
+            },
+            {
+              "zellen": [
+                "Saldo",
+                "Sollsaldo",
+                "Habensaldo"
+              ],
+              "detail": "**Warum das so sein muss:** Der {{begriff:saldo|Saldo}} wird immer auf der *schwächeren* Seite eingetragen, damit beide Seiten gleich hoch werden. Bei einem Aktivkonto steht mehr im Soll — also landet der Ausgleich im Haben, und der Saldo heißt trotzdem Sollsaldo, weil er die Soll-Seite als Überhang beschreibt."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Der häufigste Fehler im ganzen Kapitel: Anfangsbestand auf der falschen Seite. Eselsbrücke: Das Aktivkonto lebt links — genau wie die Aktivseite der Bilanz links steht. Alles am Passivkonto ist dazu spiegelverkehrt."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c3",
+      "titel": "EBK und SBK — Anfang und Ende des Jahres",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Jede Buchung braucht zwei Konten. Das gilt auch beim Eröffnen: Um ein Bankkonto mit 10.000 € zu starten, braucht es ein Gegenkonto. Diese Rolle übernimmt das {{begriff:ebk|Eröffnungsbilanzkonto}}, am Jahresende spiegelbildlich das {{begriff:sbk|Schlussbilanzkonto}}."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Vorgang",
+            "Buchungssatz",
+            "Erklärung"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Aktivkonto eröffnen (Bank 10.000 €)",
+                "Bank an EBK 10.000 €",
+                "Aktivkonto startet im Soll, das EBK nimmt die Gegenseite"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "Passivkonto eröffnen (EK 8.000 €)",
+                "EBK an Eigenkapital 8.000 €",
+                "Passivkonto startet im Haben, das EBK steht im Soll"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "Aktivkonto abschließen",
+                "SBK an Bank [Saldo]",
+                "Der Restbestand wandert ins SBK"
+              ],
+              "mono": [
+                1
+              ]
+            },
+            {
+              "zellen": [
+                "Passivkonto abschließen",
+                "Eigenkapital an SBK [Saldo]",
+                "Ebenso, nur spiegelverkehrt"
+              ],
+              "mono": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "EBK und SBK sind reine Hilfskonten. Sie erscheinen in keiner Bilanz und in keiner GuV — sie existieren nur, damit jede Buchung ihre zwei Seiten bekommt.",
+          "karteikarte": "Wozu dienen EBK und SBK, und warum tauchen sie in keiner Bilanz auf?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "c4",
+      "titel": "Buchungssätze — „Soll an Haben“",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Ein {{begriff:buchungssatz|Buchungssatz}} folgt immer demselben Muster: zuerst das Sollkonto, dann das Wort **an**, dann das Habenkonto und der Betrag. Die Summe der Soll-Beträge muss der Summe der Haben-Beträge entsprechen — auch wenn mehr als zwei Konten beteiligt sind."
+        },
+        {
+          "typ": "grafik",
+          "variante": "t-konto",
+          "kopf": "Buchen, live",
+          "titel": "Wo landet der Betrag?",
+          "lead": "Wähle einen Geschäftsvorfall. Die Beträge laufen in die beiden betroffenen T-Konten ein.",
+          "konten": [
+            {
+              "id": "bank",
+              "name": "Bank",
+              "art": "aktiv",
+              "ab": 18000
+            },
+            {
+              "id": "kasse",
+              "name": "Kasse",
+              "art": "aktiv",
+              "ab": 2000
+            },
+            {
+              "id": "waren",
+              "name": "Wareneinkauf",
+              "art": "aufwand",
+              "ab": 0
+            },
+            {
+              "id": "verb",
+              "name": "Verbindlichkeiten LuL",
+              "art": "passiv",
+              "ab": 15000
+            },
+            {
+              "id": "ford",
+              "name": "Forderungen LuL",
+              "art": "aktiv",
+              "ab": 9000
+            },
+            {
+              "id": "erloese",
+              "name": "Umsatzerlöse",
+              "art": "ertrag",
+              "ab": 0
+            }
+          ],
+          "vorfaelle": [
+            {
+              "text": "Warenkauf auf Ziel, 1.000 €",
+              "satz": "Wareneinkauf 1.000 € an Verbindlichkeiten LuL 1.000 €",
+              "soll": [
+                {
+                  "konto": "waren",
+                  "betrag": 1000
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "verb",
+                  "betrag": 1000
+                }
+              ],
+              "echo": "Aufwand entsteht, also wächst das Wareneinkaufskonto im Soll. Bezahlt ist noch nichts — stattdessen wächst die Schuld, und Passivkonten wachsen im Haben."
+            },
+            {
+              "text": "Lieferantenrechnung per Bank bezahlen, 500 €",
+              "satz": "Verbindlichkeiten LuL 500 € an Bank 500 €",
+              "soll": [
+                {
+                  "konto": "verb",
+                  "betrag": 500
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "bank",
+                  "betrag": 500
+                }
+              ],
+              "echo": "Die Schuld sinkt — ein Abgang auf einem Passivkonto steht im Soll. Das Bankkonto sinkt ebenfalls, und ein Abgang auf einem Aktivkonto steht im Haben."
+            },
+            {
+              "text": "Barverkauf von Ware, 300 €",
+              "satz": "Kasse 300 € an Umsatzerlöse 300 €",
+              "soll": [
+                {
+                  "konto": "kasse",
+                  "betrag": 300
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "erloese",
+                  "betrag": 300
+                }
+              ],
+              "echo": "Die Kasse wächst, also Soll. Gleichzeitig entsteht ein Ertrag — und Erträge werden immer im Haben gebucht."
+            },
+            {
+              "text": "Kunde zahlt eine offene Rechnung, 800 €",
+              "satz": "Bank 800 € an Forderungen LuL 800 €",
+              "soll": [
+                {
+                  "konto": "bank",
+                  "betrag": 800
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "ford",
+                  "betrag": 800
+                }
+              ],
+              "echo": "Kein Ertrag! Der wurde bereits bei Rechnungsstellung gebucht. Hier tauscht der Betrieb nur eine Forderung gegen Bankguthaben — zwei Aktivkonten, also ein Aktiv-Tausch aus K2."
+            }
+          ],
+          "regel": "Drei Fragen für jeden unbekannten Buchungssatz: Welche zwei Konten sind betroffen? Welches wird größer? Welches kleiner?"
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Kunde überweist 800 € für eine Rechnung, die vor drei Wochen gestellt wurde. Welcher Buchungssatz ist richtig?",
+          "optionen": [
+            {
+              "text": "Bank an Umsatzerlöse",
+              "richtig": false,
+              "echo": "Damit würde der Ertrag ein zweites Mal gebucht. Er ist bereits bei der Rechnungsstellung entstanden — sonst wäre der Umsatz im Jahresergebnis doppelt enthalten."
+            },
+            {
+              "text": "Bank an Forderungen LuL",
+              "richtig": true,
+              "echo": "Richtig. Der Ertrag wurde bei Rechnungsstellung gebucht (Forderungen an Umsatzerlöse). Jetzt wird nur noch die Forderung durch Bankguthaben ersetzt — reiner Aktiv-Tausch."
+            },
+            {
+              "text": "Forderungen LuL an Bank",
+              "richtig": false,
+              "echo": "Die Richtung stimmt nicht. Das Bankkonto steigt und muss deshalb im Soll stehen; die Forderung verschwindet und gehört ins Haben. Der Satz ist genau verkehrt herum."
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Bei zusammengesetzten Buchungssätzen mit drei oder mehr Konten hilft eine einfache Kontrolle: Addiere alle Soll-Beträge und alle Haben-Beträge. Sind sie ungleich, ist der Satz falsch — noch bevor du über den Inhalt nachdenkst."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Konten zeichnen die Bewegungen eines Jahres auf; die Bilanz zeigt nur den Stichtag.",
+    "Soll = linke Seite, Haben = rechte Seite. Beides sind Ortsangaben, keine Wertungen.",
+    "Aktivkonto: Anfangsbestand und Zugänge im Soll, Abgänge im Haben.",
+    "Passivkonto: Anfangsbestand und Zugänge im Haben, Abgänge im Soll.",
+    "EBK eröffnet, SBK schließt alle Bestandskonten — beides reine Hilfskonten.",
+    "Buchungssatz: Sollkonto an Habenkonto Betrag. Soll-Summe = Haben-Summe, immer.",
+    "Zahlungseingang auf eine offene Rechnung erzeugt keinen Ertrag — der wurde schon gebucht."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Erkläre den Unterschied zwischen Aktiv- und Passivkonto anhand des Anfangsbestands.",
+      "loesung": "Beim Aktivkonto steht der Anfangsbestand im Soll, also links — genau wie die Aktivseite in der Bilanz links steht. Beim Passivkonto steht er im Haben, also rechts, entsprechend der Passivseite. Auch Zugänge folgen dieser Logik: Sie werden auf derselben Seite gebucht wie der Anfangsbestand, Abgänge auf der Gegenseite."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Was ist das EBK und wozu wird es gebraucht?",
+      "loesung": "Das Eröffnungsbilanzkonto ist ein technisches Hilfskonto, über das zu Jahresbeginn alle Bestandskonten mit ihren Anfangsbeständen eröffnet werden. Es wird gebraucht, weil jede Buchung ein Soll- und ein Habenkonto benötigt — ohne Gegenkonto ließen sich die Konten nicht eröffnen. Das EBK ist kein Sachkonto und erscheint in keiner Bilanz."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Formuliere den Buchungssatz: Der Betrieb kauft Waren für 2.500 € und zahlt sofort per Banküberweisung.",
+      "loesung": "Wareneinkauf 2.500 € an Bank 2.500 €. Der Wareneinkauf ist ein Aufwandskonto und wächst im Soll. Das Bankkonto ist ein Aktivkonto; es sinkt, und Abgänge auf Aktivkonten stehen im Haben."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Lieferant schickt eine Rechnung über 800 € für Büromaterial. Eine Woche später wird überwiesen. Formuliere beide Buchungssätze.",
+      "loesung": "Bei Rechnungseingang: Bürobedarf 800 € an Verbindlichkeiten LuL 800 € — der Aufwand entsteht jetzt, gezahlt ist noch nichts. Bei Zahlung: Verbindlichkeiten LuL 800 € an Bank 800 € — die Schuld sinkt (Soll auf dem Passivkonto), das Bankguthaben sinkt (Haben auf dem Aktivkonto). Nach beiden Buchungen ist die Verbindlichkeit ausgeglichen."
+    }
+  ],
+  "pruefungstipp": "Buchungssätze kommen fast immer als Block von vier bis sechs Aufgaben. Arbeite stur nach Schema: erst die zwei betroffenen Konten benennen, dann die Kontoart bestimmen, dann Zu- oder Abgang. Und prüfe am Ende immer, ob Soll-Betrag und Haben-Betrag übereinstimmen — dieser Blick kostet fünf Sekunden und rettet Punkte."
+}

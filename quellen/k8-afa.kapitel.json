@@ -1,0 +1,323 @@
+{
+  "id": "k8",
+  "lernfeld": "buchfuehrung",
+  "nummer": 8,
+  "titel": "Anlagevermögen & Abschreibungen",
+  "untertitel": "GWG, lineare AfA, Buchwert — und was beim Verkauf eines Anlageguts passiert.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Erklären, warum Anlagevermögen abgeschrieben wird und Umlaufvermögen nicht",
+      "abschnitt": "h1"
+    },
+    {
+      "id": "lz2",
+      "text": "Die lineare Abschreibung berechnen und buchen, auch unterjährig",
+      "abschnitt": "h2"
+    },
+    {
+      "id": "lz3",
+      "text": "Den Anlagenabgang mit Buchgewinn oder Buchverlust behandeln",
+      "abschnitt": "h3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "h1",
+      "titel": "Warum überhaupt abschreiben?",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "{{begriff:anlagevermoegen|Anlagevermögen}} wird über Jahre genutzt und verliert dabei an Wert — durch Verschleiß, Alterung und technischen Fortschritt. Diese Wertminderung heißt {{begriff:afa|Abschreibung}}. Beim {{begriff:umlaufvermoegen|Umlaufvermögen}} entfällt sie, weil es sich innerhalb eines Jahres umschlägt."
+        },
+        {
+          "typ": "absatz",
+          "text": "Dahinter steht dieselbe Idee wie bei den Erfolgskonten in K4: ==Kosten gehören in das Jahr, in dem sie wirtschaftlich anfallen.== Eine Maschine für 60.000 €, die sechs Jahre läuft, belastet nicht ein Jahr mit 60.000 €, sondern sechs Jahre mit je 10.000 €."
+        },
+        {
+          "typ": "absatz",
+          "text": "Für kleinere Anschaffungen gibt es eine Vereinfachung: {{begriff:gwg|Geringwertige Wirtschaftsgüter}} bis ==800 Euro netto== dürfen im Jahr des Kaufs sofort vollständig abgeschrieben werden — unabhängig davon, wie lange sie tatsächlich halten. Bis 250 Euro geht das sogar ohne gesondertes Verzeichnis. Alternativ lassen sich Güter zwischen 250,01 und 1.000 Euro in einem Sammelposten bündeln und über fünf Jahre abschreiben."
+        },
+        {
+          "typ": "merke",
+          "text": "Abschreibung ist Aufwand ohne Auszahlung. Das Geld ist beim Kauf abgeflossen; die Abschreibung verteilt diesen Betrag nur noch buchhalterisch über die Jahre.",
+          "karteikarte": "Warum ist eine Abschreibung Aufwand, obwohl kein Geld fließt?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "h2",
+      "titel": "Lineare Abschreibung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Die lineare Abschreibung verteilt die Anschaffungskosten gleichmäßig über die {{begriff:nutzungsdauer|Nutzungsdauer}}. Jedes Jahr derselbe Betrag, bis der {{begriff:buchwert|Buchwert}} bei null liegt. Die Formel ist der ganze Trick: **Jahres-AfA = Anschaffungskosten ÷ Nutzungsdauer**."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Jahr",
+            "Jahres-AfA",
+            "Kumuliert",
+            "Buchwert"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Anschaffung",
+                "—",
+                "—",
+                "2.400 €"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "1",
+                "800 €",
+                "800 €",
+                "1.600 €"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "2",
+                "800 €",
+                "1.600 €",
+                "800 €"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "3",
+                "800 €",
+                "2.400 €",
+                "0 €"
+              ],
+              "mono": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "detail": "**Und dann?** Das Gerät ist buchhalterisch wertlos, steht aber vielleicht noch jahrelang im Betrieb. Manche Betriebe führen es mit einem Erinnerungswert von 1 € weiter, damit es nicht aus der Anlagenbuchhaltung verschwindet."
+            }
+          ]
+        },
+        {
+          "typ": "achtung",
+          "text": "Wird ein Gut mitten im Jahr angeschafft, wird im ersten Jahr nur anteilig abgeschrieben — pro angefangenem Monat ein Zwölftel. Ein Kauf am 1. Juli ergibt also 6/12 der Jahres-AfA. Das wird in Prüfungsaufgaben gern versteckt, indem einfach ein Datum genannt wird."
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Laptop für 1.200 € netto, Nutzungsdauer 3 Jahre, angeschafft am 1. Juli. Wie hoch ist die Abschreibung im ersten Jahr?",
+          "optionen": [
+            {
+              "text": "400 €",
+              "richtig": false,
+              "echo": "Das wäre die volle Jahresabschreibung. Sie gilt nur, wenn das Gut ab Januar im Betrieb ist — hier fehlt das halbe Jahr."
+            },
+            {
+              "text": "200 €",
+              "richtig": true,
+              "echo": "Richtig. Jahres-AfA = 1.200 ÷ 3 = 400 €. Davon nur sechs Zwölftel für Juli bis Dezember: 400 × 6/12 = 200 €. In den Jahren 2 und 3 sind es je 400 €, im vierten Jahr die restlichen 200 €."
+            },
+            {
+              "text": "1.200 €",
+              "richtig": false,
+              "echo": "Sofortabschreibung gilt nur für geringwertige Wirtschaftsgüter bis 800 Euro netto. Ein Laptop für 1.200 Euro liegt darüber und wird deshalb über die Nutzungsdauer verteilt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "h3",
+      "titel": "Wenn ein Anlagegut verkauft wird",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Beim Verkauf zählt nicht der ursprüngliche Preis, sondern der aktuelle {{begriff:buchwert|Buchwert}}. Liegt der Verkaufspreis darüber, entsteht ein **Buchgewinn** — ein sonstiger Ertrag. Liegt er darunter, ein **Buchverlust** als sonstiger Aufwand. ==Ausgebucht wird immer der Buchwert, nie die Anschaffungskosten.=="
+        },
+        {
+          "typ": "grafik",
+          "variante": "t-konto",
+          "kopf": "Buchen, live",
+          "titel": "Firmenwagen · AK 18.000 €, nach 4 Jahren",
+          "lead": "Jährliche AfA 3.000 €, also Buchwert 6.000 €. Zwei Verkaufspreise, zwei Ergebnisse.",
+          "konten": [
+            {
+              "id": "bank",
+              "name": "Bank",
+              "art": "aktiv",
+              "ab": 12000
+            },
+            {
+              "id": "fuhrpark",
+              "name": "Fuhrpark",
+              "art": "aktiv",
+              "ab": 6000
+            },
+            {
+              "id": "ertrag",
+              "name": "Sonstige Erträge",
+              "art": "ertrag",
+              "ab": 0
+            },
+            {
+              "id": "aufwand",
+              "name": "Sonstige Aufwendungen",
+              "art": "aufwand",
+              "ab": 0
+            },
+            {
+              "id": "afa",
+              "name": "Abschreibungen",
+              "art": "aufwand",
+              "ab": 0
+            }
+          ],
+          "vorfaelle": [
+            {
+              "text": "Jahresabschreibung buchen, 3.000 €",
+              "satz": "Abschreibungen 3.000 € an Fuhrpark 3.000 €",
+              "soll": [
+                {
+                  "konto": "afa",
+                  "betrag": 3000
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "fuhrpark",
+                  "betrag": 3000
+                }
+              ],
+              "echo": "Der Aufwand entsteht im Soll, das Anlagekonto sinkt im Haben. Nach dieser Buchung ist der Buchwert um 3.000 € kleiner."
+            },
+            {
+              "text": "Verkauf für 8.000 € — über Buchwert",
+              "satz": "Bank 8.000 € an Fuhrpark 6.000 € + Sonstige Erträge 2.000 €",
+              "soll": [
+                {
+                  "konto": "bank",
+                  "betrag": 8000
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "fuhrpark",
+                  "betrag": 6000
+                },
+                {
+                  "konto": "ertrag",
+                  "betrag": 2000
+                }
+              ],
+              "echo": "Buchgewinn von 2.000 €. Er bedeutet nicht, dass ein gutes Geschäft gemacht wurde — sondern dass in den Vorjahren zu viel abgeschrieben wurde."
+            },
+            {
+              "text": "Verkauf für 4.000 € — unter Buchwert",
+              "satz": "Bank 4.000 € + Sonstige Aufwendungen 2.000 € an Fuhrpark 6.000 €",
+              "soll": [
+                {
+                  "konto": "bank",
+                  "betrag": 4000
+                },
+                {
+                  "konto": "aufwand",
+                  "betrag": 2000
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "fuhrpark",
+                  "betrag": 6000
+                }
+              ],
+              "echo": "Buchverlust von 2.000 €. Das Anlagekonto wird in beiden Fällen mit demselben Betrag ausgebucht — dem Buchwert. Nur die Gegenseite unterscheidet sich."
+            }
+          ],
+          "regel": "Immer zuerst den Buchwert bestimmen: Anschaffungskosten minus kumulierte Abschreibungen. Erst danach mit dem Verkaufspreis vergleichen."
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Buchgewinn oder Buchverlust?",
+          "kategorien": [
+            "Buchgewinn",
+            "Buchverlust"
+          ],
+          "aufgaben": [
+            {
+              "text": "Buchwert 6.000 €, Verkaufspreis 7.500 €.",
+              "loesung": "Buchgewinn"
+            },
+            {
+              "text": "Buchwert 12.000 €, Verkaufspreis 9.000 €.",
+              "loesung": "Buchverlust"
+            },
+            {
+              "text": "AK 20.000 €, 3 Jahre à 4.000 € abgeschrieben, Verkauf für 10.000 €.",
+              "loesung": "Buchverlust"
+            },
+            {
+              "text": "AK 9.000 €, vollständig abgeschrieben, Verkauf für 500 €.",
+              "loesung": "Buchgewinn"
+            }
+          ]
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Rechne bei Verkaufsaufgaben immer in dieser Reihenfolge: kumulierte Abschreibung, dann Buchwert, dann Vergleich mit dem Verkaufspreis. Wer sofort auf den Preis schaut, verwechselt Buchwert und Anschaffungskosten — der häufigste Fehler in diesem Kapitel."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Anlagevermögen wird abgeschrieben, Umlaufvermögen nicht.",
+    "Abschreibung ist Aufwand ohne Auszahlung — sie verteilt die Anschaffungskosten über die Jahre.",
+    "Lineare AfA = Anschaffungskosten ÷ Nutzungsdauer.",
+    "Unterjährige Anschaffung: anteilig, pro angefangenem Monat ein Zwölftel.",
+    "GWG bis 800 € netto dürfen im Kaufjahr sofort abgeschrieben werden; Sammelposten von 250,01 bis 1.000 €.",
+    "Buchwert = Anschaffungskosten − kumulierte Abschreibungen.",
+    "Verkauf über Buchwert = Buchgewinn (sonstiger Ertrag), darunter = Buchverlust (sonstiger Aufwand)."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Warum wird Anlagevermögen abgeschrieben, Umlaufvermögen aber in der Regel nicht?",
+      "loesung": "Anlagevermögen wird über mehrere Jahre genutzt und verliert dabei durch Abnutzung und Alterung an Wert. Diese Wertminderung muss erfasst werden, damit Gewinn und Bilanz das jeweilige Jahr korrekt abbilden. Umlaufvermögen wird innerhalb kurzer Zeit verbraucht oder verkauft und mit seinem aktuellen Wert bilanziert — eine planmäßige Verteilung über Jahre ergäbe keinen Sinn."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Firmenwagen für 18.000 € netto, Nutzungsdauer 6 Jahre, angeschafft am 1. Januar. Wie hoch ist die jährliche AfA und der Buchwert nach zwei Jahren?",
+      "loesung": "Jährliche AfA = 18.000 ÷ 6 = 3.000 €. Nach Jahr 1: Buchwert 15.000 €. Nach Jahr 2: Buchwert 12.000 €. Buchungssatz jedes Jahr: Abschreibungen 3.000 € an Fuhrpark 3.000 €."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Ein Firmenwagen mit Anschaffungskosten von 18.000 € wurde vier Jahre lang mit je 3.000 € abgeschrieben und nun für 7.500 € netto verkauft. Buchgewinn oder Buchverlust — und wie lautet der Buchungssatz?",
+      "loesung": "Buchwert = 18.000 − 12.000 = 6.000 €. Der Verkaufspreis von 7.500 € liegt darüber, es entsteht ein Buchgewinn von 1.500 €. Buchungssatz: Bank 7.500 € an Fuhrpark 6.000 € und Sonstige Erträge 1.500 €."
+    }
+  ],
+  "pruefungstipp": "Zwei Formeln: AfA = Anschaffungskosten ÷ Nutzungsdauer, und bei unterjähriger Anschaffung mal Monate durch zwölf. Beim Anlagenabgang zuerst den Buchwert ausrechnen — mit ihm wird ausgebucht, nicht mit den Anschaffungskosten."
+}

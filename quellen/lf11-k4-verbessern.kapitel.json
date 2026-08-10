@@ -1,0 +1,303 @@
+{
+  "id": "k4",
+  "lernfeld": "lf11",
+  "nummer": 4,
+  "titel": "Prozesse verbessern",
+  "untertitel": "Erst verstehen, dann ändern. Nie umgekehrt.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Verschwendungsarten im Büroprozess erkennen",
+      "abschnitt": "b1"
+    },
+    {
+      "id": "lz2",
+      "text": "Den Verbesserungskreislauf anwenden",
+      "abschnitt": "b2"
+    },
+    {
+      "id": "lz3",
+      "text": "Digitalisierung als Mittel richtig einordnen",
+      "abschnitt": "b3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "b1",
+      "titel": "Wo die Zeit verschwindet",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Bevor man etwas ändert, sucht man die Verschwendung. ==Verschwendung ist alles, wofür ein Kunde nicht zahlen würde== — und im Büro tritt sie in wiederkehrenden Formen auf."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Form",
+            "Wie sie aussieht",
+            "Gegenmittel"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Warten",
+                "Vorgang liegt vor einer Freigabe",
+                "Wertgrenzen, feste Freigabezeiten, Vertretung"
+              ],
+              "detail": "**Der größte Block in fast jedem Büroprozess.** Oft reicht schon eine Wertgrenze: Unterhalb davon entfällt die Freigabe ganz."
+            },
+            {
+              "zellen": [
+                "Doppelarbeit",
+                "dieselben Daten mehrfach erfassen",
+                "Medienbrüche beseitigen"
+              ]
+            },
+            {
+              "zellen": [
+                "Überprüfung",
+                "jeder kontrolliert alles",
+                "risikoabhängig prüfen"
+              ],
+              "detail": "**Prüfen ist nicht wertschöpfend.** Nötig ist es trotzdem — aber gestaffelt nach Risiko, nicht flächendeckend über jeden Vorgang."
+            },
+            {
+              "zellen": [
+                "Suchen",
+                "Unterlagen sind nicht auffindbar",
+                "einheitliche Ablage, Verschlagwortung"
+              ]
+            },
+            {
+              "zellen": [
+                "Nacharbeit",
+                "Fehler müssen korrigiert werden",
+                "Ursache abstellen, nicht Symptom"
+              ],
+              "detail": "**Jeder Fehler kostet doppelt:** die Korrektur selbst und die Liegezeit, bis er auffällt. Deshalb wirkt Fehlervermeidung stärker als schnellere Nacharbeit."
+            },
+            {
+              "zellen": [
+                "Rückfragen",
+                "Angaben fehlen bei der Übergabe",
+                "vollständige Übergabe festlegen"
+              ]
+            }
+          ]
+        },
+        {
+          "typ": "merke",
+          "text": "**Verschwendung ist alles, wofür ein Kunde nicht zahlen würde.** Warten, Doppelarbeit, übermäßiges Prüfen, Suchen, Nacharbeit und Rückfragen sind die typischen Formen im Büro.",
+          "karteikarte": "Welche Formen von Verschwendung treten in Büroprozessen auf, und was ist jeweils das Gegenmittel?"
+        },
+        {
+          "typ": "achtung",
+          "text": "Nicht jede nicht wertschöpfende Tätigkeit ist Verschwendung. Eine gesetzlich vorgeschriebene Prüfung oder eine Vier-Augen-Kontrolle bei Zahlungen ist **notwendig**. Die Frage lautet nicht, ob man sie streicht, sondern ob sie drei Tage dauern muss."
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b2",
+      "titel": "Der Verbesserungskreislauf",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Verbesserung ist kein Projekt mit Ende, sondern ein Kreislauf. ==Der bekannteste heißt nach seinen vier Schritten **Planen, Tun, Prüfen, Handeln**== — und der wichtigste davon ist der dritte."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kette",
+          "kopf": "Vier Schritte",
+          "titel": "Planen, tun, prüfen, handeln",
+          "lead": "Danach beginnt es von vorn — das ist der Punkt. Klick dich durch.",
+          "schritte": [
+            {
+              "nr": 1,
+              "titel": "Planen",
+              "satz": "Ist-Zustand und Ziel",
+              "text": "Prozess aufnehmen, messen, Ursachen suchen, Maßnahme festlegen. Wichtig ist ein messbares Ziel: „schneller werden\" ist keins, „Durchlaufzeit von neun auf vier Tage\" schon."
+            },
+            {
+              "nr": 2,
+              "titel": "Tun",
+              "satz": "erst im Kleinen",
+              "text": "Die Maßnahme wird zunächst begrenzt erprobt — eine Abteilung, ein Monat, eine Produktgruppe. Ein missglückter Versuch bleibt so überschaubar."
+            },
+            {
+              "nr": 3,
+              "titel": "Prüfen",
+              "satz": "hat es gewirkt?",
+              "text": "Dieselben Kennzahlen wie vorher, damit vergleichbar bleibt, was verglichen werden soll. Der Schritt wird am häufigsten übersprungen — und genau deshalb weiß in vielen Betrieben niemand, ob eine Änderung etwas gebracht hat."
+            },
+            {
+              "nr": 4,
+              "titel": "Handeln",
+              "satz": "verankern oder verwerfen",
+              "text": "Hat es gewirkt, wird der neue Ablauf zum Standard und dokumentiert. Hat es nicht gewirkt, wird zurückgedreht und eine andere Ursache gesucht. Danach beginnt der Kreis erneut."
+            }
+          ],
+          "regel": "Ohne Schritt 4 zerfällt jede Verbesserung: Wird der neue Ablauf nicht festgeschrieben, arbeiten nach einigen Wochen alle wieder wie vorher — besonders zuverlässig nach einem Personalwechsel."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "Frag bei jedem Problem **mehrfach nach dem Warum**, bis du bei der Ursache bist. Die Rechnung ging zu spät raus — warum? Der Lieferschein fehlte — warum? Er lag im Lager — warum? Es gibt keine Regel, wann er weitergegeben wird. **Dort** setzt die Maßnahme an, nicht beim Mahnen."
+        },
+        {
+          "typ": "merke",
+          "text": "**Planen, Tun, Prüfen, Handeln** — und dann von vorn. Der Prüfschritt entscheidet, ob man aus der Änderung etwas lernt, der Handeln-Schritt, ob sie bleibt.",
+          "karteikarte": "Welche vier Schritte hat der Verbesserungskreislauf, und was passiert, wenn man Schritt 3 oder 4 überspringt?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "b3",
+      "titel": "Digitalisierung ist kein Ziel",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Software beschleunigt einen Prozess nur, wenn der Prozess vorher stimmt. ==Ein schlechter Ablauf wird durch Digitalisierung nicht besser, sondern schneller schlecht== — und teurer, weil er jetzt auch noch Lizenzen kostet."
+        },
+        {
+          "typ": "grafik",
+          "variante": "vergleich",
+          "kopf": "Zwei Reihenfolgen",
+          "titel": "Erst ordnen oder erst kaufen",
+          "lead": "Derselbe Prozess, zwei Vorgehensweisen. Jede Zeile anklicken.",
+          "seiten": [
+            {
+              "name": "Erst Prozess, dann Technik",
+              "ton": "gold",
+              "punkte": [
+                {
+                  "text": "Überflüssige Schritte fallen vorher weg",
+                  "detail": "Was gestrichen wird, muss nicht programmiert werden. Das spart bei der Einführung mehr Geld als jede Lizenzverhandlung."
+                },
+                {
+                  "text": "Die Anforderungen sind klar",
+                  "detail": "Wer seinen Prozess kennt, kann Software gezielt auswählen — statt sich vom Anbieter erklären zu lassen, wie man zu arbeiten hat."
+                },
+                {
+                  "text": "Die Beteiligten sind eingebunden",
+                  "detail": "Sie haben den Ablauf mitgestaltet und tragen ihn deshalb mit. Das entscheidet über Erfolg oder Scheitern der Einführung."
+                },
+                {
+                  "text": "Der Nutzen ist messbar",
+                  "detail": "Weil vorher gemessen wurde, lässt sich hinterher belegen, was die Investition gebracht hat."
+                }
+              ]
+            },
+            {
+              "name": "Erst Technik",
+              "ton": "ruhig",
+              "punkte": [
+                {
+                  "text": "Alte Umwege werden mitprogrammiert",
+                  "detail": "Die Software bildet ab, was war — einschließlich der drei Freigaben, die niemand mehr begründen kann."
+                },
+                {
+                  "text": "Anforderungen entstehen unterwegs",
+                  "detail": "Das treibt Kosten und Termine. Jede nachträgliche Änderung ist teurer als eine vorher bedachte."
+                },
+                {
+                  "text": "Widerstand bei den Beteiligten",
+                  "detail": "Ein System, über das niemand gesprochen hat, wird umgangen. Dann laufen Papier und Software parallel — der schlechteste aller Zustände."
+                },
+                {
+                  "text": "Nutzen bleibt unbelegt",
+                  "detail": "Ohne Ausgangsmessung lässt sich nicht sagen, ob es besser geworden ist. Übrig bleibt das Gefühl, dass es teuer war."
+                }
+              ]
+            }
+          ],
+          "regel": "Merksatz: Erst den Prozess ordnen, dann digitalisieren. Wer einen unklaren Ablauf automatisiert, bekommt einen unklaren Ablauf mit Lizenzkosten."
+        },
+        {
+          "typ": "merke",
+          "text": "**Erst den Prozess verstehen und aufräumen, dann Technik einsetzen.** Digitalisierung ist ein Mittel, kein Ziel — und sie repariert keinen schlechten Ablauf.",
+          "karteikarte": "Warum sollte ein Prozess vor der Digitalisierung überarbeitet werden?"
+        },
+        {
+          "typ": "check",
+          "frage": "Die Geschäftsführung will ein neues System einführen, weil die Auftragsbearbeitung zu lange dauert. Was rätst du?",
+          "optionen": [
+            {
+              "text": "Sofort ausschreiben — je früher das System läuft, desto besser",
+              "richtig": false,
+              "echo": "Ohne Kenntnis der Ursache besteht die Gefahr, den bestehenden Umweg in Software zu gießen. Dann kostet derselbe Ablauf zusätzlich Lizenzen."
+            },
+            {
+              "text": "Erst den Prozess aufnehmen und messen, dann über Technik entscheiden",
+              "richtig": true,
+              "echo": "Richtig. Zuerst wird der Ist-Ablauf aufgenommen und die Durchlaufzeit in ihre Bestandteile zerlegt. Erfahrungsgemäß entfällt der größte Teil auf Liegezeiten an Schnittstellen — dagegen hilft oft eine organisatorische Änderung wie eine Wertgrenze für Freigaben mehr als jede Software. Erst wenn klar ist, welche Schritte bleiben sollen, lassen sich Anforderungen formulieren und Systeme sinnvoll vergleichen. Nebenbei entsteht dabei die Ausgangsmessung, an der sich der Nutzen später belegen lässt."
+            },
+            {
+              "text": "Zusätzliches Personal einstellen",
+              "richtig": false,
+              "echo": "Mehr Personal beschleunigt die Bearbeitungszeit, und die ist bei Büroprozessen selten das Problem. Liegt die Zeit im Warten, verändert zusätzliches Personal wenig."
+            }
+          ]
+        },
+        {
+          "typ": "zuordnen",
+          "lead": "Welcher Schritt des Kreislaufs ist das?",
+          "kategorien": [
+            "Planen",
+            "Tun",
+            "Prüfen",
+            "Handeln"
+          ],
+          "aufgaben": [
+            {
+              "text": "Die Durchlaufzeit wird zwei Monate nach der Änderung erneut gemessen.",
+              "loesung": "Prüfen"
+            },
+            {
+              "text": "Der neue Ablauf wird als Arbeitsanweisung festgeschrieben.",
+              "loesung": "Handeln"
+            },
+            {
+              "text": "Die Wertgrenze wird zunächst nur in einer Abteilung erprobt.",
+              "loesung": "Tun"
+            },
+            {
+              "text": "Der Ist-Ablauf wird aufgenommen und ein Ziel festgelegt.",
+              "loesung": "Planen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Verschwendung ist alles, wofür ein Kunde nicht zahlen würde.",
+    "Typische Formen: Warten, Doppelarbeit, übermäßiges Prüfen, Suchen, Nacharbeit, Rückfragen.",
+    "Nicht jede nicht wertschöpfende Tätigkeit ist überflüssig — manche ist vorgeschrieben.",
+    "Der Verbesserungskreislauf lautet Planen, Tun, Prüfen, Handeln.",
+    "Ziele müssen messbar sein, sonst lässt sich der Erfolg nicht feststellen.",
+    "Ohne den Prüfschritt weiß niemand, ob die Änderung gewirkt hat.",
+    "Ohne den Handeln-Schritt fällt der Betrieb in alte Gewohnheiten zurück.",
+    "Erst den Prozess ordnen, dann digitalisieren — Software repariert keinen schlechten Ablauf."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Beschreibe den Verbesserungskreislauf und erkläre, warum die letzten beiden Schritte besonders wichtig sind.",
+      "loesung": "Der Kreislauf besteht aus vier Schritten. Im ersten Schritt, dem Planen, wird der Ist-Zustand aufgenommen und gemessen, die Ursache des Problems gesucht und eine Maßnahme mit einem messbaren Ziel festgelegt. Im zweiten Schritt, dem Tun, wird die Maßnahme zunächst begrenzt erprobt, etwa in einer Abteilung oder für einen Monat, damit ein Fehlschlag überschaubar bleibt. Im dritten Schritt, dem Prüfen, wird mit denselben Kennzahlen wie zu Beginn gemessen, ob die Maßnahme gewirkt hat. Im vierten Schritt, dem Handeln, wird der neue Ablauf entweder als Standard festgeschrieben und dokumentiert oder verworfen und eine andere Ursache gesucht. Danach beginnt der Kreis von vorn. Der Prüfschritt ist wichtig, weil ohne Messung niemand weiß, ob die Änderung tatsächlich etwas gebracht hat; er wird in der Praxis am häufigsten übersprungen. Der Handeln-Schritt ist wichtig, weil eine nicht festgeschriebene Verbesserung nach einigen Wochen verfällt und spätestens bei einem Personalwechsel verloren geht."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Warum sollte ein Prozess vor einer Digitalisierung überarbeitet werden?",
+      "loesung": "Software bildet ab, was man ihr vorgibt. Wird ein gewachsener Ablauf mit überflüssigen Schritten, mehrfachen Freigaben und Doppelerfassungen unverändert digitalisiert, bleiben diese Umwege bestehen und verursachen zusätzlich Lizenz- und Einführungskosten. Wird der Prozess dagegen vorher aufgenommen, gemessen und bereinigt, fallen überflüssige Schritte weg und müssen gar nicht erst umgesetzt werden, was die Einführung deutlich verbilligt. Außerdem sind die Anforderungen dann klar, sodass Systeme gezielt verglichen werden können, statt sich die Arbeitsweise vom Anbieter vorgeben zu lassen. Da die Beteiligten den neuen Ablauf mitgestaltet haben, tragen sie ihn eher mit, was über Erfolg oder Scheitern der Einführung entscheidet. Schließlich entsteht durch die vorherige Messung eine Ausgangsgröße, an der sich der Nutzen der Investition später belegen lässt."
+    },
+    {
+      "typ": "Fall",
+      "frage": "Reklamationen werden im Schnitt erst nach elf Tagen beantwortet. Die Messung zeigt: 1,5 Stunden Bearbeitung, der Rest Liegezeit vor der Freigabe durch die Bereichsleitung. Was schlägst du vor?",
+      "loesung": "Die Messung zeigt einen Flussgrad von deutlich unter zwei Prozent, das Problem liegt also eindeutig nicht in der Bearbeitung, sondern in der Freigabe. Sinnvoll ist zunächst, mehrfach nach dem Warum zu fragen: Warum wartet der Vorgang? Weil die Bereichsleitung freigeben muss. Warum muss sie das bei jedem Fall? Weil es nie anders geregelt wurde. An dieser Stelle setzt die Maßnahme an. Konkret bieten sich mehrere Möglichkeiten an, die sich kombinieren lassen: eine Wertgrenze, unterhalb derer die Sachbearbeitung eigenständig entscheidet, feste tägliche Freigabezeitpunkte statt Freigabe bei Gelegenheit, eine verbindliche Vertretungsregelung bei Abwesenheit sowie eine risikoabhängige statt flächendeckende Prüfung. Nach dem Kreislauf wird die Maßnahme zunächst begrenzt erprobt, etwa drei Monate in einem Bereich, danach wird mit derselben Kennzahl erneut gemessen. Wirkt sie, wird der Ablauf als Arbeitsanweisung festgeschrieben. Zusätzlich sollte neben der Durchlaufzeit die Fehlerquote beobachtet werden, damit die Beschleunigung nicht zulasten der Qualität geht."
+    }
+  ],
+  "pruefungstipp": "Der Verbesserungskreislauf wird häufig abgefragt — nenne alle vier Schritte in der richtigen Reihenfolge und betone den Prüfschritt. Bei Fallaufgaben ist die erwartete Reihenfolge immer: erst messen, dann Ursache suchen, dann Maßnahme, dann erneut messen. Und wenn Digitalisierung als Lösung vorgeschlagen wird, lautet die richtige Antwort fast immer, zuerst den Prozess zu ordnen."
+}

@@ -1,0 +1,380 @@
+{
+  "id": "k7",
+  "lernfeld": "buchfuehrung",
+  "nummer": 7,
+  "titel": "Personalkosten & Gehaltsbuchung",
+  "untertitel": "Vom Bruttolohn zum Nettolohn — und warum ein Gehalt den Betrieb mehr kostet, als draufsteht.",
+  "minuten": 25,
+  "lernziele": [
+    {
+      "id": "lz1",
+      "text": "Bruttolohn und Nettolohn unterscheiden und die Abzüge benennen",
+      "abschnitt": "g1"
+    },
+    {
+      "id": "lz2",
+      "text": "Arbeitnehmer- und Arbeitgeberanteile zur Sozialversicherung einordnen",
+      "abschnitt": "g2"
+    },
+    {
+      "id": "lz3",
+      "text": "Eine vollständige Gehaltsbuchung formulieren",
+      "abschnitt": "g3"
+    }
+  ],
+  "bloecke": [
+    {
+      "typ": "abschnitt",
+      "id": "g1",
+      "titel": "Vom Brutto zum Netto",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der {{begriff:bruttolohn|Bruttolohn}} steht im Arbeitsvertrag. Was davon ankommt, ist der {{begriff:nettolohn|Nettolohn}} — dazwischen liegen Steuern und der Arbeitnehmeranteil zur Sozialversicherung. Die Rechnung ist eine reine Abzugsleiter, genau wie die Kalkulation aus K5, nur in eine Richtung."
+        },
+        {
+          "typ": "grafik",
+          "variante": "kalkulationsleiter",
+          "kopf": "Die Abzugsleiter",
+          "titel": "Bruttogehalt 3.000 €",
+          "lead": "Ändere das Bruttogehalt oder die Sätze und sieh, was unten ankommt.",
+          "richtungen": [
+            "vorwaerts"
+          ],
+          "start": {
+            "id": "brutto",
+            "name": "Bruttolohn",
+            "wert": 3000
+          },
+          "stufen": [
+            {
+              "id": "lst",
+              "name": "Lohnsteuer",
+              "art": "abzug",
+              "satz": 15,
+              "ergebnis": "nach Lohnsteuer"
+            },
+            {
+              "id": "solz",
+              "name": "Solidaritätszuschlag",
+              "art": "abzug-von",
+              "basis": "lst",
+              "satz": 5.5,
+              "ergebnis": "nach SolZ"
+            },
+            {
+              "id": "kist",
+              "name": "Kirchensteuer",
+              "art": "abzug-von",
+              "basis": "lst",
+              "satz": 9,
+              "ergebnis": "nach Kirchensteuer"
+            },
+            {
+              "id": "kv",
+              "name": "AN-Anteil Krankenversicherung (inkl. Zusatzbeitrag)",
+              "art": "abzug-vom-start",
+              "satz": 8.75,
+              "ergebnis": "nach KV"
+            },
+            {
+              "id": "rv",
+              "name": "AN-Anteil Rentenversicherung",
+              "art": "abzug-vom-start",
+              "satz": 9.3,
+              "ergebnis": "nach RV"
+            },
+            {
+              "id": "av",
+              "name": "AN-Anteil Arbeitslosenversicherung",
+              "art": "abzug-vom-start",
+              "satz": 1.3,
+              "ergebnis": "nach AV"
+            },
+            {
+              "id": "pv",
+              "name": "AN-Anteil Pflegeversicherung",
+              "art": "abzug-vom-start",
+              "satz": 1.9,
+              "ergebnis": "Nettolohn",
+              "marke": true
+            }
+          ],
+          "regel": "Sozialversicherungsanteile werden immer vom Bruttolohn berechnet, nicht vom bereits geminderten Betrag. Solidaritätszuschlag und Kirchensteuer dagegen von der Lohnsteuer. Sätze 2026: Krankenversicherung 14,6 % plus durchschnittlich 2,9 % Zusatzbeitrag, Rentenversicherung 18,6 %, Arbeitslosenversicherung 2,6 %, Pflegeversicherung 3,6 % — jeweils zur Hälfte getragen.",
+          "einheit": "€"
+        },
+        {
+          "typ": "merke",
+          "text": "Brutto − Lohnsteuer − Solidaritätszuschlag − Kirchensteuer − Arbeitnehmeranteile Sozialversicherung = Netto. Der Solidaritätszuschlag und die Kirchensteuer werden nicht vom Brutto berechnet, sondern von der Lohnsteuer.",
+          "karteikarte": "Aus welchen Bestandteilen setzt sich der Weg vom Brutto- zum Nettolohn zusammen?"
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "g2",
+      "titel": "Was der Betrieb zusätzlich zahlt",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Der Bruttolohn ist nicht das Ende der Rechnung. Der {{begriff:arbeitgeberanteil|Arbeitgeberanteil}} zur {{begriff:sozialversicherung|Sozialversicherung}} kommt obendrauf — er wird nicht abgezogen, sondern zusätzlich gezahlt. ==Die echten Personalkosten sind Bruttolohn plus Arbeitgeberanteil==, also rund 121 % des vereinbarten Gehalts."
+        },
+        {
+          "typ": "tabelle",
+          "spalten": [
+            "Zweig",
+            "Beitragssatz 2026",
+            "Arbeitnehmer",
+            "Arbeitgeber"
+          ],
+          "zeilen": [
+            {
+              "zellen": [
+                "Krankenversicherung",
+                "14,6 % + 2,9 % Zusatzbeitrag",
+                "8,75 %",
+                "8,75 %"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "Rentenversicherung",
+                "18,6 %",
+                "9,3 %",
+                "9,3 %"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "Arbeitslosenversicherung",
+                "2,6 %",
+                "1,3 %",
+                "1,3 %"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "zellen": [
+                "Pflegeversicherung",
+                "3,6 %",
+                "1,9 %",
+                "1,7 %"
+              ],
+              "mono": [
+                1,
+                2,
+                3
+              ],
+              "detail": "**Der einzige Zweig ohne echte Halbierung.** Der Arbeitgeberanteil liegt fest bei 1,7 Prozent, den Rest trägt der Arbeitnehmer. Kinderlose ab 23 Jahren zahlen einen Zuschlag von 0,6 Prozentpunkten, Eltern mit mehreren Kindern unter 25 bekommen Abschläge. In Sachsen gilt eine abweichende Aufteilung."
+            },
+            {
+              "zellen": [
+                "Unfallversicherung",
+                "je nach Gefahrenklasse",
+                "—",
+                "vollständig"
+              ],
+              "mono": [
+                2,
+                3
+              ],
+              "detail": "**Warum die Unfallversicherung anders ist:** Sie deckt Arbeitsunfälle und Berufskrankheiten ab, also ein Risiko aus dem Betrieb. Deshalb trägt ihn der Betrieb allein, und der Beitrag richtet sich nach der Gefahrenklasse der Branche."
+            }
+          ]
+        },
+        {
+          "typ": "check",
+          "frage": "Ein Mitarbeiter verdient 3.000 € brutto, der Arbeitgeberanteil zur Sozialversicherung beträgt 631,50 €. Was kostet er den Betrieb?",
+          "optionen": [
+            {
+              "text": "1.847,25 €, also den Nettolohn",
+              "richtig": false,
+              "echo": "Der Nettolohn ist nur der Teil, der beim Mitarbeiter ankommt. Steuern und Sozialabgaben zahlt der Betrieb ebenfalls — nur eben an Finanzamt und Krankenkasse statt an den Mitarbeiter."
+            },
+            {
+              "text": "3.000 €, also den Bruttolohn",
+              "richtig": false,
+              "echo": "Fast. Der Bruttolohn deckt alles ab, was vom Gehalt abgezogen wird — aber nicht den Arbeitgeberanteil, der zusätzlich anfällt."
+            },
+            {
+              "text": "3.631,50 €, also Brutto plus Arbeitgeberanteil",
+              "richtig": true,
+              "echo": "Richtig. Für den Betrieb zählt der Gesamtaufwand. Bei jeder Kalkulation und jeder Stellenentscheidung ist das die Zahl, mit der gerechnet werden muss — nicht das Bruttogehalt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "typ": "abschnitt",
+      "id": "g3",
+      "titel": "Die Gehaltsbuchung",
+      "inhalt": [
+        {
+          "typ": "absatz",
+          "text": "Gebucht wird in drei Schritten: erst das Bruttogehalt als Aufwand mit allen Abzügen als Verbindlichkeiten, dann der Arbeitgeberanteil als zusätzlicher Aufwand, dann die tatsächlichen Zahlungen. Wichtig: ==Der Betrieb bucht den vollen Bruttobetrag als Aufwand==, obwohl er dem Mitarbeiter nur das Netto überweist."
+        },
+        {
+          "typ": "grafik",
+          "variante": "t-konto",
+          "kopf": "Buchen, live",
+          "titel": "Gehalt 3.000 € brutto",
+          "lead": "Lohnsteuer, Soli und Kirchensteuer 515,25 €, Arbeitnehmeranteil Sozialversicherung 637,50 €, Netto 1.847,25 €, Arbeitgeberanteil 631,50 €.",
+          "konten": [
+            {
+              "id": "loehne",
+              "name": "Löhne und Gehälter",
+              "art": "aufwand",
+              "ab": 0
+            },
+            {
+              "id": "soziale",
+              "name": "Soziale Abgaben",
+              "art": "aufwand",
+              "ab": 0
+            },
+            {
+              "id": "vlst",
+              "name": "Verbindlichkeiten Lohnsteuer",
+              "art": "passiv",
+              "ab": 0
+            },
+            {
+              "id": "vsv",
+              "name": "Verbindlichkeiten Sozialversicherung",
+              "art": "passiv",
+              "ab": 0
+            },
+            {
+              "id": "vnetto",
+              "name": "Verbindlichkeiten Nettolohn",
+              "art": "passiv",
+              "ab": 0
+            },
+            {
+              "id": "bank",
+              "name": "Bank",
+              "art": "aktiv",
+              "ab": 10000
+            }
+          ],
+          "vorfaelle": [
+            {
+              "text": "Schritt 1 · Gehalt erfassen",
+              "satz": "Löhne und Gehälter 3.000 € an Verbindlichkeiten Lohnsteuer 515,25 € + Verbindlichkeiten SV 637,50 € + Verbindlichkeiten Nettolohn 1.847,25 €",
+              "soll": [
+                {
+                  "konto": "loehne",
+                  "betrag": 3000
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "vlst",
+                  "betrag": 515.25
+                },
+                {
+                  "konto": "vsv",
+                  "betrag": 637.5
+                },
+                {
+                  "konto": "vnetto",
+                  "betrag": 1847.25
+                }
+              ],
+              "echo": "Der volle Bruttobetrag ist Aufwand. Er verteilt sich auf drei Verbindlichkeiten: gegenüber dem Finanzamt, der Krankenkasse und dem Mitarbeiter selbst. Gezahlt ist noch nichts."
+            },
+            {
+              "text": "Schritt 2 · Arbeitgeberanteil",
+              "satz": "Soziale Abgaben 631,50 € an Verbindlichkeiten SV 631,50 €",
+              "soll": [
+                {
+                  "konto": "soziale",
+                  "betrag": 631.5
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "vsv",
+                  "betrag": 631.5
+                }
+              ],
+              "echo": "Ein eigener Aufwand, weil dieser Betrag nirgends vom Gehalt abgezogen wurde. Genau deshalb braucht er einen separaten Buchungssatz."
+            },
+            {
+              "text": "Schritt 3 · Auszahlungen",
+              "satz": "Verbindlichkeiten Nettolohn 1.847,25 € + Verbindlichkeiten Lohnsteuer 515,25 € + Verbindlichkeiten SV 1.269,00 € an Bank 3.631,50 €",
+              "soll": [
+                {
+                  "konto": "vnetto",
+                  "betrag": 1847.25
+                },
+                {
+                  "konto": "vlst",
+                  "betrag": 515.25
+                },
+                {
+                  "konto": "vsv",
+                  "betrag": 1269.0
+                }
+              ],
+              "haben": [
+                {
+                  "konto": "bank",
+                  "betrag": 3631.5
+                }
+              ],
+              "echo": "Jetzt fließt das Geld — an drei Empfänger. Vom Bankkonto gehen 3.631,50 € ab, obwohl der Mitarbeiter 1.847,25 € bekommt. Das ist der Gesamtaufwand aus dem Check oben."
+            }
+          ],
+          "regel": "Erst Aufwand und Verbindlichkeiten buchen, dann zahlen. Alle Verbindlichkeitskonten stehen danach wieder auf null."
+        },
+        {
+          "typ": "praxistipp",
+          "text": "In Prüfungsaufgaben sind die Zahlen fast immer vereinfacht vorgegeben — du musst keine Beitragssätze auswendig können. Was du können musst, ist die Struktur: drei Buchungen, und der Arbeitgeberanteil steht immer separat."
+        }
+      ]
+    }
+  ],
+  "zusammenfassung": [
+    "Brutto − Lohnsteuer − SolZ − Kirchensteuer − AN-Anteile Sozialversicherung = Netto.",
+    "Sozialversicherungsanteile werden vom Bruttolohn berechnet; SolZ und Kirchensteuer von der Lohnsteuer.",
+    "Sätze 2026: KV 14,6 % + 2,9 % Zusatzbeitrag · RV 18,6 % · AV 2,6 % · PV 3,6 %.",
+    "Der Arbeitgeberanteil kommt obendrauf und liegt bei gut 21 % des Bruttolohns.",
+    "Echte Personalkosten = Bruttolohn + Arbeitgeberanteil.",
+    "Bei der Pflegeversicherung trägt der Arbeitgeber fest 1,7 %; die Unfallversicherung trägt er allein.",
+    "Buchung in drei Schritten: Bruttoaufwand mit Verbindlichkeiten, Arbeitgeberanteil, Auszahlungen."
+  ],
+  "selbsttest": [
+    {
+      "typ": "Wissen",
+      "frage": "Warum ist der Arbeitgeber Schuldner der Lohnsteuer gegenüber dem Finanzamt?",
+      "loesung": "Weil er gesetzlich verpflichtet ist, die Lohnsteuer vom Bruttolohn einzubehalten und selbst abzuführen. Der Arbeitnehmer zahlt sie nicht eigenständig — sie wird ihm bereits abgezogen, bevor er sein Geld erhält. Der Arbeitgeber haftet deshalb für die korrekte Berechnung und pünktliche Abführung."
+    },
+    {
+      "typ": "Wissen",
+      "frage": "Was ist der Arbeitgeberanteil, und warum braucht er einen eigenen Buchungssatz?",
+      "loesung": "Der Arbeitgeberanteil ist der Beitrag zur Sozialversicherung, den der Betrieb zusätzlich zum Bruttolohn zahlt — 2026 gut 21 Prozent. Weil er nicht vom Gehalt des Arbeitnehmers abgezogen wird, sondern obendrauf kommt, ist er ein eigenständiger Personalaufwand und wird separat gebucht: Soziale Abgaben an Verbindlichkeiten Sozialversicherung."
+    },
+    {
+      "typ": "Berechnung",
+      "frage": "Bruttolohn 2.500 €, Lohnsteuer 300 €, Arbeitnehmeranteile Sozialversicherung 500 €, Arbeitgeberanteil 500 €. Wie hoch sind Nettolohn und Gesamtkosten?",
+      "loesung": "Nettolohn = 2.500 − 300 − 500 = 1.700 €. Gesamtkosten für den Arbeitgeber = 2.500 + 500 = 3.000 €. Der Mitarbeiter erhält also 1.700 €, während der Betrieb 3.000 € aufwendet."
+    }
+  ],
+  "pruefungstipp": "Zwei Formeln reichen: Brutto minus alle Abzüge gleich Netto, und Brutto plus Arbeitgeberanteil gleich Gesamtkosten. Wenn eine Aufgabe nach den Kosten für den Betrieb fragt, ist fast immer die zweite gemeint — das ist die Stelle, an der die meisten Punkte verloren gehen."
+}

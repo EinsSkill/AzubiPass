@@ -1,0 +1,48 @@
+{
+  "id": "lf12",
+  "titel": "Veranstaltungen und Geschäftsreisen organisieren",
+  "kurztitel": "Lernfeld 12",
+  "untertitel": "3. Ausbildungsjahr · Zeitrichtwert 40 Stunden",
+  "linie": "B",
+  "stand": "2026-08",
+  "quelle": "Rahmenlehrplan KMK, Beschluss vom 27.09.2013 i. d. F. vom 20.03.2025",
+  "hero": {
+    "ueberschrift": "Alles läuft. *Weil jemand daran gedacht hat.*",
+    "lead": "Veranstaltungen planen, Räume und Technik vorbereiten, Geschäftsreisen buchen und Reisekosten korrekt abrechnen. Die Arbeit, die nur auffällt, wenn sie fehlt.",
+    "fakten": [
+      "4 Kapitel",
+      "40 Stunden",
+      "3. Lehrjahr"
+    ]
+  },
+  "kapitel": [
+    {
+      "id": "k1",
+      "datei": "lf12-k1-planen.kapitel.json",
+      "titel": "Veranstaltungen planen",
+      "minuten": 25,
+      "frei": true
+    },
+    {
+      "id": "k2",
+      "datei": "lf12-k2-durchfuehren.kapitel.json",
+      "titel": "Raum, Technik, Bewirtung",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k3",
+      "datei": "lf12-k3-reise.kapitel.json",
+      "titel": "Geschäftsreisen vorbereiten",
+      "minuten": 25,
+      "frei": false
+    },
+    {
+      "id": "k4",
+      "datei": "lf12-k4-reisekosten.kapitel.json",
+      "titel": "Reisekosten abrechnen",
+      "minuten": 25,
+      "frei": false
+    }
+  ]
+}

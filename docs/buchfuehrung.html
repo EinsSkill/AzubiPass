@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Buchführung · AzubiPass</title>
+<meta name="description" content="Neun Kapitel von der Buchführungspflicht bis zum fertigen Jahresabschluss. Alles, was die IHK dazu prüft — und nichts, was sie nicht prüft.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F5F5F0" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#141614" media="(prefers-color-scheme:dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="mittel/symbol.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="mittel/symbol-180.png">
+<meta name="apple-mobile-web-app-title" content="AzubiPass">
+<link rel="stylesheet" href="mittel/schriften.css">
+<link rel="stylesheet" href="mittel/azubipass.css">
+<script src="mittel/kern.js" defer></script>
+<script src="mittel/azubipass.js" defer></script>
+</head>
+<body data-lernfeld="buchfuehrung" data-bereich="lernen">
+<a class="sprung" href="#inhalt">Zum Inhalt springen</a>
+<div class="fortschritt"><span id="balken"></span></div>
+<header class="kopf" id="kopf">
+  <button class="zurueck" id="zurueck" aria-label="Eine Ebene zurück">
+    <svg viewBox="0 0 24 24" width="21" height="21" fill="none" aria-hidden="true">
+      <path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="kopf-meta" id="kopfMeta">Buchführung</div>
+  <button class="kopf-suche" id="merken" aria-label="Kapitel merken" aria-pressed="false" hidden>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+      <path d="M6.5 3.5h11v17l-5.5-4-5.5 4z" stroke="currentColor" stroke-width="1.6"
+            stroke-linejoin="round"/></svg>
+  </button>
+  <a class="kopf-suche" href="app.html#suche" aria-label="Suchen"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M16.3 16.3 21 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+</header>
+<main id="inhalt">
+<section class="hero kapitel" id="start">
+  <div class="hero-links">
+    <div class="augenbraue">Lernfeld · Buchführung</div>
+    <h1>Das finanzielle <em>Gedächtnis</em> eines Betriebs.</h1>
+    <p class="hero-lead">Neun Kapitel von der Buchführungspflicht bis zum fertigen Jahresabschluss. Alles, was die IHK dazu prüft — und nichts, was sie nicht prüft.</p>
+    <div class="hero-fakten"><span>9 Kapitel</span><span>Neue AO 2025</span><span>ca. 6 Std.</span></div>
+    <button class="start" data-zu="k1">Mit Kapitel 1 starten<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button>
+  </div>
+  <div class="hero-rechts">
+    <div class="buch-titel">Inhalt</div>
+    <ul class="buch"><li data-zu="k1"><span class="kn">K1</span><span class="kt">Grundlagen &amp; Buchführungspflicht</span><span class="ks">15 Min</span></li><li data-zu="k2"><span class="kn">K2</span><span class="kt">Die Bilanz</span><span class="ks">20 Min</span></li><li data-zu="k3"><span class="kn">K3</span><span class="kt">Konten &amp; Buchungssätze</span><span class="ks">25 Min</span></li><li data-zu="k4"><span class="kn">K4</span><span class="kt">Erfolgskonten &amp; GuV</span><span class="ks">20 Min</span></li><li data-zu="k5"><span class="kn">K5</span><span class="kt">Warenkonten &amp; Kalkulation</span><span class="ks">35 Min</span></li><li data-zu="k6"><span class="kn">K6</span><span class="kt">Umsatzsteuer</span><span class="ks">25 Min</span></li><li data-zu="k7"><span class="kn">K7</span><span class="kt">Personalkosten &amp; Gehaltsbuchung</span><span class="ks">25 Min</span></li><li data-zu="k8"><span class="kn">K8</span><span class="kt">Anlagevermögen &amp; Abschreibungen</span><span class="ks">25 Min</span></li><li data-zu="k9"><span class="kn">K9</span><span class="kt">Jahresabschluss</span><span class="ks">30 Min</span></li><li class="buch-extra" data-zu="trainer"><span class="kn">15</span><span class="kt">Karteikarten aus allen Kapiteln</span><span class="ks">üben</span></li></ul>
+    
+  </div>
+</section><section class="kapitel" id="k1" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K1<small>Kapitel</small></div>
+    <div>
+      <h2>Grundlagen &amp; Buchführungspflicht</h2>
+      <p>Was Buchführung ist, warum sie Pflicht ist und welche Regeln dabei gelten.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/4 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="a1"><span class="haken"></span><span>Zweck und Bedeutung der Buchführung erklären können</span></li><li data-fuer="a2"><span class="haken"></span><span>Die Buchführungspflicht nach HGB und AO benennen und abgrenzen</span></li><li data-fuer="a3"><span class="haken"></span><span>Die Grundsätze ordnungsgemäßer Buchführung kennen und anwenden</span></li><li data-fuer="a4"><span class="haken"></span><span>Inventur, Inventar und Bilanz voneinander unterscheiden</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K1</b>Grundlagen &amp; Buchführungspflicht</aside>
+    <article class="inhalt">
+      <h3 id="k1-a1">Was ist Buchführung?</h3><p class="rein">Buchführung ist die systematische, lückenlose und zeitgerechte Aufzeichnung aller <button class="begriff" data-art="Begriff" data-titel="Geschäftsvorfall" data-text="Jeder Vorgang, der das Vermögen oder das Kapital eines Betriebs verändert und sich mit einem Beleg nachweisen lässt — ein Einkauf, eine Zahlung, eine Lohnabrechnung.">Geschäftsvorfälle</button> in Geldeinheiten. Sie ist das <mark>finanzielle Gedächtnis</mark> eines Betriebs: Ohne sie wäre nicht nachvollziehbar, woher das Geld stammt, wohin es fließt und wie es dem Unternehmen wirtschaftlich geht.</p><p class="rein">Jede Zahlung, jede Lieferung, jeder Kauf hinterlässt einen <button class="begriff" data-art="Begriff" data-titel="Beleg" data-text="Der schriftliche Nachweis eines Geschäftsvorfalls. Grundregel der Buchführung: keine Buchung ohne Beleg. Buchungsbelege sind zehn Jahre aufzubewahren.">Beleg</button>, der erfasst und aufbewahrt werden muss. Daraus ergeben sich fünf Aufgaben, die regelmäßig geprüft werden:</p><div class="tab-huelle rein"><table><thead><tr><th>Aufgabe</th><th>Zweck</th><th>Beispiel</th></tr></thead><tbody><tr><td>Dokumentation</td><td>Nachweis aller Geschäftsvorfälle</td><td>Lieferantenrechnung archivieren</td></tr><tr><td>Steuerermittlung</td><td>Berechnungsgrundlage fürs Finanzamt</td><td>Jahresgewinn als Steuerbasis</td></tr><tr><td>Gläubigerschutz</td><td>Transparenz über die Vermögenslage</td><td>Bank prüft Bonität vor Kredit</td></tr><tr><td>Information</td><td>Entscheidungsgrundlage fürs Management</td><td>Ist die Investition rentabel?</td></tr><tr><td>Selbstschutz</td><td>Beweismittel bei Streitigkeiten</td><td>Nachweis bei der Steuerprüfung</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k1-a1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Buchführung ist kein bürokratischer Selbstzweck. Wer ordentlich Buch führt, schützt sich selbst, seine Gläubiger — und handelt gesetzeskonform.</p>
+      <button class="dreher" data-karte="buchfuehrung-k1-a1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Nenne drei Gründe, warum Buchführung mehr ist als Bürokratie.</p>
+      <button class="dreher" data-karte="buchfuehrung-k1-a1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k1-a2">Wer muss Bücher führen?</h3><p class="rein">Nicht jeder Unternehmer betreibt automatisch eine vollständige <button class="begriff" data-art="Begriff" data-titel="Doppelte Buchführung" data-text="Jeder Geschäftsvorfall wird auf mindestens zwei Konten gebucht — einmal im Soll, einmal im Haben. Daher bleibt die Bilanzgleichung nach jeder Buchung erhalten.">doppelte Buchführung</button>. Die wichtigste Grundlage im Handelsrecht ist <button class="par" data-art="Gesetzestext" data-titel="§ 238 Abs. 1 HGB" data-text="Jeder Kaufmann ist verpflichtet, Bücher zu führen und in diesen seine Handelsgeschäfte und die Lage seines Vermögens nach den Grundsätzen ordnungsmäßiger Buchführung ersichtlich zu machen.">§ 238 HGB</button>: Jeder <button class="begriff" data-art="Begriff" data-titel="Kaufmann" data-text="Wer ein Handelsgewerbe betreibt (§ 1 HGB). Entscheidend sind Art und Umfang des Gewerbes — nicht der Umsatz.">Kaufmann</button> ist verpflichtet, Bücher zu führen — <mark>ohne jede Umsatz- oder Gewinnschwelle</mark>.</p><div class="tab-huelle rein"><table><thead><tr><th>Grundlage</th><th>Für wen?</th><th>Schwellenwert</th></tr></thead><tbody><tr><td class="num">§ 238 HGB</td><td>Jeder Kaufmann (Handelsgewerbe)</td><td>keiner — gilt automatisch</td></tr><tr><td class="num">§ 140 AO</td><td>Wer nach anderem Gesetz pflichtig ist</td><td>folgt aus § 238 HGB</td></tr><tr><td class="num">§ 141 AO</td><td>Gewerbetreibende, Land- u. Forstwirte</td><td class="num">&gt; 600.000 € Umsatz oder &gt; 60.000 € Gewinn</td></tr></tbody></table></div><details class="vertiefung rein"><summary>Wozu zwei Gesetze für dieselbe Pflicht?</summary><div class="v-inhalt"><p>Weil Handelsrecht und Steuerrecht unterschiedliche Ziele haben. Das HGB schützt Gläubiger, die AO sichert das Steueraufkommen.</p><p><strong>§ 140 AO</strong> heißt <em>derivative</em> Pflicht — sie leitet sich ab: Wer schon handelsrechtlich Bücher führen muss, muss es auch steuerlich. <strong>§ 141 AO</strong> heißt <em>originäre</em> Pflicht — sie entsteht eigenständig und greift genau dort, wo das HGB nicht greift: bei Gewerbetreibenden, die keine Kaufleute sind, aber groß genug geworden sind.</p></div></details><h3 id="k1-a3">Die GoB — Spielregeln der Buchführung</h3><p class="rein">Die Grundsätze ordnungsgemäßer Buchführung stehen nicht vollständig im Gesetz. Sie haben sich aus Handelsbräuchen und Rechtsprechung entwickelt.</p><div class="tab-huelle rein"><table><thead><tr><th>Grundsatz</th><th>Bedeutung</th><th>In der Praxis</th></tr></thead><tbody><tr class="klappbar"><td>Richtigkeit</td><td>Buchungen entsprechen dem echten Vorgang</td><td>Keine erfundenen Buchungen</td></tr><tr class="detail"><td colspan="3"><strong>Verstoß:</strong> Eine Privatrechnung wird als Betriebsausgabe gebucht. Das ist nicht nur ein GoB-Verstoß, sondern je nach Höhe und Vorsatz bereits Steuerhinterziehung.</td></tr><tr class="klappbar"><td>Vollständigkeit</td><td>Alle Geschäftsvorfälle werden erfasst</td><td>Auch Kleinbeträge buchen</td></tr><tr class="detail"><td colspan="3"><strong>Verstoß:</strong> Barumsätze werden „vergessen". Genau hier setzen Kassennachschauen an — eine lückenhafte Kasse ist der häufigste Anlass für eine Gewinnschätzung.</td></tr><tr class="klappbar"><td>Klarheit</td><td>Buchungen sind eindeutig und lesbar</td><td>Klare Kontobezeichnungen</td></tr><tr class="detail"><td colspan="3"><strong>Verstoß:</strong> Buchungstext „Diverses". Ein sachverständiger Dritter muss sich in angemessener Zeit zurechtfinden — das ist der Maßstab aus § 238 Abs. 1 HGB.</td></tr><tr class="klappbar"><td>Vorsicht</td><td>Im Zweifel niedrig bewerten</td><td>Verluste sofort, Gewinne erst bei Realisierung</td></tr><tr class="detail"><td colspan="3"><strong>Anwendung:</strong> Ein Kunde ist zahlungsunfähig geworden — die Forderung wird sofort abgeschrieben. Ein Grundstück ist im Wert gestiegen — der Gewinn wird erst beim Verkauf gebucht.</td></tr><tr class="klappbar"><td>Stetigkeit</td><td>Gewählte Methoden beibehalten</td><td>Bewertung nicht willkürlich wechseln</td></tr><tr class="detail"><td colspan="3"><strong>Warum:</strong> Nur so sind zwei Geschäftsjahre vergleichbar. Ohne Stetigkeit könnte ein Betrieb sein Ergebnis durch Methodenwechsel jedes Jahr schönrechnen.</td></tr></tbody></table></div><div class="check rein" id="buchfuehrung-k1-a3-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Ein Betrieb bucht einen Umsatz erst im Januar, obwohl die Leistung im Dezember erbracht und berechnet wurde. Welcher Grundsatz ist verletzt?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Klarheit betrifft die Verständlichkeit von Buchungstexten und Kontobezeichnungen — hier ist aber die zeitliche Zuordnung das Problem.">Klarheit</button><button class="opt" data-richtig="1" data-echo="Richtig. Vollständigkeit verlangt die lückenlose und zeitgerechte Erfassung. Ein Vorfall aus dem Dezember gehört ins Dezember-Geschäftsjahr — sonst stimmt das Jahresergebnis nicht.">Vollständigkeit</button><button class="opt" data-richtig="" data-echo="Stetigkeit betrifft Bewertungs- und Abschreibungsmethoden, die über Jahre gleich bleiben sollen — nicht den Zeitpunkt einer einzelnen Buchung.">Stetigkeit</button></div><p class="check-echo" role="status"></p></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Ein Verstoß gegen die GoB berechtigt das Finanzamt, den Gewinn selbst zu schätzen (<button class="par" data-art="Gesetzestext" data-titel="§ 162 AO" data-text="Soweit die Finanzbehörde die Besteuerungsgrundlagen nicht ermitteln oder berechnen kann, hat sie sie zu schätzen. Zu schätzen ist insbesondere dann, wenn die Buchführung der Besteuerung nicht zugrunde gelegt werden kann.">§ 162 AO</button>) — und geschätzt wird fast immer zu deinen Ungunsten.</p></div><h3 id="k1-a4">Inventur, Inventar, Bilanz</h3><p class="rein">Diese drei Begriffe werden in der Prüfung häufiger verwechselt als alles andere in diesem Kapitel — dabei bauen sie schlicht aufeinander auf.</p><div class="sig rein" data-grafik="stufen"><script type="application/json">{"typ": "grafik", "variante": "stufen", "kopf": "Vom Zählen zur Bilanz", "titel": "Muster GmbH · Abschluss zum 31.12.", "lead": "Dieselben Werte, drei Verarbeitungsstufen.", "stufen": [{"name": "Inventur", "text": "Die **Inventur** ist der *Vorgang*: zählen, wiegen, messen — und für alles Unkörperliche die Unterlagen auswerten.", "darstellung": "zaehlen", "posten": [{"name": "Maschinen", "wert": 60000}, {"name": "Fuhrpark", "wert": 40000}, {"name": "Waren", "wert": 32000}, {"name": "Bank", "wert": 15000}, {"name": "Kasse", "wert": 3000}, {"name": "Darlehen", "wert": 50000}, {"name": "Verb. LuL", "wert": 30000}]}, {"name": "Inventar", "text": "Das **Inventar** ist das *Ergebnis*: ein Verzeichnis, das jede Position einzeln mit Wert aufführt. Unten steht das {{begriff:reinvermoegen|Reinvermögen}} — das spätere Eigenkapital.", "darstellung": "verzeichnis", "gruppen": [{"titel": "I. Vermögen", "posten": [{"name": "Maschinen", "wert": 60000}, {"name": "Fuhrpark", "wert": 40000}, {"name": "Waren", "wert": 32000}, {"name": "Bank & Kasse", "wert": 18000}], "summe": {"name": "Gesamtvermögen", "wert": 150000}}, {"titel": "II. Schulden", "posten": [{"name": "Bankdarlehen", "wert": 50000}, {"name": "Verbindlichkeiten LuL", "wert": 30000}], "summe": {"name": "Gesamtschulden", "wert": 80000}}], "ergebnis": {"name": "III. Reinvermögen", "wert": 70000}}, {"name": "Bilanz", "text": "Die **Bilanz** ist die *Verdichtung*. Ändere die Werte — die beiden Seiten bleiben immer gleich hoch. Das ist keine Behauptung, sondern die Definition des Eigenkapitals.", "darstellung": "bilanz-rechner", "eingaben": [{"id": "av", "label": "Anlagevermögen", "start": 100000, "seite": "aktiva"}, {"id": "uv", "label": "Umlaufvermögen", "start": 50000, "seite": "aktiva"}, {"id": "dl", "label": "Bankdarlehen", "start": 50000, "seite": "passiva"}, {"id": "vb", "label": "Verbindlichkeiten", "start": 30000, "seite": "passiva"}], "hinweis_negativ": "Die Schulden übersteigen das Vermögen: Das Eigenkapital ist negativ. In der Bilanz erscheint dann ein *nicht durch Eigenkapital gedeckter Fehlbetrag* auf der Aktivseite — die Gleichung gilt weiterhin."}]}</script><div class="sig-kopf">Vom Zählen zur Bilanz</div><h4>Muster GmbH · Abschluss zum 31.12.</h4><p class="sig-lead">Dieselben Werte, drei Verarbeitungsstufen.</p><div class="buehne"></div></div><div class="zuordnen rein" id="buchfuehrung-k1-a4-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">Inventur, Inventar oder Bilanz — was ist gemeint?</p><div class="zu-reihe" id="buchfuehrung-k1-a4-z1-1" data-loesung="Inventur"><span class="zu-text">Das Lager wird am 31.12. Stück für Stück durchgezählt.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Inventur">Inventur</button><button class="zu-btn" data-w="Inventar">Inventar</button><button class="zu-btn" data-w="Bilanz">Bilanz</button></span></div><div class="zu-reihe" id="buchfuehrung-k1-a4-z1-2" data-loesung="Inventar"><span class="zu-text">Eine Liste führt 340 Einzelpositionen mit Menge und Wert auf.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Inventur">Inventur</button><button class="zu-btn" data-w="Inventar">Inventar</button><button class="zu-btn" data-w="Bilanz">Bilanz</button></span></div><div class="zu-reihe" id="buchfuehrung-k1-a4-z1-3" data-loesung="Bilanz"><span class="zu-text">Zwei Seiten stehen sich gegenüber und sind gleich hoch.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Inventur">Inventur</button><button class="zu-btn" data-w="Inventar">Inventar</button><button class="zu-btn" data-w="Bilanz">Bilanz</button></span></div><div class="zu-reihe" id="buchfuehrung-k1-a4-z1-4" data-loesung="Bilanz"><span class="zu-text">Pflichtbestandteil des Jahresabschlusses nach § 242 HGB.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Inventur">Inventur</button><button class="zu-btn" data-w="Inventar">Inventar</button><button class="zu-btn" data-w="Bilanz">Bilanz</button></span></div></div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Der Dreisatz für die Prüfung: <strong>Inventur</strong> = der Vorgang des Zählens. <strong>Inventar</strong> = das schriftliche Ergebnis. <strong>Bilanz</strong> = die verdichtete Gegenüberstellung. Und quer dazu: Reinvermögen = Vermögen − Schulden = Eigenkapital.</p></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K1</div>
+        <ul><li>Buchführung = systematische Erfassung aller Geschäftsvorfälle in Geldeinheiten.</li><li><button class="par" data-art="Gesetzestext" data-titel="§ 238 Abs. 1 HGB" data-text="Jeder Kaufmann ist verpflichtet, Bücher zu führen und in diesen seine Handelsgeschäfte und die Lage seines Vermögens nach den Grundsätzen ordnungsmäßiger Buchführung ersichtlich zu machen.">§ 238 HGB</button> — Pflicht für alle Kaufleute, ohne Schwellenwert.</li><li><button class="par" data-art="Gesetzestext" data-titel="§ 140 AO" data-text="Wer nach anderen Gesetzen als den Steuergesetzen Bücher und Aufzeichnungen zu führen hat, hat die Verpflichtungen auch für die Besteuerung zu erfüllen.">§ 140 AO</button> — wer handelsrechtlich pflichtig ist, ist es auch steuerlich.</li><li><button class="par" data-art="Gesetzestext" data-titel="§ 141 AO" data-text="Gewerbliche Unternehmer sowie Land- und Forstwirte sind auch dann zur Buchführung verpflichtet, wenn sie die gesetzlichen Schwellenwerte für Umsatz oder Gewinn überschreiten.">§ 141 AO</button> — Gewerbetreibende ab 600.000 € Umsatz oder 60.000 € Gewinn.</li><li>GoB: Richtigkeit · Vollständigkeit · Klarheit · Vorsicht · Stetigkeit.</li><li>Inventur = Vorgang · Inventar = Verzeichnis · Bilanz = verdichtete Übersicht.</li><li>Eigenkapital = Gesamtvermögen − Gesamtschulden.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/3 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="buchfuehrung-k1-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k1-t1-f">Was ist der Unterschied zwischen Inventur, Inventar und Bilanz?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k1-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Die Inventur ist der Vorgang der körperlichen und buchmäßigen Bestandsaufnahme. Das Inventar ist das schriftliche Ergebnis — eine detaillierte Liste aller Vermögensgegenstände und Schulden mit Mengen und Werten. Die Bilanz ist die nach HGB-Schema verdichtete Gegenüberstellung von Aktiva und Passiva; sie entsteht aus dem Inventar, zeigt aber keine Einzelpositionen.</p></div>
+</div><div class="frage" id="buchfuehrung-k1-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k1-t2-f">Worin unterscheiden sich § 238 HGB und § 141 AO?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k1-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>§ 238 HGB verpflichtet alle Kaufleute zur Buchführung — ohne Umsatz- oder Gewinnschwelle; es genügt, dass ein Handelsgewerbe betrieben wird. § 141 AO verpflichtet Gewerbetreibende, die kein Kaufmann im HGB-Sinne sind, erst ab bestimmten Schwellen: über 600.000 € Umsatz oder über 60.000 € Gewinn. Für Kaufleute greift immer zuerst § 238 HGB.</p></div>
+</div><div class="frage" id="buchfuehrung-k1-t3">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k1-t3-f">Die Muster GmbH hat: Maschinen 80.000 €, Waren 25.000 €, Bank 12.000 €, Kasse 3.000 €, Bankdarlehen 50.000 €, Verbindlichkeiten LuL 18.000 €. Wie hoch ist das Eigenkapital?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k1-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Gesamtvermögen = 80.000 + 25.000 + 12.000 + 3.000 = 120.000 €. Gesamtschulden = 50.000 + 18.000 = 68.000 €. Eigenkapital = 120.000 − 68.000 = 52.000 €.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Häufig geprüft: § 238 HGB gegen § 141 AO — merke dir die Schwellenwerte der AO. Außerdem: Inventur ≠ Inventar ≠ Bilanz. Und: Ein GoB-Verstoß berechtigt das Finanzamt zur Gewinnschätzung nach § 162 AO.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K2 · Die Bilanz</b></div><button class="start" data-zu="k2">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k2" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K2<small>Kapitel</small></div>
+    <div>
+      <h2>Die Bilanz</h2>
+      <p>Aufbau, Bilanzgleichung und die vier Veränderungsarten.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/4 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="b1"><span class="haken"></span><span>Den Aufbau einer Bilanz aus Aktiva und Passiva beschreiben können</span></li><li data-fuer="b2"><span class="haken"></span><span>Aktiva korrekt in Anlage- und Umlaufvermögen einteilen</span></li><li data-fuer="b3"><span class="haken"></span><span>Eigenkapital, Rückstellungen und Verbindlichkeiten unterscheiden</span></li><li data-fuer="b4"><span class="haken"></span><span>Die vier Bilanzveränderungsarten erkennen und begründen</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K2</b>Die Bilanz</aside>
+    <article class="inhalt">
+      <h3 id="k2-b1">Was ist die Bilanz?</h3><p class="rein">Die Bilanz ist eine Gegenüberstellung: Auf der einen Seite das gesamte Vermögen eines Unternehmens, auf der anderen die Herkunft dieses Vermögens. Sie wird immer auf einen <button class="begriff" data-art="Begriff" data-titel="Bilanzstichtag" data-text="Der Tag, auf den sich die Bilanz bezieht — meist der 31. Dezember. Die Bilanz zeigt immer nur diesen einen Moment, nicht den Verlauf des Jahres.">Bilanzstichtag</button> aufgestellt — in der Regel den 31. Dezember — und ist nach <button class="par" data-art="Gesetzestext" data-titel="§ 242 HGB" data-text="Der Kaufmann hat zu Beginn seines Handelsgewerbes und für den Schluss eines jeden Geschäftsjahres einen das Verhältnis seines Vermögens und seiner Schulden darstellenden Abschluss aufzustellen.">§ 242 HGB</button> Pflichtbestandteil des Jahresabschlusses.</p><p class="rein">Die linke Seite heißt <strong>Aktiva</strong> und zeigt, wie das Kapital verwendet wurde. Die rechte Seite heißt <strong>Passiva</strong> und zeigt, woher es stammt. Weil es sich um dasselbe Kapital handelt, nur aus zwei Blickwinkeln betrachtet, gilt zwangsläufig: <mark>Aktiva = Passiva</mark>.</p><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k2-b1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Aktiva zeigt, <strong>wo</strong> das Geld steckt. Passiva zeigt, <strong>woher</strong> es kommt. Es ist dasselbe Geld — deshalb sind beide Seiten immer gleich hoch, nach jeder einzelnen Buchung.</p>
+      <button class="dreher" data-karte="buchfuehrung-k2-b1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Was zeigt die Aktivseite, was die Passivseite — und warum sind beide zwangsläufig gleich hoch?</p>
+      <button class="dreher" data-karte="buchfuehrung-k2-b1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="tab-huelle rein"><table><thead><tr><th>Aktiva · Mittelverwendung</th><th>Passiva · Mittelherkunft</th></tr></thead><tbody><tr><td>A. Anlagevermögen</td><td>A. Eigenkapital</td></tr><tr><td>Immaterielle Vermögensgegenstände</td><td>Gezeichnetes Kapital</td></tr><tr><td>Sachanlagen</td><td>Gewinnrücklagen</td></tr><tr><td>Finanzanlagen</td><td>Jahresüberschuss / -fehlbetrag</td></tr><tr><td>B. Umlaufvermögen</td><td>B. Rückstellungen</td></tr><tr><td>Vorräte</td><td>z. B. Urlaubsrückstellung</td></tr><tr><td>Forderungen aus LuL</td><td>C. Verbindlichkeiten</td></tr><tr><td>Bankguthaben, Kasse</td><td>Bankdarlehen, Verbindlichkeiten LuL</td></tr></tbody></table></div><h3 id="k2-b2">Aktiva — was der Betrieb besitzt</h3><p class="rein">Die Aktivseite ist in zwei Gruppen geteilt: <button class="begriff" data-art="Begriff" data-titel="Anlagevermögen" data-text="Alles, was dem Betrieb dauerhaft dient — Nutzungsdauer länger als ein Jahr. Maschinen, Fahrzeuge, Gebäude, Software.">Anlagevermögen</button> und <button class="begriff" data-art="Begriff" data-titel="Umlaufvermögen" data-text="Alles, was sich kurzfristig umschlägt: Waren werden verkauft, Forderungen werden bezahlt, das Bankkonto bewegt sich täglich.">Umlaufvermögen</button>. Der Unterschied ist die Verweildauer im Betrieb — und daran hängt später die Frage, ob abgeschrieben wird oder nicht.</p><div class="tab-huelle rein"><table><thead><tr><th>Gruppe</th><th>Verweildauer</th><th>Typische Positionen</th></tr></thead><tbody><tr class="klappbar"><td>Anlagevermögen (AV)</td><td>dauerhaft, &gt; 1 Jahr</td><td>Grundstücke, Gebäude, Maschinen, Fuhrpark, Patente, Beteiligungen</td></tr><tr class="detail"><td colspan="3"><strong>Warum die Trennung zählt:</strong> Nur Anlagevermögen wird über die Nutzungsdauer abgeschrieben. Die Zuordnung entscheidet also darüber, ob eine Anschaffung den Gewinn sofort mindert oder über Jahre verteilt.</td></tr><tr class="klappbar"><td>Umlaufvermögen (UV)</td><td>kurzfristig, &lt; 1 Jahr</td><td>Vorräte, Waren, Forderungen aus LuL, Bank, Kasse</td></tr><tr class="detail"><td colspan="3"><strong>Achtung, Denkfalle:</strong> Entscheidend ist nicht, <em>was</em> ein Gegenstand ist, sondern <em>wozu</em> der Betrieb ihn hält. Ein Auto ist beim Autohändler Ware (UV), im Fuhrpark einer Spedition Anlagevermögen (AV).</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k2-b2-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Nicht der Gegenstand entscheidet, sondern die Absicht. Dasselbe Fahrzeug kann bei einem Betrieb Anlagevermögen und bei einem anderen Umlaufvermögen sein.</p>
+      <button class="dreher" data-karte="buchfuehrung-k2-b2-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Wovon hängt es ab, ob ein Gegenstand zum Anlage- oder zum Umlaufvermögen gehört?</p>
+      <button class="dreher" data-karte="buchfuehrung-k2-b2-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k2-b3">Passiva — woher das Kapital kommt</h3><p class="rein">Die Passivseite beantwortet die Frage, wem das Kapital gehört. <button class="begriff" data-art="Begriff" data-titel="Eigenkapital" data-text="Das Kapital der Eigentümer. Es wächst durch Gewinne und Einlagen, es sinkt durch Verluste und Entnahmen. Rechnerisch: Vermögen minus Schulden.">Eigenkapital</button> stammt von den Eigentümern, <button class="begriff" data-art="Begriff" data-titel="Fremdkapital" data-text="Kapital, das von Dritten stammt — Banken, Lieferanten, Finanzamt — und zurückgezahlt werden muss. Umfasst Rückstellungen und Verbindlichkeiten.">Fremdkapital</button> von Dritten und muss zurückgezahlt werden. Wichtig für die Prüfung: Das HGB kennt dazwischen eine eigene Kategorie.</p><div class="tab-huelle rein"><table><thead><tr><th>Position</th><th>Was sie ist</th><th>Beispiele</th></tr></thead><tbody><tr><td>Eigenkapital</td><td>Kapital der Eigentümer; steigt mit Gewinn, sinkt mit Verlust</td><td>Stammkapital, Gewinnrücklagen</td></tr><tr><td>Rückstellungen</td><td>Schulden mit ungewisser Höhe oder ungewissem Zeitpunkt</td><td>Urlaub, Prozesskosten, Steuern</td></tr><tr><td>Verbindlichkeiten</td><td>Sichere Schulden mit bekanntem Betrag und Fälligkeit</td><td>Bankdarlehen, Verbindlichkeiten LuL</td></tr></tbody></table></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p><button class="begriff" data-art="Begriff" data-titel="Rückstellung" data-text="Eine Schuld, die dem Grunde nach entstanden ist, bei der aber Höhe oder Zeitpunkt noch ungewiss sind — etwa offene Urlaubstage oder ein laufender Prozess.">Rückstellungen</button> gehören <strong>nicht</strong> zu den <button class="begriff" data-art="Begriff" data-titel="Verbindlichkeit" data-text="Eine sichere Schuld: Betrag und Fälligkeit stehen fest. Eine unbezahlte Lieferantenrechnung über 1.000 €, fällig am 30.06.">Verbindlichkeiten</button>. Nach <button class="par" data-art="Gesetzestext" data-titel="§ 249 Abs. 1 HGB" data-text="Rückstellungen sind für ungewisse Verbindlichkeiten und für drohende Verluste aus schwebenden Geschäften zu bilden.">§ 249 HGB</button> bilden sie eine eigene Bilanzposition. Der Unterschied liegt allein in der Gewissheit: Verbindlichkeiten sind dem Grunde <em>und</em> der Höhe nach sicher, Rückstellungen nicht.</p></div><div class="check rein" id="buchfuehrung-k2-b3-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Ein Mitarbeiter hat zum 31.12. noch acht Urlaubstage offen. Wie wird das in der Bilanz erfasst?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Naheliegend, aber falsch. Eine Verbindlichkeit setzt voraus, dass Betrag und Fälligkeit feststehen. Wann der Mitarbeiter den Urlaub nimmt und was er dann kostet, ist am 31.12. offen.">Als Verbindlichkeit</button><button class="opt" data-richtig="1" data-echo="Richtig. Die Verpflichtung ist dem Grunde nach entstanden — der Urlaubsanspruch besteht —, aber Höhe und Zeitpunkt sind ungewiss. Genau das ist die Definition der Rückstellung nach § 249 HGB.">Als Rückstellung</button><button class="opt" data-richtig="" data-echo="Das würde gegen das Vorsichtsprinzip aus K1 verstoßen. Die Kosten gehören wirtschaftlich in das Jahr, in dem der Anspruch entstanden ist — nicht in das Jahr der Auszahlung.">Gar nicht, weil noch nichts gezahlt wurde</button></div><p class="check-echo" role="status"></p></div><h3 id="k2-b4">Die vier Bilanzveränderungsarten</h3><p class="rein">Jeder Geschäftsvorfall verändert die Bilanz — aber immer so, dass beide Seiten gleich hoch bleiben. Dafür gibt es genau vier Möglichkeiten. Wer sie kennt, kann jeden Buchungssatz auf Plausibilität prüfen: Stimmt danach noch Aktiva = Passiva?</p><div class="tab-huelle rein"><table><thead><tr><th>Art</th><th>Was passiert</th><th>Bilanzsumme</th></tr></thead><tbody><tr class="klappbar"><td>Aktiv-Tausch</td><td>Ein Aktivposten steigt, ein anderer sinkt</td><td>unverändert</td></tr><tr class="detail"><td colspan="3"><strong>Beispiel:</strong> Barabhebung von 5.000 € vom Bankkonto. Bank sinkt, Kasse steigt. Es hat sich nur die Form des Vermögens geändert, nicht seine Höhe — und die Passivseite bleibt völlig unberührt.</td></tr><tr class="klappbar"><td>Passiv-Tausch</td><td>Ein Passivposten steigt, ein anderer sinkt</td><td>unverändert</td></tr><tr class="detail"><td colspan="3"><strong>Beispiel:</strong> Ein kurzfristiger Kredit über 10.000 € wird in ein langfristiges Darlehen umgeschuldet. Der Betrieb schuldet weiterhin dasselbe Geld — nur jemand anderem oder zu anderen Bedingungen.</td></tr><tr class="klappbar"><td>Aktiv-Passiv-Mehrung</td><td>Ein Aktiv- und ein Passivposten steigen</td><td>steigt</td></tr><tr class="detail"><td colspan="3"><strong>Beispiel:</strong> Warenkauf auf Ziel über 8.000 €. Der Betrieb hat mehr Waren, schuldet aber auch mehr. Die Bilanz wird länger — was nicht bedeutet, dass es dem Betrieb besser geht.</td></tr><tr class="klappbar"><td>Aktiv-Passiv-Minderung</td><td>Ein Aktiv- und ein Passivposten sinken</td><td>sinkt</td></tr><tr class="detail"><td colspan="3"><strong>Beispiel:</strong> Bezahlung einer Lieferantenrechnung über 8.000 € per Bank. Geld fließt ab, die Schuld verschwindet. Die Bilanz wird kürzer — auch das sagt nichts über Erfolg oder Misserfolg.</td></tr></tbody></table></div><div class="sig rein" data-grafik="veraenderung"><script type="application/json">{"typ": "grafik", "variante": "veraenderung", "kopf": "Vier Wege, dieselbe Regel", "titel": "Muster GmbH · Ausgangsbilanz 100.000 €", "lead": "Wähle einen Geschäftsvorfall und sieh zu, was mit beiden Seiten passiert.", "ausgang": {"aktiva": [{"id": "av", "name": "Anlagevermögen", "wert": 60000}, {"id": "waren", "name": "Waren", "wert": 20000}, {"id": "bank", "name": "Bank", "wert": 18000}, {"id": "kasse", "name": "Kasse", "wert": 2000}], "passiva": [{"id": "ek", "name": "Eigenkapital", "wert": 55000}, {"id": "darlehen", "name": "Darlehen langfristig", "wert": 30000}, {"id": "verb", "name": "Verbindlichkeiten LuL", "wert": 15000}]}, "vorfaelle": [{"text": "5.000 € von der Bank abheben und in die Kasse legen", "art": "Aktiv-Tausch", "bewegungen": [{"posten": "bank", "delta": -5000}, {"posten": "kasse", "delta": 5000}], "echo": "Beide Bewegungen liegen auf der Aktivseite. Das Vermögen wechselt nur die Form — die Bilanzsumme bleibt bei 100.000 €."}, {"text": "10.000 € kurzfristigen Kredit in ein langfristiges Darlehen umwandeln", "art": "Passiv-Tausch", "bewegungen": [{"posten": "verb", "delta": -10000}, {"posten": "darlehen", "delta": 10000}], "echo": "Beide Bewegungen liegen auf der Passivseite. Der Betrieb schuldet dasselbe Geld — nur anders strukturiert. Die Bilanzsumme bleibt bei 100.000 €."}, {"text": "Waren für 8.000 € auf Ziel kaufen", "art": "Aktiv-Passiv-Mehrung", "bewegungen": [{"posten": "waren", "delta": 8000}, {"posten": "verb", "delta": 8000}], "echo": "Je eine Bewegung auf beiden Seiten, beide nach oben. Die Bilanz wird länger: 108.000 €. Mehr Vermögen, aber auch mehr Schulden — das Eigenkapital hat sich nicht verändert."}, {"text": "Lieferantenrechnung über 8.000 € per Bank bezahlen", "art": "Aktiv-Passiv-Minderung", "bewegungen": [{"posten": "bank", "delta": -8000}, {"posten": "verb", "delta": -8000}], "echo": "Je eine Bewegung auf beiden Seiten, beide nach unten. Die Bilanz wird kürzer: 92.000 €. Geld weg, Schuld weg — dem Betrieb geht es deshalb weder besser noch schlechter."}], "regel": "Prüfstrategie: Welche zwei Positionen ändert der Vorgang? Beide auf einer Seite → Tausch. Auf beiden Seiten → Mehrung oder Minderung."}</script><div class="sig-kopf">Vier Wege, dieselbe Regel</div><h4>Muster GmbH · Ausgangsbilanz 100.000 €</h4><p class="sig-lead">Wähle einen Geschäftsvorfall und sieh zu, was mit beiden Seiten passiert.</p><div class="buehne"></div><p class="sig-regel">Prüfstrategie: Welche zwei Positionen ändert der Vorgang? Beide auf einer Seite → Tausch. Auf beiden Seiten → Mehrung oder Minderung.</p></div><div class="zuordnen rein" id="buchfuehrung-k2-b4-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">Welche Veränderungsart liegt vor?</p><div class="zu-reihe" id="buchfuehrung-k2-b4-z1-1" data-loesung="Aktiv-Tausch"><span class="zu-text">Ein Kunde bezahlt eine offene Rechnung per Überweisung.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Aktiv-Tausch">Aktiv-Tausch</button><button class="zu-btn" data-w="Passiv-Tausch">Passiv-Tausch</button><button class="zu-btn" data-w="Mehrung">Mehrung</button><button class="zu-btn" data-w="Minderung">Minderung</button></span></div><div class="zu-reihe" id="buchfuehrung-k2-b4-z1-2" data-loesung="Mehrung"><span class="zu-text">Der Betrieb kauft einen Laptop für 1.200 € auf Rechnung.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Aktiv-Tausch">Aktiv-Tausch</button><button class="zu-btn" data-w="Passiv-Tausch">Passiv-Tausch</button><button class="zu-btn" data-w="Mehrung">Mehrung</button><button class="zu-btn" data-w="Minderung">Minderung</button></span></div><div class="zu-reihe" id="buchfuehrung-k2-b4-z1-3" data-loesung="Passiv-Tausch"><span class="zu-text">Ein Gesellschafter wandelt sein Darlehen in Eigenkapital um.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Aktiv-Tausch">Aktiv-Tausch</button><button class="zu-btn" data-w="Passiv-Tausch">Passiv-Tausch</button><button class="zu-btn" data-w="Mehrung">Mehrung</button><button class="zu-btn" data-w="Minderung">Minderung</button></span></div><div class="zu-reihe" id="buchfuehrung-k2-b4-z1-4" data-loesung="Minderung"><span class="zu-text">Ein Bankdarlehen wird per Überweisung getilgt.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Aktiv-Tausch">Aktiv-Tausch</button><button class="zu-btn" data-w="Passiv-Tausch">Passiv-Tausch</button><button class="zu-btn" data-w="Mehrung">Mehrung</button><button class="zu-btn" data-w="Minderung">Minderung</button></span></div></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k2-b4-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Bilanzverlängerung heißt nicht Erfolg und Bilanzverkürzung nicht Misserfolg. Ob ein Betrieb Gewinn gemacht hat, sieht man nicht an der Bilanzsumme, sondern am <button class="begriff" data-art="Begriff" data-titel="Eigenkapital" data-text="Das Kapital der Eigentümer. Es wächst durch Gewinne und Einlagen, es sinkt durch Verluste und Entnahmen. Rechnerisch: Vermögen minus Schulden.">Eigenkapital</button>.</p>
+      <button class="dreher" data-karte="buchfuehrung-k2-b4-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Warum sagt eine steigende Bilanzsumme nichts über den Erfolg eines Betriebs aus?</p>
+      <button class="dreher" data-karte="buchfuehrung-k2-b4-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><details class="vertiefung rein"><summary>Warum genau vier — und nicht fünf?</summary><div class="v-inhalt"><p>Weil jeder Geschäftsvorfall mindestens zwei Positionen berührt und jede Position entweder links oder rechts steht. Daraus ergeben sich vier Kombinationen: beide links, beide rechts, oder je eine pro Seite — und diese letzte Möglichkeit zerfällt in zwei Richtungen, nach oben und nach unten.</p><p>Buchungen, die mehr als zwei Konten berühren, sind keine fünfte Art. Sie lassen sich immer in mehrere der vier Grundfälle zerlegen.</p></div></details>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K2</div>
+        <ul><li>Bilanz = Gegenüberstellung von Aktiva (Mittelverwendung) und Passiva (Mittelherkunft) auf einen Stichtag.</li><li><button class="par" data-art="Gesetzestext" data-titel="§ 242 HGB" data-text="Der Kaufmann hat zu Beginn seines Handelsgewerbes und für den Schluss eines jeden Geschäftsjahres einen das Verhältnis seines Vermögens und seiner Schulden darstellenden Abschluss aufzustellen.">§ 242 HGB</button> — die Bilanz ist Pflichtbestandteil des Jahresabschlusses.</li><li>Aktiva: Anlagevermögen (dauerhaft) und Umlaufvermögen (kurzfristig). Entscheidend ist die Absicht, nicht der Gegenstand.</li><li>Passiva: Eigenkapital · Rückstellungen · Verbindlichkeiten.</li><li><button class="par" data-art="Gesetzestext" data-titel="§ 249 Abs. 1 HGB" data-text="Rückstellungen sind für ungewisse Verbindlichkeiten und für drohende Verluste aus schwebenden Geschäften zu bilden.">§ 249 HGB</button> — Rückstellungen sind eine eigene Position, keine Verbindlichkeiten.</li><li>Vier Veränderungsarten: Aktiv-Tausch · Passiv-Tausch · Aktiv-Passiv-Mehrung · Aktiv-Passiv-Minderung.</li><li>Aktiva = Passiva gilt nach jeder einzelnen Buchung.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/4 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="buchfuehrung-k2-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k2-t1-f">Was ist der Unterschied zwischen Anlage- und Umlaufvermögen — und woran entscheidet er sich?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k2-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Anlagevermögen dient dem Betrieb dauerhaft, also länger als ein Jahr; Umlaufvermögen schlägt sich kurzfristig um. Entscheidend ist nicht die Art des Gegenstands, sondern die Absicht des Betriebs: Dasselbe Fahrzeug ist beim Autohändler Ware (Umlaufvermögen) und bei einer Spedition Fuhrpark (Anlagevermögen).</p></div>
+</div><div class="frage" id="buchfuehrung-k2-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k2-t2-f">Warum gehören Rückstellungen nicht zu den Verbindlichkeiten?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k2-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Weil bei ihnen entweder die Höhe oder der Zeitpunkt der Zahlung ungewiss ist (§ 249 HGB). Verbindlichkeiten sind dagegen dem Grunde und der Höhe nach sicher, und die Fälligkeit steht fest. Deshalb bilden Rückstellungen im HGB eine eigene Bilanzposition zwischen Eigenkapital und Verbindlichkeiten.</p></div>
+</div><div class="frage" id="buchfuehrung-k2-t3">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k2-t3-f">Die Muster GmbH kauft einen Laptop für 1.200 € auf Ziel. Welche Veränderungsart liegt vor, und wie ändert sich die Bilanzsumme?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k2-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Eine Aktiv-Passiv-Mehrung. Die Aktiva steigen um 1.200 € (Betriebs- und Geschäftsausstattung), die Passiva steigen um 1.200 € (Verbindlichkeiten). Die Bilanzsumme steigt um 1.200 €. Das Eigenkapital bleibt unverändert.</p></div>
+</div><div class="frage" id="buchfuehrung-k2-t4">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="buchfuehrung-k2-t4-f">Ein Betrieb überweist 3.000 € an einen Lieferanten zur Begleichung einer offenen Rechnung. Welche Positionen ändern sich, und was passiert mit der Bilanzsumme?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k2-t4-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Das Bankkonto auf der Aktivseite sinkt um 3.000 €, die Verbindlichkeiten auf der Passivseite sinken um 3.000 €. Es liegt eine Aktiv-Passiv-Minderung vor, die Bilanzsumme sinkt um 3.000 €. Wirtschaftlich hat sich die Lage des Betriebs nicht verändert — er hat Geld gegen eine weggefallene Schuld getauscht.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Die vier Veränderungsarten kommen regelmäßig als Zuordnungsaufgabe. Arbeite immer in zwei Schritten: Erst fragen, welche zwei Positionen sich ändern — dann, ob sie auf derselben Seite liegen (Tausch) oder auf beiden (Mehrung oder Minderung). Zweiter Klassiker: Rückstellung oder Verbindlichkeit? Das Stichwort ist immer „ungewiss“.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K3 · Konten &amp; Buchungssätze</b></div><button class="start" data-zu="k3">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k3" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K3<small>Kapitel</small></div>
+    <div>
+      <h2>Konten &amp; Buchungssätze</h2>
+      <p>T-Konten, Aktiv- und Passivkonten, EBK und SBK — und die Regel „Soll an Haben“.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/4 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="c1"><span class="haken"></span><span>Das T-Konto aufbauen und Soll von Haben unterscheiden</span></li><li data-fuer="c2"><span class="haken"></span><span>Buchungen auf Aktiv- und Passivkonten korrekt zuordnen</span></li><li data-fuer="c3"><span class="haken"></span><span>Konten über EBK und SBK eröffnen und abschließen</span></li><li data-fuer="c4"><span class="haken"></span><span>Buchungssätze nach „Soll an Haben“ formulieren</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K3</b>Konten &amp; Buchungssätze</aside>
+    <article class="inhalt">
+      <h3 id="k3-c1">Warum Konten?</h3><p class="rein">Die Bilanz aus K2 ist eine Momentaufnahme. Sie zeigt den 31. Dezember — nicht, was im Jahr passiert ist. Genau dafür gibt es Konten: Für jede Bilanzposition wird ein eigenes Konto geführt, das alle Bewegungen des Jahres aufzeichnet. Am Jahresende setzt man daraus wieder eine Bilanz zusammen.</p><p class="rein">Jedes Konto hat die Form eines T — daher <button class="begriff" data-art="Begriff" data-titel="T-Konto" data-text="Die Darstellungsform eines Kontos: ein senkrechter Strich unter einem waagerechten, daher das T. Links steht Soll, rechts Haben.">T-Konto</button>. Die linke Seite heißt <button class="begriff" data-art="Begriff" data-titel="Soll" data-text="Die linke Seite eines Kontos. Vom lateinischen debet. Der Begriff sagt nichts darüber aus, ob etwas gut oder schlecht für den Betrieb ist — er bezeichnet nur eine Seite.">Soll</button>, die rechte <button class="begriff" data-art="Begriff" data-titel="Haben" data-text="Die rechte Seite eines Kontos. Vom lateinischen credit. Auch hier gilt: Es ist eine Ortsangabe, keine Wertung.">Haben</button>. Diese Wörter sind historisch und bedeuten heute nichts mehr. <mark>Soll und Haben sind Ortsangaben, keine Wertungen</mark>: Ein Betrag im Soll ist weder gut noch schlecht, er steht einfach links.</p><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k3-c1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Soll = links. Haben = rechts. Wer versucht, sich die Begriffe inhaltlich herzuleiten, verliert Zeit — sie sind reine Konvention und müssen einfach sitzen.</p>
+      <button class="dreher" data-karte="buchfuehrung-k3-c1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Was bedeuten Soll und Haben — und was bedeuten sie ausdrücklich nicht?</p>
+      <button class="dreher" data-karte="buchfuehrung-k3-c1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><details class="vertiefung rein"><summary>Woher die seltsamen Wörter kommen</summary><div class="v-inhalt"><p>Aus der italienischen Kaufmannsbuchführung des 15. Jahrhunderts. Die Konten waren ursprünglich Personenkonten: Links stand, was der Kunde <em>soll</em> — also schuldet. Rechts stand, was er <em>hat</em> — also bereits geleistet hat.</p><p>Als das System auf Sachkonten übertragen wurde, blieben die Namen. Der ursprüngliche Sinn ging verloren, die Bezeichnungen nicht. Genau deshalb hilft es nicht, sie logisch verstehen zu wollen.</p></div></details><h3 id="k3-c2">Aktivkonto und Passivkonto — spiegelverkehrt</h3><p class="rein">Die entscheidende Frage bei jedem Konto lautet: Auf welcher Seite beginnt der <button class="begriff" data-art="Begriff" data-titel="Anfangsbestand" data-text="Der Wert, mit dem ein Bestandskonto ins Geschäftsjahr startet. Er stammt aus der Schlussbilanz des Vorjahres.">Anfangsbestand</button>, und wo werden Zugänge gebucht? Die Antwort steht in der Bilanz. Ein <button class="begriff" data-art="Begriff" data-titel="Bestandskonto" data-text="Ein Konto, das eine Bilanzposition abbildet — Vermögen oder Kapital. Sein Endbestand wird ins nächste Geschäftsjahr fortgeführt.">Bestandskonto</button> verhält sich genau so, wie seine Position in der Bilanz steht — Aktivposten links, Passivposten rechts.</p><div class="tab-huelle rein"><table><thead><tr><th></th><th>Aktivkonto</th><th>Passivkonto</th></tr></thead><tbody><tr><td>Bildet ab</td><td>Vermögen (Bilanz links)</td><td>Kapital und Schulden (Bilanz rechts)</td></tr><tr><td>Anfangsbestand</td><td class="num">Soll</td><td class="num">Haben</td></tr><tr><td>Zugänge</td><td class="num">Soll</td><td class="num">Haben</td></tr><tr><td>Abgänge</td><td class="num">Haben</td><td class="num">Soll</td></tr><tr class="klappbar"><td>Saldo</td><td>Sollsaldo</td><td>Habensaldo</td></tr><tr class="detail"><td colspan="3"><strong>Warum das so sein muss:</strong> Der <button class="begriff" data-art="Begriff" data-titel="Saldo" data-text="Die Differenz zwischen der Soll- und der Habenseite eines Kontos. Er wird auf der schwächeren Seite eingetragen, damit beide Seiten am Ende gleich hoch sind.">Saldo</button> wird immer auf der <em>schwächeren</em> Seite eingetragen, damit beide Seiten gleich hoch werden. Bei einem Aktivkonto steht mehr im Soll — also landet der Ausgleich im Haben, und der Saldo heißt trotzdem Sollsaldo, weil er die Soll-Seite als Überhang beschreibt.</td></tr></tbody></table></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Der häufigste Fehler im ganzen Kapitel: Anfangsbestand auf der falschen Seite. Eselsbrücke: Das Aktivkonto lebt links — genau wie die Aktivseite der Bilanz links steht. Alles am Passivkonto ist dazu spiegelverkehrt.</p></div><h3 id="k3-c3">EBK und SBK — Anfang und Ende des Jahres</h3><p class="rein">Jede Buchung braucht zwei Konten. Das gilt auch beim Eröffnen: Um ein Bankkonto mit 10.000 € zu starten, braucht es ein Gegenkonto. Diese Rolle übernimmt das <button class="begriff" data-art="Begriff" data-titel="Eröffnungsbilanzkonto (EBK)" data-text="Ein technisches Hilfskonto, über das zu Jahresbeginn alle Bestandskonten eröffnet werden. Es ist kein Sachkonto und taucht in keiner Bilanz auf.">Eröffnungsbilanzkonto</button>, am Jahresende spiegelbildlich das <button class="begriff" data-art="Begriff" data-titel="Schlussbilanzkonto (SBK)" data-text="Das Gegenstück zum EBK: Über das SBK werden am Jahresende alle Bestandskonten abgeschlossen. Daraus entsteht die Schlussbilanz.">Schlussbilanzkonto</button>.</p><div class="tab-huelle rein"><table><thead><tr><th>Vorgang</th><th>Buchungssatz</th><th>Erklärung</th></tr></thead><tbody><tr><td>Aktivkonto eröffnen (Bank 10.000 €)</td><td class="num">Bank an EBK 10.000 €</td><td>Aktivkonto startet im Soll, das EBK nimmt die Gegenseite</td></tr><tr><td>Passivkonto eröffnen (EK 8.000 €)</td><td class="num">EBK an Eigenkapital 8.000 €</td><td>Passivkonto startet im Haben, das EBK steht im Soll</td></tr><tr><td>Aktivkonto abschließen</td><td class="num">SBK an Bank [Saldo]</td><td>Der Restbestand wandert ins SBK</td></tr><tr><td>Passivkonto abschließen</td><td class="num">Eigenkapital an SBK [Saldo]</td><td>Ebenso, nur spiegelverkehrt</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k3-c3-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>EBK und SBK sind reine Hilfskonten. Sie erscheinen in keiner Bilanz und in keiner GuV — sie existieren nur, damit jede Buchung ihre zwei Seiten bekommt.</p>
+      <button class="dreher" data-karte="buchfuehrung-k3-c3-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Wozu dienen EBK und SBK, und warum tauchen sie in keiner Bilanz auf?</p>
+      <button class="dreher" data-karte="buchfuehrung-k3-c3-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k3-c4">Buchungssätze — „Soll an Haben“</h3><p class="rein">Ein <button class="begriff" data-art="Begriff" data-titel="Buchungssatz" data-text="Die schriftliche Form einer Buchung nach dem Muster Sollkonto an Habenkonto Betrag. Soll- und Habenbetrag sind immer gleich hoch.">Buchungssatz</button> folgt immer demselben Muster: zuerst das Sollkonto, dann das Wort <strong>an</strong>, dann das Habenkonto und der Betrag. Die Summe der Soll-Beträge muss der Summe der Haben-Beträge entsprechen — auch wenn mehr als zwei Konten beteiligt sind.</p><div class="sig rein" data-grafik="t-konto"><script type="application/json">{"typ": "grafik", "variante": "t-konto", "kopf": "Buchen, live", "titel": "Wo landet der Betrag?", "lead": "Wähle einen Geschäftsvorfall. Die Beträge laufen in die beiden betroffenen T-Konten ein.", "konten": [{"id": "bank", "name": "Bank", "art": "aktiv", "ab": 18000}, {"id": "kasse", "name": "Kasse", "art": "aktiv", "ab": 2000}, {"id": "waren", "name": "Wareneinkauf", "art": "aufwand", "ab": 0}, {"id": "verb", "name": "Verbindlichkeiten LuL", "art": "passiv", "ab": 15000}, {"id": "ford", "name": "Forderungen LuL", "art": "aktiv", "ab": 9000}, {"id": "erloese", "name": "Umsatzerlöse", "art": "ertrag", "ab": 0}], "vorfaelle": [{"text": "Warenkauf auf Ziel, 1.000 €", "satz": "Wareneinkauf 1.000 € an Verbindlichkeiten LuL 1.000 €", "soll": [{"konto": "waren", "betrag": 1000}], "haben": [{"konto": "verb", "betrag": 1000}], "echo": "Aufwand entsteht, also wächst das Wareneinkaufskonto im Soll. Bezahlt ist noch nichts — stattdessen wächst die Schuld, und Passivkonten wachsen im Haben."}, {"text": "Lieferantenrechnung per Bank bezahlen, 500 €", "satz": "Verbindlichkeiten LuL 500 € an Bank 500 €", "soll": [{"konto": "verb", "betrag": 500}], "haben": [{"konto": "bank", "betrag": 500}], "echo": "Die Schuld sinkt — ein Abgang auf einem Passivkonto steht im Soll. Das Bankkonto sinkt ebenfalls, und ein Abgang auf einem Aktivkonto steht im Haben."}, {"text": "Barverkauf von Ware, 300 €", "satz": "Kasse 300 € an Umsatzerlöse 300 €", "soll": [{"konto": "kasse", "betrag": 300}], "haben": [{"konto": "erloese", "betrag": 300}], "echo": "Die Kasse wächst, also Soll. Gleichzeitig entsteht ein Ertrag — und Erträge werden immer im Haben gebucht."}, {"text": "Kunde zahlt eine offene Rechnung, 800 €", "satz": "Bank 800 € an Forderungen LuL 800 €", "soll": [{"konto": "bank", "betrag": 800}], "haben": [{"konto": "ford", "betrag": 800}], "echo": "Kein Ertrag! Der wurde bereits bei Rechnungsstellung gebucht. Hier tauscht der Betrieb nur eine Forderung gegen Bankguthaben — zwei Aktivkonten, also ein Aktiv-Tausch aus K2."}], "regel": "Drei Fragen für jeden unbekannten Buchungssatz: Welche zwei Konten sind betroffen? Welches wird größer? Welches kleiner?"}</script><div class="sig-kopf">Buchen, live</div><h4>Wo landet der Betrag?</h4><p class="sig-lead">Wähle einen Geschäftsvorfall. Die Beträge laufen in die beiden betroffenen T-Konten ein.</p><div class="buehne"></div><p class="sig-regel">Drei Fragen für jeden unbekannten Buchungssatz: Welche zwei Konten sind betroffen? Welches wird größer? Welches kleiner?</p></div><div class="check rein" id="buchfuehrung-k3-c4-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Ein Kunde überweist 800 € für eine Rechnung, die vor drei Wochen gestellt wurde. Welcher Buchungssatz ist richtig?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Damit würde der Ertrag ein zweites Mal gebucht. Er ist bereits bei der Rechnungsstellung entstanden — sonst wäre der Umsatz im Jahresergebnis doppelt enthalten.">Bank an Umsatzerlöse</button><button class="opt" data-richtig="1" data-echo="Richtig. Der Ertrag wurde bei Rechnungsstellung gebucht (Forderungen an Umsatzerlöse). Jetzt wird nur noch die Forderung durch Bankguthaben ersetzt — reiner Aktiv-Tausch.">Bank an Forderungen LuL</button><button class="opt" data-richtig="" data-echo="Die Richtung stimmt nicht. Das Bankkonto steigt und muss deshalb im Soll stehen; die Forderung verschwindet und gehört ins Haben. Der Satz ist genau verkehrt herum.">Forderungen LuL an Bank</button></div><p class="check-echo" role="status"></p></div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Bei zusammengesetzten Buchungssätzen mit drei oder mehr Konten hilft eine einfache Kontrolle: Addiere alle Soll-Beträge und alle Haben-Beträge. Sind sie ungleich, ist der Satz falsch — noch bevor du über den Inhalt nachdenkst.</p></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K3</div>
+        <ul><li>Konten zeichnen die Bewegungen eines Jahres auf; die Bilanz zeigt nur den Stichtag.</li><li>Soll = linke Seite, Haben = rechte Seite. Beides sind Ortsangaben, keine Wertungen.</li><li>Aktivkonto: Anfangsbestand und Zugänge im Soll, Abgänge im Haben.</li><li>Passivkonto: Anfangsbestand und Zugänge im Haben, Abgänge im Soll.</li><li>EBK eröffnet, SBK schließt alle Bestandskonten — beides reine Hilfskonten.</li><li>Buchungssatz: Sollkonto an Habenkonto Betrag. Soll-Summe = Haben-Summe, immer.</li><li>Zahlungseingang auf eine offene Rechnung erzeugt keinen Ertrag — der wurde schon gebucht.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/4 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="buchfuehrung-k3-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k3-t1-f">Erkläre den Unterschied zwischen Aktiv- und Passivkonto anhand des Anfangsbestands.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k3-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Beim Aktivkonto steht der Anfangsbestand im Soll, also links — genau wie die Aktivseite in der Bilanz links steht. Beim Passivkonto steht er im Haben, also rechts, entsprechend der Passivseite. Auch Zugänge folgen dieser Logik: Sie werden auf derselben Seite gebucht wie der Anfangsbestand, Abgänge auf der Gegenseite.</p></div>
+</div><div class="frage" id="buchfuehrung-k3-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k3-t2-f">Was ist das EBK und wozu wird es gebraucht?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k3-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Das Eröffnungsbilanzkonto ist ein technisches Hilfskonto, über das zu Jahresbeginn alle Bestandskonten mit ihren Anfangsbeständen eröffnet werden. Es wird gebraucht, weil jede Buchung ein Soll- und ein Habenkonto benötigt — ohne Gegenkonto ließen sich die Konten nicht eröffnen. Das EBK ist kein Sachkonto und erscheint in keiner Bilanz.</p></div>
+</div><div class="frage" id="buchfuehrung-k3-t3">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k3-t3-f">Formuliere den Buchungssatz: Der Betrieb kauft Waren für 2.500 € und zahlt sofort per Banküberweisung.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k3-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Wareneinkauf 2.500 € an Bank 2.500 €. Der Wareneinkauf ist ein Aufwandskonto und wächst im Soll. Das Bankkonto ist ein Aktivkonto; es sinkt, und Abgänge auf Aktivkonten stehen im Haben.</p></div>
+</div><div class="frage" id="buchfuehrung-k3-t4">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="buchfuehrung-k3-t4-f">Ein Lieferant schickt eine Rechnung über 800 € für Büromaterial. Eine Woche später wird überwiesen. Formuliere beide Buchungssätze.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k3-t4-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Bei Rechnungseingang: Bürobedarf 800 € an Verbindlichkeiten LuL 800 € — der Aufwand entsteht jetzt, gezahlt ist noch nichts. Bei Zahlung: Verbindlichkeiten LuL 800 € an Bank 800 € — die Schuld sinkt (Soll auf dem Passivkonto), das Bankguthaben sinkt (Haben auf dem Aktivkonto). Nach beiden Buchungen ist die Verbindlichkeit ausgeglichen.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Buchungssätze kommen fast immer als Block von vier bis sechs Aufgaben. Arbeite stur nach Schema: erst die zwei betroffenen Konten benennen, dann die Kontoart bestimmen, dann Zu- oder Abgang. Und prüfe am Ende immer, ob Soll-Betrag und Haben-Betrag übereinstimmen — dieser Blick kostet fünf Sekunden und rettet Punkte.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K4 · Erfolgskonten &amp; GuV</b></div><button class="start" data-zu="k4">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k4" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K4<small>Kapitel</small></div>
+    <div>
+      <h2>Erfolgskonten &amp; GuV</h2>
+      <p>Aufwand, Ertrag, das GuV-Konto und die Abschlusskette bis zum Eigenkapital.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/4 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="d1"><span class="haken"></span><span>Bestandskonten von Erfolgskonten unterscheiden</span></li><li data-fuer="d2"><span class="haken"></span><span>Aufwands- und Ertragskonten erkennen und korrekt buchen</span></li><li data-fuer="d3"><span class="haken"></span><span>Das GuV-Konto aufstellen und den Jahreserfolg berechnen</span></li><li data-fuer="d4"><span class="haken"></span><span>Die Abschlusskette in der richtigen Reihenfolge durchführen</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K4</b>Erfolgskonten &amp; GuV</aside>
+    <article class="inhalt">
+      <h3 id="k4-d1">Zwei Sorten Konten</h3><p class="rein">In K3 ging es um <button class="begriff" data-art="Begriff" data-titel="Bestandskonto" data-text="Ein Konto, das eine Bilanzposition abbildet — Vermögen oder Kapital. Sein Endbestand wird ins nächste Geschäftsjahr fortgeführt.">Bestandskonten</button> — sie bilden Bilanzpositionen ab. Jetzt kommt die zweite Sorte dazu: <button class="begriff" data-art="Begriff" data-titel="Erfolgskonto" data-text="Ein Konto für Aufwendungen oder Erträge. Es startet jedes Jahr bei null und wird über die GuV abgeschlossen.">Erfolgskonten</button>. Sie erfassen alles, was den wirtschaftlichen Erfolg beeinflusst, also <button class="begriff" data-art="Begriff" data-titel="Aufwand" data-text="Der Wert aller im Geschäftsjahr verbrauchten Güter und Leistungen. Aufwand mindert den Gewinn und wird im Soll gebucht.">Aufwendungen</button> und <button class="begriff" data-art="Begriff" data-titel="Ertrag" data-text="Der Wert aller im Geschäftsjahr erwirtschafteten Leistungen. Ertrag erhöht den Gewinn und wird im Haben gebucht.">Erträge</button>. In der Bilanz tauchen sie nicht auf.</p><p class="rein">Der wichtigste Unterschied betrifft den Jahreswechsel: Bestandskonten werden fortgeführt — der Endbestand am 31.12. ist der Anfangsbestand am 1.1. <mark>Erfolgskonten starten jedes Jahr bei null.</mark> Das ist keine Willkür, sondern zwingend: Kosten und Erlöse gehören immer nur zu einem bestimmten Geschäftsjahr.</p><div class="tab-huelle rein"><table><thead><tr><th>Kriterium</th><th>Bestandskonto</th><th>Erfolgskonto</th></tr></thead><tbody><tr><td>Erfasst</td><td>Vermögen und Kapital</td><td>Aufwendungen und Erträge</td></tr><tr><td>In der Bilanz?</td><td>ja, direkt</td><td>nein — über die GuV ins Eigenkapital</td></tr><tr class="klappbar"><td>Jahreswechsel</td><td>Saldo wird fortgeführt</td><td>wird auf null gestellt</td></tr><tr class="detail"><td colspan="3"><strong>Warum das logisch ist:</strong> Ein Bankguthaben von 18.000 € ist am 1. Januar immer noch da. Der Mietaufwand des letzten Jahres dagegen ist erledigt — er gehört zum abgeschlossenen Jahr. Würde man ihn fortführen, käme im Folgejahr ein Aufwand heraus, den es gar nicht gab.</td></tr><tr><td>Beispiele</td><td>Bank, Kasse, Verbindlichkeiten</td><td>Löhne, Miete, Umsatzerlöse</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k4-d1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Bestandskonten führen zur Bilanz. Erfolgskonten führen über die GuV ins Eigenkapital. Beide Wege enden in derselben Schlussbilanz — nur über unterschiedliche Stationen.</p>
+      <button class="dreher" data-karte="buchfuehrung-k4-d1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Wohin führen Bestandskonten, wohin Erfolgskonten — und was passiert mit ihnen zum Jahreswechsel?</p>
+      <button class="dreher" data-karte="buchfuehrung-k4-d1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k4-d2">Aufwand und Ertrag</h3><p class="rein">Die Buchungslogik ist erfreulich simpel: Aufwand entsteht im <strong>Soll</strong>, Ertrag entsteht im <strong>Haben</strong>. Damit hat jedes Aufwandskonto am Jahresende einen Sollsaldo und jedes Ertragskonto einen Habensaldo — daran kann man beim Abschluss nichts verwechseln.</p><div class="tab-huelle rein"><table><thead><tr><th>Konto</th><th>Art</th><th>Typischer Buchungssatz</th></tr></thead><tbody><tr><td>Löhne und Gehälter</td><td>Aufwand</td><td class="num">Löhne und Gehälter an Bank</td></tr><tr><td>Mietaufwand</td><td>Aufwand</td><td class="num">Mietaufwand an Bank</td></tr><tr><td>Wareneinkauf</td><td>Aufwand</td><td class="num">Wareneinkauf an Verbindlichkeiten</td></tr><tr><td>Umsatzerlöse</td><td>Ertrag</td><td class="num">Bank oder Forderungen an Umsatzerlöse</td></tr><tr><td>Zinserträge</td><td>Ertrag</td><td class="num">Bank an Zinserträge</td></tr></tbody></table></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Aufwand ist nicht dasselbe wie Auszahlung. Eine Rechnung, die im Dezember eingeht und im Januar bezahlt wird, ist Dezember-Aufwand — die Auszahlung liegt im Januar. Diese Trennung ist die Grundlage für die Rechnungsabgrenzung in K9.</p></div><div class="check rein" id="buchfuehrung-k4-d2-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Der Betrieb kauft am 20. Dezember Büromaterial auf Rechnung und bezahlt am 10. Januar. In welchem Jahr entsteht der Aufwand?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Das wäre eine reine Einnahmen-Überschuss-Betrachtung. In der doppelten Buchführung entsteht Aufwand mit dem Verbrauch beziehungsweise mit der Lieferung — nicht mit dem Geldfluss.">Im Jahr der Zahlung</button><button class="opt" data-richtig="1" data-echo="Richtig. Der Aufwand entsteht im Dezember, gebucht als Bürobedarf an Verbindlichkeiten. Die Zahlung im Januar berührt nur noch Bestandskonten und verändert das Ergebnis nicht mehr.">Im Jahr der Lieferung</button><button class="opt" data-richtig="" data-echo="Aufgeteilt wird nur, wenn eine Leistung sich tatsächlich über beide Jahre erstreckt — etwa eine Jahresversicherung. Eine einmalige Lieferung gehört vollständig in ein Jahr.">Anteilig in beiden Jahren</button></div><p class="check-echo" role="status"></p></div><h3 id="k4-d3">Das GuV-Konto</h3><p class="rein">Das <button class="begriff" data-art="Begriff" data-titel="GuV-Konto" data-text="Das Sammelkonto für alle Erfolgskonten. Aufwendungen landen im Soll, Erträge im Haben; die Differenz ist der Jahreserfolg.">GuV-Konto</button> ist das Sammelbecken: Am Jahresende wandern alle Aufwandskonten mit ihrem Saldo ins Soll und alle Ertragskonten ins Haben. Was übrig bleibt, ist der Jahreserfolg. Wie EBK und SBK ist auch die GuV kein Sachkonto, sondern ein Abschlusskonto.</p><div class="tab-huelle rein"><table><thead><tr><th>GuV-Konto</th><th>Soll (Aufwendungen)</th><th>Haben (Erträge)</th></tr></thead><tbody><tr><td></td><td class="num">Wareneinkauf 80.000 €</td><td class="num">Umsatzerlöse 160.000 €</td></tr><tr><td></td><td class="num">Löhne 45.000 €</td><td class="num">Zinserträge 5.000 €</td></tr><tr><td></td><td class="num">Miete 12.000 €</td><td class="num">Sonstige Erträge 5.000 €</td></tr><tr><td></td><td class="num">Abschreibungen 8.000 €</td><td class="num"></td></tr><tr><td></td><td class="num">Zinsaufwand 2.000 €</td><td class="num"></td></tr><tr><td>Summe</td><td class="num">147.000 € + 23.000 € Überschuss</td><td class="num">170.000 €</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k4-d3-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Ertrag größer als Aufwand ergibt einen <button class="begriff" data-art="Begriff" data-titel="Jahresüberschuss" data-text="Der Gewinn eines Geschäftsjahres: Erträge größer als Aufwendungen. Er erhöht das Eigenkapital. Der umgekehrte Fall heißt Jahresfehlbetrag.">Jahresüberschuss</button> — das Eigenkapital steigt. Umgekehrt entsteht ein Jahresfehlbetrag, und das Eigenkapital sinkt. Der Gewinn eines Jahres ist nichts anderes als der Zuwachs an Eigenkapital.</p>
+      <button class="dreher" data-karte="buchfuehrung-k4-d3-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Wie hängen Jahreserfolg und Eigenkapital zusammen?</p>
+      <button class="dreher" data-karte="buchfuehrung-k4-d3-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k4-d4">Die Abschlusskette</h3><p class="rein">Am Jahresende ist die Reihenfolge nicht beliebig — jeder Schritt baut auf dem vorherigen auf. Wer sie umdreht, produziert eine falsche Schlussbilanz. In der Prüfung wird häufig genau nach der Reihenfolge gefragt.</p><div class="sig rein" data-grafik="kette"><script type="application/json">{"typ": "grafik", "variante": "kette", "kopf": "Die Reihenfolge zählt", "titel": "Vom Erfolgskonto zur Schlussbilanz", "lead": "Klick dich Schritt für Schritt durch — jede Station schaltet die nächste frei.", "schritte": [{"nr": 1, "titel": "Aufwandskonten abschließen", "satz": "GuV an [Aufwandskonto]", "text": "Jedes Aufwandskonto gibt seinen Sollsaldo an die GuV ab. Danach steht es auf null."}, {"nr": 2, "titel": "Ertragskonten abschließen", "satz": "[Ertragskonto] an GuV", "text": "Ebenso mit den Erträgen — sie landen im Haben der GuV. Jetzt stehen sich alle Aufwendungen und Erträge gegenüber."}, {"nr": 3, "titel": "Jahreserfolg ins Eigenkapital", "satz": "GuV an Eigenkapital (bei Gewinn)", "text": "Der Saldo der GuV ist der Jahreserfolg. Bei Gewinn wächst das Eigenkapital, bei Verlust schrumpft es. Erst jetzt steht der endgültige Eigenkapitalbestand fest."}, {"nr": 4, "titel": "Bestandskonten abschließen", "satz": "SBK an [Aktivkonto] · [Passivkonto] an SBK", "text": "Zum Schluss wandern alle Bestandskonten ins SBK — einschließlich des soeben korrigierten Eigenkapitals. Das Ergebnis ist die Schlussbilanz."}], "regel": "Erfolgskonten immer vor den Bestandskonten. Sonst schließt du das Eigenkapital ab, bevor der Gewinn darin enthalten ist."}</script><div class="sig-kopf">Die Reihenfolge zählt</div><h4>Vom Erfolgskonto zur Schlussbilanz</h4><p class="sig-lead">Klick dich Schritt für Schritt durch — jede Station schaltet die nächste frei.</p><div class="buehne"></div><p class="sig-regel">Erfolgskonten immer vor den Bestandskonten. Sonst schließt du das Eigenkapital ab, bevor der Gewinn darin enthalten ist.</p></div><div class="zuordnen rein" id="buchfuehrung-k4-d4-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">Welcher Schritt der Abschlusskette ist gemeint?</p><div class="zu-reihe" id="buchfuehrung-k4-d4-z1-1" data-loesung="Schritt 1"><span class="zu-text">Der Mietaufwand von 12.000 € gibt seinen Saldo ab.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Schritt 1">Schritt 1</button><button class="zu-btn" data-w="Schritt 2">Schritt 2</button><button class="zu-btn" data-w="Schritt 3">Schritt 3</button><button class="zu-btn" data-w="Schritt 4">Schritt 4</button></span></div><div class="zu-reihe" id="buchfuehrung-k4-d4-z1-2" data-loesung="Schritt 4"><span class="zu-text">Das Bankkonto wird mit seinem Restbestand ins SBK übertragen.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Schritt 1">Schritt 1</button><button class="zu-btn" data-w="Schritt 2">Schritt 2</button><button class="zu-btn" data-w="Schritt 3">Schritt 3</button><button class="zu-btn" data-w="Schritt 4">Schritt 4</button></span></div><div class="zu-reihe" id="buchfuehrung-k4-d4-z1-3" data-loesung="Schritt 3"><span class="zu-text">Ein Überschuss von 23.000 € erhöht das Eigenkapital.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Schritt 1">Schritt 1</button><button class="zu-btn" data-w="Schritt 2">Schritt 2</button><button class="zu-btn" data-w="Schritt 3">Schritt 3</button><button class="zu-btn" data-w="Schritt 4">Schritt 4</button></span></div><div class="zu-reihe" id="buchfuehrung-k4-d4-z1-4" data-loesung="Schritt 2"><span class="zu-text">Die Umsatzerlöse von 160.000 € wandern ins Haben der GuV.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Schritt 1">Schritt 1</button><button class="zu-btn" data-w="Schritt 2">Schritt 2</button><button class="zu-btn" data-w="Schritt 3">Schritt 3</button><button class="zu-btn" data-w="Schritt 4">Schritt 4</button></span></div></div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Wenn deine Schlussbilanz nicht ausgeglichen ist, liegt der Fehler fast immer an einer von zwei Stellen: Der Jahreserfolg wurde nicht ins Eigenkapital übertragen, oder ein Erfolgskonto wurde vergessen. Prüfe beides, bevor du irgendetwas neu rechnest.</p></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K4</div>
+        <ul><li>Erfolgskonten erfassen Aufwendungen und Erträge und starten jedes Jahr bei null.</li><li>Aufwand wächst im Soll, Ertrag wächst im Haben.</li><li>Aufwand ist nicht Auszahlung — entscheidend ist der Verbrauch, nicht der Geldfluss.</li><li>GuV-Konto: Aufwendungen ins Soll, Erträge ins Haben, der Saldo ist der Jahreserfolg.</li><li>Ertrag &gt; Aufwand = Jahresüberschuss, Eigenkapital steigt. Umgekehrt: Jahresfehlbetrag.</li><li>Abschlusskette: Aufwandskonten → Ertragskonten → GuV ins Eigenkapital → Bestandskonten ins SBK.</li><li>Erfolgskonten immer vor Bestandskonten abschließen.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/4 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="buchfuehrung-k4-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k4-t1-f">Was unterscheidet ein Bestandskonto von einem Erfolgskonto?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k4-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Bestandskonten bilden Bilanzpositionen ab — Vermögen und Kapital — und werden von Jahr zu Jahr fortgeführt: Der Endbestand am 31.12. ist der Anfangsbestand am 1.1. Erfolgskonten erfassen Aufwendungen und Erträge, erscheinen nicht in der Bilanz und werden am Jahresende auf null gestellt. Ihr Saldo fließt über die GuV ins Eigenkapital.</p></div>
+</div><div class="frage" id="buchfuehrung-k4-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k4-t2-f">Erkläre die Abschlusskette am Jahresende.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k4-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Zuerst geben alle Aufwandskonten ihren Sollsaldo an das Soll der GuV ab, dann alle Ertragskonten ihren Habensaldo an das Haben der GuV. Der Saldo der GuV ist der Jahreserfolg: Bei Gewinn wird er ins Haben des Eigenkapitalkontos gebucht, bei Verlust ins Soll. Erst danach werden alle Bestandskonten über das SBK abgeschlossen — daraus entsteht die Schlussbilanz.</p></div>
+</div><div class="frage" id="buchfuehrung-k4-t3">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k4-t3-f">Umsatzerlöse 200.000 €, Wareneinkauf 120.000 €, Löhne 40.000 €, Mietaufwand 15.000 €, Zinsertrag 2.000 €. Wie hoch ist der Jahreserfolg?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k4-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Erträge = 200.000 + 2.000 = 202.000 €. Aufwendungen = 120.000 + 40.000 + 15.000 = 175.000 €. Jahresüberschuss = 202.000 − 175.000 = 27.000 €. Das Eigenkapital steigt um 27.000 €.</p></div>
+</div><div class="frage" id="buchfuehrung-k4-t4">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="buchfuehrung-k4-t4-f">Ein Azubi schließt zuerst alle Bestandskonten ab und erst danach die Erfolgskonten. Welches Problem entsteht?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k4-t4-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Das Eigenkapital wird ins SBK übertragen, bevor der Jahreserfolg darin enthalten ist. Die Schlussbilanz weist damit ein zu niedriges Eigenkapital aus und ist nicht ausgeglichen — die Aktivseite ist um den Gewinnbetrag höher als die Passivseite. Deshalb ist die Reihenfolge zwingend: erst Erfolgskonten, dann Bestandskonten.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Zwei Klassiker: Erstens die GuV-Rechnung aus gegebenen Werten — Erträge minus Aufwendungen, Vorzeichen prüfen. Zweitens die Frage nach der Reihenfolge der Abschlussschritte. Merke dir den Satz: Erfolg vor Bestand, sonst fehlt der Gewinn im Eigenkapital.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K5 · Warenkonten &amp; Kalkulation</b></div><button class="start" data-zu="k5">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k5" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K5<small>Kapitel</small></div>
+    <div>
+      <h2>Warenkonten &amp; Kalkulation</h2>
+      <p>Wareneinkauf und -verkauf, Bezugskosten, Rabatt und Skonto — und der Weg vom Einkaufs- zum Verkaufspreis.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/5 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="e1"><span class="haken"></span><span>Wareneinkauf und Umsatzerlöse als Erfolgskonten buchen</span></li><li data-fuer="e2"><span class="haken"></span><span>Bezugskosten, Rabatte und Rücksendungen richtig behandeln</span></li><li data-fuer="e3"><span class="haken"></span><span>Skonto auf Einkaufs- und Verkaufsseite unterscheiden und buchen</span></li><li data-fuer="e4"><span class="haken"></span><span>Den Einstandspreis berechnen und vorwärts kalkulieren</span></li><li data-fuer="e5"><span class="haken"></span><span>Rückwärts vom Marktpreis zum zulässigen Einkaufspreis rechnen</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K5</b>Warenkonten &amp; Kalkulation</aside>
+    <article class="inhalt">
+      <h3 id="k5-e1">Warenkonten im Handel</h3><p class="rein">Im Handelsbetrieb stehen zwei Konten im Mittelpunkt, und beide sind <button class="begriff" data-art="Begriff" data-titel="Erfolgskonto" data-text="Ein Konto für Aufwendungen oder Erträge. Es startet jedes Jahr bei null und wird über die GuV abgeschlossen.">Erfolgskonten</button> aus K4: Der <strong>Wareneinkauf</strong> ist ein Aufwandskonto, die <strong>Umsatzerlöse</strong> sind ein Ertragskonto. Ein- und Verkauf werden getrennt erfasst, nicht verrechnet — nur so sieht man jederzeit, wie viel insgesamt eingekauft und verkauft wurde.</p><div class="tab-huelle rein"><table><thead><tr><th>Vorgang</th><th>Buchungssatz</th><th>Kontoart</th></tr></thead><tbody><tr><td>Warenkauf auf Ziel, 3.000 €</td><td class="num">Wareneinkauf an Verbindlichkeiten LuL</td><td>Aufwand entsteht im Soll</td></tr><tr><td>Warenverkauf auf Ziel, 5.000 €</td><td class="num">Forderungen LuL an Umsatzerlöse</td><td>Ertrag entsteht im Haben</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k5-e1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p><button class="begriff" data-art="Begriff" data-titel="Rohertrag" data-text="Umsatzerlöse minus Wareneinsatz. Er zeigt, was der Handel selbst verdient hat — bevor Miete, Löhne und alle übrigen Kosten abgezogen werden.">Rohertrag</button> = Umsatzerlöse − Wareneinsatz. Bei 5.000 € Erlös und 3.000 € Einsatz bleiben 2.000 € — davon müssen erst noch Miete, Löhne und alles Übrige bezahlt werden.</p>
+      <button class="dreher" data-karte="buchfuehrung-k5-e1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Wie berechnet sich der Rohertrag, und was ist er noch nicht?</p>
+      <button class="dreher" data-karte="buchfuehrung-k5-e1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k5-e2">Bezugskosten, Rabatt, Rücksendung</h3><p class="rein">Was die Ware wirklich gekostet hat, steht selten auf der Rechnung. <button class="begriff" data-art="Begriff" data-titel="Bezugskosten" data-text="Kosten, die beim Beschaffen zusätzlich anfallen: Fracht, Verpackung, Zoll, Transportversicherung. Sie gehören zum Einstandspreis der Ware.">Bezugskosten</button> wie Fracht und Verpackung kommen hinzu, ein <button class="begriff" data-art="Begriff" data-titel="Rabatt" data-text="Ein sofortiger Preisnachlass beim Kauf, etwa als Mengen- oder Treuerabatt. Er mindert den Rechnungsbetrag direkt und wird nicht separat gebucht.">Rabatt</button> geht ab. Das Ergebnis ist der <button class="begriff" data-art="Begriff" data-titel="Einstandspreis" data-text="Was die Ware den Betrieb tatsächlich gekostet hat — nach allen Nachlässen und einschließlich der Bezugskosten. Er ist die Basis jeder Kalkulation.">Einstandspreis</button> — die Zahl, mit der später kalkuliert wird.</p><div class="tab-huelle rein"><table><thead><tr><th>Schritt</th><th>Betrag</th></tr></thead><tbody><tr><td>Listenpreis der Ware</td><td class="num">5.000,00 €</td></tr><tr><td>− Rabatt 5 %</td><td class="num">− 250,00 €</td></tr><tr><td>= Zieleinkaufspreis</td><td class="num">4.750,00 €</td></tr><tr><td>+ Bezugskosten (Fracht)</td><td class="num">+ 150,00 €</td></tr><tr><td>= Einstandspreis</td><td class="num">4.900,00 €</td></tr></tbody></table></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Ein Rabatt wird <strong>nicht</strong> separat gebucht. Er mindert den Rechnungsbetrag sofort, also wird von vornherein nur der geminderte Betrag erfasst. Skonto dagegen wird separat gebucht — das ist der Unterschied, der in der Prüfung am häufigsten verwechselt wird.</p></div><div class="tab-huelle rein"><table><thead><tr><th>Vorgang</th><th>Buchungssatz</th></tr></thead><tbody><tr><td>Bezugskosten (sofort bezahlt)</td><td class="num">Wareneinkauf an Bank</td></tr><tr><td>Einkaufsrücksendung</td><td class="num">Verbindlichkeiten an Wareneinkauf</td></tr><tr><td>Verkaufsrücksendung</td><td class="num">Umsatzerlöse an Forderungen</td></tr><tr><td>Nachträglicher Nachlass beim Einkauf</td><td class="num">Verbindlichkeiten an Wareneinkauf</td></tr></tbody></table></div><h3 id="k5-e3">Skonto — der teuerste Kredit der Welt</h3><p class="rein"><button class="begriff" data-art="Begriff" data-titel="Skonto" data-text="Ein Preisnachlass für schnelle Zahlung, typisch zwei Prozent innerhalb von zehn Tagen. Er entsteht erst im Moment der Zahlung und wird separat gebucht.">Skonto</button> entsteht erst im Moment der Zahlung — vorher weiß niemand, ob die Frist genutzt wird. Deshalb wird die ursprüngliche Buchung nicht korrigiert, sondern die Differenz separat erfasst. <mark>Beim Einkauf spart der Betrieb Geld, das ist ein Ertrag. Beim Verkauf verliert er welches, das ist ein Aufwand.</mark></p><div class="tab-huelle rein"><table><thead><tr><th>Fall</th><th>Ausgangslage</th><th>Buchung bei Zahlung</th></tr></thead><tbody><tr class="klappbar"><td>Einkaufsskonto</td><td>Verbindlichkeit 1.000 €, 2 % Skonto</td><td class="num">Verbindlichkeiten 1.000 € an Bank 980 € + Skontoertrag 20 €</td></tr><tr class="detail"><td colspan="3"><strong>Was hier passiert:</strong> Die Schuld war 1.000 € und verschwindet vollständig — deshalb steht sie voll im Soll. Überwiesen werden aber nur 980 €. Die Lücke von 20 € ist ein wirtschaftlicher Vorteil und wird als Ertrag gebucht.</td></tr><tr class="klappbar"><td>Verkaufsskonto</td><td>Forderung 2.000 €, 2 % Skonto</td><td class="num">Bank 1.960 € + Skontoaufwand 40 € an Forderungen 2.000 €</td></tr><tr class="detail"><td colspan="3"><strong>Spiegelbildlich:</strong> Die Forderung von 2.000 € verschwindet vollständig, eingegangen sind nur 1.960 €. Die Differenz ist ein Verlust und wird als Aufwand gebucht.</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k5-e3-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Einkauf → Skonto<strong>ertrag</strong>. Verkauf → Skonto<strong>aufwand</strong>. Eselsbrücke: Wer einkauft, verdient am Skonto. Wer verkauft, bezahlt dafür.</p>
+      <button class="dreher" data-karte="buchfuehrung-k5-e3-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Ist Skonto beim Einkauf ein Ertrag oder ein Aufwand — und warum?</p>
+      <button class="dreher" data-karte="buchfuehrung-k5-e3-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><div class="check rein" id="buchfuehrung-k5-e3-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Eine Rechnung über 2.000 € bietet „2 % Skonto bei Zahlung in 10 Tagen, sonst 30 Tage netto“. Lohnt es sich, den Skonto zu ziehen?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Der Prozentsatz täuscht, weil er sich auf nur 20 Tage bezieht. Rechnet man ihn aufs Jahr hoch, liegt er weit über jedem Kontokorrentzins.">Nein, 2 % sind zu wenig</button><button class="opt" data-richtig="1" data-echo="Richtig. 2 % für 20 Tage früher zahlen entspricht rund 36 % Jahreszins (2 % × 360 ÷ 20). Selbst ein teurer Bankkredit ist günstiger — deshalb lohnt sich Skonto fast immer, notfalls über den Dispo.">Ja, das entspricht etwa 36 % Zins pro Jahr</button><button class="opt" data-richtig="" data-echo="Die Höhe spielt keine Rolle. Der Vorteil ist prozentual und damit bei jedem Betrag gleich groß.">Nur bei Beträgen über 10.000 €</button></div><p class="check-echo" role="status"></p></div><h3 id="k5-e4">Vorwärtskalkulation</h3><p class="rein">Die Handelskalkulation führt vom Listeneinkaufspreis zum Angebotspreis. Sie ist ein festes Schema, das man von oben nach unten durchrechnet. Der <button class="begriff" data-art="Begriff" data-titel="Einstandspreis" data-text="Was die Ware den Betrieb tatsächlich gekostet hat — nach allen Nachlässen und einschließlich der Bezugskosten. Er ist die Basis jeder Kalkulation.">Einstandspreis</button> ist die Nahtstelle: Alles darüber betrifft den Einkauf, alles darunter den Verkauf.</p><div class="sig rein" data-grafik="kalkulationsleiter"><script type="application/json">{"typ": "grafik", "variante": "kalkulationsleiter", "kopf": "Die Leiter", "titel": "Vom Einkaufspreis zum Angebotspreis", "lead": "Ändere die Prozentsätze und sieh zu, wie sich der Angebotspreis verschiebt. Unten kannst du auf Rückwärtskalkulation umschalten.", "richtungen": ["vorwaerts", "rueckwaerts"], "start": {"id": "lep", "name": "Listeneinkaufspreis", "wert": 500}, "stufen": [{"id": "lief-rabatt", "name": "Lieferantenrabatt", "art": "abzug", "satz": 20, "ergebnis": "Zieleinkaufspreis"}, {"id": "lief-skonto", "name": "Lieferantenskonto", "art": "abzug", "satz": 2, "ergebnis": "Bareinkaufspreis"}, {"id": "bezug", "name": "Bezugskosten", "art": "zuschlag-absolut", "betrag": 8, "ergebnis": "Einstandspreis", "marke": true}, {"id": "hkz", "name": "Handlungskostenzuschlag", "art": "aufschlag", "satz": 50, "ergebnis": "Selbstkosten"}, {"id": "gewinn", "name": "Gewinnzuschlag", "art": "aufschlag", "satz": 20, "ergebnis": "Barverkaufspreis"}, {"id": "kd-skonto", "name": "Kundenskonto", "art": "im-hundert", "satz": 4, "ergebnis": "Zielverkaufspreis"}, {"id": "kd-rabatt", "name": "Kundenrabatt", "art": "im-hundert", "satz": 25, "ergebnis": "Listenverkaufspreis"}], "regel": "Kundenskonto und Kundenrabatt werden „im Hundert“ aufgeschlagen, also dividiert statt multipliziert. Grund: Der Kunde zieht sie später vom Listenpreis ab — der muss also hoch genug sein, dass danach noch der Barverkaufspreis übrig bleibt.", "einheit": "€"}</script><div class="sig-kopf">Die Leiter</div><h4>Vom Einkaufspreis zum Angebotspreis</h4><p class="sig-lead">Ändere die Prozentsätze und sieh zu, wie sich der Angebotspreis verschiebt. Unten kannst du auf Rückwärtskalkulation umschalten.</p><div class="buehne"></div><p class="sig-regel">Kundenskonto und Kundenrabatt werden „im Hundert“ aufgeschlagen, also dividiert statt multipliziert. Grund: Der Kunde zieht sie später vom Listenpreis ab — der muss also hoch genug sein, dass danach noch der Barverkaufspreis übrig bleibt.</p></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Der häufigste Rechenfehler der ganzen Prüfung: Kundenrabatt mit 25 % aufschlagen statt durch 0,75 teilen. Beides klingt gleich, ergibt aber unterschiedliche Zahlen — und nur die Division führt zurück zum richtigen Barverkaufspreis.</p></div><h3 id="k5-e5">Rückwärtskalkulation</h3><p class="rein">Manchmal steht der Verkaufspreis fest, weil der Markt ihn vorgibt. Dann läuft dasselbe Schema rückwärts: Vom Listenverkaufspreis rechnet man nach oben und erfährt, wie teuer die Ware höchstens eingekauft werden darf, damit die Kalkulation noch aufgeht.</p><p class="rein">Technisch dreht sich dabei jede Rechenrichtung um: Aus Abzügen werden Aufschläge, aus „im Hundert“ wird „vom Hundert“. Das Schema selbst bleibt identisch — deshalb lohnt es sich, es einmal richtig zu lernen statt zweimal halb.</p><div class="zuordnen rein" id="buchfuehrung-k5-e5-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">Vorwärts oder rückwärts?</p><div class="zu-reihe" id="buchfuehrung-k5-e5-z1-1" data-loesung="Vorwärts"><span class="zu-text">Ein Lieferant nennt seinen Preis, gesucht ist unser Angebotspreis.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Vorwärts">Vorwärts</button><button class="zu-btn" data-w="Rückwärts">Rückwärts</button></span></div><div class="zu-reihe" id="buchfuehrung-k5-e5-z1-2" data-loesung="Rückwärts"><span class="zu-text">Der Konkurrent verlangt 89 €, wir wollen mithalten.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Vorwärts">Vorwärts</button><button class="zu-btn" data-w="Rückwärts">Rückwärts</button></span></div><div class="zu-reihe" id="buchfuehrung-k5-e5-z1-3" data-loesung="Rückwärts"><span class="zu-text">Gesucht ist der höchstzulässige Einstandspreis.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Vorwärts">Vorwärts</button><button class="zu-btn" data-w="Rückwärts">Rückwärts</button></span></div><div class="zu-reihe" id="buchfuehrung-k5-e5-z1-4" data-loesung="Vorwärts"><span class="zu-text">Der Einstandspreis steht fest, gesucht sind die Selbstkosten.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Vorwärts">Vorwärts</button><button class="zu-btn" data-w="Rückwärts">Rückwärts</button></span></div></div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Schreib das Schema in der Prüfung zuerst leer untereinander, bevor du rechnest — alle acht Zeilen. Dann trägst du ein, was gegeben ist, und siehst sofort, in welche Richtung du arbeiten musst. Das kostet dreißig Sekunden und verhindert den teuersten Fehler: in der falschen Richtung loszurechnen.</p></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K5</div>
+        <ul><li>Wareneinkauf = Aufwandskonto, Umsatzerlöse = Ertragskonto. Beide werden getrennt geführt.</li><li>Bezugskosten erhöhen den Einstandspreis, Rabatte mindern ihn.</li><li>Rabatt wird nicht separat gebucht — es wird nur der geminderte Betrag erfasst.</li><li>Skonto wird separat gebucht, erst im Moment der Zahlung.</li><li>Einkaufsskonto = Skontoertrag. Verkaufsskonto = Skontoaufwand.</li><li>Skonto ziehen lohnt fast immer: 2 % bei 20 Tagen entsprechen etwa 36 % Jahreszins.</li><li>Kalkulation: Einstandspreis ist die Basis; Kundenskonto und -rabatt werden im Hundert gerechnet.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/5 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="buchfuehrung-k5-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k5-t1-f">Was ist der Unterschied zwischen Rabatt und Skonto?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k5-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Der Rabatt ist ein sofortiger Preisnachlass beim Kauf. Er mindert den Rechnungsbetrag direkt und wird nicht separat gebucht — es wird von vornherein nur der geminderte Betrag erfasst. Skonto ist ein Nachlass für schnelle Zahlung. Er entsteht erst im Moment der Zahlung, weil vorher nicht feststeht, ob die Frist genutzt wird, und wird separat als Skontoertrag oder Skontoaufwand gebucht.</p></div>
+</div><div class="frage" id="buchfuehrung-k5-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k5-t2-f">Warum ist Einkaufsskonto ein Ertrag und Verkaufsskonto ein Aufwand?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k5-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Beim Einkaufsskonto zahlt der Betrieb weniger, als er laut Verbindlichkeit schuldet — er behält Geld, das sonst abgeflossen wäre. Das ist ein wirtschaftlicher Vorteil, also ein Ertrag. Beim Verkaufsskonto erhält der Betrieb weniger, als seine Forderung betrug. Das ist ein Nachteil, also ein Aufwand.</p></div>
+</div><div class="frage" id="buchfuehrung-k5-t3">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k5-t3-f">Listenpreis 4.000 €, 5 % Rabatt, 100 € Frachtkosten. Berechne den Einstandspreis.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k5-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>4.000 € − 5 % (200 €) = 3.800 € Zieleinkaufspreis. Plus 100 € Bezugskosten = 3.900 € Einstandspreis.</p></div>
+</div><div class="frage" id="buchfuehrung-k5-t4">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k5-t4-f">Einstandspreis 600 €, Handlungskostenzuschlag 25 %, Gewinnzuschlag 20 %, kein Kundenskonto und kein Kundenrabatt. Wie hoch ist der Barverkaufspreis?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k5-t4-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Selbstkosten = 600 € + 25 % = 750 €. Barverkaufspreis = 750 € + 20 % = 900 €.</p></div>
+</div><div class="frage" id="buchfuehrung-k5-t5">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="buchfuehrung-k5-t5-f">Eine Verbindlichkeit von 2.000 € wird innerhalb der Skontofrist mit 2 % Skonto per Bank beglichen. Formuliere den Buchungssatz.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k5-t5-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Skontobetrag = 2 % von 2.000 € = 40 €. Überwiesen werden 1.960 €. Buchungssatz: Verbindlichkeiten LuL 2.000 € an Bank 1.960 € und Skontoertrag 40 €. Die Verbindlichkeit ist vollständig ausgeglichen, obwohl weniger geflossen ist.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Skonto-Buchungen kommen fast immer dran. Lerne die zwei Sätze wörtlich: Einkauf → Verbindlichkeiten an Bank plus Skontoertrag. Verkauf → Bank plus Skontoaufwand an Forderungen. Bei der Kalkulation gilt: Einstandspreis markieren, dann erst rechnen — er trennt Einkaufs- von Verkaufsseite.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K6 · Umsatzsteuer</b></div><button class="start" data-zu="k6">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k6" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K6<small>Kapitel</small></div>
+    <div>
+      <h2>Umsatzsteuer</h2>
+      <p>Durchlaufprinzip, Vorsteuer, Zahllast — und warum der Betrieb nur Kassierer ist.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/4 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="f1"><span class="haken"></span><span>Das Durchlaufprinzip der Umsatzsteuer erklären können</span></li><li data-fuer="f2"><span class="haken"></span><span>Vorsteuer und Umsatzsteuer als Konten korrekt einordnen</span></li><li data-fuer="f3"><span class="haken"></span><span>Buchungen mit Umsatzsteuer formulieren und die Zahllast berechnen</span></li><li data-fuer="f4"><span class="haken"></span><span>Die Kleinunternehmerregelung einordnen</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K6</b>Umsatzsteuer</aside>
+    <article class="inhalt">
+      <h3 id="k6-f1">Wer zahlt die Umsatzsteuer wirklich?</h3><p class="rein">Die Umsatzsteuer ist eine Verbrauchsteuer: Wirtschaftlich tragen soll sie der Endverbraucher. Unternehmen sind nur Inkassostelle — sie kassieren die Steuer vom Kunden, führen sie ab und holen sich die Steuer zurück, die sie selbst beim Einkauf gezahlt haben.</p><p class="rein">Das nennt man das <strong>Durchlaufprinzip</strong>. In einer Lieferkette zahlt jedes Glied Umsatzsteuer und bekommt <button class="begriff" data-art="Begriff" data-titel="Vorsteuer" data-text="Die Umsatzsteuer, die ein Betrieb beim Einkauf an seinen Lieferanten zahlt. Er bekommt sie vom Finanzamt zurück — sie ist eine Forderung und steht auf der Aktivseite.">Vorsteuer</button> erstattet. <mark>Übrig bleibt bei jedem nur die Steuer auf den eigenen Wertschöpfungsanteil</mark> — und am Ende der Kette steht jemand, der nichts zurückholen kann: der Privatkunde.</p><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k6-f1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Für den Betrieb ist die Umsatzsteuer ein durchlaufender Posten, kein Aufwand. Deshalb wird sie nie über die GuV gebucht, sondern immer über Bestandskonten.</p>
+      <button class="dreher" data-karte="buchfuehrung-k6-f1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Warum ist die Umsatzsteuer für einen Betrieb kein Aufwand?</p>
+      <button class="dreher" data-karte="buchfuehrung-k6-f1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><details class="vertiefung rein"><summary>Warum der Staat es so kompliziert macht</summary><div class="v-inhalt"><p>Weil eine einfache Endverbrauchersteuer schwer zu kontrollieren wäre: Der Staat müsste jedem einzelnen Ladengeschäft glauben, was es an Privatkunden verkauft hat.</p><p>Beim Durchlaufprinzip kontrolliert sich die Kette dagegen weitgehend selbst. Jeder Betrieb hat ein Interesse daran, dass sein Lieferant die Steuer korrekt ausweist — sonst bekommt er selbst keine Vorsteuer erstattet.</p></div></details><h3 id="k6-f2">Zwei Konten, zwei Richtungen</h3><div class="tab-huelle rein"><table><thead><tr><th></th><th>Vorsteuer</th><th>Umsatzsteuer</th></tr></thead><tbody><tr><td>Entsteht beim</td><td>Einkauf</td><td>Verkauf</td></tr><tr><td>Gegenüber dem Finanzamt</td><td>Forderung</td><td>Verbindlichkeit</td></tr><tr><td>In der Bilanz</td><td>Aktivseite</td><td>Passivseite</td></tr><tr class="klappbar"><td>Gebucht im</td><td class="num">Soll</td><td class="num">Haben</td></tr><tr class="detail"><td colspan="3"><strong>Das ist keine Extraregel:</strong> Die Vorsteuer ist ein Aktivkonto, und Aktivkonten wachsen im Soll — genau wie in K3. Die Umsatzsteuer ist ein Passivkonto und wächst im Haben. Wer K3 sitzen hat, muss hier nichts Neues lernen.</td></tr></tbody></table></div><p class="rein">In Deutschland gelten zwei Steuersätze: 19 % als Regelsatz und 7 % für bestimmte Grundgüter. Daneben gibt es steuerfreie Umsätze mit 0 %.</p><div class="tab-huelle rein"><table><thead><tr><th>Satz</th><th>Gilt für</th><th>Beispiele</th></tr></thead><tbody><tr><td class="num">19 %</td><td>alle übrigen Umsätze</td><td>Elektronik, Kleidung, Dienstleistungen</td></tr><tr><td class="num">7 %</td><td>bestimmte Grundgüter</td><td>Lebensmittel, Bücher, Zeitungen, ÖPNV</td></tr><tr><td class="num">0 %</td><td>gesetzlich befreite Umsätze</td><td>Ausfuhr, Arztleistungen, Wohnraummiete</td></tr></tbody></table></div><div class="check rein" id="buchfuehrung-k6-f2-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Ein Bruttobetrag von 1.190 € enthält 19 % Umsatzsteuer. Wie hoch ist der Nettobetrag?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Ein häufiger Fehler. Die 19 % beziehen sich auf den Nettobetrag, nicht auf den Bruttobetrag — deshalb darf man sie nicht einfach vom Brutto abziehen.">1.190 € − 19 % = 963,90 €</button><button class="opt" data-richtig="1" data-echo="Richtig. Der Bruttobetrag entspricht 119 % des Nettobetrags. Also teilt man durch 1,19. Die Steuer ist dann die Differenz: 1.190 − 1.000 = 190 €. Bei 7 % entsprechend durch 1,07.">1.190 € ÷ 1,19 = 1.000 €</button><button class="opt" data-richtig="" data-echo="Derselbe Denkfehler in anderer Form: Auch hier wird der Prozentsatz auf den falschen Grundwert bezogen. Bei Abzügen im Hundert wird immer dividiert.">1.190 € × 0,81 = 963,90 €</button></div><p class="check-echo" role="status"></p></div><h3 id="k6-f3">Buchen mit Umsatzsteuer</h3><p class="rein">Alle Warenbewegungen werden netto gebucht, die Steuer läuft über eigene Konten. Am Ende des Voranmeldungszeitraums stehen sich Umsatzsteuer und Vorsteuer gegenüber; die Differenz ist die <button class="begriff" data-art="Begriff" data-titel="Zahllast" data-text="Umsatzsteuer minus Vorsteuer. Ist sie positiv, zahlt der Betrieb ans Finanzamt; ist sie negativ, erstattet das Finanzamt.">Zahllast</button>.</p><div class="sig rein" data-grafik="t-konto"><script type="application/json">{"typ": "grafik", "variante": "t-konto", "kopf": "Buchen, live", "titel": "Ein Zyklus mit Umsatzsteuer", "lead": "Drei Vorfälle nacheinander: einkaufen, verkaufen, ans Finanzamt abführen.", "konten": [{"id": "waren", "name": "Wareneinkauf", "art": "aufwand", "ab": 0}, {"id": "vst", "name": "Vorsteuer", "art": "aktiv", "ab": 0}, {"id": "verb", "name": "Verbindlichkeiten LuL", "art": "passiv", "ab": 0}, {"id": "ford", "name": "Forderungen LuL", "art": "aktiv", "ab": 0}, {"id": "erloese", "name": "Umsatzerlöse", "art": "ertrag", "ab": 0}, {"id": "ust", "name": "Umsatzsteuer", "art": "passiv", "ab": 0}, {"id": "bank", "name": "Bank", "art": "aktiv", "ab": 20000}], "vorfaelle": [{"text": "Wareneinkauf auf Ziel: 1.000 € netto", "satz": "Wareneinkauf 1.000 € + Vorsteuer 190 € an Verbindlichkeiten LuL 1.190 €", "soll": [{"konto": "waren", "betrag": 1000}, {"konto": "vst", "betrag": 190}], "haben": [{"konto": "verb", "betrag": 1190}], "echo": "Die Ware kostet 1.000 €, geschuldet werden 1.190 €. Die Differenz ist keine Ausgabe, sondern eine Forderung ans Finanzamt — deshalb ein eigenes Aktivkonto."}, {"text": "Warenverkauf auf Ziel: 2.000 € netto", "satz": "Forderungen LuL 2.380 € an Umsatzerlöse 2.000 € + Umsatzsteuer 380 €", "soll": [{"konto": "ford", "betrag": 2380}], "haben": [{"konto": "erloese", "betrag": 2000}, {"konto": "ust", "betrag": 380}], "echo": "Der Kunde schuldet 2.380 €, verdient hat der Betrieb aber nur 2.000 €. Die 380 € gehören dem Finanzamt und stehen deshalb als Verbindlichkeit im Haben."}, {"text": "Zahllast ans Finanzamt überweisen", "satz": "Umsatzsteuer 380 € an Vorsteuer 190 € + Bank 190 €", "soll": [{"konto": "ust", "betrag": 380}], "haben": [{"konto": "vst", "betrag": 190}, {"konto": "bank", "betrag": 190}], "echo": "Zuerst wird die Vorsteuer gegen die Umsatzsteuer verrechnet, dann fließt der Rest. Beide Steuerkonten stehen danach auf null — genau so soll es sein."}], "regel": "Zahllast = Umsatzsteuer − Vorsteuer. Positiv heißt zahlen, negativ heißt Erstattung."}</script><div class="sig-kopf">Buchen, live</div><h4>Ein Zyklus mit Umsatzsteuer</h4><p class="sig-lead">Drei Vorfälle nacheinander: einkaufen, verkaufen, ans Finanzamt abführen.</p><div class="buehne"></div><p class="sig-regel">Zahllast = Umsatzsteuer − Vorsteuer. Positiv heißt zahlen, negativ heißt Erstattung.</p></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k6-f3-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Der Betrieb hat 2.380 € eingenommen und 1.190 € ausgegeben, aber nur 1.000 € verdient und 190 € ans Finanzamt abgeführt. Die Umsatzsteuer taucht im Ergebnis nirgends auf — sie ist durchgelaufen.</p>
+      <button class="dreher" data-karte="buchfuehrung-k6-f3-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Wie berechnet sich die Zahllast, und was bedeutet ein negativer Wert?</p>
+      <button class="dreher" data-karte="buchfuehrung-k6-f3-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k6-f4">Die Kleinunternehmerregelung</h3><p class="rein">Wer nur geringe Umsätze hat, ist nach <button class="par" data-art="Gesetzestext" data-titel="§ 19 UStG" data-text="Von einem im Inland ansässigen Unternehmer bewirkte Umsätze sind steuerfrei, wenn der Gesamtumsatz im vorangegangenen Kalenderjahr 25.000 Euro nicht überschritten hat und im laufenden Kalenderjahr 100.000 Euro nicht überschreitet.">§ 19 UStG</button> von der Umsatzsteuer befreit. Die Grenzen liegen seit 2025 bei <mark>25.000 Euro Vorjahresumsatz und 100.000 Euro im laufenden Jahr</mark>. Ein <button class="begriff" data-art="Begriff" data-titel="Kleinunternehmer" data-text="Ein Unternehmer, dessen Umsätze nach § 19 UStG steuerfrei sind: bis 25.000 Euro Vorjahresumsatz und 100.000 Euro im laufenden Jahr. Er weist keine Umsatzsteuer aus und kann im Gegenzug keine Vorsteuer geltend machen.">Kleinunternehmer</button> weist keine Umsatzsteuer aus, muss keine Voranmeldung abgeben — und bekommt im Gegenzug keine Vorsteuer erstattet.</p><div class="tab-huelle rein"><table><thead><tr><th></th><th>Kleinunternehmer</th><th>Regelbesteuerung</th></tr></thead><tbody><tr class="klappbar"><td>Umsatzgrenzen</td><td>25.000 € Vorjahr · 100.000 € laufendes Jahr</td><td>keine — Regelbesteuerung ab dem ersten Euro</td></tr><tr class="detail"><td colspan="3"><strong>Zwei Grenzen, zwei Wirkungen:</strong> Die 25.000 Euro betreffen den Vorjahresumsatz — wird sie überschritten, wechselt man zum 1. Januar in die Regelbesteuerung. Die 100.000 Euro gelten für das laufende Jahr und sind seit 2025 <strong>keine Prognose mehr</strong>: Schon der Umsatz, mit dem die Grenze überschritten wird, unterliegt in voller Höhe der Umsatzsteuer.</td></tr><tr><td>Umsatzsteuer auf Rechnungen</td><td>nein</td><td>ja</td></tr><tr><td>Vorsteuerabzug</td><td>nein</td><td>ja</td></tr><tr class="klappbar"><td>Vorteil</td><td>weniger Bürokratie, günstiger für Privatkunden</td><td>Vorsteuererstattung möglich</td></tr><tr class="detail"><td colspan="3"><strong>Wann sich was lohnt:</strong> Wer überwiegend an Privatkunden verkauft und wenig einkauft, fährt als Kleinunternehmer besser — sein Preis wirkt für den Kunden günstiger. Wer viel investiert oder an andere Unternehmen verkauft, verzichtet auf die Regelung, weil die Vorsteuererstattung mehr wert ist.</td></tr><tr><td>Nachteil</td><td>höhere Einkaufskosten</td><td>monatliche oder vierteljährliche Voranmeldung</td></tr></tbody></table></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Ein Kleinunternehmer darf <strong>keine</strong> Umsatzsteuer auf Rechnungen ausweisen. Tut er es trotzdem, schuldet er den ausgewiesenen Betrag dem Finanzamt — ohne dafür Vorsteuer abziehen zu dürfen. Seit 2025 sind seine Umsätze zudem echt <strong>steuerfrei</strong> und nicht mehr nur „nicht erhoben“; auf der Rechnung braucht es deshalb einen Hinweis auf die Steuerbefreiung.</p></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K6</div>
+        <ul><li>Durchlaufprinzip: Der Betrieb kassiert und führt ab — wirtschaftlich trägt der Endverbraucher die Steuer.</li><li>Vorsteuer entsteht beim Einkauf, ist eine Forderung ans Finanzamt und wird im Soll gebucht.</li><li>Umsatzsteuer entsteht beim Verkauf, ist eine Verbindlichkeit und wird im Haben gebucht.</li><li>Steuersätze: 19 % Regelsatz, 7 % ermäßigt, 0 % steuerfrei.</li><li>Netto aus Brutto: durch 1,19 teilen — niemals 19 % vom Brutto abziehen.</li><li>Zahllast = Umsatzsteuer − Vorsteuer. Positiv: zahlen. Negativ: Erstattung.</li><li><button class="par" data-art="Gesetzestext" data-titel="§ 19 UStG" data-text="Von einem im Inland ansässigen Unternehmer bewirkte Umsätze sind steuerfrei, wenn der Gesamtumsatz im vorangegangenen Kalenderjahr 25.000 Euro nicht überschritten hat und im laufenden Kalenderjahr 100.000 Euro nicht überschreitet.">§ 19 UStG</button>: Kleinunternehmer bis 25.000 € Vorjahres- und 100.000 € Jahresumsatz — steuerfrei, ohne Vorsteuerabzug.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/4 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="buchfuehrung-k6-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k6-t1-f">Erkläre das Durchlaufprinzip. Warum ist der Betrieb kein echter Steuerzahler?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k6-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Der Betrieb kassiert die Umsatzsteuer von seinen Kunden und führt sie ans Finanzamt ab. Gleichzeitig bekommt er die beim Einkauf gezahlte Vorsteuer erstattet. Per Saldo zahlt er nur die Steuer auf seinen eigenen Wertschöpfungsanteil. Wirtschaftlich belastet ist der Endverbraucher, weil er als Einziger keinen Vorsteuerabzug geltend machen kann.</p></div>
+</div><div class="frage" id="buchfuehrung-k6-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k6-t2-f">Wo stehen Vorsteuer und Umsatzsteuer in der Bilanz und warum?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k6-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Die Vorsteuer ist eine Forderung gegenüber dem Finanzamt und steht daher auf der Aktivseite; sie wird als Aktivkonto im Soll gebucht. Die Umsatzsteuer ist eine Verbindlichkeit gegenüber dem Finanzamt und steht auf der Passivseite; sie wird als Passivkonto im Haben gebucht.</p></div>
+</div><div class="frage" id="buchfuehrung-k6-t3">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k6-t3-f">Verkäufe netto 8.000 €, Einkäufe netto 5.000 €, jeweils 19 %. Berechne Umsatzsteuer, Vorsteuer und Zahllast.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k6-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Umsatzsteuer = 8.000 × 19 % = 1.520 €. Vorsteuer = 5.000 × 19 % = 950 €. Zahllast = 1.520 − 950 = 570 €. Dieser Betrag wird ans Finanzamt überwiesen.</p></div>
+</div><div class="frage" id="buchfuehrung-k6-t4">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="buchfuehrung-k6-t4-f">Ein Betrieb kauft Waren für 3.000 € netto auf Ziel. Formuliere den Buchungssatz mit 19 % Umsatzsteuer.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k6-t4-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Wareneinkauf 3.000 € und Vorsteuer 570 € an Verbindlichkeiten LuL 3.570 €. Der Wareneinkauf erfasst nur den Nettobetrag, weil nur er wirtschaftlich Aufwand ist. Die 570 € Vorsteuer sind eine Forderung ans Finanzamt und werden separat im Soll gebucht.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Die beiden Buchungssätze auswendig: Einkauf → Wareneinkauf plus Vorsteuer an Verbindlichkeiten. Verkauf → Forderungen an Umsatzerlöse plus Umsatzsteuer. Und beim Rechnen: aus Brutto wird Netto durch Division, nie durch Prozentabzug.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K7 · Personalkosten &amp; Gehaltsbuchung</b></div><button class="start" data-zu="k7">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k7" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K7<small>Kapitel</small></div>
+    <div>
+      <h2>Personalkosten &amp; Gehaltsbuchung</h2>
+      <p>Vom Bruttolohn zum Nettolohn — und warum ein Gehalt den Betrieb mehr kostet, als draufsteht.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/3 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="g1"><span class="haken"></span><span>Bruttolohn und Nettolohn unterscheiden und die Abzüge benennen</span></li><li data-fuer="g2"><span class="haken"></span><span>Arbeitnehmer- und Arbeitgeberanteile zur Sozialversicherung einordnen</span></li><li data-fuer="g3"><span class="haken"></span><span>Eine vollständige Gehaltsbuchung formulieren</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K7</b>Personalkosten &amp; Gehaltsbuchung</aside>
+    <article class="inhalt">
+      <h3 id="k7-g1">Vom Brutto zum Netto</h3><p class="rein">Der <button class="begriff" data-art="Begriff" data-titel="Bruttolohn" data-text="Das im Arbeitsvertrag vereinbarte Gehalt, bevor Steuern und Sozialabgaben abgezogen werden. Für den Betrieb ist es noch nicht der volle Kostenbetrag.">Bruttolohn</button> steht im Arbeitsvertrag. Was davon ankommt, ist der <button class="begriff" data-art="Begriff" data-titel="Nettolohn" data-text="Was tatsächlich auf dem Konto des Arbeitnehmers ankommt: Brutto abzüglich Lohnsteuer, Solidaritätszuschlag, gegebenenfalls Kirchensteuer und der Arbeitnehmeranteile zur Sozialversicherung.">Nettolohn</button> — dazwischen liegen Steuern und der Arbeitnehmeranteil zur Sozialversicherung. Die Rechnung ist eine reine Abzugsleiter, genau wie die Kalkulation aus K5, nur in eine Richtung.</p><div class="sig rein" data-grafik="kalkulationsleiter"><script type="application/json">{"typ": "grafik", "variante": "kalkulationsleiter", "kopf": "Die Abzugsleiter", "titel": "Bruttogehalt 3.000 €", "lead": "Ändere das Bruttogehalt oder die Sätze und sieh, was unten ankommt.", "richtungen": ["vorwaerts"], "start": {"id": "brutto", "name": "Bruttolohn", "wert": 3000}, "stufen": [{"id": "lst", "name": "Lohnsteuer", "art": "abzug", "satz": 15, "ergebnis": "nach Lohnsteuer"}, {"id": "solz", "name": "Solidaritätszuschlag", "art": "abzug-von", "basis": "lst", "satz": 5.5, "ergebnis": "nach SolZ"}, {"id": "kist", "name": "Kirchensteuer", "art": "abzug-von", "basis": "lst", "satz": 9, "ergebnis": "nach Kirchensteuer"}, {"id": "kv", "name": "AN-Anteil Krankenversicherung (inkl. Zusatzbeitrag)", "art": "abzug-vom-start", "satz": 8.75, "ergebnis": "nach KV"}, {"id": "rv", "name": "AN-Anteil Rentenversicherung", "art": "abzug-vom-start", "satz": 9.3, "ergebnis": "nach RV"}, {"id": "av", "name": "AN-Anteil Arbeitslosenversicherung", "art": "abzug-vom-start", "satz": 1.3, "ergebnis": "nach AV"}, {"id": "pv", "name": "AN-Anteil Pflegeversicherung", "art": "abzug-vom-start", "satz": 1.9, "ergebnis": "Nettolohn", "marke": true}], "regel": "Sozialversicherungsanteile werden immer vom Bruttolohn berechnet, nicht vom bereits geminderten Betrag. Solidaritätszuschlag und Kirchensteuer dagegen von der Lohnsteuer. Sätze 2026: Krankenversicherung 14,6 % plus durchschnittlich 2,9 % Zusatzbeitrag, Rentenversicherung 18,6 %, Arbeitslosenversicherung 2,6 %, Pflegeversicherung 3,6 % — jeweils zur Hälfte getragen.", "einheit": "€"}</script><div class="sig-kopf">Die Abzugsleiter</div><h4>Bruttogehalt 3.000 €</h4><p class="sig-lead">Ändere das Bruttogehalt oder die Sätze und sieh, was unten ankommt.</p><div class="buehne"></div><p class="sig-regel">Sozialversicherungsanteile werden immer vom Bruttolohn berechnet, nicht vom bereits geminderten Betrag. Solidaritätszuschlag und Kirchensteuer dagegen von der Lohnsteuer. Sätze 2026: Krankenversicherung 14,6 % plus durchschnittlich 2,9 % Zusatzbeitrag, Rentenversicherung 18,6 %, Arbeitslosenversicherung 2,6 %, Pflegeversicherung 3,6 % — jeweils zur Hälfte getragen.</p></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k7-g1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Brutto − Lohnsteuer − Solidaritätszuschlag − Kirchensteuer − Arbeitnehmeranteile Sozialversicherung = Netto. Der Solidaritätszuschlag und die Kirchensteuer werden nicht vom Brutto berechnet, sondern von der Lohnsteuer.</p>
+      <button class="dreher" data-karte="buchfuehrung-k7-g1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Aus welchen Bestandteilen setzt sich der Weg vom Brutto- zum Nettolohn zusammen?</p>
+      <button class="dreher" data-karte="buchfuehrung-k7-g1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k7-g2">Was der Betrieb zusätzlich zahlt</h3><p class="rein">Der Bruttolohn ist nicht das Ende der Rechnung. Der <button class="begriff" data-art="Begriff" data-titel="Arbeitgeberanteil" data-text="Der Beitrag zur Sozialversicherung, den der Betrieb zusätzlich zum Bruttolohn zahlt. Er wird nicht abgezogen, sondern kommt obendrauf — rund 20 Prozent des Bruttolohns.">Arbeitgeberanteil</button> zur <button class="begriff" data-art="Begriff" data-titel="Sozialversicherung" data-text="Fünf Zweige: Kranken-, Renten-, Arbeitslosen-, Pflege- und Unfallversicherung. Die ersten vier teilen sich Arbeitnehmer und Arbeitgeber, die Unfallversicherung trägt der Arbeitgeber allein.">Sozialversicherung</button> kommt obendrauf — er wird nicht abgezogen, sondern zusätzlich gezahlt. <mark>Die echten Personalkosten sind Bruttolohn plus Arbeitgeberanteil</mark>, also rund 121 % des vereinbarten Gehalts.</p><div class="tab-huelle rein"><table><thead><tr><th>Zweig</th><th>Beitragssatz 2026</th><th>Arbeitnehmer</th><th>Arbeitgeber</th></tr></thead><tbody><tr><td>Krankenversicherung</td><td class="num">14,6 % + 2,9 % Zusatzbeitrag</td><td class="num">8,75 %</td><td class="num">8,75 %</td></tr><tr><td>Rentenversicherung</td><td class="num">18,6 %</td><td class="num">9,3 %</td><td class="num">9,3 %</td></tr><tr><td>Arbeitslosenversicherung</td><td class="num">2,6 %</td><td class="num">1,3 %</td><td class="num">1,3 %</td></tr><tr class="klappbar"><td>Pflegeversicherung</td><td class="num">3,6 %</td><td class="num">1,9 %</td><td class="num">1,7 %</td></tr><tr class="detail"><td colspan="4"><strong>Der einzige Zweig ohne echte Halbierung.</strong> Der Arbeitgeberanteil liegt fest bei 1,7 Prozent, den Rest trägt der Arbeitnehmer. Kinderlose ab 23 Jahren zahlen einen Zuschlag von 0,6 Prozentpunkten, Eltern mit mehreren Kindern unter 25 bekommen Abschläge. In Sachsen gilt eine abweichende Aufteilung.</td></tr><tr class="klappbar"><td>Unfallversicherung</td><td>je nach Gefahrenklasse</td><td class="num">—</td><td class="num">vollständig</td></tr><tr class="detail"><td colspan="4"><strong>Warum die Unfallversicherung anders ist:</strong> Sie deckt Arbeitsunfälle und Berufskrankheiten ab, also ein Risiko aus dem Betrieb. Deshalb trägt ihn der Betrieb allein, und der Beitrag richtet sich nach der Gefahrenklasse der Branche.</td></tr></tbody></table></div><div class="check rein" id="buchfuehrung-k7-g2-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Ein Mitarbeiter verdient 3.000 € brutto, der Arbeitgeberanteil zur Sozialversicherung beträgt 631,50 €. Was kostet er den Betrieb?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Der Nettolohn ist nur der Teil, der beim Mitarbeiter ankommt. Steuern und Sozialabgaben zahlt der Betrieb ebenfalls — nur eben an Finanzamt und Krankenkasse statt an den Mitarbeiter.">1.847,25 €, also den Nettolohn</button><button class="opt" data-richtig="" data-echo="Fast. Der Bruttolohn deckt alles ab, was vom Gehalt abgezogen wird — aber nicht den Arbeitgeberanteil, der zusätzlich anfällt.">3.000 €, also den Bruttolohn</button><button class="opt" data-richtig="1" data-echo="Richtig. Für den Betrieb zählt der Gesamtaufwand. Bei jeder Kalkulation und jeder Stellenentscheidung ist das die Zahl, mit der gerechnet werden muss — nicht das Bruttogehalt.">3.631,50 €, also Brutto plus Arbeitgeberanteil</button></div><p class="check-echo" role="status"></p></div><h3 id="k7-g3">Die Gehaltsbuchung</h3><p class="rein">Gebucht wird in drei Schritten: erst das Bruttogehalt als Aufwand mit allen Abzügen als Verbindlichkeiten, dann der Arbeitgeberanteil als zusätzlicher Aufwand, dann die tatsächlichen Zahlungen. Wichtig: <mark>Der Betrieb bucht den vollen Bruttobetrag als Aufwand</mark>, obwohl er dem Mitarbeiter nur das Netto überweist.</p><div class="sig rein" data-grafik="t-konto"><script type="application/json">{"typ": "grafik", "variante": "t-konto", "kopf": "Buchen, live", "titel": "Gehalt 3.000 € brutto", "lead": "Lohnsteuer, Soli und Kirchensteuer 515,25 €, Arbeitnehmeranteil Sozialversicherung 637,50 €, Netto 1.847,25 €, Arbeitgeberanteil 631,50 €.", "konten": [{"id": "loehne", "name": "Löhne und Gehälter", "art": "aufwand", "ab": 0}, {"id": "soziale", "name": "Soziale Abgaben", "art": "aufwand", "ab": 0}, {"id": "vlst", "name": "Verbindlichkeiten Lohnsteuer", "art": "passiv", "ab": 0}, {"id": "vsv", "name": "Verbindlichkeiten Sozialversicherung", "art": "passiv", "ab": 0}, {"id": "vnetto", "name": "Verbindlichkeiten Nettolohn", "art": "passiv", "ab": 0}, {"id": "bank", "name": "Bank", "art": "aktiv", "ab": 10000}], "vorfaelle": [{"text": "Schritt 1 · Gehalt erfassen", "satz": "Löhne und Gehälter 3.000 € an Verbindlichkeiten Lohnsteuer 515,25 € + Verbindlichkeiten SV 637,50 € + Verbindlichkeiten Nettolohn 1.847,25 €", "soll": [{"konto": "loehne", "betrag": 3000}], "haben": [{"konto": "vlst", "betrag": 515.25}, {"konto": "vsv", "betrag": 637.5}, {"konto": "vnetto", "betrag": 1847.25}], "echo": "Der volle Bruttobetrag ist Aufwand. Er verteilt sich auf drei Verbindlichkeiten: gegenüber dem Finanzamt, der Krankenkasse und dem Mitarbeiter selbst. Gezahlt ist noch nichts."}, {"text": "Schritt 2 · Arbeitgeberanteil", "satz": "Soziale Abgaben 631,50 € an Verbindlichkeiten SV 631,50 €", "soll": [{"konto": "soziale", "betrag": 631.5}], "haben": [{"konto": "vsv", "betrag": 631.5}], "echo": "Ein eigener Aufwand, weil dieser Betrag nirgends vom Gehalt abgezogen wurde. Genau deshalb braucht er einen separaten Buchungssatz."}, {"text": "Schritt 3 · Auszahlungen", "satz": "Verbindlichkeiten Nettolohn 1.847,25 € + Verbindlichkeiten Lohnsteuer 515,25 € + Verbindlichkeiten SV 1.269,00 € an Bank 3.631,50 €", "soll": [{"konto": "vnetto", "betrag": 1847.25}, {"konto": "vlst", "betrag": 515.25}, {"konto": "vsv", "betrag": 1269.0}], "haben": [{"konto": "bank", "betrag": 3631.5}], "echo": "Jetzt fließt das Geld — an drei Empfänger. Vom Bankkonto gehen 3.631,50 € ab, obwohl der Mitarbeiter 1.847,25 € bekommt. Das ist der Gesamtaufwand aus dem Check oben."}], "regel": "Erst Aufwand und Verbindlichkeiten buchen, dann zahlen. Alle Verbindlichkeitskonten stehen danach wieder auf null."}</script><div class="sig-kopf">Buchen, live</div><h4>Gehalt 3.000 € brutto</h4><p class="sig-lead">Lohnsteuer, Soli und Kirchensteuer 515,25 €, Arbeitnehmeranteil Sozialversicherung 637,50 €, Netto 1.847,25 €, Arbeitgeberanteil 631,50 €.</p><div class="buehne"></div><p class="sig-regel">Erst Aufwand und Verbindlichkeiten buchen, dann zahlen. Alle Verbindlichkeitskonten stehen danach wieder auf null.</p></div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>In Prüfungsaufgaben sind die Zahlen fast immer vereinfacht vorgegeben — du musst keine Beitragssätze auswendig können. Was du können musst, ist die Struktur: drei Buchungen, und der Arbeitgeberanteil steht immer separat.</p></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K7</div>
+        <ul><li>Brutto − Lohnsteuer − SolZ − Kirchensteuer − AN-Anteile Sozialversicherung = Netto.</li><li>Sozialversicherungsanteile werden vom Bruttolohn berechnet; SolZ und Kirchensteuer von der Lohnsteuer.</li><li>Sätze 2026: KV 14,6 % + 2,9 % Zusatzbeitrag · RV 18,6 % · AV 2,6 % · PV 3,6 %.</li><li>Der Arbeitgeberanteil kommt obendrauf und liegt bei gut 21 % des Bruttolohns.</li><li>Echte Personalkosten = Bruttolohn + Arbeitgeberanteil.</li><li>Bei der Pflegeversicherung trägt der Arbeitgeber fest 1,7 %; die Unfallversicherung trägt er allein.</li><li>Buchung in drei Schritten: Bruttoaufwand mit Verbindlichkeiten, Arbeitgeberanteil, Auszahlungen.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/3 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="buchfuehrung-k7-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k7-t1-f">Warum ist der Arbeitgeber Schuldner der Lohnsteuer gegenüber dem Finanzamt?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k7-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Weil er gesetzlich verpflichtet ist, die Lohnsteuer vom Bruttolohn einzubehalten und selbst abzuführen. Der Arbeitnehmer zahlt sie nicht eigenständig — sie wird ihm bereits abgezogen, bevor er sein Geld erhält. Der Arbeitgeber haftet deshalb für die korrekte Berechnung und pünktliche Abführung.</p></div>
+</div><div class="frage" id="buchfuehrung-k7-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k7-t2-f">Was ist der Arbeitgeberanteil, und warum braucht er einen eigenen Buchungssatz?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k7-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Der Arbeitgeberanteil ist der Beitrag zur Sozialversicherung, den der Betrieb zusätzlich zum Bruttolohn zahlt — 2026 gut 21 Prozent. Weil er nicht vom Gehalt des Arbeitnehmers abgezogen wird, sondern obendrauf kommt, ist er ein eigenständiger Personalaufwand und wird separat gebucht: Soziale Abgaben an Verbindlichkeiten Sozialversicherung.</p></div>
+</div><div class="frage" id="buchfuehrung-k7-t3">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k7-t3-f">Bruttolohn 2.500 €, Lohnsteuer 300 €, Arbeitnehmeranteile Sozialversicherung 500 €, Arbeitgeberanteil 500 €. Wie hoch sind Nettolohn und Gesamtkosten?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k7-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Nettolohn = 2.500 − 300 − 500 = 1.700 €. Gesamtkosten für den Arbeitgeber = 2.500 + 500 = 3.000 €. Der Mitarbeiter erhält also 1.700 €, während der Betrieb 3.000 € aufwendet.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Zwei Formeln reichen: Brutto minus alle Abzüge gleich Netto, und Brutto plus Arbeitgeberanteil gleich Gesamtkosten. Wenn eine Aufgabe nach den Kosten für den Betrieb fragt, ist fast immer die zweite gemeint — das ist die Stelle, an der die meisten Punkte verloren gehen.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K8 · Anlagevermögen &amp; Abschreibungen</b></div><button class="start" data-zu="k8">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k8" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K8<small>Kapitel</small></div>
+    <div>
+      <h2>Anlagevermögen &amp; Abschreibungen</h2>
+      <p>GWG, lineare AfA, Buchwert — und was beim Verkauf eines Anlageguts passiert.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/3 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="h1"><span class="haken"></span><span>Erklären, warum Anlagevermögen abgeschrieben wird und Umlaufvermögen nicht</span></li><li data-fuer="h2"><span class="haken"></span><span>Die lineare Abschreibung berechnen und buchen, auch unterjährig</span></li><li data-fuer="h3"><span class="haken"></span><span>Den Anlagenabgang mit Buchgewinn oder Buchverlust behandeln</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K8</b>Anlagevermögen &amp; Abschreibungen</aside>
+    <article class="inhalt">
+      <h3 id="k8-h1">Warum überhaupt abschreiben?</h3><p class="rein"><button class="begriff" data-art="Begriff" data-titel="Anlagevermögen" data-text="Alles, was dem Betrieb dauerhaft dient — Nutzungsdauer länger als ein Jahr. Maschinen, Fahrzeuge, Gebäude, Software.">Anlagevermögen</button> wird über Jahre genutzt und verliert dabei an Wert — durch Verschleiß, Alterung und technischen Fortschritt. Diese Wertminderung heißt <button class="begriff" data-art="Begriff" data-titel="Abschreibung (AfA)" data-text="Absetzung für Abnutzung: die planmäßige Verteilung der Anschaffungskosten eines Anlageguts über seine Nutzungsdauer.">Abschreibung</button>. Beim <button class="begriff" data-art="Begriff" data-titel="Umlaufvermögen" data-text="Alles, was sich kurzfristig umschlägt: Waren werden verkauft, Forderungen werden bezahlt, das Bankkonto bewegt sich täglich.">Umlaufvermögen</button> entfällt sie, weil es sich innerhalb eines Jahres umschlägt.</p><p class="rein">Dahinter steht dieselbe Idee wie bei den Erfolgskonten in K4: <mark>Kosten gehören in das Jahr, in dem sie wirtschaftlich anfallen.</mark> Eine Maschine für 60.000 €, die sechs Jahre läuft, belastet nicht ein Jahr mit 60.000 €, sondern sechs Jahre mit je 10.000 €.</p><p class="rein">Für kleinere Anschaffungen gibt es eine Vereinfachung: <button class="begriff" data-art="Begriff" data-titel="Geringwertiges Wirtschaftsgut (GWG)" data-text="Ein abnutzbares Anlagegut mit geringen Netto-Anschaffungskosten, das im Jahr des Kaufs sofort vollständig abgeschrieben werden darf.">Geringwertige Wirtschaftsgüter</button> bis <mark>800 Euro netto</mark> dürfen im Jahr des Kaufs sofort vollständig abgeschrieben werden — unabhängig davon, wie lange sie tatsächlich halten. Bis 250 Euro geht das sogar ohne gesondertes Verzeichnis. Alternativ lassen sich Güter zwischen 250,01 und 1.000 Euro in einem Sammelposten bündeln und über fünf Jahre abschreiben.</p><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k8-h1-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Abschreibung ist Aufwand ohne Auszahlung. Das Geld ist beim Kauf abgeflossen; die Abschreibung verteilt diesen Betrag nur noch buchhalterisch über die Jahre.</p>
+      <button class="dreher" data-karte="buchfuehrung-k8-h1-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Warum ist eine Abschreibung Aufwand, obwohl kein Geld fließt?</p>
+      <button class="dreher" data-karte="buchfuehrung-k8-h1-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k8-h2">Lineare Abschreibung</h3><p class="rein">Die lineare Abschreibung verteilt die Anschaffungskosten gleichmäßig über die <button class="begriff" data-art="Begriff" data-titel="Nutzungsdauer" data-text="Die Zeitspanne, über die ein Anlagegut voraussichtlich genutzt wird. Für die meisten Güter ist sie in den AfA-Tabellen des Bundesfinanzministeriums festgelegt.">Nutzungsdauer</button>. Jedes Jahr derselbe Betrag, bis der <button class="begriff" data-art="Begriff" data-titel="Buchwert" data-text="Anschaffungskosten minus aller bisher gebuchten Abschreibungen. Der Wert, mit dem ein Anlagegut aktuell in der Bilanz steht.">Buchwert</button> bei null liegt. Die Formel ist der ganze Trick: <strong>Jahres-AfA = Anschaffungskosten ÷ Nutzungsdauer</strong>.</p><div class="tab-huelle rein"><table><thead><tr><th>Jahr</th><th>Jahres-AfA</th><th>Kumuliert</th><th>Buchwert</th></tr></thead><tbody><tr><td>Anschaffung</td><td class="num">—</td><td class="num">—</td><td class="num">2.400 €</td></tr><tr><td class="num">1</td><td class="num">800 €</td><td class="num">800 €</td><td class="num">1.600 €</td></tr><tr><td class="num">2</td><td class="num">800 €</td><td class="num">1.600 €</td><td class="num">800 €</td></tr><tr class="klappbar"><td class="num">3</td><td class="num">800 €</td><td class="num">2.400 €</td><td class="num">0 €</td></tr><tr class="detail"><td colspan="4"><strong>Und dann?</strong> Das Gerät ist buchhalterisch wertlos, steht aber vielleicht noch jahrelang im Betrieb. Manche Betriebe führen es mit einem Erinnerungswert von 1 € weiter, damit es nicht aus der Anlagenbuchhaltung verschwindet.</td></tr></tbody></table></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>Wird ein Gut mitten im Jahr angeschafft, wird im ersten Jahr nur anteilig abgeschrieben — pro angefangenem Monat ein Zwölftel. Ein Kauf am 1. Juli ergibt also 6/12 der Jahres-AfA. Das wird in Prüfungsaufgaben gern versteckt, indem einfach ein Datum genannt wird.</p></div><div class="check rein" id="buchfuehrung-k8-h2-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Ein Laptop für 1.200 € netto, Nutzungsdauer 3 Jahre, angeschafft am 1. Juli. Wie hoch ist die Abschreibung im ersten Jahr?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Das wäre die volle Jahresabschreibung. Sie gilt nur, wenn das Gut ab Januar im Betrieb ist — hier fehlt das halbe Jahr.">400 €</button><button class="opt" data-richtig="1" data-echo="Richtig. Jahres-AfA = 1.200 ÷ 3 = 400 €. Davon nur sechs Zwölftel für Juli bis Dezember: 400 × 6/12 = 200 €. In den Jahren 2 und 3 sind es je 400 €, im vierten Jahr die restlichen 200 €.">200 €</button><button class="opt" data-richtig="" data-echo="Sofortabschreibung gilt nur für geringwertige Wirtschaftsgüter bis 800 Euro netto. Ein Laptop für 1.200 Euro liegt darüber und wird deshalb über die Nutzungsdauer verteilt.">1.200 €</button></div><p class="check-echo" role="status"></p></div><h3 id="k8-h3">Wenn ein Anlagegut verkauft wird</h3><p class="rein">Beim Verkauf zählt nicht der ursprüngliche Preis, sondern der aktuelle <button class="begriff" data-art="Begriff" data-titel="Buchwert" data-text="Anschaffungskosten minus aller bisher gebuchten Abschreibungen. Der Wert, mit dem ein Anlagegut aktuell in der Bilanz steht.">Buchwert</button>. Liegt der Verkaufspreis darüber, entsteht ein <strong>Buchgewinn</strong> — ein sonstiger Ertrag. Liegt er darunter, ein <strong>Buchverlust</strong> als sonstiger Aufwand. <mark>Ausgebucht wird immer der Buchwert, nie die Anschaffungskosten.</mark></p><div class="sig rein" data-grafik="t-konto"><script type="application/json">{"typ": "grafik", "variante": "t-konto", "kopf": "Buchen, live", "titel": "Firmenwagen · AK 18.000 €, nach 4 Jahren", "lead": "Jährliche AfA 3.000 €, also Buchwert 6.000 €. Zwei Verkaufspreise, zwei Ergebnisse.", "konten": [{"id": "bank", "name": "Bank", "art": "aktiv", "ab": 12000}, {"id": "fuhrpark", "name": "Fuhrpark", "art": "aktiv", "ab": 6000}, {"id": "ertrag", "name": "Sonstige Erträge", "art": "ertrag", "ab": 0}, {"id": "aufwand", "name": "Sonstige Aufwendungen", "art": "aufwand", "ab": 0}, {"id": "afa", "name": "Abschreibungen", "art": "aufwand", "ab": 0}], "vorfaelle": [{"text": "Jahresabschreibung buchen, 3.000 €", "satz": "Abschreibungen 3.000 € an Fuhrpark 3.000 €", "soll": [{"konto": "afa", "betrag": 3000}], "haben": [{"konto": "fuhrpark", "betrag": 3000}], "echo": "Der Aufwand entsteht im Soll, das Anlagekonto sinkt im Haben. Nach dieser Buchung ist der Buchwert um 3.000 € kleiner."}, {"text": "Verkauf für 8.000 € — über Buchwert", "satz": "Bank 8.000 € an Fuhrpark 6.000 € + Sonstige Erträge 2.000 €", "soll": [{"konto": "bank", "betrag": 8000}], "haben": [{"konto": "fuhrpark", "betrag": 6000}, {"konto": "ertrag", "betrag": 2000}], "echo": "Buchgewinn von 2.000 €. Er bedeutet nicht, dass ein gutes Geschäft gemacht wurde — sondern dass in den Vorjahren zu viel abgeschrieben wurde."}, {"text": "Verkauf für 4.000 € — unter Buchwert", "satz": "Bank 4.000 € + Sonstige Aufwendungen 2.000 € an Fuhrpark 6.000 €", "soll": [{"konto": "bank", "betrag": 4000}, {"konto": "aufwand", "betrag": 2000}], "haben": [{"konto": "fuhrpark", "betrag": 6000}], "echo": "Buchverlust von 2.000 €. Das Anlagekonto wird in beiden Fällen mit demselben Betrag ausgebucht — dem Buchwert. Nur die Gegenseite unterscheidet sich."}], "regel": "Immer zuerst den Buchwert bestimmen: Anschaffungskosten minus kumulierte Abschreibungen. Erst danach mit dem Verkaufspreis vergleichen."}</script><div class="sig-kopf">Buchen, live</div><h4>Firmenwagen · AK 18.000 €, nach 4 Jahren</h4><p class="sig-lead">Jährliche AfA 3.000 €, also Buchwert 6.000 €. Zwei Verkaufspreise, zwei Ergebnisse.</p><div class="buehne"></div><p class="sig-regel">Immer zuerst den Buchwert bestimmen: Anschaffungskosten minus kumulierte Abschreibungen. Erst danach mit dem Verkaufspreis vergleichen.</p></div><div class="zuordnen rein" id="buchfuehrung-k8-h3-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">Buchgewinn oder Buchverlust?</p><div class="zu-reihe" id="buchfuehrung-k8-h3-z1-1" data-loesung="Buchgewinn"><span class="zu-text">Buchwert 6.000 €, Verkaufspreis 7.500 €.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Buchgewinn">Buchgewinn</button><button class="zu-btn" data-w="Buchverlust">Buchverlust</button></span></div><div class="zu-reihe" id="buchfuehrung-k8-h3-z1-2" data-loesung="Buchverlust"><span class="zu-text">Buchwert 12.000 €, Verkaufspreis 9.000 €.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Buchgewinn">Buchgewinn</button><button class="zu-btn" data-w="Buchverlust">Buchverlust</button></span></div><div class="zu-reihe" id="buchfuehrung-k8-h3-z1-3" data-loesung="Buchverlust"><span class="zu-text">AK 20.000 €, 3 Jahre à 4.000 € abgeschrieben, Verkauf für 10.000 €.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Buchgewinn">Buchgewinn</button><button class="zu-btn" data-w="Buchverlust">Buchverlust</button></span></div><div class="zu-reihe" id="buchfuehrung-k8-h3-z1-4" data-loesung="Buchgewinn"><span class="zu-text">AK 9.000 €, vollständig abgeschrieben, Verkauf für 500 €.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="Buchgewinn">Buchgewinn</button><button class="zu-btn" data-w="Buchverlust">Buchverlust</button></span></div></div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Rechne bei Verkaufsaufgaben immer in dieser Reihenfolge: kumulierte Abschreibung, dann Buchwert, dann Vergleich mit dem Verkaufspreis. Wer sofort auf den Preis schaut, verwechselt Buchwert und Anschaffungskosten — der häufigste Fehler in diesem Kapitel.</p></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K8</div>
+        <ul><li>Anlagevermögen wird abgeschrieben, Umlaufvermögen nicht.</li><li>Abschreibung ist Aufwand ohne Auszahlung — sie verteilt die Anschaffungskosten über die Jahre.</li><li>Lineare AfA = Anschaffungskosten ÷ Nutzungsdauer.</li><li>Unterjährige Anschaffung: anteilig, pro angefangenem Monat ein Zwölftel.</li><li>GWG bis 800 € netto dürfen im Kaufjahr sofort abgeschrieben werden; Sammelposten von 250,01 bis 1.000 €.</li><li>Buchwert = Anschaffungskosten − kumulierte Abschreibungen.</li><li>Verkauf über Buchwert = Buchgewinn (sonstiger Ertrag), darunter = Buchverlust (sonstiger Aufwand).</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/3 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="buchfuehrung-k8-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k8-t1-f">Warum wird Anlagevermögen abgeschrieben, Umlaufvermögen aber in der Regel nicht?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k8-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Anlagevermögen wird über mehrere Jahre genutzt und verliert dabei durch Abnutzung und Alterung an Wert. Diese Wertminderung muss erfasst werden, damit Gewinn und Bilanz das jeweilige Jahr korrekt abbilden. Umlaufvermögen wird innerhalb kurzer Zeit verbraucht oder verkauft und mit seinem aktuellen Wert bilanziert — eine planmäßige Verteilung über Jahre ergäbe keinen Sinn.</p></div>
+</div><div class="frage" id="buchfuehrung-k8-t2">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k8-t2-f">Firmenwagen für 18.000 € netto, Nutzungsdauer 6 Jahre, angeschafft am 1. Januar. Wie hoch ist die jährliche AfA und der Buchwert nach zwei Jahren?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k8-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Jährliche AfA = 18.000 ÷ 6 = 3.000 €. Nach Jahr 1: Buchwert 15.000 €. Nach Jahr 2: Buchwert 12.000 €. Buchungssatz jedes Jahr: Abschreibungen 3.000 € an Fuhrpark 3.000 €.</p></div>
+</div><div class="frage" id="buchfuehrung-k8-t3">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="buchfuehrung-k8-t3-f">Ein Firmenwagen mit Anschaffungskosten von 18.000 € wurde vier Jahre lang mit je 3.000 € abgeschrieben und nun für 7.500 € netto verkauft. Buchgewinn oder Buchverlust — und wie lautet der Buchungssatz?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k8-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Buchwert = 18.000 − 12.000 = 6.000 €. Der Verkaufspreis von 7.500 € liegt darüber, es entsteht ein Buchgewinn von 1.500 €. Buchungssatz: Bank 7.500 € an Fuhrpark 6.000 € und Sonstige Erträge 1.500 €.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Zwei Formeln: AfA = Anschaffungskosten ÷ Nutzungsdauer, und bei unterjähriger Anschaffung mal Monate durch zwölf. Beim Anlagenabgang zuerst den Buchwert ausrechnen — mit ihm wird ausgebucht, nicht mit den Anschaffungskosten.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Nächstes Kapitel<b>K9 · Jahresabschluss</b></div><button class="start" data-zu="k9">Weiter<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel" id="k9" hidden>
+  <div class="kapitel-auftakt">
+    <div class="kapitel-nr">K9<small>Kapitel</small></div>
+    <div>
+      <h2>Jahresabschluss</h2>
+      <p>Abschlussschritte, Rückstellungen und Rechnungsabgrenzung — das Jahr sauber zumachen.</p>
+    </div>
+  </div>
+
+  <div class="ziele">
+    <div></div>
+    <div class="ziele-box">
+      <div class="ziele-kopf"><span>Lernziele</span>
+        <span class="ziele-zahl"><b>0</b>/3 erreicht</span></div>
+      <ul class="ziele-liste"><li data-fuer="i1"><span class="haken"></span><span>Die Abschlussschritte in der richtigen Reihenfolge durchführen</span></li><li data-fuer="i2"><span class="haken"></span><span>Rückstellungen bilden und auflösen</span></li><li data-fuer="i3"><span class="haken"></span><span>Aktive und passive Rechnungsabgrenzungsposten unterscheiden und buchen</span></li></ul>
+    </div>
+  </div>
+
+  <div class="lauf">
+    <aside class="lauf-rand"><b>K9</b>Jahresabschluss</aside>
+    <article class="inhalt">
+      <h3 id="k9-i1">Die Reihenfolge des Abschlusses</h3><p class="rein">In K4 ging es um die Abschlusskette der Konten. Der vollständige Jahresabschluss hat einen Schritt davor: die Inventur aus K1. Erst wenn feststeht, was tatsächlich vorhanden ist, kann korrigiert und abgeschlossen werden.</p><div class="sig rein" data-grafik="kette"><script type="application/json">{"typ": "grafik", "variante": "kette", "kopf": "Fünf Schritte, feste Folge", "titel": "Der Jahresabschluss", "lead": "Jeder Schritt setzt den vorherigen voraus. Klick dich durch.", "schritte": [{"nr": 1, "titel": "Inventur", "satz": "keine Buchung", "text": "Körperliche und buchmäßige Bestandsaufnahme. Erst danach ist bekannt, was wirklich da ist."}, {"nr": 2, "titel": "Korrekturbuchungen", "satz": "AfA · Rückstellungen · RAP", "text": "Abschreibungen aus K8, Rückstellungen und Rechnungsabgrenzung. Alles, was das Ergebnis noch verändert, passiert jetzt."}, {"nr": 3, "titel": "Erfolgskonten über GuV", "satz": "GuV an Aufwand · Ertrag an GuV", "text": "Wie in K4: Aufwendungen ins Soll der GuV, Erträge ins Haben."}, {"nr": 4, "titel": "Ergebnis ins Eigenkapital", "satz": "GuV an Eigenkapital", "text": "Der Jahreserfolg wandert ins Eigenkapital. Erst jetzt steht dessen endgültiger Stand fest."}, {"nr": 5, "titel": "Bestandskonten über SBK", "satz": "SBK an Aktivkonto · Passivkonto an SBK", "text": "Zum Schluss alle Bestandskonten ins Schlussbilanzkonto. Das Ergebnis ist die Schlussbilanz."}], "regel": "Korrekturbuchungen immer vor dem Abschluss der Erfolgskonten. Wer erst abschließt und dann korrigiert, muss von vorn anfangen."}</script><div class="sig-kopf">Fünf Schritte, feste Folge</div><h4>Der Jahresabschluss</h4><p class="sig-lead">Jeder Schritt setzt den vorherigen voraus. Klick dich durch.</p><div class="buehne"></div><p class="sig-regel">Korrekturbuchungen immer vor dem Abschluss der Erfolgskonten. Wer erst abschließt und dann korrigiert, muss von vorn anfangen.</p></div><div class="box achtung rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><path d="M6.5 1 12 11.5H1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 5v3" stroke="currentColor" stroke-width="1.4"/></svg>Achtung</div><p>In der Prüfung wird häufig nicht nach dem Buchungssatz gefragt, sondern nach der Reihenfolge: „Welcher Schritt kommt zuerst?“ Die Antwort ist fast immer die Inventur — und der zweithäufigste Fehler ist, die Korrekturbuchungen zu vergessen.</p></div><h3 id="k9-i2">Rückstellungen</h3><p class="rein">Eine <button class="begriff" data-art="Begriff" data-titel="Rückstellung" data-text="Eine Schuld, die dem Grunde nach entstanden ist, bei der aber Höhe oder Zeitpunkt noch ungewiss sind — etwa offene Urlaubstage oder ein laufender Prozess.">Rückstellung</button> erfasst eine Verpflichtung, die wirtschaftlich schon zum laufenden Jahr gehört, deren Höhe oder Zeitpunkt aber noch offen ist. Das Vorsichtsprinzip aus K1 verlangt genau das: <mark>Drohende Belastungen werden gebucht, sobald sie absehbar sind</mark> — nicht erst, wenn sie eintreten.</p><div class="tab-huelle rein"><table><thead><tr><th>Art</th><th>Anlass</th><th>Was ungewiss ist</th></tr></thead><tbody><tr><td>Urlaubsrückstellung</td><td>offene Urlaubstage zum 31.12.</td><td>Zeitpunkt und genaue Kosten</td></tr><tr><td>Steuerrückstellung</td><td>erwartete Nachzahlung</td><td>die Höhe</td></tr><tr><td>Prozesskostenrückstellung</td><td>laufender Rechtsstreit</td><td>Ausgang und Höhe</td></tr><tr class="klappbar"><td>Gewährleistungsrückstellung</td><td>erfahrungsgemäße Garantiefälle</td><td>ob und in welcher Höhe</td></tr><tr class="detail"><td colspan="3"><strong>Wie schätzt man das?</strong> Über Erfahrungswerte: Wenn erfahrungsgemäß 2 % des Jahresumsatzes als Garantiefall zurückkommen, wird dieser Anteil zurückgestellt. Die Schätzung muss nachvollziehbar sein — willkürliche Beträge erkennt jede Betriebsprüfung.</td></tr></tbody></table></div><div class="tab-huelle rein"><table><thead><tr><th>Vorgang</th><th>Buchungssatz</th></tr></thead><tbody><tr><td>Rückstellung bilden (5.000 €)</td><td class="num">Rückstellungsaufwand 5.000 € an Rückstellungen 5.000 €</td></tr><tr><td>Auflösung, tatsächlich 4.800 €</td><td class="num">Rückstellungen 5.000 € an Bank 4.800 € + Sonstige Erträge 200 €</td></tr><tr><td>Auflösung, tatsächlich 5.300 €</td><td class="num">Rückstellungen 5.000 € + Sonstiger Aufwand 300 € an Bank 5.300 €</td></tr></tbody></table></div><div class="karte-huelle rein">
+  <div class="karte" id="buchfuehrung-k9-i2-m1">
+    <div class="seite vorder">
+      <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><rect x="1" y="1" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(45 6.5 6.5)"/></svg>Merke</div>
+      <p>Rückstellung und Verbindlichkeit unterscheiden sich nur in einem Punkt: der Gewissheit. Steht der Betrag fest und ist die Fälligkeit bekannt, ist es eine <button class="begriff" data-art="Begriff" data-titel="Verbindlichkeit" data-text="Eine sichere Schuld: Betrag und Fälligkeit stehen fest. Eine unbezahlte Lieferantenrechnung über 1.000 €, fällig am 30.06.">Verbindlichkeit</button>. Sonst eine Rückstellung.</p>
+      <button class="dreher" data-karte="buchfuehrung-k9-i2-m1">Abfragen</button>
+    </div>
+    <div class="seite rueck">
+      <div class="bk">Karteikarte</div>
+      <p>Woran erkennst du, ob ein Sachverhalt eine Rückstellung oder eine Verbindlichkeit ist?</p>
+      <button class="dreher" data-karte="buchfuehrung-k9-i2-m1">Umdrehen</button>
+    </div>
+  </div>
+</div><h3 id="k9-i3">Rechnungsabgrenzung</h3><p class="rein">Zahlungen und Leistungen fallen nicht immer ins gleiche Jahr. Die <button class="begriff" data-art="Begriff" data-titel="Periodengerechte Zuordnung" data-text="Aufwendungen und Erträge gehören in das Geschäftsjahr, zu dem sie wirtschaftlich zählen — unabhängig davon, wann gezahlt wurde.">periodengerechte Zuordnung</button> verlangt, dass Aufwand und Ertrag dorthin gehören, wo sie wirtschaftlich hingehören. Dafür gibt es zwei Posten — und man verwechselt sie nur, solange man sie sich nicht an einem Beispiel merkt.</p><div class="tab-huelle rein"><table><thead><tr><th>Posten</th><th>Situation</th><th>Beispiel</th><th>Buchung am 31.12.</th></tr></thead><tbody><tr class="klappbar"><td>ARAP</td><td>Ausgabe jetzt, Aufwand nächstes Jahr</td><td>Jahresversicherung im Dezember gezahlt</td><td class="num">ARAP an Versicherungsaufwand</td></tr><tr class="detail"><td colspan="4"><strong>Warum aktiv?</strong> Der Betrieb hat bezahlt und bekommt die Leistung erst noch — er hat also eine Art Anspruch. Ansprüche stehen links, auf der Aktivseite.</td></tr><tr class="klappbar"><td>PRAP</td><td>Einnahme jetzt, Ertrag nächstes Jahr</td><td>Januarmiete im Dezember erhalten</td><td class="num">Mietertrag an PRAP</td></tr><tr class="detail"><td colspan="4"><strong>Warum passiv?</strong> Der Betrieb hat Geld bekommen und muss die Leistung erst noch erbringen — das ist eine Verpflichtung. Verpflichtungen stehen rechts, auf der Passivseite.</td></tr></tbody></table></div><div class="check rein" id="buchfuehrung-k9-i3-c1"><div class="check-kopf">Kurz geprüft</div><p class="check-frage">Ein Betrieb zahlt am 1. Dezember die Kfz-Versicherung für das komplette Folgejahr: 2.400 €. Was ist am 31.12. zu buchen?</p><div class="optionen"><button class="opt" data-richtig="" data-echo="Damit läge der komplette Aufwand im falschen Jahr. Das laufende Jahr würde um 2.400 € zu schlecht dargestellt und das Folgejahr um denselben Betrag zu gut.">Nichts, die Zahlung ist erfolgt</button><button class="opt" data-richtig="1" data-echo="Richtig. Die Leistung betrifft ausschließlich das Folgejahr, also wird der volle Betrag abgegrenzt. Im nächsten Jahr wird der ARAP monatlich aufgelöst: Versicherungsaufwand 200 € an ARAP 200 €.">ARAP 2.400 € an Versicherungsaufwand 2.400 €</button><button class="opt" data-richtig="" data-echo="Falsche Seite. Ein PRAP entsteht bei einer Einnahme, nicht bei einer Ausgabe. Hier hat der Betrieb gezahlt — daraus wird ein aktiver Posten.">PRAP 2.400 € an Versicherungsaufwand 2.400 €</button></div><p class="check-echo" role="status"></p></div><div class="zuordnen rein" id="buchfuehrung-k9-i3-z1"><div class="zu-kopf"><span>Zuordnen</span><span class="zu-zahl"><b>0</b>/4 richtig</span></div><p class="zu-lead">ARAP oder PRAP?</p><div class="zu-reihe" id="buchfuehrung-k9-i3-z1-1" data-loesung="PRAP"><span class="zu-text">Die Miete für Januar geht schon im Dezember auf dem Konto ein.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="ARAP">ARAP</button><button class="zu-btn" data-w="PRAP">PRAP</button></span></div><div class="zu-reihe" id="buchfuehrung-k9-i3-z1-2" data-loesung="ARAP"><span class="zu-text">Die Zeitschriftenabos fürs nächste Jahr werden im November bezahlt.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="ARAP">ARAP</button><button class="zu-btn" data-w="PRAP">PRAP</button></span></div><div class="zu-reihe" id="buchfuehrung-k9-i3-z1-3" data-loesung="PRAP"><span class="zu-text">Ein Kunde zahlt im Dezember eine Wartungspauschale für das erste Quartal.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="ARAP">ARAP</button><button class="zu-btn" data-w="PRAP">PRAP</button></span></div><div class="zu-reihe" id="buchfuehrung-k9-i3-z1-4" data-loesung="ARAP"><span class="zu-text">Die Kfz-Steuer für das Folgejahr wird im Dezember abgebucht.</span><span class="zu-knoepfe"><button class="zu-btn" data-w="ARAP">ARAP</button><button class="zu-btn" data-w="PRAP">PRAP</button></span></div></div><div class="box praxistipp rein"><div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Praxistipp</div><p>Zwei Fragen genügen: Ist Geld raus- oder reingegangen? Und gehört die Leistung ins nächste Jahr? Geld raus plus Leistung später ergibt ARAP. Geld rein plus Leistung später ergibt PRAP. Alles andere ist keine Abgrenzung.</p></div>
+
+      <div class="zus rein">
+        <div class="bk">Zusammenfassung K9</div>
+        <ul><li>Abschlussfolge: Inventur → Korrekturbuchungen → Erfolgskonten über GuV → Ergebnis ins Eigenkapital → Bestandskonten über SBK.</li><li>Korrekturbuchungen sind Abschreibungen, Rückstellungen und Rechnungsabgrenzung.</li><li>Rückstellung: Verpflichtung entstanden, Höhe oder Zeitpunkt ungewiss.</li><li>Verbindlichkeit: Betrag und Fälligkeit stehen fest.</li><li>ARAP: Ausgabe jetzt, Aufwand nächstes Jahr — Aktivseite.</li><li>PRAP: Einnahme jetzt, Ertrag nächstes Jahr — Passivseite.</li><li>Beide RAP werden im Folgejahr wieder aufgelöst.</li></ul>
+      </div>
+
+      <section class="test">
+        <div class="test-kopf"><h3>Selbsttest</h3>
+          <span class="test-zahl"><b>0</b>/4 bearbeitet</span></div>
+        <p class="hinweis">Schreib deine Antwort auf, bevor du auflöst.</p>
+        <div class="frage" id="buchfuehrung-k9-t1">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k9-t1-f">In welcher Reihenfolge wird der Jahresabschluss erstellt?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k9-t1-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Zuerst die Inventur, um die tatsächlichen Bestände zu ermitteln. Dann die Korrekturbuchungen: Abschreibungen, Rückstellungen und Rechnungsabgrenzungsposten. Anschließend werden die Erfolgskonten über die GuV abgeschlossen, der Jahreserfolg ins Eigenkapital übertragen und zuletzt alle Bestandskonten über das SBK abgeschlossen. Daraus entsteht die Schlussbilanz.</p></div>
+</div><div class="frage" id="buchfuehrung-k9-t2">
+  <div class="frage-typ">Wissen</div>
+  <p class="frage-text" id="buchfuehrung-k9-t2-f">Was unterscheidet eine Rückstellung von einer Verbindlichkeit?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k9-t2-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Bei einer Verbindlichkeit sind Betrag und Fälligkeit bekannt — etwa eine offene Lieferantenrechnung über 1.000 €. Bei einer Rückstellung ist die Verpflichtung dem Grunde nach entstanden, aber Höhe oder Zeitpunkt sind ungewiss, etwa bei offenen Urlaubsansprüchen oder einem laufenden Prozess. Beide stehen auf der Passivseite, aber als getrennte Positionen.</p></div>
+</div><div class="frage" id="buchfuehrung-k9-t3">
+  <div class="frage-typ">Berechnung</div>
+  <p class="frage-text" id="buchfuehrung-k9-t3-f">Ein Mitarbeiter hat zum 31.12. noch acht Urlaubstage offen, der Tagessatz beträgt 120 €. Bilde die Rückstellung.</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k9-t3-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>8 × 120 € = 960 €. Buchungssatz: Rückstellungsaufwand 960 € an Rückstellungen 960 €. Der Aufwand belastet das laufende Jahr, weil der Urlaubsanspruch in diesem Jahr entstanden ist.</p></div>
+</div><div class="frage" id="buchfuehrung-k9-t4">
+  <div class="frage-typ">Fall</div>
+  <p class="frage-text" id="buchfuehrung-k9-t4-f">Ein Kunde zahlt im Dezember bereits die Miete für Januar: 800 €. Welcher Posten liegt vor und wie wird gebucht?</p>
+  <textarea placeholder="Deine Antwort …" aria-labelledby="buchfuehrung-k9-t4-f"></textarea>
+  <div class="knopfreihe">
+    <button class="kn-haupt" disabled>Antwort vergleichen</button>
+    <button class="kn-neben">Weiß ich nicht</button>
+  </div>
+  <div class="loesung"><div class="lk">Musterlösung</div><p>Ein passiver Rechnungsabgrenzungsposten. Die Einnahme ist im laufenden Jahr eingegangen, der Ertrag gehört wirtschaftlich ins Folgejahr. Buchung am 31.12.: Mietertrag 800 € an PRAP 800 €. Im Januar wird aufgelöst: PRAP 800 € an Mietertrag 800 €.</p></div>
+</div>
+      </section>
+
+      <div class="box praxis rein pruefungstipp">
+        <div class="bk"><svg width="13" height="13" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 3.6v3.4l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>IHK-Prüfungstipp</div>
+        <p>Bei RAP-Aufgaben immer zwei Fragen stellen: Wann war die Zahlung, und wohin gehört die Leistung? Zahlung jetzt und Aufwand später ergibt ARAP, Einnahme jetzt und Ertrag später ergibt PRAP. Bei Rückstellungen ist das Schlüsselwort „ungewiss“ — steht es in der Aufgabe, ist es keine Verbindlichkeit.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="abschluss"><div></div><div class="weiter"><div class="weiter-text">Lernfeld<b>Alle Kapitel durchgearbeitet</b></div><button class="start" data-zu="trainer">Karteikarten trainieren<svg width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button></div></div>
+</section><section class="kapitel trainer" id="trainer" hidden>
+  <div class="tr-kopf">
+    <div>
+      <div class="augenbraue">Karteikarten</div>
+      <h2>Alles, was du dir merken musst.</h2>
+      <p class="tr-lead">15 Merksätze aus allen Kapiteln. Was du kannst,
+      wandert weiter; was du nicht kannst, kommt zurück. Der Stand bleibt gespeichert.</p>
+    </div>
+    <div class="tr-faecher" aria-label="Verteilung auf die Fächer"></div>
+  </div>
+  <script type="application/json" id="karten-daten">[{"id": "buchfuehrung-k1-a1-m1", "frage": "Nenne drei Gründe, warum Buchführung mehr ist als Bürokratie.", "antwort": "Buchführung ist kein bürokratischer Selbstzweck. Wer ordentlich Buch führt, schützt sich selbst, seine Gläubiger — und handelt gesetzeskonform.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K1 · Grundlagen & Buchführungspflicht", "zu": "buchfuehrung.html#k1"}, {"id": "buchfuehrung-k2-b1-m1", "frage": "Was zeigt die Aktivseite, was die Passivseite — und warum sind beide zwangsläufig gleich hoch?", "antwort": "Aktiva zeigt, **wo** das Geld steckt. Passiva zeigt, **woher** es kommt. Es ist dasselbe Geld — deshalb sind beide Seiten immer gleich hoch, nach jeder einzelnen Buchung.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K2 · Die Bilanz", "zu": "buchfuehrung.html#k2"}, {"id": "buchfuehrung-k2-b2-m1", "frage": "Wovon hängt es ab, ob ein Gegenstand zum Anlage- oder zum Umlaufvermögen gehört?", "antwort": "Nicht der Gegenstand entscheidet, sondern die Absicht. Dasselbe Fahrzeug kann bei einem Betrieb Anlagevermögen und bei einem anderen Umlaufvermögen sein.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K2 · Die Bilanz", "zu": "buchfuehrung.html#k2"}, {"id": "buchfuehrung-k2-b4-m1", "frage": "Warum sagt eine steigende Bilanzsumme nichts über den Erfolg eines Betriebs aus?", "antwort": "Bilanzverlängerung heißt nicht Erfolg und Bilanzverkürzung nicht Misserfolg. Ob ein Betrieb Gewinn gemacht hat, sieht man nicht an der Bilanzsumme, sondern am {{begriff:eigenkapital|Eigenkapital}}.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K2 · Die Bilanz", "zu": "buchfuehrung.html#k2"}, {"id": "buchfuehrung-k3-c1-m1", "frage": "Was bedeuten Soll und Haben — und was bedeuten sie ausdrücklich nicht?", "antwort": "Soll = links. Haben = rechts. Wer versucht, sich die Begriffe inhaltlich herzuleiten, verliert Zeit — sie sind reine Konvention und müssen einfach sitzen.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K3 · Konten & Buchungssätze", "zu": "buchfuehrung.html#k3"}, {"id": "buchfuehrung-k3-c3-m1", "frage": "Wozu dienen EBK und SBK, und warum tauchen sie in keiner Bilanz auf?", "antwort": "EBK und SBK sind reine Hilfskonten. Sie erscheinen in keiner Bilanz und in keiner GuV — sie existieren nur, damit jede Buchung ihre zwei Seiten bekommt.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K3 · Konten & Buchungssätze", "zu": "buchfuehrung.html#k3"}, {"id": "buchfuehrung-k4-d1-m1", "frage": "Wohin führen Bestandskonten, wohin Erfolgskonten — und was passiert mit ihnen zum Jahreswechsel?", "antwort": "Bestandskonten führen zur Bilanz. Erfolgskonten führen über die GuV ins Eigenkapital. Beide Wege enden in derselben Schlussbilanz — nur über unterschiedliche Stationen.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K4 · Erfolgskonten & GuV", "zu": "buchfuehrung.html#k4"}, {"id": "buchfuehrung-k4-d3-m1", "frage": "Wie hängen Jahreserfolg und Eigenkapital zusammen?", "antwort": "Ertrag größer als Aufwand ergibt einen {{begriff:jahresueberschuss|Jahresüberschuss}} — das Eigenkapital steigt. Umgekehrt entsteht ein Jahresfehlbetrag, und das Eigenkapital sinkt. Der Gewinn eines Jahres ist nichts anderes als der Zuwachs an Eigenkapital.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K4 · Erfolgskonten & GuV", "zu": "buchfuehrung.html#k4"}, {"id": "buchfuehrung-k5-e1-m1", "frage": "Wie berechnet sich der Rohertrag, und was ist er noch nicht?", "antwort": "{{begriff:rohertrag|Rohertrag}} = Umsatzerlöse − Wareneinsatz. Bei 5.000 € Erlös und 3.000 € Einsatz bleiben 2.000 € — davon müssen erst noch Miete, Löhne und alles Übrige bezahlt werden.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K5 · Warenkonten & Kalkulation", "zu": "buchfuehrung.html#k5"}, {"id": "buchfuehrung-k5-e3-m1", "frage": "Ist Skonto beim Einkauf ein Ertrag oder ein Aufwand — und warum?", "antwort": "Einkauf → Skonto**ertrag**. Verkauf → Skonto**aufwand**. Eselsbrücke: Wer einkauft, verdient am Skonto. Wer verkauft, bezahlt dafür.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K5 · Warenkonten & Kalkulation", "zu": "buchfuehrung.html#k5"}, {"id": "buchfuehrung-k6-f1-m1", "frage": "Warum ist die Umsatzsteuer für einen Betrieb kein Aufwand?", "antwort": "Für den Betrieb ist die Umsatzsteuer ein durchlaufender Posten, kein Aufwand. Deshalb wird sie nie über die GuV gebucht, sondern immer über Bestandskonten.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K6 · Umsatzsteuer", "zu": "buchfuehrung.html#k6"}, {"id": "buchfuehrung-k6-f3-m1", "frage": "Wie berechnet sich die Zahllast, und was bedeutet ein negativer Wert?", "antwort": "Der Betrieb hat 2.380 € eingenommen und 1.190 € ausgegeben, aber nur 1.000 € verdient und 190 € ans Finanzamt abgeführt. Die Umsatzsteuer taucht im Ergebnis nirgends auf — sie ist durchgelaufen.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K6 · Umsatzsteuer", "zu": "buchfuehrung.html#k6"}, {"id": "buchfuehrung-k7-g1-m1", "frage": "Aus welchen Bestandteilen setzt sich der Weg vom Brutto- zum Nettolohn zusammen?", "antwort": "Brutto − Lohnsteuer − Solidaritätszuschlag − Kirchensteuer − Arbeitnehmeranteile Sozialversicherung = Netto. Der Solidaritätszuschlag und die Kirchensteuer werden nicht vom Brutto berechnet, sondern von der Lohnsteuer.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K7 · Personalkosten & Gehaltsbuchung", "zu": "buchfuehrung.html#k7"}, {"id": "buchfuehrung-k8-h1-m1", "frage": "Warum ist eine Abschreibung Aufwand, obwohl kein Geld fließt?", "antwort": "Abschreibung ist Aufwand ohne Auszahlung. Das Geld ist beim Kauf abgeflossen; die Abschreibung verteilt diesen Betrag nur noch buchhalterisch über die Jahre.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K8 · Anlagevermögen & Abschreibungen", "zu": "buchfuehrung.html#k8"}, {"id": "buchfuehrung-k9-i2-m1", "frage": "Woran erkennst du, ob ein Sachverhalt eine Rückstellung oder eine Verbindlichkeit ist?", "antwort": "Rückstellung und Verbindlichkeit unterscheiden sich nur in einem Punkt: der Gewissheit. Steht der Betrag fest und ist die Fälligkeit bekannt, ist es eine {{begriff:verbindlichkeit|Verbindlichkeit}}. Sonst eine Rückstellung.", "lernfeld": "buchfuehrung", "lernfeldTitel": "Buchführung", "kapitel": "K9 · Jahresabschluss", "zu": "buchfuehrung.html#k9"}]</script>
+  <div class="tr-buehne"></div>
+</section>
+</main>
+<footer class="fussleiste"><a href="impressum.html">Hinweise</a><a href="datenschutz.html">Datenschutz</a><span>AzubiPass</span></footer>
+<nav class="tableiste" aria-label="Hauptbereiche"><a class="tab" href="app.html#heute"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20H4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Heute</span></a><a class="tab an" href="app.html#lernen" aria-current="page"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" aria-hidden="true"><path d="M4 5h5.5A2.5 2.5 0 0 1 12 7.5V20a2.2 2.2 0 0 0-2.2-2H4zm16 0h-5.5A2.5 2.5 0 0 0 12 7.5V20a2.2 2.2 0 0 1 2.2-2H20z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lernen</span></a><a class="tab" href="app.html#ueben"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" aria-hidden="true"><path d="M9 8h11v11H9zM5.5 5H16M4 8.5v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Üben</span></a><a class="tab" href="app.html#ich"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" aria-hidden="true"><path d="M12 12.5a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4zM4.5 20.5a7.5 7.5 0 0 1 15 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ich</span></a></nav>
+</body>
+</html>
