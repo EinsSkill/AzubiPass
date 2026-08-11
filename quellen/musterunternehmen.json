@@ -214,18 +214,18 @@
 
   "kontenplan": {
     "rahmen": "IKR",
-    "hinweis": "Auszug, angelehnt an den im Unterricht ueblichen Industriekontenrahmen. Die Kontonummern gelten fuer alle Aufgaben verbindlich.",
+    "hinweis": "Auszug, angelehnt an den im Unterricht ueblichen Industriekontenrahmen. Die Kontonummern gelten fuer alle Aufgaben verbindlich. name ist die Bezeichnung, die der Oberflaeche gezeigt wird; alias nennt gelaeufige Schulbezeichnungen, unter denen dasselbe Konto in Aufgaben und Eingaben ebenfalls gefunden wird.",
     "klassen": [
       {
         "nummer": 0,
-        "bezeichnung": "Immaterielle Vermoegensgegenstaende und Sachanlagen",
+        "bezeichnung": "Immaterielle Vermögensgegenstände und Sachanlagen",
         "konten": [
           { "nr": "0100", "name": "Konzessionen, gewerbliche Schutzrechte und Lizenzen" },
-          { "nr": "0200", "name": "Grundstuecke und Bauten" },
-          { "nr": "0500", "name": "Technische Anlagen und Maschinen" },
-          { "nr": "0700", "name": "Betriebs- und Geschaeftsausstattung" },
+          { "nr": "0200", "name": "Grundstücke und Bauten" },
+          { "nr": "0500", "name": "Technische Anlagen und Maschinen", "alias": ["Maschinen"] },
+          { "nr": "0700", "name": "Betriebs- und Geschäftsausstattung", "alias": ["BGA"] },
           { "nr": "0840", "name": "Fuhrpark" },
-          { "nr": "0860", "name": "Bueromaschinen und EDV-Anlagen" },
+          { "nr": "0860", "name": "Büromaschinen und EDV-Anlagen" },
           { "nr": "0880", "name": "Ladeneinrichtung" }
         ]
       },
@@ -233,12 +233,12 @@
         "nummer": 1,
         "bezeichnung": "Finanzanlagen",
         "konten": [
-          { "nr": "1200", "name": "Wertpapiere des Anlagevermoegens" }
+          { "nr": "1200", "name": "Wertpapiere des Anlagevermögens" }
         ]
       },
       {
         "nummer": 2,
-        "bezeichnung": "Umlaufvermoegen und aktive Rechnungsabgrenzung",
+        "bezeichnung": "Umlaufvermögen und aktive Rechnungsabgrenzung",
         "konten": [
           { "nr": "2000", "name": "Rohstoffe (Stoffe)" },
           { "nr": "2020", "name": "Hilfsstoffe" },
@@ -246,71 +246,83 @@
           { "nr": "2100", "name": "Unfertige Erzeugnisse" },
           { "nr": "2200", "name": "Fertige Erzeugnisse" },
           { "nr": "2280", "name": "Handelswaren" },
-          { "nr": "2400", "name": "Forderungen aus Lieferungen und Leistungen" },
+          { "nr": "2400", "name": "Forderungen aus Lieferungen und Leistungen",
+            "alias": ["Forderungen"] },
           { "nr": "2440", "name": "Zweifelhafte Forderungen" },
-          { "nr": "2470", "name": "Sonstige Vermoegensgegenstaende" },
+          { "nr": "2470", "name": "Sonstige Vermögensgegenstände" },
           { "nr": "2600", "name": "Vorsteuer" },
-          { "nr": "2800", "name": "Guthaben bei Kreditinstituten" },
+          { "nr": "2800", "name": "Guthaben bei Kreditinstituten", "alias": ["Bank"] },
           { "nr": "2880", "name": "Kasse" },
-          { "nr": "2900", "name": "Aktive Rechnungsabgrenzung" }
+          { "nr": "2900", "name": "Aktive Rechnungsabgrenzung", "alias": ["ARA"] }
         ]
       },
       {
         "nummer": 3,
-        "bezeichnung": "Eigenkapital und Rueckstellungen",
+        "bezeichnung": "Eigenkapital und Rückstellungen",
         "konten": [
           { "nr": "3000", "name": "Gezeichnetes Kapital" },
-          { "nr": "3010", "name": "Kapitalruecklage" },
-          { "nr": "3020", "name": "Gewinnruecklagen" },
+          { "nr": "3010", "name": "Kapitalrücklage" },
+          { "nr": "3020", "name": "Gewinnrücklagen" },
           { "nr": "3030", "name": "Gewinnvortrag / Verlustvortrag" },
-          { "nr": "3070", "name": "Jahresueberschuss / Jahresfehlbetrag" },
-          { "nr": "3700", "name": "Steuerrueckstellungen" },
-          { "nr": "3900", "name": "Sonstige Rueckstellungen" }
+          { "nr": "3070", "name": "Jahresüberschuss / Jahresfehlbetrag",
+            "alias": ["Eigenkapital", "Jahresüberschuss", "Jahresergebnis"],
+            "hinweis": "Alias Eigenkapital: Der Erfolg wird im Unterricht als „GuV an Eigenkapital“ gebucht — im IKR landet er auf diesem Konto." },
+          { "nr": "3700", "name": "Steuerrückstellungen" },
+          { "nr": "3900", "name": "Sonstige Rückstellungen", "alias": ["Rückstellungen"] }
         ]
       },
       {
         "nummer": 4,
         "bezeichnung": "Verbindlichkeiten und passive Rechnungsabgrenzung",
         "konten": [
-          { "nr": "4200", "name": "Verbindlichkeiten gegenueber Kreditinstituten" },
-          { "nr": "4400", "name": "Verbindlichkeiten aus Lieferungen und Leistungen" },
+          { "nr": "4200", "name": "Verbindlichkeiten gegenüber Kreditinstituten",
+            "alias": ["Bankdarlehen", "Darlehen"] },
+          { "nr": "4400", "name": "Verbindlichkeiten aus Lieferungen und Leistungen",
+            "alias": ["Verbindlichkeiten"] },
           { "nr": "4800", "name": "Umsatzsteuer" },
           { "nr": "4830", "name": "Sonstige Verbindlichkeiten" },
-          { "nr": "4900", "name": "Passive Rechnungsabgrenzung" }
+          { "nr": "4900", "name": "Passive Rechnungsabgrenzung", "alias": ["PRA"] }
         ]
       },
       {
         "nummer": 5,
-        "bezeichnung": "Ertraege",
+        "bezeichnung": "Erträge",
         "konten": [
-          { "nr": "5000", "name": "Umsatzerloese fuer eigene Erzeugnisse" },
-          { "nr": "5100", "name": "Umsatzerloese fuer Handelswaren" },
-          { "nr": "5110", "name": "Umsatzerloese Gastronomie (7 %)" },
-          { "nr": "5200", "name": "Bestandsveraenderungen" },
-          { "nr": "5400", "name": "Sonstige betriebliche Ertraege" },
-          { "nr": "5460", "name": "Ertraege aus dem Abgang von Vermoegensgegenstaenden" },
-          { "nr": "5710", "name": "Zinsertraege" }
+          { "nr": "5000", "name": "Umsatzerlöse für eigene Erzeugnisse",
+            "alias": ["Umsatzerlöse"] },
+          { "nr": "5001", "name": "Erlösberichtigungen" },
+          { "nr": "5100", "name": "Umsatzerlöse für Handelswaren" },
+          { "nr": "5110", "name": "Umsatzerlöse Gastronomie (7 %)" },
+          { "nr": "5200", "name": "Bestandsveränderungen" },
+          { "nr": "5400", "name": "Sonstige betriebliche Erträge" },
+          { "nr": "5460", "name": "Erträge aus dem Abgang von Vermögensgegenständen" },
+          { "nr": "5710", "name": "Zinserträge" }
         ]
       },
       {
         "nummer": 6,
         "bezeichnung": "Betriebliche Aufwendungen",
         "konten": [
-          { "nr": "6000", "name": "Aufwendungen fuer Rohstoffe" },
-          { "nr": "6020", "name": "Aufwendungen fuer Hilfsstoffe" },
-          { "nr": "6030", "name": "Aufwendungen fuer Betriebsstoffe" },
-          { "nr": "6080", "name": "Aufwendungen fuer Handelswaren" },
-          { "nr": "6200", "name": "Loehne" },
-          { "nr": "6300", "name": "Gehaelter" },
+          { "nr": "6000", "name": "Aufwendungen für Rohstoffe" },
+          { "nr": "6001", "name": "Nachlässe" },
+          { "nr": "6002", "name": "Bezugskosten" },
+          { "nr": "6020", "name": "Aufwendungen für Hilfsstoffe" },
+          { "nr": "6030", "name": "Aufwendungen für Betriebsstoffe" },
+          { "nr": "6080", "name": "Aufwendungen für Handelswaren" },
+          { "nr": "6200", "name": "Löhne" },
+          { "nr": "6300", "name": "Gehälter" },
           { "nr": "6400", "name": "Gesetzliche Sozialaufwendungen" },
-          { "nr": "6500", "name": "Abschreibungen auf Sachanlagen" },
-          { "nr": "6700", "name": "Mieten und Pachten" },
+          { "nr": "6500", "name": "Abschreibungen auf Sachanlagen", "alias": ["Abschreibungen"] },
+          { "nr": "6700", "name": "Mieten und Pachten", "alias": ["Mietaufwand", "Miete"] },
           { "nr": "6710", "name": "Energie und Nebenkosten" },
-          { "nr": "6800", "name": "Buero- und Verwaltungsaufwendungen" },
+          { "nr": "6720", "name": "Versicherungsbeiträge" },
+          { "nr": "6800", "name": "Büro- und Verwaltungsaufwendungen" },
           { "nr": "6805", "name": "Telefon und Internet" },
           { "nr": "6810", "name": "Porto und Versandkosten" },
           { "nr": "6840", "name": "Werbung" },
-          { "nr": "6950", "name": "Abschreibungen auf Forderungen" }
+          { "nr": "6900", "name": "Sonstige betriebliche Aufwendungen" },
+          { "nr": "6950", "name": "Abschreibungen auf Forderungen" },
+          { "nr": "6960", "name": "Verluste aus dem Abgang von Vermögensgegenständen" }
         ]
       },
       {
@@ -326,9 +338,9 @@
         "nummer": 8,
         "bezeichnung": "Abschlusskonten",
         "konten": [
-          { "nr": "8000", "name": "Eroeffnungsbilanzkonto" },
-          { "nr": "8010", "name": "Schlussbilanzkonto" },
-          { "nr": "8020", "name": "Gewinn- und Verlustkonto" }
+          { "nr": "8000", "name": "Eröffnungsbilanzkonto", "alias": ["EBK"] },
+          { "nr": "8010", "name": "Schlussbilanzkonto", "alias": ["SBK"] },
+          { "nr": "8020", "name": "Gewinn- und Verlustkonto", "alias": ["GuV", "GuV-Konto"] }
         ]
       }
     ]

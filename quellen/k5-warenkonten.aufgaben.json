@@ -113,8 +113,7 @@
       ],
       "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
       "erklaerung": "Die Verbindlichkeit wird in voller Höhe ausgebucht. Der einbehaltene Betrag ist ein Ertrag — beim Einkauf verdient der Betrieb am Skonto.",
-      "quelle": "k5, Abschnitt e3",
-      "hinweis_konto": "6001 Nachlässe — siehe kontenplan-ergaenzung.json"
+      "quelle": "k5, Abschnitt e3"
     },
 
     {

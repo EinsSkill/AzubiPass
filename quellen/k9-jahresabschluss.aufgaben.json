@@ -112,8 +112,7 @@
       ],
       "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
       "erklaerung": "Der Aufwand wird um den Teil gemindert, der ins Folgejahr gehört. Der Anspruch auf die noch ausstehende Leistung steht als aktiver Posten links.",
-      "quelle": "k9, Abschnitt i3",
-      "hinweis_konto": "6720 Versicherungsbeiträge — siehe kontenplan-ergaenzung.json"
+      "quelle": "k9, Abschnitt i3"
     },
 
     {
@@ -149,8 +148,7 @@
       ],
       "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
       "erklaerung": "Der Urlaubsanspruch ist im laufenden Jahr entstanden, also belastet der Aufwand auch dieses Jahr — unabhängig davon, wann der Urlaub genommen wird.",
-      "quelle": "k9, Abschnitt i2",
-      "hinweis_konto": "6900 Sonstige betriebliche Aufwendungen — siehe kontenplan-ergaenzung.json"
+      "quelle": "k9, Abschnitt i2"
     },
 
     {
