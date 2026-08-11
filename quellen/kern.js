@@ -82,6 +82,18 @@ window.AP = (function () {
     return Math.round((ziel - heute) / 86400000);
   }
 
+  /* Ist das ein Tagesschlüssel, den tageBis rechnen kann?
+
+     Nicht nur die Form prüfen: "2026-02-31" passt aufs Muster und wird vom
+     Date-Objekt klaglos zum 3. März — der Countdown zeigt dann einen Tag an,
+     den es nie gab. Deshalb zurückrechnen und vergleichen. */
+  function istDatum(s) {
+    if (typeof s !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false;
+    var t = s.split("-").map(Number);
+    var d = new Date(t[0], t[1] - 1, t[2]);
+    return d.getFullYear() === t[0] && d.getMonth() === t[1] - 1 && d.getDate() === t[2];
+  }
+
   /* ================================================== Konto
 
      Ein Eintrag für alles. Vorher lag pro Lernzettel ein eigener, und keiner
@@ -102,6 +114,7 @@ window.AP = (function () {
     lesezeichen: [],      // { zu, titel, lernfeld }
     aktivitaet: [],       // Tage, an denen etwas gelernt wurde
     zuletzt: null,        // { zu, lernfeld, kapitel, titel }
+    pruefungstermin: null,// eigener Termin; null = der aus landing.config.json
     stimmung: "system",
     uebernommen: false
   };
@@ -470,7 +483,7 @@ window.AP = (function () {
   return {
     el: el, mk: mk, mkEl: mkEl, zahl: zahl, kommafeld: kommafeld,
     tagesschluessel: tagesschluessel, plusTage: plusTage, tageBis: tageBis,
-    datumsformat: datumsformat,
+    istDatum: istDatum, datumsformat: datumsformat,
     stand: stand, sichern: sichern, kapitelfach: kapitelfach, abdruck: abdruck,
     heuteGelernt: heuteGelernt, frisch: frisch, SCHLUESSEL: SCHLUESSEL,
     kartenstand: kartenstand, istFaellig: istFaellig, kartewerten: kartewerten,
