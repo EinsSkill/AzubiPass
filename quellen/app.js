@@ -465,6 +465,9 @@
   /* ================================================== Üben */
 
   var uebenAnsicht = "start";
+  /* Kapitelkennung aus der Adresse. Wird an die Probeklausur durchgereicht und
+     danach vergessen — sonst käme sie beim nächsten Öffnen wieder hoch. */
+  var pkVorwahl = null;
 
   function zeigeUeben(s) {
     s.innerHTML = "";
@@ -478,18 +481,53 @@
       uebenAnsicht = "probeklausur";
     }
     if (uebenAnsicht === "probeklausur" && window.APK) {
-      return window.APK.zeige(s, function () { uebenAnsicht = "start"; zeigeUeben(s); });
+      var mit = pkVorwahl;
+      pkVorwahl = null;
+      return window.APK.zeige(s, function () {
+        uebenAnsicht = "start";
+        /* Stand die Probeklausur in der Adresse, muss sie beim Zurückgehen auch
+           wieder heraus — sonst landet ein Neuladen erneut in ihr, obwohl der
+           Nutzer sie gerade verlassen hat. Der Verteiler zeichnet dann neu. */
+        if (adresse(verteiler.jetzt()).unter) location.hash = "#ueben";
+        else zeigeUeben(s);
+      }, mit);
     }
 
     var faellig = faelligeKarten();
     var schwach = schwachstellen();
     s.appendChild(kopfzeile("Üben",
-      inhalt.karten.length + " Karteikarten und " + inhalt.quiz.length
-      + " Übungsfragen aus allen Lernfeldern."));
+      "Prüf genau das, was du brauchst — oder halt einfach die Karten warm.",
+      "Prüfungstraining",
+      "Bestand", inhalt.karten.length + " Karten · " + inhalt.quiz.length + " Fragen"));
+
+    function hin(ziel) {
+      return function (ev) {
+        ev.preventDefault();
+        uebenAnsicht = ziel;
+        zeigeUeben(s);
+      };
+    }
+
+    /* Die Probeklausur ist der wichtigste Prüfungsweg und steht deshalb als
+       eigene Fläche über der Liste — aber immer noch unter „Üben" und nicht
+       als fünfter Reiter. Geübt wird geübt. */
+    var pk = el("a", "pk-eingang");
+    pk.href = "#ueben/probeklausur";
+    pk.appendChild(el("span", "pk-eingang-braue", "Eigene Probeklausur"));
+    pk.appendChild(el("strong", "pk-eingang-titel",
+      "Stell dir deine nächste Klassenarbeit selbst."));
+    pk.appendChild(el("span", "pk-eingang-text",
+      "Kapitel wählen, Dauer festlegen, unter Zeit schreiben — mit Auswertung "
+      + "nach Kapiteln."));
+    var weg = el("span", "pk-eingang-weg");
+    weg.appendChild(el("span", null, "Klausur zusammenstellen"));
+    weg.insertAdjacentHTML("beforeend", PFEIL);
+    pk.appendChild(weg);
+    pk.addEventListener("click", hin("probeklausur"));
+    s.appendChild(pk);
 
     var liste = el("ul", "liste-schlicht");
-    [["probeklausur", "Eigene Probeklausur", "Klausur schreiben"],
-     ["karten", "Fällige Karteikarten", faellig.length
+    [["karten", "Fällige Karteikarten", faellig.length
         ? faellig.length + " warten" : "für heute durch"],
      ["quiz", "Übungsfragen", inhalt.quiz.length + " Fragen"],
      ["schwach", "Deine Schwachstellen", schwach.length
@@ -1190,8 +1228,32 @@
   var bauer = { heute: zeigeHeute, lernen: zeigeLernen, ueben: zeigeUeben,
                 suche: zeigeSuche, ich: zeigeIch };
 
+  /* Die Adresse kann mehr sagen als den Bereich:
+
+         #ueben/probeklausur?kapitel=buchfuehrung:k3
+
+     Der Teil vor dem Schrägstrich ist der Schirm, dahinter steht, was dort
+     geöffnet werden soll, und hinter dem Fragezeichen die Kapitelkennung.
+     Alles hinter dem Schirm ist freiwillig — was nicht verstanden wird, fällt
+     weg und es erscheint der gewohnte Bereich. Eine Adresse darf nie ein
+     Fehlerbild erzeugen und nichts Gespeichertes anfassen. */
+  function adresse(wunsch) {
+    var roh = String(wunsch || "");
+    var frage = roh.indexOf("?");
+    var weg = (frage < 0 ? roh : roh.slice(0, frage)).split("/");
+    var felder = {};
+    if (frage >= 0) {
+      roh.slice(frage + 1).split("&").forEach(function (paar) {
+        var t = paar.split("=");
+        if (t[0]) felder[t[0]] = decodeURIComponent((t[1] || "").replace(/\+/g, " "));
+      });
+    }
+    return { bereich: weg[0] || "", unter: weg[1] || "", felder: felder };
+  }
+
   function zeige(wunsch) {
-    var id = bauer[wunsch] ? wunsch : "heute";
+    var teile = adresse(wunsch);
+    var id = bauer[teile.bereich] ? teile.bereich : "heute";
     Object.keys(schirme).forEach(function (k) { schirme[k].hidden = k !== id; });
     document.querySelectorAll(".tab").forEach(function (t) {
       var an = t.getAttribute("href") === "app.html#" + id;
@@ -1206,10 +1268,14 @@
     document.documentElement.dataset.bereich = id;
     if (id !== "ueben") {
       uebenAnsicht = "start";
+      pkVorwahl = null;
       if (window.APK) window.APK.verlassen();
+    } else if (teile.unter === "probeklausur") {
+      uebenAnsicht = "probeklausur";
+      pkVorwahl = teile.felder.kapitel || null;
     }
     bauer[id](schirme[id]);
-    if (wunsch === id) window.scrollTo(0, 0);
+    if (teile.bereich === id) window.scrollTo(0, 0);
   }
 
   function start() {

@@ -394,6 +394,13 @@ tr.detail td strong{color:var(--gold);}
 .weiter{max-width:var(--lese);display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid var(--linie);padding-top:26px;}
 .weiter-text{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-sek);}
 .weiter-text b{display:block;font-family:var(--serif);font-size:22px;letter-spacing:-.01em;text-transform:none;color:var(--text);margin-top:5px;font-weight:600;}
+.abschluss-wege{min-width:0;}
+/* Der Weg in die eigene Probeklausur steht unter dem nächsten Kapitel, nicht
+   daneben: Weiterlesen ist die Hauptbewegung, Prüfen die bewusste zweite. */
+.weiter-pk{display:inline-flex;align-items:center;min-height:44px;margin-top:14px;
+  padding:0 16px;text-decoration:none;font-family:var(--sans);font-size:13.5px;
+  color:var(--text-sek);background:none;border:1px solid var(--linie);border-radius:2px;}
+.weiter-pk:hover{color:var(--text);border-color:var(--gold-matt);}
 
 .rein{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s cubic-bezier(.2,.7,.3,1);}
 .rein.da{opacity:1;transform:none;}
@@ -1276,6 +1283,10 @@ a.hm-pflicht:hover{border-top-color:rgba(201,162,39,.6);}
   line-height:1.55;}
 .pk--hinweis p:last-child{margin-bottom:0;}
 .pk--laufend{border-left:3px solid var(--gold-matt);}
+/* Aus einem Kapitel hereingekommen — ruhiger als der Fortsetzkasten, denn hier
+   ist nichts zu entscheiden, nur etwas zu wissen. */
+.pk--vorwahl{border-color:var(--gold-matt);
+  background:color-mix(in srgb,var(--gold) 9%,transparent);}
 .pk--abgelaufen{border-left:3px solid var(--warn-schrift);}
 
 /* ---------- Kapitelwahl ---------- */

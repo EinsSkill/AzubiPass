@@ -195,7 +195,22 @@ def bausteil(b, lf, kennung):
 
 # ---------------------------------------------------------------- Kapitel
 
-def kapitel(ch, lf, naechstes):
+def probeklausur_aktion(ch, lf, hat_aufgaben):
+    """Der Weg vom Kapitel in die eigene Probeklausur.
+
+    Nur dort, wo es für dieses Kapitel wirklich Aufgabenbausteine gibt: Ein
+    Knopf, der in eine leere Auswahl führt, ist eine Enttäuschung mit
+    Ankündigung. Die Kennung ist dieselbe, unter der die Probeklausur ihre
+    Kapitel führt — <lernfeld>:<kapitel>."""
+    if not hat_aufgaben:
+        return ""
+    kennung = f'{lf["id"]}:{ch["id"]}'
+    return (f'<a class="kn-neben weiter-pk" '
+            f'href="app.html#ueben/probeklausur?kapitel={html.escape(kennung)}">'
+            f'Dieses Kapitel als Probeklausur üben</a>')
+
+
+def kapitel(ch, lf, naechstes, hat_aufgaben=False):
     ziele = "".join(
         f'<li data-fuer="{z["abschnitt"]}"><span class="haken"></span>'
         f'<span>{inline(z["text"], lf)}</span></li>'
@@ -282,7 +297,12 @@ def kapitel(ch, lf, naechstes):
     </article>
   </div>
 
-  <div class="abschluss"><div></div><div class="weiter">{weiter}</div></div>
+  <div class="abschluss"><div></div>
+    <div class="abschluss-wege">
+      <div class="weiter">{weiter}</div>
+      {probeklausur_aktion(ch, lf, hat_aufgaben)}
+    </div>
+  </div>
 </section>'''
 
 
@@ -391,6 +411,24 @@ def karten_zeile(n):
 
 # ---------------------------------------------------------------- Aufbau
 
+def kapitel_mit_aufgaben(lernfeld_datei, lf):
+    """Welche Kapitel dieses Lernfelds Aufgabenbausteine haben.
+
+    Ermittelt aus dem Dateinamen, nicht aus einer Liste im Code: Neben
+    <name>.kapitel.json liegt gegebenenfalls <name>.aufgaben.json. Ein weiteres
+    Lernfeld heißt damit weiterhin nur „Aufgabendatei schreiben, neu bauen" —
+    nirgends steht eine feste Kapitelliste."""
+    basis = Path(lernfeld_datei).parent
+    raus = set()
+    for eintrag in lf["kapitel"]:
+        datei = eintrag.get("datei", "")
+        if not datei.endswith(".kapitel.json"):
+            continue
+        if (basis / (datei[:-len(".kapitel.json")] + ".aufgaben.json")).exists():
+            raus.add(eintrag["id"])
+    return raus
+
+
 def baue(lernfeld_datei):
     lf, kapitel_daten, fehlend = lade(lernfeld_datei)
     for name in fehlend:
@@ -398,10 +436,12 @@ def baue(lernfeld_datei):
 
     karten = karten_sammeln(lf, kapitel_daten)
 
+    mit_aufgaben = kapitel_mit_aufgaben(lernfeld_datei, lf)
+
     seiten = [start(lf, kapitel_daten, len(karten))]
     for i, ch in enumerate(kapitel_daten):
         naechstes = kapitel_daten[i + 1] if i + 1 < len(kapitel_daten) else None
-        seiten.append(kapitel(ch, lf, naechstes))
+        seiten.append(kapitel(ch, lf, naechstes, ch["id"] in mit_aufgaben))
     seiten.append(trainer(karten))
 
     stil, kernel, verhalten = veroeffentliche("azubipass.css", "kern.js", "azubipass.js")
