@@ -1099,19 +1099,28 @@ tr.detail td strong{color:var(--gold);}
   min-height:44px;flex:1 1 160px;}
 .terminfeld:focus-visible{border-color:var(--tinte);}
 
-/* ================================================================= Heute
+/* ================================================================= App-Welt
 
-   Der Startbildschirm trägt seine eigene Fläche: immer dunkelgrün, in beiden
-   Farbstimmungen. Nicht aus Laune — er ist der einzige Schirm, auf dem nichts
-   gelesen, sondern nur entschieden wird. Die Farbe sagt „hier bist du zu
-   Hause", bevor ein Wort gelesen ist.
+   Die App trägt eine durchgehende tiefgrüne Fläche: Heute, Lernen, Üben,
+   Suche und Ich. Nicht aus Laune — auf diesen Schirmen wird nichts gelesen,
+   sondern entschieden. Die Farbe sagt „hier bist du zu Hause", bevor ein Wort
+   gelesen ist, und sie sagt es auf allen vier Bereichen gleich. Gelesen wird
+   im Kapitel, und das behält seine helle Lesefläche.
 
-   Deshalb feste Werte statt der Stimmungs-Variablen: --tinte-tief und --gold
-   drehen im dunklen Modus, --creme nicht. Diese Fläche soll nirgends drehen.
-   Alles hier trägt hm- davor — .heute wäre die Zone und der Wochentag zugleich
-   gewesen, und .reihe gibt es als Listenzeile längst.                         */
+   Angehängt an :root[data-bereich] — das setzt nur app.js, und zwar auf jedem
+   Schirm. Die Lernzettel schreiben ihren Bereich an <body>; sie bleiben
+   dadurch unberührt, ohne dass hier eine Ausnahme stehen müsste.
 
-:root[data-bereich="heute"]{
+   Der Weg ist bewusst, die Stimmungs-Variablen umzudefinieren statt jede
+   Komponente einzeln zu übermalen: .reihe, .messlatte, .stellreihe, .suchfeld
+   und .leer gibt es längst und sie sind richtig gebaut. Sie brauchen andere
+   Farben, keinen zweiten Bauplan.
+
+   Feste Werte statt der Stimmungs-Variablen: Diese Fläche dreht im dunklen
+   Modus nicht. Was dreht, ist die Lesefläche im Kapitel — dort ist die
+   Einstellung auch das, wozu sie gedacht war.                                */
+
+:root[data-bereich]{
   --hm-grund:#12301F;
   --hm-gold:#C9A227; --hm-gold-hell:#E3C558;
   /* Alle gedämpften Töne ab 60 % Deckkraft. Darunter fällt der Kontrast auf
@@ -1119,29 +1128,187 @@ tr.detail td strong{color:var(--gold);}
      mehr zu lesen. */
   --hm-matt:rgba(245,245,240,.66);
   --hm-linie:rgba(245,245,240,.17);
-}
-:root[data-bereich="heute"] body{background:var(--hm-grund);color:var(--creme);}
-:root[data-bereich="heute"] :focus-visible{outline-color:var(--hm-gold-hell);}
 
-/* Kopf, Leiste und Fuß liegen außerhalb des Schirms — ohne diese drei Regeln
+  /* Dieselben Namen, andere Werte: Ab hier rechnen alle gemeinsamen
+     Komponenten auf tiefem Grün. */
+  --grund:#12301F;
+  --text:#F5F5F0;
+  --text-sek:rgba(245,245,240,.66);
+  --linie:rgba(245,245,240,.17);
+  --papier:rgba(245,245,240,.045);
+  --feld:rgba(245,245,240,.06);
+  --tinte:#C9A227;                     /* die Akzentfarbe der App ist Gold */
+  --tinte-hell:#E3C558;
+  --gold-text:#E3C558;
+  --gold-gross:#E3C558;
+  --gold-matt:rgba(201,162,39,.55);
+  --warn-schrift:#E0A18F; --warn-grund:rgba(224,161,143,.12);
+  --gut:#74BD93; --gut-grund:rgba(116,189,147,.12);
+  --kopf-grund:rgba(18,48,31,.92);
+  --schatten:rgba(0,0,0,.42);
+}
+:root[data-bereich] body{background:var(--hm-grund);color:var(--creme);}
+:root[data-bereich] :focus-visible{outline-color:var(--hm-gold-hell);}
+
+/* Kopf, Leiste und Fuß liegen außerhalb des Schirms — ohne diese Regeln
    stünde ein helles Band über und unter der grünen Fläche. */
-:root[data-bereich="heute"] .kopf.auf-papier{background:rgba(18,48,31,.92);
+:root[data-bereich] .kopf.auf-papier{background:rgba(18,48,31,.92);
   color:var(--creme);border-bottom-color:var(--hm-linie);}
-:root[data-bereich="heute"] .tableiste{background:rgba(13,34,22,.95);
+:root[data-bereich] .tableiste{background:rgba(13,34,22,.95);
   border-top-color:var(--hm-linie);}
-:root[data-bereich="heute"] .tab{color:var(--hm-matt);}
-:root[data-bereich="heute"] .tab.an{color:var(--hm-gold);}
-:root[data-bereich="heute"] .fussleiste{border-top-color:var(--hm-linie);
+:root[data-bereich] .tab{color:var(--hm-matt);}
+:root[data-bereich] .tab.an{color:var(--hm-gold);}
+:root[data-bereich] .fussleiste{border-top-color:var(--hm-linie);
   color:var(--hm-matt);}
-:root[data-bereich="heute"] .fussleiste a{color:var(--hm-matt);
+:root[data-bereich] .fussleiste a{color:var(--hm-matt);
   box-shadow:inset 0 -1px 0 var(--hm-linie);}
-:root[data-bereich="heute"] .fussleiste a:hover{color:var(--creme);}
+:root[data-bereich] .fussleiste a:hover{color:var(--creme);}
 
 /* Licht von oben rechts. Nimmt der Fläche das Tote — das ist der warme
    Empfang, nicht ein Begrüßungssatz. */
-:root[data-bereich="heute"] body::before{content:"";position:fixed;
+:root[data-bereich] body::before{content:"";position:fixed;
   top:0;left:0;right:0;height:70vh;z-index:0;pointer-events:none;
   background:radial-gradient(112% 70% at 82% -8%,rgba(201,162,39,.19),transparent 64%);}
+:root[data-bereich] .schirm{position:relative;z-index:1;}
+
+/* ---------- Gemeinsame Schirmbauteile auf Grün ----------
+   Das ist die eigentliche Übertragung: derselbe Bereichskopf, dieselben offenen
+   Zeilen mit Haarlinien, dieselbe Rollenverteilung der drei Schriften wie auf
+   Heute. Keine Kachelwand, keine Karten mit Schatten. */
+
+/* Bereichskopf — Mono-Augenbraue in Gold, Titel in Source Serif 4, Beitext in
+   IBM Plex Sans. Genau die Ordnung, die der Heute-Schirm vorgibt. */
+:root[data-bereich] .schirm-kopf{margin-bottom:38px;}
+:root[data-bereich] .schirm-kopf h1{font-family:var(--serif);font-weight:600;
+  font-size:clamp(34px,7.6vw,52px);line-height:1.05;letter-spacing:-.028em;}
+:root[data-bereich] .schirm-kopf p{font-family:var(--sans);font-size:16.5px;
+  line-height:1.55;color:var(--hm-matt);max-width:52ch;}
+.schirm-augenbraue{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--hm-gold);margin:0 0 16px;}
+/* Eine Zahlenzeile unter dem Kopf, über einer Haarlinie — statt einer Reihe
+   Kacheln. */
+.schirm-stand{display:flex;justify-content:space-between;align-items:baseline;
+  gap:16px;margin-top:30px;padding-top:14px;border-top:1px solid var(--hm-linie);
+  font-family:var(--sans);font-size:12.5px;color:var(--hm-matt);}
+.schirm-stand b{font-family:var(--mono);font-size:12.5px;font-weight:400;
+  color:var(--hm-gold);white-space:nowrap;}
+
+/* Offene Listenzeilen. Die Kennung in Mono, der Titel in Serif, der Fortschritt
+   als 2-px-Goldfaden — nicht als Balken, der wie ein Ladebalken aussieht. */
+:root[data-bereich] .liste-schlicht{border-top:1px solid var(--hm-linie);}
+:root[data-bereich] .reihe{padding:19px 0 18px;border-top:0;
+  border-bottom:1px solid var(--hm-linie);}
+:root[data-bereich] .liste-schlicht li:last-child .reihe{border-bottom:1px solid var(--hm-linie);}
+:root[data-bereich] .reihe:hover{background:rgba(245,245,240,.035);}
+:root[data-bereich] .reihe-oben{gap:14px;margin-bottom:7px;}
+:root[data-bereich] .reihe-nr{color:var(--hm-gold);font-size:11px;letter-spacing:.06em;}
+:root[data-bereich] .reihe-titel{font-family:var(--serif);font-weight:600;
+  font-size:19px;line-height:1.28;overflow-wrap:break-word;hyphens:auto;}
+:root[data-bereich] .reihe-meta{color:var(--hm-matt);}
+:root[data-bereich] .messlatte{height:2px;background:var(--hm-linie);}
+:root[data-bereich] .messlatte span{background:var(--hm-gold);}
+:root[data-bereich] .reihe .messlatte{height:2px;margin-top:4px;}
+
+/* Wo es weitergeht — dieselbe Auszeichnung wie „hier weitermachen" im
+   Prototyp: ein Goldstrich links, kein zweiter Farbton. */
+:root[data-bereich] .reihe.aktuell{box-shadow:inset 2px 0 0 var(--hm-gold);
+  padding-left:12px;background:rgba(245,245,240,.035);}
+.reihe-hinweis{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--hm-gold);}
+
+/* Abschnitte unter „Ich" — offene Blöcke mit Haarlinie statt einer Sammlung
+   beliebiger Karten. */
+.feldgruppe{border-top:1px solid var(--hm-linie);padding:26px 0 28px;}
+.feldgruppe:last-of-type{border-bottom:1px solid var(--hm-linie);}
+.feldgruppe > h2{font-family:var(--mono);font-size:10.5px;font-weight:400;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--hm-matt);
+  margin:0 0 18px;display:flex;justify-content:space-between;gap:14px;}
+.feldgruppe > h2 b{font-family:var(--mono);font-weight:400;color:var(--hm-gold);}
+:root[data-bereich] .abschnittstitel{color:var(--hm-matt);}
+
+/* Kennzahlen: drei Zahlen nebeneinander, ohne Rahmen und ohne Rasterlinien. */
+:root[data-bereich] .zahlenreihe{display:flex;gap:26px;background:none;border:0;
+  margin-bottom:0;}
+:root[data-bereich] .zahl{flex:1;min-width:0;background:none;padding:0;}
+:root[data-bereich] .zahl b{font-family:var(--mono);font-size:27px;font-weight:400;
+  color:var(--creme);margin-bottom:6px;}
+:root[data-bereich] .zahl b small{color:var(--hm-matt);}
+:root[data-bereich] .zahl span{font-family:var(--sans);font-size:11.5px;
+  letter-spacing:.02em;text-transform:none;color:var(--hm-matt);}
+:root[data-bereich] .zahl.dringend b{color:var(--hm-gold);}
+
+/* Einstellzeilen, Suchfeld, leere Zustände, Meldungen — nur Farbe, kein
+   zweiter Bauplan. */
+:root[data-bereich] .stellreihe{border-top-color:var(--hm-linie);padding:16px 0;}
+:root[data-bereich] .stellreihe:last-of-type{border-bottom-color:var(--hm-linie);}
+:root[data-bereich] .stellreihe small{color:var(--hm-matt);}
+:root[data-bereich] .schalterfeld{border-color:var(--hm-linie);}
+:root[data-bereich] .schalterfeld button{color:var(--hm-matt);}
+:root[data-bereich] .schalterfeld button.an{background:var(--hm-gold);
+  color:var(--hm-grund);}
+:root[data-bereich] .suchfeld{background:rgba(245,245,240,.06);
+  border-color:var(--hm-linie);}
+:root[data-bereich] .suchfeld input{color:var(--creme);}
+:root[data-bereich] .suchfeld:focus-within{border-color:var(--hm-gold);
+  box-shadow:0 0 0 3px rgba(201,162,39,.22);}
+:root[data-bereich] .terminfeld{color:var(--creme);background:rgba(245,245,240,.06);
+  border-color:var(--hm-linie);color-scheme:dark;}
+:root[data-bereich] .leer{border-color:var(--hm-linie);}
+:root[data-bereich] .leer p{color:var(--hm-matt);}
+:root[data-bereich] .meldung{border-left-color:var(--hm-gold);
+  background:rgba(245,245,240,.06);color:var(--creme);}
+:root[data-bereich] .kn-neben.breit{border-color:var(--hm-linie);color:var(--hm-matt);}
+:root[data-bereich] .kn-neben.breit:hover{border-color:var(--hm-gold);color:var(--creme);}
+/* Suchtreffer: volle, deutlich kräftigere Goldfläche mit dunkler Schrift. Sie
+   soll sich von der ruhigen 23-%-Fläche der wichtigen Aussage im Kapitel auf
+   den ersten Blick unterscheiden — hier geht es um Finden, nicht um Lernen.
+
+   Mit dem Elementnamen davor: .reihe mark steht weiter oben und wiegt als
+   Klasse plus Element genauso schwer wie .such-treffer allein nicht wiegen
+   würde. Gleich schwer heißt, die spätere Regel gewinnt — und das ist diese. */
+mark.such-treffer{padding:.06em .26em;color:var(--hm-grund);background:var(--hm-gold);
+  border-radius:2px;font-weight:600;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+/* Innerhalb eines Abschnitts trägt die Haarlinie schon der Abschnitt selbst —
+   die erste Einstellzeile darf sie nicht verdoppeln. */
+.feldgruppe > .stellreihe:first-of-type{border-top:0;padding-top:0;}
+.feldgruppe > .liste-schlicht{border-top:0;}
+.feldgruppe > .liste-schlicht li:first-child .reihe{border-top:0;}
+.leise-text{font-family:var(--sans);font-size:14.5px;line-height:1.55;
+  color:var(--hm-matt);margin:0 0 6px;max-width:56ch;}
+.rechtswege{display:flex;flex-wrap:wrap;gap:0 24px;margin-top:26px;}
+.rechtswege a{display:inline-flex;align-items:center;min-height:44px;
+  font-family:var(--sans);font-size:13.5px;color:var(--hm-matt);
+  text-decoration:none;box-shadow:inset 0 -1px 0 var(--hm-linie);}
+.rechtswege a:hover{color:var(--creme);}
+
+/* ---------- Eingang in die Probeklausur ----------
+   Der wichtigste Prüfungsweg bekommt eine eigene Fläche über der Übungsliste:
+   eine ruhige Goldkontur auf tiefem Grün, wie der Prüfungsbogen im Prototyp.
+   Kein Reiter, keine Kachelwand — eine Fläche, unter der die gewohnten
+   Übungen unverändert weiterstehen. */
+.pk-eingang{display:block;text-decoration:none;color:inherit;margin-bottom:34px;
+  padding:24px 22px 20px;background:rgba(245,245,240,.04);
+  border:1px solid rgba(201,162,39,.5);border-radius:2px;
+  transition:border-color .18s ease-out,background .18s ease-out;}
+.pk-eingang:hover{border-color:var(--hm-gold);background:rgba(201,162,39,.09);}
+.pk-eingang-braue{display:block;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--hm-gold);}
+.pk-eingang-titel{display:block;margin:12px 0 8px;font-family:var(--serif);
+  font-weight:600;font-size:clamp(22px,5.4vw,27px);line-height:1.18;
+  letter-spacing:-.02em;text-wrap:balance;}
+.pk-eingang-text{display:block;font-family:var(--sans);font-size:14.5px;
+  line-height:1.5;color:var(--hm-matt);max-width:46ch;}
+.pk-eingang-weg{display:inline-flex;align-items:center;gap:11px;min-height:44px;
+  margin-top:6px;font-family:var(--sans);font-size:14px;font-weight:600;
+  color:var(--hm-gold);}
+.pk-eingang-weg svg{transition:transform .2s cubic-bezier(.22,1,.36,1);}
+.pk-eingang:hover .pk-eingang-weg{color:var(--hm-gold-hell);}
+.pk-eingang:hover .pk-eingang-weg svg{transform:translateX(5px);}
+@media (prefers-reduced-motion:reduce){
+  .pk-eingang,.pk-eingang-weg svg{transition:none;}
+  .pk-eingang:hover .pk-eingang-weg svg{transform:none;}
+}
 
 #heute{position:relative;z-index:1;max-width:none;padding:0;}
 .hm-zone{max-width:var(--lese);margin-inline:auto;padding-left:24px;padding-right:24px;}

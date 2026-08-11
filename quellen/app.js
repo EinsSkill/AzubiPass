@@ -131,7 +131,7 @@
 
   function zielAus(k, art) {
     return {
-      art: art, zu: k.zu, titel: k.titel,
+      art: art, zu: k.zu, titel: k.titel, lernfeld: k.lernfeld,
       wo: k.lernfeld.toUpperCase() + " · Kapitel " + k.nummer,
       knopf: KNOPFTEXT[art]
     };
@@ -164,16 +164,15 @@
   /* Countdown als fertiger Text. Eine negative Tageszahl darf hier nicht
      herauskommen — „noch -12 Tage" ist keine Information, sondern ein Fehler
      mit Minuszeichen davor. */
+  /* `kurz` ist derselbe Stand ohne den Prüfungsnamen — für die Kopfzeile eines
+     Abschnitts, in der der Name schon darüber steht. */
   function countdown() {
     var datum = pruefungsdatum();
-    if (!datum) return { text: "Prüfungstermin festlegen", handeln: true };
+    if (!datum) return { text: "Prüfungstermin festlegen", kurz: "offen", handeln: true };
     var tage = AP.tageBis(datum);
-    if (tage < 0) return { text: "Prüfungstermin aktualisieren", handeln: true };
-    return {
-      text: pruefungsname() + " · " + (tage === 0 ? "heute" : tage === 1 ? "morgen"
-                                                 : "noch " + tage + " Tage"),
-      handeln: false
-    };
+    if (tage < 0) return { text: "Prüfungstermin aktualisieren", kurz: "vorbei", handeln: true };
+    var rest = tage === 0 ? "heute" : tage === 1 ? "morgen" : "noch " + tage + " Tage";
+    return { text: pruefungsname() + " · " + rest, kurz: rest, handeln: false };
   }
 
   /* Was saß nicht? Drei Quellen, die es längst gibt und die nie jemand
@@ -233,10 +232,21 @@
 
   /* ================================================== Bausteine */
 
-  function kopfzeile(titel, unter) {
+  /* Der Bereichskopf aus dem Designsystem: Mono-Augenbraue in Gold, Titel in
+     Source Serif 4, Beitext in IBM Plex Sans, darunter über einer Haarlinie
+     eine einzelne Standzeile. Dieselbe Ordnung wie auf Heute — dort heißt die
+     Augenbraue „AZUBIPASS" und die Standzeile ist der Countdown. */
+  function kopfzeile(titel, unter, augenbraue, standName, standWert) {
     var k = el("div", "schirm-kopf");
+    if (augenbraue) k.appendChild(el("p", "schirm-augenbraue", augenbraue));
     k.appendChild(el("h1", null, titel));
     if (unter) k.appendChild(el("p", null, unter));
+    if (standName) {
+      var z = el("div", "schirm-stand");
+      z.appendChild(el("span", null, standName));
+      z.appendChild(el("b", null, standWert));
+      k.appendChild(z);
+    }
     return k;
   }
 
@@ -439,24 +449,36 @@
     s.innerHTML = "";
     var g = gesamtstand();
     s.appendChild(kopfzeile("Lernfelder",
-      inhalt.lernfelder.length + " Lernfelder, " + g.gesamt + " Kapitel · "
-      + g.fertig + " geschafft"));
+      "Alles an einem Ort. Dein Fortschritt zeigt dir, wo du weitermachst — "
+      + "nicht, was du versäumt hast.",
+      "Deine Ausbildung",
+      "Gesamtfortschritt", g.fertig + " / " + g.gesamt + " Kapitel"));
+
+    /* Wo es weitergeht, steht auf Heute — und ab jetzt auch hier, weil Lernen
+       der Ort ist, an dem man sucht. Es ist dasselbe Lernfeld, nicht ein
+       zweites Ergebnis: beide fragen lernziel(). */
+    var ziel = lernziel();
+    var hier = ziel ? ziel.lernfeld : null;
 
     /* Bewusst in der gewohnten Reihenfolge und nicht nach Fortschritt sortiert:
-       Eine Liste, die ihre Reihenfolge ändert, muss man jedes Mal neu lesen.
-       Wo es weitergeht, steht auf dem Startbildschirm. */
+       Eine Liste, die ihre Reihenfolge ändert, muss man jedes Mal neu lesen. */
     var liste = el("ul", "liste-schlicht");
     inhalt.lernfelder.forEach(function (lf) {
       var st = lernfeldstand(lf);
       var li = el("li");
-      li.appendChild(reihe(lf.seite, function (a) {
+      var zeile = reihe(lf.seite, function (a) {
         var oben = el("div", "reihe-oben");
-        oben.appendChild(el("span", "reihe-nr", lf.id.toUpperCase()));
+        oben.appendChild(el("span", "reihe-nr", kuerzel(lf.id)));
         oben.appendChild(el("span", "reihe-titel", lf.titel));
-        oben.appendChild(el("span", "reihe-meta", st.fertig + "/" + st.gesamt));
+        oben.appendChild(el("span", "reihe-meta", st.fertig + " / " + st.gesamt));
         a.appendChild(oben);
+        if (lf.id === hier) {
+          a.appendChild(el("div", "reihe-hinweis", "Hier weitermachen"));
+        }
         a.appendChild(balken(st.anteil));
-      }));
+      });
+      if (lf.id === hier) zeile.classList.add("aktuell");
+      li.appendChild(zeile);
       liste.appendChild(li);
     });
     s.appendChild(liste);
@@ -540,11 +562,7 @@
       oben.appendChild(el("span", "reihe-titel", e[1]));
       oben.appendChild(el("span", "reihe-meta", e[2]));
       a.appendChild(oben);
-      a.addEventListener("click", function (ev) {
-        ev.preventDefault();
-        uebenAnsicht = e[0];
-        zeigeUeben(s);
-      });
+      a.addEventListener("click", hin(e[0]));
       li.appendChild(a);
       liste.appendChild(li);
     });
@@ -879,27 +897,44 @@
 
   /* ================================================== Ich */
 
+  /* Ein Abschnitt unter „Ich": offener Block mit Haarlinie darüber, Mono-Titel
+     links, optional eine Kennzahl rechts. Keine Karte, kein Schatten. */
+  function feldgruppe(titel, wert) {
+    var g = el("section", "feldgruppe");
+    var h = el("h2");
+    h.appendChild(el("span", null, titel));
+    if (wert) h.appendChild(el("b", null, wert));
+    g.appendChild(h);
+    return g;
+  }
+
   function zeigeIch(s) {
     s.innerHTML = "";
     var g = gesamtstand();
-    s.appendChild(kopfzeile("Ich", "Fortschritt, Sicherung und Einstellungen."));
+    s.appendChild(kopfzeile("Ich",
+      "Fortschritt, Prüfung und lokale Daten — ruhig und verständlich an einem Ort.",
+      "Dein Bereich",
+      "Insgesamt", Math.round(g.anteil * 100) + " %"));
 
+    var standGruppe = feldgruppe("Dein Stand");
     var zahlen = el("div", "zahlenreihe");
     zahlen.appendChild(zahlenfeld(g.fertig, " / " + g.gesamt, "Kapitel geschafft"));
     zahlen.appendChild(zahlenfeld(
       Object.keys(stand.karten).filter(function (id) {
         return stand.karten[id].fach >= AP.FAECHER;
       }).length, " / " + inhalt.karten.length, "Karten sitzen"));
-    s.appendChild(zahlen);
+    standGruppe.appendChild(zahlen);
+    s.appendChild(standGruppe);
 
-    s.appendChild(el("div", "abschnittstitel", "Fortschritt je Lernfeld"));
+    var lfGruppe = feldgruppe("Fortschritt je Lernfeld",
+      inhalt.lernfelder.length + " Lernfelder");
     var ul = el("ul", "liste-schlicht");
     inhalt.lernfelder.forEach(function (lf) {
       var st = lernfeldstand(lf);
       var li = el("li");
       li.appendChild(reihe(lf.seite, function (a) {
         var oben = el("div", "reihe-oben");
-        oben.appendChild(el("span", "reihe-nr", lf.id.toUpperCase()));
+        oben.appendChild(el("span", "reihe-nr", kuerzel(lf.id)));
         oben.appendChild(el("span", "reihe-titel", lf.titel));
         oben.appendChild(el("span", "reihe-meta", Math.round(st.anteil * 100) + " %"));
         a.appendChild(oben);
@@ -907,12 +942,14 @@
       }));
       ul.appendChild(li);
     });
-    s.appendChild(ul);
+    lfGruppe.appendChild(ul);
+    s.appendChild(lfGruppe);
 
     /* Lesezeichen */
-    s.appendChild(el("div", "abschnittstitel", "Lesezeichen"));
+    var lzGruppe = feldgruppe("Lesezeichen",
+      stand.lesezeichen.length ? String(stand.lesezeichen.length) : null);
     if (!stand.lesezeichen.length) {
-      s.appendChild(leerkasten("Noch keine. Im Kapitel oben rechts auf das Zeichen "
+      lzGruppe.appendChild(leerkasten("Noch keine. Im Kapitel oben rechts auf das Zeichen "
         + "tippen, dann steht es hier."));
     } else {
       var lz = el("ul", "liste-schlicht");
@@ -926,11 +963,12 @@
         }));
         lz.appendChild(li);
       });
-      s.appendChild(lz);
+      lzGruppe.appendChild(lz);
     }
+    s.appendChild(lzGruppe);
 
-    /* Einstellungen */
-    s.appendChild(el("div", "abschnittstitel", "Einstellungen"));
+    /* Darstellung und Prüfungstermin */
+    var einst = feldgruppe("Darstellung");
     var stimmung = el("div", "stellreihe");
     var links = el("div");
     links.appendChild(el("b", null, "Farben"));
@@ -947,17 +985,19 @@
       schalter.appendChild(b);
     });
     stimmung.appendChild(schalter);
-    s.appendChild(stimmung);
+    einst.appendChild(stimmung);
+    s.appendChild(einst);
 
-    s.appendChild(terminfeld());
+    var termin = feldgruppe("Prüfungstermin", countdown().kurz);
+    termin.appendChild(terminfeld());
+    s.appendChild(termin);
 
     /* Sicherung */
-    s.appendChild(el("div", "abschnittstitel", "Deine Daten"));
-    var erklaerung = el("p");
-    erklaerung.style.cssText = "color:var(--text-sek);font-size:15.5px;margin:0 0 4px";
+    var daten = feldgruppe("Deine Daten", "nur auf diesem Gerät");
+    var erklaerung = el("p", "leise-text");
     erklaerung.textContent = "Dein Lernstand liegt nur in diesem Browser. Löschst du die "
       + "Websitedaten oder wechselst das Gerät, ist er weg — außer du sicherst ihn hier.";
-    s.appendChild(erklaerung);
+    daten.appendChild(erklaerung);
 
     var meldung = el("p", "meldung");
     var knoepfe = el("div", "knopfreihe-weit");
@@ -982,13 +1022,19 @@
     knoepfe.appendChild(rein);
     knoepfe.appendChild(weg);
     knoepfe.appendChild(datei);
-    s.appendChild(knoepfe);
-    s.appendChild(meldung);
+    daten.appendChild(knoepfe);
+    daten.appendChild(meldung);
+    s.appendChild(daten);
 
-    var rechts = el("p");
-    rechts.style.cssText = "margin:30px 0 0;font-size:13.5px";
-    rechts.innerHTML = '<a href="impressum.html">Impressum</a> · '
-      + '<a href="datenschutz.html">Datenschutz</a>';
+    /* Rechtsseiten als eigene Zeilen statt als zwei 19 px hohe Wörter mit
+       einem Mittelpunkt dazwischen: Am Handy trifft man das nicht. */
+    var rechts = el("div", "rechtswege");
+    [["impressum.html", "Impressum"],
+     ["datenschutz.html", "Datenschutz"]].forEach(function (r) {
+      var a = el("a", null, r[1]);
+      a.href = r[0];
+      rechts.appendChild(a);
+    });
     s.appendChild(rechts);
 
     var gebaut = el("p", "reihe-quelle");
