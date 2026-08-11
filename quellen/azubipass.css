@@ -155,16 +155,52 @@ button{font:inherit;}
 .inhalt h3{font-size:27px;font-weight:700;letter-spacing:-.015em;margin:56px 0 18px;padding-left:16px;border-left:3px solid var(--gold);}
 .inhalt h3:first-child{margin-top:0;}
 .inhalt p{margin:0 0 20px;}
-mark{background:linear-gradient(transparent 62%,rgba(201,162,39,.34) 62%);color:inherit;}
+/* ---------- Hervorhebungen ----------
+
+   Drei Auszeichnungen, die sich nicht verwechseln lassen dürfen:
+
+     wichtige Aussage   ruhige volle Goldfläche
+     anklickbarer Begriff   halbfett mit durchgehender Linie
+     Paragraph              kompakte Mono-Kennung auf eigener Grünfläche
+
+   Der halbhohe Textmarker ist weg. Ein Verlauf, der nur die untere Worthälfte
+   färbt, sieht auf Papier nach Marker aus und am Schirm nach Fehler: Bei
+   Unterlängen schneidet die Kante mitten durch das g. Jetzt liegt die Fläche
+   unter der ganzen Phrase — box-decoration-break sorgt dafür, dass sie das auch
+   über einen Zeilenumbruch hinweg tut, statt beim ersten Bruch aufzureißen.
+
+   Begriff und Paragraph tragen keine gepunktete Linie mehr. Gepunktet heißt im
+   Web seit jeher „abgekürzt", nicht „hier steht mehr dahinter". */
+mark{padding:.08em .2em;color:inherit;
+  background:color-mix(in srgb,var(--gold) 23%,transparent);border-radius:2px;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone;}
 
 /* Begriffe & Paragraphen */
-.begriff,.par{display:inline;cursor:pointer;border:0;background:none;padding:0;color:inherit;font:inherit;text-align:left;}
-.begriff{border-bottom:1.5px dotted var(--gold-matt);}
-.begriff:hover{background:rgba(201,162,39,.12);}
-.begriff.offen{background:rgba(201,162,39,.2);}
-.par{font-family:var(--mono);font-size:.86em;color:var(--tinte);white-space:nowrap;border-bottom:1.5px dotted var(--tinte-hell);}
-.par:hover{background:rgba(27,67,50,.08);}
-.par.offen{background:rgba(27,67,50,.12);}
+.begriff,.par{position:relative;display:inline;cursor:pointer;border:0;
+  background:none;padding:0;color:inherit;font:inherit;text-align:left;}
+/* Das Bedienziel ist 44 px hoch, die Zeile bleibt es nicht: Eine unsichtbare
+   Fläche über dem Wort fängt den Daumen ab, ohne den Zeilenabstand des
+   Fließtextes auf Fingerkuppengröße aufzublähen. Die Schrift selbst darf ein
+   Wort im Satz bleiben — inline-block würde lange deutsche Komposita am
+   Zeilenende als Ganzes umbrechen lassen. */
+.begriff::after,.par::after{content:"";position:absolute;left:0;right:0;
+  top:50%;height:44px;transform:translateY(-50%);}
+.begriff{font-weight:600;color:var(--tinte);
+  border-bottom:1px solid color-mix(in srgb,var(--tinte) 55%,transparent);}
+.begriff:hover,.begriff.offen{background:rgba(201,162,39,.16);
+  border-bottom-color:var(--tinte);}
+.par{font-family:var(--mono);font-size:.82em;white-space:nowrap;
+  padding:.14em .42em;border-radius:2px;color:var(--tinte);
+  background:color-mix(in srgb,var(--tinte) 10%,transparent);
+  border:1px solid color-mix(in srgb,var(--tinte) 28%,transparent);
+  box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.par:hover,.par.offen{background:color-mix(in srgb,var(--tinte) 20%,transparent);
+  border-color:var(--tinte);}
+/* Auf den dunklen Inseln dreht das Waldgrün auf Gold — dort ist es der einzige
+   Ton, der auf tiefem Grün noch trägt. */
+.zus .begriff{color:var(--gold);border-bottom-color:rgba(201,162,39,.55);}
+.zus .par{color:var(--gold);background:rgba(201,162,39,.12);
+  border-color:rgba(201,162,39,.45);}
 #blase{position:fixed;z-index:80;width:350px;max-width:calc(100vw - 28px);background:var(--papier);color:var(--text);border:1px solid var(--linie);border-left:3px solid var(--gold);padding:15px 18px 17px;font-family:var(--sans);font-size:14.5px;line-height:1.55;box-shadow:0 20px 48px var(--schatten);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;}
 #blase.offen{opacity:1;visibility:visible;transform:none;}
 #blase .b-art{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-matt);margin-bottom:5px;}

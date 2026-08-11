@@ -791,7 +791,11 @@
       var pos = 0;
       teile.forEach(function (t) {
         e.appendChild(document.createTextNode(text.slice(pos, t[0])));
-        e.appendChild(el("mark", null, t[1]));
+        /* Eigene Klasse, nicht das nackte mark: Im Kapitel bedeutet mark
+           „wichtige Aussage". Ein Suchtreffer bedeutet „hier steht dein Wort".
+           Zwei Bedeutungen, zwei Flächen — sonst liest man das eine als das
+           andere. */
+        e.appendChild(el("mark", "such-treffer", t[1]));
         pos = t[0] + t[1].length;
       });
       e.appendChild(document.createTextNode(text.slice(pos)));
