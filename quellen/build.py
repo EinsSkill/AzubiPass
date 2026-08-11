@@ -210,6 +210,43 @@ def probeklausur_aktion(ch, lf, hat_aufgaben):
             f'Dieses Kapitel als Probeklausur üben</a>')
 
 
+def nur_text(s):
+    """Auszeichnung heraus — für eine Inhaltsangabe, die kein Knopf sein darf."""
+    s = re.sub(r"\{\{(?:begriff|par):[a-z0-9-]+\|(.+?)\}\}", r"\1", str(s or ""))
+    s = re.sub(r"\*\*(.+?)\*\*", r"\1", s)
+    s = re.sub(r"(?<!\w)\*(.+?)\*(?!\w)", r"\1", s)
+    return html.escape(re.sub(r"==(.+?)==", r"\1", s))
+
+
+def inhaltsrand(ch, lf):
+    """Die Abschnitte des Kapitels als Wegmarke.
+
+    Am Schreibtisch steht sie fest neben dem Text; am Handy klappt sie aus einer
+    Zeile auf, die mitläuft. Beides aus derselben Liste — ein zweites
+    Inhaltsverzeichnis fürs Handy wäre eine zweite Wahrheit.
+
+    Knopf und Liste statt <details>: Ein geschlossenes <details> versteckt
+    seinen Inhalt vom Browser aus, und am Schreibtisch soll die Liste dauerhaft
+    stehen, ohne dass jemand sie aufklappt. Das ließe sich nur mit einem
+    open-Attribut erzwingen, das am Handy sofort wieder weg müsste. Ein Knopf
+    mit aria-expanded sagt dasselbe, überall gleich."""
+    zeilen = "".join(
+        f'<li data-abschnitt="{a["id"]}">'
+        f'<a href="#{ch["id"]}-{a["id"]}">{nur_text(a["titel"])}</a></li>'
+        for a in ch["bloecke"])
+    n = len(ch["bloecke"])
+    liste_id = f'{lf["id"]}-{ch["id"]}-lr'
+    return (f'<aside class="lauf-rand">'
+            f'<div class="lr-inhalt">'
+            f'<button class="lr-knopf" type="button" aria-expanded="false" '
+            f'aria-controls="{liste_id}">'
+            f'<span class="lr-marke">K{ch["nummer"]} · Inhalt</span>'
+            f'<span class="lr-stand"><b>1</b> / {n}</span></button>'
+            f'<div class="lr-titel">{html.escape(ch["titel"])}</div>'
+            f'<ol class="lr-liste" id="{liste_id}">{zeilen}</ol>'
+            f'</div></aside>')
+
+
 def kapitel(ch, lf, naechstes, hat_aufgaben=False):
     ziele = "".join(
         f'<li data-fuer="{z["abschnitt"]}"><span class="haken"></span>'
@@ -274,7 +311,7 @@ def kapitel(ch, lf, naechstes, hat_aufgaben=False):
   </div>
 
   <div class="lauf">
-    <aside class="lauf-rand"><b>K{ch["nummer"]}</b>{html.escape(ch["titel"])}</aside>
+    {inhaltsrand(ch, lf)}
     <article class="inhalt">
       {"".join(abschnitte)}
 
