@@ -47,6 +47,10 @@ INHALT = json.loads((SEITE / "mittel" / "inhalt.json").read_text(encoding="utf-8
 KAPITEL = [(lf["id"], k["id"], lf["titel"], k["titel"])
            for lf in INHALT["lernfelder"] for k in lf["kapitel"]]
 
+AUFGABEN_DATEI = SEITE / "mittel" / "aufgaben.json"
+AUFGABEN = json.loads(AUFGABEN_DATEI.read_text(encoding="utf-8")) \
+    if AUFGABEN_DATEI.exists() else None
+
 
 def tag(versatz):
     return (date.today() + timedelta(days=versatz)).isoformat()
@@ -104,6 +108,595 @@ def heutetext(pg):
 class Stiller(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *_):
         pass
+
+
+# ------------------------------------------------- Eigene Probeklausur · Daten
+#
+# Was sich ohne Browser prüfen lässt, wird ohne Browser geprüft: Ein fehlendes
+# Konto oder ein Baustein ohne Punkte ist eine Tatsache über die Datei, keine
+# Frage an die Darstellung.
+
+def schluessel(s):
+    s = str(s).lower()
+    for alt, neu in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
+        s = s.replace(alt, neu)
+    return re.sub(r"[^a-z0-9]", "", s)
+
+
+def probeklausur_daten():
+    print("\n· Probeklausur · Aufgabenbestand")
+    if not AUFGABEN:
+        pruefe("mittel/aufgaben.json wurde gebaut", False, "Datei fehlt")
+        return
+    pruefe("mittel/aufgaben.json wurde gebaut", True)
+
+    bausteine = AUFGABEN["bausteine"]
+    kapitel = AUFGABEN["kapitel"]
+    buch = [k for k in kapitel if k["lernfeld"] == "buchfuehrung"]
+    buch_b = [b for b in bausteine if b["lernfeld"] == "buchfuehrung"]
+
+    pruefe("Neun Buchführungskapitel mit Aufgaben", len(buch) == 9, len(buch))
+    kennungen = [b["id"] for b in buch_b]
+    pruefe("45 eindeutige Baustein-Kennungen",
+           len(kennungen) == 45 and len(set(kennungen)) == 45,
+           f"{len(kennungen)} Bausteine, {len(set(kennungen))} verschieden")
+    pruefe("Jeder Baustein hat Punkte und Dauer",
+           all(b.get("punkte") and b.get("dauer_min") for b in bausteine))
+    zu_wenig = [k["schluessel"] for k in buch if k["bausteine"] < 5]
+    pruefe("Jedes Kapitel hat mindestens fünf Bausteine", not zu_wenig, zu_wenig)
+
+    eng = []
+    for k in buch:
+        bereiche = {b["anforderungsbereich"] for b in buch_b
+                    if b["kapitel"] == k["kapitel"]}
+        if len(bereiche) < 2:
+            eng.append(k["schluessel"])
+    pruefe("Jedes Kapitel deckt mindestens zwei Anforderungsbereiche ab", not eng, eng)
+
+    # Konten
+    index = {}
+    for k in AUFGABEN["kontenplan"]:
+        index[k["nr"]] = k
+        index[schluessel(k["name"])] = k
+        for a in k.get("alias", []):
+            index[schluessel(a)] = k
+    offen = []
+    for b in bausteine:
+        for e in b.get("eingabe") or []:
+            if e.get("block") != "buchungssatz":
+                continue
+            for z in e.get("loesung") or []:
+                for seite in ("soll", "haben"):
+                    wert = z.get(seite)
+                    if wert in (None, ""):
+                        continue
+                    if wert not in index and schluessel(wert) not in index:
+                        offen.append(f'{b["id"]}:{wert}')
+    pruefe("Jede Kontonummer oder Kontenbezeichnung ist auflösbar", not offen, offen)
+
+    # Belege
+    fehlend = []
+    for b in bausteine:
+        for a in b.get("anzeige") or []:
+            if a.get("beleg") and a["beleg"] not in AUFGABEN["belege"]:
+                fehlend.append(f'{b["id"]}:{a["beleg"]}')
+    pruefe("Jede Belegreferenz hat eine Vorlage", not fehlend, fehlend)
+    pruefe("Belegvorlagen sind mitgebaut",
+           all(v.get("html") for v in AUFGABEN["belege"].values()),
+           list(AUFGABEN["belege"]))
+
+    # Verweise
+    bekannt = {e["id"] for e in INHALT["begriffe"]}
+    tot = []
+    for b in bausteine:
+        for art, kennung in re.findall(r"\{\{(begriff|par):([a-z0-9-]+)\|",
+                                       json.dumps(b, ensure_ascii=False)):
+            if kennung not in bekannt:
+                tot.append(f'{b["id"]}:{art}:{kennung}')
+    pruefe("Alle Begriffs- und Paragraphenverweise sind auflösbar", not tot, tot)
+
+    roh = AUFGABEN_DATEI.read_text(encoding="utf-8")
+    pruefe("Keine hinweis_konto-Merkzettel mehr im Bestand",
+           "hinweis_konto" not in roh)
+
+    # Renderer
+    renderer = (Path(__file__).parent / "aufgaben.js").read_text(encoding="utf-8")
+    unbekannt = []
+    for b in bausteine:
+        for e in b.get("eingabe") or []:
+            if f'e.block === "{e["block"]}"' not in renderer:
+                unbekannt.append("eingabe:" + e["block"])
+        for a in b.get("anzeige") or []:
+            if f'a.block === "{a["block"]}"' not in renderer:
+                unbekannt.append("anzeige:" + a["block"])
+    pruefe("Alle vorkommenden Block-Typen kennt der Renderer",
+           not unbekannt, sorted(set(unbekannt)))
+
+
+def probeklausur_build():
+    print("\n· Probeklausur · Build und Offline")
+    sw = (SEITE / "sw.js").read_text(encoding="utf-8")
+    pruefe("Aufgabenbestand steht im Offline-Vorrat", "mittel/aufgaben.json" in sw)
+    pruefe("Renderer steht im Offline-Vorrat", "mittel/aufgaben.js" in sw)
+    pruefe("Kein Verweis auf den Wegwerf-Prototyp",
+           "vorschau-aufgaben" not in sw
+           and not (SEITE / "vorschau-aufgaben.html").exists())
+    pruefe("App bindet den Renderer ein",
+           "mittel/aufgaben.js" in (SEITE / "app.html").read_text(encoding="utf-8"))
+
+    # Reproduzierbar: derselbe Quellstand ergibt denselben Bestand. Verglichen
+    # wird ohne das Baudatum — das ist absichtlich jedes Mal neu.
+    import subprocess
+    vorher = json.loads(AUFGABEN_DATEI.read_text(encoding="utf-8"))
+    lauf = subprocess.run([sys.executable, "build_app.py"],
+                          cwd=str(Path(__file__).parent),
+                          capture_output=True, text=True)
+    nachher = json.loads(AUFGABEN_DATEI.read_text(encoding="utf-8"))
+    vorher.pop("gebaut", None)
+    nachher.pop("gebaut", None)
+    pruefe("Build läuft ohne Fehler durch", lauf.returncode == 0,
+           lauf.stdout.strip().splitlines()[-1:] if lauf.returncode else "")
+    pruefe("Build ist reproduzierbar", vorher == nachher)
+
+
+# ------------------------------------------------- Eigene Probeklausur · Logik
+#
+# Rechner, Ziehungen und Zusammensteller laufen im Browser. Sie hier in Python
+# nachzubauen hieße, zwei Fassungen derselben Regeln zu pflegen — und geprüft
+# wäre dann die Python-Fassung, nicht die, die der Nutzer bedient.
+
+LOGIK = r"""
+async () => {
+  const P = window.APK.pruefstand;
+  await P.laden();
+  const V = P.vorrat();
+  const raus = {};
+
+  // --- Variablen -----------------------------------------------------------
+  const variabel = V.bausteine.filter(b => b.variablen);
+  let schlecht = [], unplausibel = [], schritt_falsch = [], abgeleitet_falsch = [];
+  let bedingung_falsch = [];
+  for (const b of variabel) {
+    for (let s = 0; s < 100; s++) {
+      let w;
+      try { w = P.werteZiehen(b, "test-" + s); }
+      catch (e) { schlecht.push(b.id + ": " + e.message); break; }
+      for (const [name, v] of Object.entries(b.variablen)) {
+        if (typeof v !== "object" || v === null || v.von === undefined) continue;
+        if (w[name] < v.von || w[name] > v.bis) unplausibel.push(b.id + "." + name);
+        const schritt = v.schritt || 1;
+        if (Math.abs((w[name] - v.von) % schritt) > 1e-6) {
+          schritt_falsch.push(b.id + "." + name);
+        }
+      }
+      for (const [name, formel] of Object.entries(b.abgeleitet || {})) {
+        if (Math.abs(P.rechne(formel, w) - w[name]) > 1e-6) {
+          abgeleitet_falsch.push(b.id + "." + name);
+        }
+      }
+      if (b.pruefung_variablen && P.rechne(b.pruefung_variablen, w) !== true) {
+        bedingung_falsch.push(b.id);
+      }
+      for (const [name, wert] of Object.entries(w)) {
+        if (wert < 0 || !isFinite(wert)) unplausibel.push(b.id + "." + name + "=" + wert);
+      }
+    }
+  }
+  raus.variabel_zahl = variabel.length;
+  raus.ziehung_fehler = schlecht.slice(0, 4);
+  raus.unplausibel = [...new Set(unplausibel)].slice(0, 4);
+  raus.schritt_falsch = [...new Set(schritt_falsch)].slice(0, 4);
+  raus.abgeleitet_falsch = [...new Set(abgeleitet_falsch)].slice(0, 4);
+  raus.bedingung_falsch = [...new Set(bedingung_falsch)].slice(0, 4);
+
+  // Derselbe Seed, dieselben Werte
+  const einer = variabel[0];
+  raus.seed_gleich = JSON.stringify(P.werteZiehen(einer, "gleich"))
+                  === JSON.stringify(P.werteZiehen(einer, "gleich"));
+
+  // Unbekannte Ausdrücke fliegen auf
+  const boese = ["alert(1)", "window.location", "ak; drop", "1 + unbekannt", "eval(x)"];
+  raus.abgelehnt = boese.every(a => {
+    try { P.rechne(a, { ak: 1 }); return false; } catch (e) { return true; }
+  });
+  raus.rechnet = Math.abs(P.rechne("runde(1000 / 3, 2)", {}) - 333.33) < 1e-9;
+
+  // --- Zusammensteller -----------------------------------------------------
+  const alle = V.kapitel.map(k => k.schluessel);
+  const zwei = alle.slice(0, 2);
+
+  const a1 = P.stelleZusammen({ kapitel: zwei, dauer: 45, seed: "S1" });
+  raus.nur_gewaehlt = a1.aufgaben.every(id =>
+    zwei.indexOf(P.baustein(id).lernfeld + ":" + P.baustein(id).kapitel) !== -1);
+  raus.keine_doppelte = new Set(a1.aufgaben).size === a1.aufgaben.length;
+
+  const a2 = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "S2" });
+  raus.abdeckung = new Set(a2.aufgaben.map(id =>
+    P.baustein(id).lernfeld + ":" + P.baustein(id).kapitel)).size === alle.length;
+  raus.dauer_gehalten = a2.minuten <= 90;
+  raus.dauer_genutzt = a2.minuten >= 90 * 0.8;
+  raus.typenmischung = new Set(a2.aufgaben.flatMap(id =>
+    P.baustein(id).eingabe.map(e => e.block))).size >= 4;
+
+  const kurz = P.stelleZusammen({ kapitel: alle, dauer: 15, seed: "S3" });
+  raus.zu_kurz = kurz.fehler === "zu_kurz" && kurz.mindestdauer > 15;
+
+  const leer = P.stelleZusammen({ kapitel: [], dauer: 60, seed: "S4" });
+  raus.leer_abgelehnt = leer.fehler === "leer" && leer.aufgaben.length === 0;
+
+  const g1 = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "gleich" });
+  const g2 = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "gleich" });
+  raus.seed_klausur_gleich = JSON.stringify(g1.aufgaben) === JSON.stringify(g2.aufgaben);
+
+  let anders = 0;
+  for (let i = 0; i < 8; i++) {
+    const v = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "neu" + i,
+                                 vorher: g1.aufgaben });
+    if (JSON.stringify(v.aufgaben) !== JSON.stringify(g1.aufgaben)) anders++;
+  }
+  raus.neue_variante = anders >= 7;
+
+  // --- Zahlen lesen --------------------------------------------------------
+  raus.komma = P.zahlLesen("1.234,56") === 1234.56
+            && P.zahlLesen("1234.56") === 1234.56
+            && P.zahlLesen("1.500") === 1500
+            && P.zahlLesen("12,5") === 12.5
+            && P.zahlLesen("quatsch") === null;
+
+  // --- Konten --------------------------------------------------------------
+  raus.konto_nummer = (P.konto("2800") || {}).nr === "2800";
+  raus.konto_name = (P.konto("Guthaben bei Kreditinstituten") || {}).nr === "2800";
+  raus.konto_alias = (P.konto("Bank") || {}).nr === "2800";
+  raus.konto_liste = (P.konto("2800 — Guthaben bei Kreditinstituten") || {}).nr === "2800";
+  raus.konto_unsinn = P.konto("Gibtsnicht") === null;
+
+  return raus;
+}
+"""
+
+
+def probeklausur_logik(pg):
+    print("\n· Probeklausur · Rechner, Ziehungen, Zusammensteller")
+    r = pg.evaluate(LOGIK)
+
+    pruefe("100 Ziehungen je variablem Baustein ohne Fehler",
+           not r["ziehung_fehler"], r["ziehung_fehler"])
+    pruefe("Keine negativen oder unplausiblen Werte",
+           not r["unplausibel"], r["unplausibel"])
+    pruefe("Schrittweiten werden eingehalten",
+           not r["schritt_falsch"], r["schritt_falsch"])
+    pruefe("Abgeleitete Werte stimmen", not r["abgeleitet_falsch"], r["abgeleitet_falsch"])
+    pruefe("Prüfbedingungen werden eingehalten",
+           not r["bedingung_falsch"], r["bedingung_falsch"])
+    pruefe("Derselbe Seed erzeugt dieselben Werte", r["seed_gleich"])
+    pruefe("Unbekannte Ausdrücke werden abgelehnt", r["abgelehnt"])
+    pruefe("Der Rechner rechnet richtig", r["rechnet"])
+
+    pruefe("Nur Aufgaben aus gewählten Kapiteln", r["nur_gewaehlt"])
+    pruefe("Keine Aufgabe doppelt", r["keine_doppelte"])
+    pruefe("Alle gewählten Kapitel kommen vor", r["abdeckung"])
+    pruefe("Dauerziel wird nicht überschritten", r["dauer_gehalten"])
+    pruefe("Dauerziel wird weitgehend ausgenutzt", r["dauer_genutzt"])
+    pruefe("Sinnvolle Typenmischung", r["typenmischung"])
+    pruefe("Zu kurze Dauer wird ehrlich gemeldet", r["zu_kurz"])
+    pruefe("Leere Auswahl lässt sich nicht starten", r["leer_abgelehnt"])
+    pruefe("Identischer Seed erzeugt identische Klausur", r["seed_klausur_gleich"])
+    pruefe("Neuer Seed erzeugt eine andere Variante", r["neue_variante"])
+
+    pruefe("Zahlen mit Komma und Punkt werden gelesen", r["komma"])
+    pruefe("Konto über die Nummer auflösbar", r["konto_nummer"])
+    pruefe("Konto über die Bezeichnung auflösbar", r["konto_name"])
+    pruefe("Konto über die Schulbezeichnung auflösbar", r["konto_alias"])
+    pruefe("Konto aus der Vervollständigung auflösbar", r["konto_liste"])
+    pruefe("Unbekanntes Konto bleibt unbekannt", r["konto_unsinn"])
+
+
+BEWERTUNG = r"""
+async () => {
+  const P = window.APK.pruefstand;
+  await P.laden();
+  const V = P.vorrat();
+  const raus = {};
+  const finde = (pruef) => V.bausteine.find(pruef);
+
+  // Eine Klausur aus genau einem Baustein bauen und die Antworten setzen
+  function stelle(b, antworten, selbst) {
+    const werte = P.werteZiehen(b, "bewertung");
+    localStorage.setItem("azubipass:probeklausur:v1", JSON.stringify({
+      v: 1, seed: "bewertung", kapitel: [b.lernfeld + ":" + b.kapitel], dauer: 60,
+      ende: null, gestartet: true, abgegeben: true, aufgaben: [b.id],
+      werte: { [b.id]: werte }, antworten: { [b.id]: antworten(werte) },
+      markiert: [], aktuell: 0, selbst: selbst ? { [b.id]: selbst } : {},
+      vorher: [], abgelaufen: false
+    }));
+    return werte;
+  }
+
+  // Zahl mit Dezimalkomma und Folgefehler (K1-03: Vermögen, Schulden, EK)
+  const zahlB = finde(b => b.id === "buchfuehrung-k1-03");
+  let w = stelle(zahlB, w => ({ 0: String(w.vermoegen).replace(".", ","),
+                                1: String(w.schulden).replace(".", ","),
+                                2: String(w.eigenkapital) }));
+  raus.zahl_voll = P.bewerte(zahlB.id).punkte === zahlB.punkte;
+
+  // Folgefehler: Vermögen falsch, Eigenkapital passend zum eigenen Wert
+  w = stelle(zahlB, w => ({ 0: String(w.vermoegen + 1000), 1: String(w.schulden),
+                            2: String(w.vermoegen + 1000 - w.schulden) }));
+  const ff = P.bewerte(zahlB.id);
+  raus.folgefehler = ff.punkte === zahlB.punkte - 2;
+
+  // Teilpunkte Zuordnung
+  const zuB = finde(b => b.eingabe.some(e => e.block === "zuordnung")
+                      && b.bewertung.punkte_je_treffer);
+  const zuBlock = zuB.eingabe.findIndex(e => e.block === "zuordnung");
+  stelle(zuB, () => ({ [zuBlock]: Object.fromEntries(
+    zuB.eingabe[zuBlock].elemente.map((x, i) =>
+      [i, i === 0 ? "%%falsch%%" : x.loesung])) }));
+  const zuE = P.bewerte(zuB.id);
+  raus.zuordnung_teil = zuE.punkte
+    === (zuB.eingabe[zuBlock].elemente.length - 1) * zuB.bewertung.punkte_je_treffer;
+
+  // Reihenfolge
+  const rfB = finde(b => b.eingabe.some(e => e.block === "reihenfolge"));
+  const rfI = rfB.eingabe.findIndex(e => e.block === "reihenfolge");
+  const richtig = [];
+  rfB.eingabe[rfI].elemente.forEach((x, i) => { richtig[x.position - 1] = i; });
+  stelle(rfB, () => ({ [rfI]: richtig }));
+  raus.reihenfolge_voll =
+    P.bewerte(rfB.id).punkte === rfB.punkte;
+  stelle(rfB, () => ({ [rfI]: richtig.slice().reverse() }));
+  raus.reihenfolge_falsch =
+    P.bewerte(rfB.id).punkte < rfB.punkte;
+
+  // Auswahl
+  const awB = finde(b => b.eingabe.length === 1 && b.eingabe[0].block === "auswahl");
+  stelle(awB, () => ({ 0: awB.eingabe[0].optionen.findIndex(o => o.richtig) }));
+  raus.auswahl_richtig =
+    P.bewerte(awB.id).punkte === awB.punkte;
+  stelle(awB, () => ({ 0: awB.eingabe[0].optionen.findIndex(o => !o.richtig) }));
+  raus.auswahl_falsch = P.bewerte(awB.id).punkte === 0;
+
+  // Buchungssatz: vollständig, in vertauschter Zeilenfolge
+  const bsB = finde(b => b.id === "buchfuehrung-k3-02");
+  const bsI = bsB.eingabe.findIndex(e => e.block === "buchungssatz");
+  function satz(w, umgedreht) {
+    const zeilen = bsB.eingabe[bsI].loesung.map(z => {
+      const seite = z.soll != null ? "soll" : "haben";
+      return { seite: seite, konto: String(z[seite]),
+               betrag: String(w[z.betrag]) };
+    });
+    return umgedreht ? zeilen.slice().reverse() : zeilen;
+  }
+  stelle(bsB, w => ({ [bsI]: satz(w, false) }));
+  raus.buchungssatz_voll =
+    P.bewerte(bsB.id).punkte === bsB.punkte;
+  stelle(bsB, w => ({ [bsI]: satz(w, true) }));
+  raus.buchungssatz_vertauscht =
+    P.bewerte(bsB.id).punkte === bsB.punkte;
+  stelle(bsB, w => ({ [bsI]: satz(w, false).map((z, i) =>
+    i === 0 ? { seite: z.seite, konto: z.konto, betrag: "" } : z) }));
+  const teil = P.bewerte(bsB.id);
+  raus.buchungssatz_teil = teil.punkte > 0 && teil.punkte < bsB.punkte;
+
+  // Offene Antwort: ohne Haken null, mit Haken genau die Kriterienpunkte
+  const offB = finde(b => b.bewertung.art === "selbstbewertung");
+  const offI = offB.eingabe.findIndex(e => e.block === "textfeld");
+  stelle(offB, () => ({ [offI]: "Irgendein Text, der alles behauptet." }));
+  raus.offen_null = P.bewerte(offB.id).punkte === 0;
+  stelle(offB, () => ({ [offI]: "Irgendein Text." }),
+         offB.bewertung.raster.map((_, i) => i === 0));
+  raus.offen_kriterium =
+    P.bewerte(offB.id).punkte === offB.bewertung.raster[0].punkte;
+
+  // Kapitelwerte ergeben zusammen den Gesamtwert
+  const alle = V.kapitel.map(k => k.schluessel);
+  const klausur = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "summe" });
+  const werte = {}, antworten = {};
+  klausur.aufgaben.forEach(id => { werte[id] = P.werteZiehen(P.baustein(id), "summe"); });
+  localStorage.setItem("azubipass:probeklausur:v1", JSON.stringify({
+    v: 1, seed: "summe", kapitel: alle, dauer: 90, ende: null, gestartet: true,
+    abgegeben: true, aufgaben: klausur.aufgaben, werte: werte, antworten: antworten,
+    markiert: [], aktuell: 0, selbst: {}, vorher: [], abgelaufen: false
+  }));
+  const ges = P.ergebnis();
+  raus.summe_stimmt =
+    Math.abs(ges.kapitel.reduce((s, k) => s + k.moeglich, 0) - ges.moeglich) < 1e-9
+    && Math.abs(ges.kapitel.reduce((s, k) => s + k.erreicht, 0) - ges.erreicht) < 1e-9;
+  raus.leer_null = ges.erreicht === 0;
+
+  localStorage.removeItem("azubipass:probeklausur:v1");
+  return raus;
+}
+"""
+
+
+def probeklausur_bewertung(pg):
+    print("\n· Probeklausur · Bewertung")
+    r = pg.evaluate(BEWERTUNG)
+    pruefe("Zahlenbewertung einschließlich Dezimalkomma", r["zahl_voll"])
+    pruefe("Folgefehler wird anerkannt", r["folgefehler"])
+    pruefe("Auswahl richtig gibt volle Punkte", r["auswahl_richtig"])
+    pruefe("Auswahl falsch gibt keine Punkte", r["auswahl_falsch"])
+    pruefe("Zuordnung mit Teilpunkten", r["zuordnung_teil"])
+    pruefe("Reihenfolge richtig gibt volle Punkte", r["reihenfolge_voll"])
+    pruefe("Falsche Reihenfolge gibt weniger", r["reihenfolge_falsch"])
+    pruefe("Buchungssatz vollständig richtig", r["buchungssatz_voll"])
+    pruefe("Vertauschte Buchungszeilen kosten nichts", r["buchungssatz_vertauscht"])
+    pruefe("Buchungssatz mit fehlendem Betrag gibt Teilpunkte", r["buchungssatz_teil"])
+    pruefe("Offene Antwort zählt ohne Selbstbewertung null", r["offen_null"])
+    pruefe("Selbstbewertung zählt genau die abgehakten Kriterien", r["offen_kriterium"])
+    pruefe("Kapitelwerte ergeben zusammen den Gesamtwert", r["summe_stimmt"])
+    pruefe("Ohne Antworten gibt es keine Punkte", r["leer_null"])
+
+
+def probeklausur_klausur(b, w):
+    """Der Klausurmodus im Browser: keine Lösungen, Antworten bleiben, Neuladen
+    stellt wieder her, Verwerfen betrifft nur die Klausur."""
+    print("\n· Probeklausur · Klausurmodus")
+    ktx = b.new_context(viewport={"width": 390, "height": 844}, locale="de-DE")
+    pg = ktx.new_page()
+    pg.goto(f"{w}/app.html")
+    pg.evaluate("k => { localStorage.clear(); "
+                "localStorage.setItem('azubipass:konto', k); }",
+                json.dumps(konto(fertig=["lf10-k1"])))
+    pg.goto(f"{w}/app.html#ueben", wait_until="networkidle")
+    pg.wait_for_timeout(900)
+
+    pg.get_by_text("Eigene Probeklausur").click()
+    pg.wait_for_timeout(900)
+    pruefe("Einstieg unter Üben führt zur Kapitelwahl",
+           pg.locator("#ueben .pk--kapitel").count() > 0)
+    pruefe("Nur Kapitel mit Aufgaben stehen zur Wahl",
+           pg.locator("#ueben .pk--gruppe").count() == 1,
+           pg.locator("#ueben .pk--gruppe").count())
+
+    pg.locator("#ueben .pk--gruppenalle").click()
+    pg.get_by_role("button", name="90 Min.").click()
+    pg.wait_for_timeout(200)
+    pruefe("Auswahl prüfen ist erst mit Kapiteln möglich",
+           not pg.locator(".pk--zonknopf").is_disabled())
+    pg.locator(".pk--zonknopf").click()
+    pg.wait_for_timeout(400)
+    # Kleinschreibung vergleichen: Etliche Beschriftungen stehen per CSS in
+    # Versalien, und inner_text liefert genau das, was zu sehen ist.
+    zus = pg.locator("#ueben").inner_text().lower()
+    pruefe("Zusammenfassung nennt Aufgaben, Punkte und Zeit",
+           "aufgaben" in zus and "punkte" in zus and "bearbeitungszeit" in zus)
+    pruefe("Zusammenfassung sagt, dass keine Lösungen gezeigt werden",
+           "keine lösungen" in zus)
+    pruefe("Der Timer läuft vor dem Start noch nicht",
+           pg.locator("#pk-uhr").count() == 0)
+
+    pg.get_by_role("button", name="Probeklausur starten").click()
+    pg.wait_for_timeout(700)
+    pruefe("Die Klausur beginnt mit Aufgabe 1",
+           "aufgabe 1 von" in pg.locator("#ueben").inner_text().lower())
+    pruefe("Der Timer läuft", pg.locator("#pk-uhr").count() == 1)
+
+    text = pg.locator("#ueben").inner_text()
+    pruefe("Keine Musterlösung vor der Abgabe",
+           "Musterlösung" not in text
+           and pg.locator("#ueben .pk--loesung").count() == 0)
+    pruefe("Keine Erklärung vor der Abgabe",
+           pg.locator("#ueben .pk--erklaerung").count() == 0)
+    pruefe("Keine Richtigkeitsanzeige während der Bearbeitung",
+           pg.locator("#ueben .pk--marke").count() == 0)
+
+    # Antwort setzen, blättern, zurück — bleibt sie stehen?
+    pg.evaluate("""() => {
+      const o = JSON.parse(localStorage.getItem('azubipass:probeklausur:v1'));
+      o.aktuell = o.aufgaben.findIndex(id =>
+        window.APK.pruefstand.baustein(id).eingabe.some(e => e.block === 'zahl'));
+      localStorage.setItem('azubipass:probeklausur:v1', JSON.stringify(o));
+      location.reload();
+    }""")
+    pg.wait_for_timeout(1200)
+    feld = pg.locator("#ueben .pk--zahlfeld").first
+    feld.fill("1234,56")
+    pg.wait_for_timeout(300)
+    stand_vorher = pg.locator("#pk-uhr").inner_text()
+    pg.get_by_role("button", name="Weiter ›").click()
+    pg.wait_for_timeout(400)
+    pg.get_by_role("button", name="‹ Zurück").click()
+    pg.wait_for_timeout(400)
+    pruefe("Antworten bleiben beim Aufgabenwechsel erhalten",
+           pg.locator("#ueben .pk--zahlfeld").first.input_value() == "1234,56")
+
+    pg.get_by_role("button", name="☆ Später ansehen").click()
+    pg.wait_for_timeout(300)
+    pruefe("Markierung wird gesetzt",
+           pg.get_by_role("button", name="★ Gemerkt").count() == 1)
+
+    ende_vorher = pg.evaluate(
+        "() => JSON.parse(localStorage.getItem('azubipass:probeklausur:v1')).ende")
+    pg.reload(wait_until="networkidle")
+    pg.wait_for_timeout(1400)
+    pruefe("Neuladen stellt die laufende Klausur wieder her",
+           "aufgabe" in pg.locator("#ueben").inner_text().lower()
+           and pg.locator("#pk-uhr").count() == 1,
+           pg.locator("#ueben").inner_text().split("\n")[:3])
+    pruefe("Antwort übersteht das Neuladen",
+           pg.locator("#ueben .pk--zahlfeld").first.input_value() == "1234,56")
+    pruefe("Markierung übersteht das Neuladen",
+           pg.get_by_role("button", name="★ Gemerkt").count() == 1)
+    pruefe("Der Timer wird durch Neuladen nicht zurückgesetzt",
+           pg.evaluate("() => JSON.parse(localStorage.getItem"
+                       "('azubipass:probeklausur:v1')).ende") == ende_vorher
+           and pg.locator("#pk-uhr").inner_text() <= stand_vorher,
+           pg.locator("#pk-uhr").inner_text())
+
+    # Abgelaufene Zeit löscht keine Eingaben
+    pg.evaluate("""() => {
+      const o = JSON.parse(localStorage.getItem('azubipass:probeklausur:v1'));
+      o.ende = Date.now() + 1200;
+      localStorage.setItem('azubipass:probeklausur:v1', JSON.stringify(o));
+      location.reload();
+    }""")
+    pg.wait_for_timeout(3500)
+    pruefe("Abgelaufene Zeit wird deutlich gesagt",
+           "zeit ist abgelaufen" in pg.locator("#ueben").inner_text().lower())
+    pruefe("Abgelaufene Zeit löscht keine Eingaben",
+           "1234,56" in json.dumps(pg.evaluate(
+               "() => JSON.parse(localStorage.getItem"
+               "('azubipass:probeklausur:v1')).antworten")))
+
+    # Warnung bei unbeantworteten Aufgaben und Abgabe
+    pg.evaluate("() => { window.confirm = () => true; }")
+    pg.get_by_role("button", name="Jetzt abgeben").click()
+    pg.wait_for_timeout(900)
+    aus = pg.locator("#ueben").inner_text()
+    pruefe("Nach der Abgabe erscheint die Auswertung", "auswertung" in aus.lower())
+    pruefe("Auswertung nennt Punkte und Prozent",
+           "punkten" in aus.lower() and "%" in aus)
+    # Kein Notenschlüssel: gesucht wird die Vergabe einer Note, nicht das Wort.
+    pruefe("Auswertung nennt keine Note",
+           not re.search(r"\bNote\s*[1-6]", aus))
+    pruefe("Auswertung führt Kapitel einzeln auf",
+           pg.locator("#pk-kapitel .reihe").count() > 0,
+           pg.locator("#pk-kapitel .reihe").count())
+    pruefe("Auswertung bietet eine neue Variante an",
+           pg.get_by_role("button", name="Neue Variante erstellen").count() == 1)
+
+    # Eine abgeschlossene Klausur kommt nicht als laufende zurück
+    pg.reload(wait_until="networkidle")
+    pg.wait_for_timeout(1300)
+    pg.get_by_text("Eigene Probeklausur").click()
+    pg.wait_for_timeout(900)
+    pruefe("Abgeschlossene Klausur wird nicht als laufende angezeigt",
+           pg.locator("#pk-uhr").count() == 0
+           and pg.locator("#ueben .pk--kapitel").count() > 0)
+
+    # Verwerfen betrifft nur den Klausurzustand
+    pg.evaluate("""() => {
+      const o = JSON.parse(localStorage.getItem('azubipass:probeklausur:v1'));
+      o.abgegeben = false; o.ende = Date.now() + 600000;
+      localStorage.setItem('azubipass:probeklausur:v1', JSON.stringify(o));
+      window.confirm = () => true;
+    }""")
+    pg.reload(wait_until="networkidle")
+    pg.wait_for_timeout(1300)
+    pg.evaluate("() => { window.confirm = () => true; }")
+    pg.get_by_role("button", name="Später weiter").click()
+    pg.wait_for_timeout(500)
+    pg.get_by_role("button", name="Verwerfen").click()
+    pg.wait_for_timeout(600)
+    schluessel_danach = pg.evaluate(
+        "() => Object.keys(localStorage).filter(k => k.startsWith('azubipass')).sort()")
+    pruefe("Verwerfen entfernt nur den Klausurzustand",
+           schluessel_danach == ["azubipass:konto"], schluessel_danach)
+    pruefe("azubipass:konto bleibt unverändert erhalten",
+           pg.evaluate("() => JSON.parse(localStorage.getItem('azubipass:konto'))"
+                       ".fortschritt['lf10-k1'].fertig") is True)
+
+    # Beschädigter Zustand führt nicht zum Absturz
+    pg.evaluate("() => localStorage.setItem('azubipass:probeklausur:v1', '{kaputt')")
+    pg.reload(wait_until="networkidle")
+    pg.wait_for_timeout(1300)
+    pg.get_by_text("Eigene Probeklausur").click()
+    pg.wait_for_timeout(900)
+    pruefe("Beschädigter Klausurzustand führt zu einem verständlichen Zustand",
+           pg.locator("#ueben .pk--kapitel").count() > 0)
+    ktx.close()
 
 
 def main():
@@ -511,6 +1104,18 @@ def main():
             "() => getComputedStyle(document.body).backgroundColor") != "rgb(18, 48, 31)")
         ktxN.close()
 
+        # ---------------------------------------------------------- Probeklausur
+        probeklausur_daten()
+
+        pgP = ktx.new_page()
+        pgP.goto(f"{w}/app.html", wait_until="networkidle")
+        pgP.wait_for_timeout(700)
+        probeklausur_logik(pgP)
+        probeklausur_bewertung(pgP)
+        pgP.close()
+
+        probeklausur_klausur(b, w)
+
         # Service Worker
         print("\n· Offline")
         pg3 = ktx.new_page()
@@ -528,6 +1133,10 @@ def main():
 
         b.close()
     dienst.shutdown()
+
+    # Zum Schluss, weil er neu baut: Vorher liefe der Server auf halb neuen
+    # Dateien und die Offline-Prüfung oben würde unzuverlässig.
+    probeklausur_build()
 
     fehl = [n for n, ok, _ in ergebnisse if not ok]
     print(f"\n  {len(ergebnisse) - len(fehl)} von {len(ergebnisse)} bestanden.")

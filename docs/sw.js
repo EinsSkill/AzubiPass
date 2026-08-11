@@ -8,7 +8,7 @@
    Bewusst ohne skipWaiting: Eine neue Fassung übernimmt nicht mitten im Lesen,
    sondern meldet sich in der App und wartet, bis jemand sie anfordert. */
 
-var SPEICHER = "azubipass-20260811-210110";
+var SPEICHER = "azubipass-20260811-225534";
 var VORRAT = [
   "./",
   "app.html",
@@ -31,6 +31,8 @@ var VORRAT = [
   "lf9.html",
   "manifest.webmanifest",
   "mittel/app.js",
+  "mittel/aufgaben.js",
+  "mittel/aufgaben.json",
   "mittel/azubipass.css",
   "mittel/azubipass.js",
   "mittel/ibm-plex-mono-400-latin-ext.woff2",
@@ -60,8 +62,7 @@ var VORRAT = [
   "mittel/symbol-180.png",
   "mittel/symbol-192.png",
   "mittel/symbol-512.png",
-  "mittel/symbol.svg",
-  "vorschau-aufgaben.html"
+  "mittel/symbol.svg"
 ];
 
 self.addEventListener("install", function (e) {

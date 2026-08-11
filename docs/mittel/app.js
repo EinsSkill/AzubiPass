@@ -471,6 +471,15 @@
     if (uebenAnsicht === "karten") return uebenKarten(s);
     if (uebenAnsicht === "quiz") return uebenQuiz(s);
     if (uebenAnsicht === "schwach") return uebenSchwach(s);
+    /* Die Probeklausur bringt ihre ganze Oberfläche selbst mit — hier steht nur
+       der Eingang. Sie ist der wichtigste Prüfungsweg und deshalb die erste
+       Zeile, aber kein eigener Reiter: Geübt wird geübt. */
+    if (uebenAnsicht === "start" && window.APK && window.APK.laeuft()) {
+      uebenAnsicht = "probeklausur";
+    }
+    if (uebenAnsicht === "probeklausur" && window.APK) {
+      return window.APK.zeige(s, function () { uebenAnsicht = "start"; zeigeUeben(s); });
+    }
 
     var faellig = faelligeKarten();
     var schwach = schwachstellen();
@@ -479,7 +488,8 @@
       + " Übungsfragen aus allen Lernfeldern."));
 
     var liste = el("ul", "liste-schlicht");
-    [["karten", "Fällige Karteikarten", faellig.length
+    [["probeklausur", "Eigene Probeklausur", "Klausur schreiben"],
+     ["karten", "Fällige Karteikarten", faellig.length
         ? faellig.length + " warten" : "für heute durch"],
      ["quiz", "Übungsfragen", inhalt.quiz.length + " Fragen"],
      ["schwach", "Deine Schwachstellen", schwach.length
@@ -1194,7 +1204,10 @@
        dadurch seine eigene dunkelgrüne Fläche — samt Kopf, Leiste und Fuß, die
        außerhalb des Schirms liegen und sonst hell dagegenstünden. */
     document.documentElement.dataset.bereich = id;
-    if (id !== "ueben") uebenAnsicht = "start";
+    if (id !== "ueben") {
+      uebenAnsicht = "start";
+      if (window.APK) window.APK.verlassen();
+    }
     bauer[id](schirme[id]);
     if (wunsch === id) window.scrollTo(0, 0);
   }

@@ -11,6 +11,7 @@ Läuft nach build.py und macht aus den einzelnen Lernzetteln eine App:
     sw.js                  Zwischenspeicher, damit sie ohne Netz läuft
     mittel/inhalt.json     Lernfelder, Kapitel, Karten, Quizfragen
     mittel/suche.json      Volltext — getrennt, weil er nur beim Suchen gebraucht wird
+    mittel/aufgaben.json   Aufgabenbausteine, Kontenplan und Belege der Probeklausur
     mittel/symbol.*        App-Symbol
     impressum.html         Pflichtangaben nach § 5 DDG
     datenschutz.html       Pflichtangaben nach Art. 13 DSGVO
@@ -155,6 +156,256 @@ def begriffe_sammeln(lf):
             raus.append({"art": art, "id": schluessel,
                          "titel": e["titel"], "text": e["text"]})
     return raus
+
+
+# ---------------------------------------------------------------- Aufgabenvorrat
+#
+# Aus den *.aufgaben.json, dem Kontenplan und den Belegvorlagen wird eine
+# einzige Datei für die App. Sie liegt unter mittel/ und wandert dadurch
+# automatisch in den Offline-Vorrat — dieselbe Mechanik wie bei den Kapiteln.
+#
+# Der Build prüft dabei alles, was sich vorher prüfen lässt: Kontonummern,
+# Belegverweise, Begriffe, Aufgabentypen und Formeln. Fällt hier etwas auf,
+# bricht er ab. Ein Tippfehler in einer Kontonummer soll nicht erst dem
+# Prüfling um Mitternacht auffallen.
+
+
+class Aufgabenfehler(Exception):
+    """Etwas in den Aufgabendaten stimmt nicht — mit Ansage, nicht mit Traceback."""
+
+
+BELEGE = HIER / "belege"
+
+ANZEIGE_BLOECKE = {"text", "tabelle", "anlage"}
+EINGABE_BLOECKE = {"zahl", "auswahl", "zuordnung", "reihenfolge", "buchungssatz", "textfeld"}
+FORMEL_FUNKTIONEN = {"runde", "min", "max", "abs"}
+
+# Dieselbe Zerlegung wie der Rechner in aufgaben.js. Hier wird nur geprüft, was
+# vorkommen darf — gerechnet wird ausschließlich im Browser, damit es nicht zwei
+# Rechner gibt, die auseinanderlaufen können.
+MARKEN = re.compile(r"\s*(\d+\.?\d*|[A-Za-z_][A-Za-z0-9_]*|>=|<=|==|!=|&&|\|\||[-+*/(),<>])")
+
+
+def formel_pruefen(ausdruck, bekannt, wo):
+    """Nur Zahlen, bekannte Größen, freigegebene Zeichen und Funktionen."""
+    rest, pos = str(ausdruck), 0
+    while pos < len(rest):
+        treffer = MARKEN.match(rest, pos)
+        if not treffer:
+            raise Aufgabenfehler(
+                f"{wo}: unverständlicher Ausdruck „{ausdruck}“ ab Zeichen {pos + 1}")
+        marke = treffer.group(1)
+        pos = treffer.end()
+        if marke[0].isdigit():
+            continue
+        if marke[0].isalpha() or marke[0] == "_":
+            folgt = MARKEN.match(rest, pos)
+            if folgt and folgt.group(1) == "(":
+                if marke not in FORMEL_FUNKTIONEN:
+                    raise Aufgabenfehler(f"{wo}: unbekannte Funktion „{marke}“ in „{ausdruck}“")
+            elif marke not in bekannt:
+                raise Aufgabenfehler(f"{wo}: unbekannte Größe „{marke}“ in „{ausdruck}“")
+    return True
+
+
+def kontenplan_lesen():
+    datei = HIER / "musterunternehmen.json"
+    if not datei.exists():
+        return [], {}
+    daten = json.loads(datei.read_text(encoding="utf-8"))
+    konten, index = [], {}
+
+    def schluessel(s):
+        s = str(s).lower()
+        for alt, neu in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
+            s = s.replace(alt, neu)
+        return re.sub(r"[^a-z0-9]", "", s)
+
+    for klasse in daten.get("kontenplan", {}).get("klassen", []):
+        for k in klasse.get("konten", []):
+            eintrag = {"nr": k["nr"], "name": k["name"], "klasse": klasse["nummer"]}
+            if k.get("alias"):
+                eintrag["alias"] = k["alias"]
+            konten.append(eintrag)
+            index[k["nr"]] = eintrag
+            index[schluessel(k["name"])] = eintrag
+            for a in k.get("alias", []):
+                index[schluessel(a)] = eintrag
+    index["#schluessel"] = schluessel
+    return konten, index
+
+
+def konto_aufloesen(bezeichner, index):
+    if bezeichner in (None, ""):
+        return None
+    roh = str(bezeichner).strip()
+    return index.get(roh) or index.get(index["#schluessel"](roh))
+
+
+def belegvorlagen():
+    """Die HTML-Vorlagen und ihre Vorgaben. Ohne Ordner: keine Belege, kein Fehler."""
+    if not BELEGE.is_dir():
+        return {}, {}
+    steuer = {}
+    steuerdatei = BELEGE / "belege.json"
+    if steuerdatei.exists():
+        steuer = json.loads(steuerdatei.read_text(encoding="utf-8")).get("vorlagen", {})
+    vorlagen = {}
+    for pfad in sorted(BELEGE.glob("*.html")):
+        name = pfad.stem
+        s = steuer.get(name, {})
+        roh = pfad.read_text(encoding="utf-8")
+        # Der erklärende Kopfkommentar muss weg, bevor irgendetwas gesucht wird:
+        # Er nennt die Wiederholungsmarken beispielhaft, und der Renderer würde
+        # sonst dieses Beispiel füllen statt der echten Tabellenzeile.
+        roh = re.sub(r"^\s*<!--.*?-->\s*", "", roh, count=1, flags=re.DOTALL)
+        vorlagen[name] = {
+            "html": roh,
+            "marke": s.get("wiederholung", {}).get("marke"),
+            "saldo_fortschreiben": bool(s.get("saldo_fortschreiben")),
+        }
+    return vorlagen, steuer
+
+
+def beleg_fuellen(anlage, steuer, wo):
+    """Vorgaben und Aufgabendaten zu einem flachen Satz Platzhalterwerte.
+
+    Die Aufgabe nennt nur, worauf es fachlich ankommt. Rechnungsdatum, IBAN und
+    Kundennummer stehen trotzdem auf dem Papier — die kommen aus belege.json.
+    Werte können selbst noch {platzhalter} enthalten; die füllt erst der Browser
+    mit den gewürfelten Zahlen."""
+    s = steuer.get(anlage["beleg"], {})
+    daten = dict(anlage.get("daten") or {})
+    quelle = s.get("wiederholung", {}).get("quelle")
+    marke = s.get("wiederholung", {}).get("marke")
+
+    roh = daten.pop(quelle, None) if quelle else None
+    if roh is None and marke:
+        einzeln = daten.pop(marke, None)
+        if isinstance(einzeln, str):
+            roh = [{"text": einzeln}]
+        elif isinstance(einzeln, dict):
+            roh = [einzeln]
+    zeilen = []
+    for eintrag in (roh or []):
+        zeile = dict(s.get("zeilen_vorgaben") or {})
+        zeile.update(eintrag if isinstance(eintrag, dict) else {"text": eintrag})
+        # Eine Zeile, die ihre Seite nennt, legt ihren Betrag auf diese Seite.
+        seite = zeile.pop("art", None)
+        if seite and "betrag" in zeile:
+            zeile[seite] = zeile.pop("betrag")
+        zeilen.append({k: str(v) for k, v in zeile.items()})
+
+    werte = dict(s.get("vorgaben") or {})
+    werte.update(daten)
+    return {"werte": {k: str(v) for k, v in werte.items()}, "zeilen": zeilen}
+
+
+def aufgaben_sammeln(lf, kapitel_daten, konten_index, vorlagen, steuer):
+    """Alle *.aufgaben.json eines Lernfelds prüfen und einsammeln."""
+    kapitel_info = {k["id"]: k for k in kapitel_daten}
+    begriffe = set(lf.get("begriffe", {}))
+    paragraphen = set(lf.get("paragraphen", {}))
+    verweis = re.compile(r"\{\{(begriff|par):([a-z0-9-]+)\|")
+
+    kapitel_raus, bausteine_raus = [], []
+    for pfad in sorted(HIER.glob("*.aufgaben.json")):
+        datei = json.loads(pfad.read_text(encoding="utf-8"))
+        if datei.get("lernfeld") != lf["id"]:
+            continue
+        kap = datei.get("kapitel")
+        if kap not in kapitel_info:
+            raise Aufgabenfehler(
+                f"{pfad.name}: Kapitel „{kap}“ steht nicht in {lf['id']}.lernfeld.json")
+
+        eigene = []
+        for b in datei.get("bausteine", []):
+            wo = f"{pfad.name} · {b.get('id', '?')}"
+            for feld in ("id", "operator", "anforderungsbereich", "punkte",
+                         "dauer_min", "eingabe", "bewertung"):
+                if b.get(feld) in (None, ""):
+                    raise Aufgabenfehler(f"{wo}: Feld „{feld}“ fehlt")
+            if "hinweis_konto" in b:
+                raise Aufgabenfehler(
+                    f"{wo}: hinweis_konto ist ein Merkzettel und gehört nicht in den "
+                    f"fertigen Bestand — Konto im Kontenplan ergänzen und Feld entfernen")
+
+            # Formeln: nur bekannte Größen
+            bekannt = set(b.get("variablen") or {})
+            for name, formel in (b.get("abgeleitet") or {}).items():
+                formel_pruefen(formel, bekannt, wo)
+                bekannt.add(name)
+            if b.get("pruefung_variablen"):
+                formel_pruefen(b["pruefung_variablen"], bekannt, wo)
+
+            # Anzeige: bekannte Blöcke, vorhandene Belege
+            for a in b.get("anzeige") or []:
+                if a.get("block") not in ANZEIGE_BLOECKE:
+                    raise Aufgabenfehler(f"{wo}: unbekannter Anzeigeblock „{a.get('block')}“")
+                if a.get("beleg"):
+                    if a["beleg"] not in vorlagen:
+                        raise Aufgabenfehler(
+                            f"{wo}: Beleg „{a['beleg']}“ hat keine Vorlage unter quellen/belege/")
+                    a["beleg_gefuellt"] = beleg_fuellen(a, steuer, wo)
+
+            # Eingabe: bekannte Blöcke, auflösbare Konten, prüfbare Lösungen
+            for e in b.get("eingabe") or []:
+                if e.get("block") not in EINGABE_BLOECKE:
+                    raise Aufgabenfehler(f"{wo}: unbekannter Eingabeblock „{e.get('block')}“")
+                if e["block"] == "zahl" and isinstance(e.get("loesung"), str):
+                    formel_pruefen(e["loesung"], bekannt, wo)
+                if e["block"] == "buchungssatz":
+                    for zeile in e.get("loesung") or []:
+                        for seite in ("soll", "haben"):
+                            if zeile.get(seite) in (None, ""):
+                                continue
+                            if not konto_aufloesen(zeile[seite], konten_index):
+                                raise Aufgabenfehler(
+                                    f"{wo}: Konto „{zeile[seite]}“ steht nicht im Kontenplan")
+                        if isinstance(zeile.get("betrag"), str):
+                            formel_pruefen(zeile["betrag"], bekannt, wo)
+
+            # Verweise auf Begriffe und Paragraphen
+            for art, kennung in verweis.findall(json.dumps(b, ensure_ascii=False)):
+                vorhanden = begriffe if art == "begriff" else paragraphen
+                if kennung not in vorhanden:
+                    raise Aufgabenfehler(
+                        f"{wo}: Verweis {art}:{kennung} steht nicht in {lf['id']}.lernfeld.json")
+
+            eigene.append(dict(b, lernfeld=lf["id"], kapitel=kap,
+                               konten_als=datei.get("konten_als", "nummer")))
+
+        if not eigene:
+            continue
+        info = kapitel_info[kap]
+        kapitel_raus.append({
+            "schluessel": f'{lf["id"]}:{kap}',
+            "lernfeld": lf["id"], "lernfeldTitel": lf["titel"],
+            "kapitel": kap, "nummer": info["nummer"], "titel": info["titel"],
+            "zu": f'{lf["id"]}.html#{kap}',
+            "bausteine": len(eigene),
+            "punkte": sum(b["punkte"] for b in eigene),
+            "minuten": sum(b["dauer_min"] for b in eigene),
+        })
+        bausteine_raus += eigene
+    return kapitel_raus, bausteine_raus
+
+
+def aufgaben_schreiben(kapitel, bausteine, konten, vorlagen):
+    kennungen = [b["id"] for b in bausteine]
+    doppelt = {k for k in kennungen if kennungen.count(k) > 1}
+    if doppelt:
+        raise Aufgabenfehler("Doppelte Baustein-Kennungen: " + ", ".join(sorted(doppelt)))
+    daten = {
+        "gebaut": datetime.now().isoformat(timespec="seconds"),
+        "kapitel": kapitel,
+        "bausteine": bausteine,
+        "kontenplan": konten,
+        "belege": vorlagen,
+    }
+    (MITTEL / "aufgaben.json").write_text(
+        json.dumps(daten, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return daten
 
 
 # ---------------------------------------------------------------- Symbol
@@ -438,7 +689,7 @@ def datenschutz(r, fehlt):
 
 # ---------------------------------------------------------------- App-Seite
 
-def app_seite(stil, kernel, appjs, lernfelder):
+def app_seite(stil, kernel, appjs, aufgabenjs, lernfelder):
     """Die Schale. Der Inhalt der fünf Schirme entsteht im Browser aus
     inhalt.json — hier steht nur das Gerüst, damit die Seite auch ohne
     JavaScript etwas Sinnvolles zeigt."""
@@ -450,7 +701,8 @@ def app_seite(stil, kernel, appjs, lernfelder):
 <html lang="de">
 <head>
 {kopf("Lernen", "Alle Lernfelder für Kaufleute für Büromanagement — Fortschritt, "
-      "Karteikarten und Suche, auch ohne Netz.", stile=[stil], skripte=[kernel, appjs])}
+      "Karteikarten und Suche, auch ohne Netz.", stile=[stil],
+      skripte=[kernel, aufgabenjs, appjs])}
 </head>
 <body data-bereich="heute">
 <a class="sprung" href="#inhalt">Zum Inhalt springen</a>
@@ -591,10 +843,14 @@ def baue():
         print("ACHTUNG: mittel/schriften.css fehlt — erst schriften.py laufen lassen.\n")
 
     MITTEL.mkdir(parents=True, exist_ok=True)
-    stil, kernel, appjs, verhalten = veroeffentliche(
-        "azubipass.css", "kern.js", "app.js", "azubipass.js")
+    stil, kernel, appjs, aufgabenjs, verhalten = veroeffentliche(
+        "azubipass.css", "kern.js", "app.js", "aufgaben.js", "azubipass.js")
+
+    konten, konten_index = kontenplan_lesen()
+    belege, belege_steuer = belegvorlagen()
 
     lernfelder, karten, quiz, tests, suche, begriffe = [], [], [], [], [], {}
+    pk_kapitel, pk_bausteine = [], []
 
     for datei in lernfeld_dateien():
         lf, kapitel_daten, fehlend = lade(datei)
@@ -604,6 +860,10 @@ def baue():
         if not seite.exists():
             print(f"  übersprungen (nicht gebaut): {lf['id']}")
             continue
+
+        k, b = aufgaben_sammeln(lf, kapitel_daten, konten_index, belege, belege_steuer)
+        pk_kapitel += k
+        pk_bausteine += b
 
         lernfelder.append({
             "id": lf["id"],
@@ -637,10 +897,21 @@ def baue():
     (MITTEL / "suche.json").write_text(
         json.dumps(suche, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
+    aufgaben_schreiben(pk_kapitel, pk_bausteine, konten, belege)
+
     symbole()
     (AUSGABE / "manifest.webmanifest").write_text(manifest(), encoding="utf-8")
     (AUSGABE / "app.html").write_text(
-        app_seite(stil, kernel, appjs, lernfelder), encoding="utf-8")
+        app_seite(stil, kernel, appjs, aufgabenjs, lernfelder), encoding="utf-8")
+
+    # Was der Build einmal erzeugt hat und heute nicht mehr erzeugt, räumt er
+    # selbst weg. docs/ ist Ausgabe — dort von Hand aufzuräumen hieße, sich beim
+    # nächsten Bau darauf zu verlassen, dass es jemand wieder tut.
+    for veraltet in ("vorschau-aufgaben.html", "entwurf-start.html"):
+        pfad = AUSGABE / veraltet
+        if pfad.exists():
+            pfad.unlink()
+            print(f"  entfernt (kein Bauergebnis mehr): {veraltet}")
 
     r = rechtliches()
     fehlt = luecken(r)
@@ -663,6 +934,10 @@ def baue():
                   if d != "./" and (AUSGABE / d).exists())
     print(f"  {len(lernfelder)} Lernfelder · {len(karten)} Karten · {len(quiz)} Übungen · "
           f"{len(suche)} Suchabschnitte · {len(inhalt['begriffe'])} Begriffe")
+    print(f"  Probeklausur: {len(pk_kapitel)} Kapitel mit Aufgaben · "
+          f"{len(pk_bausteine)} Bausteine · "
+          f"{sum(b['punkte'] for b in pk_bausteine)} Punkte · "
+          f"{len(konten)} Konten · {len(belege)} Belegvorlagen")
     print(f"  App gebaut → app.html, manifest, sw.js ({len(dateien)} Dateien, "
           f"{gewicht // 1024} kB offline)")
 
@@ -679,4 +954,11 @@ def baue():
 
 
 if __name__ == "__main__":
-    sys.exit(baue())
+    try:
+        sys.exit(baue())
+    except Aufgabenfehler as fehler:
+        print("\n  ABBRUCH: Die Aufgabendaten sind nicht in Ordnung.")
+        print(f"  {fehler}")
+        print("  Nichts wurde geschrieben, was davon abhängt. Erst die Quelle")
+        print("  unter quellen/ berichtigen, dann neu bauen.")
+        sys.exit(1)

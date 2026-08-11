@@ -9,9 +9,12 @@ Fachgrafiken, 139 Karteikarten, 138 Übungsfragen.
 ## Aufbau
 
 ```
-quellen/   Kapiteldaten (JSON) und die Bauwerkzeuge (Python, CSS, JS)
-docs/      das Gebaute — was GitHub Pages ausliefert, nichts von Hand ändern
-doku/      LIESMICH.md (Bedienung), kapitel-format.md, app-konzept.md
+quellen/          Kapiteldaten (JSON) und die Bauwerkzeuge (Python, CSS, JS)
+quellen/*.aufgaben.json   Aufgabenbausteine für die eigene Probeklausur
+quellen/belege/   Belegvorlagen (HTML) und ihre Vorgaben
+docs/             das Gebaute — was GitHub Pages ausliefert, nichts von Hand ändern
+doku/             LIESMICH.md (Bedienung), kapitel-format.md, app-konzept.md,
+                  eigene-probeklausur.md (Produktentscheidung zur Probeklausur)
 ```
 
 Inhalt und Darstellung sind getrennt. Ein neues Kapitel heißt: JSON schreiben,
@@ -23,7 +26,8 @@ neu bauen. Kein HTML von Hand.
 cd quellen
 python schriften.py     # einmalig — holt die Schriften, danach nie wieder nötig
 python build.py         # alle Lernzettel
-python build_app.py     # App-Schale, Manifest, Offline-Speicher, Suche, Rechtstexte
+python build_app.py     # App-Schale, Manifest, Offline-Speicher, Suche,
+                        # Aufgabenbestand der Probeklausur, Rechtstexte
 python build_landing.py # Startseite
 ```
 
@@ -33,7 +37,7 @@ Die Reihenfolge zählt: `build_app.py` liest, was `build.py` erzeugt hat.
 
 ```
 python pruefe.py        # sieht es richtig aus? 2 Größen × 2 Farbstimmungen
-python funktionstest.py # tut es, was es verspricht? 32 Verhaltensprüfungen
+python funktionstest.py # tut es, was es verspricht? 167 Verhaltensprüfungen
 ```
 
 Beide geben 1 zurück, wenn etwas gefunden wurde. `pruefe.py --schnell` prüft nur

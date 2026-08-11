@@ -3,6 +3,11 @@
 **AzubiPass** · Stand 11.08.2026 · lernfeldübergreifend
 Übergeordnet zum Aufgabenkonzept des Prüfungssimulators.
 
+> **Konzept, nicht Bauplan des heutigen Stands.** Gebaut ist bisher die
+> **Eigene Probeklausur**; ein Übungsmodus mit Sofortfeedback, „Snacks" und ein
+> Bereich „Meine Fehler" sind hier beschrieben, aber nicht gebaut. Der aktuelle
+> Umfang steht in [eigene-probeklausur.md](eigene-probeklausur.md).
+
 ---
 
 ## 1. Die Frage, an der alles hängt
