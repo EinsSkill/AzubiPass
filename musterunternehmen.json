@@ -1,0 +1,348 @@
+{
+  "format": 1,
+  "stand": "2026-08-11",
+  "hinweis": "Erfundenes Musterunternehmen fuer den Pruefungssimulator. Keine Verbindung zu einem realen Unternehmen. Alle Personen, Zahlen und Konditionen sind frei erfunden.",
+
+  "unternehmen": {
+    "name": "MAKEL Studio GmbH",
+    "marke": "MAKEL",
+    "rechtsform": "GmbH",
+    "sitz": "Duesseldorf",
+    "gegruendet": 2012,
+    "geschaeftsjahr": 2026,
+    "geschaeftsjahr_beginn": "2026-01-01",
+    "geschaeftsjahr_ende": "2026-12-31",
+    "branche": "Streetwear-Label mit eigener Musterfertigung und Veredelung",
+    "positionierung": "Japanisch gepraegte Wabi-Sabi-Streetwear, oversized Boxy-Schnitte, Rueckenprints; Preisniveau leicht ueber dem Marktschnitt",
+    "sortiment": [
+      { "artikelgruppe": "Hoodies", "richtpreis_brutto": 120.00 },
+      { "artikelgruppe": "Shirts", "richtpreis_brutto": 80.00 },
+      { "artikelgruppe": "Hosen", "richtpreis_brutto": 140.00 },
+      { "artikelgruppe": "Hemden", "richtpreis_brutto": 130.00 },
+      { "artikelgruppe": "Accessoires", "richtpreis_brutto": 35.00 }
+    ]
+  },
+
+  "kennzahlen": {
+    "stammkapital_eur": 100000,
+    "umsatzerloese_eur": 16000000,
+    "bilanzsumme_eur": 9000000,
+    "mitarbeitende_gesamt": 92,
+    "auszubildende": 3,
+    "kontenrahmen": "IKR",
+    "groessenklasse_hgb": "mittelgrosse Kapitalgesellschaft (§ 267 Abs. 2 HGB)",
+    "groessenklasse_folgen": [
+      "Pruefungspflicht des Jahresabschlusses (§ 316 Abs. 1 HGB)",
+      "Offenlegung beim Unternehmensregister (§ 325 HGB)",
+      "Lagebericht erforderlich (§ 264 Abs. 1 HGB)"
+    ],
+    "liquiditaet": "solide Lage, bewusst leicht angespannte Liquiditaet — Skontofristen und Zahlungsziele sind ein wiederkehrendes Aufgabenmotiv"
+  },
+
+  "vertriebskanaele": [
+    { "kanal": "Onlineshop", "umsatzanteil_prozent": 45, "besonderheit": "Retouren, Versandkosten, Fernabsatz" },
+    { "kanal": "Wholesale", "umsatzanteil_prozent": 35, "besonderheit": "Boutiquen als Grosskunden, Konditionen, Zahlungsziele, Mahnwesen" },
+    { "kanal": "Flagshipstore & Cafe KANTE", "umsatzanteil_prozent": 20, "besonderheit": "Kassenfuehrung, 19 % auf Ware, 7 % auf Speisen zum Mitnehmen" }
+  ],
+
+  "standorte": [
+    {
+      "bezeichnung": "Studio & Lager",
+      "art": "Gewerbehof",
+      "ort": "Duesseldorf",
+      "nutzung": "Design, Musterfertigung, Veredelung (Textildruck), Warenlager, Versand, Verwaltung"
+    },
+    {
+      "bezeichnung": "Flagshipstore mit Cafe KANTE",
+      "art": "Innenstadtlage",
+      "ort": "Duesseldorf",
+      "nutzung": "Einzelhandel und Gastronomie, ein einziger Store"
+    }
+  ],
+
+  "fertigung": {
+    "fertigungstiefe": "mittel",
+    "im_haus": ["Musterfertigung", "Veredelung / Textildruck", "Qualitaetskontrolle"],
+    "extern": ["Serienfertigung durch Lohnfertiger", "Stoffbeschaffung"]
+  },
+
+  "personen": [
+    {
+      "id": "yuki_bergmann",
+      "name": "Yuki Bergmann",
+      "alter": 41,
+      "funktion": "Gruenderin & Geschaeftsfuehrung (Design/Strategie)",
+      "abteilung": "Geschaeftsfuehrung",
+      "vorgesetzt": null,
+      "rolle_im_simulator": "Alleingesellschafterin; trifft grosse strategische Entscheidungen (neue Kollektionen, Kollaborationen, Store-Eroeffnungen), die durchgerechnet werden muessen.",
+      "themen": ["Investitionen", "Gesellschafterbeschluesse", "Kalkulation", "Unternehmensziele"]
+    },
+    {
+      "id": "tobias_renner",
+      "name": "Tobias Renner",
+      "alter": 47,
+      "funktion": "Kaufmaennischer Geschaeftsfuehrer",
+      "abteilung": "Geschaeftsfuehrung",
+      "vorgesetzt": "yuki_bergmann",
+      "rolle_im_simulator": "Hinterfragt Zahlen, fordert Kalkulationen und Nachweise an ('Rechnen Sie mir das bitte durch...').",
+      "themen": ["Kennzahlen", "Wirtschaftlichkeitsvergleich", "Controlling", "Finanzierung"]
+    },
+    {
+      "id": "sandra_koslowski",
+      "name": "Sandra Koslowski",
+      "alter": 52,
+      "funktion": "Leitung Buchhaltung, Ausbilderin",
+      "abteilung": "Rechnungswesen",
+      "vorgesetzt": "tobias_renner",
+      "rolle_im_simulator": "Primaere Auftraggeberin und Korrektorin in Buchhaltungsfragen; erklaert rechtliche Hintergruende.",
+      "themen": ["Buchungssaetze", "Jahresabschluss", "Umsatzsteuer", "Abschreibungen", "Rechnungspruefung"]
+    },
+    {
+      "id": "ayla_brandt",
+      "name": "Ayla Brandt",
+      "alter": 36,
+      "funktion": "Personalreferentin",
+      "abteilung": "Personal",
+      "vorgesetzt": "tobias_renner",
+      "rolle_im_simulator": "Bringt alle Personalvorgaenge ein.",
+      "themen": ["Arbeitsvertraege", "Kuendigungsfristen", "Entgeltabrechnung", "Urlaubsanspruch", "Jugendarbeitsschutz", "Ausbildungsrecht"]
+    },
+    {
+      "id": "deniz_aydin",
+      "name": "Deniz Aydin",
+      "alter": 34,
+      "funktion": "Einkauf & Produktion",
+      "abteilung": "Beschaffung",
+      "vorgesetzt": "tobias_renner",
+      "rolle_im_simulator": "Liefert Beschaffungsvorgaenge und Stoerungen im Kaufvertrag.",
+      "themen": ["Lieferantenrechnungen", "Angebotsvergleich", "Maengelruege", "Skonto", "Bezugskosten", "Materialwirtschaft"]
+    },
+    {
+      "id": "marlene_voss",
+      "name": "Marlene Voss",
+      "alter": 29,
+      "funktion": "Vertrieb & Wholesale",
+      "abteilung": "Vertrieb",
+      "vorgesetzt": "tobias_renner",
+      "rolle_im_simulator": "Betreut Boutiquen und erzeugt Aufgaben rund um Konditionen und Zahlungsstoerungen.",
+      "themen": ["Rabatte", "Zahlungsziele", "Mahnwesen", "Verzug", "Forderungsausfall", "Kundenkalkulation"]
+    },
+    {
+      "id": "jonas_weidner",
+      "name": "Jonas Weidner",
+      "alter": 38,
+      "funktion": "Lager & Versand",
+      "abteilung": "Logistik",
+      "vorgesetzt": "tobias_renner",
+      "rolle_im_simulator": "Liefert Mengen- und Bestandsprobleme.",
+      "themen": ["Inventur", "Inventurdifferenzen", "Schwund", "Wareneingang", "Warenausgang", "Retouren", "Lagerkennzahlen"]
+    },
+    {
+      "id": "emily_tran",
+      "name": "Emily Tran",
+      "alter": 23,
+      "funktion": "Store- & Cafe-Leitung (KANTE)",
+      "abteilung": "Retail",
+      "vorgesetzt": "jonas_weidner",
+      "vorgesetzt_hinweis": "fachlich der Geschaeftsfuehrung unterstellt, organisatorisch am Store",
+      "rolle_im_simulator": "Bringt Tagesgeschaeft und die zwei Steuersaetze ins Spiel.",
+      "themen": ["Tagesabschluss", "Kassenfuehrung", "Kassendifferenz", "7 % vs. 19 % Umsatzsteuer", "Aushilfskraefte", "Minijob"]
+    },
+    {
+      "id": "luca_petrelli",
+      "name": "Luca Petrelli",
+      "alter": 19,
+      "funktion": "Mitauszubildender (1. Lehrjahr)",
+      "abteilung": "Rechnungswesen",
+      "vorgesetzt": "sandra_koslowski",
+      "rolle_im_simulator": "Figur fuer Fehlersuche und Korrekturbuchungen ('Luca hat wie folgt gebucht — pruefen und korrigieren Sie...').",
+      "themen": ["Fehlerhafte Buchungssaetze", "Stornobuchung", "Korrekturbuchung", "Kontierung"]
+    },
+    {
+      "id": "pruefling",
+      "name": "Du (Prueflingsrolle)",
+      "alter": null,
+      "funktion": "Auszubildende(r) im 2. Lehrjahr",
+      "abteilung": "wechselnd (Durchlauf)",
+      "vorgesetzt": "sandra_koslowski",
+      "rolle_im_simulator": "Bearbeitet alle Aufgabenstellungen.",
+      "themen": []
+    }
+  ],
+
+  "konditionen": {
+    "einkauf": {
+      "zahlungsbedingung_standard": "10 Tage 2 % Skonto, 30 Tage netto",
+      "skontosatz_prozent": 2.0,
+      "skontofrist_tage": 10,
+      "zahlungsziel_tage": 30,
+      "bezugskosten": "Fracht und Rollgeld werden gesondert berechnet"
+    },
+    "verkauf_wholesale": {
+      "zahlungsbedingung_standard": "8 Tage 3 % Skonto, 30 Tage netto",
+      "skontosatz_prozent": 3.0,
+      "skontofrist_tage": 8,
+      "zahlungsziel_tage": 30,
+      "wiederverkaeuferrabatt_prozent": 50,
+      "mengenrabatt_ab_stueck": 100,
+      "mengenrabatt_prozent": 5
+    },
+    "mahnwesen": {
+      "stufe_1": "Zahlungserinnerung, 10 Tage nach Faelligkeit, kostenfrei",
+      "stufe_2": "1. Mahnung, 10 Tage spaeter, Mahngebuehr 5,00 EUR",
+      "stufe_3": "2. Mahnung mit Fristsetzung, 10 Tage spaeter, Mahngebuehr 10,00 EUR, danach gerichtliches Mahnverfahren",
+      "verzugszinsen": "9 Prozentpunkte ueber dem Basiszinssatz (B2B, § 288 Abs. 2 BGB)"
+    },
+    "umsatzsteuer": {
+      "regelsatz_prozent": 19,
+      "ermaessigt_prozent": 7,
+      "ermaessigt_gilt_fuer": "Speisen und Getraenke zum Mitnehmen im Cafe KANTE",
+      "voranmeldung": "monatlich"
+    },
+    "anlagen": {
+      "abschreibungsmethode": "linear",
+      "gwg_grenze_eur": 800,
+      "nutzungsdauer_beispiele": {
+        "Druckmaschine Veredelung": 8,
+        "Ladeneinrichtung": 8,
+        "Fuhrpark": 6,
+        "EDV-Anlagen": 3,
+        "Bueromoebel": 13
+      }
+    }
+  },
+
+  "kontenplan": {
+    "rahmen": "IKR",
+    "hinweis": "Auszug, angelehnt an den im Unterricht ueblichen Industriekontenrahmen. Die Kontonummern gelten fuer alle Aufgaben verbindlich.",
+    "klassen": [
+      {
+        "nummer": 0,
+        "bezeichnung": "Immaterielle Vermoegensgegenstaende und Sachanlagen",
+        "konten": [
+          { "nr": "0100", "name": "Konzessionen, gewerbliche Schutzrechte und Lizenzen" },
+          { "nr": "0200", "name": "Grundstuecke und Bauten" },
+          { "nr": "0500", "name": "Technische Anlagen und Maschinen" },
+          { "nr": "0700", "name": "Betriebs- und Geschaeftsausstattung" },
+          { "nr": "0840", "name": "Fuhrpark" },
+          { "nr": "0860", "name": "Bueromaschinen und EDV-Anlagen" },
+          { "nr": "0880", "name": "Ladeneinrichtung" }
+        ]
+      },
+      {
+        "nummer": 1,
+        "bezeichnung": "Finanzanlagen",
+        "konten": [
+          { "nr": "1200", "name": "Wertpapiere des Anlagevermoegens" }
+        ]
+      },
+      {
+        "nummer": 2,
+        "bezeichnung": "Umlaufvermoegen und aktive Rechnungsabgrenzung",
+        "konten": [
+          { "nr": "2000", "name": "Rohstoffe (Stoffe)" },
+          { "nr": "2020", "name": "Hilfsstoffe" },
+          { "nr": "2030", "name": "Betriebsstoffe" },
+          { "nr": "2100", "name": "Unfertige Erzeugnisse" },
+          { "nr": "2200", "name": "Fertige Erzeugnisse" },
+          { "nr": "2280", "name": "Handelswaren" },
+          { "nr": "2400", "name": "Forderungen aus Lieferungen und Leistungen" },
+          { "nr": "2440", "name": "Zweifelhafte Forderungen" },
+          { "nr": "2470", "name": "Sonstige Vermoegensgegenstaende" },
+          { "nr": "2600", "name": "Vorsteuer" },
+          { "nr": "2800", "name": "Guthaben bei Kreditinstituten" },
+          { "nr": "2880", "name": "Kasse" },
+          { "nr": "2900", "name": "Aktive Rechnungsabgrenzung" }
+        ]
+      },
+      {
+        "nummer": 3,
+        "bezeichnung": "Eigenkapital und Rueckstellungen",
+        "konten": [
+          { "nr": "3000", "name": "Gezeichnetes Kapital" },
+          { "nr": "3010", "name": "Kapitalruecklage" },
+          { "nr": "3020", "name": "Gewinnruecklagen" },
+          { "nr": "3030", "name": "Gewinnvortrag / Verlustvortrag" },
+          { "nr": "3070", "name": "Jahresueberschuss / Jahresfehlbetrag" },
+          { "nr": "3700", "name": "Steuerrueckstellungen" },
+          { "nr": "3900", "name": "Sonstige Rueckstellungen" }
+        ]
+      },
+      {
+        "nummer": 4,
+        "bezeichnung": "Verbindlichkeiten und passive Rechnungsabgrenzung",
+        "konten": [
+          { "nr": "4200", "name": "Verbindlichkeiten gegenueber Kreditinstituten" },
+          { "nr": "4400", "name": "Verbindlichkeiten aus Lieferungen und Leistungen" },
+          { "nr": "4800", "name": "Umsatzsteuer" },
+          { "nr": "4830", "name": "Sonstige Verbindlichkeiten" },
+          { "nr": "4900", "name": "Passive Rechnungsabgrenzung" }
+        ]
+      },
+      {
+        "nummer": 5,
+        "bezeichnung": "Ertraege",
+        "konten": [
+          { "nr": "5000", "name": "Umsatzerloese fuer eigene Erzeugnisse" },
+          { "nr": "5100", "name": "Umsatzerloese fuer Handelswaren" },
+          { "nr": "5110", "name": "Umsatzerloese Gastronomie (7 %)" },
+          { "nr": "5200", "name": "Bestandsveraenderungen" },
+          { "nr": "5400", "name": "Sonstige betriebliche Ertraege" },
+          { "nr": "5460", "name": "Ertraege aus dem Abgang von Vermoegensgegenstaenden" },
+          { "nr": "5710", "name": "Zinsertraege" }
+        ]
+      },
+      {
+        "nummer": 6,
+        "bezeichnung": "Betriebliche Aufwendungen",
+        "konten": [
+          { "nr": "6000", "name": "Aufwendungen fuer Rohstoffe" },
+          { "nr": "6020", "name": "Aufwendungen fuer Hilfsstoffe" },
+          { "nr": "6030", "name": "Aufwendungen fuer Betriebsstoffe" },
+          { "nr": "6080", "name": "Aufwendungen fuer Handelswaren" },
+          { "nr": "6200", "name": "Loehne" },
+          { "nr": "6300", "name": "Gehaelter" },
+          { "nr": "6400", "name": "Gesetzliche Sozialaufwendungen" },
+          { "nr": "6500", "name": "Abschreibungen auf Sachanlagen" },
+          { "nr": "6700", "name": "Mieten und Pachten" },
+          { "nr": "6710", "name": "Energie und Nebenkosten" },
+          { "nr": "6800", "name": "Buero- und Verwaltungsaufwendungen" },
+          { "nr": "6805", "name": "Telefon und Internet" },
+          { "nr": "6810", "name": "Porto und Versandkosten" },
+          { "nr": "6840", "name": "Werbung" },
+          { "nr": "6950", "name": "Abschreibungen auf Forderungen" }
+        ]
+      },
+      {
+        "nummer": 7,
+        "bezeichnung": "Weitere Aufwendungen und Steuern",
+        "konten": [
+          { "nr": "7500", "name": "Zinsaufwendungen" },
+          { "nr": "7700", "name": "Steuern vom Einkommen und Ertrag" },
+          { "nr": "7800", "name": "Sonstige Steuern" }
+        ]
+      },
+      {
+        "nummer": 8,
+        "bezeichnung": "Abschlusskonten",
+        "konten": [
+          { "nr": "8000", "name": "Eroeffnungsbilanzkonto" },
+          { "nr": "8010", "name": "Schlussbilanzkonto" },
+          { "nr": "8020", "name": "Gewinn- und Verlustkonto" }
+        ]
+      }
+    ]
+  },
+
+  "tonalitaet": {
+    "stufe": 2,
+    "bezeichnung": "leicht gefaerbt",
+    "regel": "Jede Aufgabe beginnt mit genau einem kurzen, realistischen Kontextsatz aus dem Betriebsalltag. Keine fortlaufende Handlung ueber mehrere Aufgaben hinweg, damit der Generator Aufgaben frei kombinieren kann.",
+    "beispiel": "Marlene Voss hat einer Boutique spontan 3 % Zusatzrabatt gewaehrt.",
+    "verboten": [
+      "mehrteilige Handlungsstraenge, die Vorwissen aus einer anderen Aufgabe voraussetzen",
+      "Emojis",
+      "Anrede des Prueflings mit Namen"
+    ]
+  }
+}
