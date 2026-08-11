@@ -1316,13 +1316,18 @@
        dadurch seine eigene dunkelgrüne Fläche — samt Kopf, Leiste und Fuß, die
        außerhalb des Schirms liegen und sonst hell dagegenstünden. */
     document.documentElement.dataset.bereich = id;
-    if (id !== "ueben") {
+    /* Nur eine Adresse führt in die Probeklausur. Jede andere — auch das nackte
+       „#ueben" — führt zur Übersicht, sonst bliebe ein Tipp auf den Üben-Reiter
+       aus der Klausur heraus wirkungslos, obwohl sich die Adresse sichtbar
+       geändert hat. Eine begonnene Klausur geht dabei nicht verloren: Sie liegt
+       im Speicher und wird über den Eingang wieder angeboten. */
+    if (id === "ueben" && teile.unter === "probeklausur") {
+      uebenAnsicht = "probeklausur";
+      pkVorwahl = teile.felder.kapitel || null;
+    } else {
       uebenAnsicht = "start";
       pkVorwahl = null;
       if (window.APK) window.APK.verlassen();
-    } else if (teile.unter === "probeklausur") {
-      uebenAnsicht = "probeklausur";
-      pkVorwahl = teile.felder.kapitel || null;
     }
     bauer[id](schirme[id]);
     if (teile.bereich === id) window.scrollTo(0, 0);

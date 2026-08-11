@@ -766,6 +766,16 @@ def kapitelroute(b, w):
     pruefe("Ohne Kapitel kann keine Klausur beginnen",
            pg.locator("#ueben .pk--zonknopf").is_disabled())
 
+    # Der Üben-Reiter führt aus der Probeklausur zurück zur Übersicht
+    pg.goto(f"{w}/app.html#ueben/probeklausur?kapitel=buchfuehrung:k3",
+            wait_until="networkidle")
+    pg.wait_for_timeout(1000)
+    pg.locator('nav.tableiste .tab[href$="#ueben"]').click()
+    pg.wait_for_timeout(800)
+    pruefe("Der Üben-Reiter führt aus der Probeklausur zur Übersicht",
+           pg.locator("#ueben .pk-eingang").count() == 1
+           and pg.locator("#ueben .pk--kapitel").count() == 0)
+
     # Vier Haupttabs, kein fünfter für das Kapitel
     for wo in ("app.html#ueben/probeklausur?kapitel=buchfuehrung:k3",
                "buchfuehrung.html#k3"):
