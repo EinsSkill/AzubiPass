@@ -1,0 +1,153 @@
+<!-- MAKEL-Belegvorlage · Kontoauszug
+     Platzhalter in geschweiften Klammern werden vom Build gefüllt.
+     Wiederholbereich: <!-- zeile:start --> … <!-- zeile:ende -->
+     Der Vermerk "Übungsbeleg" steht außerhalb des Belegkörpers. -->
+
+<div class="beleg beleg-kontoauszug">
+
+  <div class="beleg-kopf">
+    <div class="bank">
+      <div class="bank-name">Stadtsparkasse Düsseldorf</div>
+      <div class="bank-zeile">Berliner Allee 33 · 40212 Düsseldorf</div>
+    </div>
+    <div class="auszug-marke">
+      <div class="auszug-wort">Kontoauszug</div>
+      <div class="auszug-nr">Nr. {auszug_nr} / {jahr}</div>
+    </div>
+  </div>
+
+  <div class="beleg-adresse">
+    <div class="empfaenger">MAKEL Studio GmbH</div>
+    <div>Ronsdorfer Straße 74</div>
+    <div>40233 Düsseldorf</div>
+  </div>
+
+  <table class="beleg-stamm">
+    <tr>
+      <td><span class="feldname">Kontonummer</span>{kontonummer}</td>
+      <td><span class="feldname">IBAN</span>{iban}</td>
+      <td><span class="feldname">Auszugsdatum</span>{datum}</td>
+    </tr>
+  </table>
+
+  <table class="beleg-tabelle">
+    <thead>
+      <tr>
+        <th class="sp-datum">Buchung</th>
+        <th class="sp-text">Vorgang</th>
+        <th class="sp-soll">Soll</th>
+        <th class="sp-haben">Haben</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- zeile:start -->
+      <tr>
+        <td class="sp-datum">{zeile.datum}</td>
+        <td class="sp-text">
+          <span class="vorgang">{zeile.text}</span>
+          <span class="verwendung">{zeile.verwendungszweck}</span>
+        </td>
+        <td class="sp-soll">{zeile.soll}</td>
+        <td class="sp-haben">{zeile.haben}</td>
+      </tr>
+      <!-- zeile:ende -->
+    </tbody>
+    <tfoot>
+      <tr class="alt">
+        <td colspan="3">Alter Kontostand vom {datum_vorher}</td>
+        <td class="sp-haben">{saldo_alt}</td>
+      </tr>
+      <tr class="neu">
+        <td colspan="3">Neuer Kontostand</td>
+        <td class="sp-haben">{saldo_neu}</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div class="beleg-fuss">
+    Bitte prüfen Sie den Auszug. Einwendungen gelten als genehmigt, wenn sie nicht
+    innerhalb von sechs Wochen nach Zugang erhoben werden.
+  </div>
+
+</div>
+
+<p class="beleg-vermerk">Übungsbeleg · MAKEL Studio GmbH ist ein erfundenes Unternehmen</p>
+
+<style>
+/* Belegtypografie: eng, sachlich, monospaced Zahlen. Bewusst nüchterner als
+   die App — ein Beleg soll aussehen wie ein Beleg, nicht wie eine Oberfläche. */
+.beleg{
+  --tinte:#1B4332; --gold:#C9A227; --papier:#FFFFFF;
+  --linie:#D8D6CC; --leise:#6B6B63;
+  background:var(--papier); color:#1C1C1A;
+  border:1px solid var(--linie);
+  padding:26px 28px 20px;
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:13px; line-height:1.45;
+  max-width:660px;
+}
+.beleg-kopf{
+  display:flex; justify-content:space-between; align-items:flex-start;
+  border-bottom:2px solid var(--tinte); padding-bottom:12px;
+}
+.bank-name{font-weight:600; font-size:15px; color:var(--tinte); letter-spacing:.01em;}
+.bank-zeile{font-size:11px; color:var(--leise); margin-top:2px;}
+.auszug-marke{text-align:right;}
+.auszug-wort{
+  font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--leise);
+}
+.auszug-nr{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:15px; font-weight:600; color:var(--tinte); margin-top:2px;
+}
+.beleg-adresse{margin:18px 0 14px; font-size:12.5px;}
+.beleg-adresse .empfaenger{font-weight:600;}
+.beleg-stamm{width:100%; border-collapse:collapse; margin-bottom:16px;}
+.beleg-stamm td{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:11.5px;
+  padding:6px 10px 6px 0; vertical-align:top; border-top:1px solid var(--linie);
+}
+.feldname{
+  display:block; font-family:"IBM Plex Sans",sans-serif; font-size:9.5px;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--leise); margin-bottom:2px;
+}
+.beleg-tabelle{width:100%; border-collapse:collapse;}
+.beleg-tabelle th{
+  font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--leise);
+  text-align:left; padding:0 8px 6px 0; border-bottom:1px solid var(--tinte);
+  font-weight:600;
+}
+.beleg-tabelle td{
+  padding:9px 8px 9px 0; border-bottom:1px solid var(--linie); vertical-align:top;
+}
+.sp-datum{width:64px; font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--leise);}
+.sp-soll,.sp-haben{
+  width:96px; text-align:right; white-space:nowrap;
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:12.5px;
+}
+.beleg-tabelle th.sp-soll,.beleg-tabelle th.sp-haben{text-align:right;}
+.vorgang{display:block; font-weight:600;}
+.verwendung{display:block; font-size:11.5px; color:var(--leise); margin-top:1px;}
+.beleg-tabelle tfoot td{border-bottom:0; padding-top:11px; font-size:12px;}
+.beleg-tabelle tfoot .alt td{color:var(--leise); border-top:1px solid var(--linie);}
+.beleg-tabelle tfoot .neu td{font-weight:600; color:var(--tinte); padding-top:2px;}
+.beleg-tabelle tfoot .neu .sp-haben{
+  font-size:14px; border-bottom:3px double var(--tinte); padding-bottom:3px;
+}
+.beleg-fuss{
+  margin-top:16px; padding-top:10px; border-top:1px solid var(--linie);
+  font-size:10.5px; color:var(--leise); max-width:52ch;
+}
+.beleg-vermerk{
+  max-width:660px; margin:7px 0 0;
+  font-family:"IBM Plex Sans",sans-serif; font-size:10.5px; color:#6B6B63;
+  letter-spacing:.04em;
+}
+@media (max-width:520px){
+  .beleg{padding:18px 16px 14px; font-size:12.5px;}
+  .beleg-kopf{flex-direction:column; gap:8px;}
+  .auszug-marke{text-align:left;}
+  .beleg-stamm td{display:block; border-top:0; padding:3px 0;}
+  .sp-soll,.sp-haben{width:78px;}
+}
+</style>

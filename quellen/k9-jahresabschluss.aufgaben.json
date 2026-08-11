@@ -1,0 +1,190 @@
+{
+  "lernfeld": "buchfuehrung",
+  "kapitel": "k9",
+  "verweise_im_klausurmodus": "ausblenden",
+  "konten_als": "nummer",
+
+  "bausteine": [
+    {
+      "id": "buchfuehrung-k9-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski verteilt die Abschlussarbeiten für das Geschäftsjahr." }
+      ],
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Bringen Sie die fünf Schritte des Jahresabschlusses in die richtige Reihenfolge.",
+          "elemente": [
+            { "text": "Ergebnis ins Eigenkapital übertragen", "position": 4 },
+            { "text": "Inventur durchführen", "position": 1 },
+            { "text": "Bestandskonten über das Schlussbilanzkonto abschließen", "position": 5 },
+            { "text": "Korrekturbuchungen: Abschreibungen, Rückstellungen, Rechnungsabgrenzung", "position": 2 },
+            { "text": "Erfolgskonten über die GuV abschließen", "position": 3 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Korrekturbuchungen immer vor dem Abschluss der Erfolgskonten. Wer erst abschließt und dann korrigiert, fängt von vorn an.",
+      "quelle": "k9, Abschnitt i1"
+    },
+
+    {
+      "id": "buchfuehrung-k9-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Vier Sachverhalte aus dem Abschluss der MAKEL Studio GmbH zum 31.12." }
+      ],
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Aktive oder passive Rechnungsabgrenzung?",
+          "ziele": ["ARAP", "PRAP"],
+          "elemente": [
+            { "text": "Die Januarmiete für den Store geht bereits im Dezember auf dem Konto ein.", "loesung": "PRAP" },
+            { "text": "Die Versicherung für das Folgejahr wird im Dezember abgebucht.", "loesung": "ARAP" },
+            { "text": "Eine Boutique zahlt im Dezember eine Wartungspauschale für das erste Quartal.", "loesung": "PRAP" },
+            { "text": "Die Kfz-Steuer für den Fuhrpark des Folgejahres wird im Dezember gezahlt.", "loesung": "ARAP" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Zwei Fragen genügen: Ist Geld raus- oder reingegangen, und gehört die Leistung ins nächste Jahr? Geld raus plus Leistung später ergibt ARAP.",
+      "quelle": "k9, Abschnitt i3"
+    },
+
+    {
+      "id": "buchfuehrung-k9-03",
+      "operator": "Berechnen Sie und bilden Sie den Buchungssatz",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+      "variablen": {
+        "jahresbetrag": { "von": 2400, "bis": 7200, "schritt": 120 },
+        "monate_folgejahr": { "von": 6, "bis": 11, "schritt": 1 }
+      },
+      "abgeleitet": {
+        "monatsbetrag": "runde(jahresbetrag / 12, 2)",
+        "abgrenzung": "runde(monatsbetrag * monate_folgejahr, 2)"
+      },
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Betriebshaftpflicht wurde im laufenden Jahr für zwölf Monate im Voraus gezahlt und vollständig als Aufwand gebucht; {monate_folgejahr} Versicherungsmonate entfallen auf das Folgejahr." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Zahlungsbeleg",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Versicherungsbeitrag für zwölf Monate", "{jahresbetrag} €"],
+              ["Davon auf das Folgejahr entfallend", "{monate_folgejahr} Monate"]
+            ]
+          }
+        }
+      ],
+      "eingabe": [
+        { "block": "zahl", "label": "Abzugrenzender Betrag", "einheit": "€", "loesung": "abgrenzung", "punkte": 2 },
+        {
+          "block": "buchungssatz",
+          "label": "Buchung zum 31.12.",
+          "zeilen": 2,
+          "loesung": [
+            { "soll": "2900", "haben": null, "betrag": "abgrenzung" },
+            { "soll": null, "haben": "6720", "betrag": "abgrenzung" }
+          ],
+          "punkte": 3
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Der Aufwand wird um den Teil gemindert, der ins Folgejahr gehört. Der Anspruch auf die noch ausstehende Leistung steht als aktiver Posten links.",
+      "quelle": "k9, Abschnitt i3",
+      "hinweis_konto": "6720 Versicherungsbeiträge — siehe kontenplan-ergaenzung.json"
+    },
+
+    {
+      "id": "buchfuehrung-k9-04",
+      "operator": "Berechnen Sie und bilden Sie den Buchungssatz",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+      "variablen": {
+        "urlaubstage": { "von": 5, "bis": 14, "schritt": 1 },
+        "tagessatz": { "von": 95, "bis": 165, "schritt": 5 }
+      },
+      "abgeleitet": {
+        "rueckstellung": "urlaubstage * tagessatz"
+      },
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt meldet zum 31.12. offene Urlaubsansprüche im Lager: {urlaubstage} Tage bei einem Tagessatz von {tagessatz} €." }
+      ],
+      "eingabe": [
+        { "block": "zahl", "label": "Höhe der Rückstellung", "einheit": "€", "loesung": "rueckstellung", "punkte": 2 },
+        {
+          "block": "buchungssatz",
+          "label": "Bildung der Rückstellung",
+          "zeilen": 2,
+          "loesung": [
+            { "soll": "6900", "haben": null, "betrag": "rueckstellung" },
+            { "soll": null, "haben": "3900", "betrag": "rueckstellung" }
+          ],
+          "punkte": 3
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Der Urlaubsanspruch ist im laufenden Jahr entstanden, also belastet der Aufwand auch dieses Jahr — unabhängig davon, wann der Urlaub genommen wird.",
+      "quelle": "k9, Abschnitt i2",
+      "hinweis_konto": "6900 Sonstige betriebliche Aufwendungen — siehe kontenplan-ergaenzung.json"
+    },
+
+    {
+      "id": "buchfuehrung-k9-05",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 6,
+      "dauer_min": 8,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Gegen die MAKEL Studio GmbH läuft ein Rechtsstreit mit ungewissem Ausgang; die Anwältin hält Kosten von etwa 18.000 € für wahrscheinlich, Luca Petrelli will erst buchen, wenn das Urteil vorliegt." }
+      ],
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, wie zum 31.12. zu verfahren ist und auf welchen Grundsatz sich das stützt.",
+          "zeilen": 6
+        }
+      ],
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Es ist eine Rückstellung in Höhe des voraussichtlichen Betrags zu bilden. Die Verpflichtung ist dem Grunde nach bereits entstanden, weil der Rechtsstreit im laufenden Jahr anhängig ist; ungewiss sind nur Höhe und Zeitpunkt der Inanspruchnahme. Genau dafür sind Rückstellungen vorgesehen — im Unterschied zur Verbindlichkeit, bei der Betrag und Fälligkeit feststehen. Getragen wird das vom Vorsichtsprinzip: Drohende Belastungen werden erfasst, sobald sie absehbar sind, Gewinne dagegen erst bei Realisierung. Erst zu buchen, wenn das Urteil vorliegt, würde das Ergebnis des laufenden Jahres zu gut darstellen und das Folgejahr unangemessen belasten. Die Schätzung muss nachvollziehbar sein, etwa durch die Einschätzung der Anwältin.",
+        "raster": [
+          { "kriterium": "Rückstellung bilden als Ergebnis genannt", "punkte": 1 },
+          { "kriterium": "Verpflichtung dem Grunde nach im laufenden Jahr entstanden", "punkte": 1 },
+          { "kriterium": "Höhe oder Zeitpunkt ungewiss — Abgrenzung zur Verbindlichkeit", "punkte": 1 },
+          { "kriterium": "Vorsichtsprinzip als Grundlage genannt", "punkte": 2 },
+          { "kriterium": "Folge für die Periodenzuordnung beschrieben", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Schlüsselwort in der Aufgabe ist „ungewiss“. Steht es dort, ist es keine Verbindlichkeit.",
+      "quelle": "k9, Abschnitt i2"
+    }
+  ]
+}

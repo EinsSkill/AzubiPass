@@ -1,0 +1,208 @@
+{
+  "lernfeld": "buchfuehrung",
+  "kapitel": "k8",
+  "verweise_im_klausurmodus": "ausblenden",
+  "konten_als": "nummer",
+
+  "bausteine": [
+    {
+      "id": "buchfuehrung-k8-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski sortiert vier Anschaffungen des Studios." }
+      ],
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Sofort abschreiben oder über die Nutzungsdauer verteilen?",
+          "ziele": ["Sofortabschreibung als GWG", "Verteilung über die Nutzungsdauer"],
+          "elemente": [
+            { "text": "Bürostuhl für 340 € netto", "loesung": "Sofortabschreibung als GWG" },
+            { "text": "Textildruckmaschine für 24.000 € netto", "loesung": "Verteilung über die Nutzungsdauer" },
+            { "text": "Beschriftungsgerät für 790 € netto", "loesung": "Sofortabschreibung als GWG" },
+            { "text": "Notebook für 1.450 € netto", "loesung": "Verteilung über die Nutzungsdauer" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die {{begriff:gwg|GWG}}-Grenze liegt bei 800 € netto. Entscheidend ist immer der Nettobetrag, nicht der Bruttopreis.",
+      "quelle": "k8, Abschnitt h1",
+      "pruefen": "GWG-Grenze und Sammelposten-Grenzen jährlich prüfen"
+    },
+
+    {
+      "id": "buchfuehrung-k8-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+      "variablen": {
+        "ak": { "von": 18000, "bis": 40000, "schritt": 1000 },
+        "nutzungsdauer": { "von": 6, "bis": 8, "schritt": 1 },
+        "monate": { "von": 3, "bis": 9, "schritt": 1 }
+      },
+      "abgeleitet": {
+        "jahres_afa": "runde(ak / nutzungsdauer, 2)",
+        "erste_afa": "runde(jahres_afa * monate / 12, 2)",
+        "buchwert_ende_jahr1": "ak - erste_afa"
+      },
+      "anzeige": [
+        { "block": "text", "inhalt": "Die neue Veredelungspresse wurde im laufenden Jahr angeschafft und war {monate} Monate im Betrieb; abgeschrieben wird linear." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Anlagenzugang",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Anschaffungskosten (netto)", "{ak} €"],
+              ["Betriebsgewöhnliche Nutzungsdauer", "{nutzungsdauer} Jahre"],
+              ["Nutzung im Anschaffungsjahr", "{monate} Monate"]
+            ]
+          }
+        }
+      ],
+      "eingabe": [
+        { "block": "zahl", "label": "Jahresabschreibung (volles Jahr)", "einheit": "€", "loesung": "jahres_afa", "punkte": 2 },
+        { "block": "zahl", "label": "Abschreibung im Anschaffungsjahr", "einheit": "€", "loesung": "erste_afa", "punkte": 2,
+          "folgefehler_aus": ["jahres_afa", "monate"] },
+        { "block": "zahl", "label": "Buchwert zum 31.12. des Anschaffungsjahres", "einheit": "€", "loesung": "buchwert_ende_jahr1", "punkte": 1,
+          "folgefehler_aus": ["ak", "erste_afa"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Bei unterjähriger Anschaffung wird pro angefangenem Monat ein Zwölftel abgeschrieben. Das Datum in der Aufgabe ist die versteckte Angabe.",
+      "quelle": "k8, Abschnitt h2"
+    },
+
+    {
+      "id": "buchfuehrung-k8-03",
+      "operator": "Bilden Sie den Buchungssatz",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+      "variablen": {
+        "ak_fuhrpark": { "von": 24000, "bis": 42000, "schritt": 1000 }
+      },
+      "abgeleitet": {
+        "afa": "runde(ak_fuhrpark / 6, 2)"
+      },
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Transporter mit Anschaffungskosten von {ak_fuhrpark} € netto wird linear über sechs Jahre abgeschrieben; die Jahresabschreibung ist zu buchen." }
+      ],
+      "eingabe": [
+        {
+          "block": "buchungssatz",
+          "zeilen": 2,
+          "loesung": [
+            { "soll": "6500", "haben": null, "betrag": "afa" },
+            { "soll": null, "haben": "0840", "betrag": "afa" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Der Aufwand entsteht im Soll, das Anlagekonto sinkt im Haben — die direkte Abschreibung mindert den Buchwert unmittelbar.",
+      "quelle": "k8, Abschnitt h2"
+    },
+
+    {
+      "id": "buchfuehrung-k8-04",
+      "operator": "Bilden Sie den Buchungssatz",
+      "anforderungsbereich": 2,
+      "punkte": 6,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": {
+        "ak": { "von": 24000, "bis": 42000, "schritt": 3000 },
+        "jahre": { "von": 3, "bis": 5, "schritt": 1 },
+        "verkaufspreis": { "von": 9000, "bis": 20000, "schritt": 500 }
+      },
+      "abgeleitet": {
+        "jahres_afa": "runde(ak / 6, 2)",
+        "kumuliert": "runde(jahres_afa * jahre, 2)",
+        "buchwert": "ak - kumuliert",
+        "differenz": "verkaufspreis - buchwert"
+      },
+      "pruefung_variablen": "differenz > 500",
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Transporter wird nach {jahre} vollen Nutzungsjahren verkauft; der Verkauf erfolgt netto ohne Umsatzsteuer gegen Banküberweisung." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Angaben zum Anlagenabgang",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Anschaffungskosten", "{ak} €"],
+              ["Nutzungsdauer", "6 Jahre, linear"],
+              ["Bereits abgeschriebene Jahre", "{jahre}"],
+              ["Verkaufspreis", "{verkaufspreis} €"]
+            ]
+          }
+        }
+      ],
+      "eingabe": [
+        { "block": "zahl", "label": "Buchwert im Zeitpunkt des Verkaufs", "einheit": "€", "loesung": "buchwert", "punkte": 2 },
+        {
+          "block": "buchungssatz",
+          "label": "Buchung des Verkaufs",
+          "zeilen": 3,
+          "loesung": [
+            { "soll": "2800", "haben": null, "betrag": "verkaufspreis" },
+            { "soll": null, "haben": "0840", "betrag": "buchwert" },
+            { "soll": null, "haben": "5460", "betrag": "differenz" }
+          ],
+          "punkte": 4
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 6 },
+      "erklaerung": "Ausgebucht wird immer der Buchwert, nie die Anschaffungskosten. Liegt der Verkaufspreis darüber, entsteht ein Buchgewinn als sonstiger Ertrag.",
+      "quelle": "k8, Abschnitt h3"
+    },
+
+    {
+      "id": "buchfuehrung-k8-05",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Beim Verkauf einer alten Druckmaschine ist ein Buchgewinn von 4.200 € entstanden; Yuki Bergmann wertet das als besonders gutes Geschäft." }
+      ],
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie diese Einschätzung und erklären Sie, wodurch ein Buchgewinn tatsächlich entsteht.",
+          "zeilen": 5
+        }
+      ],
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Ein Buchgewinn entsteht, wenn der Verkaufspreis über dem Buchwert liegt. Der Buchwert ergibt sich aus den Anschaffungskosten abzüglich der kumulierten Abschreibungen und beruht auf einer geschätzten Nutzungsdauer. Ein Buchgewinn bedeutet deshalb in erster Linie, dass in den Vorjahren zu viel abgeschrieben wurde — die tatsächliche Wertminderung war geringer als angenommen. Über die Vorteilhaftigkeit des Verkaufs sagt er wenig aus: Maßstab dafür wäre der erzielbare Marktpreis, nicht der buchhalterische Restwert. Wirtschaftlich wurden die Abschreibungen der Vorjahre lediglich teilweise wieder korrigiert.",
+        "raster": [
+          { "kriterium": "Buchgewinn = Verkaufspreis über Buchwert", "punkte": 1 },
+          { "kriterium": "Buchwert beruht auf geschätzter Nutzungsdauer", "punkte": 1 },
+          { "kriterium": "Erkannt, dass in den Vorjahren zu viel abgeschrieben wurde", "punkte": 2 },
+          { "kriterium": "Einschätzung als gutes Geschäft zurückgewiesen oder relativiert", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Der Buchgewinn ist eine Korrektur der Vergangenheit, keine Aussage über das Verhandlungsgeschick beim Verkauf.",
+      "quelle": "k8, Abschnitt h3"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "lernfeld": "buchfuehrung",
+  "kapitel": "k6",
+  "verweise_im_klausurmodus": "ausblenden",
+  "konten_als": "nummer",
+
+  "bausteine": [
+    {
+      "id": "buchfuehrung-k6-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski bereitet die monatliche Umsatzsteuervoranmeldung vor." }
+      ],
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Vorsteuer oder Umsatzsteuer?",
+          "ziele": ["Vorsteuer", "Umsatzsteuer"],
+          "elemente": [
+            { "text": "Entsteht beim Einkauf von Stoffen.", "loesung": "Vorsteuer" },
+            { "text": "Steht auf der Passivseite der Bilanz.", "loesung": "Umsatzsteuer" },
+            { "text": "Ist eine Forderung gegenüber dem Finanzamt.", "loesung": "Vorsteuer" },
+            { "text": "Entsteht beim Verkauf an eine Boutique.", "loesung": "Umsatzsteuer" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{begriff:vorsteuer|Vorsteuer}} im Soll auf der Aktivseite, Umsatzsteuer im Haben auf der Passivseite. Beides sind Bestandskonten — die Steuer läuft nie über die GuV.",
+      "quelle": "k6, Abschnitt f2"
+    },
+
+    {
+      "id": "buchfuehrung-k6-02",
+      "operator": "Bilden Sie den Buchungssatz",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:stoffeinkauf"],
+      "variablen": {
+        "netto": { "von": 1200, "bis": 6000, "schritt": 100 }
+      },
+      "abgeleitet": {
+        "steuer": "runde(netto * 0.19, 2)",
+        "brutto": "netto + steuer"
+      },
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydın legt Ihnen die Eingangsrechnung des Stofflieferanten vor." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Eingangsrechnung",
+          "zugeklappt": true,
+          "beleg": "eingangsrechnung",
+          "daten": {
+            "lieferant": "Weberei Lindtner GmbH",
+            "rechnungsnummer": "2026-3391",
+            "position": "Baumwolljersey 320 g/m², Rolle",
+            "netto": "{netto}",
+            "steuersatz": 19,
+            "steuer": "{steuer}",
+            "brutto": "{brutto}",
+            "bedingung": "10 Tage 2 % Skonto, 30 Tage netto"
+          }
+        }
+      ],
+      "eingabe": [
+        {
+          "block": "buchungssatz",
+          "zeilen": 3,
+          "loesung": [
+            { "soll": "6000", "haben": null, "betrag": "netto" },
+            { "soll": "2600", "haben": null, "betrag": "steuer" },
+            { "soll": null, "haben": "4400", "betrag": "brutto" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Die Ware wird netto gebucht, die Steuer läuft über das eigene Konto. Die Verbindlichkeit entspricht dem Bruttobetrag — das ist der Betrag, der tatsächlich geschuldet wird.",
+      "quelle": "k6, Abschnitt f3"
+    },
+
+    {
+      "id": "buchfuehrung-k6-03",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": {
+        "verkauf_netto": { "von": 60000, "bis": 140000, "schritt": 1000 },
+        "einkauf_netto": { "von": 25000, "bis": 70000, "schritt": 1000 }
+      },
+      "abgeleitet": {
+        "umsatzsteuer": "runde(verkauf_netto * 0.19, 2)",
+        "vorsteuer": "runde(einkauf_netto * 0.19, 2)",
+        "zahllast": "umsatzsteuer - vorsteuer"
+      },
+      "pruefung_variablen": "zahllast > 3000",
+      "anzeige": [
+        { "block": "text", "inhalt": "Für den Voranmeldungszeitraum liegen die Netto-Umsätze der MAKEL Studio GmbH vor; alle Umsätze unterliegen dem Regelsatz." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Umsätze des Monats",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Netto in €"],
+            "zeilen": [
+              ["Verkäufe (Onlineshop und Wholesale)", "{verkauf_netto}"],
+              ["Einkäufe (Stoffe, Dienstleistungen)", "{einkauf_netto}"]
+            ]
+          }
+        }
+      ],
+      "eingabe": [
+        { "block": "zahl", "label": "Umsatzsteuer", "einheit": "€", "loesung": "umsatzsteuer", "punkte": 2 },
+        { "block": "zahl", "label": "Vorsteuer", "einheit": "€", "loesung": "vorsteuer", "punkte": 1 },
+        { "block": "zahl", "label": "Zahllast", "einheit": "€", "loesung": "zahllast", "punkte": 2,
+          "folgefehler_aus": ["umsatzsteuer", "vorsteuer"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "{{begriff:zahllast|Zahllast}} = Umsatzsteuer − Vorsteuer. Ein negativer Wert bedeutet Erstattung durch das Finanzamt.",
+      "quelle": "k6, Abschnitt f3"
+    },
+
+    {
+      "id": "buchfuehrung-k6-04",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:tagesabschluss"],
+      "variablen": {
+        "brutto_ware": { "von": 1800, "bis": 4200, "schritt": 10 },
+        "brutto_speisen": { "von": 240, "bis": 760, "schritt": 10 }
+      },
+      "abgeleitet": {
+        "netto_ware": "runde(brutto_ware / 1.19, 2)",
+        "netto_speisen": "runde(brutto_speisen / 1.07, 2)",
+        "ust_gesamt": "runde(brutto_ware - netto_ware + brutto_speisen - netto_speisen, 2)"
+      },
+      "anzeige": [
+        { "block": "text", "inhalt": "Emily Tran legt den Tagesabschluss des Stores mit dem Café KANTE vor; Speisen zum Mitnehmen unterliegen dem ermäßigten Satz." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Tagesabschluss",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Warengruppe", "Bruttoumsatz in €"],
+            "zeilen": [
+              ["Bekleidung (19 %)", "{brutto_ware}"],
+              ["Speisen zum Mitnehmen (7 %)", "{brutto_speisen}"]
+            ]
+          }
+        }
+      ],
+      "eingabe": [
+        { "block": "zahl", "label": "Nettoerlös Bekleidung", "einheit": "€", "loesung": "netto_ware", "punkte": 1 },
+        { "block": "zahl", "label": "Nettoerlös Speisen", "einheit": "€", "loesung": "netto_speisen", "punkte": 1 },
+        { "block": "zahl", "label": "Umsatzsteuer gesamt", "einheit": "€", "loesung": "ust_gesamt", "punkte": 2 }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Aus Brutto wird Netto durch Division: durch 1,19 beziehungsweise durch 1,07. Niemals den Prozentsatz vom Bruttobetrag abziehen.",
+      "quelle": "k6, Abschnitt f2 und f3"
+    },
+
+    {
+      "id": "buchfuehrung-k6-05",
+      "operator": "Erläutern Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli fragt, warum die Umsatzsteuer in der Gewinn- und Verlustrechnung der MAKEL Studio GmbH überhaupt nicht auftaucht, obwohl monatlich fünfstellige Beträge ans Finanzamt fließen." }
+      ],
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Erläutern Sie das Durchlaufprinzip und begründen Sie, warum die Umsatzsteuer weder Aufwand noch Ertrag ist.",
+          "zeilen": 6
+        }
+      ],
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Umsatzsteuer ist eine Verbrauchsteuer, die wirtschaftlich der Endverbraucher trägt. Das Unternehmen kassiert sie beim Verkauf lediglich für den Staat und führt sie ab; die beim Einkauf selbst gezahlte Vorsteuer bekommt es erstattet. Für den Betrieb ist die Steuer damit ein durchlaufender Posten. Gebucht wird sie ausschließlich über Bestandskonten: Vorsteuer als Forderung auf der Aktivseite, Umsatzsteuer als Verbindlichkeit auf der Passivseite. Da weder Aufwand noch Ertrag entsteht, berührt sie das Ergebnis nicht und erscheint deshalb nicht in der Gewinn- und Verlustrechnung. Belastet wird nur die Liquidität, weil die Zahllast zwischenzeitlich abgeführt werden muss.",
+        "raster": [
+          { "kriterium": "Umsatzsteuer als Verbrauchsteuer des Endverbrauchers eingeordnet", "punkte": 1 },
+          { "kriterium": "Betrieb als Inkassostelle beschrieben", "punkte": 1 },
+          { "kriterium": "Buchung ausschließlich über Bestandskonten genannt", "punkte": 2 },
+          { "kriterium": "Kein Aufwand und kein Ertrag, deshalb nicht in der GuV", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Der Operator „Erläutern Sie“ verlangt den Zusammenhang, nicht nur die Feststellung.",
+      "quelle": "k6, Abschnitt f1"
+    }
+  ]
+}

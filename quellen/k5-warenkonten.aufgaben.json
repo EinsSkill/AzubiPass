@@ -1,0 +1,202 @@
+{
+  "lernfeld": "buchfuehrung",
+  "kapitel": "k5",
+  "verweise_im_klausurmodus": "ausblenden",
+  "konten_als": "nummer",
+
+  "bausteine": [
+    {
+      "id": "buchfuehrung-k5-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydın erläutert, wie Preisnachlässe im Einkauf behandelt werden." }
+      ],
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Rabatt oder Skonto?",
+          "ziele": ["Rabatt", "Skonto"],
+          "elemente": [
+            { "text": "Wird sofort vom Rechnungsbetrag abgezogen und nicht gesondert gebucht.", "loesung": "Rabatt" },
+            { "text": "Entsteht erst im Moment der Zahlung.", "loesung": "Skonto" },
+            { "text": "Wird für die Abnahme größerer Mengen gewährt.", "loesung": "Rabatt" },
+            { "text": "Belohnt die Zahlung innerhalb einer kurzen Frist.", "loesung": "Skonto" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der {{begriff:rabatt|Rabatt}} mindert den Rechnungsbetrag von vornherein, {{begriff:skonto|Skonto}} wird separat erfasst — das ist der ganze Unterschied beim Buchen.",
+      "quelle": "k5, Abschnitt e2 und e3"
+    },
+
+    {
+      "id": "buchfuehrung-k5-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:stoffeinkauf"],
+      "variablen": {
+        "listenpreis": { "von": 4000, "bis": 9000, "schritt": 250 },
+        "rabatt_satz": { "von": 5, "bis": 15, "schritt": 5 },
+        "fracht": { "von": 120, "bis": 480, "schritt": 20 }
+      },
+      "abgeleitet": {
+        "rabatt": "runde(listenpreis * rabatt_satz / 100, 2)",
+        "zieleinkaufspreis": "listenpreis - rabatt",
+        "einstandspreis": "zieleinkaufspreis + fracht"
+      },
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydın hat Stoff für die Frühjahrskollektion bestellt; Skonto wird nicht in Anspruch genommen." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Angaben zur Bestellung",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Listeneinkaufspreis (netto)", "{listenpreis} €"],
+              ["Lieferantenrabatt", "{rabatt_satz} %"],
+              ["Frachtkosten (netto)", "{fracht} €"]
+            ]
+          }
+        }
+      ],
+      "eingabe": [
+        { "block": "zahl", "label": "Rabattbetrag", "einheit": "€", "loesung": "rabatt", "punkte": 1 },
+        { "block": "zahl", "label": "Zieleinkaufspreis", "einheit": "€", "loesung": "zieleinkaufspreis", "punkte": 2,
+          "folgefehler_aus": ["listenpreis", "rabatt"] },
+        { "block": "zahl", "label": "Einstandspreis", "einheit": "€", "loesung": "einstandspreis", "punkte": 2,
+          "folgefehler_aus": ["zieleinkaufspreis", "fracht"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "{{begriff:bezugskosten|Bezugskosten}} erhöhen den {{begriff:einstandspreis|Einstandspreis}}, Rabatte mindern ihn. Der Einstandspreis ist die Zahl, mit der weiterkalkuliert wird.",
+      "quelle": "k5, Abschnitt e2"
+    },
+
+    {
+      "id": "buchfuehrung-k5-03",
+      "operator": "Bilden Sie den Buchungssatz",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:stoffeinkauf"],
+      "variablen": {
+        "brutto": { "von": 2000, "bis": 8000, "schritt": 100 }
+      },
+      "abgeleitet": {
+        "skonto_brutto": "runde(brutto * 0.02, 2)",
+        "zahlbetrag": "brutto - skonto_brutto"
+      },
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Verbindlichkeit von {brutto} € wird innerhalb der Skontofrist per Banküberweisung beglichen; es gelten die Standardbedingungen 10 Tage 2 % Skonto." }
+      ],
+      "eingabe": [
+        {
+          "block": "buchungssatz",
+          "zeilen": 3,
+          "loesung": [
+            { "soll": "4400", "haben": null, "betrag": "brutto" },
+            { "soll": null, "haben": "2800", "betrag": "zahlbetrag" },
+            { "soll": null, "haben": "6001", "betrag": "skonto_brutto" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Die Verbindlichkeit wird in voller Höhe ausgebucht. Der einbehaltene Betrag ist ein Ertrag — beim Einkauf verdient der Betrieb am Skonto.",
+      "quelle": "k5, Abschnitt e3",
+      "hinweis_konto": "6001 Nachlässe — siehe kontenplan-ergaenzung.json"
+    },
+
+    {
+      "id": "buchfuehrung-k5-04",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": {
+        "einstandspreis": { "von": 30, "bis": 65, "schritt": 1 },
+        "hk_satz": { "von": 20, "bis": 40, "schritt": 5 },
+        "gewinn_satz": { "von": 15, "bis": 30, "schritt": 5 }
+      },
+      "abgeleitet": {
+        "handlungskosten": "runde(einstandspreis * hk_satz / 100, 2)",
+        "selbstkosten": "einstandspreis + handlungskosten",
+        "gewinn": "runde(selbstkosten * gewinn_satz / 100, 2)",
+        "barverkaufspreis": "selbstkosten + gewinn"
+      },
+      "anzeige": [
+        { "block": "text", "inhalt": "Yuki Bergmann kalkuliert den Preis eines neuen Hoodies; Kundenskonto und Kundenrabatt bleiben außer Betracht." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Kalkulationsgrundlagen je Stück",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Einstandspreis", "{einstandspreis} €"],
+              ["Handlungskostenzuschlag", "{hk_satz} %"],
+              ["Gewinnzuschlag", "{gewinn_satz} %"]
+            ]
+          }
+        }
+      ],
+      "eingabe": [
+        { "block": "zahl", "label": "Handlungskosten", "einheit": "€", "loesung": "handlungskosten", "punkte": 1 },
+        { "block": "zahl", "label": "Selbstkosten", "einheit": "€", "loesung": "selbstkosten", "punkte": 2,
+          "folgefehler_aus": ["einstandspreis", "handlungskosten"] },
+        { "block": "zahl", "label": "Barverkaufspreis", "einheit": "€", "loesung": "barverkaufspreis", "punkte": 2,
+          "folgefehler_aus": ["selbstkosten", "gewinn"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Der Gewinnzuschlag wird auf die Selbstkosten gerechnet, nicht auf den Einstandspreis. Beide Zuschläge sind „vom Hundert“.",
+      "quelle": "k5, Abschnitt e4"
+    },
+
+    {
+      "id": "buchfuehrung-k5-05",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 6,
+      "dauer_min": 8,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner erwägt, eine Lieferantenrechnung über 12.000 € erst am 30. Tag zu zahlen, statt den Skonto von 2 Prozent bei Zahlung binnen 10 Tagen zu nutzen; der Kontokorrentkredit der Hausbank kostet 11 Prozent im Jahr." }
+      ],
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie, ob der Skonto genutzt werden sollte. Begründen Sie mit einer Rechnung.",
+          "zeilen": 6
+        }
+      ],
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Wer den Skonto nicht zieht, kauft sich 20 zusätzliche Zahlungstage — die Differenz zwischen Skontofrist (10 Tage) und Zahlungsziel (30 Tage) — und bezahlt dafür 2 Prozent des Rechnungsbetrags. Auf das Jahr hochgerechnet: 2 Prozent × 360 Tage ÷ 20 Tage = 36 Prozent Jahreszins. Der Kontokorrentkredit kostet dagegen nur 11 Prozent. Es ist deshalb wirtschaftlich sinnvoll, die Rechnung innerhalb der Skontofrist zu zahlen, notfalls über den Kontokorrentkredit. In Zahlen: Der Skontobetrag beträgt 240 €, die Kreditzinsen für 20 Tage rund 73 €. Der Vorteil liegt bei etwa 167 €.",
+        "raster": [
+          { "kriterium": "Zinsbindungsdauer von 20 Tagen erkannt", "punkte": 1 },
+          { "kriterium": "Jahreszins korrekt hochgerechnet (rund 36 %)", "punkte": 2 },
+          { "kriterium": "Vergleich mit dem Kontokorrentzins gezogen", "punkte": 1 },
+          { "kriterium": "Empfehlung: Skonto nutzen, notfalls über Kredit", "punkte": 1 },
+          { "kriterium": "Zahlenmäßiger Vorteil beziffert", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Prüfungsklassiker. Die Formel lautet: Skontosatz × 360 ÷ (Zahlungsziel − Skontofrist).",
+      "quelle": "k5, Abschnitt e3"
+    }
+  ]
+}

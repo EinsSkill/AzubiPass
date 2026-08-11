@@ -1,0 +1,281 @@
+{
+  "lernfeld": "buchfuehrung",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "buchfuehrung-k1-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        {
+          "block": "text",
+          "inhalt": "Sandra Koslowski erklärt Ihnen, warum die MAKEL Studio GmbH Bücher führen muss."
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Aussage zur Buchführungspflicht der MAKEL Studio GmbH trifft zu?",
+          "mehrfach": false,
+          "optionen": [
+            {
+              "text": "Die Pflicht ergibt sich aus {{par:hgb-238|§ 238 HGB}}, weil ein Handelsgewerbe betrieben wird — auf Umsatz oder Gewinn kommt es nicht an.",
+              "richtig": true,
+              "echo": "Richtig. Für Kaufleute greift § 238 HGB ohne jede Schwelle. Die Schwellenwerte der AO werden erst dort wichtig, wo kein Kaufmann vorliegt."
+            },
+            {
+              "text": "Die Pflicht entsteht erst, weil der Umsatz über 600.000 € liegt.",
+              "richtig": false,
+              "echo": "Diese Schwelle stammt aus § 141 AO und gilt für Gewerbetreibende, die keine Kaufleute sind. Eine GmbH ist Formkaufmann — für sie greift § 238 HGB von Anfang an."
+            },
+            {
+              "text": "Die Pflicht entsteht erst, weil der Gewinn über 60.000 € liegt.",
+              "richtig": false,
+              "echo": "Auch das ist eine Schwelle aus § 141 AO. Sie wird für die MAKEL Studio GmbH nie geprüft, weil die handelsrechtliche Pflicht vorrangig ist."
+            },
+            {
+              "text": "Als GmbH besteht keine handelsrechtliche, sondern nur eine steuerliche Buchführungspflicht.",
+              "richtig": false,
+              "echo": "Umgekehrt: Die handelsrechtliche Pflicht kommt zuerst, die steuerliche folgt ihr über § 140 AO. Man nennt das die abgeleitete (derivative) Pflicht."
+            }
+          ]
+        }
+      ],
+
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Reihenfolge merken: erst HGB prüfen, dann AO. Wer Kaufmann ist, braucht die AO-Schwellen gar nicht mehr anzusehen.",
+      "quelle": "k1, Abschnitt a2"
+    },
+
+    {
+      "id": "buchfuehrung-k1-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+      "variablen": null,
+
+      "anzeige": [
+        {
+          "block": "text",
+          "inhalt": "Jonas Weidner bereitet im Lager am Gewerbehof den Jahresabschluss vor."
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Ordnen Sie jede Tätigkeit dem richtigen Begriff zu.",
+          "ziele": ["Inventur", "Inventar", "Bilanz"],
+          "elemente": [
+            {
+              "text": "Die Hoodies im Lager werden Stück für Stück durchgezählt.",
+              "loesung": "Inventur"
+            },
+            {
+              "text": "Eine Liste führt 340 Positionen mit Menge und Einzelwert auf.",
+              "loesung": "Inventar"
+            },
+            {
+              "text": "Aktiva und Passiva stehen sich gegenüber und sind gleich hoch.",
+              "loesung": "Bilanz"
+            },
+            {
+              "text": "Pflichtbestandteil des Jahresabschlusses nach {{par:hgb-242|§ 242 HGB}}.",
+              "loesung": "Bilanz"
+            }
+          ]
+        }
+      ],
+
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Dreisatz: Inventur ist der Vorgang, Inventar das Verzeichnis, Bilanz die Verdichtung.",
+      "quelle": "k1, Abschnitt a4"
+    },
+
+    {
+      "id": "buchfuehrung-k1-03",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+
+      "variablen": {
+        "maschinen": { "von": 240000, "bis": 340000, "schritt": 10000 },
+        "fuhrpark": { "von": 60000, "bis": 120000, "schritt": 10000 },
+        "waren": { "von": 180000, "bis": 260000, "schritt": 5000 },
+        "bank": { "von": 40000, "bis": 90000, "schritt": 5000 },
+        "kasse": { "von": 2000, "bis": 6000, "schritt": 500 },
+        "darlehen": { "von": 150000, "bis": 250000, "schritt": 10000 },
+        "verb_lul": { "von": 80000, "bis": 160000, "schritt": 5000 }
+      },
+      "abgeleitet": {
+        "vermoegen": "maschinen + fuhrpark + waren + bank + kasse",
+        "schulden": "darlehen + verb_lul",
+        "eigenkapital": "vermoegen - schulden"
+      },
+      "pruefung_variablen": "eigenkapital > 50000",
+
+      "anzeige": [
+        {
+          "block": "text",
+          "inhalt": "Sandra Koslowski legt Ihnen den Auszug aus dem Inventar des Studiobereichs vor."
+        },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Auszug aus dem Inventar zum 31.12.",
+          "zugeklappt": true,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Position", "Wert in €"],
+            "zeilen": [
+              ["Maschinen und Druckanlagen", "{maschinen}"],
+              ["Fuhrpark", "{fuhrpark}"],
+              ["Warenbestand", "{waren}"],
+              ["Bankguthaben", "{bank}"],
+              ["Kassenbestand", "{kasse}"],
+              ["Bankdarlehen", "{darlehen}"],
+              ["Verbindlichkeiten aus Lieferungen und Leistungen", "{verb_lul}"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zahl",
+          "label": "Gesamtvermögen",
+          "einheit": "€",
+          "loesung": "vermoegen",
+          "toleranz": 0.01,
+          "punkte": 2
+        },
+        {
+          "block": "zahl",
+          "label": "Gesamtschulden",
+          "einheit": "€",
+          "loesung": "schulden",
+          "toleranz": 0.01,
+          "punkte": 1
+        },
+        {
+          "block": "zahl",
+          "label": "Eigenkapital (Reinvermögen)",
+          "einheit": "€",
+          "loesung": "eigenkapital",
+          "toleranz": 0.01,
+          "punkte": 2,
+          "folgefehler_aus": ["vermoegen", "schulden"]
+        }
+      ],
+
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Eigenkapital = Gesamtvermögen − Gesamtschulden. Wer sich beim Vermögen verrechnet, bekommt den letzten Schritt trotzdem, wenn er mit dem eigenen Wert richtig weiterrechnet.",
+      "quelle": "k1, Abschnitt a4"
+    },
+
+    {
+      "id": "buchfuehrung-k1-04",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 6,
+      "dauer_min": 8,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        {
+          "block": "text",
+          "inhalt": "Luca Petrelli hat im Store KANTE mehrere Barumsätze nicht erfasst, weil die Beträge unter zehn Euro lagen."
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, gegen welchen Grundsatz ordnungsgemäßer Buchführung dieses Vorgehen verstößt und welche Folge das für die MAKEL Studio GmbH haben kann.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Das Vorgehen verstößt gegen den Grundsatz der Vollständigkeit: Alle Geschäftsvorfälle sind lückenlos zu erfassen, unabhängig von ihrer Höhe. Eine Betragsgrenze, unterhalb derer nicht gebucht werden müsste, gibt es nicht. Kommt es zu einer Kassennachschau oder Betriebsprüfung, gilt die Buchführung als nicht ordnungsgemäß. Das Finanzamt darf die Besteuerungsgrundlagen dann nach § 162 AO schätzen — regelmäßig zu Ungunsten des Betriebs. Zusätzlich drohen steuerliche Nachzahlungen und je nach Vorsatz weitere Konsequenzen.",
+        "raster": [
+          { "kriterium": "Grundsatz der Vollständigkeit genannt", "punkte": 2 },
+          { "kriterium": "Erklärt, dass es keine Betragsgrenze gibt", "punkte": 1 },
+          { "kriterium": "Buchführung gilt als nicht ordnungsgemäß", "punkte": 1 },
+          { "kriterium": "Schätzung durch das Finanzamt als Folge genannt", "punkte": 1 },
+          { "kriterium": "§ 162 AO als Grundlage genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Bei Operator „Begründen Sie\" reicht das Nennen des Grundsatzes nicht — verlangt sind Ursache und Folge.",
+      "quelle": "k1, Abschnitt a3"
+    },
+
+    {
+      "id": "buchfuehrung-k1-05",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        {
+          "block": "text",
+          "inhalt": "Bei der Durchsicht des Journals fallen Sandra Koslowski vier Auffälligkeiten auf."
+        },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Auszug aus dem Journal",
+          "zugeklappt": true,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Nr.", "Buchungstext"],
+            "zeilen": [
+              ["1", "Diverses"],
+              ["2", "Privater Restaurantbesuch als Bewirtung erfasst"],
+              ["3", "Abschreibungsmethode gegenüber dem Vorjahr gewechselt"],
+              ["4", "Wertsteigerung eines Grundstücks als Ertrag gebucht"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Ordnen Sie jeder Buchung den verletzten Grundsatz zu.",
+          "ziele": ["Klarheit", "Richtigkeit", "Stetigkeit", "Vorsicht"],
+          "elemente": [
+            { "text": "Nr. 1", "loesung": "Klarheit" },
+            { "text": "Nr. 2", "loesung": "Richtigkeit" },
+            { "text": "Nr. 3", "loesung": "Stetigkeit" },
+            { "text": "Nr. 4", "loesung": "Vorsicht" }
+          ]
+        }
+      ],
+
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Nr. 4 ist der häufigste Fehler: Gewinne werden erst bei Realisierung gebucht, Verluste sofort.",
+      "quelle": "k1, Abschnitt a3"
+    }
+  ]
+}

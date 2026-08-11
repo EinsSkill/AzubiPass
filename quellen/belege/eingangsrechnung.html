@@ -1,0 +1,182 @@
+<!-- MAKEL-Belegvorlage · Eingangsrechnung (Lieferant an MAKEL)
+     Platzhalter in geschweiften Klammern werden vom Build gefüllt.
+     Wiederholbereich: <!-- position:start --> … <!-- position:ende -->
+     Der Vermerk "Übungsbeleg" steht außerhalb des Belegkörpers.
+     Pflichtangaben nach § 14 UStG sind vollständig enthalten — der Beleg
+     eignet sich dadurch auch für Fehlersuchaufgaben, wenn einzelne
+     Angaben bewusst weggelassen werden. -->
+
+<div class="beleg beleg-eingangsrechnung">
+
+  <div class="beleg-kopf">
+    <div class="absender">
+      <div class="firma">{lieferant}</div>
+      <div class="zeile">{lieferant_strasse} · {lieferant_ort}</div>
+    </div>
+    <div class="dokument">
+      <div class="dok-wort">Rechnung</div>
+      <div class="dok-nr">{rechnungsnummer}</div>
+    </div>
+  </div>
+
+  <div class="beleg-mitte">
+    <div class="beleg-adresse">
+      <div class="klein">{lieferant} · {lieferant_strasse} · {lieferant_ort}</div>
+      <div class="empfaenger">MAKEL Studio GmbH</div>
+      <div>Ronsdorfer Straße 74</div>
+      <div>40233 Düsseldorf</div>
+    </div>
+    <table class="beleg-stamm">
+      <tr><td class="feldname">Rechnungsdatum</td><td>{datum}</td></tr>
+      <tr><td class="feldname">Liefertag</td><td>{lieferdatum}</td></tr>
+      <tr><td class="feldname">Kundennummer</td><td>{kundennummer}</td></tr>
+      <tr><td class="feldname">Ihre Bestellung</td><td>{bestellnummer}</td></tr>
+      <tr><td class="feldname">USt-IdNr. Lieferant</td><td>{ust_id}</td></tr>
+    </table>
+  </div>
+
+  <table class="beleg-tabelle">
+    <thead>
+      <tr>
+        <th class="sp-pos">Pos.</th>
+        <th class="sp-text">Bezeichnung</th>
+        <th class="sp-menge">Menge</th>
+        <th class="sp-preis">Einzelpreis</th>
+        <th class="sp-summe">Betrag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- position:start -->
+      <tr>
+        <td class="sp-pos">{position.nr}</td>
+        <td class="sp-text">
+          <span class="artikel">{position.text}</span>
+          <span class="artikelnr">Art.-Nr. {position.artikelnummer}</span>
+        </td>
+        <td class="sp-menge">{position.menge}</td>
+        <td class="sp-preis">{position.einzelpreis}</td>
+        <td class="sp-summe">{position.betrag}</td>
+      </tr>
+      <!-- position:ende -->
+    </tbody>
+  </table>
+
+  <div class="beleg-summe">
+    <table>
+      <tr>
+        <td>Nettobetrag</td>
+        <td class="wert">{netto}</td>
+      </tr>
+      <tr>
+        <td>zzgl. Umsatzsteuer {steuersatz} %</td>
+        <td class="wert">{steuer}</td>
+      </tr>
+      <tr class="endbetrag">
+        <td>Rechnungsbetrag</td>
+        <td class="wert">{brutto}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="beleg-bedingungen">
+    <span class="feldname">Zahlungsbedingungen</span>
+    {bedingung}
+  </div>
+
+  <div class="beleg-fuss">
+    <div>{lieferant} · {lieferant_strasse} · {lieferant_ort}</div>
+    <div>Steuernummer {steuernummer} · USt-IdNr. {ust_id}</div>
+    <div>{bank} · IBAN {iban}</div>
+  </div>
+
+</div>
+
+<p class="beleg-vermerk">Übungsbeleg · MAKEL Studio GmbH und alle genannten Geschäftspartner sind erfunden</p>
+
+<style>
+/* Geschäftsbrief-Anmutung nach DIN 5008: feste Zonen, ruhige Typografie,
+   Beträge rechtsbündig in Monospace. Bewusst nüchterner als die App. */
+.beleg{
+  --tinte:#1B4332; --linie:#D8D6CC; --leise:#6B6B63;
+  background:#FFFFFF; color:#1C1C1A;
+  border:1px solid var(--linie); padding:28px 30px 22px;
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:13px; line-height:1.45; max-width:660px;
+}
+.beleg-kopf{
+  display:flex; justify-content:space-between; align-items:flex-start;
+  border-bottom:1px solid var(--linie); padding-bottom:12px;
+}
+.firma{font-weight:600; font-size:15px; letter-spacing:.01em;}
+.absender .zeile{font-size:11px; color:var(--leise); margin-top:2px;}
+.dokument{text-align:right;}
+.dok-wort{font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--leise);}
+.dok-nr{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:16px; font-weight:600; color:var(--tinte); margin-top:2px;
+}
+.beleg-mitte{display:flex; justify-content:space-between; gap:28px; margin:22px 0 20px;}
+.beleg-adresse{font-size:13px;}
+.beleg-adresse .klein{
+  font-size:9px; color:var(--leise); border-bottom:1px solid var(--linie);
+  padding-bottom:3px; margin-bottom:8px;
+}
+.beleg-adresse .empfaenger{font-weight:600;}
+.beleg-stamm{border-collapse:collapse; font-size:11.5px; align-self:flex-start;}
+.beleg-stamm td{padding:2px 0 2px 14px; vertical-align:top; white-space:nowrap;}
+.beleg-stamm td:last-child{
+  font-family:"IBM Plex Mono",ui-monospace,monospace; text-align:right;
+}
+.feldname{
+  font-size:9.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--leise); font-weight:600;
+}
+.beleg-tabelle{width:100%; border-collapse:collapse;}
+.beleg-tabelle th{
+  font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--leise);
+  text-align:left; padding:0 8px 6px 0; border-bottom:1px solid var(--tinte); font-weight:600;
+}
+.beleg-tabelle td{padding:9px 8px 9px 0; border-bottom:1px solid var(--linie); vertical-align:top;}
+.sp-pos{width:34px; font-family:"IBM Plex Mono",monospace; color:var(--leise);}
+.sp-menge,.sp-preis,.sp-summe{
+  text-align:right; white-space:nowrap;
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:12.5px;
+}
+.sp-menge{width:64px;} .sp-preis{width:86px;} .sp-summe{width:92px;}
+.beleg-tabelle th.sp-menge,.beleg-tabelle th.sp-preis,.beleg-tabelle th.sp-summe{text-align:right;}
+.artikel{display:block; font-weight:600;}
+.artikelnr{display:block; font-size:11px; color:var(--leise); margin-top:1px;}
+.beleg-summe{display:flex; justify-content:flex-end; margin-top:14px;}
+.beleg-summe table{border-collapse:collapse; min-width:270px;}
+.beleg-summe td{padding:4px 0; font-size:12.5px;}
+.beleg-summe .wert{
+  text-align:right; white-space:nowrap; padding-left:24px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+}
+.beleg-summe .endbetrag td{
+  font-weight:600; color:var(--tinte); font-size:14px; padding-top:7px;
+  border-top:1px solid var(--linie);
+}
+.beleg-summe .endbetrag .wert{border-bottom:3px double var(--tinte); padding-bottom:3px;}
+.beleg-bedingungen{
+  margin-top:20px; padding-top:10px; border-top:1px solid var(--linie); font-size:12px;
+}
+.beleg-bedingungen .feldname{display:block; margin-bottom:2px;}
+.beleg-fuss{
+  margin-top:18px; padding-top:9px; border-top:1px solid var(--linie);
+  font-size:10px; color:var(--leise); line-height:1.5;
+}
+.beleg-vermerk{
+  max-width:660px; margin:7px 0 0;
+  font-family:"IBM Plex Sans",sans-serif; font-size:10.5px;
+  color:#6B6B63; letter-spacing:.04em;
+}
+@media (max-width:520px){
+  .beleg{padding:18px 16px 14px; font-size:12.5px;}
+  .beleg-kopf,.beleg-mitte{flex-direction:column; gap:10px;}
+  .dokument{text-align:left;}
+  .beleg-stamm td{padding-left:0;}
+  .sp-preis{display:none;}
+  .beleg-tabelle th.sp-preis{display:none;}
+}
+</style>
