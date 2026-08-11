@@ -19,7 +19,11 @@
   var PFEIL = '<svg width="17" height="10" viewBox="0 0 17 10" fill="none" aria-hidden="true">'
             + '<path d="M0 5h15M11 1l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>';
 
-  var TITEL = { heute: "AzubiPass", lernen: "Lernfelder", ueben: "Üben",
+  /* Auf „Heute" bleibt die feste Kopfzeile leer: Die Wortmarke steht dort schon
+     in der Ankunftszone, und zweimal „AzubiPass" übereinander sieht nach Fehler
+     aus. Die Lupe daneben bleibt — sonst wäre die Suche von hier aus nicht mehr
+     erreichbar, denn in der Leiste unten steht sie nicht. */
+  var TITEL = { heute: "", lernen: "Lernfelder", ueben: "Üben",
                 suche: "Suche", ich: "Ich" };
 
   /* ================================================== Rechnen auf dem Konto */
@@ -46,6 +50,130 @@
 
   function faelligeKarten() {
     return inhalt.karten.filter(function (k) { return AP.istFaellig(k.id); });
+  }
+
+  /* Alle Kapitel in einer Reihe, in der Reihenfolge, in der sie auch unter
+     „Lernen" stehen. Einmal gerechnet und nicht bei jedem Aufruf neu: Der
+     Startbildschirm fragt gleich dreimal danach. */
+  var kapitelreihe = null;
+
+  function alleKapitel() {
+    if (kapitelreihe) return kapitelreihe;
+    kapitelreihe = [];
+    inhalt.lernfelder.forEach(function (lf) {
+      lf.kapitel.forEach(function (k) {
+        kapitelreihe.push({
+          schluessel: lf.id + "-" + k.id,
+          lernfeld: lf.id, lernfeldTitel: lf.titel,
+          kapitel: k.id, nummer: k.nummer, titel: k.titel,
+          zu: lf.seite + "#" + k.id
+        });
+      });
+    });
+    return kapitelreihe;
+  }
+
+  /* Welches Kapitel ist an der Reihe?
+
+     Die eine Stelle, die das entscheidet. Vorher stand die Antwort im Konto —
+     in stand.zuletzt lagen Titel und Nummer als Text, geschrieben zu dem
+     Zeitpunkt, als das Kapitel zuletzt offen war. Wird ein Kapitel umbenannt
+     oder verschwindet es, zeigte der Startbildschirm ins Leere.
+
+     Deshalb liefert das Konto hier nur noch den Verweis. Alles, was angezeigt
+     wird, kommt aus inhalt.lernfelder.
+
+     art sagt, welcher der fünf Fälle es geworden ist — daran hängt die
+     Beschriftung des Knopfes. */
+  function lernziel() {
+    var reihe = alleKapitel();
+    if (!reihe.length) return null;
+
+    function offen(k) { return !kapitelFertig(k.lernfeld, k.kapitel); }
+
+    var z = stand.zuletzt;
+    var stelle = -1;
+    if (z && z.zu) {
+      // kapitel steht erst seit dem einen Konto drin; bei übernommenen
+      // Altbeständen muss die Kennung aus der Adresse kommen.
+      var kapId = z.kapitel ||
+        String(z.zu).split("#")[1] || "";
+      stelle = reihe.map(function (k) { return k.schluessel; })
+                    .indexOf(z.lernfeld + "-" + kapId);
+    }
+
+    if (stelle >= 0 && offen(reihe[stelle])) {
+      return zielAus(reihe[stelle], "fortsetzen");
+    }
+
+    // Zuletzt gelesenes Kapitel ist durch: ab dort weitersuchen.
+    if (stelle >= 0) {
+      for (var i = stelle + 1; i < reihe.length; i++) {
+        if (offen(reihe[i])) return zielAus(reihe[i], "naechstes");
+      }
+    }
+
+    // Ungültiger Verweis, gar kein Verweis, oder hinten angekommen:
+    // das erste offene Kapitel überhaupt.
+    for (var j = 0; j < reihe.length; j++) {
+      if (offen(reihe[j])) {
+        return zielAus(reihe[j], stelle >= 0 ? "naechstes"
+                                : gesamtstand().fertig ? "naechstes" : "erstes");
+      }
+    }
+
+    return { art: "fertig", zu: "app.html#ueben", titel: "Alle Kapitel durch.",
+             wo: "", knopf: "Prüfungstraining öffnen" };
+  }
+
+  var KNOPFTEXT = { fortsetzen: "Kapitel fortsetzen", erstes: "Erstes Kapitel starten",
+                    naechstes: "Nächstes Kapitel starten" };
+
+  function zielAus(k, art) {
+    return {
+      art: art, zu: k.zu, titel: k.titel,
+      wo: k.lernfeld.toUpperCase() + " · Kapitel " + k.nummer,
+      knopf: KNOPFTEXT[art]
+    };
+  }
+
+  /* ================================================== Prüfungstermin
+
+     Der Termin aus landing.config.json gilt, bis jemand unter „Ich" einen
+     eigenen einträgt. Ein unbrauchbarer Wert — von Hand in der Sicherungsdatei
+     verstellt, aus einer alten Fassung übrig — fällt still auf den Standard
+     zurück, statt den Countdown zu zerlegen. */
+  function pruefungsdatum() {
+    if (AP.istDatum(stand.pruefungstermin)) return stand.pruefungstermin;
+    if (AP.istDatum(inhalt.pruefung)) return inhalt.pruefung;
+    return null;
+  }
+
+  /* In landing.config.json steht „AP2 · schriftliche Prüfung am 24. und 25.
+     November 2026". Für die Kopfzeile ist das zu lang, die blanke Abkürzung
+     aber zu wenig: „AP2" allein weiß im ersten Ausbildungsjahr niemand. Also
+     ausgeschrieben — die Langform steht ohnehin unter „Ich". */
+  var AUSGESCHRIEBEN = { AP1: "Abschlussprüfung Teil 1", AP2: "Abschlussprüfung Teil 2" };
+
+  function pruefungsname() {
+    var name = inhalt.pruefungName || "Abschlussprüfung";
+    var kurz = name.split("·")[0].trim();
+    return AUSGESCHRIEBEN[kurz] || kurz || name;
+  }
+
+  /* Countdown als fertiger Text. Eine negative Tageszahl darf hier nicht
+     herauskommen — „noch -12 Tage" ist keine Information, sondern ein Fehler
+     mit Minuszeichen davor. */
+  function countdown() {
+    var datum = pruefungsdatum();
+    if (!datum) return { text: "Prüfungstermin festlegen", handeln: true };
+    var tage = AP.tageBis(datum);
+    if (tage < 0) return { text: "Prüfungstermin aktualisieren", handeln: true };
+    return {
+      text: pruefungsname() + " · " + (tage === 0 ? "heute" : tage === 1 ? "morgen"
+                                                 : "noch " + tage + " Tage"),
+      handeln: false
+    };
   }
 
   /* Was saß nicht? Drei Quellen, die es längst gibt und die nie jemand
@@ -149,77 +277,155 @@
 
   /* ================================================== Heute */
 
+  /* Drei Zonen statt einer Kennzahlenwand.
+
+     1 · Ankunft  füllt fast den ersten Schirm: Wortmarke, Countdown, das
+                  Kapitel, ein Weg. Von Zone 2 bleibt unten ein Streifen
+                  stehen — daran sieht man, dass die Seite weitergeht, ohne
+                  dass es jemand hinschreiben muss.
+     2 · Heute    höchstens eine zeitkritische Nebensache.
+     3 · Stand    das Feld aus echten Kapitelstrichen und die Woche.
+
+     Erst der Weg, dann die Pflicht, dann die Bilanz. Vorher stand die Bilanz
+     oben und der Weg irgendwo dazwischen. */
   function zeigeHeute(s) {
     s.innerHTML = "";
-    var tage = AP.tageBis(inhalt.pruefung);
-    var g = gesamtstand();
-    var faellig = faelligeKarten();
-    var woche = wochentage();
-    var gelernt = woche.filter(function (t) { return t.gelernt; }).length;
+    s.appendChild(zoneAnkunft());
+    s.appendChild(zoneHeute());
+    s.appendChild(zoneStand());
+  }
 
+  function zoneAnkunft() {
+    var z = el("section", "hm-zone hm-ankunft");
+
+    var kopf = el("div", "hm-kopf");
+    kopf.appendChild(el("span", "hm-marke", "AzubiPass"));
+    var cd = countdown();
+    if (cd.handeln) {
+      var knopf = el("a", "hm-zaehler hm-zaehler-handeln", cd.text);
+      knopf.href = "app.html#ich";
+      kopf.appendChild(knopf);
+    } else {
+      kopf.appendChild(el("span", "hm-zaehler", cd.text));
+    }
+    z.appendChild(kopf);
+
+    var ziel = lernziel();
+    var block = el("a", "hm-kapitel");
+    block.href = ziel ? ziel.zu : "app.html#lernen";
+
+    if (!ziel) {
+      block.appendChild(el("div", "hm-was", "Noch keine Lernfelder gebaut."));
+      z.appendChild(block);
+      return z;
+    }
+
+    if (ziel.wo) block.appendChild(el("div", "hm-wo", ziel.wo));
+    block.appendChild(el("h1", "hm-was", ziel.titel));
+    var weg = el("span", "hm-weiter");
+    weg.appendChild(el("span", null, ziel.knopf));
+    weg.insertAdjacentHTML("beforeend", PFEIL);
+    block.appendChild(weg);
+    z.appendChild(block);
+    return z;
+  }
+
+  function zoneHeute() {
+    var z = el("section", "hm-zone hm-heute");
+    var faellig = faelligeKarten();
+
+    if (faellig.length) {
+      var a = el("a", "hm-pflicht");
+      a.href = "app.html#ueben";
+      a.appendChild(el("span", "hm-lbl",
+        faellig.length === 1 ? "1 Karte wartet" : faellig.length + " Karten warten"));
+      a.appendChild(el("span", "hm-wert", "Jetzt üben"));
+      z.appendChild(a);
+    } else {
+      /* Kein toter Knopf. „Nichts fällig" ist eine Nachricht, keine Aufgabe —
+         also sieht sie auch nicht aus wie eine. */
+      var ruht = el("div", "hm-pflicht hm-ruht");
+      ruht.appendChild(el("span", "hm-lbl", "Heute keine Karteikarten fällig"));
+      z.appendChild(ruht);
+    }
+
+    /* Die beiden Hinweise stehen bewusst hier und nicht über der Hauptaktion:
+       Der eine erscheint genau einmal im Leben des Kontos, der andere nur auf
+       manchen Geräten. Beide dürfen den Weg nach vorn nicht wegdrücken. */
     if (stand.uebernommen) {
-      var hinweis = el("div", "meldung");
+      var hinweis = el("div", "meldung hm-meldung");
       hinweis.textContent = "Dein bisheriger Fortschritt aus den einzelnen Lernzetteln "
         + "wurde übernommen. Der Karteikartenstand fängt neu an — er hing vorher an der "
         + "Position im Stapel und war dadurch verrutscht.";
-      s.appendChild(hinweis);
+      z.appendChild(hinweis);
       stand.uebernommen = false;
       sichern();
     }
+    z.appendChild(einbauhinweis());
+    return z;
+  }
 
-    s.appendChild(einbauhinweis());
-    s.appendChild(kopfzeile("Guten Tag.",
-      tage > 0 ? "Noch " + tage + " Tage bis zur schriftlichen Abschlussprüfung."
-               : inhalt.pruefungName));
+  function zoneStand() {
+    var z = el("section", "hm-zone hm-stand");
+    var g = gesamtstand();
 
-    /* Der eine große Knopf */
-    var z = stand.zuletzt;
-    if (z && z.zu) {
-      var k = el("a", "fortsetzen");
-      k.href = z.zu;
-      k.appendChild(el("div", "wo", (z.nummer ? z.nummer + " · " : "") + lernfeldName(z.lernfeld)));
-      k.appendChild(el("div", "was", z.titel || "Weiterlesen"));
-      var w = el("div", "weiterhin");
-      w.appendChild(el("span", null, "Weiterlernen"));
-      w.insertAdjacentHTML("beforeend", PFEIL);
-      k.appendChild(w);
-      s.appendChild(k);
-    } else {
-      var erstes = inhalt.lernfelder[0];
-      s.appendChild(leerkasten(
-        "Noch nichts angefangen. Fang mit " + erstes.titel + " an — "
-        + "das erste Kapitel dauert " + (erstes.kapitel[0] || {}).minuten + " Minuten.",
-        "Erstes Kapitel öffnen",
-        function () { location.href = erstes.seite; }));
-    }
+    z.appendChild(el("p", "hm-titelchen", "Wo du stehst"));
 
-    var zahlen = el("div", "zahlenreihe");
-    zahlen.appendChild(zahlenfeld(Math.round(g.anteil * 100), "%", "geschafft"));
-    zahlen.appendChild(zahlenfeld(faellig.length, "", "Karten fällig", faellig.length > 0));
-    zahlen.appendChild(zahlenfeld(g.fertig, " / " + g.gesamt, "Kapitel"));
-    zahlen.appendChild(zahlenfeld(tage > 0 ? tage : 0, "", "Tage bis AP2", tage <= 30));
-    s.appendChild(zahlen);
+    /* Ein Strich je Kapitel, eine Reihe je Lernfeld — und zwar an der Stelle,
+       an der das Kapitel wirklich steht. Der Entwurf füllte die Striche der
+       Reihe nach auf: Wer in LF8 anfängt, sah seinen Fortschritt in LF1
+       leuchten. Das ist keine Vereinfachung, das ist eine falsche Auskunft. */
+    var feld = el("div", "hm-feld");
+    feld.setAttribute("role", "img");
+    feld.setAttribute("aria-label",
+      "Fortschritt: " + g.fertig + " von " + g.gesamt + " Kapiteln abgeschlossen.");
+    var lauf = 0;
+    inhalt.lernfelder.forEach(function (lf) {
+      var st = lernfeldstand(lf);
+      var r = el("div", "hm-reihe" + (st.fertig === st.gesamt && st.gesamt ? " fertig" : ""));
+      r.setAttribute("title", lf.titel + " · " + st.fertig + " von " + st.gesamt);
+      r.appendChild(el("span", "hm-kuerzel", kuerzel(lf.id)));
+      var striche = el("div", "hm-striche");
+      lf.kapitel.forEach(function (k) {
+        var fertig = kapitelFertig(lf.id, k.id);
+        var strich = el("span", "hm-strich" + (fertig ? " voll" : ""));
+        strich.setAttribute("title", "K" + k.nummer + " · " + k.titel
+          + (fertig ? " · abgeschlossen" : ""));
+        if (fertig) strich.style.setProperty("--i", lauf++);
+        striche.appendChild(strich);
+      });
+      r.appendChild(striche);
+      feld.appendChild(r);
+    });
+    z.appendChild(feld);
 
-    s.appendChild(el("div", "abschnittstitel", "Diese Woche · " + gelernt + " von 7 Tagen"));
-    var w7 = el("div", "woche");
+    var bilanz = el("p", "hm-bilanz");
+    bilanz.appendChild(el("b", null, String(g.fertig)));
+    bilanz.appendChild(document.createTextNode(
+      " von " + g.gesamt + " Kapiteln abgeschlossen"));
+    z.appendChild(bilanz);
+
+    var woche = wochentage();
+    var gelernt = woche.filter(function (t) { return t.gelernt; }).length;
+    z.appendChild(el("p", "hm-titelchen", "Diese Woche"));
+    var w7 = el("div", "hm-woche");
     woche.forEach(function (t) {
-      var f = el("div", "wtag" + (t.gelernt ? " gelernt" : "") + (t.heute ? " heute" : ""), t.kurz);
+      var f = el("div", "hm-wtag" + (t.gelernt ? " gelernt" : "")
+                                  + (t.heute ? " heute" : ""), t.kurz);
       f.setAttribute("title", t.schluessel + (t.gelernt ? " · gelernt" : ""));
       w7.appendChild(f);
     });
-    s.appendChild(w7);
+    z.appendChild(w7);
+    z.appendChild(el("p", "hm-wnotiz", "An " + gelernt + " von 7 Tagen gelernt"));
+    return z;
+  }
 
-    if (faellig.length) {
-      s.appendChild(el("div", "abschnittstitel", "Fällig"));
-      var ue = el("a", "reihe");
-      ue.href = "#ueben";
-      var oben = el("div", "reihe-oben");
-      oben.appendChild(el("span", "reihe-titel",
-        faellig.length + (faellig.length === 1 ? " Karte wartet" : " Karten warten")));
-      oben.appendChild(el("span", "reihe-meta", "üben"));
-      ue.appendChild(oben);
-      s.appendChild(ue);
-    }
+  /* Das Kürzel vor einer Fortschrittsreihe. „LF1" bis „LF13" stehen so in der
+     Kennung; die Buchführung heißt dort ausgeschrieben und wäre in der schmalen
+     Spalte doppelt so breit wie die Striche daneben. Der volle Name hängt als
+     Titel an der Reihe. */
+  function kuerzel(id) {
+    return /^lf\d+$/.test(id) ? id.toUpperCase() : id.slice(0, 4).toUpperCase();
   }
 
   function lernfeldName(id) {
@@ -695,6 +901,8 @@
     stimmung.appendChild(schalter);
     s.appendChild(stimmung);
 
+    s.appendChild(terminfeld());
+
     /* Sicherung */
     s.appendChild(el("div", "abschnittstitel", "Deine Daten"));
     var erklaerung = el("p");
@@ -738,6 +946,83 @@
     var gebaut = el("p", "reihe-quelle");
     gebaut.textContent = "Inhalt vom " + (inhalt.gebaut || "").slice(0, 10).split("-").reverse().join(".");
     s.appendChild(gebaut);
+  }
+
+  /* Schreibt der Browser überhaupt? Im privaten Modus mancher Browser und bei
+     gesperrtem Speicher schluckt kern.js den Fehler, damit die App weiterläuft.
+     Für diesen Abschnitt reicht das nicht: Wer „Termin speichern" drückt, muss
+     erfahren, wenn nichts gespeichert wurde. */
+  function speicherGeht() {
+    try {
+      localStorage.setItem("azubipass:probe", "1");
+      localStorage.removeItem("azubipass:probe");
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  /* Der eigene Prüfungstermin. Kein zweiter Speicherschlüssel, keine Migration:
+     Das Feld liegt im selben Konto wie alles andere und wird deshalb von der
+     Sicherung automatisch mitgenommen. */
+  function terminfeld() {
+    var box = el("div", "stellreihe stellreihe-block");
+    var links = el("div");
+    links.appendChild(el("b", null, "Prüfungstermin"));
+    links.appendChild(el("small", null,
+      "Dein Prüfungstermin bestimmt den Countdown auf „Heute“. "
+      + "Er bleibt nur auf diesem Gerät gespeichert."));
+
+    var zeile = el("div", "terminzeile");
+    var feld = el("input");
+    feld.type = "date";
+    feld.className = "terminfeld";
+    feld.setAttribute("aria-label", "Dein Prüfungstermin");
+    feld.value = AP.istDatum(stand.pruefungstermin) ? stand.pruefungstermin
+                                                    : (pruefungsdatum() || "");
+
+    var speichern = el("button", "kn-haupt", "Termin speichern");
+    var zurueck = el("button", "kn-neben", "Standardtermin verwenden");
+    var echo = el("p", "meldung");
+    echo.setAttribute("role", "status");
+
+    function melden(text, fehler) {
+      echo.className = "meldung" + (fehler ? " fehler" : "");
+      echo.textContent = text;
+    }
+
+    speichern.addEventListener("click", function () {
+      if (!AP.istDatum(feld.value)) {
+        melden("Das ist kein gültiges Datum. Nichts geändert.", true);
+        return;
+      }
+      stand.pruefungstermin = feld.value;
+      sichern();
+      var cd = countdown();
+      melden(speicherGeht()
+        ? "Termin gespeichert — auf „Heute“ steht jetzt: " + cd.text
+        : "Termin gilt für diese Sitzung. Dein Browser lässt kein dauerhaftes "
+          + "Speichern zu, beim nächsten Öffnen ist er wieder weg.",
+        false);
+    });
+
+    zurueck.addEventListener("click", function () {
+      stand.pruefungstermin = null;
+      sichern();
+      feld.value = pruefungsdatum() || "";
+      melden("Standardtermin wieder aktiv: " + countdown().text, false);
+    });
+
+    zeile.appendChild(feld);
+    zeile.appendChild(speichern);
+    zeile.appendChild(zurueck);
+
+    box.appendChild(links);
+    box.appendChild(zeile);
+    var huelle = el("div");
+    huelle.appendChild(box);
+    huelle.appendChild(echo);
+    return huelle;
   }
 
   function sichere(meldung) {
@@ -785,6 +1070,9 @@
         }
       });
       if (neu.zuletzt) stand.zuletzt = neu.zuletzt;
+      // Nur übernehmen, was der Countdown auch rechnen kann — sonst schleppt
+      // eine alte Sicherung einen kaputten Termin ins frische Konto.
+      if (AP.istDatum(neu.pruefungstermin)) stand.pruefungstermin = neu.pruefungstermin;
       sichern();
       meldung.className = "meldung";
       meldung.textContent = "Eingespielt und mit dem zusammengeführt, was schon hier war.";
@@ -902,6 +1190,10 @@
       else t.removeAttribute("aria-current");
     });
     document.getElementById("kopfMeta").textContent = TITEL[id];
+    /* Woran die CSS erkennt, welcher Schirm gerade dran ist. „Heute" trägt
+       dadurch seine eigene dunkelgrüne Fläche — samt Kopf, Leiste und Fuß, die
+       außerhalb des Schirms liegen und sonst hell dagegenstünden. */
+    document.documentElement.dataset.bereich = id;
     if (id !== "ueben") uebenAnsicht = "start";
     bauer[id](schirme[id]);
     if (wunsch === id) window.scrollTo(0, 0);
