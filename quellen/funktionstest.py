@@ -699,6 +699,227 @@ def probeklausur_klausur(b, w):
     ktx.close()
 
 
+def kapitelroute(b, w):
+    """Der direkte Weg aus einem Kapitel in die Probeklausur.
+
+        app.html#ueben/probeklausur?kapitel=<lernfeld>:<kapitel>
+
+    Eine gültige Kennung wählt vor. Eine unbekannte darf keinen Fehler
+    erzeugen, keine Ansicht zerlegen und nichts Gespeichertes anfassen."""
+    print("\n· Probeklausur · Weg aus dem Kapitel")
+    ktx = b.new_context(viewport={"width": 390, "height": 844}, locale="de-DE")
+    pg = ktx.new_page()
+    fehler = []
+    pg.on("pageerror", lambda e: fehler.append(str(e)))
+    pg.goto(f"{w}/app.html")
+    pg.evaluate("k => { localStorage.clear(); "
+                "localStorage.setItem('azubipass:konto', k); }", json.dumps(konto()))
+
+    # Die Aktion steht im Kapitel und zeigt auf genau diese Adresse
+    pg.goto(f"{w}/buchfuehrung.html#k3", wait_until="networkidle")
+    pg.wait_for_timeout(700)
+    aktion = pg.locator("#k3 .weiter-pk")
+    pruefe("Kapitel bietet 'Dieses Kapitel als Probeklausur üben'",
+           aktion.count() == 1, aktion.count())
+    ziel = aktion.first.get_attribute("href") if aktion.count() else ""
+    pruefe("Die Aktion zeigt auf die Kapitelroute",
+           ziel == "app.html#ueben/probeklausur?kapitel=buchfuehrung:k3", ziel)
+
+    # Gültige Kennung
+    pg.goto(f"{w}/app.html#ueben/probeklausur?kapitel=buchfuehrung:k3",
+            wait_until="networkidle")
+    pg.wait_for_timeout(1100)
+    pruefe("Gültige Kennung öffnet die Probeklausur",
+           pg.locator("#ueben .pk--kapitel").count() > 0)
+    gewaehlt = pg.evaluate(
+        "() => Array.from(document.querySelectorAll('#ueben .pk--kapitel'))"
+        ".filter(l => l.querySelector('input').checked)"
+        ".map(l => l.querySelector('.pk--kapitelnr').textContent)")
+    pruefe("Genau das gemeinte Kapitel ist vorgewählt", gewaehlt == ["K3"], gewaehlt)
+    pruefe("Die Vorwahl wird sichtbar gesagt",
+           pg.locator("#ueben .pk--vorwahl").count() == 1)
+    pruefe("Die Auswahl nennt die ungefähre Aufgabenzahl",
+           "aufgaben" in pg.locator("#ueben .pk--zonetext").inner_text().lower(),
+           pg.locator("#ueben .pk--zonetext").inner_text())
+
+    # Unbekannte Kennung — mit echtem Neuladen. Ein Sprung von #…k3 auf #…k99
+    # wechselt nur die Raute; die Seite bliebe dieselbe und die vorige Auswahl
+    # stünde noch. Geprüft wird aber der Fall „jemand öffnet einen kaputten
+    # Link", und der beginnt bei null.
+    vorher = pg.evaluate("() => localStorage.getItem('azubipass:konto')")
+    pg.goto(f"{w}/app.html#ueben/probeklausur?kapitel=gibtsnicht:k99",
+            wait_until="networkidle")
+    pg.reload(wait_until="networkidle")
+    pg.wait_for_timeout(1100)
+    pruefe("Unbekannte Kennung öffnet die normale Auswahl",
+           pg.locator("#ueben .pk--kapitel").count() > 0)
+    pruefe("Unbekannte Kennung wählt nichts vor",
+           pg.evaluate("() => Array.from(document.querySelectorAll("
+                       "'#ueben .pk--kapitel input')).every(i => !i.checked)"))
+    pruefe("Unbekannte Kennung sagt nichts von einer Vorwahl",
+           pg.locator("#ueben .pk--vorwahl").count() == 0)
+    pruefe("Unbekannte Kennung erzeugt keinen Fehler", not fehler, fehler[:1])
+    pruefe("Unbekannte Kennung ändert keine Nutzerdaten",
+           pg.evaluate("() => localStorage.getItem('azubipass:konto')") == vorher)
+
+    # Ohne Auswahl lässt sich nichts starten
+    pruefe("Ohne Kapitel kann keine Klausur beginnen",
+           pg.locator("#ueben .pk--zonknopf").is_disabled())
+
+    # Vier Haupttabs, kein fünfter für das Kapitel
+    for wo in ("app.html#ueben/probeklausur?kapitel=buchfuehrung:k3",
+               "buchfuehrung.html#k3"):
+        pg.goto(f"{w}/{wo}", wait_until="networkidle")
+        pg.wait_for_timeout(600)
+        pruefe(f"Genau vier Haupttabs ({wo.split('#')[0]})",
+               pg.locator("nav.tableiste .tab").count() == 4,
+               pg.locator("nav.tableiste .tab").count())
+    beschriftung = pg.evaluate(
+        "() => Array.from(document.querySelectorAll('nav.tableiste .tab span'))"
+        ".map(s => s.textContent)")
+    pruefe("Kein fünfter Kapitel-Tab",
+           beschriftung == ["Heute", "Lernen", "Üben", "Ich"], beschriftung)
+    ktx.close()
+
+
+def hervorhebungen(b, w):
+    """Der halbhohe Textmarker ist weg, die Begriffe sind keine gepunkteten
+    Linien mehr, und beide lassen sich mit dem Daumen treffen."""
+    print("\n· Kapitel · Hervorhebungen")
+    ktx = b.new_context(viewport={"width": 390, "height": 844}, locale="de-DE")
+    pg = ktx.new_page()
+    pg.goto(f"{w}/buchfuehrung.html#k3", wait_until="networkidle")
+    pg.wait_for_timeout(800)
+
+    m = pg.evaluate("""() => {
+      const e = document.querySelector('.kapitel:not([hidden]) mark');
+      if (!e) return null;
+      const cs = getComputedStyle(e);
+      return {bild: cs.backgroundImage, grund: cs.backgroundColor,
+              klon: cs.boxDecorationBreak || cs.webkitBoxDecorationBreak,
+              radius: parseFloat(cs.borderTopLeftRadius),
+              pad: parseFloat(cs.paddingLeft)};
+    }""")
+    pruefe("Eine wichtige Aussage ist im Kapitel vorhanden", m is not None)
+    if m:
+        pruefe("Kein halbhoher Verlauf mehr", m["bild"] == "none", m["bild"])
+        pruefe("Die Fläche liegt unter der ganzen Phrase",
+               m["grund"] != "rgba(0, 0, 0, 0)", m["grund"])
+        pruefe("Die Fläche bricht mit der Zeile mit", m["klon"] == "clone", m["klon"])
+        pruefe("Höchstens 2 px Radius", m["radius"] <= 2, m["radius"])
+        pruefe("Kleiner waagerechter Innenabstand", m["pad"] > 0, m["pad"])
+
+    t = pg.evaluate("""() => {
+      const raus = {};
+      for (const k of ['begriff', 'par']) {
+        const e = document.querySelector('.kapitel:not([hidden]) .' + k);
+        if (!e) { raus[k] = null; continue; }
+        const cs = getComputedStyle(e), af = getComputedStyle(e, '::after');
+        raus[k] = {stil: cs.borderBottomStyle + '|' + cs.borderTopStyle,
+                   gewicht: cs.fontWeight, schrift: cs.fontFamily,
+                   zielHoehe: parseFloat(af.height), zielLage: af.position};
+      }
+      return raus;
+    }""")
+    pruefe("Ein anklickbarer Begriff ist vorhanden", t["begriff"] is not None)
+    if t["begriff"]:
+        pruefe("Begriff ohne gepunktete Linie",
+               "dotted" not in t["begriff"]["stil"], t["begriff"]["stil"])
+        pruefe("Begriff ist halbfett",
+               int(t["begriff"]["gewicht"]) >= 600, t["begriff"]["gewicht"])
+        pruefe("Begriff hat ein 44-px-Bedienziel",
+               t["begriff"]["zielLage"] == "absolute"
+               and t["begriff"]["zielHoehe"] >= 44, t["begriff"]["zielHoehe"])
+
+    pg.goto(f"{w}/lf4.html#k4", wait_until="networkidle")
+    pg.wait_for_timeout(800)
+    par = pg.evaluate("""() => {
+      const e = document.querySelector('.kapitel:not([hidden]) .par');
+      if (!e) return null;
+      const cs = getComputedStyle(e), af = getComputedStyle(e, '::after');
+      return {stil: cs.borderBottomStyle, schrift: cs.fontFamily,
+              grund: cs.backgroundColor, zielHoehe: parseFloat(af.height),
+              zielLage: af.position};
+    }""")
+    pruefe("Eine Paragraphenkennung ist vorhanden", par is not None)
+    if par:
+        pruefe("Paragraph ohne gepunktete Linie", par["stil"] != "dotted", par["stil"])
+        pruefe("Paragraph steht in Mono", "Mono" in par["schrift"], par["schrift"])
+        pruefe("Paragraph hat eine eigene Fläche",
+               par["grund"] != "rgba(0, 0, 0, 0)", par["grund"])
+        pruefe("Paragraph hat ein 44-px-Bedienziel",
+               par["zielLage"] == "absolute" and par["zielHoehe"] >= 44,
+               par["zielHoehe"])
+
+    # Suchtreffer müssen sich von der fachlichen Hervorhebung unterscheiden
+    pg.goto(f"{w}/app.html#suche", wait_until="networkidle")
+    pg.wait_for_timeout(700)
+    pg.locator("#suche input").fill("Bilanz")
+    pg.wait_for_timeout(700)
+    unterschied = pg.evaluate("""() => {
+      const e = document.querySelector('#suche .such-treffer');
+      if (!e) return null;
+      const cs = getComputedStyle(e);
+      return {grund: cs.backgroundColor, gewicht: cs.fontWeight};
+    }""")
+    pruefe("Suchtreffer haben eine eigene Klasse", unterschied is not None)
+    if unterschied:
+        pruefe("Suchtreffer sind eine kräftige Vollfläche",
+               unterschied["grund"] == "rgb(201, 162, 39)", unterschied["grund"])
+    ktx.close()
+
+
+def aufgaben_fehlen(b, w):
+    """Fehlende oder beschädigte Aufgabendaten führen zu einem verständlichen
+    Zustand — nicht zu einer kaputten Ansicht."""
+    print("\n· Probeklausur · Aufgabendaten fehlen")
+    for fall, antwort in (("fehlend", None), ("beschaedigt", "{kaputt")):
+        ktx = b.new_context(viewport={"width": 390, "height": 844}, locale="de-DE")
+        pg = ktx.new_page()
+        fehler = []
+        pg.on("pageerror", lambda e: fehler.append(str(e)))
+        if antwort is None:
+            pg.route("**/mittel/aufgaben.json", lambda r: r.fulfill(status=404, body=""))
+        else:
+            pg.route("**/mittel/aufgaben.json",
+                     lambda r: r.fulfill(status=200, body=antwort,
+                                         content_type="application/json"))
+        pg.goto(f"{w}/app.html")
+        pg.evaluate("k => { localStorage.clear(); "
+                    "localStorage.setItem('azubipass:konto', k); }", json.dumps(konto()))
+        pg.goto(f"{w}/app.html#ueben/probeklausur", wait_until="networkidle")
+        pg.wait_for_timeout(1400)
+        text = pg.locator("#ueben").inner_text().lower()
+        pruefe(f"Aufgabendaten {fall}: verständliche Meldung statt leerer Seite",
+               "nicht gefunden" in text or "aufgaben" in text, text[:70])
+        pruefe(f"Aufgabendaten {fall}: ein Weg zurück bleibt",
+               pg.locator("#ueben .pk--zurueck").count() > 0
+               or pg.locator("nav.tableiste .tab").count() == 4)
+        pruefe(f"Aufgabendaten {fall}: azubipass:konto bleibt unberührt",
+               pg.evaluate("() => localStorage.getItem('azubipass:konto')") is not None)
+        pruefe(f"Aufgabendaten {fall}: kein unbehandelter Fehler",
+               not fehler, fehler[:1])
+        ktx.close()
+
+
+def schriften_ortlich(b, w):
+    """Die Schriften kommen vom eigenen Server, nicht von Google."""
+    print("\n· Schriften")
+    ktx = b.new_context(viewport={"width": 390, "height": 844}, locale="de-DE")
+    pg = ktx.new_page()
+    fremd = []
+    pg.on("request", lambda r: fremd.append(r.url)
+          if "fonts.googleapis" in r.url or "fonts.gstatic" in r.url else None)
+    pg.goto(f"{w}/app.html", wait_until="networkidle")
+    pg.wait_for_timeout(900)
+    pruefe("Keine Schriftanfrage nach außen", not fremd, fremd[:1])
+    geladen = pg.evaluate(
+        "() => Array.from(document.fonts).map(f => f.family)")
+    for name in ("Source Serif 4", "IBM Plex Sans", "IBM Plex Mono"):
+        pruefe(f"{name} wird örtlich ausgeliefert", name in geladen)
+    ktx.close()
+
+
 def main():
     dienst = socketserver.TCPServer(
         ("127.0.0.1", 0), functools.partial(Stiller, directory=str(SEITE)))
@@ -831,6 +1052,13 @@ def main():
         pg.wait_for_timeout(500)
         pruefe("Dunkel-Schalter wirkt",
                pg.evaluate("() => document.documentElement.dataset.stimmung") == "dunkel")
+        # Der Schalter wirkt dort, wo gelesen wird. Die vier App-Schirme tragen
+        # in beiden Stimmungen dieselbe tiefgrüne Fläche; nachgewiesen wird die
+        # Einstellung deshalb auf der Lesefläche des Kapitels und nicht auf
+        # „Ich". Gespeichert ist sie im selben Konto, also überlebt sie den
+        # Seitenwechsel.
+        pg.goto(f"{w}/lf10.html#k1")
+        pg.wait_for_timeout(700)
         grund = pg.evaluate(
             "() => getComputedStyle(document.body).backgroundColor")
         pruefe("Seite ist wirklich dunkel", grund in ("rgb(20, 22, 20)",), grund)
@@ -1064,25 +1292,40 @@ def main():
                             "('azubipass:konto') || '{}').pruefungstermin") in (None,))
         ktxL.close()
 
-        # L · Heute bleibt in beiden Stimmungen dunkelgrün
+        # L · Die App-Welt bleibt in beiden Stimmungen dunkelgrün
+        #
+        # Vorher folgte Lernen der Stimmung und Heute nicht — die App zerfiel
+        # dadurch in zwei Welten. Jetzt tragen alle vier Hauptbereiche dieselbe
+        # tiefgrüne Fläche, und die Hell-/Dunkel-Einstellung gilt für die
+        # Lesefläche im Kapitel, wo sie hingehört.
         print("\n· Farben")
+        GRUEN = "rgb(18, 48, 31)"
         for farbe in ("light", "dark"):
             ktxM, pgM = app_mit(b, w, konto(), farbe=farbe)
             grund = pgM.evaluate(
                 "() => getComputedStyle(document.body).backgroundColor")
-            pruefe(f"Heute ist dunkelgrün ({farbe})", grund == "rgb(18, 48, 31)", grund)
-            pgM.evaluate("location.hash = '#lernen'")
-            pgM.wait_for_timeout(500)
-            anders = pgM.evaluate(
-                "() => getComputedStyle(document.body).backgroundColor")
-            pruefe(f"Lernen folgt wieder der Stimmung ({farbe})",
-                   anders == ("rgb(245, 245, 240)" if farbe == "light"
-                              else "rgb(20, 22, 20)"), anders)
+            pruefe(f"Heute ist dunkelgrün ({farbe})", grund == GRUEN, grund)
+            for bereich in ("lernen", "ueben", "ich"):
+                pgM.evaluate(f"location.hash = '#{bereich}'")
+                pgM.wait_for_timeout(400)
+                jetzt = pgM.evaluate(
+                    "() => getComputedStyle(document.body).backgroundColor")
+                pruefe(f"{bereich.capitalize()} ist dieselbe grüne Welt ({farbe})",
+                       jetzt == GRUEN, jetzt)
             pgM.evaluate("location.hash = '#heute'")
             pgM.wait_for_timeout(500)
             pruefe(f"Zurück auf Heute wieder grün ({farbe})",
                    pgM.evaluate("() => getComputedStyle(document.body).backgroundColor")
-                   == "rgb(18, 48, 31)")
+                   == GRUEN)
+            # Das Kapitel dreht dagegen sehr wohl — sonst wäre die Einstellung
+            # eine Einstellung ohne Wirkung.
+            pgM.goto(f"{w}/lf10.html#k1")
+            pgM.wait_for_timeout(600)
+            lese = pgM.evaluate(
+                "() => getComputedStyle(document.body).backgroundColor")
+            pruefe(f"Kapitel folgt der Stimmung ({farbe})",
+                   lese == ("rgb(245, 245, 240)" if farbe == "light"
+                            else "rgb(20, 22, 20)"), lese)
             ktxM.close()
 
         # M · Inhalt lädt nicht
@@ -1115,6 +1358,10 @@ def main():
         pgP.close()
 
         probeklausur_klausur(b, w)
+        kapitelroute(b, w)
+        hervorhebungen(b, w)
+        aufgaben_fehlen(b, w)
+        schriften_ortlich(b, w)
 
         # Service Worker
         print("\n· Offline")
