@@ -869,6 +869,93 @@ def hervorhebungen(b, w):
     ktx.close()
 
 
+def kapitelfuehrung(b, w):
+    """Inhaltsnavigation und Fachgrafik-Huelle: fest am Schreibtisch, aufklappbar
+    am Handy, mit mitlaufender Abschnittsposition und einem Weg zurueck in den
+    Ausgangszustand jeder Grafik."""
+    print("\n· Kapitel · Fuehrung und Grafiken")
+
+    # Schreibtisch: die Liste steht, der Knopf ist weg
+    ktx = b.new_context(viewport={"width": 1440, "height": 1100}, locale="de-DE")
+    pg = ktx.new_page()
+    fehler = []
+    pg.on("pageerror", lambda e: fehler.append(str(e)))
+    pg.goto(f"{w}/buchfuehrung.html#k3", wait_until="networkidle")
+    pg.wait_for_timeout(800)
+    pruefe("Das Kapitel hat eine Inhaltsnavigation",
+           pg.locator(".kapitel:not([hidden]) .lr-liste li").count() > 0)
+    pruefe("Am Schreibtisch steht sie fest ohne Knopf",
+           pg.evaluate("() => getComputedStyle(document.querySelector("
+                       "'.kapitel:not([hidden]) .lr-knopf')).display") == "none")
+    pruefe("Am Schreibtisch ist die Liste sichtbar",
+           pg.locator(".kapitel:not([hidden]) .lr-liste").is_visible())
+
+    # Die Position laeuft mit
+    stellen = []
+    for i in range(3):
+        pg.evaluate("i => { const hs = document.querySelectorAll("
+                    "'.kapitel:not([hidden]) .inhalt h3[id]');"
+                    " if (hs[i]) hs[i].scrollIntoView({block:'center'}); }", i)
+        pg.wait_for_timeout(500)
+        stellen.append(pg.locator(".kapitel:not([hidden]) .lr-stand b").inner_text())
+    pruefe("Die Abschnittsposition laeuft mit", stellen == ["1", "2", "3"], stellen)
+    pruefe("Der aktuelle Abschnitt ist auch fuer Screenreader markiert",
+           pg.locator(".kapitel:not([hidden]) .lr-liste li.aktuell "
+                      "a[aria-current='true']").count() == 1)
+
+    # Jede Grafik kommt in ihren Ausgangszustand zurueck
+    zahl = pg.locator(".kapitel:not([hidden]) [data-grafik]").count()
+    knoepfe = pg.locator(".kapitel:not([hidden]) .sig-zurueck").count()
+    pruefe("Jede Fachgrafik hat genau ein Zuruecksetzen", knoepfe == zahl,
+           f"{knoepfe} von {zahl}")
+    if zahl:
+        vorher = pg.locator(".kapitel:not([hidden]) [data-grafik] .buehne").first.inner_html()
+        # Etwas anfassen, dann zuruecksetzen
+        pg.evaluate("""() => {
+          const g = document.querySelector('.kapitel:not([hidden]) [data-grafik]');
+          const k = g.querySelector('.buehne button');
+          if (k) k.click();
+        }""")
+        pg.wait_for_timeout(400)
+        pg.locator(".kapitel:not([hidden]) .sig-zurueck").first.click()
+        pg.wait_for_timeout(400)
+        pruefe("Zuruecksetzen stellt den Ausgangszustand her",
+               pg.locator(".kapitel:not([hidden]) [data-grafik] .buehne")
+               .first.inner_html() == vorher)
+        pruefe("Zuruecksetzen verdoppelt sich nicht",
+               pg.locator(".kapitel:not([hidden]) .sig-zurueck").count() == zahl)
+        hoch = pg.evaluate("() => document.querySelector("
+                           "'.kapitel:not([hidden]) .sig-zurueck')"
+                           ".getBoundingClientRect().height")
+        pruefe("Zuruecksetzen ist 44 px hoch zu treffen", hoch >= 44, hoch)
+    ktx.close()
+
+    # Handy: Knopf, Aufklappen, Escape, Fokus zurueck
+    ktxM = b.new_context(viewport={"width": 390, "height": 844}, locale="de-DE")
+    pgM = ktxM.new_page()
+    pgM.on("pageerror", lambda e: fehler.append(str(e)))
+    pgM.goto(f"{w}/buchfuehrung.html#k3", wait_until="networkidle")
+    pgM.wait_for_timeout(800)
+    knopf = pgM.locator(".kapitel:not([hidden]) .lr-knopf")
+    pruefe("Am Handy fuehrt ein Knopf zur Inhaltsnavigation", knopf.is_visible())
+    pruefe("Zugeklappt ist die Liste nicht zu sehen",
+           not pgM.locator(".kapitel:not([hidden]) .lr-liste").is_visible())
+    knopf.click()
+    pgM.wait_for_timeout(300)
+    pruefe("Der Knopf sagt, dass er offen ist",
+           knopf.get_attribute("aria-expanded") == "true")
+    pruefe("Aufgeklappt ist die Liste zu sehen",
+           pgM.locator(".kapitel:not([hidden]) .lr-liste").is_visible())
+    pgM.keyboard.press("Escape")
+    pgM.wait_for_timeout(300)
+    pruefe("Escape schliesst die Inhaltsnavigation",
+           knopf.get_attribute("aria-expanded") == "false")
+    pruefe("Der Fokus kehrt zum Knopf zurueck",
+           pgM.evaluate("() => document.activeElement.className") == "lr-knopf")
+    pruefe("Die Fuehrung erzeugt keinen Fehler", not fehler, fehler[:1])
+    ktxM.close()
+
+
 def aufgaben_fehlen(b, w):
     """Fehlende oder beschädigte Aufgabendaten führen zu einem verständlichen
     Zustand — nicht zu einer kaputten Ansicht."""
@@ -1360,6 +1447,7 @@ def main():
         probeklausur_klausur(b, w)
         kapitelroute(b, w)
         hervorhebungen(b, w)
+        kapitelfuehrung(b, w)
         aufgaben_fehlen(b, w)
         schriften_ortlich(b, w)
 
