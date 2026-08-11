@@ -230,6 +230,7 @@
     var f = AP.kapitelfach(LERNFELD, sec.id);
     einblenden(sec);
     lernziele(sec, f);
+    abschnittsstand(sec);
     tabellen(sec);
     karteikarten(sec);
     checks(sec, f);
@@ -257,6 +258,75 @@
       });
     }, { threshold: .15, rootMargin: "0px 0px -8% 0px" });
     sec.querySelectorAll(".rein").forEach(function (x) { seher.observe(x); });
+  }
+
+  /* Wo im Kapitel man gerade steht.
+
+     Ein eigener Beobachter, obwohl lernziele() dieselben Überschriften ansieht:
+     Der dort hört nach dem ersten Treffer auf, weil ein erreichtes Lernziel
+     erreicht bleibt. Die Position dagegen muss beim Zurückscrollen mitgehen.
+
+     Abschnitte davor bleiben als „gelesen" markiert. Das ist keine Wertung,
+     sondern die Antwort auf „wie viel habe ich noch vor mir" — dieselbe Frage,
+     die der Fortschrittsbalken oben grob beantwortet. */
+  function abschnittsstand(sec) {
+    var rand = sec.querySelector(".lr-inhalt");
+    if (!rand) return;
+    var eintraege = [].slice.call(rand.querySelectorAll(".lr-liste li"));
+    var stand = rand.querySelector(".lr-stand b");
+    if (!eintraege.length) return;
+
+    function setze(nr) {
+      eintraege.forEach(function (li, i) {
+        li.classList.toggle("aktuell", i === nr);
+        li.classList.toggle("gelesen", i < nr);
+        if (i === nr) li.firstChild.setAttribute("aria-current", "true");
+        else li.firstChild.removeAttribute("aria-current");
+      });
+      if (stand) stand.textContent = nr + 1;
+    }
+    setze(0);
+
+    /* Verglichen wird die ganze Kennung gegen das Ziel des Verweises, nicht das
+       letzte Stück nach dem Bindestrich: Ein Abschnitt heißt „warum-konten",
+       und dann wäre das letzte Stück „konten" und träfe nie.
+
+       Dasselbe Band wie bei den Lernzielen — es liegt um die Bildschirmmitte,
+       und genau dort liest man. */
+    var seher = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var ziel = "#" + e.target.id;
+        for (var i = 0; i < eintraege.length; i++) {
+          var a = eintraege[i].firstChild;
+          if (a && a.getAttribute("href") === ziel) { setze(i); return; }
+        }
+      });
+    }, { threshold: 0, rootMargin: "-40% 0px -45% 0px" });
+    sec.querySelectorAll(".inhalt h3[id]").forEach(function (h) { seher.observe(h); });
+
+    /* Am Handy klappt die Liste aus dem Knopf auf; am Schreibtisch steht sie
+       ohnehin und der Knopf ist weg. Escape schließt sie wieder, und der Fokus
+       kehrt dorthin zurück, wo er hergekommen ist. */
+    var knopf = rand.querySelector(".lr-knopf");
+    if (!knopf) return;
+
+    function zu() {
+      rand.classList.remove("offen");
+      knopf.setAttribute("aria-expanded", "false");
+    }
+    knopf.addEventListener("click", function () {
+      var offen = rand.classList.toggle("offen");
+      knopf.setAttribute("aria-expanded", offen ? "true" : "false");
+    });
+    rand.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape" || !rand.classList.contains("offen")) return;
+      zu();
+      knopf.focus();
+    });
+    rand.querySelectorAll(".lr-liste a").forEach(function (a) {
+      a.addEventListener("click", zu);
+    });
   }
 
   function lernziele(sec, f) {
@@ -461,9 +531,34 @@
 
   /* ================================================== Grafiken */
 
+  /* Jede Fachgrafik bekommt denselben Rückweg in ihren Ausgangszustand.
+
+     Möglich ist das, weil alle denselben Vertrag haben: Die Daten stehen als
+     JSON daneben, gebaut wird ausschließlich in .buehne. Zurücksetzen heißt
+     deshalb: Bühne leeren, denselben Bauer noch einmal laufen lassen. Keine
+     einzelne Grafik muss davon wissen, und keine musste dafür angefasst werden.
+
+     Der Knopf entsteht nur einmal — sonst stünde er nach jedem Zurücksetzen ein
+     weiteres Mal da. */
+  function zuruecksetzknopf(wrap) {
+    if (wrap.querySelector(".sig-zurueck")) return;
+    var b = mkEl("button", "sig-zurueck", "Zurücksetzen");
+    b.type = "button";
+    var titel = wrap.querySelector("h4");
+    b.setAttribute("aria-label",
+      "Grafik zurücksetzen" + (titel ? ": " + titel.textContent : ""));
+    b.addEventListener("click", function () {
+      baueGrafik(wrap);
+      b.focus();
+    });
+    wrap.insertBefore(b, wrap.querySelector(".buehne"));
+  }
+
   function baueGrafik(wrap) {
     var daten = JSON.parse(wrap.querySelector("script[type='application/json']").textContent);
     var buehne = wrap.querySelector(".buehne");
+    buehne.innerHTML = "";
+    zuruecksetzknopf(wrap);
     var bauer = {
       "stufen": gStufen,
       "veraenderung": gVeraenderung,

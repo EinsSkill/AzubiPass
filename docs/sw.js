@@ -8,7 +8,7 @@
    Bewusst ohne skipWaiting: Eine neue Fassung übernimmt nicht mitten im Lesen,
    sondern meldet sich in der App und wartet, bis jemand sie anfordert. */
 
-var SPEICHER = "azubipass-20260812-010701";
+var SPEICHER = "azubipass-20260812-012437";
 var VORRAT = [
   "./",
   "app.html",
