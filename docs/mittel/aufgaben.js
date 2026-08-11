@@ -1212,6 +1212,9 @@ window.APK = (function () {
   var ansicht = "auswahl";
   var wahlKapitel = {}, wahlDauer = DAUER_STANDARD, wahlEigen = DAUER_STANDARD;
   var uhr = null;
+  /* Das Kapitel, mit dem die Adresse hereingekommen ist. Nur zum Anzeigen —
+     die Wahrheit über die Auswahl steht in wahlKapitel. */
+  var vorgewaehlt = null;
 
   function kapitelListe() {
     return (vorrat ? vorrat.kapitel : []);
@@ -1256,8 +1259,12 @@ window.APK = (function () {
     window.scrollTo(0, 0);
   }
 
-  function kopfzeile(titel, unter) {
+  /* Derselbe Bereichskopf wie in app.js — Mono-Augenbraue in Gold, Titel in
+     Source Serif 4, Beitext in IBM Plex Sans. Die Probeklausur soll nicht wie
+     eine angehängte Fremdseite wirken, sondern wie ein Teil derselben App. */
+  function kopfzeile(titel, unter, augenbraue) {
     var k = el("div", "schirm-kopf pk--kopf");
+    if (augenbraue) k.appendChild(el("p", "schirm-augenbraue", augenbraue));
     k.appendChild(el("h1", null, titel));
     if (unter) k.appendChild(el("p", null, unter));
     return k;
@@ -1274,8 +1281,9 @@ window.APK = (function () {
     buehne.appendChild(zurueckKnopf("‹ Übersicht", function () {
       if (zurueckZurUebersicht) zurueckZurUebersicht();
     }));
-    buehne.appendChild(kopfzeile("Eigene Probeklausur",
-      "Wähle die Kapitel für deine nächste Klassenarbeit."));
+    buehne.appendChild(kopfzeile("Prüf genau das, was du brauchst.",
+      "Wähle die Kapitel deiner nächsten Klassenarbeit, leg die Dauer fest und "
+      + "starte ohne Umwege.", "Eigene Probeklausur"));
 
     if (!kapitelListe().length) {
       buehne.appendChild(hinweiskasten(
@@ -1287,6 +1295,16 @@ window.APK = (function () {
     var laufend = zustandLaden();
     if (laufend && laufend.gestartet && !laufend.abgegeben) {
       buehne.appendChild(fortsetzkasten(laufend));
+    }
+
+    /* Aus einem Kapitel hereingekommen: sagen, was vorgewählt wurde. Ein still
+       gesetztes Häkchen weiter unten sieht sonst aus wie ein Rest von gestern. */
+    if (vorgewaehlt && wahlKapitel[vorgewaehlt]) {
+      var kasten = el("div", "pk--hinweis pk--vorwahl");
+      kasten.appendChild(el("p", null,
+        "Vorgewählt aus dem Kapitel: " + kapitelName(vorgewaehlt)
+        + ". Du kannst weitere Kapitel dazunehmen."));
+      buehne.appendChild(kasten);
     }
 
     var lf = lernfelder();
@@ -1460,6 +1478,14 @@ window.APK = (function () {
     return box;
   }
 
+  /* Wie viele Aufgaben die aktuelle Auswahl ergibt. Fester Seed: Die Zahl soll
+     eine Eigenschaft der Auswahl sein und nicht bei jedem Neuzeichnen eine
+     andere. */
+  function aufgabenSchaetzung(gewaehlt) {
+    var probe = stelleZusammen({ kapitel: gewaehlt, dauer: wahlDauer, seed: "schaetzung" });
+    return probe.aufgaben.length;
+  }
+
   var zoneText = null, zoneKnopf = null, zoneWarnung = null;
 
   function aktionszone() {
@@ -1485,9 +1511,16 @@ window.APK = (function () {
     });
     var gewaehlt = gewaehlteKapitel();
     if (!zoneText) return;
+
+    /* Kapitelzahl, Dauer und wie viele Aufgaben daraus ungefähr entstehen.
+       Die Zahl ist nicht geraten: Sie kommt aus demselben Zusammensteller, der
+       die Klausur später baut — nur mit festem Seed, damit sie beim Tippen
+       nicht bei jedem Klick zappelt. Vor dem Start kann sie sich noch um eine
+       Aufgabe verschieben, deshalb steht „ca." davor. */
     zoneText.textContent = gewaehlt.length
       ? gewaehlt.length + (gewaehlt.length === 1 ? " Kapitel" : " Kapitel")
-        + " · " + minutenText(wahlDauer)
+        + " · " + minutenText(wahlDauer) + " · ca. " + aufgabenSchaetzung(gewaehlt)
+        + " Aufgaben"
       : "Noch kein Kapitel gewählt";
     zoneKnopf.disabled = !gewaehlt.length;
 
@@ -1518,7 +1551,7 @@ window.APK = (function () {
       ansicht = "auswahl";
       neuZeichnen();
     }));
-    buehne.appendChild(kopfzeile("Deine Probeklausur", null));
+    buehne.appendChild(kopfzeile("Bereit?", null, "Deine Probeklausur"));
 
     if (vorschau.fehler === "zu_kurz") {
       buehne.appendChild(hinweiskasten(
@@ -2241,8 +2274,13 @@ window.APK = (function () {
     return laedt;
   }
 
-  /* Von app.js aufgerufen. Alles Weitere passiert hier drin. */
-  function zeige(schirm, zurueck) {
+  /* Von app.js aufgerufen. Alles Weitere passiert hier drin.
+
+     `vorwahl` ist die Kapitelkennung aus der Adresse — der direkte Weg aus
+     einem Kapitel heraus (`#ueben/probeklausur?kapitel=buchfuehrung:k3`).
+     Eine unbekannte Kennung ist kein Fehler: Sie wird still übergangen und es
+     erscheint die normale Auswahl. Nichts Gespeichertes wird davon berührt. */
+  function zeige(schirm, zurueck, vorwahl) {
     buehne = schirm;
     zurueckZurUebersicht = zurueck;
     buehne.innerHTML = "";
@@ -2251,13 +2289,29 @@ window.APK = (function () {
     laden().then(function () {
       var laufend = zustandLaden();
       if (laufend && laufend.gestartet && !laufend.abgegeben) {
-        // Eine abgeschlossene Klausur kommt NICHT ungefragt zurück — eine
-        // laufende schon, weil genau das der Sinn des Zwischenspeicherns ist.
+        /* Eine begonnene Klausur geht allem vor — auch einer Kapitelkennung in
+           der Adresse. Nach dem Start steht die Kennung nämlich weiterhin dort,
+           und ein Neuladen mitten in der Klausur würde sonst in der Auswahl
+           landen statt im Bogen. Eine abgeschlossene Klausur kommt dagegen
+           NICHT ungefragt zurück. */
+        vorgewaehlt = null;
         zustand = laufend;
         ansicht = "klausur";
-      } else {
-        ansicht = "auswahl";
+        neuZeichnen();
+        return;
       }
+
+      var gewuenscht = vorwahl && kapitelListe().some(function (k) {
+        return k.schluessel === vorwahl;
+      }) ? vorwahl : null;
+
+      vorgewaehlt = gewuenscht;
+      if (gewuenscht) {
+        // Aus einem Kapitel gekommen: genau dieses Kapitel steht an, sonst nichts.
+        wahlKapitel = {};
+        wahlKapitel[gewuenscht] = true;
+      }
+      ansicht = "auswahl";
       neuZeichnen();
     }).catch(function () {
       buehne.innerHTML = "";
