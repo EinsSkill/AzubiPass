@@ -1,0 +1,219 @@
+{
+  "lernfeld": "buchfuehrung",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+  "konten_als": "bezeichnung",
+
+  "bausteine": [
+    {
+      "id": "buchfuehrung-k3-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski prüft, ob die Seitenzuordnung sitzt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Auf welcher Seite steht der jeweilige Betrag?",
+          "ziele": ["Soll", "Haben"],
+          "elemente": [
+            { "text": "Anfangsbestand eines Aktivkontos", "loesung": "Soll" },
+            { "text": "Zugang auf einem Passivkonto", "loesung": "Haben" },
+            { "text": "Abgang auf dem Bankkonto", "loesung": "Haben" },
+            { "text": "Tilgung einer Verbindlichkeit", "loesung": "Soll" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Das Aktivkonto lebt links, das Passivkonto rechts — Abgänge stehen jeweils auf der Gegenseite.",
+      "quelle": "k3, Abschnitt c2"
+    },
+
+    {
+      "id": "buchfuehrung-k3-02",
+      "operator": "Bilden Sie den Buchungssatz",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kundenauftrag"],
+
+      "variablen": {
+        "betrag": { "von": 1200, "bis": 4800, "schritt": 50 }
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß legt Ihnen den Kontoauszug vor; die Rechnung an das Modehaus wurde vor drei Wochen gestellt und bereits gebucht." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Kontoauszug",
+          "zugeklappt": true,
+          "beleg": "kontoauszug",
+          "daten": {
+            "auszug_nr": "142",
+            "buchungen": [
+              { "text": "Gutschrift Modehaus Weber GmbH, RE 2026-0418", "betrag": "{betrag}", "art": "haben" }
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "buchungssatz",
+          "zeilen": 2,
+          "loesung": [
+            { "soll": "Bank", "haben": null, "betrag": "betrag" },
+            { "soll": null, "haben": "Forderungen aus Lieferungen und Leistungen", "betrag": "betrag" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4, "punkte_je_zeile": 2 },
+      "erklaerung": "Ein Zahlungseingang auf eine bereits gestellte Rechnung erzeugt keinen Ertrag mehr — der wurde bei der Rechnungsstellung gebucht. Es tauschen nur zwei Aktivposten die Plätze.",
+      "quelle": "k3, Abschnitt c4"
+    },
+
+    {
+      "id": "buchfuehrung-k3-03",
+      "operator": "Bilden Sie die Buchungssätze",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+
+      "variablen": {
+        "bank": { "von": 40000, "bis": 90000, "schritt": 5000 },
+        "darlehen": { "von": 200000, "bis": 300000, "schritt": 10000 }
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Zum 1. Januar eröffnet Sandra Koslowski die Konten der MAKEL Studio GmbH." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Anfangsbestände",
+          "zugeklappt": true,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Konto", "Anfangsbestand in €"],
+            "zeilen": [["Bank", "{bank}"], ["Bankdarlehen", "{darlehen}"]]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "buchungssatz", "label": "Eröffnung Bank", "zeilen": 2,
+          "loesung": [
+            { "soll": "Bank", "haben": null, "betrag": "bank" },
+            { "soll": null, "haben": "Eröffnungsbilanzkonto", "betrag": "bank" }
+          ], "punkte": 2 },
+        { "block": "buchungssatz", "label": "Eröffnung Bankdarlehen", "zeilen": 2,
+          "loesung": [
+            { "soll": "Eröffnungsbilanzkonto", "haben": null, "betrag": "darlehen" },
+            { "soll": null, "haben": "Bankdarlehen", "betrag": "darlehen" }
+          ], "punkte": 2 }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Das {{begriff:ebk|Eröffnungsbilanzkonto}} steht immer auf der Gegenseite: Beim Aktivkonto im Haben, beim Passivkonto im Soll.",
+      "quelle": "k3, Abschnitt c3"
+    },
+
+    {
+      "id": "buchfuehrung-k3-04",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+
+      "variablen": {
+        "ab": { "von": 20000, "bis": 60000, "schritt": 1000 },
+        "zugang1": { "von": 3000, "bis": 12000, "schritt": 500 },
+        "zugang2": { "von": 2000, "bis": 9000, "schritt": 500 },
+        "abgang1": { "von": 4000, "bis": 15000, "schritt": 500 },
+        "abgang2": { "von": 1000, "bis": 7000, "schritt": 500 }
+      },
+      "abgeleitet": {
+        "sollsumme": "ab + zugang1 + zugang2",
+        "habensumme": "abgang1 + abgang2",
+        "saldo": "sollsumme - habensumme"
+      },
+      "pruefung_variablen": "saldo > 5000",
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Das Bankkonto der MAKEL Studio GmbH weist im Januar folgende Bewegungen auf." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Bankkonto, Januar",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Vorgang", "Betrag in €"],
+            "zeilen": [
+              ["Anfangsbestand", "{ab}"],
+              ["Zahlungseingang Wholesale", "{zugang1}"],
+              ["Zahlungseingang Onlineshop", "{zugang2}"],
+              ["Lieferantenzahlung", "{abgang1}"],
+              ["Miete Gewerbehof", "{abgang2}"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Summe Soll", "einheit": "€", "loesung": "sollsumme", "punkte": 1 },
+        { "block": "zahl", "label": "Summe Haben", "einheit": "€", "loesung": "habensumme", "punkte": 1 },
+        { "block": "zahl", "label": "Schlussbestand (Saldo)", "einheit": "€", "loesung": "saldo", "punkte": 2,
+          "folgefehler_aus": ["sollsumme", "habensumme"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Auf einem Aktivkonto stehen Anfangsbestand und Zugänge im Soll, Abgänge im Haben. Der Saldo schließt die kleinere Seite auf.",
+      "quelle": "k3, Abschnitt c2"
+    },
+
+    {
+      "id": "buchfuehrung-k3-05",
+      "operator": "Erläutern Sie",
+      "anforderungsbereich": 3,
+      "punkte": 6,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli hat den Zahlungseingang eines Wholesale-Kunden über 2.400 € als „Bank an Umsatzerlöse“ gebucht; die Rechnung war bereits im Vormonat gestellt und erfasst worden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Erläutern Sie, welche Folge diese Buchung hat, und geben Sie den richtigen Buchungssatz an.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Ertrag wurde doppelt erfasst: einmal bei der Rechnungsstellung und ein zweites Mal beim Zahlungseingang. Dadurch sind die Umsatzerlöse und in der Folge der Jahreserfolg um 2.400 € zu hoch ausgewiesen. Gleichzeitig bleibt die Forderung auf dem Konto stehen, obwohl sie beglichen ist — die Forderungen sind ebenfalls um 2.400 € zu hoch. Richtig wäre: Bank 2.400 € an Forderungen aus Lieferungen und Leistungen 2.400 €. Es handelt sich um einen Aktiv-Tausch, der weder die Bilanzsumme noch das Ergebnis verändert.",
+        "raster": [
+          { "kriterium": "Doppelte Erfassung des Ertrags erkannt", "punkte": 2 },
+          { "kriterium": "Zu hoher Gewinn beziehungsweise zu hohe Umsatzerlöse genannt", "punkte": 1 },
+          { "kriterium": "Forderung bleibt fälschlich bestehen", "punkte": 1 },
+          { "kriterium": "Richtiger Buchungssatz Bank an Forderungen", "punkte": 2 }
+        ]
+      },
+      "erklaerung": "Prüfungsklassiker: Der Ertrag entsteht mit der Leistung, nicht mit dem Geldeingang. Wer beides bucht, verdoppelt den Umsatz.",
+      "quelle": "k3, Abschnitt c4"
+    }
+  ]
+}

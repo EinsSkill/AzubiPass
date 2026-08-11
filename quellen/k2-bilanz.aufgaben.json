@@ -1,0 +1,206 @@
+{
+  "lernfeld": "buchfuehrung",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+  "konten_als": "bezeichnung",
+
+  "bausteine": [
+    {
+      "id": "buchfuehrung-k2-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 2,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner legt der Bank die Bilanz der MAKEL Studio GmbH vor." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Was zeigt die Aktivseite einer Bilanz?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Die Verwendung der Mittel — worin das Kapital steckt.", "richtig": true,
+              "echo": "Richtig. Links steht, wofür das Geld ausgegeben wurde: Maschinen, Waren, Forderungen, Bankguthaben." },
+            { "text": "Die Herkunft der Mittel — woher das Kapital stammt.", "richtig": false,
+              "echo": "Das ist die Passivseite. Die beiden Seiten zeigen dasselbe Kapital aus zwei Blickwinkeln — deshalb sind sie immer gleich hoch." },
+            { "text": "Die Erträge des abgelaufenen Geschäftsjahres.", "richtig": false,
+              "echo": "Erträge stehen in der Gewinn- und Verlustrechnung, nicht in der Bilanz. Die Bilanz zeigt Bestände zu einem Stichtag, nicht Bewegungen über ein Jahr." },
+            { "text": "Alle Zahlungen, die im Geschäftsjahr geflossen sind.", "richtig": false,
+              "echo": "Zahlungen sind Bewegungen. Die Bilanz ist eine Momentaufnahme zum {{begriff:bilanzstichtag|Bilanzstichtag}} und zeigt nur, was an diesem Tag vorhanden ist." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Aktiva zeigt, wo das Geld steckt. Passiva zeigt, woher es kommt.",
+      "quelle": "k2, Abschnitt b1"
+    },
+
+    {
+      "id": "buchfuehrung-k2-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 6,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski gliedert die Bilanzpositionen der MAKEL Studio GmbH neu." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Ordnen Sie jede Position der richtigen Bilanzgruppe zu.",
+          "ziele": ["Anlagevermögen", "Umlaufvermögen", "Eigenkapital", "Verbindlichkeiten"],
+          "elemente": [
+            { "text": "Zwei Textildruckmaschinen im Studio", "loesung": "Anlagevermögen" },
+            { "text": "Ladeneinrichtung des Stores", "loesung": "Anlagevermögen" },
+            { "text": "Hoodies und Hemden im Lager", "loesung": "Umlaufvermögen" },
+            { "text": "Offene Rechnungen an Wholesale-Händler", "loesung": "Umlaufvermögen" },
+            { "text": "Gezeichnetes Kapital von 100.000 €", "loesung": "Eigenkapital" },
+            { "text": "Darlehen der Hausbank über acht Jahre", "loesung": "Verbindlichkeiten" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Über die Zuordnung entscheidet die Verweildauer, genauer: die Absicht. Dieselbe Maschine wäre beim Maschinenhändler Umlaufvermögen.",
+      "quelle": "k2, Abschnitt b2 und b3"
+    },
+
+    {
+      "id": "buchfuehrung-k2-03",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Vier Geschäftsvorfälle aus dem laufenden Monat der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Ordnen Sie jedem Vorfall die Art der Bilanzveränderung zu.",
+          "ziele": ["Aktiv-Tausch", "Passiv-Tausch", "Aktiv-Passiv-Mehrung", "Aktiv-Passiv-Minderung"],
+          "elemente": [
+            { "text": "Ein Wholesale-Kunde begleicht eine offene Rechnung per Überweisung.", "loesung": "Aktiv-Tausch" },
+            { "text": "Deniz Aydın kauft eine Veredelungspresse auf Ziel.", "loesung": "Aktiv-Passiv-Mehrung" },
+            { "text": "Eine Lieferantenrechnung wird in ein Darlehen umgewandelt.", "loesung": "Passiv-Tausch" },
+            { "text": "Eine Rate des Bankdarlehens wird vom Bankkonto getilgt.", "loesung": "Aktiv-Passiv-Minderung" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Zwei Fragen genügen: Welche Seiten sind betroffen, und ändert sich die Bilanzsumme?",
+      "quelle": "k2, Abschnitt b4"
+    },
+
+    {
+      "id": "buchfuehrung-k2-04",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+
+      "variablen": {
+        "maschinen": { "von": 220000, "bis": 320000, "schritt": 10000 },
+        "einrichtung": { "von": 60000, "bis": 110000, "schritt": 5000 },
+        "waren": { "von": 180000, "bis": 280000, "schritt": 5000 },
+        "forderungen": { "von": 90000, "bis": 160000, "schritt": 5000 },
+        "bank": { "von": 30000, "bis": 80000, "schritt": 5000 },
+        "stammkapital": { "fest": 100000 },
+        "darlehen": { "von": 200000, "bis": 320000, "schritt": 10000 },
+        "verb_lul": { "von": 90000, "bis": 170000, "schritt": 5000 }
+      },
+      "abgeleitet": {
+        "bilanzsumme": "maschinen + einrichtung + waren + forderungen + bank",
+        "fremdkapital": "darlehen + verb_lul",
+        "eigenkapital": "bilanzsumme - fremdkapital",
+        "ruecklagen": "eigenkapital - stammkapital"
+      },
+      "pruefung_variablen": "ruecklagen > 20000",
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski hat die Bestände zusammengestellt, das Eigenkapital aber noch offen gelassen." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Bestände zum 31.12.",
+          "zugeklappt": true,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Position", "Wert in €"],
+            "zeilen": [
+              ["Maschinen und Druckanlagen", "{maschinen}"],
+              ["Ladeneinrichtung", "{einrichtung}"],
+              ["Warenbestand", "{waren}"],
+              ["Forderungen aus Lieferungen und Leistungen", "{forderungen}"],
+              ["Bankguthaben", "{bank}"],
+              ["Bankdarlehen", "{darlehen}"],
+              ["Verbindlichkeiten aus Lieferungen und Leistungen", "{verb_lul}"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Bilanzsumme", "einheit": "€", "loesung": "bilanzsumme", "punkte": 2 },
+        { "block": "zahl", "label": "Eigenkapital", "einheit": "€", "loesung": "eigenkapital", "punkte": 2,
+          "folgefehler_aus": ["bilanzsumme", "fremdkapital"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Das Eigenkapital ist keine eigenständige Zahl, sondern die Differenz — deshalb ist die Bilanz immer ausgeglichen.",
+      "quelle": "k2, Abschnitt b1 und b3"
+    },
+
+    {
+      "id": "buchfuehrung-k2-05",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli hat die Urlaubsrückstellung für die Lagermitarbeitenden unter den Verbindlichkeiten ausgewiesen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum diese Einordnung falsch ist und wohin die Position gehört.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Rückstellungen und Verbindlichkeiten unterscheiden sich in der Gewissheit. Bei einer Verbindlichkeit stehen Betrag und Fälligkeit fest, etwa bei einer offenen Lieferantenrechnung. Bei der Urlaubsrückstellung ist die Verpflichtung dem Grunde nach entstanden, weil die Urlaubsansprüche im laufenden Jahr erworben wurden — Höhe und Zeitpunkt der Inanspruchnahme sind aber ungewiss. Nach § 249 HGB bilden Rückstellungen deshalb eine eigene Bilanzposition zwischen Eigenkapital und Verbindlichkeiten. Beide stehen zwar auf der Passivseite, dürfen aber nicht zusammengefasst werden, weil sonst die Verlässlichkeit der ausgewiesenen Schulden falsch dargestellt wird.",
+        "raster": [
+          { "kriterium": "Unterscheidungsmerkmal Gewissheit genannt", "punkte": 1 },
+          { "kriterium": "Bei Verbindlichkeiten stehen Betrag und Fälligkeit fest", "punkte": 1 },
+          { "kriterium": "Bei der Urlaubsrückstellung sind Höhe oder Zeitpunkt ungewiss", "punkte": 1 },
+          { "kriterium": "Rückstellungen als eigene Bilanzposition auf der Passivseite genannt", "punkte": 1 },
+          { "kriterium": "§ 249 HGB als Grundlage genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Der Operator „Begründen Sie“ verlangt das Merkmal und seine Anwendung auf den Fall — die bloße Nennung der richtigen Position reicht nicht.",
+      "quelle": "k2, Abschnitt b3"
+    }
+  ]
+}

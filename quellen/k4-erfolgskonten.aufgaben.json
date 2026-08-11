@@ -1,0 +1,206 @@
+{
+  "lernfeld": "buchfuehrung",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+  "konten_als": "bezeichnung",
+
+  "bausteine": [
+    {
+      "id": "buchfuehrung-k4-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Fünf Konten aus dem Kontenplan der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Ordnen Sie jedes Konto der richtigen Kontenart zu.",
+          "ziele": ["Bestandskonto", "Aufwandskonto", "Ertragskonto"],
+          "elemente": [
+            { "text": "Verbindlichkeiten aus Lieferungen und Leistungen", "loesung": "Bestandskonto" },
+            { "text": "Löhne und Gehälter", "loesung": "Aufwandskonto" },
+            { "text": "Umsatzerlöse", "loesung": "Ertragskonto" },
+            { "text": "Mietaufwand Gewerbehof", "loesung": "Aufwandskonto" },
+            { "text": "Warenbestand", "loesung": "Bestandskonto" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{begriff:bestandskonto|Bestandskonten}} führen zur Bilanz, {{begriff:erfolgskonto|Erfolgskonten}} über die GuV ins Eigenkapital.",
+      "quelle": "k4, Abschnitt d1"
+    },
+
+    {
+      "id": "buchfuehrung-k4-02",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski schließt das Geschäftsjahr der MAKEL Studio GmbH ab." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Bringen Sie die vier Abschlussschritte in die richtige Reihenfolge.",
+          "elemente": [
+            { "text": "Bestandskonten über das Schlussbilanzkonto abschließen", "position": 4 },
+            { "text": "Aufwandskonten über die GuV abschließen", "position": 1 },
+            { "text": "Jahreserfolg ins Eigenkapital übertragen", "position": 3 },
+            { "text": "Ertragskonten über die GuV abschließen", "position": 2 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Erfolgskonten immer vor den Bestandskonten. Sonst wandert das Eigenkapital ins SBK, bevor der Gewinn darin enthalten ist.",
+      "quelle": "k4, Abschnitt d4"
+    },
+
+    {
+      "id": "buchfuehrung-k4-03",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+
+      "variablen": {
+        "umsatz": { "von": 900000, "bis": 1400000, "schritt": 10000 },
+        "zinsertrag": { "von": 1000, "bis": 6000, "schritt": 500 },
+        "wareneinkauf": { "von": 380000, "bis": 620000, "schritt": 10000 },
+        "loehne": { "von": 220000, "bis": 340000, "schritt": 10000 },
+        "miete": { "von": 60000, "bis": 96000, "schritt": 2000 },
+        "abschreibungen": { "von": 30000, "bis": 70000, "schritt": 5000 }
+      },
+      "abgeleitet": {
+        "ertraege": "umsatz + zinsertrag",
+        "aufwendungen": "wareneinkauf + loehne + miete + abschreibungen",
+        "erfolg": "ertraege - aufwendungen"
+      },
+      "pruefung_variablen": "erfolg > 40000",
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner braucht den Jahreserfolg für das Gespräch mit der Hausbank." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Salden der Erfolgskonten zum 31.12.",
+          "zugeklappt": true,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Konto", "Saldo in €"],
+            "zeilen": [
+              ["Umsatzerlöse", "{umsatz}"],
+              ["Zinserträge", "{zinsertrag}"],
+              ["Wareneinkauf", "{wareneinkauf}"],
+              ["Löhne und Gehälter", "{loehne}"],
+              ["Mietaufwand", "{miete}"],
+              ["Abschreibungen", "{abschreibungen}"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Summe der Erträge", "einheit": "€", "loesung": "ertraege", "punkte": 1 },
+        { "block": "zahl", "label": "Summe der Aufwendungen", "einheit": "€", "loesung": "aufwendungen", "punkte": 2 },
+        { "block": "zahl", "label": "Jahreserfolg", "einheit": "€", "loesung": "erfolg", "punkte": 2,
+          "folgefehler_aus": ["ertraege", "aufwendungen"] },
+        { "block": "auswahl", "label": "Art des Ergebnisses", "mehrfach": false,
+          "optionen": [
+            { "text": "Jahresüberschuss — das Eigenkapital steigt", "richtig": true,
+              "echo": "Richtig. Erträge über Aufwendungen bedeutet Gewinn, und Gewinn ist nichts anderes als Zuwachs an Eigenkapital." },
+            { "text": "Jahresfehlbetrag — das Eigenkapital sinkt", "richtig": false,
+              "echo": "Dazu müssten die Aufwendungen überwiegen. Prüfen Sie die Vorzeichen der Differenz." }
+          ], "punkte": 0 }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Jahreserfolg = Erträge − Aufwendungen. Der Saldo der GuV wandert anschließend ins Eigenkapital.",
+      "quelle": "k4, Abschnitt d3"
+    },
+
+    {
+      "id": "buchfuehrung-k4-04",
+      "operator": "Bilden Sie die Buchungssätze",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:jahresabschluss"],
+
+      "variablen": {
+        "miete": { "von": 60000, "bis": 96000, "schritt": 2000 },
+        "gewinn": { "von": 60000, "bis": 180000, "schritt": 5000 }
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Zwei Schritte aus dem Abschluss der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        { "block": "buchungssatz", "label": "Mietaufwand von {miete} € abschließen", "zeilen": 2,
+          "loesung": [
+            { "soll": "Gewinn- und Verlustkonto", "haben": null, "betrag": "miete" },
+            { "soll": null, "haben": "Mietaufwand", "betrag": "miete" }
+          ], "punkte": 2 },
+        { "block": "buchungssatz", "label": "Jahresüberschuss von {gewinn} € übertragen", "zeilen": 2,
+          "loesung": [
+            { "soll": "Gewinn- und Verlustkonto", "haben": null, "betrag": "gewinn" },
+            { "soll": null, "haben": "Eigenkapital", "betrag": "gewinn" }
+          ], "punkte": 2 }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Beim Abschluss steht das GuV-Konto beim Aufwand im Soll — es nimmt den Sollsaldo auf. Beim Gewinn steht es ebenfalls im Soll, weil es den Überschuss abgibt.",
+      "quelle": "k4, Abschnitt d4"
+    },
+
+    {
+      "id": "buchfuehrung-k4-05",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli hat beim Jahresabschluss zuerst alle Bestandskonten über das Schlussbilanzkonto abgeschlossen und danach die Erfolgskonten." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie, welches Problem dadurch entsteht und wie es sich in der Schlussbilanz zeigt.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Das Eigenkapital wurde ins Schlussbilanzkonto übertragen, bevor der Jahreserfolg darin enthalten war. Die Schlussbilanz weist deshalb ein zu niedriges Eigenkapital aus — bei einem Gewinn genau um dessen Betrag. Da die Aktivseite unverändert bleibt, ist die Bilanz nicht mehr ausgeglichen: Die Aktivseite übersteigt die Passivseite um den Gewinnbetrag. Der Fehler lässt sich nicht durch eine Korrekturbuchung am Ende beheben, sondern nur, indem der Abschluss in der richtigen Reihenfolge wiederholt wird: erst Erfolgskonten über die GuV, dann der Erfolg ins Eigenkapital, zuletzt die Bestandskonten.",
+        "raster": [
+          { "kriterium": "Eigenkapital wurde ohne den Jahreserfolg übertragen", "punkte": 2 },
+          { "kriterium": "Eigenkapital ist um den Gewinnbetrag zu niedrig", "punkte": 1 },
+          { "kriterium": "Bilanz ist nicht ausgeglichen, Aktivseite höher", "punkte": 1 },
+          { "kriterium": "Richtige Reihenfolge als Lösung genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "„Beurteilen Sie“ verlangt Folge und Bewertung, nicht nur die Feststellung, dass die Reihenfolge falsch war.",
+      "quelle": "k4, Abschnitt d4"
+    }
+  ]
+}
