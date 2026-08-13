@@ -1,0 +1,157 @@
+{
+  "lernfeld": "lf3",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf3-k3-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß soll auf eine Anfrage der Modehaus Weber GmbH ein verbindliches Angebot schreiben." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Die Anfrage der Boutique",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe in der Anfrage", "Inhalt"],
+            "zeilen": [
+              ["Absender", "Modehaus Weber GmbH, Köln"],
+              ["Artikel", "MAKEL-Hoodies, Herbstkampagne"],
+              ["Menge", "200 Stück"],
+              ["Sonstiges", "„Bitte nennen Sie uns Ihre Konditionen.“"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Angaben fehlen, damit MAKEL ein vollständiges Angebot erstellen kann? Kreuzen Sie alle zutreffenden an.",
+          "mehrfach": true,
+          "optionen": [
+            { "text": "Gewünschter Liefertermin", "richtig": true,
+              "echo": "Richtig. Ohne Termin lässt sich weder Produktion noch Lieferzusage planen." },
+            { "text": "Größen- und Farbverteilung der 200 Hoodies", "richtig": true,
+              "echo": "Richtig. Die Menge allein reicht nicht — Art und Ausführung gehören zur Ware." },
+            { "text": "Lieferbedingungen, also wer Fracht und Gefahr trägt", "richtig": true,
+              "echo": "Richtig. Die Lieferbedingung regelt Kosten und Gefahrübergang und gehört ins Angebot." },
+            { "text": "Zahlungsbedingungen", "richtig": true,
+              "echo": "Richtig. Zahlungsziel und Skonto sind Bestandteil eines vollständigen Angebots." },
+            { "text": "Die Artikelgruppe", "richtig": false,
+              "echo": "Die steht bereits in der Anfrage: MAKEL-Hoodies." },
+            { "text": "Die Bestellmenge", "richtig": false,
+              "echo": "Auch die ist genannt: 200 Stück." },
+            { "text": "Name und Anschrift des Anfragenden", "richtig": false,
+              "echo": "Absender und Anschrift liegen vor." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Ein Angebot braucht Art, Menge, Preis, Liefer- und Zahlungsbedingungen, Termin und Bindungsfrist. Was die Anfrage offenlässt, muss vor dem Angebot geklärt werden — sonst bindet man sich an Bedingungen, die man nicht durchdacht hat.",
+      "quelle": "lf3-k3, Abschnitt c2"
+    },
+
+    {
+      "id": "lf3-k3-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+
+      "variablen": {
+        "listenpreis": { "von": 90, "bis": 110, "schritt": 5 }
+      },
+      "abgeleitet": {
+        "nach_wvr": "runde(listenpreis * 0.5, 2)",
+        "nach_menge": "runde(nach_wvr * 0.95, 2)",
+        "warenwert": "runde(nach_menge * 200, 2)",
+        "skonto": "runde(warenwert * 0.03, 2)",
+        "zahlbetrag": "runde(warenwert - skonto, 2)"
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß kalkuliert das Angebot über 200 Hoodies für die Modehaus Weber GmbH nach den Wholesale-Konditionen der MAKEL Studio GmbH." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Konditionen und Ausgangswerte",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Listenverkaufspreis netto je Hoodie", "{listenpreis} €"],
+              ["Bestellmenge", "200 Stück"],
+              ["Wiederverkäuferrabatt", "50 %"],
+              ["Mengenrabatt ab 100 Stück", "5 %"],
+              ["Zahlungsbedingung Wholesale", "8 Tage 3 % Skonto, 30 Tage netto"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Stückpreis nach Wiederverkäuferrabatt", "einheit": "€",
+          "loesung": "nach_wvr", "punkte": 1 },
+        { "block": "zahl", "label": "Stückpreis nach zusätzlichem Mengenrabatt", "einheit": "€",
+          "loesung": "nach_menge", "punkte": 1, "folgefehler_aus": ["nach_wvr"] },
+        { "block": "zahl", "label": "Warenwert netto für 200 Stück", "einheit": "€",
+          "loesung": "warenwert", "punkte": 1, "folgefehler_aus": ["nach_menge"] },
+        { "block": "zahl", "label": "Skontobetrag bei Zahlung innerhalb von 8 Tagen", "einheit": "€",
+          "loesung": "skonto", "punkte": 1, "folgefehler_aus": ["warenwert"] },
+        { "block": "zahl", "label": "Zahlbetrag netto bei Skontoabzug", "einheit": "€",
+          "loesung": "zahlbetrag", "punkte": 1, "folgefehler_aus": ["warenwert", "skonto"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Die Rabatte werden nacheinander vom jeweils verbleibenden Preis gerechnet, nicht addiert: erst 50 % Wiederverkäuferrabatt, dann 5 % Mengenrabatt auf den bereits ermäßigten Preis. Das Skonto ist ein Abzug für schnelle Zahlung und wird zuletzt vom Warenwert genommen.",
+      "quelle": "lf3-k3, Abschnitt c2"
+    },
+
+    {
+      "id": "lf3-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Boutique bittet die MAKEL Studio GmbH, die feste Saisonbestellung für die Herbstkampagne auf Grundlage eines freibleibenden Angebots abzuwickeln." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum ein freibleibendes Angebot für eine feste Saisonbestellung ungeeignet sein kann.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Ein freibleibendes Angebot bindet den Anbieter nicht. Die Preise und Liefertermine, die darin stehen, können bis zum Vertragsschluss geändert werden. Bei einem freibleibenden Angebot wird zudem erst die Bestellung des Kunden zum Antrag — gebunden ist dann der Kunde, während MAKEL frei entscheiden kann, ob es annimmt. Für eine Saisonkollektion mit festem Verkaufsstart braucht die Boutique aber Planungssicherheit über Preis, Menge und Termin. Sie sollte deshalb ein verbindliches Angebot mit Bindungsfrist verlangen.",
+        "raster": [
+          { "kriterium": "Fehlende Bindung des Anbieters beim freibleibenden Angebot erkannt", "punkte": 1 },
+          { "kriterium": "Erkannt, dass die Bestellung dadurch zum Antrag wird und der Kunde gebunden ist", "punkte": 1 },
+          { "kriterium": "Planungssicherheit für die Saison als Interesse des Kunden genannt", "punkte": 1 },
+          { "kriterium": "Verbindliches Angebot mit Bindungsfrist als Lösung genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Freizeichnungsklauseln wie „freibleibend“ drehen die Bindung um. Wer saisonal plant, braucht ein Angebot, auf das er sich verlassen kann.",
+      "quelle": "lf3-k3, Abschnitt c3"
+    }
+  ]
+}

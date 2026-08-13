@@ -1,0 +1,124 @@
+{
+  "lernfeld": "lf3",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf3-k4-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH gleicht die Bestellung der Modehaus Weber GmbH mit der versendeten Auftragsbestätigung ab." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Bestellung und Auftragsbestätigung",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Bestellung", "Auftragsbestätigung"],
+            "zeilen": [
+              ["Artikel", "Hoodie „KANTE“, schwarz", "Hoodie „KANTE“, schwarz"],
+              ["Menge", "200 Stück", "180 Stück"],
+              ["Stückpreis netto", "50,00 €", "50,00 €"],
+              ["Liefertermin", "KW 38", "KW 41"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Stimmt die Angabe der Auftragsbestätigung mit der Bestellung überein?",
+          "ziele": ["stimmt überein", "weicht ab"],
+          "elemente": [
+            { "text": "Artikel", "loesung": "stimmt überein" },
+            { "text": "Menge", "loesung": "weicht ab" },
+            { "text": "Stückpreis netto", "loesung": "stimmt überein" },
+            { "text": "Liefertermin", "loesung": "weicht ab" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Abgleich läuft immer über dieselben vier Felder: Artikel, Menge, Preis und Termin. Hier weichen Menge und Liefertermin ab — beides muss geklärt werden, bevor produziert wird.",
+      "quelle": "lf3-k4, Abschnitt d1"
+    },
+
+    {
+      "id": "lf3-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Boutique erhält von der MAKEL Studio GmbH eine Auftragsbestätigung, die in Menge und Liefertermin von der eigenen Bestellung abweicht." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Wie muss die Boutique auf die abweichende Auftragsbestätigung reagieren?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Sie muss die Abweichung unverzüglich prüfen und ihr widersprechen oder sie ausdrücklich bestätigen.", "richtig": true,
+              "echo": "Richtig. Die abweichende Bestätigung ist ein neuer Antrag. Unter Kaufleuten kann Schweigen als Zustimmung gewertet werden — deshalb muss unverzüglich reagiert werden." },
+            { "text": "Sie muss nichts tun, weil ihre Bestellung ohnehin gilt.", "richtig": false,
+              "echo": "Die Bestellung gilt gerade nicht: Eine abweichende Bestätigung ist keine Annahme, sondern ein neuer Antrag." },
+            { "text": "Sie muss die Ware zunächst annehmen und darf erst danach reklamieren.", "richtig": false,
+              "echo": "Die Klärung gehört vor die Lieferung. Wer die Ware widerspruchslos annimmt, macht die Sache nur schwieriger." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Eine abweichende Auftragsbestätigung bindet nicht automatisch, aber Schweigen kann unter Kaufleuten als Zustimmung gewertet werden. Deshalb gilt: prüfen und antworten, nicht abheften.",
+      "quelle": "lf3-k4, Abschnitt d1"
+    },
+
+    {
+      "id": "lf3-k4-03",
+      "operator": "Formulieren Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Auftragsbestätigung der MAKEL Studio GmbH nennt 180 statt der bestellten 200 Hoodies; die Boutique braucht die volle Menge für ihre Herbstkampagne." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Formulieren Sie eine kurze, sachliche Rückfrage zur abweichenden Liefermenge.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Sehr geehrte Damen und Herren, wir beziehen uns auf unsere Bestellung vom 12. August 2026 über 200 Hoodies „KANTE“, schwarz, und Ihre Auftragsbestätigung vom 14. August 2026. Darin bestätigen Sie 180 Stück. Wir benötigen die volle Menge von 200 Stück für unsere Herbstkampagne. Bitte teilen Sie uns bis zum 20. August 2026 mit, ob Sie die restlichen 20 Stück zum vereinbarten Preis nachliefern können und zu welchem Termin. Eine Änderung unserer Bestellung können wir vorher nicht bestätigen. Mit freundlichen Grüßen",
+        "raster": [
+          { "kriterium": "Konkrete Bezugnahme auf Bestellung und Auftragsbestätigung", "punkte": 1 },
+          { "kriterium": "Abweichung sachlich benannt, ohne Vorwurf", "punkte": 1 },
+          { "kriterium": "Klare Frage oder Bitte mit Frist beziehungsweise Terminwunsch", "punkte": 1 },
+          { "kriterium": "Keine Zusage, die die abweichende Menge als angenommen erscheinen lässt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die Rückfrage hat zwei Aufgaben: die Abweichung dokumentieren und deutlich machen, dass noch keine Einigung besteht. Beides geht sachlich und in vier Sätzen.",
+      "quelle": "lf3-k4, Abschnitt d1"
+    }
+  ]
+}
