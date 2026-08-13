@@ -1,0 +1,133 @@
+{
+  "lernfeld": "lf8",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf8-k4-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:personaleinstellung-store"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski geht mit einem Auszubildenden eine Entgeltabrechnung der MAKEL Studio GmbH durch." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Was beschreibt der jeweilige Begriff der Abrechnung?",
+          "ziele": [
+            "das vereinbarte Entgelt vor allen Abzügen",
+            "gesetzlicher Abzug an das Finanzamt",
+            "Beitragsanteil, den die beschäftigte Person selbst trägt",
+            "Sachleistung, die das steuerpflichtige Brutto erhöht, ohne dass Geld fließt",
+            "der Betrag, der tatsächlich überwiesen wird"
+          ],
+          "elemente": [
+            { "text": "Bruttoentgelt", "loesung": "das vereinbarte Entgelt vor allen Abzügen" },
+            { "text": "Lohnsteuer", "loesung": "gesetzlicher Abzug an das Finanzamt" },
+            { "text": "Arbeitnehmeranteil zur Sozialversicherung", "loesung": "Beitragsanteil, den die beschäftigte Person selbst trägt" },
+            { "text": "Geldwerter Vorteil", "loesung": "Sachleistung, die das steuerpflichtige Brutto erhöht, ohne dass Geld fließt" },
+            { "text": "Auszahlungsbetrag", "loesung": "der Betrag, der tatsächlich überwiesen wird" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die Abrechnung läuft immer gleich: Brutto, gesetzliche Abzüge, Sozialversicherung, sonstige Abzüge, Auszahlungsbetrag. Geldwerte Vorteile erhöhen das steuerpflichtige Brutto, ohne dass Geld fließt.",
+      "quelle": "lf8-k4, Abschnitt d2"
+    },
+
+    {
+      "id": "lf8-k4-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 6,
+      "dauer_min": 7,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:personaleinstellung-store"],
+
+      "variablen": {
+        "brutto": { "von": 2200, "bis": 3400, "schritt": 50 },
+        "lohnsteuer": { "von": 180, "bis": 460, "schritt": 10 },
+        "sozialversicherung": { "von": 400, "bis": 700, "schritt": 10 },
+        "vorschuss": { "von": 0, "bis": 300, "schritt": 50 }
+      },
+      "abgeleitet": {
+        "gesetzliche_abzuege": "lohnsteuer + sozialversicherung",
+        "auszahlung": "brutto - gesetzliche_abzuege - vorschuss"
+      },
+      "pruefung_variablen": "auszahlung > 900",
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski vervollständigt die Entgeltabrechnung einer Store-Mitarbeiterin der MAKEL Studio GmbH." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Abrechnungsauszug des Monats",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Position", "Betrag in €"],
+            "zeilen": [
+              ["Bruttoentgelt", "{brutto}"],
+              ["Lohnsteuer", "{lohnsteuer}"],
+              ["Arbeitnehmeranteil zur Sozialversicherung", "{sozialversicherung}"],
+              ["Sonstiger Abzug: verrechneter Vorschuss", "{vorschuss}"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Summe der gesetzlichen Abzüge", "einheit": "€",
+          "loesung": "gesetzliche_abzuege", "punkte": 3 },
+        { "block": "zahl", "label": "Auszahlungsbetrag", "einheit": "€",
+          "loesung": "auszahlung", "punkte": 3, "folgefehler_aus": ["gesetzliche_abzuege"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 6 },
+      "erklaerung": "Vom Bruttoentgelt gehen zuerst die gesetzlichen Abzüge ab — Lohnsteuer und Arbeitnehmeranteil zur Sozialversicherung —, danach sonstige Abzüge wie ein verrechneter Vorschuss. Übrig bleibt der Auszahlungsbetrag.",
+      "quelle": "lf8-k4, Abschnitt d2"
+    },
+
+    {
+      "id": "lf8-k4-03",
+      "operator": "Erklären Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner wundert sich, dass die Store-Aushilfe der MAKEL Studio GmbH den Betrieb spürbar mehr kostet als das vereinbarte Bruttogehalt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Erklären Sie Tobias, warum die Personalkosten höher sind als das vereinbarte Bruttogehalt.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Das Bruttoentgelt ist der Betrag, der der Mitarbeiterin zusteht — es ist nicht der Betrag, den der Betrieb aufwendet. Zusätzlich zum Brutto zahlt der Arbeitgeber seinen eigenen Anteil zur Sozialversicherung; dieser Anteil ist Aufwand des Betriebs und taucht auf der Abrechnung der Mitarbeiterin nicht als Abzug auf. Hinzu kommen weitere Arbeitgeberkosten wie Beiträge zur gesetzlichen Unfallversicherung und Umlagen. Erst Brutto plus diese Arbeitgeberkosten ergeben die tatsächlichen Personalkosten. Wichtig ist außerdem, das Brutto nicht mit dem Auszahlungsbetrag zu verwechseln: Der Nettobetrag ist kleiner als das Brutto, die Personalkosten sind größer — die Mitarbeiterin bekommt weniger, als sie den Betrieb kostet.",
+        "raster": [
+          { "kriterium": "Arbeitgeberanteil zur Sozialversicherung als zusätzlicher Aufwand genannt", "punkte": 1 },
+          { "kriterium": "Erkannt, dass dieser Anteil kein Abzug vom Entgelt der Mitarbeiterin ist", "punkte": 1 },
+          { "kriterium": "Mindestens eine weitere Arbeitgeberkostenart genannt (Unfallversicherung, Umlagen)", "punkte": 1 },
+          { "kriterium": "Brutto, Netto und Personalkosten klar voneinander abgegrenzt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Drei Beträge, die oft verwechselt werden: der Auszahlungsbetrag ist der kleinste, das Brutto liegt darüber, die Personalkosten des Betriebs darüber. Die konkreten Beitragssätze ändern sich und sind vor jeder Verwendung am aktuellen Stand zu prüfen.",
+      "quelle": "lf8-k4, Abschnitt d2"
+    }
+  ]
+}

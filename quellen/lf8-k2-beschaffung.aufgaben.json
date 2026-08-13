@@ -1,0 +1,109 @@
+{
+  "lernfeld": "lf8",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf8-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:personaleinstellung-store"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt stellt die Wege zusammen, auf denen die MAKEL Studio GmbH Personal gewinnen kann." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Handelt es sich um interne oder externe Personalbeschaffung?",
+          "ziele": ["interne Personalbeschaffung", "externe Personalbeschaffung"],
+          "elemente": [
+            { "text": "Versetzung einer Mitarbeiterin aus dem Lager in den Store", "loesung": "interne Personalbeschaffung" },
+            { "text": "Übernahme eines Auszubildenden nach der Prüfung", "loesung": "interne Personalbeschaffung" },
+            { "text": "Stellenanzeige auf einem Onlineportal", "loesung": "externe Personalbeschaffung" },
+            { "text": "Einsatz einer Zeitarbeitskraft über einen Verleiher", "loesung": "externe Personalbeschaffung" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Interne Beschaffung heißt Versetzung, Aufstieg, Mehrarbeit oder die Übernahme von Auszubildenden. Zeitarbeitskräfte sind extern und bleiben Arbeitnehmer des Verleihers — sie werden nicht bei MAKEL angestellt.",
+      "quelle": "lf8-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf8-k2-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:personaleinstellung-store"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Emily Tran braucht für die vier Wochen der Adventszeit eine zusätzliche Aushilfe im Store; eine dauerhafte Stelle ist nicht geplant." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welcher Beschaffungsweg passt hier am besten?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Eine befristete Aushilfsstelle über die eigenen Kanäle und Onlineportale ausschreiben.", "richtig": true,
+              "echo": "Richtig. Der Bedarf ist zeitlich klar begrenzt und die Anforderungen sind überschaubar — eine befristete Aushilfsstelle ist schnell und passgenau." },
+            { "text": "Eine Personalberatung mit der Suche beauftragen.", "richtig": false,
+              "echo": "Personalberatungen lohnen sich bei Fach- und Führungspositionen. Für eine vierwöchige Aushilfe stünde der Aufwand in keinem Verhältnis." },
+            { "text": "Eine unbefristete Vollzeitstelle ausschreiben und später wieder kündigen.", "richtig": false,
+              "echo": "Das erzeugt einen dauerhaften Bedarf, den es nicht gibt, und macht später eine Kündigung nötig — mit Fristen, Kündigungsschutz und Aufwand." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Der Beschaffungsweg richtet sich nach Dauer, Anforderung und Dringlichkeit des Bedarfs. Ein befristeter Bedarf wird befristet gedeckt.",
+      "quelle": "lf8-k2, Abschnitt b2"
+    },
+
+    {
+      "id": "lf8-k2-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Entwurf für die Stellenanzeige der MAKEL Studio GmbH lautet: „Junge, dynamische Verkäuferin bis 25 Jahre für unseren Store gesucht.“" }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Nennen und begründen Sie zwei Änderungen, die die Anzeige benötigt.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Erstens muss die Altersangabe „bis 25 Jahre“ entfallen. Nach § 7 AGG darf eine Ausschreibung nicht an geschützte Merkmale anknüpfen; das Alter ist ein solches Merkmal, und eine Altersgrenze benachteiligt ältere Bewerber unmittelbar. Zweitens muss die Stelle geschlechtsneutral ausgeschrieben werden, also „Verkäufer (m/w/d)“ statt „Verkäuferin“, weil die weibliche Form sonst Bewerber anderer Geschlechter ausschließt. Auch „jung und dynamisch“ sollte gestrichen werden, weil es mittelbar auf das Alter zielt. An die Stelle solcher Formulierungen gehören sachliche Angaben: Aufgaben, geforderte Kenntnisse, Arbeitszeit und das Angebot des Betriebs. Ein Verstoß kann Entschädigungsansprüche abgelehnter Bewerber auslösen.",
+        "raster": [
+          { "kriterium": "Altersgrenze als unzulässig erkannt und gestrichen", "punkte": 1 },
+          { "kriterium": "Geschlechtsneutrale Ausschreibung mit (m/w/d) genannt", "punkte": 1 },
+          { "kriterium": "Begründung über das Benachteiligungsverbot des AGG", "punkte": 1 },
+          { "kriterium": "Sachliche Anforderungen als richtiger Inhalt genannt oder Folge eines Verstoßes benannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "{{par:agg-7|§ 7 AGG}}: keine Anknüpfung an geschützte Merkmale — daher (m/w/d) und keine Altersgrenzen. Die Anzeige beschreibt die Stelle, nicht den Wunschmenschen.",
+      "quelle": "lf8-k2, Abschnitt b3"
+    }
+  ]
+}
