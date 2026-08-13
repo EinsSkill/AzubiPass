@@ -1,0 +1,130 @@
+{
+  "lernfeld": "lf10",
+  "kapitel": "k6",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf10-k6-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner ordnet, welche Größe bei welcher Entscheidung der MAKEL Studio GmbH den Ausschlag gibt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Größe entscheidet in der jeweiligen Lage?",
+          "ziele": [
+            "Vergleich der variablen Kosten mit dem Einstandspreis",
+            "kritische Menge",
+            "absoluter Deckungsbeitrag",
+            "relativer Deckungsbeitrag je Engpasseinheit"
+          ],
+          "elemente": [
+            { "text": "Soll die Veredelung selbst gemacht oder eingekauft werden?", "loesung": "Vergleich der variablen Kosten mit dem Einstandspreis" },
+            { "text": "Ab welcher Stückzahl lohnt sich die Eigenfertigung mit zusätzlichen Fixkosten?", "loesung": "kritische Menge" },
+            { "text": "Welches Erzeugnis ist bei freier Kapazität vorzuziehen?", "loesung": "absoluter Deckungsbeitrag" },
+            { "text": "Welches Erzeugnis ist vorzuziehen, wenn die Druckmaschine der Engpass ist?", "loesung": "relativer Deckungsbeitrag je Engpasseinheit" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Ohne Engpass entscheidet der absolute Deckungsbeitrag, mit Engpass der relative je Engpasseinheit. Der höchste Deckungsbeitrag je Stück ist bei Engpass oft die falsche Wahl — entscheidend ist, wie viel Deckungsbeitrag die knappe Maschinenstunde bringt.",
+      "quelle": "lf10-k6, Abschnitt b2"
+    },
+
+    {
+      "id": "lf10-k6-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 6,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+
+      "variablen": {
+        "einkaufspreis": { "von": 14, "bis": 26, "schritt": 1 },
+        "var_stueckkosten": { "von": 6, "bis": 13, "schritt": 1 },
+        "zusatz_fixkosten": { "von": 12000, "bis": 40000, "schritt": 2000 }
+      },
+      "abgeleitet": {
+        "vorteil_je_stueck": "einkaufspreis - var_stueckkosten",
+        "kritische_menge": "runde(zusatz_fixkosten / vorteil_je_stueck, 2)"
+      },
+      "pruefung_variablen": "vorteil_je_stueck > 4",
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH lässt den Rückenprint der Overshirts bisher extern drucken und erwägt, ihn mit einer zusätzlichen Maschine selbst zu übernehmen." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Werte des Vergleichs",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Einstandspreis je Print beim Lohnfertiger", "{einkaufspreis} €"],
+              ["Variable Kosten je Print bei Eigenfertigung", "{var_stueckkosten} €"],
+              ["Zusätzliche abbaubare Fixkosten je Jahr", "{zusatz_fixkosten} €"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Kostenvorteil der Eigenfertigung je Print", "einheit": "€",
+          "loesung": "vorteil_je_stueck", "punkte": 2 },
+        { "block": "zahl", "label": "Kritische Menge je Jahr", "einheit": "Stück",
+          "loesung": "kritische_menge", "punkte": 4, "folgefehler_aus": ["vorteil_je_stueck"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 6 },
+      "erklaerung": "Kritische Menge = zusätzliche Fixkosten ÷ (Einkaufspreis − variable Stückkosten). Oberhalb dieser Menge lohnt die Eigenfertigung, darunter der Fremdbezug. Wichtig: Nur abbaubare Fixkosten zählen mit — nicht abbaubare bleiben außen vor, weil sie ohnehin anfallen.",
+      "quelle": "lf10-k6, Abschnitt b1"
+    },
+
+    {
+      "id": "lf10-k6-03",
+      "operator": "Formulieren Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Rechnung ergibt für die MAKEL Studio GmbH eine kritische Menge von 2.400 Prints je Jahr; zuletzt wurden rund 2.600 Prints benötigt, die Nachfrage schwankt jedoch spürbar." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Formulieren Sie für Tobias Renner eine Empfehlung mit Zahl, Annahme und Risiko.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Empfehlung: Die Eigenfertigung des Rückenprints ist wirtschaftlich vertretbar, solange dauerhaft mehr als 2.400 Prints je Jahr benötigt werden. Bei zuletzt rund 2.600 Prints liegt die Menge über der kritischen Menge, der Vorsprung beträgt aber nur etwa 200 Stück oder acht Prozent. Die Empfehlung beruht auf zwei Annahmen: dass die Nachfrage mindestens auf dem heutigen Niveau bleibt und dass die zusätzlichen Fixkosten tatsächlich abbaubar sind, also bei einer Rückkehr zum Fremdbezug wieder entfallen. Das Risiko liegt genau darin: Sinkt die Nachfrage um mehr als acht Prozent, kippt die Rechnung, und die Fixkosten laufen weiter. Hinzu kommt, was in keiner Rechnung steht — Abhängigkeit vom Lohnfertiger, Qualitätskontrolle, eigenes Wissen und die Auslastung der Beschäftigten. Vorschlag: Eigenfertigung, aber die Mengen ein weiteres Quartal beobachten und die Rechnung mit den tatsächlichen Zahlen prüfen.",
+        "raster": [
+          { "kriterium": "Klare Empfehlung ausgesprochen", "punkte": 1 },
+          { "kriterium": "Kritische Menge als Zahl genannt und mit der Ist-Menge verglichen", "punkte": 1 },
+          { "kriterium": "Annahme der Rechnung offengelegt", "punkte": 1 },
+          { "kriterium": "Risiko konkret benannt (geringer Abstand, schwankende Nachfrage)", "punkte": 1 },
+          { "kriterium": "Mindestens ein qualitatives Kriterium außerhalb der Rechnung genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Abhängigkeit, Qualität, Wissen und Beschäftigung stehen in keiner Rechnung. Eine gute Empfehlung nennt deshalb immer drei Dinge: die Zahl, die Annahme dahinter und das Risiko, wenn die Annahme nicht hält.",
+      "quelle": "lf10-k6, Abschnitt b3"
+    }
+  ]
+}

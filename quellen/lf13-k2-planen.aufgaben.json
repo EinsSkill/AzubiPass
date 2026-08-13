@@ -1,0 +1,130 @@
+{
+  "lernfeld": "lf13",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf13-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Das Projektteam des Pop-up-Stores der MAKEL Studio GmbH klärt seine Begriffe." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Beschreibung gehört zu welchem Begriff?",
+          "ziele": [
+            "beschreibt messbar, was am Ende erreicht sein soll",
+            "kleinste Planungseinheit mit Verantwortlichem, Aufwand und überprüfbarem Ergebnis",
+            "Zwischenergebnis ohne eigene Dauer",
+            "die Kette von Vorgängen ohne Puffer"
+          ],
+          "elemente": [
+            { "text": "Projektziel", "loesung": "beschreibt messbar, was am Ende erreicht sein soll" },
+            { "text": "Arbeitspaket", "loesung": "kleinste Planungseinheit mit Verantwortlichem, Aufwand und überprüfbarem Ergebnis" },
+            { "text": "Meilenstein", "loesung": "Zwischenergebnis ohne eigene Dauer" },
+            { "text": "Kritischer Pfad", "loesung": "die Kette von Vorgängen ohne Puffer" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Ein {{begriff:arbeitspaket|Arbeitspaket}} hat Verantwortlichen, geschätzten Aufwand und überprüfbares Ergebnis. Ein {{begriff:meilenstein|Meilenstein}} hat keine Dauer — er misst nur, ob ein Zwischenergebnis erreicht ist.",
+      "quelle": "lf13-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf13-k2-02",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 2,
+      "punkte": 6,
+      "dauer_min": 6,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für den Pop-up-Store der MAKEL Studio GmbH soll ein Balkenplan aufgestellt werden; jeder Vorgang setzt das Ergebnis des vorherigen voraus." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Abhängigkeiten der Vorgänge",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Vorgang", "Setzt voraus"],
+            "zeilen": [
+              ["Mietvertrag unterschreiben", "eine ausgewählte Fläche"],
+              ["Umbau der Fläche", "einen unterschriebenen Mietvertrag"],
+              ["Personal einplanen", "einen feststehenden Eröffnungstermin"],
+              ["Eröffnung", "abgeschlossenen Umbau und eingeplantes Personal"],
+              ["Auswertung", "einen abgeschlossenen Verkaufsbetrieb"],
+              ["Standortsuche", "nichts"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die sechs Vorgänge in eine zulässige Reihenfolge.",
+          "elemente": [
+            { "text": "Umbau der Fläche", "position": 3 },
+            { "text": "Standortsuche", "position": 1 },
+            { "text": "Eröffnung", "position": 5 },
+            { "text": "Mietvertrag unterschreiben", "position": 2 },
+            { "text": "Auswertung", "position": 6 },
+            { "text": "Personal einplanen", "position": 4 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Balkenplan folgt den Abhängigkeiten: Ohne Fläche kein Vertrag, ohne Vertrag kein Umbau, ohne Umbau und Personal keine Eröffnung. Der Puffer gehört ans Projektende, nicht in jedes einzelne Paket.",
+      "quelle": "lf13-k2, Abschnitt b3"
+    },
+
+    {
+      "id": "lf13-k2-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Mietvertrag für den Pop-up-Store der MAKEL Studio GmbH wird zwei Wochen später unterschrieben als geplant; der Eröffnungstermin ist bereits beworben." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie die Auswirkung dieser Verzögerung und nennen Sie mögliche Reaktionen.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Mietvertrag liegt auf dem kritischen Pfad: Der Umbau kann erst danach beginnen, und ohne abgeschlossenen Umbau ist keine Eröffnung möglich. Eine Verzögerung auf dem kritischen Pfad verschiebt deshalb unmittelbar das Projektende — die zwei Wochen wandern eins zu eins auf den Eröffnungstermin, sofern kein Puffer vorhanden ist. Da der Termin bereits beworben ist, kommt eine Verschiebung nur mit Schaden für die Außenwirkung in Betracht. Mögliche Reaktionen sind, den Umbau zu verdichten, indem Gewerke parallel arbeiten oder zusätzliche Kräfte eingesetzt werden, den Umfang zu verringern und in der ersten Woche mit reduzierter Ausstattung zu eröffnen, oder den Endpuffer aufzubrauchen, falls er eingeplant wurde. Jede dieser Reaktionen kostet Geld oder Umfang: Wer eine Größe des magischen Dreiecks ändert, muss mindestens eine andere nachziehen. Die Projektleitung macht diese Auswirkungen sichtbar; entscheiden muss der Auftraggeber.",
+        "raster": [
+          { "kriterium": "Mietvertrag als Vorgang auf dem kritischen Pfad erkannt", "punkte": 1 },
+          { "kriterium": "Erkannt, dass sich die Verzögerung ohne Puffer auf das Projektende durchschlägt", "punkte": 1 },
+          { "kriterium": "Mindestens eine konkrete Gegenmaßnahme genannt", "punkte": 1 },
+          { "kriterium": "Zusammenhang von Zeit, Kosten und Umfang benannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Der {{begriff:kritischer-pfad|kritische Pfad}} ist die Kette ohne Puffer. Jede Verzögerung dort ist eine Verzögerung des ganzen Projekts — auf allen anderen Wegen nicht.",
+      "quelle": "lf13-k2, Abschnitt b3"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "lernfeld": "lf10",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf10-k1-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 6,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski erklärt einem Auszubildenden, warum die MAKEL Studio GmbH neben der Buchführung eine zweite Rechnung führt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Aussage gehört zu welchem Begriff?",
+          "ziele": [
+            "richtet sich nach außen und ist gesetzlich geregelt",
+            "richtet sich nach innen und ist frei gestaltbar",
+            "ist zugleich Kosten und wird unverändert übernommen",
+            "ist betriebsfremd, außerordentlich oder periodenfremd",
+            "hat keinen Aufwand in gleicher Höhe",
+            "macht Betriebe unterschiedlicher Rechtsform vergleichbar"
+          ],
+          "elemente": [
+            { "text": "Buchführung", "loesung": "richtet sich nach außen und ist gesetzlich geregelt" },
+            { "text": "Kostenrechnung", "loesung": "richtet sich nach innen und ist frei gestaltbar" },
+            { "text": "Zweckaufwand", "loesung": "ist zugleich Kosten und wird unverändert übernommen" },
+            { "text": "Neutraler Aufwand", "loesung": "ist betriebsfremd, außerordentlich oder periodenfremd" },
+            { "text": "Kalkulatorische Kosten", "loesung": "hat keinen Aufwand in gleicher Höhe" },
+            { "text": "Kalkulatorischer Unternehmerlohn", "loesung": "macht Betriebe unterschiedlicher Rechtsform vergleichbar" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die Buchführung dokumentiert nach außen, die {{begriff:kostenrechnung|Kostenrechnung}} steuert nach innen. Nicht jeder Aufwand ist Kosten — und nicht jede Kostenart hat einen Aufwand in gleicher Höhe.",
+      "quelle": "lf10-k1, Abschnitt b1"
+    },
+
+    {
+      "id": "lf10-k1-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Drei Geschäftsvorfälle der MAKEL Studio GmbH sollen für die Kostenrechnung eingeordnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Wie ist der Vorgang für die Kostenrechnung einzuordnen?",
+          "ziele": [
+            "Zweckaufwand — wird unverändert als Kosten übernommen",
+            "neutraler Aufwand — geht nicht in die Kostenrechnung ein",
+            "Leistung — Ertrag aus der betrieblichen Tätigkeit"
+          ],
+          "elemente": [
+            { "text": "Verbrauch von Bio-Baumwolle in der Musterfertigung", "loesung": "Zweckaufwand — wird unverändert als Kosten übernommen" },
+            { "text": "Spende an einen Sportverein", "loesung": "neutraler Aufwand — geht nicht in die Kostenrechnung ein" },
+            { "text": "Verkaufserlös aus einer Hoodie-Lieferung an eine Boutique", "loesung": "Leistung — Ertrag aus der betrieblichen Tätigkeit" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Stoffverbrauch dient unmittelbar dem Betriebszweck und ist deshalb Zweckaufwand. Die Spende ist betriebsfremd und damit neutraler Aufwand — sie würde die Kalkulation eines Overshirts verfälschen.",
+      "quelle": "lf10-k1, Abschnitt b2"
+    },
+
+    {
+      "id": "lf10-k1-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner fragt, warum ihm die Buchführung der MAKEL Studio GmbH nicht sagen kann, ob das neue Overshirt wirtschaftlich ist." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum die Buchführung diese Frage nicht beantworten kann.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Buchführung erfasst den Erfolg des gesamten Betriebs für einen abgelaufenen Zeitraum und richtet sich an Adressaten außerhalb des Betriebs. Sie zeigt Aufwendungen und Erträge nach Arten, aber nicht, welcher Teil davon auf ein einzelnes Erzeugnis entfällt. Was ein Overshirt kostet, lässt sich daraus nicht ablesen. Genau dafür ist die Kostenrechnung da: Sie fragt in drei Stufen, welche Kosten entstanden sind, wo sie entstanden sind und wofür — also nach Kostenarten, Kostenstellen und Kostenträgern. Erst die Kostenträgerrechnung ordnet die Kosten dem einzelnen Overshirt zu. Hinzu kommt, dass die Buchführung neutrale Aufwendungen wie die Spende enthält, die das Bild verfälschen würden, und dass sie rückwärts gerichtet ist, während eine Entscheidung über die Kollektion zeitnahe interne Zahlen braucht.",
+        "raster": [
+          { "kriterium": "Adressat und Außenrichtung der Buchführung genannt", "punkte": 1 },
+          { "kriterium": "Erkannt, dass die Buchführung keinen Bezug zum einzelnen Erzeugnis herstellt", "punkte": 1 },
+          { "kriterium": "Kostenträgerrechnung beziehungsweise die drei Stufen als Lösung genannt", "punkte": 1 },
+          { "kriterium": "Weiteres Argument genannt (neutraler Aufwand verfälscht oder Zeitbezug)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Drei Stufen: Kostenarten, Kostenstellen, Kostenträger — was, wo, wofür. Die Buchführung beantwortet nur die erste Frage, und das auch nur für den Gesamtbetrieb.",
+      "quelle": "lf10-k1, Abschnitt b3"
+    }
+  ]
+}

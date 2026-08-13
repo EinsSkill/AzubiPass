@@ -1,0 +1,116 @@
+{
+  "lernfeld": "lf10",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf10-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski erklärt die beiden Einteilungen, mit denen die MAKEL Studio GmbH ihre Kosten sortiert." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Beschreibung gehört zu welcher Kostenart?",
+          "ziele": [
+            "direkt einem Erzeugnis zurechenbar",
+            "nur über einen Schlüssel verteilbar",
+            "bleibt in der Summe gleich und sinkt je Stück",
+            "steigt mit der Menge und bleibt je Stück gleich"
+          ],
+          "elemente": [
+            { "text": "Einzelkosten", "loesung": "direkt einem Erzeugnis zurechenbar" },
+            { "text": "Gemeinkosten", "loesung": "nur über einen Schlüssel verteilbar" },
+            { "text": "Fixe Kosten", "loesung": "bleibt in der Summe gleich und sinkt je Stück" },
+            { "text": "Variable Kosten", "loesung": "steigt mit der Menge und bleibt je Stück gleich" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die Einteilungen Einzel/Gemein und fix/variabel sind voneinander unabhängig. {{begriff:einzelkosten|Einzelkosten}} fragen nach der Zurechenbarkeit, {{begriff:fixkosten|Fixkosten}} nach der Abhängigkeit von der Menge.",
+      "quelle": "lf10-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf10-k2-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für eine kleine Serie des neuen Overshirts sollen die Kosten der MAKEL Studio GmbH klassifiziert werden; Bezugsobjekt ist das einzelne Overshirt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Wie ist die Kostenart bezogen auf ein einzelnes Overshirt einzuordnen?",
+          "ziele": [
+            "variable Einzelkosten",
+            "fixe Gemeinkosten",
+            "variable Gemeinkosten"
+          ],
+          "elemente": [
+            { "text": "Verbrauchter Oberstoff je Overshirt", "loesung": "variable Einzelkosten" },
+            { "text": "Fertigungslohn je gefertigtem Overshirt im Akkord", "loesung": "variable Einzelkosten" },
+            { "text": "Miete für den Gewerbehof", "loesung": "fixe Gemeinkosten" },
+            { "text": "Gehalt der Buchhaltung", "loesung": "fixe Gemeinkosten" },
+            { "text": "Strom der Druckmaschine, der mit der Laufzeit steigt", "loesung": "variable Gemeinkosten" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Beide Dimensionen werden gleichzeitig geprüft. Der Maschinenstrom ist variabel, weil er mit der Laufzeit steigt, aber Gemeinkosten, weil er sich nicht ohne Schlüssel einem einzelnen Overshirt zuordnen lässt. Die Zuordnung hängt immer vom Bezugsobjekt ab — zurechenbar wozu?",
+      "quelle": "lf10-k2, Abschnitt b2"
+    },
+
+    {
+      "id": "lf10-k2-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Yuki Bergmann überlegt, die Serie des Overshirts zu verkleinern; die Miete für den Gewerbehof der MAKEL Studio GmbH bleibt dabei unverändert." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie die Aussage: „Wenn wir weniger Overshirts fertigen, steigt die Miete je Overshirt.“",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Aussage ist richtig, aber sie muss genau gefasst werden. Die Miete ist ein fixer Kostenblock: In der Summe bleibt sie gleich, egal wie viele Overshirts gefertigt werden. Weil dieser gleichbleibende Betrag jedoch auf weniger Stücke verteilt wird, steigt der Anteil je Overshirt. Umgekehrt sinken die Fixkosten je Stück, wenn die Menge steigt — das ist die Fixkostendegression. Wichtig ist die Unterscheidung: Nicht die Miete steigt, sondern nur ihr rechnerischer Anteil je Stück. Für die Entscheidung heißt das, dass eine kleinere Serie das einzelne Overshirt in der Vollkostenrechnung teurer macht.",
+        "raster": [
+          { "kriterium": "Aussage im Ergebnis als zutreffend eingeordnet", "punkte": 1 },
+          { "kriterium": "Unterschieden zwischen gleichbleibenden Gesamtfixkosten und steigenden Fixkosten je Stück", "punkte": 1 },
+          { "kriterium": "Fixkostendegression benannt oder die Wirkung auf die Kalkulation erklärt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Fixkostendegression: Mehr Menge senkt die Fixkosten je Stück. Die Stückkosten nähern sich dabei den variablen Stückkosten an, unterschreiten sie aber nie.",
+      "quelle": "lf10-k2, Abschnitt b3"
+    }
+  ]
+}

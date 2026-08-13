@@ -1,0 +1,108 @@
+{
+  "lernfeld": "lf13",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf13-k1-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Yuki Bergmann ordnet vier Vorhaben der MAKEL Studio GmbH ein." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Handelt es sich um ein Projekt, einen Prozess oder eine Routineaufgabe?",
+          "ziele": ["Projekt", "Prozess", "Routineaufgabe"],
+          "elemente": [
+            { "text": "Einen dreimonatigen Pop-up-Store in Düsseldorf eröffnen", "loesung": "Projekt" },
+            { "text": "Die Winterkollektion erstmals über einen neuen Vertriebsweg einführen", "loesung": "Projekt" },
+            { "text": "Eingehende Kundenbestellungen bearbeiten", "loesung": "Prozess" },
+            { "text": "Den Kassenabschluss im Store durchführen", "loesung": "Routineaufgabe" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Merkmale eines {{begriff:projekt|Projekts}}: einmalig, klares Ziel, Anfang und Ende, begrenzte Mittel, eigene Organisation. Fehlt die Einmaligkeit, handelt es sich um einen Prozess.",
+      "quelle": "lf13-k1, Abschnitt b1"
+    },
+
+    {
+      "id": "lf13-k1-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Pop-up-Store der MAKEL Studio GmbH soll drei Monate laufen; beteiligt sind Vertrieb, Lager, Personal und Buchhaltung, Budget und Eröffnungstermin stehen fest." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Soll das Vorhaben als Projekt geführt werden?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Ja — es ist einmalig, zeitlich befristet, hat begrenzte Mittel und betrifft mehrere Bereiche.", "richtig": true,
+              "echo": "Richtig. Alle Merkmale liegen vor, und gerade die Beteiligung mehrerer Bereiche verlangt eine eigene Organisation mit klarer Leitung." },
+            { "text": "Nein — der Verkauf von Kleidung gehört zum Tagesgeschäft.", "richtig": false,
+              "echo": "Der Verkauf selbst ist Tagesgeschäft, die einmalige Eröffnung eines befristeten Stores ist es nicht." },
+            { "text": "Nein — drei Monate sind für ein Projekt zu kurz.", "richtig": false,
+              "echo": "Eine Mindestdauer gehört nicht zu den Merkmalen. Entscheidend sind Einmaligkeit, Ziel, Befristung, begrenzte Mittel und eigene Organisation." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Geprüft werden die fünf Merkmale der Reihe nach. Liegen sie vor, lohnt sich die eigene Organisation — vor allem, weil sonst niemand bereichsübergreifend verantwortlich ist.",
+      "quelle": "lf13-k1, Abschnitt b1"
+    },
+
+    {
+      "id": "lf13-k1-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH möchte auch den täglichen Kassenabschluss im Store als Projekt führen, weil er wichtig sei." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum der tägliche Kassenabschluss kein Projekt ist.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Dem Kassenabschluss fehlt das entscheidende Merkmal der Einmaligkeit: Er wiederholt sich jeden Abend in gleicher Form. Damit ist er ein Prozess beziehungsweise eine Routineaufgabe, kein Projekt. Auch die übrigen Merkmale fehlen: Es gibt kein einmaliges Ziel mit Anfang und Ende, keine eigens zusammengestellte Organisation und kein eigenes Budget. Wichtigkeit allein macht ein Vorhaben nicht zum Projekt — sonst wäre jede bedeutsame Tätigkeit eines. Für wiederkehrende Abläufe ist die Projektorganisation zudem ungeeignet: Sie erzeugt nur Aufwand, wo eine klare Arbeitsanweisung und eine feste Zuständigkeit ausreichen.",
+        "raster": [
+          { "kriterium": "Fehlende Einmaligkeit als entscheidendes Merkmal genannt", "punkte": 1 },
+          { "kriterium": "Richtige Einordnung als Prozess beziehungsweise Routineaufgabe", "punkte": 1 },
+          { "kriterium": "Erkannt, dass Wichtigkeit kein Projektmerkmal ist, oder Aufwand der Projektorganisation angesprochen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Fehlt die Einmaligkeit, handelt es sich um einen Prozess. Der Unterschied ist nicht akademisch: Projekte bekommen eine eigene Organisation, Prozesse bekommen eine Regelung.",
+      "quelle": "lf13-k1, Abschnitt b1"
+    }
+  ]
+}

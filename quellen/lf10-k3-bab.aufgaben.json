@@ -1,0 +1,128 @@
+{
+  "lernfeld": "lf10",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf10-k3-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski legt für den Betriebsabrechnungsbogen der MAKEL Studio GmbH die Verteilungsschlüssel fest." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welcher Verteilungsschlüssel bildet die Kostenverursachung am besten ab?",
+          "ziele": ["nach Fläche", "nach Leistung", "nach Köpfen", "nach Anlagenwert"],
+          "elemente": [
+            { "text": "Miete des Gewerbehofs", "loesung": "nach Fläche" },
+            { "text": "Stromkosten der Maschinen", "loesung": "nach Leistung" },
+            { "text": "Sozialkosten", "loesung": "nach Köpfen" },
+            { "text": "Abschreibungen", "loesung": "nach Anlagenwert" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Verteilungsschlüssel müssen die Kostenverursachung abbilden. Ein unpassender Schlüssel verzerrt die Kalkulation dauerhaft und unsichtbar — er fällt niemandem auf, weil das Ergebnis trotzdem plausibel aussieht.",
+      "quelle": "lf10-k3, Abschnitt b2"
+    },
+
+    {
+      "id": "lf10-k3-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 7,
+      "dauer_min": 8,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+
+      "variablen": {
+        "fertigungsmaterial": { "von": 40000, "bis": 90000, "schritt": 5000 },
+        "material_gk": { "von": 4000, "bis": 12000, "schritt": 500 },
+        "fertigungsloehne": { "von": 30000, "bis": 70000, "schritt": 5000 },
+        "fertigungs_gk": { "von": 30000, "bis": 90000, "schritt": 5000 }
+      },
+      "abgeleitet": {
+        "mgk_satz": "runde(material_gk / fertigungsmaterial * 100, 2)",
+        "fgk_satz": "runde(fertigungs_gk / fertigungsloehne * 100, 2)",
+        "herstellkosten": "fertigungsmaterial + material_gk + fertigungsloehne + fertigungs_gk"
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Aus dem Betriebsabrechnungsbogen der MAKEL Studio GmbH sollen die Zuschlagssätze für die Overshirt-Kalkulation abgeleitet werden." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Werte des Abrechnungszeitraums",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Position", "Betrag in €"],
+            "zeilen": [
+              ["Fertigungsmaterial", "{fertigungsmaterial}"],
+              ["Materialgemeinkosten", "{material_gk}"],
+              ["Fertigungslöhne", "{fertigungsloehne}"],
+              ["Fertigungsgemeinkosten", "{fertigungs_gk}"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Materialgemeinkostenzuschlagssatz", "einheit": "%",
+          "loesung": "mgk_satz", "punkte": 2 },
+        { "block": "zahl", "label": "Fertigungsgemeinkostenzuschlagssatz", "einheit": "%",
+          "loesung": "fgk_satz", "punkte": 2 },
+        { "block": "zahl", "label": "Herstellkosten des Abrechnungszeitraums", "einheit": "€",
+          "loesung": "herstellkosten", "punkte": 3 }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 7 },
+      "erklaerung": "{{begriff:zuschlagssatz|Zuschlagssatz}} = Gemeinkosten ÷ Bezugsgröße × 100. Entscheidend ist die richtige Bezugsgröße: Material bezieht sich auf das Fertigungsmaterial, Fertigung auf die Fertigungslöhne. Materialkosten und Fertigungskosten zusammen ergeben die Herstellkosten.",
+      "quelle": "lf10-k3, Abschnitt b3"
+    },
+
+    {
+      "id": "lf10-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Im Betriebsabrechnungsbogen der MAKEL Studio GmbH werden die Stromkosten bisher nach Quadratmetern verteilt; die Veredelung mit ihrer Druckmaschine belegt nur eine kleine Fläche, verbraucht aber den meisten Strom." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum dieser Schlüssel unpassend ist, und schlagen Sie einen besseren vor.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Ein Verteilungsschlüssel soll die Kostenverursachung abbilden. Die Fläche verursacht den Stromverbrauch hier aber nicht: Die Druckmaschine belegt wenig Fläche und zieht trotzdem den größten Teil des Stroms. Nach dem Flächenschlüssel bekommt die Veredelung deshalb zu wenig Stromkosten zugerechnet, während Verwaltung und Lager mit ihren großen, aber stromarmen Flächen zu viel tragen. Die Folge ist eine dauerhaft verzerrte Kalkulation: Bedruckte Erzeugnisse erscheinen zu billig und werden womöglich zu günstig angeboten, andere zu teuer. Besser ist ein Schlüssel nach der tatsächlichen Verursachung, also nach installierter Leistung der Maschinen oder — genauer — nach gemessenen Maschinenlaufstunden. Der Aufwand für die Messung lohnt sich, weil ein falscher Schlüssel unsichtbar bleibt und über Jahre wirkt.",
+        "raster": [
+          { "kriterium": "Grundsatz genannt: der Schlüssel muss die Verursachung abbilden", "punkte": 1 },
+          { "kriterium": "Konkret erklärt, warum Fläche und Stromverbrauch hier auseinanderfallen", "punkte": 1 },
+          { "kriterium": "Folge für die Kalkulation beschrieben (Erzeugnisse zu teuer oder zu billig)", "punkte": 1 },
+          { "kriterium": "Besseren Schlüssel genannt (Maschinenleistung oder Laufzeit)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Miete nach Fläche, Strom nach Leistung, Sozialkosten nach Köpfen, Abschreibungen nach Anlagenwert. Wer diese Zuordnung vertauscht, kalkuliert jahrelang falsch, ohne es zu merken.",
+      "quelle": "lf10-k3, Abschnitt b2"
+    }
+  ]
+}

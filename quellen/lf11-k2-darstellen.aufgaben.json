@@ -1,0 +1,132 @@
+{
+  "lernfeld": "lf11",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf11-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Retourenprozess der MAKEL Studio GmbH soll als Flussdiagramm gezeichnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welches Symbol steht wofür?",
+          "ziele": [
+            "abgerundetes Rechteck",
+            "Rechteck",
+            "Raute",
+            "Pfeil"
+          ],
+          "elemente": [
+            { "text": "Start oder Ende des Prozesses", "loesung": "abgerundetes Rechteck" },
+            { "text": "Eine Tätigkeit, formuliert als Verb plus Gegenstand", "loesung": "Rechteck" },
+            { "text": "Eine Entscheidung mit beschrifteten Ausgängen", "loesung": "Raute" },
+            { "text": "Die Reihenfolge, in der die Schritte durchlaufen werden", "loesung": "Pfeil" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Abgerundetes Rechteck ist Start oder Ende, Rechteck ist Tätigkeit, Raute ist Entscheidung. Tätigkeiten werden als Verb plus Gegenstand formuliert — „Ware prüfen“, nicht „Warenprüfung“.",
+      "quelle": "lf11-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf11-k2-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Im Flussdiagramm des Retourenprozesses der MAKEL Studio GmbH fehlt ein Schritt." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Der bisherige Ablauf",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Schritt", "Inhalt", "Symbol"],
+            "zeilen": [
+              ["1", "Rücksendung geht ein", "abgerundetes Rechteck"],
+              ["2", "Ware auspacken und sichten", "Rechteck"],
+              ["3", "— hier fehlt etwas —", "Raute"],
+              ["4a", "Ware wieder einlagern", "Rechteck"],
+              ["4b", "Ware als B-Ware aussteuern", "Rechteck"],
+              ["5", "Kaufpreis erstatten", "Rechteck"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Entscheidung gehört in Schritt 3?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "„Ist die Ware wieder verkaufsfähig?“ mit den Ausgängen ja und nein.", "richtig": true,
+              "echo": "Richtig. Genau diese Frage trennt die beiden Folgewege 4a und 4b — eine Raute braucht eine Frage, deren Antworten zu den vorhandenen Ausgängen führen." },
+            { "text": "„Ware prüfen“ als weitere Tätigkeit.", "richtig": false,
+              "echo": "Eine Tätigkeit gehört ins Rechteck. An dieser Stelle steht eine Raute, und die verlangt eine Entscheidungsfrage." },
+            { "text": "„Kundin informieren“ mit anschließender Erstattung.", "richtig": false,
+              "echo": "Das ist wieder eine Tätigkeit und erklärt zudem nicht, warum es die beiden Wege 4a und 4b gibt." },
+            { "text": "„Ende des Prozesses“, weil die Sichtung abgeschlossen ist.", "richtig": false,
+              "echo": "Nach Schritt 3 folgen noch vier Schritte. Ein Ende steht außerdem im abgerundeten Rechteck." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Jeder Entscheidungsausgang wird beschriftet, und jeder Weg endet an einem Ende. Wenn ein Diagramm zwei Folgewege hat, muss davor eine Raute mit einer Frage stehen, die genau diese beiden Antworten hat.",
+      "quelle": "lf11-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf11-k2-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Am Retourenprozess der MAKEL Studio GmbH sind Lager, Buchhaltung und Vertrieb beteiligt; das bisherige Diagramm zeigt nur die Abfolge der Schritte." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, welche Darstellungsform die Übergaben zwischen den Beteiligten sichtbar macht.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Geeignet ist ein Flussdiagramm mit Bahnen, in dem jeder Beteiligte eine eigene Bahn erhält und jeder Schritt in der Bahn dessen steht, der ihn ausführt. Damit wird zweierlei sichtbar, was das einfache Ablaufdiagramm nicht zeigt: erstens die Zuständigkeit für jeden einzelnen Schritt, zweitens jede Übergabe, weil sie als Pfeil von einer Bahn in eine andere erscheint. Gerade diese Übergaben sind die typischen Schwachstellen — dort entstehen Wartezeiten, Informationsverluste und Doppelerfassungen. Im Retourenprozess wären so die Übergaben vom Lager an die Buchhaltung und vom Vertrieb zurück ins Lager sofort erkennbar und damit auch die Stellen, an denen die Bearbeitung liegen bleibt.",
+        "raster": [
+          { "kriterium": "Darstellung mit Bahnen je Beteiligtem genannt", "punkte": 1 },
+          { "kriterium": "Erklärt, dass Zuständigkeiten und Übergaben dadurch sichtbar werden", "punkte": 1 },
+          { "kriterium": "Bezug zu Schnittstellenproblemen hergestellt (Warten, Informationsverlust, Doppelerfassung)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Bahnen je Beteiligtem machen Zuständigkeiten und Schnittstellen sichtbar. Und ein Prozessbild sollte auf eine Seite passen — sonst liest es niemand.",
+      "quelle": "lf11-k2, Abschnitt b2"
+    }
+  ]
+}

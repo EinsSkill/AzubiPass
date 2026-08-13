@@ -1,0 +1,132 @@
+{
+  "lernfeld": "lf13",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf13-k4-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Pop-up-Store der MAKEL Studio GmbH schließt nach drei Monaten; das Projekt soll ordentlich beendet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die fünf Schritte des Projektabschlusses.",
+          "elemente": [
+            { "text": "Erfahrungen auswerten und auffindbar ablegen", "position": 4 },
+            { "text": "Ergebnis gegen den Projektauftrag prüfen", "position": 1 },
+            { "text": "Abschlusspräsentation vor dem Auftraggeber", "position": 5 },
+            { "text": "Schriftliche Abnahme durch den Auftraggeber", "position": 2 },
+            { "text": "Übergabe an den Betrieb mit Restpunkten und Terminen", "position": 3 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Ein Projekt endet mit der schriftlichen Abnahme, nicht mit der letzten Tätigkeit. Geprüft wird gegen den {{begriff:projektauftrag|Projektauftrag}}, und die Übergabe an den Betrieb macht aus dem Projekt einen Prozess.",
+      "quelle": "lf13-k4, Abschnitt b1"
+    },
+
+    {
+      "id": "lf13-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Abschlussbericht zum Pop-up-Store der MAKEL Studio GmbH liegt vor und soll geprüft werden." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Inhalt des Abschlussberichts",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Abschnitt", "Inhalt des Berichts"],
+            "zeilen": [
+              ["Ziel", "„Einen Pop-up-Store eröffnen.“"],
+              ["Ergebnis", "„Der Store wurde eröffnet und drei Monate betrieben.“"],
+              ["Kosten", "keine Angabe zum Soll-Ist-Vergleich"],
+              ["Termine", "„Die Eröffnung fand statt.“ Ohne Vergleich zum Plantermin"],
+              ["Offene Punkte", "nicht aufgeführt"],
+              ["Abnahme", "„Erfolgt.“ Ohne Datum und Unterschrift"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Angaben fehlen oder sind unzureichend? Kreuzen Sie alle zutreffenden an.",
+          "mehrfach": true,
+          "optionen": [
+            { "text": "Das Ziel ist nicht messbar formuliert.", "richtig": true,
+              "echo": "Richtig. Ziele werden mit Zahl und Termin formuliert — sonst lässt sich am Ende nicht feststellen, ob sie erreicht wurden." },
+            { "text": "Der Soll-Ist-Vergleich der Kosten fehlt.", "richtig": true,
+              "echo": "Richtig. Ohne Vergleich zum Budget ist keine Aussage über den Projekterfolg möglich." },
+            { "text": "Der Vergleich des Ist-Termins mit dem Plantermin fehlt.", "richtig": true,
+              "echo": "Richtig. „Die Eröffnung fand statt“ sagt nichts darüber, ob sie pünktlich war." },
+            { "text": "Offene Punkte mit Termin und Verantwortlichem fehlen.", "richtig": true,
+              "echo": "Richtig. Restpunkte werden mit Termin und Verantwortlichem festgehalten, sonst bleiben sie liegen." },
+            { "text": "Der Bericht nennt ein Ergebnis.", "richtig": false,
+              "echo": "Dass ein Ergebnis genannt wird, ist richtig — es ist nur nicht am Ziel gemessen." },
+            { "text": "Der Bericht erwähnt die Abnahme.", "richtig": false,
+              "echo": "Die Erwähnung ist richtig. Dass Datum und Unterschrift fehlen, ist ein Formmangel, kein fehlender Abschnitt." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Das Ergebnis wird gegen den Projektauftrag geprüft — also gegen Ziel, Budget und Termin. Ein Bericht ohne Soll-Ist-Vergleich beschreibt nur, dass etwas passiert ist, nicht ob es gelungen ist.",
+      "quelle": "lf13-k4, Abschnitt b1"
+    },
+
+    {
+      "id": "lf13-k4-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Nach dem Ende des Pop-up-Stores der MAKEL Studio GmbH sollen die Beteiligten sofort in ihre Abteilungen zurückkehren; die Auswertung will Yuki Bergmann „bei Gelegenheit“ nachholen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum die Auswertung vor der Auflösung des Teams stattfinden soll.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Solange das Team zusammen ist, sind die Erfahrungen noch vollständig und frisch verfügbar. Die Auswertung fragt, was gut lief, was schlecht lief, woran es lag und was künftig geändert wird — diese Fragen lassen sich nur beantworten, wenn die Beteiligten anwesend sind und sich an konkrete Situationen erinnern. Sind alle zurück im Tagesgeschäft, findet der Termin erfahrungsgemäß nicht mehr statt, und mit jeder Woche verblassen die Einzelheiten; übrig bleiben allgemeine Eindrücke statt konkreter Erkenntnisse. Verloren geht damit der eigentliche Nutzen: Ergebnisse der Auswertung sollen konkret formuliert und auffindbar abgelegt werden, damit das nächste Projekt davon profitiert. Außerdem gehört zum Abschluss, offene Restpunkte mit Termin und Verantwortlichem festzuhalten — auch das setzt voraus, dass die Zuständigen noch zusammensitzen.",
+        "raster": [
+          { "kriterium": "Verfügbarkeit und Frische der Erfahrungen als Grund genannt", "punkte": 1 },
+          { "kriterium": "Erkannt, dass der Termin nach der Auflösung faktisch nicht mehr stattfindet", "punkte": 1 },
+          { "kriterium": "Nutzen für künftige Projekte beziehungsweise Wissenssicherung genannt", "punkte": 1 },
+          { "kriterium": "Bezug zu Restpunkten, Verantwortlichkeiten oder auffindbarer Ablage hergestellt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die Auswertung fragt: Was lief gut, was schlecht, woran lag es, was ändern wir? Abweichungen werden dabei offen benannt, nicht kaschiert — ein geschöntes Fazit nützt dem nächsten Projekt nichts.",
+      "quelle": "lf13-k4, Abschnitt b2"
+    }
+  ]
+}

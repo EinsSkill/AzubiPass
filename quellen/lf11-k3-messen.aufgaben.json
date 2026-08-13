@@ -1,0 +1,132 @@
+{
+  "lernfeld": "lf11",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf11-k3-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Retourenprozess der MAKEL Studio GmbH soll gemessen werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Was beschreibt die jeweilige Größe?",
+          "ziele": [
+            "die gesamte Zeit vom Auslöser bis zum Ergebnis",
+            "die Zeit, in der tatsächlich am Vorgang gearbeitet wird",
+            "die Zeit, in der der Vorgang unbearbeitet wartet",
+            "der Anteil der Bearbeitungszeit an der Durchlaufzeit",
+            "der Anteil fehlerhaft bearbeiteter Vorgänge"
+          ],
+          "elemente": [
+            { "text": "Durchlaufzeit", "loesung": "die gesamte Zeit vom Auslöser bis zum Ergebnis" },
+            { "text": "Bearbeitungszeit", "loesung": "die Zeit, in der tatsächlich am Vorgang gearbeitet wird" },
+            { "text": "Liegezeit", "loesung": "die Zeit, in der der Vorgang unbearbeitet wartet" },
+            { "text": "Flussgrad", "loesung": "der Anteil der Bearbeitungszeit an der Durchlaufzeit" },
+            { "text": "Fehlerquote", "loesung": "der Anteil fehlerhaft bearbeiteter Vorgänge" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Durchlaufzeit = Bearbeitung + Liegezeit + Transport + Prüfung. Nur die Bearbeitungszeit ist aus Kundensicht wertschöpfend — alles andere ist Zeit, für die niemand zahlen möchte.",
+      "quelle": "lf11-k3, Abschnitt b2"
+    },
+
+    {
+      "id": "lf11-k3-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+
+      "variablen": {
+        "bearbeitung": { "von": 20, "bis": 60, "schritt": 5 },
+        "liegezeit": { "von": 600, "bis": 2400, "schritt": 60 },
+        "transport": { "von": 30, "bis": 120, "schritt": 15 },
+        "pruefung": { "von": 10, "bis": 40, "schritt": 5 }
+      },
+      "abgeleitet": {
+        "durchlaufzeit": "bearbeitung + liegezeit + transport + pruefung",
+        "flussgrad": "runde(bearbeitung / durchlaufzeit * 100, 2)"
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für eine Retoure des Onlineshops der MAKEL Studio GmbH wurden die Teilzeiten gemessen." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Gemessene Teilzeiten einer Retoure",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Teilzeit", "Minuten"],
+            "zeilen": [
+              ["Bearbeitungszeit", "{bearbeitung}"],
+              ["Liegezeit", "{liegezeit}"],
+              ["Transportzeit", "{transport}"],
+              ["Prüfzeit", "{pruefung}"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Durchlaufzeit", "einheit": "Minuten",
+          "loesung": "durchlaufzeit", "punkte": 2 },
+        { "block": "zahl", "label": "Flussgrad", "einheit": "%",
+          "loesung": "flussgrad", "punkte": 2, "folgefehler_aus": ["durchlaufzeit"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Flussgrad = Bearbeitungszeit ÷ Durchlaufzeit × 100. In Büroprozessen liegt er meist im einstelligen Prozentbereich — der Vorgang wartet also den größten Teil der Zeit. Ein niedriger Flussgrad zeigt großen Verbesserungsspielraum.",
+      "quelle": "lf11-k3, Abschnitt b1"
+    },
+
+    {
+      "id": "lf11-k3-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Beschwerden über den Onlineshop der MAKEL Studio GmbH nehmen zu; Kundinnen schreiben, sie warteten zu lange auf ihr Geld." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie, welche Kennzahl zuerst untersucht werden sollte, und begründen Sie Ihre Wahl.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Zuerst zu untersuchen ist die Durchlaufzeit der Retoure, denn genau sie beschreibt, was die Kundinnen beanstanden: die Zeit von der Rückmeldung bis zur Erstattung. Sinnvoll ist, sie in ihre Bestandteile zu zerlegen und den Flussgrad zu bestimmen. Ist der Flussgrad sehr niedrig, liegt das Problem nicht an zu langsamer Arbeit, sondern an Liegezeiten — dann muss man dort ansetzen und nicht bei der Bearbeitung. Die Fehlerquote sollte begleitend betrachtet werden, weil fehlerhafte Vorgänge Nacharbeit und Rückfragen erzeugen und die Durchlaufzeit zusätzlich verlängern. Wichtig ist ein Vergleichsmaßstab: Eine Durchlaufzeit von zwei Tagen sagt für sich nichts aus, sie muss gegen den Vormonat, ein Ziel oder den Wettbewerb gestellt werden. Tempo- und Qualitätskennzahlen gehören dabei zusammen, sonst wird nur schneller und dafür schlechter gearbeitet.",
+        "raster": [
+          { "kriterium": "Durchlaufzeit als passende Kennzahl genannt und am Beschwerdeinhalt begründet", "punkte": 1 },
+          { "kriterium": "Zerlegung in Teilzeiten beziehungsweise Flussgrad zur Ursachensuche genannt", "punkte": 1 },
+          { "kriterium": "Vergleichsmaßstab als Voraussetzung der Beurteilung genannt", "punkte": 1 },
+          { "kriterium": "Erkannt, dass Tempo- und Qualitätskennzahlen zusammengehören", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Kennzahlen brauchen einen Vergleichsmaßstab — Vormonat, Ziel oder Wettbewerb. Und wer nur das Tempo misst, bekommt Tempo auf Kosten der Qualität.",
+      "quelle": "lf11-k3, Abschnitt b2"
+    }
+  ]
+}

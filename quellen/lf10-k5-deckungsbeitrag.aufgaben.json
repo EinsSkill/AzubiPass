@@ -1,0 +1,125 @@
+{
+  "lernfeld": "lf10",
+  "kapitel": "k5",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf10-k5-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski zeigt einem Auszubildenden, wie sich das Betriebsergebnis der MAKEL Studio GmbH aufbaut." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die fünf Zeilen des Rechenschemas von oben nach unten.",
+          "elemente": [
+            { "text": "Deckungsbeitrag", "position": 3 },
+            { "text": "Umsatzerlöse", "position": 1 },
+            { "text": "Betriebsergebnis", "position": 5 },
+            { "text": "− variable Kosten", "position": 2 },
+            { "text": "− Fixkosten", "position": 4 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{begriff:deckungsbeitrag|Deckungsbeitrag}} = Erlös − variable Kosten. Betriebsergebnis = Gesamtdeckungsbeitrag − Fixkosten. Die Fixkosten werden erst ganz unten abgezogen, weil sie sich keinem einzelnen Stück zurechnen lassen.",
+      "quelle": "lf10-k5, Abschnitt b1"
+    },
+
+    {
+      "id": "lf10-k5-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+
+      "variablen": {
+        "preis": { "von": 60, "bis": 110, "schritt": 5 },
+        "varkosten": { "von": 25, "bis": 50, "schritt": 5 },
+        "fixkosten": { "von": 12000, "bis": 40000, "schritt": 2000 }
+      },
+      "abgeleitet": {
+        "db_stueck": "preis - varkosten",
+        "break_even": "runde(fixkosten / db_stueck, 2)"
+      },
+      "pruefung_variablen": "db_stueck > 15",
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner will wissen, ab welcher Stückzahl die Serie des neuen Overshirts der MAKEL Studio GmbH ihre Kosten deckt." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Werte der Overshirt-Serie",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Nettoverkaufspreis je Overshirt", "{preis} €"],
+              ["Variable Kosten je Overshirt", "{varkosten} €"],
+              ["Fixkosten der Serie", "{fixkosten} €"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Deckungsbeitrag je Overshirt", "einheit": "€",
+          "loesung": "db_stueck", "punkte": 2 },
+        { "block": "zahl", "label": "Break-Even-Menge", "einheit": "Stück",
+          "loesung": "break_even", "punkte": 3, "folgefehler_aus": ["db_stueck"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "{{begriff:break-even|Break-Even}} = Fixkosten ÷ Deckungsbeitrag je Stück. Bis zu dieser Menge deckt jedes verkaufte Overshirt einen Teil der Fixkosten; ab dieser Menge wird Gewinn erwirtschaftet.",
+      "quelle": "lf10-k5, Abschnitt b2"
+    },
+
+    {
+      "id": "lf10-k5-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Boutique bietet der MAKEL Studio GmbH einen Zusatzauftrag über 300 Overshirts zu 58,00 € netto; die Selbstkosten betragen 64,00 €, die variablen Kosten 41,00 € je Stück, und die Fertigung hat freie Kapazität." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie, ob MAKEL diesen Auftrag annehmen sollte.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Preis von 58,00 € liegt unter den Selbstkosten von 64,00 €, also unter der langfristigen Preisuntergrenze. Entscheidend ist hier aber der Deckungsbeitrag: 58,00 € − 41,00 € = 17,00 € je Stück, bei 300 Stück also 5.100 € zusätzlicher Deckungsbeitrag. Da die Fixkosten ohnehin anfallen und die Kapazität frei ist, verbessert der Auftrag das Betriebsergebnis um genau diesen Betrag. Kurzfristig ist die Preisuntergrenze bei freien Kapazitäten die Höhe der variablen Kosten, und die wird deutlich überschritten. Der Auftrag sollte deshalb angenommen werden — allerdings unter Vorbehalten: Es dürfen keine Aufträge zum vollen Preis verdrängt werden, sonst wäre der entgangene Deckungsbeitrag gegenzurechnen. Außerdem darf der Sonderpreis nicht zum Maßstab werden, weil sonst andere Kunden ihn ebenfalls verlangen und die Fixkosten dauerhaft nicht mehr gedeckt sind. Auf Dauer müssen die Selbstkosten verdient werden.",
+        "raster": [
+          { "kriterium": "Deckungsbeitrag je Stück richtig berechnet (17,00 €)", "punkte": 1 },
+          { "kriterium": "Wirkung auf das Betriebsergebnis beziffert (5.100 €)", "punkte": 1 },
+          { "kriterium": "Kurzfristige Preisuntergrenze bei freier Kapazität richtig benannt", "punkte": 1 },
+          { "kriterium": "Klare Empfehlung zur Annahme ausgesprochen", "punkte": 1 },
+          { "kriterium": "Einschränkung genannt (Verdrängung von Vollpreisaufträgen oder Preisniveau dauerhaft)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Kurzfristige {{begriff:preisuntergrenze|Preisuntergrenze}}: variable Kosten bei freien Kapazitäten. Langfristige Preisuntergrenze: die Selbstkosten. Ein Auftrag unter Vollkosten kann richtig sein — als Dauerlösung ist er es nie.",
+      "quelle": "lf10-k5, Abschnitt b3"
+    }
+  ]
+}
