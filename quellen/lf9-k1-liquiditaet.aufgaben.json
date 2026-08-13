@@ -63,6 +63,7 @@
         "ende3": "ende2 + ein3 - aus3"
       },
       "pruefung_variablen": "ende2 < 0 && ende3 > 0",
+      "negativ_erlaubt": ["ende1", "ende2", "ende3"],
 
       "anzeige": [
         { "block": "text", "inhalt": "Tobias Renner verlangt für die Serienfertigung der Winterkollektion einen Liquiditätsplan der MAKEL Studio GmbH über drei Monate." },

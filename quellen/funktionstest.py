@@ -212,6 +212,125 @@ def probeklausur_daten():
     pruefe("Alle vorkommenden Block-Typen kennt der Renderer",
            not unbekannt, sorted(set(unbekannt)))
 
+    probeklausur_inhalt(bausteine, kapitel)
+
+
+def probeklausur_inhalt(bausteine, kapitel):
+    """Inhaltsprüfung über den gesamten Bestand, nicht nur über Buchführung.
+
+    Der Bestand deckt alle 13 Lernfelder ab. Was hier geprüft wird, sind die
+    Zusagen, die eine zusammengestellte Klausur einlösen muss: dass jede Aufgabe
+    ein echtes Kapitel hat, für sich bewertbar ist und ihr Punkteraster aufgeht.
+    """
+    print("\n· Probeklausur · Inhalt aller Lernfelder")
+
+    # --- Umfang und Abdeckung ----------------------------------------------
+    kennungen = [b["id"] for b in bausteine]
+    doppelt = sorted({k for k in kennungen if kennungen.count(k) > 1})
+    pruefe("Alle Baustein-Kennungen sind eindeutig", not doppelt, doppelt)
+
+    pruefe("Mindestens 243 Bausteine im Bestand", len(bausteine) >= 243,
+           len(bausteine))
+
+    # Die kanonische Kapitelliste steht in inhalt.json — nicht im Aufgabenbestand.
+    alle_kapitel = {f'{lf["id"]}:{k["id"]}'
+                    for lf in INHALT["lernfelder"] for k in lf["kapitel"]}
+    mit_aufgaben = {k["schluessel"] for k in kapitel}
+    ohne = sorted(alle_kapitel - mit_aufgaben)
+    pruefe(f"Alle {len(alle_kapitel)} Kapitel haben Aufgaben", not ohne, ohne)
+
+    fremd = sorted(mit_aufgaben - alle_kapitel)
+    pruefe("Jede Kapitelreferenz zeigt auf ein echtes Kapitel", not fremd, fremd)
+
+    # --- Pflichtfelder ------------------------------------------------------
+    PFLICHT = ("id", "kapitel", "lernfeld", "operator", "anforderungsbereich",
+               "punkte", "dauer_min", "anzeige", "eingabe", "bewertung",
+               "erklaerung", "quelle")
+    luecken = [f'{b.get("id", "?")}:{f}' for b in bausteine
+               for f in PFLICHT if not b.get(f)]
+    pruefe("Jeder Baustein hat alle Pflichtfelder", not luecken, luecken[:8])
+
+    # --- Anforderungsbereiche ----------------------------------------------
+    je_kapitel = {}
+    for b in bausteine:
+        je_kapitel.setdefault(f'{b["lernfeld"]}:{b["kapitel"]}', set()).add(
+            b["anforderungsbereich"])
+    unvollstaendig = sorted(k for k, a in je_kapitel.items() if {1, 2, 3} - a)
+    pruefe("Jedes Kapitel deckt AFB I, II und III ab",
+           not unvollstaendig, unvollstaendig)
+
+    ungueltig = sorted({b["id"] for b in bausteine
+                        if b["anforderungsbereich"] not in (1, 2, 3)})
+    pruefe("Jeder Anforderungsbereich ist I, II oder III", not ungueltig, ungueltig)
+
+    # --- Punkte und Dauer ---------------------------------------------------
+    # Grobe Plausibilität: rund ein Punkt je Bearbeitungsminute. Die Spanne ist
+    # bewusst weit — eine Begründung braucht Zeit ohne viele Punkte, eine
+    # Zuordnung umgekehrt. Ausreißer außerhalb der Spanne sind aber Tippfehler.
+    schief = sorted(f'{b["id"]}: {b["punkte"]}P/{b["dauer_min"]}min'
+                    for b in bausteine
+                    if not 0.5 <= b["punkte"] / b["dauer_min"] <= 2.0)
+    pruefe("Punkte und Dauer stehen in plausiblem Verhältnis", not schief, schief[:8])
+
+    unsinn = sorted(b["id"] for b in bausteine
+                    if b["punkte"] < 1 or b["dauer_min"] < 1
+                    or b["punkte"] > 20 or b["dauer_min"] > 20)
+    pruefe("Punkte und Dauer liegen im sinnvollen Bereich", not unsinn, unsinn)
+
+    # --- Lösungen und Punkteraster -----------------------------------------
+    ohne_loesung, raster_falsch, offen_ohne_muster, text_automatisch = [], [], [], []
+    for b in bausteine:
+        art = b["bewertung"].get("art")
+        bloecke = [e["block"] for e in b.get("eingabe") or []]
+
+        if art == "selbstbewertung":
+            raster = b["bewertung"].get("raster") or []
+            if not b["bewertung"].get("musterloesung") or not raster:
+                offen_ohne_muster.append(b["id"])
+            elif sum(k.get("punkte", 0) for k in raster) != b["punkte"]:
+                raster_falsch.append(
+                    f'{b["id"]}: Raster {sum(k.get("punkte", 0) for k in raster)}'
+                    f' ≠ {b["punkte"]} Punkte')
+        else:
+            # Freitext lässt sich nicht automatisch bewerten. Stünde er in einer
+            # automatisch bewerteten Aufgabe, wären seine Punkte nie erreichbar.
+            if "textfeld" in bloecke:
+                text_automatisch.append(b["id"])
+            for e in b.get("eingabe") or []:
+                if e["block"] == "auswahl":
+                    if not any(o.get("richtig") for o in e.get("optionen") or []):
+                        ohne_loesung.append(f'{b["id"]}:auswahl')
+                elif e["block"] == "zuordnung":
+                    ziele = e.get("ziele") or []
+                    for x in e.get("elemente") or []:
+                        if x.get("loesung") not in ziele:
+                            ohne_loesung.append(f'{b["id"]}:zuordnung:{x.get("text")}')
+                elif e["block"] == "reihenfolge":
+                    stellen = sorted(x.get("position") for x in e.get("elemente") or [])
+                    if stellen != list(range(1, len(stellen) + 1)):
+                        ohne_loesung.append(f'{b["id"]}:reihenfolge:{stellen}')
+                elif e.get("loesung") in (None, "", []):
+                    ohne_loesung.append(f'{b["id"]}:{e["block"]}')
+
+    pruefe("Jede automatisch bewertete Eingabe hat eine Lösung",
+           not ohne_loesung, ohne_loesung[:8])
+    pruefe("Freitext steht nur in selbst bewerteten Aufgaben",
+           not text_automatisch, text_automatisch)
+    pruefe("Jede offene Aufgabe hat Musterlösung und Punkteraster",
+           not offen_ohne_muster, offen_ohne_muster)
+    pruefe("Jedes Punkteraster ergibt genau die Punkte der Aufgabe",
+           not raster_falsch, raster_falsch[:8])
+
+    # --- Musterunternehmen --------------------------------------------------
+    # Kontextgebundene Aufgaben nennen MAKEL oder eine klar fiktive Gegenpartei.
+    # Geprüft wird der Anteil, nicht jeder Einzelfall: Eine reine Begriffsfrage
+    # braucht keinen Betrieb.
+    mit_makel = [b for b in bausteine
+                 if "MAKEL" in json.dumps(b, ensure_ascii=False)]
+    pruefe("Der Bestand ist durchgehend auf die Musterfirma bezogen",
+           len(mit_makel) >= len(bausteine) * 0.8,
+           f"{len(mit_makel)} von {len(bausteine)} Bausteinen nennen MAKEL")
+
 
 def probeklausur_build():
     print("\n· Probeklausur · Build und Offline")
@@ -277,8 +396,14 @@ async () => {
       if (b.pruefung_variablen && P.rechne(b.pruefung_variablen, w) !== true) {
         bedingung_falsch.push(b.id);
       }
+      // Negative Werte sind fast immer ein Rechenfehler — außer die Aufgabe
+      // will sie: Ein Liquiditätsplan soll gerade zeigen, dass ein Monat ins
+      // Minus läuft. Solche Größen muss der Baustein ausdrücklich benennen.
+      const darfNegativ = b.negativ_erlaubt || [];
       for (const [name, wert] of Object.entries(w)) {
-        if (wert < 0 || !isFinite(wert)) unplausibel.push(b.id + "." + name + "=" + wert);
+        if (!isFinite(wert) || (wert < 0 && darfNegativ.indexOf(name) === -1)) {
+          unplausibel.push(b.id + "." + name + "=" + wert);
+        }
       }
     }
   }
@@ -302,21 +427,64 @@ async () => {
   raus.rechnet = Math.abs(P.rechne("runde(1000 / 3, 2)", {}) - 333.33) < 1e-9;
 
   // --- Zusammensteller -----------------------------------------------------
+  // „alle" sind inzwischen alle 75 Kapitel. Eine Klausur, die jedes davon
+  // abdeckt, bräuchte mehrere Stunden — deshalb wird die Vollabdeckung an
+  // einer realistischen Auswahl geprüft und „alle" nur dort verwendet, wo es
+  // um die ehrliche Meldung „zu kurz" geht.
   const alle = V.kapitel.map(k => k.schluessel);
   const zwei = alle.slice(0, 2);
+  const auswahl = alle.slice(0, 10);
 
   const a1 = P.stelleZusammen({ kapitel: zwei, dauer: 45, seed: "S1" });
   raus.nur_gewaehlt = a1.aufgaben.every(id =>
     zwei.indexOf(P.baustein(id).lernfeld + ":" + P.baustein(id).kapitel) !== -1);
   raus.keine_doppelte = new Set(a1.aufgaben).size === a1.aufgaben.length;
 
-  const a2 = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "S2" });
+  const a2 = P.stelleZusammen({ kapitel: auswahl, dauer: 90, seed: "S2" });
   raus.abdeckung = new Set(a2.aufgaben.map(id =>
-    P.baustein(id).lernfeld + ":" + P.baustein(id).kapitel)).size === alle.length;
+    P.baustein(id).lernfeld + ":" + P.baustein(id).kapitel)).size === auswahl.length;
   raus.dauer_gehalten = a2.minuten <= 90;
   raus.dauer_genutzt = a2.minuten >= 90 * 0.8;
   raus.typenmischung = new Set(a2.aufgaben.flatMap(id =>
     P.baustein(id).eingabe.map(e => e.block))).size >= 4;
+
+  // Abwechslung an der Oberfläche: Drei gleichartige Aufgaben hintereinander
+  // lassen eine Klausur wie ein Arbeitsblatt wirken. Geprüft wird über viele
+  // Seeds und über eine enge Auswahl von drei Kapiteln — dort ist der Vorrat
+  // am kleinsten und die Gefahr am größten.
+  function artFolge(klausur) {
+    return klausur.aufgaben.map(id => P.baustein(id).eingabe.map(e => e.block).join("+"));
+  }
+  function dreimalGleich(folge) {
+    for (let i = 0; i + 2 < folge.length; i++) {
+      if (folge[i] === folge[i + 1] && folge[i + 1] === folge[i + 2]) return true;
+    }
+    return false;
+  }
+  let haeufungWeit = 0, haeufungEng = 0, laeufe = 0;
+  for (let s = 0; s < 40; s++) {
+    const weit = P.stelleZusammen({ kapitel: auswahl, dauer: 90, seed: "T" + s });
+    if (weit.aufgaben && weit.aufgaben.length >= 3) {
+      laeufe++;
+      if (dreimalGleich(artFolge(weit))) haeufungWeit++;
+    }
+    const drei = alle.slice(s % (alle.length - 3), (s % (alle.length - 3)) + 3);
+    const eng = P.stelleZusammen({ kapitel: drei, dauer: 45, seed: "E" + s });
+    if (eng.aufgaben && eng.aufgaben.length >= 3 && dreimalGleich(artFolge(eng))) {
+      haeufungEng++;
+    }
+  }
+  raus.keine_dreierhaeufung = haeufungWeit === 0 && haeufungEng === 0;
+  raus.haeufung_details = "weit " + haeufungWeit + ", eng " + haeufungEng
+                        + " von je 40 Laeufen (" + laeufe + " gewertet)";
+
+  // Drei Kapitel müssen für eine abwechslungsreiche Klausur reichen.
+  const drei0 = P.stelleZusammen({ kapitel: alle.slice(0, 3), dauer: 45, seed: "D1" });
+  raus.drei_kapitel_reichen = !drei0.fehler && drei0.aufgaben.length >= 5;
+  raus.drei_kapitel_vielfalt = new Set(drei0.aufgaben.flatMap(id =>
+    P.baustein(id).eingabe.map(e => e.block))).size >= 3;
+  raus.drei_kapitel_afb = new Set(drei0.aufgaben.map(id =>
+    P.baustein(id).anforderungsbereich)).size >= 2;
 
   const kurz = P.stelleZusammen({ kapitel: alle, dauer: 15, seed: "S3" });
   raus.zu_kurz = kurz.fehler === "zu_kurz" && kurz.mindestdauer > 15;
@@ -324,13 +492,13 @@ async () => {
   const leer = P.stelleZusammen({ kapitel: [], dauer: 60, seed: "S4" });
   raus.leer_abgelehnt = leer.fehler === "leer" && leer.aufgaben.length === 0;
 
-  const g1 = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "gleich" });
-  const g2 = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "gleich" });
+  const g1 = P.stelleZusammen({ kapitel: auswahl, dauer: 90, seed: "gleich" });
+  const g2 = P.stelleZusammen({ kapitel: auswahl, dauer: 90, seed: "gleich" });
   raus.seed_klausur_gleich = JSON.stringify(g1.aufgaben) === JSON.stringify(g2.aufgaben);
 
   let anders = 0;
   for (let i = 0; i < 8; i++) {
-    const v = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "neu" + i,
+    const v = P.stelleZusammen({ kapitel: auswahl, dauer: 90, seed: "neu" + i,
                                  vorher: g1.aufgaben });
     if (JSON.stringify(v.aufgaben) !== JSON.stringify(g1.aufgaben)) anders++;
   }
@@ -378,6 +546,11 @@ def probeklausur_logik(pg):
     pruefe("Dauerziel wird nicht überschritten", r["dauer_gehalten"])
     pruefe("Dauerziel wird weitgehend ausgenutzt", r["dauer_genutzt"])
     pruefe("Sinnvolle Typenmischung", r["typenmischung"])
+    pruefe("Nie drei gleichartige Aufgaben hintereinander",
+           r["keine_dreierhaeufung"], r["haeufung_details"])
+    pruefe("Drei Kapitel ergeben eine vollständige Klausur", r["drei_kapitel_reichen"])
+    pruefe("Drei Kapitel ergeben verschiedene Aufgabenarten", r["drei_kapitel_vielfalt"])
+    pruefe("Drei Kapitel ergeben gemischte Anforderungsbereiche", r["drei_kapitel_afb"])
     pruefe("Zu kurze Dauer wird ehrlich gemeldet", r["zu_kurz"])
     pruefe("Leere Auswahl lässt sich nicht starten", r["leer_abgelehnt"])
     pruefe("Identischer Seed erzeugt identische Klausur", r["seed_klausur_gleich"])
@@ -489,7 +662,7 @@ async () => {
     P.bewerte(offB.id).punkte === offB.bewertung.raster[0].punkte;
 
   // Kapitelwerte ergeben zusammen den Gesamtwert
-  const alle = V.kapitel.map(k => k.schluessel);
+  const alle = V.kapitel.map(k => k.schluessel).slice(0, 10);
   const klausur = P.stelleZusammen({ kapitel: alle, dauer: 90, seed: "summe" });
   const werte = {}, antworten = {};
   klausur.aufgaben.forEach(id => { werte[id] = P.werteZiehen(P.baustein(id), "summe"); });
@@ -546,11 +719,18 @@ def probeklausur_klausur(b, w):
     pg.wait_for_timeout(900)
     pruefe("Einstieg unter Üben führt zur Kapitelwahl",
            pg.locator("#ueben .pk--kapitel").count() > 0)
-    pruefe("Nur Kapitel mit Aufgaben stehen zur Wahl",
-           pg.locator("#ueben .pk--gruppe").count() == 1,
-           pg.locator("#ueben .pk--gruppe").count())
+    # Die Wahl zeigt nur Lernfelder, für die es Aufgaben gibt. Inzwischen sind
+    # das alle 13 — geprüft wird deshalb gegen inhalt.json statt gegen eine
+    # feste Zahl, damit die Prüfung beim nächsten Ausbau nicht wieder veraltet.
+    gruppen = pg.locator("#ueben .pk--gruppe").count()
+    pruefe("Nur Lernfelder mit Aufgaben stehen zur Wahl",
+           gruppen == len(INHALT["lernfelder"]),
+           f'{gruppen} Gruppen, {len(INHALT["lernfelder"])} Lernfelder')
 
-    pg.locator("#ueben .pk--gruppenalle").click()
+    # „Ganzes Lernfeld" gibt es jetzt je Gruppe einmal. Gewählt wird die
+    # Buchführung: Der weitere Ablauf prüft unter anderem ein Zahlenfeld, und
+    # nur ein rechnendes Lernfeld enthält sicher Aufgaben mit Zahleneingabe.
+    pg.get_by_role("button", name="Alle Kapitel wählen in Buchführung").click()
     pg.get_by_role("button", name="90 Min.").click()
     pg.wait_for_timeout(200)
     pruefe("Auswahl prüfen ist erst mit Kapiteln möglich",
