@@ -1,0 +1,129 @@
+{
+  "lernfeld": "lf2",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf2-k1-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Bildschirmarbeitsplatz in der Verwaltung der MAKEL Studio GmbH soll geprüft werden." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Beschreibung des Arbeitsplatzes",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Merkmal", "Ist-Zustand"],
+            "zeilen": [
+              ["Bildschirmaufstellung", "direkt vor dem Fenster"],
+              ["Oberste Bildschirmzeile", "deutlich über Augenhöhe"],
+              ["Sitzhaltung", "Ellenbogen, Hüfte und Knie jeweils etwa im rechten Winkel"],
+              ["Kabel", "im Kabelkanal geführt"],
+              ["Beleuchtung", "blendfrei, zusätzlich Tageslicht"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Mängel enthält der Arbeitsplatz? Kreuzen Sie alle zutreffenden an.",
+          "mehrfach": true,
+          "optionen": [
+            { "text": "Der Bildschirm steht direkt vor dem Fenster.", "richtig": true,
+              "echo": "Richtig. Der Bildschirm steht seitlich zum Fenster — weder davor noch mit dem Rücken dazu, sonst blendet oder spiegelt es." },
+            { "text": "Die oberste Bildschirmzeile liegt über Augenhöhe.", "richtig": true,
+              "echo": "Richtig. Sie liegt auf oder unter Augenhöhe, damit der Blick leicht gesenkt ist." },
+            { "text": "Ellenbogen, Hüfte und Knie bilden rechte Winkel.", "richtig": false,
+              "echo": "Das ist genau die richtige Sitzhaltung." },
+            { "text": "Die Kabel sind im Kabelkanal geführt.", "richtig": false,
+              "echo": "Das ist korrekt und verhindert Stolpergefahr." },
+            { "text": "Die Beleuchtung ist blendfrei.", "richtig": false,
+              "echo": "Auch das ist in Ordnung — Licht ist einer der fünf Umgebungsfaktoren." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "{{begriff:ergonomie|Ergonomie}} passt die Arbeit an den Menschen an, nicht umgekehrt. Eingestellt wird von unten nach oben: Stuhl, Tisch, Bildschirm, Tastatur und Maus.",
+      "quelle": "lf2-k1, Abschnitt b2"
+    },
+
+    {
+      "id": "lf2-k1-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Vier Maßnahmen im Büro der MAKEL Studio GmbH sollen ihrem Zweck zugeordnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welchen Zweck verfolgt die Maßnahme in erster Linie?",
+          "ziele": ["Gesundheit", "Datenschutz", "Sicherheit", "Ordnung"],
+          "elemente": [
+            { "text": "Höhenverstellbarer Bürostuhl", "loesung": "Gesundheit" },
+            { "text": "Automatische Bildschirmsperre", "loesung": "Datenschutz" },
+            { "text": "Kabelkanal unter dem Schreibtisch", "loesung": "Sicherheit" },
+            { "text": "Beschriftete Ablagefächer für laufende Vorgänge", "loesung": "Ordnung" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die fünf Umgebungsfaktoren sind Licht, Lärm, Klima, Platz und Gestaltung. Daneben stehen Datenschutz und Arbeitssicherheit — am selben Arbeitsplatz, aber mit eigenen Zielen.",
+      "quelle": "lf2-k1, Abschnitt b1"
+    },
+
+    {
+      "id": "lf2-k1-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "In der Verwaltung der MAKEL Studio GmbH liegt ein Kabel quer über den Gang, und an einem unbesetzten Arbeitsplatz ist ein Kundendatensatz auf dem entsperrten Bildschirm geöffnet." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, welche Maßnahme zuerst umgesetzt wird.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Zuerst wird das Kabel gesichert. Maßgeblich ist das Risiko: Ein quer liegendes Kabel kann sofort zu einem Sturz mit Personenschaden führen; die Gefahr besteht in jedem Moment und trifft die körperliche Unversehrtheit. Der offene Bildschirm ist ebenfalls ein ernster Mangel, aber der mögliche Schaden ist ein Datenschutzverstoß und setzt voraus, dass eine unbefugte Person tatsächlich Einblick nimmt. Beide Mängel müssen behoben werden, und zwar unmittelbar nacheinander: erst das Kabel aus dem Gang nehmen oder abdecken, dann den Bildschirm sperren. Anschließend gehören beide Punkte gemeldet, damit die Ursachen abgestellt werden — ein Kabelkanal für den Gang und eine automatische Bildschirmsperre nach kurzer Zeit. Der Arbeitgeber ist ohnehin verpflichtet, Gefährdungen zu beurteilen und zu dokumentieren.",
+        "raster": [
+          { "kriterium": "Klare Priorität gesetzt: Kabel zuerst", "punkte": 1 },
+          { "kriterium": "Begründung über die unmittelbare Gefahr für Personen", "punkte": 1 },
+          { "kriterium": "Datenschutzverstoß trotzdem als zu behebender Mangel benannt", "punkte": 1 },
+          { "kriterium": "Dauerhafte Ursachenbeseitigung oder Meldung genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "{{par:arbschg-5|§ 5 ArbSchG}}: Der Arbeitgeber beurteilt Gefährdungen und dokumentiert sie. Risikobasiert heißt: Was Menschen sofort schaden kann, kommt zuerst.",
+      "quelle": "lf2-k1, Abschnitt b3"
+    }
+  ]
+}

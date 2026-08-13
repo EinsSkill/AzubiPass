@@ -1,0 +1,110 @@
+{
+  "lernfeld": "lf5",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf5-k3-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Vier Maßnahmen der Herbstkampagne der MAKEL Studio GmbH sollen dem passenden Instrument zugeordnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Zu welchem Instrument des Marketing-Mix gehört die Maßnahme?",
+          "ziele": ["Produktpolitik", "Preispolitik", "Distributionspolitik", "Kommunikationspolitik"],
+          "elemente": [
+            { "text": "Das Overshirt wird in einer zusätzlichen Farbvariante angeboten", "loesung": "Produktpolitik" },
+            { "text": "Wholesale-Kunden erhalten ein verlängertes Zahlungsziel", "loesung": "Preispolitik" },
+            { "text": "Die Kollektion wird zusätzlich über den Flagshipstore verkauft", "loesung": "Distributionspolitik" },
+            { "text": "Ein Newsletter kündigt die Herbstkampagne an", "loesung": "Kommunikationspolitik" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Marketing-Mix umfasst Produkt-, Preis-, Distributions- und Kommunikationspolitik — die vier P. Zahlungsziele sind Preispolitik, auch wenn der Listenpreis unverändert bleibt.",
+      "quelle": "lf5-k3, Abschnitt c2"
+    },
+
+    {
+      "id": "lf5-k3-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Das Overshirt der MAKEL Studio GmbH hat im Onlineshop eine auffällig hohe Retourenquote; als Rücksendegrund wird fast immer „Größe passt nicht“ angegeben." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Maßnahme setzt an der Ursache an?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Größentabelle und Passformhinweise ergänzen und den Schnitt prüfen.", "richtig": true,
+              "echo": "Richtig. Das ist Produktpolitik im weiteren Sinne: Sie setzt an der Ursache an — der Unsicherheit über die Größe." },
+            { "text": "Mehr Werbung für das Overshirt schalten.", "richtig": false,
+              "echo": "Mehr Werbung erhöht die Zahl der Bestellungen und damit auch die Zahl der Retouren. Die Ursache bleibt." },
+            { "text": "Den Preis senken, damit die Kundschaft die Größe eher akzeptiert.", "richtig": false,
+              "echo": "Der Preis ist nicht der Rücksendegrund. Ein Nachlass senkt nur die Marge." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Erst das Ziel, dann die Maßnahme. Wer die Ursache nicht kennt, wählt fast immer das falsche Instrument — hier hilft Information über das Produkt, nicht Werbung und nicht der Preis.",
+      "quelle": "lf5-k3, Abschnitt c3"
+    },
+
+    {
+      "id": "lf5-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Das neue Overshirt der MAKEL Studio GmbH soll im Markt positioniert werden; MAKEL steht für japanisch geprägte Wabi-Sabi-Streetwear mit oversized Schnitten und liegt im Preis leicht über dem Marktschnitt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Entwickeln Sie eine Positionierung für das Overshirt und begründen Sie sie.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Das Overshirt sollte als hochwertiges, langlebiges Teil mit eigenständiger Formensprache positioniert werden — nicht als günstige Alternative zu vergleichbaren Produkten. Es fügt sich damit in die bestehende Positionierung von MAKEL ein: japanisch geprägte Wabi-Sabi-Ästhetik, oversized Boxy-Schnitte, Verarbeitung und Materialqualität als Kern des Versprechens. Die Zielgruppe sind Kundinnen und Kunden, die bewusst wenige, aber gute Stücke kaufen und dafür bereit sind, über dem Marktschnitt zu zahlen. Der Nutzen lautet: ein Teil, das über mehrere Saisons getragen wird, statt eines Trendartikels für eine Saison. Diese Positionierung ist stimmig, weil sie das bestehende Preisniveau rechtfertigt, statt ihm zu widersprechen, und weil sie das Overshirt an die vorhandene Kollektion anschließt, statt einen Fremdkörper zu schaffen. Wichtig ist, dass alle vier Instrumente dieselbe Richtung tragen: Produkt, Preis, Vertriebsweg und Ansprache dürfen sich nicht widersprechen — ein Premiumversprechen mit Dauerrabatt wäre unglaubwürdig.",
+        "raster": [
+          { "kriterium": "Konkrete Positionierung formuliert", "punkte": 1 },
+          { "kriterium": "Anschluss an die bestehende Positionierung von MAKEL hergestellt", "punkte": 1 },
+          { "kriterium": "Zielgruppe benannt", "punkte": 1 },
+          { "kriterium": "Nutzen aus Kundensicht formuliert", "punkte": 1 },
+          { "kriterium": "Stimmigkeit mit dem Preisniveau oder den übrigen Instrumenten begründet", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Marketingkonzeption: erst Ziel, dann Strategie, dann Maßnahme. Eine Positionierung ist erst brauchbar, wenn sich daraus ableiten lässt, was man nicht tut.",
+      "quelle": "lf5-k3, Abschnitt c1"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "lernfeld": "lf2",
+  "kapitel": "k6",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf2-k6-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für eine Recherche der MAKEL Studio GmbH liegen drei Unterlagen vor." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Um welche Art von Quelle handelt es sich?",
+          "ziele": [
+            "interne Quelle",
+            "externe, neutrale Quelle",
+            "externe, interessengeleitete Quelle"
+          ],
+          "elemente": [
+            { "text": "Die eigene Umsatzstatistik des Onlineshops", "loesung": "interne Quelle" },
+            { "text": "Der Gesetzestext im amtlichen Wortlaut", "loesung": "externe, neutrale Quelle" },
+            { "text": "Die Produktbroschüre eines Stofflieferanten", "loesung": "externe, interessengeleitete Quelle" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Interne Quellen zuerst — sie sind kostenlos, aktuell und betreffen den eigenen Betrieb. Bei Rechtsfragen ist der Gesetzestext die maßgebliche Quelle. Eine Broschüre ist nicht falsch, aber sie will etwas verkaufen.",
+      "quelle": "lf2-k6, Abschnitt b1"
+    },
+
+    {
+      "id": "lf2-k6-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für eine Marktanalyse der MAKEL Studio GmbH liegen drei Unterlagen zur Entwicklung des Streetwear-Markts vor." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Die drei Unterlagen",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Unterlage", "Herkunft", "Stand"],
+            "zeilen": [
+              ["A", "Branchenbericht eines Fachverbands mit ausgewiesener Methode", "2026"],
+              ["B", "Blogbeitrag ohne Autorenangabe und ohne Quellen", "2026"],
+              ["C", "Marktstudie im Auftrag eines Wettbewerbers, Methode nicht genannt", "2021"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Unterlage ist die belastbarste Grundlage?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Unterlage A, weil Autor, Methode und Aktualität nachvollziehbar sind.", "richtig": true,
+              "echo": "Richtig. Wer sagt es, woher weiß er es, wann war das, wem nützt es — bei A lassen sich alle vier Fragen beantworten." },
+            { "text": "Unterlage B, weil sie aktuell ist.", "richtig": false,
+              "echo": "Aktualität allein genügt nicht. Ohne Autor und ohne Quellen lässt sich nichts überprüfen." },
+            { "text": "Unterlage C, weil eine Marktstudie gründlicher ist als ein Bericht.", "richtig": false,
+              "echo": "C ist fünf Jahre alt, die Methode ist unbekannt, und der Auftraggeber ist ein Wettbewerber — gleich drei Einschränkungen." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "{{begriff:quellenkritik|Quellenkritik}} in vier Fragen: Wer, wann, warum, steht es woanders auch? Eine Quelle, bei der eine dieser Fragen offenbleibt, ist nicht wertlos — aber sie trägt keine Entscheidung allein.",
+      "quelle": "lf2-k6, Abschnitt b2"
+    },
+
+    {
+      "id": "lf2-k6-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "In einem Social-Media-Beitrag mit hoher Reichweite heißt es, die Zielgruppe für Streetwear sei „inzwischen überwiegend über 40“; ein Mitarbeiter der MAKEL Studio GmbH will die Kollektionsplanung darauf stützen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie die Aussage und beschreiben Sie einen konkreten Prüfschritt.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Aussage ist als Entscheidungsgrundlage nicht tragfähig. Reichweite sagt nichts über Richtigkeit: Ein Beitrag wird geteilt, weil er zuspitzt, nicht weil er belegt ist. Es fehlen alle Angaben, die die Quellenkritik verlangt — wer die Aussage aufstellt, worauf sie beruht, aus welchem Zeitraum die Daten stammen und wem sie nützt. Ohne Erhebungsmethode und Stichprobe lässt sich nicht beurteilen, ob überhaupt etwas gemessen wurde. Ein konkreter Prüfschritt: die eigenen Verkaufsdaten des Onlineshops und des Stores nach Altersgruppen auswerten — diese interne Quelle ist kostenlos, aktuell und betrifft genau die eigene Kundschaft. Ergänzend lässt sich ein Branchenbericht mit ausgewiesener Methode heranziehen, um zu sehen, ob die Aussage woanders ebenfalls auftaucht. Erst wenn beides in dieselbe Richtung zeigt, ist eine Änderung der Kollektionsplanung begründbar.",
+        "raster": [
+          { "kriterium": "Erkannt, dass Reichweite kein Beleg für Richtigkeit ist", "punkte": 1 },
+          { "kriterium": "Fehlende Angaben zu Autor, Methode oder Zeitraum benannt", "punkte": 1 },
+          { "kriterium": "Konkreten Prüfschritt mit interner Datenquelle genannt", "punkte": 1 },
+          { "kriterium": "Abgleich mit einer zweiten, belastbaren Quelle vorgeschlagen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Texte von KI-Werkzeugen und Social-Media-Beiträge sind keine Quelle — Zahlen und Aussagen sind immer nachzuprüfen. Interne Daten sind dabei oft die stärkste Grundlage, weil sie den eigenen Betrieb betreffen.",
+      "quelle": "lf2-k6, Abschnitt b2"
+    }
+  ]
+}

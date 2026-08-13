@@ -1,0 +1,108 @@
+{
+  "lernfeld": "lf5",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf5-k1-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Drei Marktlagen sollen für die MAKEL Studio GmbH eingeordnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Marktform liegt vor?",
+          "ziele": ["Käufermarkt", "Verkäufermarkt", "ausgeglichener Markt"],
+          "elemente": [
+            { "text": "Viele Anbieter drängen mit ähnlichen Hoodies auf den Markt, die Lager sind voll", "loesung": "Käufermarkt" },
+            { "text": "Ein bestimmter Bio-Baumwollstoff ist knapp, Abnehmer stehen Schlange", "loesung": "Verkäufermarkt" },
+            { "text": "Angebot und Nachfrage halten sich etwa die Waage, der Preis bleibt stabil", "loesung": "ausgeglichener Markt" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Käufermarkt: Angebot größer als Nachfrage, der Kunde bestimmt — hier entsteht der Bedarf für Marketing. Verkäufermarkt: Nachfrage größer als Angebot, der Anbieter bestimmt.",
+      "quelle": "lf5-k1, Abschnitt a2"
+    },
+
+    {
+      "id": "lf5-k1-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Drei Wettbewerber der MAKEL Studio GmbH haben ihre Preise gesenkt; die Lagerware von MAKEL verkauft sich langsamer als geplant." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Marktsituation liegt nahe?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Ein Käufermarkt mit hohem Konkurrenzdruck.", "richtig": true,
+              "echo": "Richtig. Preissenkungen der Wettbewerber und langsamer Abverkauf deuten auf ein Angebot, das die Nachfrage übersteigt." },
+            { "text": "Ein Verkäufermarkt, weil MAKEL die Preise halten kann.", "richtig": false,
+              "echo": "Im Verkäufermarkt übersteigt die Nachfrage das Angebot — dann müsste sich die Ware schneller verkaufen, nicht langsamer." },
+            { "text": "Ein Monopol, weil MAKEL eine eigene Positionierung hat.", "richtig": false,
+              "echo": "Ein Monopol setzt einen einzigen Anbieter voraus. Hier sind ausdrücklich mehrere Wettbewerber am Markt." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Die Beobachtungen sprechen für einen Käufermarkt. Wichtig ist die Vorsicht in der Formulierung: Sie legen diese Deutung nahe, sie beweisen sie nicht — der langsamere Abverkauf könnte auch an Sortiment oder Saison liegen.",
+      "quelle": "lf5-k1, Abschnitt a3"
+    },
+
+    {
+      "id": "lf5-k1-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Wegen des Konkurrenzdrucks schlägt ein Mitarbeiter vor, das gesamte Sortiment der MAKEL Studio GmbH dauerhaft zu rabattieren." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum ein pauschaler Rabatt auf das gesamte Sortiment nicht die richtige Antwort ist.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "MAKEL ist bewusst leicht über dem Marktschnitt positioniert und wirbt mit Design und Qualität. Ein pauschaler Rabatt widerspricht dieser Positionierung: Er signalisiert, dass der bisherige Preis nicht gerechtfertigt war, und beschädigt den Markenwert dauerhaft. Zweitens senkt er die Marge auf dem gesamten Sortiment, auch dort, wo sich die Ware ohnehin gut verkauft — der Umsatz steigt vielleicht, der Gewinn sinkt. Drittens gewöhnen sich Kunden an das niedrigere Niveau und warten künftig auf den nächsten Rabatt; der Preis lässt sich nur schwer wieder anheben. Sinnvoller sind selektive Maßnahmen: Nachlässe nur auf schwer verkäufliche Artikel oder Restgrößen, zeitlich befristet, und zuerst die Ursache prüfen — ob es wirklich der Preis ist oder Sortiment, Verfügbarkeit und Sichtbarkeit.",
+        "raster": [
+          { "kriterium": "Widerspruch zur Positionierung beziehungsweise zum Markenwert erkannt", "punkte": 1 },
+          { "kriterium": "Margenwirkung auf das gesamte Sortiment benannt", "punkte": 1 },
+          { "kriterium": "Gewöhnungseffekt beziehungsweise Erwartungshaltung der Kunden genannt", "punkte": 1 },
+          { "kriterium": "Selektive Alternative oder Ursachenprüfung vorgeschlagen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Preispolitik wirkt am schnellsten und am gefährlichsten von allen vier Instrumenten. Ein Rabatt ist in Minuten beschlossen und in Jahren nicht zurückgenommen.",
+      "quelle": "lf5-k1, Abschnitt a3"
+    }
+  ]
+}

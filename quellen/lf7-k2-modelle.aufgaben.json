@@ -1,0 +1,109 @@
+{
+  "lernfeld": "lf7",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf7-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Kollegin sagt zur Buchhaltung der MAKEL Studio GmbH: „Die Rechnung ist ja wieder falsch.“" }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Seite der Nachricht wird durch die Deutung angesprochen?",
+          "ziele": ["Sachinhalt", "Selbstoffenbarung", "Beziehung", "Appell"],
+          "elemente": [
+            { "text": "„In der Rechnung ist ein Fehler.“", "loesung": "Sachinhalt" },
+            { "text": "„Mich ärgert das, ich stehe unter Druck.“", "loesung": "Selbstoffenbarung" },
+            { "text": "„Auf dich ist offenbar kein Verlass.“", "loesung": "Beziehung" },
+            { "text": "„Prüf die Rechnung und korrigiere sie.“", "loesung": "Appell" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Jede Nachricht hat vier Seiten: Sachinhalt, Selbstoffenbarung, Beziehung und Appell. Der Sender wählt die Seite, auf der er sendet — der Empfänger die, auf der er hört. Das Wort „wieder“ ist es, das die Beziehungsseite so laut macht.",
+      "quelle": "lf7-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf7-k2-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski hört den Satz „Die Rechnung ist ja wieder falsch“ vor allem auf der Beziehungsseite und ist gekränkt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Rückfrage entschärft die Beziehungsebene am besten?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "„Kannst du mir zeigen, welche Position nicht stimmt? Dann sehe ich mir das direkt an.“", "richtig": true,
+              "echo": "Richtig. Die Rückfrage holt das Gespräch auf die Sachebene, zeigt Bereitschaft und unterstellt der anderen Seite nichts." },
+            { "text": "„Willst du damit sagen, dass ich meine Arbeit nicht kann?“", "richtig": false,
+              "echo": "Das unterstellt eine Absicht und verschärft die Beziehungsebene, statt sie zu klären." },
+            { "text": "„Das ist nicht mein Fehler, das kommt aus dem Vertrieb.“", "richtig": false,
+              "echo": "Die Abwehr verschiebt die Schuld und klärt weder die Sache noch die Beziehung." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Das Beziehungsohr ist das empfindlichste. Wer eine Unterstellung vermutet, sollte nachfragen statt zurückzuschießen — die Wahrnehmung prüfen, nicht die Absicht behaupten.",
+      "quelle": "lf7-k2, Abschnitt b2"
+    },
+
+    {
+      "id": "lf7-k2-03",
+      "operator": "Formulieren Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Satz „Die Rechnung ist ja wieder falsch“ soll für die Buchhaltung der MAKEL Studio GmbH neutral formuliert werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Formulieren Sie eine sachliche Fassung der Aussage und erläutern Sie, was Sie geändert haben.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Neutrale Fassung: „In Rechnung 2026-0418 weicht die Menge in Position 3 von unserem Lieferschein ab — dort stehen 190 Stück, in der Rechnung 200. Kannst du das bitte prüfen und mir bis Donnerstag Bescheid geben?“ Geändert wurde dreierlei. Erstens ist das Wort „wieder“ entfallen: Es verallgemeinert einen Einzelfall zu einem Muster und trifft die Beziehungsebene. Zweitens ist aus der pauschalen Bewertung „ist falsch“ eine konkrete Beobachtung geworden — welche Rechnung, welche Position, welche Abweichung. Damit lässt sich arbeiten, während „falsch“ nur eine Wertung ist. Drittens steht der Appell jetzt ausdrücklich da, mit Bitte und Frist, statt ihn dem Gegenüber zu überlassen. Der Sachinhalt bleibt vollständig erhalten; nur die Verpackung ist eine andere.",
+        "raster": [
+          { "kriterium": "Konkrete, sachlich formulierte Fassung geschrieben", "punkte": 1 },
+          { "kriterium": "Verallgemeinerung wie „wieder“ oder „immer“ vermieden und dies benannt", "punkte": 1 },
+          { "kriterium": "Beobachtung statt Wertung verwendet", "punkte": 1 },
+          { "kriterium": "Klarer Appell mit Bitte oder Frist enthalten", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Missverständnisse entstehen, wenn Sender und Empfänger unterschiedliche Seiten betonen. Wer den Appell ausspricht und die Wertung weglässt, nimmt dem Beziehungsohr die Nahrung.",
+      "quelle": "lf7-k2, Abschnitt b3"
+    }
+  ]
+}

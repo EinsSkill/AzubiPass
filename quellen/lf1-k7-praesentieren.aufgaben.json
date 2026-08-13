@@ -1,0 +1,109 @@
+{
+  "lernfeld": "lf1",
+  "kapitel": "k7",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf1-k7-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß stellt die MAKEL Studio GmbH bei einer Boutique vor, die künftig als Wholesale-Partnerin Ware einkaufen soll." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Kernbotschaft passt zu dieser Zielgruppe?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "„Unsere Kollektionen verkaufen sich in Ihrer Lage zuverlässig — mit planbaren Lieferterminen und Wiederverkäuferkonditionen.“", "richtig": true,
+              "echo": "Richtig. Eine Boutique kauft ein, um zu verkaufen. Sie interessiert, ob die Ware sich dreht, ob geliefert wird und zu welchen Konditionen." },
+            { "text": "„Trag, was dich ausmacht — Streetwear für deinen Alltag.“", "richtig": false,
+              "echo": "Das ist eine Endkundenbotschaft. Die Boutique-Inhaberin ist nicht die Trägerin, sondern die Händlerin." },
+            { "text": "„Wir sind seit 2012 ein junges, dynamisches Team aus Düsseldorf.“", "richtig": false,
+              "echo": "Eine Selbstbeschreibung ohne Nutzen für die Zuhörerin. Sie beantwortet nicht, warum die Boutique einkaufen sollte." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Der Präsentationsablauf beginnt damit, die Zielgruppe zu klären. Wer vor Händlern wie vor Endkunden spricht, redet an der Entscheidung vorbei.",
+      "quelle": "lf1-k7, Abschnitt g2"
+    },
+
+    {
+      "id": "lf1-k7-02",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für die Vorstellung der MAKEL Studio GmbH liegen fünf Folien in ungeordneter Form vor." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die fünf Folien zu einem sinnvollen Aufbau.",
+          "elemente": [
+            { "text": "Unser Angebot: Kollektionen und Sortiment", "position": 3 },
+            { "text": "Anlass: Warum wir heute hier sind", "position": 1 },
+            { "text": "Nächster Schritt: Ihr Weg zur Zusammenarbeit", "position": 5 },
+            { "text": "Das Unternehmen: Wer wir sind", "position": 2 },
+            { "text": "Ihr Nutzen: Was Ihnen das bringt", "position": 4 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Aufbau folgt Einstieg, Hauptteil und Schluss. Der Nutzen steht vor der Handlungsaufforderung — erst wenn klar ist, was es bringt, kann man um den nächsten Schritt bitten. Eine Aussage pro Folie; die Folie unterstützt den Vortrag, sie ersetzt ihn nicht.",
+      "quelle": "lf1-k7, Abschnitt g2"
+    },
+
+    {
+      "id": "lf1-k7-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Präsentation der MAKEL Studio GmbH für Endkunden soll für eine potenzielle Wholesale-Boutique angepasst werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Nennen und begründen Sie zwei Anpassungen der Präsentation.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Erstens muss der Inhalt vom Produkterlebnis auf die Handelsperspektive umgestellt werden: An die Stelle der Marken- und Lifestyle-Geschichte treten Konditionen, Lieferfähigkeit, Liefertermine und Sortimentsauswahl. Begründung: Die Boutique kauft nicht zum eigenen Gebrauch, sondern um weiterzuverkaufen; ihre Entscheidung hängt davon ab, ob sich die Ware dreht und ob die Marge stimmt. Zweitens gehört ans Ende eine konkrete Handlungsaufforderung mit dem nächsten Schritt — etwa ein Termin für die Musterdurchsicht oder ein Angebot mit Bindungsfrist. Begründung: Ein Verkaufsgespräch ohne nächsten Schritt endet ergebnislos, und der Schluss ist die Stelle, an der die Zuhörerin entscheidet. Nützlich ist außerdem, Zahlen zu Abverkauf oder Nachbestellquote zu zeigen, weil sie die Behauptung stützen — dabei müssen die Diagrammachsen bei null beginnen, sonst täuscht das Bild.",
+        "raster": [
+          { "kriterium": "Erste Anpassung konkret genannt (Handelsperspektive statt Endkundenansprache)", "punkte": 1 },
+          { "kriterium": "Erste Anpassung mit dem Interesse der Boutique begründet", "punkte": 1 },
+          { "kriterium": "Zweite Anpassung konkret genannt", "punkte": 1 },
+          { "kriterium": "Zweite Anpassung nachvollziehbar begründet", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Zielgruppe klären steht am Anfang jeder Präsentationsvorbereitung — und der Kriterienkatalog zur Bewertung wird vorher erstellt, nicht danach.",
+      "quelle": "lf1-k7, Abschnitt g2"
+    }
+  ]
+}

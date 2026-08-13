@@ -1,0 +1,113 @@
+{
+  "lernfeld": "lf5",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf5-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Yuki Bergmann sammelt Unterlagen für die Marktforschung der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Um welche Art von Daten handelt es sich?",
+          "ziele": [
+            "Primärforschung — neu erhobene Daten",
+            "Sekundärforschung — vorhandene Daten",
+            "Hinweisquelle ohne Repräsentativität"
+          ],
+          "elemente": [
+            { "text": "Eine eigens durchgeführte Kundenbefragung zur neuen Passform", "loesung": "Primärforschung — neu erhobene Daten" },
+            { "text": "Ein Testverkauf des Overshirts im Flagshipstore", "loesung": "Primärforschung — neu erhobene Daten" },
+            { "text": "Die eigene Kassenstatistik der letzten zwölf Monate", "loesung": "Sekundärforschung — vorhandene Daten" },
+            { "text": "Einzelne Kommentare unter einem Social-Media-Beitrag", "loesung": "Hinweisquelle ohne Repräsentativität" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Sekundärforschung wertet vorhandene Daten aus, Primärforschung erhebt neu durch Befragung, Beobachtung, Test und Experiment. Die Reihenfolge lautet: erst sekundär, dann primär für die verbleibende Lücke.",
+      "quelle": "lf5-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf5-k2-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH will wissen, ob die neue Passform des Overshirts bei bestehenden Kundinnen und Kunden ankommt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welches Vorgehen ist geeignet?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Eine Befragung der bestehenden Kundschaft mit einer repräsentativ gezogenen Stichprobe, ergänzt durch einen Testverkauf.", "richtig": true,
+              "echo": "Richtig. Die Frage betrifft genau diese Zielgruppe, und der Testverkauf zeigt tatsächliches Verhalten statt nur geäußerter Absicht." },
+            { "text": "Eine Umfrage in der Fußgängerzone unter allen vorbeikommenden Personen.", "richtig": false,
+              "echo": "Eine willkürliche Auswahl ist nicht repräsentativ, und die Befragten gehören überwiegend gar nicht zur bestehenden Kundschaft." },
+            { "text": "Die Auswertung der Kommentare unter dem letzten Social-Media-Beitrag.", "richtig": false,
+              "echo": "Kommentare sind eine Hinweisquelle, keine repräsentative Erhebung — es äußern sich vor allem besonders Begeisterte und besonders Verärgerte." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Die Stichprobe muss repräsentativ sein, nicht groß. Zufalls- und Quotenauswahl sind repräsentativ, willkürliche Auswahl nicht.",
+      "quelle": "lf5-k2, Abschnitt b2"
+    },
+
+    {
+      "id": "lf5-k2-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Beitrag zum neuen Overshirt der MAKEL Studio GmbH erhält 1.000 Likes; daraufhin soll eine große Serie in Auftrag gegeben werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie die Aussage „1.000 Likes beweisen die Nachfrage“ und nennen Sie einen belastbareren Prüfschritt.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Ein Like ist keine Kaufabsicht. Es kostet nichts, verpflichtet zu nichts und drückt oft nur Gefallen am Bild aus, nicht die Bereitschaft, den Preis zu zahlen. Zwischen Bedürfnis und Nachfrage liegt die Kaufkraft — und genau diese Stufe misst ein Like nicht. Hinzu kommt, dass die Gruppe der Likenden nicht repräsentativ ist: Sie besteht aus Personen, die dem Kanal ohnehin folgen, und schließt weder die übrige Zielgruppe noch die Wholesale-Seite ein. Ein belastbarerer Prüfschritt ist ein begrenzter Testverkauf, etwa als Vorbestellung oder als kleine Erstserie im Flagshipstore und Onlineshop: Dort zeigt sich tatsächliches Kaufverhalten, und aus der Verkaufsquote lässt sich auf die größere Serie schließen. Ergänzend kann eine Befragung der bestehenden Kundschaft mit repräsentativer Stichprobe durchgeführt werden. Erst diese Daten tragen die Entscheidung über eine große Serie.",
+        "raster": [
+          { "kriterium": "Erkannt, dass ein Like keine Kaufabsicht belegt", "punkte": 1 },
+          { "kriterium": "Fehlende Repräsentativität der Likenden benannt", "punkte": 1 },
+          { "kriterium": "Testverkauf oder Vorbestellung als belastbaren Prüfschritt genannt", "punkte": 1 },
+          { "kriterium": "Begründet, warum dieser Schritt aussagekräftiger ist (tatsächliches Verhalten statt Absicht)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Der Test und das Experiment stehen in der Primärforschung neben der Befragung — gerade weil geäußerte Absicht und tatsächliches Verhalten regelmäßig auseinanderfallen.",
+      "quelle": "lf5-k2, Abschnitt b1"
+    }
+  ]
+}

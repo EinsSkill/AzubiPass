@@ -1,0 +1,114 @@
+{
+  "lernfeld": "lf5",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf5-k4-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Vier Aussagen zur Preisbildung sollen eingeordnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Beschreibung gehört zu welchem Begriff?",
+          "ziele": [
+            "Skimming",
+            "Penetration",
+            "kostenorientierte Preisbildung",
+            "marktorientierte Preisbildung"
+          ],
+          "elemente": [
+            { "text": "Hoch einsteigen und den Preis langsam senken — bei technischem oder gestalterischem Vorsprung", "loesung": "Skimming" },
+            { "text": "Tief einsteigen, um schnell Marktanteil zu gewinnen — bei austauschbaren Massenprodukten", "loesung": "Penetration" },
+            { "text": "Liefert die Preisuntergrenze", "loesung": "kostenorientierte Preisbildung" },
+            { "text": "Liefert die Preisobergrenze", "loesung": "marktorientierte Preisbildung" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Kostenorientiert liefert die Preisuntergrenze, marktorientiert die Preisobergrenze. Liegt die Untergrenze über der Obergrenze, muss an den Kosten gearbeitet werden — der Preis lässt sich dann nicht durchsetzen.",
+      "quelle": "lf5-k4, Abschnitt d1"
+    },
+
+    {
+      "id": "lf5-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH bringt eine auf 150 Stück limitierte Kollaboration mit einer Illustratorin heraus." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Preisstrategie passt zu dieser Lage?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Skimming — hoch einsteigen, weil Knappheit, Gestaltung und Zielgruppe den Preis tragen.", "richtig": true,
+              "echo": "Richtig. Eine limitierte Kollaboration ist nicht austauschbar; die Zahlungsbereitschaft ist am Anfang am höchsten." },
+            { "text": "Penetration — tief einsteigen, um schnell Marktanteil zu gewinnen.", "richtig": false,
+              "echo": "Penetration passt zu austauschbaren Massenprodukten. Bei 150 Stück geht es nicht um Marktanteil." },
+            { "text": "Konkurrenzorientiert — den Durchschnittspreis vergleichbarer Hoodies ansetzen.", "richtig": false,
+              "echo": "Es gibt kein vergleichbares Produkt, weil die Kollaboration einmalig und limitiert ist." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Skimming setzt einen Vorsprung voraus, den andere nicht sofort kopieren können — bei MAKEL ist das die Gestaltung in Verbindung mit der Limitierung.",
+      "quelle": "lf5-k4, Abschnitt d2"
+    },
+
+    {
+      "id": "lf5-k4-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Im Onlineshop der MAKEL Studio GmbH soll dauerhaft ein Rabatt von 20 Prozent auf alle Artikel gewährt werden, um den Absatz zu steigern." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie diese dauerhafte Rabattaktion.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Kurzfristig kann die Maßnahme den Absatz steigern, langfristig ist sie schädlich. Ein dauerhafter Nachlass ist keine Aktion mehr, sondern eine Preissenkung: Der Kunde nimmt den rabattierten Preis als den eigentlichen Preis wahr, und der Listenpreis verliert seine Glaubwürdigkeit. Dadurch entsteht ein Erwartungseffekt — künftig wird ohne Rabatt nicht mehr gekauft, und eine Rückkehr zum alten Niveau wird als Preiserhöhung empfunden. Wirtschaftlich trifft der Rabatt unmittelbar die Marge, und zwar auf dem gesamten Sortiment; der Absatz müsste erheblich steigen, um den Deckungsbeitrag überhaupt zu halten. Hinzu kommt der Widerspruch zur Positionierung von MAKEL leicht über dem Marktschnitt: Dauerrabatt und Qualitätsversprechen passen nicht zusammen. Auch die Wholesale-Partner werden empfindlich reagieren, wenn der Onlineshop ihre Verkaufspreise dauerhaft unterbietet. Sinnvoller sind befristete, selektive Aktionen auf ausgewählte Artikel.",
+        "raster": [
+          { "kriterium": "Kurzfristige Absatzwirkung gewürdigt", "punkte": 1 },
+          { "kriterium": "Margenwirkung auf das Sortiment benannt", "punkte": 1 },
+          { "kriterium": "Erwartungseffekt beziehungsweise Verlust der Preisglaubwürdigkeit erkannt", "punkte": 1 },
+          { "kriterium": "Widerspruch zur Positionierung oder Konflikt mit dem Wholesale-Kanal genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Rabatte, Skonto und Zahlungsziele sind Preispolitik, auch wenn der Listenpreis gleich bleibt. Und Verkaufsförderung ist immer befristet — dauerhaft wird sie zur Preissenkung.",
+      "quelle": "lf5-k4, Abschnitt d3"
+    }
+  ]
+}

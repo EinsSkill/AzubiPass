@@ -1,0 +1,109 @@
+{
+  "lernfeld": "lf7",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf7-k4-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Emily Tran nimmt im Store der MAKEL Studio GmbH eine Reklamation entgegen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die fünf Schritte des Reklamationsgesprächs.",
+          "elemente": [
+            { "text": "Sachverhalt klären und nachfragen", "position": 3 },
+            { "text": "Die Kundin ausreden lassen", "position": 1 },
+            { "text": "Nachfassen, ob die Lösung gewirkt hat", "position": 5 },
+            { "text": "Verständnis für den Ärger zeigen", "position": 2 },
+            { "text": "Lösung anbieten und vereinbaren", "position": 4 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Reklamationsgespräch: ausreden lassen, Verständnis zeigen, Sachverhalt klären, Lösung anbieten, nachfassen. Erst das Gefühl, dann die Sache — sachliche Fragen zu früh wirken wie Ausweichen.",
+      "quelle": "lf7-k4, Abschnitt d1"
+    },
+
+    {
+      "id": "lf7-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Kollege hat die Kassenübergabe im Store der MAKEL Studio GmbH zweimal deutlich verspätet vorgenommen; Emily Tran will das ansprechen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Formulierung ist eine geeignete Ich-Botschaft?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "„Als die Übergabe gestern und vorgestern eine halbe Stunde später kam, musste ich meinen Feierabend verschieben. Ich möchte, dass wir uns auf 18:30 Uhr verlassen können.“", "richtig": true,
+              "echo": "Richtig. Beobachtung, Wirkung auf mich und ein klarer Wunsch — ohne Vorwurf und ohne Verallgemeinerung." },
+            { "text": "„Du bist immer unpünktlich, das nervt langsam wirklich.“", "richtig": false,
+              "echo": "Eine Du-Botschaft mit Verallgemeinerung und Wertung. Sie trifft die Beziehungsebene und erzeugt Abwehr." },
+            { "text": "„Man könnte ja auch mal pünktlich sein.“", "richtig": false,
+              "echo": "Ein indirekter Vorwurf im Man-Stil. Er benennt weder die Beobachtung noch die Wirkung noch einen Wunsch." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Feedback geben: beschreibend, konkret, zeitnah, unter vier Augen und als Ich-Botschaft. Eine Ich-Botschaft besteht aus Beobachtung, Wirkung und Wunsch — nicht aus einer freundlicher verpackten Wertung.",
+      "quelle": "lf7-k4, Abschnitt d2"
+    },
+
+    {
+      "id": "lf7-k4-03",
+      "operator": "Formulieren Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli hat in dieser Woche drei Eingangsrechnungen der MAKEL Studio GmbH erst mehrere Tage nach Eingang abgelegt; dadurch wurde eine Skontofrist knapp." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Formulieren Sie einen Feedbacksatz an Luca.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "„Luca, mir ist aufgefallen, dass die drei Eingangsrechnungen von Montag erst am Donnerstag in der Ablage waren. Dadurch ist die Skontofrist bei einer davon fast abgelaufen, und wir hätten 2 Prozent verloren. Ich möchte, dass Eingangsrechnungen am Tag des Eingangs erfasst und abgelegt werden. Wenn dir etwas dazwischenkommt, sag mir bitte Bescheid — dann suchen wir gemeinsam eine Lösung.“ Der Satz beschreibt eine konkrete Beobachtung mit Zeitbezug, nennt die tatsächliche Wirkung statt einer Wertung, formuliert einen klaren Wunsch und bietet Unterstützung an. Er wird zeitnah und unter vier Augen gegeben, nicht vor der Abteilung.",
+        "raster": [
+          { "kriterium": "Konkrete Beobachtung mit Zeit- und Sachbezug statt Verallgemeinerung", "punkte": 1 },
+          { "kriterium": "Tatsächliche Wirkung benannt, ohne den Menschen zu bewerten", "punkte": 1 },
+          { "kriterium": "Klarer Wunsch beziehungsweise klare Erwartung formuliert", "punkte": 1 },
+          { "kriterium": "Respektvoll gehalten; Unterstützung angeboten oder Rahmen unter vier Augen beachtet", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Feedback annehmen heißt zuhören statt rechtfertigen, nachfragen und sich bedanken. Damit das gelingt, muss das Feedback beschreibend sein — wer bewertet wird, verteidigt sich.",
+      "quelle": "lf7-k4, Abschnitt d2"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "lernfeld": "lf1",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf1-k2-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Entwurf des Ausbildungsvertrags der MAKEL Studio GmbH soll auf Vollständigkeit geprüft werden." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Was der Entwurf bereits enthält",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "im Entwurf enthalten"],
+            "zeilen": [
+              ["Ausbildungsberuf und sachliche Gliederung", "ja"],
+              ["Beginn und Dauer der Ausbildung", "ja"],
+              ["Tägliche Ausbildungszeit", "nein"],
+              ["Dauer der Probezeit", "nein"],
+              ["Höhe der Vergütung", "ja"],
+              ["Dauer des Urlaubs", "nein"],
+              ["Lieblingsfarbe des Auszubildenden", "ja"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Pflichtangaben fehlen noch? Kreuzen Sie alle zutreffenden an.",
+          "mehrfach": true,
+          "optionen": [
+            { "text": "Tägliche Ausbildungszeit", "richtig": true,
+              "echo": "Richtig. Sie gehört zu den Pflichtangaben des Ausbildungsvertrags." },
+            { "text": "Dauer der Probezeit", "richtig": true,
+              "echo": "Richtig. Die Probezeit muss im Vertrag stehen — sie beträgt einen bis vier Monate." },
+            { "text": "Dauer des Urlaubs", "richtig": true,
+              "echo": "Richtig. Auch der Urlaubsanspruch ist eine Pflichtangabe." },
+            { "text": "Höhe der Vergütung", "richtig": false,
+              "echo": "Die ist bereits enthalten." },
+            { "text": "Ausbildungsberuf und sachliche Gliederung", "richtig": false,
+              "echo": "Auch die stehen schon im Entwurf." },
+            { "text": "Lieblingsfarbe des Auszubildenden", "richtig": false,
+              "echo": "Das ist keine Pflichtangabe — und für das Ausbildungsverhältnis ohne jede Bedeutung." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Pflichtangaben sind Gliederung, Beginn und Dauer, tägliche Ausbildungszeit, Probezeit, Vergütung, Urlaub und Kündigung. Der Vertrag bedarf nach {{par:bbig-11|§ 11 BBiG}} der Schriftform vor Beginn und wird bei der zuständigen Stelle eingetragen.",
+      "quelle": "lf1-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf1-k2-02",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Zusatzblatt zum Ausbildungsvertrag der MAKEL Studio GmbH enthält den Satz: „Der Auszubildende verpflichtet sich, bei vorzeitiger Beendigung des Ausbildungsverhältnisses eine Vertragsstrafe von 2.000 € zu zahlen.“" }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie die Wirksamkeit dieser Klausel und begründen Sie Ihr Ergebnis.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Klausel ist unwirksam. Vertragsstrafen gehören zu den Vereinbarungen, die im Ausbildungsvertrag ausdrücklich nichtig sind. Nichtig bedeutet: von Anfang an unwirksam, und zwar auch dann, wenn der Auszubildende unterschrieben hat — eine Zustimmung heilt den Mangel nicht. Der Grund liegt im Schutzzweck: Der Ausbildungsvertrag darf den Auszubildenden nicht schlechter stellen als das Gesetz, und eine Vertragsstrafe würde ihn faktisch an den Betrieb binden und die gesetzlich vorgesehenen Kündigungsmöglichkeiten entwerten. In dieselbe Gruppe gehören Entschädigungen für die Ausbildung selbst und Beschränkungen der späteren Berufsausübung. Der übrige Vertrag bleibt wirksam; nur die Klausel entfällt. MAKEL muss sie deshalb streichen und kann sich später nicht auf sie berufen.",
+        "raster": [
+          { "kriterium": "Klausel als nichtig beziehungsweise unwirksam eingeordnet", "punkte": 1 },
+          { "kriterium": "Vertragsstrafe als ausdrücklich verbotene Vereinbarung erkannt", "punkte": 1 },
+          { "kriterium": "Erklärt, dass die Unterschrift daran nichts ändert", "punkte": 1 },
+          { "kriterium": "Schutzzweck genannt: der Vertrag darf das gesetzliche Schutzniveau nicht unterschreiten", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Nichtig sind unter anderem Vertragsstrafen, Entschädigungen für die Ausbildung und Beschränkungen der späteren Berufsausübung. Nichtig bedeutet: von Anfang an unwirksam, auch mit Unterschrift.",
+      "quelle": "lf1-k2, Abschnitt b2"
+    },
+
+    {
+      "id": "lf1-k2-03",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Im Ausbildungsverhältnis der MAKEL Studio GmbH sollen drei Rollen ihren Aufgaben zugeordnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Aufgabe gehört zu welcher Rolle?",
+          "ziele": ["Ausbildender", "Ausbilder", "Auszubildender"],
+          "elemente": [
+            { "text": "Schließt den Vertrag und trägt die Pflichten aus dem Ausbildungsverhältnis", "loesung": "Ausbildender" },
+            { "text": "Vermittelt persönlich und fachlich geeignet die Ausbildungsinhalte", "loesung": "Ausbilder" },
+            { "text": "Lernt, wirkt aktiv mit und besucht die Berufsschule", "loesung": "Auszubildender" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Ausbildende trägt die Pflichten, auch wenn er nicht selbst ausbildet — er muss dafür einen geeigneten Ausbilder stellen. Der Auszubildende schuldet nicht Arbeit, sondern Lernen und Mitwirken.",
+      "quelle": "lf1-k2, Abschnitt b1"
+    }
+  ]
+}

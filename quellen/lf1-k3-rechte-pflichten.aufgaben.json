@@ -1,0 +1,125 @@
+{
+  "lernfeld": "lf1",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf1-k3-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli ist 17 Jahre alt und im Store der MAKEL Studio GmbH eingesetzt; für einen Tag liegt folgender Einsatzplan vor." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Einsatzplan für einen Arbeitstag",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Zeitraum", "Tätigkeit"],
+            "zeilen": [
+              ["08:00 – 12:30", "Warenannahme und Auszeichnung"],
+              ["12:30 – 13:00", "Pause"],
+              ["13:00 – 17:30", "Verkauf im Store"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Verstöße gegen das Jugendarbeitsschutzgesetz enthält der Plan? Kreuzen Sie alle zutreffenden an.",
+          "mehrfach": true,
+          "optionen": [
+            { "text": "Die tägliche Arbeitszeit beträgt neun Stunden und überschreitet damit die zulässigen acht Stunden.", "richtig": true,
+              "echo": "Richtig. 08:00 bis 17:30 abzüglich 30 Minuten Pause ergibt neun Stunden Arbeitszeit — erlaubt sind höchstens acht." },
+            { "text": "Die Pause ist mit 30 Minuten zu kurz.", "richtig": true,
+              "echo": "Richtig. Bei mehr als sechs Stunden Arbeitszeit sind 60 Minuten Pause vorgeschrieben." },
+            { "text": "Der Einsatz im Verkauf ist für Auszubildende unzulässig.", "richtig": false,
+              "echo": "Verkaufstätigkeit ist ausbildungsdienlich und nicht verboten." },
+            { "text": "Es liegt kein Verstoß vor, weil eine Pause gewährt wurde.", "richtig": false,
+              "echo": "Eine Pause allein genügt nicht — Höchstarbeitszeit und Pausendauer gelten nebeneinander." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "{{par:jarbschg-8|§ 8 JArbSchG}} — höchstens 8 Stunden täglich und 40 Stunden wöchentlich. {{par:jarbschg-11|§ 11 JArbSchG}} — 30 Minuten Pause ab 4,5 Stunden, 60 Minuten ab mehr als 6 Stunden. Der Plan verletzt hier beides.",
+      "quelle": "lf1-k3, Abschnitt c3"
+    },
+
+    {
+      "id": "lf1-k3-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Vier Situationen aus dem Ausbildungsalltag bei der MAKEL Studio GmbH sollen eingeordnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Wessen Pflicht wird hier beschrieben?",
+          "ziele": ["Pflicht des Auszubildenden", "Pflicht des Ausbildenden"],
+          "elemente": [
+            { "text": "Über Betriebs- und Geschäftsgeheimnisse Stillschweigen bewahren", "loesung": "Pflicht des Auszubildenden" },
+            { "text": "Am Berufsschulunterricht teilnehmen", "loesung": "Pflicht des Auszubildenden" },
+            { "text": "Die Ausbildungsmittel kostenlos zur Verfügung stellen", "loesung": "Pflicht des Ausbildenden" },
+            { "text": "Für den Berufsschulunterricht freistellen", "loesung": "Pflicht des Ausbildenden" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{par:bbig-13|§ 13 BBiG}} nennt die Pflichten der Auszubildenden: Lernen, Sorgfalt, Berufsschule, Weisungen, Betriebsordnung, Pfleglichkeit, Schweigen. {{par:bbig-14|§ 14 BBiG}} die des Betriebs: ausbilden, Ausbilder stellen, Mittel kostenlos, freistellen, nur ausbildungsdienliche Aufgaben, vergüten, Zeugnis.",
+      "quelle": "lf1-k3, Abschnitt c1"
+    },
+
+    {
+      "id": "lf1-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Wegen einer großen Warenlieferung möchte ein Abteilungsleiter der MAKEL Studio GmbH, dass Luca Petrelli an einem Berufsschultag im Lager bleibt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum Luca den Berufsschultag nicht wegen eines vollen Arbeitstags verschieben muss.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Betrieb ist gesetzlich verpflichtet, Auszubildende für den Berufsschulunterricht freizustellen. Diese Pflicht steht nicht zur Disposition der Einsatzplanung: Betriebliche Auslastung ist kein Grund, sie zu übergehen. Umgekehrt gehört der Besuch der Berufsschule zu den Pflichten des Auszubildenden — Luca dürfte selbst dann nicht im Lager bleiben, wenn er es wollte. Der Grund liegt im Zweck der dualen Ausbildung: Der schulische Teil vermittelt das systematische Fachwissen, das die Abschlussprüfung verlangt und das der Betrieb nicht ersetzen kann. Der Ausbildungszweck geht der betrieblichen Verwertung vor; Auszubildende sind keine gewöhnlichen Arbeitskräfte, sondern dürfen nur ausbildungsdienlich eingesetzt werden. Richtig wäre, die Warenannahme anders zu organisieren und die Frage mit Sandra Koslowski als Ausbilderin zu klären.",
+        "raster": [
+          { "kriterium": "Freistellungspflicht des Betriebs genannt", "punkte": 1 },
+          { "kriterium": "Berufsschulbesuch als Pflicht des Auszubildenden genannt", "punkte": 1 },
+          { "kriterium": "Vorrang des Ausbildungszwecks vor der betrieblichen Einsatzplanung begründet", "punkte": 1 },
+          { "kriterium": "Konkreter Lösungsweg genannt (andere Organisation oder Klärung mit der Ausbilderin)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Das Weisungsrecht endet bei berufsfremden Aufgaben und bei Überforderung — und es endet dort, wo eine gesetzliche Pflicht entgegensteht.",
+      "quelle": "lf1-k3, Abschnitt c2"
+    }
+  ]
+}

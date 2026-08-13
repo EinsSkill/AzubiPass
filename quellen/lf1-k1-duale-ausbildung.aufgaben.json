@@ -1,0 +1,109 @@
+{
+  "lernfeld": "lf1",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf1-k1-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli beginnt seine Ausbildung bei der MAKEL Studio GmbH und will wissen, wer im dualen System wofür zuständig ist." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Wer ist für die jeweilige Aufgabe zuständig?",
+          "ziele": ["Betrieb", "Berufsschule", "zuständige Stelle", "Ausbildender"],
+          "elemente": [
+            { "text": "Vermittelt die praktischen Fertigkeiten am Arbeitsplatz", "loesung": "Betrieb" },
+            { "text": "Vermittelt den fachtheoretischen Unterricht", "loesung": "Berufsschule" },
+            { "text": "Trägt den Vertrag ein und nimmt die Prüfung ab", "loesung": "zuständige Stelle" },
+            { "text": "Ist Vertragspartner des Auszubildenden", "loesung": "Ausbildender" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Duale Ausbildung heißt Betrieb plus Berufsschule, überwacht von der zuständigen Stelle. Der Ausbildende ist der Vertragspartner — bei MAKEL also die GmbH, nicht die Person, die tatsächlich ausbildet.",
+      "quelle": "lf1-k1, Abschnitt a1"
+    },
+
+    {
+      "id": "lf1-k1-02",
+      "operator": "Erklären Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli arbeitet im Lager der MAKEL Studio GmbH sehr gut und schlägt vor, die Berufsschule künftig zugunsten der Praxis ausfallen zu lassen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Erklären Sie, warum eine Ausbildung trotz guter Praxisleistungen nicht ohne die Berufsschule möglich ist.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die duale Ausbildung beruht auf zwei Lernorten mit unterschiedlichen Aufgaben. Der Betrieb vermittelt praktische Fertigkeiten in seinen konkreten Abläufen, die Berufsschule das systematische Fachwissen, das über den einzelnen Betrieb hinausreicht. MAKEL kann Luca nur zeigen, wie es bei MAKEL läuft; Rechtsgrundlagen, Rechnungswesen und Zusammenhänge, die überall gelten, kommen aus der Schule. Beides zusammen ergibt die berufliche Handlungskompetenz, auf die der Abschluss zielt. Hinzu kommt, dass die Abschlussprüfung beide Teile abfragt — auch der schriftliche Teil beruht auf dem schulischen Wissen. Schließlich ist die Sache nicht freigestellt: Der Betrieb hat den Auszubildenden für die Berufsschule freizustellen, und der Besuch gehört zu den Pflichten des Auszubildenden.",
+        "raster": [
+          { "kriterium": "Zwei Lernorte mit unterschiedlichen Aufgaben benannt", "punkte": 1 },
+          { "kriterium": "Erkannt, dass der Betrieb nur seine eigene Praxis vermitteln kann", "punkte": 1 },
+          { "kriterium": "Bezug zur Abschlussprüfung hergestellt", "punkte": 1 },
+          { "kriterium": "Freistellungspflicht des Betriebs oder Berufsschulpflicht des Auszubildenden genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die beiden Lernorte ergänzen sich, sie ersetzen sich nicht. Deshalb ist der Berufsschulbesuch keine Frage der betrieblichen Einsatzplanung.",
+      "quelle": "lf1-k1, Abschnitt a1"
+    },
+
+    {
+      "id": "lf1-k1-03",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Bei der MAKEL Studio GmbH ist Sandra Koslowski als Ausbilderin benannt; Vertragspartner der Auszubildenden ist die GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Aussage über Ausbildenden und Ausbilder trifft zu?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Der Ausbildende ist der Vertragspartner; der Ausbilder ist die Person, die tatsächlich ausbildet — beide müssen nicht identisch sein.", "richtig": true,
+              "echo": "Richtig. Bei MAKEL ist die GmbH Ausbildende und Sandra Koslowski Ausbilderin." },
+            { "text": "Ausbildender und Ausbilder sind immer dieselbe Person.", "richtig": false,
+              "echo": "In größeren Betrieben ist das gerade nicht so: Vertragspartner ist das Unternehmen, ausgebildet wird von benannten Personen." },
+            { "text": "Der Ausbilder schließt den Ausbildungsvertrag ab.", "richtig": false,
+              "echo": "Den Vertrag schließt der Ausbildende — bei MAKEL die GmbH." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Ausbildender = Vertragspartner. Ausbilder = die ausbildende Person. Diese Unterscheidung wird regelmäßig geprüft, weil sie im Alltag verschwimmt.",
+      "quelle": "lf1-k1, Abschnitt a1"
+    }
+  ]
+}

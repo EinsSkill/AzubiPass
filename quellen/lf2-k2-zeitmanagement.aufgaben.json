@@ -1,0 +1,112 @@
+{
+  "lernfeld": "lf2",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf2-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Vier Aufgaben liegen an einem Arbeitstag in der Verwaltung der MAKEL Studio GmbH auf dem Tisch." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "In welches Feld der Eisenhower-Einteilung gehört die Aufgabe?",
+          "ziele": [
+            "wichtig und dringend — selbst tun",
+            "wichtig, nicht dringend — terminieren",
+            "dringend, nicht wichtig — delegieren",
+            "weder noch — streichen"
+          ],
+          "elemente": [
+            { "text": "Reklamation einer Boutique, deren Antwortfrist heute endet", "loesung": "wichtig und dringend — selbst tun" },
+            { "text": "Vorbereitung des Strategiegesprächs mit der Geschäftsführung im nächsten Monat", "loesung": "wichtig, nicht dringend — terminieren" },
+            { "text": "Nachbestellung von Druckerpapier für das Büro", "loesung": "dringend, nicht wichtig — delegieren" },
+            { "text": "Weiterleitung einer Werbemail an alle Kolleginnen und Kollegen", "loesung": "weder noch — streichen" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{begriff:eisenhower|Eisenhower}}: wichtig und dringend selbst tun, wichtig allein terminieren. Dringend, aber unwichtig wird delegiert; weder noch wird gestrichen. Delegieren braucht Ziel, Frist und Befugnis — sonst kommt die Aufgabe zurück.",
+      "quelle": "lf2-k2, Abschnitt b2"
+    },
+
+    {
+      "id": "lf2-k2-02",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Arbeitstag in der Verwaltung der MAKEL Studio GmbH soll nach der ALPEN-Methode geplant werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die fünf Schritte der ALPEN-Methode.",
+          "elemente": [
+            { "text": "Pufferzeiten einplanen — nur etwa 60 Prozent verplanen", "position": 3 },
+            { "text": "Aufgaben notieren", "position": 1 },
+            { "text": "Nachkontrolle am Ende des Tages", "position": 5 },
+            { "text": "Länge der Aufgaben schätzen", "position": 2 },
+            { "text": "Entscheidungen über Prioritäten treffen", "position": 4 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{begriff:alpen-methode|ALPEN}}: Aufgaben, Länge, Puffer, Entscheidungen, Nachkontrolle. Nur etwa 60 Prozent des Tages werden verplant — der Rest ist Puffer für Störungen, die ohnehin kommen.",
+      "quelle": "lf2-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf2-k2-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH beginnt jeden Morgen damit, sämtliche E-Mails abzuarbeiten, und kümmert sich erst danach um eine Reklamation, deren Frist am selben Tag endet." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum dieses Vorgehen keine sinnvolle Priorisierung ist, und beschreiben Sie ein besseres.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Menge der E-Mails ist kein Prioritätskriterium. Priorisiert wird nach Wichtigkeit und Dringlichkeit, nicht nach Reihenfolge des Eingangs. Die fristgebundene Reklamation ist beides — wichtig, weil eine Kundenbeziehung und möglicherweise Ansprüche davon abhängen, und dringend, weil die Frist heute abläuft. Sie gehört damit an den Anfang. Die E-Mails enthalten dagegen überwiegend Aufgaben, die weniger dringend sind oder sich delegieren beziehungsweise streichen lassen. Wird die Reklamation nach hinten geschoben, droht der schlimmste Fall: Die Frist verstreicht, und der Schaden ist nicht mehr zu korrigieren, während die E-Mails auch am Nachmittag noch beantwortet werden können. Besser ist, die fristkritische Aufgabe zuerst zu erledigen und die E-Mail-Bearbeitung in ein bis zwei feste Blöcke am Tag zu bündeln. Schwierige Aufgaben gehören zudem in die Leistungshochphase am Vormittag, Routine in das Tief nach dem Mittag.",
+        "raster": [
+          { "kriterium": "Erkannt, dass die Menge oder Eingangsreihenfolge kein Prioritätskriterium ist", "punkte": 1 },
+          { "kriterium": "Reklamation anhand von Wichtigkeit und Dringlichkeit richtig eingeordnet", "punkte": 1 },
+          { "kriterium": "Folge des Aufschiebens benannt (Frist verstreicht, Schaden nicht korrigierbar)", "punkte": 1 },
+          { "kriterium": "Besseres Vorgehen genannt (E-Mail-Blöcke oder Nutzung der Leistungshochphase)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die {{begriff:tagesleistungskurve|Tagesleistungskurve}} hat ihr Hoch am Vormittag und ihr Tief nach dem Mittag. Zeitmanagement schafft keine Zeit, es verteilt die vorhandene.",
+      "quelle": "lf2-k2, Abschnitt b2"
+    }
+  ]
+}

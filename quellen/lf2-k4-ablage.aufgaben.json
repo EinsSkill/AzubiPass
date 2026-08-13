@@ -1,0 +1,111 @@
+{
+  "lernfeld": "lf2",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf2-k4-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "In der Ablage der MAKEL Studio GmbH werden verschiedene Ordnungssysteme eingesetzt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welches Ordnungssystem wird hier verwendet?",
+          "ziele": ["alphabetisch", "numerisch", "chronologisch", "sachlich"],
+          "elemente": [
+            { "text": "Kundenakten nach Firmennamen von A bis Z", "loesung": "alphabetisch" },
+            { "text": "Eingangsrechnungen nach fortlaufender Belegnummer", "loesung": "numerisch" },
+            { "text": "Kontoauszüge nach Datum des Auszugs", "loesung": "chronologisch" },
+            { "text": "Unterlagen getrennt nach Personal, Einkauf und Vertrieb", "loesung": "sachlich" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Ordnungssysteme: alphabetisch, numerisch, chronologisch, sachlich, geografisch. In der Praxis werden sie kombiniert — entscheidend ist, dass die Reihenfolge der Kriterien festgelegt ist.",
+      "quelle": "lf2-k4, Abschnitt b1"
+    },
+
+    {
+      "id": "lf2-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski prüft, wie lange verschiedene Unterlagen der MAKEL Studio GmbH aufzubewahren sind; das Geschäftsjahr endet am 31.12.2026." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Aussage zur Aufbewahrung trifft zu?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Der Jahresabschluss 2026 ist zehn Jahre aufzubewahren, empfangene Handelsbriefe sechs Jahre; beide Fristen beginnen mit dem Schluss des Kalenderjahres.", "richtig": true,
+              "echo": "Richtig. Zehn Jahre für Bücher, Inventare und Jahresabschlüsse, sechs Jahre für empfangene und abgesandte Handelsbriefe — jeweils ab Ende des Kalenderjahres." },
+            { "text": "Beide Unterlagen sind sechs Jahre aufzubewahren.", "richtig": false,
+              "echo": "Für Jahresabschlüsse gilt die längere Frist von zehn Jahren." },
+            { "text": "Die Frist beginnt jeweils mit dem Datum des einzelnen Belegs.", "richtig": false,
+              "echo": "Die Frist beginnt mit dem Schluss des Kalenderjahres, nicht mit dem Belegdatum." },
+            { "text": "Digitale Unterlagen unterliegen keiner Aufbewahrungsfrist.", "richtig": false,
+              "echo": "Die Fristen gelten unabhängig von der Form. Die digitale Ablage muss zusätzlich unveränderbar, vollständig, nachvollziehbar und auffindbar sein." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "{{par:hgb-257|§ 257 HGB}}: zehn Jahre für Bücher, Inventare und Jahresabschlüsse, sechs Jahre für empfangene und abgesandte Handelsbriefe. Die Frist beginnt mit dem Schluss des Kalenderjahres.",
+      "quelle": "lf2-k4, Abschnitt b2"
+    },
+
+    {
+      "id": "lf2-k4-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Mitarbeiter der MAKEL Studio GmbH bewahrt Lieferantenverträge ausschließlich in seinem persönlichen E-Mail-Postfach auf." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie, warum das persönliche Postfach als alleinige Vertragsablage ungeeignet ist.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Prüfstein jeder Ablage lautet: Findet eine Vertretung den Vorgang ohne Rückfrage? Im persönlichen Postfach ist das ausgeschlossen — bei Urlaub, Krankheit oder Ausscheiden des Mitarbeiters kommt niemand an die Verträge. Zweitens ist die Auffindbarkeit schlecht: Ein Postfach ist chronologisch nach Eingang sortiert und nicht nach Vertragspartnern oder Sachgebieten; die Suche nach der zuletzt gültigen Fassung wird zum Ratespiel. Drittens fehlt die Nachweisfähigkeit: Handelsbriefe unterliegen Aufbewahrungsfristen, und die Ablage muss unveränderbar, vollständig, nachvollziehbar und auffindbar sein — ein Postfach, in dem gelöscht und verschoben werden kann, erfüllt das nicht. Viertens ist unklar, welche Fassung gilt, wenn mehrere Versionen im Verlauf hängen. Richtig ist die zentrale Ablage im gemeinsamen System mit eindeutiger Benennung.",
+        "raster": [
+          { "kriterium": "Vertretungsfall beziehungsweise Zugriff durch andere angesprochen", "punkte": 1 },
+          { "kriterium": "Auffindbarkeit als Problem genannt", "punkte": 1 },
+          { "kriterium": "Aufbewahrungspflicht oder Nachweisfähigkeit genannt", "punkte": 1 },
+          { "kriterium": "Zentrale Ablage mit eindeutiger Benennung als Lösung genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Digitale Ablage muss unveränderbar, vollständig, nachvollziehbar und auffindbar sein. Ein persönliches Postfach erfüllt keine dieser vier Anforderungen.",
+      "quelle": "lf2-k4, Abschnitt b3"
+    }
+  ]
+}
