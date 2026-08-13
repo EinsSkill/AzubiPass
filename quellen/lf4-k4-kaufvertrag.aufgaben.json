@@ -1,0 +1,114 @@
+{
+  "lernfeld": "lf4",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf4-k4-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydin geht den Stoffliefervertrag der MAKEL Studio GmbH Klausel für Klausel durch." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welchen Zweck hat die jeweilige Vertragsregelung?",
+          "ziele": [
+            "regelt, wer Transportkosten und Transportgefahr trägt",
+            "regelt Zeitpunkt und Art der Zahlung",
+            "sichert den Verkäufer bis zur vollständigen Bezahlung",
+            "vorformulierte Bedingungen für eine Vielzahl von Verträgen"
+          ],
+          "elemente": [
+            { "text": "Lieferbedingung „ab Werk“", "loesung": "regelt, wer Transportkosten und Transportgefahr trägt" },
+            { "text": "Zahlungsbedingung „10 Tage 2 % Skonto, 30 Tage netto“", "loesung": "regelt Zeitpunkt und Art der Zahlung" },
+            { "text": "Eigentumsvorbehalt", "loesung": "sichert den Verkäufer bis zur vollständigen Bezahlung" },
+            { "text": "Allgemeine Geschäftsbedingungen", "loesung": "vorformulierte Bedingungen für eine Vielzahl von Verträgen" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{begriff:handelsklausel|Handelsklauseln}} regeln Transportkosten und Transportgefahr getrennt voneinander. Der Eigentumsvorbehalt nach {{par:bgb-449|§ 449 BGB}} sichert den Verkäufer, und AGB gelten nach {{par:bgb-305|§ 305 BGB}} nur bei ausdrücklichem Hinweis vor Vertragsschluss.",
+      "quelle": "lf4-k4, Abschnitt b2"
+    },
+
+    {
+      "id": "lf4-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Stofflieferant bietet der MAKEL Studio GmbH die Zahlungsbedingung „10 Tage 2 % Skonto, 30 Tage netto“ an; die Einkaufsrichtlinie von MAKEL nennt genau diese Standardbedingung." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Wie ist die angebotene Zahlungsbedingung zu bewerten?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Sie entspricht der Standardbedingung des Einkaufs und kann unverändert übernommen werden.", "richtig": true,
+              "echo": "Richtig. Skontosatz, Skontofrist und Zahlungsziel stimmen mit der Einkaufskondition überein." },
+            { "text": "Sie ist schlechter als der Standard, weil das Zahlungsziel nur 30 Tage beträgt.", "richtig": false,
+              "echo": "30 Tage netto ist genau das vereinbarte Zahlungsziel des Einkaufs — nicht schlechter, sondern deckungsgleich." },
+            { "text": "Sie ist besser als der Standard, weil 2 % Skonto über der üblichen Kondition liegen.", "richtig": false,
+              "echo": "2 % ist der Standardskontosatz im Einkauf. Besser wäre nur ein höherer Satz oder eine längere Skontofrist." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Eine Zahlungsbedingung wird an drei Stellen geprüft: Skontosatz, Skontofrist und Zahlungsziel. Erst wenn alle drei mit der eigenen Kondition verglichen sind, weiß man, ob das Angebot besser oder schlechter ist.",
+      "quelle": "lf4-k4, Abschnitt b2"
+    },
+
+    {
+      "id": "lf4-k4-03",
+      "operator": "Erklären Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die von der MAKEL Studio GmbH bestellten Stoffrollen liegen bereits im Lager und werden verarbeitet; die Rechnung des Lieferers ist noch offen und der Vertrag enthält einen Eigentumsvorbehalt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Erklären Sie, warum der Eigentumsvorbehalt den Lieferer schützt, obwohl MAKEL die Stoffe bereits nutzt.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Mit der Übergabe erhält MAKEL nur den Besitz, also die tatsächliche Sachherrschaft. Das Eigentum bleibt bis zur vollständigen Bezahlung beim Lieferer. Besitz und Eigentum sind nicht dasselbe — deshalb darf MAKEL die Stoffe zwar nutzen, der Lieferer bleibt aber rechtlich Eigentümer. Zahlt MAKEL nicht, kann der Lieferer die Herausgabe verlangen; nach § 449 BGB allerdings erst, wenn er vom Vertrag zurückgetreten ist. Der Eigentumsvorbehalt wirkt vor allem in der Insolvenz des Käufers, weil die Ware dann nicht ohne Weiteres in die Masse fällt. Seine praktische Grenze liegt darin, dass die Stoffe verarbeitet werden: Was untrennbar in ein neues Erzeugnis eingeht, lässt sich nicht mehr einfach herausgeben.",
+        "raster": [
+          { "kriterium": "Unterschied zwischen Besitz und Eigentum benannt", "punkte": 1 },
+          { "kriterium": "Eigentumsübergang erst mit vollständiger Zahlung genannt", "punkte": 1 },
+          { "kriterium": "Herausgabeanspruch genannt und richtig an den Rücktritt geknüpft", "punkte": 1 },
+          { "kriterium": "Grenze der Sicherung bei Verarbeitung oder Weiterveräußerung erkannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "{{par:bgb-449|§ 449 BGB}}: Eigentumsvorbehalt — Herausgabe erst nach Rücktritt vom Vertrag. Die Sicherung ist stark, solange die Ware noch als solche existiert.",
+      "quelle": "lf4-k4, Abschnitt b3"
+    }
+  ]
+}

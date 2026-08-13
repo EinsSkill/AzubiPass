@@ -1,0 +1,160 @@
+{
+  "lernfeld": "lf4",
+  "kapitel": "k7",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf4-k7-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß prüft, ab wann eine Wholesale-Kundin der MAKEL Studio GmbH in Zahlungsverzug gerät." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Angaben zur Rechnung",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Inhalt"],
+            "zeilen": [
+              ["Kundin", "Modehaus Weber GmbH (Kauffrau, kein Verbraucher)"],
+              ["Rechnungsdatum und Zugang", "01.09.2026"],
+              ["Zahlungsbedingung", "30 Tage netto"],
+              ["Mahnung durch MAKEL", "bisher keine"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Ab wann befindet sich die Kundin ohne Mahnung in Zahlungsverzug?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Mit Ablauf von 30 Tagen nach Zugang der Rechnung — auch ohne Mahnung.", "richtig": true,
+              "echo": "Richtig. Nach § 286 BGB tritt der Verzug spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung ein. Gegenüber einer Kauffrau ist dafür kein Hinweis in der Rechnung nötig." },
+            { "text": "Erst mit Zugang einer schriftlichen Mahnung.", "richtig": false,
+              "echo": "Die Mahnung ist ein Weg in den Verzug, aber nicht der einzige. Die 30-Tage-Regel wirkt auch ohne sie." },
+            { "text": "Sofort mit dem Rechnungsdatum, weil die Forderung dann entsteht.", "richtig": false,
+              "echo": "Mit dem Rechnungsdatum entsteht die Forderung, aber es wurde ein Zahlungsziel von 30 Tagen eingeräumt." },
+            { "text": "Gar nicht — ohne ausdrücklichen Hinweis in der Rechnung greift die Regel nie.", "richtig": false,
+              "echo": "Der Hinweis ist nur gegenüber Verbrauchern nötig. Hier handelt es sich um einen Handelskauf." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "{{par:bgb-286|§ 286 BGB}}: Verzug durch Mahnung, kalendermäßige Bestimmung oder die 30-Tage-Regel. Gegenüber Verbrauchern greift die 30-Tage-Regel nur mit einem Hinweis in der Rechnung — im Handelskauf nicht.",
+      "quelle": "lf4-k7, Abschnitt b2"
+    },
+
+    {
+      "id": "lf4-k7-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+
+      "variablen": {
+        "forderung": { "von": 4000, "bis": 12000, "schritt": 500 },
+        "verzugstage": { "von": 20, "bis": 90, "schritt": 5 },
+        "basiszinssatz": { "von": 1, "bis": 4, "schritt": 1 }
+      },
+      "abgeleitet": {
+        "verzugszinssatz": "basiszinssatz + 9",
+        "zinsen": "runde(forderung * verzugszinssatz / 100 * verzugstage / 360, 2)",
+        "gesamt": "runde(zinsen + 40, 2)"
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Wholesale-Forderung der MAKEL Studio GmbH gegen eine Boutique ist seit Wochen überfällig; beide Seiten sind Kaufleute." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Angaben zur Berechnung",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Offene Forderung", "{forderung} €"],
+              ["Dauer des Verzugs", "{verzugstage} Tage"],
+              ["Für die Aufgabe angenommener Basiszinssatz", "{basiszinssatz} %"],
+              ["Zinsberechnung", "kaufmännisch mit 360 Zinstagen im Jahr"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Verzugszinssatz", "einheit": "%",
+          "loesung": "verzugszinssatz", "punkte": 2 },
+        { "block": "zahl", "label": "Verzugszinsen", "einheit": "€",
+          "loesung": "zinsen", "punkte": 2, "folgefehler_aus": ["verzugszinssatz"] },
+        { "block": "zahl", "label": "Gesamtforderung aus Zinsen und Pauschale", "einheit": "€",
+          "loesung": "gesamt", "punkte": 1, "folgefehler_aus": ["zinsen"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "{{par:bgb-288|§ 288 BGB}}: fünf Prozentpunkte über dem Basiszinssatz mit Verbraucher, neun ohne, dazu eine Pauschale von 40 €. Hier sind beide Seiten Kaufleute, also gilt der Aufschlag von neun Prozentpunkten. Der Basiszinssatz ist ein veränderlicher Wert — in dieser Aufgabe wird er ausdrücklich vorgegeben und ist vor einer Verwendung im Ernstfall am aktuellen Stand zu prüfen.",
+      "quelle": "lf4-k7, Abschnitt b3"
+    },
+
+    {
+      "id": "lf4-k7-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Boutique zahlt seit Wochen nicht; Marlene Voß dokumentiert jede Stufe des Mahnwesens der MAKEL Studio GmbH, bevor sie das gerichtliche Mahnverfahren einleitet." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Mahnstufen der MAKEL Studio GmbH",
+          "zugeklappt": true,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Stufe", "Zeitpunkt und Kosten"],
+            "zeilen": [
+              ["Zahlungserinnerung", "10 Tage nach Fälligkeit, kostenfrei"],
+              ["1. Mahnung", "10 Tage später, Mahngebühr 5,00 €"],
+              ["2. Mahnung mit Fristsetzung", "10 Tage später, Mahngebühr 10,00 €, danach gerichtliches Mahnverfahren"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum die einzelnen Mahnstufen sorgfältig dokumentiert werden, bevor das gerichtliche Mahnverfahren eingeleitet wird.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Dokumentation dient zuerst dem Nachweis: MAKEL muss belegen können, wann die Forderung fällig war, wann gemahnt wurde und dass der Verzug eingetreten ist. Nur dann lassen sich Verzugszinsen, Mahngebühren und die Pauschale schlüssig fordern, und nur dann steht MAKEL im Streitfall auf sicherem Boden. Zweitens folgt daraus der ordentliche Ablauf des internen Forderungsmanagements: Jede Stufe hat einen festen Zeitpunkt, so dass keine Forderung übersehen wird und die Verjährung nicht unbemerkt näher rückt. Drittens schützt der gestufte Ablauf die Kundenbeziehung: Eine Boutique ist ein wiederkehrender Wholesale-Kunde; eine kostenfreie Zahlungserinnerung klärt oft schon ein Versehen, während ein sofortiger Mahnbescheid die Geschäftsbeziehung beschädigen würde. Das gerichtliche Verfahren ist der letzte Schritt, nicht der erste.",
+        "raster": [
+          { "kriterium": "Nachweis- und Beweisfunktion der Dokumentation genannt", "punkte": 1 },
+          { "kriterium": "Bezug zu Verzugszinsen, Mahngebühren oder Pauschale hergestellt", "punkte": 1 },
+          { "kriterium": "Internes Forderungsmanagement beziehungsweise geordneter Ablauf genannt", "punkte": 1 },
+          { "kriterium": "Kundenbeziehung als Grund für den gestuften Ablauf gewürdigt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Gerichtliches Mahnverfahren heißt: Mahnbescheid, Widerspruch, Vollstreckungsbescheid, Zwangsvollstreckung. Der Weg dorthin ist teuer und endgültig — deshalb steht am Anfang eine kostenfreie Erinnerung und eine saubere Akte.",
+      "quelle": "lf4-k7, Abschnitt b3"
+    }
+  ]
+}

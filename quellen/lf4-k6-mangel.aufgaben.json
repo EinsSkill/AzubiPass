@@ -1,0 +1,114 @@
+{
+  "lernfeld": "lf4",
+  "kapitel": "k6",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf4-k6-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Jonas Weidner nimmt die Stofflieferung für die Winterkollektion der MAKEL Studio GmbH an und notiert vier Beanstandungen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Um welche Art der Vertragswidrigkeit handelt es sich jeweils?",
+          "ziele": [
+            "Abweichung von der vereinbarten Beschaffenheit",
+            "Abweichung von der üblichen Beschaffenheit",
+            "Falschlieferung",
+            "Zuweniglieferung"
+          ],
+          "elemente": [
+            { "text": "Bestellt war Schwarz, geliefert wurde Dunkelgrau", "loesung": "Abweichung von der vereinbarten Beschaffenheit" },
+            { "text": "Mehrere Stoffbahnen sind eingerissen und dadurch nicht verarbeitbar", "loesung": "Abweichung von der üblichen Beschaffenheit" },
+            { "text": "Geliefert wurde ein völlig anderer Stofftyp als bestellt", "loesung": "Falschlieferung" },
+            { "text": "Statt 100 Rollen enthält die Sendung nur 80 Rollen", "loesung": "Zuweniglieferung" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{par:bgb-434|§ 434 BGB}} unterscheidet die Abweichung von subjektiven, objektiven und Montageanforderungen. Falschlieferung und Zuweniglieferung stehen dem Sachmangel gleich. Maßgeblich ist immer der Zustand bei Gefahrübergang, nicht bei Entdeckung.",
+      "quelle": "lf4-k6, Abschnitt b1"
+    },
+
+    {
+      "id": "lf4-k6-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Von der Stofflieferung an die MAKEL Studio GmbH sind 20 Rollen beschädigt; der Mangel wurde beim Wareneingang sofort gerügt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welches Recht steht MAKEL jetzt zuerst zu?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Nacherfüllung — also Nachbesserung oder Lieferung mangelfreier Rollen.", "richtig": true,
+              "echo": "Richtig. Nach § 437 BGB kommt die Nacherfüllung zuerst. Der Verkäufer bekommt die Gelegenheit, seine Leistung in Ordnung zu bringen." },
+            { "text": "Sofortiger Rücktritt vom gesamten Vertrag.", "richtig": false,
+              "echo": "Der Rücktritt kommt erst nach der Nacherfüllung in Betracht — und auch dann meist erst nach erfolgloser Frist." },
+            { "text": "Sofortige Minderung des Kaufpreises um den Wert der 20 Rollen.", "richtig": false,
+              "echo": "Auch die Minderung ist ein Recht der zweiten Stufe. Zuerst hat der Verkäufer das Recht zur zweiten Andienung." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "{{par:bgb-437|§ 437 BGB}}: Nacherfüllung zuerst, danach Rücktritt oder Minderung, dazu Schadensersatz. Diese Stufenfolge ist ein sicherer Prüfungsinhalt.",
+      "quelle": "lf4-k6, Abschnitt b3"
+    },
+
+    {
+      "id": "lf4-k6-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydin will den Stofflieferanten der MAKEL Studio GmbH wegen der beschädigten Rollen sofort auf Schadensersatz in Anspruch nehmen, ohne ihm eine Frist zu setzen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum dieses Vorgehen rechtlich nicht tragfähig ist.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Mängelrechte stehen in einer festen Stufenfolge. An erster Stelle steht die Nacherfüllung: Der Verkäufer hat ein Recht zur zweiten Andienung und muss die Gelegenheit bekommen, nachzubessern oder mangelfreie Ware zu liefern. Rücktritt, Minderung und Schadensersatz statt der Leistung setzen deshalb grundsätzlich voraus, dass MAKEL zuvor eine angemessene Frist zur Nacherfüllung gesetzt hat und diese erfolglos verstrichen ist. Wer die Stufe überspringt, macht Ansprüche geltend, die noch nicht entstanden sind, und riskiert, die Kosten selbst zu tragen. Entbehrlich ist die Frist nur in Ausnahmefällen, etwa wenn der Verkäufer die Nacherfüllung ernsthaft und endgültig verweigert oder sie fehlgeschlagen ist. Richtig ist daher, die Rüge mit einer konkreten Nachfrist zu verbinden.",
+        "raster": [
+          { "kriterium": "Vorrang der Nacherfüllung genannt", "punkte": 1 },
+          { "kriterium": "Recht des Verkäufers zur zweiten Andienung erklärt", "punkte": 1 },
+          { "kriterium": "Erfolglose angemessene Frist als Voraussetzung der weiteren Rechte genannt", "punkte": 1 },
+          { "kriterium": "Ausnahme genannt (ernsthafte Verweigerung oder fehlgeschlagene Nacherfüllung)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die Stufenfolge schützt beide Seiten: Der Käufer bekommt am Ende einwandfreie Ware oder sein Geld, der Verkäufer bekommt eine faire Chance, den Fehler zu beheben.",
+      "quelle": "lf4-k6, Abschnitt b3"
+    }
+  ]
+}

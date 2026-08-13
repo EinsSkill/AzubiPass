@@ -1,0 +1,147 @@
+{
+  "lernfeld": "lf4",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf4-k3-01",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 8,
+      "dauer_min": 8,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+
+      "variablen": {
+        "listenpreis": { "von": 4000, "bis": 9000, "schritt": 250 },
+        "rabattsatz": { "von": 5, "bis": 20, "schritt": 5 },
+        "skontosatz": { "von": 2, "bis": 3, "schritt": 1 },
+        "bezugskosten": { "von": 120, "bis": 400, "schritt": 20 }
+      },
+      "abgeleitet": {
+        "rabattbetrag": "runde(listenpreis * rabattsatz / 100, 2)",
+        "zielpreis": "runde(listenpreis - rabattbetrag, 2)",
+        "skontobetrag": "runde(zielpreis * skontosatz / 100, 2)",
+        "barpreis": "runde(zielpreis - skontobetrag, 2)",
+        "einstandspreis": "runde(barpreis + bezugskosten, 2)"
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydin prüft ein Stoffangebot für die Winterkollektion der MAKEL Studio GmbH und rechnet es auf den Einstandspreis herunter." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Das Angebot",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Listeneinkaufspreis der Partie", "{listenpreis} €"],
+              ["Liefererrabatt", "{rabattsatz} %"],
+              ["Skonto bei Zahlung innerhalb der Frist", "{skontosatz} %"],
+              ["Fracht und Rollgeld", "{bezugskosten} €"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Rabattbetrag", "einheit": "€",
+          "loesung": "rabattbetrag", "punkte": 2 },
+        { "block": "zahl", "label": "Zieleinkaufspreis", "einheit": "€",
+          "loesung": "zielpreis", "punkte": 2, "folgefehler_aus": ["rabattbetrag"] },
+        { "block": "zahl", "label": "Bareinkaufspreis", "einheit": "€",
+          "loesung": "barpreis", "punkte": 2, "folgefehler_aus": ["zielpreis"] },
+        { "block": "zahl", "label": "Einstandspreis", "einheit": "€",
+          "loesung": "einstandspreis", "punkte": 2, "folgefehler_aus": ["barpreis"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 8 },
+      "erklaerung": "Das Schema ist zwingend: Listeneinkaufspreis − {{begriff:rabatt|Rabatt}} = Zieleinkaufspreis − {{begriff:skonto|Skonto}} = Bareinkaufspreis + {{begriff:bezugskosten|Bezugskosten}} = Einstandspreis. Das Skonto wird nie vom Listenpreis gerechnet, sondern immer vom bereits um den Rabatt gekürzten Zieleinkaufspreis.",
+      "quelle": "lf4-k3, Abschnitt b1"
+    },
+
+    {
+      "id": "lf4-k3-02",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH soll das Schema der Bezugskalkulation ordnen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die vier Preisstufen in der Reihenfolge, in der sie berechnet werden.",
+          "elemente": [
+            { "text": "Bareinkaufspreis", "position": 3 },
+            { "text": "Listeneinkaufspreis", "position": 1 },
+            { "text": "Einstandspreis", "position": 4 },
+            { "text": "Zieleinkaufspreis", "position": 2 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Zwischen den Stufen stehen immer dieselben Rechenschritte: Rabatt abziehen, Skonto abziehen, Bezugskosten addieren. Nur Einstandspreise sind vergleichbar — Listenpreise sind es nicht.",
+      "quelle": "lf4-k3, Abschnitt b1"
+    },
+
+    {
+      "id": "lf4-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydin entscheidet sich für ein Stoffangebot, das nicht das günstigste ist." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Die beiden engsten Angebote",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Kriterium", "Angebot A", "Angebot B"],
+            "zeilen": [
+              ["Einstandspreis der Partie", "5.940,00 €", "6.180,00 €"],
+              ["Lieferzeit", "24 Arbeitstage", "9 Arbeitstage"],
+              ["Bio-Zertifizierung", "angekündigt, noch nicht erteilt", "vorhanden und geprüft"],
+              ["Termintreue laut Lieferantenbewertung", "keine Erfahrung", "gut"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum Angebot B trotz des höheren Einstandspreises gewählt werden kann.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Preisunterschied beträgt 240,00 €, also rund vier Prozent — quantitativ ist Angebot A besser. Entscheidend sind hier aber die qualitativen Kriterien. Die Lieferzeit von B ist mit neun statt 24 Arbeitstagen deutlich kürzer; bei einer Winterkollektion mit festem Verkaufsstart entscheidet das darüber, ob der Termin überhaupt zu halten ist. Die Bio-Zertifizierung ist bei B geprüft vorhanden, bei A nur angekündigt — MAKEL wirbt mit dieser Eigenschaft, ein Ausfall wäre ein Werbe- und Reklamationsrisiko. Zudem liegt für B eine gute Bewertung der Termintreue vor, für A keinerlei Erfahrung. Die Mehrkosten von 240,00 € sind gegenüber dem Risiko eines verpassten Verkaufsstarts gering. Die Gewichtung der Kriterien muss dabei vor dem Vergleich festgelegt worden sein, nicht danach.",
+        "raster": [
+          { "kriterium": "Preisunterschied quantitativ benannt und als gering eingeordnet", "punkte": 1 },
+          { "kriterium": "Lieferzeit mit Bezug zum Verkaufsstart der Kollektion begründet", "punkte": 1 },
+          { "kriterium": "Bio-Zertifizierung als Qualitäts- beziehungsweise Werberisiko gewürdigt", "punkte": 1 },
+          { "kriterium": "Termintreue beziehungsweise fehlende Erfahrung mit Lieferer A einbezogen", "punkte": 1 },
+          { "kriterium": "Abwägung ausgesprochen: qualitative Kriterien überwiegen den Preisvorteil", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die {{begriff:nutzwertanalyse|Nutzwertanalyse}} bewertet qualitative Kriterien mit Punkten mal Gewichtung. Wichtig ist, dass die Gewichtung vor dem Vergleich feststeht — sonst begründet man hinterher nur, was man ohnehin wollte.",
+      "quelle": "lf4-k3, Abschnitt b3"
+    }
+  ]
+}
