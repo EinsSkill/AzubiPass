@@ -1,0 +1,144 @@
+{
+  "lernfeld": "lf9",
+  "kapitel": "k6",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf9-k6-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner erklärt, welche Frage die einzelnen Investitionsrechnungen beantworten." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Leitfrage beantwortet das jeweilige Verfahren?",
+          "ziele": [
+            "Welche Maschine verursacht die geringeren Kosten?",
+            "Welche Maschine bringt den höheren Gewinn?",
+            "Welche Maschine verzinst das eingesetzte Kapital besser?",
+            "Nach wie vielen Jahren ist das eingesetzte Geld zurückgeflossen?"
+          ],
+          "elemente": [
+            { "text": "Kostenvergleich", "loesung": "Welche Maschine verursacht die geringeren Kosten?" },
+            { "text": "Gewinnvergleich", "loesung": "Welche Maschine bringt den höheren Gewinn?" },
+            { "text": "Rentabilitätsvergleich", "loesung": "Welche Maschine verzinst das eingesetzte Kapital besser?" },
+            { "text": "Amortisationsrechnung", "loesung": "Nach wie vielen Jahren ist das eingesetzte Geld zurückgeflossen?" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die vier statischen Verfahren bauen aufeinander auf: Der Kostenvergleich sieht nur die Kosten, der Gewinnvergleich stellt die Erlöse daneben, der Rentabilitätsvergleich setzt den Gewinn ins Verhältnis zum gebundenen Kapital, und die Amortisationsrechnung fragt nach der Zeit bis zur Rückgewinnung.",
+      "quelle": "lf9-k6, Abschnitt b2"
+    },
+
+    {
+      "id": "lf9-k6-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+
+      "variablen": {
+        "anschaffung": { "von": 80000, "bis": 160000, "schritt": 10000 },
+        "gewinn": { "von": 8000, "bis": 24000, "schritt": 1000 },
+        "abschreibung": { "von": 10000, "bis": 20000, "schritt": 1000 }
+      },
+      "abgeleitet": {
+        "rueckfluss": "gewinn + abschreibung",
+        "amortisation": "runde(anschaffung / rueckfluss, 2)"
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner prüft, nach wie vielen Jahren sich die neue Druckmaschine der MAKEL Studio GmbH bezahlt gemacht hat." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Werte der Druckmaschine",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Anschaffungsauszahlung", "{anschaffung} €"],
+              ["Durchschnittlicher Gewinn je Jahr", "{gewinn} €"],
+              ["Jährliche Abschreibung", "{abschreibung} €"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Jährlicher Rückfluss", "einheit": "€",
+          "loesung": "rueckfluss", "punkte": 2 },
+        { "block": "zahl", "label": "Amortisationsdauer", "einheit": "Jahre",
+          "loesung": "amortisation", "punkte": 2, "folgefehler_aus": ["rueckfluss"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Amortisationsdauer = Anschaffungswert ÷ Rückfluss. Der häufigste Fehler: Der Rückfluss ist Gewinn **plus** Abschreibung, nicht der Gewinn allein — die Abschreibung ist Aufwand, aber keine Auszahlung, das Geld bleibt im Betrieb.",
+      "quelle": "lf9-k6, Abschnitt b2"
+    },
+
+    {
+      "id": "lf9-k6-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für die Veredelung der MAKEL Studio GmbH stehen zwei Druckmaschinen zur Auswahl." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Die beiden Maschinen",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Maschine A", "Maschine B"],
+            "zeilen": [
+              ["Anschaffungsauszahlung", "140.000 €", "95.000 €"],
+              ["Jährlicher Rückfluss", "35.000 €", "19.000 €"],
+              ["Amortisationsdauer", "4,0 Jahre", "5,0 Jahre"],
+              ["Erwartete Nutzungsdauer", "8 Jahre", "8 Jahre"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie eine Entscheidung zwischen den beiden Maschinen und benennen Sie die Grenzen Ihrer Rechnung.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Nach der Amortisationsrechnung ist Maschine A vorzuziehen: Sie hat ihr Geld nach vier statt nach fünf Jahren zurückgeholt und bindet das Kapital damit ein Jahr kürzer. Bei acht Jahren Nutzungsdauer erwirtschaftet A anschließend vier Jahre lang den vollen Rückfluss, B nur drei. Für B spricht die geringere Anschaffungsauszahlung von 95.000 €: Sie belastet die Liquidität weniger und ist leichter zu finanzieren — bei der bewusst knapp gehaltenen Liquidität von MAKEL ist das ein ernstzunehmendes Argument. Die Entscheidung hängt deshalb davon ab, ob die Finanzierung von 140.000 € gesichert ist. Die Grenzen der Rechnung sind erheblich: Statische Verfahren rechnen ohne Zeitwert des Geldes und mit einem Durchschnittsjahr, obwohl die Rückflüsse in Wirklichkeit schwanken. Die Amortisationsrechnung sagt außerdem nichts darüber, was nach der Amortisation passiert, und behandelt nur das Risiko der Kapitalbindung. Qualitative Kriterien wie Druckqualität, Wartung und Technologierisiko bleiben ganz außen vor.",
+        "raster": [
+          { "kriterium": "Klare Entscheidung mit Bezug auf die Amortisationsdauer getroffen", "punkte": 1 },
+          { "kriterium": "Restnutzungsdauer nach der Amortisation einbezogen", "punkte": 1 },
+          { "kriterium": "Gegenargument der geringeren Anschaffungsauszahlung beziehungsweise Liquidität gewürdigt", "punkte": 1 },
+          { "kriterium": "Grenze der statischen Verfahren genannt (Durchschnittsjahr, kein Zeitwert des Geldes)", "punkte": 1 },
+          { "kriterium": "Mindestens ein qualitatives Kriterium außerhalb der Rechnung genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Statische Verfahren rechnen ohne Zeitwert des Geldes und mit einem Durchschnittsjahr. Sie liefern eine Richtung, keine Wahrheit — wer ihre Zahlen auf zwei Nachkommastellen verteidigt, hat sie missverstanden.",
+      "quelle": "lf9-k6, Abschnitt b3"
+    }
+  ]
+}

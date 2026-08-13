@@ -1,0 +1,114 @@
+{
+  "lernfeld": "lf9",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf9-k4-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Hausbank der MAKEL Studio GmbH legt die möglichen Sicherheiten für das Maschinendarlehen vor." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Beschreibung gehört zu welcher Sicherheit?",
+          "ziele": [
+            "eine Person steht für die Schuld eines Dritten ein",
+            "das Eigentum wandert zur Bank, der Betrieb nutzt den Gegenstand weiter",
+            "Grundstücksrecht, abstrakt und wiederverwendbar",
+            "Grundstücksrecht, an die Forderung gebunden und mit ihr erlöschend"
+          ],
+          "elemente": [
+            { "text": "Bürgschaft", "loesung": "eine Person steht für die Schuld eines Dritten ein" },
+            { "text": "Sicherungsübereignung", "loesung": "das Eigentum wandert zur Bank, der Betrieb nutzt den Gegenstand weiter" },
+            { "text": "Grundschuld", "loesung": "Grundstücksrecht, abstrakt und wiederverwendbar" },
+            { "text": "Hypothek", "loesung": "Grundstücksrecht, an die Forderung gebunden und mit ihr erlöschend" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Personensicherheiten stehen auf einer Person, Sachsicherheiten auf einem Gegenstand. Akzessorisch heißt: an die Forderung gebunden und mit ihr erlöschend — das trifft auf die Hypothek zu, nicht auf die {{begriff:grundschuld|Grundschuld}}.",
+      "quelle": "lf9-k4, Abschnitt b1"
+    },
+
+    {
+      "id": "lf9-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Bank verlangt für das Darlehen der MAKEL Studio GmbH eine Sicherheit; die finanzierte Druckmaschine wird für die Veredelung täglich gebraucht." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Sicherheit passt zu dieser Lage?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Die Sicherungsübereignung der Druckmaschine.", "richtig": true,
+              "echo": "Richtig. Das Eigentum geht auf die Bank über, der Besitz und damit die tägliche Nutzung bleiben bei MAKEL — die Produktion läuft weiter." },
+            { "text": "Die Verpfändung der Druckmaschine mit Übergabe an die Bank.", "richtig": false,
+              "echo": "Eine Verpfändung setzt die Übergabe des Gegenstands voraus. Dann könnte MAKEL die Maschine nicht mehr nutzen — genau das soll vermieden werden." },
+            { "text": "Eine Grundschuld auf die Druckmaschine.", "richtig": false,
+              "echo": "Grundschuld und Hypothek sind Grundstücksrechte. Eine Maschine ist kein Grundstück." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "{{begriff:sicherungsuebereignung|Sicherungsübereignung}}: Eigentum wandert, der Betrieb nutzt weiter. Genau dafür wurde sie entwickelt — sie ist die Standardsicherheit für Maschinen und Fahrzeuge, die im Einsatz bleiben müssen.",
+      "quelle": "lf9-k4, Abschnitt b3"
+    },
+
+    {
+      "id": "lf9-k4-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Druckmaschine der MAKEL Studio GmbH kostet 120.000 €; die Bank rechnet sie als Sicherheit nur mit einem deutlich geringeren Betrag an." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum die Bank bei einer Spezialmaschine einen besonders hohen Verwertungsabschlag ansetzt.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Bank bewertet eine Sicherheit nicht danach, was sie gekostet hat, sondern danach, was sie im Ernstfall dafür bekäme. Sie setzt deshalb nie den vollen Wert an, sondern rechnet mit einem Verwertungsabschlag. Bei einer Spezialmaschine für Textilveredelung ist dieser Abschlag besonders hoch, weil der Kreis möglicher Käufer klein ist: Nur wenige Betriebe können mit einer solchen Maschine etwas anfangen, so dass sich schwer und nur mit Preisnachlass ein Käufer findet. Hinzu kommt der Wertverlust durch Nutzung und technischen Fortschritt — im Verwertungsfall ist die Maschine bereits gebraucht und womöglich veraltet. Schließlich verursacht die Verwertung selbst Kosten und Zeit: Ausbau, Transport, Lagerung und Verkauf. Je spezieller der Gegenstand, desto größer der Abstand zwischen Anschaffungswert und Sicherheitenwert.",
+        "raster": [
+          { "kriterium": "Maßstab genannt: der erzielbare Verwertungserlös, nicht der Anschaffungswert", "punkte": 1 },
+          { "kriterium": "Enger Markt beziehungsweise kleiner Käuferkreis bei Spezialmaschinen genannt", "punkte": 1 },
+          { "kriterium": "Wertverlust durch Nutzung oder technische Veralterung genannt", "punkte": 1 },
+          { "kriterium": "Verwertungskosten oder Zeitbedarf der Verwertung berücksichtigt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Banken setzen nie den vollen Wert an, sondern rechnen mit einem Verwertungsabschlag. Für den Betrieb heißt das: Die Sicherheit deckt selten den ganzen Kredit — oft wird eine zweite verlangt.",
+      "quelle": "lf9-k4, Abschnitt b3"
+    }
+  ]
+}

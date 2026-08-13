@@ -1,0 +1,134 @@
+{
+  "lernfeld": "lf9",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf9-k1-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski stellt zusammen, welche Vorgänge in den Liquiditätsplan der MAKEL Studio GmbH gehören." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Gehört der Vorgang in den Liquiditätsplan?",
+          "ziele": [
+            "zahlungswirksam — gehört in den Liquiditätsplan",
+            "nicht zahlungswirksam — gehört nicht in den Liquiditätsplan"
+          ],
+          "elemente": [
+            { "text": "Eine Boutique überweist eine offene Rechnung auf das Bankkonto", "loesung": "zahlungswirksam — gehört in den Liquiditätsplan" },
+            { "text": "Die Löhne des Monats werden ausgezahlt", "loesung": "zahlungswirksam — gehört in den Liquiditätsplan" },
+            { "text": "Auf die Druckmaschine wird die jährliche Abschreibung verbucht", "loesung": "nicht zahlungswirksam — gehört nicht in den Liquiditätsplan" },
+            { "text": "Eine Rechnung an eine Boutique wird gestellt, Zahlungsziel 30 Tage", "loesung": "nicht zahlungswirksam — gehört nicht in den Liquiditätsplan" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der {{begriff:liquiditaetsplan|Liquiditätsplan}} rechnet mit Zahlungen, nicht mit Erträgen und Aufwendungen. Die gestellte Rechnung ist bereits Ertrag, aber noch keine Einzahlung — das Geld kommt erst in 30 Tagen. Genau diese Verschiebung macht rentable Betriebe zahlungsunfähig.",
+      "quelle": "lf9-k1, Abschnitt b2"
+    },
+
+    {
+      "id": "lf9-k1-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 8,
+      "dauer_min": 8,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+
+      "variablen": {
+        "anfangsbestand": { "von": 30000, "bis": 60000, "schritt": 5000 },
+        "ein1": { "von": 90000, "bis": 130000, "schritt": 5000 },
+        "aus1": { "von": 100000, "bis": 140000, "schritt": 5000 },
+        "ein2": { "von": 60000, "bis": 90000, "schritt": 5000 },
+        "aus2": { "von": 140000, "bis": 180000, "schritt": 5000 },
+        "ein3": { "von": 170000, "bis": 220000, "schritt": 5000 },
+        "aus3": { "von": 90000, "bis": 130000, "schritt": 5000 }
+      },
+      "abgeleitet": {
+        "ende1": "anfangsbestand + ein1 - aus1",
+        "ende2": "ende1 + ein2 - aus2",
+        "ende3": "ende2 + ein3 - aus3"
+      },
+      "pruefung_variablen": "ende2 < 0 && ende3 > 0",
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner verlangt für die Serienfertigung der Winterkollektion einen Liquiditätsplan der MAKEL Studio GmbH über drei Monate." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Geplante Zahlungen",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Position", "September", "Oktober", "November"],
+            "zeilen": [
+              ["Anfangsbestand am 1. September in €", "{anfangsbestand}", "—", "—"],
+              ["Einzahlungen in €", "{ein1}", "{ein2}", "{ein3}"],
+              ["Auszahlungen in €", "{aus1}", "{aus2}", "{aus3}"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Endbestand September", "einheit": "€",
+          "loesung": "ende1", "punkte": 2 },
+        { "block": "zahl", "label": "Endbestand Oktober", "einheit": "€",
+          "loesung": "ende2", "punkte": 3, "folgefehler_aus": ["ende1"] },
+        { "block": "zahl", "label": "Endbestand November", "einheit": "€",
+          "loesung": "ende3", "punkte": 3, "folgefehler_aus": ["ende2"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 8 },
+      "erklaerung": "Jeder Monat rechnet auf dem Endbestand des Vormonats weiter: Anfangsbestand + Einzahlungen − Auszahlungen = Endbestand. Der Oktober ist hier negativ — genau solche Monate soll der Plan sichtbar machen, bevor sie eintreten.",
+      "quelle": "lf9-k1, Abschnitt b2"
+    },
+
+    {
+      "id": "lf9-k1-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Liquiditätsplan der MAKEL Studio GmbH weist für Oktober einen negativen Endbestand aus; die Wholesale-Kunden zahlen erst im November." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie eine kurzfristige Maßnahme, mit der MAKEL den negativen Oktober abfangen kann.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Zuerst sollten die eigenen Abläufe geprüft werden, bevor fremdes Geld aufgenommen wird. Die drei Hebel lauten: schneller einnehmen, später ausgeben, Reserve bereithalten. Konkret kann MAKEL die Wholesale-Kunden zu früherer Zahlung bewegen, etwa durch das bestehende Skontoangebot von 3 % bei Zahlung innerhalb von acht Tagen, und offene Forderungen konsequent mahnen. Auf der Ausgabenseite lassen sich Zahlungsziele bei Lieferanten ausschöpfen und nicht dringende Anschaffungen in den November verschieben. Reicht das nicht, ist der Kontokorrentkredit das passende Mittel: Er ist genau für kurzfristige Spitzen gedacht. Sein Preis ist ein hoher Zins, deshalb darf er nur die Spitze abdecken und nicht zum Dauerbedarf werden. Wichtig ist die Reihenfolge: Skonto kostet ebenfalls Geld, muss also gegen die Zinsen des Kredits abgewogen werden.",
+        "raster": [
+          { "kriterium": "Konkrete Maßnahme genannt (schnellere Einzahlung, spätere Auszahlung oder Kreditlinie)", "punkte": 1 },
+          { "kriterium": "Grundsatz genannt: erst die eigenen Abläufe verbessern, dann fremdes Geld", "punkte": 1 },
+          { "kriterium": "Kontokorrentkredit richtig als Mittel für Spitzen und nicht für Dauerbedarf eingeordnet", "punkte": 1 },
+          { "kriterium": "Kosten der Maßnahme abgewogen (Skontoaufwand oder Zinsen)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "{{begriff:zahlungsunfaehigkeit|Zahlungsunfähigkeit}} ist ein Insolvenzgrund und wirkt sofort — anders als eine schlechte Rentabilität, die man über Jahre korrigieren kann. Deshalb wird der Liquiditätsengpass zuerst gelöst.",
+      "quelle": "lf9-k1, Abschnitt b3"
+    }
+  ]
+}

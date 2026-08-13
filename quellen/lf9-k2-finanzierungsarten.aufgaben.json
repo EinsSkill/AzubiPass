@@ -1,0 +1,114 @@
+{
+  "lernfeld": "lf9",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf9-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner ordnet vier Finanzierungsvorgänge der MAKEL Studio GmbH nach Herkunft und Rechtsstellung des Kapitals." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "In welches der vier Felder gehört der Vorgang?",
+          "ziele": [
+            "Innenfinanzierung mit Eigenkapital",
+            "Innenfinanzierung mit Fremdkapital",
+            "Außenfinanzierung mit Eigenkapital",
+            "Außenfinanzierung mit Fremdkapital"
+          ],
+          "elemente": [
+            { "text": "Der Jahresgewinn wird nicht ausgeschüttet, sondern im Betrieb belassen", "loesung": "Innenfinanzierung mit Eigenkapital" },
+            { "text": "Für eine ungewisse Verpflichtung wird eine Rückstellung gebildet", "loesung": "Innenfinanzierung mit Fremdkapital" },
+            { "text": "Yuki Bergmann erhöht als Gesellschafterin ihre Einlage", "loesung": "Außenfinanzierung mit Eigenkapital" },
+            { "text": "Die Hausbank gewährt ein langfristiges Darlehen", "loesung": "Außenfinanzierung mit Fremdkapital" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Zwei Fragen ordnen jede Finanzierung: Woher kommt das Kapital — von innen oder von außen? Und welche Rechtsstellung hat es — Eigen- oder Fremdkapital? Rückstellungen sind der klassische Prüfungsfall: Die Mittel entstehen im Betrieb, es handelt sich aber um Fremdkapital.",
+      "quelle": "lf9-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf9-k2-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Yuki Bergmann will als Alleingesellschafterin der MAKEL Studio GmbH die Entscheidungsgewalt über ihr Label vollständig behalten; für die Winterkollektion wird zusätzliches Kapital gebraucht." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Aussage trifft auf die Aufnahme von Fremdkapital statt neuem Eigenkapital zu?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Fremdkapital bringt keine Mitsprache mit sich, kostet aber Zinsen unabhängig vom Erfolg.", "richtig": true,
+              "echo": "Richtig. Genau deshalb passt es zu Yukis Ziel: Die Entscheidungsgewalt bleibt bei ihr, der Preis dafür ist eine feste Zinslast." },
+            { "text": "Fremdkapital haftet für Verluste und hat deshalb kein Ausfallrisiko für den Betrieb.", "richtig": false,
+              "echo": "Haftung ist ein Merkmal des Eigenkapitals. Fremdkapital haftet nicht, muss aber zurückgezahlt werden." },
+            { "text": "Fremdkapital ist unbefristet und muss nicht zurückgezahlt werden.", "richtig": false,
+              "echo": "Unbefristet ist das Eigenkapital. Fremdkapital ist befristet und wird fällig." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Eigenkapital haftet, ist unbefristet, hat Mitsprache und keine feste Verzinsung. Fremdkapital kostet Zinsen unabhängig vom Erfolg, ist befristet und hat keine Mitsprache. Wer die Kontrolle behalten will, zahlt dafür mit Zinslast und Rückzahlungsdruck.",
+      "quelle": "lf9-k2, Abschnitt b3"
+    },
+
+    {
+      "id": "lf9-k2-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner schlägt vor, die neue Druckmaschine mit acht Jahren Nutzungsdauer über den Kontokorrentkredit der MAKEL Studio GmbH zu bezahlen, weil das Geld dort sofort verfügbar ist." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie diesen Vorschlag und nennen Sie eine begründete Alternative.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Vorschlag verstößt gegen die Fristenkongruenz: Ein kurzfristiger Kredit finanziert einen Gegenstand, der acht Jahre genutzt wird. Daraus folgen drei Risiken. Erstens ist der Kontokorrentkredit deutlich teurer als ein langfristiges Darlehen, so dass über acht Jahre erhebliche Zinskosten entstehen. Zweitens ist er kurzfristig kündbar — die Bank kann die Linie zurückziehen, während die Maschine noch nicht bezahlt ist. Drittens blockiert die dauerhaft ausgeschöpfte Linie genau den Spielraum, der für kurzfristige Liquiditätsspitzen gebraucht wird; bei MAKEL ist die Liquidität ohnehin bewusst knapp gehalten. Die Alternative ist ein langfristiges Darlehen über etwa acht Jahre, gegebenenfalls mit Sicherungsübereignung der Maschine. Der Kontokorrentkredit bleibt dann frei für das, wofür er gedacht ist: Spitzen.",
+        "raster": [
+          { "kriterium": "Missverhältnis zwischen kurzfristigem Kredit und achtjähriger Nutzung benannt (Fristenkongruenz)", "punkte": 1 },
+          { "kriterium": "Zinskosten oder kurzfristige Kündbarkeit als Risiko genannt", "punkte": 1 },
+          { "kriterium": "Erkannt, dass die Kreditlinie für kurzfristige Spitzen blockiert wird", "punkte": 1 },
+          { "kriterium": "Langfristige Alternative konkret genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Der {{begriff:kontokorrentkredit|Kontokorrentkredit}} ist für Spitzen gedacht, nicht für Dauerbedarf. Wer ihn dauerhaft ausschöpft, zahlt den höchsten Zins für die unsicherste Finanzierung.",
+      "quelle": "lf9-k2, Abschnitt b3"
+    }
+  ]
+}
