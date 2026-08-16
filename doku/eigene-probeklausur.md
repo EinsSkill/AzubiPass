@@ -73,8 +73,16 @@ wenn eine Lösung ein Konto nennt, das es nicht gibt.
 
 `abgeleitet` und `pruefung_variablen` werden von einem eigenen kleinen Rechner
 in `quellen/aufgaben.js` ausgewertet: Zahlen, die Variablen der Aufgabe, die
-Grundrechenarten, Klammern, Vergleiche und die Funktionen `runde`, `min`, `max`
-und `abs`. Sonst nichts.
+Grundrechenarten, Klammern, Vergleiche und die Funktionen `runde`, `abrunden`,
+`aufrunden`, `min`, `max` und `abs`. Sonst nichts.
+
+`abrunden` und `aufrunden` gibt es für Ergebnisse, die nur als ganze Zahl einen
+Sinn ergeben. Eine Break-Even-Menge von 342,86 Stück kann niemand verkaufen:
+Gefragt ist dann die erste ganze Stückzahl **oberhalb** des Break-Even, denn
+genau am Break-Even ist das Ergebnis null. Geschrieben wird das als
+`abrunden(runde(fixkosten / db_stueck, 6)) + 1` — das Runden auf sechs
+Nachkommastellen fängt vorher den Rechenstaub der Fließkommadivision ab, damit
+eine glatt aufgehende Rechnung nicht durch `abrunden` um eins danebenliegt.
 
 **Kein `eval`, kein `new Function`.** Was in einer Aufgabendatei steht, liefe
 sonst als JavaScript im Browser des Nutzers. Der Build prüft jede Formel gegen

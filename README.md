@@ -37,7 +37,7 @@ Die Reihenfolge zählt: `build_app.py` liest, was `build.py` erzeugt hat.
 
 ```
 python pruefe.py        # sieht es richtig aus? 2 Größen × 2 Farbstimmungen
-python funktionstest.py # tut es, was es verspricht? 167 Verhaltensprüfungen
+python funktionstest.py # tut es, was es verspricht? 258 Verhaltensprüfungen
 ```
 
 Beide geben 1 zurück, wenn etwas gefunden wurde. `pruefe.py --schnell` prüft nur

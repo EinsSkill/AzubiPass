@@ -52,12 +52,12 @@
       },
       "abgeleitet": {
         "db_stueck": "preis - varkosten",
-        "break_even": "runde(fixkosten / db_stueck, 2)"
+        "erste_gewinnmenge": "abrunden(runde(fixkosten / db_stueck, 6)) + 1"
       },
       "pruefung_variablen": "db_stueck > 15",
 
       "anzeige": [
-        { "block": "text", "inhalt": "Tobias Renner will wissen, ab welcher Stückzahl die Serie des neuen Overshirts der MAKEL Studio GmbH ihre Kosten deckt." },
+        { "block": "text", "inhalt": "Tobias Renner will wissen, ab welcher Stückzahl die Serie des neuen Overshirts der MAKEL Studio GmbH Gewinn abwirft." },
         {
           "block": "anlage",
           "titel": "Anlage 1: Werte der Overshirt-Serie",
@@ -77,11 +77,11 @@
       "eingabe": [
         { "block": "zahl", "label": "Deckungsbeitrag je Overshirt", "einheit": "€",
           "loesung": "db_stueck", "punkte": 2 },
-        { "block": "zahl", "label": "Break-Even-Menge", "einheit": "Stück",
-          "loesung": "break_even", "punkte": 3, "folgefehler_aus": ["db_stueck"] }
+        { "block": "zahl", "label": "Erste ganze Stückzahl, ab der Gewinn entsteht", "einheit": "Stück",
+          "loesung": "erste_gewinnmenge", "punkte": 3, "folgefehler_aus": ["db_stueck"] }
       ],
       "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
-      "erklaerung": "{{begriff:break-even|Break-Even}} = Fixkosten ÷ Deckungsbeitrag je Stück. Bis zu dieser Menge deckt jedes verkaufte Overshirt einen Teil der Fixkosten; ab dieser Menge wird Gewinn erwirtschaftet.",
+      "erklaerung": "{{begriff:break-even|Break-Even}} = Fixkosten ÷ Deckungsbeitrag je Stück. Diese Rechnung geht selten glatt auf, und verkaufen lassen sich nur ganze Overshirts. Gefragt ist deshalb die erste ganze Stückzahl oberhalb des Break-Even: Genau am Break-Even ist das Betriebsergebnis null — die Fixkosten sind exakt gedeckt, verdient ist nichts. Gewinn entsteht erst mit dem nächsten Stück. Ergibt die Rechnung 342,86 Stück, lautet die Antwort 343; ergibt sie glatt 300 Stück, lautet sie 301.",
       "quelle": "lf10-k5, Abschnitt b2"
     },
 

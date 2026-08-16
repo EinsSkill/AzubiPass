@@ -178,7 +178,7 @@ BELEGE = HIER / "belege"
 
 ANZEIGE_BLOECKE = {"text", "tabelle", "anlage"}
 EINGABE_BLOECKE = {"zahl", "auswahl", "zuordnung", "reihenfolge", "buchungssatz", "textfeld"}
-FORMEL_FUNKTIONEN = {"runde", "min", "max", "abs"}
+FORMEL_FUNKTIONEN = {"runde", "abrunden", "aufrunden", "min", "max", "abs"}
 
 # Dieselbe Zerlegung wie der Rechner in aufgaben.js. Hier wird nur geprüft, was
 # vorkommen darf — gerechnet wird ausschließlich im Browser, damit es nicht zwei

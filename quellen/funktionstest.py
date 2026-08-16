@@ -347,9 +347,10 @@ def probeklausur_build():
     # wird ohne das Baudatum — das ist absichtlich jedes Mal neu.
     import subprocess
     vorher = json.loads(AUFGABEN_DATEI.read_text(encoding="utf-8"))
-    lauf = subprocess.run([sys.executable, "build_app.py"],
+    lauf = subprocess.run([sys.executable, "-X", "utf8", "build_app.py"],
                           cwd=str(Path(__file__).parent),
-                          capture_output=True, text=True)
+                          capture_output=True, text=True,
+                          encoding="utf-8", errors="replace")
     nachher = json.loads(AUFGABEN_DATEI.read_text(encoding="utf-8"))
     vorher.pop("gebaut", None)
     nachher.pop("gebaut", None)
@@ -425,6 +426,49 @@ async () => {
     try { P.rechne(a, { ak: 1 }); return false; } catch (e) { return true; }
   });
   raus.rechnet = Math.abs(P.rechne("runde(1000 / 3, 2)", {}) - 333.33) < 1e-9;
+  raus.rundet_ab = P.rechne("abrunden(342.86)", {}) === 342
+                && P.rechne("abrunden(300)", {}) === 300;
+  raus.rundet_auf = P.rechne("aufrunden(342.14)", {}) === 343
+                 && P.rechne("aufrunden(300)", {}) === 300;
+
+  // --- Ganze Stückzahlen ---------------------------------------------------
+  //
+  // Break-Even und kritische Menge sind Divisionen, die selten glatt aufgehen.
+  // Bewertet werden darf trotzdem nur eine ganze Stückzahl — und zwar die
+  // erste oberhalb des Schwellenwerts: Genau am Break-Even ist das Ergebnis
+  // null, Gewinn entsteht erst darüber. Geprüft wird beides, der krumme und
+  // der glatt aufgehende Fall.
+  const mengenFaelle = [
+    { id: "lf10-k5-02", menge: "erste_gewinnmenge",
+      zaehler: "fixkosten", nenner: "db_stueck" },
+    { id: "lf10-k6-02", menge: "kritische_ganzmenge",
+      zaehler: "zusatz_fixkosten", nenner: "vorteil_je_stueck" }
+  ];
+  let nichtGanz = [], nichtOberhalb = [], zuWeit = [], krumm = 0, glatt = 0;
+  for (const f of mengenFaelle) {
+    const b = P.baustein(f.id);
+    if (!b) { nichtGanz.push(f.id + " fehlt"); continue; }
+    for (let s = 0; s < 200; s++) {
+      const w = P.werteZiehen(b, "M" + s);
+      const genau = w[f.zaehler] / w[f.nenner];
+      const m = w[f.menge];
+      if (!Number.isInteger(m)) nichtGanz.push(f.id + "=" + m);
+      // Streng oberhalb: Bei der Schwellenmenge selbst ist das Ergebnis null.
+      if (!(m > genau)) nichtOberhalb.push(f.id + ": " + m + " nicht > " + genau);
+      // Aber auch nicht mehr als nötig — eine ganze Einheit über der Schwelle.
+      if (m - genau > 1.000001) zuWeit.push(f.id + ": " + m + " statt ~" + genau);
+      if (Number.isInteger(genau)) glatt++; else krumm++;
+    }
+  }
+  raus.menge_ganzzahlig = nichtGanz.length === 0;
+  raus.menge_ganz_details = nichtGanz.slice(0, 4);
+  raus.menge_oberhalb = nichtOberhalb.length === 0;
+  raus.menge_oberhalb_details = nichtOberhalb.slice(0, 4);
+  raus.menge_knapp = zuWeit.length === 0;
+  raus.menge_knapp_details = zuWeit.slice(0, 4);
+  // Der Test taugt nur, wenn er beide Fälle wirklich gesehen hat.
+  raus.menge_beide_faelle = krumm > 0 && glatt > 0;
+  raus.menge_faelle = "krumm " + krumm + ", glatt " + glatt;
 
   // --- Zusammensteller -----------------------------------------------------
   // „alle" sind inzwischen alle 75 Kapitel. Eine Klausur, die jedes davon
@@ -539,6 +583,17 @@ def probeklausur_logik(pg):
     pruefe("Derselbe Seed erzeugt dieselben Werte", r["seed_gleich"])
     pruefe("Unbekannte Ausdrücke werden abgelehnt", r["abgelehnt"])
     pruefe("Der Rechner rechnet richtig", r["rechnet"])
+    pruefe("abrunden schneidet ab, ohne glatte Werte zu verändern", r["rundet_ab"])
+    pruefe("aufrunden hebt an, ohne glatte Werte zu verändern", r["rundet_auf"])
+
+    pruefe("Break-Even und kritische Menge sind ganze Stückzahlen",
+           r["menge_ganzzahlig"], r["menge_ganz_details"])
+    pruefe("Die Stückzahl liegt echt oberhalb der Schwelle",
+           r["menge_oberhalb"], r["menge_oberhalb_details"])
+    pruefe("Die Stückzahl liegt nicht weiter als nötig darüber",
+           r["menge_knapp"], r["menge_knapp_details"])
+    pruefe("Geprüft wurden krumme und glatt aufgehende Fälle",
+           r["menge_beide_faelle"], r["menge_faelle"])
 
     pruefe("Nur Aufgaben aus gewählten Kapiteln", r["nur_gewaehlt"])
     pruefe("Keine Aufgabe doppelt", r["keine_doppelte"])

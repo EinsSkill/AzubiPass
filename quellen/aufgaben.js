@@ -87,14 +87,20 @@ window.APK = (function () {
      JavaScript im Browser des Nutzers.
 
      Deshalb ein eigener, winziger Rechner. Er kennt Zahlen, die Variablen der
-     Aufgabe, sieben Rechenzeichen, Vergleiche und drei Funktionen — sonst
-     nichts. Alles andere ist ein Fehler, und zwar ein lauter.                  */
+     Aufgabe, sieben Rechenzeichen, Vergleiche und sechs Funktionen — sonst
+     nichts. Alles andere ist ein Fehler, und zwar ein lauter.
+
+     abrunden und aufrunden gibt es, weil manche Ergebnisse nur als ganze Zahl
+     einen Sinn ergeben: Eine Break-Even-Menge von 342,86 Stück kann niemand
+     verkaufen.                                                                 */
 
   var FUNKTIONEN = {
     runde: function (x, n) {
       var f = Math.pow(10, n === undefined ? 0 : n);
       return Math.round((x + Number.EPSILON) * f) / f;
     },
+    abrunden: Math.floor,
+    aufrunden: Math.ceil,
     min: Math.min,
     max: Math.max,
     abs: Math.abs

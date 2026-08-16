@@ -20,7 +20,7 @@
       "inhalt": [
         {
           "typ": "absatz",
-          "text": "Der {{begriff:ausbildungsvertrag|Berufsausbildungsvertrag}} ist kein normaler Arbeitsvertrag. Nach {{par:bbig-10|§ 10 BBiG}} gelten die Regeln des Arbeitsvertrags nur, soweit der Ausbildungszweck nichts anderes verlangt — und der verlangt oft etwas anderes. ==Der Vertrag muss vor Beginn schriftlich niedergelegt und bei der IHK eingetragen werden.=="
+          "text": "Der {{begriff:ausbildungsvertrag|Berufsausbildungsvertrag}} ist kein normaler Arbeitsvertrag. Nach {{par:bbig-10|§ 10 BBiG}} gelten die Regeln des Arbeitsvertrags nur, soweit der Ausbildungszweck nichts anderes verlangt — und der verlangt oft etwas anderes. ==Der wesentliche Vertragsinhalt muss vor Beginn in Textform niedergelegt und der Vertrag bei der IHK eingetragen werden.=="
         },
         {
           "typ": "absatz",
@@ -45,7 +45,7 @@
         },
         {
           "typ": "merke",
-          "text": "Schriftform, Eintragung bei der zuständigen Stelle, Beginn erst danach. Ohne Eintragung im Verzeichnis der Ausbildungsverhältnisse wirst du am Ende nicht zur Prüfung zugelassen.",
+          "text": "Textform, Eintragung bei der zuständigen Stelle, Beginn erst danach. Für die Niederschrift genügt seit dem 1. Januar 2025 eine lesbare, dauerhafte Fassung — etwa als PDF per E-Mail; eine eigenhändige Unterschrift verlangt {{par:bbig-11|§ 11 BBiG}} dafür nicht mehr. Ohne Eintragung im Verzeichnis der Ausbildungsverhältnisse wirst du am Ende nicht zur Prüfung zugelassen.",
           "karteikarte": "Welche drei formalen Voraussetzungen muss ein Ausbildungsvertrag erfüllen, bevor die Ausbildung beginnt?"
         }
       ]
@@ -141,7 +141,7 @@
   ],
 
   "zusammenfassung": [
-    "{{par:bbig-11|§ 11 BBiG}} — Schriftform vor Beginn, Eintragung bei der zuständigen Stelle.",
+    "{{par:bbig-11|§ 11 BBiG}} — wesentlicher Vertragsinhalt in Textform vor Beginn, Eintragung bei der zuständigen Stelle.",
     "Pflichtangaben: Gliederung, Beginn und Dauer, tägliche Ausbildungszeit, Probezeit, Vergütung, Urlaub, Kündigung.",
     "Nichtig sind unter anderem Vertragsstrafen, Entschädigungen für die Ausbildung und Beschränkungen der späteren Berufsausübung.",
     "Nichtig bedeutet: von Anfang an unwirksam, auch mit Unterschrift.",
@@ -154,7 +154,7 @@
     {
       "typ": "Wissen",
       "frage": "Nenne vier Angaben, die nach § 11 BBiG zwingend im Ausbildungsvertrag stehen müssen.",
-      "loesung": "Zum Beispiel: Art, sachliche und zeitliche Gliederung der Ausbildung; Beginn und Dauer der Ausbildung; Dauer der täglichen Ausbildungszeit; Dauer der Probezeit; Zahlung und Höhe der Vergütung; Dauer des Urlaubs; Voraussetzungen für eine Kündigung. Der Vertrag muss vor Beginn schriftlich niedergelegt werden."
+      "loesung": "Zum Beispiel: Art, sachliche und zeitliche Gliederung der Ausbildung; Beginn und Dauer der Ausbildung; Dauer der täglichen Ausbildungszeit; Dauer der Probezeit; Zahlung und Höhe der Vergütung; Dauer des Urlaubs; Voraussetzungen für eine Kündigung. Der wesentliche Vertragsinhalt muss vor Beginn in Textform niedergelegt werden."
     },
     {
       "typ": "Fall",

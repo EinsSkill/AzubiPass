@@ -57,7 +57,7 @@
       },
       "abgeleitet": {
         "vorteil_je_stueck": "einkaufspreis - var_stueckkosten",
-        "kritische_menge": "runde(zusatz_fixkosten / vorteil_je_stueck, 2)"
+        "kritische_ganzmenge": "abrunden(runde(zusatz_fixkosten / vorteil_je_stueck, 6)) + 1"
       },
       "pruefung_variablen": "vorteil_je_stueck > 4",
 
@@ -82,11 +82,11 @@
       "eingabe": [
         { "block": "zahl", "label": "Kostenvorteil der Eigenfertigung je Print", "einheit": "€",
           "loesung": "vorteil_je_stueck", "punkte": 2 },
-        { "block": "zahl", "label": "Kritische Menge je Jahr", "einheit": "Stück",
-          "loesung": "kritische_menge", "punkte": 4, "folgefehler_aus": ["vorteil_je_stueck"] }
+        { "block": "zahl", "label": "Erste ganze Jahresmenge, ab der die Eigenfertigung günstiger ist", "einheit": "Stück",
+          "loesung": "kritische_ganzmenge", "punkte": 4, "folgefehler_aus": ["vorteil_je_stueck"] }
       ],
       "bewertung": { "art": "automatisch", "punkte_gesamt": 6 },
-      "erklaerung": "Kritische Menge = zusätzliche Fixkosten ÷ (Einkaufspreis − variable Stückkosten). Oberhalb dieser Menge lohnt die Eigenfertigung, darunter der Fremdbezug. Wichtig: Nur abbaubare Fixkosten zählen mit — nicht abbaubare bleiben außen vor, weil sie ohnehin anfallen.",
+      "erklaerung": "Kritische Menge = zusätzliche Fixkosten ÷ (Einkaufspreis − variable Stückkosten). Genau an dieser Menge kosten Eigenfertigung und Fremdbezug dasselbe — günstiger wird die Eigenfertigung erst mit dem nächsten Print. Weil sich nur ganze Prints fertigen lassen und die Rechnung selten glatt aufgeht, ist die erste ganze Menge oberhalb der kritischen Menge gefragt. Wichtig außerdem: Nur abbaubare Fixkosten zählen mit — nicht abbaubare bleiben außen vor, weil sie ohnehin anfallen.",
       "quelle": "lf10-k6, Abschnitt b1"
     },
 

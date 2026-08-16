@@ -58,7 +58,7 @@
         }
       ],
       "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
-      "erklaerung": "Pflichtangaben sind Gliederung, Beginn und Dauer, tägliche Ausbildungszeit, Probezeit, Vergütung, Urlaub und Kündigung. Der Vertrag bedarf nach {{par:bbig-11|§ 11 BBiG}} der Schriftform vor Beginn und wird bei der zuständigen Stelle eingetragen.",
+      "erklaerung": "Pflichtangaben sind Gliederung, Beginn und Dauer, tägliche Ausbildungszeit, Probezeit, Vergütung, Urlaub und Kündigung. Nach {{par:bbig-11|§ 11 BBiG}} ist der wesentliche Vertragsinhalt spätestens vor Beginn der Ausbildung in Textform niederzulegen — eine eigenhändige Unterschrift ist dafür nicht nötig. Eingetragen wird der Vertrag anschließend bei der zuständigen Stelle.",
       "quelle": "lf1-k2, Abschnitt b1"
     },
 
