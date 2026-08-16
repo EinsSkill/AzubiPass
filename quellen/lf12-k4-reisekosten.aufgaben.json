@@ -1,0 +1,131 @@
+{
+  "lernfeld": "lf12",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf12-k4-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:showroom-event-koeln"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski sortiert die Belege aus der Reisekostenabrechnung des Showroom-Termins der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Zu welchem Baustein der Reisekosten gehört der Beleg?",
+          "ziele": ["Fahrtkosten", "Verpflegungsmehraufwand", "Übernachtungskosten", "Reisenebenkosten"],
+          "elemente": [
+            { "text": "Bahnticket Düsseldorf–Köln", "loesung": "Fahrtkosten" },
+            { "text": "Pauschale für die Abwesenheit von zehn Stunden", "loesung": "Verpflegungsmehraufwand" },
+            { "text": "Hotelrechnung für die Nacht vor dem Termin", "loesung": "Übernachtungskosten" },
+            { "text": "Gebühr für das Parkhaus am Veranstaltungsort", "loesung": "Reisenebenkosten" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Vier Bausteine: Fahrtkosten, Verpflegungsmehraufwand, Übernachtung, Reisenebenkosten. Nur der {{begriff:verpflegungspauschale|Verpflegungsmehraufwand}} wird pauschal abgerechnet — alles andere über Belege.",
+      "quelle": "lf12-k4, Abschnitt b1"
+    },
+
+    {
+      "id": "lf12-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:showroom-event-koeln"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski prüft die eingereichte Reisekostenabrechnung zum Showroom-Termin der MAKEL Studio GmbH." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Die eingereichte Abrechnung",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Position", "Angabe in der Abrechnung"],
+            "zeilen": [
+              ["Reiseanlass", "nicht angegeben"],
+              ["Bahnticket", "24,90 €, Beleg beigefügt"],
+              ["Übernachtung", "119,00 € einschließlich Frühstück, nicht herausgerechnet"],
+              ["Verpflegungspauschale", "voller Tagessatz, obwohl das Hotelfrühstück gestellt wurde"],
+              ["Parkgebühr", "8,00 €, Beleg beigefügt"],
+              ["Bewirtung zweier Boutique-Inhaberinnen", "76,00 €, als Reisenebenkosten eingetragen"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Angaben muss Sandra beanstanden? Kreuzen Sie alle zutreffenden an.",
+          "mehrfach": true,
+          "optionen": [
+            { "text": "Der Reiseanlass fehlt.", "richtig": true,
+              "echo": "Richtig. Ohne betrieblichen Anlass lässt sich die Reise nicht als Geschäftsreise abrechnen — er ist die Grundlage der ganzen Abrechnung." },
+            { "text": "Der Frühstücksanteil wurde nicht aus den Übernachtungskosten herausgerechnet.", "richtig": true,
+              "echo": "Richtig. Der Frühstücksanteil gehört nicht zu den Übernachtungskosten und muss getrennt werden." },
+            { "text": "Die Verpflegungspauschale wurde trotz gestelltem Frühstück nicht gekürzt.", "richtig": true,
+              "echo": "Richtig. Gestellte Mahlzeiten kürzen die Pauschale — beim Frühstück um 20 Prozent des vollen Tagessatzes." },
+            { "text": "Die Bewirtungskosten wurden als Reisenebenkosten eingetragen.", "richtig": true,
+              "echo": "Richtig. Bewirtungskosten sind keine Reisekosten und haben eigene Nachweispflichten." },
+            { "text": "Das Bahnticket wurde mit Beleg abgerechnet.", "richtig": false,
+              "echo": "Das ist korrekt: Fahrtkosten werden über Belege abgerechnet." },
+            { "text": "Die Parkgebühr wurde als Reisenebenkosten eingetragen.", "richtig": false,
+              "echo": "Das ist korrekt — Parkgebühren gehören zu den Reisenebenkosten." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Gestellte Mahlzeiten kürzen die Pauschale: 20 Prozent Frühstück, je 40 Prozent Mittag und Abend. Die Prozentsätze beziehen sich immer auf den vollen Tagessatz. Die konkreten Pauschbeträge in Euro ändern sich und sind vor jeder Abrechnung am aktuellen Stand zu prüfen.",
+      "quelle": "lf12-k4, Abschnitt b3"
+    },
+
+    {
+      "id": "lf12-k4-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:showroom-event-koeln"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß hängt an den Showroom-Termin in Köln zwei private Urlaubstage an und reicht die gesamte Hotelrechnung bei der MAKEL Studio GmbH ein." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum die privaten Verlängerungstage nicht vollständig dem Betrieb belastet werden dürfen.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Erstattungsfähig sind nur Kosten, die betrieblich veranlasst sind. Eine Geschäftsreise liegt vor, solange die Abwesenheit dem Betrieb dient; die beiden Urlaubstage dienen ihm nicht. Bei privater Verlängerung sind die Kosten deshalb aufzuteilen: Übernachtungen und Verpflegungspauschalen werden nur für die betrieblich veranlassten Tage angesetzt. Die Fahrtkosten können in der Regel weiterhin voll angesetzt werden, wenn die Fahrt ohnehin für den Termin nötig war. Würde MAKEL alles erstatten, läge darin eine private Zuwendung an die Mitarbeiterin, die nicht als Betriebsausgabe behandelt werden darf und im Zweifel als geldwerter Vorteil zu versteuern wäre. Deshalb muss die Abrechnung den betrieblichen Teil klar ausweisen und nachweisen.",
+        "raster": [
+          { "kriterium": "Betriebliche Veranlassung als Maßstab genannt", "punkte": 1 },
+          { "kriterium": "Aufteilung der Kosten auf betriebliche und private Tage genannt", "punkte": 1 },
+          { "kriterium": "Folge einer vollen Erstattung benannt (private Zuwendung, geldwerter Vorteil oder Nachweisproblem)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "{{begriff:geschaeftsreise|Geschäftsreise}}: betrieblich veranlasst, vorübergehend, außerhalb von Wohnung und erster Tätigkeitsstätte. Fällt die betriebliche Veranlassung weg, endet auch die Erstattungsfähigkeit.",
+      "quelle": "lf12-k4, Abschnitt b1"
+    }
+  ]
+}

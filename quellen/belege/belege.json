@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "zweck": "Was eine Belegvorlage braucht, aber nicht aus der Aufgabe kommt. Eine Aufgabe nennt nur, worauf es fachlich ankommt — Rechnungsdatum, IBAN oder Kundennummer stehen trotzdem auf dem Papier. Diese Vorgaben fuellen den Rest, damit der Beleg wie ein Beleg aussieht und nicht wie ein Formular mit Luecken.",
+  "hinweis": "Alle Angaben sind erfunden. Werte aus der Aufgabe ueberschreiben die Vorgaben. Platzhalter in geschweiften Klammern werden erst beim Anzeigen mit den gewuerfelten Werten gefuellt.",
+
+  "vorlagen": {
+    "kontoauszug": {
+      "wiederholung": { "marke": "zeile", "quelle": "buchungen" },
+      "saldo_fortschreiben": true,
+      "vorgaben": {
+        "jahr": "2026",
+        "kontonummer": "1042 8837 06",
+        "iban": "DE21 3005 0110 1042 8837 06",
+        "datum": "14.03.2026",
+        "datum_vorher": "07.03.2026",
+        "saldo_alt": 42850.00
+      },
+      "zeilen_vorgaben": {
+        "datum": "13.03.",
+        "verwendungszweck": "",
+        "soll": "",
+        "haben": ""
+      }
+    },
+
+    "eingangsrechnung": {
+      "wiederholung": { "marke": "position", "quelle": "positionen" },
+      "vorgaben": {
+        "lieferant": "Weberei Lindtner GmbH",
+        "lieferant_strasse": "Industriestraße 9",
+        "lieferant_ort": "42897 Remscheid",
+        "rechnungsnummer": "2026-3391",
+        "datum": "09.03.2026",
+        "lieferdatum": "06.03.2026",
+        "kundennummer": "K-20418",
+        "bestellnummer": "MAKEL-BE-2026-0233",
+        "ust_id": "DE 284 991 077",
+        "steuernummer": "129/5710/3384",
+        "bank": "Stadtsparkasse Remscheid",
+        "iban": "DE44 3405 0000 0007 1188 24",
+        "steuersatz": "19",
+        "bedingung": "10 Tage 2 % Skonto, 30 Tage netto"
+      },
+      "zeilen_vorgaben": {
+        "nr": "1",
+        "artikelnummer": "—",
+        "menge": "1",
+        "einzelpreis": "{netto}",
+        "betrag": "{netto}"
+      }
+    }
+  }
+}

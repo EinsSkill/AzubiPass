@@ -1,0 +1,132 @@
+{
+  "lernfeld": "lf4",
+  "kapitel": "k5",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf4-k5-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydin prüft, ob der Stofflieferant der MAKEL Studio GmbH in Lieferverzug geraten ist." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Ablauf der Bestellung",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Datum", "Ereignis"],
+            "zeilen": [
+              ["03.08.2026", "Bestellung mit der Angabe „Lieferung bis zum 24.08.2026“"],
+              ["24.08.2026", "Liefertermin verstreicht ohne Lieferung"],
+              ["27.08.2026", "Der Lieferer teilt mit, die Ware sei verfügbar, aber noch nicht versandt"],
+              ["31.08.2026", "Die Ware ist weiterhin nicht eingetroffen; MAKEL hat nicht gemahnt"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Liegt am 31.08.2026 Lieferverzug vor?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Ja — der Liefertermin war kalendermäßig bestimmt, deshalb ist die Mahnung entbehrlich.", "richtig": true,
+              "echo": "Richtig. Nach § 286 BGB entfällt die Mahnung bei einem kalendermäßig bestimmten Termin. Fälligkeit, Nichtleistung trotz Möglichkeit und Vertretenmüssen liegen ebenfalls vor." },
+            { "text": "Nein — ohne Mahnung kann kein Verzug eintreten.", "richtig": false,
+              "echo": "Die Mahnung ist der Regelfall, aber nicht immer nötig. Bei einem festen Kalenderdatum entfällt sie." },
+            { "text": "Nein — es liegt Unmöglichkeit vor, nicht Verzug.", "richtig": false,
+              "echo": "Unmöglichkeit läge nur vor, wenn die Leistung dauerhaft nicht erbracht werden kann. Der Lieferer bestätigt aber ausdrücklich, dass die Ware verfügbar ist." },
+            { "text": "Nein — der Verzug beginnt erst 30 Tage nach dem Liefertermin.", "richtig": false,
+              "echo": "Die 30-Tage-Regel betrifft den Zahlungsverzug des Schuldners einer Geldforderung, nicht den Lieferverzug." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Verzug braucht vier Dinge: Fälligkeit, Nichtleistung trotz Möglichkeit, Mahnung und Vertretenmüssen. {{par:bgb-286|§ 286 BGB}} lässt die Mahnung entfallen, wenn der Termin kalendermäßig bestimmt ist — „Lieferung bis zum 24.08.2026“ ist genau das.",
+      "quelle": "lf4-k5, Abschnitt b2"
+    },
+
+    {
+      "id": "lf4-k5-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH stellt zusammen, was der Käufer beim Lieferverzug verlangen kann." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Was beschreibt das jeweilige Recht des Käufers?",
+          "ziele": [
+            "sofort möglich: der Käufer besteht weiter auf der Lieferung",
+            "Ersatz des Schadens, der gerade durch die Verspätung entsteht",
+            "erst nach erfolglos verstrichener angemessener Frist möglich",
+            "Ersatzbeschaffung bei einem anderen Lieferer"
+          ],
+          "elemente": [
+            { "text": "Auf Erfüllung bestehen", "loesung": "sofort möglich: der Käufer besteht weiter auf der Lieferung" },
+            { "text": "Verzögerungsschaden", "loesung": "Ersatz des Schadens, der gerade durch die Verspätung entsteht" },
+            { "text": "Rücktritt vom Vertrag", "loesung": "erst nach erfolglos verstrichener angemessener Frist möglich" },
+            { "text": "Deckungskauf", "loesung": "Ersatzbeschaffung bei einem anderen Lieferer" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Auf Lieferung bestehen geht sofort, der Verzögerungsschaden kommt hinzu. Der Rücktritt setzt nach {{par:bgb-323|§ 323 BGB}} eine erfolglos verstrichene angemessene Frist voraus — er ist nicht der erste, sondern der letzte Schritt.",
+      "quelle": "lf4-k5, Abschnitt b3"
+    },
+
+    {
+      "id": "lf4-k5-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Stoff für die Winterkollektion der MAKEL Studio GmbH ist überfällig; ohne Lieferung in den nächsten zwei Wochen verpasst die Kollektion ihren Verkaufsstart, und der Lieferer nennt keinen verbindlichen neuen Termin." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, wie Deniz Aydin jetzt vorgehen sollte.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Zunächst sollte Deniz auf Erfüllung bestehen und dem Lieferer eine angemessene Nachfrist setzen — kurz genug, dass der Verkaufsstart noch erreichbar bleibt, und schriftlich, damit sie beweisbar ist. Damit ist der Weg zum Rücktritt eröffnet, ohne dass MAKEL die Lieferung vorschnell aufgibt. Parallel muss geprüft werden, ob ein Deckungskauf bei einem anderen Lieferer möglich ist, weil die Kollektion sonst ihren Verkaufsstart verpasst. Verstreicht die Nachfrist erfolglos, kann MAKEL nach § 323 BGB zurücktreten und den Deckungskauf endgültig durchführen; die Mehrkosten sind Teil des Schadens, den der Lieferer zu ersetzen hat. Sofort zurückzutreten wäre falsch, solange die Nachfrist nicht gesetzt und abgelaufen ist. Abzuwägen sind das Interesse an genau diesem Stoff — Qualität und Zertifizierung — gegen das Risiko, die gesamte Saison zu verlieren.",
+        "raster": [
+          { "kriterium": "Angemessene Nachfrist als erster Schritt genannt", "punkte": 1 },
+          { "kriterium": "Nachfrist als Voraussetzung des Rücktritts richtig eingeordnet", "punkte": 1 },
+          { "kriterium": "Deckungskauf als Sicherung des Verkaufsstarts genannt", "punkte": 1 },
+          { "kriterium": "Schadensersatz beziehungsweise Mehrkosten des Deckungskaufs angesprochen", "punkte": 1 },
+          { "kriterium": "Abwägung zwischen Lieferinteresse und Saisonrisiko ausgesprochen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die Reihenfolge ist der Kern: erst Nachfrist, dann Rücktritt. Wer sie überspringt, verliert seine Rechte — und wer nur wartet, verliert die Saison.",
+      "quelle": "lf4-k5, Abschnitt b3"
+    }
+  ]
+}

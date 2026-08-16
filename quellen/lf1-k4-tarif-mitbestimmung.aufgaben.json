@@ -1,0 +1,108 @@
+{
+  "lernfeld": "lf1",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf1-k4-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Bei der MAKEL Studio GmbH treffen mehrere Regelungsebenen aufeinander." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die vier Ebenen von der höchstrangigen zur nachrangigsten.",
+          "elemente": [
+            { "text": "Betriebsvereinbarung", "position": 3 },
+            { "text": "Gesetz", "position": 1 },
+            { "text": "Einzelvertrag", "position": 4 },
+            { "text": "Tarifvertrag", "position": 2 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Rangfolge: Gesetz vor Tarifvertrag vor Betriebsvereinbarung vor Einzelvertrag. Die Ausnahme ist das Günstigkeitsprinzip — die niedrigere Ebene setzt sich durch, wenn sie für den Beschäftigten günstiger ist.",
+      "quelle": "lf1-k4, Abschnitt d1"
+    },
+
+    {
+      "id": "lf1-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der für die MAKEL Studio GmbH einschlägige Tarifvertrag nennt 27 Urlaubstage; im Einzelvertrag einer Mitarbeiterin stehen 30 Urlaubstage." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Wie viele Urlaubstage stehen der Mitarbeiterin zu?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "30 Tage, weil die einzelvertragliche Regelung günstiger ist.", "richtig": true,
+              "echo": "Richtig. Das Günstigkeitsprinzip lässt die niedrigere Ebene vorgehen, wenn sie für den Beschäftigten günstiger ist." },
+            { "text": "27 Tage, weil der Tarifvertrag im Rang über dem Einzelvertrag steht.", "richtig": false,
+              "echo": "Die Rangfolge gilt nur dann, wenn die niedrigere Ebene schlechter ist. Ist sie günstiger, setzt sie sich durch." },
+            { "text": "27 Tage, weil eine abweichende Einzelvereinbarung unwirksam ist.", "richtig": false,
+              "echo": "Unwirksam wären nur Abweichungen zulasten der Beschäftigten. Bessere Bedingungen sind zulässig." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Günstigkeitsprinzip: Die niedrigere Ebene setzt sich durch, wenn sie günstiger ist. Der Tarifvertrag setzt also eine Untergrenze, keine Obergrenze.",
+      "quelle": "lf1-k4, Abschnitt d1"
+    },
+
+    {
+      "id": "lf1-k4-03",
+      "operator": "Erklären Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Jugend- und Auszubildendenvertretung der MAKEL Studio GmbH fordert eine bessere Pausenregelung für die Auszubildenden und möchte sie unmittelbar durchsetzen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Erklären Sie, warum die JAV die Regelung nicht selbst verbindlich beschließen kann.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Jugend- und Auszubildendenvertretung hat kein eigenes Beschlussrecht gegenüber dem Arbeitgeber. Ihre Aufgabe ist es, die Interessen der Auszubildenden und der jugendlichen Beschäftigten zu vertreten, Anliegen zu sammeln und Anträge einzubringen. Verhandeln und beschließen kann nur der Betriebsrat; er ist das Gremium, das Betriebsvereinbarungen mit dem Arbeitgeber abschließt. Die JAV wirkt deshalb über den Betriebsrat: Sie bringt die Forderung dort ein, nimmt an den Sitzungen teil, in denen es um ihre Themen geht, und der Betriebsrat verhandelt sie mit der Geschäftsführung. Der Weg ist also nicht versperrt, er führt nur über ein anderes Gremium. Voraussetzung für eine JAV sind mindestens fünf Beschäftigte unter 18 Jahren oder in Ausbildung.",
+        "raster": [
+          { "kriterium": "Fehlendes eigenes Beschlussrecht der JAV benannt", "punkte": 1 },
+          { "kriterium": "Aufgabe der JAV als Vertretung und Antragstellung beschrieben", "punkte": 1 },
+          { "kriterium": "Betriebsrat als beschließendes Gremium genannt", "punkte": 1 },
+          { "kriterium": "Zusammenarbeit als richtigen Weg beschrieben", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "{{par:betrvg-60|§ 60 BetrVG}} — JAV ab fünf Beschäftigten unter 18 oder in Ausbildung. Die JAV vertritt und beantragt, der Betriebsrat beschließt.",
+      "quelle": "lf1-k4, Abschnitt d3"
+    }
+  ]
+}

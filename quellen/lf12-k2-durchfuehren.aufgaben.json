@@ -1,0 +1,128 @@
+{
+  "lernfeld": "lf12",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf12-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:showroom-event-koeln"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für verschiedene Anlässe der MAKEL Studio GmbH soll die passende Bestuhlung gewählt werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Bestuhlung passt zum jeweiligen Anlass?",
+          "ziele": ["Reihen", "U-Form", "Inseln", "Blockform", "keine feste Bestuhlung"],
+          "elemente": [
+            { "text": "Vortrag vor 60 Boutique-Inhaberinnen", "loesung": "Reihen" },
+            { "text": "Schulung des Verkaufsteams mit Blick zur Leinwand und untereinander", "loesung": "U-Form" },
+            { "text": "Gruppenarbeit zur Sortimentsplanung in Kleingruppen", "loesung": "Inseln" },
+            { "text": "Verhandlung mit einem Lieferanten", "loesung": "Blockform" },
+            { "text": "Musterständer, an denen die Gäste umhergehen", "loesung": "keine feste Bestuhlung" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die {{begriff:raumplan|Bestuhlung}} steuert, ob zugehört oder miteinander geredet wird: Reihen für Vorträge, U-Form für Schulungen, Inseln für Gruppenarbeit, Blockform für Verhandlungen. Gesprächsfördernde Formen brauchen etwa die doppelte Fläche je Person.",
+      "quelle": "lf12-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf12-k2-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 6,
+      "dauer_min": 6,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:showroom-event-koeln"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für den Showroom der MAKEL Studio GmbH in Köln liegen zwei Raumangebote vor; erwartet werden 45 Gäste, die zwischen Musterständern umhergehen und Gespräche führen sollen." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Die beiden Raumangebote",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Kriterium", "Raum A", "Raum B"],
+            "zeilen": [
+              ["Tagesmiete", "1.200 €", "1.650 €"],
+              ["Fläche", "80 m²", "160 m²"],
+              ["Beamer und Tonanlage", "gegen Aufpreis 350 €", "im Preis enthalten"],
+              ["Lage", "Stadtrand, 25 Minuten vom Hauptbahnhof", "Innenstadt, 8 Minuten vom Hauptbahnhof"],
+              ["Barrierefreier Zugang", "nein", "ja"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Entscheidung ist sachlich begründet?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Raum B, weil er die Anforderungen erfüllt und der Kostenabstand nach Einrechnung der Technik gering ist.", "richtig": true,
+              "echo": "Richtig. Mit Technik kostet A 1.550 € gegenüber 1.650 € — der Unterschied beträgt 100 €. Dafür bietet B die doppelte Fläche, bessere Anreise und barrierefreien Zugang." },
+            { "text": "Raum A, weil die Tagesmiete mit 1.200 € am niedrigsten ist.", "richtig": false,
+              "echo": "Verglichen werden müssen die Gesamtkosten. Mit dem Technikaufpreis von 350 € liegt A bei 1.550 € und damit fast gleichauf." },
+            { "text": "Raum A, weil 80 m² für 45 Gäste ausreichend sind.", "richtig": false,
+              "echo": "Bei Musterständern und Gesprächen wird deutlich mehr Fläche je Person gebraucht — gesprächsfördernde Formen brauchen etwa die doppelte Fläche." },
+            { "text": "Raum B, weil ein teurerer Raum immer die bessere Wirkung erzielt.", "richtig": false,
+              "echo": "Der Preis allein begründet nichts. Die Entscheidung muss an den Anforderungen hängen, nicht an der Höhe der Miete." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 6 },
+      "erklaerung": "Verglichen werden Gesamtkosten, nicht Mieten. Enthaltene Technik, Anfahrtszeit der Gäste und Barrierefreiheit sind harte Kriterien — sie entscheiden darüber, wer überhaupt kommt und ob die Veranstaltung funktioniert.",
+      "quelle": "lf12-k2, Abschnitt b2"
+    },
+
+    {
+      "id": "lf12-k2-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:showroom-event-koeln"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner will für den Showroom der MAKEL Studio GmbH den günstigeren Raum ohne barrierefreien Zugang und ohne eigene Technik nehmen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie die Wahl des etwas teureren Raums mit vorhandener Technik und barrierefreiem Zugang.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der reine Mietvergleich führt in die Irre, weil beim günstigeren Raum die Technik gesondert bezahlt werden muss. Rechnet man den Aufpreis ein, schrumpft der Kostenunterschied auf einen kleinen Betrag. Dem steht ein erheblicher Nutzen gegenüber. Der barrierefreie Zugang entscheidet darüber, ob eingeladene Gäste überhaupt teilnehmen können; ein nicht zugänglicher Raum schließt Personen aus und beschädigt zugleich das Bild der Marke. Die im Preis enthaltene Technik senkt das Risiko: Sie ist vor Ort erprobt, und es gibt einen Ansprechpartner, der sie bedient — bei gemieteter Fremdtechnik fehlt beides, und zu jeder Technik gehört eine Rückfallebene. Hinzu kommt die Lage: Acht statt 25 Minuten vom Hauptbahnhof senken die Reisezeit der Boutique-Inhaberinnen und erhöhen damit die Zusagequote. Entschieden wird nach Gesamtkosten und Zweckerfüllung, nicht nach der Miete.",
+        "raster": [
+          { "kriterium": "Gesamtkostenvergleich statt reinem Mietvergleich angestellt", "punkte": 1 },
+          { "kriterium": "Barrierefreiheit als Voraussetzung der Teilnahme begründet", "punkte": 1 },
+          { "kriterium": "Technikrisiko beziehungsweise Rückfallebene und Betreuung angesprochen", "punkte": 1 },
+          { "kriterium": "Weiterer Nutzen genannt (Lage, Anreise, Zusagequote oder Außenwirkung)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Zu jeder Technik gehört eine Rückfallebene und jemand, der sie bedient. Der Technikcheck erfolgt mit dem echten Gerät und der echten Datei — nicht mit der Zusage des Vermieters.",
+      "quelle": "lf12-k2, Abschnitt b2"
+    }
+  ]
+}

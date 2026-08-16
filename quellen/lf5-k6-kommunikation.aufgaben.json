@@ -1,0 +1,114 @@
+{
+  "lernfeld": "lf5",
+  "kapitel": "k6",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf5-k6-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Vier Maßnahmen der MAKEL Studio GmbH sollen dem passenden Instrument der Kommunikationspolitik zugeordnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Um welches Instrument handelt es sich?",
+          "ziele": [
+            "Werbung",
+            "Verkaufsförderung",
+            "Öffentlichkeitsarbeit",
+            "persönlicher Verkauf"
+          ],
+          "elemente": [
+            { "text": "Anzeige für die Herbstkollektion in einem Modemagazin", "loesung": "Werbung" },
+            { "text": "Befristete Aktionswoche mit Gratiszugabe im Flagshipstore", "loesung": "Verkaufsförderung" },
+            { "text": "Pressebericht über die nachhaltige Musterfertigung von MAKEL", "loesung": "Öffentlichkeitsarbeit" },
+            { "text": "Marlene Voß berät eine Boutique-Inhaberin im Showroom", "loesung": "persönlicher Verkauf" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Öffentlichkeitsarbeit bewirbt den Betrieb, nicht das Produkt. Verkaufsförderung ist immer befristet — dauerhaft wird sie zur Preissenkung.",
+      "quelle": "lf5-k6, Abschnitt f1"
+    },
+
+    {
+      "id": "lf5-k6-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH möchte ehemalige Onlineshop-Kundinnen zurückgewinnen, die seit über einem Jahr nichts mehr bestellt haben." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welches Vorgehen ist zulässig und sinnvoll?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Eine Newsletter-Aktion nur an die Kundinnen senden, die zuvor in den Empfang eingewilligt haben.", "richtig": true,
+              "echo": "Richtig. Für Werbung per Mail ist die vorherige Einwilligung erforderlich — ohne sie ist die Maßnahme unzulässig, egal wie gut sie gemeint ist." },
+            { "text": "Alle früheren Kundinnen per E-Mail anschreiben, weil eine Geschäftsbeziehung bestand.", "richtig": false,
+              "echo": "Eine frühere Bestellung ersetzt die erforderliche Einwilligung nicht. Werbung per Mail setzt die vorherige Zustimmung voraus." },
+            { "text": "Die Kundinnen telefonisch kontaktieren, weil ein Anruf persönlicher wirkt.", "richtig": false,
+              "echo": "Auch für Telefonwerbung gilt das Erfordernis der vorherigen Einwilligung." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "{{par:uwg-7|§ 7 UWG}} verlangt für Werbung per Mail, Telefon oder Fax die vorherige Einwilligung. {{par:uwg-5|§ 5 UWG}} verbietet zusätzlich irreführende Werbung.",
+      "quelle": "lf5-k6, Abschnitt f2"
+    },
+
+    {
+      "id": "lf5-k6-03",
+      "operator": "Formulieren Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Kundin des Onlineshops der MAKEL Studio GmbH schreibt verärgert, ihre Bestellung sei seit zwei Wochen überfällig und sie habe keine Information erhalten." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Formulieren Sie eine kurze Antwort an die Kundin.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Guten Tag Frau Sander, vielen Dank für Ihre Nachricht — dass Sie zwei Wochen ohne Information auf Ihre Bestellung warten, tut uns leid, und Ihr Ärger ist berechtigt. Ihre Bestellung 2026-14822 verzögert sich, weil der bestellte Hoodie in Ihrer Größe kurzfristig nicht lieferbar war; wir hätten Sie darüber sofort informieren müssen. Die Ware ist seit gestern wieder auf Lager und geht morgen an Sie raus, die Sendungsnummer erhalten Sie automatisch per Mail. Die Versandkosten erlassen wir Ihnen. Wenn Sie die Bestellung nicht mehr wünschen, sagen Sie uns kurz Bescheid — dann erstatten wir Ihnen den vollen Betrag. Freundliche Grüße",
+        "raster": [
+          { "kriterium": "Verständnis für den Ärger gezeigt, ohne Floskel oder Rechtfertigung", "punkte": 1 },
+          { "kriterium": "Konkrete Information zur Ursache und zum Stand gegeben", "punkte": 1 },
+          { "kriterium": "Klare Lösung mit nächstem Schritt genannt", "punkte": 1 },
+          { "kriterium": "Kein leeres Marketing; Wahlmöglichkeit oder Entgegenkommen angeboten", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Einen Kunden zu halten ist deutlich günstiger, als einen neuen zu gewinnen. Eine Beschwerde ist deshalb keine Störung, sondern die Gelegenheit, die Beziehung zu retten — mit Information und einem konkreten nächsten Schritt.",
+      "quelle": "lf5-k6, Abschnitt f3"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "referenceSurface": "Heute",
+  "direction": "Preserve the existing Today screen and extend its visual language",
+  "tokens": {
+    "color": {"home":"#12301F","forest":"#1B4332","forestMid":"#2A5A44","gold":"#C9A227","goldLight":"#E3C558","light":"#F5F5F0","paper":"#FBFBF8"},
+    "type": {"content":"Source Serif 4","interface":"IBM Plex Sans","metadata":"IBM Plex Mono"},
+    "radius": {"control":"2px","sheet":"8px"},
+    "motion": {"fast":"180ms","normal":"220ms","reducedMotion":true},
+    "breakpoints": {"phone":390,"tablet":768,"desktop":900,"wide":1440}
+  },
+  "components": ["app-header","four-tab-navigation","open-list-row","primary-action","chapter-reading-page","full-phrase-highlight","definition-term","law-reference","learning-graphic","bottom-sheet"],
+  "rules": ["Today is the visual source of truth","No fifth chapter tab","No dashboard card grids","Gold communicates state and action","Chapters retain a dedicated reading surface","No half-height marker gradients","No dotted definition underlines"]
+}

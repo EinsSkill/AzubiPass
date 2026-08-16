@@ -1,0 +1,114 @@
+{
+  "lernfeld": "lf8",
+  "kapitel": "k5",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf8-k5-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt sortiert die Personalentwicklungsmaßnahmen der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welcher Form der Personalentwicklung entspricht die Maßnahme?",
+          "ziele": [
+            "into the job — Vorbereitung auf eine Tätigkeit",
+            "on the job — Lernen am Arbeitsplatz",
+            "off the job — Lernen außerhalb des Arbeitsplatzes",
+            "out of the job — Vorbereitung auf das Ausscheiden"
+          ],
+          "elemente": [
+            { "text": "Strukturierte Einarbeitung einer neuen Store-Mitarbeiterin", "loesung": "into the job — Vorbereitung auf eine Tätigkeit" },
+            { "text": "Anleitung an der Kasse während des laufenden Betriebs", "loesung": "on the job — Lernen am Arbeitsplatz" },
+            { "text": "Zweitägiges Seminar zur Warenwirtschaft bei einem externen Anbieter", "loesung": "off the job — Lernen außerhalb des Arbeitsplatzes" },
+            { "text": "Übergabe der Aufgaben vor dem Eintritt in den Ruhestand", "loesung": "out of the job — Vorbereitung auf das Ausscheiden" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Personalentwicklung kennt fünf Formen: into, on, off, along und out of the job. On the job ist die wirksamste und günstigste Form — gelernt wird dort, wo die Arbeit tatsächlich stattfindet.",
+      "quelle": "lf8-k5, Abschnitt e2"
+    },
+
+    {
+      "id": "lf8-k5-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Emily Tran führt im Store der MAKEL Studio GmbH jeden Abend allein den Kassenabschluss durch, weil sonst niemand die Warenwirtschaft bedienen kann." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Maßnahme entlastet Emily dauerhaft am besten?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Zwei Store-Mitarbeitende am Arbeitsplatz in Kassenabschluss und Warenwirtschaft einarbeiten.", "richtig": true,
+              "echo": "Richtig. Das ist Lernen am Arbeitsplatz und beseitigt die Ursache: Es gibt danach mehr als eine Person, die den Abschluss kann." },
+            { "text": "Emily eine Zulage für die zusätzliche Verantwortung zahlen.", "richtig": false,
+              "echo": "Eine Zulage vergütet die Belastung, nimmt sie aber nicht weg. Emily bleibt der einzige Engpass." },
+            { "text": "Den Kassenabschluss künftig durch die Buchhaltung am Folgetag erledigen lassen.", "richtig": false,
+              "echo": "Das verlagert die Aufgabe an eine Stelle, die nicht vor Ort war, und verzögert sie. Die Abhängigkeit von einer einzigen Person bleibt bestehen." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Wenn eine Aufgabe an einer einzigen Person hängt, hilft keine Vergütung, sondern Qualifizierung. On the job ist dafür der schnellste und günstigste Weg.",
+      "quelle": "lf8-k5, Abschnitt e2"
+    },
+
+    {
+      "id": "lf8-k5-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli ist im ersten Lehrjahr im Rechnungswesen der MAKEL Studio GmbH und soll bis zum Ende des Jahres selbstständig Eingangsrechnungen prüfen und buchen können." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Entwerfen Sie einen Entwicklungsplan für Luca und begründen Sie die Schritte.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Am Anfang steht die Feststellung des Ausgangsstands: Was kann Luca bereits, wo genau hakt es — etwa beim Kontieren oder bei der sachlichen Rechnungsprüfung. Daraus folgt ein konkretes Ziel, hier das selbstständige Prüfen und Buchen von Eingangsrechnungen bis zum Jahresende. Als Maßnahmen eignen sich vor allem Formen on the job: Sandra Koslowski erklärt zunächst an eigenen Belegen, danach bucht Luca selbst mit Kontrolle, später allein mit Stichproben. Ergänzend kann eine kurze Schulung off the job zum Buchungssystem sinnvoll sein. Wichtig sind Zwischenschritte mit Terminen, damit der Fortschritt sichtbar bleibt, und eine Überprüfung am Ende — etwa eine Woche eigenständiger Rechnungsprüfung mit anschließender Durchsicht. Das jährliche Mitarbeitergespräch verbindet Rückblick, Beurteilung und die nächste Zielvereinbarung.",
+        "raster": [
+          { "kriterium": "Ausgangskompetenz beziehungsweise Ist-Stand als Ausgangspunkt genannt", "punkte": 1 },
+          { "kriterium": "Konkretes, überprüfbares Ziel formuliert", "punkte": 1 },
+          { "kriterium": "Passende Maßnahme genannt und einer Form der Personalentwicklung zugeordnet", "punkte": 1 },
+          { "kriterium": "Überprüfung des Erfolgs mit Termin oder Gespräch vorgesehen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Ein Entwicklungsplan ohne überprüfbares Ziel ist eine Absichtserklärung. Ausgangsstand, Ziel, Maßnahme und Kontrolle gehören zusammen.",
+      "quelle": "lf8-k5, Abschnitt e2"
+    }
+  ]
+}

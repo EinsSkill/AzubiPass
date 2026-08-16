@@ -1,0 +1,126 @@
+{
+  "lernfeld": "lf8",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf8-k1-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:personaleinstellung-store"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt plant den Personalbedarf für die Adventszeit im Flagshipstore der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Dimension des Personalbedarfs spricht die jeweilige Frage an?",
+          "ziele": ["quantitativ", "qualitativ", "zeitlich", "örtlich"],
+          "elemente": [
+            { "text": "Wie viele Aushilfen werden gebraucht?", "loesung": "quantitativ" },
+            { "text": "Welche Kenntnisse muss die Aushilfe für die Kasse mitbringen?", "loesung": "qualitativ" },
+            { "text": "Ab wann und für wie lange wird sie gebraucht?", "loesung": "zeitlich" },
+            { "text": "Im Store oder im Café KANTE?", "loesung": "örtlich" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Personalbedarf hat vier Dimensionen: quantitativ, qualitativ, zeitlich und örtlich. Wer nur die Anzahl plant, bekommt Menschen, die zur falschen Zeit am falschen Ort das Falsche können.",
+      "quelle": "lf8-k1, Abschnitt a1"
+    },
+
+    {
+      "id": "lf8-k1-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:personaleinstellung-store"],
+
+      "variablen": {
+        "brutto": { "von": 14, "bis": 26, "schritt": 1 },
+        "bestand": { "von": 10, "bis": 18, "schritt": 1 },
+        "abgaenge": { "von": 1, "bis": 5, "schritt": 1 },
+        "zugaenge": { "von": 0, "bis": 3, "schritt": 1 }
+      },
+      "abgeleitet": {
+        "verfuegbar": "bestand - abgaenge + zugaenge",
+        "netto": "brutto - verfuegbar"
+      },
+      "pruefung_variablen": "netto > 0",
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt ermittelt den Personalbedarf des Flagshipstores der MAKEL Studio GmbH für das kommende Halbjahr." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Planungswerte des Stores",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Anzahl Mitarbeitende"],
+            "zeilen": [
+              ["Bruttopersonalbedarf", "{brutto}"],
+              ["Aktueller Personalbestand", "{bestand}"],
+              ["Feststehende Abgänge im Planungszeitraum", "{abgaenge}"],
+              ["Feststehende Zugänge im Planungszeitraum", "{zugaenge}"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Voraussichtlich verfügbarer Bestand", "einheit": "Mitarbeitende",
+          "loesung": "verfuegbar", "punkte": 2 },
+        { "block": "zahl", "label": "Nettopersonalbedarf", "einheit": "Mitarbeitende",
+          "loesung": "netto", "punkte": 2, "folgefehler_aus": ["verfuegbar"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Nettopersonalbedarf = Bruttobedarf − Bestand + Abgänge − Zugänge. Rechnerisch dasselbe: Erst ermittelt man, wie viele Kräfte am Ende tatsächlich da sind, dann zieht man diesen Wert vom Bruttobedarf ab. Ein negativer Nettobedarf bedeutet Überdeckung und damit Freisetzung.",
+      "quelle": "lf8-k1, Abschnitt a2"
+    },
+
+    {
+      "id": "lf8-k1-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Bedarfsplanung der MAKEL Studio GmbH weist für die Verwaltung einen Nettopersonalbedarf von einer Stelle aus; Ayla Brandt prüft, ob dieser Bedarf intern gedeckt werden kann, bevor sie extern ausschreibt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum Ayla vor einer externen Einstellung die interne Besetzung prüft, und nennen Sie eine Grenze dieses Vorgehens.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die interne Besetzung ist schneller und günstiger: Es entfallen Anzeigenkosten und ein langes Auswahlverfahren, und die Einarbeitung ist kürzer, weil der Betrieb bereits bekannt ist. Außerdem ist die Person selbst bekannt — Leistung und Verhalten lassen sich besser einschätzen als bei einer Bewerbung von außen. Für die Belegschaft wirkt eine interne Aufstiegs- oder Versetzungsmöglichkeit motivierend und bindet Mitarbeitende an den Betrieb. Die Grenze ist, dass die Lücke dadurch nur wandert: Wer versetzt wird, fehlt an der alten Stelle, so dass der Bedarf dort neu entsteht. Zudem kommen wenig neue Impulse und Sichtweisen in den Betrieb.",
+        "raster": [
+          { "kriterium": "Kosten- oder Zeitvorteil der internen Besetzung genannt", "punkte": 1 },
+          { "kriterium": "Bessere Kenntnis der Person beziehungsweise geringeres Fehlbesetzungsrisiko genannt", "punkte": 1 },
+          { "kriterium": "Motivations- beziehungsweise Bindungswirkung genannt", "punkte": 1 },
+          { "kriterium": "Grenze genannt: die Lücke wandert nur oder es fehlen neue Impulse", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Der Nettopersonalbedarf sagt nur, wie viele Kräfte fehlen — nicht, woher sie kommen. Intern zuerst zu prüfen ist der Regelfall, ersetzt die Personalplanung aber nicht, weil an der freigewordenen Stelle derselbe Bedarf erneut auftaucht.",
+      "quelle": "lf8-k1, Abschnitt a2"
+    }
+  ]
+}

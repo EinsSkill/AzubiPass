@@ -1,0 +1,147 @@
+{
+  "lernfeld": "lf9",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf9-k3-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner stellt die Kreditformen zusammen, die der MAKEL Studio GmbH offenstehen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Beschreibung gehört zu welcher Kreditform?",
+          "ziele": [
+            "wirkt kostenlos, kostet aber das entgangene Skonto",
+            "flexibel und teuer, für kurzfristige Spitzen und jederzeit kündbar",
+            "gleichbleibende Tilgung, die Rate sinkt im Zeitablauf",
+            "gleichbleibende Rate, der Tilgungsanteil steigt im Zeitablauf"
+          ],
+          "elemente": [
+            { "text": "Lieferantenkredit", "loesung": "wirkt kostenlos, kostet aber das entgangene Skonto" },
+            { "text": "Kontokorrentkredit", "loesung": "flexibel und teuer, für kurzfristige Spitzen und jederzeit kündbar" },
+            { "text": "Ratendarlehen", "loesung": "gleichbleibende Tilgung, die Rate sinkt im Zeitablauf" },
+            { "text": "Annuitätendarlehen", "loesung": "gleichbleibende Rate, der Tilgungsanteil steigt im Zeitablauf" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Ratendarlehen und Annuitätendarlehen werden gern verwechselt: Beim Ratendarlehen bleibt die Tilgung gleich und die Rate sinkt, beim Annuitätendarlehen bleibt die Rate gleich und der Tilgungsanteil steigt. Der {{begriff:kontokorrentkredit|Kontokorrentkredit}} ist der teuerste der vier.",
+      "quelle": "lf9-k3, Abschnitt b2"
+    },
+
+    {
+      "id": "lf9-k3-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 6,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+
+      "variablen": {
+        "kreditsumme": { "von": 60000, "bis": 160000, "schritt": 10000 },
+        "zinssatz": { "von": 4, "bis": 8, "schritt": 1 },
+        "laufzeit": { "von": 4, "bis": 10, "schritt": 1 }
+      },
+      "abgeleitet": {
+        "tilgung": "runde(kreditsumme / laufzeit, 2)",
+        "zins_jahr1": "runde(kreditsumme * zinssatz / 100, 2)",
+        "restschuld1": "runde(kreditsumme - tilgung, 2)",
+        "zins_jahr2": "runde(restschuld1 * zinssatz / 100, 2)"
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH finanziert die Druckmaschine für die Veredelung über ein Ratendarlehen." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Konditionen des Ratendarlehens",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Kreditsumme", "{kreditsumme} €"],
+              ["Nominalzinssatz je Jahr", "{zinssatz} %"],
+              ["Laufzeit", "{laufzeit} Jahre"],
+              ["Tilgung", "in gleichen Jahresraten"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Jährliche Tilgungsrate", "einheit": "€",
+          "loesung": "tilgung", "punkte": 2 },
+        { "block": "zahl", "label": "Zinsen im ersten Jahr", "einheit": "€",
+          "loesung": "zins_jahr1", "punkte": 2 },
+        { "block": "zahl", "label": "Zinsen im zweiten Jahr", "einheit": "€",
+          "loesung": "zins_jahr2", "punkte": 2, "folgefehler_aus": ["tilgung"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 6 },
+      "erklaerung": "Der Zins wird immer auf die Restschuld zu Beginn der Periode gerechnet. Im ersten Jahr ist das die volle Kreditsumme, im zweiten Jahr die um eine Tilgungsrate verminderte Restschuld — deshalb sinkt die Zinslast von Jahr zu Jahr, während die Tilgung gleich bleibt.",
+      "quelle": "lf9-k3, Abschnitt b2"
+    },
+
+    {
+      "id": "lf9-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für die Druckmaschine der MAKEL Studio GmbH liegen zwei Kreditangebote vor." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Die beiden Angebote",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Merkmal", "Angebot A", "Angebot B"],
+            "zeilen": [
+              ["Effektivzins", "5,2 %", "5,6 %"],
+              ["Sondertilgung", "nicht möglich", "jederzeit ohne Gebühr"],
+              ["Laufzeit", "8 Jahre", "8 Jahre"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum sich MAKEL für das rechnerisch teurere Angebot B entscheiden kann.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Rein rechnerisch ist Angebot A günstiger: Der Effektivzins liegt um 0,4 Prozentpunkte niedriger, und der Effektivzins ist die richtige Vergleichsgröße, weil er alle Kosten einbezieht. Angebot B bietet dafür jederzeitige Sondertilgung ohne Gebühr. Das ist für MAKEL wertvoll, weil das Geschäft saisonal schwankt: Nach einer guten Wholesale-Saison kann außerplanmäßig getilgt werden, wodurch Restschuld und künftige Zinsen sinken — der Zinsnachteil kann sich dadurch teilweise oder ganz auflösen. Zugleich sinkt das Risiko, über acht Jahre an eine feste Belastung gebunden zu sein, wenn sich die Lage ändert. Die Entscheidung hängt davon ab, wie wahrscheinlich freie Mittel für Sondertilgungen sind: Ohne diese Aussicht bleibt A die bessere Wahl.",
+        "raster": [
+          { "kriterium": "Effektivzins als richtige Vergleichsgröße genannt und der Preisunterschied benannt", "punkte": 1 },
+          { "kriterium": "Wirkung der Sondertilgung auf Restschuld und künftige Zinsen erklärt", "punkte": 1 },
+          { "kriterium": "Flexibilität beziehungsweise geringere Bindung als Risikovorteil gewürdigt", "punkte": 1 },
+          { "kriterium": "Entscheidung an eine Bedingung geknüpft, statt sie pauschal zu treffen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Vergleichbar sind Kredite nur über den Effektivzins, nicht über den Nominalzins. Der günstigste Zins ist aber nicht automatisch das beste Angebot — Flexibilität hat einen Wert, den die Zinszahl nicht zeigt.",
+      "quelle": "lf9-k3, Abschnitt b3"
+    }
+  ]
+}

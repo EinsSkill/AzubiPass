@@ -1,0 +1,126 @@
+{
+  "lernfeld": "lf3",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf3-k2-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Modehaus Weber GmbH schreibt der MAKEL Studio GmbH: „Bitte teilen Sie uns mit, zu welchen Konditionen Sie 200 Hoodies liefern können.“" }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Wie ist diese E-Mail rechtlich einzuordnen?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Als Anfrage — sie bittet um ein Angebot und bindet niemanden.", "richtig": true,
+              "echo": "Richtig. Die Boutique nennt keine festen Konditionen, sondern erfragt sie erst. Die Anfrage hat keine rechtliche Wirkung." },
+            { "text": "Als Angebot, weil eine konkrete Menge genannt wird.", "richtig": false,
+              "echo": "Eine Mengenangabe allein macht noch kein Angebot. Es fehlen Preis, Liefer- und Zahlungsbedingungen — und vor allem der Wille, sich zu binden." },
+            { "text": "Als Bestellung, weil die Boutique die Ware haben möchte.", "richtig": false,
+              "echo": "Eine Bestellung setzt einen Bindungswillen voraus. Hier wird nur nach Konditionen gefragt." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Entscheidend ist der Bindungswille: Wer nach Konditionen fragt, will sich noch nicht binden. Erst wenn Art, Menge, Preis und Bedingungen feststehen und der Erklärende gebunden sein will, liegt ein Antrag vor.",
+      "quelle": "lf3-k2, Abschnitt b2"
+    },
+
+    {
+      "id": "lf3-k2-02",
+      "operator": "Bestimmen Sie und begründen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Modehaus Weber GmbH bestellt bei der MAKEL Studio GmbH 200 Hoodies zum angebotenen Preis; MAKEL bestätigt daraufhin 180 Stück zu einem höheren Stückpreis." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Die beiden Schreiben im Vergleich",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Bestellung der Boutique", "Auftragsbestätigung von MAKEL"],
+            "zeilen": [
+              ["Menge", "200 Hoodies", "180 Hoodies"],
+              ["Stückpreis netto", "50,00 €", "54,00 €"],
+              ["Liefertermin", "KW 38", "KW 38"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Bestimmen Sie, ob durch die Auftragsbestätigung ein Vertrag über 200 Hoodies zustande gekommen ist, und begründen Sie Ihre Entscheidung.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Ein Vertrag über 200 Hoodies ist nicht zustande gekommen. Eine Annahme muss dem Antrag vollständig entsprechen. MAKEL weicht in Menge und Preis ab, damit liegt keine Annahme vor. Die Auftragsbestätigung gilt als Ablehnung des ursprünglichen Antrags verbunden mit einem neuen Antrag über 180 Hoodies zu 54,00 € netto. Solange die Modehaus Weber GmbH diesen neuen Antrag nicht annimmt, besteht kein Vertrag.",
+        "raster": [
+          { "kriterium": "Ergebnis genannt: kein Vertrag über 200 Hoodies", "punkte": 1 },
+          { "kriterium": "Grundsatz genannt: die Annahme muss dem Antrag vollständig entsprechen", "punkte": 1 },
+          { "kriterium": "Abweichung in Menge und/oder Preis konkret benannt", "punkte": 1 },
+          { "kriterium": "Abweichende Bestätigung als neuer Antrag eingeordnet, der noch angenommen werden muss", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Eine abweichende Auftragsbestätigung ist keine Annahme, sondern ein neuer Antrag. Wer das übersieht, plant mit einem Vertrag, den es nicht gibt.",
+      "quelle": "lf3-k2, Abschnitt b2"
+    },
+
+    {
+      "id": "lf3-k2-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß möchte eine in Menge und Preis abweichende Auftragsbestätigung einfach abheften und die Ware wie bestätigt versenden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum die Abweichung nicht stillschweigend als erledigt behandelt werden darf.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Über den abweichenden Inhalt besteht noch keine Einigung. Der neue Antrag muss vom Kunden angenommen werden, bevor ein Vertrag entsteht. Wird stillschweigend geliefert, ist unklar, welcher Inhalt gilt — der Kunde kann die Annahme der Mehrkosten verweigern, die Ware zurückweisen oder die Zahlung kürzen. MAKEL trägt dann das Liefer- und Zahlungsrisiko. Richtig ist, die Abweichung ausdrücklich anzusprechen und die Zustimmung schriftlich einzuholen.",
+        "raster": [
+          { "kriterium": "Fehlende Einigung über den abweichenden Inhalt erkannt", "punkte": 1 },
+          { "kriterium": "Konkrete Folge genannt (Zurückweisung, gekürzte Zahlung oder Streit über den Inhalt)", "punkte": 1 },
+          { "kriterium": "Richtiges Vorgehen genannt: Abweichung ansprechen und Zustimmung einholen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Schweigen bedeutet grundsätzlich keine Zustimmung. Wer eine Abweichung nicht klärt, liefert auf gut Glück.",
+      "quelle": "lf3-k2, Abschnitt b2"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "lernfeld": "lf2",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf2-k3-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH erhält am Dienstag, dem 1. September 2026, ein Schreiben mit einer Frist von 14 Tagen zur Stellungnahme." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Kalenderausschnitt September 2026",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Datum", "Wochentag"],
+            "zeilen": [
+              ["01.09.2026", "Dienstag — Zugang des Schreibens"],
+              ["14.09.2026", "Montag"],
+              ["15.09.2026", "Dienstag"],
+              ["16.09.2026", "Mittwoch"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Wann endet die Frist?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Am 15.09.2026, weil der Tag des Zugangs nicht mitzählt.", "richtig": true,
+              "echo": "Richtig. Der Tag des Ereignisses zählt nicht mit — gezählt wird ab dem 2. September, der 14. Tag ist damit der 15. September, ein Dienstag." },
+            { "text": "Am 14.09.2026, weil der Zugangstag der erste Tag der Frist ist.", "richtig": false,
+              "echo": "Der Tag des Ereignisses zählt gerade nicht mit. Die Zählung beginnt am Folgetag." },
+            { "text": "Am 16.09.2026, weil zur Sicherheit ein Tag hinzugerechnet wird.", "richtig": false,
+              "echo": "Einen Sicherheitstag gibt es in der Fristberechnung nicht. Verlängert wird nur, wenn das Fristende auf einen Samstag, Sonntag oder Feiertag fällt." },
+            { "text": "Am 01.09.2026 zuzüglich 14 Werktagen.", "richtig": false,
+              "echo": "Die Frist ist in Tagen angegeben, nicht in Werktagen." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Fristberechnung: Der Tag des Ereignisses zählt nicht mit. Fällt das Fristende auf Samstag, Sonntag oder Feiertag, endet die Frist am nächsten Werktag. Maßgeblich ist der Zugang, nicht die Absendung — deshalb der Eingangsstempel.",
+      "quelle": "lf2-k3, Abschnitt b3"
+    },
+
+    {
+      "id": "lf2-k3-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Drei Einträge aus dem Kalender der Verwaltung der MAKEL Studio GmbH sollen unterschieden werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Um welche Art von Eintrag handelt es sich?",
+          "ziele": [
+            "Termin — ein fester Zeitpunkt",
+            "Frist — ein spätester Zeitpunkt",
+            "Wiedervorlage — eine Erinnerung zur Kontrolle"
+          ],
+          "elemente": [
+            { "text": "Lieferantengespräch am 10.09.2026 um 14:00 Uhr", "loesung": "Termin — ein fester Zeitpunkt" },
+            { "text": "Stellungnahme muss bis zum 15.09.2026 eingegangen sein", "loesung": "Frist — ein spätester Zeitpunkt" },
+            { "text": "Am 08.09.2026 prüfen, ob die Boutique inzwischen gezahlt hat", "loesung": "Wiedervorlage — eine Erinnerung zur Kontrolle" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Termin ist ein Zeitpunkt, die Frist ein Spätestens, die {{begriff:wiedervorlage|Wiedervorlage}} eine Erinnerung. Sie funktioniert nur, wenn das Tagesfach jeden Morgen tatsächlich geleert wird.",
+      "quelle": "lf2-k3, Abschnitt b2"
+    },
+
+    {
+      "id": "lf2-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß legt eine offene Wholesale-Rechnung der MAKEL Studio GmbH nicht auf den Tag des Zahlungsziels zur Wiedervorlage, sondern einige Tage davor." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum die Wiedervorlage vor dem Ablauf des Zahlungsziels sinnvoll ist.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Wiedervorlage dient der Steuerung, nicht der Reaktion. Wer erst am letzten Tag hinsieht, kann nur noch feststellen, dass nicht gezahlt wurde. Einige Tage vorher bleibt dagegen Zeit zu prüfen, ob der Zahlungseingang vielleicht schon verbucht wurde, ob die Rechnung überhaupt zugegangen ist und ob es Rückfragen der Boutique gab — häufig steckt hinter einer ausbleibenden Zahlung ein Missverständnis und keine Zahlungsunwilligkeit. Eine freundliche Erinnerung vor Fälligkeit erhält zudem die Kundenbeziehung, während eine Mahnung am Tag nach dem Zahlungsziel schroff wirkt. Ist tatsächlich nichts eingegangen, kann der weitere Ablauf ohne Zeitdruck vorbereitet werden.",
+        "raster": [
+          { "kriterium": "Wiedervorlage als Steuerungs- statt Reaktionsinstrument erkannt", "punkte": 1 },
+          { "kriterium": "Konkrete Prüfhandlung genannt (Zahlungseingang, Zugang der Rechnung, Rückfragen)", "punkte": 1 },
+          { "kriterium": "Kundenbeziehung oder Handlungsspielraum als Vorteil genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die {{begriff:wiedervorlage|Wiedervorlage}} hat 31 Tagesfächer und 12 Monatsfächer. Ihr Zweck ist, dass etwas nicht vergessen wird — und zwar rechtzeitig, nicht im Nachhinein.",
+      "quelle": "lf2-k3, Abschnitt b2"
+    }
+  ]
+}

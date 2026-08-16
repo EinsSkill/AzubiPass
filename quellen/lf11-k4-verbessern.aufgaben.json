@@ -1,0 +1,110 @@
+{
+  "lernfeld": "lf11",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf11-k4-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Im Retourenprozess der MAKEL Studio GmbH werden vier Beobachtungen festgehalten." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Form der Verschwendung liegt vor?",
+          "ziele": ["Warten", "Doppelarbeit", "Suchen", "Nacharbeit"],
+          "elemente": [
+            { "text": "Retouren liegen drei Tage ungeprüft im Wareneingang", "loesung": "Warten" },
+            { "text": "Lager und Buchhaltung erfassen dieselbe Retoure jeweils in ihrem eigenen System", "loesung": "Doppelarbeit" },
+            { "text": "Der zugehörige Lieferschein muss im Ordner herausgesucht werden", "loesung": "Suchen" },
+            { "text": "Eine falsch gebuchte Erstattung muss im Folgemonat berichtigt werden", "loesung": "Nacharbeit" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Verschwendung ist alles, wofür ein Kunde nicht zahlen würde: Warten, Doppelarbeit, übermäßiges Prüfen, Suchen, Nacharbeit, Rückfragen. Nicht jede nicht wertschöpfende Tätigkeit ist überflüssig — manche ist vorgeschrieben.",
+      "quelle": "lf11-k4, Abschnitt b1"
+    },
+
+    {
+      "id": "lf11-k4-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Im Retourenprozess der MAKEL Studio GmbH dauert die eigentliche Prüfung einer Rücksendung rund 25 Minuten; davor liegen die Pakete im Schnitt drei Tage unbearbeitet im Wareneingang." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Maßnahme wirkt am stärksten auf die Durchlaufzeit?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Einen festen täglichen Zeitblock einrichten, in dem eingegangene Retouren geprüft werden.", "richtig": true,
+              "echo": "Richtig. Die Liegezeit ist mit drei Tagen um ein Vielfaches größer als die Bearbeitungszeit — dort liegt der Hebel." },
+            { "text": "Die Prüfung je Rücksendung von 25 auf 20 Minuten beschleunigen.", "richtig": false,
+              "echo": "Das spart fünf Minuten und lässt drei Tage Liegezeit unberührt. Am falschen Schritt zu optimieren bringt fast nichts." },
+            { "text": "Eine zusätzliche Kontrolle der geprüften Ware einführen.", "richtig": false,
+              "echo": "Übermäßiges Prüfen ist selbst eine Form der Verschwendung und verlängert die Durchlaufzeit zusätzlich." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Der Engpass bestimmt die Leistung des gesamten Prozesses. Wenn die Liegezeit ein Vielfaches der Bearbeitungszeit beträgt, bringt jede Beschleunigung der Bearbeitung fast nichts.",
+      "quelle": "lf11-k4, Abschnitt b1"
+    },
+
+    {
+      "id": "lf11-k4-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Yuki Bergmann schlägt vor, den Retourenprozess der MAKEL Studio GmbH durch neue Software zu lösen; die Rücksendungen liegen bisher mehrere Tage ungeprüft im Wareneingang." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Entwerfen Sie ein Vorgehen zur Verbesserung und nennen Sie die Kennzahl, an der Sie den Erfolg messen.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Zuerst muss der Prozess geordnet werden, dann kann digitalisiert werden — Software repariert keinen schlechten Ablauf, sondern beschleunigt ihn nur an der falschen Stelle. Das Vorgehen folgt dem Verbesserungskreislauf. Planen: Der Ist-Ablauf wird aufgenommen und gemessen; die Ursache ist die Liegezeit im Wareneingang, nicht die Prüfung selbst. Als messbares Ziel wird zum Beispiel festgelegt, die Durchlaufzeit von der Rückmeldung bis zur Erstattung von fünf auf zwei Arbeitstage zu senken. Tun: Ein fester täglicher Prüfblock wird eingerichtet und die Zuständigkeit für die Übergabe an die Buchhaltung eindeutig geregelt. Prüfen: Nach etwa vier Wochen wird die Durchlaufzeit erneut gemessen und mit dem Ausgangswert verglichen; begleitend wird die Fehlerquote betrachtet, damit nicht Tempo gegen Qualität eingetauscht wird. Handeln: Wirkt die Änderung, wird sie als verbindliche Regelung festgeschrieben, sonst wird nachgesteuert. Erst wenn der Ablauf stabil ist, lohnt die Frage nach Software.",
+        "raster": [
+          { "kriterium": "Grundsatz genannt: erst den Prozess ordnen, dann digitalisieren", "punkte": 1 },
+          { "kriterium": "Ursache richtig verortet (Liegezeit statt Bearbeitungszeit)", "punkte": 1 },
+          { "kriterium": "Messbares Ziel mit Zahl formuliert", "punkte": 1 },
+          { "kriterium": "Prüfschritt vorgesehen, um die Wirkung festzustellen", "punkte": 1 },
+          { "kriterium": "Festschreiben der Änderung genannt, damit der Betrieb nicht zurückfällt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Der Verbesserungskreislauf lautet Planen, Tun, Prüfen, Handeln. Ohne den Prüfschritt weiß niemand, ob die Änderung gewirkt hat; ohne den Handeln-Schritt fällt der Betrieb in alte Gewohnheiten zurück.",
+      "quelle": "lf11-k4, Abschnitt b2"
+    }
+  ]
+}

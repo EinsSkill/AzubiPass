@@ -3,6 +3,14 @@
 **AzubiPass** · Stand 11.08.2026 · Bezugsunternehmen: MAKEL Studio GmbH, Düsseldorf
 Gilt für die App unter `docs/`, gebaut aus `quellen/`.
 
+> **Nicht mehr allein maßgeblich für den Produktumfang.**
+> Gebaut ist die **Eigene Probeklausur** — eine selbst zusammengestellte
+> Klassenarbeit, keine amtliche IHK-Prüfungssimulation. Was heute gilt, steht in
+> [eigene-probeklausur.md](eigene-probeklausur.md); bei Widerspruch gilt jene
+> Datei. Dieses Dokument bleibt erhalten, weil seine Aussagen zu Aufgabenarten,
+> Operatoren, Anforderungsbereichen und Bewertung weiter tragen. Es beschreibt
+> einen weiteren Umfang, als gebaut ist.
+
 ---
 
 ## 0. Leitgedanke

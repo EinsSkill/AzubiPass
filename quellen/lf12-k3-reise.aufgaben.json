@@ -1,0 +1,124 @@
+{
+  "lernfeld": "lf12",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf12-k3-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:showroom-event-koeln"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß bereitet ihre Geschäftsreise zum Showroom der MAKEL Studio GmbH nach Köln vor." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die fünf Schritte des Reiseprozesses.",
+          "elemente": [
+            { "text": "Reiseunterlagen zusammenstellen", "position": 3 },
+            { "text": "Reiseantrag genehmigen lassen", "position": 1 },
+            { "text": "Reisekosten abrechnen", "position": 5 },
+            { "text": "Fahrt und Unterkunft buchen", "position": 2 },
+            { "text": "Belege während der Reise sammeln", "position": 4 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die Genehmigung steht am Anfang — ohne sie fehlt der betriebliche Anlass, auf dem die gesamte Abrechnung beruht. Zu den Reiseunterlagen gehören Plan mit Puffern, ausgedruckte Buchungen, Kontakte, Termininhalte und ein Belegumschlag.",
+      "quelle": "lf12-k3, Abschnitt b3"
+    },
+
+    {
+      "id": "lf12-k3-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:showroom-event-koeln"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß muss am Veranstaltungstag um 9:00 Uhr in Köln sein, um den Showroom der MAKEL Studio GmbH aufzubauen; unterwegs will sie die Präsentation durchgehen." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Drei Verbindungen ab Düsseldorf",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Verbindung", "Abfahrt", "Ankunft", "Preis"],
+            "zeilen": [
+              ["A: Bahn", "07:12", "07:48", "24,90 €"],
+              ["B: Bahn", "08:12", "08:48", "18,90 €"],
+              ["C: Pkw", "07:30", "ca. 08:45 bei freier Fahrt", "31,00 € Kilometergeld"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Verbindung sollte gebucht werden?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Verbindung A, weil sie einen Puffer vor dem Termin lässt und die Reisezeit nutzbar ist.", "richtig": true,
+              "echo": "Richtig. Über eine Stunde Puffer vor 9:00 Uhr, und in der Bahn lässt sich die Präsentation durchgehen. Der Mehrpreis von 6,00 € gegenüber B ist dafür gering." },
+            { "text": "Verbindung B, weil sie mit 18,90 € am günstigsten ist.", "richtig": false,
+              "echo": "Ankunft 08:48 bei Aufbaubeginn 9:00 Uhr lässt keinen Puffer. Jede kleine Verspätung gefährdet den Termin." },
+            { "text": "Verbindung C, weil der Pkw unabhängig vom Fahrplan ist.", "richtig": false,
+              "echo": "Die Ankunft gilt nur bei freier Fahrt, ist also unsicher, das Angebot ist am teuersten, und die Fahrzeit lässt sich nicht zum Arbeiten nutzen." },
+            { "text": "Verbindung C, weil Kilometergeld immer günstiger ist als ein Bahnticket.", "richtig": false,
+              "echo": "Das trifft hier gerade nicht zu: 31,00 € liegen über beiden Bahnpreisen." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Bahn, wenn die Reisezeit nutzbar sein soll; Auto bei Material und mehreren Stationen. Und die Arbeitszeit gehört in den Kostenvergleich — sie ist teurer als das Ticket.",
+      "quelle": "lf12-k3, Abschnitt b2"
+    },
+
+    {
+      "id": "lf12-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:showroom-event-koeln"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH schlägt vor, für einen Termin um 9:00 Uhr die günstigste Verbindung mit Ankunft um 08:48 Uhr zu buchen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum eine günstigere Verbindung mit sehr später Ankunft ungeeignet sein kann.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Preisvorteil ist gering, das Risiko dagegen groß. Ohne Puffer führt schon eine kleine Verspätung dazu, dass der Termin nicht gehalten werden kann. Der Schaden steht in keinem Verhältnis zur Ersparnis: Beim Showroom warten eingeladene Boutique-Inhaberinnen, der Aufbau verzögert sich, und im schlimmsten Fall fällt der Termin aus. Hinzu kommt, dass die reisende Person ohne Puffer unter Druck ankommt und nicht arbeitsfähig ist — für ein Verkaufsgespräch oder eine Präsentation ist das ein echter Nachteil. In den Kostenvergleich gehört außerdem die Arbeitszeit: Sie ist teurer als die Differenz zwischen zwei Tickets. Deshalb wird bei einem festen Morgentermin die Verbindung mit ausreichendem Puffer gebucht.",
+        "raster": [
+          { "kriterium": "Terminrisiko durch fehlenden Puffer benannt", "punkte": 1 },
+          { "kriterium": "Schaden gegen die Ersparnis abgewogen", "punkte": 1 },
+          { "kriterium": "Arbeitsfähigkeit oder Arbeitszeit als weiteres Argument genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Reiseunterlagen enthalten einen Plan mit Puffern — nicht aus Bequemlichkeit, sondern weil der Termin der Zweck der Reise ist und das Ticket nur das Mittel.",
+      "quelle": "lf12-k3, Abschnitt b2"
+    }
+  ]
+}

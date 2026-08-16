@@ -1,0 +1,112 @@
+{
+  "lernfeld": "lf1",
+  "kapitel": "k6",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf1-k6-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Im einfachen Wirtschaftskreislauf stehen sich die MAKEL Studio GmbH als Unternehmen und die privaten Haushalte gegenüber." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "In welche Richtung fließt der jeweilige Strom?",
+          "ziele": [
+            "von den Haushalten zum Unternehmen",
+            "vom Unternehmen zu den Haushalten"
+          ],
+          "elemente": [
+            { "text": "Arbeitsleistung", "loesung": "von den Haushalten zum Unternehmen" },
+            { "text": "Konsumausgaben für Hoodies", "loesung": "von den Haushalten zum Unternehmen" },
+            { "text": "Löhne und Gehälter", "loesung": "vom Unternehmen zu den Haushalten" },
+            { "text": "Gelieferte Kleidungsstücke", "loesung": "vom Unternehmen zu den Haushalten" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der einfache Kreislauf kennt Haushalte und Unternehmen und vier Ströme. Die Merkregel: Jedem Güterstrom steht ein Geldstrom in die Gegenrichtung gegenüber — Arbeitsleistung gegen Lohn, Ware gegen Kaufpreis.",
+      "quelle": "lf1-k6, Abschnitt f3"
+    },
+
+    {
+      "id": "lf1-k6-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Stadt Düsseldorf bestellt bei der MAKEL Studio GmbH Merchandise-Textilien für eine Veranstaltung und bezahlt die Rechnung; MAKEL führt Steuern an den Staat ab." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Wie sind diese beiden Vorgänge im erweiterten Wirtschaftskreislauf einzuordnen?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Der Staat tritt als Nachfrager auf und zahlt für eine Leistung; die Steuerzahlung ist ein Geldstrom vom Unternehmen an den Staat.", "richtig": true,
+              "echo": "Richtig. Der Staat ist im erweiterten Kreislauf ein eigener Pol: Er fragt Güter nach, zahlt dafür und erhält zugleich Steuern." },
+            { "text": "Beides sind Geldströme vom Staat an das Unternehmen.", "richtig": false,
+              "echo": "Die Steuerzahlung fließt in die andere Richtung — vom Unternehmen an den Staat." },
+            { "text": "Der Staat gehört nicht in den Wirtschaftskreislauf, weil er nichts produziert.", "richtig": false,
+              "echo": "Im erweiterten Kreislauf kommen Staat, Banken und Ausland ausdrücklich hinzu." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Erweiterter Kreislauf: zusätzlich Staat, Banken und Ausland — und weiterhin steht jedem Güterstrom ein Geldstrom gegenüber.",
+      "quelle": "lf1-k6, Abschnitt f3"
+    },
+
+    {
+      "id": "lf1-k6-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Arbeitslosigkeit in der Region steigt; Yuki Bergmann fragt, ob das die Nachfrage nach MAKEL-Produkten beeinflusst." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie, wie sich eine steigende Arbeitslosigkeit auf die Nachfrage nach MAKEL-Produkten auswirken kann.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Steigende Arbeitslosigkeit senkt das verfügbare Einkommen der privaten Haushalte. Im Wirtschaftskreislauf bedeutet das: Der Strom der Konsumausgaben von den Haushalten zu den Unternehmen wird schwächer. Weil ein Bedürfnis erst mit Kaufkraft zum Bedarf und am Markt zur Nachfrage wird, sinkt die Nachfrage, obwohl das Bedürfnis nach Kleidung bestehen bleibt. Bei MAKEL wirkt das voraussichtlich stärker als bei anderen Anbietern, weil das Preisniveau bewusst leicht über dem Marktschnitt liegt und Streetwear kein lebensnotwendiges Gut ist — bei knapperem Budget wird zuerst an solchen Käufen gespart. Auch wer nicht selbst arbeitslos wird, hält sich aus Vorsicht zurück. Die Aussage lässt sich aber nicht absolut treffen: Die Wirkung hängt von der Zielgruppe, der Höhe und Dauer des Anstiegs und der Markenbindung ab, und der Wholesale-Kanal reagiert womöglich zeitversetzt.",
+        "raster": [
+          { "kriterium": "Sinkendes verfügbares Einkommen als Ursache genannt", "punkte": 1 },
+          { "kriterium": "Zusammenhang von Bedürfnis, Kaufkraft und Nachfrage erklärt", "punkte": 1 },
+          { "kriterium": "Preisniveau beziehungsweise Art des Produkts als verstärkenden Faktor genannt", "punkte": 1 },
+          { "kriterium": "Aussage relativiert statt absolut behauptet", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Bedürfnis plus Kaufkraft ergibt Bedarf; Bedarf am Markt ergibt Nachfrage. Fällt die Kaufkraft weg, bleibt das Bedürfnis — die Nachfrage aber nicht.",
+      "quelle": "lf1-k6, Abschnitt f1"
+    }
+  ]
+}

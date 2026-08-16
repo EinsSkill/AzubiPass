@@ -195,7 +195,59 @@ def bausteil(b, lf, kennung):
 
 # ---------------------------------------------------------------- Kapitel
 
-def kapitel(ch, lf, naechstes):
+def probeklausur_aktion(ch, lf, hat_aufgaben):
+    """Der Weg vom Kapitel in die eigene Probeklausur.
+
+    Nur dort, wo es für dieses Kapitel wirklich Aufgabenbausteine gibt: Ein
+    Knopf, der in eine leere Auswahl führt, ist eine Enttäuschung mit
+    Ankündigung. Die Kennung ist dieselbe, unter der die Probeklausur ihre
+    Kapitel führt — <lernfeld>:<kapitel>."""
+    if not hat_aufgaben:
+        return ""
+    kennung = f'{lf["id"]}:{ch["id"]}'
+    return (f'<a class="kn-neben weiter-pk" '
+            f'href="app.html#ueben/probeklausur?kapitel={html.escape(kennung)}">'
+            f'Dieses Kapitel als Probeklausur üben</a>')
+
+
+def nur_text(s):
+    """Auszeichnung heraus — für eine Inhaltsangabe, die kein Knopf sein darf."""
+    s = re.sub(r"\{\{(?:begriff|par):[a-z0-9-]+\|(.+?)\}\}", r"\1", str(s or ""))
+    s = re.sub(r"\*\*(.+?)\*\*", r"\1", s)
+    s = re.sub(r"(?<!\w)\*(.+?)\*(?!\w)", r"\1", s)
+    return html.escape(re.sub(r"==(.+?)==", r"\1", s))
+
+
+def inhaltsrand(ch, lf):
+    """Die Abschnitte des Kapitels als Wegmarke.
+
+    Am Schreibtisch steht sie fest neben dem Text; am Handy klappt sie aus einer
+    Zeile auf, die mitläuft. Beides aus derselben Liste — ein zweites
+    Inhaltsverzeichnis fürs Handy wäre eine zweite Wahrheit.
+
+    Knopf und Liste statt <details>: Ein geschlossenes <details> versteckt
+    seinen Inhalt vom Browser aus, und am Schreibtisch soll die Liste dauerhaft
+    stehen, ohne dass jemand sie aufklappt. Das ließe sich nur mit einem
+    open-Attribut erzwingen, das am Handy sofort wieder weg müsste. Ein Knopf
+    mit aria-expanded sagt dasselbe, überall gleich."""
+    zeilen = "".join(
+        f'<li data-abschnitt="{a["id"]}">'
+        f'<a href="#{ch["id"]}-{a["id"]}">{nur_text(a["titel"])}</a></li>'
+        for a in ch["bloecke"])
+    n = len(ch["bloecke"])
+    liste_id = f'{lf["id"]}-{ch["id"]}-lr'
+    return (f'<aside class="lauf-rand">'
+            f'<div class="lr-inhalt">'
+            f'<button class="lr-knopf" type="button" aria-expanded="false" '
+            f'aria-controls="{liste_id}">'
+            f'<span class="lr-marke">K{ch["nummer"]} · Inhalt</span>'
+            f'<span class="lr-stand"><b>1</b> / {n}</span></button>'
+            f'<div class="lr-titel">{html.escape(ch["titel"])}</div>'
+            f'<ol class="lr-liste" id="{liste_id}">{zeilen}</ol>'
+            f'</div></aside>')
+
+
+def kapitel(ch, lf, naechstes, hat_aufgaben=False):
     ziele = "".join(
         f'<li data-fuer="{z["abschnitt"]}"><span class="haken"></span>'
         f'<span>{inline(z["text"], lf)}</span></li>'
@@ -259,7 +311,7 @@ def kapitel(ch, lf, naechstes):
   </div>
 
   <div class="lauf">
-    <aside class="lauf-rand"><b>K{ch["nummer"]}</b>{html.escape(ch["titel"])}</aside>
+    {inhaltsrand(ch, lf)}
     <article class="inhalt">
       {"".join(abschnitte)}
 
@@ -282,7 +334,12 @@ def kapitel(ch, lf, naechstes):
     </article>
   </div>
 
-  <div class="abschluss"><div></div><div class="weiter">{weiter}</div></div>
+  <div class="abschluss"><div></div>
+    <div class="abschluss-wege">
+      <div class="weiter">{weiter}</div>
+      {probeklausur_aktion(ch, lf, hat_aufgaben)}
+    </div>
+  </div>
 </section>'''
 
 
@@ -391,6 +448,24 @@ def karten_zeile(n):
 
 # ---------------------------------------------------------------- Aufbau
 
+def kapitel_mit_aufgaben(lernfeld_datei, lf):
+    """Welche Kapitel dieses Lernfelds Aufgabenbausteine haben.
+
+    Ermittelt aus dem Dateinamen, nicht aus einer Liste im Code: Neben
+    <name>.kapitel.json liegt gegebenenfalls <name>.aufgaben.json. Ein weiteres
+    Lernfeld heißt damit weiterhin nur „Aufgabendatei schreiben, neu bauen" —
+    nirgends steht eine feste Kapitelliste."""
+    basis = Path(lernfeld_datei).parent
+    raus = set()
+    for eintrag in lf["kapitel"]:
+        datei = eintrag.get("datei", "")
+        if not datei.endswith(".kapitel.json"):
+            continue
+        if (basis / (datei[:-len(".kapitel.json")] + ".aufgaben.json")).exists():
+            raus.add(eintrag["id"])
+    return raus
+
+
 def baue(lernfeld_datei):
     lf, kapitel_daten, fehlend = lade(lernfeld_datei)
     for name in fehlend:
@@ -398,10 +473,12 @@ def baue(lernfeld_datei):
 
     karten = karten_sammeln(lf, kapitel_daten)
 
+    mit_aufgaben = kapitel_mit_aufgaben(lernfeld_datei, lf)
+
     seiten = [start(lf, kapitel_daten, len(karten))]
     for i, ch in enumerate(kapitel_daten):
         naechstes = kapitel_daten[i + 1] if i + 1 < len(kapitel_daten) else None
-        seiten.append(kapitel(ch, lf, naechstes))
+        seiten.append(kapitel(ch, lf, naechstes, ch["id"] in mit_aufgaben))
     seiten.append(trainer(karten))
 
     stil, kernel, verhalten = veroeffentliche("azubipass.css", "kern.js", "azubipass.js")

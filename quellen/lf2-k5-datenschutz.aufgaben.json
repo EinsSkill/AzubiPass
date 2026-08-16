@@ -1,0 +1,109 @@
+{
+  "lernfeld": "lf2",
+  "kapitel": "k5",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf2-k5-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Drei Maßnahmen der MAKEL Studio GmbH sollen ihrem Schutzziel zugeordnet werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welches Schutzziel steht im Vordergrund?",
+          "ziele": ["Vertraulichkeit", "Integrität", "Verfügbarkeit"],
+          "elemente": [
+            { "text": "Zugriff auf Personaldaten nur für die Personalabteilung", "loesung": "Vertraulichkeit" },
+            { "text": "Änderungen an Datensätzen werden protokolliert und lassen sich nachvollziehen", "loesung": "Integrität" },
+            { "text": "Tägliche Datensicherung, damit nach einem Ausfall weitergearbeitet werden kann", "loesung": "Verfügbarkeit" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Datenschutz schützt Menschen, Datensicherheit schützt die Daten. {{begriff:tom|Technische und organisatorische Maßnahmen}} wirken nur gemeinsam — eine Zugriffsbeschränkung nützt wenig, wenn die Sicherung fehlt.",
+      "quelle": "lf2-k5, Abschnitt b3"
+    },
+
+    {
+      "id": "lf2-k5-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Anrufer bittet die Verwaltung der MAKEL Studio GmbH um die private Handynummer von Emily Tran, weil er sie dringend erreichen müsse." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Wie ist zu reagieren?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Die private Nummer nicht herausgeben, den dienstlichen Kontaktweg anbieten und einen Rückruf anbieten.", "richtig": true,
+              "echo": "Richtig. Für die Weitergabe fehlt eine Rechtsgrundlage. Der dienstliche Weg löst das Anliegen, ohne personenbezogene Daten preiszugeben." },
+            { "text": "Die Nummer herausgeben, weil der Anrufer die Dringlichkeit glaubhaft dargestellt hat.", "richtig": false,
+              "echo": "Dringlichkeit ist keine Rechtsgrundlage, und die Angaben des Anrufers sind nicht überprüft." },
+            { "text": "Die Nummer herausgeben, weil dienstliche Erreichbarkeit Vorrang hat.", "richtig": false,
+              "echo": "Es geht gerade um die private Nummer. Die dienstliche Erreichbarkeit lässt sich über den dienstlichen Kontaktweg herstellen." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "{{par:dsgvo-6|Art. 6 DSGVO}}: Verbot mit Erlaubnisvorbehalt — ohne Rechtsgrundlage keine Verarbeitung, und damit auch keine Weitergabe. Daten von Unternehmen fallen nicht unter die DSGVO, Daten ihrer Beschäftigten schon.",
+      "quelle": "lf2-k5, Abschnitt b1"
+    },
+
+    {
+      "id": "lf2-k5-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH hat versehentlich eine Datei mit Namen und Adressen von 180 Onlineshop-Kundinnen an einen falschen Empfänger gesendet." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie zwei Sofortmaßnahmen und beschreiben Sie das richtige weitere Vorgehen.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Erste Sofortmaßnahme: den Vorfall unverzüglich intern melden — an die vorgesetzte Stelle und die für den Datenschutz verantwortliche Person. Begründung: Nur dort kann beurteilt werden, ob eine Meldepflicht gegenüber der Aufsichtsbehörde und gegebenenfalls den betroffenen Personen besteht, und dafür gelten kurze Fristen. Zweite Sofortmaßnahme: den falschen Empfänger kontaktieren, ihn zur Löschung auffordern und sich die Löschung bestätigen lassen. Begründung: Das begrenzt den Schaden, solange die Daten noch nicht weiterverbreitet sind. Anschließend wird der Vorfall dokumentiert — was wurde wann an wen gesendet, welche Daten waren betroffen, welche Maßnahmen wurden ergriffen. Diese Dokumentation ist Pflicht und zugleich die Grundlage der Bewertung. Zum Schluss gehört die Ursache abgestellt, etwa durch eine Prüfregel vor dem Versand größerer Datenmengen. Ausdrücklich falsch wäre, den Vorfall zu verschweigen oder auf eigene Faust zu bereinigen: Das verhindert die fristgerechte Meldung und macht aus einem Fehler ein Fehlverhalten.",
+        "raster": [
+          { "kriterium": "Interne Meldung als Sofortmaßnahme genannt und begründet", "punkte": 1 },
+          { "kriterium": "Kontakt zum Empfänger mit Löschaufforderung genannt und begründet", "punkte": 1 },
+          { "kriterium": "Dokumentation des Vorfalls genannt", "punkte": 1 },
+          { "kriterium": "Ursachenbeseitigung oder Meldepflicht gegenüber der Aufsichtsbehörde angesprochen", "punkte": 1 },
+          { "kriterium": "Ausdrücklich klargestellt, dass Vertuschen keine Option ist", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Betroffenenrechte sind Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit und Widerspruch. Bei einer Datenpanne zählt vor allem Geschwindigkeit — und Ehrlichkeit gegenüber der eigenen Organisation.",
+      "quelle": "lf2-k5, Abschnitt b2"
+    }
+  ]
+}

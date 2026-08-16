@@ -1,0 +1,109 @@
+{
+  "lernfeld": "lf4",
+  "kapitel": "k2",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf4-k2-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydin sucht Lieferer für die Bio-Baumwolle der Winterkollektion." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Handelt es sich um eine interne oder eine externe Bezugsquelle?",
+          "ziele": ["interne Bezugsquelle", "externe Bezugsquelle"],
+          "elemente": [
+            { "text": "Die eigene Lieferantenkartei", "loesung": "interne Bezugsquelle" },
+            { "text": "Alte Rechnungen früherer Stoffkäufe", "loesung": "interne Bezugsquelle" },
+            { "text": "Eine Fachmesse für Textilien", "loesung": "externe Bezugsquelle" },
+            { "text": "Adressen der IHK und der Fachverbände", "loesung": "externe Bezugsquelle" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Erst intern suchen, dann extern. Die eigene Kartei ist kostenlos und weiß etwas, das kein Katalog enthält: wer in der Vergangenheit zuverlässig geliefert hat.",
+      "quelle": "lf4-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf4-k2-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der MAKEL Studio GmbH fehlen kurzfristig 40 Meter eines Futterstoffs von geringem Wert, den sie regelmäßig bezieht." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welches Vorgehen ist hier angemessen?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Beim bekannten Lieferer aus der Lieferantenkartei direkt nachbestellen.", "richtig": true,
+              "echo": "Richtig. Geringer Wert und kurze Frist — hier genügt der bekannte Lieferer. Der Aufwand eines Vergleichs stünde in keinem Verhältnis." },
+            { "text": "Mindestens drei neue Lieferer anfragen und die Angebote vergleichen.", "richtig": false,
+              "echo": "Mehrere Angebote lohnen sich bei A-Gütern mit hohem Wert. Bei einem geringwertigen C-Gut kostet der Vergleich mehr, als er einspart — und dauert zu lange." },
+            { "text": "Eine Fachmesse abwarten, um neue Bezugsquellen zu finden.", "richtig": false,
+              "echo": "Messen erschließen neue Quellen, lösen aber keinen kurzfristigen Bedarf." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Der Planungsaufwand richtet sich nach dem Wert des Materials, nicht nach der Menge. Bei A-Gütern lohnen sich mehrere Angebote, bei C-Gütern genügt der bekannte Lieferer.",
+      "quelle": "lf4-k2, Abschnitt b1"
+    },
+
+    {
+      "id": "lf4-k2-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH bezieht ihre wichtigste Bio-Baumwolle seit Jahren von einem einzigen Lieferer, der etwas günstiger ist als alle anderen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum MAKEL für strategisch wichtige Stoffe nicht nur einen Lieferer führen sollte, und nennen Sie den Preis dieser Entscheidung.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Ein einziger Lieferer ist bequem und gefährlich: Fällt er aus — durch Insolvenz, Qualitätsprobleme oder Lieferengpässe —, steht die gesamte Beschaffung und damit die Produktion der Winterkollektion still. Ein zweiter Lieferer sichert die Versorgung ab. Er verbessert außerdem die Verhandlungsposition, weil MAKEL nicht mehr auf einen einzigen Anbieter angewiesen ist, und macht Qualitätsvergleiche möglich. Der Preis dafür ist realer Aufwand: Der zweite Lieferer ist meist etwas teurer, die Mengen verteilen sich, Mengenrabatte fallen kleiner aus, und beide Lieferbeziehungen müssen gepflegt und bewertet werden. Bei strategisch wichtigen Stoffen ist dieser Aufwand die Unabhängigkeit wert.",
+        "raster": [
+          { "kriterium": "Ausfallrisiko als Kernargument genannt", "punkte": 1 },
+          { "kriterium": "Zweiter Vorteil genannt (Verhandlungsposition, Preis- oder Qualitätsvergleich)", "punkte": 1 },
+          { "kriterium": "Konkrete Folge für MAKEL beschrieben (Produktion oder Kollektion steht still)", "punkte": 1 },
+          { "kriterium": "Nachteil der Mehrquellenstrategie benannt (höherer Preis, kleinere Rabatte, Mehraufwand)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Ein einziger Lieferer ist bequem und gefährlich. Bei wichtigen Materialien lohnt sich ein zweiter, auch wenn er etwas teurer ist — das ist der Preis der Unabhängigkeit.",
+      "quelle": "lf4-k2, Abschnitt b1"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "lernfeld": "lf8",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf8-k3-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:personaleinstellung-store"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt beschreibt einem Auszubildenden den Ablauf des Auswahlverfahrens bei der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die vier Schritte des Auswahlverfahrens.",
+          "elemente": [
+            { "text": "Entscheidung anhand des Anforderungsprofils", "position": 3 },
+            { "text": "Vorauswahl anhand der Bewerbungsunterlagen", "position": 1 },
+            { "text": "Zu- und Absage an die Bewerber", "position": 4 },
+            { "text": "Strukturiertes Vorstellungsgespräch", "position": 2 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Ablauf lautet: Eingangsbestätigung, Vorauswahl, Gespräch, weitere Verfahren, Entscheidung, Zu- und Absage. Maßstab ist auf jeder Stufe dasselbe Anforderungsprofil — sonst wird die Auswahl beliebig.",
+      "quelle": "lf8-k3, Abschnitt c1"
+    },
+
+    {
+      "id": "lf8-k3-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:personaleinstellung-store"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Für die befristete Aushilfsstelle im Store der MAKEL Studio GmbH liegen zwei Bewerbungen vor." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Anforderungsprofil und Bewerberprofile",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Kriterium laut Anforderungsprofil", "Bewerbung A", "Bewerbung B"],
+            "zeilen": [
+              ["Erfahrung im Einzelhandel", "zwei Jahre Verkauf", "keine"],
+              ["Kassenerfahrung", "vorhanden", "keine"],
+              ["Verfügbarkeit im gesamten Dezember", "ganzer Zeitraum", "nur bis 15. Dezember"],
+              ["Samstagsarbeit möglich", "ja", "ja"],
+              ["Wohnort", "Neuss", "Düsseldorf"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Entscheidung ist anhand des Anforderungsprofils sachlich begründet?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Bewerbung A, weil sie Einzelhandels- und Kassenerfahrung mitbringt und im gesamten Zeitraum verfügbar ist.", "richtig": true,
+              "echo": "Richtig. A erfüllt drei Kriterien des Anforderungsprofils, die B nicht erfüllt — und die Verfügbarkeit ist bei einer Adventsaushilfe entscheidend." },
+            { "text": "Bewerbung B, weil der Wohnort Düsseldorf näher am Store liegt.", "richtig": false,
+              "echo": "Der Wohnort steht zwar im Profil, ist aber kein Kriterium, das die Eignung für die Stelle belegt. Die fachlichen Kriterien wiegen schwerer." },
+            { "text": "Bewerbung B, weil ohne Vorerfahrung unvoreingenommener gearbeitet wird.", "richtig": false,
+              "echo": "Das ist eine Vermutung ohne Bezug zum Anforderungsprofil. Bewertet wird, was die Stelle verlangt." },
+            { "text": "Keine der beiden, weil beide Profile unvollständig sind.", "richtig": false,
+              "echo": "Beide Profile enthalten Angaben zu allen Kriterien. A erfüllt sie überwiegend, damit ist eine Entscheidung möglich." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Maßstab ist das Anforderungsprofil, nicht der persönliche Eindruck. Kriterien ohne Stellenbezug — etwa der Wohnort — dürfen die Entscheidung nicht tragen.",
+      "quelle": "lf8-k3, Abschnitt c1"
+    },
+
+    {
+      "id": "lf8-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Im Vorstellungsgespräch bei der MAKEL Studio GmbH möchte ein Abteilungsleiter eine Bewerberin fragen, ob sie in den nächsten Jahren Kinder plant." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum diese Frage unzulässig ist, und nennen Sie eine zulässige Alternative.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Zulässig sind nur Fragen mit Bezug zur konkreten Stelle. Die Familienplanung hat keinen solchen Bezug: Sie sagt nichts über Eignung, Kenntnisse oder Leistungsbereitschaft aus. Die Frage knüpft mittelbar an das Geschlecht an und benachteiligt Bewerberinnen, was nach dem AGG unzulässig ist. Weil die Frage unzulässig ist, darf die Bewerberin darauf wahrheitswidrig antworten, ohne dass ihr das später vorgeworfen werden kann. Zulässig wäre stattdessen die Frage nach der tatsächlichen Verfügbarkeit für die Stelle, etwa: „Können Sie die vorgesehene Arbeitszeit einschließlich Samstagen im gesamten Dezember abdecken?“",
+        "raster": [
+          { "kriterium": "Fehlender Stellenbezug als Maßstab genannt", "punkte": 1 },
+          { "kriterium": "Benachteiligung beziehungsweise AGG-Verstoß erkannt", "punkte": 1 },
+          { "kriterium": "Zulässige Alternativfrage mit Stellenbezug formuliert oder Recht zur wahrheitswidrigen Antwort genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Unzulässig sind Fragen nach Schwangerschaft, Familienplanung, Religion, Gewerkschaftszugehörigkeit und Vorstrafen ohne Bezug. Auf unzulässige Fragen darf wahrheitswidrig geantwortet werden.",
+      "quelle": "lf8-k3, Abschnitt c2"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "lernfeld": "lf3",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf3-k1-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 6,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß legt die Belege eines Wholesale-Auftrags der MAKEL Studio GmbH neu sortiert auf den Tisch." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die sechs Belege in die Reihenfolge, in der sie im Auftragsprozess entstehen.",
+          "elemente": [
+            { "text": "Rechnung", "position": 6 },
+            { "text": "Anfrage", "position": 1 },
+            { "text": "Lieferschein", "position": 5 },
+            { "text": "Angebot", "position": 2 },
+            { "text": "Auftragsbestätigung", "position": 4 },
+            { "text": "Bestellung", "position": 3 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Prozess läuft vom Kundenwunsch zur Forderung: Der Kunde fragt an, der Betrieb bietet an, der Kunde bestellt, der Betrieb bestätigt, liefert und stellt in Rechnung. Anfrage und Bestellung kommen vom Kunden, die übrigen vier Belege vom Betrieb.",
+      "quelle": "lf3-k1, Abschnitt a1"
+    },
+
+    {
+      "id": "lf3-k1-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 6,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH soll die sechs Belege eines Wholesale-Auftrags nach ihrer Aufgabe sortieren." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Hauptfunktion hat der jeweilige Beleg?",
+          "ziele": [
+            "meldet einen Bedarf, ohne rechtlich zu binden",
+            "ist der verbindliche Vorschlag des Verkäufers",
+            "ist in der Regel die Annahme und schließt den Vertrag",
+            "wiederholt den Auftragsinhalt zur Kontrolle",
+            "begleitet die Ware und weist ihren Inhalt nach",
+            "fordert den vereinbarten Betrag ein"
+          ],
+          "elemente": [
+            { "text": "Anfrage", "loesung": "meldet einen Bedarf, ohne rechtlich zu binden" },
+            { "text": "Angebot", "loesung": "ist der verbindliche Vorschlag des Verkäufers" },
+            { "text": "Bestellung", "loesung": "ist in der Regel die Annahme und schließt den Vertrag" },
+            { "text": "Auftragsbestätigung", "loesung": "wiederholt den Auftragsinhalt zur Kontrolle" },
+            { "text": "Lieferschein", "loesung": "begleitet die Ware und weist ihren Inhalt nach" },
+            { "text": "Rechnung", "loesung": "fordert den vereinbarten Betrag ein" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die Anfrage hat keine rechtliche Wirkung. Der Vertrag entsteht mit der Annahme, in der Regel also mit der Bestellung. Der Lieferschein enthält keine Preise — er weist nur nach, was in der Sendung liegt.",
+      "quelle": "lf3-k1, Abschnitt a2"
+    },
+
+    {
+      "id": "lf3-k1-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Boutique verlangt von der MAKEL Studio GmbH die Rechnung als Nachweis dafür, dass die bestellte Ware bereits übergeben wurde." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum eine Rechnung nicht als Nachweis dafür dienen kann, dass die Lieferung erfolgt ist.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Rechnung ist ein Zahlungsdokument: Sie fordert den vereinbarten Betrag ein und belegt damit die Forderung, nicht die Übergabe der Ware. Eine Rechnung kann geschrieben werden, bevor die Ware das Lager verlassen hat. Den Inhalt einer Sendung weist der Lieferschein nach, den der Kunde beim Wareneingang prüft und quittiert. Erst Lieferschein und Wareneingangsprüfung zusammen belegen, was tatsächlich angekommen ist.",
+        "raster": [
+          { "kriterium": "Rechnung als Zahlungs- beziehungsweise Forderungsdokument eingeordnet", "punkte": 1 },
+          { "kriterium": "Erkannt, dass die Rechnung unabhängig von der tatsächlichen Übergabe erstellt werden kann", "punkte": 1 },
+          { "kriterium": "Lieferschein beziehungsweise Wareneingang als richtigen Nachweis genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die Lieferung erfüllt den Vertrag, sie schließt ihn nicht — und die Rechnung dokumentiert die Gegenleistung, nicht die Leistung.",
+      "quelle": "lf3-k1, Abschnitt a2"
+    }
+  ]
+}

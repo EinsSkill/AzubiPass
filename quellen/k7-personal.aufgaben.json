@@ -1,0 +1,205 @@
+{
+  "lernfeld": "buchfuehrung",
+  "kapitel": "k7",
+  "verweise_im_klausurmodus": "ausblenden",
+  "konten_als": "nummer",
+
+  "bausteine": [
+    {
+      "id": "buchfuehrung-k7-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt erklärt einer neuen Aushilfe die Abrechnung." }
+      ],
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Wer trägt den jeweiligen Betrag?",
+          "ziele": ["Arbeitnehmer allein", "Arbeitgeber allein", "beide je zur Hälfte"],
+          "elemente": [
+            { "text": "Lohnsteuer", "loesung": "Arbeitnehmer allein" },
+            { "text": "Beitrag zur Unfallversicherung", "loesung": "Arbeitgeber allein" },
+            { "text": "Beitrag zur Rentenversicherung", "loesung": "beide je zur Hälfte" },
+            { "text": "Beitrag zur Arbeitslosenversicherung", "loesung": "beide je zur Hälfte" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die Unfallversicherung deckt ein betriebliches Risiko ab und wird deshalb allein vom Betrieb getragen. Steuern trägt der Arbeitnehmer, der Arbeitgeber führt sie nur ab.",
+      "quelle": "k7, Abschnitt g2",
+      "pruefen": "Beitragssätze und Aufteilung jährlich prüfen"
+    },
+
+    {
+      "id": "buchfuehrung-k7-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:entgeltabrechnung"],
+      "variablen": {
+        "brutto": { "von": 2400, "bis": 4200, "schritt": 50 },
+        "lohnsteuer": { "von": 280, "bis": 720, "schritt": 10 },
+        "an_sv": { "von": 500, "bis": 900, "schritt": 10 },
+        "ag_sv": { "von": 490, "bis": 890, "schritt": 10 }
+      },
+      "abgeleitet": {
+        "netto": "brutto - lohnsteuer - an_sv",
+        "gesamtkosten": "brutto + ag_sv"
+      },
+      "pruefung_variablen": "netto > 1200",
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt legt Ihnen die Abrechnungsdaten einer Mitarbeiterin des Lagers vor." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Abrechnungsdaten des Monats",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Betrag in €"],
+            "zeilen": [
+              ["Bruttolohn", "{brutto}"],
+              ["Lohnsteuer einschließlich Zuschlägen", "{lohnsteuer}"],
+              ["Arbeitnehmeranteil Sozialversicherung", "{an_sv}"],
+              ["Arbeitgeberanteil Sozialversicherung", "{ag_sv}"]
+            ]
+          }
+        }
+      ],
+      "eingabe": [
+        { "block": "zahl", "label": "Nettolohn", "einheit": "€", "loesung": "netto", "punkte": 2 },
+        { "block": "zahl", "label": "Gesamtkosten für den Betrieb", "einheit": "€", "loesung": "gesamtkosten", "punkte": 3 }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Zwei Formeln: Brutto minus alle Abzüge ergibt Netto. Brutto plus Arbeitgeberanteil ergibt die Kosten für den Betrieb — das ist die Zahl, nach der in Prüfungen meist gefragt wird.",
+      "quelle": "k7, Abschnitt g1 und g2"
+    },
+
+    {
+      "id": "buchfuehrung-k7-03",
+      "operator": "Bilden Sie den Buchungssatz",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:entgeltabrechnung"],
+      "variablen": {
+        "brutto": { "von": 2400, "bis": 4200, "schritt": 50 },
+        "lohnsteuer": { "von": 280, "bis": 720, "schritt": 10 },
+        "an_sv": { "von": 500, "bis": 900, "schritt": 10 }
+      },
+      "abgeleitet": {
+        "netto": "brutto - lohnsteuer - an_sv"
+      },
+      "pruefung_variablen": "netto > 1200",
+      "anzeige": [
+        { "block": "text", "inhalt": "Das Gehalt ist erfasst, gezahlt wurde noch nichts; Lohnsteuer und Sozialversicherung werden als sonstige Verbindlichkeiten geführt." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Abrechnung",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Betrag in €"],
+            "zeilen": [
+              ["Bruttogehalt", "{brutto}"],
+              ["Lohnsteuer", "{lohnsteuer}"],
+              ["Arbeitnehmeranteil Sozialversicherung", "{an_sv}"],
+              ["Auszahlungsbetrag", "{netto}"]
+            ]
+          }
+        }
+      ],
+      "eingabe": [
+        {
+          "block": "buchungssatz",
+          "zeilen": 4,
+          "loesung": [
+            { "soll": "6300", "haben": null, "betrag": "brutto" },
+            { "soll": null, "haben": "4830", "betrag": "lohnsteuer" },
+            { "soll": null, "haben": "4830", "betrag": "an_sv" },
+            { "soll": null, "haben": "4830", "betrag": "netto" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Der volle Bruttobetrag ist Aufwand, obwohl nur das Netto ausgezahlt wird. Er verteilt sich auf drei Verbindlichkeiten: Finanzamt, Sozialversicherung und Mitarbeiterin.",
+      "quelle": "k7, Abschnitt g3"
+    },
+
+    {
+      "id": "buchfuehrung-k7-04",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli hat den Arbeitgeberanteil zur Sozialversicherung zusammen mit dem Bruttogehalt auf das Konto Gehälter gebucht." }
+      ],
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Warum ist das falsch?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Der Arbeitgeberanteil ist ein eigenständiger Aufwand und gehört auf das Konto Gesetzliche Sozialaufwendungen.", "richtig": true,
+              "echo": "Richtig. Er wird nirgends vom Gehalt abgezogen, sondern kommt obendrauf — deshalb ein eigener Buchungssatz auf ein eigenes Konto." },
+            { "text": "Der Arbeitgeberanteil ist kein Aufwand, sondern eine Verbindlichkeit.", "richtig": false,
+              "echo": "Er erzeugt beides: einen Aufwand im Soll und eine Verbindlichkeit im Haben. Der Fehler liegt allein im gewählten Aufwandskonto." },
+            { "text": "Der Arbeitgeberanteil wird erst bei der Zahlung gebucht.", "richtig": false,
+              "echo": "Aufwand entsteht mit der Entstehung der Verpflichtung, nicht mit dem Geldfluss — dasselbe Prinzip wie bei jeder Eingangsrechnung." },
+            { "text": "Der Arbeitgeberanteil mindert den Bruttolohn.", "richtig": false,
+              "echo": "Das verwechselt ihn mit dem Arbeitnehmeranteil. Der Arbeitgeberanteil erhöht die Personalkosten, statt das Gehalt zu mindern." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Getrennte Konten sind kein Formalismus: Nur so lässt sich ablesen, was die Arbeit tatsächlich kostet.",
+      "quelle": "k7, Abschnitt g3"
+    },
+
+    {
+      "id": "buchfuehrung-k7-05",
+      "operator": "Erläutern Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 7,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+      "anzeige": [
+        { "block": "text", "inhalt": "Yuki Bergmann rechnet für eine zusätzliche Stelle im Studio mit dem vereinbarten Bruttogehalt von 3.000 € monatlich." }
+      ],
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Erläutern Sie, warum diese Rechnung zu niedrig ansetzt, und nennen Sie die Bestandteile der tatsächlichen Personalkosten.",
+          "zeilen": 5
+        }
+      ],
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Bruttolohn deckt nur ab, was dem Arbeitnehmer zusteht und wovon Steuern und Arbeitnehmeranteile abgezogen werden. Zusätzlich zahlt der Betrieb den Arbeitgeberanteil zur Sozialversicherung, der rund 21 Prozent des Bruttolohns ausmacht und nicht vom Gehalt abgezogen wird. Bei 3.000 € Brutto liegen die Personalkosten damit bei etwa 3.630 € im Monat. Hinzu kommen die allein vom Betrieb getragene Unfallversicherung sowie weitere Kosten wie Urlaubs- und Krankheitszeiten, Arbeitsplatzausstattung und Umlagen. Für Kalkulationen und Stellenentscheidungen ist deshalb immer der Gesamtaufwand maßgeblich, nicht das vereinbarte Bruttogehalt.",
+        "raster": [
+          { "kriterium": "Arbeitgeberanteil kommt zusätzlich hinzu", "punkte": 2 },
+          { "kriterium": "Größenordnung von rund 21 Prozent genannt", "punkte": 1 },
+          { "kriterium": "Gesamtkosten beziffert (rund 3.630 €)", "punkte": 1 },
+          { "kriterium": "Weitere Kostenbestandteile genannt (z. B. Unfallversicherung)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die Stelle, an der in Prüfungen die meisten Punkte verloren gehen: Gefragt sind die Kosten für den Betrieb, geantwortet wird mit dem Bruttolohn.",
+      "quelle": "k7, Abschnitt g2",
+      "pruefen": "Prozentsatz des Arbeitgeberanteils jährlich prüfen"
+    }
+  ]
+}

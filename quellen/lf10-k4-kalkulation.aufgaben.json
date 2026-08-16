@@ -1,0 +1,134 @@
+{
+  "lernfeld": "lf10",
+  "kapitel": "k4",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf10-k4-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH soll das Schema der Zuschlagskalkulation ordnen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die vier Stufen in der Reihenfolge, in der sie berechnet werden.",
+          "elemente": [
+            { "text": "Herstellkosten", "position": 3 },
+            { "text": "Materialkosten", "position": 1 },
+            { "text": "Selbstkosten", "position": 4 },
+            { "text": "Fertigungskosten", "position": 2 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Materialkosten + Fertigungskosten = Herstellkosten. Darauf kommen Verwaltungs- und Vertriebsgemeinkosten, und daraus werden die Selbstkosten. Der Gewinnzuschlag wird erst auf die Selbstkosten gerechnet.",
+      "quelle": "lf10-k4, Abschnitt b1"
+    },
+
+    {
+      "id": "lf10-k4-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 8,
+      "dauer_min": 9,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+
+      "variablen": {
+        "material": { "von": 18, "bis": 34, "schritt": 2 },
+        "mgk_satz": { "von": 10, "bis": 20, "schritt": 5 },
+        "lohn": { "von": 12, "bis": 24, "schritt": 2 },
+        "fgk_satz": { "von": 80, "bis": 140, "schritt": 20 },
+        "vwgk_satz": { "von": 8, "bis": 16, "schritt": 2 },
+        "vtgk_satz": { "von": 6, "bis": 14, "schritt": 2 }
+      },
+      "abgeleitet": {
+        "materialkosten": "runde(material + material * mgk_satz / 100, 2)",
+        "fertigungskosten": "runde(lohn + lohn * fgk_satz / 100, 2)",
+        "herstellkosten": "runde(materialkosten + fertigungskosten, 2)",
+        "selbstkosten": "runde(herstellkosten + herstellkosten * vwgk_satz / 100 + herstellkosten * vtgk_satz / 100, 2)"
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner lässt die Selbstkosten eines Overshirts der MAKEL Studio GmbH ermitteln." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Einzelkosten und Zuschlagssätze",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Fertigungsmaterial je Overshirt", "{material} €"],
+              ["Materialgemeinkostenzuschlag", "{mgk_satz} %"],
+              ["Fertigungslohn je Overshirt", "{lohn} €"],
+              ["Fertigungsgemeinkostenzuschlag", "{fgk_satz} %"],
+              ["Verwaltungsgemeinkostenzuschlag", "{vwgk_satz} %"],
+              ["Vertriebsgemeinkostenzuschlag", "{vtgk_satz} %"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Materialkosten", "einheit": "€",
+          "loesung": "materialkosten", "punkte": 2 },
+        { "block": "zahl", "label": "Fertigungskosten", "einheit": "€",
+          "loesung": "fertigungskosten", "punkte": 2 },
+        { "block": "zahl", "label": "Herstellkosten", "einheit": "€",
+          "loesung": "herstellkosten", "punkte": 2, "folgefehler_aus": ["materialkosten", "fertigungskosten"] },
+        { "block": "zahl", "label": "Selbstkosten", "einheit": "€",
+          "loesung": "selbstkosten", "punkte": 2, "folgefehler_aus": ["herstellkosten"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 8 },
+      "erklaerung": "Die Gemeinkosten werden auf ihre jeweilige Bezugsgröße gerechnet: Materialgemeinkosten auf das Fertigungsmaterial, Fertigungsgemeinkosten auf den Fertigungslohn. Verwaltungs- und Vertriebsgemeinkosten beziehen sich beide auf die Herstellkosten — nicht aufeinander und nicht auf die Einzelkosten.",
+      "quelle": "lf10-k4, Abschnitt b1"
+    },
+
+    {
+      "id": "lf10-k4-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:kalkulation-overshirt"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH rechnet den Kundenskonto eines Overshirts versehentlich von den Selbstkosten statt vom Angebotspreis." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum Kundenrabatt und Kundenskonto im Hundert vom jeweiligen Preis gerechnet werden.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Rabatt und Skonto sind Nachlässe, die der Kunde von einem Preis abzieht. Der vereinbarte Prozentsatz bezieht sich deshalb immer auf die Größe, von der er tatsächlich abgezogen wird: das Skonto vom Zielverkaufspreis, der Rabatt vom Listenverkaufspreis. In der Vorwärtskalkulation ist dieser Preis aber noch nicht bekannt — man kennt nur den kleineren Wert darunter. Deshalb wird im Hundert gerechnet: Der bekannte Betrag entspricht nicht 100 Prozent, sondern 100 Prozent minus dem Nachlasssatz. Rechnete man den Prozentsatz stattdessen vom Selbstkostenwert, wäre der Abzug zu klein, weil die Bezugsgröße zu niedrig ist. Der später gewährte Nachlass wäre dann höher als einkalkuliert, und der geplante Gewinn würde nicht erreicht.",
+        "raster": [
+          { "kriterium": "Erkannt, dass sich der Nachlass auf den Preis bezieht, von dem er abgezogen wird", "punkte": 1 },
+          { "kriterium": "Richtige Bezugsgröße für Skonto oder Rabatt konkret benannt", "punkte": 1 },
+          { "kriterium": "Rechnung im Hundert erklärt: bekannter Wert entspricht 100 % minus Nachlasssatz", "punkte": 1 },
+          { "kriterium": "Folge des Fehlers genannt: zu geringer Abzug, geplanter Gewinn wird verfehlt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Kundenskonto und Kundenrabatt werden im Hundert gerechnet. Der Gewinnzuschlag dagegen wird auf die Selbstkosten gerechnet — also vom Hundert. Diese beiden Richtungen zu verwechseln ist der häufigste Kalkulationsfehler.",
+      "quelle": "lf10-k4, Abschnitt b2"
+    }
+  ]
+}

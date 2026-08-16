@@ -131,7 +131,7 @@
 
   function zielAus(k, art) {
     return {
-      art: art, zu: k.zu, titel: k.titel,
+      art: art, zu: k.zu, titel: k.titel, lernfeld: k.lernfeld,
       wo: k.lernfeld.toUpperCase() + " · Kapitel " + k.nummer,
       knopf: KNOPFTEXT[art]
     };
@@ -164,16 +164,15 @@
   /* Countdown als fertiger Text. Eine negative Tageszahl darf hier nicht
      herauskommen — „noch -12 Tage" ist keine Information, sondern ein Fehler
      mit Minuszeichen davor. */
+  /* `kurz` ist derselbe Stand ohne den Prüfungsnamen — für die Kopfzeile eines
+     Abschnitts, in der der Name schon darüber steht. */
   function countdown() {
     var datum = pruefungsdatum();
-    if (!datum) return { text: "Prüfungstermin festlegen", handeln: true };
+    if (!datum) return { text: "Prüfungstermin festlegen", kurz: "offen", handeln: true };
     var tage = AP.tageBis(datum);
-    if (tage < 0) return { text: "Prüfungstermin aktualisieren", handeln: true };
-    return {
-      text: pruefungsname() + " · " + (tage === 0 ? "heute" : tage === 1 ? "morgen"
-                                                 : "noch " + tage + " Tage"),
-      handeln: false
-    };
+    if (tage < 0) return { text: "Prüfungstermin aktualisieren", kurz: "vorbei", handeln: true };
+    var rest = tage === 0 ? "heute" : tage === 1 ? "morgen" : "noch " + tage + " Tage";
+    return { text: pruefungsname() + " · " + rest, kurz: rest, handeln: false };
   }
 
   /* Was saß nicht? Drei Quellen, die es längst gibt und die nie jemand
@@ -233,10 +232,21 @@
 
   /* ================================================== Bausteine */
 
-  function kopfzeile(titel, unter) {
+  /* Der Bereichskopf aus dem Designsystem: Mono-Augenbraue in Gold, Titel in
+     Source Serif 4, Beitext in IBM Plex Sans, darunter über einer Haarlinie
+     eine einzelne Standzeile. Dieselbe Ordnung wie auf Heute — dort heißt die
+     Augenbraue „AZUBIPASS" und die Standzeile ist der Countdown. */
+  function kopfzeile(titel, unter, augenbraue, standName, standWert) {
     var k = el("div", "schirm-kopf");
+    if (augenbraue) k.appendChild(el("p", "schirm-augenbraue", augenbraue));
     k.appendChild(el("h1", null, titel));
     if (unter) k.appendChild(el("p", null, unter));
+    if (standName) {
+      var z = el("div", "schirm-stand");
+      z.appendChild(el("span", null, standName));
+      z.appendChild(el("b", null, standWert));
+      k.appendChild(z);
+    }
     return k;
   }
 
@@ -439,24 +449,36 @@
     s.innerHTML = "";
     var g = gesamtstand();
     s.appendChild(kopfzeile("Lernfelder",
-      inhalt.lernfelder.length + " Lernfelder, " + g.gesamt + " Kapitel · "
-      + g.fertig + " geschafft"));
+      "Alles an einem Ort. Dein Fortschritt zeigt dir, wo du weitermachst — "
+      + "nicht, was du versäumt hast.",
+      "Deine Ausbildung",
+      "Gesamtfortschritt", g.fertig + " / " + g.gesamt + " Kapitel"));
+
+    /* Wo es weitergeht, steht auf Heute — und ab jetzt auch hier, weil Lernen
+       der Ort ist, an dem man sucht. Es ist dasselbe Lernfeld, nicht ein
+       zweites Ergebnis: beide fragen lernziel(). */
+    var ziel = lernziel();
+    var hier = ziel ? ziel.lernfeld : null;
 
     /* Bewusst in der gewohnten Reihenfolge und nicht nach Fortschritt sortiert:
-       Eine Liste, die ihre Reihenfolge ändert, muss man jedes Mal neu lesen.
-       Wo es weitergeht, steht auf dem Startbildschirm. */
+       Eine Liste, die ihre Reihenfolge ändert, muss man jedes Mal neu lesen. */
     var liste = el("ul", "liste-schlicht");
     inhalt.lernfelder.forEach(function (lf) {
       var st = lernfeldstand(lf);
       var li = el("li");
-      li.appendChild(reihe(lf.seite, function (a) {
+      var zeile = reihe(lf.seite, function (a) {
         var oben = el("div", "reihe-oben");
-        oben.appendChild(el("span", "reihe-nr", lf.id.toUpperCase()));
+        oben.appendChild(el("span", "reihe-nr", kuerzel(lf.id)));
         oben.appendChild(el("span", "reihe-titel", lf.titel));
-        oben.appendChild(el("span", "reihe-meta", st.fertig + "/" + st.gesamt));
+        oben.appendChild(el("span", "reihe-meta", st.fertig + " / " + st.gesamt));
         a.appendChild(oben);
+        if (lf.id === hier) {
+          a.appendChild(el("div", "reihe-hinweis", "Hier weitermachen"));
+        }
         a.appendChild(balken(st.anteil));
-      }));
+      });
+      if (lf.id === hier) zeile.classList.add("aktuell");
+      li.appendChild(zeile);
       liste.appendChild(li);
     });
     s.appendChild(liste);
@@ -465,18 +487,66 @@
   /* ================================================== Üben */
 
   var uebenAnsicht = "start";
+  /* Kapitelkennung aus der Adresse. Wird an die Probeklausur durchgereicht und
+     danach vergessen — sonst käme sie beim nächsten Öffnen wieder hoch. */
+  var pkVorwahl = null;
 
   function zeigeUeben(s) {
     s.innerHTML = "";
     if (uebenAnsicht === "karten") return uebenKarten(s);
     if (uebenAnsicht === "quiz") return uebenQuiz(s);
     if (uebenAnsicht === "schwach") return uebenSchwach(s);
+    /* Die Probeklausur bringt ihre ganze Oberfläche selbst mit — hier steht nur
+       der Eingang. Sie ist der wichtigste Prüfungsweg und deshalb die erste
+       Zeile, aber kein eigener Reiter: Geübt wird geübt. */
+    if (uebenAnsicht === "start" && window.APK && window.APK.laeuft()) {
+      uebenAnsicht = "probeklausur";
+    }
+    if (uebenAnsicht === "probeklausur" && window.APK) {
+      var mit = pkVorwahl;
+      pkVorwahl = null;
+      return window.APK.zeige(s, function () {
+        uebenAnsicht = "start";
+        /* Stand die Probeklausur in der Adresse, muss sie beim Zurückgehen auch
+           wieder heraus — sonst landet ein Neuladen erneut in ihr, obwohl der
+           Nutzer sie gerade verlassen hat. Der Verteiler zeichnet dann neu. */
+        if (adresse(verteiler.jetzt()).unter) location.hash = "#ueben";
+        else zeigeUeben(s);
+      }, mit);
+    }
 
     var faellig = faelligeKarten();
     var schwach = schwachstellen();
     s.appendChild(kopfzeile("Üben",
-      inhalt.karten.length + " Karteikarten und " + inhalt.quiz.length
-      + " Übungsfragen aus allen Lernfeldern."));
+      "Prüf genau das, was du brauchst — oder halt einfach die Karten warm.",
+      "Prüfungstraining",
+      "Bestand", inhalt.karten.length + " Karten · " + inhalt.quiz.length + " Fragen"));
+
+    function hin(ziel) {
+      return function (ev) {
+        ev.preventDefault();
+        uebenAnsicht = ziel;
+        zeigeUeben(s);
+      };
+    }
+
+    /* Die Probeklausur ist der wichtigste Prüfungsweg und steht deshalb als
+       eigene Fläche über der Liste — aber immer noch unter „Üben" und nicht
+       als fünfter Reiter. Geübt wird geübt. */
+    var pk = el("a", "pk-eingang");
+    pk.href = "#ueben/probeklausur";
+    pk.appendChild(el("span", "pk-eingang-braue", "Eigene Probeklausur"));
+    pk.appendChild(el("strong", "pk-eingang-titel",
+      "Stell dir deine nächste Klassenarbeit selbst."));
+    pk.appendChild(el("span", "pk-eingang-text",
+      "Kapitel wählen, Dauer festlegen, unter Zeit schreiben — mit Auswertung "
+      + "nach Kapiteln."));
+    var weg = el("span", "pk-eingang-weg");
+    weg.appendChild(el("span", null, "Klausur zusammenstellen"));
+    weg.insertAdjacentHTML("beforeend", PFEIL);
+    pk.appendChild(weg);
+    pk.addEventListener("click", hin("probeklausur"));
+    s.appendChild(pk);
 
     var liste = el("ul", "liste-schlicht");
     [["karten", "Fällige Karteikarten", faellig.length
@@ -492,11 +562,7 @@
       oben.appendChild(el("span", "reihe-titel", e[1]));
       oben.appendChild(el("span", "reihe-meta", e[2]));
       a.appendChild(oben);
-      a.addEventListener("click", function (ev) {
-        ev.preventDefault();
-        uebenAnsicht = e[0];
-        zeigeUeben(s);
-      });
+      a.addEventListener("click", hin(e[0]));
       li.appendChild(a);
       liste.appendChild(li);
     });
@@ -725,7 +791,11 @@
       var pos = 0;
       teile.forEach(function (t) {
         e.appendChild(document.createTextNode(text.slice(pos, t[0])));
-        e.appendChild(el("mark", null, t[1]));
+        /* Eigene Klasse, nicht das nackte mark: Im Kapitel bedeutet mark
+           „wichtige Aussage". Ein Suchtreffer bedeutet „hier steht dein Wort".
+           Zwei Bedeutungen, zwei Flächen — sonst liest man das eine als das
+           andere. */
+        e.appendChild(el("mark", "such-treffer", t[1]));
         pos = t[0] + t[1].length;
       });
       e.appendChild(document.createTextNode(text.slice(pos)));
@@ -831,27 +901,44 @@
 
   /* ================================================== Ich */
 
+  /* Ein Abschnitt unter „Ich": offener Block mit Haarlinie darüber, Mono-Titel
+     links, optional eine Kennzahl rechts. Keine Karte, kein Schatten. */
+  function feldgruppe(titel, wert) {
+    var g = el("section", "feldgruppe");
+    var h = el("h2");
+    h.appendChild(el("span", null, titel));
+    if (wert) h.appendChild(el("b", null, wert));
+    g.appendChild(h);
+    return g;
+  }
+
   function zeigeIch(s) {
     s.innerHTML = "";
     var g = gesamtstand();
-    s.appendChild(kopfzeile("Ich", "Fortschritt, Sicherung und Einstellungen."));
+    s.appendChild(kopfzeile("Ich",
+      "Fortschritt, Prüfung und lokale Daten — ruhig und verständlich an einem Ort.",
+      "Dein Bereich",
+      "Insgesamt", Math.round(g.anteil * 100) + " %"));
 
+    var standGruppe = feldgruppe("Dein Stand");
     var zahlen = el("div", "zahlenreihe");
     zahlen.appendChild(zahlenfeld(g.fertig, " / " + g.gesamt, "Kapitel geschafft"));
     zahlen.appendChild(zahlenfeld(
       Object.keys(stand.karten).filter(function (id) {
         return stand.karten[id].fach >= AP.FAECHER;
       }).length, " / " + inhalt.karten.length, "Karten sitzen"));
-    s.appendChild(zahlen);
+    standGruppe.appendChild(zahlen);
+    s.appendChild(standGruppe);
 
-    s.appendChild(el("div", "abschnittstitel", "Fortschritt je Lernfeld"));
+    var lfGruppe = feldgruppe("Fortschritt je Lernfeld",
+      inhalt.lernfelder.length + " Lernfelder");
     var ul = el("ul", "liste-schlicht");
     inhalt.lernfelder.forEach(function (lf) {
       var st = lernfeldstand(lf);
       var li = el("li");
       li.appendChild(reihe(lf.seite, function (a) {
         var oben = el("div", "reihe-oben");
-        oben.appendChild(el("span", "reihe-nr", lf.id.toUpperCase()));
+        oben.appendChild(el("span", "reihe-nr", kuerzel(lf.id)));
         oben.appendChild(el("span", "reihe-titel", lf.titel));
         oben.appendChild(el("span", "reihe-meta", Math.round(st.anteil * 100) + " %"));
         a.appendChild(oben);
@@ -859,12 +946,14 @@
       }));
       ul.appendChild(li);
     });
-    s.appendChild(ul);
+    lfGruppe.appendChild(ul);
+    s.appendChild(lfGruppe);
 
     /* Lesezeichen */
-    s.appendChild(el("div", "abschnittstitel", "Lesezeichen"));
+    var lzGruppe = feldgruppe("Lesezeichen",
+      stand.lesezeichen.length ? String(stand.lesezeichen.length) : null);
     if (!stand.lesezeichen.length) {
-      s.appendChild(leerkasten("Noch keine. Im Kapitel oben rechts auf das Zeichen "
+      lzGruppe.appendChild(leerkasten("Noch keine. Im Kapitel oben rechts auf das Zeichen "
         + "tippen, dann steht es hier."));
     } else {
       var lz = el("ul", "liste-schlicht");
@@ -878,11 +967,12 @@
         }));
         lz.appendChild(li);
       });
-      s.appendChild(lz);
+      lzGruppe.appendChild(lz);
     }
+    s.appendChild(lzGruppe);
 
-    /* Einstellungen */
-    s.appendChild(el("div", "abschnittstitel", "Einstellungen"));
+    /* Darstellung und Prüfungstermin */
+    var einst = feldgruppe("Darstellung");
     var stimmung = el("div", "stellreihe");
     var links = el("div");
     links.appendChild(el("b", null, "Farben"));
@@ -899,17 +989,19 @@
       schalter.appendChild(b);
     });
     stimmung.appendChild(schalter);
-    s.appendChild(stimmung);
+    einst.appendChild(stimmung);
+    s.appendChild(einst);
 
-    s.appendChild(terminfeld());
+    var termin = feldgruppe("Prüfungstermin", countdown().kurz);
+    termin.appendChild(terminfeld());
+    s.appendChild(termin);
 
     /* Sicherung */
-    s.appendChild(el("div", "abschnittstitel", "Deine Daten"));
-    var erklaerung = el("p");
-    erklaerung.style.cssText = "color:var(--text-sek);font-size:15.5px;margin:0 0 4px";
+    var daten = feldgruppe("Deine Daten", "nur auf diesem Gerät");
+    var erklaerung = el("p", "leise-text");
     erklaerung.textContent = "Dein Lernstand liegt nur in diesem Browser. Löschst du die "
       + "Websitedaten oder wechselst das Gerät, ist er weg — außer du sicherst ihn hier.";
-    s.appendChild(erklaerung);
+    daten.appendChild(erklaerung);
 
     var meldung = el("p", "meldung");
     var knoepfe = el("div", "knopfreihe-weit");
@@ -934,13 +1026,19 @@
     knoepfe.appendChild(rein);
     knoepfe.appendChild(weg);
     knoepfe.appendChild(datei);
-    s.appendChild(knoepfe);
-    s.appendChild(meldung);
+    daten.appendChild(knoepfe);
+    daten.appendChild(meldung);
+    s.appendChild(daten);
 
-    var rechts = el("p");
-    rechts.style.cssText = "margin:30px 0 0;font-size:13.5px";
-    rechts.innerHTML = '<a href="impressum.html">Impressum</a> · '
-      + '<a href="datenschutz.html">Datenschutz</a>';
+    /* Rechtsseiten als eigene Zeilen statt als zwei 19 px hohe Wörter mit
+       einem Mittelpunkt dazwischen: Am Handy trifft man das nicht. */
+    var rechts = el("div", "rechtswege");
+    [["impressum.html", "Impressum"],
+     ["datenschutz.html", "Datenschutz"]].forEach(function (r) {
+      var a = el("a", null, r[1]);
+      a.href = r[0];
+      rechts.appendChild(a);
+    });
     s.appendChild(rechts);
 
     var gebaut = el("p", "reihe-quelle");
@@ -1180,8 +1278,32 @@
   var bauer = { heute: zeigeHeute, lernen: zeigeLernen, ueben: zeigeUeben,
                 suche: zeigeSuche, ich: zeigeIch };
 
+  /* Die Adresse kann mehr sagen als den Bereich:
+
+         #ueben/probeklausur?kapitel=buchfuehrung:k3
+
+     Der Teil vor dem Schrägstrich ist der Schirm, dahinter steht, was dort
+     geöffnet werden soll, und hinter dem Fragezeichen die Kapitelkennung.
+     Alles hinter dem Schirm ist freiwillig — was nicht verstanden wird, fällt
+     weg und es erscheint der gewohnte Bereich. Eine Adresse darf nie ein
+     Fehlerbild erzeugen und nichts Gespeichertes anfassen. */
+  function adresse(wunsch) {
+    var roh = String(wunsch || "");
+    var frage = roh.indexOf("?");
+    var weg = (frage < 0 ? roh : roh.slice(0, frage)).split("/");
+    var felder = {};
+    if (frage >= 0) {
+      roh.slice(frage + 1).split("&").forEach(function (paar) {
+        var t = paar.split("=");
+        if (t[0]) felder[t[0]] = decodeURIComponent((t[1] || "").replace(/\+/g, " "));
+      });
+    }
+    return { bereich: weg[0] || "", unter: weg[1] || "", felder: felder };
+  }
+
   function zeige(wunsch) {
-    var id = bauer[wunsch] ? wunsch : "heute";
+    var teile = adresse(wunsch);
+    var id = bauer[teile.bereich] ? teile.bereich : "heute";
     Object.keys(schirme).forEach(function (k) { schirme[k].hidden = k !== id; });
     document.querySelectorAll(".tab").forEach(function (t) {
       var an = t.getAttribute("href") === "app.html#" + id;
@@ -1194,9 +1316,21 @@
        dadurch seine eigene dunkelgrüne Fläche — samt Kopf, Leiste und Fuß, die
        außerhalb des Schirms liegen und sonst hell dagegenstünden. */
     document.documentElement.dataset.bereich = id;
-    if (id !== "ueben") uebenAnsicht = "start";
+    /* Nur eine Adresse führt in die Probeklausur. Jede andere — auch das nackte
+       „#ueben" — führt zur Übersicht, sonst bliebe ein Tipp auf den Üben-Reiter
+       aus der Klausur heraus wirkungslos, obwohl sich die Adresse sichtbar
+       geändert hat. Eine begonnene Klausur geht dabei nicht verloren: Sie liegt
+       im Speicher und wird über den Eingang wieder angeboten. */
+    if (id === "ueben" && teile.unter === "probeklausur") {
+      uebenAnsicht = "probeklausur";
+      pkVorwahl = teile.felder.kapitel || null;
+    } else {
+      uebenAnsicht = "start";
+      pkVorwahl = null;
+      if (window.APK) window.APK.verlassen();
+    }
     bauer[id](schirme[id]);
-    if (wunsch === id) window.scrollTo(0, 0);
+    if (teile.bereich === id) window.scrollTo(0, 0);
   }
 
   function start() {

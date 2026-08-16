@@ -1,0 +1,141 @@
+{
+  "lernfeld": "lf13",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf13-k3-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Das Projektteam des Pop-up-Stores der MAKEL Studio GmbH legt eine Risikoliste an." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Spalte der Risikoliste beschreibt die Angabe?",
+          "ziele": [
+            "Eintrittswahrscheinlichkeit",
+            "Auswirkung",
+            "Umgangsweise",
+            "Verantwortlichkeit",
+            "Fortschreibung"
+          ],
+          "elemente": [
+            { "text": "„Wie wahrscheinlich ist es, dass die Genehmigung sich verzögert?“", "loesung": "Eintrittswahrscheinlichkeit" },
+            { "text": "„Wie schwer trifft uns der Ausfall der Kasse am Eröffnungstag?“", "loesung": "Auswirkung" },
+            { "text": "„Vermeiden, vorsorgen, mindern oder hinnehmen?“", "loesung": "Umgangsweise" },
+            { "text": "„Wer kümmert sich um dieses Risiko?“", "loesung": "Verantwortlichkeit" },
+            { "text": "„Wann sehen wir die Liste erneut durch?“", "loesung": "Fortschreibung" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{begriff:projektrisiko|Risiken}} werden nach Wahrscheinlichkeit und Auswirkung bewertet. Es gibt vier Umgangsweisen: vermeiden, vorsorgen, mindern, hinnehmen. Risiken werden zu Beginn im Team gesammelt und laufend fortgeschrieben.",
+      "quelle": "lf13-k3, Abschnitt b2"
+    },
+
+    {
+      "id": "lf13-k3-02",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 2,
+      "punkte": 6,
+      "dauer_min": 6,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Drei Risiken des Pop-up-Stores der MAKEL Studio GmbH sind zu bewerten und mit einer Maßnahme zu versehen." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Die drei Risiken",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Risiko", "Einschätzung des Teams"],
+            "zeilen": [
+              ["Verspätete Genehmigung der Stadt", "wahrscheinlich, verschiebt die Eröffnung"],
+              ["Ausfall der Kasse am Eröffnungstag", "unwahrscheinlich, aber am Eröffnungstag schwerwiegend"],
+              ["Geringe Besucherzahl", "wahrscheinlich, wirkt sich unmittelbar auf den Umsatz aus"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Umgangsweise passt zum jeweiligen Risiko, und wer ist zuständig?",
+          "ziele": [
+            "vorsorgen — Antrag früh stellen und Bearbeitungsstand nachhalten",
+            "vorsorgen — Ersatzkasse bereithalten und vorab testen",
+            "mindern — Werbung und Eröffnungsaktion verstärken",
+            "hinnehmen — Risiko bewusst tragen, keine Maßnahme"
+          ],
+          "elemente": [
+            { "text": "Verspätete Genehmigung der Stadt", "loesung": "vorsorgen — Antrag früh stellen und Bearbeitungsstand nachhalten" },
+            { "text": "Ausfall der Kasse am Eröffnungstag", "loesung": "vorsorgen — Ersatzkasse bereithalten und vorab testen" },
+            { "text": "Geringe Besucherzahl", "loesung": "mindern — Werbung und Eröffnungsaktion verstärken" }
+          ]
+        },
+        {
+          "block": "zuordnung",
+          "lead": "Wer im Team übernimmt das jeweilige Risiko?",
+          "ziele": ["Projektleitung", "Store- und Café-Leitung", "Vertrieb"],
+          "elemente": [
+            { "text": "Verspätete Genehmigung der Stadt", "loesung": "Projektleitung" },
+            { "text": "Ausfall der Kasse am Eröffnungstag", "loesung": "Store- und Café-Leitung" },
+            { "text": "Geringe Besucherzahl", "loesung": "Vertrieb" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die Umgangsweise folgt aus Wahrscheinlichkeit und Auswirkung: Ein unwahrscheinliches, aber schwerwiegendes Risiko wird nicht hingenommen, sondern man sorgt vor. Und jedes Risiko braucht einen Namen daneben — ohne Verantwortlichen kümmert sich niemand.",
+      "quelle": "lf13-k3, Abschnitt b2"
+    },
+
+    {
+      "id": "lf13-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:pop-up-store-duesseldorf"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Teammitglied der MAKEL Studio GmbH hält die Risikoliste für überflüssig: Man könne reagieren, wenn tatsächlich etwas passiere." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum Risiken behandelt werden, bevor sie eingetreten sind.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Wer erst reagiert, wenn das Risiko eingetreten ist, hat keine Wahl mehr: Von den vier Umgangsweisen bleibt nur noch die teuerste Form der Schadensbegrenzung. Vorher stehen dagegen alle Möglichkeiten offen — vermeiden, vorsorgen, mindern oder bewusst hinnehmen. Vorsorge ist außerdem fast immer billiger als die Behebung: Eine vorab getestete Ersatzkasse kostet wenig, ein Kassenausfall am Eröffnungstag kostet Umsatz und Ruf. Schließlich verschafft die frühzeitige Betrachtung Zeit, und Zeit ist im Projekt die knappste Größe; früh gemeldete Verzögerungen sind gute Nachrichten, weil sie Handlungsspielraum lassen. Die Risikoliste sorgt zudem dafür, dass jemand namentlich zuständig ist, statt dass sich im Ernstfall alle überrascht zeigen.",
+        "raster": [
+          { "kriterium": "Erkannt, dass vorher mehr Handlungsmöglichkeiten bestehen", "punkte": 1 },
+          { "kriterium": "Kostenargument genannt: Vorsorge ist günstiger als Schadensbehebung", "punkte": 1 },
+          { "kriterium": "Zeitgewinn oder klare Zuständigkeit als weiteren Nutzen genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Früh gemeldete Verzögerungen sind gute Nachrichten — sie lassen Handlungsspielraum. Dasselbe gilt für Risiken: Der Wert der Liste liegt darin, dass sie geschrieben wird, bevor jemand sie braucht.",
+      "quelle": "lf13-k3, Abschnitt b2"
+    }
+  ]
+}

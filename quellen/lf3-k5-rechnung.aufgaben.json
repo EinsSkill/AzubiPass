@@ -1,0 +1,109 @@
+{
+  "lernfeld": "lf3",
+  "kapitel": "k5",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf3-k5-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Sandra Koslowski prüft, ob die Ausgangsrechnung der MAKEL Studio GmbH alle vorgeschriebenen Angaben enthält." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Ist die Angabe eine Pflichtangabe der Rechnung?",
+          "ziele": ["Pflichtangabe der Rechnung", "keine Pflichtangabe"],
+          "elemente": [
+            { "text": "Fortlaufende, einmalige Rechnungsnummer", "loesung": "Pflichtangabe der Rechnung" },
+            { "text": "Ausstellungsdatum der Rechnung", "loesung": "Pflichtangabe der Rechnung" },
+            { "text": "Zeitpunkt der Lieferung", "loesung": "Pflichtangabe der Rechnung" },
+            { "text": "Name des zuständigen Sachbearbeiters", "loesung": "keine Pflichtangabe" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die Pflichtangaben der Rechnung stehen in {{par:ustg-14|§ 14 UStG}}. Fehlt eine davon, verliert der Empfänger den Vorsteuerabzug. Der Sachbearbeiter ist nur eine praktische Zusatzangabe.",
+      "quelle": "lf3-k5, Abschnitt e2"
+    },
+
+    {
+      "id": "lf3-k5-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Beim Wareneingang einer Boutique liegen statt der bestellten 200 nur 190 Hoodies der MAKEL Studio GmbH in der Sendung." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welches Dokument muss die Abweichung zuerst festhalten?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Der Lieferschein — die Abweichung wird beim Wareneingang mit Vorbehalt darauf vermerkt.", "richtig": true,
+              "echo": "Richtig. Der Lieferschein weist den Inhalt der Sendung nach. Was beim Wareneingang auffällt, gehört sofort dorthin." },
+            { "text": "Die Rechnung, weil dort der Betrag steht.", "richtig": false,
+              "echo": "Die Rechnung kommt später und dokumentiert die Forderung, nicht den tatsächlichen Wareneingang." },
+            { "text": "Die Auftragsbestätigung, weil dort die Menge vereinbart wurde.", "richtig": false,
+              "echo": "Die Auftragsbestätigung ist vor der Lieferung entstanden und kann eine spätere Abweichung nicht festhalten." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Der Lieferschein begleitet die Ware und weist ihren Inhalt nach. Eine Mengenabweichung wird deshalb dort und zeitnah vermerkt — später lässt sie sich kaum noch beweisen.",
+      "quelle": "lf3-k5, Abschnitt e1"
+    },
+
+    {
+      "id": "lf3-k5-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH hat 190 Hoodies geliefert, die Rechnung lautet aber weiterhin über 200 Stück." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum die Rechnung nicht über 200 Hoodies stehen bleiben darf.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Rechnung muss die tatsächlich erbrachte Leistung abrechnen. Berechnet werden dürfen nur die 190 gelieferten Hoodies. Eine Rechnung über 200 Stück weist eine Forderung aus, die in dieser Höhe nicht besteht; der Kunde wird sie kürzen oder ganz zurückweisen. Außerdem stimmen dann Rechnung, Lieferschein und Buchführung nicht überein, und der ausgewiesene Umsatzsteuerbetrag ist zu hoch. Richtig ist, die Rechnung über 190 Stück zu stellen und die fehlenden 20 Stück gesondert zu klären — durch Nachlieferung oder Gutschrift.",
+        "raster": [
+          { "kriterium": "Grundsatz genannt: abgerechnet wird die tatsächlich erbrachte Leistung", "punkte": 1 },
+          { "kriterium": "Folge für den Kunden genannt (Kürzung, Zurückweisung, Reklamation)", "punkte": 1 },
+          { "kriterium": "Widerspruch zu Lieferschein beziehungsweise Buchführung oder zu hohe Umsatzsteuer erkannt", "punkte": 1 },
+          { "kriterium": "Richtiges Vorgehen genannt: Rechnung über 190 Stück, Rest gesondert klären", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Leistung und Abrechnung müssen zusammenpassen. Eine zu hohe Rechnung ist kein Verhandlungspuffer, sondern ein Fehler mit steuerlicher Wirkung.",
+      "quelle": "lf3-k5, Abschnitt e2"
+    }
+  ]
+}

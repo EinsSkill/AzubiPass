@@ -1,0 +1,116 @@
+{
+  "lernfeld": "lf8",
+  "kapitel": "k6",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf8-k6-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt ordnet vier Fälle der Beendigung von Arbeitsverhältnissen bei der MAKEL Studio GmbH ein." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Um welche Art der Beendigung handelt es sich?",
+          "ziele": [
+            "personenbedingte Kündigung",
+            "verhaltensbedingte Kündigung",
+            "betriebsbedingte Kündigung",
+            "Aufhebungsvertrag"
+          ],
+          "elemente": [
+            { "text": "Eine Mitarbeiterin kann die geschuldete Tätigkeit dauerhaft nicht mehr ausüben", "loesung": "personenbedingte Kündigung" },
+            { "text": "Ein Mitarbeiter erscheint trotz mehrfacher Abmahnung wiederholt nicht zur Schicht", "loesung": "verhaltensbedingte Kündigung" },
+            { "text": "Eine Abteilung wird geschlossen, die Stelle fällt ersatzlos weg", "loesung": "betriebsbedingte Kündigung" },
+            { "text": "Betrieb und Mitarbeiter beenden das Arbeitsverhältnis einvernehmlich zu einem vereinbarten Termin", "loesung": "Aufhebungsvertrag" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Es gibt drei Kündigungsgründe: personen-, verhaltens- und betriebsbedingt; bei der betriebsbedingten Kündigung kommt die Sozialauswahl hinzu. Der Aufhebungsvertrag ist keine Kündigung, sondern eine Einigung — und bedarf nach {{par:bgb-623|§ 623 BGB}} ebenfalls der Schriftform.",
+      "quelle": "lf8-k6, Abschnitt f1"
+    },
+
+    {
+      "id": "lf8-k6-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ayla Brandt schreibt das qualifizierte Zeugnis für eine Mitarbeiterin der MAKEL Studio GmbH, deren Leistungen durchgehend gut, aber nicht herausragend waren." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Formulierung ist zugleich wahr und wohlwollend?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "„Sie erledigte die ihr übertragenen Aufgaben stets zu unserer vollen Zufriedenheit.“", "richtig": true,
+              "echo": "Richtig. Die Aussage trifft die gute Leistung zutreffend und ist positiv formuliert — wahr und wohlwollend zugleich." },
+            { "text": "„Sie erledigte die ihr übertragenen Aufgaben stets zu unserer außerordentlichen Zufriedenheit.“", "richtig": false,
+              "echo": "Wohlwollend, aber nicht wahr: Die Formulierung beschreibt eine herausragende Leistung, die hier nicht vorlag. Ein Zeugnis darf nicht besser sein als die Wirklichkeit." },
+            { "text": "„Sie bemühte sich, die ihr übertragenen Aufgaben zu erledigen.“", "richtig": false,
+              "echo": "Wahr wäre das nicht, und wohlwollend erst recht nicht: „bemühte sich“ drückt aus, dass der Erfolg ausblieb." },
+            { "text": "„Über ihre Leistungen können wir keine Angaben machen.“", "richtig": false,
+              "echo": "Ein qualifiziertes Zeugnis muss sich zu Leistung und Verhalten äußern. Eine Verweigerung ist keine zulässige Formulierung." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "{{par:gewo-109|§ 109 GewO}}: einfaches oder qualifiziertes Zeugnis, wahr und wohlwollend. Beide Anforderungen gelten gleichzeitig — ein zu gutes Zeugnis ist ebenso fehlerhaft wie ein zu schlechtes.",
+      "quelle": "lf8-k6, Abschnitt f3"
+    },
+
+    {
+      "id": "lf8-k6-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Abteilungsleiter der MAKEL Studio GmbH möchte einer ausscheidenden Mitarbeiterin „aus Fairness“ ein deutlich besseres Zeugnis ausstellen, als ihre Leistung es hergibt." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum ein Arbeitszeugnis wohlwollend und zugleich wahr sein muss.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Beide Anforderungen stehen gleichrangig nebeneinander. Wohlwollend bedeutet, dass das Zeugnis das berufliche Fortkommen nicht unnötig erschwert; es wird deshalb positiv formuliert und darf nicht in Andeutungen abwerten. Wahr bedeutet, dass die Aussagen der tatsächlichen Leistung und dem tatsächlichen Verhalten entsprechen müssen. Ein zu gutes Zeugnis schadet mehreren Seiten: Der künftige Arbeitgeber trifft seine Entscheidung auf falscher Grundlage und kann Ersatzansprüche geltend machen; die Mitarbeiterin wird auf einer Stelle eingesetzt, der sie nicht gewachsen ist; und MAKEL verliert die Glaubwürdigkeit seiner Zeugnisse insgesamt. Ein zu schlechtes Zeugnis verstößt gegen die Wohlwollenspflicht und ist angreifbar. Grundlage der Beurteilung ist die Stellenbeschreibung, die die tatsächlichen Aufgaben festhält.",
+        "raster": [
+          { "kriterium": "Wohlwollen mit dem beruflichen Fortkommen begründet", "punkte": 1 },
+          { "kriterium": "Wahrheitspflicht als gleichrangige Anforderung genannt", "punkte": 1 },
+          { "kriterium": "Konkrete Folge eines zu guten Zeugnisses genannt (Fehlentscheidung, Haftung, Überforderung)", "punkte": 1 },
+          { "kriterium": "Erkannt, dass auch ein zu schlechtes Zeugnis unzulässig ist", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die Stellenbeschreibung überlebt den Stelleninhaber und liefert später die Grundlage fürs Zeugnis — deshalb lohnt es sich, sie aktuell zu halten.",
+      "quelle": "lf8-k6, Abschnitt f3"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "lernfeld": "lf4",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf4-k1-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydin erklärt einem Auszubildenden die Kennzahlen der Lagersteuerung der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Beschreibung gehört zu welcher Größe?",
+          "ziele": [
+            "Puffer, der Lieferverzögerungen abfangen soll",
+            "Bestand, bei dessen Erreichen bestellt werden muss",
+            "Obergrenze, die das Lager nicht überschreiten soll",
+            "durchschnittlich je Arbeitstag entnommene Menge"
+          ],
+          "elemente": [
+            { "text": "Mindestbestand", "loesung": "Puffer, der Lieferverzögerungen abfangen soll" },
+            { "text": "Meldebestand", "loesung": "Bestand, bei dessen Erreichen bestellt werden muss" },
+            { "text": "Höchstbestand", "loesung": "Obergrenze, die das Lager nicht überschreiten soll" },
+            { "text": "Tagesverbrauch", "loesung": "durchschnittlich je Arbeitstag entnommene Menge" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der {{begriff:mindestbestand|Mindestbestand}} ist der Puffer, der {{begriff:hoechstbestand|Höchstbestand}} die Obergrenze. Der Meldebestand liegt dazwischen: Er ist der Auslöser der Bestellung und errechnet sich aus Tagesverbrauch, Lieferzeit und Mindestbestand.",
+      "quelle": "lf4-k1, Abschnitt b3"
+    },
+
+    {
+      "id": "lf4-k1-02",
+      "operator": "Berechnen Sie",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:stoffbeschaffung-winterkollektion"],
+
+      "variablen": {
+        "tagesverbrauch": { "von": 20, "bis": 60, "schritt": 5 },
+        "lieferzeit": { "von": 6, "bis": 18, "schritt": 1 },
+        "mindestbestand": { "von": 200, "bis": 800, "schritt": 50 }
+      },
+      "abgeleitet": {
+        "verbrauch_lieferzeit": "tagesverbrauch * lieferzeit",
+        "meldebestand": "verbrauch_lieferzeit + mindestbestand"
+      },
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Deniz Aydin legt für die schwarze Bio-Baumwolle der Winterkollektion den Meldebestand neu fest." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Werte der Lagersteuerung",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Angabe", "Wert"],
+            "zeilen": [
+              ["Durchschnittlicher Tagesverbrauch", "{tagesverbrauch} m"],
+              ["Lieferzeit des Stofflieferanten", "{lieferzeit} Arbeitstage"],
+              ["Mindestbestand", "{mindestbestand} m"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        { "block": "zahl", "label": "Verbrauch während der Lieferzeit", "einheit": "m",
+          "loesung": "verbrauch_lieferzeit", "punkte": 2 },
+        { "block": "zahl", "label": "Meldebestand", "einheit": "m",
+          "loesung": "meldebestand", "punkte": 2, "folgefehler_aus": ["verbrauch_lieferzeit"] }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 4 },
+      "erklaerung": "Meldebestand = Tagesverbrauch × Lieferzeit + Mindestbestand. Der erste Teil deckt den Verbrauch, bis die neue Lieferung eintrifft; der Mindestbestand bleibt als Puffer darunter liegen.",
+      "quelle": "lf4-k1, Abschnitt b3"
+    },
+
+    {
+      "id": "lf4-k1-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Lieferzeiten des Stofflieferanten der MAKEL Studio GmbH schwanken zuletzt stark zwischen acht und zwanzig Arbeitstagen; Tobias Renner schlägt vor, den Mindestbestand zu senken, um Kapital freizusetzen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie den Vorschlag, den Mindestbestand bei stark schwankender Lieferzeit zu senken.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Der Vorschlag ist in dieser Lage nicht zu empfehlen. Der Mindestbestand ist genau der Puffer, der Lieferverzögerungen abfängt. Je stärker die Lieferzeit schwankt, desto größer muss dieser Puffer sein — nicht kleiner. Wird er gesenkt, steigt das Risiko einer Fehlmenge: Die Musterfertigung steht still, die Winterkollektion verschiebt sich und der Verkaufsstart gerät in Gefahr. Richtig ist, dass ein hoher Bestand Kapital bindet und Lagerkosten verursacht. Dieser Vorteil wiegt die Folgen eines Produktionsstillstands hier aber nicht auf. Sinnvoller ist es, zuerst die Lieferzeit zu stabilisieren — etwa durch einen zweiten Lieferer — und den Mindestbestand erst danach zu senken.",
+        "raster": [
+          { "kriterium": "Klares Ergebnis: Senkung in dieser Lage nicht sinnvoll", "punkte": 1 },
+          { "kriterium": "Mindestbestand als Puffer gegen Lieferunsicherheit erklärt", "punkte": 1 },
+          { "kriterium": "Konkrete Folge einer Fehlmenge genannt (Produktionsstillstand, verpasster Verkaufsstart)", "punkte": 1 },
+          { "kriterium": "Gegenseite gewürdigt: Kapitalbindung und Lagerkosten abgewogen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Bestandspolitik ist immer eine Abwägung zwischen Kapitalbindung und Lieferfähigkeit. Wer nur eine Seite sieht, entscheidet falsch — und bei schwankender Lieferzeit ist die Fehlmenge das teurere Risiko.",
+      "quelle": "lf4-k1, Abschnitt b3"
+    }
+  ]
+}

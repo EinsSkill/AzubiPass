@@ -1,0 +1,116 @@
+{
+  "lernfeld": "lf5",
+  "kapitel": "k5",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf5-k5-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 6,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH verkauft über den Onlineshop, über Wholesale-Boutiquen und über den eigenen Flagshipstore." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Handelt es sich um direkten oder indirekten Absatz, und welches Merkmal beschreibt die Aussage?",
+          "ziele": [
+            "direkter Absatz — Stärke",
+            "direkter Absatz — Nachteil",
+            "indirekter Absatz — Stärke",
+            "indirekter Absatz — Nachteil"
+          ],
+          "elemente": [
+            { "text": "Im Onlineshop bleibt die volle Handelsspanne bei MAKEL", "loesung": "direkter Absatz — Stärke" },
+            { "text": "Im Flagshipstore entsteht unmittelbarer Kontakt zur Kundschaft", "loesung": "direkter Absatz — Stärke" },
+            { "text": "Onlineshop und Store verursachen hohen eigenen Aufwand für Versand, Personal und Fläche", "loesung": "direkter Absatz — Nachteil" },
+            { "text": "Über Boutiquen erreicht MAKEL Kundschaft in Städten ohne eigenen Store", "loesung": "indirekter Absatz — Stärke" },
+            { "text": "Boutiquen bestellen in planbaren Mengen und übernehmen die Verwaltung des Verkaufs", "loesung": "indirekter Absatz — Stärke" },
+            { "text": "Die Boutique behält eine Handelsspanne, MAKELs Marge sinkt", "loesung": "indirekter Absatz — Nachteil" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Direkter Absatz: voller Kundenkontakt, keine fremde Handelsspanne, hoher Aufwand. Indirekter Absatz: große Reichweite, weniger Verwaltung, geringere Marge. Die Merkfrage lautet: Gehört die Ware unterwegs jemand anderem? Dann ist der Weg indirekt.",
+      "quelle": "lf5-k5, Abschnitt e1"
+    },
+
+    {
+      "id": "lf5-k5-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Nach dem Saisonende liegen bei der MAKEL Studio GmbH 40 Hoodies als Restbestand; sie sollen schnell und ohne Schaden für das Preisniveau abverkauft werden." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welcher Absatzweg passt am besten?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Der eigene Flagshipstore, weil die kleine Menge dort schnell und ohne öffentliche Preisaktion verkauft werden kann.", "richtig": true,
+              "echo": "Richtig. Der direkte Weg gibt MAKEL die Kontrolle über Preis und Sichtbarkeit — bei 40 Stück reicht die Reichweite des Stores aus." },
+            { "text": "Eine dauerhafte Rabattaktion im Onlineshop.", "richtig": false,
+              "echo": "Eine öffentliche Dauerreduzierung beschädigt das Preisniveau des gesamten Sortiments — für 40 Stück ein zu hoher Preis." },
+            { "text": "Ein neuer Wholesale-Partner, der den Restbestand übernimmt.", "richtig": false,
+              "echo": "Einen Wholesale-Partner für 40 Stück aufzubauen dauert zu lange, und die Handelsspanne senkt den Erlös zusätzlich." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Der Absatzweg richtet sich nach Menge, Tempo und der gewünschten Kontrolle über den Preis. Kleine Mengen laufen fast immer über den direkten Weg.",
+      "quelle": "lf5-k5, Abschnitt e1"
+    },
+
+    {
+      "id": "lf5-k5-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner rechnet vor, dass die MAKEL Studio GmbH an einem Hoodie im Onlineshop deutlich mehr verdient als im Wholesale, und schlägt vor, den Wholesale-Kanal aufzugeben." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum der Wholesale-Kanal trotz geringerer Marge sinnvoll sein kann.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Marge je Stück ist nur eine Seite. Der Wholesale-Kanal bringt Reichweite: Über Boutiquen erreicht MAKEL Kundschaft in Städten ohne eigenen Store, die über den Onlineshop möglicherweise nie auf die Marke gestoßen wäre — der Kanal wirkt damit zugleich als Markenwerbung. Zweitens sind die Mengen planbar: Boutiquen bestellen vor der Saison in größeren Posten, was Produktion, Materialeinkauf und Liquidität planbar macht, während der Onlineshop Stück für Stück und schwer vorhersehbar verkauft. Drittens verringert der zusätzliche Kanal die Abhängigkeit: Bricht der Onlineabsatz ein, trägt der Wholesale weiter. Viertens fallen dort Versand-, Retouren- und Betreuungsaufwand je Stück deutlich geringer aus, so dass der Margenabstand kleiner ist, als die reine Preisdifferenz vermuten lässt. Abzuwägen bleiben die Abhängigkeit von einzelnen Großkunden, das Zahlungsausfallrisiko und der geringere Einfluss auf die Präsentation der Marke.",
+        "raster": [
+          { "kriterium": "Reichweite beziehungsweise Erschließung neuer Zielgruppen genannt", "punkte": 1 },
+          { "kriterium": "Planbare Mengen und deren Nutzen für Produktion oder Liquidität genannt", "punkte": 1 },
+          { "kriterium": "Geringere Abhängigkeit von einem einzelnen Kanal genannt", "punkte": 1 },
+          { "kriterium": "Nachteile abgewogen (Abhängigkeit von Großkunden, Ausfallrisiko oder Markenauftritt)", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Absatzmittler kaufen auf eigene Rechnung und werden Eigentümer; sie tragen das Warenrisiko. Genau dafür behalten sie ihre Handelsspanne — sie ist kein verlorener Gewinn, sondern der Preis für eine übernommene Leistung.",
+      "quelle": "lf5-k5, Abschnitt e2"
+    }
+  ]
+}

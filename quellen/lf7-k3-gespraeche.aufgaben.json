@@ -1,0 +1,110 @@
+{
+  "lernfeld": "lf7",
+  "kapitel": "k3",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf7-k3-01",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß bereitet ein Gespräch mit einer unzufriedenen Boutique-Inhaberin vor." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die fünf Phasen des Gesprächs.",
+          "elemente": [
+            { "text": "Kernphase: Sachverhalt klären und Lösung entwickeln", "position": 3 },
+            { "text": "Vorbereitung: Ziel festlegen und Unterlagen sichten", "position": 1 },
+            { "text": "Nachbereitung: Ergebnis festhalten und Zugesagtes veranlassen", "position": 5 },
+            { "text": "Eröffnung: Gesprächsklima herstellen und Anlass benennen", "position": 2 },
+            { "text": "Abschluss: festhalten, wer was bis wann tut", "position": 4 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Gesprächsphasen: Vorbereitung, Eröffnung, Kernphase, Abschluss, Nachbereitung. Der Abschluss hält fest, wer was bis wann tut — er wird am häufigsten vergessen.",
+      "quelle": "lf7-k3, Abschnitt c1"
+    },
+
+    {
+      "id": "lf7-k3-02",
+      "operator": "Formulieren Sie",
+      "anforderungsbereich": 2,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Eine Boutique-Inhaberin ist mit einer Lieferung der MAKEL Studio GmbH unzufrieden; Marlene Voß will zuerst verstehen, worum es genau geht, bevor sie eine Lösung anbietet." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Formulieren Sie zwei offene Fragen für die Bedarfsermittlung und begründen Sie kurz, warum sie offen sind.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Erste Frage: „Was genau ist bei der Lieferung anders gewesen, als Sie es erwartet hatten?“ Zweite Frage: „Wie wirkt sich das bei Ihnen im Verkauf aus?“ Beide Fragen sind offen, weil sie sich nicht mit ja oder nein beantworten lassen und keine Antwort vorgeben; sie beginnen mit einem Fragewort und laden zum Erzählen ein. Damit erfüllen sie den Zweck der Kernphase: Sie bringen den Sachverhalt und die Erwartung der Kundin ans Licht, bevor über eine Lösung gesprochen wird. Eine geschlossene Frage wie „Waren die Teile beschädigt?“ würde die Vermutung von Marlene bestätigen oder verwerfen, aber nichts Neues zutage fördern. Eine Suggestivfrage wie „Sie sind doch sonst immer zufrieden, oder?“ wäre besonders ungeeignet: Sie erzeugt Zustimmung ohne Überzeugung und kostet Vertrauen.",
+        "raster": [
+          { "kriterium": "Erste offene Frage sachbezogen formuliert", "punkte": 1 },
+          { "kriterium": "Zweite offene Frage sachbezogen formuliert", "punkte": 1 },
+          { "kriterium": "Begründet, warum die Fragen offen sind (nicht mit ja/nein beantwortbar)", "punkte": 1 },
+          { "kriterium": "Zweck der Bedarfsermittlung oder Abgrenzung zu geschlossenen beziehungsweise Suggestivfragen genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Offene Fragen öffnen das Gespräch, geschlossene schließen es. Suggestivfragen erzeugen Zustimmung ohne Überzeugung und kosten Vertrauen.",
+      "quelle": "lf7-k3, Abschnitt c2"
+    },
+
+    {
+      "id": "lf7-k3-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Marlene Voß überlegt, das Gespräch mit der unzufriedenen Boutique-Inhaberin gleich mit dem Angebot eines Zusatzrabatts zu eröffnen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum sie nicht mit einem Rabattangebot beginnen sollte.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Ein Rabatt zu Beginn löst ein Problem, das noch gar nicht bekannt ist. Solange der Sachverhalt nicht geklärt ist, weiß Marlene nicht, was die Boutique überhaupt möchte — vielleicht geht es um einen Liefertermin, eine falsche Größenverteilung oder eine fehlende Information und gar nicht um Geld. Ein voreiliges Angebot geht dann am Bedarf vorbei und wirkt, als wolle man die Beschwerde abkaufen statt zuhören. Zweitens kostet der Rabatt unmittelbar Marge, ohne dass sicher ist, dass er nötig gewesen wäre. Drittens entsteht ein Präzedenzfall: Die Boutique lernt, dass eine Beschwerde zuverlässig zu einem Nachlass führt, und wird das wiederholen. Richtig ist, erst Ursache und Erwartung zu klären und die Lösung daraus abzuleiten.",
+        "raster": [
+          { "kriterium": "Erkannt, dass Ursache und Bedarf zuerst geklärt werden müssen", "punkte": 1 },
+          { "kriterium": "Margen- beziehungsweise Kostenwirkung des voreiligen Rabatts genannt", "punkte": 1 },
+          { "kriterium": "Präzedenzwirkung oder Wirkung auf die Beziehung angesprochen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Ohne vorher formuliertes Ziel lässt sich der Erfolg eines Gesprächs nicht beurteilen — und ohne geklärten Bedarf ist jede Lösung geraten.",
+      "quelle": "lf7-k3, Abschnitt c1"
+    }
+  ]
+}

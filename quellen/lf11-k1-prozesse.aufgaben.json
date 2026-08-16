@@ -1,0 +1,127 @@
+{
+  "lernfeld": "lf11",
+  "kapitel": "k1",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf11-k1-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Jonas Weidner beschreibt den Retourenprozess des Onlineshops der MAKEL Studio GmbH." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welchem Bestandteil eines Geschäftsprozesses entspricht die Angabe?",
+          "ziele": ["Auslöser", "Tätigkeit", "Ergebnis", "Kunde", "Schnittstelle"],
+          "elemente": [
+            { "text": "Die Kundin meldet die Rücksendung im Onlineshop an", "loesung": "Auslöser" },
+            { "text": "Das Lager prüft die zurückgesandte Ware auf Verkaufsfähigkeit", "loesung": "Tätigkeit" },
+            { "text": "Der Kaufpreis ist erstattet und die Ware wieder eingelagert", "loesung": "Ergebnis" },
+            { "text": "Die Person, die die Erstattung erwartet", "loesung": "Kunde" },
+            { "text": "Die Übergabe der Prüfmeldung vom Lager an die Buchhaltung", "loesung": "Schnittstelle" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Ein Geschäftsprozess hat Auslöser, Tätigkeiten und ein Ergebnis für einen Kunden. Prozesse laufen quer durch die Abteilungen — und genau an den Übergaben zwischen ihnen sitzen die typischen Schwachstellen.",
+      "quelle": "lf11-k1, Abschnitt b1"
+    },
+
+    {
+      "id": "lf11-k1-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Retourenprozess der MAKEL Studio GmbH soll für eine Messung klar abgegrenzt werden." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Fünf Ereignisse des Ablaufs",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Nr.", "Ereignis"],
+            "zeilen": [
+              ["1", "Die Kundin meldet die Rücksendung im Onlineshop an"],
+              ["2", "Das Paket trifft im Lager ein"],
+              ["3", "Das Lager prüft die Ware"],
+              ["4", "Die Buchhaltung erstattet den Kaufpreis"],
+              ["5", "Die Ware wird wieder eingelagert"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Wo beginnt und wo endet der Retourenprozess aus Kundensicht?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Beginn bei Ereignis 1, Ende bei Ereignis 4.", "richtig": true,
+              "echo": "Richtig. Der Auslöser ist die Rückmeldung der Kundin; das Ergebnis aus ihrer Sicht ist die Erstattung. Die Wiedereinlagerung ist eine interne Folgetätigkeit." },
+            { "text": "Beginn bei Ereignis 2, Ende bei Ereignis 5.", "richtig": false,
+              "echo": "Der Prozess beginnt nicht mit dem Eintreffen des Pakets — ausgelöst wurde er bereits durch die Anmeldung der Kundin." },
+            { "text": "Beginn bei Ereignis 1, Ende bei Ereignis 5.", "richtig": false,
+              "echo": "Die Wiedereinlagerung liegt hinter dem Ergebnis für die Kundin. Sie gehört zum Lagerprozess, nicht zum Ergebnis der Retoure." },
+            { "text": "Beginn bei Ereignis 3, Ende bei Ereignis 4.", "richtig": false,
+              "echo": "Damit bliebe der Auslöser außen vor, und die Wartezeit vor der Prüfung würde nicht gemessen — genau dort steckt aber das Problem." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Das Ergebnis wird aus Kundensicht formuliert, nicht aus Abteilungssicht. Wer die Grenzen zu eng zieht, misst genau die Zeit nicht, in der der Kunde wartet.",
+      "quelle": "lf11-k1, Abschnitt b1"
+    },
+
+    {
+      "id": "lf11-k1-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:retourenprozess-onlineshop"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Mitarbeiter der MAKEL Studio GmbH hält die Retourenmeldung einer Kundin für „nur eine Nachricht“, die man abarbeiten könne, wenn Zeit sei." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Begründen Sie, warum die Rückmeldung der Kundin als Prozessauslöser zu behandeln ist.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Mit der Rückmeldung beginnt eine Kette von Tätigkeiten, die aufeinander aufbauen: Wareneingang, Prüfung, Erstattung, Wiedereinlagerung. Sie ist damit der Auslöser eines Prozesses und nicht ein einzelner Vorgang, der beliebig liegen bleiben kann. Von diesem Zeitpunkt an läuft außerdem die Zeit, die die Kundin wahrnimmt — die Durchlaufzeit wird ab hier gemessen, nicht erst ab dem Eintreffen des Pakets. Wer die Meldung als bloße Nachricht behandelt, erzeugt Liegezeit, die später niemandem zugerechnet werden kann. Schließlich folgt aus der Einordnung als Prozess eine klare Verantwortung: Es steht fest, wer die Bearbeitung übernimmt und bis wann, statt dass die Meldung zwischen Lager, Buchhaltung und Vertrieb liegen bleibt.",
+        "raster": [
+          { "kriterium": "Erkannt, dass die Meldung eine Kette von Folgetätigkeiten auslöst", "punkte": 1 },
+          { "kriterium": "Bezug zur Durchlaufzeit beziehungsweise zur Wartezeit der Kundin hergestellt", "punkte": 1 },
+          { "kriterium": "Verantwortung oder Zuständigkeit als Folge der Prozesssicht genannt", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Was als Prozess erkannt wird, bekommt einen Verantwortlichen, eine Zielzeit und eine Messung. Was als Nachricht durchgeht, bekommt nichts davon.",
+      "quelle": "lf11-k1, Abschnitt b3"
+    }
+  ]
+}

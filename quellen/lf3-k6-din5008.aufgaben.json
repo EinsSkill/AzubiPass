@@ -1,0 +1,138 @@
+{
+  "lernfeld": "lf3",
+  "kapitel": "k6",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf3-k6-01",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 5,
+      "dauer_min": 5,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:kundenauftrag-hoodies"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Luca Petrelli hat einen Geschäftsbrief der MAKEL Studio GmbH an die Modehaus Weber GmbH entworfen." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Der Briefentwurf, Zeile für Zeile",
+          "zugeklappt": false,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Briefteil", "So steht es im Entwurf"],
+            "zeilen": [
+              ["Anschriftfeld", "Modehaus Weber GmbH / Domstraße 14 / (Leerzeile) / 50667 Köln"],
+              ["Datum", "14.08.2026"],
+              ["Betreff", "Ihre Bestellung vom 12.08.2026."],
+              ["Anrede", "Sehr geehrte Frau Weber,"],
+              ["Textbeginn", "Vielen Dank für Ihre Bestellung."],
+              ["Rabatthinweis", "Wir gewähren Ihnen 5 % Mengenrabatt."],
+              ["Grußformel", "Mit freundlichen Grüßen,"],
+              ["Unterschrift", "i. A. Marlene Voß"],
+              ["Brieffuß", "MAKEL Studio GmbH, Düsseldorf"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Formfehler nach DIN 5008 enthält der Entwurf? Kreuzen Sie alle zutreffenden an.",
+          "mehrfach": true,
+          "optionen": [
+            { "text": "Im Anschriftfeld steht eine Leerzeile vor dem Ort.", "richtig": true,
+              "echo": "Richtig. Das Anschriftfeld wird ohne Leerzeile vor dem Ort geschrieben, damit es im Umschlagfenster sichtbar bleibt." },
+            { "text": "Der Betreff endet mit einem Punkt.", "richtig": true,
+              "echo": "Richtig. Der Betreff steht ohne abschließenden Punkt." },
+            { "text": "Der Text beginnt nach der Anrede mit einem Großbuchstaben.", "richtig": true,
+              "echo": "Richtig. Nach dem Komma der Anrede wird kleingeschrieben weitergeschrieben." },
+            { "text": "Nach der Grußformel steht ein Komma.", "richtig": true,
+              "echo": "Richtig. Die Grußformel steht ohne Komma." },
+            { "text": "Im Brieffuß fehlen Rechtsform-, Register- und Sitzangaben.", "richtig": true,
+              "echo": "Richtig. Kaufleute müssen im Geschäftsbrief Rechtsform, Sitz und Registerangaben nennen." },
+            { "text": "Das Datum ist als 14.08.2026 geschrieben.", "richtig": false,
+              "echo": "Das ist zulässig — erlaubt sind 14.08.2026 und 2026-08-14." },
+            { "text": "Vor dem Prozentzeichen steht ein Leerzeichen.", "richtig": false,
+              "echo": "Das ist korrekt: Das Prozentzeichen bekommt ein Leerzeichen davor." },
+            { "text": "Die Unterschrift trägt den Zusatz i. A.", "richtig": false,
+              "echo": "Das ist korrekt. Der Zusatz zeigt die Vertretungsmacht — i. A. bei Handlungsvollmacht." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 5 },
+      "erklaerung": "Die DIN 5008 hat wenige harte Regeln, die immer wieder geprüft werden: Betreff ohne Punkt, Grußformel ohne Komma, nach der Anrede Komma und Kleinschreibung, Anschriftfeld ohne Leerzeile vor dem Ort — und der Pflichtfuß des Kaufmanns.",
+      "quelle": "lf3-k6, Abschnitt f2"
+    },
+
+    {
+      "id": "lf3-k6-02",
+      "operator": "Bringen Sie in die richtige Reihenfolge",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 3,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Ein Auszubildender der MAKEL Studio GmbH soll die Bestandteile eines Geschäftsbriefs richtig anordnen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "reihenfolge",
+          "lead": "Ordnen Sie die vier Briefteile in der Reihenfolge, in der sie im Geschäftsbrief stehen.",
+          "elemente": [
+            { "text": "Grußformel", "position": 3 },
+            { "text": "Betreff", "position": 1 },
+            { "text": "Anlagenvermerk", "position": 4 },
+            { "text": "Anrede", "position": 2 }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Der Brief läuft von oben nach unten: Briefkopf, Anschriftfeld, Informationsblock, Betreff, Anrede, Text, Gruß, Unterschrift, Anlagen, Geschäftsangaben. Der Anlagenvermerk steht also nach der Unterschrift.",
+      "quelle": "lf3-k6, Abschnitt f1"
+    },
+
+    {
+      "id": "lf3-k6-03",
+      "operator": "Formulieren Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH muss eine bereits versendete Auftragsbestätigung korrigieren, weil darin eine falsche Liefermenge stand." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Formulieren Sie den Betreff und den ersten Satz des Korrekturschreibens nach DIN 5008.",
+          "zeilen": 5
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Betreff: Korrigierte Auftragsbestätigung Nr. 2026-0418 vom 14.08.2026 — Erster Satz: mit diesem Schreiben berichtigen wir die Liefermenge unserer Auftragsbestätigung vom 14.08.2026 von 180 auf die von Ihnen bestellten 200 Hoodies.",
+        "raster": [
+          { "kriterium": "Betreff nennt den Anlass konkret (Korrektur mit Beleg- oder Datumsbezug)", "punkte": 1 },
+          { "kriterium": "Betreff ohne abschließenden Punkt geschrieben", "punkte": 1 },
+          { "kriterium": "Erster Satz nennt den Anlass direkt, ohne Floskel wie „Bezug nehmend auf“", "punkte": 1 },
+          { "kriterium": "Erster Satz beginnt kleingeschrieben, weil die Anrede mit Komma endet", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Der Betreff soll den Vorgang auffindbar machen, der erste Satz soll sagen, worum es geht. Beides ohne Umweg — und die DIN-Regeln zu Punkt und Kleinschreibung gelten auch hier.",
+      "quelle": "lf3-k6, Abschnitt f2"
+    }
+  ]
+}

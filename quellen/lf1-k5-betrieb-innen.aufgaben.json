@@ -1,0 +1,127 @@
+{
+  "lernfeld": "lf1",
+  "kapitel": "k5",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf1-k5-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 5,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Der Aufbau der MAKEL Studio GmbH soll den Aufgaben der Abteilungen zugeordnet werden." },
+        {
+          "block": "anlage",
+          "titel": "Anlage 1: Abteilungen der MAKEL Studio GmbH",
+          "zugeklappt": true,
+          "inhalt": {
+            "block": "tabelle",
+            "spalten": ["Abteilung", "Leitung"],
+            "zeilen": [
+              ["Geschäftsführung", "Yuki Bergmann, Tobias Renner"],
+              ["Rechnungswesen", "Sandra Koslowski"],
+              ["Personal", "Ayla Brandt"],
+              ["Beschaffung", "Deniz Aydin"],
+              ["Vertrieb", "Marlene Voß"],
+              ["Logistik", "Jonas Weidner"]
+            ]
+          }
+        }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Welche Abteilung übernimmt die Aufgabe?",
+          "ziele": ["Rechnungswesen", "Personal", "Beschaffung", "Vertrieb", "Logistik"],
+          "elemente": [
+            { "text": "Eingangsrechnungen prüfen und buchen", "loesung": "Rechnungswesen" },
+            { "text": "Eine Stellenausschreibung veröffentlichen", "loesung": "Personal" },
+            { "text": "Stoffangebote einholen und vergleichen", "loesung": "Beschaffung" },
+            { "text": "Wholesale-Kunden betreuen und Angebote schreiben", "loesung": "Vertrieb" },
+            { "text": "Warenausgang kommissionieren und versenden", "loesung": "Logistik" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "Die Aufbauorganisation fragt nach dem Wer, die Ablauforganisation nach dem Wann und Wie. Wer die Zuständigkeiten kennt, weiß, an wen eine Anfrage weiterzuleiten ist — und das ist im Büroalltag die halbe Miete.",
+      "quelle": "lf1-k5, Abschnitt e2"
+    },
+
+    {
+      "id": "lf1-k5-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 4,
+      "schwierigkeit": 2,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Jonas Weidner bestellt im Lager der MAKEL Studio GmbH eigenmächtig Stoffe nach; die Musterfertigung kann sie nicht verarbeiten, weil sie nicht zur Kollektion passen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Ursache liegt diesem Vorfall zugrunde?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Die Zuständigkeit für Bestellungen ist nicht eingehalten worden und die Abstimmung zwischen Lager, Beschaffung und Fertigung fehlt.", "richtig": true,
+              "echo": "Richtig. Die Beschaffung ist zuständig, und ohne Abstimmung mit der Fertigung fehlt die Information, welcher Stoff überhaupt gebraucht wird." },
+            { "text": "Der Lagerbestand war zu niedrig angesetzt.", "richtig": false,
+              "echo": "Das Problem ist nicht die Menge, sondern dass der falsche Stoff bestellt wurde — eine Frage der Abstimmung, nicht des Bestands." },
+            { "text": "Die Musterfertigung arbeitet zu langsam.", "richtig": false,
+              "echo": "Die Fertigung kann den Stoff gar nicht verarbeiten. Mit ihrem Tempo hat das nichts zu tun." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "An den Übergängen zwischen Abteilungen entstehen die typischen Fehler: Der Informationsfluss reißt ab, und jemand handelt außerhalb seiner Zuständigkeit. Deshalb muss geklärt sein, wer was entscheiden darf.",
+      "quelle": "lf1-k5, Abschnitt e2"
+    },
+
+    {
+      "id": "lf1-k5-03",
+      "operator": "Begründen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 4,
+      "dauer_min": 5,
+      "schwierigkeit": 3,
+      "passt_zu": [],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Zwischen Lager und Vertrieb der MAKEL Studio GmbH kommt es wiederholt zu Problemen: Der Vertrieb sagt Boutiquen Liefertermine zu, die das Lager nicht halten kann." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Nennen und begründen Sie eine Maßnahme, die die Zusammenarbeit von Lager und Vertrieb verbessert.",
+          "zeilen": 6
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Die Ursache liegt an der Schnittstelle: Der Vertrieb sagt zu, ohne den tatsächlichen Bestand und die Versandkapazität zu kennen. Eine wirksame Maßnahme ist ein verbindlicher, für beide Seiten einsehbarer Bestands- und Kapazitätsabgleich — etwa indem der Vertrieb vor jeder Terminzusage den aktuellen Bestand im gemeinsamen System einsieht und Zusagen über einer festgelegten Menge vom Lager bestätigt werden müssen. Die Wirkung: Zusagen beruhen auf realen Zahlen statt auf Annahmen, das Lager wird nicht vor vollendete Tatsachen gestellt, und gegenüber der Boutique gilt nur noch, was tatsächlich lieferbar ist. Zusätzlich hilft ein kurzer fester Abstimmungstermin, etwa wöchentlich, um anstehende Aufträge und Engpässe vorab zu besprechen. Wichtig ist, die Zuständigkeit eindeutig zu regeln: Wer darf Termine zusagen, und ab welcher Menge braucht es die Freigabe des Lagers?",
+        "raster": [
+          { "kriterium": "Ursache an der Schnittstelle beziehungsweise im Informationsfluss verortet", "punkte": 1 },
+          { "kriterium": "Konkrete Maßnahme genannt (gemeinsame Bestandsdaten, Freigabe oder fester Abstimmungstermin)", "punkte": 1 },
+          { "kriterium": "Wirkung der Maßnahme erklärt", "punkte": 1 },
+          { "kriterium": "Klare Zuständigkeitsregelung angesprochen", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Die Ablauforganisation fragt nach dem Wann und Wie. Wo zwei Abteilungen zusammenarbeiten, braucht es eine Regel, die festlegt, wer wann welche Information hat — sonst wird jede Zusage zum Glücksspiel.",
+      "quelle": "lf1-k5, Abschnitt e2"
+    }
+  ]
+}

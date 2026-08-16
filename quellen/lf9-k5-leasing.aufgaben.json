@@ -1,0 +1,115 @@
+{
+  "lernfeld": "lf9",
+  "kapitel": "k5",
+  "verweise_im_klausurmodus": "ausblenden",
+
+  "bausteine": [
+    {
+      "id": "lf9-k5-01",
+      "operator": "Ordnen Sie zu",
+      "anforderungsbereich": 1,
+      "punkte": 4,
+      "dauer_min": 4,
+      "schwierigkeit": 1,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Tobias Renner stellt zusammen, welche Wege der MAKEL Studio GmbH kurzfristig Liquidität verschaffen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "zuordnung",
+          "lead": "Wie wirkt die jeweilige Maßnahme?",
+          "ziele": [
+            "Nutzung ohne Eigentum — es wird keine große Anschaffung bezahlt",
+            "Verkauf offener Forderungen — Geld kommt vor dem Zahlungsziel",
+            "Preisnachlass für schnelle Zahlung — er kostet Liquidität und spart Aufwand",
+            "Vermögensumschichtung — gebundenes Kapital wird wieder flüssig"
+          ],
+          "elemente": [
+            { "text": "Leasing der Druckmaschine", "loesung": "Nutzung ohne Eigentum — es wird keine große Anschaffung bezahlt" },
+            { "text": "Factoring der Wholesale-Forderungen", "loesung": "Verkauf offener Forderungen — Geld kommt vor dem Zahlungsziel" },
+            { "text": "Skontoabzug bei der Zahlung an einen Lieferanten", "loesung": "Preisnachlass für schnelle Zahlung — er kostet Liquidität und spart Aufwand" },
+            { "text": "Verkauf einer nicht mehr genutzten Nähmaschine", "loesung": "Vermögensumschichtung — gebundenes Kapital wird wieder flüssig" }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_je_treffer": 1 },
+      "erklaerung": "{{begriff:leasing|Leasing}} ist Nutzung ohne Eigentum und schont die Liquidität. {{begriff:factoring|Factoring}} hat drei Funktionen: Finanzierung, Ausfallschutz und Dienstleistung. Der Skontoabzug ist ein Sonderfall — er spart Geld, verlangt aber, dass man früher zahlt.",
+      "quelle": "lf9-k5, Abschnitt b3"
+    },
+
+    {
+      "id": "lf9-k5-02",
+      "operator": "Kreuzen Sie an",
+      "anforderungsbereich": 2,
+      "punkte": 3,
+      "dauer_min": 3,
+      "schwierigkeit": 2,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die MAKEL Studio GmbH hat hohe offene Wholesale-Forderungen mit langen Zahlungszielen und braucht das Geld für die Serienfertigung sofort; einzelne Boutiquen zahlen zudem unzuverlässig." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "auswahl",
+          "frage": "Welche Maßnahme passt am besten zu dieser Lage?",
+          "mehrfach": false,
+          "optionen": [
+            { "text": "Echtes Factoring — die Forderungen werden verkauft und das Ausfallrisiko geht mit über.", "richtig": true,
+              "echo": "Richtig. Das Geld kommt vor dem Zahlungsziel, und beim echten Factoring übernimmt der Factor zusätzlich das Ausfallrisiko der unzuverlässigen Kunden." },
+            { "text": "Leasing der vorhandenen Lagereinrichtung.", "richtig": false,
+              "echo": "Leasing hilft bei künftigen Anschaffungen. Es macht die bereits bestehenden Forderungen nicht schneller flüssig." },
+            { "text": "Den Kunden ein längeres Zahlungsziel einräumen.", "richtig": false,
+              "echo": "Das verschärft das Problem: Das Geld käme noch später." }
+          ]
+        }
+      ],
+      "bewertung": { "art": "automatisch", "punkte_gesamt": 3 },
+      "erklaerung": "Echtes Factoring übernimmt das Ausfallrisiko, unechtes nicht. Zu beachten ist: Der Factor prüft die Bonität und kauft nicht jede Forderung an — gerade die unsicheren Kunden können abgelehnt werden.",
+      "quelle": "lf9-k5, Abschnitt b2"
+    },
+
+    {
+      "id": "lf9-k5-03",
+      "operator": "Beurteilen Sie",
+      "anforderungsbereich": 3,
+      "punkte": 5,
+      "dauer_min": 6,
+      "schwierigkeit": 3,
+      "passt_zu": ["vorgang:winterkollektion-finanzierung"],
+      "variablen": null,
+
+      "anzeige": [
+        { "block": "text", "inhalt": "Die Textildrucktechnik entwickelt sich schnell weiter; Yuki Bergmann erwägt, die neue Druckmaschine der MAKEL Studio GmbH zu leasen statt zu kaufen." }
+      ],
+
+      "eingabe": [
+        {
+          "block": "textfeld",
+          "frage": "Beurteilen Sie Leasing statt Kauf für diese Druckmaschine.",
+          "zeilen": 7
+        }
+      ],
+
+      "bewertung": {
+        "art": "selbstbewertung",
+        "musterloesung": "Für das Leasing spricht zunächst die Liquidität: Es wird keine große Anschaffung auf einmal bezahlt, sondern in Raten, was bei der bewusst knapp gehaltenen Liquidität von MAKEL wichtig ist. Zweitens trägt bei schnell veraltender Technik der Leasinggeber das Risiko der Veralterung; MAKEL kann nach der Laufzeit auf ein neueres Modell wechseln, statt auf einer überholten Maschine sitzen zu bleiben. Drittens sind Leasingraten sofort Betriebsausgaben, während beim Kauf nur die Abschreibung wirkt. Dagegen spricht, dass Leasing über die Laufzeit meist teurer ist als der Kauf und dass MAKEL kein Eigentum erwirbt — am Ende gehört die Maschine dem Leasinggeber. Außerdem bindet der Leasingvertrag über die Laufzeit und lässt sich kaum vorzeitig lösen. Die Faustregel lautet: schnell veraltende Güter leasen, langlebige kaufen. Da die Drucktechnik hier ausdrücklich schnell veraltet, spricht mehr für das Leasing — vorausgesetzt, die Mehrkosten sind gegenüber dem vermiedenen Technologierisiko vertretbar.",
+        "raster": [
+          { "kriterium": "Liquiditätsvorteil des Leasings genannt", "punkte": 1 },
+          { "kriterium": "Technologierisiko beziehungsweise Veralterung als Kernargument erkannt", "punkte": 1 },
+          { "kriterium": "Höhere Gesamtkosten des Leasings als Nachteil genannt", "punkte": 1 },
+          { "kriterium": "Fehlendes Eigentum oder die vertragliche Bindung angesprochen", "punkte": 1 },
+          { "kriterium": "Begründetes Gesamturteil statt pauschaler Aussage", "punkte": 1 }
+        ]
+      },
+      "erklaerung": "Faustregel: schnell veraltende Güter leasen, langlebige kaufen. Sie ersetzt die Rechnung nicht, gibt aber die Richtung vor — und der Preis des Leasings ist fast immer die höhere Gesamtsumme.",
+      "quelle": "lf9-k5, Abschnitt b1"
+    }
+  ]
+}
