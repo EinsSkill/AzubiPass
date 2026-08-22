@@ -181,8 +181,8 @@ def rechtliches():
 
 
 def nur_privat():
-    """Eigengebrauch — keine Anbieterkennzeichnung nötig, aber auch nichts
-    weitergeben."""
+    """Persönliches, nichtkommerzielles Projekt ohne vollständige
+    Anbieterkennzeichnung."""
     return bool(rechtliches().get("nur_privat"))
 
 
@@ -192,8 +192,9 @@ def fussleiste():
     Klicks erreichbar. Deshalb hängen sie an jeder Seite, nicht nur an der
     Startseite.
 
-    Im Eigengebrauch heißt die Seite ehrlich „Hinweise" statt „Impressum": Ein
-    Link namens Impressum, hinter dem keins steht, ist schlechter als keiner."""
+    Im persönlichen, nichtkommerziellen Modus heißt die Seite ehrlich
+    „Hinweise" statt „Impressum": Ein Link namens Impressum, hinter dem keins
+    steht, ist schlechter als keiner."""
     erste = "Hinweise" if nur_privat() else "Impressum"
     return ('<footer class="fussleiste">'
             f'<a href="impressum.html">{erste}</a>'
