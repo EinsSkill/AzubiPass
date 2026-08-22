@@ -482,7 +482,7 @@ def rechtsseite(titel, beschreibung, inhalt, stil, kernel):
 def luecken(r):
     """Alle Felder, die noch auf ihren Wert warten.
 
-    Im Eigengebrauch keine — dann ist nichts zu kennzeichnen."""
+    Im persönlichen, nichtkommerziellen Modus keine."""
     if r.get("nur_privat"):
         return []
     fehlt = []
@@ -504,21 +504,20 @@ def warnkasten(fehlt):
 
 
 def privatkasten():
-    """Steht auf der Hinweisseite, solange die App nur dem Eigengebrauch dient.
+    """Steht auf der Hinweisseite im persönlichen, nichtkommerziellen Modus.
 
-    Nicht bloß Dekoration: Sie hält fest, ab wann die Angaben nachgetragen
-    werden müssen — damit die Frage nicht in einer JSON-Datei verstaubt."""
-    return ('<div class="box praxis"><div class="bk">Privates Lernprojekt</div>'
-            '<p>Diese Seite ist für den Eigengebrauch gebaut. Sie wird nicht '
-            'beworben, nicht verteilt und es wird nichts angeboten. Eine '
-            'Anbieterkennzeichnung nach § 5 DDG gilt für <em>geschäftsmäßige</em> '
-            'digitale Dienste — dieser Fall ist keiner.</p>'
-            '<p><strong>Sobald der Link weitergegeben wird</strong> — in eine '
-            'Klassengruppe, auf Social Media, irgendwo verlinkt — ändert sich '
-            'das. Dann in <code>quellen/rechtliches.json</code> '
-            '<code>nur_privat</code> auf <code>false</code> setzen, Anschrift '
-            'und E-Mail eintragen und neu bauen. Der Build erzeugt daraus ein '
-            'vollständiges Impressum und meckert, solange etwas fehlt.</p></div>')
+    Sie erklärt sichtbar, dass öffentliche Einsehbarkeit nicht mit einem
+    geschäftsmäßigen Angebot verwechselt werden soll."""
+    return ('<div class="box praxis"><div class="bk">Persönliches Open-Source-Lernprojekt</div>'
+            '<p>Diese Seite und ihr Quellcode dürfen öffentlich angesehen, '
+            'geteilt und als Projekt gezeigt werden. Es gibt keinen Verkauf, '
+            'keine Werbung, keine Nutzerkonten und kein Tracking.</p>'
+            '<p>Der Modus <code>nur_privat</code> ist ausschließlich für ein '
+            'persönliches, nichtkommerzielles Angebot gedacht. Vor einer '
+            'geschäftsmäßigen oder kommerziellen Veröffentlichung muss er in '
+            '<code>quellen/rechtliches.json</code> auf <code>false</code> '
+            'gestellt und die Anbieterkennzeichnung vollständig ergänzt '
+            'werden.</p></div>')
 
 
 def impressum(r, fehlt):
@@ -549,7 +548,7 @@ def impressum(r, fehlt):
   </div>
 
   <h2>Betrieben von</h2>
-  <p>{zeile(a.get("name"))} — privat, für die eigene Prüfungsvorbereitung.</p>'''
+  <p>{zeile(a.get("name"))} — persönliches, nichtkommerzielles Lernprojekt.</p>'''
     else:
         kopf_teil = f'''
   <div class="schirm-kopf">
@@ -573,7 +572,7 @@ def impressum(r, fehlt):
     return warnkasten(fehlt) + kopf_teil + f'''
 
   <h2>Keine Verbindung zu IHK, AkA oder Prüfungsausschüssen</h2>
-  <p>AzubiPass ist ein privates Lernprojekt. Es besteht <strong>keine</strong>
+  <p>AzubiPass ist ein persönliches, nichtkommerzielles Lernprojekt. Es besteht <strong>keine</strong>
      Verbindung zu einer Industrie- und Handelskammer, zur Aufgabenstelle für
      kaufmännische Abschluss- und Zwischenprüfungen (AkA) oder zu einem
      Prüfungsausschuss. Die Inhalte sind weder amtlich noch von einer dieser
@@ -623,8 +622,8 @@ def datenschutz(r, fehlt):
        keine Konten, keine Anmeldung, kein Tracking und keine Werbung.</p></div>
 
   <h2>Verantwortlicher</h2>
-  {'<p>' + html.escape(name) + ' — private Nutzung, keine Anschriftenangabe, '
-   'weil hier keine personenbezogenen Daten von anderen verarbeitet werden.</p>'
+  {'<p>' + html.escape(name) + ' — persönliches, nichtkommerzielles Lernprojekt. '
+   'Die App verarbeitet keinen Lernstand auf einem Server.</p>'
    if r.get("nur_privat") else
    f'<p>{html.escape(name)}<br>{html.escape(a.get("strasse", ""))}<br>'
    f'{html.escape(a.get("plz_ort", ""))}<br>'
@@ -947,9 +946,9 @@ def baue():
         print("  Ohne diese Angaben darf sie nicht geschäftsmäßig betrieben werden.")
         return 1
     if r.get("nur_privat"):
-        print("\n  Hinweis: nur_privat steht auf true — gebaut für den Eigengebrauch,")
-        print("  ohne Anbieterkennzeichnung. Vor dem Weitergeben des Links auf false")
-        print("  stellen und Anschrift plus E-Mail eintragen.")
+        print("\n  Hinweis: nur_privat steht auf true — öffentlich vorzeigbares,")
+        print("  persönliches und nichtkommerzielles Lernprojekt. Vor geschäftsmäßiger")
+        print("  oder kommerzieller Veröffentlichung auf false stellen und Angaben ergänzen.")
     return 0
 
 

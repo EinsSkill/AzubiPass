@@ -57,11 +57,14 @@ nicht: Offline-Speicher und Suche brauchen einen echten Server.
 
 `quellen/rechtliches.json` steuert, was auf den Rechtsseiten steht.
 
-Solange `nur_privat` auf `true` steht, ist die App für den Eigengebrauch gebaut
-— ohne Anbieterkennzeichnung, weil § 5 DDG nur geschäftsmäßige Dienste betrifft.
-**Sobald der Link weitergegeben wird**, muss `nur_privat` auf `false` und
-Anschrift plus E-Mail müssen eingetragen werden; der Build weigert sich dann,
-solange etwas fehlt.
+Solange `nur_privat` auf `true` steht, ist die App als persönliches,
+nichtkommerzielles Lernprojekt gebaut. Das Repository und die Seite dürfen
+öffentlich angesehen, geteilt und als Projekt gezeigt werden. Es gibt dabei
+keinen Verkauf, keine Werbung und keine Nutzerkonten.
+
+Vor einer geschäftsmäßigen oder kommerziellen Veröffentlichung muss
+`nur_privat` auf `false` gestellt und die Anbieterkennzeichnung vollständig
+ausgefüllt werden; der Build weigert sich dann, solange Angaben fehlen.
 
 Die Schriften werden selbst ausgeliefert — es geht keine Anfrage an Google.
 Der Lernfortschritt bleibt im Browser des Geräts und wird nirgendwohin
@@ -69,7 +72,7 @@ Der Lernfortschritt bleibt im Browser des Geräts und wird nirgendwohin
 
 ## Keine Verbindung zu IHK oder AkA
 
-Privates Lernprojekt. Keine Verbindung zu einer Industrie- und Handelskammer,
+Persönliches, nichtkommerzielles Lernprojekt. Keine Verbindung zu einer Industrie- und Handelskammer,
 zur AkA oder zu einem Prüfungsausschuss. Die Inhalte sind weder amtlich noch von
 einer dieser Stellen geprüft. Alle Angaben ohne Gewähr.
 

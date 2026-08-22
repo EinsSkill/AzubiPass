@@ -1,8 +1,8 @@
 {
-  "_hinweis": "Solange nur_privat auf false steht und BITTE_AUSFUELLEN drinsteht, warnt der Build und die Seiten tragen einen sichtbaren Hinweis.",
+  "_hinweis": "nur_privat=true steht für ein persönliches, nichtkommerzielles Lernprojekt, das öffentlich angesehen und geteilt werden darf. Bei geschäftsmäßiger oder kommerzieller Veröffentlichung auf false stellen; solange dann BITTE_AUSFUELLEN enthalten ist, warnt der Build.",
 
   "nur_privat": true,
-  "_nur_privat_hinweis": "true = die Seite ist für den Eigengebrauch und wird nicht beworben oder weitergegeben. § 5 DDG verlangt eine Anbieterkennzeichnung nur für geschäftsmäßige Dienste; eine reine Privatseite fällt nicht darunter. SOBALD DU DEN LINK WEITERGIBST — Klassengruppe, Social Media, irgendwo verlinkt — stell das auf false und trag Anschrift und E-Mail ein. Das ist keine Rechtsberatung, aber die Grenze verläuft genau da.",
+  "_nur_privat_hinweis": "true = persönliches, nichtkommerzielles Lernprojekt ohne Verkauf, Werbung oder Nutzerkonten. Repository und Seite dürfen öffentlich angesehen, geteilt und als Projekt gezeigt werden. Vor geschäftsmäßiger oder kommerzieller Veröffentlichung auf false stellen und Anbieterangaben vervollständigen. Keine Rechtsberatung.",
 
   "anbieter": {
     "name": "Lukes Schmitz",
