@@ -1,79 +1,78 @@
 # AzubiPass
 
-Lernzettel und Prüfungstraining für Kaufleute für Büromanagement — als
-installierbare App, die ohne Netz läuft.
+> Lernen, üben und sicherer in die Prüfung gehen – als installierbare Lernplattform für Kaufleute für Büromanagement.
 
-Alle 13 Lernfelder des KMK-Rahmenlehrplans, 75 Kapitel, 96 interaktive
-Fachgrafiken, 139 Karteikarten, 138 Übungsfragen.
+AzubiPass bündelt Lernzettel, Kapitel, Karteikarten und interaktive Übungsfragen in einer offlinefähigen Web-App. Das Projekt ist auf verständliches Lernen, eigenständiges Üben und einen praktischen Prüfungssimulator ausgerichtet.
 
-## Aufbau
+[![Projekt öffnen](https://img.shields.io/badge/GitHub-Projekt_öffnen-173f35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/EinsSkill/AzubiPass)
+
+## Was steckt drin?
+
+- alle 13 Lernfelder des KMK-Rahmenlehrplans
+- 75 Kapitel und 96 interaktive Fachgrafiken
+- 139 Karteikarten und 138 Übungsfragen
+- Probeklausur mit eigenem Aufgabenbestand
+- Suche, Offline-Speicher und installierbare App-Struktur
+- Inhalte und Darstellung sauber voneinander getrennt
+
+## Projektstatus
+
+**In Arbeit – Pilot Release 0.1**
+
+AzubiPass wird kontinuierlich als persönliches, nichtkommerzielles Open-Source-Lernprojekt weiterentwickelt. Das Repository und die Projektseite dürfen angesehen, geteilt und als Projekt gezeigt werden.
+
+> AzubiPass ist nicht mit der IHK, AkA oder einem Prüfungsausschuss verbunden. Die Inhalte sind nicht amtlich geprüft und ersetzen keine offiziellen Unterlagen.
+
+## Für Interessierte
+
+Der Einstieg in die Projektstruktur:
 
 ```
-quellen/          Kapiteldaten (JSON) und die Bauwerkzeuge (Python, CSS, JS)
-quellen/*.aufgaben.json   Aufgabenbausteine für die eigene Probeklausur
-quellen/belege/   Belegvorlagen (HTML) und ihre Vorgaben
-docs/             das Gebaute — was GitHub Pages ausliefert, nichts von Hand ändern
-doku/             LIESMICH.md (Bedienung), kapitel-format.md, app-konzept.md,
-                  eigene-probeklausur.md (Produktentscheidung zur Probeklausur)
+quellen/        Inhalte, Aufgaben und Build-Werkzeuge
+docs/           gebaute App und Projektseite
+doku/           Bedienung, Formatregeln und Konzeptdokumente
 ```
 
-Inhalt und Darstellung sind getrennt. Ein neues Kapitel heißt: JSON schreiben,
-neu bauen. Kein HTML von Hand.
+Inhalt und Darstellung sind getrennt. Ein neues Kapitel wird als strukturierte Quelldatei ergänzt und anschließend gebaut – HTML wird nicht von Hand gepflegt.
 
-## Bauen
+## Lokal bauen
 
-```
+Voraussetzung: Python 3.
+
+```bash
 cd quellen
-python schriften.py     # einmalig — holt die Schriften, danach nie wieder nötig
-python build.py         # alle Lernzettel
-python build_app.py     # App-Schale, Manifest, Offline-Speicher, Suche,
-                        # Aufgabenbestand der Probeklausur, Rechtstexte
-python build_landing.py # Startseite
+python schriften.py
+python build.py
+python build_app.py
+python build_landing.py
 ```
 
-Die Reihenfolge zählt: `build_app.py` liest, was `build.py` erzeugt hat.
+## Lokal prüfen
 
-## Prüfen
-
-```
-python pruefe.py        # sieht es richtig aus? 2 Größen × 2 Farbstimmungen
-python funktionstest.py # tut es, was es verspricht? 258 Verhaltensprüfungen
+```bash
+python pruefe.py
+python funktionstest.py
 ```
 
-Beide geben 1 zurück, wenn etwas gefunden wurde. `pruefe.py --schnell` prüft nur
-Handy und helle Farben.
+Für die lokale Ansicht:
 
-## Örtlich ansehen
-
-```
+```bash
 cd docs
 python -m http.server 4502
 ```
 
-Dann `http://localhost:4502/app.html`. Ein Doppelklick auf die Datei reicht
-nicht: Offline-Speicher und Suche brauchen einen echten Server.
+Danach ist die App unter `http://localhost:4502/app.html` erreichbar.
 
-## Rechtliches
+## Rechtliches und Datenschutz
 
-`quellen/rechtliches.json` steuert, was auf den Rechtsseiten steht.
+- keine Nutzerkonten
+- keine Werbung und kein Verkauf
+- kein Tracking
+- Lernfortschritt bleibt im Browser des jeweiligen Geräts
+- Schriften werden lokal ausgeliefert
 
-Solange `nur_privat` auf `true` steht, ist die App als persönliches,
-nichtkommerzielles Lernprojekt gebaut. Das Repository und die Seite dürfen
-öffentlich angesehen, geteilt und als Projekt gezeigt werden. Es gibt dabei
-keinen Verkauf, keine Werbung und keine Nutzerkonten.
+Vor einer geschäftsmäßigen oder kommerziellen Veröffentlichung müssten die rechtlichen Angaben angepasst werden.
 
-Vor einer geschäftsmäßigen oder kommerziellen Veröffentlichung muss
-`nur_privat` auf `false` gestellt und die Anbieterkennzeichnung vollständig
-ausgefüllt werden; der Build weigert sich dann, solange Angaben fehlen.
+---
 
-Die Schriften werden selbst ausgeliefert — es geht keine Anfrage an Google.
-Der Lernfortschritt bleibt im Browser des Geräts und wird nirgendwohin
-übertragen.
-
-## Keine Verbindung zu IHK oder AkA
-
-Persönliches, nichtkommerzielles Lernprojekt. Keine Verbindung zu einer Industrie- und Handelskammer,
-zur AkA oder zu einem Prüfungsausschuss. Die Inhalte sind weder amtlich noch von
-einer dieser Stellen geprüft. Alle Angaben ohne Gewähr.
-
-Ausführlich: [doku/LIESMICH.md](doku/LIESMICH.md).
+Ein Lernprojekt mit echtem Nutzwert – gebaut für die Ausbildung und offen dokumentiert für alle, die sich den Aufbau ansehen möchten.
