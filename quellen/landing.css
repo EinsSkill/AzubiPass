@@ -1,8 +1,6 @@
-/* Dieselbe Zweiteilung wie in azubipass.css: --creme heißt „helles Licht auf
-   dunklem Grund" und wechselt nie, --grund ist die Farbe der Seite selbst.
-   Die dunklen Bänder bleiben dunkel, sie werden im dunklen Modus nur eine
-   Stufe heller als der Grund. */
+/* Feste helle Darstellung mit grünen Markenflächen. */
 :root{
+  color-scheme:only light;
   --tinte:#1B4332; --tinte-tief:#12301F; --tinte-hell:#2A5A44;
   --gold:#C9A227; --gold-matt:#A88A2C;
   --gold-text:#7A5F0E;
@@ -10,23 +8,12 @@
   --creme:#F5F5F0; --grund:#F5F5F0; --papier:#FBFBF8;
   --text:#1A1D1A; --text-sek:#63685F; --linie:#DDDCD2; --warn:#8C3A2B;
   --feld:#FFFFFF; --kopf-grund:rgba(245,245,240,.94);
-  /* Dunkle Fläche mit hellem Text darauf — bleibt in beiden Stimmungen dunkel.
-     --tinte ist die Schriftfarbe und dreht sich um, --insel nicht. */
+  /* Grüne Markenfläche mit heller Schrift. */
   --insel:#1B4332;
   --serif:"Source Serif 4","Iowan Old Style",Georgia,serif;
   --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
   --mass:1180px;
-}
-@media (prefers-color-scheme:dark){
-  :root{
-    --tinte:#7FC4A0; --tinte-tief:#21251F; --tinte-hell:#95D3B2;
-    --gold:#D6B44A; --gold-matt:#B79A3C; --gold-text:#D9B85A; --gold-gross:#C9A227;
-    --grund:#141614; --papier:#1C1F1C;
-    --text:#E8E8E2; --text-sek:#9BA197; --linie:#31362F;
-    --feld:#232722; --kopf-grund:rgba(20,22,20,.94);
-    --insel:#252A23;
-  }
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}

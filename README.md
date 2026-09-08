@@ -61,7 +61,9 @@ cd docs
 python -m http.server 4502
 ```
 
-Danach ist die App unter `http://localhost:4502/app.html` erreichbar.
+Danach öffnet `http://localhost:4502/` direkt das Home-Menü „Heute“.
+`app.html` bleibt als bestehender App-Einstieg erhalten; die optionale
+Projektvorstellung ist unter `landing.html` erreichbar.
 
 ## Rechtliches und Datenschutz
 

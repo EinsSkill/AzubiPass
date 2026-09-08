@@ -40,7 +40,6 @@ MITTEL = AUSGABE / "mittel"
 
 MARKE = "AzubiPass"
 FARBE_HELL = "#F5F5F0"
-FARBE_DUNKEL = "#141614"
 
 GOOGLE_LINK = '''<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,17 +79,15 @@ def kopf(titel, beschreibung, stile=(), skripte=()):
 
     viewport-fit=cover zusammen mit den env(safe-area-*)-Regeln in der CSS ist
     das, was die App auf Geräten mit Aussparung nicht unter die Uhr rutschen
-    lässt. Zwei theme-color-Zeilen, damit sich die Statusleiste des Handys in
-    beiden Farbstimmungen an die Seite angleicht statt gegen sie zu stehen."""
+    lässt. Die App verwendet unabhängig vom Gerät die helle Darstellung."""
     verweise = "\n".join(f'<link rel="stylesheet" href="{s}">' for s in stile)
     programme = "\n".join(f'<script src="{s}" defer></script>' for s in skripte)
     return f'''<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{html.escape(titel)} · {MARKE}</title>
 <meta name="description" content="{html.escape(beschreibung)}">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="{FARBE_HELL}" media="(prefers-color-scheme:light)">
-<meta name="theme-color" content="{FARBE_DUNKEL}" media="(prefers-color-scheme:dark)">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="{FARBE_HELL}">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="mittel/symbol.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="mittel/symbol-180.png">

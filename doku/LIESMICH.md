@@ -38,14 +38,26 @@ Dazu 96 interaktive Grafiken, 139 Karteikarten, 138 Übungsfragen und
 
 ## Die App
 
-`app.html` ist die Schale mit fünf Bereichen:
+`index.html` und `app.html` sind dieselbe App-Schale. Seit dem 08.09.2026
+öffnet die Projektwurzel direkt das Home-Menü „Heute“. Bestehende Links auf
+`app.html` und deren Unterbereiche funktionieren weiter. `build_app.py` erzeugt
+beide Einstiege; `build_landing.py` erzeugt ausschließlich die optionale
+Projektvorstellung `landing.html` und überschreibt den App-Einstieg nicht.
+Lernstand und PWA-Startadresse bleiben unverändert.
+
+Seit dem 08.09.2026 gibt es ausschließlich die helle Darstellung. Die
+Farbauswahl unter „Ich“ entfällt. Alte dunkle oder systemabhängige Einstellungen
+werden auch beim Import einer Sicherung auf hell gesetzt; die grünen
+Markenflächen bleiben Teil des Designs.
+
+Die App hat fünf Bereiche:
 
 - **Heute** — wo du weitermachst, Countdown zur AP2, Gesamtfortschritt,
   Wochenziel, fällige Karten.
 - **Lernen** — die 13 Lernfelder mit Fortschrittsbalken.
 - **Üben** — fällige Karteikarten, Übungsfragen, Schwachstellen.
 - **Suche** — Volltext über alle Lernfelder plus Begriffe und Paragraphen.
-- **Ich** — Fortschritt im Detail, Lesezeichen, Sicherung, helle/dunkle Farben.
+- **Ich** — Fortschritt im Detail, Lesezeichen, Sicherung.
 
 Auf dem Handy fragt die App beim ersten Besuch, ob sie auf den Startbildschirm
 darf. Danach startet sie ohne Browserleiste und läuft ohne Netz.
@@ -80,7 +92,7 @@ Im Ordner `quellen/` liegt alles, woraus die Seiten entstehen. Gebaut wird nach
     python3 schriften.py        # einmalig: Schriften holen und selbst ausliefern
     python3 build.py            # alle Lernzettel (oder: build.py lf5.lernfeld.json)
     python3 build_app.py        # App, Manifest, Zwischenspeicher, Suche, Rechtsseiten
-    python3 build_landing.py    # Startseite
+    python3 build_landing.py    # optionale Projektvorstellung (landing.html)
 
     python3 pruefe.py           # Sichtprüfung — sieht es richtig aus?
     python3 funktionstest.py    # Funktionstest — tut es, was es verspricht?

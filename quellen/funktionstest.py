@@ -1340,6 +1340,13 @@ def main():
 
         # ---------------------------------------------------------- App
         print("\n· App")
+        for einstieg in ("", "index.html"):
+            pg.goto(f"{w}/{einstieg}", wait_until="networkidle")
+            pg.locator("#heute .hm-zone").first.wait_for()
+            pruefe(f"Direkter Home-Einstieg über /{einstieg}",
+                   pg.locator("#heute").is_visible()
+                   and pg.locator('.tab[aria-current="page"]').get_attribute("href")
+                   == "app.html#heute")
         pg.goto(f"{w}/app.html", wait_until="networkidle")
         pg.wait_for_timeout(700)
         text = pg.locator("#heute").inner_text()
@@ -1379,21 +1386,25 @@ def main():
                datei.suggested_filename.startswith("azubipass-fortschritt-"),
                datei.suggested_filename)
 
-        # Dark Mode über den Schalter
-        pg.get_by_role("button", name="Dunkel", exact=True).click()
-        pg.wait_for_timeout(500)
-        pruefe("Dunkel-Schalter wirkt",
-               pg.evaluate("() => document.documentElement.dataset.stimmung") == "dunkel")
-        # Der Schalter wirkt dort, wo gelesen wird. Die vier App-Schirme tragen
-        # in beiden Stimmungen dieselbe tiefgrüne Fläche; nachgewiesen wird die
-        # Einstellung deshalb auf der Lesefläche des Kapitels und nicht auf
-        # „Ich". Gespeichert ist sie im selben Konto, also überlebt sie den
-        # Seitenwechsel.
+        # Eine alte dunkle Einstellung darf die Lesefläche nicht mehr ändern.
+        pruefe("Farbauswahl wurde entfernt",
+               pg.get_by_role("button", name="Dunkel", exact=True).count() == 0
+               and pg.get_by_role("button", name="System", exact=True).count() == 0)
+        pg.evaluate("""() => {
+          const k = JSON.parse(localStorage.getItem('azubipass:konto'));
+          k.stimmung = 'dunkel';
+          localStorage.setItem('azubipass:konto', JSON.stringify(k));
+        }""")
+        pg.emulate_media(color_scheme="dark")
         pg.goto(f"{w}/lf10.html#k1")
         pg.wait_for_timeout(700)
         grund = pg.evaluate(
             "() => getComputedStyle(document.body).backgroundColor")
-        pruefe("Seite ist wirklich dunkel", grund in ("rgb(20, 22, 20)",), grund)
+        pruefe("Alte dunkle Einstellung bleibt auf dunklem Gerät hell",
+               grund == "rgb(245, 245, 240)", grund)
+        pruefe("Alte Farbe wird im Konto auf hell umgestellt",
+               pg.evaluate("() => JSON.parse(localStorage.getItem"
+                           "('azubipass:konto')).stimmung") == "hell")
 
         # Übernahme aus alten Einträgen
         print("\n· Übernahme des alten Bestands")
@@ -1624,12 +1635,7 @@ def main():
                             "('azubipass:konto') || '{}').pruefungstermin") in (None,))
         ktxL.close()
 
-        # L · Die App-Welt bleibt in beiden Stimmungen dunkelgrün
-        #
-        # Vorher folgte Lernen der Stimmung und Heute nicht — die App zerfiel
-        # dadurch in zwei Welten. Jetzt tragen alle vier Hauptbereiche dieselbe
-        # tiefgrüne Fläche, und die Hell-/Dunkel-Einstellung gilt für die
-        # Lesefläche im Kapitel, wo sie hingehört.
+        # L · Feste Markenfarben und helle Kapitel bei beiden Geräte-Einstellungen.
         print("\n· Farben")
         GRUEN = "rgb(18, 48, 31)"
         for farbe in ("light", "dark"):
@@ -1649,15 +1655,13 @@ def main():
             pruefe(f"Zurück auf Heute wieder grün ({farbe})",
                    pgM.evaluate("() => getComputedStyle(document.body).backgroundColor")
                    == GRUEN)
-            # Das Kapitel dreht dagegen sehr wohl — sonst wäre die Einstellung
-            # eine Einstellung ohne Wirkung.
+            # Die Lesefläche bleibt unabhängig vom Gerät hell.
             pgM.goto(f"{w}/lf10.html#k1")
             pgM.wait_for_timeout(600)
             lese = pgM.evaluate(
                 "() => getComputedStyle(document.body).backgroundColor")
-            pruefe(f"Kapitel folgt der Stimmung ({farbe})",
-                   lese == ("rgb(245, 245, 240)" if farbe == "light"
-                            else "rgb(20, 22, 20)"), lese)
+            pruefe(f"Kapitel bleibt hell ({farbe})",
+                   lese == "rgb(245, 245, 240)", lese)
             ktxM.close()
 
         # M · Inhalt lädt nicht
@@ -1705,6 +1709,11 @@ def main():
         pruefe("Zwischenspeicher übernimmt", bereit)
         if bereit:
             pg3.context.set_offline(True)
+            for einstieg in ("", "index.html"):
+                pg3.goto(f"{w}/{einstieg}", wait_until="domcontentloaded")
+                pg3.locator("#heute .hm-zone").first.wait_for()
+                pruefe(f"Home-Einstieg /{einstieg} lädt ohne Netz",
+                       pg3.locator("#heute").is_visible())
             pg3.goto(f"{w}/lf3.html", wait_until="domcontentloaded")
             pg3.wait_for_timeout(900)
             pruefe("Lernzettel lädt ohne Netz",

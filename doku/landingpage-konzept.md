@@ -3,6 +3,10 @@
 Version 2.0 · Juli 2026 · alle Entscheidungen getroffen
 Gehört zu Businessplan (Band 1), Playbook (Band 2), Pitch-Kit (Band 3)
 
+> Aktueller Einstieg (08.09.2026): Die Projektwurzel öffnet direkt die App
+> im Home-Menü „Heute“. Die bisherige Landingpage bleibt optional unter
+> `landing.html`; sie ist nicht mehr der vorgeschaltete Einstieg.
+
 ---
 
 ## 1 · Die Grundentscheidung

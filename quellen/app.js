@@ -971,27 +971,7 @@
     }
     s.appendChild(lzGruppe);
 
-    /* Darstellung und Prüfungstermin */
-    var einst = feldgruppe("Darstellung");
-    var stimmung = el("div", "stellreihe");
-    var links = el("div");
-    links.appendChild(el("b", null, "Farben"));
-    links.appendChild(el("small", null,
-      "„System“ folgt der Einstellung deines Handys."));
-    stimmung.appendChild(links);
-    var schalter = el("div", "schalterfeld");
-    [["system", "System"], ["hell", "Hell"], ["dunkel", "Dunkel"]].forEach(function (w) {
-      var b = el("button", (stand.stimmung || "system") === w[0] ? "an" : "", w[1]);
-      b.addEventListener("click", function () {
-        AP.stimmungSetzen(w[0]);
-        zeigeIch(s);
-      });
-      schalter.appendChild(b);
-    });
-    stimmung.appendChild(schalter);
-    einst.appendChild(stimmung);
-    s.appendChild(einst);
-
+    /* Prüfungstermin */
     var termin = feldgruppe("Prüfungstermin", countdown().kurz);
     termin.appendChild(terminfeld());
     s.appendChild(termin);

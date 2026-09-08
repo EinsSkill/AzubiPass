@@ -4,7 +4,8 @@ AzubiPass · Landing-Page-Renderer
 
     python3 build_landing.py
 
-Liest landing.config.json, berechnet die Fertigstellungstermine und erzeugt index.html.
+Liest landing.config.json und erzeugt die optionale Projektseite landing.html.
+index.html gehört build_app.py und öffnet direkt das Home-Menü der App.
 Der Katalog wird nicht gepflegt, sondern gebaut — wie die Lernkapitel auch.
 """
 
@@ -149,6 +150,7 @@ def baue():
 <meta property="og:image" content="https://azubipass.de/teilen.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#12301F">
+<meta name="color-scheme" content="only light">
 {schriftkopf()}
 <link rel="stylesheet" href="{stil}">
 <script src="{verhalten}" defer></script>
@@ -411,7 +413,7 @@ def baue():
 </body>
 </html>'''
 
-    ziel = AUSGABE / "index.html"
+    ziel = AUSGABE / "landing.html"
     ziel.write_text(doc, encoding="utf-8")
 
     print(f"  Landing Page → {ziel.name}")

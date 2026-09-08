@@ -1,15 +1,6 @@
-/* Farben in zwei Stimmungen.
-
-   Der Trick, der den dunklen Modus klein hält: Die dunklen Inseln — Deckblatt,
-   Grafiken, Zusammenfassung, Trainer — bleiben in beiden Stimmungen dunkel. Im
-   hellen Modus liegen sie als tiefe Flächen auf Papier, im dunklen als leicht
-   erhobene Flächen über einem noch tieferen Grund. Der Rhythmus bleibt, nur die
-   Richtung dreht sich. Dadurch stimmen die rund vierzig festen Cremewerte in den
-   Grafik-Regeln unverändert weiter — sie liegen ja immer auf Dunkel.
-
-   --creme heißt deshalb überall „helles Licht auf dunklem Grund" und wechselt
-   nie. Was wechselt, ist --grund: die Farbe der Seite selbst. */
+/* Feste helle Leseflächen; grüne Markenflächen behalten ihre Farben. */
 :root{
+  color-scheme:only light;
   --tinte:#1B4332; --tinte-tief:#12301F; --tinte-hell:#2A5A44;
   --gold:#C9A227; --gold-matt:#A88A2C;
   --gold-text:#7A5F0E;
@@ -29,37 +20,6 @@
   --leiste:56px;                       /* Höhe der Tab-Leiste, ohne Geräterand */
   --rand-unten:env(safe-area-inset-bottom,0px);
   --rand-oben:env(safe-area-inset-top,0px);
-}
-
-/* Die Stimmung des Geräts gilt, solange niemand von Hand etwas anderes
-   eingestellt hat. [data-stimmung] setzt der Schalter unter „Ich". */
-@media (prefers-color-scheme:dark){
-  :root:not([data-stimmung="hell"]){
-    --tinte:#7FC4A0; --tinte-tief:#21251F; --tinte-hell:#95D3B2;
-    --gold:#D6B44A; --gold-matt:#B79A3C;
-    --gold-text:#D9B85A;
-    --gold-gross:#C9A227;
-    --grund:#141614; --papier:#1C1F1C;
-    --text:#E8E8E2; --text-sek:#9BA197; --linie:#31362F;
-    --warn-grund:#2E1E1A; --warn-schrift:#EFAB9B; --gut-grund:#15251D;
-    --kopf-zeile:#2A2F28; --insel-zus:#252A23;
-    --karte-grund:#26241B; --feld:#232722;
-    --rand-sanft:rgba(245,245,240,.24); --kopf-grund:rgba(20,22,20,.92);
-    --schatten:rgba(0,0,0,.55);
-  }
-}
-:root[data-stimmung="dunkel"]{
-  --tinte:#7FC4A0; --tinte-tief:#21251F; --tinte-hell:#95D3B2;
-  --gold:#D6B44A; --gold-matt:#B79A3C;
-  --gold-text:#D9B85A;
-  --gold-gross:#C9A227;
-  --grund:#141614; --papier:#1C1F1C;
-  --text:#E8E8E2; --text-sek:#9BA197; --linie:#31362F;
-  --warn-grund:#2E1E1A; --warn-schrift:#EFAB9B; --gut-grund:#15251D;
-  --kopf-zeile:#2A2F28; --insel-zus:#252A23;
-  --karte-grund:#26241B; --feld:#232722;
-  --rand-sanft:rgba(245,245,240,.24); --kopf-grund:rgba(20,22,20,.92);
-  --schatten:rgba(0,0,0,.55);
 }
 
 *{box-sizing:border-box;}

@@ -115,7 +115,7 @@ window.AP = (function () {
     aktivitaet: [],       // Tage, an denen etwas gelernt wurde
     zuletzt: null,        // { zu, lernfeld, kapitel, titel }
     pruefungstermin: null,// eigener Termin; null = der aus landing.config.json
-    stimmung: "system",
+    stimmung: "hell",
     uebernommen: false
   };
 
@@ -463,21 +463,13 @@ window.AP = (function () {
     return i < 0;
   }
 
-  /* ================================================== Stimmung */
-
-  function stimmungSetzen(wert) {
-    stand.stimmung = wert;
+  // Alte Konten und importierte Sicherungen bleiben kompatibel.
+  // Die frühere Farbauswahl wird auf die feste helle Darstellung umgestellt.
+  document.documentElement.dataset.stimmung = "hell";
+  if (stand.stimmung !== "hell") {
+    stand.stimmung = "hell";
     sichern();
-    stimmungAnwenden();
   }
-
-  function stimmungAnwenden() {
-    var w = stand.stimmung || "system";
-    if (w === "system") delete document.documentElement.dataset.stimmung;
-    else document.documentElement.dataset.stimmung = w;
-  }
-
-  stimmungAnwenden();
   document.addEventListener("DOMContentLoaded", function () { leiste(); sw(); });
 
   return {
@@ -489,7 +481,6 @@ window.AP = (function () {
     kartenstand: kartenstand, istFaellig: istFaellig, kartewerten: kartewerten,
     WARTEN: WARTEN, FAECHER: FAECHER, trainer: trainer,
     verteiler: verteiler, sw: sw,
-    gemerkt: gemerkt, merken: merken,
-    stimmungSetzen: stimmungSetzen
+    gemerkt: gemerkt, merken: merken
   };
 })();

@@ -900,8 +900,11 @@ def baue():
 
     symbole()
     (AUSGABE / "manifest.webmanifest").write_text(manifest(), encoding="utf-8")
-    (AUSGABE / "app.html").write_text(
-        app_seite(stil, kernel, appjs, aufgabenjs, lernfelder), encoding="utf-8")
+    # Direkt im Home-Menü starten, auch an der Wurzel der Projektseite.
+    # app.html bleibt für bestehende Links und installierte Apps erhalten.
+    app = app_seite(stil, kernel, appjs, aufgabenjs, lernfelder)
+    for name in ("index.html", "app.html"):
+        (AUSGABE / name).write_text(app, encoding="utf-8")
 
     # Was der Build einmal erzeugt hat und heute nicht mehr erzeugt, räumt er
     # selbst weg. docs/ ist Ausgabe — dort von Hand aufzuräumen hieße, sich beim
