@@ -274,82 +274,96 @@ def _langwerte(wert):
     return [str(wert)] if wert and str(wert).strip() else []
 
 
-def _ausfuehrlich_daten(ch):
-    """Liefert die optionale Langfassung oder eine brauchbare Übergangsfassung.
+def _automatische_detailgruppen(a):
+    """Sammelt vorhandene Vertiefungen in denselben Abschnitt.
 
-    Die redaktionelle Form darf pro Kapitel eigene Erklärung, Beispiele,
-    typische Fehler und einen Merksatz führen. Bis diese Texte vollständig
-    gepflegt sind, bündelt die Übergangsfassung vorhandene Vertiefungen,
-    Tabellenhinweise und Merksätze, damit der Knopf in jedem Kapitel sinnvoll
-    funktioniert und kein leerer Zustand entsteht.
+    Nicht jedes Kapitel besitzt bereits redaktionelle Langtexte. Statt dafür
+    eine zweite, losgelöste Seite zu bauen, werden die vorhandenen Hintergründe
+    und Tabellenhinweise direkt als optionale Erweiterung des
+    jeweiligen kurzen Abschnitts angeboten.
     """
+    gruppen = []
+    for b in a.get("inhalt", []):
+        typ = b.get("typ")
+        if typ == "vertiefung":
+            texte = _langwerte(b.get("absaetze"))
+            if texte:
+                gruppen.append({"titel": b.get("titel", "Hintergrund"),
+                                "text": texte})
+        elif typ == "tabelle":
+            texte = [_langwerte(z.get("detail")) for z in b.get("zeilen", [])]
+            texte = [x for gruppe in texte for x in gruppe]
+            if texte:
+                gruppen.append({"titel": "Praxis und typische Fehler", "text": texte})
+    return gruppen
+
+
+def _ausfuehrlich_karte(ch):
+    """Ordnet Detaildaten den bestehenden Abschnitts-IDs zu.
+
+    Redaktionelle Texte nennen ihren Zielabschnitt ausdrücklich über
+    ``abschnitt``. Bei gleich langen Altbeständen bleibt die Reihenfolge als
+    Rückwärtskompatibilität erlaubt; alle anderen Kapitel erhalten automatisch
+    die bereits vorhandenen Vertiefungen und Erklärhinweise.
+    """
+    basis = ch.get("bloecke", [])
     eigene = ch.get("ausfuehrlich")
     if isinstance(eigene, dict) and eigene.get("abschnitte"):
-        return eigene, False
+        raus = {}
+        daten = eigene["abschnitte"]
+        gleichlang = len(daten) == len(basis)
+        for i, abschnitt in enumerate(daten):
+            ids = abschnitt.get("abschnitt")
+            if isinstance(ids, str):
+                ids = [ids]
+            if not ids and gleichlang:
+                ids = [basis[i]["id"]]
+            for id_ in ids or []:
+                raus[id_] = abschnitt
+        return raus
 
-    abschnitte = []
-    for a in ch.get("bloecke", []):
-        texte = []
-        for b in a.get("inhalt", []):
-            typ = b.get("typ")
-            if typ in ("absatz", "achtung", "praxistipp", "merke"):
-                texte.extend(_langwerte(b.get("text")))
-            elif typ == "vertiefung":
-                texte.extend(_langwerte(b.get("absaetze")))
-            elif typ == "zuordnen":
-                texte.extend(_langwerte(b.get("lead")))
-            elif typ == "grafik":
-                texte.extend(_langwerte(b.get("lead")))
-                texte.extend(_langwerte(b.get("regel")))
-            elif typ == "tabelle":
-                for zeile in b.get("zeilen", []):
-                    texte.extend(_langwerte(zeile.get("detail")))
-        gesehen = set()
-        texte = [x for x in texte if not (x in gesehen or gesehen.add(x))]
-        if texte:
-            abschnitte.append({"titel": a.get("titel", ""), "text": texte})
-
-    if not abschnitte:
-        abschnitte = [{"titel": "Kernidee", "text": [ch.get("untertitel", "")]}]
-    return {
-        "einleitung": ("Diese ausführliche Ansicht bündelt die Kernaussagen, "
-                       "Beispiele und Vertiefungen dieses Kapitels an einem Ort."),
-        "abschnitte": abschnitte,
-    }, True
+    return {a["id"]: {"automatisch": True,
+                       "gruppen": _automatische_detailgruppen(a)}
+            for a in basis if _automatische_detailgruppen(a)}
 
 
-def ausfuehrlich(ch, lf):
-    daten, uebergang = _ausfuehrlich_daten(ch)
-    teile = []
-    for abschnitt in daten.get("abschnitte", []):
-        inhalt = []
-        erklaerung = _langwerte(abschnitt.get("erklaerung"))
+def detail_zusatz(a, daten, lf):
+    """Gibt eine unaufdringliche Inline-Erweiterung für einen Abschnitt aus."""
+    if not daten:
+        return ""
+    gruppen = []
+    if daten.get("automatisch"):
+        gruppen = daten.get("gruppen", [])
+    else:
+        erklaerung = _langwerte(daten.get("erklaerung"))
         if not erklaerung:
-            erklaerung = _langwerte(abschnitt.get("text"))
+            erklaerung = _langwerte(daten.get("text"))
         if erklaerung:
-            inhalt.extend(f"<p>{inline(x, lf)}</p>" for x in erklaerung)
+            gruppen.append({"titel": "Ausführlicher erklärt", "text": erklaerung})
         for schluessel, titel in (
                 ("beispiel", "Beispiel"),
                 ("typische_fehler", "Typische Fehler"),
                 ("merksatz", "Merksatz")):
-            werte = _langwerte(abschnitt.get(schluessel))
-            if werte:
-                inhalt.append(f'<h4>{html.escape(titel)}</h4>')
-                inhalt.extend(f"<p>{inline(x, lf)}</p>" for x in werte)
-        if inhalt:
-            teile.append(f'<section class="langabschnitt">'
-                         f'<h3>{inline(abschnitt.get("titel", ""), lf)}</h3>'
-                         f'{"".join(inhalt)}</section>')
-    hinweis = ('<p class="langfassung-hinweis">Erklärungen, Beispiele und '
-               'Merksätze dieses Kapitels zusammengeführt.</p>' if uebergang else "")
-    einleitung = inline(daten.get("einleitung", ""), lf)
-    return (f'<section class="langfassung" id="{ch["id"]}-lang" hidden>'
-            f'<div class="langfassung-kopf"><div class="bk">Ausführliche Version</div>'
-            f'<p>{einleitung}</p>{hinweis}</div>'
-            f'<div class="langfassung-inhalt">{"".join(teile)}</div></section>')
+            texte = _langwerte(daten.get(schluessel))
+            if texte:
+                gruppen.append({"titel": titel, "text": texte})
+
+    inhalt = []
+    for gruppe in gruppen:
+        texte = [x for x in _langwerte(gruppe.get("text")) if x]
+        if not texte:
+            continue
+        inhalt.append(f'<h4>{html.escape(str(gruppe.get("titel", "Weitere Erklärung")))}</h4>')
+        inhalt.extend(f"<p>{inline(x, lf)}</p>" for x in texte)
+    if not inhalt:
+        return ""
+    return '<div class="detail-zusatz" hidden>' \
+           '<div class="detail-marke">Mehr Erklärung</div>' \
+           + "".join(inhalt) + "</div>"
 
 
 def kapitel(ch, lf, naechstes, hat_aufgaben=False):
+    detailkarte = _ausfuehrlich_karte(ch)
     ziele = "".join(
         f'<li data-fuer="{z["abschnitt"]}"><span class="haken"></span>'
         f'<span>{inline(z["text"], lf)}</span></li>'
@@ -366,7 +380,8 @@ def kapitel(ch, lf, naechstes, hat_aufgaben=False):
             gezaehlt[kuerzel] = gezaehlt.get(kuerzel, 0) + 1
             stuecke.append(block(x, lf, f'{ort}-{kuerzel}{gezaehlt[kuerzel]}'))
         abschnitte.append(
-            f'<h3 id="{ch["id"]}-{a["id"]}">{inline(a["titel"], lf)}</h3>{"".join(stuecke)}'
+            f'<h3 id="{ch["id"]}-{a["id"]}">{inline(a["titel"], lf)}</h3>'
+            f'{"".join(stuecke)}{detail_zusatz(a, detailkarte.get(a["id"]), lf)}'
         )
 
     zus = "".join(f"<li>{inline(s, lf)}</li>" for s in ch["zusammenfassung"])
@@ -402,7 +417,7 @@ def kapitel(ch, lf, naechstes, hat_aufgaben=False):
       <p>{html.escape(ch["untertitel"])}</p>
       <div class="kapitel-werkzeuge">
         <button class="detail-schalter" type="button" aria-expanded="false"
-                aria-controls="{ch["id"]}-lang">Ausführliche Version anzeigen</button>
+                aria-controls="{ch["id"]}-inhalt">Ausführlich erweitern</button>
       </div>
     </div>
   </div>
@@ -416,11 +431,9 @@ def kapitel(ch, lf, naechstes, hat_aufgaben=False):
     </div>
   </div>
 
-  {ausfuehrlich(ch, lf)}
-
   <div class="lauf">
     {inhaltsrand(ch, lf)}
-    <article class="inhalt">
+    <article class="inhalt" id="{ch["id"]}-inhalt">
       {"".join(abschnitte)}
 
       <div class="zus rein">

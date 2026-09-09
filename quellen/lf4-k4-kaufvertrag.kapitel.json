@@ -9,6 +9,7 @@
     "einleitung": "Ein Kaufvertrag ist mehr als die Einigung auf einen Preis. Er legt fest, welche Leistung geschuldet wird, wann sie zu erbringen ist und wer bei Abweichungen welches Risiko trägt.",
     "abschnitte": [
       {
+        "abschnitt": "b1",
         "titel": "Vom Antrag zum Vertrag",
         "erklaerung": "Ein Vertrag entsteht, wenn ein bestimmbarer Antrag vollständig angenommen wird. Ware und Preis müssen feststehen; Liefertermin, Zahlungsart, Versand und Eigentumsvorbehalt regeln anschließend, wie der Vertrag praktisch abgewickelt wird. Weicht die Antwort von Menge oder Preis ab, ist sie keine Annahme, sondern ein neuer Antrag.",
         "beispiel": "MAKEL fragt 200 Hoodies zu 52 Euro an. Der Lieferer bestätigt 180 Stück zu 54 Euro. Damit ist der ursprüngliche Antrag nicht angenommen. Die Bestätigung ist ein neuer Antrag, den MAKEL noch annehmen muss.",
@@ -16,6 +17,7 @@
         "merksatz": "Vollständige Annahme = Vertrag; Abweichung = neuer Antrag."
       },
       {
+        "abschnitt": "b2",
         "titel": "Lieferung, Gefahr und Zahlung",
         "erklaerung": "Nach dem Vertrag muss der Verkäufer die vereinbarte Sache übergeben und übereignen; der Käufer muss sie abnehmen und den Preis zahlen. Liefer- und Zahlungsbedingungen verschieben, wer organisiert, wann gezahlt wird und wann die Gefahr eines zufälligen Untergangs übergeht. Deshalb gehören diese Bedingungen zur wirtschaftlichen Beurteilung des Angebots.",
         "beispiel": "Bei „frei Haus“ trägt der Verkäufer die Organisation der Lieferung und kalkuliert die Fracht meist in den Preis ein. Bei „ab Werk“ muss der Käufer den Transport selbst organisieren oder zusätzlich bezahlen. Der niedrigere Preis auf dem Papier ist deshalb nicht automatisch das günstigere Angebot.",
@@ -23,6 +25,7 @@
         "merksatz": "Nicht nur den Preis lesen: Lieferung, Gefahr, Zahlung und Eigentum gehören zusammen."
       },
       {
+        "abschnitt": "b3",
         "titel": "Störung und Reaktion",
         "erklaerung": "Bei einer Pflichtverletzung muss zuerst geklärt werden, was genau geschuldet war und ob die Abweichung erheblich ist. Danach folgen je nach Fall Mängelrechte, Fristsetzung, Rücktritt oder Schadensersatz. Wer sofort selbst handelt, ohne den Vertragspartner in Verzug zu setzen oder zurückzutreten, riskiert zusätzliche Probleme.",
         "beispiel": "Eine gelieferte Maschine hat nicht die vereinbarte Leistung. MAKEL dokumentiert den Mangel, rügt ihn und setzt eine angemessene Frist zur Nacherfüllung. Erst wenn diese scheitert oder unzumutbar ist, kommen weitere Rechte in Betracht.",

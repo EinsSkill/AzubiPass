@@ -112,22 +112,20 @@ button{font:inherit;}
 .ziele li.erledigt .haken{background:var(--tinte);border-color:var(--tinte);}
 .ziele li.erledigt .haken::after{transform:rotate(45deg) scale(1);}
 
-/* Ausführliche Kapitelansicht */
-.langfassung{max-width:var(--mass);margin:0 auto 72px;padding:0 48px;}
-.langfassung-kopf{max-width:var(--lese);background:var(--insel-zus);
-  color:var(--creme);padding:27px 30px 24px;border-left:3px solid var(--gold);}
-.langfassung-kopf .bk{font-family:var(--sans);font-size:10.5px;font-weight:600;
-  letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:9px;}
-.langfassung-kopf p{font-size:17px;line-height:1.6;margin:0;color:rgba(245,245,240,.88);}
-.langfassung-hinweis{font-family:var(--sans);font-size:12px !important;
-  color:rgba(245,245,240,.55) !important;margin-top:12px !important;}
-.langfassung-inhalt{max-width:var(--lese);padding:6px 0 0;}
-.langabschnitt{border-bottom:1px solid var(--linie);padding:22px 0 8px;}
-.langabschnitt h3{font-size:24px;font-weight:700;letter-spacing:-.012em;
-  margin:0 0 14px;padding-left:13px;border-left:3px solid var(--gold);}
-.langabschnitt h4{font-family:var(--sans);font-size:10.5px;font-weight:600;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--gold-text);margin:19px 0 6px;}
-.langabschnitt p{font-size:17px;line-height:1.62;margin:0 0 15px;max-width:66ch;}
+/* Inline-Erweiterungen: Die Langfassung ist kein zweiter Textblock. Sie hängt
+   direkt am vorhandenen Abschnitt und ergänzt nur Erklärung, Beispiel und
+   typische Fehler. Dadurch bleiben Grafik, Tabelle, Check und Selbsttest in
+   derselben Lesereihenfolge und behalten ihren gemeinsamen Lernstand. */
+.detail-zusatz{max-width:var(--lese);margin:22px 0 34px;padding:2px 0 2px 18px;
+  border-left:3px solid var(--gold);}
+.detail-zusatz .detail-marke{font-family:var(--sans);font-size:10.5px;font-weight:600;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--gold-text);margin-bottom:12px;}
+.detail-zusatz h4{font-family:var(--sans);font-size:11px;font-weight:600;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--gold-text);margin:16px 0 6px;}
+.detail-zusatz h4:first-of-type{margin-top:0;}
+.detail-zusatz p{font-size:17px;line-height:1.62;margin:0 0 15px;max-width:66ch;
+  color:var(--text-sek);}
+.detail-zusatz p:last-child{margin-bottom:0;}
 
 /* Lauf */
 .lauf{max-width:var(--mass);margin:0 auto;padding:0 48px 90px;display:grid;grid-template-columns:180px 1fr;gap:48px;}
@@ -272,7 +270,7 @@ tr.detail td strong{color:var(--gold);}
 .karte-huelle{max-width:var(--lese);perspective:1400px;margin:0 0 28px;}
 .karte{position:relative;transition:transform .65s cubic-bezier(.3,.8,.3,1);transform-style:preserve-3d;}
 .karte.gedreht{transform:rotateY(180deg);}
-.seite{background:var(--karte-grund);border-left:3px solid var(--gold);padding:20px 24px 18px 26px;backface-visibility:hidden;position:relative;display:flex;flex-direction:column;}
+.seite{background:var(--karte-grund);color:#1A1D1A;border-left:3px solid var(--gold);padding:20px 24px 18px 26px;backface-visibility:hidden;position:relative;display:flex;flex-direction:column;}
 .seite .bk{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-text);margin-bottom:8px;display:flex;align-items:center;gap:9px;}
 .seite p{margin:0;font-size:17px;line-height:1.55;}
 .rueck{position:absolute;inset:0;transform:rotateY(180deg);background:var(--tinte-tief);color:var(--creme);justify-content:center;}
@@ -813,28 +811,29 @@ tr.detail td strong{color:var(--gold);}
 .tr-karte{animation:trRein .38s cubic-bezier(.2,.7,.3,1) both;}
 @keyframes trRein{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
 
-.tr-seite{background:var(--karte-grund);color:var(--text);border-left:3px solid var(--gold);
+.tr-seite{background:var(--karte-grund);color:#1A1D1A;border-left:3px solid var(--gold);
   padding:30px 34px 26px;display:flex;flex-direction:column;}
 .tr-herkunft{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;
-  color:var(--gold-text);margin-bottom:16px;}
-.tr-frage{font-family:var(--serif);font-size:23px;line-height:1.42;margin:0;font-weight:600;}
+  color:#6C5208;margin-bottom:16px;}
+.tr-frage{font-family:var(--serif);font-size:23px;line-height:1.42;margin:0;font-weight:600;color:#1A1D1A;}
 .tr-seite .dreher{margin-top:26px;}
+.tr-seite > .dreher,.seite > .dreher{color:#6C5208;border-color:rgba(26,29,26,.28);}
 
-.tr-antwort{background:rgba(245,245,240,.05);border-left:3px solid rgba(201,162,39,.45);
+.tr-antwort{background:#F2EBD8;color:#1A1D1A;border-left:3px solid var(--gold);
   padding:24px 34px 22px;margin-top:2px;opacity:0;transform:translateY(-6px);
   transition:opacity .3s ease,transform .3s ease;}
 .tr-antwort.da{opacity:1;transform:none;}
 .tr-antwort .bk{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
-.tr-antwort p{margin:0;font-size:17px;line-height:1.6;color:rgba(245,245,240,.88);}
-.tr-antwort mark{background:rgba(201,162,39,.22);color:var(--gold);}
-.tr-antwort strong{color:var(--creme);}
+  text-transform:uppercase;color:#6C5208;margin-bottom:10px;}
+.tr-antwort p{margin:0;font-size:17px;line-height:1.6;color:#1A1D1A;}
+.tr-antwort mark{background:rgba(201,162,39,.22);color:#1B4332;}
+.tr-antwort strong{color:#1B4332;}
 
 .tr-urteil{display:flex;gap:12px;margin-top:24px;}
 .tr-urteil button{flex:1;font-family:var(--sans);font-size:14px;font-weight:600;
   padding:13px 20px;border-radius:2px;cursor:pointer;transition:background .2s,color .2s,border-color .2s;}
-.tr-nochmal{background:none;border:1px solid rgba(245,245,240,.28);color:rgba(245,245,240,.78);}
-.tr-nochmal:hover{border-color:var(--creme);color:var(--creme);}
+.tr-nochmal{background:transparent;border:1px solid rgba(26,29,26,.28);color:#273028;}
+.tr-nochmal:hover{border-color:#1B4332;color:#1B4332;}
 .tr-gewusst{background:var(--gold);border:1px solid var(--gold);color:var(--tinte-tief);}
 .tr-gewusst:hover{background:#D9B33A;border-color:#D9B33A;}
 
@@ -871,15 +870,15 @@ tr.detail td strong{color:var(--gold);}
 .voc-eingabe:focus{outline:none;border-color:var(--tinte);
   box-shadow:0 0 0 3px rgba(27,67,50,.1);}
 .tr-seite .voc-eingabe + .dreher{margin-top:12px;}
-.voc-echo{margin-top:16px;padding:14px 16px;border-left:3px solid var(--linie);
-  color:var(--text);background:var(--papier);font:15px/1.55 var(--sans);}
+.voc-echo{margin-top:16px;padding:14px 16px;border-left:3px solid #B9B5A7;
+  color:#1A1D1A;background:#F2EBD8;font:15px/1.55 var(--sans);}
 .voc-echo.richtig{border-left-color:#4E9B72;}
 .voc-echo.falsch{border-left-color:#B05A47;}
 .voc-echo b{display:block;margin-bottom:4px;}
-.voc-echo p{margin:10px 0 0;color:var(--text-sek);}
-.voc-beispiel{margin-top:14px !important;color:var(--text-sek) !important;
+.voc-echo p{margin:10px 0 0;color:#4F554D;}
+.voc-beispiel{margin-top:14px !important;color:#4F554D !important;
   font-style:italic;}
-.voc-alternativen,.voc-hinweis{margin-top:9px !important;color:var(--text-sek) !important;
+.voc-alternativen,.voc-hinweis{margin-top:9px !important;color:#4F554D !important;
   font-family:var(--sans);font-size:13px;}
 
 /* Derselbe Trainer im Üben-Schirm der App.
@@ -1040,10 +1039,8 @@ tr.detail td strong{color:var(--gold);}
   .detail-schalter{width:100%;}
   .ziele{margin-bottom:48px;}
   .ziele-box{padding:20px 18px;}
-  .langfassung{padding-left:20px;padding-right:20px;margin-bottom:48px;}
-  .langfassung-kopf{padding:22px 18px 20px;}
-  .langabschnitt h3{font-size:22px;padding-left:12px;}
-  .langabschnitt p{font-size:16.5px;}
+  .detail-zusatz{margin-top:18px;margin-bottom:28px;padding-left:14px;}
+  .detail-zusatz p{font-size:16.5px;}
   .lauf{padding-bottom:64px;}
   .inhalt h3{font-size:23px;margin:40px 0 14px;padding-left:13px;}
 

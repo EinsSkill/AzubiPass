@@ -273,20 +273,24 @@
 
   function langfassung(sec) {
     var knopf = sec.querySelector(".detail-schalter");
-    var ziel = sec.querySelector(".langfassung");
-    if (!knopf || !ziel) return;
-    knopf.addEventListener("click", function () {
-      var offen = !ziel.hidden;
-      ziel.hidden = offen;
-      knopf.setAttribute("aria-expanded", offen ? "false" : "true");
+    var zusatz = [].slice.call(sec.querySelectorAll(".detail-zusatz"));
+    if (!knopf || !zusatz.length) {
+      if (knopf) knopf.hidden = true;
+      return;
+    }
+
+    function setze(offen) {
+      sec.classList.toggle("detailreich", offen);
+      zusatz.forEach(function (x) { x.hidden = !offen; });
+      knopf.setAttribute("aria-expanded", offen ? "true" : "false");
       knopf.textContent = offen
-        ? "Ausführliche Version anzeigen"
-        : "Kompakte Ansicht anzeigen";
-      if (!offen) {
-        requestAnimationFrame(function () {
-          ziel.scrollIntoView({ block: "start", behavior: "smooth" });
-        });
-      }
+        ? "Kompakte Ansicht anzeigen"
+        : "Ausführlich erweitern";
+    }
+
+    setze(false);
+    knopf.addEventListener("click", function () {
+      setze(!sec.classList.contains("detailreich"));
     });
   }
 

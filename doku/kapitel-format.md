@@ -49,6 +49,36 @@ selbsttest[]  { typ, frage, loesung }
 pruefungstipp
 ```
 
+### Inline-Ausführlichkeit
+
+Die ausführliche Ansicht ist **kein zweiter Lernzettel**. Der kurze Inhalt bleibt
+an derselben Stelle sichtbar; zusätzliche Erklärung, Beispiele und typische Fehler
+werden direkt unter dem passenden Abschnitt eingeblendet. Tabellen, Grafiken,
+Checks, Karteikarten und Selbsttests bleiben deshalb in beiden Ansichten dieselben
+und teilen sich denselben Lernstand.
+
+Optional kann ein Kapitel dafür einen Block `ausfuehrlich` enthalten:
+
+```json
+"ausfuehrlich": {
+  "abschnitte": [
+    {
+      "abschnitt": "a1",
+      "erklaerung": "Warum gilt diese Regel?",
+      "beispiel": "Ein konkreter Fall aus dem Büro.",
+      "typische_fehler": "Woran man die häufigste Verwechslung erkennt.",
+      "merksatz": "Die prüfungsrelevante Kurzform."
+    }
+  ]
+}
+```
+
+`abschnitt` verweist auf die ID des vorhandenen Abschnitts. Die Detailtexte werden
+mit derselben Auszeichnungssyntax wie die Kurzfassung verarbeitet; Begriffe,
+Paragraphen und Hervorhebungen bleiben daher anklickbar. Für Kapitel ohne eigene
+Redaktion bündelt der Build vorhandene Vertiefungen, Tabellenhinweise und
+Grafikregeln automatisch an ihrer ursprünglichen Stelle.
+
 `lernziele[].abschnitt` zeigt auf die `id` eines Abschnitts. Genau daran hängt die
 Fortschrittslogik: Sobald jemand den Abschnitt liest, hakt sich das Lernziel ab.
 **Jedes Lernziel braucht einen Abschnitt — sonst kann es nie erreicht werden.**
