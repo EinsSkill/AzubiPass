@@ -58,6 +58,8 @@ def tag(versatz):
 
 def kuerzel(lf_id):
     """Dieselbe Kurzform, die app.js vor die Fortschrittsreihe setzt."""
+    if lf_id == "buchfuehrung":
+        return "LF6"
     return lf_id.upper() if re.fullmatch(r"lf\d+", lf_id) else lf_id[:4].upper()
 
 
@@ -68,9 +70,9 @@ def erledigt():
 def konto(fertig=(), zuletzt=None, termin=None, faellige_karten=None):
     """Ein Konto im gewünschten Zustand.
 
-    faellige_karten=None heißt: nichts eintragen — dann sind alle Karten fällig,
-    weil kern.js für unbekannte Karten auf heute zurückfällt. Eine Zahl legt
-    genau so viele auf heute und schiebt den Rest in die Zukunft."""
+    faellige_karten=None heißt: nichts eintragen — dann sind alle Karten neu.
+    Eine Zahl legt genau so viele bekannte Karten auf heute und schiebt den
+    Rest in die Zukunft."""
     karten = {}
     if faellige_karten is not None:
         for i, k in enumerate(INHALT["karten"]):
@@ -1352,8 +1354,8 @@ def main():
         text = pg.locator("#heute").inner_text()
         pruefe("Hauptaktion führt ins zuletzt gelesene Kapitel",
                "Kapitel fortsetzen" in text, text.split("\n")[:4])
-        pruefe("Countdown steht auf der Startseite",
-               "Abschlussprüfung" in text and "Tage" in text)
+        pruefe("Ohne eigenen Termin kein persönlicher Countdown",
+               "Prüfungstermin festlegen" in text and "Abschlussprüfung" not in text)
         pruefe("Keine Begrüßungsfloskel mehr", "Guten Tag" not in text)
 
         for schirm in ["lernen", "ueben", "suche", "ich"]:
@@ -1442,8 +1444,8 @@ def main():
         # A · Noch nie etwas geöffnet
         ktxA, pgA = app_mit(b, w, konto())
         t = heutetext(pgA)
-        pruefe("Neuer Nutzer: Erstes Kapitel starten", "Erstes Kapitel starten" in t)
-        pruefe("Neuer Nutzer: erstes Kapitel des ersten Lernfelds", kt0 in t, kt0)
+        pruefe("Neuer Nutzer: aktuelles Thema wählen", "Thema auswählen" in t)
+        pruefe("Neuer Nutzer: kein stiller LF1-Vorschlag", kt0 not in t, kt0)
         pruefe("Neuer Nutzer: Fortschritt 0", f"0 von {len(KAPITEL)}" in t, t[-90:])
         pruefe("Neuer Nutzer: keine erfundene Aktivität", "An 0 von 7 Tagen gelernt" in t)
         ktxA.close()
@@ -1522,9 +1524,9 @@ def main():
 
         # G · Karteikarten: 0, 1, viele
         print("\n· Startbildschirm · fällige Karten")
-        for anzahl, erwartet in [(0, "Heute keine Karteikarten fällig"),
-                                 (1, "1 Karte wartet"),
-                                 (12, "12 Karten warten")]:
+        for anzahl, erwartet in [(0, "Heute keine Wiederholungen fällig"),
+                                 (1, "1 Wiederholung wartet"),
+                                 (12, "12 Wiederholungen warten")]:
             ktxG, pgG = app_mit(b, w, konto(faellige_karten=anzahl))
             t = heutetext(pgG)
             pruefe(f"{anzahl} fällige Karten: »{erwartet}«", erwartet in t,
@@ -1536,10 +1538,9 @@ def main():
 
         # H · Prüfungstermin
         print("\n· Prüfungstermin")
-        standard = INHALT["pruefung"]
         ktxH, pgH = app_mit(b, w, konto())
-        pruefe("Ohne eigenen Termin gilt der Standard aus landing.config.json",
-               "Abschlussprüfung" in heutetext(pgH))
+        pruefe("Ohne eigenen Termin bleibt der Countdown offen",
+               "Prüfungstermin festlegen" in heutetext(pgH))
 
         pgH.evaluate("location.hash = '#ich'")
         pgH.wait_for_timeout(600)
@@ -1562,19 +1563,18 @@ def main():
             "() => Object.keys(localStorage).filter(k => k.startsWith('azubipass'))")
             == ["azubipass:konto"])
 
-        # Standard wiederherstellen
+        # Persönlichen Termin entfernen
         pgH.evaluate("location.hash = '#ich'")
         pgH.wait_for_timeout(600)
-        pgH.get_by_role("button", name="Standardtermin verwenden").click()
+        pgH.get_by_role("button", name="Termin entfernen").click()
         pgH.wait_for_timeout(600)
-        pruefe("Standardtermin lässt sich wiederherstellen",
+        pruefe("Persönlicher Termin lässt sich entfernen",
                pgH.evaluate("() => JSON.parse(localStorage.getItem"
                             "('azubipass:konto')).pruefungstermin") is None)
         pgH.evaluate("location.hash = '#heute'")
         pgH.wait_for_timeout(500)
-        pruefe("Nach dem Zurücksetzen rechnet der Countdown wieder mit dem Standard",
-               f"noch {(date.fromisoformat(standard) - date.today()).days} Tage"
-               in heutetext(pgH))
+        pruefe("Nach dem Entfernen bleibt der persönliche Countdown offen",
+               "Prüfungstermin festlegen" in heutetext(pgH))
         ktxH.close()
 
         # I · Vergangener Termin
@@ -1589,10 +1589,10 @@ def main():
                == "app.html#ich")
         ktxI.close()
 
-        # J · Unbrauchbarer Termin fällt still auf den Standard zurück
+        # J · Unbrauchbarer Termin bleibt ohne persönlichen Countdown
         ktxJ, pgJ = app_mit(b, w, konto(termin="2026-02-31"))
-        pruefe("Ungültiges Datum wird ignoriert, Standard greift",
-               "Abschlussprüfung" in heutetext(pgJ)
+        pruefe("Ungültiges Datum wird ignoriert, Countdown bleibt offen",
+               "Prüfungstermin festlegen" in heutetext(pgJ)
                and "aktualisieren" not in heutetext(pgJ))
         ktxJ.close()
 

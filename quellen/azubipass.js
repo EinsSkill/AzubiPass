@@ -229,6 +229,7 @@
 
     var f = AP.kapitelfach(LERNFELD, sec.id);
     einblenden(sec);
+    langfassung(sec);
     lernziele(sec, f);
     abschnittsstand(sec);
     tabellen(sec);
@@ -240,14 +241,24 @@
     kapitelstandPruefen(sec, f);
   }
 
-  /* Wann gilt ein Kapitel als geschafft? Alle Lernziele erreicht und der
-     Selbsttest bearbeitet. Beides steht ohnehin schon im Konto — es wurde nur
-     nie zusammengerechnet. */
+  function testBeantwortet(e) {
+    /* Der Abdruck allein beweist nur, dass die Frage gerendert wurde. Erst eine
+       bewusste Entscheidung — Antwort verglichen oder als Lücke markiert —
+       macht den Selbsttest-Eintrag zu einer echten Bearbeitung. */
+    return !!(e && (e.z === "haupt" || e.z === "luecke"));
+  }
+
+  /* Wann gilt ein Kapitel als geschafft? Alle Lernziele erreicht und jede
+     Selbsttestfrage bewusst bearbeitet. Das bloße Öffnen des Kapitels darf
+     keinen Abschluss erzeugen. */
   function kapitelstandPruefen(sec, f) {
     var ziele = sec.querySelectorAll(".ziele-liste li").length;
     var fragen = sec.querySelectorAll(".frage").length;
+    var beantwortet = Object.keys(f.test).filter(function (id) {
+      return testBeantwortet(f.test[id]);
+    }).length;
     var fertig = (!ziele || f.ziele.length >= ziele) &&
-                 (!fragen || Object.keys(f.test).length >= fragen);
+                 (!fragen || beantwortet >= fragen);
     if (fertig !== f.fertig) { f.fertig = fertig; sichern(); }
   }
 
@@ -258,6 +269,25 @@
       });
     }, { threshold: .15, rootMargin: "0px 0px -8% 0px" });
     sec.querySelectorAll(".rein").forEach(function (x) { seher.observe(x); });
+  }
+
+  function langfassung(sec) {
+    var knopf = sec.querySelector(".detail-schalter");
+    var ziel = sec.querySelector(".langfassung");
+    if (!knopf || !ziel) return;
+    knopf.addEventListener("click", function () {
+      var offen = !ziel.hidden;
+      ziel.hidden = offen;
+      knopf.setAttribute("aria-expanded", offen ? "false" : "true");
+      knopf.textContent = offen
+        ? "Ausführliche Version anzeigen"
+        : "Kompakte Ansicht anzeigen";
+      if (!offen) {
+        requestAnimationFrame(function () {
+          ziel.scrollIntoView({ block: "start", behavior: "smooth" });
+        });
+      }
+    });
   }
 
   /* Wo im Kapitel man gerade steht.
@@ -377,18 +407,30 @@
     });
   }
 
+  function mischen(folge) {
+    for (var i = folge.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tausch = folge[i];
+      folge[i] = folge[j];
+      folge[j] = tausch;
+    }
+    return folge;
+  }
+
   /* Gespeicherter Stand einer einzelnen Aufgabe.
 
      Der Abdruck sitzt jetzt an der Aufgabe, nicht mehr am ganzen Kapitel.
      Vorher warf ein korrigiertes Komma irgendwo im Text den kompletten Stand
      des Kapitels weg — Haken, Antworten, alles. Jetzt kostet eine geänderte
      Frage genau diese eine Antwort. */
-  function aufgabenstand(f, art, kasten, text) {
+  function aufgabenstand(f, art, kasten, text, alterText) {
     var id = kasten.id;
     if (!id) return {};                       // ohne Kennung nichts merken
     var a = AP.abdruck(text);
     var e = f[art][id];
-    if (!e || e.a !== a) e = f[art][id] = { a: a };
+    var alt = alterText == null ? null : AP.abdruck(alterText);
+    if (!e || (e.a !== a && e.a !== alt)) e = f[art][id] = { a: a };
+    else if (e.a === alt && e.a !== a) e.a = a;
     return e;
   }
 
@@ -396,8 +438,17 @@
     sec.querySelectorAll(".check").forEach(function (box) {
       var echo = box.querySelector(".check-echo");
       var opts = box.querySelectorAll(".opt");
+      var urspruenglich = Array.prototype.slice.call(opts);
       var frage = box.querySelector(".check-frage");
-      var gemerkt = aufgabenstand(f, "checks", box, frage ? frage.textContent : box.id);
+      var frageText = frage ? frage.textContent : box.id;
+      var optionAbdruck = urspruenglich.map(function (o) {
+        return o.dataset.optionId || o.textContent;
+      }).sort().join("|");
+      var gemerkt = aufgabenstand(f, "checks", box,
+        frageText + "|" + optionAbdruck, frageText);
+      var optionen = mischen(urspruenglich.slice());
+      var optionBox = opts.length ? opts[0].parentNode : null;
+      if (optionBox) optionen.forEach(function (o) { optionBox.appendChild(o); });
 
       function waehle(opt) {
         opts.forEach(function (o) { o.disabled = true; });
@@ -410,17 +461,33 @@
         echo.classList.add("da");
       }
 
-      opts.forEach(function (opt, k) {
+      optionen.forEach(function (opt) {
         opt.addEventListener("click", function () {
           waehle(opt);
-          gemerkt.w = k;
+          gemerkt.o = opt.dataset.optionId || opt.textContent;
           gemerkt.r = !!opt.dataset.richtig;
+          delete gemerkt.w;
           AP.heuteGelernt();
           sichern();
         });
       });
 
-      if (gemerkt.w != null && opts[gemerkt.w]) waehle(opts[gemerkt.w]);
+      var gespeicherteId = gemerkt.o;
+      /* Alte Konten speicherten noch die Position. Einmalig in die neue
+         inhaltsbasierte ID überführen, bevor die sichtbare Reihenfolge greift. */
+      if (!gespeicherteId && gemerkt.w != null && urspruenglich[gemerkt.w]) {
+        gespeicherteId = urspruenglich[gemerkt.w].dataset.optionId ||
+                         urspruenglich[gemerkt.w].textContent;
+        gemerkt.o = gespeicherteId;
+        delete gemerkt.w;
+        sichern();
+      }
+      if (gespeicherteId) {
+        var gespeicherte = optionen.filter(function (o) {
+          return (o.dataset.optionId || o.textContent) === gespeicherteId;
+        })[0];
+        if (gespeicherte) waehle(gespeicherte);
+      }
     });
   }
 
@@ -479,20 +546,34 @@
 
       function zaehlen() { if (!gezaehlt) { gezaehlt = true; anzeige.textContent = ++n; } }
 
+      function entzaehlen() {
+        if (!gezaehlt) return;
+        gezaehlt = false;
+        n = Math.max(0, n - 1);
+        anzeige.textContent = n;
+      }
+
       function aufloesen() { loesung.classList.add("offen"); zaehlen(); }
 
       function alsLuecke() {
-        feld.disabled = true;
-        haupt.disabled = true;
         loesung.classList.add("luecke", "offen");
         loesung.querySelector(".lk").textContent = "Musterlösung · als Lücke gemerkt";
         zaehlen();
       }
 
       feld.addEventListener("input", function () {
+        /* Nach einer abgeschlossenen Frage darf der Nutzer sie erneut
+           versuchen. Eine geänderte Antwort öffnet den Selbsttest wieder und
+           nimmt den alten Abschluss aus der Zählung. */
+        if (testBeantwortet(gemerkt) && feld.value !== (gemerkt.t || "")) {
+          gemerkt.z = null;
+          loesung.classList.remove("offen", "luecke");
+          entzaehlen();
+        }
         haupt.disabled = feld.value.trim().length < 3;
         gemerkt.t = feld.value;
         sichern();
+        kapitelstandPruefen(sec, f);
       });
       haupt.addEventListener("click", function () {
         aufloesen();

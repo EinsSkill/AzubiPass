@@ -10,6 +10,7 @@ Ausgabe: <lernfeld-id>.html — eine eigenständige Datei mit allen Kapiteln.
 
 import json
 import html
+import hashlib
 import re
 import sys
 from pathlib import Path
@@ -67,6 +68,24 @@ MARKEN = {
 KUERZEL = {"merke": "m", "check": "c", "zuordnen": "z"}
 
 
+def option_ids(optionen, kennung):
+    """Erzeugt IDs, die am Inhalt hängen, nicht an der sichtbaren Position.
+
+    Wird eine Auswahl später umsortiert, bleibt dieselbe Antwort dadurch
+    dieselbe Antwort. Bei identischem Wortlaut bekommt das zweite Vorkommen
+    einen kleinen Zusatz, damit auch solche Alt- oder Testdaten eindeutig sind.
+    """
+    gesehen = {}
+    ids = []
+    for o in optionen:
+        basis = hashlib.sha1(str(o.get("text", "")).encode("utf-8")).hexdigest()[:12]
+        nummer = gesehen.get(basis, 0)
+        gesehen[basis] = nummer + 1
+        suffix = f"-{nummer}" if nummer else ""
+        ids.append(f"{kennung}-o{basis}{suffix}")
+    return ids
+
+
 def tabelle(b, lf):
     kopf = "".join(f"<th>{inline(s, lf)}</th>" for s in b["spalten"])
     zeilen = []
@@ -116,10 +135,12 @@ def vertiefung(b, lf):
 
 
 def check(b, lf, kennung):
+    ids = option_ids(b["optionen"], kennung)
     opts = "".join(
-        f'<button class="opt" data-richtig="{"1" if o.get("richtig") else ""}" '
+        f'<button class="opt" data-option-id="{ids[i]}" '
+        f'data-richtig="{"1" if o.get("richtig") else ""}" '
         f'data-echo="{html.escape(o["echo"])}">{inline(o["text"], lf)}</button>'
-        for o in b["optionen"]
+        for i, o in enumerate(b["optionen"])
     )
     return (f'<div class="check rein" id="{kennung}"><div class="check-kopf">Kurz geprüft</div>'
             f'<p class="check-frage">{inline(b["frage"], lf)}</p>'
@@ -247,6 +268,87 @@ def inhaltsrand(ch, lf):
             f'</div></aside>')
 
 
+def _langwerte(wert):
+    if isinstance(wert, list):
+        return [str(x) for x in wert if str(x).strip()]
+    return [str(wert)] if wert and str(wert).strip() else []
+
+
+def _ausfuehrlich_daten(ch):
+    """Liefert die optionale Langfassung oder eine brauchbare Übergangsfassung.
+
+    Die redaktionelle Form darf pro Kapitel eigene Erklärung, Beispiele,
+    typische Fehler und einen Merksatz führen. Bis diese Texte vollständig
+    gepflegt sind, bündelt die Übergangsfassung vorhandene Vertiefungen,
+    Tabellenhinweise und Merksätze, damit der Knopf in jedem Kapitel sinnvoll
+    funktioniert und kein leerer Zustand entsteht.
+    """
+    eigene = ch.get("ausfuehrlich")
+    if isinstance(eigene, dict) and eigene.get("abschnitte"):
+        return eigene, False
+
+    abschnitte = []
+    for a in ch.get("bloecke", []):
+        texte = []
+        for b in a.get("inhalt", []):
+            typ = b.get("typ")
+            if typ in ("absatz", "achtung", "praxistipp", "merke"):
+                texte.extend(_langwerte(b.get("text")))
+            elif typ == "vertiefung":
+                texte.extend(_langwerte(b.get("absaetze")))
+            elif typ == "zuordnen":
+                texte.extend(_langwerte(b.get("lead")))
+            elif typ == "grafik":
+                texte.extend(_langwerte(b.get("lead")))
+                texte.extend(_langwerte(b.get("regel")))
+            elif typ == "tabelle":
+                for zeile in b.get("zeilen", []):
+                    texte.extend(_langwerte(zeile.get("detail")))
+        gesehen = set()
+        texte = [x for x in texte if not (x in gesehen or gesehen.add(x))]
+        if texte:
+            abschnitte.append({"titel": a.get("titel", ""), "text": texte})
+
+    if not abschnitte:
+        abschnitte = [{"titel": "Kernidee", "text": [ch.get("untertitel", "")]}]
+    return {
+        "einleitung": ("Diese ausführliche Ansicht bündelt die Kernaussagen, "
+                       "Beispiele und Vertiefungen dieses Kapitels an einem Ort."),
+        "abschnitte": abschnitte,
+    }, True
+
+
+def ausfuehrlich(ch, lf):
+    daten, uebergang = _ausfuehrlich_daten(ch)
+    teile = []
+    for abschnitt in daten.get("abschnitte", []):
+        inhalt = []
+        erklaerung = _langwerte(abschnitt.get("erklaerung"))
+        if not erklaerung:
+            erklaerung = _langwerte(abschnitt.get("text"))
+        if erklaerung:
+            inhalt.extend(f"<p>{inline(x, lf)}</p>" for x in erklaerung)
+        for schluessel, titel in (
+                ("beispiel", "Beispiel"),
+                ("typische_fehler", "Typische Fehler"),
+                ("merksatz", "Merksatz")):
+            werte = _langwerte(abschnitt.get(schluessel))
+            if werte:
+                inhalt.append(f'<h4>{html.escape(titel)}</h4>')
+                inhalt.extend(f"<p>{inline(x, lf)}</p>" for x in werte)
+        if inhalt:
+            teile.append(f'<section class="langabschnitt">'
+                         f'<h3>{inline(abschnitt.get("titel", ""), lf)}</h3>'
+                         f'{"".join(inhalt)}</section>')
+    hinweis = ('<p class="langfassung-hinweis">Erklärungen, Beispiele und '
+               'Merksätze dieses Kapitels zusammengeführt.</p>' if uebergang else "")
+    einleitung = inline(daten.get("einleitung", ""), lf)
+    return (f'<section class="langfassung" id="{ch["id"]}-lang" hidden>'
+            f'<div class="langfassung-kopf"><div class="bk">Ausführliche Version</div>'
+            f'<p>{einleitung}</p>{hinweis}</div>'
+            f'<div class="langfassung-inhalt">{"".join(teile)}</div></section>')
+
+
 def kapitel(ch, lf, naechstes, hat_aufgaben=False):
     ziele = "".join(
         f'<li data-fuer="{z["abschnitt"]}"><span class="haken"></span>'
@@ -298,6 +400,10 @@ def kapitel(ch, lf, naechstes, hat_aufgaben=False):
     <div>
       <h2>{html.escape(ch["titel"])}</h2>
       <p>{html.escape(ch["untertitel"])}</p>
+      <div class="kapitel-werkzeuge">
+        <button class="detail-schalter" type="button" aria-expanded="false"
+                aria-controls="{ch["id"]}-lang">Ausführliche Version anzeigen</button>
+      </div>
     </div>
   </div>
 
@@ -309,6 +415,8 @@ def kapitel(ch, lf, naechstes, hat_aufgaben=False):
       <ul class="ziele-liste">{ziele}</ul>
     </div>
   </div>
+
+  {ausfuehrlich(ch, lf)}
 
   <div class="lauf">
     {inhaltsrand(ch, lf)}

@@ -104,19 +104,30 @@ window.AP = (function () {
      Zeichen.                                                                   */
 
   var SCHLUESSEL = "azubipass:konto";
-  var FASSUNG = 1;
+  /* Eine laufende Probeklausur bleibt getrennt vom Konto. Sobald sie abgegeben
+     ist, liegt nur noch ihre kompakte Auswertung im Konto. Der Name gehört hier
+     hin, damit Zurücksetzen und der Klausurteil garantiert denselben Schlüssel
+     benutzen. */
+  var PROBEKLAUSUR_SCHLUESSEL = "azubipass:probeklausur:v1";
+  /* Das Konto bleibt unter demselben localStorage-Schlüssel erreichbar. Die
+     Fassung steht im Inhalt, damit wir vorhandene Spielstände kontrolliert
+     weiterentwickeln können, ohne die alten Daten still zu verwerfen. */
+  var FASSUNG = 3;
 
   var leer = {
     version: FASSUNG,
     fortschritt: {},      // "lf10-k4" → { ziele, checks, zuordnen, test, fertig }
     karten: {},           // "lf10-k4-b2-m1" → { fach, faellig, fehler }
+    vokabeln: {},         // "grund-buero-appointment" → { fach, faellig, fehler }
     quiz: {},             // Übungsteil: "lf10-k4-b2-c1" → { r: richtig?, n: Versuche }
     lesezeichen: [],      // { zu, titel, lernfeld }
     aktivitaet: [],       // Tage, an denen etwas gelernt wurde
     zuletzt: null,        // { zu, lernfeld, kapitel, titel }
     pruefungstermin: null,// eigener Termin; null = der aus landing.config.json
+    geaendertAm: null,    // ISO-Zeitpunkt der letzten lokalen Kontenänderung
     stimmung: "hell",
-    uebernommen: false
+    uebernommen: false,
+    probeklausuren: []    // abgeschlossene Ergebnisse; laufende Klausur bleibt separat
   };
 
   function frisch() { return JSON.parse(JSON.stringify(leer)); }
@@ -134,14 +145,54 @@ window.AP = (function () {
     }
     if (!roh) return uebernehmen(frisch());
     try {
-      var k = JSON.parse(roh);
-      Object.keys(leer).forEach(function (f) {
-        if (k[f] === undefined) k[f] = JSON.parse(JSON.stringify(leer[f]));
-      });
-      return k;
+      return normalisieren(JSON.parse(roh));
     } catch (e) {
       return frisch();
     }
+  }
+
+  /* Ein kaputtes oder altes Konto darf nicht dazu führen, dass einzelne
+     Ansichten mit null statt mit einer leeren Sammlung arbeiten. Die Migration
+     ist absichtlich verlustarm: Bekannte Felder werden übernommen, fehlende
+     Felder erhalten ihren aktuellen Standardwert, unbekannte Altlasten werden
+     nicht weitergeschrieben. */
+  function normalisieren(k) {
+    if (!k || typeof k !== "object" || Array.isArray(k)) return frisch();
+
+    var neu = frisch();
+    Object.keys(leer).forEach(function (f) {
+      if (Object.prototype.hasOwnProperty.call(k, f)) neu[f] = k[f];
+    });
+    neu.version = FASSUNG;
+
+    if (!neu.fortschritt || typeof neu.fortschritt !== "object" ||
+        Array.isArray(neu.fortschritt)) neu.fortschritt = {};
+    Object.keys(neu.fortschritt).forEach(function (id) {
+      var f = neu.fortschritt[id];
+      if (!f || typeof f !== "object" || Array.isArray(f)) {
+        delete neu.fortschritt[id];
+        return;
+      }
+      if (!Array.isArray(f.ziele)) f.ziele = [];
+      ["checks", "zuordnen", "test"].forEach(function (feld) {
+        if (!f[feld] || typeof f[feld] !== "object" || Array.isArray(f[feld])) {
+          f[feld] = {};
+        }
+      });
+      f.fertig = f.fertig === true;
+    });
+
+    ["karten", "quiz", "vokabeln"].forEach(function (feld) {
+      if (!neu[feld] || typeof neu[feld] !== "object" || Array.isArray(neu[feld])) {
+        neu[feld] = {};
+      }
+    });
+    if (!Array.isArray(neu.lesezeichen)) neu.lesezeichen = [];
+    if (!Array.isArray(neu.aktivitaet)) neu.aktivitaet = [];
+    if (!Array.isArray(neu.probeklausuren)) neu.probeklausuren = [];
+    if (typeof neu.geaendertAm !== "string") neu.geaendertAm = null;
+    neu.uebernommen = neu.uebernommen === true;
+    return neu;
   }
 
   /* Der alte Bestand: ein Eintrag je Lernzettel, benannt azubipass:<lernfeld>.
@@ -181,11 +232,12 @@ window.AP = (function () {
       }
     } catch (e) { /* Speicher nicht lesbar — dann eben ohne */ }
     neu.uebernommen = gefunden > 0;
-    return neu;
+    return normalisieren(neu);
   }
 
   var wartet = false;
   function sichern() {
+    stand.geaendertAm = new Date().toISOString();
     if (wartet) return;
     wartet = true;
     setTimeout(function () {
@@ -196,6 +248,34 @@ window.AP = (function () {
         // Speicher voll oder gesperrt. Nichts kaputtmachen, nichts behaupten.
       }
     }, 400);
+  }
+
+  /* Eine abgegebene Probeklausur ist ein Ergebnis des Lernstands. Antworten
+     und Eingaben bleiben im separaten Klausurbogen; im Konto genügt die
+     Zusammenfassung, die exportiert, importiert und angezeigt werden kann. */
+  function probeklausurErgebnisSpeichern(ergebnis) {
+    if (!ergebnis || typeof ergebnis !== "object" || !ergebnis.id) return false;
+    var eintrag;
+    try { eintrag = JSON.parse(JSON.stringify(ergebnis)); }
+    catch (e) { return false; }
+    if (!Array.isArray(stand.probeklausuren)) stand.probeklausuren = [];
+
+    var i = stand.probeklausuren.findIndex(function (x) {
+      return x && x.id === eintrag.id;
+    });
+    if (i >= 0) stand.probeklausuren[i] = eintrag;
+    else stand.probeklausuren.unshift(eintrag);
+    /* Ein Lernkonto soll nicht durch viele Varianten unhandlich werden. Die
+       letzten 50 Ergebnisse reichen für Wiederholung und Verlauf. */
+    if (stand.probeklausuren.length > 50) {
+      stand.probeklausuren = stand.probeklausuren.slice(0, 50);
+    }
+    sichern();
+    return true;
+  }
+
+  function probeklausurZuruecksetzen() {
+    try { localStorage.removeItem(PROBEKLAUSUR_SCHLUESSEL); } catch (e) {}
   }
 
   /* Fach eines Kapitels. Kein Textabdruck mehr auf dieser Ebene — der sitzt
@@ -285,10 +365,19 @@ window.AP = (function () {
     if (!buehne) return;
     var vorarbeiten = false;
 
+    function neu(id) {
+      return !Object.prototype.hasOwnProperty.call(stand.karten, id);
+    }
+
     function faellig() {
-      return karten.filter(function (k) {
-        return vorarbeiten || istFaellig(k.id);
+      /* Wiederholungen haben Vorrang. Neue Karten kommen erst danach, damit
+         ein frischer Bestand nicht wie eine Warteschlange voller überfälliger
+         Aufgaben wirkt und die eigentliche Wiederholung nicht verdrängt. */
+      var wiederholen = karten.filter(function (k) {
+        return !neu(k.id) && (vorarbeiten || istFaellig(k.id));
       });
+      if (wiederholen.length) return wiederholen;
+      return karten.filter(function (k) { return neu(k.id); });
     }
 
     function ziehen() {
@@ -478,6 +567,10 @@ window.AP = (function () {
     istDatum: istDatum, datumsformat: datumsformat,
     stand: stand, sichern: sichern, kapitelfach: kapitelfach, abdruck: abdruck,
     heuteGelernt: heuteGelernt, frisch: frisch, SCHLUESSEL: SCHLUESSEL,
+    PROBEKLAUSUR_SCHLUESSEL: PROBEKLAUSUR_SCHLUESSEL,
+    probeklausurErgebnisSpeichern: probeklausurErgebnisSpeichern,
+    probeklausurZuruecksetzen: probeklausurZuruecksetzen,
+    FASSUNG: FASSUNG,
     kartenstand: kartenstand, istFaellig: istFaellig, kartewerten: kartewerten,
     WARTEN: WARTEN, FAECHER: FAECHER, trainer: trainer,
     verteiler: verteiler, sw: sw,

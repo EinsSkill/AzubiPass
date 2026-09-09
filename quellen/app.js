@@ -49,7 +49,16 @@
   }
 
   function faelligeKarten() {
-    return inhalt.karten.filter(function (k) { return AP.istFaellig(k.id); });
+    return inhalt.karten.filter(function (k) {
+      return Object.prototype.hasOwnProperty.call(stand.karten, k.id) &&
+             AP.istFaellig(k.id);
+    });
+  }
+
+  function neueKarten() {
+    return inhalt.karten.filter(function (k) {
+      return !Object.prototype.hasOwnProperty.call(stand.karten, k.id);
+    });
   }
 
   /* Alle Kapitel in einer Reihe, in der Reihenfolge, in der sie auch unter
@@ -113,8 +122,15 @@
       }
     }
 
-    // Ungültiger Verweis, gar kein Verweis, oder hinten angekommen:
-    // das erste offene Kapitel überhaupt.
+    // Ohne eigenen Verlauf gibt es keine sinnvolle Empfehlung. Der erste
+    // Besuch führt deshalb zur freien Themenwahl statt stillschweigend in LF1.
+    if (!z || !z.zu) {
+      return { art: "wahl", zu: "app.html#lernen", titel: "Wähle dein aktuelles Thema",
+               lernfeld: null, wo: "Dein erster Schritt", knopf: "Thema auswählen" };
+    }
+
+    // Ungültiger Verweis oder hinten angekommen: das erste offene Kapitel
+    // überhaupt. Ein beschädigter alter Verweis darf die App nicht zerlegen.
     for (var j = 0; j < reihe.length; j++) {
       if (offen(reihe[j])) {
         return zielAus(reihe[j], stelle >= 0 ? "naechstes"
@@ -139,13 +155,12 @@
 
   /* ================================================== Prüfungstermin
 
-     Der Termin aus landing.config.json gilt, bis jemand unter „Ich" einen
-     eigenen einträgt. Ein unbrauchbarer Wert — von Hand in der Sicherungsdatei
-     verstellt, aus einer alten Fassung übrig — fällt still auf den Standard
-     zurück, statt den Countdown zu zerlegen. */
+     Nur ein bewusst gesetzter eigener Termin steuert den persönlichen
+     Countdown. Ein unbrauchbarer Wert — von Hand in der Sicherungsdatei
+     verstellt oder aus einer alten Fassung übrig — wird ignoriert, statt den
+     Countdown zu zerlegen. */
   function pruefungsdatum() {
     if (AP.istDatum(stand.pruefungstermin)) return stand.pruefungstermin;
-    if (AP.istDatum(inhalt.pruefung)) return inhalt.pruefung;
     return null;
   }
 
@@ -343,19 +358,27 @@
   function zoneHeute() {
     var z = el("section", "hm-zone hm-heute");
     var faellig = faelligeKarten();
+    var neu = neueKarten();
 
     if (faellig.length) {
       var a = el("a", "hm-pflicht");
       a.href = "app.html#ueben";
       a.appendChild(el("span", "hm-lbl",
-        faellig.length === 1 ? "1 Karte wartet" : faellig.length + " Karten warten"));
+        faellig.length === 1 ? "1 Wiederholung wartet" : faellig.length + " Wiederholungen warten"));
       a.appendChild(el("span", "hm-wert", "Jetzt üben"));
       z.appendChild(a);
+    } else if (neu.length) {
+      var neue = el("a", "hm-pflicht");
+      neue.href = "app.html#ueben";
+      neue.appendChild(el("span", "hm-lbl",
+        neu.length === 1 ? "1 neue Karte bereit" : neu.length + " neue Karten bereit"));
+      neue.appendChild(el("span", "hm-wert", "Jetzt lernen"));
+      z.appendChild(neue);
     } else {
       /* Kein toter Knopf. „Nichts fällig" ist eine Nachricht, keine Aufgabe —
          also sieht sie auch nicht aus wie eine. */
       var ruht = el("div", "hm-pflicht hm-ruht");
-      ruht.appendChild(el("span", "hm-lbl", "Heute keine Karteikarten fällig"));
+      ruht.appendChild(el("span", "hm-lbl", "Heute keine Wiederholungen fällig"));
       z.appendChild(ruht);
     }
 
@@ -435,6 +458,8 @@
      Spalte doppelt so breit wie die Striche daneben. Der volle Name hängt als
      Titel an der Reihe. */
   function kuerzel(id) {
+    var lf = inhalt.lernfelder.filter(function (x) { return x.id === id; })[0];
+    if (lf && lf.kurz) return lf.kurz;
     return /^lf\d+$/.test(id) ? id.toUpperCase() : id.slice(0, 4).toUpperCase();
   }
 
@@ -487,6 +512,8 @@
   /* ================================================== Üben */
 
   var uebenAnsicht = "start";
+  var kartenWahl = { lernfeld: "alle", anzahl: 10 };
+  var vokabelWahl = { block: "alle", anzahl: 10, richtung: "en-de", modus: "karte" };
   /* Kapitelkennung aus der Adresse. Wird an die Probeklausur durchgereicht und
      danach vergessen — sonst käme sie beim nächsten Öffnen wieder hoch. */
   var pkVorwahl = null;
@@ -496,6 +523,7 @@
     if (uebenAnsicht === "karten") return uebenKarten(s);
     if (uebenAnsicht === "quiz") return uebenQuiz(s);
     if (uebenAnsicht === "schwach") return uebenSchwach(s);
+    if (uebenAnsicht === "vokabeln") return uebenVokabeln(s);
     /* Die Probeklausur bringt ihre ganze Oberfläche selbst mit — hier steht nur
        der Eingang. Sie ist der wichtigste Prüfungsweg und deshalb die erste
        Zeile, aber kein eigener Reiter: Geübt wird geübt. */
@@ -516,6 +544,7 @@
     }
 
     var faellig = faelligeKarten();
+    var neu = neueKarten();
     var schwach = schwachstellen();
     s.appendChild(kopfzeile("Üben",
       "Prüf genau das, was du brauchst — oder halt einfach die Karten warm.",
@@ -525,8 +554,7 @@
     function hin(ziel) {
       return function (ev) {
         ev.preventDefault();
-        uebenAnsicht = ziel;
-        zeigeUeben(s);
+        location.hash = "#ueben/" + ziel;
       };
     }
 
@@ -549,15 +577,23 @@
     s.appendChild(pk);
 
     var liste = el("ul", "liste-schlicht");
-    [["karten", "Fällige Karteikarten", faellig.length
-        ? faellig.length + " warten" : "für heute durch"],
+    var kartenTitel = faellig.length ? "Fällige Wiederholungen" : "Neue Karteikarten";
+    var kartenWert = faellig.length
+      ? faellig.length + " fällig" + (neu.length ? " · " + neu.length + " neu" : "")
+      : neu.length ? neu.length + " neu" : "für heute durch";
+    var vokabelGesamt = (inhalt.vokabeln || []).reduce(function (summe, b) {
+      return summe + (b.vokabeln || []).length;
+    }, 0);
+    [["karten", kartenTitel, kartenWert],
      ["quiz", "Übungsfragen", inhalt.quiz.length + " Fragen"],
      ["schwach", "Deine Schwachstellen", schwach.length
-        ? schwach.length + " offen" : "nichts offen"]
+        ? schwach.length + " offen" : "nichts offen"],
+     ["vokabeln", "Englisch-Vokabeltrainer",
+        vokabelGesamt ? vokabelGesamt + " Vokabeln" : "noch nicht angelegt"]
     ].forEach(function (e) {
       var li = el("li");
       var a = el("a", "reihe");
-      a.href = "#ueben";
+      a.href = "#ueben/" + e[0];
       var oben = el("div", "reihe-oben");
       oben.appendChild(el("span", "reihe-titel", e[1]));
       oben.appendChild(el("span", "reihe-meta", e[2]));
@@ -571,7 +607,7 @@
 
   function zurueckZuUeben(s) {
     var b = el("button", "kn-neben", "‹ Übersicht");
-    b.addEventListener("click", function () { uebenAnsicht = "start"; zeigeUeben(s); });
+    b.addEventListener("click", function () { location.hash = "#ueben"; });
     return b;
   }
 
@@ -580,14 +616,337 @@
   function uebenKarten(s) {
     s.appendChild(zurueckZuUeben(s));
     s.appendChild(kopfzeile("Karteikarten", null));
+
+    /* Eine Sitzung beginnt bewusst mit einer kleinen Auswahl. Der komplette
+       Bestand bleibt erreichbar, aber niemand landet beim ersten Tipp in 139
+       Karten. Fällige Wiederholungen stehen innerhalb der Auswahl immer vor
+       neuen Karten. */
+    function mischen(folge) {
+      var raus = folge.slice();
+      for (var i = raus.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tausch = raus[i];
+        raus[i] = raus[j];
+        raus[j] = tausch;
+      }
+      return raus;
+    }
+
+    function sitzung() {
+      var basis = inhalt.karten.filter(function (k) {
+        return kartenWahl.lernfeld === "alle" || k.lernfeld === kartenWahl.lernfeld;
+      });
+      var faellig = basis.filter(function (k) {
+        return Object.prototype.hasOwnProperty.call(stand.karten, k.id)
+          && AP.istFaellig(k.id);
+      });
+      var neu = basis.filter(function (k) {
+        return !Object.prototype.hasOwnProperty.call(stand.karten, k.id);
+      });
+      var verfuegbar = mischen(faellig).concat(mischen(neu));
+      /* Sind heute nur spätere Karten im Thema, darf der Trainer trotzdem
+         starten und seine ehrliche „Für heute durch"-Ansicht zeigen. */
+      if (!verfuegbar.length) verfuegbar = mischen(basis);
+      if (kartenWahl.anzahl > 0) verfuegbar = verfuegbar.slice(0, kartenWahl.anzahl);
+      return { karten: verfuegbar, basis: basis.length,
+               faellig: faellig.length, neu: neu.length };
+    }
+
+    var wahl = el("div", "tr-wahl");
+    wahl.appendChild(el("h3", null, "Deine Sitzung"));
+    wahl.appendChild(el("p", "tr-wahl-text",
+      "Wähle ein Thema und eine kurze Kartenzahl. Wiederholungen kommen zuerst."));
+    var felder = el("div", "tr-wahl-felder");
+
+    var thema = el("label", "tr-wahl-feld");
+    thema.appendChild(el("span", null, "Thema"));
+    var themaAuswahl = el("select");
+    themaAuswahl.setAttribute("aria-label", "Thema für die Karteikartensitzung");
+    themaAuswahl.appendChild(el("option", null, "Alle Lernfelder"));
+    themaAuswahl.options[0].value = "alle";
+    inhalt.lernfelder.forEach(function (lf) {
+      var option = el("option", null, kuerzel(lf.id) + " · " + lf.titel);
+      option.value = lf.id;
+      themaAuswahl.appendChild(option);
+    });
+    themaAuswahl.value = kartenWahl.lernfeld;
+    thema.appendChild(themaAuswahl);
+    felder.appendChild(thema);
+
+    var umfang = el("label", "tr-wahl-feld");
+    umfang.appendChild(el("span", null, "Umfang"));
+    var umfangAuswahl = el("select");
+    umfangAuswahl.setAttribute("aria-label", "Umfang der Karteikartensitzung");
+    [[5, "5 Karten"], [10, "10 Karten"], [20, "20 Karten"],
+     [0, "Alle passenden Karten"]].forEach(function (e) {
+      var option = el("option", null, e[1]);
+      option.value = String(e[0]);
+      umfangAuswahl.appendChild(option);
+    });
+    umfangAuswahl.value = String(kartenWahl.anzahl);
+    umfang.appendChild(umfangAuswahl);
+    felder.appendChild(umfang);
+    wahl.appendChild(felder);
+
+    var info = el("p", "tr-wahl-info");
+    info.setAttribute("aria-live", "polite");
+    wahl.appendChild(info);
+    var start = el("button", "kn-haupt", "Sitzung starten");
+    wahl.appendChild(start);
+    s.appendChild(wahl);
+
     var insel = el("div", "tr-insel");
+    insel.hidden = true;
     var faecher = el("div", "tr-faecher");
     faecher.setAttribute("aria-label", "Verteilung auf die Fächer");
     var buehne = el("div", "tr-buehne");
     insel.appendChild(faecher);
     insel.appendChild(buehne);
     s.appendChild(insel);
-    AP.trainer(buehne, faecher, inhalt.karten);
+
+    function aktualisieren() {
+      var auswahl = sitzung();
+      var heute = auswahl.faellig + " fällige Wiederholungen · "
+        + auswahl.neu + " neue Karten";
+      info.textContent = auswahl.basis
+        ? (auswahl.faellig || auswahl.neu ? heute : "Heute ist in diesem Thema nichts fällig.")
+        : "Für dieses Thema sind keine Karten hinterlegt.";
+    }
+    themaAuswahl.addEventListener("change", function () {
+      kartenWahl.lernfeld = themaAuswahl.value;
+      aktualisieren();
+    });
+    umfangAuswahl.addEventListener("change", function () {
+      kartenWahl.anzahl = Number(umfangAuswahl.value);
+      aktualisieren();
+    });
+    start.addEventListener("click", function () {
+      wahl.hidden = true;
+      insel.hidden = false;
+      AP.trainer(buehne, faecher, sitzung().karten);
+    });
+    aktualisieren();
+  }
+
+  function uebenVokabeln(s) {
+    s.appendChild(zurueckZuUeben(s));
+    s.appendChild(kopfzeile("Englisch-Vokabeltrainer",
+      "Englisch ab dem zweiten Lehrjahr — mit Grundwortschatz und eigenen Testblöcken."));
+
+    var bloecke = inhalt.vokabeln || [];
+    function pool() {
+      var raus = [];
+      bloecke.forEach(function (block) {
+        if (vokabelWahl.block !== "alle" && vokabelWahl.block !== "fehler" &&
+            vokabelWahl.block !== block.id) return;
+        (block.vokabeln || []).forEach(function (v) {
+          if (vokabelWahl.block === "fehler" && !fehlerhaft(v)) return;
+          raus.push({
+            id: v.id, en: v.en, de: v.de, beispiel: v.beispiel,
+            hinweis: v.hinweis, alternativen: v.alternativen || [],
+            blockTitel: block.titel, blockId: block.id
+          });
+        });
+      });
+      return raus;
+    }
+    function mischen(folge) {
+      var raus = folge.slice();
+      for (var i = raus.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tausch = raus[i]; raus[i] = raus[j]; raus[j] = tausch;
+      }
+      return raus;
+    }
+    function bekannt(id) {
+      return Object.prototype.hasOwnProperty.call(stand.vokabeln || {}, id);
+    }
+    function fehlerhaft(v) {
+      return bekannt(v.id) && (vstand(v.id).fehler || 0) > 0;
+    }
+    function vstand(id) {
+      if (!stand.vokabeln) stand.vokabeln = {};
+      return stand.vokabeln[id] || { fach: 1, faellig: AP.tagesschluessel(), fehler: 0 };
+    }
+    function faellig(v) {
+      return bekannt(v.id) && AP.tageBis(vstand(v.id).faellig) <= 0;
+    }
+    function sitzung() {
+      var alle = pool();
+      var wiederholen = alle.filter(faellig);
+      var neu = alle.filter(function (v) { return !bekannt(v.id); });
+      var raus = mischen(wiederholen).concat(mischen(neu));
+      if (!raus.length) raus = mischen(alle);
+      return vokabelWahl.anzahl > 0 ? raus.slice(0, vokabelWahl.anzahl) : raus;
+    }
+
+    var wahl = el("div", "tr-wahl voc-wahl");
+    wahl.appendChild(el("h3", null, "Deine Vokabelsitzung"));
+    wahl.appendChild(el("p", "tr-wahl-text",
+      "Wähle einen Block, die Abfragerichtung und eine kurze Sitzung. Falsche Wörter kommen am Ende noch einmal."));
+    var felder = el("div", "tr-wahl-felder voc-wahl-felder");
+
+    function auswahlFeld(titel, aria, optionen, wert, beiAenderung) {
+      var label = el("label", "tr-wahl-feld");
+      label.appendChild(el("span", null, titel));
+      var select = el("select");
+      select.setAttribute("aria-label", aria);
+      optionen.forEach(function (e) {
+        var option = el("option", null, e[1]);
+        option.value = String(e[0]);
+        select.appendChild(option);
+      });
+      select.value = String(wert);
+      select.addEventListener("change", function () {
+        beiAenderung(select.value);
+        aktualisieren();
+      });
+      label.appendChild(select);
+      felder.appendChild(label);
+      return select;
+    }
+
+    var fehlerGesamt = pool().filter(fehlerhaft).length;
+    var blockOptionen = [["alle", "Alle Vokabelblöcke"]];
+    blockOptionen.push(["fehler", "Meine Fehler (" + fehlerGesamt + ")"]);
+    bloecke.forEach(function (b) {
+      blockOptionen.push([b.id, b.titel + " (" + (b.vokabeln || []).length + ")"]);
+    });
+    auswahlFeld("Block", "Vokabelblock", blockOptionen, vokabelWahl.block,
+      function (v) { vokabelWahl.block = v; });
+    auswahlFeld("Richtung", "Abfragerichtung",
+      [["en-de", "Englisch → Deutsch"], ["de-en", "Deutsch → Englisch"]],
+      vokabelWahl.richtung, function (v) { vokabelWahl.richtung = v; });
+    auswahlFeld("Modus", "Abfragemodus",
+      [["karte", "Karteikarte"], ["eingabe", "Eingabe"]],
+      vokabelWahl.modus, function (v) { vokabelWahl.modus = v; });
+    auswahlFeld("Umfang", "Umfang der Vokabelsitzung",
+      [[5, "5 Vokabeln"], [10, "10 Vokabeln"], [20, "20 Vokabeln"],
+       [0, "Alle passenden Vokabeln"]],
+      vokabelWahl.anzahl, function (v) { vokabelWahl.anzahl = Number(v); });
+
+    var info = el("p", "tr-wahl-info");
+    info.setAttribute("aria-live", "polite");
+    wahl.appendChild(felder);
+    wahl.appendChild(info);
+    var start = el("button", "kn-haupt", "Sitzung starten");
+    wahl.appendChild(start);
+    s.appendChild(wahl);
+
+    var insel = el("div", "tr-insel");
+    insel.hidden = true;
+    var buehne = el("div", "tr-buehne");
+    insel.appendChild(buehne);
+    s.appendChild(insel);
+
+    function aktualisieren() {
+      var alle = pool();
+      var wiederholen = alle.filter(faellig).length;
+      var neu = alle.filter(function (v) { return !bekannt(v.id); }).length;
+      var fehler = alle.filter(fehlerhaft).length;
+      info.textContent = alle.length
+        ? wiederholen + " fällige Wiederholungen · " + neu + " neue Vokabeln"
+          + (fehler ? " · " + fehler + " mit Fehlern" : "")
+        : "Für diesen Block sind keine Vokabeln hinterlegt.";
+      start.disabled = !alle.length;
+    }
+
+    start.addEventListener("click", function () {
+      var karten = sitzung();
+      if (!karten.length) return;
+      wahl.hidden = true;
+      insel.hidden = false;
+      var pos = 0;
+
+      function normalisieren(wort) {
+        return String(wort || "").toLocaleLowerCase("de-DE")
+          .replace(/[.,!?]/g, "").replace(/\s+/g, " ").trim();
+      }
+      function bewerten(v, gewusst) {
+        var f = vstand(v.id);
+        if (gewusst) f.fach = Math.min(f.fach + 1, AP.FAECHER);
+        else { f.fach = 1; f.fehler = (f.fehler || 0) + 1; karten.push(v); }
+        f.faellig = AP.plusTage(AP.WARTEN[f.fach - 1]);
+        stand.vokabeln[v.id] = f;
+        AP.heuteGelernt();
+        sichern();
+        pos++;
+        zeichnen();
+      }
+      function bewertungsreihe(v, echo) {
+        var reihe = el("div", "tr-urteil");
+        var nochmal = el("button", "tr-nochmal", "Nochmal");
+        var gewusst = el("button", "tr-gewusst", "Wusste ich");
+        nochmal.addEventListener("click", function () { bewerten(v, false); });
+        gewusst.addEventListener("click", function () { bewerten(v, true); });
+        reihe.appendChild(nochmal); reihe.appendChild(gewusst);
+        echo.appendChild(reihe);
+        gewusst.focus({ preventScroll: true });
+      }
+      function zeichnen() {
+        buehne.innerHTML = "";
+        if (pos >= karten.length) {
+          buehne.appendChild(leerkasten("Sitzung abgeschlossen.",
+            "Neue Sitzung wählen", function () {
+              wahl.hidden = false; insel.hidden = true; aktualisieren();
+            }));
+          return;
+        }
+        var v = karten[pos];
+        var frage = vokabelWahl.richtung === "en-de" ? v.en : v.de;
+        var antwort = vokabelWahl.richtung === "en-de" ? v.de : v.en;
+        var antworten = [antwort].concat(v.alternativen || []);
+        var seite = el("div", "tr-seite");
+        seite.appendChild(el("div", "tr-herkunft",
+          v.blockTitel + " · " + (pos + 1) + " von " + karten.length));
+        seite.appendChild(el("p", "tr-frage", frage));
+        if (vokabelWahl.modus === "eingabe") {
+          var eingabe = el("input", "voc-eingabe");
+          eingabe.type = "text"; eingabe.autocomplete = "off";
+          eingabe.setAttribute("aria-label", "Deine Übersetzung");
+          var pruefen = el("button", "dreher", "Antwort prüfen");
+          var echo = el("div", "voc-echo");
+          pruefen.addEventListener("click", function () {
+            pruefen.disabled = true; eingabe.disabled = true;
+            var richtig = antworten.some(function (a) {
+              return normalisieren(eingabe.value) === normalisieren(a);
+            });
+            echo.className = "voc-echo " + (richtig ? "richtig" : "falsch");
+            echo.appendChild(el("b", null, richtig ? "Richtig." : "Noch einmal."));
+            echo.appendChild(document.createTextNode(" Lösung: " + antwort));
+            if (v.alternativen && v.alternativen.length) {
+              echo.appendChild(document.createTextNode(" / " + v.alternativen.join(" / ")));
+            }
+            if (v.beispiel) echo.appendChild(mkEl("p", null, v.beispiel));
+            if (v.hinweis) echo.appendChild(el("p", "voc-hinweis", "Hinweis: " + v.hinweis));
+            bewertungsreihe(v, echo);
+          });
+          seite.appendChild(eingabe); seite.appendChild(pruefen); seite.appendChild(echo);
+          eingabe.focus({ preventScroll: true });
+        } else {
+          var zeigen = el("button", "dreher", "Antwort zeigen");
+          zeigen.addEventListener("click", function () {
+            var hinten = el("div", "tr-antwort");
+            hinten.appendChild(el("div", "bk", "Übersetzung"));
+            hinten.appendChild(el("p", null, antwort));
+            if (v.alternativen && v.alternativen.length) {
+              hinten.appendChild(el("p", "voc-alternativen",
+                "Auch möglich: " + v.alternativen.join(" · ")));
+            }
+            if (v.beispiel) hinten.appendChild(mkEl("p", "voc-beispiel", v.beispiel));
+            if (v.hinweis) hinten.appendChild(el("p", "voc-hinweis", "Hinweis: " + v.hinweis));
+            zeigen.remove(); seite.appendChild(hinten);
+            requestAnimationFrame(function () { hinten.classList.add("da"); });
+            bewertungsreihe(v, hinten);
+          });
+          seite.appendChild(zeigen);
+          zeigen.focus({ preventScroll: true });
+        }
+        buehne.appendChild(seite);
+      }
+      zeichnen();
+    });
+    aktualisieren();
   }
 
   /* Der Übungsteil greift die Checks und Zuordnungen auf, die in den Kapiteln
@@ -600,14 +959,24 @@
     var buehne = el("div");
     s.appendChild(buehne);
 
-    var reihenfolge = inhalt.quiz.slice().sort(function () { return Math.random() - 0.5; });
+    function mischen(folge) {
+      for (var i = folge.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tausch = folge[i];
+        folge[i] = folge[j];
+        folge[j] = tausch;
+      }
+      return folge;
+    }
+
+    var reihenfolge = mischen(inhalt.quiz.slice());
     var pos = 0;
 
     function naechste() {
       buehne.innerHTML = "";
       if (pos >= reihenfolge.length) {
         buehne.appendChild(leerkasten("Alle Fragen einmal durch.", "Noch einmal mischen",
-          function () { pos = 0; reihenfolge.sort(function () { return Math.random() - 0.5; }); naechste(); }));
+          function () { pos = 0; mischen(reihenfolge); naechste(); }));
         return;
       }
       var q = reihenfolge[pos];
@@ -646,15 +1015,27 @@
       var opts = el("div", "optionen");
       var echo = el("p", "check-echo");
       echo.setAttribute("role", "status");
-      q.optionen.forEach(function (o) {
+      mischen(q.optionen.slice()).forEach(function (o) {
         var b = el("button", "opt");
+        if (o.id) b.dataset.optionId = o.id;
+        b.dataset.optionIndex = String(q.optionen.indexOf(o));
         b.innerHTML = AP.mk(o.text);
         b.addEventListener("click", function () {
           opts.querySelectorAll(".opt").forEach(function (x) { x.disabled = true; });
           b.classList.add(o.richtig ? "richtig" : "falsch");
           if (!o.richtig) {
-            q.optionen.forEach(function (x, i) {
-              if (x.richtig) opts.children[i].classList.add("richtig");
+            Array.prototype.slice.call(opts.children).forEach(function (x) {
+              var xId = x.dataset.optionId;
+              var original = xId
+                ? q.optionen.filter(function (y) { return y.id === xId; })[0]
+                : q.optionen[Number(x.dataset.optionIndex)];
+              /* Alte Inhaltsdateien hatten noch keine IDs. In diesem Fall
+                 reicht die sichtbare Beschriftung als Fallback. */
+              if (!original) original = q.optionen.filter(function (y) {
+                return AP.mk(y.text).replace(/<[^>]+>/g, "") === x.textContent;
+              })[0];
+              var richtig = original && original.richtig;
+              if (richtig) x.classList.add("richtig");
             });
           }
           echo.textContent = o.echo;
@@ -712,7 +1093,7 @@
         + "Übungsfrage falsch hast oder im Selbsttest „Weiß ich nicht" + "“"
         + " drückst, steht sie hier.",
         "Übungsfragen starten",
-        function () { uebenAnsicht = "quiz"; zeigeUeben(s); }));
+        function () { location.hash = "#ueben/quiz"; }));
       return;
     }
 
@@ -912,6 +1293,99 @@
     return g;
   }
 
+  function probeklausurId(e) {
+    return e && (e.id || [e.ende, e.seed, e.prozent].join("|"));
+  }
+
+  function probeklausurZeit(e) {
+    if (!e) return 0;
+    var t = Date.parse(e.aktualisiertAm || e.beendetAm || "");
+    return isNaN(t) ? 0 : t;
+  }
+
+  function probeklausurProzent(e) {
+    return e && typeof e.prozent === "number"
+      ? String(e.prozent).replace(".", ",") + " %"
+      : "—";
+  }
+
+  function zeitstempel(wert) {
+    var t = Date.parse(wert || "");
+    return isNaN(t) ? 0 : t;
+  }
+
+  function objekt(wert) {
+    return wert && typeof wert === "object" && !Array.isArray(wert) ? wert : {};
+  }
+
+  function werteZusammenfuehren(lokal, fremd, fremdIstNeuer) {
+    var alt = objekt(lokal), neu = objekt(fremd), raus = {};
+    Object.keys(alt).forEach(function (id) { raus[id] = alt[id]; });
+    Object.keys(neu).forEach(function (id) {
+      if (!Object.prototype.hasOwnProperty.call(raus, id) || fremdIstNeuer) {
+        raus[id] = neu[id];
+      }
+    });
+    return raus;
+  }
+
+  function fortschrittZusammenfuehren(lokal, fremd, fremdIstNeuer) {
+    var alt = objekt(lokal), neu = objekt(fremd);
+    var raus = {
+      ziele: Array.isArray(alt.ziele) ? alt.ziele.slice() : [],
+      checks: werteZusammenfuehren(alt.checks, neu.checks, fremdIstNeuer),
+      zuordnen: werteZusammenfuehren(alt.zuordnen, neu.zuordnen, fremdIstNeuer),
+      test: werteZusammenfuehren(alt.test, neu.test, fremdIstNeuer),
+      fertig: alt.fertig === true
+    };
+    (Array.isArray(neu.ziele) ? neu.ziele : []).forEach(function (ziel) {
+      if (raus.ziele.indexOf(ziel) === -1) raus.ziele.push(ziel);
+    });
+    if (fremdIstNeuer && typeof neu.fertig === "boolean") raus.fertig = neu.fertig;
+    else if (neu.fertig === true) raus.fertig = true;
+    return raus;
+  }
+
+  function zeigeProbeklausuren(s) {
+    var ergebnisse = Array.isArray(stand.probeklausuren)
+      ? stand.probeklausuren.slice().sort(function (a, b) {
+          return probeklausurZeit(b) - probeklausurZeit(a);
+        })
+      : [];
+    var gruppe = feldgruppe("Probeklausuren", ergebnisse.length
+      ? String(ergebnisse.length) : null);
+    if (!ergebnisse.length) {
+      gruppe.appendChild(leerkasten("Noch keine. Nach der Abgabe findest du die "
+        + "Ergebnisse hier wieder — auch nach einem Neuladen."));
+      s.appendChild(gruppe);
+      return;
+    }
+
+    var liste = el("ul", "liste-schlicht");
+    ergebnisse.forEach(function (e) {
+      var li = el("li");
+      var zeile = el("div", "reihe");
+      var oben = el("div", "reihe-oben");
+      oben.appendChild(el("span", "reihe-titel", "Probeklausur"));
+      oben.appendChild(el("span", "reihe-meta", probeklausurProzent(e)));
+      zeile.appendChild(oben);
+      var datum = e && e.beendetAm ? new Date(e.beendetAm) : null;
+      var datumText = datum && !isNaN(datum.getTime())
+        ? datum.toLocaleDateString("de-DE") : "Datum unbekannt";
+      var status = e && e.status === "abgeschlossen"
+        ? "Abgeschlossen" : "Auswertung offen";
+      var aufgaben = e && e.aufgaben ? e.aufgaben + " Aufgaben" : "";
+      var kapitel = e && Array.isArray(e.kapitel) && e.kapitel.length
+        ? e.kapitel.length + " Kapitel" : "";
+      var details = [datumText, status, kapitel, aufgaben].filter(Boolean).join(" · ");
+      zeile.appendChild(el("div", "reihe-quelle", details));
+      li.appendChild(zeile);
+      liste.appendChild(li);
+    });
+    gruppe.appendChild(liste);
+    s.appendChild(gruppe);
+  }
+
   function zeigeIch(s) {
     s.innerHTML = "";
     var g = gesamtstand();
@@ -948,6 +1422,8 @@
     });
     lfGruppe.appendChild(ul);
     s.appendChild(lfGruppe);
+
+    zeigeProbeklausuren(s);
 
     /* Lesezeichen */
     var lzGruppe = feldgruppe("Lesezeichen",
@@ -1048,8 +1524,14 @@
     var links = el("div");
     links.appendChild(el("b", null, "Prüfungstermin"));
     links.appendChild(el("small", null,
-      "Dein Prüfungstermin bestimmt den Countdown auf „Heute“. "
+      "Nur ein eigener Termin erscheint als Countdown auf „Heute“. "
       + "Er bleibt nur auf diesem Gerät gespeichert."));
+    if (!stand.pruefungstermin && AP.istDatum(inhalt.pruefung)) {
+      links.appendChild(el("small", null,
+        "Es ist noch kein persönlicher Termin gesetzt. Der Inhalt nennt als "
+        + "Orientierung den " + AP.datumsformat.format(new Date(inhalt.pruefung + "T12:00:00"))
+        + "; er wird nicht automatisch als dein Countdown verwendet."));
+    }
 
     var zeile = el("div", "terminzeile");
     var feld = el("input");
@@ -1060,7 +1542,7 @@
                                                     : (pruefungsdatum() || "");
 
     var speichern = el("button", "kn-haupt", "Termin speichern");
-    var zurueck = el("button", "kn-neben", "Standardtermin verwenden");
+    var zurueck = el("button", "kn-neben", "Termin entfernen");
     var echo = el("p", "meldung");
     echo.setAttribute("role", "status");
 
@@ -1087,8 +1569,8 @@
     zurueck.addEventListener("click", function () {
       stand.pruefungstermin = null;
       sichern();
-      feld.value = pruefungsdatum() || "";
-      melden("Standardtermin wieder aktiv: " + countdown().text, false);
+      feld.value = "";
+      melden("Persönlicher Countdown deaktiviert.", false);
     });
 
     zeile.appendChild(feld);
@@ -1129,16 +1611,35 @@
           + "Nichts geändert.";
         return;
       }
+      var lokaleZeit = zeitstempel(stand.geaendertAm);
+      var fremdeZeit = zeitstempel(neu.geaendertAm);
+      var fremdeSicherungIstNeuer = fremdeZeit > lokaleZeit;
       /* Zusammenführen statt überschreiben: Wer auf zwei Geräten gelernt hat,
-         soll nicht die Hälfte verlieren. Bei Karten gewinnt das höhere Fach. */
+         soll nicht die Hälfte verlieren. Eine ältere Sicherung darf dabei
+         keinen neueren Kapitelstand zurücksetzen. */
       Object.keys(neu.fortschritt || {}).forEach(function (k) {
-        stand.fortschritt[k] = neu.fortschritt[k];
+        if (!stand.fortschritt[k]) {
+          stand.fortschritt[k] = fortschrittZusammenfuehren({}, neu.fortschritt[k], true);
+        } else {
+          stand.fortschritt[k] = fortschrittZusammenfuehren(
+            stand.fortschritt[k], neu.fortschritt[k], fremdeSicherungIstNeuer);
+        }
       });
       Object.keys(neu.karten || {}).forEach(function (id) {
         var alt = stand.karten[id];
-        if (!alt || (neu.karten[id].fach || 0) > alt.fach) stand.karten[id] = neu.karten[id];
+        if (!alt || (neu.karten[id].fach || 0) > (alt.fach || 0) ||
+            ((neu.karten[id].fach || 0) === (alt.fach || 0) && fremdeSicherungIstNeuer)) {
+          stand.karten[id] = neu.karten[id];
+        }
       });
-      Object.keys(neu.quiz || {}).forEach(function (id) { stand.quiz[id] = neu.quiz[id]; });
+      Object.keys(neu.vokabeln || {}).forEach(function (id) {
+        var alt = stand.vokabeln[id];
+        if (!alt || (neu.vokabeln[id].fach || 0) > (alt.fach || 0) ||
+            ((neu.vokabeln[id].fach || 0) === (alt.fach || 0) && fremdeSicherungIstNeuer)) {
+          stand.vokabeln[id] = neu.vokabeln[id];
+        }
+      });
+      stand.quiz = werteZusammenfuehren(stand.quiz, neu.quiz, fremdeSicherungIstNeuer);
       (neu.aktivitaet || []).forEach(function (t) {
         if (stand.aktivitaet.indexOf(t) === -1) stand.aktivitaet.push(t);
       });
@@ -1147,10 +1648,38 @@
           stand.lesezeichen.push(e);
         }
       });
-      if (neu.zuletzt) stand.zuletzt = neu.zuletzt;
+      /* Klausurergebnisse gehören zum Konto und müssen deshalb beim
+         Zusammenführen ebenfalls erhalten bleiben. Die laufende Klausur hat
+         weiterhin ihren eigenen Schlüssel; hier liegen nur abgeschlossene
+         Ergebniszusammenfassungen. */
+      (Array.isArray(neu.probeklausuren) ? neu.probeklausuren : []).forEach(function (e) {
+        if (!e || typeof e !== "object") return;
+        var id = probeklausurId(e);
+        var i = stand.probeklausuren.findIndex(function (x) {
+          return probeklausurId(x) === id;
+        });
+        if (i < 0) {
+          stand.probeklausuren.push(e);
+          return;
+        }
+        var alt = stand.probeklausuren[i];
+        var neuAbgeschlossen = e.status === "abgeschlossen";
+        var altAbgeschlossen = alt && alt.status === "abgeschlossen";
+        if ((neuAbgeschlossen && !altAbgeschlossen) ||
+            probeklausurZeit(e) >= probeklausurZeit(alt)) {
+          stand.probeklausuren[i] = e;
+        }
+      });
+      if (stand.probeklausuren.length > 50) stand.probeklausuren = stand.probeklausuren.slice(0, 50);
+      if (neu.zuletzt && (!stand.zuletzt || fremdeSicherungIstNeuer)) {
+        stand.zuletzt = neu.zuletzt;
+      }
       // Nur übernehmen, was der Countdown auch rechnen kann — sonst schleppt
       // eine alte Sicherung einen kaputten Termin ins frische Konto.
-      if (AP.istDatum(neu.pruefungstermin)) stand.pruefungstermin = neu.pruefungstermin;
+      if (AP.istDatum(neu.pruefungstermin) &&
+          (!stand.pruefungstermin || fremdeSicherungIstNeuer)) {
+        stand.pruefungstermin = neu.pruefungstermin;
+      }
       sichern();
       meldung.className = "meldung";
       meldung.textContent = "Eingespielt und mit dem zusammengeführt, was schon hier war.";
@@ -1168,6 +1697,7 @@
     Object.keys(stand).forEach(function (k) { delete stand[k]; });
     Object.keys(neu).forEach(function (k) { stand[k] = neu[k]; });
     try { localStorage.removeItem(AP.SCHLUESSEL); } catch (e) {}
+    if (AP.probeklausurZuruecksetzen) AP.probeklausurZuruecksetzen();
     sichern();
     meldung.className = "meldung";
     meldung.textContent = "Zurückgesetzt.";
@@ -1296,14 +1826,18 @@
        dadurch seine eigene dunkelgrüne Fläche — samt Kopf, Leiste und Fuß, die
        außerhalb des Schirms liegen und sonst hell dagegenstünden. */
     document.documentElement.dataset.bereich = id;
-    /* Nur eine Adresse führt in die Probeklausur. Jede andere — auch das nackte
-       „#ueben" — führt zur Übersicht, sonst bliebe ein Tipp auf den Üben-Reiter
-       aus der Klausur heraus wirkungslos, obwohl sich die Adresse sichtbar
-       geändert hat. Eine begonnene Klausur geht dabei nicht verloren: Sie liegt
-       im Speicher und wird über den Eingang wieder angeboten. */
+    /* Nur bekannte Unteradressen öffnen direkt eine Üben-Ansicht. Das nackte
+       „#ueben" führt zur Übersicht; eine begonnene Klausur geht dabei nicht
+       verloren, sondern liegt im Speicher und wird über den Eingang wieder
+       angeboten. */
     if (id === "ueben" && teile.unter === "probeklausur") {
       uebenAnsicht = "probeklausur";
       pkVorwahl = teile.felder.kapitel || null;
+    } else if (id === "ueben" &&
+               ["karten", "quiz", "schwach", "vokabeln"].indexOf(teile.unter) >= 0) {
+      uebenAnsicht = teile.unter;
+      pkVorwahl = null;
+      if (window.APK) window.APK.verlassen();
     } else {
       uebenAnsicht = "start";
       pkVorwahl = null;

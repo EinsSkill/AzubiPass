@@ -17,7 +17,7 @@ window.APK = (function () {
   var AP = window.AP;
   var el = AP.el, mkEl = AP.mkEl;
 
-  var SCHLUESSEL = "azubipass:probeklausur:v1";
+  var SCHLUESSEL = AP.PROBEKLAUSUR_SCHLUESSEL || "azubipass:probeklausur:v1";
   var FASSUNG = 1;
 
   var DAUERN = [30, 45, 60, 90];
@@ -494,10 +494,10 @@ window.APK = (function () {
   var zustand = null;
 
   function frischerZustand() {
-    return { v: FASSUNG, seed: null, kapitel: [], dauer: DAUER_STANDARD,
+    return { v: FASSUNG, id: null, seed: null, kapitel: [], dauer: DAUER_STANDARD,
              ende: null, gestartet: false, abgegeben: false, aufgaben: [],
              werte: {}, antworten: {}, markiert: [], aktuell: 0, selbst: {},
-             vorher: [], abgelaufen: false };
+             vorher: [], abgelaufen: false, beendetAm: null };
   }
 
   /* Defensiv laden: Was hier liegt, kann aus einer älteren Fassung stammen,
@@ -517,6 +517,9 @@ window.APK = (function () {
         z[f] = frisch[f];
       }
     });
+    /* Alte laufende Bögen hatten noch keine eigene Kennung. Der Seed ist pro
+       Variante eindeutig und reicht deshalb für die Ergebnis-Historie. */
+    if (!z.id && z.seed) z.id = "pk-" + z.seed;
     /* Aufgaben, die es nicht mehr gibt, still fallen lassen statt abstürzen —
        aber nur, wenn der Vorrat überhaupt schon geladen ist. Sonst gäbe es vor
        dem ersten fetch keine einzige gültige Aufgabe und jede laufende Klausur
@@ -749,6 +752,32 @@ window.APK = (function () {
       prozent: moeglich ? Math.round(erreicht / moeglich * 1000) / 10 : 0,
       kapitel: Object.keys(jeKapitel).map(function (k) { return jeKapitel[k]; })
     };
+  }
+
+  /* Nur die Auswertung kommt ins gemeinsame Konto. Die Antworten, Zufallswerte
+     und offenen Texte bleiben im separaten Klausurbogen und werden nicht in
+     Sicherungen kopiert. */
+  function probeklausurZusammenfassung(e) {
+    if (!zustand || !zustand.abgegeben || !zustand.id || !AP.probeklausurErgebnisSpeichern) {
+      return;
+    }
+    e = e || ergebnis();
+    AP.probeklausurErgebnisSpeichern({
+      id: zustand.id,
+      status: e.offen ? "in_auswertung" : "abgeschlossen",
+      beendetAm: zustand.beendetAm || null,
+      aktualisiertAm: new Date().toISOString(),
+      seed: zustand.seed,
+      kapitel: (zustand.kapitel || []).slice(),
+      kapitelErgebnisse: e.kapitel,
+      dauer: zustand.dauer,
+      aufgaben: zustand.aufgaben.length,
+      abgelaufen: !!zustand.abgelaufen,
+      erreicht: e.erreicht,
+      moeglich: e.moeglich,
+      prozent: e.prozent,
+      offen: e.offen
+    });
   }
 
   /* ================================================== Belege
@@ -1622,6 +1651,7 @@ window.APK = (function () {
     var vorher = alt ? alt.aufgaben : [];
     zustand = frischerZustand();
     zustand.seed = vorschau.seed;
+    zustand.id = "pk-" + zustand.seed;
     zustand.kapitel = vorschau.kapitel;
     zustand.dauer = vorschau.dauer;
     zustand.aufgaben = vorschau.aufgaben;
@@ -1951,8 +1981,10 @@ window.APK = (function () {
           + " noch ohne Antwort. Trotzdem abgeben?")) return;
     }
     zustand.abgegeben = true;
+    if (!zustand.beendetAm) zustand.beendetAm = new Date().toISOString();
     zustand.ende = null;
     zustandSichern();
+    probeklausurZusammenfassung();
     if (uhr) { clearInterval(uhr); uhr = null; }
     buehne.classList.remove("pk--imbogen");
     ansicht = "auswertung";
@@ -2019,9 +2051,10 @@ window.APK = (function () {
   }
 
   function summeZeichnen() {
+    var e = ergebnis();
+    probeklausurZusammenfassung(e);
     var kasten = document.getElementById("pk-summe");
     if (!kasten) return;
-    var e = ergebnis();
     kasten.innerHTML = "";
     var gross = el("p", "pk--punktzahl");
     gross.appendChild(el("b", null, punkteText(e.erreicht)));
@@ -2294,15 +2327,14 @@ window.APK = (function () {
 
     laden().then(function () {
       var laufend = zustandLaden();
-      if (laufend && laufend.gestartet && !laufend.abgegeben) {
-        /* Eine begonnene Klausur geht allem vor — auch einer Kapitelkennung in
-           der Adresse. Nach dem Start steht die Kennung nämlich weiterhin dort,
-           und ein Neuladen mitten in der Klausur würde sonst in der Auswahl
-           landen statt im Bogen. Eine abgeschlossene Klausur kommt dagegen
-           NICHT ungefragt zurück. */
+      if (laufend && laufend.gestartet) {
+        /* Eine gespeicherte Klausur geht allem vor — auch einer Kapitelkennung
+           in der Adresse. Nach dem Start steht die Kennung nämlich weiterhin
+           dort. So landet ein Neuladen mitten im Bogen wieder im Bogen und eine
+           offene Selbstauswertung bleibt nach dem Abgeben fortsetzbar. */
         vorgewaehlt = null;
         zustand = laufend;
-        ansicht = "klausur";
+        ansicht = laufend.abgegeben ? "auswertung" : "klausur";
         neuZeichnen();
         return;
       }

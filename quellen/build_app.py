@@ -9,7 +9,7 @@ Läuft nach build.py und macht aus den einzelnen Lernzetteln eine App:
     app.html               Startseite, Lernen, Üben, Suche, Ich
     manifest.webmanifest   damit sie sich auf den Homescreen legen lässt
     sw.js                  Zwischenspeicher, damit sie ohne Netz läuft
-    mittel/inhalt.json     Lernfelder, Kapitel, Karten, Quizfragen
+    mittel/inhalt.json     Lernfelder, Kapitel, Karten, Quizfragen und Vokabelblöcke
     mittel/suche.json      Volltext — getrennt, weil er nur beim Suchen gebraucht wird
     mittel/aufgaben.json   Aufgabenbausteine, Kontenplan und Belege der Probeklausur
     mittel/symbol.*        App-Symbol
@@ -27,7 +27,7 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
-from build import karten_sammeln
+from build import karten_sammeln, option_ids
 from gemeinsames import (AUSGABE, LUPE, MARKE, MITTEL, fussleiste, kopf, lade,
                          lernfeld_dateien, rechtliches, schriften_lokal,
                          tableiste, veroeffentliche)
@@ -46,6 +46,14 @@ def klartext(s):
     s = re.sub(r"(?<!\w)\*(.+?)\*(?!\w)", r"\1", s)
     s = re.sub(r"==(.+?)==", r"\1", s)
     return re.sub(r"\s+", " ", s).strip()
+
+
+def lernfeld_aliases(lf):
+    """Geläufige Kurzformen für Lernfeldreihen und die Volltextsuche."""
+    if lf["id"] == "buchfuehrung":
+        return ["LF6", "Lernfeld 6", "Rechnungswesen", "Buchhaltung", "FiBu"]
+    treffer = re.fullmatch(r"lf(\d+)", lf["id"])
+    return ["LF" + treffer.group(1)] if treffer else [lf["id"]]
 
 
 def bausteintext(b):
@@ -90,12 +98,14 @@ def quiz_sammeln(lf, kapitel_daten):
                 }
                 if b["typ"] == "check":
                     zahl["c"] += 1
-                    raus.append(dict(gemeinsam, art="check", id=f'{ort}-c{zahl["c"]}',
+                    quiz_id = f'{ort}-c{zahl["c"]}'
+                    ids = option_ids(b["optionen"], quiz_id)
+                    raus.append(dict(gemeinsam, art="check", id=quiz_id,
                                      frage=b["frage"],
-                                     optionen=[{"text": o["text"],
+                                     optionen=[{"id": ids[i], "text": o["text"],
                                                 "richtig": bool(o.get("richtig")),
                                                 "echo": o["echo"]}
-                                               for o in b["optionen"]]))
+                                               for i, o in enumerate(b["optionen"])]))
                 elif b["typ"] == "zuordnen":
                     zahl["z"] += 1
                     raus.append(dict(gemeinsam, art="zuordnen", id=f'{ort}-z{zahl["z"]}',
@@ -124,6 +134,9 @@ def suche_sammeln(lf, kapitel_daten):
     """Ein Eintrag pro Abschnitt — fein genug, um an die Stelle zu springen,
     grob genug, dass die Datei nicht ausufert."""
     raus = []
+    aliases = lernfeld_aliases(lf)
+    lernfeld_label = aliases[0] + " · " + lf["titel"]
+    lernfeld_suchtext = " ".join(aliases) + " " + lf["titel"]
     for ch in kapitel_daten:
         for a in ch["bloecke"]:
             stuecke = []
@@ -131,16 +144,17 @@ def suche_sammeln(lf, kapitel_daten):
                 stuecke += [klartext(x) for x in bausteintext(b) if x]
             raus.append({
                 "t": klartext(a["titel"]),
-                "x": " ".join(s for s in stuecke if s),
-                "lf": lf["id"], "lft": lf["titel"],
+                "x": lernfeld_suchtext + " " + " ".join(s for s in stuecke if s),
+                "lf": lf["id"], "lft": lernfeld_label,
                 "k": f'K{ch["nummer"]} · {klartext(ch["titel"])}',
                 "zu": f'{lf["id"]}.html#{ch["id"]}-{a["id"]}',
             })
         raus.append({
             "t": "Zusammenfassung",
-            "x": " ".join(klartext(s) for s in ch["zusammenfassung"])
+            "x": lernfeld_suchtext + " "
+                 + " ".join(klartext(s) for s in ch["zusammenfassung"])
                  + " " + klartext(ch["pruefungstipp"]),
-            "lf": lf["id"], "lft": lf["titel"],
+            "lf": lf["id"], "lft": lernfeld_label,
             "k": f'K{ch["nummer"]} · {klartext(ch["titel"])}',
             "zu": f'{lf["id"]}.html#{ch["id"]}',
         })
@@ -156,6 +170,41 @@ def begriffe_sammeln(lf):
             raus.append({"art": art, "id": schluessel,
                          "titel": e["titel"], "text": e["text"]})
     return raus
+
+
+def vokabeln_lesen():
+    """Lädt Grundwortschatz und getrennte Testlisten mit stabilen IDs."""
+    datei = HIER / "vokabeln.json"
+    if not datei.exists():
+        return []
+    quelle = json.loads(datei.read_text(encoding="utf-8"))
+    bloecke, ids = [], set()
+    for block in quelle.get("bloecke", []):
+        eintrag = {
+            "id": block["id"],
+            "art": block.get("art", "basis"),
+            "titel": block["titel"],
+            "beschreibung": block.get("beschreibung", ""),
+            "vokabeln": [],
+        }
+        for wort in block.get("vokabeln", []):
+            if not wort.get("id") or wort["id"] in ids:
+                raise ValueError(f"Vokabel-ID fehlt oder doppelt: {wort.get('id')}")
+            if not wort.get("en") or not wort.get("de"):
+                raise ValueError(f"Vokabel unvollständig: {wort.get('id')}")
+            ids.add(wort["id"])
+            eintrag["vokabeln"].append({
+                "id": wort["id"],
+                "en": wort["en"],
+                "de": wort["de"],
+                "beispiel": wort.get("beispiel", ""),
+                "hinweis": wort.get("hinweis", ""),
+                "alternativen": [str(x).strip() for x in wort.get("alternativen", [])
+                                  if str(x).strip()],
+            })
+        if eintrag["vokabeln"]:
+            bloecke.append(eintrag)
+    return bloecke
 
 
 # ---------------------------------------------------------------- Aufgabenvorrat
@@ -850,6 +899,8 @@ def baue():
 
     lernfelder, karten, quiz, tests, suche, begriffe = [], [], [], [], [], {}
     pk_kapitel, pk_bausteine = [], []
+    cfg = json.loads((HIER / "landing.config.json").read_text(encoding="utf-8"))
+    vokabelbloecke = vokabeln_lesen()
 
     for datei in lernfeld_dateien():
         lf, kapitel_daten, fehlend = lade(datei)
@@ -863,10 +914,15 @@ def baue():
         k, b = aufgaben_sammeln(lf, kapitel_daten, konten_index, belege, belege_steuer)
         pk_kapitel += k
         pk_bausteine += b
+        nummer = next((x["nr"] for x in cfg["lernfelder"]
+                       if x.get("quelle") == datei.name), None)
+        kurz = lernfeld_aliases(lf)[0]
 
         lernfelder.append({
             "id": lf["id"],
             "titel": lf["titel"],
+            "nummer": nummer,
+            "kurz": kurz,
             "seite": f'{lf["id"]}.html',
             "minuten": sum(k.get("minuten", 0) for k in kapitel_daten),
             "kapitel": [{"id": k["id"], "nummer": k["nummer"], "titel": k["titel"],
@@ -879,8 +935,6 @@ def baue():
         for e in begriffe_sammeln(lf):
             begriffe[e["id"]] = e
 
-    cfg = json.loads((HIER / "landing.config.json").read_text(encoding="utf-8"))
-
     inhalt = {
         "gebaut": datetime.now().isoformat(timespec="seconds"),
         "pruefung": cfg["pruefung"]["naechster_termin"],
@@ -890,6 +944,7 @@ def baue():
         "quiz": quiz,
         "tests": tests,
         "begriffe": sorted(begriffe.values(), key=lambda e: e["titel"].lower()),
+        "vokabeln": vokabelbloecke,
     }
     (MITTEL / "inhalt.json").write_text(
         json.dumps(inhalt, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

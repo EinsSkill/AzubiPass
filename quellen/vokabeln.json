@@ -1,0 +1,701 @@
+{
+  "version": 1,
+  "beschreibung": "Eigener englischer Grundwortschatz für kaufmännische Ausbildung und Büroalltag.",
+  "bloecke": [
+    {
+      "id": "grund-buero",
+      "art": "basis",
+      "titel": "Büro und Kommunikation",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-buero-appointment",
+          "en": "appointment",
+          "de": "Termin",
+          "beispiel": "I have an appointment with the supplier at 10 a.m.",
+          "hinweis": "A fixed time for a meeting or visit."
+        },
+        {
+          "id": "grund-buero-agenda",
+          "en": "agenda",
+          "de": "Tagesordnung",
+          "beispiel": "The first item on the agenda is the sales report.",
+          "hinweis": "The list of items to discuss in a meeting."
+        },
+        {
+          "id": "grund-buero-colleague",
+          "en": "colleague",
+          "de": "Kollegin oder Kollege",
+          "beispiel": "My colleague will prepare the meeting room."
+        },
+        {
+          "id": "grund-buero-department",
+          "en": "department",
+          "de": "Abteilung",
+          "beispiel": "The finance department checks every invoice."
+        },
+        {
+          "id": "grund-buero-deadline",
+          "en": "deadline",
+          "de": "Frist",
+          "beispiel": "Please send the documents before the deadline."
+        },
+        {
+          "id": "grund-buero-meeting",
+          "en": "meeting",
+          "de": "Besprechung",
+          "beispiel": "The meeting starts at nine o'clock."
+        },
+        {
+          "id": "grund-buero-minutes",
+          "en": "minutes",
+          "de": "Protokoll",
+          "beispiel": "I will write the minutes of the meeting."
+        },
+        {
+          "id": "grund-buero-request",
+          "en": "request",
+          "de": "Anfrage",
+          "beispiel": "We received a request from an important customer."
+        },
+        {
+          "id": "grund-buero-schedule",
+          "en": "schedule",
+          "de": "Zeitplan",
+          "beispiel": "The project schedule shows all important dates."
+        },
+        {
+          "id": "grund-buero-task",
+          "en": "task",
+          "de": "Aufgabe",
+          "beispiel": "My next task is to update the customer list."
+        }
+      ]
+    },
+    {
+      "id": "grund-kunden",
+      "art": "basis",
+      "titel": "Kunden und Aufträge",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-kunden-customer",
+          "en": "customer",
+          "de": "Kunde oder Kundin",
+          "beispiel": "The customer asked for a written quotation."
+        },
+        {
+          "id": "grund-kunden-supplier",
+          "en": "supplier",
+          "de": "Lieferant oder Lieferantin",
+          "beispiel": "Our supplier delivers the goods on time."
+        },
+        {
+          "id": "grund-kunden-complaint",
+          "en": "complaint",
+          "de": "Reklamation",
+          "beispiel": "We answer every complaint within two working days."
+        },
+        {
+          "id": "grund-kunden-feedback",
+          "en": "feedback",
+          "de": "Rückmeldung",
+          "beispiel": "The team used the customer's feedback to improve service."
+        },
+        {
+          "id": "grund-kunden-inquiry",
+          "en": "inquiry",
+          "de": "Anfrage",
+          "beispiel": "We replied to the inquiry by email."
+        },
+        {
+          "id": "grund-kunden-quotation",
+          "en": "quotation",
+          "de": "Angebot",
+          "beispiel": "The quotation is valid for thirty days.",
+          "alternativen": [
+            "quote"
+          ],
+          "hinweis": "A formal price offer for a customer."
+        },
+        {
+          "id": "grund-kunden-offer",
+          "en": "offer",
+          "de": "Angebotspreis",
+          "beispiel": "The offer includes delivery and installation.",
+          "hinweis": "A proposal or price presented to a customer."
+        },
+        {
+          "id": "grund-kunden-order",
+          "en": "order",
+          "de": "Bestellung",
+          "beispiel": "We received the order this morning."
+        },
+        {
+          "id": "grund-kunden-delivery",
+          "en": "delivery",
+          "de": "Lieferung",
+          "beispiel": "The delivery arrived one day early."
+        },
+        {
+          "id": "grund-kunden-invoice",
+          "en": "invoice",
+          "de": "Rechnung",
+          "beispiel": "The invoice is attached to the email."
+        }
+      ]
+    },
+    {
+      "id": "grund-finanzen",
+      "art": "basis",
+      "titel": "Finanzen und Buchführung",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-finanzen-account",
+          "en": "account",
+          "de": "Konto",
+          "beispiel": "The payment was transferred to our business account."
+        },
+        {
+          "id": "grund-finanzen-asset",
+          "en": "asset",
+          "de": "Vermögensgegenstand",
+          "beispiel": "The machine is recorded as a company asset."
+        },
+        {
+          "id": "grund-finanzen-liability",
+          "en": "liability",
+          "de": "Verbindlichkeit",
+          "beispiel": "The unpaid loan is shown as a liability."
+        },
+        {
+          "id": "grund-finanzen-equity",
+          "en": "equity",
+          "de": "Eigenkapital",
+          "beispiel": "The owners increased the company's equity."
+        },
+        {
+          "id": "grund-finanzen-revenue",
+          "en": "revenue",
+          "de": "Umsatzerlös",
+          "beispiel": "The company generated higher revenue this year."
+        },
+        {
+          "id": "grund-finanzen-expense",
+          "en": "expense",
+          "de": "Aufwand",
+          "beispiel": "Travel costs are recorded as an operating expense."
+        },
+        {
+          "id": "grund-finanzen-profit",
+          "en": "profit",
+          "de": "Gewinn",
+          "beispiel": "The company made a profit in the second quarter."
+        },
+        {
+          "id": "grund-finanzen-loss",
+          "en": "loss",
+          "de": "Verlust",
+          "beispiel": "The business reported a loss after the fire."
+        },
+        {
+          "id": "grund-finanzen-tax",
+          "en": "tax",
+          "de": "Steuer",
+          "beispiel": "The company pays tax on its taxable income."
+        },
+        {
+          "id": "grund-finanzen-vat",
+          "en": "VAT",
+          "de": "Umsatzsteuer",
+          "beispiel": "The invoice shows VAT separately.",
+          "alternativen": [
+            "value added tax"
+          ],
+          "hinweis": "Short for value added tax."
+        }
+      ]
+    },
+    {
+      "id": "grund-zahlungen",
+      "art": "basis",
+      "titel": "Zahlungsverkehr",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-zahlungen-payment",
+          "en": "payment",
+          "de": "Zahlung",
+          "beispiel": "We received the customer's payment yesterday."
+        },
+        {
+          "id": "grund-zahlungen-due-date",
+          "en": "due date",
+          "de": "Fälligkeit",
+          "beispiel": "The due date is printed on the invoice.",
+          "hinweis": "The date by which a payment or task is due."
+        },
+        {
+          "id": "grund-zahlungen-discount",
+          "en": "discount",
+          "de": "Rabatt",
+          "beispiel": "The customer receives a five percent discount."
+        },
+        {
+          "id": "grund-zahlungen-cash-discount",
+          "en": "cash discount",
+          "de": "Skonto",
+          "beispiel": "We grant a cash discount for early payment."
+        },
+        {
+          "id": "grund-zahlungen-bank-transfer",
+          "en": "bank transfer",
+          "de": "Überweisung",
+          "beispiel": "Please pay the invoice by bank transfer.",
+          "hinweis": "Moving money directly from one bank account to another."
+        },
+        {
+          "id": "grund-zahlungen-receipt",
+          "en": "receipt",
+          "de": "Quittung",
+          "beispiel": "Please keep the receipt for your records."
+        },
+        {
+          "id": "grund-zahlungen-refund",
+          "en": "refund",
+          "de": "Rückerstattung",
+          "beispiel": "The customer requested a refund."
+        },
+        {
+          "id": "grund-zahlungen-credit-note",
+          "en": "credit note",
+          "de": "Gutschrift",
+          "beispiel": "We issued a credit note for the returned goods."
+        },
+        {
+          "id": "grund-zahlungen-net-price",
+          "en": "net price",
+          "de": "Nettopreis",
+          "beispiel": "The net price does not include VAT."
+        },
+        {
+          "id": "grund-zahlungen-gross-price",
+          "en": "gross price",
+          "de": "Bruttopreis",
+          "beispiel": "The gross price includes VAT."
+        }
+      ]
+    },
+    {
+      "id": "grund-logistik",
+      "art": "basis",
+      "titel": "Lager und Logistik",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-logistik-warehouse",
+          "en": "warehouse",
+          "de": "Lager",
+          "beispiel": "The goods are stored in our central warehouse."
+        },
+        {
+          "id": "grund-logistik-stock",
+          "en": "stock",
+          "de": "Bestand",
+          "beispiel": "We check the stock before placing a new order."
+        },
+        {
+          "id": "grund-logistik-inventory",
+          "en": "inventory",
+          "de": "Inventur",
+          "beispiel": "The annual inventory starts on Friday."
+        },
+        {
+          "id": "grund-logistik-goods",
+          "en": "goods",
+          "de": "Waren",
+          "beispiel": "The goods are ready for dispatch."
+        },
+        {
+          "id": "grund-logistik-item",
+          "en": "item",
+          "de": "Artikel",
+          "beispiel": "Each item has a unique product number."
+        },
+        {
+          "id": "grund-logistik-quantity",
+          "en": "quantity",
+          "de": "Menge",
+          "beispiel": "Please check the quantity on the delivery note."
+        },
+        {
+          "id": "grund-logistik-shortage",
+          "en": "shortage",
+          "de": "Fehlbestand",
+          "beispiel": "The stocktake showed a shortage of ten items."
+        },
+        {
+          "id": "grund-logistik-surplus",
+          "en": "surplus",
+          "de": "Überschuss",
+          "beispiel": "We sold the surplus at a reduced price."
+        },
+        {
+          "id": "grund-logistik-packaging",
+          "en": "packaging",
+          "de": "Verpackung",
+          "beispiel": "The packaging protects the product during transport."
+        },
+        {
+          "id": "grund-logistik-carrier",
+          "en": "carrier",
+          "de": "Frachtführer",
+          "beispiel": "The carrier will collect the parcel this afternoon."
+        }
+      ]
+    },
+    {
+      "id": "grund-personal",
+      "art": "basis",
+      "titel": "Personal und Ausbildung",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-personal-application",
+          "en": "application",
+          "de": "Bewerbung",
+          "beispiel": "We received your application by email."
+        },
+        {
+          "id": "grund-personal-interview",
+          "en": "interview",
+          "de": "Vorstellungsgespräch",
+          "beispiel": "The interview will take place next Tuesday."
+        },
+        {
+          "id": "grund-personal-employment-contract",
+          "en": "employment contract",
+          "de": "Arbeitsvertrag",
+          "beispiel": "Please read the employment contract carefully."
+        },
+        {
+          "id": "grund-personal-salary",
+          "en": "salary",
+          "de": "Gehalt",
+          "beispiel": "The salary is paid at the end of each month."
+        },
+        {
+          "id": "grund-personal-wage",
+          "en": "wage",
+          "de": "Lohn",
+          "beispiel": "The hourly wage is stated in the agreement."
+        },
+        {
+          "id": "grund-personal-working-hours",
+          "en": "working hours",
+          "de": "Arbeitszeit",
+          "beispiel": "My working hours are from eight to four."
+        },
+        {
+          "id": "grund-personal-holiday",
+          "en": "holiday",
+          "de": "Urlaub",
+          "beispiel": "I have requested holiday for next week.",
+          "hinweis": "British English; American English usually says “vacation”."
+        },
+        {
+          "id": "grund-personal-sick-leave",
+          "en": "sick leave",
+          "de": "Krankschreibung",
+          "beispiel": "She is on sick leave until Friday.",
+          "hinweis": "Time away from work because of illness."
+        },
+        {
+          "id": "grund-personal-trainee",
+          "en": "trainee",
+          "de": "Auszubildende oder Auszubildender",
+          "beispiel": "The trainee learns how to process customer orders."
+        },
+        {
+          "id": "grund-personal-supervisor",
+          "en": "supervisor",
+          "de": "Vorgesetzte oder Vorgesetzter",
+          "beispiel": "Please ask your supervisor if you need help."
+        }
+      ]
+    },
+    {
+      "id": "grund-marketing",
+      "art": "basis",
+      "titel": "Marketing und Kundenbindung",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-marketing-market-research",
+          "en": "market research",
+          "de": "Marktforschung",
+          "beispiel": "Market research helps us understand customer needs."
+        },
+        {
+          "id": "grund-marketing-target-group",
+          "en": "target group",
+          "de": "Zielgruppe",
+          "beispiel": "The campaign is aimed at a young target group."
+        },
+        {
+          "id": "grund-marketing-campaign",
+          "en": "campaign",
+          "de": "Kampagne",
+          "beispiel": "The marketing team launched a new campaign."
+        },
+        {
+          "id": "grund-marketing-brand",
+          "en": "brand",
+          "de": "Marke",
+          "beispiel": "A strong brand builds customer trust."
+        },
+        {
+          "id": "grund-marketing-product-range",
+          "en": "product range",
+          "de": "Sortiment",
+          "beispiel": "Our product range includes office furniture."
+        },
+        {
+          "id": "grund-marketing-competitor",
+          "en": "competitor",
+          "de": "Wettbewerber",
+          "beispiel": "The competitor offers a similar service."
+        },
+        {
+          "id": "grund-marketing-customer-loyalty",
+          "en": "customer loyalty",
+          "de": "Kundenbindung",
+          "beispiel": "Good service increases customer loyalty."
+        },
+        {
+          "id": "grund-marketing-promotion",
+          "en": "promotion",
+          "de": "Verkaufsförderung",
+          "beispiel": "The promotion is valid until the end of the month."
+        },
+        {
+          "id": "grund-marketing-survey",
+          "en": "survey",
+          "de": "Umfrage",
+          "beispiel": "We sent a short survey to our customers."
+        },
+        {
+          "id": "grund-marketing-advertisement",
+          "en": "advertisement",
+          "de": "Werbung",
+          "beispiel": "The advertisement appears in a trade magazine."
+        }
+      ]
+    },
+    {
+      "id": "grund-prozesse",
+      "art": "basis",
+      "titel": "Prozesse und Projekte",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-prozesse-process",
+          "en": "process",
+          "de": "Prozess",
+          "beispiel": "We documented the process step by step."
+        },
+        {
+          "id": "grund-prozesse-workflow",
+          "en": "workflow",
+          "de": "Arbeitsablauf",
+          "beispiel": "The new software makes the workflow faster."
+        },
+        {
+          "id": "grund-prozesse-approval",
+          "en": "approval",
+          "de": "Genehmigung",
+          "beispiel": "The order needs approval from the department manager."
+        },
+        {
+          "id": "grund-prozesse-responsibility",
+          "en": "responsibility",
+          "de": "Verantwortung",
+          "beispiel": "The project manager has responsibility for the schedule."
+        },
+        {
+          "id": "grund-prozesse-milestone",
+          "en": "milestone",
+          "de": "Meilenstein",
+          "beispiel": "The first milestone is the completed prototype."
+        },
+        {
+          "id": "grund-prozesse-risk",
+          "en": "risk",
+          "de": "Risiko",
+          "beispiel": "We discuss every major risk before starting the project."
+        },
+        {
+          "id": "grund-prozesse-solution",
+          "en": "solution",
+          "de": "Lösung",
+          "beispiel": "The team found a practical solution."
+        },
+        {
+          "id": "grund-prozesse-improvement",
+          "en": "improvement",
+          "de": "Verbesserung",
+          "beispiel": "The change led to a clear improvement."
+        },
+        {
+          "id": "grund-prozesse-quality",
+          "en": "quality",
+          "de": "Qualität",
+          "beispiel": "We check the quality before shipping the product."
+        },
+        {
+          "id": "grund-prozesse-performance",
+          "en": "performance",
+          "de": "Leistung",
+          "beispiel": "The report measures the system's performance."
+        }
+      ]
+    },
+    {
+      "id": "grund-digital",
+      "art": "basis",
+      "titel": "Digitales Arbeiten",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-digital-password",
+          "en": "password",
+          "de": "Passwort",
+          "beispiel": "Use a strong password for your account."
+        },
+        {
+          "id": "grund-digital-access",
+          "en": "access",
+          "de": "Zugriff",
+          "beispiel": "Only authorized employees have access to the file."
+        },
+        {
+          "id": "grund-digital-data-protection",
+          "en": "data protection",
+          "de": "Datenschutz",
+          "beispiel": "Data protection is important when we store customer information."
+        },
+        {
+          "id": "grund-digital-file",
+          "en": "file",
+          "de": "Datei",
+          "beispiel": "Please save the file in the shared folder."
+        },
+        {
+          "id": "grund-digital-folder",
+          "en": "folder",
+          "de": "Ordner",
+          "beispiel": "The contract is in the customer folder."
+        },
+        {
+          "id": "grund-digital-attachment",
+          "en": "attachment",
+          "de": "Anhang",
+          "beispiel": "The email contains a PDF attachment."
+        },
+        {
+          "id": "grund-digital-cloud",
+          "en": "cloud",
+          "de": "Cloud",
+          "beispiel": "We store the documents securely in the cloud."
+        },
+        {
+          "id": "grund-digital-backup",
+          "en": "backup",
+          "de": "Sicherungskopie",
+          "beispiel": "The system creates a backup every night."
+        },
+        {
+          "id": "grund-digital-spreadsheet",
+          "en": "spreadsheet",
+          "de": "Tabellenkalkulation",
+          "beispiel": "I entered the figures in the spreadsheet."
+        },
+        {
+          "id": "grund-digital-software",
+          "en": "software",
+          "de": "Software",
+          "beispiel": "The new software simplifies our daily work."
+        }
+      ]
+    },
+    {
+      "id": "grund-verben",
+      "art": "basis",
+      "titel": "Wichtige Arbeitsverben",
+      "beschreibung": "Eigener AzubiPass-Grundwortschatz für das zweite Lehrjahr.",
+      "vokabeln": [
+        {
+          "id": "grund-verben-arrange",
+          "en": "arrange",
+          "de": "vereinbaren",
+          "beispiel": "Please arrange a meeting with the supplier."
+        },
+        {
+          "id": "grund-verben-confirm",
+          "en": "confirm",
+          "de": "bestätigen",
+          "beispiel": "Please confirm the appointment by email."
+        },
+        {
+          "id": "grund-verben-deliver",
+          "en": "deliver",
+          "de": "liefern",
+          "beispiel": "The supplier will deliver the goods tomorrow."
+        },
+        {
+          "id": "grund-verben-improve",
+          "en": "improve",
+          "de": "verbessern",
+          "beispiel": "We want to improve the ordering process."
+        },
+        {
+          "id": "grund-verben-reduce",
+          "en": "reduce",
+          "de": "reduzieren",
+          "beispiel": "The company plans to reduce its energy costs."
+        },
+        {
+          "id": "grund-verben-increase",
+          "en": "increase",
+          "de": "erhöhen",
+          "beispiel": "The campaign should increase sales."
+        },
+        {
+          "id": "grund-verben-inform",
+          "en": "inform",
+          "de": "informieren",
+          "beispiel": "Please inform the customer about the delay."
+        },
+        {
+          "id": "grund-verben-discuss",
+          "en": "discuss",
+          "de": "besprechen",
+          "beispiel": "We will discuss the offer in the meeting."
+        },
+        {
+          "id": "grund-verben-compare",
+          "en": "compare",
+          "de": "vergleichen",
+          "beispiel": "Please compare the two offers carefully."
+        },
+        {
+          "id": "grund-verben-calculate",
+          "en": "calculate",
+          "de": "berechnen",
+          "beispiel": "Please calculate the net price before adding VAT."
+        }
+      ]
+    }
+  ]
+}

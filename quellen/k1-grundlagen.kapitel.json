@@ -5,6 +5,32 @@
   "titel": "Grundlagen & Buchführungspflicht",
   "untertitel": "Was Buchführung ist, warum sie Pflicht ist und welche Regeln dabei gelten.",
   "minuten": 15,
+  "ausfuehrlich": {
+    "einleitung": "Buchführung ist ein nachvollziehbarer Prozess: Ein Geschäftsvorfall beginnt mit einem Beleg und endet in einer Auswertung. Wer die Reihenfolge versteht, kann einzelne Regeln besser einordnen und typische Prüfungsfehler vermeiden.",
+    "abschnitte": [
+      {
+        "titel": "Vom Beleg bis zum Jahresabschluss",
+        "erklaerung": "Am Anfang steht immer ein Beleg, zum Beispiel eine Eingangsrechnung, ein Kontoauszug oder ein Kassenbon. Der Beleg wird geprüft, dem richtigen Geschäftsvorfall zugeordnet und anschließend in der Buchführung erfasst. Die Buchung verändert mindestens zwei Konten. Am Ende des Zeitraums werden die Konten abgeschlossen und die Werte für Bilanz und Gewinn- und Verlustrechnung verdichtet.",
+        "beispiel": "MAKEL Studio erhält eine Lieferantenrechnung. Die Rechnung wird auf Echtheit, Betrag und Leistungsdatum geprüft, dem Einkauf zugeordnet und so abgelegt, dass ein sachverständiger Dritter den Vorgang später wiederfindet. Erst danach wird gebucht. Ein fehlender oder unklarer Beleg ist deshalb kein kleines Formproblem, sondern eine Lücke in der Beweiskette.",
+        "typische_fehler": "Nicht erst buchen und später nach einem Beleg suchen. Ebenfalls falsch ist ein Sammeltext wie „Diverses“: Der Buchungstext muss den Vorgang verständlich machen.",
+        "merksatz": "Beleg prüfen, Vorgang verstehen, richtig buchen, nachvollziehbar aufbewahren."
+      },
+      {
+        "titel": "Pflicht und Grundsätze",
+        "erklaerung": "Die Buchführungspflicht beantwortet die Frage, wer Bücher führen muss. Die Grundsätze ordnungsgemäßer Buchführung beantworten, wie diese Bücher geführt werden müssen. Vollständigkeit, Richtigkeit, Klarheit, Nachprüfbarkeit und zeitgerechte Erfassung bilden dabei zusammen ein System. Ein Betrieb erfüllt die Pflicht also nicht schon dadurch, dass irgendwo Zahlen stehen.",
+        "beispiel": "Ein Kaufmann darf keine Umsätze auslassen, nur weil sie bar bezahlt wurden. Ein kleiner Betrieb darf seine Belege auch digital verwalten, muss aber trotzdem sicherstellen, dass sie lesbar, vollständig und wiederauffindbar bleiben.",
+        "typische_fehler": "HGB-Pflicht und steuerliche Pflicht werden gleichgesetzt, obwohl sie unterschiedliche Anknüpfungspunkte haben. Außerdem wird „richtig“ oft mit „vollständig“ verwechselt: Eine einzelne korrekte Buchung ersetzt keine lückenlose Erfassung.",
+        "merksatz": "Die Pflicht sagt, ob Bücher geführt werden müssen; die GoB sagen, ob sie brauchbar geführt sind."
+      },
+      {
+        "titel": "Inventur, Inventar und Bilanz",
+        "erklaerung": "Die Inventur ist der Vorgang der Bestandsaufnahme. Das Inventar ist das ausführliche Ergebnis mit Mengen und Werten. Die Bilanz verdichtet dieses Ergebnis in die beiden Seiten Aktiva und Passiva. Es handelt sich also um drei Stufen desselben Gedankens: feststellen, auflisten, verdichten.",
+        "beispiel": "Am Jahresende zählt MAKEL die Stoffe im Lager und bewertet sie. Diese Tätigkeit ist die Inventur. Die Liste mit Stoffart, Menge und Wert ist das Inventar. In der Bilanz erscheint daraus nur noch der zusammengefasste Bilanzposten für Vorräte.",
+        "typische_fehler": "Die Bilanz wird als detaillierte Inventarliste beschrieben oder die Inventur als fertiges Dokument bezeichnet. Auch ein bloßer Blick in die Buchhaltung ersetzt die körperliche Bestandsaufnahme nicht, wenn tatsächlich vorhandene Bestände geprüft werden müssen.",
+        "merksatz": "Inventur ist der Vorgang, Inventar die Liste, Bilanz die verdichtete Gegenüberstellung."
+      }
+    ]
+  },
 
   "lernziele": [
     { "id": "lz1", "text": "Zweck und Bedeutung der Buchführung erklären können", "abschnitt": "a1" },
