@@ -5,6 +5,47 @@
   "titel": "Wenn die Ware mangelhaft ist",
   "untertitel": "Erst prüfen, dann rügen — sonst gilt sie als genehmigt.",
   "minuten": 35,
+  "ausfuehrlich": {
+    "einleitung": "Eine mangelhafte Lieferung ist nicht automatisch ein Streitfall. Zuerst wird sachlich festgestellt, ob die Ware vom Vertrag oder von der üblichen Beschaffenheit abweicht. Danach entscheidet der Zeitpunkt der Entdeckung, ob und wie schnell gerügt werden muss. Erst auf dieser Grundlage werden die Mängelrechte in der richtigen Reihenfolge geprüft.",
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": ["Ein Kaufvertrag verpflichtet zur Übergabe einer mangelfreien Sache.", "Gefahrübergang bezeichnet den Zeitpunkt, ab dem das Risiko des zufälligen Untergangs auf den Käufer übergeht."],
+        "hintergrundwissen": "§ 434 BGB vergleicht die tatsächliche Ware mit mehreren Maßstäben. Die vereinbarte Beschaffenheit steht an erster Stelle; zusätzlich zählt, was Käufer bei einer vergleichbaren Sache vernünftigerweise erwarten dürfen. Deshalb kann auch eine nicht ausdrücklich vereinbarte, aber übliche Eigenschaft wichtig sein.",
+        "ablauf": ["Vertrag und Bestellung lesen: Was wurde konkret vereinbart?", "Ware bei Gefahrübergang mit Bestellung, Beschreibung und üblicher Beschaffenheit vergleichen.", "Abweichung dokumentieren: Fotos, Lieferschein, Prüfprotokoll und betroffene Menge sichern.", "Erst danach entscheiden, ob ein Sachmangel, eine Falschlieferung oder eine Zuweniglieferung vorliegt."],
+        "beispiele": ["Bestellt sind 100 Ordner mit 8 cm Rückenbreite, geliefert werden 5-cm-Ordner: vereinbarte Beschaffenheit und Menge weichen ab.", "Eine Kaffeemaschine wird als funktionsfähig verkauft, schaltet sich aber bei normaler Nutzung aus: Auch ohne besondere Zusage liegt eine Abweichung von der üblichen Verwendung vor."],
+        "fallbeispiel": "MAKEL bestellt 50 Kartons Kopierpapier einer bestimmten Grammatur. Bei der Eingangskontrolle werden zehn Kartons mit deutlich dünnerem Papier gefunden. Die richtige Prüfung lautet: Bestellung ansehen, betroffene Menge feststellen, Beweise sichern und die Abweichung dem Lieferanten konkret mitteilen. Nicht die gesamte Lieferung pauschal zurückweisen, wenn nur zehn Kartons betroffen sind.",
+        "typische_fehler": "Nicht jede Unzufriedenheit ist ein Sachmangel. Ein bloßer Geschmackswechsel oder ein später selbst verursachter Schaden reicht nicht. Umgekehrt darf eine falsche Anleitung nicht übersehen werden, wenn sie die Montage fehlerhaft macht.",
+        "verstaendnisfragen": ["Warum wird der Zeitpunkt des Gefahrübergangs geprüft? Weil der Mangel zu diesem Zeitpunkt vorgelegen haben muss.", "Warum kann eine Falschlieferung wie ein Sachmangel behandelt werden? Weil der Käufer nicht das geschuldete Kaufobjekt erhalten hat."],
+        "pruefungsbezug": "In Fällen immer zuerst die drei Maßstäbe nennen und anschließend die Abweichung am Sachverhalt belegen. Die reine Aussage ‚Ware ist schlecht‘ reicht nicht.",
+        "merksatz": "Vereinbart, üblich und richtig montiert: Diese drei Perspektiven entscheiden, ob die Ware mangelhaft ist."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": "Die Rügepflicht gilt nur beim beiderseitigen Handelskauf. Sie ist von der allgemeinen Verjährungsfrist zu unterscheiden.",
+        "hintergrundwissen": "§ 377 HGB schützt den Verkäufer davor, lange nach der Lieferung mit angeblich schon vorhandenen Mängeln konfrontiert zu werden. Dafür muss der kaufmännische Käufer die Ware im ordnungsgemäßen Geschäftsgang untersuchen und erkennbare Mängel unverzüglich anzeigen.",
+        "ablauf": ["Prüfen, ob beide Parteien Kaufleute sind.", "Art der Ware und zumutbare Eingangskontrolle bestimmen.", "Offenen Mangel sofort, versteckten Mangel sofort nach Entdeckung konkret rügen.", "Rüge beweisbar dokumentieren und betroffene Ware sichern."],
+        "beispiele": ["Bei 500 Kartons Büromaterial ist eine Stichprobe regelmäßig ausreichend; eine vollständige Einzelprüfung jeder Packung ist nicht immer zumutbar.", "Ein Defekt, der erst beim ersten bestimmungsgemäßen Einsatz sichtbar wird, kann ein versteckter Mangel sein. Dann beginnt die Rügefrist mit der Entdeckung, nicht mit einer beliebig späten Sammelprüfung."],
+        "fallbeispiel": "Die Lieferung kommt Montag an, die Eingangskontrolle erkennt am Dienstag beschädigte Kartons. Eine schriftliche Rüge am Dienstag mit Menge, Schaden und gewünschter Klärung ist rechtzeitig und nachvollziehbar. Wer erst drei Wochen wartet, riskiert die Genehmigungsfiktion.",
+        "typische_fehler": "Die zweijährige Verjährung ersetzt nicht die sofortige Rüge. Ebenso ist ‚unverzüglich‘ kein starrer Zeitraum: Ware, Betriebsablauf und Erkennbarkeit des Mangels müssen berücksichtigt werden.",
+        "verstaendnisfragen": ["Warum genügt Schweigen nicht? Weil die Ware im Handelskauf sonst als genehmigt gilt.", "Was muss eine gute Rüge enthalten? Mindestens die erkennbare Abweichung, die betroffene Ware und den Bezug zur Lieferung."],
+        "pruefungsbezug": "Prüfungsfälle werden meist über Kaufmannseigenschaft, Erkennbarkeit und Zeitpunkt gelöst. Diese drei Punkte sollten sichtbar getrennt geprüft werden.",
+        "merksatz": "Im Handelskauf gilt: untersuchen, erkennen, unverzüglich und konkret rügen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": "Mängelrechte bauen grundsätzlich aufeinander auf: Der Käufer soll zunächst eine mangelfreie Leistung ermöglichen, bevor weitere Rechte geprüft werden.",
+        "hintergrundwissen": "Die Nacherfüllung kann aus Reparatur oder Ersatzlieferung bestehen. Erst wenn sie scheitert, verweigert wird oder unzumutbar ist, kommen regelmäßig Rücktritt oder Minderung sowie gegebenenfalls Schadensersatz in Betracht.",
+        "ablauf": ["Mangel und rechtzeitige Rüge feststellen.", "Nacherfüllung verlangen und angemessene Frist setzen.", "Ergebnis dokumentieren: behoben, fehlgeschlagen, verweigert oder unzumutbar.", "Danach Rücktritt, Minderung oder Schadensersatz mit den jeweiligen Voraussetzungen prüfen."],
+        "beispiele": ["Ein Drucker wird repariert und funktioniert danach ordnungsgemäß: Der Nacherfüllungsanspruch ist erfüllt.", "Die Ersatzlieferung weist denselben Fehler erneut auf: Jetzt muss geprüft werden, ob die Nacherfüllung fehlgeschlagen ist und welches Folgerecht passt."],
+        "fallbeispiel": "MAKEL erhält einen defekten Scanner. Die erste Reaktion ist nicht sofort der Rücktritt, sondern eine konkrete Aufforderung zur Reparatur oder Ersatzlieferung. Bleibt der Lieferant trotz angemessener Möglichkeit erfolglos, wird die nächste Stufe der Rechte geprüft.",
+        "typische_fehler": "Nicht jedes Problem berechtigt sofort zur Vertragsauflösung. Auch Minderung und Rücktritt sind nicht dasselbe: Bei der Minderung bleibt der Vertrag bestehen, der Preis wird angepasst.",
+        "verstaendnisfragen": ["Warum steht Nacherfüllung am Anfang? Weil der Vertrag grundsätzlich erhalten und der Mangel zunächst behoben werden soll.", "Was unterscheidet Rücktritt und Minderung? Rücktritt löst den Vertrag rückab, Minderung reduziert den Preis bei Behalten der Sache."],
+        "pruefungsbezug": "Die Rechtekette sollte als begründete Reihenfolge dargestellt werden, nicht als ungeordnete Liste. Jede Stufe braucht einen konkreten Sachverhaltsbezug.",
+        "merksatz": "Erst Nacherfüllung, dann – bei deren Scheitern – die weiteren Rechte prüfen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",
