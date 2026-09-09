@@ -341,9 +341,16 @@ def detail_zusatz(a, daten, lf):
         if erklaerung:
             gruppen.append({"titel": "Ausführlicher erklärt", "text": erklaerung})
         for schluessel, titel in (
+                ("vorauswissen", "Benötigtes Vorwissen"),
+                ("hintergrundwissen", "Hintergrundwissen"),
+                ("ablauf", "Schritt für Schritt"),
+                ("beispiele", "Ausgearbeitete Beispiele"),
                 ("beispiel", "Beispiel"),
-                ("typische_fehler", "Typische Fehler"),
-                ("merksatz", "Merksatz")):
+                ("fallbeispiel", "Gelöster Fall"),
+                ("typische_fehler", "Typische Fehler und Gegenbeispiele"),
+                ("verstaendnisfragen", "Verständnisfragen"),
+                ("pruefungsbezug", "Unterrichts- und Prüfungsbezug"),
+                ("merksatz", "Zusammenfassung / Merksatz")):
             texte = _langwerte(daten.get(schluessel))
             if texte:
                 gruppen.append({"titel": titel, "text": texte})

@@ -11,24 +11,47 @@
       {
         "abschnitt": "a1",
         "titel": "Vom Beleg bis zum Jahresabschluss",
+        "vorauswissen": ["Ein Geschäftsvorfall ist ein wirtschaftlicher Vorgang, der das Vermögen, die Schulden oder den Erfolg eines Betriebs verändert.", "Ein Beleg ist der nachprüfbare Nachweis dieses Vorgangs."],
         "erklaerung": "Am Anfang steht immer ein Beleg, zum Beispiel eine Eingangsrechnung, ein Kontoauszug oder ein Kassenbon. Der Beleg wird geprüft, dem richtigen Geschäftsvorfall zugeordnet und anschließend in der Buchführung erfasst. Die Buchung verändert mindestens zwei Konten. Am Ende des Zeitraums werden die Konten abgeschlossen und die Werte für Bilanz und Gewinn- und Verlustrechnung verdichtet.",
         "beispiel": "MAKEL Studio erhält eine Lieferantenrechnung. Die Rechnung wird auf Echtheit, Betrag und Leistungsdatum geprüft, dem Einkauf zugeordnet und so abgelegt, dass ein sachverständiger Dritter den Vorgang später wiederfindet. Erst danach wird gebucht. Ein fehlender oder unklarer Beleg ist deshalb kein kleines Formproblem, sondern eine Lücke in der Beweiskette.",
+        "ablauf": ["Beleg entgegennehmen und Pflichtangaben prüfen.", "Geschäftsvorfall wirtschaftlich einordnen und die betroffenen Konten bestimmen.", "Buchung mit Datum, Betrag und verständlichem Buchungstext erfassen.", "Beleg und Buchung so archivieren, dass die Prüfung vom Beleg zur Auswertung und zurück möglich ist."],
+        "beispiele": ["Bei einer Eingangsrechnung über Büromaterial steigt der Aufwand und zugleich die Verbindlichkeit gegenüber dem Lieferanten.", "Beim Kontoauszug wird nicht der Kontoauszug selbst zum Aufwand: Er dient als Nachweis für die tatsächliche Zahlung und hilft, offene Posten abzugleichen."],
+        "fallbeispiel": "Eine Rechnung kommt am 28.12. an, die Lieferung wurde am 20.12. erbracht und erst am 15.01. bezahlt. Für die zeitliche Zuordnung zählt der wirtschaftliche Vorgang: Die Ausgabe gehört in das alte Geschäftsjahr; die Zahlung im Januar gleicht später die Verbindlichkeit aus.",
         "typische_fehler": "Nicht erst buchen und später nach einem Beleg suchen. Ebenfalls falsch ist ein Sammeltext wie „Diverses“: Der Buchungstext muss den Vorgang verständlich machen.",
         "merksatz": "Beleg prüfen, Vorgang verstehen, richtig buchen, nachvollziehbar aufbewahren."
       },
       {
         "abschnitt": "a2",
         "titel": "Pflicht und Grundsätze",
+        "hintergrundwissen": "Handelsrecht ordnet die kaufmännische Rechnungslegung, Steuerrecht die Ermittlung und Kontrolle der steuerlichen Bemessungsgrundlage. Deshalb können zwei Pflichten nebeneinander bestehen, ohne dass sie dasselbe Gesetz und denselben Zweck haben.",
         "erklaerung": "Die Buchführungspflicht beantwortet die Frage, wer Bücher führen muss. Die Grundsätze ordnungsgemäßer Buchführung beantworten, wie diese Bücher geführt werden müssen. Vollständigkeit, Richtigkeit, Klarheit, Nachprüfbarkeit und zeitgerechte Erfassung bilden dabei zusammen ein System. Ein Betrieb erfüllt die Pflicht also nicht schon dadurch, dass irgendwo Zahlen stehen.",
         "beispiel": "Ein Kaufmann darf keine Umsätze auslassen, nur weil sie bar bezahlt wurden. Ein kleiner Betrieb darf seine Belege auch digital verwalten, muss aber trotzdem sicherstellen, dass sie lesbar, vollständig und wiederauffindbar bleiben.",
+        "fallbeispiel": "Ein nicht im Handelsregister eingetragenes Gewerbe wächst stark. Zuerst ist zu klären, ob bereits ein Handelsgewerbe vorliegt. Falls nicht, kann die steuerliche Buchführungspflicht unabhängig davon entstehen, sobald die gesetzlichen Voraussetzungen erfüllt sind. In einer Prüfung ist daher immer zuerst die Rechtsgrundlage zu benennen.",
+        "pruefungsbezug": "Typische Aufgaben verlangen die Abgrenzung von § 238 HGB, § 140 AO und § 141 AO. Entscheidend ist nicht das Auswendiglernen einer Zahl, sondern die Begründung: Kaufmann, abgeleitete Pflicht oder eigenständige steuerliche Pflicht?",
         "typische_fehler": "HGB-Pflicht und steuerliche Pflicht werden gleichgesetzt, obwohl sie unterschiedliche Anknüpfungspunkte haben. Außerdem wird „richtig“ oft mit „vollständig“ verwechselt: Eine einzelne korrekte Buchung ersetzt keine lückenlose Erfassung.",
         "merksatz": "Die Pflicht sagt, ob Bücher geführt werden müssen; die GoB sagen, ob sie brauchbar geführt sind."
       },
       {
+        "abschnitt": "a3",
+        "titel": "Die GoB sicher anwenden",
+        "hintergrundwissen": "Die GoB verbinden Gesetz, kaufmännische Praxis und Prüfungsmaßstäbe. Sie sollen verhindern, dass Zahlen zwar rechnerisch stimmen, aber den Betrieb trotzdem falsch oder unvollständig darstellen.",
+        "erklaerung": "Richtigkeit prüft den einzelnen Vorgang, Vollständigkeit die lückenlose Gesamtheit. Klarheit und Nachprüfbarkeit machen die Buchführung für Dritte verständlich. Vorsicht verhindert, dass unsichere Gewinne vorweggenommen werden; Stetigkeit sorgt dafür, dass Geschäftsjahre vergleichbar bleiben.",
+        "beispiele": ["Eine private Tankrechnung darf nicht als betrieblicher Aufwand erscheinen: Der Beleg ist echt, aber der wirtschaftliche Inhalt passt nicht zum Unternehmen.", "Ein Umsatz vom 31.12. darf nicht einfach in den Januar verschoben werden, nur weil die Zahlung später eingeht: Die zeitliche Zuordnung muss den Geschäftsjahrgang abbilden."],
+        "fallbeispiel": "Bei einer Kassenprüfung fehlen mehrere Tagesabschlüsse. Einzelne Buchungen können korrekt sein, trotzdem ist die Kasse nicht vollständig und nicht mehr zuverlässig nachprüfbar. Die Lösung besteht nicht darin, eine Sammelbuchung zu erfinden, sondern die fehlenden Belege und Ursachen zu klären.",
+        "typische_fehler": "GoB werden nicht als Checkliste einzelner Wörter gelernt, sondern auf den konkreten Sachverhalt angewandt. Besonders häufig werden Richtigkeit und Vollständigkeit verwechselt.",
+        "verstaendnisfragen": ["Warum kann eine richtige Einzelbuchung trotzdem zu einer fehlerhaften Buchführung gehören? Weil andere Vorgänge fehlen können.", "Warum ist Stetigkeit für Prüfungen wichtig? Weil nur gleich angewandte Methoden einen sinnvollen Vergleich ermöglichen."],
+        "pruefungsbezug": "In Fallaufgaben zuerst den beobachteten Fehler beschreiben, dann den verletzten Grundsatz nennen und zuletzt die Auswirkung auf Aussagekraft oder Jahresergebnis erklären.",
+        "merksatz": "Richtig ist der einzelne Vorgang; vollständig ist die gesamte Buchführung; klar und stetig wird sie prüfbar."
+      },
+      {
         "abschnitt": "a4",
         "titel": "Inventur, Inventar und Bilanz",
+        "vorauswissen": "Vermögen beantwortet die Frage, welche wirtschaftlichen Werte vorhanden sind; Schulden zeigen, welche Ansprüche Dritter bestehen. Die Differenz ist das Eigenkapital beziehungsweise Reinvermögen.",
         "erklaerung": "Die Inventur ist der Vorgang der Bestandsaufnahme. Das Inventar ist das ausführliche Ergebnis mit Mengen und Werten. Die Bilanz verdichtet dieses Ergebnis in die beiden Seiten Aktiva und Passiva. Es handelt sich also um drei Stufen desselben Gedankens: feststellen, auflisten, verdichten.",
         "beispiel": "Am Jahresende zählt MAKEL die Stoffe im Lager und bewertet sie. Diese Tätigkeit ist die Inventur. Die Liste mit Stoffart, Menge und Wert ist das Inventar. In der Bilanz erscheint daraus nur noch der zusammengefasste Bilanzposten für Vorräte.",
+        "beispiele": ["Wer 120 Kartons zählt und jeden Karton bewertet, führt eine körperliche Inventur durch. Die aufgeschriebene Einzelaufstellung ist das Inventar.", "Wer im Jahresabschluss nur ‚Vorräte 8.400 €‘ auf der Aktivseite ausweist, zeigt die verdichtete Bilanzdarstellung."],
+        "fallbeispiel": "Das Inventar weist 150.000 € Vermögen und 80.000 € Schulden aus. Das Reinvermögen beträgt 70.000 €. In der Bilanz wird dieser Betrag als Eigenkapital auf der Passivseite ausgewiesen; dadurch bleiben Aktiva und Passiva gleich hoch.",
+        "pruefungsbezug": "Bei Zuordnungsaufgaben zuerst auf die Form achten: Tätigkeit = Inventur, detaillierte Liste = Inventar, verdichtete Gegenüberstellung = Bilanz. Danach kann die Eigenkapitalformel als Kontrolle dienen.",
         "typische_fehler": "Die Bilanz wird als detaillierte Inventarliste beschrieben oder die Inventur als fertiges Dokument bezeichnet. Auch ein bloßer Blick in die Buchhaltung ersetzt die körperliche Bestandsaufnahme nicht, wenn tatsächlich vorhandene Bestände geprüft werden müssen.",
         "merksatz": "Inventur ist der Vorgang, Inventar die Liste, Bilanz die verdichtete Gegenüberstellung."
       }
