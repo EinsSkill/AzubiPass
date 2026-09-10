@@ -4,7 +4,71 @@
   "nummer": 2,
   "titel": "Struktur und Termine planen",
   "untertitel": "Erst zerlegen, dann schätzen, dann terminieren. Nie andersherum.",
-  "minuten": 30,
+ "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ein Projektziel wird in Aufgaben zerlegt.",
+          "Termine gehören in einen späteren Schritt."
+        ],
+        "erklaerung": "Der Projektstrukturplan beantwortet ausschließlich, was zu tun ist. Er zerlegt das Projekt in Teilaufgaben und Arbeitspakete, gegliedert nach Aufgaben, Objekten oder Phasen. Ein Arbeitspaket hat Verantwortlichen, geschätzten Aufwand und überprüfbares Ergebnis. Reihenfolge und Termine werden erst im Terminplan festgelegt.",
+        "beispiele": [
+          "Ein Arbeitspaket ‚Einladungen versenden‘ erhält eine verantwortliche Person, einen geschätzten Aufwand und das Ergebnis ‚Einladungen sind versendet‘.",
+          "Ein Projekt kann nach Aufgaben oder Phasen gegliedert werden; die gewählte Struktur muss alle Ergebnisse abdecken."
+        ],
+        "fallbeispiel": "Für ein Messeprojekt wird zuerst nur der Inhalt zerlegt: Standbau, Personal, Unterlagen und Technik werden als Teilaufgaben mit Arbeitspaketen beschrieben. Für jedes Paket werden Verantwortlicher, Aufwand und Fertigkriterium festgehalten. Erst danach werden Abhängigkeiten und Termine eingetragen.",
+        "typische_fehler": "Der Strukturplan enthält schon Termine und Reihenfolge oder Arbeitspakete bleiben ohne überprüfbares Ergebnis. Auch werden Aufgaben und Objekte unsystematisch vermischt.",
+        "verstaendnisfragen": [
+          "Welche Frage beantwortet der Projektstrukturplan? Was alles zu tun ist.",
+          "Welche drei Angaben braucht ein Arbeitspaket? Verantwortlicher, geschätzter Aufwand und überprüfbares Ergebnis."
+        ],
+        "pruefungsbezug": "Trenne in Planungsaufgaben Inhalt, Aufwand und Termin und prüfe die Fertigstellung jedes Arbeitspakets.",
+        "merksatz": "Der Projektstrukturplan sagt, was zu tun ist — noch nicht wann."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Aufwand ist Arbeitszeit, Dauer ist Kalenderzeit.",
+          "Nicht jede Aufgabe hat gleich viel Puffer."
+        ],
+        "erklaerung": "Der kritische Pfad ist die längste Kette von Vorgängen ohne Puffer; ihre Dauer bestimmt die Projektdauer. Verzögert sich ein Vorgang auf diesem Pfad, verschiebt sich das Projektende. Ein Meilenstein hat keine Dauer und kennzeichnet ein überprüfbares Zwischenergebnis. Puffer gehört ans Projektende und nicht automatisch in jedes Arbeitspaket.",
+        "beispiele": [
+          "Eine Aufgabe mit zehn Stunden Aufwand kann mehrere Kalendertage dauern, wenn die Person nur teilweise verfügbar ist.",
+          "Ein Meilenstein ‚Budget freigegeben‘ hat keinen Arbeitsaufwand als Dauer, sondern markiert das eingetretene Ergebnis."
+        ],
+        "fallbeispiel": "Im Messeprojekt braucht der Standbauer statt 18 nun 24 Tage. Die Personaleinteilung verzögert sich um drei Tage, läuft aber parallel und besitzt Puffer. Die sechs zusätzlichen Tage des kritischen Standbaus gefährden den Endtermin; Verkürzung, Überlappung oder Auftraggeberentscheidung werden geprüft. Der Terminplan wird danach fortgeschrieben.",
+        "typische_fehler": "Aufwand und Dauer werden gleichgesetzt oder jede Verzögerung automatisch als projektentscheidend behandelt. Der kritische Pfad wird außerdem nicht nach einer Planänderung neu geprüft.",
+        "verstaendnisfragen": [
+          "Was bestimmt die Projektdauer? Die längste Kette ohne Puffer, der kritische Pfad.",
+          "Was ist ein Meilenstein? Ein überprüfbares Zwischenergebnis ohne Dauer."
+        ],
+        "pruefungsbezug": "Suche die längste pufferlose Kette und unterscheide Arbeitsstunden von Kalendertagen.",
+        "merksatz": "Auf dem kritischen Pfad zählt jede Verzögerung; Puffer außerhalb kann sie auffangen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Der Balkenplan ordnet Arbeitspakete auf einer Zeitachse.",
+          "Abhängigkeiten und Puffer müssen im Terminplan sichtbar sein."
+        ],
+        "erklaerung": "Der Balkenplan zeigt Arbeitspakete, ihre Dauer, Abhängigkeiten und Meilensteine auf einer Kalenderachse. Er macht den kritischen Pfad und verfügbare Puffer sichtbar. Nach Änderungen wird der Plan aktualisiert und geprüft, ob eine andere Kette kritisch geworden ist.",
+        "beispiele": [
+          "Der Standbau wird als langer Balken eingetragen; die Personaleinteilung läuft parallel als kürzerer Balken mit Puffer.",
+          "Ein Meilenstein wird als Zeitpunkt ohne Balkendauer dargestellt, etwa die Freigabe vor dem nächsten Arbeitspaket."
+        ],
+        "fallbeispiel": "Die Verlängerung des Standbaus von 18 auf 24 Tage wird im Balkenplan nachgetragen. Die Personaleinteilung bleibt trotz drei Tagen Verzögerung innerhalb ihres Puffers. Nach der Anpassung wird geprüft, ob Aufbau und Generalprobe noch rechtzeitig folgen oder ob der Auftraggeber über eine Terminänderung entscheiden muss.",
+        "typische_fehler": "Balken werden ohne Abhängigkeiten gezeichnet oder ein Meilenstein erhält eine Dauer. Nach einer Änderung wird der ursprüngliche Plan nicht fortgeschrieben.",
+        "verstaendnisfragen": [
+          "Was zeigt ein Balkenplan? Arbeitspakete, Dauer, Abhängigkeiten, Meilensteine und Puffer auf der Zeitachse.",
+          "Was ist nach einer Verzögerung zu prüfen? Endtermin, kritischer Pfad und eventuell neu kritische Ketten."
+        ],
+        "pruefungsbezug": "Lies und aktualisiere Balkenpläne über Dauer, Parallelität, Puffer und Meilensteine.",
+        "merksatz": "Der Balkenplan macht sichtbar, wann Arbeit läuft und wo eine Verzögerung wirklich trifft."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

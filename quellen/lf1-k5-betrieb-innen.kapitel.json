@@ -5,6 +5,70 @@
   "titel": "Der Betrieb von innen",
   "untertitel": "Produktionsfaktoren, Ziele, Aufbauorganisation — und wie weit deine Unterschrift reicht.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "e1",
+        "vorauswissen": [
+          "Ein Betrieb kombiniert mehrere Mittel, um Leistungen zu erstellen.",
+          "Wirtschaften bedeutet, knappe Mittel zielgerichtet einzusetzen."
+        ],
+        "erklaerung": "Zu den Produktionsfaktoren gehören menschliche Arbeit, Betriebsmittel, Werkstoffe und dispositive Arbeit. Betriebsmittel werden im Leistungsprozess genutzt, etwa Gebäude oder Laptops; Werkstoffe gehen in die Leistung ein oder werden verbraucht. Die dispositive Arbeit plant, entscheidet und steuert. Das ökonomische Prinzip beschreibt dazu das Verhältnis von Ziel und Mitteleinsatz: Beim Maximalprinzip ist der Mitteleinsatz gegeben, beim Minimalprinzip das Ziel.",
+        "beispiele": [
+          "Ein Laptop wird über längere Zeit für die Büroarbeit genutzt und ist deshalb ein Betriebsmittel; Papier und Toner werden verbraucht und sind Werkstoffe.",
+          "Beim Maximalprinzip soll mit gegebenen Mitteln möglichst viel erreicht werden. Beim Minimalprinzip soll ein festes Ergebnis mit möglichst wenig Mitteln erreicht werden."
+        ],
+        "fallbeispiel": "Ein Büro hat ein festes Budget für die Bearbeitung eines Kundenauftrags. Der Laptop und die Räume bleiben nutzbar, Papier und Toner werden für den Auftrag eingesetzt, und eine Mitarbeitende plant die Reihenfolge der Arbeitsschritte. Die Zuordnung lautet Betriebsmittel, Werkstoffe und menschliche beziehungsweise dispositive Arbeit. Wird mit dem Budget die größtmögliche Zahl bearbeiteter Vorgänge angestrebt, liegt ein Maximalprinzip vor.",
+        "typische_fehler": "Alles, was im Betrieb vorhanden ist, wird als Werkstoff bezeichnet. Entscheidend ist aber der Verbrauch im Leistungsprozess. Außerdem werden Maximal- und Minimalprinzip über die Wörter ‚mehr‘ und ‚weniger‘ statt über die gegebene Größe unterschieden.",
+        "verstaendnisfragen": [
+          "Was unterscheidet Betriebsmittel und Werkstoffe? Betriebsmittel werden genutzt und bleiben länger verfügbar; Werkstoffe werden verbraucht oder gehen in die Leistung ein.",
+          "Was ist beim Minimalprinzip fest vorgegeben? Das angestrebte Ergebnis; minimiert werden die dafür eingesetzten Mittel."
+        ],
+        "pruefungsbezug": "Markiere in Zuordnungsaufgaben die Verben: ‚nutzen‘ weist auf Betriebsmittel, ‚verbrauchen‘ auf Werkstoffe. Beim ökonomischen Prinzip markiere, ob Mittel oder Ergebnis gegeben ist.",
+        "merksatz": "Betriebsmittel bleiben, Werkstoffe gehen; Maximalprinzip maximiert das Ergebnis, Minimalprinzip minimiert die Mittel."
+      },
+      {
+        "abschnitt": "e2",
+        "vorauswissen": [
+          "Organisation verteilt Aufgaben und Zuständigkeiten.",
+          "Aufbau und Ablauf beantworten unterschiedliche Fragen."
+        ],
+        "erklaerung": "Die Aufbauorganisation zeigt, wer wem zugeordnet ist und welche Stellen bestehen. Die Ablauforganisation beschreibt, wann und wie Arbeitsschritte aufeinanderfolgen. Stabsstellen beraten die Linienstellen, besitzen aber grundsätzlich keine eigene Weisungsbefugnis. Ein Organigramm wird deshalb nicht nur nach Kästchen, sondern nach Linien und Funktionen gelesen.",
+        "beispiele": [
+          "Ein Organigramm mit Geschäftsführung, Abteilungen und Unterstellungen beschreibt die Aufbauorganisation.",
+          "Die Reihenfolge ‚Anfrage prüfen, Angebot erstellen, Auftrag bestätigen‘ beschreibt einen Ablauf und nicht die hierarchische Zuordnung. Eine Rechtsabteilung, die Fachstellen berät, kann als Stabsstelle eingeordnet werden."
+        ],
+        "fallbeispiel": "Im Organigramm hängt die Rechtsabteilung seitlich an der Geschäftsführung und ist mit mehreren Abteilungen verbunden. Die Linien zeigen Beratung, nicht automatisch Weisung. Deshalb ist sie als Stabsstelle zu lesen. Die Frage ‚Wer berichtet an wen?‘ gehört zur Aufbauorganisation; die Frage ‚In welcher Reihenfolge wird bearbeitet?‘ zur Ablauforganisation.",
+        "typische_fehler": "Ablauf und Aufbau werden nach demselben Schema beantwortet. Außerdem wird eine Stabsstelle wegen ihrer Nähe zur Geschäftsführung als vorgesetzte Linie missverstanden.",
+        "verstaendnisfragen": [
+          "Welche Frage stellt die Aufbauorganisation? Wer ist wem zugeordnet beziehungsweise wer hat welche Stelle und Weisungsbeziehung?",
+          "Darf eine Stabsstelle automatisch Anweisungen geben? Nein. Sie berät grundsätzlich, ohne eigene Weisungsbefugnis."
+        ],
+        "pruefungsbezug": "Lies Organigramme mit zwei Markierungen: vertikale Zuordnung für Aufbau, zeitliche beziehungsweise sachliche Reihenfolge für Ablauf. Seitliche Beratungsstellen als Stab prüfen.",
+        "merksatz": "Aufbau fragt ‚Wer?‘, Ablauf fragt ‚Wann und wie?‘, Stab berät statt anzuweisen."
+      },
+      {
+        "abschnitt": "e3",
+        "vorauswissen": [
+          "Eine Unterschrift kann den Betrieb rechtlich binden.",
+          "Vollmachten unterscheiden sich nach Umfang und Erteilung."
+        ],
+        "erklaerung": "Die Prokura wird ausdrücklich vom Inhaber erteilt, ins Handelsregister eingetragen und mit ppa. gezeichnet. Sie umfasst nahezu alle Geschäfte eines Handelsgewerbes, aber nicht ohne besondere Ermächtigung die Veräußerung oder Belastung von Grundstücken. Die Handlungsvollmacht kann formlos erteilt werden, deckt gewöhnliche Geschäfte ab und wird mit i. V. oder i. A. gezeichnet.",
+        "beispiele": [
+          "Die Unterschrift ppa. signalisiert Prokura; i. V. oder i. A. weist auf Handlungsvollmacht hin. Die Schreibweise ersetzt aber nicht die Prüfung des tatsächlichen Umfangs.",
+          "Ein Prokurist kann gewöhnliche Geschäfte des Handelsgewerbes vornehmen, darf aber ein Betriebsgrundstück nicht ohne besondere Ermächtigung verkaufen."
+        ],
+        "fallbeispiel": "Ein Prokurist verkauft ohne Rücksprache ein Betriebsgrundstück. Der Fall wird nicht nur über die Unterschrift gelöst: Prokura ist zwar weitreichend, die Veräußerung und Belastung von Grundstücken ist aber ausdrücklich ausgenommen. Ohne besondere Ermächtigung reicht die Prokura dafür nicht. Bei der Gegenüberstellung sind Umfang, Erteilung und Handelsregistereintragung zu prüfen.",
+        "typische_fehler": "Prokura wird als grenzenlose Vollmacht verstanden. Umgekehrt wird Handlungsvollmacht wegen der Formlosigkeit als bedeutungslos angesehen. Beide Vollmachten binden im jeweiligen Umfang; sie unterscheiden sich vor allem in Reichweite, Erteilung und Publizität.",
+        "verstaendnisfragen": [
+          "Welche drei Achsen helfen beim Vergleich? Umfang, Art der Erteilung und Eintragung beziehungsweise Zeichnung.",
+          "Was ist bei einem Grundstücksgeschäft trotz Prokura zusätzlich nötig? Eine besondere Ermächtigung."
+        ],
+        "pruefungsbezug": "Bei Vollmachtsfällen nicht nur ppa., i. V. oder i. A. ablesen. Erst Vollmachtsart bestimmen, dann Geschäft auf gewöhnlich oder ausgenommen prüfen.",
+        "merksatz": "Prokura ist weit und eingetragen; Handlungsvollmacht ist formlos und auf gewöhnliche Geschäfte begrenzt."
+      }
+    ]
+  },
 
   "lernziele": [
     { "id": "lz1", "text": "Die betrieblichen Produktionsfaktoren benennen und zuordnen", "abschnitt": "e1" },

@@ -320,6 +320,12 @@ def _ausfuehrlich_karte(ch):
                 ids = [basis[i]["id"]]
             for id_ in ids or []:
                 raus[id_] = abschnitt
+        einleitung = _langwerte(eigene.get("einleitung"))
+        if einleitung and basis:
+            ziel = basis[0]["id"]
+            erster = dict(raus.get(ziel, {}))
+            erster["einleitung"] = einleitung
+            raus[ziel] = erster
         return raus
 
     return {a["id"]: {"automatisch": True,
@@ -341,6 +347,7 @@ def detail_zusatz(a, daten, lf):
         if erklaerung:
             gruppen.append({"titel": "Ausführlicher erklärt", "text": erklaerung})
         for schluessel, titel in (
+                ("einleitung", "Einordnung"),
                 ("vorauswissen", "Benötigtes Vorwissen"),
                 ("hintergrundwissen", "Hintergrundwissen"),
                 ("ablauf", "Schritt für Schritt"),

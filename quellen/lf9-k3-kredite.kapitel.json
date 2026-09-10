@@ -4,7 +4,71 @@
   "nummer": 3,
   "titel": "Kreditarten und Kosten",
   "untertitel": "Kurzfristiger Bedarf, kurzfristiger Kredit. Alles andere wird teuer.",
-  "minuten": 30,
+ "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Anlage- und Umlaufvermögen binden Kapital unterschiedlich lange.",
+          "Die Finanzierungslaufzeit muss zur Nutzungsdauer passen."
+        ],
+        "erklaerung": "Fristenkongruenz bedeutet: langfristig gebundenes Vermögen wird langfristig finanziert, kurzfristiger Bedarf kurzfristig. Eine Maschine mit Kontokorrent zu finanzieren ist gefährlich, weil der kurzfristige und teure Kredit dauerhaft gebraucht wird und gekündigt werden kann. Der Lieferantenkredit wirkt zinsfrei, kostet aber das entgangene Skonto.",
+        "beispiele": [
+          "Eine Maschine wird mit einem langfristigen Darlehen finanziert; Vorräte können kurzfristig finanziert werden.",
+          "Wer ein Skonto ziehen kann, vergleicht den Vorteil mit den Kosten eines kurzfristigen Kredits, statt den Lieferantenkredit automatisch als kostenlos anzusehen."
+        ],
+        "fallbeispiel": "Ein Betrieb möchte eine langfristig genutzte Maschine über den Kontokorrent bezahlen. Die Prüfung ergibt einen Fristenverstoß: Laufzeit und Nutzungsdauer passen nicht zusammen, der Zinssatz ist teuer und die Kreditlinie kann entfallen. Die Finanzierung wird auf ein langfristiges Darlehen umgestellt; der Kontokorrent bleibt für kurzfristige Spitzen.",
+        "typische_fehler": "Der niedrigere Nominalzins oder die schnelle Verfügbarkeit wird betrachtet, ohne Laufzeit und Kündigungsrisiko einzubeziehen. Lieferantenkredit wird wegen fehlender Zinszeile für kostenlos gehalten.",
+        "verstaendnisfragen": [
+          "Was fordert Fristenkongruenz? Dass Kreditlaufzeit und Nutzungsdauer des finanzierten Vermögens zusammenpassen.",
+          "Was kostet der scheinbar kostenlose Lieferantenkredit? Das entgangene Skonto."
+        ],
+        "pruefungsbezug": "Ordne zuerst Vermögen und Bindungsdauer zu, dann die passende Kreditlaufzeit. Beim Lieferantenkredit immer den Skontoverzicht prüfen.",
+        "merksatz": "Langfristige Dinge brauchen langfristiges Geld; kurzfristige Kredite sind keine Dauerlösung."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Tilgung reduziert die Restschuld.",
+          "Zinsen werden auf die Restschuld zu Beginn der Periode berechnet."
+        ],
+        "erklaerung": "Beim Ratendarlehen bleibt die Tilgung gleich und die Rate sinkt, weil die Zinsen auf die sinkende Restschuld berechnet werden. Beim Annuitätendarlehen bleibt die Rate gleich; der Tilgungsanteil steigt im Zeitverlauf. Für jeden Tilgungsplan werden Restschuld, Zins, Tilgung und Rate getrennt notiert.",
+        "beispiele": [
+          "Beim Ratendarlehen sinkt die Rate von Periode zu Periode, obwohl die Tilgung gleich bleibt.",
+          "Bei der Annuität bleibt die Rate gleich, während der Zinsanteil sinkt und der Tilgungsanteil steigt."
+        ],
+        "fallbeispiel": "Ein Ratendarlehen über 60.000 € läuft vier Jahre bei 6 %. Die jährliche Tilgung beträgt 60.000 € ÷ 4 = 15.000 €. Jahr 1: Zins 6 % von 60.000 € = 3.600 €, Rate 15.000 € + 3.600 € = 18.600 €. Restschuld 45.000 €. Jahr 2: Zins 6 % von 45.000 € = 2.700 €, Rate 15.000 € + 2.700 € = 17.700 €. Die Rate sinkt um 900 €.",
+        "typische_fehler": "Der Zins wird auf den ursprünglichen Kredit statt auf die Restschuld zu Periodenbeginn gerechnet. Außerdem werden Ratentilgung und Annuität verwechselt.",
+        "verstaendnisfragen": [
+          "Was bleibt beim Ratendarlehen gleich? Die Tilgung.",
+          "Wie setzt sich die Rate zusammen? Aus Tilgung plus Zins der jeweiligen Periode."
+        ],
+        "pruefungsbezug": "Lege die vier Spalten Restschuld, Zins, Tilgung und Rate an und rechne jede Periode einzeln.",
+        "merksatz": "Ratendarlehen = gleiche Tilgung, sinkende Rate; Annuität = gleiche Rate, steigende Tilgung."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Nominalzins und Gesamtkosten sind nicht identisch.",
+          "Gebühren und Disagio beeinflussen den tatsächlichen Kreditpreis."
+        ],
+        "erklaerung": "Bearbeitungsgebühren, Bereitstellungszinsen, Sicherheitenkosten und ein Disagio gehören zu den Kreditkosten. Deshalb sind Angebote nur über den Effektivzins vergleichbar. Der Nominalzins allein zeigt nicht, wie viel Geld ausgezahlt und wie viel zurückgezahlt wird.",
+        "beispiele": [
+          "Bei einem Disagio wird weniger ausgezahlt, obwohl der volle Nennbetrag verzinst und zurückgezahlt wird.",
+          "Zwei Angebote mit unterschiedlichem Nominalzins werden erst nach Einbeziehung von Gebühren und Disagio über den Effektivzins verglichen."
+        ],
+        "fallbeispiel": "Für 200.000 € bietet Bank A 4,2 % Nominalzins und 2 % Disagio, Bank B 4,6 % ohne Disagio. Bei A werden nur 196.000 € ausgezahlt, aber 200.000 € verzinst und zurückgezahlt. Deshalb reicht der niedrigere Nominalzins nicht; der Effektivzins und die weiteren Kosten entscheiden. Benötigt der Betrieb tatsächlich 200.000 €, verschärft das Disagio den Nachteil von A.",
+        "typische_fehler": "Der niedrigere Nominalzins wird automatisch gewählt oder das Disagio nur als einmaligen Rabatt behandelt. Auch Sicherheiten- und Bereitstellungskosten werden vergessen.",
+        "verstaendnisfragen": [
+          "Warum ist der Effektivzins entscheidend? Er macht die Angebote einschließlich weiterer Kosten vergleichbar.",
+          "Was bedeutet 2 % Disagio bei 200.000 €? Es werden 196.000 € ausgezahlt, der Nennbetrag 200.000 € bleibt aber zu verzinsen und zurückzuzahlen."
+        ],
+        "pruefungsbezug": "Vergleiche Kredite immer über Auszahlung, Rückzahlung, Gebühren, Disagio und Effektivzins; der Nominalzins ist nur ein Teil.",
+        "merksatz": "Der Kreditpreis ist das, was die Finanzierung insgesamt kostet — nicht nur die Zahl neben ‚Zins‘."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

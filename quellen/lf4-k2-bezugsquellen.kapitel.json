@@ -5,6 +5,78 @@
   "titel": "Bezugsquellen finden und anfragen",
   "untertitel": "Wer nicht fragt, zahlt den Listenpreis.",
   "minuten": 25,
+
+  "ausfuehrlich": {
+    "einleitung": "Eine gute Beschaffung beginnt mit der richtigen Auswahl möglicher Lieferer. Interne Informationen zeigen, was sich in der Vergangenheit bewährt hat; eine sauber formulierte Anfrage sorgt anschließend dafür, dass externe Angebote wirklich vergleichbar sind.",
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Bezugsquellen können innerhalb oder außerhalb des eigenen Betriebs liegen.",
+          "Eine Lieferantenbewertung verbindet vergangene Erfahrungen mit der nächsten Beschaffungsentscheidung."
+        ],
+        "erklaerung": "Die interne Lieferantenkartei und alte Rechnungen sind oft der erste sinnvolle Anlaufpunkt, weil dort bereits Preise, Qualität, Termintreue und Reklamationserfahrungen vorliegen. Externe Quellen wie Branchenverzeichnisse, Onlineportale, Messen, IHK und Fachverbände erweitern den Marktüberblick. Die Suche soll nicht nur einen Preis liefern, sondern zuverlässige Alternativen sichtbar machen.",
+        "beispiele": [
+          "Die Lieferantenkartei zeigt, welcher bekannte Lieferer bisher pünktlich geliefert und Reklamationen gut bearbeitet hat.",
+          "Auf einer Fachmesse kann die Verarbeitung eines erklärungsbedürftigen Produkts direkt geprüft werden; ein Onlineportal liefert dagegen schnell eine breite Übersicht möglicher Anbieter."
+        ],
+        "fallbeispiel": "Für einen wichtigen A-Artikel wird zuerst die interne Kartei ausgewertet. Zwei bekannte Lieferer werden anhand von Preis, Qualität, Termintreue und Service verglichen. Weil ein einzelner Lieferer abhängig machen kann, werden zusätzlich zwei externe Quellen geprüft. So entsteht eine Entscheidung aus vorhandener Erfahrung und aktuellem Marktvergleich.",
+        "typische_fehler": "Nur nach dem niedrigsten Preis gesucht oder ausschließlich einen bequemen bekannten Lieferer verwendet. Eine Bezugsquelle ist aber auch dann ungeeignet, wenn sie billig, unzuverlässig oder bei Ausfall nicht ersetzbar ist.",
+        "verstaendnisfragen": [
+          "Warum wird zuerst intern gesucht? Die Kartei enthält bereits Erfahrungen und verursacht keinen zusätzlichen Suchaufwand.",
+          "Warum kann ein zweiter Lieferer sinnvoll sein? Er verringert die Abhängigkeit, wenn der bisherige Lieferer ausfällt."
+        ],
+        "pruefungsbezug": "Interne und externe Quellen unterscheiden und anschließend begründen, welche Quelle für den konkreten Artikel geeignet ist. Bei A-Gütern ist ein intensiverer Vergleich plausibler als bei C-Gütern.",
+        "merksatz": "Erst intern nach Erfahrung suchen, dann extern den Markt erweitern; nicht nur den Preis bewerten."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Eine Anfrage bittet um ein Angebot und ist rechtlich unverbindlich.",
+          "Angebote sind nur vergleichbar, wenn sie dieselbe Leistung beschreiben."
+        ],
+        "ablauf": [
+          "Art und Güte der Ware möglichst genau beschreiben.",
+          "Menge und Einheit angeben.",
+          "Liefertermin und Lieferort nennen.",
+          "Gewünschte Zahlungs- und Lieferbedingungen abfragen."
+        ],
+        "erklaerung": "Die Anfrage ist noch keine Bestellung und verpflichtet den Betrieb zu nichts. Ihre Qualität entscheidet aber über die spätere Vergleichbarkeit. Wenn einer der vier Bereiche fehlt, kann ein Lieferer eine andere Qualität, Menge, Frist oder Kostenverteilung anbieten; der scheinbar günstigere Preis wäre dann kein fairer Vergleich.",
+        "beispiele": [
+          "Eine Anfrage über 500 Ordner muss neben der Menge auch die gewünschte Qualität, den Liefertermin und den Lieferort nennen.",
+          "Wer Fracht, Verpackung, Skonto und Zahlungsziel nicht abfragt, kennt später den tatsächlichen Vergleichswert der Angebote nicht."
+        ],
+        "fallbeispiel": "Formuliere die Anfrage für 500 Ordner: Art und Güte der Ordner beschreiben, 500 Stück als Menge nennen, den gewünschten Liefertermin und Lieferort angeben und nach Preis, Lieferbedingungen, Zahlungsziel und Skonto fragen. Dieselben Angaben werden an alle angefragten Lieferer gesendet. Erst dann lassen sich die Antworten sinnvoll vergleichen.",
+        "typische_fehler": "Eine ungenaue Anfrage wird mit einer Bestellung verwechselt. Besonders riskant sind fehlende Mengenangaben und ein fehlender Liefertermin: Dann sind Mengenrabatt und zeitliche Eignung der Angebote nicht vergleichbar.",
+        "verstaendnisfragen": [
+          "Warum ist die Anfrage rechtlich unverbindlich? Sie fordert nur zur Abgabe eines Angebots auf und ist selbst kein Antrag nach § 145 BGB.",
+          "Welche vier Angaben bilden den Kern einer Anfrage? Art und Güte, Menge, Liefertermin und Lieferort sowie die gewünschten Bedingungen."
+        ],
+        "pruefungsbezug": "Bei einer Schreib- oder Zuordnungsaufgabe die vier Angaben systematisch abhaken. Danach ausdrücklich sagen, dass die Anfrage noch keine Bestellung ist.",
+        "merksatz": "Eine Anfrage bindet nicht; sie muss Ware, Menge, Termin, Ort und Bedingungen so genau nennen, dass Angebote vergleichbar werden."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Ein Vertrag entsteht durch Antrag und Annahme.",
+          "Eine Freizeichnungsklausel kann die Bindungswirkung eines Angebots einschränken."
+        ],
+        "erklaerung": "Ein Angebot ohne Zusatz ist ein bindender Antrag. Der Lieferer kann es innerhalb der geltenden Frist nicht einfach zurücknehmen. Wörter wie ‚freibleibend‘ oder ‚unverbindlich‘ schließen diese Bindung dagegen aus. Dann ist das Schreiben nur eine Aufforderung; die Bestellung des Käufers wird zum Antrag und die Auftragsbestätigung zur Annahme.",
+        "beispiele": [
+          "‚Wir bieten 200 Ordner zu 2,30 € an‘ ist ohne Einschränkung bindend, sofern die übrigen Vertragsangaben bestimmt sind.",
+          "Bei ‚Angebot freibleibend‘ entsteht der Vertrag erst, wenn der Lieferer die Bestellung annimmt; eine Bestellung allein reicht nicht."
+        ],
+        "fallbeispiel": "Ein Lieferer bietet 500 Ordner zu 2,10 € mit dem Zusatz ‚freibleibend‘ an. Der Käufer bestellt genau diese Menge. Die Bestellung ist jetzt der bindende Antrag des Käufers. Der Vertrag entsteht erst, wenn der Lieferer die Bestellung annimmt, etwa durch eine Auftragsbestätigung. Die bloße Übereinstimmung mit dem Text des freibleibenden Schreibens genügt nicht.",
+        "typische_fehler": "‚Unverbindlich‘ wird so verstanden, als könne überhaupt kein Vertrag entstehen. Tatsächlich fehlt nur die Bindung des ursprünglichen Schreibens. Umgekehrt wird eine Bestellung bei freibleibendem Angebot fälschlich als Annahme bezeichnet.",
+        "verstaendnisfragen": [
+          "Wer gibt bei einem freibleibenden Angebot den Antrag ab? Der Käufer mit seiner Bestellung.",
+          "Was bewirkt eine ausdrücklich gesetzte Angebotsfrist? Sie bestimmt, wie lange der Antrag angenommen werden kann; danach ist eine spätere Reaktion grundsätzlich ein neuer Antrag."
+        ],
+        "pruefungsbezug": "Formulierungen wie ‚freibleibend‘, ‚unverbindlich‘, ‚solange Vorrat reicht‘ und ein Gültigkeitsdatum markieren. Dann Antrag und Annahme in der richtigen Reihenfolge benennen.",
+        "merksatz": "Ohne Freizeichnung bindet das Angebot; bei ‚freibleibend‘ bindet erst die Bestellung des Käufers."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

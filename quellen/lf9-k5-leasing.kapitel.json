@@ -4,7 +4,71 @@
   "nummer": 5,
   "titel": "Leasing, Factoring und Alternativen",
   "untertitel": "Nicht alles, was man braucht, muss einem gehören.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Kauf führt zu Eigentum, Leasing zunächst nur zur Nutzung.",
+          "Liquidität und Gesamtkosten können in unterschiedliche Richtungen wirken."
+        ],
+        "erklaerung": "Beim Kauf erwirbt der Betrieb den Gegenstand, bindet aber sofort Kapital und belastet die Liquidität. Beim Leasing nutzt er ihn gegen regelmäßige Raten, bleibt aber ohne Eigentümerstellung. Leasing schont die Liquidität und ist planbar, über die Laufzeit aber meist teurer als der Kauf. Schnell veraltende Güter sprechen eher für Leasing, langlebige eher für Kauf.",
+        "beispiele": [
+          "Fahrzeuge, die nach kurzer Zeit technisch ersetzt werden, können wegen Planbarkeit und Aktualität geleast werden.",
+          "Ein langlebiger Gegenstand kann über die Nutzungsdauer gekauft werden, weil keine Leasingmarge anfällt und Eigentum sowie Sicherungswert bleiben."
+        ],
+        "fallbeispiel": "Ein Betrieb vergleicht Leasing und Kauf. Beim Leasing werden alle Raten und der Restwert betrachtet; beim Kauf Kaufpreis, Finanzierungskosten und erwarteter Restwert. Danach werden Liquidität, Eigentum, Sicherheiten und Nutzungsdauer ergänzt. Die Entscheidung fällt nicht allein wegen der niedrigeren Monatsrate.",
+        "typische_fehler": "Leasingrate und Kaufpreis werden direkt verglichen, ohne Laufzeit, Restwert und Finanzierungskosten einzubeziehen. Auch die fehlende Eigentümerstellung beim Leasing wird vergessen.",
+        "verstaendnisfragen": [
+          "Welche Hauptvorteile hat Leasing? Liquiditätsschonung, Planbarkeit und oft einfacherer Zugang.",
+          "Welche Hauptnachteile hat Leasing? Höhere Gesamtkosten und kein Eigentum beziehungsweise kein eigener Sicherungswert."
+        ],
+        "pruefungsbezug": "Rechne beide Wege vollständig und bewerte anschließend Liquidität, Nutzungsdauer, Sicherheiten und Eigentum.",
+        "merksatz": "Leasing schont heute die Liquidität; Kauf kann über die gesamte Nutzungsdauer günstiger sein."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Factoring verkauft oder überträgt Forderungen an einen Factor.",
+          "Finanzierung, Ausfallrisiko und Debitorenarbeit sind getrennte Funktionen."
+        ],
+        "erklaerung": "Factoring hat drei Funktionen: Finanzierung durch sofortige Auszahlung, Ausfallschutz durch Übernahme des Risikos und Dienstleistung durch Debitorenbuchhaltung, Mahnwesen und Inkasso. Beim echten Factoring übernimmt der Factor das Ausfallrisiko; beim unechten verbleibt es beim Betrieb. Der Factor prüft die Bonität und kauft nicht jede Forderung an.",
+        "beispiele": [
+          "Aus einer Forderung mit langem Zahlungsziel wird durch den Factor sofort Liquidität, abzüglich Gebühr und Sicherheitseinbehalt.",
+          "Beim unechten Factoring muss der Betrieb bei Ausfall zurückzahlen; beim echten trägt der Factor das Risiko."
+        ],
+        "fallbeispiel": "Ein Betrieb hat offene Forderungen und benötigt Liquidität. Der Factor prüft die Kundenbonität, zahlt den Rechnungsbetrag abzüglich Gebühr und Sicherheitseinbehalt aus und übernimmt je nach Vertrag Mahnwesen und Ausfallrisiko. Erst die Unterscheidung echt oder unecht zeigt, ob der Betrieb bei Nichtzahlung endgültig entlastet ist.",
+        "typische_fehler": "Factoring wird nur als Kredit oder nur als Inkasso verstanden. Außerdem wird echtes und unechtes Factoring über die Gebühren statt über das Ausfallrisiko unterschieden.",
+        "verstaendnisfragen": [
+          "Welche drei Funktionen hat Factoring? Finanzierung, Ausfallschutz und Dienstleistung.",
+          "Wer trägt beim unechten Factoring den Ausfall? Der Betrieb."
+        ],
+        "pruefungsbezug": "Nenne zuerst die drei Funktionen und prüfe dann, wer das Ausfallrisiko trägt. Bonität und Gebühren ergänzen die Entscheidung.",
+        "merksatz": "Factoring kann Geld, Risiko und Arbeit abnehmen — echt oder unecht entscheidet über das Risiko."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Finanzierungsentscheidungen verbinden Kosten, Liquidität und Nutzung.",
+          "Zahlungsziele, Lager und Mahnwesen können vor einer Finanzierung verbessert werden."
+        ],
+        "erklaerung": "Vor jeder Finanzierung wird geprüft, ob das Problem in den eigenen Abläufen liegt: Zahlungsziele, Lagerbestand und Mahnwesen können Liquidität beeinflussen. Danach werden Kauf, Leasing oder Factoring nach Kosten, Risiko, Laufzeit und Bedarf verglichen. Die Begründung muss den konkreten Zweck und nicht nur ein einzelnes Vorteilskriterium nennen.",
+        "beispiele": [
+          "Bei schnell veraltenden Fahrzeugen wird Leasing mit der Nutzungsdauer und der Liquidität begründet, bei langlebigen Gütern Kauf mit Gesamtkosten und Eigentum.",
+          "Bei offenen Forderungen wird erst Mahnwesen und Zahlungsziel geprüft, bevor Factoringgebühren akzeptiert werden."
+        ],
+        "fallbeispiel": "Ein Betrieb braucht acht Transporter. Werden sie nach drei bis vier Jahren getauscht, sprechen Aktualität und planbare Raten für Leasing. Bei acht bis zehn Jahren Nutzung spricht die geringere Gesamtkostenbelastung eher für Kauf. Zusätzlich werden Liquidität, Sicherheiten und Vertragsbedingungen wie Restwert und Rückgabe geprüft.",
+        "typische_fehler": "Die Entscheidung wird nur mit der Monatsrate oder dem Ticketpreis begründet. Auch Vertragsdetails wie Restwert, Kilometerbegrenzung oder Nachforderungen werden übersehen.",
+        "verstaendnisfragen": [
+          "Welche Reihenfolge ist sinnvoll? Erst eigene Abläufe verbessern, dann Finanzierungsalternativen vergleichen.",
+          "Welche zwei Nutzungssituationen nennt die Faustregel? Schnell veraltende Güter eher leasen, langlebige eher kaufen."
+        ],
+        "pruefungsbezug": "Formuliere eine Entscheidung mit Kosten, Liquidität, Nutzungsdauer, Risiko und Vertragsbedingungen; mindestens zwei nicht rein rechnerische Kriterien nennen.",
+        "merksatz": "Eine Finanzierungsform ist nur passend, wenn Kosten, Liquidität und Nutzung zusammenpassen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

@@ -4,7 +4,71 @@
   "nummer": 2,
   "titel": "Woher das Geld kommt",
   "untertitel": "Zwei Fragen genügen, um jede Finanzierung einzuordnen.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Finanzierung kann nach Herkunft und Rechtsstellung geordnet werden.",
+          "Eigen- und Fremdkapital wirken für Betrieb und Kapitalgeber unterschiedlich."
+        ],
+        "erklaerung": "Zwei Fragen ergeben eine Vierfeldertafel: Kommt das Kapital von innen oder außen, und handelt es sich um Eigen- oder Fremdkapital? Innenfinanzierung entsteht im Betrieb; Außenfinanzierung kommt von außen. Eigenkapital haftet und steht grundsätzlich unbefristet zur Verfügung; Fremdkapital wird verzinst und zurückgezahlt.",
+        "beispiele": [
+          "Eine Einlage der Inhaber ist Außen- und Eigenfinanzierung; ein Bankkredit Außen- und Fremdfinanzierung.",
+          "Einbehaltener Gewinn ist Innen- und Eigenfinanzierung; Rückstellungen sind Innen- und Fremdfinanzierung, weil die Verpflichtung gegenüber Dritten besteht."
+        ],
+        "fallbeispiel": "Ein Betrieb ordnet vier Vorgänge ein: Einlage, Bankkredit, einbehaltener Gewinn und Rückstellung. Die Matrix wird in zwei Schritten gefüllt: Herkunft innen oder außen, dann Eigen oder fremd. So ergeben sich Außen/Eigen, Außen/Fremd, Innen/Eigen und Innen/Fremd; die Rückstellung landet trotz Innenfinanzierung bei Fremdkapital.",
+        "typische_fehler": "Innenfinanzierung wird automatisch als Eigenkapital bezeichnet. Außerdem wird ‚von außen‘ mit ‚Fremdkapital‘ gleichgesetzt, obwohl eine Einlage Außen- und Eigenfinanzierung ist.",
+        "verstaendnisfragen": [
+          "Welche zwei Achsen hat die Systematik? Herkunft der Mittel und Rechtsstellung des Kapitalgebers.",
+          "Warum sind Rückstellungen ein Prüfungsfall? Sie entstehen innen, sind aber Fremdkapital wegen der Verpflichtung gegenüber Dritten."
+        ],
+        "pruefungsbezug": "Zeichne vor der Zuordnung die Vierfeldertafel und entscheide Herkunft und Rechtsstellung getrennt.",
+        "merksatz": "Innen oder außen sagt, woher das Geld kommt; Eigen oder fremd sagt, wem es rechtlich zugeordnet ist."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Innenfinanzierung bedeutet, dass Mittel im Betrieb entstehen.",
+          "Nicht jede Innenfinanzierung ist zinsfrei ohne wirtschaftliche Kosten."
+        ],
+        "erklaerung": "Quellen der Innenfinanzierung sind einbehaltener Gewinn, Abschreibungsgegenwerte, Rückstellungen und Vermögensumschichtung. Es fließt kein neues Kapital von außen zu. Die Mittel stehen aber nur insoweit zur Verfügung, wie der entsprechende Vorgang tatsächlich liquide Mittel freisetzt oder im Betrieb hält.",
+        "beispiele": [
+          "Einbehaltener Gewinn stärkt die Eigenkapitalbasis, wenn er nicht ausgeschüttet wird.",
+          "Beim Verkauf eines nicht betriebsnotwendigen Vermögensgegenstands entsteht eine Vermögensumschichtung; Rückstellungen halten Mittel bis zur späteren Inanspruchnahme im Betrieb."
+        ],
+        "fallbeispiel": "Ein Betrieb braucht 300.000 € für eine Anlage, will aber keine neuen Gesellschafter aufnehmen. Zuerst werden Gewinnausschüttung, nicht betriebsnotwendige Vermögenswerte und Abschreibungsgegenwerte geprüft. Reicht dies nicht, werden Leasing oder ein Förderdarlehen als Alternativen betrachtet. Die Reihenfolge schont Mitsprache und Liquidität, ohne die Entscheidung vorschnell an einen Kredit zu delegieren.",
+        "typische_fehler": "Innenfinanzierung wird als kostenlos bezeichnet oder Abschreibungsgegenwerte automatisch als Bargeld behandelt. Auch die Vermögensumschichtung wird mit zusätzlichem Kapital verwechselt.",
+        "verstaendnisfragen": [
+          "Welche vier Quellen nennt der Inhalt? Einbehaltener Gewinn, Abschreibungsgegenwerte, Rückstellungen und Vermögensumschichtung.",
+          "Warum ist Innenfinanzierung nicht einfach kostenlos? Sie ist zinsfrei, kann aber Ausschüttungsverzicht, entgangene Nutzung oder andere wirtschaftliche Kosten haben."
+        ],
+        "pruefungsbezug": "Nenne bei Finanzierungsfällen zuerst die eigenen Innenquellen und bewerte dann Liquidität, Zins und Mitsprache.",
+        "merksatz": "Innenfinanzierung entsteht aus dem Betrieb — aber auch sie hat wirtschaftliche Grenzen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Eigenkapital und Fremdkapital werden nach der Rechtsstellung unterschieden.",
+          "Finanzierung beeinflusst Haftung, Rückzahlung und Entscheidungsmacht."
+        ],
+        "erklaerung": "Eigenkapital haftet, ist unbefristet, hat Mitsprache und keine feste Verzinsung. Fremdkapital kostet unabhängig vom Erfolg Zinsen, ist befristet und vermittelt keine Mitsprache. Viel Eigenkapital verbessert die Kreditwürdigkeit, weil es als Haftungspuffer dient; Fremdkapital erhält dafür die Entscheidungsmacht der bisherigen Eigentümer eher ungeteilt.",
+        "beispiele": [
+          "Ein Eigenkapitalgeber erhält Einfluss und trägt das Verlustrisiko, verlangt aber keine feste Verzinsung.",
+          "Ein Kreditgeber erhält Zinsen und Rückzahlung unabhängig vom Erfolg und verlangt häufig Sicherheiten, erhält aber keine laufende Mitsprache."
+        ],
+        "fallbeispiel": "Die Hausbank verlangt mehr Eigenkapital, die Inhaber wollen aber keine neuen Gesellschafter. Einbehaltener Gewinn kann die Eigenkapitalquote stärken, ohne neue Mitsprache zu schaffen. Zusätzlich werden Vermögensumschichtung, Leasing und ein Förderdarlehen geprüft. So werden Haftungspuffer, Kosten, Liquidität und Entscheidungsmacht gemeinsam bewertet.",
+        "typische_fehler": "Eigenkapital wird als kostenlos bezeichnet oder Fremdkapital nur nach dem Zinssatz bewertet. Haftung, Befristung, Mitsprache und Kreditwürdigkeit gehören ebenfalls in die Abwägung.",
+        "verstaendnisfragen": [
+          "Warum verbessert Eigenkapital die Kreditwürdigkeit? Es haftet und dient Kreditgebern als Puffer.",
+          "Was passiert mit dem Fremdkapitalzins bei Verlust? Der Zins bleibt grundsätzlich fällig, unabhängig vom Erfolg."
+        ],
+        "pruefungsbezug": "Vergleiche in Tabellen mindestens Haftung, Laufzeit, Verzinsung, Mitsprache und Rückzahlung.",
+        "merksatz": "Eigenkapital trägt Risiko und gibt Einfluss; Fremdkapital verlangt Zins und Rückzahlung."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

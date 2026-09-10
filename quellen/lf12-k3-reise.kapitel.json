@@ -4,7 +4,71 @@
   "nummer": 3,
   "titel": "Geschäftsreisen vorbereiten",
   "untertitel": "Wer bucht, entscheidet über Kosten, Zeit und Nerven.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Nicht jeder Weg außerhalb des Büros ist eine Geschäftsreise.",
+          "Die erste Tätigkeitsstätte wird vom Arbeitgeber festgelegt."
+        ],
+        "erklaerung": "Eine Geschäftsreise ist betrieblich veranlasst, vorübergehend und führt außerhalb der Wohnung und der ersten Tätigkeitsstätte. Der normale Arbeitsweg zur ersten Tätigkeitsstätte ist keine Geschäftsreise. Bei privater Verlängerung werden betriebliche und private Kosten aufgeteilt.",
+        "beispiele": [
+          "Die Fahrt zu einem Kunden außerhalb der ersten Tätigkeitsstätte kann Geschäftsreise sein; der tägliche Weg zur festgelegten Arbeitsstätte nicht.",
+          "Bei einer privaten Verlängerung bleibt nur der betrieblich veranlasste Anteil erstattungsfähig."
+        ],
+        "fallbeispiel": "Eine Kollegin fährt montags zu einem Kunden nach München, bleibt privat bis Mittwoch und kehrt danach zurück. Die Reise wird in betrieblichen und privaten Anteil aufgeteilt. Hinfahrt und der ohne private Verlängerung angefallene Rückfahrtanteil werden betrieblich geprüft; private Übernachtungen und Verpflegung bleiben außen vor. Die Aufteilung wird vorab abgestimmt und in der Abrechnung getrennt ausgewiesen.",
+        "typische_fehler": "Der normale Arbeitsweg wird als Geschäftsreise abgerechnet oder die private Verlängerung vollständig dem Betrieb zugerechnet.",
+        "verstaendnisfragen": [
+          "Welche drei Merkmale müssen zusammenkommen? Betrieblicher Anlass, vorübergehender Aufenthalt und Auswärtigkeit außerhalb von Wohnung und erster Tätigkeitsstätte.",
+          "Wer legt die erste Tätigkeitsstätte fest? Der Arbeitgeber."
+        ],
+        "pruefungsbezug": "Prüfe zuerst Anlass, Dauer und Ort und teile gemischte Reisen anschließend in betrieblich und privat.",
+        "merksatz": "Geschäftsreise heißt: betrieblich, vorübergehend und außerhalb der ersten Tätigkeitsstätte."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Verkehrsmittel verursachen mehr als Ticketkosten.",
+          "Unterkunft, Arbeitszeit, Erreichbarkeit und Stornorisiko gehören in den Vergleich."
+        ],
+        "erklaerung": "Die Reisezeit ist häufig teurer als der Preisunterschied zwischen Tickets und wird deshalb in die Verkehrsmittelwahl einbezogen. Bahn passt, wenn die Reisezeit nutzbar ist; Auto bei Material, mehreren Stationen oder schlechter Anbindung. Bei der Unterkunft kann die Lage wichtiger sein als der Preis. Stornierbare Buchung schützt vor unnötigen Gebühren.",
+        "beispiele": [
+          "Bahn ist sinnvoll, wenn während der Fahrt gearbeitet werden kann; Parkplatzsuche und Stau entfallen.",
+          "Ein Auto passt bei mehreren Kundenorten oder zu transportierendem Material; ein Hotel in Terminnähe kann trotz höherem Preis Zeit und Taxi sparen."
+        ],
+        "fallbeispiel": "Für einen Kundentermin werden Bahn und Auto verglichen. Die Entscheidung wird nicht nur über den Ticketpreis getroffen, sondern über nutzbare Arbeitszeit, Material, mehrere Stationen, Erreichbarkeit und gemeinsame Reise. Beim Hotel wird Lage und Stornierbarkeit geprüft, damit eine Änderung nicht den Preisvorteil aufzehrt.",
+        "typische_fehler": "Nur der billigste Fahrschein wird gewählt oder Arbeitszeit nicht bewertet. Auch die Lage des Hotels und Stornokosten werden bei der Unterkunft übersehen.",
+        "verstaendnisfragen": [
+          "Wann passt die Bahn? Wenn Reisezeit nutzbar ist und der Weg gut angebunden ist.",
+          "Wann passt das Auto? Bei Material, mehreren Stationen oder schlechter Anbindung."
+        ],
+        "pruefungsbezug": "Begründe Verkehrsmittel und Unterkunft mit Gesamtzeit, Arbeitswert, Material, Erreichbarkeit und Stornorisiko.",
+        "merksatz": "Die günstigste Reise ist nicht zwingend das billigste Ticket, sondern die passendste Gesamtlösung."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Eine Reise braucht neben Buchungen auch einen Ablauf- und Kontaktplan.",
+          "Puffer schützen vor Verspätungen und Änderungen."
+        ],
+        "erklaerung": "Zu den Reiseunterlagen gehören Plan mit Puffern, Buchungen ausgedruckt, Kontakte, Termininhalte und ein Belegumschlag. Die Unterlagen müssen auch bei technischen Problemen oder unterwegs verfügbar bleiben. Termine und Wege werden so dokumentiert, dass die Abrechnung später nachvollziehbar ist.",
+        "beispiele": [
+          "Buchungen werden zusätzlich ausgedruckt und Kontakte sowie Termininhalte in den Plan aufgenommen.",
+          "Ein Belegumschlag sammelt Tickets, Quittungen und weitere Nachweise für die spätere Abrechnung."
+        ],
+        "fallbeispiel": "Vor einer Reise werden Termin, Weg, Puffer, Buchungen, Kontakte und Inhalte in einem Plan zusammengeführt. Ausdrucke liegen zusätzlich vor. Während der Reise werden Belege gesammelt und nach der Rückkehr den vier Reisekostenbausteinen zugeordnet. So gehen weder Nachweis noch Zeitreserve verloren.",
+        "typische_fehler": "Nur die Buchung wird abgelegt oder alle Belege lose gesammelt. Puffer und Kontakte fehlen, sodass Änderungen unterwegs nicht beherrscht werden.",
+        "verstaendnisfragen": [
+          "Welche Unterlagen gehören mindestens in den Reiseplan? Puffer, Buchungen, Kontakte, Termininhalte und Belegumschlag.",
+          "Warum sind Ausdrucke sinnvoll? Als Rückfallebene bei fehlendem Zugriff auf digitale Unterlagen."
+        ],
+        "pruefungsbezug": "Prüfe Reiseunterlagen auf Planung, Nachweis und Rückfallebene — nicht nur auf das Ticket.",
+        "merksatz": "Gute Reiseunterlagen verbinden Terminplan, Kontakt, Buchung und Abrechnung."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

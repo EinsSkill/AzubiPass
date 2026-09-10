@@ -4,7 +4,71 @@
   "nummer": 6,
   "titel": "Entscheidungen mit Zahlen begründen",
   "untertitel": "Selbst machen oder einkaufen? Die Antwort steht in der Rechnung.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Eigenfertigung und Fremdbezug verursachen unterschiedliche variable und fixe Kosten.",
+          "Nur abbaubare Fixkosten verändern den Vergleich."
+        ],
+        "erklaerung": "Beim Make-or-buy-Vergleich werden variable Eigenfertigungskosten dem Einstandspreis des Fremdbezugs gegenübergestellt. Nicht abbaubare Fixkosten bleiben außen vor; abbaubare Fixkosten zählen mit. Die kritische Menge lautet zusätzliche Fixkosten ÷ (Einkaufspreis − variable Stückkosten).",
+        "beispiele": [
+          "Bei 22 € Einkaufspreis und 14 € variablen Eigenkosten beträgt die Ersparnis 8 € je Stück.",
+          "Bei 24.000 € zusätzlichen Fixkosten ergibt sich 24.000 € ÷ 8 € = 3.000 Stück als kritische Menge."
+        ],
+        "fallbeispiel": "Bis 3.000 Stück wird der Fremdbezug verglichen, weil die Ersparnis von 8 € je Eigenfertigungsstück die zusätzlichen Fixkosten noch nicht deckt. Ab 3.000 Stück deckt die Ersparnis die 24.000 €; darüber ist Eigenfertigung rechnerisch günstiger. Vor der Entscheidung werden Einstandspreis inklusive Bezugskosten und Abbaubarkeit der Fixkosten geprüft.",
+        "typische_fehler": "Alle Fixkosten werden als vermeidbar behandelt oder der Einkaufspreis ohne Fracht und Verpackung angesetzt. Auch die kritische Menge wird mit dem falschen Differenzbetrag berechnet.",
+        "verstaendnisfragen": [
+          "Welche Fixkosten gehören in den Vergleich? Nur die abbaubaren beziehungsweise zusätzlichen Fixkosten.",
+          "Wie lautet die kritische-Menge-Formel? Zusätzliche Fixkosten ÷ (Einkaufspreis − variable Stückkosten)."
+        ],
+        "pruefungsbezug": "Markiere in jeder Make-or-buy-Aufgabe variable Kosten, Einstandspreis und abbaubare Fixkosten getrennt.",
+        "merksatz": "Verglichen werden relevante Kosten — nicht die vollständige Kostenrechnung."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Ein Engpass begrenzt die nutzbare Produktionszeit.",
+          "Der absolute Deckungsbeitrag je Stück reicht bei Engpässen nicht aus."
+        ],
+        "erklaerung": "Ohne Engpass entscheidet der absolute Deckungsbeitrag. Bei einer knappen Maschine oder anderen Engpasseinheit wird der Deckungsbeitrag je Engpasseinheit berechnet. Die Rangfolge richtet sich nach dem relativen Beitrag, weil jede knappe Minute möglichst viel Ergebnis bringen soll.",
+        "beispiele": [
+          "Produkt A: 45 € DB bei 9 Minuten = 5 € je Minute.",
+          "Produkt B: 28 € bei 4 Minuten = 7 € je Minute; Produkt C: 36 € bei 6 Minuten = 6 € je Minute. Reihenfolge B, C, A."
+        ],
+        "fallbeispiel": "Die Maschine ist der Engpass. A bringt 45 ÷ 9 = 5 € je Minute, B 28 ÷ 4 = 7 €, C 36 ÷ 6 = 6 €. Deshalb wird B zuerst, dann C, dann A gefertigt, soweit der Absatz reicht. A hat zwar den höchsten DB je Stück, nutzt die knappe Maschinenzeit aber am schlechtesten.",
+        "typische_fehler": "Der höchste Stück-DB wird bei Engpass zuerst gewählt oder durch Stückzahl statt Engpasseinheit geteilt.",
+        "verstaendnisfragen": [
+          "Was zählt bei Engpass? Deckungsbeitrag je Engpasseinheit.",
+          "Welches Produkt wird im Beispiel zuerst gefertigt? B mit 7 € je Maschinenminute."
+        ],
+        "pruefungsbezug": "Teile jeden Stück-DB durch die knappe Einheit und bilde erst danach die Rangfolge.",
+        "merksatz": "Bei Engpass gewinnt nicht das beste Stück, sondern die beste knappe Einheit."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Zahlenmodelle beruhen auf Annahmen.",
+          "Qualität, Wissen, Abhängigkeit und Beschäftigung können nicht vollständig in der Rechnung stehen."
+        ],
+        "erklaerung": "Eine Kostenrechnung zeigt einen Ausschnitt. Vor der Entscheidung werden Einstandspreis, abbaubare Fixkosten und die Nutzung frei werdender Kapazität geprüft. Zusätzlich gehören Abhängigkeit vom Lieferer, Qualität, Termintreue, Fachwissen und Beschäftigung in die Beurteilung. Szenarien mit ungünstigeren Annahmen machen die Entscheidung belastbarer.",
+        "beispiele": [
+          "Ein günstiger Fremdbezug kann bei einer späteren Preiserhöhung kippen; die Abhängigkeit vom Lieferer wird deshalb zusätzlich geprüft.",
+          "Eine aufgelöste Eigenfertigung kann Fachwissen und Qualitätskontrolle verlieren, obwohl die Rechnung zunächst spart."
+        ],
+        "fallbeispiel": "Fremdbezug spart rechnerisch 12.000 € jährlich. Bevor die Fertigung aufgelöst wird, werden Einstandspreis inklusive Fracht, wirklich abbaubare Fixkosten und die alternative Nutzung der Kapazität geprüft. Danach werden Liefererabhängigkeit, Qualität, Termintreue und Beschäftigung bewertet. Ein zweites Szenario mit 10 % Lieferer-Preiserhöhung zeigt, ob der Vorteil stabil bleibt.",
+        "typische_fehler": "Das Rechenergebnis wird als alleinige Entscheidung behandelt. Nicht rechenbare Risiken und ein alternatives Szenario werden nicht dokumentiert.",
+        "verstaendnisfragen": [
+          "Welche drei Zahlenfragen müssen vor der Entscheidung geprüft werden? Einstandspreis, abbaubare Fixkosten und Nutzung der frei werdenden Kapazität.",
+          "Welche nicht rechenbaren Kriterien nennt der Inhalt? Abhängigkeit, Qualität, Wissen und Beschäftigung."
+        ],
+        "pruefungsbezug": "Ergänze jede Zahlenentscheidung um mindestens zwei qualitative Kriterien und eine Sensitivitäts- oder Szenarioprüfung.",
+        "merksatz": "Die Rechnung entscheidet nicht allein; sie macht Annahmen sichtbar, die fachlich bewertet werden müssen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

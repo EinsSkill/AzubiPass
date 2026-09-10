@@ -5,6 +5,78 @@
   "titel": "Wenn der Kunde nicht zahlt",
   "untertitel": "Vom freundlichen Hinweis bis zum Gerichtsvollzieher.",
   "minuten": 30,
+
+  "ausfuehrlich": {
+    "einleitung": "Wenn ein Kunde nicht zahlt, muss zuerst geklärt werden, welche Pflicht verletzt ist und ab welchem Datum die rechtlichen Folgen beginnen. Annahmeverzug betrifft die Ware; Zahlungsverzug betrifft das Geld. Danach führt das kaufmännische Mahnwesen bei Bedarf in das gerichtliche Verfahren.",
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Nach § 433 BGB muss der Käufer die Ware abnehmen und den Kaufpreis zahlen.",
+          "Die beiden Pflichten können unabhängig voneinander gestört werden."
+        ],
+        "erklaerung": "Annahmeverzug liegt vor, wenn der Verkäufer die richtige Ware ordnungsgemäß anbietet und der Käufer sie nicht annimmt. Dann geht die Gefahr auf den Käufer über, die Haftung des Verkäufers wird eingeschränkt und Mehraufwendungen können ersetzt verlangt werden. Zahlungsverzug entsteht dagegen, wenn eine fällige Forderung nicht bezahlt wird und die weiteren Voraussetzungen des § 286 BGB erfüllt sind; dann laufen Verzugszinsen und weitere Verzugsschäden.",
+        "beispiele": [
+          "Der Kunde schickt den Fahrer trotz richtiger Lieferung weg: Das ist Annahmeverzug, nicht Zahlungsverzug.",
+          "Die Ware wurde angenommen, aber die Rechnung bleibt nach Fälligkeit offen: Das ist Zahlungsverzug."
+        ],
+        "fallbeispiel": "Ein Kunde nimmt die angelieferte Ware nicht an und bezahlt anschließend auch die Rechnung nicht. Es können beide Störungen nebeneinander vorliegen: Für die nicht angenommene Ware gelten die Folgen des Annahmeverzugs; für die offene fällige Forderung die Folgen des Zahlungsverzugs. Die Begriffe werden getrennt geprüft, auch wenn sie im selben Sachverhalt vorkommen.",
+        "typische_fehler": "Jede Nichtzahlung als Annahmeverzug bezeichnen oder aus dem Annahmeverzug automatisch Verzugszinsen ableiten. Annahmeverzug betrifft die Übergabe; Zahlungsverzug die fällige Geldforderung.",
+        "verstaendnisfragen": [
+          "Welche wichtigste Folge hat Annahmeverzug? Die Gefahr geht auf den Käufer über und der Verkäufer haftet nur noch eingeschränkt.",
+          "Welche Folgen hat Zahlungsverzug? Vor allem Verzugszinsen und Ersatz weiterer Verzugsschäden."
+        ],
+        "pruefungsbezug": "Im Sachverhalt die Verben markieren: Wird nicht angenommen oder nicht bezahlt? Erst danach die passende Störung und ihre Rechtsfolgen nennen.",
+        "merksatz": "Annahmeverzug betrifft die Ware; Zahlungsverzug betrifft das Geld."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Zahlungsverzug kann durch Mahnung, einen festen Zahlungstermin oder die 30-Tage-Regel eintreten.",
+          "Die 40-Euro-Pauschale gilt nur bei Entgeltforderungen zwischen Unternehmen."
+        ],
+        "erklaerung": "Der Grundfall ist die Mahnung nach Fälligkeit. Daneben kann ein kalendermäßig bestimmtes Zahlungsdatum den Verzug ohne Mahnung auslösen. Die 30-Tage-Regel beginnt bei einer fälligen Entgeltforderung spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung; gegenüber Verbrauchern ist der Hinweis in der Rechnung erforderlich. Die konkrete Zinshöhe hängt vom jeweils geltenden Basiszinssatz ab und muss bei aktuellen Aufgaben geprüft werden.",
+        "beispiele": [
+          "‚Zahlbar bis 30. Juni‘: Der Verzug kann am Folgetag ohne weitere Mahnung beginnen.",
+          "Bei einer sofort fälligen Rechnung an einen Geschäftskunden kann die 30-Tage-Regel auch ohne Hinweis in der Rechnung greifen."
+        ],
+        "fallbeispiel": "Eine Rechnung über 5.000 € geht einem Geschäftskunden am 2. Mai zu und ist sofort fällig. Steht kein konkretes Zahlungsdatum und kein Hinweis auf Verzug in der Rechnung, beginnt der Verzug spätestens nach Ablauf der 30 Tage nach Fälligkeit und Zugang. Ab diesem Zeitpunkt werden die Verzugszinsen nach § 288 BGB und bei einem Geschäftskunden die 40-Euro-Pauschale geprüft. Für den genauen Eurobetrag muss der aktuelle Basiszinssatz eingesetzt werden.",
+        "typische_fehler": "Ohne Mahnung immer das Fehlen von Verzug annehmen oder ‚zahlbar sofort‘ mit einem kalendermäßig bestimmten Datum gleichsetzen. Außerdem wird die 40-Euro-Pauschale gegenüber Verbrauchern angesetzt oder der veränderliche Basiszinssatz als feste Zahl behandelt.",
+        "verstaendnisfragen": [
+          "Welche drei Wege können zum Zahlungsverzug führen? Mahnung, kalendermäßige Bestimmung und 30-Tage-Regel.",
+          "Wovon hängt die konkrete Höhe der Verzugszinsen ab? Vom gesetzlichen Prozentsatz und dem jeweils aktuellen Basiszinssatz sowie davon, ob ein Verbraucher beteiligt ist."
+        ],
+        "pruefungsbezug": "Das Eintrittsdatum auf einer Zeitachse bestimmen und erst danach Zinsen und Pauschale prüfen. Bei dynamischen Werten den Prüfmarker beachten und keine veraltete Zahl einsetzen.",
+        "merksatz": "Erst den Beginn des Verzugs bestimmen, dann Zinsen, Pauschale und weiteren Schaden berechnen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Das kaufmännische Mahnwesen ist von einem gerichtlichen Mahnverfahren zu unterscheiden.",
+          "Ein gerichtlicher Titel ermöglicht anschließend die Zwangsvollstreckung."
+        ],
+        "ablauf": [
+          "Forderung fällig stellen und kaufmännisch mahnen.",
+          "Bei ausbleibender Zahlung Mahnbescheid beantragen.",
+          "Widerspruchsfrist abwarten; bei Ausbleiben Vollstreckungsbescheid beantragen.",
+          "Nach einem vollstreckbaren Titel die Zwangsvollstreckung einleiten."
+        ],
+        "erklaerung": "Eine kaufmännische Mahnung ist eine betriebliche Erinnerung und kann individuell gestaltet werden. Das gerichtliche Mahnverfahren ist dagegen ein formaler Weg: Mahnbescheid, mögliche zweiwöchige Reaktion, Vollstreckungsbescheid und schließlich Zwangsvollstreckung. Das Gericht prüft beim Mahnbescheid zunächst nur die Formalien; bei Widerspruch wird die Forderung im streitigen Verfahren inhaltlich geprüft.",
+        "beispiele": [
+          "Gegen einen zugestellten Mahnbescheid kann der Schuldner innerhalb von zwei Wochen Widerspruch einlegen.",
+          "Nach einem Vollstreckungsbescheid kann bei ausbleibender Zahlung zum Beispiel eine Konto-, Lohn- oder Sachpfändung folgen."
+        ],
+        "fallbeispiel": "Eine Forderung über 8.000 € bleibt trotz kaufmännischer Mahnung offen. Der Gläubiger beantragt den Mahnbescheid. Widerspricht der Schuldner, endet der vereinfachte Mahnweg und die Forderung wird im Streitverfahren geprüft. Widerspricht er nicht, kann der Vollstreckungsbescheid beantragt werden. Bleibt auch danach die Zahlung aus, ist die Zwangsvollstreckung möglich.",
+        "typische_fehler": "Mahnbescheid und Vollstreckungsbescheid werden vertauscht oder angenommen, das Gericht prüfe beim ersten Schritt bereits die materielle Richtigkeit der Forderung. Auch die zweiwöchigen Reaktionsfristen werden übersehen.",
+        "verstaendnisfragen": [
+          "Was passiert bei Widerspruch gegen den Mahnbescheid? Das Verfahren geht in ein streitiges Verfahren über.",
+          "Welche Stufe erlaubt die Zwangsvollstreckung? Der Vollstreckungsbescheid beziehungsweise der daraus folgende vollstreckbare Titel."
+        ],
+        "pruefungsbezug": "Die vier Stufen in Reihenfolge nennen und jeweils die mögliche Reaktion des Schuldners ergänzen: Mahnbescheid, Widerspruch, Vollstreckungsbescheid, Einspruch, Zwangsvollstreckung.",
+        "merksatz": "Mahnen, Mahnbescheid, Vollstreckungsbescheid, vollstrecken — jede Stufe hat eigene Fristen und Folgen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

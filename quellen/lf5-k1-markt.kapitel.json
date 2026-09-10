@@ -5,6 +5,70 @@
   "titel": "Der Markt und die Marktsituation",
   "untertitel": "Wo Angebot und Nachfrage sich treffen — und wer dabei am längeren Hebel sitzt.",
   "minuten": 20,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "a1",
+        "vorauswissen": [
+          "Anbieter wollen Leistungen verkaufen, Nachfrager wollen sie erwerben.",
+          "Der Preis verbindet Angebot und Nachfrage."
+        ],
+        "erklaerung": "Ein Markt ist das Zusammentreffen von Angebot und Nachfrage. Der Preis ist nicht einfach nur eine Zahl aus der Preisliste, sondern das Ergebnis dieses Zusammentreffens. Die Marktform hängt von der Zahl der Anbieter ab: Im Monopol steht ein Anbieter vielen Nachfragern gegenüber, im Oligopol wenigen Anbietern und im Polypol vielen Anbietern.",
+        "beispiele": [
+          "Bei einem Monopol hat der einzelne Anbieter mehr Preisspielraum als in einem Polypol, in dem viele Anbieter miteinander konkurrieren.",
+          "Bei einem Oligopol beobachten wenige Anbieter einander; Preisentscheidungen eines Anbieters können die übrigen unmittelbar beeinflussen."
+        ],
+        "fallbeispiel": "Ein Betrieb prüft, warum er seinen Preis nicht beliebig erhöhen kann. Zuerst wird die Marktform betrachtet. Stehen viele vergleichbare Anbieter bereit, handelt es sich eher um ein Polypol; der Preisspielraum ist begrenzt. Gibt es dagegen nur wenige Anbieter, ist der Preisspielraum größer. Die Entscheidung wird damit nicht nur aus den eigenen Kosten, sondern aus dem Markt abgeleitet.",
+        "typische_fehler": "Markt wird mit einem Verkaufsraum gleichgesetzt oder die Marktform nach der Zahl der Kunden statt nach der Zahl der Anbieter bestimmt. Außerdem wird der Preis als ausschließlich kostenbestimmt verstanden.",
+        "verstaendnisfragen": [
+          "Woraus entsteht der Preis im Marktmodell? Aus dem Zusammentreffen von Angebot und Nachfrage.",
+          "Welche Marktform hat die geringste Anbieterzahl? Das Monopol."
+        ],
+        "pruefungsbezug": "Zähle bei Marktformaufgaben die Anbieter und ordne erst danach Monopol, Oligopol oder Polypol zu. Ergänze die Folgerung für den Preisspielraum.",
+        "merksatz": "Markt bedeutet Angebot plus Nachfrage; je weniger Anbieter, desto größer der mögliche Preisspielraum."
+      },
+      {
+        "abschnitt": "a2",
+        "vorauswissen": [
+          "Marktmacht hängt davon ab, welche Seite knapp ist.",
+          "Angebot und Nachfrage können sich unterschiedlich entwickeln."
+        ],
+        "erklaerung": "Übersteigt das Angebot die Nachfrage, liegt ein Käufermarkt vor. Kundinnen und Kunden können vergleichen und der Anbieter muss sich stärker an ihren Wünschen orientieren. Übersteigt dagegen die Nachfrage das Angebot, liegt ein Verkäufermarkt vor; der Anbieter hat die stärkere Position. Die Marktlage erklärt damit auch, warum Marketing bei einem Käufermarkt besonders wichtig wird.",
+        "beispiele": [
+          "Viele Anbieter konkurrieren um wenige Kunden: Käufermarkt, stärkerer Preisdruck und höherer Bedarf an Marketing.",
+          "Viele Kunden suchen eine knappe Leistung, die nur wenige Anbieter liefern: Verkäufermarkt, größerer Spielraum des Anbieters."
+        ],
+        "fallbeispiel": "Ein Betrieb stellt fest, dass mehrere Anbieter dieselbe Leistung anbieten, während die Zahl der Kunden sinkt. Das Angebot ist größer als die Nachfrage. Die Situation ist ein Käufermarkt. Der Betrieb muss die Kundenstruktur und Konkurrenz prüfen und sein Marketing nutzen, statt allein auf eine Preiserhöhung zu setzen.",
+        "typische_fehler": "Die Begriffe werden aus Sicht des Verkäufers verwechselt. Außerdem wird ein Käufermarkt nur als ‚schlechter Markt‘ bezeichnet, ohne die Konsequenz für Kundenorientierung, Preis und Marketing zu erklären.",
+        "verstaendnisfragen": [
+          "Wer hat im Käufermarkt die stärkere Position? Die Nachfrager beziehungsweise Kunden.",
+          "Was kennzeichnet den Verkäufermarkt? Die Nachfrage übersteigt das Angebot; der Anbieter ist in der stärkeren Position."
+        ],
+        "pruefungsbezug": "Suche in Fallaufgaben zuerst nach Knappheit: Ist das Angebot oder die Nachfrage größer? Daraus folgt die Marktbezeichnung und die Machtverteilung.",
+        "merksatz": "Wer knapp ist, hat die Macht: viel Angebot bedeutet Käufermarkt, viel Nachfrage Verkäufermarkt."
+      },
+      {
+        "abschnitt": "a3",
+        "vorauswissen": [
+          "Die eigene Marktposition ergibt sich nicht aus einer einzelnen Zahl.",
+          "Kunden, Konkurrenz und konjunkturelle Lage beeinflussen die Marktsituation."
+        ],
+        "erklaerung": "Eine Marktsituation wird über Kundenstruktur, Konkurrenz und konjunkturelle Lage eingeschätzt. Der Marktanteil setzt den eigenen Umsatz ins Verhältnis zum Marktumsatz: eigener Umsatz ÷ Marktumsatz × 100. Erst der Vergleich mit dem Gesamtmarkt zeigt, wie groß die eigene Position tatsächlich ist.",
+        "beispiele": [
+          "Ein Betrieb betrachtet nicht nur seine Umsätze, sondern auch Kundengruppen und die Zahl der Wettbewerber.",
+          "Für den Marktanteil wird der eigene Umsatz durch den Umsatz des gesamten Marktes geteilt und mit 100 multipliziert."
+        ],
+        "fallbeispiel": "Ein Unternehmen kennt seinen eigenen Umsatz, aber noch nicht den Marktumsatz. Eine Aussage wie ‚wir verkaufen viel‘ reicht deshalb nicht für den Marktanteil. Zuerst wird der Gesamtmarkt abgegrenzt und der Marktumsatz ermittelt. Dann wird gerechnet: eigener Umsatz ÷ Marktumsatz × 100. Das Ergebnis wird anschließend zusammen mit Kundenstruktur, Konkurrenz und Konjunktur bewertet.",
+        "typische_fehler": "Der eigene Umsatz wird als Marktanteil bezeichnet oder durch die Kundenzahl geteilt. Außerdem wird die konjunkturelle Lage ignoriert, obwohl sie die Nachfrage des gesamten Marktes beeinflussen kann.",
+        "verstaendnisfragen": [
+          "Welche drei Bereiche helfen bei der Markteinschätzung? Kundenstruktur, Konkurrenz und konjunkturelle Lage.",
+          "Wie lautet die Marktanteilsformel? Eigener Umsatz ÷ Marktumsatz × 100."
+        ],
+        "pruefungsbezug": "Schreibe bei Marktanteilsaufgaben die Formel vor dem Einsetzen hin und prüfe, ob der Nenner wirklich den gesamten abgegrenzten Markt umfasst.",
+        "merksatz": "Marktanteil ist immer ein Verhältnis zum Gesamtmarkt, nie der eigene Umsatz allein."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

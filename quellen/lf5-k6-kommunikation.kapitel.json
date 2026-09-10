@@ -5,6 +5,70 @@
   "titel": "Kommunikationspolitik und Kundenbindung",
   "untertitel": "Wie du gehört wirst — und warum das Halten günstiger ist als das Gewinnen.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "f1",
+        "vorauswissen": [
+          "Ein Betrieb kann über unterschiedliche Wege mit seinem Markt kommunizieren.",
+          "Nicht jede Kommunikation bewirbt direkt ein einzelnes Produkt."
+        ],
+        "erklaerung": "Kommunikationspolitik umfasst Werbung, Verkaufsförderung, Öffentlichkeitsarbeit und persönlichen Verkauf. Verkaufsförderung ist immer befristet; eine dauerhafte Maßnahme wird zur Preissenkung. Öffentlichkeitsarbeit bewirbt den Betrieb und sein Ansehen, nicht ein einzelnes Produkt. Der persönliche Verkauf arbeitet mit dem direkten Gespräch.",
+        "beispiele": [
+          "Eine zeitlich begrenzte Aktion ist Verkaufsförderung; eine dauerhafte Preisreduzierung ist keine befristete Verkaufsförderung mehr.",
+          "Eine Darstellung der Unternehmensleistungen und des Betriebs ist Öffentlichkeitsarbeit, während eine Produktanzeige Werbung ist."
+        ],
+        "fallbeispiel": "Ein Betrieb plant eine befristete Aktion für ein Produkt und gleichzeitig eine Information über seine Rolle als Ausbildungsbetrieb. Die Produktaktion wird als Verkaufsförderung eingeordnet. Die Information über den Betrieb ist Öffentlichkeitsarbeit. Beide Maßnahmen gehören zur Kommunikationspolitik, verfolgen aber unterschiedliche Gegenstände.",
+        "typische_fehler": "Öffentlichkeitsarbeit und Werbung werden gleichgesetzt oder jede Preisaktion als Verkaufsförderung bezeichnet, obwohl sie dauerhaft angelegt ist.",
+        "verstaendnisfragen": [
+          "Welche vier Kommunikationsarten gehören zum Inhalt? Werbung, Verkaufsförderung, Öffentlichkeitsarbeit und persönlicher Verkauf.",
+          "Was bewirbt Öffentlichkeitsarbeit? Den Betrieb beziehungsweise sein Ansehen, nicht unmittelbar ein einzelnes Produkt."
+        ],
+        "pruefungsbezug": "Ordne eine Maßnahme über Dauer und Gegenstand zu: befristete Aktivierung, Produktwerbung, Betriebsbild oder persönliches Verkaufsgespräch.",
+        "merksatz": "Kommunikation kann Produkt, Aktion, Betrieb oder persönliches Gespräch zum Gegenstand haben."
+      },
+      {
+        "abschnitt": "f2",
+        "vorauswissen": [
+          "Werbung soll Aufmerksamkeit in eine Handlung überführen.",
+          "Rechtliche Grenzen gelten unabhängig vom Werbeziel."
+        ],
+        "erklaerung": "AIDA beschreibt die Stufen Attention, Interest, Desire und Action. Jede Stufe baut auf der vorherigen auf: Aufmerksamkeit allein reicht nicht, wenn kein Interesse und kein Wunsch entstehen. Nach § 5 UWG ist irreführende Werbung verboten. Werbung per Mail, Telefon oder Fax setzt nach § 7 UWG die vorherige Einwilligung voraus.",
+        "beispiele": [
+          "Eine Anzeige, die auffällt, aber keinen Wunsch nach dem Produkt und keine Handlungsaufforderung auslöst, bleibt bei Attention oder Interest stehen.",
+          "Eine Werbemail wird nicht allein durch einen attraktiven Inhalt zulässig; die vorherige Einwilligung ist zu prüfen."
+        ],
+        "fallbeispiel": "Eine Anzeige fällt durch ein großes Bild auf, erklärt aber keinen Nutzen und enthält keine Handlungsaufforderung. In AIDA fehlen mindestens Desire und Action. Bei der Überarbeitung werden Nutzen und Wunsch aufgebaut und anschließend eine konkrete Handlung ermöglicht. Zusätzlich wird geprüft, dass keine irreführende Aussage verwendet wird.",
+        "typische_fehler": "AIDA wird als lose Sammlung von Begriffen gelernt oder die fehlende Desire-Stufe übersehen. Werberecht wird auf eine Quellenangabe reduziert, obwohl Irreführung und Einwilligung geprüft werden müssen.",
+        "verstaendnisfragen": [
+          "Wofür steht AIDA? Attention, Interest, Desire, Action.",
+          "Welche zwei Rechtsmerksätze gelten? Keine irreführende Werbung und vorherige Einwilligung für Werbung per Mail, Telefon oder Fax."
+        ],
+        "pruefungsbezug": "Prüfe Werbeanzeigen stufenweise und nenne bei Rechtsfällen ausdrücklich § 5 beziehungsweise § 7 UWG als vorhandenen Bezug.",
+        "merksatz": "Erst Aufmerksamkeit, dann Interesse, Wunsch und Handlung — AIDA ist eine Kette."
+      },
+      {
+        "abschnitt": "f3",
+        "vorauswissen": [
+          "Kundenbindung kann auf unterschiedlichen Bindungsarten beruhen.",
+          "Ein bestehender Kunde muss nicht neu gewonnen werden."
+        ],
+        "erklaerung": "Kundenbindung kann wirtschaftlich, technisch, vertraglich oder emotional entstehen. Nur die emotionale Bindung ist freiwillig; die anderen beruhen auf Preisvorteilen, technischen Systemen oder Verträgen. Einen Kunden zu halten ist deutlich günstiger, als einen neuen zu gewinnen. Deshalb gehört nach dem Kauf auch die Pflege der Beziehung in die Marketingaufgabe.",
+        "beispiele": [
+          "Ein Vertrag bindet über seine Laufzeit vertraglich; ein technisches System kann den Wechsel erschweren und dadurch technische Bindung erzeugen.",
+          "Ein Unternehmen kann Kunden über wirtschaftliche Vorteile halten oder durch gute persönliche Erfahrungen emotional binden."
+        ],
+        "fallbeispiel": "Ein Betrieb verliert Kunden trotz guter Einzelwerbung. Die Analyse prüft zuerst die vier Bindungsarten und die Zeit nach dem Kauf. Fehlen verlässliche Nachbetreuung und passende Vorteile, wird nicht nur mehr Werbung geschaltet, sondern die bestehende Kundenbeziehung verbessert. So wird das Halten von Kunden als eigene Aufgabe sichtbar.",
+        "typische_fehler": "Kundenbindung wird nur mit Rabatt gleichgesetzt oder jede Bindung als freiwillig angesehen. Außerdem wird nur die Neukundengewinnung betrachtet, obwohl bestehende Kunden wirtschaftlich günstiger zu halten sind.",
+        "verstaendnisfragen": [
+          "Welche vier Bindungsarten gibt es? Wirtschaftliche, technische, vertragliche und emotionale Bindung.",
+          "Welche ist freiwillig? Die emotionale Kundenbindung."
+        ],
+        "pruefungsbezug": "Ordne Fallbeispiele nach dem Bindungsgrund und begründe zusätzlich, warum Kundenpflege eine eigene Marketingmaßnahme ist.",
+        "merksatz": "Kundenbindung beginnt nach dem Kauf; emotional bleibt nur, wer freiwillig bleibt."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

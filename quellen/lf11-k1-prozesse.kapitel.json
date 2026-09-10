@@ -4,7 +4,71 @@
   "nummer": 1,
   "titel": "Was ein Geschäftsprozess ist",
   "untertitel": "Abteilungen denken senkrecht. Prozesse laufen quer.",
-  "minuten": 20,
+ "minuten": 20,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ein Prozess verbindet mehrere Tätigkeiten zu einem Ergebnis.",
+          "Abteilungen können an verschiedenen Stationen desselben Vorgangs beteiligt sein."
+        ],
+        "erklaerung": "Ein Geschäftsprozess wird durch ein Ereignis ausgelöst, enthält Tätigkeiten und führt zu einem Ergebnis für einen internen oder externen Kunden. Er verläuft quer durch Abteilungen und wird aus Kundensicht beschrieben. Eine Auftragsabwicklung beginnt etwa mit der Bestellung und endet mit gelieferter Ware und Rechnung.",
+        "beispiele": [
+          "Eingang einer Kundenbestellung löst Prüfen, Bestätigen, Kommissionieren, Versenden und Rechnungsstellen aus.",
+          "Vertrieb, Lager, Versand und Buchhaltung arbeiten an einem Prozess, obwohl sie organisatorisch getrennt sind."
+        ],
+        "fallbeispiel": "Für eine Auftragsabwicklung werden Auslöser, Tätigkeiten und Ergebnis festgelegt. Auslöser ist der Eingang der Bestellung; Ergebnis ist die gelieferte Ware mit Rechnung. Die Beteiligten werden über ihre Abteilungsgrenzen hinweg verbunden und eine Verantwortung für den Gesamtweg benannt.",
+        "typische_fehler": "Das Ergebnis wird aus Abteilungssicht formuliert oder der Prozess an einer Abteilungsgrenze beendet. Außerdem wird nur die Tätigkeit, nicht der Auslöser und der Kundennutzen beschrieben.",
+        "verstaendnisfragen": [
+          "Welche drei Bestandteile gehören zum Geschäftsprozess? Auslöser, Tätigkeiten und Ergebnis für einen Kunden.",
+          "Wie verläuft ein Geschäftsprozess organisatorisch? Quer durch Abteilungen, nicht nur innerhalb einer Stelle."
+        ],
+        "pruefungsbezug": "Formuliere Prozessgrenzen mit Ereignis und Kundenergebnis und nenne die beteiligten Stellen in der tatsächlichen Reihenfolge.",
+        "merksatz": "Ein Geschäftsprozess beginnt mit einem Auslöser und endet mit einem wahrnehmbaren Kundenergebnis."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Prozesse können Kern-, Unterstützungs- oder Führungsaufgaben enthalten.",
+          "Abteilungsübergänge sind besondere Prüfpunkte."
+        ],
+        "erklaerung": "Kernprozesse schaffen unmittelbar Kundennutzen. Unterstützungsprozesse ermöglichen die Kernprozesse und werden häufig standardisiert. Führungsprozesse planen, steuern und kontrollieren. Die Schnittstellen zwischen diesen Bereichen müssen sichtbar bleiben, weil dort Wartezeit, Informationsverlust und Doppelerfassung entstehen.",
+        "beispiele": [
+          "Die Auftragsabwicklung ist ein Kernprozess, weil ihr Ergebnis der Kunde erhält.",
+          "Personal- oder IT-Unterstützung ermöglicht Kernprozesse; Planung und Kontrolle gehören zu Führungsprozessen."
+        ],
+        "fallbeispiel": "Vertrieb, Lager und Buchhaltung beschweren sich jeweils über die anderen. Das deutet nicht automatisch auf eine einzelne schlechte Abteilung, sondern auf unklare Schnittstellen. Der Gesamtprozess wird dargestellt, Übergaben werden gemessen und eine Verantwortung für den Weg vom Auslöser bis zum Ergebnis eingerichtet.",
+        "typische_fehler": "Eine Abteilung wird als ganzer Prozess bezeichnet oder Kern-, Unterstützungs- und Führungsprozesse werden nach ihrer Wichtigkeit statt nach ihrer Funktion unterschieden.",
+        "verstaendnisfragen": [
+          "Was macht ein Kernprozess? Er schafft unmittelbar Kundennutzen.",
+          "Warum sind Schnittstellen kritisch? Dort entstehen Warten, Informationsverlust und Doppelerfassung."
+        ],
+        "pruefungsbezug": "Ordne Prozessarten nach ihrer Funktion und suche bei Beschwerden zuerst nach Übergaben statt nach Schuldzuweisungen.",
+        "merksatz": "Der Kunde sieht den Gesamtprozess; Schnittstellen entscheiden, ob er reibungslos funktioniert."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "An einer Schnittstelle wechselt die Zuständigkeit.",
+          "Zeit kann aus Bearbeitung, Liegen, Transport und Prüfung bestehen."
+        ],
+        "erklaerung": "Schnittstellen sind typische Bruchstellen: Vorgänge warten im nächsten Stapel, Informationen fehlen, Daten werden doppelt erfasst und Zuständigkeiten bleiben unklar. Ein Medienbruch zwischen Papier und digital ist besonders teuer. Prozessverbesserung beginnt daher mit dem Sichtbarmachen und Messen der Übergaben.",
+        "beispiele": [
+          "Eine unvollständige Übergabe löst Rückfragen und Nacharbeit aus.",
+          "Der Wechsel von digitalem Auftrag zu Papierbeleg und zurück verursacht Doppelerfassung und Übertragungsfehler."
+        ],
+        "fallbeispiel": "Im Betrieb beschwert sich jede Abteilung über die nächste. Der Prozess wird als Ganzes aufgenommen, vom Auslöser bis zum Kundenergebnis. An jeder Schnittstelle werden Wartezeit, Informationsverlust und erneute Dateneingabe geprüft. Daraus entstehen gemeinsame Kennzahlen für den Gesamtprozess statt isolierter Abteilungswerte.",
+        "typische_fehler": "Nur Bearbeitungszeiten innerhalb der Abteilungen werden gemessen. Medienbruch wird als technisches Detail statt als kostspielige Schnittstelle behandelt.",
+        "verstaendnisfragen": [
+          "Welche Probleme entstehen an Schnittstellen? Warten, Informationsverlust, Doppelerfassung und unklare Zuständigkeit.",
+          "Was ist ein Medienbruch? Der Wechsel zwischen Medien wie digital und Papier, der erneute Erfassung und Fehler verursachen kann."
+        ],
+        "pruefungsbezug": "Nenne bei Prozessproblemen die Schnittstelle als Ursache und konkretisiere Wartezeit, Informationsverlust oder Medienbruch.",
+        "merksatz": "Prozesse scheitern selten am normalen Arbeitsschritt, sondern an der Übergabe."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

@@ -3,6 +3,77 @@
   "lernfeld": "lf7",
   "nummer": 1,
   "titel": "Wie Kommunikation funktioniert",
+  "ausfuehrlich": {
+    "einleitung": "Kommunikation ist ein Prozess, in dem eine gemeinte Bedeutung über mehrere Stationen zum Empfänger gelangt. Für die Praxis reicht es deshalb nicht, nur den eigenen Wortlaut zu betrachten: Kanal, Ton, Körpersprache und die Deutung des Gegenübers gehören immer mit dazu.",
+    "abschnitte": [
+      {
+        "abschnitt": "a1",
+        "vorauswissen": [
+          "Eine Nachricht beginnt mit einem Gedanken oder Anliegen des Senders.",
+          "Sender und Empfänger können dieselben Wörter mit unterschiedlichen Erfahrungen verbinden."
+        ],
+        "ablauf": [
+          "Der Sender entwickelt einen Gedanken.",
+          "Er kodiert ihn in Worte, Tonfall und Gesten.",
+          "Die Nachricht läuft über einen Kanal.",
+          "Der Empfänger dekodiert sie mit seinem eigenen Deutungsrahmen."
+        ],
+        "erklaerung": "Die Bedeutung einer Nachricht entsteht nicht vollständig beim Senden. Schon ein unklarer Gedanke, eine unpassende Formulierung oder ein Kanal, der wichtige Signale weglässt, kann die Botschaft verändern. Beim Empfänger wird das Empfangene mit eigenen Erfahrungen entschlüsselt. Nachfragen und Zusammenfassen sind deshalb die Kontrolle, ob Gemeintes und Verstandenes übereinstimmen.",
+        "beispiele": [
+          "Eine kurze E-Mail kann sachlich gemeint sein, aber ohne Tonfall beim Empfänger härter ankommen.",
+          "Ein Fachbegriff kann beim Sender selbstverständlich wirken, beim Empfänger aber eine andere Bedeutung oder gar keine klare Vorstellung auslösen."
+        ],
+        "fallbeispiel": "Eine Ausbilderin sagt: ‚Das brauche ich möglichst bald.‘ Der Sender meint vielleicht heute, der Empfänger versteht innerhalb der Woche. Der Fehler liegt nicht zwingend in der Absicht, sondern in der unklaren Kodierung. Die sichere Lösung lautet: ‚Meinst du heute bis 16 Uhr oder reicht morgen?‘ Damit wird die Dekodierung überprüft.",
+        "typische_fehler": "Der Sender setzt voraus, dass seine Absicht automatisch angekommen ist. Ebenso falsch ist die Annahme, eine ausführliche Nachricht sei immer klarer; zusätzliche Wörter können die eigentliche Handlungsaufforderung verdecken.",
+        "verstaendnisfragen": [
+          "An welcher Stelle wird die Bedeutung endgültig hergestellt? Beim Empfänger während der Dekodierung.",
+          "Warum ist Nachfragen keine Schwäche? Weil nur so geprüft wird, ob die entschlüsselte Bedeutung der gemeinten entspricht."
+        ],
+        "pruefungsbezug": "Die Begriffe Gedanke, Kodierung, Kanal und Dekodierung in der richtigen Reihenfolge erklären und an einer konkreten Störung anwenden.",
+        "merksatz": "Gemeint ist nicht automatisch gesagt, gesagt nicht gehört und gehört nicht automatisch verstanden."
+      },
+      {
+        "abschnitt": "a2",
+        "vorauswissen": [
+          "Verbal, paraverbal und nonverbal beschreiben unterschiedliche Teile derselben Kommunikation.",
+          "Ein Kanal kann den anderen bestätigen oder ihm widersprechen."
+        ],
+        "erklaerung": "Verbal sind die Wörter. Paraverbal sind Lautstärke, Tempo, Betonung und Pausen. Nonverbal sind Mimik, Gestik, Haltung, Blick und Abstand. In einem Gespräch wirken die drei Ebenen gleichzeitig. Widersprechen sie sich, wird häufig der weniger bewusst steuerbare Ton oder die Körpersprache als glaubwürdiger wahrgenommen.",
+        "beispiele": [
+          "Der Satz ‚Das haben Sie ja schön gemacht‘ kann durch Betonung als Lob oder Vorwurf verstanden werden.",
+          "‚Kein Problem, mache ich‘ mit verschränkten Armen und knappem Ton sendet eine andere Wirkung als derselbe Satz mit offenem Blick und ruhiger Stimme."
+        ],
+        "fallbeispiel": "Eine Kollegin sagt ‚Kein Problem, mache ich‘, verschränkt aber die Arme und antwortet knapp. Verbal klingt die Zusage positiv; paraverbal und nonverbal wirken zurückhaltend. Der Empfänger sollte den Widerspruch nicht einfach als Zustimmung verbuchen, sondern offen klären: ‚Ich höre eine Zusage, bin aber unsicher, ob es gerade zeitlich passt.‘",
+        "typische_fehler": "Nur den Wortlaut wiederholen und Ton sowie Körpersprache ignorieren. Umgekehrt darf eine einzelne Geste nicht als sichere Absicht behandelt werden; entscheidend ist das Zusammenspiel und die anschließende Klärung.",
+        "verstaendnisfragen": [
+          "Was gehört zum paraverbalen Kanal? Lautstärke, Tempo, Betonung und Pausen.",
+          "Was sollte bei widersprüchlichen Signalen geschehen? Nicht vorschnell interpretieren, sondern die Wahrnehmung ansprechen und nachfragen."
+        ],
+        "pruefungsbezug": "In Situationen nicht nur den Kanal nennen, sondern die Wirkung erklären: Welches Signal widerspricht welchem und wie kann die Person den Widerspruch klären?",
+        "merksatz": "Worte sagen etwas, Ton färbt es und Körpersprache macht die Wirkung sichtbar."
+      },
+      {
+        "abschnitt": "a3",
+        "vorauswissen": [
+          "Kommunikationsstörungen können an der Umgebung, der Sprache, der Person oder der Beziehung liegen.",
+          "Eine passende Gegenmaßnahme setzt an der tatsächlichen Ursache an."
+        ],
+        "erklaerung": "Eine äußere Störung wird durch Lärm oder Unterbrechungen verursacht. Sprachliche Störungen entstehen durch Fachbegriffe oder komplizierte Formulierungen. Zeitdruck, Ärger und Müdigkeit wirken persönlich. Bei einer Beziehungsstörung wird die Sache durch Misstrauen oder einen alten Konflikt überlagert. Wahrnehmungsstörungen entstehen, wenn Vorurteile oder Erwartungen die Deutung lenken.",
+        "beispiele": [
+          "Im Großraumbüro hilft bei einer äußeren Störung ein Raumwechsel oder ein späterer Termin.",
+          "Wenn ein Kunde Abkürzungen nicht versteht, muss die Sprache angepasst werden; bei einem alten Konflikt muss zuerst die Beziehungsebene geklärt werden."
+        ],
+        "fallbeispiel": "Ein Kollege reagiert seit Wochen abweisend auf sachliche E-Mails. Eine noch längere Mail würde die Ursache wahrscheinlich nicht lösen. Die Situation spricht für eine Beziehungsstörung. Sinnvoller ist ein persönliches Gespräch, in dem die Wahrnehmung angesprochen und anschließend wieder die Sachfrage geklärt wird.",
+        "typische_fehler": "Alle Störungen mit mehr Sachinformationen bekämpfen oder eine persönliche Belastung als Unwillen bewerten. Besonders bei Beziehungsstörungen führt sachliches Nachlegen ohne Klärung häufig zu weiterer Distanz.",
+        "verstaendnisfragen": [
+          "Warum ist eine Beziehungsstörung besonders hartnäckig? Weil der Empfänger die Sache durch die belastete Beziehung bewertet.",
+          "Welche sechs Regeln helfen fast immer? Ausreden lassen, verständlich sprechen, konkret bleiben, Ich-Botschaften verwenden, Verständnis zusammenfassen und beim Thema bleiben."
+        ],
+        "pruefungsbezug": "Störungstyp, konkretes Beispiel und passende Gegenmaßnahme gemeinsam nennen. Nur die Kategorie aufzuzählen reicht bei Fallaufgaben nicht.",
+        "merksatz": "Erst die Störung erkennen, dann die passende Ebene klären — mehr Argumente sind nicht immer die Lösung."
+      }
+    ]
+  },
   "untertitel": "Vom Gedanken zum Verstandenen — und was unterwegs verloren geht.",
   "minuten": 20,
   "lernziele": [

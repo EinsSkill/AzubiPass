@@ -5,6 +5,70 @@
   "titel": "Informationen beschaffen und aufbereiten",
   "untertitel": "Die Information ist da. Die Frage ist, ob du ihr trauen kannst.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Eine Informationssuche braucht ein klares Ziel.",
+          "Interne und externe Quellen beantworten unterschiedliche Fragen."
+        ],
+        "erklaerung": "Vor der Suche wird geklärt: Was soll bekannt sein, wofür wird die Information benötigt und wie genau muss sie sein? Interne Quellen sind oft kostenlos, aktuell und auf den eigenen Betrieb bezogen. Für rechtliche Fragen ist der Gesetzestext die maßgebliche Quelle. Texte von KI-Werkzeugen können ein Such- oder Strukturierungshilfsmittel sein, ersetzen aber keine überprüfte Quelle.",
+        "beispiele": [
+          "Für den tatsächlichen Verbrauch von Büromaterial werden interne Auswertungen und Vorgänge herangezogen; für einen Marktvergleich werden zusätzlich externe Angebote eingeholt.",
+          "Bei einer Frage zu einer gesetzlichen Frist wird der Gesetzestext geprüft, statt eine ungeprüfte Zusammenfassung als Beleg zu verwenden."
+        ],
+        "fallbeispiel": "Die Geschäftsführung möchte wissen, ob sich ein Wechsel des Büromaterial-Lieferers lohnt. Zuerst werden Artikelgruppen, Zeitraum und Entscheidungskriterien festgelegt. Intern werden Verbrauch, gezahlte Preise und Reklamationen ermittelt. Extern werden vergleichbare Angebote mit identischen Artikeln, Mengen und Terminen eingeholt. So beantwortet die Recherche das konkrete Ziel statt wahllos Daten zu sammeln.",
+        "typische_fehler": "Die Suche beginnt ohne Ziel oder nur mit einer einzelnen Internetquelle. Eine KI-Antwort wird als Beleg übernommen, obwohl Zahlen und Paragrafen nicht anhand einer maßgeblichen Quelle geprüft wurden.",
+        "verstaendnisfragen": [
+          "Welche Fragen stehen vor der Recherche? Was will ich wissen, wofür und in welcher Genauigkeit?",
+          "Welche Quelle ist bei einer Rechtsfrage maßgeblich? Der Gesetzestext."
+        ],
+        "pruefungsbezug": "Formuliere zu Beginn das Informationsziel und trenne interne Primärdaten, externe Vergleichsdaten und rechtliche Originalquellen.",
+        "merksatz": "Erst das Ziel klären, dann die passende Quelle wählen und ihren Inhalt prüfen."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Eine Quelle kann richtig, veraltet, interessengeleitet oder unbelegt sein.",
+          "Die Tragweite eines Fehlers bestimmt die Strenge der Prüfung."
+        ],
+        "erklaerung": "Quellenkritik fragt: Wer ist der Urheber? Wann wurde die Information veröffentlicht oder aktualisiert? Warum wird sie veröffentlicht und welches Interesse steht dahinter? Steht die Aussage auch in einer unabhängigen zweiten Quelle? Je größer die rechtlichen oder finanziellen Folgen, desto sorgfältiger müssen Aktualität, Zuständigkeit und Bestätigung geprüft werden.",
+        "beispiele": [
+          "Ein Artikel ohne Autor und Impressum ist bei einer finanziell wichtigen Entscheidung vorsichtig zu behandeln und durch eine zweite Quelle zu prüfen.",
+          "Ein Angebot eines Lieferers ist eine Quelle für dessen Konditionen, aber nicht automatisch ein neutraler Vergleich. Art, Menge und Termin müssen mit anderen Angeboten übereinstimmen."
+        ],
+        "fallbeispiel": "Eine Zahl aus dem Internet soll in eine Entscheidungsvorlage übernommen werden. Zuerst werden Urheber, Datum und Interesse geprüft. Dann wird eine unabhängige zweite Quelle gesucht. Fehlt eine Bestätigung oder ist die Angabe veraltet, wird sie nicht als gesicherte Entscheidungsgrundlage verwendet; der offene Prüfstatus wird dokumentiert.",
+        "typische_fehler": "Nur das Veröffentlichungsdatum wird geprüft oder eine bekannte Institution automatisch für fehlerfrei gehalten. Auch eine zweite Quelle ist nicht hilfreich, wenn sie dieselbe ungeprüfte Aussage nur übernimmt.",
+        "verstaendnisfragen": [
+          "Welche vier Prüfsteine gehören zur Quellenkritik? Urheber, Aktualität, Interesse und Bestätigung durch eine unabhängige Quelle.",
+          "Wann muss besonders streng geprüft werden? Wenn ein Fehler rechtliche oder finanzielle Folgen haben kann."
+        ],
+        "pruefungsbezug": "Abarbeite die vier Fragen sichtbar und bewerte die Quelle nicht nur mit ‚gut‘ oder ‚schlecht‘, sondern passend zum Zweck.",
+        "merksatz": "Je folgenreicher die Aussage, desto strenger die Prüfung von Wer, Wann, Warum und Bestätigung."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Die Darstellungsform muss zur Aussage und zum Empfänger passen.",
+          "Ein Diagramm kann durch Gestaltung einen falschen Eindruck erzeugen."
+        ],
+        "erklaerung": "Tabellen eignen sich für genaue Vergleiche, Säulen- oder Balkendiagramme für Größen nebeneinander, Linien für Entwicklungen über die Zeit und Kreise für Anteile an einem Ganzen bei wenigen Segmenten. In Entscheidungsvorlagen steht das Ergebnis im ersten Satz. Bei Säulendiagrammen beginnt die Wertachse bei null; Einheiten und Zeitabstände müssen erkennbar sein.",
+        "beispiele": [
+          "Ein Angebotsvergleich mit mehreren Einstandspreisen wird als Tabelle dargestellt, weil konkrete Werte verglichen werden.",
+          "Die Entwicklung eines Verbrauchs über mehrere Monate passt in ein Liniendiagramm; ein Kreisdiagramm wäre nur bei wenigen Anteilen an einem Ganzen sinnvoll."
+        ],
+        "fallbeispiel": "Die Geschäftsführung soll über einen Liefererwechsel entscheiden. Der Kurzbericht beginnt mit der Empfehlung. Darunter steht eine Tabelle mit Einstandspreisen je Anbieter und qualitativen Kriterien wie Liefertreue und Service. Auf ein Diagramm wird verzichtet, weil die Tabelle die konkreten Zahlen genauer zeigt; die zugrunde liegenden Quellen und Annahmen werden genannt.",
+        "typische_fehler": "Die Form wird nach Geschmack statt nach Aussage gewählt. Häufig fehlen Einheiten, die Zeitabstände sind ungleich oder die Wertachse beginnt nicht bei null und übertreibt dadurch kleine Unterschiede.",
+        "verstaendnisfragen": [
+          "Welche Form zeigt eine Entwicklung über die Zeit? Ein Liniendiagramm.",
+          "Wo steht das Ergebnis in einer Entscheidungsvorlage? Im ersten Satz, danach folgen Begründung, Vergleich und Quellen."
+        ],
+        "pruefungsbezug": "Begründe jede Darstellungsform mit ihrer Funktion und prüfe bei Diagrammen Achse, Einheit, Zeitabstand und Lesbarkeit.",
+        "merksatz": "Die Form folgt der Frage: Tabelle vergleicht genau, Linie zeigt Verlauf, Kreis zeigt wenige Anteile."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

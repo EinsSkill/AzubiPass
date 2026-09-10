@@ -4,7 +4,71 @@
   "nummer": 3,
   "titel": "Prozesse messen",
   "untertitel": "Was man nicht misst, kann man nicht verbessern — nur behaupten.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Durchlaufzeit enthält mehr als reine Bearbeitung.",
+          "Nur Bearbeitungszeit gilt aus Kundensicht als wertschöpfend."
+        ],
+        "erklaerung": "Die Durchlaufzeit besteht aus Bearbeitung, Liegezeit, Transport und Prüfung. Der Flussgrad setzt Bearbeitungszeit ins Verhältnis zur gesamten Durchlaufzeit: Bearbeitungszeit ÷ Durchlaufzeit × 100. Ein niedriger Flussgrad zeigt, dass der größte Hebel außerhalb der eigentlichen Bearbeitung liegt.",
+        "beispiele": [
+          "3 Stunden Bearbeitung + 36 Stunden Liegezeit + 4 Stunden Transport + 5 Stunden Prüfung ergeben 48 Stunden Durchlaufzeit.",
+          "3 ÷ 48 × 100 = 6,25 % Flussgrad; die Bearbeitung ist nur ein kleiner Teil der Gesamtzeit."
+        ],
+        "fallbeispiel": "Für den Vorgang werden 3 + 36 + 4 + 5 = 48 Stunden Durchlaufzeit berechnet. Wertschöpfend sind 3 Stunden. Der Flussgrad beträgt 3 ÷ 48 × 100 = 6,25 %. Eine Halbierung der Bearbeitungszeit würde die Gesamtdauer weniger beeinflussen als die Verkürzung der Liegezeit.",
+        "typische_fehler": "Die Bestandteile werden addiert, aber die Bearbeitungszeit durch die falsche Größe geteilt. Auch wird schnelleres Arbeiten gefordert, ohne Liege-, Transport- und Prüfzeiten zu messen.",
+        "verstaendnisfragen": [
+          "Welche vier Bestandteile hat die Durchlaufzeit? Bearbeitung, Liegezeit, Transport und Prüfung.",
+          "Wie lautet die Flussgradformel? Bearbeitungszeit ÷ Durchlaufzeit × 100."
+        ],
+        "pruefungsbezug": "Addiere zuerst alle vier Zeitarten und setze nur die Bearbeitungszeit in den Zähler.",
+        "merksatz": "Durchlaufzeit ist der ganze Weg; Flussgrad zeigt, wie viel davon echte Bearbeitung ist."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Kennzahlen machen Leistung vergleichbar.",
+          "Eine einzelne Kennzahl kann falsches Verhalten fördern."
+        ],
+        "erklaerung": "Kennzahlen brauchen einen Vergleichsmaßstab: Vormonat, Ziel oder Wettbewerb. Tempo- und Qualitätskennzahlen gehören zusammen, ergänzt um Kosten, weil eine verkürzte Durchlaufzeit sonst durch ausgelassene Prüfung und mehr Fehler entstehen kann. Kennzahlen werden als Steuerungsinstrumente gelesen, nicht als Selbstzweck.",
+        "beispiele": [
+          "Durchlaufzeit wird zusammen mit Fehlerquote betrachtet, damit Geschwindigkeit nicht auf Kosten der Qualität steigt.",
+          "Eine Zahl wird mit dem Vormonat oder einem Ziel verglichen; ohne Maßstab ist sie nicht sinnvoll deutbar."
+        ],
+        "fallbeispiel": "Die Geschäftsführung fordert, Reisekostenabrechnungen schneller zu bearbeiten. Vor der Maßnahme wird die Durchlaufzeit in Bearbeitung, Liegen, Transport und Prüfung zerlegt. Liegt der größte Anteil beim Warten auf Belege oder Freigaben, wird dort angesetzt. Nach der Änderung werden Durchlaufzeit und Fehlerquote erneut gemessen.",
+        "typische_fehler": "Nur Stundenverbrauch oder nur Durchlaufzeit wird bewertet. Der Vergleichsmaßstab und die Qualitätsfolge werden vergessen.",
+        "verstaendnisfragen": [
+          "Warum gehören Tempo und Qualität zusammen? Sonst kann die Beschleunigung Fehler und Nacharbeit erzeugen.",
+          "Was braucht jede Kennzahl zusätzlich? Einen Vergleichsmaßstab."
+        ],
+        "pruefungsbezug": "Nenne bei Kennzahlen immer Messgröße, Vergleich und mögliche Nebenwirkung auf Qualität oder Kosten.",
+        "merksatz": "Eine Kennzahl ohne Vergleich und ohne Qualitätsblick steuert blind."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Ein Engpass begrenzt die Leistung des gesamten Prozesses.",
+          "Verbesserung braucht Messung statt Vermutung."
+        ],
+        "erklaerung": "Der Engpass ist der Prozessschritt mit der geringsten Kapazität und bestimmt die Leistung des gesamten Ablaufs. Vor einer Forderung nach schnellerer Arbeit wird gemessen, wo die Zeit liegt. Nach einer Entlastung kann der Engpass wandern, deshalb wird erneut gemessen.",
+        "beispiele": [
+          "Warten auf Freigabe kann der Engpass sein, obwohl die eigentliche Sachbearbeitung kurz ist.",
+          "Eine Vertretungsregelung kann einen Engpass bei Abwesenheit lösen; anschließend wird geprüft, ob die nächste Stelle begrenzt."
+        ],
+        "fallbeispiel": "Reisekostenabrechnungen dauern neun Arbeitstage. Die Messung zerlegt den Weg und zeigt lange Liegezeit vor Freigaben. Statt die Sachbearbeitung pauschal zu beschleunigen, werden vollständige Einreichung, feste Freigabezeitpunkte und Vertretungen geprüft. Danach werden Durchlaufzeit und Fehlerquote neu gemessen.",
+        "typische_fehler": "Der sichtbarste Arbeitsschritt wird automatisch als Engpass betrachtet. Außerdem wird eine Maßnahme nicht nachgemessen, sodass unbekannt bleibt, ob der Engpass nur weitergewandert ist.",
+        "verstaendnisfragen": [
+          "Was bestimmt die Leistung des gesamten Prozesses? Der Engpass.",
+          "Warum muss nach einer Verbesserung erneut gemessen werden? Weil sich der Engpass an eine andere Stelle verschieben kann."
+        ],
+        "pruefungsbezug": "Zerlege den Prozess, identifiziere die geringste Kapazität und begründe die Maßnahme mit Messdaten.",
+        "merksatz": "Nicht der lauteste Arbeitsschritt, sondern der Engpass bestimmt das Tempo des Prozesses."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

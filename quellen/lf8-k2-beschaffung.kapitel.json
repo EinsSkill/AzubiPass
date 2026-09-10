@@ -275,5 +275,69 @@
       "loesung": "Drei AGG-Verstöße: „Bürokraft“ in weiblicher Form knüpft an das Geschlecht an, die Altersgrenze an das Alter, „deutsche Muttersprache“ mittelbar an die ethnische Herkunft. Zulässig wäre: „Kaufmännische Mitarbeit (m/w/d)“ mit der Anforderung „sehr gute Deutschkenntnisse in Wort und Schrift“, weil hier die tatsächlich benötigte Fähigkeit beschrieben wird statt eines Merkmals der Person."
     }
   ],
-  "pruefungstipp": "Die Gegenüberstellung intern und extern wird fast immer als Vor- und Nachteilsaufgabe gestellt — lerne je drei Punkte pro Seite. Bei Stellenanzeigen sucht die Prüfung nach AGG-Verstößen: Alter, Geschlecht, Herkunft. Und merke dir, dass Zeitarbeitnehmer keinen Arbeitsvertrag mit dem Einsatzbetrieb haben."
+  "pruefungstipp": "Die Gegenüberstellung intern und extern wird fast immer als Vor- und Nachteilsaufgabe gestellt — lerne je drei Punkte pro Seite. Bei Stellenanzeigen sucht die Prüfung nach AGG-Verstößen: Alter, Geschlecht, Herkunft. Und merke dir, dass Zeitarbeitnehmer keinen Arbeitsvertrag mit dem Einsatzbetrieb haben.",
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Personalbedarf kann durch bestehende oder neue Mitarbeitende gedeckt werden.",
+          "Jeder Beschaffungsweg hat eigene Vorteile und Grenzen."
+        ],
+        "erklaerung": "Interne Beschaffung nutzt Versetzung, Aufstieg, Mehrarbeit oder die Übernahme von Auszubildenden. Sie ist schnell, günstig und motivierend, weil die Person bekannt ist. Die Lücke wandert aber häufig nur weiter und neue Impulse fehlen. Externe Beschaffung nutzt Anzeigen, Arbeitsagentur, Portale, eigene Kanäle, Personalberatung oder Zeitarbeit und erweitert den Bewerberkreis.",
+        "beispiele": [
+          "Die Übernahme eines Azubis deckt eine Stelle intern und nutzt bereits bekannte Fähigkeiten.",
+          "Eine Anzeige in einem Portal erweitert den Kreis, bringt aber zusätzlichen Auswahlaufwand und weniger Vorwissen über die Person."
+        ],
+        "fallbeispiel": "Eine Stelle wird frei. Der Betrieb prüft zuerst, ob Versetzung, Aufstieg oder Übernahme möglich sind. Ist intern niemand passend verfügbar, wird extern gesucht. Bei der Entscheidung werden Geschwindigkeit, Kosten, Motivation, neue Impulse und die Frage berücksichtigt, ob die ursprüngliche Lücke nur verschoben wird.",
+        "typische_fehler": "Interne Beschaffung wird nur als Vorteil und externe nur als Nachteil dargestellt. Außerdem wird vergessen, dass die interne Lösung eine neue Lücke schaffen kann.",
+        "verstaendnisfragen": [
+          "Welche vier internen Wege nennt der Inhalt? Versetzung, Aufstieg, Mehrarbeit und Übernahme von Auszubildenden.",
+          "Was ist der zentrale interne Nachteil? Die Lücke wandert möglicherweise nur, und neue Impulse fehlen."
+        ],
+        "pruefungsbezug": "Nenne bei einer Vor- und Nachteilsaufgabe mindestens Geschwindigkeit, Kosten, Motivation, Lückenwirkung und neue Impulse.",
+        "merksatz": "Intern ist bekannt und schnell; extern erweitert die Auswahl, kostet aber mehr Auswahlaufwand."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Externe Personalbeschaffung kann über mehrere Kanäle erfolgen.",
+          "Vermittlung und Einsatzbetrieb sind nicht immer derselbe Arbeitgeber."
+        ],
+        "erklaerung": "Externe Wege sind Anzeigen, Arbeitsagentur, Portale, eigene Kanäle, Personalberatung und Zeitarbeit. Bei Zeitarbeit bleibt die eingesetzte Person Arbeitnehmer des Verleihers und hat keinen Arbeitsvertrag mit dem Einsatzbetrieb. Der Weg wird nach Bedarf, Zeit, benötigtem Profil und gewünschter Dauer ausgewählt.",
+        "beispiele": [
+          "Eine Anzeige und ein Onlineportal richten sich an einen offenen Bewerbermarkt; Personalberatung kann die Suche stärker begleiten.",
+          "Bei Zeitarbeit wird die Person im Betrieb eingesetzt, bleibt aber beim Verleiher angestellt."
+        ],
+        "fallbeispiel": "Ein Betrieb benötigt kurzfristig Unterstützung, möchte aber keinen eigenen Arbeitsvertrag für diese Einsatzphase schließen. Zeitarbeit kann den kurzfristigen Einsatz ermöglichen. Für die rechtliche Zuordnung wird geprüft, wer der Arbeitgeber ist: der Verleiher, nicht der Einsatzbetrieb. Für eine dauerhafte Stelle wäre ein anderer Beschaffungsweg zu bewerten.",
+        "typische_fehler": "Zeitarbeitnehmer werden als Beschäftigte des Einsatzbetriebs bezeichnet. Außerdem wird nur der Kanal genannt, ohne Dauer, Kosten und gewünschtes Profil einzubeziehen.",
+        "verstaendnisfragen": [
+          "Welche externen Wege werden genannt? Anzeige, Arbeitsagentur, Portale, eigene Kanäle, Personalberatung und Zeitarbeit.",
+          "Wer ist Arbeitgeber eines Zeitarbeitnehmers? Der Verleiher."
+        ],
+        "pruefungsbezug": "Trenne bei Fällen den Beschaffungskanal von der Arbeitgeberrolle. Begründe den Weg mit Dauer, Dringlichkeit und passendem Profil.",
+        "merksatz": "Der Einsatzort sagt bei Zeitarbeit nicht, wer der Arbeitgeber ist."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Eine Stellenanzeige verbindet Stelle, Aufgaben und Anforderungsprofil.",
+          "Das AGG begrenzt die zulässige Auswahlformulierung."
+        ],
+        "erklaerung": "Eine Stellenanzeige enthält Betrieb, Stelle, Aufgaben, Anforderungen, Angebot und Kontakt. Sie muss sachlich formuliert sein und darf nicht an geschützte Merkmale anknüpfen. Die Schreibweise (m/w/d) und der Verzicht auf Altersgrenzen helfen, die Anzeige offen zu formulieren; Herkunft, Geschlecht und Alter dürfen nicht ohne zulässigen Tätigkeitsgrund verlangt werden.",
+        "beispiele": [
+          "Eine gute Anzeige beschreibt Aufgabe, Anforderungen, Angebot und Kontakt statt eine gewünschte Altersgruppe zu nennen.",
+          "Die Formulierung (m/w/d) vermeidet eine Ausschreibung nur für ein Geschlecht; eine Altersgrenze wird nicht aufgenommen."
+        ],
+        "fallbeispiel": "Eine Anzeige enthält Betrieb und Kontakt, aber weder Aufgaben noch Anforderungen; außerdem wird eine Altersgrenze genannt. Die Überarbeitung ergänzt die fehlenden Sachinformationen und streicht die altersbezogene Formulierung. Danach wird die Anzeige auf einen sachlichen, offenen Bewerberkreis geprüft.",
+        "typische_fehler": "Nur die Rechtsformulierung wird geprüft, während Aufgaben, Angebot oder Kontakt fehlen. Umgekehrt wird eine Anzeige als korrekt angesehen, sobald (m/w/d) darin steht.",
+        "verstaendnisfragen": [
+          "Welche sechs Bestandteile gehören in eine Stellenanzeige? Betrieb, Stelle, Aufgaben, Anforderungen, Angebot und Kontakt.",
+          "Welche Merkmale dürfen nicht ohne zulässigen Grund angeknüpft werden? Geschlecht, Alter, Herkunft und weitere geschützte Merkmale."
+        ],
+        "pruefungsbezug": "Prüfe Anzeigen in zwei Durchgängen: erst Vollständigkeit, dann AGG-Konformität. So werden formale und diskriminierende Fehler getrennt erkannt.",
+        "merksatz": "Eine Stellenanzeige muss vollständig, sachlich und offen für den passenden Bewerberkreis sein."
+      }
+    ]
+  }
 }

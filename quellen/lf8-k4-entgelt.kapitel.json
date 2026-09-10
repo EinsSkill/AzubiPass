@@ -5,6 +5,50 @@
   "titel": "Entgelt und Abrechnung",
   "untertitel": "Wonach bezahlt wird — und was am Ende auf der Abrechnung steht.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "d1",
+        "vorauswissen": [
+          "Entgelt kann an Zeit, Leistung oder einer Kombination hängen.",
+          "Akkord setzt eine bestimmte messbare Arbeitsleistung voraus."
+        ],
+        "erklaerung": "Zeitlohn vergütet die Anwesenheitszeit. Akkordlohn richtet sich nach der Leistungsmenge; dafür muss die Leistung messbar, beeinflussbar und wiederholbar sein. Prämienlohn verbindet Zeit und Leistung. Jugendliche unter 18 dürfen keine Akkordarbeit leisten. Auch bei Akkord gilt der Mindestlohn.",
+        "beispiele": [
+          "Bei Zeitlohn bleibt die Vergütung an der geleisteten Zeit orientiert; bei Akkord steigt sie mit der messbaren Leistungsmenge.",
+          "Eine Tätigkeit ohne beeinflussbare oder wiederholbare Leistung eignet sich nicht für Akkordlohn; bei einer minderjährigen Person ist Akkordarbeit zusätzlich verboten."
+        ],
+        "fallbeispiel": "Ein Betrieb möchte eine Leistung nach Stückzahl vergüten. Zuerst werden die drei Voraussetzungen geprüft: Ist die Leistung messbar, kann die beschäftigte Person sie beeinflussen und wiederholt sie sich? Fehlt eine Voraussetzung, wird kein Akkordlohn gewählt. Ist die Person unter 18, ist Akkordarbeit unabhängig davon ausgeschlossen; der Mindestlohn bleibt auch bei zulässigem Akkord maßgeblich.",
+        "typische_fehler": "Prämienlohn und Akkordlohn werden gleichgesetzt oder nur die Messbarkeit geprüft. Außerdem wird angenommen, Akkord könne den Mindestlohn unterschreiten.",
+        "verstaendnisfragen": [
+          "Welche drei Voraussetzungen hat Akkord? Messbar, beeinflussbar und wiederholbar.",
+          "Welche Entgeltform kombiniert Zeit und Leistung? Prämienlohn."
+        ],
+        "pruefungsbezug": "Ordne Entgeltformen zuerst nach dem Anknüpfungspunkt zu und prüfe bei Akkord immer Voraussetzungen, Alter und Mindestlohn.",
+        "merksatz": "Zeitlohn zählt Zeit, Akkord zählt Menge, Prämienlohn verbindet beides."
+      },
+      {
+        "abschnitt": "d2",
+        "vorauswissen": [
+          "Die Abrechnung beginnt mit dem Brutto und endet mit dem Auszahlungsbetrag.",
+          "Nicht jeder Abzug hat dieselbe Funktion."
+        ],
+        "erklaerung": "Eine Abrechnung wird vom Brutto über gesetzliche Abzüge und Sozialversicherung zum Auszahlungsbetrag gelesen. Sonstige Abzüge werden gesondert betrachtet. Geldwerte Vorteile erhöhen das steuerpflichtige Brutto, obwohl kein zusätzlicher Geldbetrag ausgezahlt wird. Die Krankenkasse ist Einzugsstelle für alle Sozialversicherungsbeiträge.",
+        "beispiele": [
+          "Ein geldwerter Vorteil wird dem steuerpflichtigen Brutto zugerechnet, obwohl die Person dafür nicht nochmals Geld erhält.",
+          "Für die Sozialversicherungsbeiträge wird die Krankenkasse als Einzugsstelle betrachtet; die Abrechnung weist anschließend den Auszahlungsbetrag aus."
+        ],
+        "fallbeispiel": "Eine Beschäftigte fragt, warum ihr steuerpflichtiges Brutto höher ist als der ausgezahlte Betrag. Die Abrechnung wird schrittweise gelesen: Brutto, gesetzliche Abzüge, Sozialversicherung, sonstige Abzüge, Auszahlungsbetrag. Ein geldwerter Vorteil kann das steuerpflichtige Brutto erhöhen, ohne dass er als Geld auf dem Konto erscheint.",
+        "typische_fehler": "Brutto und Auszahlung werden gleichgesetzt oder alle Abzüge als Sozialversicherung bezeichnet. Auch die Krankenkasse wird nur als eine einzelne Versicherung statt als Einzugsstelle für die Beiträge betrachtet.",
+        "verstaendnisfragen": [
+          "Welche Reihenfolge hilft beim Lesen? Brutto, gesetzliche Abzüge, Sozialversicherung, sonstige Abzüge, Auszahlungsbetrag.",
+          "Wer ist Einzugsstelle für alle Sozialversicherungsbeiträge? Die Krankenkasse."
+        ],
+        "pruefungsbezug": "Lies eine Abrechnung von oben nach unten und ordne jeden Betrag seiner Stufe zu. Geldwerte Vorteile als Brutto-Bestandteil prüfen, nicht als Auszahlung.",
+        "merksatz": "Brutto ist nicht Netto: Die Abrechnung erklärt den Weg zwischen beiden Beträgen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

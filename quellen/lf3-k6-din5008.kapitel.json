@@ -5,6 +5,50 @@
   "titel": "Geschäftsbriefe nach DIN 5008",
   "untertitel": "Wo was steht — und warum das keine Geschmacksfrage ist.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "f1",
+        "vorauswissen": [
+          "Ein Geschäftsbrief muss schnell lesbar und eindeutig zugeordnet werden können.",
+          "Anschrift, Bezug und Inhalt haben im Brief feste Funktionen."
+        ],
+        "erklaerung": "DIN 5008 ordnet den Geschäftsbrief in einer festen Reihenfolge: Briefkopf, Anschriftfeld, Informationsblock, Betreff, Anrede, Brieftext, Grußformel, Unterschrift mit Name, Anlagenvermerk und Geschäftsangaben. Das Anschriftfeld muss im Umschlagfenster sichtbar sein; zwischen Straße und Ort steht keine Leerzeile. Die Norm schafft damit eine einheitliche Orientierung und ist in der AP1 direkt am Rechner anwendbar.",
+        "beispiele": [
+          "Der Betreff ‚Angebot Nr. 4711‘ steht ohne das Wort ‚Betreff‘ und ohne Punkt, bevor die Anrede folgt.",
+          "Im Informationsblock können Zeichen, Datum, Telefon und E-Mail stehen; im Fußbereich folgen die Geschäftsangaben mit Rechtsform, Sitz und Registerangaben."
+        ],
+        "fallbeispiel": "Ein Brief enthält Briefkopf, Anschriftfeld, Informationsblock, Betreff, Anrede, Text, Gruß, Unterschrift und Anlagen. Bei der Kontrolle wird die Reihenfolge mit der DIN-5008-Struktur abgeglichen. Das Anschriftfeld wird fenstergerecht positioniert, der Betreff gekürzt und der Anlagenvermerk nach dem Namen platziert. So wird nicht nur ein schönes, sondern ein funktional lesbarer Brief erstellt.",
+        "typische_fehler": "Das Anschriftfeld wird nach optischem Geschmack verschoben, das Wort ‚Betreff‘ ergänzt oder der Anlagenvermerk an das Seitenende gesetzt. Auch die Geschäftsangaben im Fußbereich werden vergessen.",
+        "verstaendnisfragen": [
+          "Warum ist die Position des Anschriftfelds wichtig? Damit die Anschrift im Fenster des Briefumschlags sichtbar ist.",
+          "Was gehört in welcher Reihenfolge nach dem Brieftext? Grußformel, Firmenbezeichnung mit Unterschrift und Name, Anlagenvermerk und Geschäftsangaben."
+        ],
+        "pruefungsbezug": "Arbeite den Brief von oben nach unten ab und prüfe jede Zone statt nur das Gesamtbild. DIN 5008 wird direkt am Rechner über die konkrete Einrichtung sichtbar.",
+        "merksatz": "Ein Geschäftsbrief ist eine Funktionsordnung: Jede Information hat ihren Platz."
+      },
+      {
+        "abschnitt": "f2",
+        "vorauswissen": [
+          "Schreibregeln sollen Eindeutigkeit und einheitliche Bearbeitung sichern.",
+          "Zeichen, Zahlen und Datumsangaben sind Teil der formalen Prüfung."
+        ],
+        "erklaerung": "Der Betreff wird ohne ‚Betreff‘ und ohne Punkt geschrieben. Nach der Anrede steht ein Komma, der anschließende Text beginnt klein. Die Grußformel endet ohne Komma. Beispiele für zulässige Datumsformen sind 01.09.2026 und 2026-09-01; beim Prozentzeichen steht ein Leerzeichen davor. Die Unterschrift zeigt mit ppa., i. V. oder i. A. den jeweiligen Handlungsrahmen.",
+        "beispiele": [
+          "Aus ‚Betreff: Angebot Nr. 4711.‘ wird ‚Angebot Nr. 4711‘; aus ‚Sehr geehrte Damen und Herren:‘ wird ‚Sehr geehrte Damen und Herren,‘.",
+          "Geschäftliche Schreibweisen lauten etwa 0211 12345-67, 1.250,00 EUR und 25 %; die Datumsangabe kann 01.09.2026 oder 2026-09-01 sein."
+        ],
+        "fallbeispiel": "Ein Kollege schreibt ‚Betreff: Angebot Nr. 4711.‘, setzt nach der Anrede einen Doppelpunkt und beendet ‚Mit freundlichen Grüßen,‘ mit Komma. Die Korrektur erfolgt in drei Schritten: ‚Betreff‘ und Punkt entfernen, nach der Anrede ein Komma setzen und die Grußformel ohne Satzzeichen schreiben. Danach beginnt der Brieftext klein.",
+        "typische_fehler": "Der Doppelpunkt nach der Anrede wird aus anderen Textsorten übernommen, der Punkt im Betreff bleibt stehen oder das Komma nach der Grußformel wird gesetzt. Bei Zahlen fehlen außerdem Leerzeichen und Einheiten.",
+        "verstaendnisfragen": [
+          "Welche drei Zeichensetzungsregeln sind besonders wichtig? Betreff ohne Punkt, Anrede mit Komma und Grußformel ohne Komma.",
+          "Wie wird die Vertretungsmacht sichtbar? Durch die passende Zeichnung, etwa ppa. bei Prokura oder i. V. beziehungsweise i. A. bei Handlungsvollmacht."
+        ],
+        "pruefungsbezug": "Korrigiere Briefe systematisch: Betreff, Anrede, Textbeginn, Gruß, Datum, Zahlen, Prozentzeichen und Zeichnung. Nutze die Normregeln statt persönlicher Gestaltungsvorlieben.",
+        "merksatz": "Betreff ohne Punkt, Anrede mit Komma, Gruß ohne Komma — die drei schnellen DIN-5008-Punkte."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

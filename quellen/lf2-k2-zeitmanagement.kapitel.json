@@ -5,6 +5,70 @@
   "titel": "Zeit und Aufgaben planen",
   "untertitel": "Der Tag hat acht Stunden. Verplanen kannst du fünf.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ein Arbeitstag enthält planbare Aufgaben und ungeplante Störungen.",
+          "Aufgaben unterscheiden sich nach Dauer und Leistungsanforderung."
+        ],
+        "erklaerung": "ALPEN steht für Aufgaben notieren, Länge schätzen, Puffer einplanen, Entscheidungen über Prioritäten treffen und am Ende nachkontrollieren. Nur etwa 60 Prozent des Tages werden fest verplant. Schwierige Aufgaben gehören in das Vormittagshoch der Tagesleistungskurve; Routineaufgaben passen eher in das Nachmittagstief.",
+        "beispiele": [
+          "Bei einer Auswertung werden zuerst Aufgabe und voraussichtliche Länge notiert, danach ein Zeitpuffer für Rückfragen und Telefonate freigelassen.",
+          "Die Tagespost wird in einen festen Routineblock gelegt, während eine anspruchsvolle Auswertung in die leistungsstarke Vormittagsphase kommt."
+        ],
+        "fallbeispiel": "Eine Auswertung soll bis Freitag fertig sein und benötigt Zahlen aus zwei Abteilungen. Nach ALPEN werden alle Aufgaben notiert und geschätzt. Die Zahlen werden am Montag angefordert, erhalten eine eigene Wiedervorlage und eine Frist bis Mittwochmittag. Die Auswertung kommt in die Vormittagsstunden, die Tagespost in zwei Routineblöcke, und Donnerstag bleibt als Puffer. Am Tagesende werden offene Punkte übertragen.",
+        "typische_fehler": "Der gesamte Tag wird zu 100 Prozent verplant oder der Puffer nur als freie Zeit ohne Zweck behandelt. Auch die Nachkontrolle wird oft ausgelassen, obwohl sie die Planung für die nächsten Tage verbessert.",
+        "verstaendnisfragen": [
+          "Wofür steht das P in ALPEN? Für Pufferzeiten, sodass nur etwa 60 Prozent fest verplant werden.",
+          "Warum kommen schwierige Aufgaben in den Vormittag? Weil die Tagesleistungskurve dort ihr Hoch hat."
+        ],
+        "pruefungsbezug": "Nenne ALPEN ausgeschrieben und begründe den Puffer mit konkreten Störungen. Bei Fällen zusätzlich die Tagesleistungskurve auf die Aufgaben anwenden.",
+        "merksatz": "ALPEN verhindert Überplanung: Aufgaben, Länge, Puffer, Entscheidungen, Nachkontrolle."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Dringlichkeit beschreibt Zeitdruck, Wichtigkeit den Beitrag zu einem Ziel.",
+          "Nicht jede dringende Aufgabe muss von dir selbst erledigt werden."
+        ],
+        "erklaerung": "Die Eisenhower-Matrix verbindet die beiden Kriterien. Wichtig und dringend wird sofort selbst erledigt. Wichtig, aber nicht dringend wird terminiert. Dringend, aber nicht wichtig wird delegiert; weder wichtig noch dringend wird gestrichen. Beim Delegieren müssen Ziel, Frist und Befugnis mitgegeben werden. Das Pareto-Prinzip bleibt eine Denkhilfe mit Faustwerten, kein Naturgesetz.",
+        "beispiele": [
+          "Ein Angebot mit Frist heute ist wichtig und dringend und wird selbst bearbeitet.",
+          "Das Nachbestellen von Büromaterial kann dringend, aber nicht wichtig für die eigene Rolle sein und wird mit Ziel, Frist und Befugnis delegiert."
+        ],
+        "fallbeispiel": "Eine Aufgabe zur Überarbeitung des Ablagesystems ist wichtig, aber ohne akute Frist. Sie wird nicht zwischen Telefonaten erledigt, sondern fest terminiert. Ein leerer Toner ist dringend, aber nicht wichtig und kann delegiert werden. Wer delegiert, sagt dabei, was erreicht werden soll, bis wann und welche Entscheidungsmöglichkeit besteht.",
+        "typische_fehler": "Dringend wird automatisch mit wichtig gleichgesetzt. Der zweite Fehler ist Delegieren ohne Frist oder Entscheidungsbefugnis; dann kommt die Aufgabe mit Rückfragen zurück.",
+        "verstaendnisfragen": [
+          "Was passiert mit wichtig, aber nicht dringend? Die Aufgabe wird terminiert und bewusst eingeplant.",
+          "Welche drei Informationen gehören zu einem guten Delegationsauftrag? Ziel, Frist und Befugnis."
+        ],
+        "pruefungsbezug": "Ordne jede Aufgabe zuerst nach den beiden Achsen ein und entscheide erst danach über selbst erledigen, terminieren, delegieren oder streichen.",
+        "merksatz": "Dringend ist Zeitdruck, wichtig ist Zielbeitrag — beides ist nicht dasselbe."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Zeitmanagement verteilt vorhandene Zeit, es erzeugt keine neue.",
+          "Wiederkehrende Störungen können organisatorisch begrenzt werden."
+        ],
+        "erklaerung": "Zeitdiebe sind wiederkehrende Störungen, die Zeit ohne Ergebnis verbrauchen. Sie werden begrenzt statt vollständig abgeschafft: etwa durch feste Zeiten für das Postfach, eine stille Stunde, Tagesordnungen mit Zeitrahmen, einheitliche Ablage und geklärte Prioritäten. Wenn dauerhaft mehr Aufgaben anfallen, als in die Arbeitszeit passen, liegt ein Kapazitätsproblem vor.",
+        "beispiele": [
+          "Statt E-Mails ständig zu öffnen, werden feste Postfachzeiten eingerichtet; die übrige Zeit bleibt für konzentrierte Aufgaben.",
+          "Eine Besprechung erhält eine Tagesordnung und einen Zeitrahmen. So wird die Störung nicht geleugnet, aber begrenzt."
+        ],
+        "fallbeispiel": "Eine Mitarbeiterin wird ständig durch Postfach, spontane Rückfragen und unstrukturierte Besprechungen unterbrochen. Sie richtet feste Postfachzeiten ein, plant eine stille Stunde, versieht Besprechungen mit Tagesordnung und Zeitrahmen und nutzt die einheitliche Ablage. Bleibt die Aufgabenmenge trotzdem dauerhaft zu groß, muss die Kapazität mit der zuständigen Stelle geklärt werden; eine weitere Methode löst dieses Problem nicht.",
+        "typische_fehler": "Zeitdiebe sollen vollständig verschwinden, oder Überlastung wird nur als persönliches Planungsversagen bewertet. Beides ignoriert, dass Störungen begrenzbar und Kapazitätsgrenzen real sind.",
+        "verstaendnisfragen": [
+          "Warum werden Zeitdiebe begrenzt und nicht einfach abgeschafft? Weil Rückfragen, Post und Abstimmungen zum Arbeitsalltag gehören.",
+          "Woran erkennst du ein Kapazitätsproblem? Daran, dass dauerhaft mehr Aufgaben anfallen, als in die verfügbare Arbeitszeit passen."
+        ],
+        "pruefungsbezug": "Schlage bei Fallaufgaben konkrete Begrenzungen vor und nenne anschließend, ob die Restmenge ein Planungs- oder ein Kapazitätsproblem ist.",
+        "merksatz": "Zeitmanagement verteilt Zeit; es ersetzt weder Puffer noch zusätzliche Kapazität."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

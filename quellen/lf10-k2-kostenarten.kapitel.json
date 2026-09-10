@@ -4,7 +4,71 @@
   "nummer": 2,
   "titel": "Kostenarten unterscheiden",
   "untertitel": "Zwei Einteilungen, die nichts miteinander zu tun haben.",
-  "minuten": 30,
+ "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Kosten können direkt einem Produkt oder nur über einen Schlüssel zugerechnet werden.",
+          "Das Bezugsobjekt muss immer genannt werden."
+        ],
+        "erklaerung": "Einzelkosten lassen sich einem Produkt direkt zuordnen, etwa Fertigungsmaterial und Fertigungslöhne. Gemeinkosten können nur über Schlüssel verteilt werden, etwa Miete oder Verwaltungsgehälter. Sondereinzelkosten sind dem Auftrag, nicht dem einzelnen Stück zurechenbar. Die richtige Frage lautet immer: Zurechenbar wozu?",
+        "beispiele": [
+          "Fertigungsmaterial ist Einzelkosten und direkt einem Produkt zurechenbar.",
+          "Miete ist Gemeinkosten und wird über einen Schlüssel auf Kostenstellen oder Produkte verteilt."
+        ],
+        "fallbeispiel": "Ein Auftrag benötigt ein eigens gefertigtes Werkzeug. Das Werkzeug gehört als Sondereinzelkosten direkt zum Auftrag, aber nicht sinnvoll zu einem einzelnen Stück. Der Fertigungsmeister wird dagegen über einen Schlüssel als Gemeinkosten verteilt. Das Bezugsobjekt entscheidet die Einordnung.",
+        "typische_fehler": "Gemeinkosten werden mit variablen Kosten gleichgesetzt. Außerdem wird Sondereinzelkosten so behandelt, als ließe sie sich immer auf jedes einzelne Stück verteilen.",
+        "verstaendnisfragen": [
+          "Was sind Einzelkosten? Direkt zurechenbare Kosten eines Bezugsobjekts.",
+          "Worauf beziehen sich Sondereinzelkosten? Auf den Auftrag, nicht auf das einzelne Stück."
+        ],
+        "pruefungsbezug": "Prüfe bei jeder Kostenart zuerst das Bezugsobjekt und erst danach die Zuordnung Einzel-, Sonder- oder Gemeinkosten.",
+        "merksatz": "Einzel oder gemein beschreibt die Zurechenbarkeit — nicht das Kostenverhalten bei Mengenänderung."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Kosten können sich bei steigender Beschäftigung unterschiedlich verhalten.",
+          "Gesamtbetrag und Betrag je Stück müssen getrennt betrachtet werden."
+        ],
+        "erklaerung": "Fixkosten bleiben in der Summe gleich und sinken je Stück. Variable Kosten steigen in der Summe mit der Menge, bleiben je Stück gleich. Die Einteilung fix/variabel ist unabhängig von Einzel- oder Gemeinkosten. Deshalb kann eine Kostenart gleichzeitig Gemeinkosten und variabel oder Einzelkosten und fix sein.",
+        "beispiele": [
+          "Das Gehalt des Fertigungsmeisters ist Gemeinkosten und fix.",
+          "Energie für Maschinen kann Gemeinkosten und variabel sein; ein eigens für einen Auftrag gefertigtes Werkzeug kann Sondereinzelkosten und im Verhältnis zur Auftragsmenge fix sein."
+        ],
+        "fallbeispiel": "Eine Tabelle enthält Fertigungsmaterial, Fertigungsmeister und Maschinenenergie. Das Material ist direkt zurechenbar und verändert sich mit der Menge: Einzelkosten und variabel. Der Meister ist nicht direkt zurechenbar und bleibt gesamt gleich: Gemeinkosten und fix. Die Maschinenenergie wird verteilt und steigt mit der Nutzung: Gemeinkosten und variabel.",
+        "typische_fehler": "Einzelkosten werden automatisch für variabel gehalten und Gemeinkosten automatisch für fix. Die beiden Fragen — zurechenbar? und mengenabhängig? — werden nicht getrennt gestellt.",
+        "verstaendnisfragen": [
+          "Welche zwei Fragen müssen getrennt beantwortet werden? Ist die Kostenart direkt zurechenbar, und ändert sie sich mit der Menge?",
+          "Kann eine Kostenart Gemeinkosten und variabel sein? Ja, zum Beispiel Maschinenenergie."
+        ],
+        "pruefungsbezug": "Fülle Kostentabellen in zwei Durchgängen aus: Zurechenbarkeit und Beschäftigungsabhängigkeit.",
+        "merksatz": "Einzel/Gemein und fix/variabel sind zwei unabhängige Brillen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Fixkosten verteilen sich auf die produzierte Menge.",
+          "Variable Stückkosten bilden die Untergrenze der Annäherung."
+        ],
+        "erklaerung": "Fixkostendegression bedeutet, dass unveränderte Fixkosten auf mehr Stück verteilt werden. Die Stückkosten sinken, nähern sich den variablen Stückkosten an, unterschreiten sie aber nie. Kapazität, Absatz und sprungfixe Kosten begrenzen den Effekt.",
+        "beispiele": [
+          "Bei 90.000 € Fixkosten und 45 € variablen Kosten je Stück betragen die Stückkosten bei 600 Stück 90.000 ÷ 600 + 45 = 195 €.",
+          "Bei 1.500 Stück sind es 90.000 ÷ 1.500 + 45 = 105 €; bei 3.000 Stück 90.000 ÷ 3.000 + 45 = 75 €."
+        ],
+        "fallbeispiel": "Die Stückkosten sinken rechnerisch von 195 € über 105 € auf 75 €, wenn die Menge von 600 über 1.500 auf 3.000 steigt. Die variable Untergrenze von 45 € wird nicht unterschritten. Vor einer Mengenausweitung werden zusätzlich Kapazität und Absatz geprüft; unverkaufte Ware bindet sonst Kapital.",
+        "typische_fehler": "Nur die rechnerisch sinkenden Stückkosten werden betrachtet. Reicht die Kapazität nicht oder wird die Ware nicht verkauft, entstehen sprungfixe Kosten oder Lagerbelastung.",
+        "verstaendnisfragen": [
+          "Wie sinken Fixkosten je Stück? Durch Division des gleichbleibenden Gesamtbetrags durch eine größere Menge.",
+          "Welche Untergrenze nähern sich die Stückkosten an? Den variablen Stückkosten."
+        ],
+        "pruefungsbezug": "Rechne Fixkosten je Stück plus variable Stückkosten und nenne bei Beurteilungen Kapazität und Absatz als Grenzen.",
+        "merksatz": "Mehr Menge verteilt Fixkosten besser, aber variable Stückkosten bleiben die Untergrenze."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

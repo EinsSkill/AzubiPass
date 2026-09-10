@@ -5,6 +5,70 @@
   "titel": "Personalbedarf ermitteln",
   "untertitel": "Wie viele — und mit welchen Fähigkeiten.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "a1",
+        "vorauswissen": [
+          "Personalplanung betrifft nicht nur die Zahl, sondern auch die passende Person.",
+          "Arbeitsmenge, Fähigkeiten, Zeit und Ort können den Bedarf beeinflussen."
+        ],
+        "erklaerung": "Personalbedarf hat vier Dimensionen: quantitativ, qualitativ, zeitlich und örtlich. Quantitativ wird gefragt, wie viele Kräfte benötigt werden; qualitativ, welche Fähigkeiten nötig sind. Zeitlich und örtlich wird ergänzt, wann und wo die Arbeit anfällt. Eine Zahl ohne Anforderungsprofil kann deshalb zu einer falschen Einstellung führen.",
+        "beispiele": [
+          "Drei zusätzliche Kräfte können quantitativ richtig sein, aber qualitativ falsch, wenn die benötigten Fähigkeiten nicht im Profil stehen.",
+          "Ein Bedarf kann nur für eine bestimmte Zeit oder an einem bestimmten Ort bestehen; Zahl, Profil, Zeitraum und Einsatzort werden getrennt geprüft."
+        ],
+        "fallbeispiel": "Ein Betrieb stellt fest, dass die Arbeitsmenge steigt, möchte aber nur ‚mehr Personal‘ ausschreiben. Die Bedarfsermittlung ergänzt die fehlenden Fragen: Wie viele Kräfte sind nötig? Welche Fähigkeiten müssen sie mitbringen? Zu welchem Zeitpunkt und an welchem Ort werden sie gebraucht? Erst die vier Antworten bilden eine brauchbare Grundlage für die Beschaffung.",
+        "typische_fehler": "Quantitativer und qualitativer Bedarf werden gleichgesetzt. Außerdem wird ein dauerhaftes Vollzeitprofil angenommen, obwohl der Bedarf zeitlich oder örtlich begrenzt sein kann.",
+        "verstaendnisfragen": [
+          "Welche vier Dimensionen hat Personalbedarf? Quantitativ, qualitativ, zeitlich und örtlich.",
+          "Warum reicht die Frage ‚Wie viele?‘ nicht aus? Weil ohne Qualifikationsprofil die falschen Personen eingestellt werden können."
+        ],
+        "pruefungsbezug": "Beginne jede Fallaufgabe mit den vier Dimensionen. So werden Zahl und Profil nicht vermischt und zeitliche oder örtliche Besonderheiten nicht übersehen.",
+        "merksatz": "Personalbedarf fragt gleichzeitig: wie viele, welche Fähigkeiten, wann und wo."
+      },
+      {
+        "abschnitt": "a2",
+        "vorauswissen": [
+          "Der Bruttobedarf beschreibt den theoretischen Gesamtbedarf.",
+          "Bestand, Zu- und Abgänge verändern den tatsächlichen Einstellungsbedarf."
+        ],
+        "erklaerung": "Der Bruttobedarf wird aus der Arbeitsmenge und der Leistung je Kraft abgeleitet. Beispiel aus dem Kapitel: 12.000 Vorgänge geteilt durch 500 Vorgänge je Kraft ergeben 24 Kräfte. Danach wird der vorhandene Bestand berücksichtigt. Die Nettobedarfsformel lautet: Bruttobedarf − Bestand + Abgänge − Zugänge. Abgänge erhöhen den Bedarf, Zugänge senken ihn. Die Leistung bezieht sich auf die tatsächliche Arbeitszeit nach Urlaub, Krankheit und Fortbildung.",
+        "beispiele": [
+          "Bei 12.000 Vorgängen und 500 Vorgängen je Kraft lautet der Bruttobedarf 12.000 ÷ 500 = 24 Kräfte.",
+          "Ein erwarteter Zugang senkt den Nettobedarf, ein erwarteter Abgang erhöht ihn; ein negatives Ergebnis bedeutet Überdeckung und damit Freisetzung."
+        ],
+        "fallbeispiel": "Zuerst wird mit 12.000 ÷ 500 der Bruttobedarf von 24 Kräften berechnet. Danach werden Bestand sowie erwartete Zu- und Abgänge eingesetzt: Bruttobedarf minus Bestand plus Abgänge minus Zugänge. Erst dieses Ergebnis sagt, wie viele Personen tatsächlich eingestellt oder abgebaut werden müssen. Würde ein negativer Nettobedarf entstehen, läge eine Überdeckung vor.",
+        "typische_fehler": "Der Bestand wird zum Bruttobedarf addiert oder Abgänge werden abgezogen. Ebenso wird mit der vertraglichen statt der tatsächlichen Arbeitszeit gerechnet.",
+        "verstaendnisfragen": [
+          "Wie lautet die Nettobedarfsformel? Bruttobedarf − Bestand + Abgänge − Zugänge.",
+          "Was bedeutet ein negativer Nettobedarf? Überdeckung; der Betrieb hat mehr Kräfte als benötigt und muss Freisetzung prüfen."
+        ],
+        "pruefungsbezug": "Schreibe die Formel vor dem Einsetzen vollständig hin und kontrolliere jedes Vorzeichen. Bei der Bruttorechnung tatsächliche Leistung statt bloßer Vertragszeit verwenden.",
+        "merksatz": "Brutto ist der theoretische Bedarf; netto bleibt nach Bestand, Zu- und Abgängen übrig."
+      },
+      {
+        "abschnitt": "a3",
+        "vorauswissen": [
+          "Eine Stelle und eine Person werden in unterschiedlichen Dokumenten beschrieben.",
+          "Anforderungen müssen mit dem AGG vereinbar sein."
+        ],
+        "erklaerung": "Die Stellenbeschreibung beschreibt die Stelle: Aufgaben, Einordnung und Anforderungen der Funktion. Das Anforderungsprofil beschreibt die Person, die diese Stelle ausfüllen soll. Die Stellenbeschreibung überlebt den Stelleninhaber und kann später Grundlage für das Zeugnis sein. Anforderungen an Alter, Geschlecht, Herkunft oder Nationalität sind nach dem vorhandenen AGG-Bezug unzulässig, solange sie nicht ausnahmsweise für die Tätigkeit wesentlich sind.",
+        "beispiele": [
+          "Die Stellenbeschreibung erklärt, welche Aufgaben zu erledigen sind; das Anforderungsprofil nennt die dafür benötigten Fähigkeiten.",
+          "‚Junges, dynamisches Team‘ kann auf eine Altersbenachteiligung hindeuten und muss bei einer Anzeige kritisch geprüft werden."
+        ],
+        "fallbeispiel": "Eine Anzeige sucht eine ‚junge deutsche Mitarbeiterin‘. Zuerst werden die Formulierungen von den tatsächlichen Aufgaben getrennt. Alter, Nationalität und Geschlecht knüpfen an geschützte Merkmale an und sind ohne wesentlichen Tätigkeitsgrund nicht zulässig. Die Anzeige wird stattdessen aus der Stellenbeschreibung und einem sachlichen Anforderungsprofil formuliert.",
+        "typische_fehler": "Stellenbeschreibung und Anforderungsprofil werden als dasselbe Dokument behandelt. Außerdem wird eine scheinbar freundliche Altersformulierung nicht als möglicher AGG-Verstoß erkannt.",
+        "verstaendnisfragen": [
+          "Was beschreibt die Stellenbeschreibung? Die Stelle und ihre Aufgaben, nicht die konkrete Person.",
+          "Woran prüfst du eine Anforderung nach AGG? Ob sie an Alter, Geschlecht, Herkunft oder ein ähnliches geschütztes Merkmal anknüpft und für die Tätigkeit wesentlich ist."
+        ],
+        "pruefungsbezug": "Trenne in Anzeigenfällen Aufgabe, Anforderung und unzulässiges persönliches Merkmal. Nutze die Stellenbeschreibung als dauerhafte Funktionsgrundlage.",
+        "merksatz": "Die Stelle beschreibt die Arbeit, das Profil die passende Person — und das AGG begrenzt die Auswahlmerkmale."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

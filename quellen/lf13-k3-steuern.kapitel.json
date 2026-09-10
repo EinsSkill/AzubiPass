@@ -4,7 +4,71 @@
   "nummer": 3,
   "titel": "Steuern und Risiken beherrschen",
   "untertitel": "Ein Plan ist keine Vorhersage. Er ist etwas, woran man Abweichungen erkennt.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Projektfortschritt muss anhand fertiger Ergebnisse messbar sein.",
+          "Prozentangaben und Stundenverbrauch können täuschen."
+        ],
+        "erklaerung": "Fortschritt wird an vollständig fertigen Arbeitspaketen und erreichten Meilensteinen gemessen. Prozentangaben sind nicht überprüfbar und oft zu optimistisch. Verbrauchte Stunden zeigen allein nicht, wie viel Ergebnis erreicht wurde; die Größe der Arbeitspakete und ihr geplanter Aufwand müssen berücksichtigt werden.",
+        "beispiele": [
+          "3 von 8 gleich großen Arbeitspaketen entsprechen 37,5 % abgeschlossener Pakete.",
+          "60 % Budgetverbrauch bei nur 3 von 8 Paketen zeigt, dass Aufwand und Ergebnis auseinanderlaufen können."
+        ],
+        "fallbeispiel": "Zur Halbzeit sind 60 % des Budgets verbraucht, aber nur 3 von 8 Arbeitspaketen abgeschlossen. 3 ÷ 8 × 100 = 37,5 %. Die Aussage ‚im Plan‘ ist deshalb nicht belastbar. Es wird geprüft, ob die Pakete gleich groß sind, und der Auftraggeber erhält frühzeitig bezifferte Auswirkungen.",
+        "typische_fehler": "Budgetverbrauch wird als Fortschritt behandelt oder Arbeitspakete werden nach einer Prozentmeldung als fertig gezählt. Unterschiedliche Paketgrößen werden ebenfalls ignoriert.",
+        "verstaendnisfragen": [
+          "Woran wird zuverlässig gemessen? An fertigen Arbeitspaketen und erreichten Meilensteinen.",
+          "Warum sind Prozentangaben problematisch? Sie sind nicht überprüfbar und häufig systematisch zu optimistisch."
+        ],
+        "pruefungsbezug": "Vergleiche Ergebnisfortschritt und Ressourcenverbrauch und prüfe die Größe der Arbeitspakete.",
+        "merksatz": "Fertig ist messbar; verbrauchte Stunden sind noch kein Ergebnis."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Risiken haben Eintrittswahrscheinlichkeit und Auswirkung.",
+          "Risiken können im Projektverlauf neu entstehen oder entfallen."
+        ],
+        "erklaerung": "Risiken werden nach Wahrscheinlichkeit und Auswirkung auf Ziel, Termin oder Budget bewertet. Daraus ergeben sich vermeiden, vorsorgen, mindern oder hinnehmen. Zu Beginn sammelt das Team Risiken gemeinsam; die Liste wird laufend fortgeschrieben. Früh gemeldete Verzögerungen schaffen Handlungsspielraum.",
+        "beispiele": [
+          "Ein wahrscheinliches Risiko mit schwerer Folge wird vermieden oder abgesichert, etwa durch zweiten Lieferer oder Vertrag.",
+          "Ein unwahrscheinliches, aber schweres Risiko erhält eine Rückfallebene; ein kleines Risiko kann bewusst hingenommen werden."
+        ],
+        "fallbeispiel": "Ein Lieferer könnte ausfallen. Ist der Ausfall wahrscheinlich und schwerwiegend, wird ein zweiter Lieferer oder eine vertragliche Absicherung geprüft. Ist er unwahrscheinlich, aber folgenschwer, wird ein Notfallplan vorbereitet. Bei hoher Wahrscheinlichkeit und begrenzter Auswirkung wird die Wirkung gemindert, etwa durch Puffer oder Vertretung.",
+        "typische_fehler": "Nur Wahrscheinlichkeit oder nur Schaden wird betrachtet. Außerdem wird eine Risikoliste einmal erstellt und danach nicht aktualisiert.",
+        "verstaendnisfragen": [
+          "Welche zwei Größen bestimmen die Risikobewertung? Eintrittswahrscheinlichkeit und Auswirkung.",
+          "Welche vier Umgangsweisen gibt es? Vermeiden, vorsorgen, mindern und hinnehmen."
+        ],
+        "pruefungsbezug": "Ordne jedes Risiko in beide Achsen ein und begründe daraus die Maßnahme; nenne die laufende Fortschreibung.",
+        "merksatz": "Risiko heißt Wahrscheinlichkeit mal Auswirkung — erst daraus folgt der Umgang."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Änderungswünsche wirken auf Zeit, Kosten und Umfang.",
+          "Eine Änderung braucht eine nachvollziehbare Entscheidung."
+        ],
+        "erklaerung": "Änderungen werden aufgenommen, beziffert, zur Entscheidung vorgelegt und anschließend in den Plan eingearbeitet. Die Projektleitung macht die Folgen sichtbar; der Auftraggeber entscheidet über Umfang, Budget oder Termin. Ungeprüfte kleine Wünsche führen zur schleichenden Ausweitung.",
+        "beispiele": [
+          "Ein zusätzlicher Dokumententyp wird aufgenommen, seine Auswirkung auf Aufwand, Budget und Termin wird beziffert.",
+          "Eine Terminverschiebung wird nicht nur im Kalender geändert, sondern mit den betroffenen Arbeitspaketen und Meilensteinen neu geplant."
+        ],
+        "fallbeispiel": "Der Auftraggeber wünscht eine zusätzliche Funktion. Der Wunsch wird dokumentiert und mit Mehrarbeit, Kosten und Terminfolge versehen. Erst nach der Entscheidung wird der Projektauftrag beziehungsweise Plan angepasst. Ohne Zustimmung wird die Funktion nicht still in laufende Pakete aufgenommen.",
+        "typische_fehler": "Änderungen werden mündlich angenommen oder nur der Termin angepasst, ohne Budget und Umfang zu aktualisieren. Die Auswirkung wird nicht beziffert.",
+        "verstaendnisfragen": [
+          "Welche vier Schritte gelten? Aufnehmen, beziffern, entscheiden lassen, Plan anpassen.",
+          "Warum muss die Auswirkung beziffert werden? Damit der Auftraggeber zwischen Zeit, Kosten und Umfang entscheiden kann."
+        ],
+        "pruefungsbezug": "Schreibe die vier Schritte vollständig hin und ordne die Entscheidung dem Auftraggeber zu.",
+        "merksatz": "Keine Änderung ohne Aufnahme, Zahl, Entscheidung und angepassten Plan."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

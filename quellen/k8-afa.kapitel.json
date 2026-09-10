@@ -5,6 +5,78 @@
   "titel": "Anlagevermögen & Abschreibungen",
   "untertitel": "GWG, lineare AfA, Buchwert — und was beim Verkauf eines Anlageguts passiert.",
   "minuten": 25,
+
+  "ausfuehrlich": {
+    "einleitung": "Abschreibungen verbinden die Bilanz mit der periodengerechten Erfolgsermittlung. Eine Anschaffung wird nicht automatisch in dem Jahr vollständig zum Aufwand, in dem das Geld abfließt. Entscheidend ist, über welchen Zeitraum der Betrieb das Anlagegut nutzt.",
+    "abschnitte": [
+      {
+        "abschnitt": "h1",
+        "vorauswissen": [
+          "Anlagevermögen dient dem Betrieb über längere Zeit.",
+          "Aufwand soll dem Zeitraum zugeordnet werden, in dem die wirtschaftliche Nutzung stattfindet."
+        ],
+        "erklaerung": "Eine Maschine verliert durch Nutzung, Alterung und technischen Fortschritt an Wert. Die Abschreibung verteilt die Anschaffungskosten deshalb über die Nutzungsdauer. Das Geld fließt beim Kauf ab; die späteren Abschreibungen sind Aufwand, ohne dass erneut Geld ausgezahlt wird. Beim Umlaufvermögen greift diese mehrjährige Verteilung nicht in gleicher Weise, weil es kurzfristig umgesetzt wird.",
+        "beispiele": [
+          "Eine Maschine für 60.000 €, die sechs Jahre genutzt wird, belastet das Ergebnis nicht einmalig mit 60.000 €, sondern mit sechs Jahresbeträgen von 10.000 €.",
+          "Ein geringwertiges Wirtschaftsgut bis 800 € netto darf nach der vorhandenen Regel im Anschaffungsjahr sofort vollständig abgeschrieben werden; bis 250 € ist kein gesondertes Verzeichnis nötig."
+        ],
+        "fallbeispiel": "Ordne eine Anschaffung von 60.000 € mit sechsjähriger Nutzung ein. Beim Kauf sinkt zunächst das Bankguthaben und das Anlagevermögen steigt. Danach wird die Nutzung über sechs Jahre verteilt: 60.000 € ÷ 6 = 10.000 € AfA pro Jahr. So wird der Aufwand den Nutzungsjahren zugeordnet, statt das Kaufjahr allein zu belasten.",
+        "typische_fehler": "Abschreibung wird als erneute Auszahlung verstanden. Außerdem wird jedes kleinere Wirtschaftsgut automatisch sofort abgeschrieben, ohne die im Kapitel genannten Grenzen zu prüfen.",
+        "verstaendnisfragen": [
+          "Warum ist Abschreibung Aufwand ohne Auszahlung? Das Geld ist bereits beim Kauf abgeflossen; die Abschreibung verteilt den Wert nur noch buchhalterisch.",
+          "Welche Frage steht vor jeder Abschreibungsrechnung? Wie lange wird das Anlagegut genutzt und welche Anschaffungskosten sind zu verteilen?"
+        ],
+        "pruefungsbezug": "In Fällen zuerst Anlage- oder Umlaufvermögen bestimmen, dann Anschaffungskosten, Nutzungsdauer und gegebenenfalls die GWG-Grenzen prüfen.",
+        "merksatz": "Abschreibung verteilt Anschaffungskosten über die Nutzung; sie ist Aufwand, aber keine neue Auszahlung."
+      },
+      {
+        "abschnitt": "h2",
+        "vorauswissen": [
+          "Die lineare Abschreibung verteilt einen Betrag gleichmäßig.",
+          "Bei unterjähriger Anschaffung wird die Jahres-AfA zeitanteilig gekürzt."
+        ],
+        "ablauf": [
+          "Jahres-AfA mit Anschaffungskosten ÷ Nutzungsdauer berechnen.",
+          "Bei unterjährigem Beginn die Monate der Nutzung im ersten Jahr bestimmen.",
+          "Jahres-AfA mit Monaten ÷ 12 multiplizieren.",
+          "Kumulierte Abschreibungen vom ursprünglichen Wert abziehen und den Buchwert prüfen."
+        ],
+        "erklaerung": "Bei der linearen Methode bleibt der Jahresbetrag gleich. Der Buchwert sinkt jedes Jahr um diesen Betrag, bis die Anschaffungskosten vollständig abgeschrieben sind. Beginnt die Nutzung im laufenden Jahr, wird im ersten Jahr nur der Anteil der begonnenen Monate angesetzt.",
+        "beispiele": [
+          "2.400 € Anschaffungskosten und drei Jahre Nutzungsdauer ergeben 2.400 € ÷ 3 = 800 € Jahres-AfA.",
+          "Bei einem Laptop für 1.200 € und drei Jahren Nutzungsdauer beträgt die Jahres-AfA 400 €. Anschaffung am 1. Juli bedeutet im ersten Jahr 400 € × 6/12 = 200 €."
+        ],
+        "fallbeispiel": "Für den Laptop werden die Beträge vollständig verfolgt: Anschaffungskosten 1.200 €, Nutzungsdauer drei Jahre, Jahres-AfA 400 €. Im ersten Jahr ab Juli fallen 200 € an. In den Jahren 2 und 3 jeweils 400 €. Im letzten Jahr werden die restlichen 200 € abgeschrieben. Summe: 200 € + 400 € + 400 € + 200 € = 1.200 €; der Buchwert ist danach null.",
+        "typische_fehler": "Die volle Jahres-AfA wird im Anschaffungsjahr angesetzt oder der Buchwert wird aus dem ursprünglichen Preis statt aus den kumulierten Abschreibungen berechnet.",
+        "verstaendnisfragen": [
+          "Wie berechnest du die lineare Jahres-AfA? Anschaffungskosten geteilt durch Nutzungsdauer.",
+          "Warum entstehen im Laptop-Fall vier Kalenderjahre mit Abschreibungsbeträgen, obwohl die Nutzungsdauer drei Jahre beträgt? Weil das erste Jahr nur sechs Monate umfasst und der Restbetrag im vierten Kalenderjahr anfällt."
+        ],
+        "pruefungsbezug": "Datum nicht überlesen. Eine genannte Anschaffung im Juli ist ein Signal für die zeitanteilige Rechnung; anschließend muss die Summe aller AfA-Beträge die Anschaffungskosten ergeben.",
+        "merksatz": "Lineare AfA = Anschaffungskosten ÷ Nutzungsdauer; unterjährig zählt der Monatsanteil."
+      },
+      {
+        "abschnitt": "h3",
+        "vorauswissen": [
+          "Der Buchwert ist Anschaffungskosten minus kumulierte Abschreibungen.",
+          "Beim Verkauf muss das Anlagekonto vollständig ausgebucht werden."
+        ],
+        "erklaerung": "Beim Verkauf ist nicht mehr der ursprüngliche Kaufpreis entscheidend, sondern der Buchwert am Verkaufstag. Ist der Verkaufspreis höher, entsteht ein Buchgewinn als sonstiger Ertrag. Ist er niedriger, entsteht ein Buchverlust als sonstiger Aufwand. In beiden Fällen wird das Anlagegut mit seinem Buchwert aus dem Konto entfernt.",
+        "beispiele": [
+          "Beim Firmenwagen beträgt der Buchwert nach vier Jahren 6.000 €. Verkauf für 8.000 € erzeugt 2.000 € Buchgewinn.",
+          "Derselbe Buchwert von 6.000 € führt bei einem Verkauf für 4.000 € zu 2.000 € Buchverlust."
+        ],
+        "fallbeispiel": "Der Firmenwagen hatte Anschaffungskosten von 18.000 € und wurde vier Jahre lang mit 3.000 € pro Jahr abgeschrieben. Kumulierte AfA: 4 × 3.000 € = 12.000 €. Buchwert: 18.000 € − 12.000 € = 6.000 €. Bei einem Verkauf für 8.000 € lautet der Buchungssatz Bank 8.000 € an Fuhrpark 6.000 € + sonstige Erträge 2.000 €. Bei 4.000 € Verkaufspreis lautet er Bank 4.000 € + sonstige Aufwendungen 2.000 € an Fuhrpark 6.000 €.",
+        "typische_fehler": "Der Verkaufspreis wird mit den Anschaffungskosten verglichen. Dadurch wird der Buchgewinn oder -verlust falsch berechnet. Auch wird das Anlagekonto nur um den Verkaufspreis statt um den Buchwert reduziert.",
+        "verstaendnisfragen": [
+          "Welche drei Größen brauchst du vor dem Buchungssatz? Anschaffungskosten, kumulierte Abschreibungen beziehungsweise Buchwert und Verkaufspreis.",
+          "Wann entsteht ein Buchgewinn? Wenn der Verkaufspreis über dem Buchwert liegt."
+        ],
+        "pruefungsbezug": "Immer in der Reihenfolge rechnen: kumulierte AfA, Buchwert, Vergleich mit Verkaufspreis, Buchungssatz. Diese Reihenfolge verhindert die häufigste Verwechslung.",
+        "merksatz": "Ausgebucht wird der Buchwert; Verkauf über Buchwert ist Gewinn, Verkauf unter Buchwert ist Verlust."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

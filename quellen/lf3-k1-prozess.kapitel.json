@@ -5,6 +5,70 @@
   "titel": "Der Auftragsprozess im Überblick",
   "untertitel": "Sechs Belege, eine Kette — und du sitzt mittendrin.",
   "minuten": 20,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "a1",
+        "vorauswissen": [
+          "Ein Auftrag besteht aus mehreren aufeinanderfolgenden Geschäftsschritten.",
+          "Belege dokumentieren jeweils einen bestimmten Schritt im Prozess."
+        ],
+        "erklaerung": "Der Auftragsprozess im Lernfeld 3 wird aus Sicht des Verkäufers gelesen: Anfrage, Angebot, Bestellung, Auftragsbestätigung, Lieferung, Rechnung und Zahlung. Anfrage und Bestellung kommen vom Kunden; Angebot, Auftragsbestätigung, Lieferschein und Rechnung erstellt der Betrieb. Die Anfrage ist rechtlich unverbindlich. Der Vertrag entsteht erst durch übereinstimmende Willenserklärungen, in der Regel mit der Annahme der Bestellung.",
+        "beispiele": [
+          "Eine Kundin fragt nach 200 Ordnern. Die Anfrage löst noch keinen Vertrag aus; der Betrieb erstellt daraufhin ein Angebot.",
+          "Nach der Bestellung erstellt der Betrieb die Auftragsbestätigung und später Lieferschein und Rechnung. Abgeschlossen ist der Prozess erst mit dem Zahlungseingang."
+        ],
+        "fallbeispiel": "Eine Kundin bittet telefonisch um ein Angebot über 200 Ordner und sagt am nächsten Tag ab. Die Anfrage hatte keine rechtliche Wirkung; auch die bereits begonnene Angebotserstellung macht daraus keinen Kaufvertrag. Erst ein abgegebenes Angebot und dessen Annahme würden den Vertrag entstehen lassen.",
+        "typische_fehler": "Die Anfrage wird als Bestellung behandelt oder die Auftragsbestätigung als Vertragsschluss angesehen. Außerdem wird der Prozess mit der Rechnung beendet, obwohl die Zahlung noch aussteht.",
+        "verstaendnisfragen": [
+          "Welche Belege kommen typischerweise vom Kunden? Anfrage und Bestellung.",
+          "Wann ist der Auftragsprozess abgeschlossen? Mit dem Zahlungseingang."
+        ],
+        "pruefungsbezug": "Ordne zuerst die Belege den Prozessschritten und dem Ersteller zu. Prüfe danach, an welchem Punkt die Willenserklärungen den Vertrag bilden.",
+        "merksatz": "Vom Kunden kommen Anfrage und Bestellung; der Betrieb bearbeitet Angebot, Bestätigung, Lieferung und Rechnung."
+      },
+      {
+        "abschnitt": "a2",
+        "vorauswissen": [
+          "Ein Beleg dokumentiert einen anderen Sachverhalt als der nächste Beleg.",
+          "Lieferung und Zahlung sind unterschiedliche Prozessschritte."
+        ],
+        "erklaerung": "Die Anfrage klärt den Bedarf, das Angebot nennt die Konditionen, die Bestellung erklärt den Kaufwunsch, und die Auftragsbestätigung dokumentiert die Annahme oder einen neuen Antrag. Der Lieferschein weist den Inhalt der Sendung nach, die Rechnung fordert die Zahlung. Der Lieferschein enthält bewusst keine Preise, weil er durch Lager, Transport und Warenannahme geht und nur die Vollständigkeit der Lieferung geprüft werden soll.",
+        "beispiele": [
+          "Bei einer Lieferung vergleicht der Empfänger den Lieferschein mit der tatsächlichen Menge; die Preise werden auf der separat versandten Rechnung geprüft.",
+          "Der Zahlungseingang belegt den Abschluss der Zahlungsstufe, während der Lieferschein den Inhalt der Sendung dokumentiert."
+        ],
+        "fallbeispiel": "Ein Kunde meldet, dass auf dem Lieferschein kein Preis steht. Das ist kein Fehler: Der Lieferschein soll die Sendung nachweisen und enthält deshalb keine Preisinformationen. Für Preis, Steuer und Zahlungsziel ist die Rechnung der passende Beleg. Die Belege werden nicht vermischt, sondern nach ihrer Funktion geprüft.",
+        "typische_fehler": "Lieferschein und Rechnung werden gleichgesetzt oder der Frachtbrief dem Käufer zugeordnet. Der Frachtbrief regelt das Verhältnis zum Frachtführer; der Lieferschein das Verhältnis von Verkäufer und Käufer hinsichtlich der Lieferung.",
+        "verstaendnisfragen": [
+          "Warum enthält der Lieferschein keine Preise? Damit die an der Lieferung beteiligten Stellen nur den Lieferumfang prüfen und keine Preisinformationen erhalten.",
+          "Welcher Beleg fordert die Zahlung an? Die Rechnung."
+        ],
+        "pruefungsbezug": "Begründe jede Belegzuordnung mit seiner Funktion: Bedarf, Konditionen, Erklärung, Annahme, Sendungsinhalt, Zahlungsforderung oder Zahlung.",
+        "merksatz": "Der Lieferschein beweist, was rausging; die Rechnung sagt, was dafür zu zahlen ist."
+      },
+      {
+        "abschnitt": "a3",
+        "vorauswissen": [
+          "Im Lernfeld 3 handelst du überwiegend auf Verkäuferseite.",
+          "Eine Unterschrift braucht einen passenden Handlungsrahmen."
+        ],
+        "erklaerung": "Der eigene Platz im Auftragsprozess ergibt sich aus der Aufgabe und der erteilten Handlungsvollmacht. Wer im Zweifel nicht weiß, ob er ein Angebot abgeben, einen Auftrag bestätigen oder eine Lieferung freigeben darf, fragt nach. Die Beschaffungsseite — Anfrage an Lieferer und Einkauf — gehört in Lernfeld 4; hier wird die Verkaufsseite vom Kundenkontakt bis zur Zahlung betrachtet.",
+        "beispiele": [
+          "Ein Mitarbeiter nimmt eine Kundenanfrage auf und leitet sie für die Angebotserstellung weiter, ohne selbst außerhalb seiner Vollmacht einen Vertrag zu schließen.",
+          "Vor einer verbindlichen Auftragsbestätigung wird geprüft, ob die Handlungsvollmacht diesen Vorgang umfasst; bei Unsicherheit wird nachgefragt."
+        ],
+        "fallbeispiel": "Eine Sachbearbeiterin soll eine Bestellung bestätigen, weiß aber nicht, ob sie dazu bevollmächtigt ist. Sie prüft zuerst ihren Handlungsrahmen. Fehlt die Sicherheit, fragt sie die zuständige Stelle oder den Vorgesetzten. So wird vermieden, dass eine unberechtigte Unterschrift den Betrieb bindet.",
+        "typische_fehler": "Aus dem Bearbeiten eines Vorgangs wird automatisch eine Vertretungsmacht abgeleitet. Ebenso wird die Beschaffungsperspektive mit dem Verkaufsprozess vermischt.",
+        "verstaendnisfragen": [
+          "Woraus ergibt sich der eigene Handlungsrahmen? Aus der Handlungsvollmacht.",
+          "Was ist bei unklarer Vollmacht zu tun? Vor der verbindlichen Erklärung nachfragen."
+        ],
+        "pruefungsbezug": "Ordne im Fall zuerst die Verkäuferperspektive und anschließend die Vollmacht ein. Eine saubere Prozesszuordnung ersetzt keine Prüfung der Unterschriftsbefugnis.",
+        "merksatz": "Im Auftragsprozess weißt du nicht nur, welcher Beleg folgt, sondern auch, ob du ihn wirksam abgeben darfst."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

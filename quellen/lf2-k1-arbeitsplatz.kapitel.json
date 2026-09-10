@@ -5,6 +5,70 @@
   "titel": "Der Arbeitsplatz",
   "untertitel": "Acht Stunden am Tag. Da lohnt es sich, ihn richtig einzustellen.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ein Arbeitsplatz beeinflusst Gesundheit und Leistungsfähigkeit.",
+          "Ergonomie richtet die Arbeit am Menschen aus."
+        ],
+        "erklaerung": "Ergonomie betrachtet nicht nur den Stuhl, sondern die gesamte Arbeitssituation. Zu den fünf Umgebungsfaktoren gehören Licht, Lärm, Klima, Platz und Gestaltung. Ein guter Arbeitsplatz reduziert unnötige Belastungen und macht die Arbeitsmittel so erreichbar, dass die Tätigkeit dauerhaft ausgeführt werden kann.",
+        "beispiele": [
+          "Ein Bildschirmarbeitsplatz mit seitlichem Fenster, ausreichend Platz und passender Beleuchtung berücksichtigt Licht und Raum ebenso wie die Sitzposition.",
+          "Eine laute Umgebung kann die Konzentration stören; neben der Gestaltung des Arbeitsplatzes gehört deshalb auch der Lärm in die Betrachtung."
+        ],
+        "fallbeispiel": "Bei der Prüfung eines neuen Arbeitsplatzes werden fünf Punkte nacheinander notiert: Licht, Lärm, Klima, Platz und Gestaltung. Erst danach wird über einzelne Möbel gesprochen. So wird nicht nur ein zu hoher Bildschirm korrigiert, während etwa Blendung oder fehlende Bewegungsfläche übersehen werden.",
+        "typische_fehler": "Ergonomie wird auf einen höhenverstellbaren Stuhl reduziert. Ebenso wird nur die Körperhaltung betrachtet, obwohl Licht, Lärm, Klima, Platz und Gestaltung ebenfalls Belastungsfaktoren sind.",
+        "verstaendnisfragen": [
+          "Welche fünf Umgebungsfaktoren gehören zur Arbeitsplatzprüfung? Licht, Lärm, Klima, Platz und Gestaltung.",
+          "Was ist der Grundgedanke der Ergonomie? Die Arbeit wird an den Menschen angepasst, nicht der Mensch dauerhaft an eine ungeeignete Arbeitssituation."
+        ],
+        "pruefungsbezug": "Nenne bei offenen Fragen nicht nur Möbel, sondern die vollständigen fünf Umgebungsfaktoren. Das zeigt, dass du den Arbeitsplatz ganzheitlich beurteilst.",
+        "merksatz": "Ergonomie ist mehr als Sitzen: Licht, Lärm, Klima, Platz und Gestaltung gehören zusammen."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Die Einstellung eines Arbeitsplatzes beginnt mit der Sitzposition.",
+          "Jede Einstellung beeinflusst die nächste."
+        ],
+        "erklaerung": "Der Bildschirmarbeitsplatz wird von unten nach oben eingestellt: zuerst Stuhl, dann Tisch, Bildschirm, Tastatur und Maus. Füße stehen vollständig auf dem Boden, Ellenbogen, Hüfte und Knie bilden ungefähr rechte Winkel. Die oberste Bildschirmzeile liegt auf oder unter Augenhöhe, der Blick geht leicht nach unten und der Abstand beträgt etwa eine Armlänge. Der Bildschirm steht seitlich zum Fenster.",
+        "beispiele": [
+          "Reicht die Tischhöhe nicht für waagerechte Unterarme und lockere Schultern, kann eine Fußstütze helfen, statt die Sitzhaltung zu erzwingen.",
+          "Ein Bildschirm auf einem Ordnerstapel kann zu hoch stehen. Die oberste Zeile gehört auf oder unter Augenhöhe; das Fenster sollte nicht hinter der Person liegen."
+        ],
+        "fallbeispiel": "Eine Kollegin hat Nacken- und Augenschmerzen. Der Bildschirm steht auf Ordnern, der Stuhl ist nicht verstellbar und das Fenster liegt hinter ihr. Die Korrektur erfolgt in der Reihenfolge: geeigneten Stuhl bereitstellen, Tischhöhe anpassen, Bildschirm auf Augenhöhe oder darunter ausrichten und den Arbeitsplatz mit seitlichem Fenster positionieren. Danach werden Tastatur und Maus nah am Körper angeordnet.",
+        "typische_fehler": "Der Bildschirm wird zuerst eingestellt und der Stuhl danach verändert. Häufig wird die oberste Zeile zu hoch positioniert oder der Bildschirm direkt vor beziehungsweise mit dem Rücken zum Fenster gestellt.",
+        "verstaendnisfragen": [
+          "Warum wird von unten nach oben eingestellt? Weil Sitz- und Tischhöhe die spätere Bildschirmposition beeinflussen.",
+          "Wo soll der Bildschirm zum Fenster stehen? Seitlich, damit direkte Blendung und Spiegelungen reduziert werden."
+        ],
+        "pruefungsbezug": "Schreibe die Reihenfolge vollständig aus: Stuhl, Tisch, Bildschirm, Tastatur, Maus. Ergänze rechte Winkel, Augenhöhe und seitlichen Fenstereinfall.",
+        "merksatz": "Von unten nach oben einstellen: Stuhl, Tisch, Bildschirm, Tastatur, Maus."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Arbeitsplatzmängel können Gefährdungen verursachen.",
+          "Arbeitsschutz verbindet Verantwortung des Arbeitgebers mit Mitwirkung der Beschäftigten."
+        ],
+        "erklaerung": "Nach § 5 ArbSchG beurteilt der Arbeitgeber die Gefährdungen am Arbeitsplatz, leitet Schutzmaßnahmen ab und dokumentiert das Ergebnis. Bei Bildschirmarbeit gehören Augen, Körper und psychische Belastungen in die Betrachtung. Beschäftigte müssen Unterweisungen beachten und erkannte Gefahren melden. Für Jugendliche gelten zusätzlich die strengeren Regeln des Jugendarbeitsschutzgesetzes.",
+        "beispiele": [
+          "Meldet eine Beschäftigte Spiegelungen und Nackenbeschwerden, gehört der Arbeitsplatz in die Gefährdungsbeurteilung; die Mängel dürfen nicht nur individuell ausgeglichen werden.",
+          "Bei einer minderjährigen Auszubildenden werden neben ergonomischen Fragen auch die Schutzgrenzen des JArbSchG geprüft."
+        ],
+        "fallbeispiel": "Eine neue Kollegin klagt nach zwei Wochen über Nacken- und Augenschmerzen. Die Ursache wird nicht allein bei ihr gesucht: Der Arbeitgeber muss die Gefährdung nach § 5 ArbSchG beurteilen und dokumentieren. Die Kollegin meldet die Mängel und befolgt Unterweisungen; der Arbeitgeber stellt geeignete Arbeitsmittel bereit und beseitigt die erkannte Belastung.",
+        "typische_fehler": "Die Gefährdungsbeurteilung wird als Aufgabe der betroffenen Person angesehen. Ebenso wird die Meldung eines Mangels als ausreichend betrachtet, ohne die Verantwortung des Arbeitgebers für Beurteilung und Maßnahmen zu nennen.",
+        "verstaendnisfragen": [
+          "Wer ist für die Gefährdungsbeurteilung verantwortlich? Der Arbeitgeber.",
+          "Was müssen Beschäftigte bei erkannten Gefahren tun? Sie melden die Gefahr und beachten die Unterweisungen und Schutzmaßnahmen."
+        ],
+        "pruefungsbezug": "Verbinde im Fall immer drei Elemente: Arbeitgeber beurteilt und dokumentiert, Beschäftigte melden und befolgen, Jugendliche werden zusätzlich nach JArbSchG geschützt.",
+        "merksatz": "Der Arbeitgeber beurteilt die Gefährdung; Beschäftigte melden sie und wirken bei den Schutzmaßnahmen mit."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

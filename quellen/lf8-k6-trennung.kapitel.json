@@ -5,6 +5,70 @@
   "titel": "Trennung und Zeugnis",
   "untertitel": "Kündigungsarten, Fristen, Schutz — und was am Ende im Zeugnis steht.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "f1",
+        "vorauswissen": [
+          "Personalfreisetzung kann vor einer Kündigung beginnen.",
+          "Eine Kündigung ist das letzte Mittel und muss formal wirksam sein."
+        ],
+        "erklaerung": "Freisetzung wird stufenweise betrachtet: Überstunden, Kurzarbeit, Fluktuation, Aufhebungsvertrag und erst dann Kündigung. Kündigung und Aufhebungsvertrag brauchen nach § 623 BGB Schriftform; E-Mail, Messenger oder Fax reichen nicht. Die Formfrage wird vor jeder inhaltlichen Prüfung geklärt.",
+        "beispiele": [
+          "Ein Betrieb kann zunächst Überstunden abbauen oder Kurzarbeit prüfen, bevor er eine Kündigung ausspricht.",
+          "Eine Kündigung per E-Mail ist unwirksam, selbst wenn die Empfängerin sie gelesen und verstanden hat."
+        ],
+        "fallbeispiel": "Ein Arbeitgeber schickt eine Kündigung als E-Mail und beruft sich darauf, dass sie zugegangen ist. Zuerst wird die Form geprüft: § 623 BGB verlangt Schriftform mit eigenhändiger Unterschrift auf Papier. Die E-Mail ist deshalb unwirksam. Erst bei einer wirksamen Form wären Frist, Schutz und Grund zu prüfen.",
+        "typische_fehler": "Die Kündigung wird sofort inhaltlich bewertet, ohne die Schriftform zu prüfen. Außerdem wird ein Aufhebungsvertrag als formfreies Gespräch behandelt.",
+        "verstaendnisfragen": [
+          "Welche Stufen können vor der Kündigung liegen? Überstunden, Kurzarbeit, Fluktuation und Aufhebungsvertrag.",
+          "Welche Form verlangen Kündigung und Aufhebungsvertrag? Schriftform mit eigenhändiger Unterschrift auf Papier."
+        ],
+        "pruefungsbezug": "Beginne jede Trennungsaufgabe mit der Form. Erst danach Frist, Kündigungsschutz, Betriebsratsanhörung und Kündigungsgrund prüfen.",
+        "merksatz": "Die Kündigung ist das letzte Mittel und beginnt formal mit Papier und Unterschrift."
+      },
+      {
+        "abschnitt": "f2",
+        "vorauswissen": [
+          "Frist, Kündigungsschutz und Betriebsgröße müssen getrennt geprüft werden.",
+          "Der Betriebsrat ist vor einer Kündigung anzuhören."
+        ],
+        "erklaerung": "Die Grundfrist nach § 622 BGB beträgt vier Wochen zum 15. oder zum Monatsende und gilt für beide Seiten. Für Arbeitgeber verlängert sie sich mit der Betriebszugehörigkeit in den Stufen 2, 5, 8, 10, 12, 15 und 20 Jahre auf ein bis sieben Monate zum Monatsende. In der Probezeit gilt eine Frist von zwei Wochen ohne festen Termin. Kündigungsschutz greift nach sechs Monaten und in Betrieben mit mehr als zehn Arbeitnehmern. Die Kündigungsgründe sind personen-, verhaltens- und betriebsbedingt; bei betriebsbedingter Kündigung kommt Sozialauswahl hinzu. Ohne Anhörung des Betriebsrats ist die Kündigung unwirksam.",
+        "beispiele": [
+          "Eine Arbeitgeberfrist von zwei Monaten endet zum Monatsende; eine Arbeitnehmerin bleibt grundsätzlich bei der vierwöchigen Grundfrist, sofern nichts anderes vereinbart ist.",
+          "Vor einer betriebsbedingten Kündigung werden zusätzlich Kündigungsgrund und Sozialauswahl geprüft; vor jeder Kündigung die Anhörung des Betriebsrats."
+        ],
+        "fallbeispiel": "Ein Arbeitgeber kündigt einem Beschäftigten nach mehr als sechs Monaten in einem Betrieb mit mehr als zehn Arbeitnehmern zum 15. des nächsten Monats, ohne den Betriebsrat anzuhören. Die Prüfung ergibt mehrere Punkte: Kündigungsschutz ist eröffnet, die Arbeitgeberfrist muss nach Betriebszugehörigkeit geprüft werden, und die fehlende Anhörung macht die Kündigung unwirksam.",
+        "typische_fehler": "Verlängerte Fristen werden auch auf Arbeitnehmer angewendet, der Monatsendtermin wird vergessen oder die Schwellen des Kündigungsschutzes werden nicht zusammen geprüft. Die Betriebsratsanhörung wird als freiwillig behandelt.",
+        "verstaendnisfragen": [
+          "Welche Grundfrist gilt für beide Seiten? Vier Wochen zum 15. oder zum Monatsende.",
+          "Was bewirkt eine fehlende Betriebsratsanhörung? Die Kündigung ist unwirksam."
+        ],
+        "pruefungsbezug": "Rechne in dieser Reihenfolge: Form, Betriebsgröße und Dauer, Frist, Kündigungsgrund, Sozialauswahl und Betriebsratsanhörung.",
+        "merksatz": "Arbeitgeberfristen verlängern sich, Arbeitnehmerfristen nicht automatisch; die Anhörung des Betriebsrats bleibt zwingend."
+      },
+      {
+        "abschnitt": "f3",
+        "vorauswissen": [
+          "Ein Zeugnis wird bei Beendigung des Arbeitsverhältnisses ausgestellt.",
+          "Wahrheit und Wohlwollen müssen gleichzeitig eingehalten werden."
+        ],
+        "erklaerung": "Nach § 109 GewO besteht Anspruch auf ein einfaches oder qualifiziertes Zeugnis. Es muss wahr und wohlwollend sein. Die Tätigkeitsbeschreibung muss vollständig sein; Schlussformel, Austrittsdatum und unauffällige Schreibweise werden geprüft. Geheimzeichen, Hinweise auf Krankheiten, Gewerkschaftszugehörigkeit oder Betriebsratstätigkeit sind unzulässig. Die vorhandene Zeugnissprache übersetzt abgestufte Zufriedenheitsformulierungen.",
+        "beispiele": [
+          "Ein einfaches Zeugnis bestätigt Art und Dauer der Tätigkeit; ein qualifiziertes enthält zusätzlich Leistung und Verhalten.",
+          "Fehlt die Schlussformel mit Dank, Bedauern und Zukunftswünschen, ist das bei der Prüfung ein deutliches Signal, ersetzt aber keine vollständige Inhaltsprüfung."
+        ],
+        "fallbeispiel": "Ein Zeugnis nennt die Stelle, lässt aber wichtige Aufgaben weg und enthält ein falsches Austrittsdatum. Bei der Prüfung werden Tätigkeitsbeschreibung und Datum korrigiert. Danach werden Wahrheit, Wohlwollen, Schlussformel und unzulässige Geheimzeichen kontrolliert. Krankheiten oder Betriebsratstätigkeit dürfen nicht als versteckte Bewertung aufgenommen werden.",
+        "typische_fehler": "Wohlwollend wird mit positiv, aber unwahr gleichgesetzt. Außerdem werden auffällige Zeichensetzung oder Auslassungen als harmlose Gestaltung übersehen.",
+        "verstaendnisfragen": [
+          "Welche beiden Anforderungen stehen im Spannungsverhältnis? Das Zeugnis muss wahr und zugleich wohlwollend sein.",
+          "Welche drei Punkte gehören zur praktischen Zeugnisprüfung? Schlussformel, vollständige Tätigkeitsbeschreibung und richtiges Austrittsdatum."
+        ],
+        "pruefungsbezug": "Unterscheide einfaches und qualifiziertes Zeugnis und prüfe anschließend Inhalt, Formulierungen und unzulässige Geheimzeichen.",
+        "merksatz": "Ein Zeugnis ist wahr, wohlwollend, vollständig und frei von Geheimzeichen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

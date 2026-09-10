@@ -3,6 +3,78 @@
   "lernfeld": "lf7",
   "nummer": 4,
   "titel": "Schwierige Gespräche und Feedback",
+  "ausfuehrlich": {
+    "einleitung": "Schwierige Gesprächssituationen verlangen eine feste Reihenfolge und eine klare Haltung. Bei Reklamationen muss zuerst der Ärger Raum bekommen; bei Feedback muss beobachtbares Verhalten von einer Bewertung der Person getrennt werden. Interkulturelle Unterschiede ergänzen die Aufgabe um die Pflicht, Deutungen vorsichtig zu prüfen.",
+    "abschnitte": [
+      {
+        "abschnitt": "d1",
+        "vorauswissen": [
+          "Eine Reklamation betrifft sachlich einen Mangel, aber auch die Beziehung zum Kunden.",
+          "Ärger kann die Aufnahmefähigkeit für sachliche Argumente zunächst blockieren."
+        ],
+        "ablauf": [
+          "Kunden ausreden lassen.",
+          "Verständnis für den Ärger zeigen, ohne vorschnell Schuld einzugestehen.",
+          "Sachverhalt mit offenen Fragen klären.",
+          "Konkrete Lösung mit Zuständigkeit und Termin anbieten.",
+          "Nachfassen und prüfen, ob die Lösung angekommen ist."
+        ],
+        "erklaerung": "Die Reihenfolge beginnt bewusst nicht mit der Sachfrage. Wer den Kunden unterbricht oder sofort mit einer Rechtfertigung antwortet, verstärkt den Ärger. Erst wenn die emotionale Lage anerkannt ist, kann der konkrete Vorgang geklärt und eine verbindliche Lösung vereinbart werden.",
+        "beispiele": [
+          "Statt den Kunden bei der ersten Beschwerde zu unterbrechen, wird sein Anliegen vollständig aufgenommen und anschließend zusammengefasst.",
+          "‚Wir prüfen die Bestellung heute und melden uns bis 15 Uhr‘ ist konkreter als ‚Wir kümmern uns darum‘, weil Handlung und Termin feststehen."
+        ],
+        "fallbeispiel": "Ein Kunde beschwert sich über eine verspätete Lieferung. Die Mitarbeiterin lässt ihn ausreden und erkennt an, dass die Situation ärgerlich ist. Danach fragt sie nach Bestellnummer und zugesagtem Termin. Sie vereinbart, dass sie den Lieferstatus prüft und bis 15 Uhr zurückruft. Drei Tage später fragt sie nach, ob die Lösung funktioniert hat.",
+        "typische_fehler": "Mit der Sachklärung beginnen, Kollegen vor dem Kunden beschuldigen oder eine Lösung versprechen, für die keine Zuständigkeit besteht. Ein pauschales ‚Wir kümmern uns‘ ersetzt weder Termin noch Verantwortung.",
+        "verstaendnisfragen": [
+          "Warum steht das Gefühl vor der Sache? Weil ein verärgerter Kunde sachliche Argumente sonst als Ausweichen hören kann.",
+          "Was macht eine Lösung verbindlich? Sie benennt, was geschieht, wer handelt und bis wann."
+        ],
+        "pruefungsbezug": "Die fünf Schritte in der richtigen Reihenfolge nennen und bei einem Fall jeweils mit einer konkreten Formulierung oder Handlung begründen.",
+        "merksatz": "Erst Gefühl, dann Sache: ausreden lassen, anerkennen, klären, lösen, nachfassen."
+      },
+      {
+        "abschnitt": "d2",
+        "vorauswissen": [
+          "Feedback bezieht sich auf wahrgenommenes Verhalten in einer Situation.",
+          "Eine Ich-Botschaft beschreibt die eigene Wahrnehmung statt die Person zu bewerten."
+        ],
+        "erklaerung": "Gutes Feedback bleibt überprüfbar und bearbeitbar. Deshalb werden konkrete Beobachtungen, Zeitbezug und Wirkung genannt, statt Eigenschaften wie ‚unzuverlässig‘ zu behaupten. Beim Annehmen geht es zunächst um Zuhören und Nachfragen; ob man die Rückmeldung vollständig übernimmt, kann danach entschieden werden.",
+        "beispiele": [
+          "‚Die letzten zwei Protokolle kamen nach dem Termin; mir fehlt dadurch die Grundlage für den Versand‘ beschreibt Verhalten und Wirkung.",
+          "‚Du bist immer unorganisiert‘ bewertet die Person und verallgemeinert mit ‚immer‘; die Aussage lädt eher zur Verteidigung als zur Lösung ein."
+        ],
+        "fallbeispiel": "Ein Bericht kommt zwei Tage nach dem vereinbarten Termin. Statt ‚Du bist unzuverlässig‘ sagt die Führungskraft: ‚Der Bericht kam am Mittwoch statt am Montag. Mir fehlte dadurch die Grundlage für den Versand. Wie können wir den nächsten Termin sichern?‘ Die Rückmeldung benennt Beobachtung, Wirkung und einen nächsten Schritt.",
+        "typische_fehler": "Verallgemeinerungen wie ‚immer‘ und ‚nie‘, Feedback vor anderen oder Kritik aus zweiter Hand. Beim Annehmen wird häufig sofort gerechtfertigt, bevor das konkrete Beispiel überhaupt verstanden ist.",
+        "verstaendnisfragen": [
+          "Warum ist ‚Ich-Botschaft‘ hilfreich? Sie beschreibt die eigene Wahrnehmung und Wirkung, statt eine unbeweisbare Eigenschaft der Person zu behaupten.",
+          "Was sollte man bei unklarem Feedback tun? Zuhören und um ein konkretes Beispiel bitten."
+        ],
+        "pruefungsbezug": "Bei der Bewertung jede Rückmeldung auf beschreibend, konkret, zeitnah, unter vier Augen und Ich-Botschaft prüfen. Beim Annehmen Zuhören, Nachfragen und Bedanken nennen.",
+        "merksatz": "Feedback beschreibt Verhalten in einer Situation, nicht den Wert oder Charakter eines Menschen."
+      },
+      {
+        "abschnitt": "d3",
+        "vorauswissen": [
+          "Interkulturelle Kommunikation betrifft unterschiedliche Erwartungen, nicht starre Länderklischees.",
+          "Gesprächsqualität kann anhand vorher festgelegter Kriterien bewertet werden."
+        ],
+        "erklaerung": "Unterschiede können bei Direktheit, Zeitverständnis, Hierarchie, Beziehungsaufbau und Körpersprache liegen. Eine höfliche oder ausweichende Antwort darf nicht vorschnell als Zustimmung gelesen werden. Die sichere Haltung ist, Irritationen nachzufragen und Vereinbarungen ausdrücklich zu sichern. Ein Kriterienkatalog macht außerdem die spätere Gesprächsbewertung nachvollziehbar.",
+        "beispiele": [
+          "‚Das ist sehr interessant, wir schauen uns das an‘ kann in einem interkulturellen Kontext eine höfliche Zurückhaltung statt einer Zusage bedeuten; eine konkrete Rückfrage schafft Klarheit.",
+          "Wenn Entscheidungen in einer Organisation an der Spitze getroffen werden, muss geprüft werden, ob der Gesprächspartner überhaupt entscheiden darf."
+        ],
+        "fallbeispiel": "Ein ausländischer Geschäftspartner antwortet auf einen Terminvorschlag ausweichend und meldet sich nicht mehr. Statt die Antwort als feste Zusage zu behandeln, fragt die Mitarbeiterin freundlich nach und bietet zwei konkrete Termine mit einer Rückmeldefrist an. Danach bewertet sie das Gespräch anhand von Vorbereitung, Gesprächsführung, Zuhören, Sprache, Ergebnis und Nachbereitung.",
+        "typische_fehler": "Kulturunterschiede als feste Eigenschaften einzelner Länder behandeln oder eine ungewohnte Reaktion sofort negativ bewerten. Ebenso problematisch ist eine Nachbereitung ohne Kriterien, bei der nur das persönliche Gefühl zählt.",
+        "verstaendnisfragen": [
+          "Welche Haltung hilft bei interkulturellen Irritationen? Zurückhaltend deuten und nachfragen statt vorschnell interpretieren.",
+          "Warum wird der Kriterienkatalog vor dem Gespräch erstellt? Damit die Bewertung nicht nachträglich an eine gewünschte Schlussfolgerung angepasst wird."
+        ],
+        "pruefungsbezug": "Nicht Länderlisten auswendig aufsagen, sondern ein Feld der möglichen Unterschiede erklären und eine sichere Gesprächsreaktion formulieren. Bei der Bewertung Kriterien und Beobachtung verbinden.",
+        "merksatz": "Nicht vorschnell deuten: Unterschiede prüfen, Vereinbarungen sichern, Gespräch anhand klarer Kriterien bewerten."
+      }
+    ]
+  },
   "untertitel": "Reklamation, Konflikt, Rückmeldung — und wo Kulturen sich unterscheiden.",
   "minuten": 25,
   "lernziele": [

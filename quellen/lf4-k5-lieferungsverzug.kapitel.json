@@ -5,6 +5,78 @@
   "titel": "Wenn der Lieferer zu spät kommt",
   "untertitel": "Verspätet ist nicht dasselbe wie im Verzug.",
   "minuten": 25,
+
+  "ausfuehrlich": {
+    "einleitung": "Bei einer verspäteten Lieferung darf nicht sofort die Rechtsfolge gewählt werden. Zuerst muss sauber geprüft werden, ob überhaupt Lieferungsverzug vorliegt. Erst danach lässt sich entscheiden, ob Lieferung, Nachfrist, Rücktritt oder Schadensersatz verlangt werden kann.",
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Verzug setzt eine fällige Leistung voraus.",
+          "Unmöglichkeit und Verzögerung sind unterschiedliche Störungen."
+        ],
+        "ablauf": [
+          "Prüfen, ob der Liefertermin beziehungsweise die Leistung fällig ist.",
+          "Prüfen, ob der Lieferer trotz Möglichkeit nicht leistet.",
+          "Prüfen, ob eine Mahnung erforderlich und erfolgt ist.",
+          "Prüfen, ob der Lieferer die Verzögerung zu vertreten hat."
+        ],
+        "erklaerung": "Eine verspätete Lieferung allein reicht nicht. Vor dem Termin kann kein Verzug eintreten. Ist die Leistung dauerhaft unmöglich, liegt ebenfalls kein Verzug vor, sondern ein anderer Fall. Die vier Fragen werden deshalb in einer festen Reihenfolge geprüft: fällig, nicht geliefert, gemahnt und verschuldet.",
+        "beispiele": [
+          "Eine Lieferung am 1. Juni, die am 2. Juni fehlt, ist fällig und nicht erbracht; bei einem kalendermäßig bestimmten Termin kann die Mahnung entbehrlich sein.",
+          "Verbrennt das einzige bestellte Einzelstück vor der Lieferung, ist die Leistung dauerhaft unmöglich und nicht lediglich verspätet."
+        ],
+        "fallbeispiel": "Bestellt wird eine Ware zum 1. Juni. Am 8. Juni fehlt sie noch. Der Termin ist fällig, die Ware wurde trotz möglicher Lieferung nicht erbracht. Weil der Termin kalendermäßig bestimmt ist, ist eine Mahnung nicht zwingend. Danach muss noch geprüft werden, ob der Lieferer die Verzögerung zu vertreten hat. Erst wenn alle vier Punkte bejaht werden, liegt Lieferungsverzug vor.",
+        "typische_fehler": "Direkt aus der Verspätung auf Rücktritt geschlossen oder eine Mahnung vor der Fälligkeit berücksichtigt. Auch Unmöglichkeit wird fälschlich als Verzug bezeichnet.",
+        "verstaendnisfragen": [
+          "Warum ist eine Mahnung vor dem Liefertermin unwirksam? Weil die Leistung noch nicht fällig ist.",
+          "Was unterscheidet Unmöglichkeit vom Verzug? Bei Unmöglichkeit kann die Leistung dauerhaft nicht mehr erbracht werden; beim Verzug wäre sie noch möglich."
+        ],
+        "pruefungsbezug": "Die vier Prüfschritte ausdrücklich hinschreiben: fällig, nicht geliefert, Mahnung, Vertretenmüssen. Erst danach Rechtsfolgen ableiten.",
+        "merksatz": "Fällig, nicht geliefert, gemahnt, verschuldet — erst dann beginnt Lieferungsverzug."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Eine Mahnung ist eine eindeutige Aufforderung nach Eintritt der Fälligkeit.",
+          "§ 286 BGB nennt Fälle, in denen der Kalender oder die endgültige Weigerung die Mahnung ersetzt."
+        ],
+        "erklaerung": "Steht der Liefertermin kalendermäßig fest, tritt der Verzug nach Ablauf des Termins ohne zusätzliche Mahnung ein. Das gilt auch, wenn der Termin aus einem Ereignis und einer festen Frist berechnet werden kann, zum Beispiel 14 Tage nach Auftragseingang. Bei unbestimmten Formulierungen wie ‚schnellstmöglich‘ muss dagegen grundsätzlich gemahnt werden.",
+        "beispiele": [
+          "‚Lieferung am 15. Oktober‘: Ab dem Folgetag kann Verzug ohne Mahnung vorliegen.",
+          "‚Lieferung 14 Tage nach Auftragseingang‘ ist berechenbar; ‚Lieferung schnellstmöglich‘ ist dagegen kein bestimmter Termin."
+        ],
+        "fallbeispiel": "Ein Vertrag bestimmt die Lieferung am 15. Oktober. Am 16. Oktober ist die Ware nicht da. Der Termin war kalendermäßig bestimmt, deshalb ist die Mahnung nach § 286 BGB entbehrlich. Anders wäre es bei ‚schnellstmöglich‘: Dann müsste der Käufer nach Fälligkeit eine eindeutige Aufforderung zur Lieferung senden.",
+        "typische_fehler": "Jede verspätete Lieferung zwingend mit einer Mahnung verbinden oder eine unbestimmte Zusage wie ‚baldmöglichst‘ als kalendermäßige Bestimmung behandeln. Auch ein einseitig genannter, nicht vereinbarter Termin darf nicht automatisch als Vertragsinhalt gelten.",
+        "verstaendnisfragen": [
+          "Welche Formulierung lässt den Kalender mahnen? Ein kalendermäßig bestimmter oder bestimmbarer Liefertermin.",
+          "Wann bleibt die Mahnung nötig? Bei einem unbestimmten Termin oder wenn kein anderer gesetzlicher Ausnahmefall greift."
+        ],
+        "pruefungsbezug": "Markiere im Sachverhalt jedes Datum und jede Frist. Wörter wie ‚am‘, ‚bis‘ oder ‚14 Tage nach‘ sprechen für Bestimmbarkeit; ‚schnellstmöglich‘ nicht.",
+        "merksatz": "Fester Termin = Mahnung entbehrlich; unbestimmter Termin = nach Fälligkeit mahnen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Verzug und Rücktritt sind nicht dasselbe.",
+          "Rücktritt und Schadensersatz statt der Leistung setzen grundsätzlich eine erfolglose angemessene Frist voraus."
+        ],
+        "erklaerung": "Bei bestehendem Verzug kann der Käufer zunächst weiter auf Lieferung bestehen und einen Verzögerungsschaden verlangen. Will er sich vom Vertrag lösen oder die Ware anderweitig beschaffen und den Mehrpreis verlangen, braucht er grundsätzlich eine angemessene Nachfrist. Das Fixgeschäft bildet im vorhandenen Stoff eine besondere Ausnahme.",
+        "beispiele": [
+          "Der Käufer besteht weiter auf Lieferung und verlangt zusätzlich die Kosten einer notwendigen Ersatzanmietung als Verzögerungsschaden.",
+          "Bei einem Deckungskauf für 1.200 € statt ursprünglich 1.000 € beträgt der geltend gemachte Mehrpreis 200 €, sofern die weiteren Voraussetzungen vorliegen."
+        ],
+        "fallbeispiel": "200 Bürostühle sollten bis zum 1. Juni geliefert werden und werden für einen Umzug am 20. Juni benötigt. Am 8. Juni fehlt die Lieferung. Weil die Stühle noch gebraucht werden, wird zunächst eine angemessene Nachfrist bis zum 15. Juni gesetzt. Zusätzlich kann ein bereits entstandener Verzögerungsschaden verlangt werden. Läuft die Frist erfolglos ab, kommen Rücktritt oder Schadensersatz statt der Leistung und damit ein Deckungskauf in Betracht.",
+        "typische_fehler": "Sofortiger Rücktritt allein wegen des abgelaufenen Termins oder Verwechslung von Verzögerungsschaden und Schadensersatz statt der Leistung. Die Nachfrist wird nur beim Fixgeschäft entbehrlich.",
+        "verstaendnisfragen": [
+          "Was darf der Käufer sofort bei Verzug? Weiter auf Lieferung bestehen und Verzögerungsschaden verlangen.",
+          "Was muss vor dem Rücktritt grundsätzlich geschehen? Eine angemessene Frist zur Leistung muss erfolglos verstreichen."
+        ],
+        "pruefungsbezug": "Rechtsfolge immer an die Voraussetzung knüpfen: Lieferung plus Verzögerungsschaden bei Verzug; Rücktritt oder Deckungskauf grundsätzlich erst nach Nachfrist.",
+        "merksatz": "Verzug eröffnet Rechte, aber Rücktritt und Ersatzlieferung brauchen grundsätzlich eine erfolglose Nachfrist."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

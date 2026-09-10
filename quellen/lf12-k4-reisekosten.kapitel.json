@@ -4,7 +4,71 @@
   "nummer": 4,
   "titel": "Reisekosten abrechnen",
   "untertitel": "Vier Bausteine, eine Reihenfolge, ein paar Fallen.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Reisekosten bestehen aus unterschiedlichen Aufwandsarten.",
+          "Nicht jeder Betrag wird gleich abgerechnet."
+        ],
+        "erklaerung": "Vier Bausteine gehören zur Reisekostenabrechnung: Fahrtkosten, Verpflegungsmehraufwand, Übernachtung und Reisenebenkosten. Fahrt, Übernachtung und Nebenkosten werden mit Beleg abgerechnet. Nur der Verpflegungsmehraufwand wird pauschal nach Abwesenheitsdauer berechnet. Bewirtungskosten gehören nicht zu den Reisekosten und haben eigene Nachweise.",
+        "beispiele": [
+          "Ein Bahnticket oder eine Taxiquittung belegt Fahrtkosten; bei eigenem Pkw werden Datum, Ziel, Anlass und Kilometer nachgewiesen.",
+          "Ein Hotelbeleg wird um den Frühstücksanteil bereinigt; Parkgebühren und Maut gehören als Nebenkosten mit Beleg in die Abrechnung."
+        ],
+        "fallbeispiel": "Eine Abrechnung wird in vier Gruppen sortiert. Tickets und Kilometerangaben kommen zu Fahrtkosten, die Pauschale zur Verpflegung, der bereinigte Hotelbeleg zu Übernachtung und Park- oder Mautbelege zu Nebenkosten. Ein Bewirtungsbeleg wird nicht in diese Gruppen eingeordnet, sondern nach eigenen Nachweispflichten geprüft.",
+        "typische_fehler": "Verpflegung wird gegen Beleg statt pauschal abgerechnet oder Frühstück vollständig als Übernachtungskosten angesetzt. Bewirtung wird mit Verpflegung verwechselt.",
+        "verstaendnisfragen": [
+          "Welcher Baustein wird ausschließlich pauschal abgerechnet? Der Verpflegungsmehraufwand.",
+          "Was gehört nicht zu den Reisekosten? Bewirtungskosten."
+        ],
+        "pruefungsbezug": "Sortiere jeden Betrag zuerst einem Baustein zu und bestimme danach Beleg- oder Pauschalabrechnung.",
+        "merksatz": "Vier Bausteine, zwei Abrechnungsarten: Beleg für die meisten, Pauschale nur für Verpflegung."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Die Pauschale richtet sich nach Abwesenheitsdauer.",
+          "Gestellte Mahlzeiten mindern die Pauschale prozentual."
+        ],
+        "erklaerung": "An- und Abreisetage erhalten den kleinen Satz ohne Prüfung der Stundenzahl. Ein voller Zwischentag wird nach der Abwesenheitsdauer eingeordnet. Gestellte Mahlzeiten kürzen die Pauschale um 20 % des vollen Tagessatzes für Frühstück und jeweils 40 % für Mittag und Abend. Die Prozentsätze beziehen sich immer auf den vollen Tagessatz.",
+        "beispiele": [
+          "Bei einer Reise von Dienstag bis Donnerstag ist Dienstag Anreisetag, Mittwoch voller Zwischentag und Donnerstag Abreisetag.",
+          "Ein im Hotelpreis enthaltenes Frühstück löst 20 % Kürzung aus; ein gestelltes Mittagessen weitere 40 %, jeweils vom vollen Tagessatz."
+        ],
+        "fallbeispiel": "Eine Kollegin ist Dienstag 7 Uhr bis Donnerstag 19 Uhr unterwegs. Dienstag erhält den kleinen Satz, Mittwoch den großen und Donnerstag den kleinen Satz. Das Hotel stellt Frühstück an Mittwoch und Donnerstag: jeweils 20 % des vollen Tagessatzes werden gekürzt. Am Mittwoch wird zusätzlich das gestellte Mittagessen mit 40 % des vollen Tagessatzes gekürzt. Der Frühstücksanteil wird aus der Hotelrechnung herausgerechnet.",
+        "typische_fehler": "Die Stunden am An- und Abreisetag werden erneut geprüft oder die Prozentsätze auf den kleinen Satz statt den vollen Tagessatz angewendet. Auch ein nicht gegessenes, aber bereitgestelltes Frühstück wird nicht berücksichtigt.",
+        "verstaendnisfragen": [
+          "Worauf beziehen sich die Kürzungsprozentsätze? Immer auf den vollen Tagessatz.",
+          "Welche Mahlzeitenkürzungen gelten? Frühstück 20 %, Mittag und Abend jeweils 40 %."
+        ],
+        "pruefungsbezug": "Zerlege die Reise tageweise, bestimme den Satz und ziehe gestellte Mahlzeiten erst danach ab.",
+        "merksatz": "Erst Tagessatz bestimmen, dann Mahlzeiten vom vollen Tagessatz kürzen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Eine Reisekostenabrechnung muss sachlich und rechnerisch prüfbar sein.",
+          "Private Anteile und fehlende Nachweise dürfen nicht unbemerkt bleiben."
+        ],
+        "erklaerung": "Die Prüfung erfolgt in fester Reihenfolge: Reiseanlass und Zeitraum, Tage und Abwesenheit, Fahrtkosten, Verpflegungspauschalen, Mahlzeitenkürzungen, Übernachtung und Nebenkosten. Private Verlängerungen werden getrennt, Frühstücksanteile herausgerechnet und Bewirtung nach eigenen Regeln behandelt.",
+        "beispiele": [
+          "Bei einer gemischten Reise wird nur der betriebliche Anteil angesetzt und separat dokumentiert.",
+          "Bei fehlendem Fahrtbeleg werden Ziel, Anlass und Kilometer geprüft; bei Verpflegung wird dagegen die Pauschale ohne Essensbeleg berechnet."
+        ],
+        "fallbeispiel": "Die Dienstag-bis-Donnerstag-Reise wird als drei Tage erfasst. Danach werden die kleinen und großen Sätze eingesetzt, Frühstück und Mittag gekürzt, der Frühstücksanteil aus dem Hotelbeleg entfernt und Fahrt- sowie Nebenkosten mit Nachweisen abgeglichen. Erst die Gesamtsumme wird zur Auszahlung freigegeben.",
+        "typische_fehler": "Alle Tage mit dem großen Satz berechnet, Frühstücksanteil doppelt angesetzt oder private Kosten übernommen. Die Reihenfolge der Prüfung wird nicht dokumentiert.",
+        "verstaendnisfragen": [
+          "Was wird vor der Summe geprüft? Zeitraum, Tagesart, Mahlzeiten, Belege und private Anteile.",
+          "Warum wird der Frühstücksanteil aus der Hotelrechnung herausgerechnet? Weil er bereits über die Verpflegungspauschale berücksichtigt wird."
+        ],
+        "pruefungsbezug": "Arbeite jede Abrechnung tageweise und mit einer festen Checkliste durch; so werden Satz und Kürzung nicht vertauscht.",
+        "merksatz": "Reisekosten werden nicht pauschal über den ganzen Aufenthalt gerechnet, sondern Tag für Tag geprüft."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

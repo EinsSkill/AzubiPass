@@ -5,6 +5,50 @@
   "titel": "Einsatz und Entwicklung",
   "untertitel": "Arbeitszeit gestalten und Menschen weiterbringen.",
   "minuten": 20,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "e1",
+        "vorauswissen": [
+          "Arbeitszeitmodelle verteilen Arbeitszeit unterschiedlich.",
+          "Arbeitszeit bleibt auch bei größerer Freiheit rechtlich zu erfassen."
+        ],
+        "erklaerung": "Zu den Arbeitszeitmodellen gehören feste Arbeitszeit, Gleitzeit, Vertrauensarbeitszeit, Teilzeit, Schichtarbeit und mobiles Arbeiten. Gleitzeit braucht ein Zeitkonto und Regeln für den Ausgleich. Auch Vertrauensarbeitszeit hebt die Pflicht zur Arbeitszeiterfassung nicht auf. Nach dem Arbeitszeitgesetz gelten werktäglich acht Stunden, bis zehn Stunden bei Ausgleich im Halbjahresschnitt.",
+        "beispiele": [
+          "Bei Gleitzeit werden Beginn und Ende innerhalb eines Rahmens gewählt; Zeitkonto und Ausgleichsregeln sorgen dafür, dass die Abweichungen nachvollziehbar bleiben.",
+          "Mobiles Arbeiten verändert den Ort, Vertrauensarbeitszeit die Kontrolle der Lage; beide sind trotzdem in der Arbeitszeitplanung und -erfassung zu berücksichtigen."
+        ],
+        "fallbeispiel": "Ein Betrieb führt Gleitzeit ein, beschreibt aber weder Zeitkonto noch Ausgleich. Das Modell ist organisatorisch unvollständig. Es werden Regeln für die Zeiterfassung und den Ausgleich festgelegt. Zusätzlich wird geprüft, dass die tägliche Arbeitszeit die acht Stunden beziehungsweise den zulässigen Ausgleich bis zehn Stunden einhält.",
+        "typische_fehler": "Vertrauensarbeitszeit wird als arbeitszeitfreie Selbstbestimmung verstanden. Außerdem wird Gleitzeit ohne Zeitkonto oder Ausgleichsregel eingeführt.",
+        "verstaendnisfragen": [
+          "Welche zwei Voraussetzungen braucht Gleitzeit? Ein Zeitkonto und Regeln für den Ausgleich.",
+          "Was gilt auch bei Vertrauensarbeitszeit? Die Pflicht zur Arbeitszeiterfassung."
+        ],
+        "pruefungsbezug": "Ordne Modelle nach der Gestaltung von Zeit und Ort zu und prüfe anschließend Erfassung, tägliche Grenze und Ausgleich.",
+        "merksatz": "Mehr Freiheit bei der Lage der Arbeit beseitigt weder Regeln noch Zeiterfassung."
+      },
+      {
+        "abschnitt": "e2",
+        "vorauswissen": [
+          "Personalentwicklung kann vor, während und nach einer Tätigkeit ansetzen.",
+          "Lernen soll die berufliche Entwicklung und den Einsatz verbinden."
+        ],
+        "erklaerung": "Die fünf Formen der Personalentwicklung werden über ihre Präpositionen unterschieden: into the job, on the job, off the job, along the job und out of the job. On the job findet direkt am Arbeitsplatz statt und ist die wirksamste und günstigste Form. Das jährliche Mitarbeitergespräch verbindet Rückblick, Beurteilung und Zielvereinbarung.",
+        "beispiele": [
+          "Eine Einarbeitung in die konkrete Stelle gehört zu into the job; Lernen während der laufenden Aufgabe zu on the job.",
+          "Eine Entwicklung außerhalb des Arbeitsplatzes gehört zu off the job; das Mitarbeitergespräch verbindet Rückblick und neue Ziele."
+        ],
+        "fallbeispiel": "Eine neue Aufgabe soll sicher beherrscht werden. Zuerst wird geklärt, ob die Person in die Stelle eingeführt, während der Arbeit angeleitet oder außerhalb des Arbeitsplatzes geschult werden soll. Für die laufende Weiterentwicklung wird das Mitarbeitergespräch genutzt: Rückblick, Beurteilung und Zielvereinbarung werden verbunden. Ist Lernen direkt am Arbeitsplatz möglich, wird on the job geprüft.",
+        "typische_fehler": "Die fünf Formen werden nur übersetzt, ohne den Zeitpunkt und Ort des Lernens zuzuordnen. Außerdem wird das Mitarbeitergespräch auf eine reine Beurteilung reduziert.",
+        "verstaendnisfragen": [
+          "Welche Form gilt als wirksamste und günstigste? On the job.",
+          "Welche drei Elemente verbindet das jährliche Mitarbeitergespräch? Rückblick, Beurteilung und Zielvereinbarung."
+        ],
+        "pruefungsbezug": "Ordne die englischen Präpositionen nach Ort und Zeitpunkt der Entwicklung und nenne jeweils ein passendes Beispiel.",
+        "merksatz": "Personalentwicklung folgt der Frage, wann und wo gelernt wird; on the job ist direkt und wirksam."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

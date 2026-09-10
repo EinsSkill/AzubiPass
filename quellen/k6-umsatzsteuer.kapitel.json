@@ -5,6 +5,98 @@
   "titel": "Umsatzsteuer",
   "untertitel": "Durchlaufprinzip, Vorsteuer, Zahllast — und warum der Betrieb nur Kassierer ist.",
   "minuten": 25,
+
+  "ausfuehrlich": {
+    "einleitung": "Die Umsatzsteuer lässt sich auf zwei Ebenen verstehen: wirtschaftlich trägt sie am Ende der private Verbrauch, buchhalterisch wird sie zwischen Einkauf, Verkauf und Finanzamt weitergeleitet. Wer Vorsteuer und Umsatzsteuer als Konten einordnet, kann auch die Zahllast sicher herleiten.",
+    "abschnitte": [
+      {
+        "abschnitt": "f1",
+        "vorauswissen": [
+          "Ein Betrieb kauft Waren ein und verkauft sie weiter.",
+          "Aufwendungen und Erträge werden von durchlaufenden Beträgen unterschieden."
+        ],
+        "erklaerung": "Bei einem umsatzsteuerpflichtigen Betrieb gehört die Umsatzsteuer wirtschaftlich nicht zum eigenen Ergebnis. Beim Verkauf wird sie vom Kunden vereinnahmt und später an das Finanzamt weitergeleitet. Beim Einkauf gezahlte Vorsteuer wird als Anspruch gegenüber dem Finanzamt berücksichtigt. Dadurch bleibt im Betrieb nur die Steuer auf dem eigenen Wertschöpfungsanteil hängen, während der Endverbraucher keine Vorsteuer zurückholen kann.",
+        "beispiele": [
+          "Beim Einkauf von Waren für 1.000 € netto und 190 € Vorsteuer schuldet der Betrieb dem Lieferanten 1.190 €, kann die 190 € aber als Vorsteuer berücksichtigen.",
+          "Beim Verkauf für 2.000 € netto kommen 380 € Umsatzsteuer hinzu. Der Kunde zahlt 2.380 €, aber nur 2.000 € sind Umsatzerlös des Betriebs."
+        ],
+        "fallbeispiel": "Ein Betrieb nimmt 2.380 € ein und gibt beim Einkauf 1.190 € aus. Für das Ergebnis zählt der Nettobetrag: 2.000 € Verkauf minus 1.000 € Einkauf = 1.000 € Wertschöpfung. Die 380 € Umsatzsteuer und 190 € Vorsteuer laufen über eigene Konten; die Differenz von 190 € wird an das Finanzamt abgeführt.",
+        "typische_fehler": "Der Bruttobetrag wird als Umsatz oder Aufwand behandelt. Ebenso wird angenommen, dass Umsatzsteuer über die GuV läuft. Im beschriebenen System gehören die Steuerbeträge auf Bestandskonten, weil sie Forderung oder Verbindlichkeit gegenüber dem Finanzamt darstellen.",
+        "verstaendnisfragen": [
+          "Warum ist Umsatzsteuer für den Betrieb kein Aufwand? Weil sie vom Kunden vereinnahmt und als Betrag gegenüber dem Finanzamt weitergeleitet wird.",
+          "Wer trägt die Steuer am Ende der Lieferkette wirtschaftlich? Der Endverbraucher, der keine Vorsteuer zurückholen kann."
+        ],
+        "pruefungsbezug": "Bei Sachverhalten Brutto, Netto, Vorsteuer und Umsatzsteuer sprachlich sauber trennen. Die Leitfrage lautet: Gehört der Betrag zum eigenen Ergebnis oder wird er nur für das Finanzamt durchgeleitet?",
+        "merksatz": "Für den Betrieb ist Umsatzsteuer ein durchlaufender Posten; der eigene Erfolg wird netto betrachtet."
+      },
+      {
+        "abschnitt": "f2",
+        "vorauswissen": [
+          "Aktivkonten wachsen im Soll, Passivkonten im Haben.",
+          "Der Bruttobetrag enthält Nettobetrag und Steuer."
+        ],
+        "erklaerung": "Vorsteuer und Umsatzsteuer sind keine zwei Namen für dasselbe Konto. Vorsteuer entsteht beim Einkauf und stellt eine Forderung gegenüber dem Finanzamt dar; sie steht daher auf der Aktivseite und nimmt im Soll zu. Umsatzsteuer entsteht beim Verkauf und ist eine Verbindlichkeit; sie steht auf der Passivseite und nimmt im Haben zu.",
+        "beispiele": [
+          "Bei 1.190 € brutto und 19 % Steuer wird der Nettobetrag durch 1,19 berechnet: 1.190 € ÷ 1,19 = 1.000 €; die Steuer beträgt 190 €.",
+          "Bei einem steuerpflichtigen Nettoverkauf von 2.000 € mit 19 % entstehen 380 € Umsatzsteuer und damit 2.380 € Forderung oder Zahlungseingang."
+        ],
+        "fallbeispiel": "Ein Bruttobetrag von 1.190 € enthält 19 % Umsatzsteuer. Brutto sind 119 % des Nettobetrags. Daher: 1.190 € ÷ 1,19 = 1.000 € netto. Die enthaltene Umsatzsteuer beträgt 1.190 € − 1.000 € = 190 €. Der Weg über Division ist notwendig, weil sich die 19 % auf den Nettobetrag beziehen.",
+        "typische_fehler": "19 % werden direkt vom Bruttobetrag abgezogen oder mit 0,81 multipliziert. Das würde die Steuer auf den falschen Grundwert beziehen. Außerdem wird Vorsteuer auf die Passivseite eingeordnet, obwohl sie eine Forderung ist.",
+        "verstaendnisfragen": [
+          "Warum steht Vorsteuer im Soll? Sie ist ein Aktivkonto und damit eine Forderung gegenüber dem Finanzamt.",
+          "Warum wird bei der Bruttorechnung durch 1,19 geteilt? Weil der Bruttobetrag 119 % des Nettobetrags entspricht."
+        ],
+        "pruefungsbezug": "Bei Brutto-Netto-Aufgaben zuerst den Steuersatz erkennen und die Bezugsgröße bestimmen. Bei 19 % durch 1,19, bei 7 % durch 1,07 teilen; die Differenz ist die enthaltene Steuer.",
+        "merksatz": "Vorsteuer: Einkauf, Aktivseite, Soll. Umsatzsteuer: Verkauf, Passivseite, Haben."
+      },
+      {
+        "abschnitt": "f3",
+        "vorauswissen": [
+          "Wareneinkäufe und Warenverkäufe werden netto auf Aufwand und Ertrag gebucht.",
+          "Die Steuerbeträge laufen über Vorsteuer und Umsatzsteuer."
+        ],
+        "ablauf": [
+          "Beim Einkauf Nettowert und Vorsteuer im Soll, Bruttoschuld im Haben buchen.",
+          "Beim Verkauf Bruttoforderung im Soll, Nettoerlös und Umsatzsteuer im Haben buchen.",
+          "Umsatzsteuer mit Vorsteuer verrechnen.",
+          "Eine positive Differenz als Zahllast an das Finanzamt überweisen."
+        ],
+        "erklaerung": "Die Zahllast ist keine zusätzliche Steuer neben den bereits gebuchten Beträgen. Sie ist der Saldo aus Umsatzsteuer und Vorsteuer: Zahllast = Umsatzsteuer − Vorsteuer. Ist der Wert positiv, muss der Betrieb zahlen; ist er negativ, ergibt sich eine Erstattung.",
+        "beispiele": [
+          "Der Einkauf von 1.000 € netto erzeugt 190 € Vorsteuer und eine Verbindlichkeit von 1.190 €.",
+          "Der Verkauf von 2.000 € netto erzeugt 380 € Umsatzsteuer und eine Forderung von 2.380 €."
+        ],
+        "fallbeispiel": "Bilde den vollständigen Zyklus aus der Grafik: 1. Wareneinkauf 1.000 € + Vorsteuer 190 € an Verbindlichkeiten 1.190 €. 2. Forderungen 2.380 € an Umsatzerlöse 2.000 € + Umsatzsteuer 380 €. 3. Umsatzsteuer 380 € an Vorsteuer 190 € + Bank 190 €. Die Zahllast beträgt 380 € − 190 € = 190 €. Nach der Verrechnung stehen beide Steuerkonten auf null.",
+        "typische_fehler": "Die Umsatzsteuer wird auf den Warenaufwand aufgeschlagen oder die Vorsteuer als Aufwand behandelt. Auch die vollständige Forderung beziehungsweise Verbindlichkeit wird manchmal nicht ausgebucht.",
+        "verstaendnisfragen": [
+          "Was bedeutet eine negative Zahllast? Die Vorsteuer ist höher als die Umsatzsteuer; gegenüber dem Finanzamt ergibt sich eine Erstattung.",
+          "Warum wird beim Verkauf die Forderung mit dem Bruttobetrag gebucht? Weil der Kunde Nettoerlös und Umsatzsteuer zusammen schuldet."
+        ],
+        "pruefungsbezug": "Buchungssätze immer in Netto, Steuer und Brutto zerlegen. Danach Zahllast mit der Formel prüfen und kontrollieren, ob die Soll- und Habenbeträge ausgeglichen sind.",
+        "merksatz": "Zahllast = Umsatzsteuer − Vorsteuer; gezahlt wird nur die Differenz."
+      },
+      {
+        "abschnitt": "f4",
+        "vorauswissen": [
+          "Die Kleinunternehmerregelung ist eine Ausnahme von der Regelbesteuerung.",
+          "Wer keine Umsatzsteuer ausweist, kann im Gegenzug keine Vorsteuer abziehen."
+        ],
+        "erklaerung": "Die vorhandene Gegenüberstellung zeigt den Zielkonflikt: Die Kleinunternehmerregelung reduziert Bürokratie und kann bei Privatkunden einen günstigeren Rechnungsbetrag ermöglichen. Dafür wird beim Einkauf die enthaltene Vorsteuer nicht erstattet, sodass sie als Teil der Einkaufskosten beim Betrieb bleibt. Bei der Regelbesteuerung werden Umsatzsteuer und Vorsteuer dagegen getrennt ausgewiesen und verrechnet.",
+        "beispiele": [
+          "Ein Kleinunternehmer weist auf seiner Rechnung keine Umsatzsteuer aus und erhält die beim Einkauf gezahlte Vorsteuer nicht zurück.",
+          "Ein regelbesteuerter Betrieb weist Umsatzsteuer aus, führt sie ab und kann die Vorsteuer aus betrieblichen Einkäufen berücksichtigen."
+        ],
+        "fallbeispiel": "Prüfe die beiden Grenzen aus dem Kapitel: Maßgeblich sind 25.000 € Vorjahresumsatz und 100.000 € im laufenden Jahr. Wer die Regelung nutzt, darf keine Umsatzsteuer auf Rechnungen ausweisen und hat keinen Vorsteuerabzug. Überschreitet der Sachverhalt die Voraussetzungen, muss die Regelbesteuerung geprüft werden. In einer Aufgabe sind deshalb Umsatzjahr, Umsatzhöhe und Rechnungsangabe getrennt zu lesen.",
+        "typische_fehler": "Kleinunternehmerstatus wird mit ‚keine Steuer auf der Rechnung, aber Vorsteuerabzug‘ verwechselt. Ebenso falsch ist, trotz Regelung Umsatzsteuer auszuweisen; der ausgewiesene Betrag wird dadurch nicht zu einem zulässigen Vorsteuerabzug.",
+        "verstaendnisfragen": [
+          "Welcher zentrale Vorteil steht welchem Nachteil gegenüber? Weniger Bürokratie und ein günstigerer Bruttopreis stehen dem fehlenden Vorsteuerabzug gegenüber.",
+          "Welche Angaben müssen bei einer Aufgabe zuerst geprüft werden? Vorjahresumsatz, laufender Umsatz und ob Umsatzsteuer auf der Rechnung ausgewiesen wird."
+        ],
+        "pruefungsbezug": "Die Kleinunternehmerregelung wird am sichersten über eine Vergleichstabelle gelöst: Umsatzgrenzen, Ausweis auf der Rechnung, Vorsteuerabzug, Vorteil und Nachteil nacheinander prüfen.",
+        "merksatz": "Keine Umsatzsteuer auf der Rechnung bedeutet bei der Kleinunternehmerregelung auch keinen Vorsteuerabzug."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

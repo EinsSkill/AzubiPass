@@ -5,6 +5,70 @@
   "titel": "Ablegen und aufbewahren",
   "untertitel": "Ablegen kann jeder. Wiederfinden ist die Kunst.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ablage soll Vorgänge geordnet und wiederauffindbar halten.",
+          "Ein Ordnungssystem funktioniert nur, wenn alle es gleich anwenden."
+        ],
+        "erklaerung": "Die fünf Grundsysteme sind alphabetisch, numerisch, chronologisch, sachlich und geografisch. In der Praxis werden sie kombiniert, zum Beispiel sachlich, darin alphabetisch und darin chronologisch. Vor dem Ablegen wird ausgesondert: Entwürfe und Mehrfachkopien gehören nicht ohne Zweck in die Registratur. Der Prüfstein lautet, ob eine Vertretung den Vorgang ohne Rückfrage findet.",
+        "beispiele": [
+          "Kundenakten können zunächst sachlich nach Vorgangsart und innerhalb der Gruppe alphabetisch nach Firmennamen geordnet werden.",
+          "Eingehende Vorgänge lassen sich chronologisch nach Datum oder numerisch nach einer laufenden Vorgangsnummer ablegen; entscheidend ist die schriftlich festgelegte Regel."
+        ],
+        "fallbeispiel": "In einem Team sortiert eine Person nach Firmenname, eine zweite nach Ansprechpartner und eine dritte nach Projekt. Bei einer Vertretung ist ein Vorgang nicht auffindbar. Die Lösung ist ein schriftlicher Ablageplan mit einem führenden System und festgelegten Unterteilungen. Danach werden Entwürfe und Mehrfachkopien ausgesondert und die Auffindbarkeit mit einem Vertretungstest geprüft.",
+        "typische_fehler": "Ordnung wird mit persönlicher Gewohnheit verwechselt. Außerdem wird alles abgelegt, obwohl Entwürfe und Mehrfachkopien ausgesondert werden sollten.",
+        "verstaendnisfragen": [
+          "Welche fünf Grundsysteme gibt es? Alphabetisch, numerisch, chronologisch, sachlich und geografisch.",
+          "Woran wird eine gute Ablage geprüft? Daran, ob eine Vertretung den Vorgang ohne Rückfrage findet."
+        ],
+        "pruefungsbezug": "Nenne bei einer Ablageaufgabe das Grundsystem, mögliche Kombinationen und die Notwendigkeit einer schriftlichen Regel.",
+        "merksatz": "Die beste Ablage ist nicht die schönste, sondern die, in der eine Vertretung sofort findet, was sie braucht."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Aufbewahrungsfristen beginnen nicht automatisch am Belegdatum.",
+          "Handels- und Jahresabschlussunterlagen haben unterschiedliche Fristen."
+        ],
+        "erklaerung": "Nach § 257 HGB gelten zehn Jahre für Bücher, Inventare und Jahresabschlüsse und sechs Jahre für empfangene und abgesandte Handelsbriefe. Die Frist beginnt mit dem Schluss des Kalenderjahres, in dem die letzte Eintragung gemacht wurde, nicht mit dem Datum des Belegs. Ein Werbeprospekt ist kein Handelsbrief. Laufende Prüfungen oder offene Verfahren können der Vernichtung zusätzlich entgegenstehen.",
+        "beispiele": [
+          "Eine Eingangsrechnung vom 12. März 2024, die 2024 verbucht wurde, fällt bei zehnjähriger Frist unter den Jahresendpunkt 31. Dezember 2024 und darf frühestens ab 1. Januar 2035 vernichtet werden.",
+          "Ein geschäftlicher Brief wird grundsätzlich sechs Jahre aufbewahrt; die Einordnung richtet sich nach seiner Funktion, nicht danach, ob er auf Papier oder digital vorliegt."
+        ],
+        "fallbeispiel": "Die Eingangsrechnung vom 12. März 2024 wurde im selben Jahr verbucht. Der Fristbeginn ist nicht der 12. März, sondern der Schluss des Kalenderjahres: 31. Dezember 2024. Zehn Jahre laufen bis zum Ablauf des 31. Dezember 2034. Frühestens ab 1. Januar 2035 darf vernichtet werden, sofern kein offenes Verfahren entgegensteht.",
+        "typische_fehler": "Ab dem Belegdatum gerechnet, die zehnjährige und sechsjährige Frist vertauscht oder ein Werbeprospekt als Handelsbrief behandelt. Auch die Bedeutung einer laufenden Prüfung wird übersehen.",
+        "verstaendnisfragen": [
+          "Wann beginnt die zehnjährige Frist? Mit dem Schluss des Kalenderjahres, in dem die letzte Eintragung gemacht wurde.",
+          "Welche Unterlagen nennt § 257 HGB mit zehn Jahren? Bücher, Inventare und Jahresabschlüsse."
+        ],
+        "pruefungsbezug": "Schreibe in jeder Fristrechnung zuerst ‚Schluss des Kalenderjahres‘. Danach Fristdauer bestimmen und erst am folgenden Tag die Vernichtung zulassen.",
+        "merksatz": "Nicht das Belegdatum zählt, sondern der Jahresabschluss des Entstehungsjahres der letzten Eintragung."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Digitale Ablage ersetzt die gesetzlichen Aufbewahrungsfristen nicht.",
+          "Elektronische Dokumente müssen in ihrer Nachprüfbarkeit erhalten bleiben."
+        ],
+        "erklaerung": "Eine digitale Ablage muss unveränderbar, vollständig, nachvollziehbar und auffindbar sein. Elektronisch empfangene Belege werden im Originalformat aufbewahrt, damit die maschinelle Auswertbarkeit erhalten bleibt. Für ersetzendes Scannen braucht es einen festgelegten Ablauf und eine Verfahrensdokumentation. Zugriffsrechte sind zusätzlich zu regeln, weil viele Unterlagen personenbezogene Daten enthalten.",
+        "beispiele": [
+          "Ein PDF-Ausdruck eines elektronisch eingegangenen Belegs genügt nicht, wenn dadurch das Originalformat und seine maschinelle Auswertbarkeit verloren gehen.",
+          "Ein Dokumentenmanagementsystem protokolliert Bearbeitungsschritte und begrenzt Zugriffe; dadurch werden Nachvollziehbarkeit und Vertraulichkeit unterstützt."
+        ],
+        "fallbeispiel": "Ein Betrieb möchte nach der Umstellung auf ein Dokumentenmanagementsystem alle Papierbelege sofort vernichten. Vorher werden Unveränderbarkeit, Vollständigkeit, Nachvollziehbarkeit und Auffindbarkeit geprüft. Für das Scannen wird ein dokumentierter Ablauf festgelegt; elektronische Originale bleiben im Originalformat. Erst wenn diese Voraussetzungen und Zugriffsrechte geklärt sind, kann die Umstellung rechtssicher organisiert werden.",
+        "typische_fehler": "Digital wird mit automatisch revisionssicher gleichgesetzt. Ein Scan ohne Verfahrensdokumentation, ein veränderbares Dokument oder ein Ausdruck statt des elektronischen Originals kann die Anforderungen verfehlen.",
+        "verstaendnisfragen": [
+          "Welche vier Eigenschaften muss die digitale Ablage erfüllen? Unveränderbar, vollständig, nachvollziehbar und auffindbar.",
+          "Warum muss die Verfahrensdokumentation schriftlich festgelegt sein? Damit der Ablauf des ersetzenden Scannens und der Umgang mit Fehlern bei einer Prüfung nachvollziehbar sind."
+        ],
+        "pruefungsbezug": "Prüfe digitale Ablage nicht nur auf Speicherung, sondern auf Originalformat, Unveränderbarkeit, Protokollierung, Auffindbarkeit und geregelte Zugriffe.",
+        "merksatz": "Digital ist nur dann belastbar, wenn Original, Inhalt, Bearbeitung und Zugriff nachvollziehbar bleiben."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

@@ -5,6 +5,70 @@
   "titel": "Rechte, Pflichten und Jugendarbeitsschutz",
   "untertitel": "Was du schuldest, was der Betrieb schuldet — und was für dich gilt, solange du unter 18 bist.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "c1",
+        "vorauswissen": [
+          "Ein Ausbildungsvertrag verpflichtet beide Seiten.",
+          "Die Pflichten des Azubis stehen dem Ausbildungsauftrag des Betriebs gegenüber."
+        ],
+        "erklaerung": "§ 13 BBiG beschreibt die Pflichten des Auszubildenden: Lernen, sorgfältige Aufgabenerledigung, Berufsschulbesuch, Befolgen zulässiger Weisungen, Beachtung der Betriebsordnung, pfleglicher Umgang mit Arbeitsmitteln und Verschwiegenheit. § 14 BBiG verpflichtet den Betrieb, die berufliche Handlungsfähigkeit zu vermitteln, geeignete Ausbilder einzusetzen, Ausbildungsmittel kostenlos zu stellen, für Schule und Prüfungen freizustellen, ausbildungsdienliche Aufgaben zu übertragen, zu vergüten und ein Zeugnis auszustellen.",
+        "beispiele": [
+          "Der Azubi führt eine aufgetragene Büroaufgabe sorgfältig aus und meldet, wenn eine Anweisung unklar ist; der Betrieb stellt dafür die erforderlichen Ausbildungsmittel kostenlos bereit.",
+          "Muss der Azubi zur Berufsschule oder Prüfung, liegt die Freistellungspflicht beim Betrieb. Das ist keine freiwillige Kulanz."
+        ],
+        "fallbeispiel": "Ein Azubi soll eine Aufgabe bearbeiten, erhält aber keinen Zugang zum benötigten Programm. Der Azubi muss sich um den Erwerb der beruflichen Handlungsfähigkeit bemühen und sorgfältig arbeiten; der Betrieb muss die notwendigen Ausbildungsmittel kostenlos bereitstellen. Ohne Mittel kann die Leistung nicht fair am Maßstab einer Fachkraft bewertet werden.",
+        "typische_fehler": "Nur die Azubi-Pflichten werden gelernt. Außerdem wird Sorgfalt mit fehlerfreier Leistung einer ausgebildeten Fachkraft gleichgesetzt. Maßstab ist der jeweilige Ausbildungsstand.",
+        "verstaendnisfragen": [
+          "Warum gehören Berufsschule und Prüfung in den Pflichtenkatalog des Betriebs? Weil der Betrieb dafür freistellen und die Ausbildung insgesamt ermöglichen muss.",
+          "Woran wird die Sorgfalt des Azubis gemessen? Am Ausbildungsstand, nicht am Maßstab einer bereits fertig ausgebildeten Fachkraft."
+        ],
+        "pruefungsbezug": "Bei Gegenüberstellungen zwei Spalten anlegen: Pflichten nach § 13 BBiG und Pflichten nach § 14 BBiG. So werden Lernen und Ausbilden, Befolgen und Anleiten nicht vertauscht.",
+        "merksatz": "Der Azubi muss lernen und sorgfältig mitwirken; der Betrieb muss anleiten, freistellen und die Ausbildung ermöglichen."
+      },
+      {
+        "abschnitt": "c2",
+        "vorauswissen": [
+          "Das Weisungsrecht ordnet die Arbeit im Betrieb.",
+          "Ausbildungsaufgaben müssen einen Bezug zum Ausbildungszweck haben."
+        ],
+        "erklaerung": "Eine Weisung ist nicht schon deshalb zulässig, weil sie vom Betrieb kommt. § 14 BBiG begrenzt die Aufgaben auf Tätigkeiten, die dem Ausbildungszweck dienen. Gelegentliche Nebenaufgaben können im Arbeitsalltag vorkommen; berufsfremde oder dauerhaft überfordernde Aufgaben überschreiten aber die Grenze. Der betriebliche Ausbildungsplan ist der sachliche Bezugspunkt für das Gespräch.",
+        "beispiele": [
+          "Eine gelegentliche Ablage von Unterlagen kann zu kaufmännischen Büroabläufen passen; tägliches Autowaschen gehört nicht zum Ausbildungsberuf Kaufleute für Büromanagement.",
+          "Eine Aufgabe darf erklärt und angeleitet werden. Wird sie ohne passende Mittel und dauerhaft auf dem Niveau einer Fachkraft verlangt, ist die Ausbildungs- und Schutzfunktion zu prüfen."
+        ],
+        "fallbeispiel": "Ein Azubi im Büromanagement soll jeden Morgen eine Stunde lang Firmenwagen waschen. Autowaschen ist keine ausbildungsdienliche Büroaufgabe; die regelmäßige Dauer spricht außerdem gegen eine gelegentliche Nebenaufgabe. Der nächste Schritt ist ein Gespräch mit dem Ausbilder anhand des Ausbildungsplans. Bei fehlender Lösung kommen Ausbildungsberater der IHK oder die JAV als Anlaufstellen in Betracht.",
+        "typische_fehler": "Jede betriebliche Anweisung wird als automatisch verbindlich angesehen. Der Gegenfehler ist, jede Nebenaufgabe pauschal abzulehnen, obwohl die konkrete Aufgabe gelegentlich und ausbildungsbezogen sein kann.",
+        "verstaendnisfragen": [
+          "Welche erste Frage entscheidet über die Zulässigkeit einer Aufgabe? Dient sie dem Ausbildungszweck und passt sie zum Berufsbild beziehungsweise Ausbildungsplan?",
+          "Was ist bei einer unpassenden Weisung ein sinnvoller erster Schritt? Sachlich mit dem Ausbilder sprechen und den betrieblichen Ausbildungsplan als Bezug nehmen."
+        ],
+        "pruefungsbezug": "Begründe nicht nur mit ‚gefällt mir nicht‘, sondern mit Ausbildungszweck, Berufsbild, Häufigkeit und Ausbildungsplan. Diese Kriterien machen die Antwort nachvollziehbar.",
+        "merksatz": "Weisungsrecht ja — aber nur innerhalb des Ausbildungszwecks und ohne berufsfremde Daueraufgaben."
+      },
+      {
+        "abschnitt": "c3",
+        "vorauswissen": [
+          "Für Jugendliche gelten zusätzliche Schutzregeln.",
+          "Arbeitszeit, Pausen und Urlaub müssen gemeinsam betrachtet werden."
+        ],
+        "erklaerung": "Für unter 18-Jährige begrenzt das JArbSchG die Arbeitszeit auf höchstens acht Stunden täglich und 40 Stunden wöchentlich. Ab 4,5 Stunden sind 30 Minuten Pause erforderlich, bei mehr als sechs Stunden 60 Minuten. Der Urlaubsanspruch richtet sich nach dem Alter am 1. Januar und beträgt 30, 27 oder 25 Werktage. Das Alter ist deshalb bei jeder Fallaufgabe die erste Prüfvariable.",
+        "beispiele": [
+          "Wer an vier Tagen je acht Stunden gearbeitet hat, darf am fünften Tag höchstens noch acht Stunden leisten, weil die Wochenhöchstgrenze 40 Stunden beträgt.",
+          "Bei mehr als sechs Stunden Arbeitszeit ist nicht nur die 30-Minuten-Stufe, sondern die 60-Minuten-Pause zu prüfen."
+        ],
+        "fallbeispiel": "Eine 17-jährige Auszubildende arbeitet montags bis donnerstags jeweils acht Stunden. Die Rechnung lautet 4 × 8 = 32 Stunden. Bis zur Wochenhöchstgrenze von 40 Stunden bleiben 8 Stunden; freitags sind daher höchstens 8 weitere Stunden möglich. Zusätzlich müssen die für die tägliche Arbeitszeit geltenden Pausen eingehalten werden.",
+        "typische_fehler": "Die tägliche Höchstgrenze wird geprüft, die Wochenhöchstgrenze aber vergessen. Ebenso werden 4,5 Stunden und mehr als 6 Stunden verwechselt oder der Urlaubsanspruch ohne das Alter am 1. Januar bestimmt.",
+        "verstaendnisfragen": [
+          "Welche vier Zahlen solltest du zuerst notieren? 8 Stunden täglich, 40 Stunden wöchentlich, 30 Minuten Pause ab 4,5 Stunden und 60 Minuten bei mehr als 6 Stunden.",
+          "Wovon hängt der Urlaub Jugendlicher ab? Vom Alter am 1. Januar; die Staffel beträgt 30, 27 oder 25 Werktage."
+        ],
+        "pruefungsbezug": "Rechne Wochenfälle sichtbar vor: bisherige Stunden addieren, von 40 abziehen und anschließend die Tagesgrenze sowie Pausen prüfen.",
+        "merksatz": "Bei Jugendlichen zuerst Alter, dann 8/40, danach die passende Pause und den Urlaub prüfen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

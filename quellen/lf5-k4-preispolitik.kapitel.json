@@ -5,6 +5,70 @@
   "titel": "Preispolitik",
   "untertitel": "Der Preis ist das einzige Instrument, das Geld einbringt statt kostet.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "d1",
+        "vorauswissen": [
+          "Ein Preis muss Kosten decken und am Markt akzeptiert werden.",
+          "Kosten- und Marktsicht liefern unterschiedliche Grenzen."
+        ],
+        "erklaerung": "Die kostenorientierte Preisbildung liefert die Preisuntergrenze, weil darunter die eigenen Kosten nicht gedeckt sind. Die marktorientierte Betrachtung liefert die Preisobergrenze, weil der Markt die Zahlungsbereitschaft begrenzt. Liegt die Untergrenze über der Obergrenze, reicht eine einfache Preisentscheidung nicht; die Kosten müssen geprüft und bearbeitet werden.",
+        "beispiele": [
+          "Ein Preis unterhalb der Kostenuntergrenze kann kurzfristig attraktiv aussehen, deckt aber die Kosten nicht.",
+          "Ein Preis oberhalb der vom Markt akzeptierten Obergrenze wird trotz Kostendeckung nicht nachgefragt."
+        ],
+        "fallbeispiel": "Die Kostenrechnung ergibt eine Untergrenze, die Marktforschung eine niedrigere Obergrenze. Zuerst wird nicht einfach ein Mittelwert gewählt. Die Grenzen werden gegenübergestellt: Ist die Untergrenze höher als die Obergrenze, muss der Betrieb an den Kosten arbeiten oder die Marktsituation neu beurteilen. Erst danach wird ein tragfähiger Preis festgelegt.",
+        "typische_fehler": "Untergrenze und Obergrenze werden vertauscht oder der höchste mögliche Preis automatisch als bester Preis angesehen. Auch wird übersehen, dass eine nicht passende Kostensituation bearbeitet werden muss.",
+        "verstaendnisfragen": [
+          "Woher kommt die Preisuntergrenze? Aus den Kosten.",
+          "Woher kommt die Preisobergrenze? Aus dem Markt beziehungsweise der Zahlungsbereitschaft."
+        ],
+        "pruefungsbezug": "Schreibe in Preisfällen zuerst ‚Kosten = Untergrenze‘ und ‚Markt = Obergrenze‘. Vergleiche anschließend beide Grenzen.",
+        "merksatz": "Kosten begrenzen nach unten, Markt und Zahlungsbereitschaft nach oben."
+      },
+      {
+        "abschnitt": "d2",
+        "vorauswissen": [
+          "Neue Produkte können unterschiedlich in den Markt eingeführt werden.",
+          "Markt- und Wettbewerbssituation bestimmen die passende Preisstrategie."
+        ],
+        "erklaerung": "Beim Skimming wird mit einem hohen Preis gestartet und der Preis langsam gesenkt. Das passt zu technischem Vorsprung. Bei der Penetration wird mit einem niedrigen Preis gestartet, um schnell Marktanteile zu gewinnen; das passt zu austauschbaren Massenprodukten. Die Strategie muss zum Produkt und Markt passen.",
+        "beispiele": [
+          "Ein Produkt mit technischem Vorsprung kann zunächst über Skimming einen hohen Preis durchsetzen.",
+          "Bei einem austauschbaren Massenprodukt kann Penetration über einen tiefen Einstiegspreis Marktanteile gewinnen."
+        ],
+        "fallbeispiel": "Ein neues Produkt besitzt einen technischen Vorsprung und spricht zunächst Kundinnen und Kunden an, die dafür zahlen. Die passende Strategie ist Skimming: hoch einsteigen und später senken. Wäre das Produkt austauschbar und der Massenmarkt entscheidend, wäre Penetration mit niedrigem Einstiegspreis die passendere Wahl.",
+        "typische_fehler": "Skimming wird mit niedrigem Einstiegspreis und Penetration mit hohem Einstiegspreis verbunden. Außerdem wird die Strategie ohne Bezug zu Vorsprung, Austauschbarkeit und Marktgröße gewählt.",
+        "verstaendnisfragen": [
+          "Welche Richtung hat Skimming? Hoher Einstiegspreis, anschließend langsame Senkung.",
+          "Wann passt Penetration? Bei austauschbaren Massenprodukten, wenn schnell Marktanteile gewonnen werden sollen."
+        ],
+        "pruefungsbezug": "Suche in Falltexten nach ‚technischer Vorsprung‘ oder ‚Massenmarkt‘. Diese Stichwörter führen meist direkt zu Skimming oder Penetration.",
+        "merksatz": "Skimming schöpft oben ab; Penetration dringt unten in den Markt ein."
+      },
+      {
+        "abschnitt": "d3",
+        "vorauswissen": [
+          "Der Preis besteht nicht nur aus dem Listenpreis.",
+          "Kunden reagieren unterschiedlich stark auf Preisänderungen."
+        ],
+        "erklaerung": "Preispolitik umfasst auch Rabatte, Skonto und Zahlungsziele, selbst wenn der Listenpreis unverändert bleibt. Die Preiselastizität beschreibt, wie stark die Nachfrage auf eine Preisänderung reagiert. Bei hoher Reaktion kann eine Preisänderung die Nachfrage deutlich verändern; bei geringer Reaktion fällt die Mengenänderung schwächer aus.",
+        "beispiele": [
+          "Ein Rabatt senkt den tatsächlich gezahlten Preis, obwohl der Listenpreis gleich bleibt.",
+          "Ein Skonto verändert den Preis bei schneller Zahlung; ein Zahlungsziel verändert den Zeitpunkt der Zahlung und damit die Kondition."
+        ],
+        "fallbeispiel": "Ein Betrieb plant keine Listenpreissenkung, bietet aber Rabatt und Skonto an. Für die Preisentscheidung werden beide Konditionen berücksichtigt, weil sie den tatsächlich erzielten Preis verändern. Anschließend wird beobachtet, wie stark die Nachfrage auf diese Änderung reagiert; genau diese Reaktion beschreibt die Preiselastizität.",
+        "typische_fehler": "Nur der Listenpreis wird betrachtet oder Skonto mit einem dauerhaften Rabatt gleichgesetzt. Die Preiselastizität wird außerdem als Preis selbst statt als Reaktion der Nachfrage verstanden.",
+        "verstaendnisfragen": [
+          "Welche Konditionen gehören zur Preispolitik? Unter anderem Rabatte, Skonto und Zahlungsziele.",
+          "Was misst Preiselastizität? Wie stark die Nachfrage auf Preisänderungen reagiert."
+        ],
+        "pruefungsbezug": "Prüfe bei Preisfällen den tatsächlich erzielten Preis und die Reaktion der Menge, nicht nur die Zahl auf der Preisliste.",
+        "merksatz": "Konditionen verändern den Preis, auch wenn die Preisliste gleich aussieht."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

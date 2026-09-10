@@ -5,6 +5,70 @@
   "titel": "Bestellung und Auftragsbestätigung",
   "untertitel": "Der Vertrag steht — jetzt zählt, was genau vereinbart wurde.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "d1",
+        "vorauswissen": [
+          "Eine Bestellung kann Antrag oder Annahme sein.",
+          "Die rechtliche Wirkung hängt vom vorherigen Angebot ab."
+        ],
+        "erklaerung": "Ging ein bindendes Angebot voraus und bestellt der Kunde unverändert, ist die Bestellung die Annahme und der Vertrag steht. Ging ein freibleibendes Angebot voraus oder gab es kein Angebot, ist die Bestellung der Antrag. Die Auftragsbestätigung ist dann die Annahme. Weicht sie in Termin, Menge oder einer anderen Bedingung ab, ist sie ein neuer Antrag.",
+        "beispiele": [
+          "Nach einem bindenden Angebot über 200 Ordner zum 15. September bestätigt die Bestellung genau diese Daten: Vertragsschluss durch die Bestellung.",
+          "Nach einem freibleibenden Angebot wird die Bestellung zum Antrag und die Auftragsbestätigung zur Annahme."
+        ],
+        "fallbeispiel": "Der Kunde bestellt 200 Ordner mit Liefertermin 15. September. Die Auftragsbestätigung nennt den 29. September. Weil sie vom Inhalt der Bestellung abweicht, ist sie keine Annahme, sondern ein neuer Antrag. Ein Vertrag über den neuen Termin entsteht erst, wenn der Kunde zustimmt oder die Lieferung zum 29. September widerspruchslos annimmt.",
+        "typische_fehler": "Die Überschrift ‚Auftragsbestätigung‘ wird wichtiger genommen als der Inhalt. Außerdem wird eine Bestellung nach einem bindenden Angebot als neuer Antrag behandelt, obwohl der Vertrag bereits mit der unveränderten Annahme geschlossen wurde.",
+        "verstaendnisfragen": [
+          "Wann ist die Bestellung die Annahme? Wenn ihr ein bindendes Angebot vorausging und sie diesem vollständig entspricht.",
+          "Was bedeutet eine abweichende Auftragsbestätigung? Neuer Antrag statt Annahme; der Kunde muss zustimmen."
+        ],
+        "pruefungsbezug": "Frage in dieser Reihenfolge: Was ging voraus? Ist die Bestellung gleichlautend? Weicht die Bestätigung ab? Erst dann die Begriffe Antrag, Annahme oder Bestätigung verwenden.",
+        "merksatz": "Nicht die Überschrift entscheidet, sondern das vorausgegangene Angebot und der genaue Inhalt."
+      },
+      {
+        "abschnitt": "d2",
+        "vorauswissen": [
+          "AGB sind vorformulierte Bedingungen für mehrere Verträge.",
+          "Der Zeitpunkt des Hinweises entscheidet über ihre Einbeziehung."
+        ],
+        "erklaerung": "Nach § 305 BGB müssen AGB vor oder bei Vertragsschluss ausdrücklich einbezogen werden. Die andere Seite muss in zumutbarer Weise von ihrem Inhalt Kenntnis nehmen können; überraschende Klauseln gelten nicht. Ein Hinweis erst auf der Rechnung kommt zu spät, weil der Vertrag dann bereits geschlossen ist.",
+        "beispiele": [
+          "Ein Bestellformular verweist vor Vertragsschluss auf lesbare, zugängliche AGB. Der Kunde erhält damit die Möglichkeit zur Kenntnisnahme.",
+          "Zusatzkosten, die erstmals auf der Rechnung auftauchen und überraschend sind, werden nicht durch den späteren Abdruck Vertragsbestandteil."
+        ],
+        "fallbeispiel": "Ein Betrieb druckt seine AGB erstmals auf die Rechnung. Der Vertrag war zu diesem Zeitpunkt bereits geschlossen. Der Hinweis kam zu spät; Schriftlichkeit allein genügt nicht. Für eine wirksame Einbeziehung hätte der Betrieb vor Vertragsschluss hinweisen und eine zumutbare Kenntnisnahme ermöglichen müssen.",
+        "typische_fehler": "Die AGB werden als wirksam angesehen, weil sie irgendwo schriftlich vorliegen. Maßgeblich sind aber Zeitpunkt, Zugangsmöglichkeit und das Verbot überraschender Klauseln.",
+        "verstaendnisfragen": [
+          "Welche zwei zeitlichen und praktischen Voraussetzungen sind zentral? Hinweis vor Vertragsschluss und zumutbare Möglichkeit der Kenntnisnahme.",
+          "Warum reicht die Rechnung nicht? Weil sie erst nach dem Vertragsschluss ausgehändigt wird."
+        ],
+        "pruefungsbezug": "Markiere in AGB-Fällen den Zeitpunkt des Hinweises und die Möglichkeit, den Inhalt zu lesen. Prüfe danach, ob eine Klausel überraschend ist.",
+        "merksatz": "AGB müssen vor dem Vertrag sichtbar und zumutbar zugänglich sein — die Rechnung ist zu spät."
+      },
+      {
+        "abschnitt": "d3",
+        "vorauswissen": [
+          "Liefer- und Zahlungsbedingungen regeln verschiedene Teile der Vertragserfüllung.",
+          "Lieferbedingungen betreffen nicht nur den Termin."
+        ],
+        "erklaerung": "Lieferbedingungen beschreiben Ware, Liefertermin, Kosten und Gefahr. Zahlungsbedingungen betreffen Zeitpunkt und Art der Zahlung. Beide müssen zusammenpassen: Der Kunde soll erkennen können, was geliefert wird, wer Kosten trägt und wann beziehungsweise wie gezahlt wird.",
+        "beispiele": [
+          "Eine Lieferbedingung regelt, wann die Ware eintrifft und wer die Frachtkosten trägt.",
+          "Eine Zahlungsbedingung legt fest, wann und auf welchem Weg der Rechnungsbetrag zu zahlen ist."
+        ],
+        "fallbeispiel": "Ein Auftrag nennt eine Lieferung, aber nicht, wer die Frachtkosten trägt; außerdem fehlt das Zahlungsziel. Vor der Bestätigung werden beide Bereiche ergänzt: Liefertermin, Kosten und Gefahr auf der Lieferseite, Zahlungszeitpunkt und Zahlungsart auf der Zahlungsseite. So wird die Vereinbarung vollständig und der spätere Rechnungsprozess eindeutig.",
+        "typische_fehler": "Lieferbedingungen werden nur als Datum verstanden oder Zahlungsbedingungen mit dem Preis verwechselt. Auch wird die Auftragsbestätigung formuliert, obwohl die Abweichung bei Termin oder Kosten noch nicht geklärt ist.",
+        "verstaendnisfragen": [
+          "Welche Fragen beantworten Lieferbedingungen? Was wird wann geliefert, wer trägt Kosten und wie wird die Gefahr behandelt?",
+          "Welche Fragen beantworten Zahlungsbedingungen? Wann und auf welche Art wird gezahlt?"
+        ],
+        "pruefungsbezug": "Ordne jede Angabe entweder Lieferung oder Zahlung zu und prüfe, ob Termin, Kosten, Gefahr, Zahlungszeitpunkt und Zahlungsart eindeutig sind.",
+        "merksatz": "Lieferbedingungen klären Ware und Weg; Zahlungsbedingungen klären Geld und Zeitpunkt."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

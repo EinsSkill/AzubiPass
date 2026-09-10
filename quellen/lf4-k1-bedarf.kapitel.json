@@ -5,6 +5,84 @@
   "titel": "Bedarf ermitteln und Bestände steuern",
   "untertitel": "Zu wenig kostet den Auftrag. Zu viel kostet Geld.",
   "minuten": 30,
+
+  "ausfuehrlich": {
+    "einleitung": "Beschaffung beginnt nicht mit der Bestellung, sondern mit einer belastbaren Bedarfsermittlung. Erst wenn Menge, Wert und Zeitpunkt bekannt sind, lassen sich die passende Planungsmethode und der richtige Bestellzeitpunkt bestimmen.",
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Bedarf bedeutet, welche Menge eines Materials zu welchem Zeitpunkt benötigt wird.",
+          "Die Planungsmethode soll zum Wert und zur Vorhersagbarkeit des Materials passen."
+        ],
+        "erklaerung": "Die deterministische Bedarfsermittlung rechnet aus einem konkreten Auftrag oder einer Stückliste. Die stochastische Bedarfsermittlung nutzt den Verbrauch der Vergangenheit. Die subjektive Bedarfsermittlung greift auf Erfahrung und Schätzung zurück, wenn noch keine belastbaren Verbrauchsdaten vorhanden sind. Die Wahl ist deshalb eine Abwägung zwischen Genauigkeit und Planungsaufwand.",
+        "beispiele": [
+          "Für 300 bestellte Ordner werden 300 Rückenschilder benötigt: Der Bedarf ist aus dem Auftrag ableitbar und damit deterministisch.",
+          "Kopierpapier wird anhand des Verbrauchs im letzten Quartal geplant; bei einem neuen Produkt ohne Vergangenheitswerte bleibt zunächst nur eine subjektive Schätzung."
+        ],
+        "fallbeispiel": "Ein Betrieb plant drei Materialien: Rückenschilder für einen konkreten Auftrag werden aus der Stückzahl berechnet. Kopierpapier wird aus vergangenen Verbrauchswerten hochgerechnet. Für ein völlig neues Produkt ohne Auftrag und Verbrauchsdaten wird zunächst die Erfahrung der zuständigen Person genutzt. Sobald echte Verbrauchsdaten vorliegen, kann die Schätzung durch eine stochastische Planung ersetzt werden.",
+        "typische_fehler": "Stochastisch und subjektiv werden gleichgesetzt, obwohl die stochastische Methode auf Vergangenheitsdaten beruht. Umgekehrt wird für billiges Verbrauchsmaterial eine unnötig genaue Stückliste erstellt, obwohl der Aufwand den Wert übersteigt.",
+        "verstaendnisfragen": [
+          "Was ist der Kernunterschied zwischen deterministisch und stochastisch? Deterministisch wird aus einem konkreten Bedarf gerechnet; stochastisch wird aus vergangenen Verbräuchen geschätzt.",
+          "Wann ist subjektive Bedarfsermittlung nachvollziehbar? Wenn keine geeigneten Auftrags- oder Verbrauchsdaten vorhanden sind."
+        ],
+        "pruefungsbezug": "In Zuordnungsaufgaben zuerst die Informationsquelle markieren: konkreter Auftrag = deterministisch, Vergangenheit = stochastisch, Erfahrung ohne Daten = subjektiv.",
+        "merksatz": "Deterministisch heißt gerechnet, stochastisch heißt aus Verbrauchsdaten geschätzt, subjektiv heißt erfahrungsbasiert geschätzt."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Der Wert eines Materials ergibt sich aus Jahresverbrauch mal Preis.",
+          "Die ABC-Analyse ordnet Materialien nach ihrem Jahreswert, nicht nach ihrer Stückzahl."
+        ],
+        "ablauf": [
+          "Für jedes Material Jahresverbrauch und Preis zusammentragen.",
+          "Jahreswert mit Menge mal Preis berechnen.",
+          "Materialien nach Jahreswert absteigend sortieren.",
+          "Kumulierte Werte bilden und daraus A-, B- und C-Güter ableiten."
+        ],
+        "erklaerung": "Die ABC-Analyse konzentriert den Planungsaufwand auf die Materialien, bei denen finanziell am meisten auf dem Spiel steht. A-Güter haben einen hohen Jahreswert und werden deshalb sorgfältig geplant. C-Güter haben einen kleinen Wert; dort ist eine vereinfachte Beschaffung sinnvoll. B-Güter liegen dazwischen.",
+        "beispiele": [
+          "120 Toner zu 180 € ergeben 21.600 € Jahreswert und gehören in der vorhandenen Tabelle zu A.",
+          "3.000 Kugelschreiber zu 0,35 € ergeben nur 1.050 € Jahreswert und sind trotz der hohen Stückzahl C-Güter."
+        ],
+        "fallbeispiel": "Ein Material wird 40-mal pro Jahr zu 950 € benötigt. Jahreswert: 40 × 950 € = 38.000 €. Die Menge ist klein, der Wert aber sehr hoch. Deshalb wird es als A-Gut behandelt: Bedarf möglichst genau bestimmen, Angebote sorgfältig vergleichen und den Bestand nicht unnötig groß machen.",
+        "typische_fehler": "Die Klasse wird nach Menge statt nach Wert vergeben. Auch die Richtwerte der ABC-Analyse werden als starre gesetzliche Grenzen behandelt, obwohl die vorhandene Grafik sie ausdrücklich als Faustwerte bezeichnet.",
+        "verstaendnisfragen": [
+          "Warum können wenige Stück A-Güter sein? Weil der Preis je Stück den Jahreswert stark erhöhen kann.",
+          "Warum werden C-Güter vereinfacht beschafft? Weil eine sehr genaue Planung bei geringem Jahreswert mehr Aufwand verursachen kann, als sie einspart."
+        ],
+        "pruefungsbezug": "Immer zuerst den Jahreswert berechnen und die Materialien danach sortieren. Erst die kumulierte Wertbetrachtung entscheidet über die Klasse.",
+        "merksatz": "ABC richtet sich nach dem Jahreswert: Menge mal Preis, nicht nach der Menge allein."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Der Meldebestand löst die Bestellung aus.",
+          "Der Mindestbestand ist ein Puffer, der normalerweise nicht angetastet werden soll."
+        ],
+        "ablauf": [
+          "Tagesverbrauch feststellen.",
+          "Tagesverbrauch mit der Lieferzeit multiplizieren.",
+          "Mindestbestand addieren.",
+          "Bei Erreichen des Meldebestands bestellen und die Bestellmenge berücksichtigen."
+        ],
+        "erklaerung": "Der Meldebestand beschreibt nicht die gewünschte Bestellmenge, sondern den Zeitpunkt der Bestellung. Während der Lieferzeit wird weiter verbraucht; der Bestand muss deshalb noch für diese Tage reichen. Der Mindestbestand schützt zusätzlich vor Lieferverzögerungen oder unerwartet höherem Verbrauch.",
+        "beispiele": [
+          "Bei 50 Stück Tagesverbrauch, sechs Tagen Lieferzeit und 200 Stück Mindestbestand liegt der Meldebestand bei 50 × 6 + 200 = 500 Stück.",
+          "Verlängert sich die Lieferzeit, steigt der Meldebestand, weil während des Wartens mehr Stück verbraucht werden."
+        ],
+        "fallbeispiel": "Setze die Werte der Lagergrafik ein: Tagesverbrauch 50 Stück, Lieferzeit sechs Tage, Mindestbestand 200 Stück. Rechnung: 50 × 6 = 300 Stück Verbrauch während der Lieferzeit; 300 + 200 = 500 Stück Meldebestand. Wird bei 500 bestellt und beträgt die Bestellmenge 1.200 Stück, liegt der Bestand nach dem Wareneingang rechnerisch bei 1.400 Stück, sofern der Mindestbestand nicht verändert wurde.",
+        "typische_fehler": "Meldebestand und Mindestbestand werden verwechselt. Außerdem wird die Bestellmenge in die Formel des Meldebestands eingesetzt, obwohl sie erst für den Bestand nach dem Wareneingang relevant ist.",
+        "verstaendnisfragen": [
+          "Was passiert mit dem Meldebestand bei längerer Lieferzeit? Er steigt, weil mehr Verbrauch überbrückt werden muss.",
+          "Warum wird der Mindestbestand addiert? Er soll als Puffer auch nach dem Verbrauch während der Lieferzeit noch vorhanden sein."
+        ],
+        "pruefungsbezug": "Die Formel zuerst vollständig hinschreiben: Tagesverbrauch × Lieferzeit + Mindestbestand. Danach Einheiten und Ergebnis auf Plausibilität prüfen.",
+        "merksatz": "Meldebestand = Tagesverbrauch × Lieferzeit + Mindestbestand."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

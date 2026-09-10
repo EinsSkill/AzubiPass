@@ -5,6 +5,70 @@
   "titel": "Marketingkonzeption und Produktpolitik",
   "untertitel": "Vom Ziel zur Maßnahme — und was mit dem Produkt selbst geschieht.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "c1",
+        "vorauswissen": [
+          "Marketingmaßnahmen sollen einen konkreten Zweck erfüllen.",
+          "Ein Ziel muss später überprüfbar sein."
+        ],
+        "erklaerung": "Die Marketingkonzeption folgt der Reihenfolge Ziel, Strategie, Maßnahme. Ein Marketingziel braucht eine Größe, eine Zielhöhe und eine Frist. Erst wenn klar ist, was bis wann erreicht werden soll, lässt sich eine passende Strategie wählen und eine konkrete Maßnahme beurteilen.",
+        "beispiele": [
+          "‚Bekannter werden‘ ist zu unbestimmt; ein Ziel mit Größe, Höhe und Frist kann später an einer konkreten Entwicklung geprüft werden.",
+          "Eine Maßnahme wie eine Werbeaktion wird erst sinnvoll, wenn sie aus einer zuvor festgelegten Strategie und einem überprüfbaren Ziel folgt."
+        ],
+        "fallbeispiel": "Ein Team möchte den Absatz erhöhen und schlägt sofort eine Anzeige vor. Zuerst wird das Ziel mit Größe, Höhe und Frist formuliert. Dann wird die Strategie festgelegt und erst anschließend die Anzeige als Maßnahme ausgewählt. Am Ende wird geprüft, ob die Zielgröße im vorgesehenen Zeitraum erreicht wurde.",
+        "typische_fehler": "Eine Maßnahme wird ohne Ziel gestartet oder der Erfolg nur mit ‚war sichtbar‘ bewertet. Außerdem werden Strategie und Maßnahme als Synonyme behandelt.",
+        "verstaendnisfragen": [
+          "Welche drei Bestandteile braucht ein Marketingziel? Größe, Höhe und Frist.",
+          "Was kommt in der Konzeption zuerst? Das Ziel, danach Strategie und Maßnahme."
+        ],
+        "pruefungsbezug": "Prüfe Zielaufgaben mit der Dreierfrage: Was wird gemessen, welcher Wert soll erreicht werden und bis wann?",
+        "merksatz": "Erst das überprüfbare Ziel, dann die Strategie, dann die Maßnahme."
+      },
+      {
+        "abschnitt": "c2",
+        "vorauswissen": [
+          "Marketing besteht aus mehreren aufeinander abgestimmten Instrumenten.",
+          "Produkt, Preis, Weg und Kommunikation beeinflussen sich gegenseitig."
+        ],
+        "erklaerung": "Der Marketing-Mix besteht aus Produkt-, Preis-, Distributions- und Kommunikationspolitik, den vier P. Produktpolitik gestaltet das Angebot, Preispolitik die Konditionen, Distributionspolitik den Weg zum Kunden und Kommunikationspolitik die Ansprache. Eine Maßnahme in einem Bereich kann die anderen Bereiche beeinflussen.",
+        "beispiele": [
+          "Eine Produktvariante braucht eine Preisentscheidung, einen passenden Vertriebsweg und eine Information der Kunden.",
+          "Ein günstiger Preis hilft wenig, wenn das Produkt nicht erreichbar ist oder die Kommunikation die Zielgruppe nicht erreicht."
+        ],
+        "fallbeispiel": "Für ein neues Produkt werden vier Fragen gestellt: Was wird angeboten? Zu welchem Preis? Über welchen Weg erreicht es den Kunden? Wie wird darüber informiert? Die Antworten ordnen Produkt-, Preis-, Distributions- und Kommunikationspolitik zu. Erst das Zusammenspiel ergibt den Marketing-Mix.",
+        "typische_fehler": "Marketing wird nur mit Werbung gleichgesetzt oder die vier P werden als unabhängige Einzelentscheidungen behandelt. Außerdem wird Distribution mit Kommunikation verwechselt.",
+        "verstaendnisfragen": [
+          "Welche vier Instrumente gehören zum Marketing-Mix? Produkt, Preis, Distribution und Kommunikation.",
+          "Welche Frage beantwortet die Distributionspolitik? Wie das Angebot zum Kunden gelangt."
+        ],
+        "pruefungsbezug": "Ordne Fallmaßnahmen nach dem Gegenstand zu: Angebot, Preis, Weg oder Ansprache. Begründe bei einer Konzeption das Zusammenspiel.",
+        "merksatz": "Die vier P decken ab, was angeboten, bezahlt, verteilt und kommuniziert wird."
+      },
+      {
+        "abschnitt": "c3",
+        "vorauswissen": [
+          "Ein Produkt kann sich im Zeitverlauf verändern.",
+          "Sortimente bestehen aus Warengruppen und Varianten."
+        ],
+        "erklaerung": "Produktpolitik umfasst Innovation, Variation, Differenzierung und Elimination. Bei der Variation wird das alte Produkt ersetzt; bei der Differenzierung steht eine Variante daneben. Der Produktlebenszyklus führt von Einführung über Wachstum und Reife zu Sättigung und Rückgang. Sortimentsbreite meint die Zahl der Warengruppen, Sortimentstiefe die Varianten je Gruppe.",
+        "beispiele": [
+          "Wird eine bisherige Produktversion durch eine neue ersetzt, liegt Variation vor; bleibt sie bestehen und kommt eine Variante hinzu, liegt Differenzierung vor.",
+          "Ein Sortiment mit vielen Warengruppen ist breit; viele Varianten innerhalb einer Warengruppe machen es tief."
+        ],
+        "fallbeispiel": "Ein Betrieb ersetzt sein bisheriges Produkt vollständig durch eine neue Version. Das ist Variation, nicht Differenzierung. Wird zusätzlich zur bisherigen Version eine weitere Ausführung angeboten, wäre es Differenzierung. Für die Lebenszyklusplanung wird anschließend geprüft, ob sich das Produkt in Einführung, Wachstum, Reife, Sättigung oder Rückgang befindet.",
+        "typische_fehler": "Variation und Differenzierung werden vertauscht. Ebenso wird angenommen, der Gewinn sei in der Sättigung am höchsten; der vorhandene Inhalt ordnet den höchsten Gewinn der Reife zu.",
+        "verstaendnisfragen": [
+          "Was ist der Prüfstein zwischen Variation und Differenzierung? Wird das alte Produkt ersetzt oder bleibt es neben einer Variante bestehen?",
+          "Was beschreibt Sortimentsbreite und -tiefe? Breite = Zahl der Warengruppen, Tiefe = Zahl der Varianten je Gruppe."
+        ],
+        "pruefungsbezug": "Ordne Produktmaßnahmen über die Frage ‚ein Produkt oder zwei?‘ und Lebenszyklusaufgaben über die fünf Phasen zu.",
+        "merksatz": "Variation ersetzt, Differenzierung ergänzt; Breite zählt Gruppen, Tiefe zählt Varianten."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

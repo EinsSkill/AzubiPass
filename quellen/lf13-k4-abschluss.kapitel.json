@@ -4,7 +4,71 @@
   "nummer": 4,
   "titel": "Abschließen und präsentieren",
   "untertitel": "Ein Projekt ist erst fertig, wenn jemand es abgenommen hat.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ein Projekt ist erst mit Abnahme formal beendet.",
+          "Das Ergebnis wird gegen den Projektauftrag geprüft."
+        ],
+        "erklaerung": "Der Abschluss folgt der Reihenfolge prüfen, abnehmen, Restpunkte festhalten, übergeben, ablegen und das Team entlasten. Die Abnahme erfolgt schriftlich durch den Auftraggeber. Offene Punkte erhalten Termin und Verantwortlichen. Erst mit der Übergabe wird aus dem Projektergebnis ein betreuter Prozess.",
+        "beispiele": [
+          "Das Ergebnis wird am messbaren Ziel des Projektauftrags geprüft und anschließend schriftlich abgenommen.",
+          "Restpunkte werden mit Termin und Verantwortlicher Person dokumentiert, bevor das Projektteam aufgelöst wird."
+        ],
+        "fallbeispiel": "Das Projekt ist inhaltlich fertig, der Auftraggeber hat aber drei Wochen keine Zeit. Das Team dokumentiert Ergebnis, Ziele, Budget, Termine und Restpunkte, bittet schriftlich um Abnahme und klärt einen begrenzten Aufwand für Rückfragen. Die Übergabe an den Betrieb wird vorbereitet, aber das Projekt gilt formal erst mit der schriftlichen Abnahme als beendet.",
+        "typische_fehler": "Die letzte Tätigkeit wird als Projektende behandelt oder mündliche Zustimmung als Abnahme verwendet. Restpunkte und Übergabe werden nicht gesichert.",
+        "verstaendnisfragen": [
+          "Was beendet das Projekt formal? Die schriftliche Abnahme durch den Auftraggeber.",
+          "Was brauchen offene Restpunkte? Termin und verantwortliche Person."
+        ],
+        "pruefungsbezug": "Nenne die Abschlussreihenfolge und unterscheide inhaltliche Fertigstellung von formaler Abnahme.",
+        "merksatz": "Fertig ist nicht abgeschlossen: Erst prüfen und schriftlich abnehmen, dann übergeben."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Erfahrungen sind nur nützlich, wenn sie auffindbar und konkret sind.",
+          "Die Projektbeteiligten kennen Ursachen und Folgen der Entscheidungen."
+        ],
+        "erklaerung": "Die Auswertung fragt, was gut und schlecht lief, woran es lag und was künftig geändert werden soll. Ergebnisse werden konkret formuliert und nach den betrieblichen Ablageregeln auffindbar gespeichert. So werden Erfahrungen in spätere Prozesse und Projekte übernommen.",
+        "beispiele": [
+          "Eine verspätete Freigabe wird mit Ursache und künftiger Vertretungsregel dokumentiert.",
+          "Eine erfolgreiche Rückfallebene wird als konkrete Empfehlung abgelegt, nicht nur als allgemeines Lob."
+        ],
+        "fallbeispiel": "Nach einer Veranstaltung oder Projektübergabe sammelt das Team Erfahrungen. Für jede Abweichung werden Ursache, Wirkung und konkrete Änderung festgehalten. Die Auswertung wird gemeinsam mit den Projektunterlagen abgelegt, damit ein späteres Team sie wiederfindet und nicht dieselben Fehler wiederholt.",
+        "typische_fehler": "Die Auswertung beschränkt sich auf ‚gut‘ oder ‚schlecht‘ oder wird erst nach dem Auflösen des Teams versucht. Ablageort und Verantwortlichkeit fehlen.",
+        "verstaendnisfragen": [
+          "Welche Fragen stellt die Auswertung? Was lief gut, was schlecht, woran lag es und was ändern wir?",
+          "Was macht eine Erfahrung nutzbar? Konkrete Formulierung und auffindbare Ablage."
+        ],
+        "pruefungsbezug": "Formuliere Lessons Learned als Ursache plus konkrete künftige Maßnahme und ordne sie in die Ablage ein.",
+        "merksatz": "Erfahrung wird erst zur Verbesserung, wenn Ursache, Änderung und Ablage klar sind."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Eine Abschlusspräsentation richtet sich an Auftraggeber und andere Empfänger.",
+          "Ziel, Ergebnis und Ausblick sind wichtiger als eine Tätigkeitschronik."
+        ],
+        "erklaerung": "Die Präsentation beantwortet Ziel, Ergebnis und Ausblick. Das Ergebnis steht im ersten Satz, wird am ursprünglichen Ziel gemessen und mit Zahlen belegt. Abweichungen bei Termin, Budget oder Umfang werden offen mit Ursache und Konsequenz benannt. Der Ausblick enthält Restpunkte, Übergabe und Empfehlung; die Details richten sich nach den Zuhörenden.",
+        "beispiele": [
+          "Die Geschäftsführung erhält Ergebnis und Empfehlung zuerst; eine Fachabteilung bekommt zusätzlich Einzelheiten des künftigen Ablaufs.",
+          "Eine Terminabweichung wird nicht kaschiert, sondern mit Ursache und Folge erklärt."
+        ],
+        "fallbeispiel": "Die Abschlusspräsentation beginnt mit dem Ergebnis und vergleicht es mit dem Projektziel. Danach werden Abweichungen, Restpunkte und Übergabe erläutert. Die Empfehlung für den nächsten Schritt steht im Ausblick. Der Vortrag berichtet nicht nur, was das Team getan hat, sondern was für den Betrieb jetzt anders ist.",
+        "typische_fehler": "Die Präsentation startet mit einer langen Tätigkeitschronik oder verschweigt Abweichungen. Ergebnis und Empfehlung erscheinen erst am Ende.",
+        "verstaendnisfragen": [
+          "Welche drei Fragen beantwortet die Präsentation? Was war das Ziel, was ist herausgekommen und wie geht es weiter.",
+          "Wie werden Abweichungen behandelt? Offen, mit Ursache und Konsequenz, ohne sie zu kaschieren."
+        ],
+        "pruefungsbezug": "Baue Präsentationen mit Ergebnis zuerst, Zielvergleich, Abweichungen, Restpunkten, Übergabe und Empfehlung auf.",
+        "merksatz": "Im Abschluss zählt das Ergebnis am Ziel gemessen — offen, belegt und mit einem nächsten Schritt."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

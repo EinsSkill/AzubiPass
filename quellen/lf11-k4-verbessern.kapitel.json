@@ -4,7 +4,71 @@
   "nummer": 4,
   "titel": "Prozesse verbessern",
   "untertitel": "Erst verstehen, dann ändern. Nie umgekehrt.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Kunden zahlen nicht für jede interne Tätigkeit.",
+          "Messen und Ursachenanalyse müssen vor einer Änderung stehen."
+        ],
+        "erklaerung": "Verschwendung ist, wofür der Kunde nicht zahlen würde: Warten, Doppelarbeit, übermäßiges Prüfen, Suchen, Nacharbeit und Rückfragen. Nicht jede nicht wertschöpfende Tätigkeit ist überflüssig, weil manche vorgeschrieben ist. Vor einer Maßnahme wird der Ist-Ablauf gemessen und die Ursache gesucht.",
+        "beispiele": [
+          "Lange Wartezeit vor einer Freigabe ist Verschwendung, wenn der Vorgang dadurch ohne Bearbeitung liegt.",
+          "Eine gesetzlich vorgeschriebene Prüfung ist nicht automatisch überflüssig, auch wenn sie aus Kundensicht keinen unmittelbaren Wert schafft."
+        ],
+        "fallbeispiel": "Reklamationen werden erst nach elf Tagen beantwortet, obwohl die Bearbeitung 1,5 Stunden dauert. Die Differenz zeigt, dass die Liegezeit vor der Freigabe untersucht werden muss. Erst danach werden Wertgrenze, feste Freigabezeiten und Vertretung als Maßnahmen geprüft.",
+        "typische_fehler": "Jede Prüfung wird als Verschwendung gestrichen oder die Bearbeitung beschleunigt, ohne die Ursache der Liegezeit zu messen.",
+        "verstaendnisfragen": [
+          "Welche Formen der Verschwendung nennt der Inhalt? Warten, Doppelarbeit, übermäßiges Prüfen, Suchen, Nacharbeit und Rückfragen.",
+          "Ist jede nicht wertschöpfende Tätigkeit überflüssig? Nein, manche ist vorgeschrieben."
+        ],
+        "pruefungsbezug": "Nenne zuerst die gemessene Zeitverteilung und unterscheide notwendige Prüfung von vermeidbarer Warte- oder Doppelarbeit.",
+        "merksatz": "Erst messen und Ursache finden, dann Verschwendung gezielt beseitigen."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Verbesserung ist ein wiederholbarer Lernprozess.",
+          "Ein Ziel muss messbar sein, damit eine Wirkung geprüft werden kann."
+        ],
+        "erklaerung": "Der Verbesserungskreislauf lautet Planen, Tun, Prüfen, Handeln. Im Planen wird gemessen, die Ursache gesucht und eine Maßnahme mit Ziel festgelegt. Im Tun wird sie begrenzt erprobt. Im Prüfen werden dieselben Kennzahlen erneut erhoben. Im Handeln wird die Verbesserung standardisiert oder verworfen und eine neue Ursache untersucht.",
+        "beispiele": [
+          "Eine Freigabe wird drei Monate in einem Bereich mit fester Uhrzeit erprobt und danach mit der bisherigen Durchlaufzeit verglichen.",
+          "Wirkt die Maßnahme, wird sie als Arbeitsanweisung festgeschrieben; wirkt sie nicht, beginnt die Ursachenanalyse erneut."
+        ],
+        "fallbeispiel": "Für die Reklamationsfreigabe wird zunächst der Ist-Flussgrad gemessen. Danach wird eine Wertgrenze in einem Bereich erprobt. Nach drei Monaten werden Durchlaufzeit und Fehlerquote mit denselben Kennzahlen verglichen. Bei Erfolg wird der Ablauf dokumentiert; bei Misserfolg wird die Ursache neu geprüft.",
+        "typische_fehler": "Der Prüfschritt wird ausgelassen oder die Maßnahme sofort im ganzen Betrieb eingeführt. Ohne Handeln fällt eine gute Lösung später in alte Gewohnheiten zurück.",
+        "verstaendnisfragen": [
+          "Wie heißen die vier Schritte? Planen, Tun, Prüfen, Handeln.",
+          "Warum ist Prüfen besonders wichtig? Nur die Messung zeigt, ob die Maßnahme gewirkt hat."
+        ],
+        "pruefungsbezug": "Nenne die Reihenfolge vollständig und erkläre, welche Kennzahl vor und nach der Maßnahme gleich erhoben wird.",
+        "merksatz": "Planen, tun, prüfen, handeln — Verbesserung wird erst durch Prüfen und Standardisieren dauerhaft."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Software bildet den vorgegebenen Ablauf ab.",
+          "Digitalisierung ist ein Mittel, kein selbstständiges Prozessziel."
+        ],
+        "erklaerung": "Ein schlechter Prozess wird durch Digitalisierung nicht automatisch gut. Überflüssige Schritte, Mehrfachfreigaben und Doppelerfassungen bleiben bestehen, wenn der Ablauf vorher nicht aufgenommen, gemessen und bereinigt wurde. Erst danach werden Anforderungen an Software klar und der spätere Nutzen messbar.",
+        "beispiele": [
+          "Ein Papierformular wird nicht dadurch sinnvoll, dass es unverändert digital nachgebaut wird.",
+          "Nach der Prozessbereinigung kann ein System gezielt verglichen werden, statt die Arbeitsweise dem Anbieter zu überlassen."
+        ],
+        "fallbeispiel": "Ein Betrieb will den Reklamationsprozess sofort digitalisieren. Vorher werden tatsächlicher Ablauf, Liegezeiten, Freigaben und Doppelerfassungen aufgenommen. Überflüssige Schritte werden beseitigt, messbare Ziele festgelegt und erst dann die Softwareanforderungen formuliert. Nach der Einführung wird der Nutzen mit den Ausgangswerten verglichen.",
+        "typische_fehler": "Digitalisierung wird als Lösung ohne Ursachenanalyse verstanden. Außerdem wird Erfolg nur an Einführung oder Lizenzkauf statt an Durchlaufzeit, Qualität und Nutzen gemessen.",
+        "verstaendnisfragen": [
+          "Warum muss der Prozess vor der Digitalisierung geordnet werden? Software würde sonst Umwege und Fehler nur digital festschreiben.",
+          "Woran wird der Nutzen später gemessen? An vorher festgelegten Kennzahlen und Ausgangswerten."
+        ],
+        "pruefungsbezug": "Begründe Digitalisierung immer mit Prozessaufnahme, Bereinigung, Anforderungen und späterem Vergleich.",
+        "merksatz": "Erst den Prozess verbessern, dann digitalisieren — Software repariert keinen schlechten Ablauf."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

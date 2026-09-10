@@ -4,7 +4,71 @@
   "nummer": 4,
   "titel": "Kreditsicherheiten",
   "untertitel": "Die Bank glaubt an dich. Aber lieber schriftlich.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Kredite können durch Personen oder Sachen gesichert werden.",
+          "Akzessorisch bedeutet, dass eine Sicherheit an die Forderung gebunden ist."
+        ],
+        "erklaerung": "Personensicherheiten beruhen auf einer weiteren Person, Sachsicherheiten auf einem Gegenstand. Bei akzessorischen Sicherheiten hängt die Sicherheit an der Hauptforderung und erlischt mit ihr. Diese Grundsortierung kommt vor jeder Detailprüfung.",
+        "beispiele": [
+          "Eine Bürgschaft ist eine Personensicherheit; der Bürge steht für die Schuld eines Dritten ein.",
+          "Eine Maschine oder ein Grundstück kann als Sachsicherheit dienen; bei der Bewertung wird ein Verwertungsabschlag berücksichtigt."
+        ],
+        "fallbeispiel": "Eine Bank verlangt für einen Kredit eine Sicherheit. Zuerst wird gefragt: Soll eine Person einstehen oder ein Gegenstand haften? Bei einer Bürgschaft wird die Person und ihre Form geprüft; bei einem Gegenstand Eigentum, Nutzung und realistischer Verwertungserlös. Erst danach wird die konkrete Sicherheit ausgewählt.",
+        "typische_fehler": "Bürgschaft, Grundschuld und Sicherungsübereignung werden ohne die Grundsortierung verglichen. Außerdem wird der Nennwert eines Gegenstands mit seinem realistischen Verwertungserlös gleichgesetzt.",
+        "verstaendnisfragen": [
+          "Was unterscheidet Personen- und Sachsicherheit? Die eine steht auf einer Person, die andere auf einem Gegenstand.",
+          "Was bedeutet akzessorisch? Die Sicherheit ist an die Forderung gebunden und erlischt mit ihr."
+        ],
+        "pruefungsbezug": "Beginne jede Sicherheitsaufgabe mit Person oder Sache und ergänze danach Akzessorietät, Form und Verwertung.",
+        "merksatz": "Erst Person oder Sache sortieren, dann die konkrete Sicherheit prüfen."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Der Bürge sichert die Schuld eines Dritten.",
+          "Die Bürgschaft hat eigene Form- und Einredefragen."
+        ],
+        "erklaerung": "Nach § 765 BGB steht der Bürge für die Verbindlichkeit des Hauptschuldners ein. Nach § 766 BGB ist grundsätzlich Schriftform erforderlich; für einen Kaufmann kann § 350 HGB als Handelsgeschäft eine Ausnahme bilden. Bei der gewöhnlichen Bürgschaft kann der Bürge die Einrede der Vorausklage erheben. Bei der selbstschuldnerischen Bürgschaft verzichtet er darauf und kann sofort in Anspruch genommen werden.",
+        "beispiele": [
+          "Bei gewöhnlicher Bürgschaft muss der Gläubiger grundsätzlich zuerst erfolglos gegen den Hauptschuldner vorgehen.",
+          "Bei selbstschuldnerischer Bürgschaft kann der Gläubiger den Bürgen unmittelbar in Anspruch nehmen; das ist im Bankgeschäft die Regel."
+        ],
+        "fallbeispiel": "Ein Kreditnehmer zahlt nicht. Bei gewöhnlicher Bürgschaft prüft der Bürge zunächst die Einrede der Vorausklage; bei selbstschuldnerischer Bürgschaft ist dieser Einwand ausgeschlossen. Vorher wird außerdem geprüft, ob die Bürgschaft formwirksam erklärt wurde oder bei einem Kaufmann als Handelsgeschäft die Ausnahme des § 350 HGB greift.",
+        "typische_fehler": "Selbstschuldnerische und gewöhnliche Bürgschaft werden vertauscht oder jede mündliche Bürgschaft für unwirksam gehalten. Auch die Bindung an die Hauptforderung wird übersehen.",
+        "verstaendnisfragen": [
+          "Was ist der Unterschied bei der Inanspruchnahme? Bei gewöhnlicher Bürgschaft gibt es die Vorausklage; bei selbstschuldnerischer nicht.",
+          "Welche Form gilt grundsätzlich? Schriftform nach § 766 BGB, mit der vorhandenen Handelsgeschäft-Ausnahme."
+        ],
+        "pruefungsbezug": "Prüfe Bürgschaft in der Reihenfolge Hauptforderung, Form, Vorausklage und Art der Bürgschaft.",
+        "merksatz": "Selbstschuldnerisch heißt: Der Bürge verzichtet auf die Vorausklage."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Sachsicherheiten geben der Bank Zugriff auf einen Gegenstand.",
+          "Der Betrieb braucht Betriebsmittel oft weiter für seine Leistung."
+        ],
+        "erklaerung": "Bei der Sicherungsübereignung geht das Eigentum auf den Kreditgeber über, während der Betrieb den Besitz und die Nutzung behält. Das ist bei Maschinen sinnvoller als ein Pfand, bei dem der Besitz übergehen müsste. Die Grundschuld ist abstrakt und wiederverwendbar; die Hypothek ist akzessorisch. Banken bewerten nicht den vollen Wert, sondern den erwarteten Verwertungserlös nach Abschlag.",
+        "beispiele": [
+          "Ein Betrieb kann eine Maschine sicherungsübereignen und sie weiterhin zur Rückzahlung des Kredits einsetzen.",
+          "Eine Grundschuld auf einem Betriebsgrundstück kann nach Tilgung für weitere Kredite wiederverwendbar sein; Notar- und Grundbuchkosten gehören in den Vergleich."
+        ],
+        "fallbeispiel": "Ein Betrieb braucht 150.000 € für neue Fahrzeuge. Zuerst wird die Sicherungsübereignung der Fahrzeuge geprüft, weil sie weiter genutzt werden können. Reicht der Wert nach Verwertungsabschlag nicht, kommen Grundschuld, Abtretung von Kundenforderungen oder eine selbstschuldnerische Bürgschaft in Betracht. Jede Variante wird nach Nutzung, Erlös, Kosten und Privatrisiko bewertet.",
+        "typische_fehler": "Sicherungsübereignung wird mit Besitzübergabe verwechselt. Außerdem werden Grundschuld und Hypothek beide als akzessorisch bezeichnet oder der Abschlag der Bank nicht berücksichtigt.",
+        "verstaendnisfragen": [
+          "Warum wird eine Maschine sicherungsübereignet und nicht verpfändet? Der Betrieb behält den Besitz und kann sie weiter nutzen.",
+          "Was ist der zentrale Unterschied zwischen Grundschuld und Hypothek? Die Grundschuld ist abstrakt und wiederverwendbar, die Hypothek akzessorisch."
+        ],
+        "pruefungsbezug": "Vergleiche Sachsicherheiten nach Nutzung, Eigentum, Verwertung, Kosten und Risiko; nicht nur nach dem Sicherungswort.",
+        "merksatz": "Die beste Sachsicherheit sichert den Kredit und lässt den Betrieb weiterarbeiten."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

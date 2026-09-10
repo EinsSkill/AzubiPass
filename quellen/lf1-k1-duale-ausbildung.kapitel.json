@@ -5,6 +5,70 @@
   "titel": "Das System der dualen Ausbildung",
   "untertitel": "Zwei Lernorte, vier Regelwerke, eine Prüfung in zwei Teilen.",
   "minuten": 20,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "a1",
+        "vorauswissen": [
+          "Eine Ausbildung verbindet praktisches Handeln mit fachlichem Lernen.",
+          "Der Betrieb und die Berufsschule haben unterschiedliche Aufgaben."
+        ],
+        "erklaerung": "Duale Ausbildung bedeutet nicht, dass Betrieb und Berufsschule denselben Unterricht zweimal anbieten. Der Betrieb zeigt die beruflichen Abläufe und lässt dich unter Anleitung handeln. Die Berufsschule ordnet diese Erfahrungen fachlich ein und vermittelt die theoretischen Grundlagen. Die zuständige Stelle überwacht das Ausbildungsverhältnis und organisiert die Prüfung.",
+        "beispiele": [
+          "Im Betrieb lernst du, einen Auftrag in der Bürosoftware zu bearbeiten; in der Berufsschule ordnest du den Vorgang in einen Geschäftsprozess ein.",
+          "Der Betrieb ist der Ausbildende und damit Vertragspartner. Die konkrete Anleitung kann ein bestellter Ausbilder übernehmen; beide Begriffe bezeichnen also nicht automatisch dieselbe Person."
+        ],
+        "fallbeispiel": "Ein Azubi fragt, ob die IHK sein Arbeitgeber sei, weil sie den Vertrag einträgt und die Prüfung organisiert. Vertragspartner ist der Ausbildungsbetrieb als Ausbildender. Die Berufsschule vermittelt die schulischen Inhalte. Die IHK ist die zuständige Stelle: Sie überwacht, registriert und prüft, ist aber nicht Arbeitgeber.",
+        "typische_fehler": "Ausbildender und Ausbilder werden vertauscht. Außerdem wird die IHK als dritte Lernstätte oder als Arbeitgeber verstanden. Sie ist die zuständige Stelle für Überwachung und Prüfung; die beiden Lernorte bleiben Betrieb und Berufsschule.",
+        "verstaendnisfragen": [
+          "Warum braucht die Ausbildung zwei Lernorte? Weil praktische Handlungskompetenz und theoretische Einordnung unterschiedliche Lernaufgaben sind.",
+          "Wer ist Vertragspartner des Azubis? Der Ausbildende, in der Regel der Betrieb oder das Unternehmen, nicht die einzelne anleitende Person und nicht die IHK."
+        ],
+        "pruefungsbezug": "Bei einer Zuordnungsaufgabe zuerst die drei Rollen markieren: Betrieb = Praxis und Vertrag, Berufsschule = Theorie und Lernfelder, zuständige Stelle = Überwachung und Prüfung.",
+        "merksatz": "Der Betrieb zeigt, wie es geht; die Schule erklärt, warum; die zuständige Stelle überwacht und prüft."
+      },
+      {
+        "abschnitt": "a2",
+        "vorauswissen": [
+          "Ausbildungsinhalte müssen verbindlich geplant werden.",
+          "Betriebliche Ausbildung und Berufsschulunterricht werden durch unterschiedliche Stellen geregelt."
+        ],
+        "erklaerung": "Die vier Pläne liegen auf unterschiedlichen Ebenen. Die Ausbildungsordnung beschreibt den anerkannten Beruf. Der Ausbildungsrahmenplan konkretisiert, was der Betrieb vermitteln muss. Der Rahmenlehrplan ordnet die schulischen Lernfelder. Der betriebliche Ausbildungsplan übersetzt den Rahmenplan schließlich in die Abteilungen und Zeitabläufe des einzelnen Betriebs.",
+        "beispiele": [
+          "Die Ausbildungsordnung nennt Berufsbezeichnung, Dauer und Prüfungsanforderungen; sie ist deshalb die übergeordnete Rechtsgrundlage.",
+          "Wenn der Ausbildungsrahmenplan einen Inhalt vorsieht, legt der betriebliche Ausbildungsplan fest, welche Abteilung ihn wann übernimmt. Der Rahmenlehrplan bleibt dagegen der Plan für die Berufsschule."
+        ],
+        "fallbeispiel": "Ein Azubi findet im betrieblichen Ausbildungsplan keinen Einsatz in einer Abteilung, obwohl der Ausbildungsrahmenplan den entsprechenden Inhalt vorsieht. Der Plan für den einzelnen Betrieb ist daraufhin zu prüfen und mit dem Ausbilder zu besprechen. Er darf den verbindlichen Rahmen nicht einfach auslassen, sondern muss ihn auf die betrieblichen Stationen übertragen.",
+        "typische_fehler": "Ausbildungsrahmenplan und Rahmenlehrplan werden wegen des ähnlichen Namens gleichgesetzt. Die sichere Gegenprobe lautet: Rahmenlehrplan = Berufsschule und KMK; Ausbildungsrahmenplan = Betrieb und Anlage zur Ausbildungsordnung; betrieblicher Ausbildungsplan = konkrete Abteilungen.",
+        "verstaendnisfragen": [
+          "Welcher Plan ist auf den einzelnen Betrieb zugeschnitten? Der betriebliche Ausbildungsplan.",
+          "Warum gibt es einen Rahmenlehrplan und einen Ausbildungsrahmenplan? Weil Schule und Betrieb ihre Inhalte jeweils in eigenen Zuständigkeiten planen und aufeinander abstimmen."
+        ],
+        "pruefungsbezug": "Ordne in Tabellenaufgaben immer zwei Merkmale zu: Wer erlässt das Dokument und für welchen Lernort gilt es. So lässt sich der betriebliche Ausbildungsplan sicher vom Rahmenlehrplan unterscheiden.",
+        "merksatz": "Ordnung und Ausbildungsrahmenplan steuern den Betrieb, der Rahmenlehrplan die Schule, der betriebliche Plan deinen konkreten Ablauf."
+      },
+      {
+        "abschnitt": "a3",
+        "vorauswissen": [
+          "Das Ausbildungsverhältnis beginnt mit Vertrag und Probezeit.",
+          "Die Abschlussprüfung besteht aus Teil 1 und Teil 2."
+        ],
+        "erklaerung": "Der Ausbildungsablauf hat feste Stationen: Vertragsschluss und Eintragung, Probezeit, Teil 1 der gestreckten Abschlussprüfung, Teil 2 und das Ende des Ausbildungsverhältnisses. Teil 1 ist bereits Bestandteil der Endnote und keine folgenlose Zwischenprüfung. Für die zeitliche Einordnung muss zwischen dem vereinbarten Vertragsende und dem tatsächlichen Ende nach Bekanntgabe eines bestandenen Prüfungsergebnisses unterschieden werden.",
+        "beispiele": [
+          "Im dritten Monat kann eine Kündigung während der noch laufenden Probezeit ohne Frist und ohne Begründung erfolgen; die Probezeit dauert ein bis vier Monate.",
+          "Teil 1 findet in der Mitte des zweiten Ausbildungsjahres statt und wird nicht wiederholt, auch wenn Teil 2 später wiederholt werden muss."
+        ],
+        "fallbeispiel": "Eine Auszubildende besteht die Abschlussprüfung vier Wochen vor dem im Vertrag genannten Enddatum. Der Prüfungstermin allein beendet das Verhältnis nicht. Es endet mit der Bekanntgabe des Prüfungsergebnisses durch den Prüfungsausschuss, weil dieses Datum früher liegt als das vereinbarte Ende.",
+        "typische_fehler": "Teil 1 wird als reine Übung behandelt oder das Ende immer automatisch auf das Vertragsdatum gelegt. Ebenfalls falsch ist, das Prüfungsdatum mit dem Tag der Ergebnisbekanntgabe gleichzusetzen.",
+        "verstaendnisfragen": [
+          "Warum ist Teil 1 besonders wichtig? Weil das Ergebnis in die Endnote einfließt und Teil 1 nicht wiederholt wird.",
+          "Welches Datum entscheidet bei bestandener Prüfung vor Vertragsende? Die Bekanntgabe des Prüfungsergebnisses durch den Prüfungsausschuss."
+        ],
+        "pruefungsbezug": "Ordne Ablauffälle chronologisch und trenne Prüfungstermin, Ergebnisbekanntgabe und Vertragsdatum. Bei Kündigungsfragen zuerst prüfen, ob die Probezeit von einem bis vier Monaten noch läuft.",
+        "merksatz": "Teil 1 zählt mit; bei früherem Bestehen endet die Ausbildung mit der Bekanntgabe des Ergebnisses."
+      }
+    ]
+  },
 
   "lernziele": [
     { "id": "lz1", "text": "Die Beteiligten der dualen Ausbildung und ihre Aufgaben benennen", "abschnitt": "a1" },

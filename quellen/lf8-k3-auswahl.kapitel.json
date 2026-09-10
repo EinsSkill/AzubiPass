@@ -5,6 +5,70 @@
   "titel": "Auswählen und einstellen",
   "untertitel": "Vom Bewerbungseingang bis zum unterschriebenen Vertrag.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "c1",
+        "vorauswissen": [
+          "Auswahlentscheidungen brauchen einen vorher festgelegten Maßstab.",
+          "Das Anforderungsprofil beschreibt die passende Person für die Stelle."
+        ],
+        "erklaerung": "Der Auswahlablauf führt von Eingangsbestätigung und Vorauswahl über Gespräch und weitere Verfahren zur Entscheidung sowie Zu- oder Absage. Auf jeder Stufe gilt das Anforderungsprofil als Maßstab. Strukturierte Gespräche machen Bewerber vergleichbar und verringern das Risiko, dass persönliche Eindrücke die fachliche Auswahl ersetzen.",
+        "beispiele": [
+          "In der Vorauswahl werden Unterlagen am Anforderungsprofil geprüft, nicht an Sympathie oder einem zufälligen Detail.",
+          "Allen Bewerbern werden im strukturierten Gespräch vergleichbare Fragen gestellt; zusätzliche Verfahren werden nur nach dem gleichen Anforderungsbezug bewertet."
+        ],
+        "fallbeispiel": "Für eine Stelle gehen mehrere Bewerbungen ein. Zuerst wird der Eingang bestätigt, dann werden die Unterlagen anhand des Anforderungsprofils vorausgewählt. Im strukturierten Gespräch werden vergleichbare Fragen gestellt; danach folgt die Entscheidung und eine Zu- oder Absage. Jeder Schritt wird mit demselben Profil begründet.",
+        "typische_fehler": "Die Auswahl beginnt mit dem Gespräch, ohne Kriterien festzulegen. Außerdem werden Bewerber nach persönlicher Sympathie verglichen oder ein zusätzliches Verfahren ohne Bezug zur Stelle eingesetzt.",
+        "verstaendnisfragen": [
+          "Was ist der Maßstab auf jeder Auswahlstufe? Das Anforderungsprofil.",
+          "Warum sind strukturierte Gespräche hilfreich? Sie machen Bewerber vergleichbar und schützen besser vor Diskriminierungsvorwürfen."
+        ],
+        "pruefungsbezug": "Nenne die Schritte in Reihenfolge und verknüpfe jede Entscheidung mit dem Anforderungsprofil. So wird aus einer Ablaufbeschreibung eine begründete Auswahl.",
+        "merksatz": "Ein gutes Auswahlverfahren ist nachvollziehbar, vergleichbar und am Anforderungsprofil ausgerichtet."
+      },
+      {
+        "abschnitt": "c2",
+        "vorauswissen": [
+          "Fragen im Bewerbungsgespräch müssen einen Bezug zur konkreten Stelle haben.",
+          "Persönliche Merkmale sind nicht automatisch beruflich relevant."
+        ],
+        "erklaerung": "Zulässig sind Fragen, die für die konkrete Tätigkeit relevant sind. Fragen nach Schwangerschaft, Familienplanung, Religion, Gewerkschaft oder Vorstrafen ohne Stellenbezug sind unzulässig. Auf eine unzulässige Frage darf wahrheitswidrig geantwortet werden. Entscheidend ist nicht, ob der Arbeitgeber neugierig ist, sondern ob die Information für die Stelle erforderlich ist.",
+        "beispiele": [
+          "Eine Frage nach einer für die Tätigkeit notwendigen Fähigkeit hat Stellenbezug und kann zulässig sein.",
+          "Die Frage nach Familienplanung gehört nicht zur Eignung für die Stelle; eine Frage nach Vorstrafen ist nur bei konkretem Stellenbezug einzuordnen."
+        ],
+        "fallbeispiel": "Im Gespräch wird eine Bewerberin nach Schwangerschaft und Familienplanung gefragt. Die Fragen haben keinen Bezug zu den konkreten Aufgaben und sind daher unzulässig. Die Bewerberin darf wahrheitswidrig antworten. Die Auswahl wird anschließend anhand des Anforderungsprofils und zulässiger Fragen fortgesetzt.",
+        "typische_fehler": "Jede Frage im Gespräch wird als erlaubt angesehen oder jede Frage nach einer Vorstrafe pauschal verboten, ohne den Stellenbezug zu prüfen. Auch wird die zulässige Antwort auf eine unzulässige Frage fälschlich als Täuschung behandelt.",
+        "verstaendnisfragen": [
+          "Was ist der Prüfstein für eine Frage? Hat sie einen konkreten Bezug zur Stelle?",
+          "Wie darf auf eine unzulässige Frage geantwortet werden? Wahrheitswidrig, ohne dass daraus automatisch ein unzulässiger Auswahlgrund wird."
+        ],
+        "pruefungsbezug": "Ordne Gesprächsfragen nicht nach persönlicher Höflichkeit, sondern nach konkretem Stellenbezug und geschütztem Merkmal.",
+        "merksatz": "Im Bewerbungsgespräch zählt die Stelle, nicht die private Neugier des Arbeitgebers."
+      },
+      {
+        "abschnitt": "c3",
+        "vorauswissen": [
+          "Ein Arbeitsvertrag beschreibt weisungsgebundene Arbeit in persönlicher Abhängigkeit.",
+          "Bei Einstellungen kann der Betriebsrat beteiligt sein."
+        ],
+        "erklaerung": "Nach § 611a BGB ist die persönliche Abhängigkeit mit Weisungsgebundenheit ein Merkmal des Arbeitsverhältnisses. Bei einer Einstellung braucht der Arbeitgeber nach § 99 BetrVG die Zustimmung des Betriebsrats, soweit die betriebliche Mitbestimmung anwendbar ist. Vertrag und Beteiligung des Betriebsrats sind daher zwei getrennte Prüfschritte.",
+        "beispiele": [
+          "Wer nach Inhalt, Zeit und Ort der Arbeit Weisungen erhält, wird auf die Merkmale persönlicher Abhängigkeit geprüft.",
+          "Vor der Einstellung wird neben dem Vertrag auch die Zustimmung des Betriebsrats eingeholt; die Anhörung bei einer Kündigung ist davon zu unterscheiden."
+        ],
+        "fallbeispiel": "Ein Betrieb hat eine Bewerberin ausgewählt und möchte sofort den Vertrag unterschreiben. Vorher wird geprüft, ob die Tätigkeit als weisungsgebundene Arbeit einzuordnen ist und ob die Zustimmung des Betriebsrats nach § 99 BetrVG erforderlich ist. Erst danach wird der Einstellungsprozess vollständig abgeschlossen.",
+        "typische_fehler": "Die Zustimmung bei Einstellung wird mit der Anhörung bei Kündigung verwechselt. Außerdem wird jede freie Mitarbeit automatisch als Arbeitsverhältnis oder jede Tätigkeit ohne Kontrolle als frei eingeordnet.",
+        "verstaendnisfragen": [
+          "Welche zwei Merkmale nennt § 611a BGB im vorhandenen Inhalt? Weisungsgebundene Arbeit und persönliche Abhängigkeit.",
+          "Was braucht die Einstellung nach § 99 BetrVG? Die Zustimmung des Betriebsrats."
+        ],
+        "pruefungsbezug": "Trenne in Fällen Arbeitsvertragsmerkmale, Auswahlentscheidung und Mitbestimmung. Merke: Zustimmung bei Einstellung, Anhörung bei Kündigung.",
+        "merksatz": "Auswahl, Vertrag und Mitbestimmung sind drei Schritte — keiner ersetzt den anderen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

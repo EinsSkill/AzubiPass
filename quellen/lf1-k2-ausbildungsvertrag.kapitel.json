@@ -5,6 +5,70 @@
   "titel": "Der Ausbildungsvertrag",
   "untertitel": "Was drinstehen muss, was nicht drinstehen darf — und wie er endet.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Der Ausbildungsvertrag regelt ein Ausbildungs- und kein gewöhnliches Arbeitsverhältnis.",
+          "Der wesentliche Vertragsinhalt muss vor Beginn in Textform festgehalten werden."
+        ],
+        "erklaerung": "§ 11 BBiG verlangt einen Mindestinhalt, damit beide Seiten den Ablauf der Ausbildung nachvollziehen können. Dazu gehören unter anderem Gliederung, Beginn und Dauer, tägliche Ausbildungszeit, Probezeit, Vergütung, Urlaub und Kündigungsvoraussetzungen. Die Textform muss lesbar und dauerhaft sein; eine Eintragung bei der zuständigen Stelle gehört zusätzlich zum formalen Ablauf.",
+        "beispiele": [
+          "Eine PDF mit den Vertragsangaben kann die erforderliche lesbare und dauerhafte Fassung bilden; entscheidend ist, dass der Inhalt vor Beginn niedergelegt wird.",
+          "Eine Probezeit von sechs Monaten passt nicht in den gesetzlichen Rahmen. Zulässig sind ein bis vier Monate; eine fehlende Angabe führt nicht dazu, dass die Probezeit beliebig lang wird."
+        ],
+        "fallbeispiel": "Vor Ausbildungsbeginn wird ein Vertrag geprüft. Enthalten sind Beginn und Dauer, tägliche Ausbildungszeit, Vergütung, Urlaub und Kündigungsvoraussetzungen, aber die sachliche und zeitliche Gliederung fehlt. Das Ergebnis lautet nicht automatisch ‚Vertrag unwirksam‘. Es liegt aber eine Pflichtverletzung bei der Niederschrift vor; der betriebliche Ausbildungsplan muss zur Klärung herangezogen werden und der fehlende wesentliche Inhalt ist nachzutragen.",
+        "typische_fehler": "Die Eintragung bei der IHK wird mit dem Abschluss des Vertrags verwechselt. Außerdem wird angenommen, eine eigenhändige Unterschrift sei für jede Textform zwingend oder eine sechsmonatige Probezeit gelte vollständig.",
+        "verstaendnisfragen": [
+          "Welche Angaben helfen bei einer späteren Arbeitszeitfrage? Die vereinbarte tägliche Ausbildungszeit sowie die Angaben zu Urlaub und Vergütung.",
+          "Was ist bei einer Probezeit von sechs Monaten zu beachten? Der zulässige Höchstrahmen beträgt vier Monate; die überschießende Vereinbarung kann nicht als sechsmonatige Probezeit fortgelten."
+        ],
+        "pruefungsbezug": "Bei Vertragsfällen die Pflichtangaben systematisch abhaken: Gliederung, Beginn/Dauer, externe Maßnahmen, tägliche Zeit, Probezeit, Vergütung, Urlaub und Kündigung.",
+        "merksatz": "Der Vertrag muss den Ausbildungsweg, die Zeit, das Geld, den Urlaub und das Ende nachvollziehbar machen."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Nicht jede unterschriebene Vertragsklausel ist wirksam.",
+          "Nichtig bedeutet, dass eine Vereinbarung von Anfang an keine Wirkung hat."
+        ],
+        "erklaerung": "Das BBiG schützt die freie Berufsausübung und verhindert, dass der Betrieb die Ausbildung als kostenpflichtige Leistung oder über eine Vertragsstrafe absichert. Zulässig sind Vereinbarungen, die den gesetzlichen Standard verbessern, etwa mehr Vergütung oder mehr Urlaub. Nichtig sind unter anderem Entschädigungen für die Ausbildung, Vertragsstrafen und Beschränkungen der späteren Berufsausübung.",
+        "beispiele": [
+          "Eine höhere Vergütung als der Tarif ist eine günstigere Vereinbarung und darf getroffen werden.",
+          "Eine Klausel ‚bei Abbruch 2.000 Euro Vertragsstrafe‘ gilt nicht, auch wenn sie verständlich formuliert und unterschrieben ist."
+        ],
+        "fallbeispiel": "Im Vertrag steht: ‚Bei vorzeitiger Beendigung durch den Auszubildenden sind 1.500 € Ausbildungskosten zu erstatten.‘ Die Klausel verlangt eine Entschädigung für die Ausbildung und wirkt zugleich wie eine Vertragsstrafe. Beides gehört zu den nichtigen Vereinbarungen. Ergebnis: Der Azubi muss die Klausel nicht anfechten und nicht zahlen.",
+        "typische_fehler": "‚Unterschrieben‘ wird mit ‚wirksam‘ gleichgesetzt. Ebenso wird Nichtigkeit mit Anfechtbarkeit verwechselt. Eine nichtige Klausel gilt von Anfang an nicht; sie braucht keine Kündigung und keine besondere Frist.",
+        "verstaendnisfragen": [
+          "Warum darf mehr Urlaub vereinbart werden, eine Ausbildungskostenpauschale aber nicht? Mehr Urlaub verbessert den Schutz; die Pauschale belastet den Azubi entgegen dem Schutzgedanken des BBiG.",
+          "Was bedeutet eine nichtige Vertragsstrafe? Sie hat von Anfang an keine Rechtswirkung, auch wenn beide Seiten unterschrieben haben."
+        ],
+        "pruefungsbezug": "Markiere in Fallaufgaben zuerst die Klauselart. Vertragsstrafe, Ausbildungskosten-Entschädigung und spätere Berufsbeschränkung sind typische Signalwörter für Nichtigkeit.",
+        "merksatz": "Besserstellungen sind möglich; Straf- und Rückzahlungsklauseln, die die Ausbildung verteuern oder die Berufswahl beschränken, sind nichtig."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Ein Ausbildungsverhältnis kann durch Zeitablauf, Prüfung oder Kündigung enden.",
+          "Die Kündigungsregeln ändern sich nach Ende der Probezeit."
+        ],
+        "erklaerung": "Für das Ende müssen vier Situationen auseinandergehalten werden: reguläres Ende mit Ablauf der vereinbarten Ausbildungszeit, früheres Ende mit Bekanntgabe des bestandenen Prüfungsergebnisses, fristlose Kündigung während der Probezeit und Kündigung nach der Probezeit. Während der Probezeit können beide Seiten ohne Frist und ohne Grund kündigen. Danach kann der Betrieb nur aus wichtigem Grund fristlos kündigen; der Azubi kann bei Berufsaufgabe oder Berufswechsel mit vier Wochen Frist kündigen.",
+        "beispiele": [
+          "Eine Kündigung im fünften Monat mit der Begründung ‚passt nicht ins Team‘ ist keine zulässige Probezeitkündigung mehr; nach vier Monaten gelten die strengeren Regeln.",
+          "Wer die Ausbildung vollständig aufgibt oder den Beruf wechselt, kann nach der Probezeit mit vier Wochen Frist kündigen."
+        ],
+        "fallbeispiel": "Eine Auszubildende erhält im fünften Monat eine fristlose Kündigung, weil sie angeblich nicht ins Team passt. Die Probezeit darf höchstens vier Monate dauern und ist daher beendet. Danach braucht der Betrieb einen wichtigen Grund. Die pauschale Begründung reicht nicht; die Kündigung ist in diesem Fall nicht als wirksame fristlose Kündigung eingeordnet.",
+        "typische_fehler": "Die Probezeit wird mit fünf oder sechs Monaten angenommen, oder die Kündigungsmöglichkeiten von Betrieb und Azubi werden gleich behandelt. Außerdem wird das reguläre Vertragsende mit dem früheren Ende durch bestandene Prüfung übersehen.",
+        "verstaendnisfragen": [
+          "Welche Kündigungsmöglichkeit hat der Betrieb nach der Probezeit? Nur die fristlose Kündigung aus wichtigem Grund.",
+          "Wann darf der Azubi mit vier Wochen Frist kündigen? Wenn er die Berufsausbildung aufgeben oder sich für einen anderen Beruf ausbilden lassen will."
+        ],
+        "pruefungsbezug": "In Kündigungsfällen drei Fragen in dieser Reihenfolge stellen: Ist die Probezeit beendet? Wer kündigt? Liegt der passende Grund beziehungsweise die passende Frist vor?",
+        "merksatz": "Probezeit: jederzeit ohne Grund; danach Betrieb nur aus wichtigem Grund, Azubi bei Berufswechsel mit vier Wochen Frist."
+      }
+    ]
+  },
 
   "lernziele": [
     { "id": "lz1", "text": "Die zwingenden Inhalte des Ausbildungsvertrags benennen", "abschnitt": "b1" },

@@ -4,7 +4,71 @@
   "nummer": 5,
   "titel": "Deckungsbeitrag und Break-Even",
   "untertitel": "Ab welchem Stück verdienst du Geld?",
-  "minuten": 30,
+ "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Erlös und variable Kosten verändern sich mit der verkauften Menge.",
+          "Fixkosten fallen unabhängig vom einzelnen Produkt an."
+        ],
+        "erklaerung": "Der Deckungsbeitrag je Stück lautet Erlös minus variable Kosten. Der Gesamtdeckungsbeitrag deckt zunächst die Fixkosten. Das Betriebsergebnis ist Gesamtdeckungsbeitrag minus Fixkosten. Ein positiver Deckungsbeitrag trägt zur Fixkostendeckung bei, ein negativer vergrößert den Verlust.",
+        "beispiele": [
+          "Bei Verkaufspreis 60 € und variablen Kosten 38 € beträgt der Deckungsbeitrag 22 € je Stück.",
+          "Bei 5.000 Stück beträgt der Gesamtdeckungsbeitrag 5.000 × 22 € = 110.000 €; minus 84.000 € Fixkosten bleiben 26.000 € Gewinn."
+        ],
+        "fallbeispiel": "Fixkosten 84.000 €, Preis 60 €, variable Kosten 38 €. DB je Stück: 60 − 38 = 22 €. Bei 5.000 Stück: 5.000 × 22 = 110.000 € Gesamt-DB. Betriebsergebnis: 110.000 − 84.000 = 26.000 € Gewinn. Der Deckungsbeitrag ist damit die Brücke von Einzelpreis zu Ergebnis.",
+        "typische_fehler": "Durch den Preis statt durch den Deckungsbeitrag geteilt oder Fixkosten je Stück vor der Entscheidung als vermeidbar behandelt. Ein Produkt mit Vollkostenverlust kann bei positivem DB weiter beitragen.",
+        "verstaendnisfragen": [
+          "Wie lautet der Stück-Deckungsbeitrag? Erlös minus variable Kosten.",
+          "Wie lautet das Betriebsergebnis? Gesamtdeckungsbeitrag minus Fixkosten."
+        ],
+        "pruefungsbezug": "Rechne immer zuerst den DB je Stück, dann den Gesamt-DB und erst danach das Betriebsergebnis.",
+        "merksatz": "Der Deckungsbeitrag zeigt, was nach den variablen Kosten zur Fixkostendeckung bleibt."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Break-Even ist der Punkt, an dem der Gesamtdeckungsbeitrag die Fixkosten deckt.",
+          "Der DB je Stück ist die entscheidende Bezugsgröße."
+        ],
+        "erklaerung": "Der Break-Even-Point lautet Fixkosten ÷ Deckungsbeitrag je Stück. Unterhalb entsteht Verlust, ab dem Punkt beginnt die Gewinnzone. Ein negativer Deckungsbeitrag ist besonders kritisch, weil jedes weitere Stück den Verlust vergrößert.",
+        "beispiele": [
+          "Bei 84.000 € Fixkosten und 22 € DB je Stück: 84.000 ÷ 22 ≈ 3.819 Stück.",
+          "Bei 5.000 Stück liegt der Absatz über dem Break-Even; das Ergebnis beträgt 26.000 € Gewinn."
+        ],
+        "fallbeispiel": "Die Rechnung wird vollständig ausgeführt: Fixkosten 84.000 € geteilt durch 22 € DB = rund 3.819 Stück. Da nur ganze Stücke verkauft werden, beginnt die Gewinnzone ab 3.819 Stück. Die Menge wird anschließend mit dem Gesamt-DB geprüft, statt den Break-Even mit dem Preis zu berechnen.",
+        "typische_fehler": "Fixkosten durch den Verkaufspreis geteilt oder der Break-Even mit einem Gewinnziel verwechselt. Auch der DB wird negativ, aber trotzdem durch die Formel weitergerechnet.",
+        "verstaendnisfragen": [
+          "Wodurch wird beim Break-Even geteilt? Durch den Deckungsbeitrag je Stück.",
+          "Was bedeutet ein negativer DB? Jedes weitere Stück vergrößert den Verlust."
+        ],
+        "pruefungsbezug": "Formel hinschreiben, DB je Stück berechnen, Ergebnis auf ganze Stücke prüfen und erst dann die Gewinnzone beurteilen.",
+        "merksatz": "Break-Even = Fixkosten geteilt durch Stück-Deckungsbeitrag — niemals durch den Preis."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Preisuntergrenzen hängen vom Zeitraum und von der Kapazität ab.",
+          "Fixkosten können kurzfristig unverändert bleiben."
+        ],
+        "erklaerung": "Bei freien Kapazitäten liegt die kurzfristige Preisuntergrenze bei den variablen Kosten. Langfristig müssen die Selbstkosten gedeckt werden. Ein Zusatzauftrag unter Selbstkosten kann daher kurzfristig sinnvoll sein, wenn sein Deckungsbeitrag positiv ist und keine anderen Aufträge verdrängt werden.",
+        "beispiele": [
+          "Ein Auftrag mit 34 € Preis und 29 € variablen Kosten trägt 5 € je Stück bei; bei 800 Stück entsteht ein zusätzlicher DB von 4.000 €.",
+          "Bei 70 % Auslastung verdrängt der Zusatzauftrag keinen bestehenden Auftrag; die kurzfristige Grenze von 29 € ist maßgeblich, nicht die Selbstkosten von 45 €."
+        ],
+        "fallbeispiel": "Der Kunde bietet 34 € für 800 Stück, variable Kosten 29 €, Selbstkosten 45 €, Auslastung 70 %. DB je Stück: 34 − 29 = 5 €. Gesamt-DB: 800 × 5 = 4.000 €. Weil freie Kapazität vorhanden ist, werden ohnehin anfallende Fixkosten zusätzlich gedeckt. Der Auftrag ist rechnerisch anzunehmen, aber als einmaliger Sonderpreis zu schützen und auf Zusatzkosten zu prüfen.",
+        "typische_fehler": "Der Auftrag wird wegen des Preises unter Selbstkosten automatisch abgelehnt oder bei voller Auslastung dieselbe Entscheidung getroffen. Auch Sonderverpackung und Mehrarbeit werden nicht als zusätzliche variable Kosten geprüft.",
+        "verstaendnisfragen": [
+          "Wann gilt die kurzfristige Preisuntergrenze? Bei freien Kapazitäten; sie entspricht den variablen Kosten.",
+          "Warum kann ein Preis unter Selbstkosten kurzfristig sinnvoll sein? Weil ein positiver DB ohnehin anfallende Fixkosten mitdeckt."
+        ],
+        "pruefungsbezug": "Prüfe zuerst Auslastung, dann DB und zusätzliche Kosten, danach langfristige Preiswirkung und Kundenfairness.",
+        "merksatz": "Kurzfristig zählt der positive DB bei freier Kapazität; langfristig müssen die Selbstkosten verdient werden."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

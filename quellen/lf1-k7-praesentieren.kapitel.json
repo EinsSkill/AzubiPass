@@ -5,6 +5,70 @@
   "titel": "Den Betrieb präsentieren",
   "untertitel": "Quellen prüfen, Inhalt aufbauen, Regeln einhalten — und die eigene Präsentation bewerten.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "g1",
+        "vorauswissen": [
+          "Eine Präsentation braucht nachvollziehbare und passende Informationen.",
+          "Eine Quelle kann sachlich nützlich und zugleich interessengeleitet sein."
+        ],
+        "erklaerung": "Quellenkritik prüft nicht nur, ob ein Text professionell aussieht. Vier Fragen helfen: Wer sagt es? Woher weiß die Person oder Institution es? Wann wurde es veröffentlicht? Wem nützt die Aussage? Autor, Impressum, Erhebungsmethode und Veröffentlichungszeitpunkt zeigen die Einordnung; Werbung und Lobbymaterial können nützlich sein, sind aber nicht automatisch neutral.",
+        "beispiele": [
+          "Die eigene Firmenwebsite kann aktuelle Unternehmensdaten liefern. Weil das Unternehmen selbst von der Darstellung profitiert, muss die Quelle als interessengeleitet eingeordnet werden.",
+          "Bei Gesetzen, Zahlen und Preisen wird das Veröffentlichungsdatum besonders wichtig. Eine alte Angabe darf nicht ungeprüft als aktuelle Information verwendet werden."
+        ],
+        "fallbeispiel": "Für eine Präsentation liegen ein Werbetext ohne Autor und eine Seite mit Institution, Impressum, Erhebungsmethode und Datum vor. Zuerst werden die vier Fragen auf beide Quellen angewendet. Der Werbetext kann als Unternehmenssicht verwendet werden, aber nicht als neutrale Bestätigung. Die zweite Quelle ist wegen nachvollziehbarer Herkunft, Methode und Zeitangabe besser prüfbar.",
+        "typische_fehler": "Eine Quelle wird wegen eines professionellen Layouts für valide gehalten. Umgekehrt wird eine Firmenwebsite pauschal verworfen. Richtig ist, Herkunft und Interesse offenzulegen und die Quelle passend zur Aussage zu bewerten.",
+        "verstaendnisfragen": [
+          "Welche vier Fragen bilden die Quellenkritik? Wer, woher, wann und wem nützt die Aussage?",
+          "Warum ist das Datum bei Preis- oder Rechtsangaben wichtig? Weil sich solche Angaben ändern können und eine alte Quelle den aktuellen Stand nicht belegt."
+        ],
+        "pruefungsbezug": "Notiere zu jeder verwendeten Quelle Autor oder Institution, Herkunft der Information, Datum und mögliches Interesse. So wird die Recherche im Vortrag nachvollziehbar.",
+        "merksatz": "Wer, woher, wann, wem nützt — diese vier Fragen machen Quellen prüfbar."
+      },
+      {
+        "abschnitt": "g2",
+        "vorauswissen": [
+          "Eine Präsentation richtet sich an eine bestimmte Zielgruppe.",
+          "Folien unterstützen den Vortrag, ersetzen ihn aber nicht."
+        ],
+        "erklaerung": "Ein klarer Präsentationsaufbau führt von Zielgruppe und Ziel über Einstieg und Hauptteil zum Schluss und zur Reflexion. Eine Folie sollte jeweils eine Aussage unterstützen. Diagramme müssen verständlich beschriftet werden; bei Diagrammachsen beginnt die Darstellung bei null. Lesbarkeit, ein roter Faden und ein passendes Verhältnis von Text und Vortrag sind wichtiger als möglichst viele Gestaltungseffekte.",
+        "beispiele": [
+          "Vor der Auswahl der Schrift und Farben wird geklärt, ob die Klasse einen Überblick oder eine Entscheidungshilfe braucht. Davon hängen Detailgrad und Fachsprache ab.",
+          "Ein Diagramm mit einer Aussage pro Folie und einer bei null beginnenden Achse lässt Unterschiede nachvollziehbar erkennen. Die erklärenden Details gehören in den Vortrag."
+        ],
+        "fallbeispiel": "Eine Folie enthält fünf Aussagen, ein Diagramm mit abgeschnittener Achse und den vollständigen Vortragstext. Die Überarbeitung trennt die Aussagen auf passende Folien, setzt die Achse bei null an und kürzt den Text auf Stichwörter. Im Vortrag werden die Zusammenhänge erklärt; die Folie bleibt Orientierung statt Manuskript.",
+        "typische_fehler": "Die Zielgruppe wird erst nach der Gestaltung berücksichtigt. Häufig sind Folien außerdem überfüllt oder Diagramme verzerren durch eine abgeschnittene Achse den Eindruck.",
+        "verstaendnisfragen": [
+          "Was ist vor dem Gestalten zu klären? Zielgruppe, Ziel und die zentrale Aussage der Präsentation.",
+          "Warum soll eine Diagrammachse bei null beginnen? Damit Größenverhältnisse nicht optisch übertrieben oder verkürzt werden."
+        ],
+        "pruefungsbezug": "Prüfe Entwürfe in der Reihenfolge Zielgruppe, roter Faden, eine Aussage je Folie, Lesbarkeit und korrekte Diagrammdarstellung.",
+        "merksatz": "Die Folie gibt Orientierung; der Vortrag erklärt die Aussage."
+      },
+      {
+        "abschnitt": "g3",
+        "vorauswissen": [
+          "Texte, Bilder, Grafiken, Musik und Videos können geschützt sein.",
+          "Namen, Fotos und andere Angaben können personenbezogene Daten sein."
+        ],
+        "erklaerung": "Urheberrecht und Datenschutz beantworten unterschiedliche Fragen. Das Urheberrecht schützt Werke und klärt, ob ein Material genutzt werden darf; eine Quellenangabe ersetzt keine Nutzungserlaubnis. Der Datenschutz schützt Personen und ihre Daten. Fotos von Kolleginnen und Kollegen benötigen eine Einwilligung, und echte Personaldaten gehören nicht ungeprüft in Beispiele. Für die Bewertung wird der Kriterienkatalog vor der Präsentation festgelegt.",
+        "beispiele": [
+          "Ein Bild aus dem Internet wird nicht allein durch einen Bildnachweis frei nutzbar; die Nutzungserlaubnis muss zusätzlich geprüft werden.",
+          "Im Organigramm kann statt des Namens die Funktionsbezeichnung ‚Leitung Einkauf‘ verwendet werden. So werden weniger personenbezogene Daten gezeigt."
+        ],
+        "fallbeispiel": "Eine Präsentation soll Namen aller Abteilungsleitungen und Umsatzzahlen des letzten Jahres zeigen. Namen sind personenbezogene Daten; aus Gründen der Datensparsamkeit werden zunächst nur Funktionen verwendet. Umsatzzahlen können Betriebsgeheimnisse sein und dürfen nur mit Freigabe oder aus einer ohnehin veröffentlichten Quelle aufgenommen werden. Zusätzlich wird für jedes Bild die Nutzungserlaubnis geprüft.",
+        "typische_fehler": "Quellenangabe und Nutzungserlaubnis werden gleichgesetzt. Außerdem werden Datenschutz und Urheberrecht vermischt oder Kriterien erst nach dem Vortrag so gewählt, dass das Ergebnis besser aussieht.",
+        "verstaendnisfragen": [
+          "Was schützt das Urheberrecht, was der Datenschutz? Das Urheberrecht schützt Werke; der Datenschutz schützt Personen und zuordenbare Angaben.",
+          "Wann wird der Kriterienkatalog erstellt? Vor der Präsentation, damit die Bewertung nachvollziehbar und nicht nachträglich angepasst wird."
+        ],
+        "pruefungsbezug": "Trenne bei jedem Material die Prüfungen: Darf ich dieses Werk nutzen? Und: Darf ich diese Person beziehungsweise dieses Datum zeigen? Danach Kriterienkatalog und Freigaben dokumentieren.",
+        "merksatz": "Urheberrecht schützt Werke, Datenschutz schützt Personen; der Kriterienkatalog steht vor der Bewertung."
+      }
+    ]
+  },
 
   "lernziele": [
     { "id": "lz1", "text": "Informationsquellen recherchieren und ihre Validität beurteilen", "abschnitt": "g1" },

@@ -5,6 +5,70 @@
   "titel": "Wie ein Vertrag entsteht",
   "untertitel": "Zwei Sätze genügen — wenn sie zusammenpassen.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ein Vertrag beruht auf übereinstimmenden Erklärungen.",
+          "Eine Erklärung kann ausdrücklich oder durch schlüssiges Handeln abgegeben werden."
+        ],
+        "erklaerung": "Eine Willenserklärung kann mündlich, schriftlich oder durch schlüssiges Handeln erfolgen. Für einen Kaufvertrag braucht es Antrag und Annahme. Schweigen gilt grundsätzlich nicht als Zustimmung; unter Kaufleuten kann § 362 HGB eine Ausnahme bilden. Die rechtliche Wirkung wird deshalb aus Inhalt, Verhalten und Situation bestimmt, nicht allein aus einem unterschriebenen Dokument.",
+        "beispiele": [
+          "Eine Bestellung im Onlineshop ist eine ausdrückliche Willenserklärung; die Annahme kann durch eine passende Auftragsbestätigung erklärt werden.",
+          "Wer eine Ware an der Kasse bezahlt und erhält, erklärt seinen Willen auch durch schlüssiges Handeln. Bloßes Schweigen ist dagegen grundsätzlich keine Annahme."
+        ],
+        "fallbeispiel": "Ein Kunde fragt telefonisch nur nach dem Preis und erhält noch kein Angebot. Aus der Frage allein folgt kein Vertrag, weil der Rechtsbindungswille nicht als Antrag feststeht. Erst eine hinreichend bestimmte Bestellung oder ein passendes Angebot mit Annahme bildet die erforderlichen Willenserklärungen.",
+        "typische_fehler": "Jede Äußerung wird als Antrag gewertet oder Schweigen automatisch als Zustimmung. Auch eine Anfrage wird mit einer verbindlichen Bestellung verwechselt.",
+        "verstaendnisfragen": [
+          "Welche Formen kann eine Willenserklärung haben? Mündlich, schriftlich oder durch schlüssiges Handeln.",
+          "Ist Schweigen grundsätzlich eine Annahme? Nein; es gibt nur besondere Ausnahmen, etwa unter Kaufleuten nach § 362 HGB."
+        ],
+        "pruefungsbezug": "Markiere in Fällen die konkrete Handlung und frage, ob sie als Antrag, Annahme, bloße Anfrage oder Schweigen einzuordnen ist.",
+        "merksatz": "Vertragserklärungen können unterschiedlich aussehen; entscheidend sind Inhalt und erkennbarer Rechtsbindungswille."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Der Antrag bindet den Antragenden nach § 145 BGB grundsätzlich.",
+          "Eine Annahme muss dem Antrag vollständig und rechtzeitig entsprechen."
+        ],
+        "erklaerung": "Ein Antrag kann nach § 145 BGB bindend sein. Nach § 147 BGB muss die Annahme unter Anwesenden sofort und unter Abwesenden innerhalb der regelmäßigen Antwortzeit erfolgen. Eine Annahme mit anderem Preis, anderer Menge oder anderem Termin ist keine Annahme, sondern ein neuer Antrag. Die Pflichten aus dem geschlossenen Kaufvertrag beschreibt § 433 BGB: Verkäufer übergibt und verschafft Eigentum; Käufer zahlt und nimmt ab.",
+        "beispiele": [
+          "Ein bindendes Angebot über 200 Ordner wird mit derselben Menge, demselben Preis und demselben Termin angenommen: Der Vertrag steht.",
+          "Wird statt 15. September der 29. September genannt, weicht die Erklärung ab und ist als neuer Antrag zu behandeln."
+        ],
+        "fallbeispiel": "Ein Kunde bestellt 200 Ordner zum angebotenen Preis, nennt aber einen anderen Liefertermin. Die Erklärung stimmt nicht vollständig mit dem Angebot überein. Deshalb liegt keine Annahme vor; die Abweichung ist ein neuer Antrag. Ein Vertrag entsteht erst, wenn die andere Seite diesen neuen Inhalt annimmt.",
+        "typische_fehler": "Eine kleine Abweichung wird als unwichtig behandelt oder die Auftragsbestätigung allein als Annahme bezeichnet. Außerdem wird eine verspätete Annahme nicht als neuer Antrag geprüft.",
+        "verstaendnisfragen": [
+          "Was muss eine Annahme erfüllen? Sie muss vollständig mit dem Antrag übereinstimmen und rechtzeitig erfolgen.",
+          "Was ist eine abweichende Antwort? Ein neuer Antrag, nicht die Annahme des ursprünglichen Antrags."
+        ],
+        "pruefungsbezug": "Vergleiche Antrag und Antwort zeilenweise: Ware, Menge, Preis, Termin und weitere Bedingungen. Jede relevante Abweichung ändert die rechtliche Einordnung.",
+        "merksatz": "Abweichung bedeutet neuer Antrag — der Vertrag entsteht erst mit dessen Annahme."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Geschäftsfähigkeit hängt vom Alter ab.",
+          "Minderjährige können nicht jeden Vertrag allein wirksam schließen."
+        ],
+        "erklaerung": "Unter sieben Jahren sind Willenserklärungen nichtig. Von sieben bis 17 Jahren besteht beschränkte Geschäftsfähigkeit; ab 18 ist sie unbeschränkt. Ein Vertrag eines beschränkt Geschäftsfähigen, der nicht lediglich rechtlich vorteilhaft ist, kann zunächst schwebend unwirksam sein. Der Taschengeldparagraf § 110 BGB greift, wenn vollständig mit eigenen Mitteln bezahlt wurde.",
+        "beispiele": [
+          "Ein 16-Jähriger bestellt Büromaterial auf Rechnung. Weil nicht vollständig mit eigenen Mitteln bezahlt wurde, hilft § 110 BGB nicht; die Zustimmung der Eltern ist relevant.",
+          "Ein Kauf, den ein Minderjähriger vollständig mit eigenen Mitteln bezahlt, kann nach § 110 BGB wirksam sein."
+        ],
+        "fallbeispiel": "Ein 16-jähriger Azubi bestellt Büromaterial für 89 € auf Rechnung. Er ist beschränkt geschäftsfähig und der Kauf ist nicht lediglich rechtlich vorteilhaft. Weil die Ware nicht vollständig mit eigenen Mitteln bezahlt wurde, greift § 110 BGB nicht. Verweigern die Eltern die Zustimmung, ist der Vertrag endgültig unwirksam; bereits gelieferte Ware muss zurückgegeben werden.",
+        "typische_fehler": "Die Altersgrenzen werden vermischt oder jede Zahlung eines Minderjährigen als Taschengeldfall behandelt. Entscheidend ist, ob vollständig mit eigenen Mitteln bezahlt wurde und ob der Vertrag rechtlich vorteilhaft ist.",
+        "verstaendnisfragen": [
+          "Welche Altersstufen gelten? Unter 7 nichtig, 7 bis 17 beschränkt geschäftsfähig, ab 18 unbeschränkt geschäftsfähig.",
+          "Wann kann § 110 BGB helfen? Wenn der Minderjährige die Leistung vollständig mit eigenen Mitteln bewirkt hat."
+        ],
+        "pruefungsbezug": "Notiere bei Minderjährigen zuerst Alter, dann Vertragsart, eigene Zahlung und Zustimmung des gesetzlichen Vertreters.",
+        "merksatz": "Alter prüfen, eigene Zahlung prüfen, Zustimmung prüfen — erst dann steht die Wirksamkeit fest."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

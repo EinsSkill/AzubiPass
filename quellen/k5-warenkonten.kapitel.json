@@ -5,6 +5,118 @@
   "titel": "Warenkonten & Kalkulation",
   "untertitel": "Wareneinkauf und -verkauf, Bezugskosten, Rabatt und Skonto — und der Weg vom Einkaufs- zum Verkaufspreis.",
   "minuten": 35,
+
+  "ausfuehrlich": {
+    "einleitung": "Bei Warenkonten greifen Buchführung und Kalkulation ineinander. Zuerst wird geklärt, was die Ware tatsächlich kostet. Danach wird aus diesem Einstandspreis Schritt für Schritt der Preis entwickelt, zu dem der Betrieb verkaufen muss.",
+    "abschnitte": [
+      {
+        "abschnitt": "e1",
+        "vorauswissen": [
+          "Wareneinkauf ist ein Aufwandskonto, Umsatzerlöse sind ein Ertragskonto.",
+          "Der Rohertrag vergleicht Verkaufserlöse mit dem Wareneinsatz."
+        ],
+        "erklaerung": "Ein Handelsbetrieb hält Ein- und Verkäufe getrennt fest. Der Wareneinkauf zeigt, welcher Aufwand durch eingekaufte Ware erfasst wurde. Die Umsatzerlöse zeigen, was mit Verkäufen erwirtschaftet wurde. Erst der Vergleich beider Größen zeigt den Rohertrag; weitere Aufwendungen wie Miete oder Löhne sind darin noch nicht berücksichtigt.",
+        "beispiele": [
+          "Ein Warenkauf auf Ziel über 3.000 € wird als Wareneinkauf an Verbindlichkeiten LuL gebucht.",
+          "Ein Warenverkauf auf Ziel über 5.000 € wird als Forderungen LuL an Umsatzerlöse gebucht."
+        ],
+        "fallbeispiel": "Der Betrieb erzielt 5.000 € Umsatzerlöse und hat für die verkaufte Ware einen Wareneinsatz von 3.000 €. Rechnung: 5.000 € − 3.000 € = 2.000 € Rohertrag. Diese 2.000 € sind noch nicht der Gewinn, weil daraus unter anderem Miete, Löhne und weitere betriebliche Aufwendungen bezahlt werden müssen.",
+        "typische_fehler": "Umsatzerlöse und Gewinn werden gleichgesetzt. Außerdem werden Einkauf und Verkauf miteinander verrechnet, sodass nicht mehr erkennbar ist, wie hoch die einzelnen Größen waren.",
+        "verstaendnisfragen": [
+          "Warum werden Wareneinkauf und Umsatzerlöse getrennt gebucht? Damit Einkauf, Verkauf und Rohertrag nachvollziehbar bleiben.",
+          "Was ist der Rohertrag noch nicht? Der Gewinn, weil weitere Aufwendungen noch abgezogen werden müssen."
+        ],
+        "pruefungsbezug": "Bei Warenbuchungen die Kontenart mitdenken: Einkauf führt zum Aufwandskonto im Soll, Verkauf zum Ertragskonto im Haben. Danach kann der Rohertrag berechnet werden.",
+        "merksatz": "Rohertrag = Umsatzerlöse − Wareneinsatz; erst weitere Aufwendungen führen zum Gewinn."
+      },
+      {
+        "abschnitt": "e2",
+        "vorauswissen": [
+          "Der Listenpreis ist nicht automatisch der tatsächliche Einstandspreis.",
+          "Rabatt, Bezugskosten und Rücksendungen verändern den Warenwert."
+        ],
+        "erklaerung": "Der Einstandspreis beantwortet die praktische Frage: Was hat die Ware den Betrieb tatsächlich gekostet, bis sie am eigenen Standort verfügbar ist? Ein Rabatt mindert den Preis sofort. Bezugskosten wie Fracht werden hinzugerechnet. Der so ermittelte Einstandspreis bildet später die Basis der Kalkulation.",
+        "beispiele": [
+          "Aus 5.000 € Listenpreis werden nach 5 % Rabatt 4.750 € Zieleinkaufspreis. Mit 150 € Fracht entsteht ein Einstandspreis von 4.900 €.",
+          "Eine Einkaufsrücksendung wird als Verbindlichkeiten an Wareneinkauf gebucht; eine Verkaufsrücksendung als Umsatzerlöse an Forderungen."
+        ],
+        "fallbeispiel": "Berechne den Einstandspreis: Listenpreis 5.000 €. Rabatt 5 % = 250 €, also Zieleinkaufspreis 4.750 €. Dazu kommen 150 € Bezugskosten. Ergebnis: 4.750 € + 150 € = 4.900 € Einstandspreis. Der Rabatt wird nicht noch einmal separat gebucht, weil der Rechnungsbetrag bereits gemindert ist.",
+        "typische_fehler": "Rabatt und Skonto werden verwechselt. Der Rabatt wird sofort berücksichtigt; Skonto entsteht erst bei schneller Zahlung und wird dann separat gebucht. Auch Bezugskosten werden häufig vergessen oder fälschlich vom Preis abgezogen.",
+        "verstaendnisfragen": [
+          "Warum erhöhen Bezugskosten den Einstandspreis? Weil sie notwendig sind, damit die Ware beim Betrieb ankommt.",
+          "Warum wird der Rabatt nicht separat gebucht? Weil er den Rechnungsbetrag direkt mindert und der geminderte Betrag von Anfang an erfasst wird."
+        ],
+        "pruefungsbezug": "Bei Rechenwegen die Reihenfolge einhalten: Listenpreis minus Rabatt, gleich Zieleinkaufspreis, plus Bezugskosten, gleich Einstandspreis. Buchungssätze nur für die im Sachverhalt genannten Vorgänge bilden.",
+        "merksatz": "Rabatt geht ab, Bezugskosten kommen hinzu: Beides führt zum Einstandspreis."
+      },
+      {
+        "abschnitt": "e3",
+        "vorauswissen": [
+          "Skonto hängt vom Zahlungszeitpunkt ab.",
+          "Aufwand und Ertrag werden nach ihrem wirtschaftlichen Vorteil beziehungsweise Nachteil beurteilt."
+        ],
+        "erklaerung": "Bei der ursprünglichen Rechnung steht noch nicht fest, ob der Betrieb das Zahlungsziel nutzt und Skonto abzieht. Deshalb bleibt der ursprüngliche Rechnungsbetrag zunächst bestehen. Erst bei der Zahlung wird die Verbindlichkeit oder Forderung vollständig ausgebucht und die Differenz als Skonto erfasst.",
+        "beispiele": [
+          "Bei einer Einkaufsverbindlichkeit von 1.000 € und 2 % Skonto werden 980 € überwiesen; 20 € sind Skontoertrag.",
+          "Bei einer Verkaufsforderung von 2.000 € und 2 % Skonto gehen 1.960 € ein; 40 € sind Skontoaufwand."
+        ],
+        "fallbeispiel": "Eine Rechnung über 2.000 € wird innerhalb der Skontofrist bezahlt. 2 % von 2.000 € sind 40 €. Die Forderung muss vollständig mit 2.000 € ausgebucht werden. Auf der Sollseite stehen Bank 1.960 € und Skontoaufwand 40 €; im Haben steht Forderungen 2.000 €. Die Buchung ist ausgeglichen und erklärt gleichzeitig, warum Verkaufsskonto ein Aufwand ist.",
+        "typische_fehler": "Skonto wird schon bei der Rechnung berücksichtigt, obwohl die Nutzung noch nicht feststeht. Außerdem werden Einkaufsskonto und Verkaufsskonto vertauscht: Beim Einkauf spart der Betrieb Geld, beim Verkauf erhält er weniger.",
+        "verstaendnisfragen": [
+          "Warum ist Einkaufsskonto ein Ertrag? Weil die Verbindlichkeit vollständig erlischt, aber weniger Geld überwiesen wird.",
+          "Warum muss eine Verkaufsforderung beim Zahlungseingang vollständig verschwinden? Weil der Kunde danach nichts mehr schuldet; die Differenz wird als Skontoaufwand erfasst."
+        ],
+        "pruefungsbezug": "Bei Skontoaufgaben zuerst den Skontobetrag berechnen, dann die vollständige Forderung oder Verbindlichkeit ausbuchen und zuletzt Bank sowie Aufwand oder Ertrag einsetzen.",
+        "merksatz": "Einkaufsskonto bringt einen Vorteil und ist Ertrag; Verkaufsskonto mindert den Erlös und ist Aufwand."
+      },
+      {
+        "abschnitt": "e4",
+        "vorauswissen": [
+          "Der Einstandspreis ist die Nahtstelle zwischen Einkauf und Verkauf.",
+          "Aufschläge werden auf eine Bezugsgröße gerechnet; Abzüge im Hundert werden durch Division berücksichtigt."
+        ],
+        "ablauf": [
+          "Lieferantenrabatt und Lieferantenskonto vom Listeneinkaufspreis abziehen.",
+          "Bezugskosten addieren und den Einstandspreis bestimmen.",
+          "Handlungskosten und Gewinn aufschlagen.",
+          "Kundenskonto und Kundenrabatt im Hundert zurückrechnen."
+        ],
+        "erklaerung": "Die Vorwärtskalkulation führt vom bekannten Einkaufspreis zum notwendigen Listenverkaufspreis. Der kritische Richtungswechsel kommt am Ende: Ein Kundenrabatt wird nicht einfach auf den Barverkaufspreis aufgeschlagen, weil der Rabatt später vom Listenpreis abgezogen wird. Deshalb muss durch den verbleibenden Prozentsatz geteilt werden.",
+        "beispiele": [
+          "Aus 500 € Listeneinkaufspreis werden nach 20 % Lieferantenrabatt 400 € und nach 2 % Lieferantenskonto 392 €. Mit 8 € Bezugskosten beträgt der Einstandspreis 400 €.",
+          "Ein Barverkaufspreis von 720 € führt bei 4 % Kundenskonto zu 720 € ÷ 0,96 = 750 € Zielverkaufspreis."
+        ],
+        "fallbeispiel": "Rechne die vorhandene Kalkulationsleiter durch: 500 € − 20 % = 400 €; 400 € − 2 % = 392 €; plus 8 € Bezugskosten = 400 € Einstandspreis. 50 % Handlungskosten ergeben 600 € Selbstkosten. 20 % Gewinn ergeben 720 € Barverkaufspreis. Danach: 720 € ÷ 0,96 = 750 € Zielverkaufspreis und 750 € ÷ 0,75 = 1.000 € Listenverkaufspreis. Die Divisionen sichern, dass nach den späteren Abzügen genau 720 € übrig bleiben.",
+        "typische_fehler": "Der Kundenrabatt wird mit 25 % multipliziert und dadurch zu niedrig zurückgerechnet. Auch wird der Gewinn häufig auf den falschen Zwischenwert bezogen oder der Einstandspreis mit den Selbstkosten verwechselt.",
+        "verstaendnisfragen": [
+          "Warum wird der Kundenrabatt durch 0,75 berücksichtigt? Weil nach einem Rabatt von 25 % noch 75 % des Listenpreises übrig bleiben.",
+          "Welche Größe trennt Einkaufs- und Verkaufsseite? Der Einstandspreis."
+        ],
+        "pruefungsbezug": "Das Kalkulationsschema vor dem Rechnen vollständig aufschreiben und bei jeder Zeile die neue Bezugsgröße kontrollieren. Im Hundert bedeutet am Ende Division durch den verbleibenden Prozentsatz.",
+        "merksatz": "Vorwärts heißt vom Einkauf zum Verkauf; Kundenrabatt und Kundenskonto werden im Hundert durch Division zurückgerechnet."
+      },
+      {
+        "abschnitt": "e5",
+        "vorauswissen": [
+          "Das Kalkulationsschema bleibt gleich, auch wenn die Rechenrichtung wechselt.",
+          "Bei der Rückwärtskalkulation ist der Verkaufspreis vorgegeben."
+        ],
+        "erklaerung": "Bei der Rückwärtskalkulation steht meist der am Markt mögliche Listenverkaufspreis fest. Gesucht wird der Preis, den der Betrieb höchstens für die Ware bezahlen darf. Deshalb wird von oben nach unten rückwärts durch die bekannte Leiter gerechnet; die wirtschaftliche Bedeutung der einzelnen Stufen ändert sich nicht.",
+        "beispiele": [
+          "Wenn der Konkurrent 89 € verlangt und der Betrieb mithalten muss, ist der Verkaufspreis gegeben und die Rückwärtskalkulation passend.",
+          "Wenn der Einstandspreis feststeht und der Angebotspreis gesucht wird, handelt es sich dagegen um eine Vorwärtskalkulation."
+        ],
+        "fallbeispiel": "Die vorhandene Zuordnung liefert die Entscheidungshilfe: ‚Lieferant nennt seinen Preis, gesucht ist unser Angebotspreis‘ bedeutet vorwärts. ‚Konkurrent verlangt 89 €, wir wollen mithalten‘ bedeutet rückwärts. Im zweiten Fall wird vom feststehenden Verkaufspreis bis zum höchstzulässigen Einstandspreis zurückgerechnet.",
+        "typische_fehler": "Die Rechenrichtung wird gewählt, ohne zuerst die gegebene Größe und die gesuchte Größe zu markieren. Außerdem werden bei der Rückwärtskalkulation die Abzüge und Aufschläge nicht in umgekehrter Richtung gelesen.",
+        "verstaendnisfragen": [
+          "Welche Frage entscheidet zwischen vorwärts und rückwärts? Ist der Einkaufspreis gegeben und der Verkaufspreis gesucht oder umgekehrt?",
+          "Was bleibt bei beiden Verfahren gleich? Das Kalkulationsschema und die Bedeutung der einzelnen Stufen."
+        ],
+        "pruefungsbezug": "Vor dem Rechnen die Wörter ‚gegeben‘ und ‚gesucht‘ notieren. Das verhindert, dass ein korrektes Schema in der falschen Richtung verwendet wird.",
+        "merksatz": "Vorwärts: Einkaufspreis ist bekannt. Rückwärts: Verkaufspreis ist bekannt."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

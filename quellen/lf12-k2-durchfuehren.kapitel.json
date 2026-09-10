@@ -4,7 +4,71 @@
   "nummer": 2,
   "titel": "Raum, Technik, Bewirtung",
   "untertitel": "Die Bestuhlung entscheidet, ob geredet oder zugehört wird.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Bestuhlung beeinflusst Kommunikation und Flächenbedarf.",
+          "Die Zielgruppe und Veranstaltungsart stehen vor der Raumwahl fest."
+        ],
+        "erklaerung": "Reihenbestuhlung richtet alle nach vorne und eignet sich für Vorträge. Die U-Form unterstützt Schulungen und moderierte Gespräche. Inseln eignen sich für Gruppenarbeit, die Blockform für Verhandlungen. Gesprächsfördernde Formen brauchen etwa die doppelte Fläche je Person wie Reihen.",
+        "beispiele": [
+          "Reihen bringen viele Personen auf kleiner Fläche unter, erschweren aber Gespräche untereinander.",
+          "Inseln mit vier bis sechs Personen unterstützen Gruppenarbeit; die U-Form lässt Leitung und Teilnehmende einander sehen."
+        ],
+        "fallbeispiel": "Für einen Workshop mit Gruppenarbeit werden Inseln gewählt. Dadurch wird mehr Fläche eingeplant als bei Reihen und berücksichtigt, dass für einen Vortrag ein Teil der Gruppe mit dem Rücken zur Bühne sitzen kann. Für eine Verhandlung wäre dagegen die Blockform passender.",
+        "typische_fehler": "Die Bestuhlung wird nur nach maximaler Personenzahl gewählt. Außerdem werden U-Form und Inseln verwechselt oder ihr höherer Flächenbedarf übersehen.",
+        "verstaendnisfragen": [
+          "Welche Form eignet sich für Gruppenarbeit? Inselbestuhlung.",
+          "Welche Folge haben gesprächsfördernde Formen? Etwa doppelte Fläche je Person."
+        ],
+        "pruefungsbezug": "Ordne Form und Zweck zu und leite daraus die Raumgröße sowie mögliche Sicht- und Gesprächsprobleme ab.",
+        "merksatz": "Die Bestuhlung entscheidet, ob zugehört, verhandelt oder zusammengearbeitet wird."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Technik kann ausfallen oder inkompatibel sein.",
+          "Jedes technische Mittel braucht eine Bedienung und eine Rückfallebene."
+        ],
+        "erklaerung": "Zur Technikplanung gehören Gerät, Kabel, Adapter, Ersatz und Betreuung. Der Technikcheck erfolgt mit dem echten Gerät und der echten Datei, am Vortag oder mindestens 90 Minuten vorher. WLAN-Kapazität wird beim Anbieter erfragt. Für Projektion, Ton und Moderation werden Rückfallebenen vorbereitet.",
+        "beispiele": [
+          "Die Präsentation liegt zusätzlich auf einem Speicherstick, und für Mikrofone stehen Ersatzbatterien bereit.",
+          "Ein Flipchart kann die Präsentation ersetzen, wenn der Beamer ausfällt; eine zuständige Person bedient die Technik."
+        ],
+        "fallbeispiel": "Zwanzig Minuten vor Beginn fällt der Beamer aus. Zuerst werden Strom, Kabel, Eingangskanal, Laptop-Anzeige und Adapter geprüft. Parallel wird ein Ersatzgerät oder anderer Raum gesucht. Wenn beides nicht gelingt, wird ohne Projektion mit Flipchart und Handouts gearbeitet; Referent und Gäste werden informiert. Für später werden Ersatzgerät und erreichbare Betreuung fest eingeplant.",
+        "typische_fehler": "Nur das Hauptgerät wird gebucht oder WLAN-Kapazität angenommen. Außerdem fehlt eine Person, die im Störungsfall eingreift.",
+        "verstaendnisfragen": [
+          "Womit wird ein Technikcheck durchgeführt? Mit dem tatsächlich genutzten Gerät und der tatsächlich zu zeigenden Datei.",
+          "Was gehört neben Geräten zur Planung? Rückfallebene und verantwortliche Betreuung."
+        ],
+        "pruefungsbezug": "Nenne im Technikfall zuerst einfache Ursachen, dann Rückfallebene und Information der Beteiligten.",
+        "merksatz": "Technikplanung endet erst bei Ersatzlösung und verantwortlicher Betreuung."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Veranstaltungen ändern sich während des Tages.",
+          "Verantwortung und Zeitpunkt müssen vorab festgelegt sein."
+        ],
+        "erklaerung": "Drei Checklisten strukturieren vorher, währenddessen und danach. Jeder Punkt erhält eine verantwortliche Person und eine Uhrzeit. Die Nachbereitung prüft Ergebnisse, offene Punkte und den Nutzen der Veranstaltung.",
+        "beispiele": [
+          "Vorher werden Raum, Technik, Unterlagen und Bewirtung kontrolliert; währenddessen werden Ablauf und Störungen beobachtet.",
+          "Nachher werden Unterlagen, Rechnungen, Rückmeldungen und offene Aufgaben abgelegt beziehungsweise nachverfolgt."
+        ],
+        "fallbeispiel": "Für eine Veranstaltung mit 60 Gästen wird jede Aufgabe einer Person und einer Uhrzeit zugewiesen. Während der Veranstaltung wird bei einer Technikpanne die Rückfallebene aktiviert. Danach werden Rückmeldungen und offene Restpunkte dokumentiert; so wird aus der Veranstaltung eine auswertbare Leistung statt eines einmaligen Tages.",
+        "typische_fehler": "Eine einzige Checkliste ohne Zeitpunkt und Verantwortlichen wird verwendet. Nachbereitung wird als optional betrachtet und dadurch gehen Erfahrungen und offene Punkte verloren.",
+        "verstaendnisfragen": [
+          "Welche drei Checklisten braucht der Tag? Vorher, währenddessen und danach.",
+          "Was muss jeder Checklistenpunkt enthalten? Verantwortliche Person und Uhrzeit."
+        ],
+        "pruefungsbezug": "Prüfe bei Ablaufplänen nicht nur Aufgaben, sondern Zuständigkeit, Zeitpunkt, Rückfallebene und Nachbereitung.",
+        "merksatz": "Vorher sichern, währenddessen steuern, danach auswerten — mit Namen und Uhrzeit."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

@@ -5,6 +5,78 @@
   "titel": "Personalkosten & Gehaltsbuchung",
   "untertitel": "Vom Bruttolohn zum Nettolohn — und warum ein Gehalt den Betrieb mehr kostet, als draufsteht.",
   "minuten": 25,
+
+  "ausfuehrlich": {
+    "einleitung": "Bei der Gehaltsabrechnung müssen drei Perspektiven auseinandergehalten werden: Was im Arbeitsvertrag als Brutto vereinbart ist, was beim Mitarbeiter als Netto ankommt und was der Betrieb insgesamt aufwenden muss. Die Buchung bildet diese drei Geldwege getrennt ab.",
+    "abschnitte": [
+      {
+        "abschnitt": "g1",
+        "vorauswissen": [
+          "Der Bruttolohn ist die Ausgangsgröße der Abzüge.",
+          "Nicht jeder Abzug wird vom gleichen Grundwert berechnet."
+        ],
+        "erklaerung": "Der Bruttolohn steht vor allen Abzügen. Für den Nettolohn werden Lohnsteuer, Solidaritätszuschlag, Kirchensteuer und die Arbeitnehmeranteile zur Sozialversicherung abgezogen. Dabei wird zwischen Abzügen vom Brutto und Abzügen von der Lohnsteuer unterschieden: Die Sozialversicherung wird vom Bruttolohn berechnet, Solidaritätszuschlag und Kirchensteuer von der Lohnsteuer.",
+        "beispiele": [
+          "Bei 3.000 € Brutto werden in der vorhandenen Abzugsleiter zunächst 15 % Lohnsteuer, danach Solidaritätszuschlag und Kirchensteuer auf die Lohnsteuer sowie die Sozialversicherungsanteile vom Brutto abgezogen.",
+          "Die Arbeitnehmeranteile zur Kranken-, Renten-, Arbeitslosen- und Pflegeversicherung werden getrennt betrachtet und anschließend vom Brutto abgezogen."
+        ],
+        "fallbeispiel": "Für 3.000 € brutto beträgt die Lohnsteuer bei 15 % 450 €. Solidaritätszuschlag: 5,5 % von 450 € = 24,75 €. Kirchensteuer: 9 % von 450 € = 40,50 €. Die Arbeitnehmeranteile zur Sozialversicherung ergeben in der Grafik 637,50 €. Netto: 3.000 € − 450 € − 24,75 € − 40,50 € − 637,50 € = 1.847,25 €.",
+        "typische_fehler": "Alle Prozentsätze werden direkt vom Brutto berechnet. Dadurch werden Solidaritätszuschlag und Kirchensteuer zu hoch angesetzt. Außerdem wird Netto mit dem Betrag verwechselt, den der Betrieb insgesamt für die Beschäftigung aufwendet.",
+        "verstaendnisfragen": [
+          "Von welcher Größe werden Solidaritätszuschlag und Kirchensteuer berechnet? Von der Lohnsteuer.",
+          "Was ist die Nettolohnrechnung im Kern? Eine Abzugsleiter vom Bruttolohn zu dem Betrag, der an den Mitarbeiter ausgezahlt wird."
+        ],
+        "pruefungsbezug": "Bei Rechenaufgaben die Bezugsgröße neben jeden Prozentsatz schreiben. Wenn Beitragssätze vorgegeben sind, zählt die richtige Reihenfolge mehr als das Auswendiglernen.",
+        "merksatz": "Brutto ist die Ausgangsgröße; Netto ist Brutto minus Steuern und Arbeitnehmeranteile."
+      },
+      {
+        "abschnitt": "g2",
+        "vorauswissen": [
+          "Der Arbeitnehmeranteil wird vom Brutto abgezogen.",
+          "Der Arbeitgeberanteil wird zusätzlich zum Brutto gezahlt."
+        ],
+        "erklaerung": "Für den Betrieb endet die Rechnung nicht beim Bruttolohn. Der Arbeitgeberanteil zur Sozialversicherung kommt zusätzlich hinzu und wird nicht vom Netto des Mitarbeiters abgezogen. Deshalb sind die echten Personalkosten höher als das Gehalt, das im Vertrag steht.",
+        "beispiele": [
+          "Bei 3.000 € Brutto und 631,50 € Arbeitgeberanteil entstehen Personalkosten von 3.631,50 €.",
+          "Die Unfallversicherung wird in der vorhandenen Tabelle vollständig vom Arbeitgeber getragen, während die übrigen Zweige mit Arbeitnehmer- und Arbeitgeberanteilen dargestellt werden."
+        ],
+        "fallbeispiel": "Ein Mitarbeiter verdient 3.000 € brutto. Der Arbeitgeberanteil zur Sozialversicherung beträgt 631,50 €. Rechnung: 3.000 € + 631,50 € = 3.631,50 €. Dieser Betrag ist der Aufwand des Betriebs für die Beschäftigung. Der Nettolohn von 1.847,25 € beschreibt dagegen nur die Auszahlung an den Mitarbeiter.",
+        "typische_fehler": "Der Arbeitgeberanteil wird als weiterer Abzug vom Bruttolohn behandelt. Dadurch wird der Nettolohn fälschlich kleiner. Ein anderer Fehler ist, den Nettolohn als Personalkosten des Betriebs zu verwenden.",
+        "verstaendnisfragen": [
+          "Warum wird der Arbeitgeberanteil nicht vom Nettolohn abgezogen? Weil er zusätzlich vom Betrieb gezahlt wird.",
+          "Welche Größe ist für die Kostenentscheidung des Betriebs relevant? Bruttolohn plus Arbeitgeberanteil."
+        ],
+        "pruefungsbezug": "Bei einer Kostenfrage immer unterscheiden: Auszahlung an den Mitarbeiter, Abführung an Finanzamt und Sozialversicherung sowie Gesamtaufwand des Arbeitgebers.",
+        "merksatz": "Netto ist die Auszahlung; Personalkosten sind Brutto plus Arbeitgeberanteil."
+      },
+      {
+        "abschnitt": "g3",
+        "vorauswissen": [
+          "Aufwand wird im Soll, Verbindlichkeiten werden im Haben gebucht.",
+          "Der Arbeitgeber zahlt an mehrere Empfänger."
+        ],
+        "ablauf": [
+          "Den vollen Bruttolohn als Aufwand buchen.",
+          "Lohnsteuer, Arbeitnehmeranteile und Nettolohn als Verbindlichkeiten erfassen.",
+          "Den Arbeitgeberanteil als zusätzlichen Aufwand und als weitere Sozialversicherungsverbindlichkeit buchen.",
+          "Nettolohn, Lohnsteuer und Sozialversicherung über die Bank begleichen."
+        ],
+        "erklaerung": "Die Gehaltsbuchung trennt Entstehung und Zahlung. Zuerst wird der gesamte Bruttolohn als Aufwand erfasst, obwohl er auf drei Verbindlichkeiten verteilt wird. Danach kommt der Arbeitgeberanteil als eigener Aufwand hinzu. Erst im dritten Schritt fließt das Geld an Mitarbeiter, Finanzamt und Sozialversicherung.",
+        "beispiele": [
+          "Beim Gehalt von 3.000 € entstehen Verbindlichkeiten von 515,25 € Lohnsteuer, 637,50 € Arbeitnehmeranteil Sozialversicherung und 1.847,25 € Nettolohn.",
+          "Der Arbeitgeberanteil von 631,50 € wird als soziale Abgaben an die Verbindlichkeit Sozialversicherung gebucht und nicht aus dem Netto herausgerechnet."
+        ],
+        "fallbeispiel": "Die drei Buchungsschritte der Grafik lauten: 1. Löhne und Gehälter 3.000 € an Lohnsteuer 515,25 €, Sozialversicherung 637,50 € und Nettolohn 1.847,25 €. 2. Soziale Abgaben 631,50 € an Verbindlichkeiten Sozialversicherung 631,50 €. 3. Die drei Verbindlichkeiten werden bezahlt; insgesamt gehen 3.631,50 € von der Bank ab. Danach sind die Verbindlichkeitskonten ausgeglichen.",
+        "typische_fehler": "Nur der Nettolohn wird als Aufwand gebucht oder der Arbeitgeberanteil wird in den ersten Buchungssatz hineingerechnet. Beides zerstört die klare Trennung der Kosten und Verbindlichkeiten.",
+        "verstaendnisfragen": [
+          "Warum ist der Bruttolohn der Aufwand und nicht nur der Nettolohn? Weil der Betrieb den gesamten Arbeitsaufwand trägt; die Abzüge werden nur an andere Empfänger weitergeleitet.",
+          "Warum braucht der Arbeitgeberanteil einen eigenen Buchungssatz? Weil er zusätzlich entsteht und nicht aus dem Bruttolohn des Mitarbeiters abgezogen wird."
+        ],
+        "pruefungsbezug": "Bei Buchungssätzen die Reihenfolge ‚erfassen, Arbeitgeberanteil ergänzen, zahlen‘ verwenden. Die Summe der Verbindlichkeiten muss jeweils dem Bruttolohn beziehungsweise den gesamten Arbeitgeberzahlungen entsprechen.",
+        "merksatz": "Erst den Bruttolohn und Verbindlichkeiten buchen, dann Arbeitgeberanteil und erst danach die Zahlungen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

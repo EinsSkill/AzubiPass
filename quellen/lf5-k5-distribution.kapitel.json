@@ -5,6 +5,50 @@
   "titel": "Distributionspolitik",
   "untertitel": "Wie die Ware zum Kunden kommt — und wer daran verdient.",
   "minuten": 20,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "e1",
+        "vorauswissen": [
+          "Ein Produkt muss den Kunden nicht nur überzeugen, sondern auch erreichen.",
+          "Der Vertriebsweg beeinflusst Kundenkontakt, Aufwand und Marge."
+        ],
+        "erklaerung": "Distributionspolitik regelt den Weg der Ware zum Kunden. Beim direkten Absatz verkauft der Hersteller selbst: Er hat vollen Kundenkontakt und keine Handelsspanne abzugeben, trägt aber den höheren Verwaltungs- und Vertriebsaufwand. Beim indirekten Absatz werden Groß- und Einzelhandel eingeschaltet; die Reichweite steigt, der Aufwand im eigenen Betrieb sinkt, dafür wird die Marge geringer.",
+        "beispiele": [
+          "Ein Hersteller verkauft im eigenen Vertrieb direkt an den Kunden und erhält den vollständigen Kundenkontakt.",
+          "Über Groß- und Einzelhandel erreicht die Ware mehr Kunden, wird aber durch weitere Handelsstufen geführt."
+        ],
+        "fallbeispiel": "Ein Betrieb muss zwischen eigenem Verkauf und dem Weg über den Handel entscheiden. Beim direkten Absatz prüft er, ob er den zusätzlichen Verwaltungsaufwand leisten kann und den Kundenkontakt braucht. Beim indirekten Absatz prüft er Reichweite und geringere Marge. Die Entscheidung richtet sich damit nicht nur nach dem kürzesten Weg, sondern nach Kontakt, Aufwand und Ertrag.",
+        "typische_fehler": "Indirekter Absatz wird als schlechter bezeichnet, weil eine Handelsspanne entsteht. Außerdem wird direkter Absatz mit geringem Aufwand gleichgesetzt, obwohl der Betrieb mehr selbst organisieren muss.",
+        "verstaendnisfragen": [
+          "Was ist der zentrale Unterschied? Beim direkten Absatz verkauft der Hersteller selbst; beim indirekten Absatz stehen Handelsstufen dazwischen.",
+          "Welche typische Folge hat indirekter Absatz? Größere Reichweite, weniger eigene Verwaltung, aber geringere Marge."
+        ],
+        "pruefungsbezug": "Vergleiche bei Fallaufgaben immer Kundenkontakt, Verwaltungsaufwand, Reichweite und Marge. Danach den passenden Absatzweg begründen.",
+        "merksatz": "Direkt bedeutet voller Kontakt und eigener Aufwand; indirekt bedeutet Handelsstufen und größere Reichweite."
+      },
+      {
+        "abschnitt": "e2",
+        "vorauswissen": [
+          "Nicht alle Beteiligten im Vertrieb werden Eigentümer der Ware.",
+          "Eigentum und Vermittlung sind die entscheidenden Unterscheidungsmerkmale."
+        ],
+        "erklaerung": "Absatzmittler kaufen auf eigene Rechnung, werden Eigentümer und tragen das Warenrisiko. Dazu gehören Groß- und Einzelhandel. Absatzhelfer unterstützen den Vertrieb, werden aber nicht Eigentümer: Handelsvertreter, Makler und Spediteure gehören zu dieser Gruppe. Die Merksfrage lautet: Gehört die Ware unterwegs jemand anderem?",
+        "beispiele": [
+          "Ein Einzelhändler kauft die Ware auf eigene Rechnung und trägt das Risiko, sie nicht weiterzuverkaufen: Absatzmittler.",
+          "Ein Handelsvertreter vermittelt Geschäfte, ohne Eigentümer der Ware zu werden; ein Spediteur transportiert sie ebenfalls nur."
+        ],
+        "fallbeispiel": "In einer Zuordnung stehen Einzelhändler, Handelsvertreter, Makler und Spediteur. Der Einzelhändler kauft auf eigene Rechnung und wird Eigentümer, daher Absatzmittler. Handelsvertreter und Makler vermitteln, der Spediteur transportiert; keiner wird Eigentümer. Sie sind Absatzhelfer.",
+        "typische_fehler": "Jede Person zwischen Hersteller und Kunde wird als Mittler bezeichnet. Entscheidend ist aber nicht die Position im Weg, sondern Eigentum, eigene Rechnung und Warenrisiko.",
+        "verstaendnisfragen": [
+          "Woran erkennst du einen Absatzmittler? Er wird Eigentümer und trägt das Warenrisiko.",
+          "Welche drei Absatzhelfer nennt der Inhalt? Handelsvertreter, Makler und Spediteure."
+        ],
+        "pruefungsbezug": "Prüfe bei jeder beteiligten Person nur die Eigentumsfrage und ergänze eigene Rechnung beziehungsweise Warenrisiko.",
+        "merksatz": "Wer Eigentümer wird, ist Mittler; wer nur vermittelt oder transportiert, ist Helfer."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

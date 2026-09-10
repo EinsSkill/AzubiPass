@@ -4,7 +4,71 @@
   "nummer": 1,
   "titel": "Was ein Projekt ausmacht",
   "untertitel": "Nicht jede große Aufgabe ist ein Projekt. Und das ist gut so.",
-  "minuten": 20,
+ "minuten": 20,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ein Projekt ist eine zeitlich begrenzte, besondere Aufgabe.",
+          "Wiederkehrende Abläufe werden als Prozesse standardisiert."
+        ],
+        "erklaerung": "Ein Projekt ist einmalig, hat ein klares messbares Ziel, einen Anfang und ein Ende, begrenzte Mittel und eine eigene, oft bereichsübergreifende Organisation. Die Einmaligkeit grenzt es vom Prozess ab. Ein Prozess wiederholt sich, wird standardisiert und laufend verbessert.",
+        "beispiele": [
+          "Die einmalige Einführung eines digitalen Dokumentenmanagements ist ein Projekt; die spätere laufende Ablage ist ein Prozess.",
+          "Die monatliche Entgeltabrechnung ist wiederkehrend und damit Prozess, nicht Projekt."
+        ],
+        "fallbeispiel": "Die Einführung eines digitalen Dokumentenmanagements wird auf die fünf Merkmale geprüft. Ziel, Termin, Budget, beteiligte Bereiche und Projektorganisation werden schriftlich festgehalten. Nach der einmaligen Einführung geht die laufende Nutzung in einen Prozess über und wird über Standards gesteuert.",
+        "typische_fehler": "Jede größere Aufgabe wird Projekt genannt oder Einmaligkeit und Wiederholung werden nicht geprüft. Auch wird die eigene Organisation vergessen.",
+        "verstaendnisfragen": [
+          "Welches Merkmal grenzt Projekt und Prozess am stärksten ab? Die Einmaligkeit des Projekts.",
+          "Welche fünf Merkmale gehören zum Projekt? Einmaligkeit, klares Ziel, Anfang und Ende, begrenzte Mittel und eigene Organisation."
+        ],
+        "pruefungsbezug": "Prüfe Projektfälle mit der vollständigen Merkmalsliste und nenne ausdrücklich die Abgrenzung zum wiederkehrenden Prozess.",
+        "merksatz": "Ein Projekt ist einmalig, zielklar, befristet, begrenzt und eigenständig organisiert."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Zeit, Kosten und Umfang beeinflussen den Projekterfolg.",
+          "Eine Änderung einer Größe kann Folgen für die anderen haben."
+        ],
+        "erklaerung": "Das magische Dreieck verbindet Zeit, Kosten und Umfang beziehungsweise Qualität. Die Größen lassen sich nicht unabhängig verändern. Wird der Termin vorgezogen, steigen Kosten oder der Umfang sinkt. Wird das Budget gekürzt, verlängert sich die Dauer oder der Umfang schrumpft. Die Projektleitung macht die Auswirkung sichtbar; der Auftraggeber entscheidet.",
+        "beispiele": [
+          "Ein vorgezogener Termin kann zusätzliches Personal erfordern oder den Projektumfang verkleinern.",
+          "Ein zusätzlicher Funktionswunsch verlängert den Termin, erhöht das Budget oder verdrängt eine andere Funktion."
+        ],
+        "fallbeispiel": "Der Auftraggeber verlangt eine zusätzliche Funktion bei unverändertem Termin und Budget. Die Projektleitung beziffert die zusätzliche Zeit und Kosten und zeigt, welcher Umfang entfallen müsste, wenn keine Größe verändert werden darf. Danach entscheidet der Auftraggeber statt die Auswirkung still im Team aufzufangen.",
+        "typische_fehler": "Alle drei Größen werden gleichzeitig unverändert versprochen. Kleine Zusatzwünsche werden nicht gesammelt und führen schleichend zur Umfangsausweitung.",
+        "verstaendnisfragen": [
+          "Welche drei Größen verbindet das magische Dreieck? Zeit, Kosten und Umfang beziehungsweise Qualität.",
+          "Wer entscheidet über die Konsequenz einer Änderung? Der Auftraggeber auf Grundlage der bezifferten Auswirkungen."
+        ],
+        "pruefungsbezug": "Benenne bei Änderungsfällen immer mindestens zwei betroffene Größen und die Entscheidungsvorlage.",
+        "merksatz": "Eine Ecke ändern heißt mindestens eine andere nachziehen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Ein Projektauftrag setzt Rahmen und Verantwortung fest.",
+          "Verantwortung braucht passende Befugnisse."
+        ],
+        "erklaerung": "Der schriftliche Projektauftrag enthält Ziel, Abgrenzung, Termine, Budget und Befugnisse. Ziele werden mit Zahl und Termin messbar formuliert. Die Abgrenzung verhindert, dass später unbemerkt weitere Abteilungen oder Dokumentenarten hinzukommen. Ohne Befugnisse bleibt Projektverantwortung nur nominell.",
+        "beispiele": [
+          "Beim Dokumentenmanagement wird festgelegt, welche Abteilungen, Dokumentenarten und Altbestände enthalten sind und was ausdrücklich nicht dazugehört.",
+          "Der Auftrag klärt, ob die Projektleitung Arbeitszeit anderer Abteilungen einplanen und bis zu welchem Betrag beauftragen darf."
+        ],
+        "fallbeispiel": "Der Auftraggeber nennt Ziel und Termin, aber kein Budget und keine Befugnisse. Vor dem Projektstrukturplan wird ein schriftlicher Auftrag erstellt: Ziel mit Zahl und Termin, Abgrenzung, Budget, Entscheidungswege, Auftraggeber und Meilensteine. Erst nach Bestätigung beginnt die Detailplanung.",
+        "typische_fehler": "Mit der Detailplanung begonnen, obwohl Budget und Befugnisse offen sind. Außerdem wird Verantwortung versprochen, ohne Zugriff auf Personal oder Entscheidungen zu sichern.",
+        "verstaendnisfragen": [
+          "Welche Inhalte gehören in den Projektauftrag? Ziel, Abgrenzung, Termine, Budget und Befugnisse.",
+          "Warum muss das Ziel messbar sein? Damit Fortschritt und Abnahme objektiv geprüft werden können."
+        ],
+        "pruefungsbezug": "Bei unklarem Auftrag zuerst Projektauftrag ergänzen und Verantwortung von Befugnis unterscheiden.",
+        "merksatz": "Kein belastbarer Plan ohne schriftlichen Auftrag, klare Grenze und passende Befugnis."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

@@ -4,7 +4,71 @@
   "nummer": 1,
   "titel": "Veranstaltungen planen",
   "untertitel": "Erst das Ziel, dann der Raum. Nie umgekehrt.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Eine Veranstaltung braucht ein Ziel und eine Zielgruppe.",
+          "Ort und Budget hängen vom Konzept ab."
+        ],
+        "erklaerung": "Das Veranstaltungskonzept beantwortet in fester Reihenfolge warum, für wen, was, wann, wo und womit. Das Ziel wird messbar formuliert. Die Zielgruppe bestimmt Ort, Termin, Ansprache und Verpflegung. Der Raum wird erst nach Programm und Zielgruppe gebucht.",
+        "beispiele": [
+          "Eine Kundenveranstaltung wird zunächst nach Ziel, Zielgruppe und erwarteter Teilnehmerzahl beschrieben, bevor ein Raum gesucht wird.",
+          "Pausen und Ablauf gehören zum Was; Budget und Puffer zum Womit."
+        ],
+        "fallbeispiel": "Die Geschäftsführung plant in sechs Wochen eine Kundenveranstaltung mit externem Fachreferenten und 80 Gästen. Zuerst wird rückwärts geprüft, ob Referentensuche, Programm, Einladungsfrist und Druck noch in den Termin passen. Der Raum wird erst nach Zielgruppe und Ablauf ausgewählt; die Entscheidung über Verschieben oder Alternativen wird mit dem Zeitplan begründet.",
+        "typische_fehler": "Der Raum wird zuerst gebucht und bestimmt danach das Programm. Außerdem wird ein Ziel ohne Messgröße oder die Zielgruppe erst nach der Einladung festgelegt.",
+        "verstaendnisfragen": [
+          "Welche sechs Fragen beantwortet das Konzept? Warum, für wen, was, wann, wo und womit.",
+          "Warum wird der Raum zuletzt gebucht? Damit Zielgruppe und Programm nicht an eine voreilige Raumwahl angepasst werden."
+        ],
+        "pruefungsbezug": "Nenne die sechs Fragen in Reihenfolge und formuliere das Ziel mit einem später prüfbaren Maßstab.",
+        "merksatz": "Warum, für wen, was, wann, wo, womit — diese Kette trägt jedes Veranstaltungskonzept."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Aufgaben hängen zeitlich voneinander ab.",
+          "Der Veranstaltungstag steht häufig als fixer Endtermin fest."
+        ],
+        "erklaerung": "Veranstaltungen werden rückwärts vom Veranstaltungstag geplant. Referentensuche, Druck und Einladungsfrist haben langen Vorlauf und können den frühestmöglichen Termin bestimmen. Stornofristen gehören ebenfalls in den Zeitplan.",
+        "beispiele": [
+          "Ein externer Referent muss vor dem Druck und vor der Einladung feststehen; seine Verfügbarkeit kann den Termin begrenzen.",
+          "Die Einladung braucht eine Anmeldefrist; erst danach werden Teilnehmerzahl und Bewirtung belastbarer."
+        ],
+        "fallbeispiel": "Sechs Wochen reichen für eine Veranstaltung mit externem Fachreferenten und 80 Gästen möglicherweise nicht. Rückwärts werden Referentensuche, Programm, Einladung, Anmeldefrist, Druck und Bewirtung eingezeichnet. Ist die Kette länger als sechs Wochen, werden Terminverschiebung, interner Beitrag oder verkürzte Einladung als Alternativen vorgelegt.",
+        "typische_fehler": "Von heute vorwärts geplant und der fehlende Vorlauf erst spät erkannt. Stornofristen und Anmeldezeit werden nicht als Aufgaben mit Termin behandelt.",
+        "verstaendnisfragen": [
+          "Warum wird rückwärts geplant? Damit die Erreichbarkeit des fixen Veranstaltungstermins früh sichtbar wird.",
+          "Welche Aufgaben bestimmen oft den frühestmöglichen Termin? Referentensuche, Einladungsfrist und Druckproduktion."
+        ],
+        "pruefungsbezug": "Beginne mit dem Veranstaltungstag und arbeite entlang der Abhängigkeiten rückwärts; markiere den längsten Vorlauf.",
+        "merksatz": "Der Endtermin steht fest — die Planung läuft rückwärts bis zum heutigen Tag."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Ein Veranstaltungsbudget enthält fixe und mengenabhängige Posten.",
+          "Unvorhergesehenes braucht einen Puffer."
+        ],
+        "erklaerung": "Das Budget wird aus fixen Posten, mengenabhängigen Posten und einem Puffer von 5 bis 10 Prozent aufgebaut. Fixe Kosten ändern sich nicht mit der Teilnehmerzahl, mengenabhängige Kosten schon. Stornofristen und mögliche Nachkosten werden bei der Planung berücksichtigt.",
+        "beispiele": [
+          "Raummiete oder Technik können fixe Posten sein; Bewirtung und Druckmenge hängen von der Teilnehmerzahl ab.",
+          "Ein Puffer von 5 bis 10 Prozent wird zusätzlich zur errechneten Summe vorgesehen."
+        ],
+        "fallbeispiel": "Für 80 Gäste werden feste Technik- und Raumkosten sowie mengenabhängige Bewirtung und Druckkosten getrennt erfasst. Auf die Summe wird ein Puffer von 5 bis 10 Prozent aufgeschlagen. Stornofristen werden neben den Beträgen notiert, damit eine spätere Änderung nicht unbemerkt Zusatzkosten auslöst.",
+        "typische_fehler": "Alle Kosten werden als gleichartig behandelt oder der Puffer wird erst nach einer Überschreitung gesucht. Auch Teilnehmerzahl und Druckmenge werden nicht als variable Größen erkannt.",
+        "verstaendnisfragen": [
+          "Welche drei Bestandteile hat das Budget? Fixe Posten, mengenabhängige Posten und Puffer.",
+          "Wie hoch ist der vorgesehene Puffer? 5 bis 10 Prozent."
+        ],
+        "pruefungsbezug": "Trenne im Budget fixe und mengenabhängige Kosten und nenne Puffer sowie Stornofristen ausdrücklich.",
+        "merksatz": "Budget = fixe Kosten plus Mengenposten plus Puffer — mit Stornofristen im Zeitplan."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

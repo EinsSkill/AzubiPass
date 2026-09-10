@@ -5,6 +5,70 @@
   "titel": "Datenschutz und Datensicherheit",
   "untertitel": "Zwei verschiedene Dinge — und beide gehen dich an.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Daten können sich auf Menschen oder auf rein sachliche Dinge beziehen.",
+          "Datenschutz und Datensicherheit verfolgen unterschiedliche Schutzziele."
+        ],
+        "erklaerung": "Datenschutz schützt Menschen und ihr Recht, über die Verwendung personenbezogener Daten mitzubestimmen. Datensicherheit schützt Daten vor Verlust, Veränderung, Zerstörung und unbefugtem Zugriff, unabhängig davon, ob sie personenbezogen sind. Personenbezogene Daten beziehen sich auf bestimmte oder bestimmbare natürliche Personen; Beschäftigtendaten fallen darunter, reine Unternehmensdaten nicht. Jede Verarbeitung braucht nach Art. 6 DSGVO eine Rechtsgrundlage.",
+        "beispiele": [
+          "Die Frage, ob eine Bestelladresse überhaupt für Werbung genutzt werden darf, ist Datenschutz. Die verschlüsselte Festplatte schützt die gespeicherten Daten und gehört zur Datensicherheit.",
+          "Eine getrennt aufbewahrte Datensicherung schützt vor Datenverlust; Zweckbindung und Datenminimierung regeln dagegen, wofür personenbezogene Daten verarbeitet werden."
+        ],
+        "fallbeispiel": "Eine Kollegin verschickt eine Einladung an 80 Kunden und setzt alle Adressen in das An-Feld. Jede Empfängerin und jeder Empfänger sieht die Adressen der anderen. Das ist eine Datenschutzverletzung, weil personenbezogene Kontaktdaten gegenüber Dritten offengelegt wurden. Der Vorfall wird unverzüglich intern gemeldet, dokumentiert und auf erforderliche weitere Maßnahmen geprüft; korrekt wäre das Blindkopie-Feld oder ein Einzelversand gewesen.",
+        "typische_fehler": "Datenschutz wird mit einem Passwort oder einer Sicherungskopie gleichgesetzt. Umgekehrt wird Datensicherheit nur bei Personendaten gesehen. Außerdem wird angenommen, jede Verarbeitung sei erlaubt, sobald die Daten im Betrieb vorhanden sind.",
+        "verstaendnisfragen": [
+          "Was ist der Kernunterschied? Datenschutz entscheidet, ob und wozu Daten verarbeitet werden dürfen; Datensicherheit schützt die Daten vor Beeinträchtigungen.",
+          "Was bedeutet Verbot mit Erlaubnisvorbehalt? Ohne Rechtsgrundlage nach Art. 6 DSGVO darf die Verarbeitung nicht stattfinden."
+        ],
+        "pruefungsbezug": "Nenne in einer Antwort immer je zwei Beispiele für Datenschutz und Datensicherheit. Prüfe danach Rechtsgrundlage, Zweck und Schutzmaßnahmen getrennt.",
+        "merksatz": "Datenschutz schützt den Menschen hinter den Daten; Datensicherheit schützt die Daten selbst."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Betroffene Personen können Einfluss auf die Verarbeitung ihrer Daten nehmen.",
+          "Das Löschrecht steht nicht isoliert neben gesetzlichen Aufbewahrungspflichten."
+        ],
+        "erklaerung": "Zu den Betroffenenrechten gehören Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Bei einer Auskunft geht es auch um Zweck, Speicherdauer und Empfänger. Das Löschrecht entfällt, soweit eine gesetzliche Aufbewahrungspflicht entgegensteht; dann werden die Daten für die weitere Verwendung gesperrt und erst nach Ablauf der Frist gelöscht.",
+        "beispiele": [
+          "Eine Person kann Auskunft darüber verlangen, ob und welche Daten verarbeitet werden, zu welchem Zweck und wie lange.",
+          "Eine unrichtige Adresse wird berichtigt. Eine Rechnung darf dagegen wegen der Aufbewahrungspflicht nicht einfach gelöscht werden; sie wird gesperrt und später gelöscht."
+        ],
+        "fallbeispiel": "Eine Kundin verlangt die sofortige Löschung aller Daten, der Betrieb muss eine Rechnung aber noch aufbewahren. Zuerst werden die Datenarten getrennt betrachtet. Die Rechnung bleibt wegen der Aufbewahrungspflicht gespeichert, wird für andere Verwendungen gesperrt und nach Ablauf der Frist gelöscht. Für Daten ohne entgegenstehende Pflicht wird das Löschbegehren separat geprüft.",
+        "typische_fehler": "Alle Rechte werden als gleichbedeutend mit Löschung verstanden. Ebenso wird die Aufbewahrungspflicht als Erlaubnis für jede weitere Nutzung missverstanden; Sperrung und Zweckbindung bleiben bestehen.",
+        "verstaendnisfragen": [
+          "Welche Rechte gehören zum Grundkatalog? Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit und Widerspruch.",
+          "Was geschieht bei entgegenstehender Aufbewahrungspflicht? Die Daten werden nicht sofort gelöscht, sondern für die weitere Verwendung gesperrt."
+        ],
+        "pruefungsbezug": "Ordne ein Betroffenenbegehren zuerst dem verlangten Recht zu und prüfe danach Ausnahmen, besonders die Aufbewahrungspflicht beim Löschrecht.",
+        "merksatz": "Löschen ist ein Recht, aber Aufbewahrungspflichten können es zeitweise durch Sperrung begrenzen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Schutz entsteht aus technischen und organisatorischen Maßnahmen gemeinsam.",
+          "Viele Alltagsfehler entstehen durch falsche Empfänger oder zu weitgehende Zugriffe."
+        ],
+        "erklaerung": "Technische Maßnahmen wie Verschlüsselung, Zugriffsschutz und Datensicherung wirken nur zusammen mit organisatorischen Regeln wie Unterweisung, Zuständigkeiten und dokumentierten Abläufen. Im Alltag werden Adressfelder, Freigaben, Aufbewahrung und Zugriffsrechte bewusst geprüft. Ein Vorfall wird unverzüglich gemeldet und intern dokumentiert; danach wird das Risiko für weitere Melde- oder Informationspflichten bewertet.",
+        "beispiele": [
+          "Beim Versand an viele Empfänger wird BCC oder ein Einzelversand genutzt, damit die Adressen nicht offengelegt werden.",
+          "Eine getrennte Datensicherung hilft bei Verlust; eine Unterweisung zum Serienversand verhindert, dass der Fehler wiederholt wird."
+        ],
+        "fallbeispiel": "Nach dem Versand einer offenen Kundenliste wird der Vorfall intern gemeldet. Die zuständige Datenschutzstelle prüft, welche Daten sichtbar waren, dokumentiert den Vorgang und bewertet das Risiko. Anschließend werden die Mitarbeitenden zum Serienversand unterwiesen und — soweit möglich — technische Begrenzungen für das An-Feld eingerichtet.",
+        "typische_fehler": "Nur technische Mittel werden angeschafft, ohne Regeln und Schulung zu ändern. Oder ein Vorfall wird still korrigiert, ohne Meldung, Dokumentation und Risikoprüfung.",
+        "verstaendnisfragen": [
+          "Warum müssen technische und organisatorische Maßnahmen zusammenwirken? Technik kann einen Regel- oder Bedienfehler nicht allein verhindern; Organisation legt Zuständigkeit und Verhalten fest.",
+          "Was ist nach einer versehentlichen Offenlegung der erste organisatorische Schritt? Unverzüglich intern melden und den Vorfall dokumentieren."
+        ],
+        "pruefungsbezug": "Nenne bei einem Alltagsfall konkrete technische und organisatorische Maßnahmen und beschreibe die Reihenfolge Meldung, Dokumentation, Risikoprüfung und Nachbesserung.",
+        "merksatz": "Sichere Daten brauchen Technik, Regeln und aufmerksames Verhalten."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

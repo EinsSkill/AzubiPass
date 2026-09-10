@@ -5,6 +5,70 @@
   "titel": "Tarifrecht und Mitbestimmung",
   "untertitel": "Wer deine Arbeitsbedingungen aushandelt — und wer im Betrieb mitreden darf.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "d1",
+        "vorauswissen": [
+          "Arbeitsbedingungen können durch Gesetz, Vertrag und betriebliche Regelungen bestimmt werden.",
+          "Tarifparteien verhandeln kollektiv über Arbeitsbedingungen."
+        ],
+        "erklaerung": "Tarifautonomie bedeutet, dass Gewerkschaften und Arbeitgeberverbände Tarifbedingungen ohne staatliche Einmischung aushandeln. Dabei erfüllen die Tarifarten unterschiedliche Zwecke: Entgelttarifverträge regeln die Vergütung, Manteltarifverträge allgemeine Arbeitsbedingungen, Rahmentarifverträge Gruppen und Tätigkeitsmerkmale, Haustarifverträge die Bedingungen eines einzelnen Betriebs.",
+        "beispiele": [
+          "Eine Verhandlung über die Höhe des Entgelts gehört in den Entgelttarifvertrag; Regeln zu Arbeitszeit oder Urlaub werden im Manteltarifvertrag verortet.",
+          "Schließt ein einzelner Betrieb mit der Gewerkschaft eigene Bedingungen, liegt ein Haustarifvertrag vor. Das ist etwas anderes als eine allgemeine Vereinbarung eines Arbeitgeberverbands."
+        ],
+        "fallbeispiel": "In einer Aufgabe sollen vier Überschriften zugeordnet werden: ‚monatliche Vergütung‘, ‚allgemeine Arbeitsbedingungen‘, ‚Tätigkeitsgruppen‘ und ‚Regelung nur für Betrieb X‘. Die Lösung lautet Entgelttarifvertrag, Manteltarifvertrag, Rahmentarifvertrag und Haustarifvertrag. Entscheidend ist jeweils der Regelungsgegenstand, nicht die Länge des Dokuments.",
+        "typische_fehler": "Tarifvertrag und Betriebsvereinbarung werden gleichgesetzt. Außerdem wird angenommen, der Staat setze jeden Tarifinhalt fest. Tarifautonomie beschreibt gerade die Verhandlung durch Gewerkschaften und Arbeitgeberseite.",
+        "verstaendnisfragen": [
+          "Wer sind die typischen Tarifparteien? Gewerkschaften und Arbeitgeberverbände; bei einem Haustarifvertrag kann der einzelne Arbeitgeber beteiligt sein.",
+          "Woran erkennst du einen Entgelttarifvertrag? Sein Schwerpunkt liegt auf Vergütung beziehungsweise Entgelt."
+        ],
+        "pruefungsbezug": "Ordne Tarifarten über Schlüsselwörter zu: Entgelt = Geld, Mantel = allgemeine Bedingungen, Rahmen = Gruppen und Tätigkeiten, Haus = einzelner Betrieb.",
+        "merksatz": "Tarifautonomie heißt: Gewerkschaft und Arbeitgeberseite handeln die Bedingungen selbst aus."
+      },
+      {
+        "abschnitt": "d2",
+        "vorauswissen": [
+          "Mehrere Regelungsebenen können denselben Arbeitsbereich betreffen.",
+          "Eine rangniedrigere Regelung darf nicht automatisch schlechter sein."
+        ],
+        "erklaerung": "Die Grundrangfolge lautet Gesetz vor Tarifvertrag vor Betriebsvereinbarung vor Einzelvertrag. Das Günstigkeitsprinzip ist die wichtige Ausnahme: Eine rangniedrigere Regelung setzt sich durch, wenn sie für den Beschäftigten günstiger ist. Während der Laufzeit gilt außerdem die Friedenspflicht; erst danach kommen Streik und Aussperrung als tarifliche Druckmittel in Betracht.",
+        "beispiele": [
+          "Der Tarifvertrag sieht 28 Urlaubstage vor, der Arbeitsvertrag 30. Die günstigere Einzelregelung mit 30 Tagen bleibt bestehen.",
+          "Stehen im Arbeitsvertrag nur 25 Urlaubstage, kann die schlechtere Vereinbarung den Tarifstandard nicht unterschreiten; es bleiben die 28 tariflichen Tage."
+        ],
+        "fallbeispiel": "Ein Betrieb ist tarifgebunden. Im Tarifvertrag stehen 28 Urlaubstage, im einzelnen Arbeitsvertrag 30. Zuerst wird die Rangfolge notiert: Tarifvertrag steht über Einzelvertrag. Dann wird die Günstigkeit verglichen: 30 ist für den Beschäftigten günstiger als 28. Daher gilt die rangniedrigere, aber günstigere Regelung.",
+        "typische_fehler": "Die Rangfolge wird als starres ‚oben gewinnt immer‘ verstanden. Der Gegenfehler ist, jede Abweichung als günstiger zu bewerten, ohne denselben Regelungsgegenstand und die tatsächliche Verbesserung zu vergleichen.",
+        "verstaendnisfragen": [
+          "Was prüfst du nach dem Aufschreiben der Rangfolge? Ob die niedrigere Regelung im gleichen Bereich günstiger ist.",
+          "Was bedeutet Friedenspflicht? Während der Laufzeit eines Tarifvertrags sollen die Tarifparteien über die geregelten Gegenstände nicht streiken oder aussperren."
+        ],
+        "pruefungsbezug": "Schreibe bei Fällen die vier Ebenen in der richtigen Reihenfolge auf und vergleiche erst danach die konkrete Vergütung, Arbeitszeit oder Urlaubstage.",
+        "merksatz": "Die Rangfolge ordnet; das Günstigkeitsprinzip lässt die bessere Regelung der unteren Ebene gelten."
+      },
+      {
+        "abschnitt": "d3",
+        "vorauswissen": [
+          "Der Betriebsrat vertritt die gesamte Belegschaft.",
+          "Auszubildende und junge Beschäftigte können zusätzlich durch die JAV vertreten werden."
+        ],
+        "erklaerung": "Die Jugend- und Auszubildendenvertretung vertritt Beschäftigte unter 18 und Auszubildende. Sie nimmt Anliegen auf und bringt Anträge in den Betriebsrat ein. Der Betriebsrat besitzt die eigenen Beschluss- und Mitbestimmungsrechte und schließt Betriebsvereinbarungen. Die JAV vertritt also, der Betriebsrat entscheidet. Im öffentlichen Dienst ist der Personalrat die entsprechende Interessenvertretung.",
+        "beispiele": [
+          "Eine Frage zur Ausbildungsqualität kann die JAV aufnehmen und als Antrag in den Betriebsrat bringen; der Beschluss wird dort gefasst.",
+          "Bei der Umstellung von Gleitzeit auf feste Kernzeiten ist der Betriebsrat wegen der Lage der Arbeitszeit zu beteiligen."
+        ],
+        "fallbeispiel": "Ein Betrieb will die Arbeitszeit von Gleitzeit auf feste Kernzeiten umstellen. Die Lage der Arbeitszeit betrifft eine soziale Angelegenheit und damit die Mitbestimmung des Betriebsrats. Die JAV kann die Interessen der Azubis einbringen, hat aber kein eigenes Beschlussrecht. Das Ergebnis wird in der Regel durch den Betriebsrat, etwa in einer Betriebsvereinbarung, festgelegt.",
+        "typische_fehler": "JAV und Betriebsrat werden als gleichberechtigte Beschlussorgane behandelt. Ebenso wird die JAV nur auf Minderjährige beschränkt; sie vertritt auch Auszubildende, die 18 oder älter sind.",
+        "verstaendnisfragen": [
+          "Ab wann kann eine JAV gebildet werden? Nach § 60 BetrVG ab fünf Beschäftigten unter 18 Jahren oder in Ausbildung.",
+          "Wer beschließt eine Betriebsvereinbarung? Der Betriebsrat; die JAV bringt die Anliegen der von ihr vertretenen Gruppe ein."
+        ],
+        "pruefungsbezug": "Bei Beteiligungsfällen zuerst die Personengruppe und dann das zuständige Organ bestimmen. Der Merksatz ‚JAV vertritt, Betriebsrat entscheidet‘ verhindert die häufigste Verwechslung.",
+        "merksatz": "Die JAV bringt Azubi-Themen ein; der Betriebsrat besitzt das Beschluss- und Mitbestimmungsrecht."
+      }
+    ]
+  },
 
   "lernziele": [
     { "id": "lz1", "text": "Tarifvertragsarten und die Rolle der Tarifparteien erklären", "abschnitt": "d1" },

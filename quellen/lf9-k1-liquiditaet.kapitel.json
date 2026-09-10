@@ -4,7 +4,71 @@
   "nummer": 1,
   "titel": "Liquidität planen und sichern",
   "untertitel": "Am Gewinn ist noch keiner gestorben. An fehlendem Geld schon.",
-  "minuten": 30,
+ "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Rentabilität und Liquidität beantworten unterschiedliche Fragen.",
+          "Zeitpunkt und Höhe von Ein- und Auszahlungen entscheiden über Zahlungsfähigkeit."
+        ],
+        "erklaerung": "Rentabilität fragt, ob sich ein Geschäft lohnt; Liquidität fragt, ob fällige Zahlungen geleistet werden können. Ein Betrieb kann Gewinn erzielen und trotzdem zahlungsunfähig werden, wenn Kundenzahlungen später eingehen als Material, Löhne oder Steuern bezahlt werden müssen. Zahlungsunfähigkeit ist ein Insolvenzgrund und wirkt sofort.",
+        "beispiele": [
+          "Ein langer Zahlungsziel für Kunden kann die Liquidität belasten, obwohl die Leistung bereits als Ertrag und Gewinn erfasst ist.",
+          "Eine planbare Steuervorauszahlung kann eine Auszahlungsspitze bilden, wenn gleichzeitig weitere Zahlungen fällig werden."
+        ],
+        "fallbeispiel": "Ein Betrieb hat hohen Gewinn, aber eine leere Kasse. Die Erklärung liegt in der Zeit: Der Gewinn entsteht mit der Leistung, die Liquidität mit der tatsächlichen Zahlung. Wenn Kunden spät zahlen und Material, Löhne sowie Steuern früher fällig sind, entsteht eine Lücke. Deshalb wird die Zahlungsfähigkeit separat geprüft.",
+        "typische_fehler": "Gewinn und Geldbestand werden gleichgesetzt. Außerdem wird ein rentabler Betrieb automatisch für zahlungsfähig gehalten, obwohl die Zeitpunkte nicht passen.",
+        "verstaendnisfragen": [
+          "Welche Frage stellt Rentabilität, welche Liquidität? Rentabilität fragt nach dem wirtschaftlichen Lohn; Liquidität nach der Fähigkeit, fällige Zahlungen zu leisten.",
+          "Warum kann Gewinn ohne Liquidität entstehen? Weil Erträge und Zahlungen zeitlich auseinanderfallen."
+        ],
+        "pruefungsbezug": "Bei Fallaufgaben zuerst klären, ob nach Erfolg oder nach Zahlung gefragt wird. Danach die zeitliche Lücke zwischen Ein- und Auszahlungen benennen.",
+        "merksatz": "Gewinn sagt, ob es sich lohnt; Liquidität sagt, ob heute gezahlt werden kann."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Ein Liquiditätsplan betrachtet Zahlungszeitpunkte.",
+          "Erträge und Aufwendungen sind nicht dasselbe wie Ein- und Auszahlungen."
+        ],
+        "erklaerung": "Der Liquiditätsplan stellt erwartete Einzahlungen und Auszahlungen gegenüber. Abschreibungen gehören nicht hinein, wenn ihnen keine Auszahlung gegenübersteht. Große Auszahlungsspitzen wie Steuern und Sonderzahlungen werden früh eingeplant. Der Plan wird rollierend fortgeschrieben, damit kommende Unterdeckungen sichtbar werden.",
+        "beispiele": [
+          "Eine Kundenzahlung wird in dem Monat eingeplant, in dem sie voraussichtlich eingeht, nicht nur in dem Monat der Leistung.",
+          "Eine Steuervorauszahlung wird als Auszahlungsspitze im betreffenden Zeitraum berücksichtigt; eine Abschreibung ohne Geldfluss nicht."
+        ],
+        "fallbeispiel": "Für März wird eine Unterdeckung von 24.000 € erwartet, weil eine Steuervorauszahlung mit der Zahlung des Weihnachtsgeldes zusammentrifft. Zuerst wird geprüft, ob die Lücke einmalig oder wiederkehrend ist. Die Spitze wird im Liquiditätsplan sichtbar gemacht und rechtzeitig mit einer Kreditlinie sowie Maßnahmen auf Ein- und Auszahlungsseite vorbereitet.",
+        "typische_fehler": "Abschreibungen als Auszahlung eintragen oder nur die Jahresgesamtsumme statt die Fälligkeit betrachten. Auch ein Plan ohne regelmäßige Fortschreibung verliert seinen Nutzen.",
+        "verstaendnisfragen": [
+          "Was gehört in den Liquiditätsplan? Tatsächliche und erwartete Ein- und Auszahlungen mit ihren Zeitpunkten.",
+          "Warum taucht eine Abschreibung dort nicht auf? Weil ihr keine Auszahlung gegenübersteht."
+        ],
+        "pruefungsbezug": "Trenne in Tabellen immer Zahlungen von Erträgen und Aufwendungen. Markiere Auszahlungsspitzen und rechne die Unterdeckung im betroffenen Zeitraum.",
+        "merksatz": "Der Liquiditätsplan rechnet mit Geldbewegungen, nicht mit Buchungsbegriffen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Liquidität kann über Einzahlungen, Auszahlungen und Reserven beeinflusst werden.",
+          "Fremdes Geld löst nicht automatisch ein dauerhaftes Strukturproblem."
+        ],
+        "erklaerung": "Drei Hebel verbessern die Liquidität: schneller einnehmen, später ausgeben und eine Reserve bereithalten. Dazu gehören konsequentes Mahnwesen, Skonto für schnelle Kundenzahlung, das Ausschöpfen eigener Zahlungsziele, das Verschieben nicht dringender Investitionen und Factoring. Der Kontokorrentkredit ist für kurzfristige Spitzen gedacht, flexibel, aber teuer; zuerst werden die eigenen Abläufe verbessert.",
+        "beispiele": [
+          "Ein Mahnwesen beschleunigt Einzahlungen, verursacht aber Arbeitsaufwand und kann Kunden verärgern.",
+          "Leasing vermeidet eine große Einmalzahlung, ist über die Laufzeit aber teurer; der Kontokorrent deckt nur eine kurzfristige Spitze."
+        ],
+        "fallbeispiel": "Bei der Unterdeckung von 24.000 € wird rechtzeitig eine Kreditlinie in ausreichender Höhe vereinbart, weil sie nur für den beanspruchten Betrag und die tatsächliche Dauer Zinsen kostet. Parallel werden Forderungen angemahnt, Skonto angeboten, nicht dringende Investitionen verschoben und eigene Zahlungsziele ausgeschöpft. So wird die Ursache nicht allein mit teurem Fremdgeld überdeckt.",
+        "typische_fehler": "Der Kontokorrent wird als Dauerfinanzierung eingesetzt oder nur die Kreditaufnahme betrachtet. Kosten von Skonto, Factoring, Mahnwesen und Leasing werden nicht gegeneinander abgewogen.",
+        "verstaendnisfragen": [
+          "Welche drei Hebel gibt es? Schneller einnehmen, später ausgeben, Reserve bereithalten.",
+          "Wofür ist der Kontokorrentkredit gedacht? Für kurzfristige Liquiditätsspitzen, nicht für dauerhaften Bedarf."
+        ],
+        "pruefungsbezug": "Ordne Maßnahmen zuerst Einzahlungs- oder Auszahlungsseite zu und nenne dann ihre Kosten oder Nebenwirkungen.",
+        "merksatz": "Erst Abläufe verbessern, dann fremdes Geld für die verbleibende Spitze nutzen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

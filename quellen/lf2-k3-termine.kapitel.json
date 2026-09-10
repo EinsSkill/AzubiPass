@@ -5,6 +5,70 @@
   "titel": "Termine und Fristen im Griff",
   "untertitel": "Ein vergessener Termin ist peinlich. Eine versäumte Frist kostet Geld.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Termine haben einen festen Zeitpunkt; Fristen geben einen Zeitraum bis zu einem Ende vor.",
+          "Die Verschiebbarkeit entscheidet darüber, wie viel Puffer nötig ist."
+        ],
+        "erklaerung": "Feste Termine werden zuerst in den Kalender eingetragen, bewegliche Termine danach darum herum geplant. Ein interner Besprechungstermin kann meist verlegt werden, ein Gerichtstermin nicht. Bei auswärtigen Terminen gehören Hin- und Rückweg in den Kalender. Fristen werden zusätzlich überwacht und nicht wie normale Termine behandelt.",
+        "beispiele": [
+          "Ein Termin von 14 bis 15 Uhr in einer anderen Stadt blockiert nicht nur die Besprechungsstunde, sondern auch die erforderliche Wegzeit in beide Richtungen.",
+          "Ein fester Prüfungstermin kommt zuerst in den Kalender; eine interne Besprechung wird anschließend so gelegt, dass ausreichend Puffer bleibt."
+        ],
+        "fallbeispiel": "Für einen Termin in einer anderen Stadt werden 14 bis 15 Uhr als Gesprächszeit und jeweils eine Stunde Wegzeit benötigt. Im Kalender wird daher der Zeitraum von 13 bis 16 Uhr blockiert. Erst danach werden bewegliche Aufgaben eingetragen; eine Frist mit Rechtsfolge kommt zusätzlich in die Fristenkontrolle mit Vorfrist.",
+        "typische_fehler": "Nur die eigentliche Besprechungszeit wird blockiert oder eine Frist wie ein einzelner Termin notiert. Ebenso wird ein verlegbarer interner Termin genauso starr behandelt wie ein nicht verschiebbarer Termin.",
+        "verstaendnisfragen": [
+          "Welche Termine kommen zuerst in den Kalender? Feste und nicht oder nur schwer verschiebbare Termine.",
+          "Was gehört bei einem auswärtigen Termin zusätzlich hinein? Die Wegzeit für Hin- und Rückweg."
+        ],
+        "pruefungsbezug": "Begründe die Kalenderplanung mit Verschiebbarkeit, Wegzeit und Puffer. Trenne anschließend Terminplanung und Fristenkontrolle.",
+        "merksatz": "Feste Termine zuerst, bewegliche darum herum; bei auswärtigen Terminen zählt der ganze Weg."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Viele Vorgänge sind bearbeitet, aber noch nicht abgeschlossen.",
+          "Eine Erinnerung ist nicht dasselbe wie eine rechtliche Fristenkontrolle."
+        ],
+        "erklaerung": "Die klassische Wiedervorlage hat 31 Tagesfächer und 12 Monatsfächer. Ein Vorgang erhält ein Wiedervorlagedatum und wird dort einsortiert. Jeden Morgen wird das Tagesfach geleert: Eingegangene Antworten werden abgeschlossen und abgelegt; ausgebliebene Antworten führen zu einem Nachfassen und einem neuen Datum. Am Monatsende wird das Monatsfach des Folgemonats auf Tagesfächer verteilt. Rechtsfristen benötigen daneben eine eigene Kontrolle mit Vorfrist.",
+        "beispiele": [
+          "Nach einer Anfrage an einen Lieferer wird der Vorgang auf ein Wiedervorlagedatum gelegt. Ist die Antwort da, wird abgelegt; fehlt sie, wird nachgefasst.",
+          "Eine Mängelrüge wird nicht nur in die Wiedervorlage gelegt, sondern zusätzlich in die Fristenkontrolle aufgenommen, weil Rechte daran hängen."
+        ],
+        "fallbeispiel": "Am 2. April wird eine Mängelrüge mit der Bitte um Stellungnahme binnen zehn Tagen verschickt. Am 20. April ist keine Antwort eingegangen. Organisatorisch hätte der Vorgang ein Wiedervorlagedatum mit Vorlauf sowie einen Eintrag in der Fristenkontrolle erhalten müssen. Jetzt wird sofort schriftlich nachgefasst und eine neue kurze Frist gesetzt; der Zugang sollte nachweisbar sein.",
+        "typische_fehler": "Die Wiedervorlage wird als passiver Stapel verstanden oder nur am Monatsende angesehen. Außerdem wird sie als Ersatz für eine Fristenkontrolle behandelt, obwohl sie keine rechtlichen Fristfolgen überwacht.",
+        "verstaendnisfragen": [
+          "Was geschieht bei ausgebliebener Antwort? Der Vorgang wird nachgefasst und mit einem neuen Wiedervorlagedatum versehen.",
+          "Welche Schwachstelle hat das System? Es funktioniert nur, wenn das Tagesfach tatsächlich jeden Morgen bearbeitet wird."
+        ],
+        "pruefungsbezug": "Beschreibe in der richtigen Reihenfolge: Datum setzen, einsortieren, Tagesfach leeren, erledigen oder nachfassen, neu terminieren. Bei Rechtsfolgen immer die zusätzliche Fristenkontrolle nennen.",
+        "merksatz": "Wiedervorlage erinnert ans Nachfassen; die Fristenkontrolle schützt vor Rechtsverlust."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Fristen werden durch ein Ereignis ausgelöst, etwa Zugang oder Absendung.",
+          "Der Ereignistag und das Fristende müssen getrennt behandelt werden."
+        ],
+        "erklaerung": "Bei der Fristberechnung zählt der Tag des Ereignisses nicht mit. Die Frist beginnt am folgenden Tag. Der letzte Tag zählt vollständig; fällt er auf Samstag, Sonntag oder Feiertag, verschiebt sich das Ende auf den nächsten Werktag. Maßgeblich ist bei Zugangssituationen der Eingang, nicht die Absendung. Eine Vorfrist schafft zusätzlich Handlungsspielraum.",
+        "beispiele": [
+          "Geht eine Rechnung am 3. Mai zu und beträgt das Zahlungsziel 30 Tage, beginnt die Frist am 4. Mai.",
+          "Geht ein Angebot am Montag, 8. September, zu und gilt zwei Wochen, endet die Bindungsfrist am Montag, 22. September, wenn dieser Tag ein Werktag ist."
+        ],
+        "fallbeispiel": "Ein Angebot geht am Montag, 8. September, zu und gilt zwei Wochen. Der Zugangstag wird nicht mitgezählt, also beginnt die Frist am 9. September. Zwei Wochen führen zum Montag, 22. September. Weil dieser Tag ein Werktag ist, wird nicht verschoben. Für die interne Entscheidung wird zusätzlich eine Vorfrist etwa am 18. September gesetzt.",
+        "typische_fehler": "Der Zugangstag wird mitgezählt, eine Monats- oder Wochenfrist wird pauschal in 30 Tage umgerechnet oder ein Wochenende nicht verschoben. Häufig wird außerdem die Absendung statt des Zugangs verwendet.",
+        "verstaendnisfragen": [
+          "Welcher Tag zählt bei der Fristberechnung nicht mit? Der Tag des Ereignisses beziehungsweise des Zugangs.",
+          "Was passiert bei einem Fristende am Sonntag? Das Ende verschiebt sich auf den nächsten Werktag."
+        ],
+        "pruefungsbezug": "Schreibe vor jeder Rechnung drei Regeln hin: Ereignistag zählt nicht, Zugang ist maßgeblich, Wochenende oder Feiertag verschiebt. Danach erst den Kalender zählen.",
+        "merksatz": "Ereignistag nicht zählen, Zugang prüfen, Wochenenden nach hinten schieben — und eine Vorfrist setzen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

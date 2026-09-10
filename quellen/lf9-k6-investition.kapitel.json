@@ -4,7 +4,71 @@
   "nummer": 6,
   "titel": "Investitionen beurteilen",
   "untertitel": "Drei Rechenwege, drei verschiedene Antworten auf dieselbe Frage.",
-  "minuten": 30,
+ "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Investitionen verursachen Anschaffungskosten und laufende Kosten.",
+          "Statische Verfahren arbeiten mit Durchschnittswerten."
+        ],
+        "erklaerung": "Der Kostenvergleich betrachtet Abschreibung, kalkulatorische Zinsen und Betriebskosten. Die kalkulatorischen Zinsen beziehen sich auf das durchschnittlich gebundene Kapital, bei gleichmäßiger Wertminderung also auf den halben Anschaffungswert. Bei unterschiedlichen Mengen werden Kosten je Stück verglichen.",
+        "beispiele": [
+          "Bei 120.000 € Anschaffung und acht Jahren Nutzungsdauer beträgt die jährliche Abschreibung 120.000 € ÷ 8 = 15.000 €.",
+          "Bei gleichmäßigem Wertverzehr wird für die kalkulatorischen Zinsen das durchschnittliche Kapital angesetzt, nicht der volle Anfangswert."
+        ],
+        "fallbeispiel": "Eine Anlage kostet 120.000 €, läuft acht Jahre, hat keinen Restwert, der kalkulatorische Zinssatz beträgt 5 % und die Betriebskosten betragen 41.000 € jährlich. Abschreibung: 120.000 € ÷ 8 = 15.000 €. Durchschnittlich gebundenes Kapital: 60.000 €. Zinsen: 60.000 € × 5 % = 3.000 €. Gesamtkosten: 15.000 € + 3.000 € + 41.000 € = 59.000 € pro Jahr.",
+        "typische_fehler": "Die Abschreibung wird durch den falschen Zeitraum geteilt oder die Zinsen auf den vollen Anschaffungswert gerechnet. Bei verschiedenen Mengen werden Gesamtkosten statt Stückkosten verglichen.",
+        "verstaendnisfragen": [
+          "Welche drei Bestandteile enthält der Kostenvergleich? Abschreibung, kalkulatorische Zinsen und Betriebskosten.",
+          "Worauf werden kalkulatorische Zinsen bei gleichmäßiger Wertminderung gerechnet? Auf das halbe beziehungsweise durchschnittlich gebundene Anschaffungskapital."
+        ],
+        "pruefungsbezug": "Schreibe die drei Kostenbestandteile hin, berechne das durchschnittliche Kapital und teile bei Mengenunterschieden auf Stück um.",
+        "merksatz": "Kostenvergleich heißt: Abschreibung plus kalkulatorische Zinsen plus Betriebskosten."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Gewinn setzt Erlös und Kosten ins Verhältnis.",
+          "Amortisation misst Rückflusszeit, nicht automatisch Rentabilität."
+        ],
+        "erklaerung": "Der Gewinnvergleich stellt Erlöse und Kosten gegenüber. Der Rentabilitätsvergleich setzt den Gewinn ins Verhältnis zum gebundenen Kapital. Die Amortisationsdauer lautet Anschaffungswert ÷ Rückfluss; der Rückfluss besteht aus Gewinn plus Abschreibung. Gewinn allein würde den Kapitalrückfluss unterschätzen.",
+        "beispiele": [
+          "Bei 78.000 € Erlös und 59.000 € Kosten beträgt der Jahresgewinn 19.000 €.",
+          "Bei 19.000 € Gewinn und 15.000 € Abschreibung beträgt der Rückfluss 34.000 €; bei 120.000 € Anschaffung ergibt das 120.000 € ÷ 34.000 € ≈ 3,5 Jahre."
+        ],
+        "fallbeispiel": "Für dieselbe Anlage werden Gewinn, Rentabilität und Amortisation berechnet. Gewinn: 78.000 € − 59.000 € = 19.000 €. Rentabilität auf 60.000 € Durchschnittskapital: 19.000 € ÷ 60.000 € ≈ 31,7 %. Rückfluss: 19.000 € + 15.000 € = 34.000 €. Amortisation: 120.000 € ÷ 34.000 € ≈ 3,5 Jahre.",
+        "typische_fehler": "Für die Amortisation wird nur der Gewinn verwendet oder die Rentabilität auf den Anschaffungswert statt auf das gebundene Kapital bezogen. Auch Gewinn und Rückfluss werden als identisch behandelt.",
+        "verstaendnisfragen": [
+          "Wie lautet die Amortisationsformel? Anschaffungswert ÷ Rückfluss.",
+          "Was ist der Rückfluss? Gewinn plus Abschreibung."
+        ],
+        "pruefungsbezug": "Formel zuerst notieren, dann Gewinn, gebundenes Kapital und Rückfluss getrennt berechnen. Rundung nachvollziehbar angeben.",
+        "merksatz": "Amortisation rechnet mit dem Rückfluss — und der enthält Gewinn plus Abschreibung."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Statische Verfahren vereinfachen die Zeit und verwenden Durchschnittswerte.",
+          "Eine Rechnung kann nicht alle betrieblichen Entscheidungskriterien abbilden."
+        ],
+        "erklaerung": "Statische Verfahren berücksichtigen den Zeitwert des Geldes nicht und arbeiten mit einem Durchschnittsjahr. Die Amortisation ist deshalb ein Risikomaß, kein vollständiges Rentabilitätsmaß. Zusätzlich gehören Kapazitätsreserve, Qualität, Abhängigkeit vom Lieferer und Finanzierungssicherheit in die Beurteilung.",
+        "beispiele": [
+          "Eine kleinere Anlage kann sich schneller amortisieren, obwohl eine größere Anlage den höheren absoluten Gewinn erzielt.",
+          "Bei langer Nutzungsdauer wird zusätzlich eine dynamische Rechnung erwogen, weil der Zeitwert des Geldes sonst fehlt."
+        ],
+        "fallbeispiel": "Anlage A kostet 80.000 € und amortisiert sich in 2,5 Jahren. Anlage B kostet 150.000 €, amortisiert sich in vier Jahren, bringt aber doppelt so viel Gewinn. Die Amortisation allein entscheidet nicht: A ist schneller und risikoärmer, B kann bei langer Nutzung den höheren Gewinn bringen. Deshalb werden Nutzungsdauer, Absatzprognose, Finanzierung und nicht messbare Kriterien ergänzt.",
+        "typische_fehler": "Die kürzeste Amortisationsdauer wird automatisch als beste Investition gewählt. Ebenso wird ein Rechenergebnis als vollständig angesehen, ohne Grenzen der statischen Methode zu nennen.",
+        "verstaendnisfragen": [
+          "Was berücksichtigen statische Verfahren nicht? Den Zeitwert des Geldes.",
+          "Warum ist Amortisation kein Rentabilitätsmaß? Sie misst nur die Rückflussdauer und nicht den Gewinn im Verhältnis zum Kapital."
+        ],
+        "pruefungsbezug": "Nenne nach jedem statischen Ergebnis mindestens die Methodegrenze und zwei qualitative Entscheidungskriterien.",
+        "merksatz": "Zahlen ordnen die Investition; sie ersetzen nicht die Beurteilung von Risiko, Qualität und Zukunft."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

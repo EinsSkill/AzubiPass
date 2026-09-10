@@ -5,6 +5,70 @@
   "titel": "Der Betrieb in der Wirtschaft",
   "untertitel": "Bedürfnisse, Arbeitsteilung und der Wirtschaftskreislauf — wo dein Betrieb im Ganzen steht.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "f1",
+        "vorauswissen": [
+          "Menschen haben mehr Wünsche, als mit den vorhandenen Mitteln gleichzeitig erfüllt werden können.",
+          "Wirtschaften bedeutet, mit knappen Mitteln Bedürfnisse zu befriedigen."
+        ],
+        "erklaerung": "Ein Bedürfnis ist das Gefühl eines Mangels mit dem Wunsch, ihn zu beseitigen. Wird daraus Kaufkraft, entsteht Bedarf. Tritt dieser Bedarf am Markt tatsächlich auf, spricht man von Nachfrage. Die Stufen beschreiben also nicht drei verschiedene Wünsche, sondern drei Grade der wirtschaftlichen Konkretisierung.",
+        "beispiele": [
+          "Der Wunsch nach einem neuen Laptop ist zunächst ein Bedürfnis. Mit ausreichendem Geld wird er zum Bedarf; mit einer konkreten Suche und Bestellung am Markt zur Nachfrage.",
+          "Luft kann als freies Gut gelten, während ein entgeltlich zu beschaffendes Büroprogramm ein wirtschaftliches Gut ist. Konsumgüter dienen der unmittelbaren Nutzung, Produktionsgüter der Leistungserstellung."
+        ],
+        "fallbeispiel": "Eine Auszubildende möchte ein Fahrrad, hat aber noch kein Geld dafür. Die Einordnung lautet Bedürfnis. Nach dem Sparen mit ausreichender Kaufkraft wird daraus Bedarf. Erst wenn sie im Geschäft konkret nach einem Modell fragt oder es bestellt, liegt Nachfrage vor. Die Kaufkraft trennt Bedürfnis und Bedarf; der tatsächliche Marktauftritt trennt Bedarf und Nachfrage.",
+        "typische_fehler": "Bedürfnis und Bedarf werden als Synonyme benutzt. Ebenso wird jede Kaufabsicht schon als Nachfrage bezeichnet. Für die Nachfrage muss der Bedarf am Markt auftreten.",
+        "verstaendnisfragen": [
+          "Was kommt zum Bedürfnis hinzu, damit Bedarf entsteht? Kaufkraft.",
+          "Was macht aus Bedarf Nachfrage? Das tatsächliche Auftreten am Markt, etwa durch eine konkrete Anfrage oder Bestellung."
+        ],
+        "pruefungsbezug": "Unterstreiche in einer Fallaufgabe die Signalwörter Wunsch, Kaufkraft und Marktauftritt. Daraus ergibt sich meist direkt die richtige Stufe.",
+        "merksatz": "Bedürfnis + Kaufkraft = Bedarf; Bedarf am Markt = Nachfrage."
+      },
+      {
+        "abschnitt": "f2",
+        "vorauswissen": [
+          "Nicht jeder Betrieb erstellt alle Leistungen selbst.",
+          "Spezialisierung verändert Produktivität und Abhängigkeit."
+        ],
+        "erklaerung": "Arbeitsteilung zerlegt einen Produktions- oder Geschäftsprozess in Teilaufgaben. Durch Spezialisierung steigt die Produktivität, weil Fähigkeiten und Abläufe gezielter eingesetzt werden können. Gleichzeitig entsteht Abhängigkeit: Jeder Beteiligte braucht die Leistungen der anderen. Damit die Teilprodukte zusammenfinden, ist Tausch über einen funktionierenden Markt erforderlich.",
+        "beispiele": [
+          "Im Büro bearbeitet eine Person den Posteingang, eine zweite erstellt Angebote und eine dritte prüft Rechnungen. Jede Aufgabe wird geübter, der Gesamtprozess hängt aber von allen Stationen ab.",
+          "Ein Betrieb kauft eine Teilkomponente von einem anderen Unternehmen, statt sie selbst herzustellen. Die Spezialisierung kann die Produktivität erhöhen, schafft aber eine Abhängigkeit von Lieferung und Markt."
+        ],
+        "fallbeispiel": "Ein Unternehmen teilt den Auftragsprozess in Anfrage, Angebot, Bestellung und Rechnung auf. Die Mitarbeitenden werden an ihren Teilaufgaben schneller und sicherer. Fällt jedoch die Stelle für die Bestellung aus, stockt der Gesamtprozess. Die Lösung zeigt beide Wirkungen der Arbeitsteilung: höhere Produktivität und wachsende gegenseitige Abhängigkeit, die durch Tausch und Abstimmung aufgefangen werden muss.",
+        "typische_fehler": "Arbeitsteilung wird nur als ‚mehr Personen‘ verstanden. Entscheidend ist die Aufteilung eines Prozesses in Teilaufgaben. Außerdem wird der Produktivitätsvorteil genannt, ohne die Abhängigkeit und die Notwendigkeit des Tauschs zu berücksichtigen.",
+        "verstaendnisfragen": [
+          "Warum kann Arbeitsteilung die Produktivität steigern? Weil sich Beteiligte spezialisieren und Abläufe gezielter bearbeiten.",
+          "Warum braucht Arbeitsteilung einen Markt? Weil die spezialisierten Beteiligten ihre unterschiedlichen Leistungen tauschen müssen."
+        ],
+        "pruefungsbezug": "Nenne bei einer Bewertungsaufgabe immer beide Seiten: Produktivität als Vorteil, Abhängigkeit und Tauschbedarf als Folge.",
+        "merksatz": "Spezialisierung macht schneller, Tausch verbindet die Spezialisten — und macht sie voneinander abhängig."
+      },
+      {
+        "abschnitt": "f3",
+        "vorauswissen": [
+          "Haushalte und Unternehmen tauschen Leistungen und Geld.",
+          "Ein Güterstrom hat einen entgegengesetzten Geldstrom."
+        ],
+        "erklaerung": "Im einfachen Wirtschaftskreislauf stehen private Haushalte und Unternehmen gegenüber. Haushalte bieten Arbeitsleistung an und erhalten Löhne; Unternehmen liefern Güter und Dienstleistungen und erhalten Konsumausgaben. Der erweiterte Kreislauf ergänzt Staat, Banken und Ausland. Steuern, staatliche Leistungen, Ersparnisse, Kredite, Importe und Exporte erweitern die vier Grundströme.",
+        "beispiele": [
+          "Arbeitsleistung fließt vom Haushalt zum Unternehmen; Lohn fließt in der Gegenrichtung. Das ist ein Paar aus Güter- und Geldstrom.",
+          "Beim Ausland gehören Import und Export zusammen. Bei Banken stehen Ersparnisse der Haushalte den Krediten an Unternehmen gegenüber."
+        ],
+        "fallbeispiel": "Eine Zeichnung soll den einfachen Kreislauf darstellen. Zuerst werden Haushalte und Unternehmen als zwei Pole eingetragen. Dann folgen vier Pfeile: Arbeitsleistung zum Unternehmen, Löhne zum Haushalt, Güter und Dienstleistungen zum Haushalt und Konsumausgaben zum Unternehmen. Erst danach werden im erweiterten Modell Staat, Banken und Ausland ergänzt; jeder Güterstrom erhält seinen entgegengesetzten Geldstrom.",
+        "typische_fehler": "Geld- und Güterströme werden in dieselbe Richtung gezeichnet oder die vier Pfeile des einfachen Modells mit den Erweiterungen vermischt. Auch ein Pfeil ohne Beschriftung ist problematisch, weil die Stromart geprüft werden muss.",
+        "verstaendnisfragen": [
+          "Welche vier Ströme gehören in das einfache Modell? Arbeitsleistung, Löhne und Gehälter, Güter und Dienstleistungen sowie Konsumausgaben.",
+          "Welche Pole ergänzt der erweiterte Kreislauf? Staat, Banken und Ausland."
+        ],
+        "pruefungsbezug": "Zeichne immer zuerst das einfache Zwei-Pole-Modell. Beschrifte jeden Pfeil als Güter- oder Geldstrom und ergänze die drei Erweiterungen erst im zweiten Schritt.",
+        "merksatz": "Wo eine Leistung hinfließt, fließt eine Geldzahlung in die Gegenrichtung."
+      }
+    ]
+  },
 
   "lernziele": [
     { "id": "lz1", "text": "Bedürfnisse, Bedarf und Nachfrage voneinander abgrenzen", "abschnitt": "f1" },

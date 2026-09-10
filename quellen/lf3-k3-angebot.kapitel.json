@@ -5,6 +5,70 @@
   "titel": "Anfrage und Angebot",
   "untertitel": "Was drinstehen muss — und wie du dich aus der Bindung nimmst.",
   "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "c1",
+        "vorauswissen": [
+          "Eine Anfrage erkundet Waren, Mengen oder Konditionen.",
+          "Nicht jede Anfrage enthält schon einen verbindlichen Kaufwillen."
+        ],
+        "erklaerung": "Die allgemeine Anfrage bittet um einen Überblick, etwa durch Katalog oder Preisliste. Die bestimmte Anfrage nennt konkrete Ware, Menge und Termin und führt typischerweise zu einem individuellen Angebot. Katalog, Prospekt und Schaufenster sind keine Angebote im Rechtssinn, sondern Aufforderungen, selbst ein Angebot abzugeben.",
+        "beispiele": [
+          "‚Bitte senden Sie uns Ihren Katalog‘ ist eine allgemeine Anfrage; die passende Antwort sind Katalog, Preisliste oder Prospekt.",
+          "‚Wir benötigen 200 Ordner bis zum 15. September‘ ist eine bestimmte Anfrage; daraus wird ein individuelles Angebot erstellt."
+        ],
+        "fallbeispiel": "Eine Kundin bittet telefonisch um ein Angebot über 200 Ordner und sagt am nächsten Tag ab. Die Anfrage war rechtlich unverbindlich und hat keinen Kaufvertrag begründet. Dass der Betrieb bereits Arbeit in die Angebotserstellung gesteckt hat, ändert die Einordnung nicht.",
+        "typische_fehler": "Ein Katalog wird als bindendes Angebot behandelt oder eine allgemeine Anfrage mit einer Bestellung gleichgesetzt. Entscheidend ist, ob bereits eine bestimmte, rechtlich bindende Erklärung vorliegt.",
+        "verstaendnisfragen": [
+          "Was unterscheidet allgemeine und bestimmte Anfrage? Die bestimmte Anfrage nennt konkrete Ware, Menge und Termin; die allgemeine bittet nur um Überblick.",
+          "Warum ist ein Katalog kein Angebot? Weil er zur Abgabe eines eigenen Angebots auffordert und den Anbieter nicht an jeden gedruckten Preis bindet."
+        ],
+        "pruefungsbezug": "Markiere konkrete Angaben zu Ware, Menge und Termin. Fehlen sie, spricht das für eine allgemeine Anfrage; vorhanden sind sie, folgt meist ein individuelles Angebot.",
+        "merksatz": "Die Anfrage eröffnet den Verkauf, bindet aber noch niemanden."
+      },
+      {
+        "abschnitt": "c2",
+        "vorauswissen": [
+          "Ein Angebot muss so bestimmt sein, dass ein schlichtes Ja genügt.",
+          "Preis und Lieferumfang müssen für beide Seiten erkennbar sein."
+        ],
+        "erklaerung": "Ein vollständiges Angebot enthält Art und Güte der Ware, Menge, Preis einschließlich Rabatten und Umsatzsteuer, Liefer- und Zahlungsbedingungen, Liefertermin und Bindungsfrist. Erfüllungsort und Gerichtsstand können über AGB geregelt sein. Fehlt eine wesentliche Angabe, ist eine Rückfrage nötig; die Erklärung ist nicht so bestimmt, dass ein einfaches Ja den Vertrag bilden kann.",
+        "beispiele": [
+          "Bei 200 Ordnern werden Bezeichnung, Menge, Preis, Liefertermin und Zahlungsbedingung ausdrücklich genannt.",
+          "Eine Bindungsfrist wie ‚gültig bis 31.08.‘ schafft Klarheit darüber, wie lange der Kunde annehmen kann."
+        ],
+        "fallbeispiel": "Ein Angebot nennt Ware und Menge, lässt aber den Liefertermin und die Bindungsfrist offen. Vor der Annahme wird die Angebotsvorlage ergänzt. So sind die Konditionen bestimmt und der Betrieb weiß, wie lange die Bindung läuft. Die Bindungsfrist verhindert, dass die Antwortzeit allein aus den Umständen ausgelegt werden muss.",
+        "typische_fehler": "Rabatte werden einfach zum Preis addiert oder der Liefertermin nicht genannt. Häufig fehlt außerdem die Bindungsfrist, obwohl der Betrieb die Dauer der Bindung steuern möchte.",
+        "verstaendnisfragen": [
+          "Welche Angaben müssen mindestens geprüft werden? Art und Güte, Menge, Preis, Liefer- und Zahlungsbedingungen, Termin und Bindungsfrist.",
+          "Warum ist eine Bindungsfrist praktisch wichtig? Sie legt fest, bis wann der Kunde das Angebot annehmen kann."
+        ],
+        "pruefungsbezug": "Nutze bei Fehlersuchen eine Checkliste und prüfe besonders Preisbestandteile, Termin und Frist. Begründe jede fehlende Angabe mit ihrer rechtlichen oder organisatorischen Funktion.",
+        "merksatz": "Ein Angebot muss so vollständig sein, dass ein Ja ohne Rückfrage möglich ist."
+      },
+      {
+        "abschnitt": "c3",
+        "vorauswissen": [
+          "Ein Antragender ist nach § 145 BGB grundsätzlich gebunden.",
+          "Die Bindung kann durch eine Freizeichnung eingeschränkt werden."
+        ],
+        "erklaerung": "Ohne Zusatz ist ein Angebot grundsätzlich bindend. Formulierungen wie ‚freibleibend‘ oder ‚solange der Vorrat reicht‘ schließen die Bindung aus. Beim freibleibenden Angebot wird die Bestellung des Kunden zum Antrag; der Vertrag entsteht erst durch die Annahme des Verkäufers. Eine eindeutige Reaktion bleibt wichtig, weil unter Kaufleuten § 362 HGB eine besondere Bedeutung des Schweigens haben kann.",
+        "beispiele": [
+          "Ein bindendes Angebot ohne eigene Frist kann nach § 147 BGB nur so lange angenommen werden, wie unter regelmäßigen Umständen mit einer Antwort zu rechnen ist.",
+          "Bei ‚freibleibend‘ ist der Kunde nach seiner Bestellung gebunden, während der Verkäufer erst mit seiner Annahme den Vertrag schließt."
+        ],
+        "fallbeispiel": "Ein bindendes Angebot wird per E-Mail versandt, der Kunde meldet sich erst nach drei Wochen. Eine eigene Frist fehlt, daher wird § 147 BGB geprüft. Bei einer E-Mail sind regelmäßig wenige Tage, nicht drei Wochen, zu erwarten. Die Bindung ist erloschen; die verspätete Bestellung ist ein neuer Antrag, den der Betrieb annehmen kann, aber nicht muss.",
+        "typische_fehler": "‚Freibleibend‘ wird als besonders verbindliches Angebot verstanden oder eine Bestellung automatisch als Vertrag behandelt. Außerdem wird eine verspätete Annahme nicht mit der regelmäßigen Antwortzeit verglichen.",
+        "verstaendnisfragen": [
+          "Was bewirkt ‚freibleibend‘? Die Bindung des Anbieters wird ausgeschlossen; die Bestellung wird zum Antrag des Kunden.",
+          "Was gilt ohne eigene Bindungsfrist? Die regelmäßige Antwortzeit nach § 147 BGB."
+        ],
+        "pruefungsbezug": "Suche zuerst nach Freizeichnungszusätzen, dann nach einer eigenen Frist. Fehlt beides, prüfe die regelmäßige Antwortzeit und ordne eine verspätete Erklärung als neuen Antrag ein.",
+        "merksatz": "Ohne Freizeichnung bindet das Angebot; mit ‚freibleibend‘ bindet sich zunächst der bestellende Kunde."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

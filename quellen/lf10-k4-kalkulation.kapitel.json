@@ -4,7 +4,71 @@
   "nummer": 4,
   "titel": "Kalkulieren mit Zuschlagssätzen",
   "untertitel": "Vom Material zum Angebotspreis, Stufe für Stufe.",
-  "minuten": 30,
+ "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Einzelkosten werden direkt, Gemeinkosten über Zuschlagssätze zugerechnet.",
+          "Herstellkosten sind die Bezugsgröße für Verwaltung und Vertrieb."
+        ],
+        "erklaerung": "Das Kalkulationsschema beginnt mit Material- und Fertigungskosten. Zusammen ergeben sie die Herstellkosten. Verwaltungs- und Vertriebsgemeinkosten werden beide auf die Herstellkosten gerechnet; zusammen mit ihnen entstehen die Selbstkosten. Der Gewinnzuschlag kommt erst danach auf die Selbstkosten.",
+        "beispiele": [
+          "500 € Fertigungsmaterial mit 15 % MGK ergeben 575 € Materialkosten; 300 € Fertigungslöhne mit 120 % FGK ergeben 660 € Fertigungskosten.",
+          "575 € + 660 € = 1.235 € Herstellkosten; 10 % Verwaltung und 8 % Vertrieb werden jeweils auf 1.235 € berechnet."
+        ],
+        "fallbeispiel": "Die Rechnung wird zeilenweise durchgeführt: Material 500 € + 75 € MGK = 575 €, Fertigung 300 € + 360 € FGK = 660 €, Herstellkosten 1.235 €. VwGK 10 % = 123,50 €, VtGK 8 % = 98,80 €. Selbstkosten: 1.235 € + 123,50 € + 98,80 € = 1.457,30 €.",
+        "typische_fehler": "Verwaltung und Vertrieb werden aufeinander statt beide auf die Herstellkosten gerechnet. Außerdem wird der Gewinn vor den Selbstkosten oder ein Gemeinkostensatz auf die falsche Bezugsgröße angewendet.",
+        "verstaendnisfragen": [
+          "Woraus bestehen die Herstellkosten? Aus Materialkosten plus Fertigungskosten.",
+          "Worauf werden Verwaltung und Vertrieb gerechnet? Beide auf die Herstellkosten."
+        ],
+        "pruefungsbezug": "Schreibe das Schema vor der Rechnung untereinander und markiere die Herstellkosten als gemeinsame Bezugsgröße.",
+        "merksatz": "Material plus Fertigung ergibt Herstellung; Verwaltung und Vertrieb kommen beide auf die Herstellkosten."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Selbstkosten decken Kosten, aber noch keinen Gewinn und keine Kundennachlässe.",
+          "Skonto und Rabatt werden später vom Endpreis abgezogen."
+        ],
+        "erklaerung": "Auf die Selbstkosten kommt der Gewinnzuschlag. Danach werden Kundenskonto und Kundenrabatt im Hundert gerechnet, weil sie vom jeweiligen Endpreis abgezogen werden. Vorwärtskalkulation geht von den Kosten zum Angebotspreis.",
+        "beispiele": [
+          "Bei Selbstkosten von 1.457,30 € ergeben 12 % Gewinn 174,88 € und einen Barverkaufspreis von 1.632,18 €.",
+          "2 % Skonto werden im Hundert gerechnet: 1.632,18 € ÷ 98 × 100 = 1.665,49 €; 10 % Rabatt: 1.665,49 € ÷ 90 × 100 = 1.850,54 €."
+        ],
+        "fallbeispiel": "Aus 1.457,30 € Selbstkosten werden zunächst 12 % Gewinn = 174,88 € addiert. Der Barverkaufspreis beträgt 1.632,18 €. Für 2 % Skonto wird durch 98 geteilt und mit 100 multipliziert: Zielverkaufspreis 1.665,49 €. Für 10 % Rabatt wird durch 90 geteilt und mit 100 multipliziert: Angebotspreis 1.850,54 €. Probe: Nach Rabatt und Skonto bleiben 1.632,18 €.",
+        "typische_fehler": "Skonto oder Rabatt werden auf Hundert addiert statt im Hundert zurückgerechnet. Dadurch ist der Angebotspreis zu niedrig und der kalkulierte Gewinn wird nach dem Nachlass nicht erreicht.",
+        "verstaendnisfragen": [
+          "Warum wird bei Skonto im Hundert gerechnet? Weil der Kunde den Nachlass später vom Endpreis abzieht.",
+          "Welche Position kommt zuerst nach den Selbstkosten? Der Gewinnzuschlag."
+        ],
+        "pruefungsbezug": "Markiere bei jedem Nachlass, ob er später abgezogen wird. Dann mit dem passenden Im-Hundert-Faktor rückwärts rechnen.",
+        "merksatz": "Gewinn auf die Selbstkosten, Nachlässe im Hundert auf den späteren Endpreis."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Vorwärtskalkulation läuft von Kosten zum Preis.",
+          "Rückwärts- und Differenzkalkulation lesen dasselbe Schema in anderer Richtung."
+        ],
+        "erklaerung": "Die Rückwärtskalkulation geht vom Markt- oder Angebotspreis zu den zulässigen Kosten zurück. Aus Im-Hundert wird Vom-Hundert, Zuschläge werden rückwärts abgezogen. Die Differenzkalkulation ermittelt aus dem tatsächlich erzielten Preis den tatsächlichen Gewinn. Die Herstellkosten bleiben die zentrale Bezugsgröße für Verwaltung und Vertrieb.",
+        "beispiele": [
+          "Bietet der Wettbewerb 1.600 € an, wird aus diesem Preis rückwärts gerechnet, wie hoch die zulässigen Selbstkosten sein dürfen.",
+          "Eine Differenz zwischen dem tatsächlich erzielten Preis und den tatsächlichen Kosten zeigt den realisierten Gewinn, nicht nur den geplanten Zuschlag."
+        ],
+        "fallbeispiel": "Die Vorwärtskalkulation ergibt 1.850 €, der Wettbewerb bietet 1.600 €. Zuerst wird der Marktpreis rückwärts um Rabatt und Skonto bereinigt und anschließend der Gewinnzuschlag herausgerechnet. Das Ergebnis zeigt, wie weit die eigenen Selbstkosten über dem Ziel liegen. Danach werden Material, Fertigung, Gemeinkostensätze, Nachlässe und ein möglicher positiver Deckungsbeitrag geprüft; dauerhaft unter Selbstkosten zu verkaufen bleibt keine Lösung.",
+        "typische_fehler": "Der Wettbewerberpreis wird einfach übernommen oder nur der Gewinnzuschlag gestrichen. Rückwärts werden Nachlässe nicht mit Vom-Hundert und die Kostenursachen nicht analysiert.",
+        "verstaendnisfragen": [
+          "Welche Frage beantwortet die Rückwärtskalkulation? Was darf das Produkt bei einem gegebenen Marktpreis höchstens kosten?",
+          "Was ermittelt die Differenzkalkulation? Den tatsächlich erzielten Gewinn."
+        ],
+        "pruefungsbezug": "Begründe bei Abweichungen zwischen Vorwärtskalkulation und Marktpreis zuerst rückwärts und benenne anschließend konkrete Kosten- oder Konditionshebel.",
+        "merksatz": "Vorwärts zeigt den Preis, rückwärts die zulässigen Kosten, Differenz den tatsächlichen Gewinn."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

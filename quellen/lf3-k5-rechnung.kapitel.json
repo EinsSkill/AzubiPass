@@ -5,6 +5,50 @@
   "titel": "Lieferung und Rechnung",
   "untertitel": "Die Ware ist raus — jetzt muss das Geld kommen.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "e1",
+        "vorauswissen": [
+          "Die Lieferung erfüllt die Hauptpflicht aus dem Kaufvertrag.",
+          "Lieferschein, Empfangsbestätigung und Frachtbrief dokumentieren unterschiedliche Beziehungen."
+        ],
+        "erklaerung": "Der Lieferschein weist den Inhalt der Sendung nach und enthält keine Preise. Die Empfangsbestätigung quittiert den Erhalt. Der Frachtbrief regelt das Verhältnis zwischen Absender und Frachtführer. Die Rechnung fordert die Zahlung. Lieferung und Rechnung gehören daher zum selben Prozess, erfüllen aber verschiedene Informations- und Nachweisfunktionen.",
+        "beispiele": [
+          "Die Warenannahme vergleicht Artikel und Menge mit dem Lieferschein und bestätigt den Empfang; Preise werden in der Rechnung geprüft.",
+          "Der Frachtführer arbeitet mit dem Frachtbrief, während der Käufer mit dem Lieferschein den Lieferumfang kontrolliert."
+        ],
+        "fallbeispiel": "Ein Kunde meldet, dass drei Kartons angekommen sind, aber im Lieferschein vier stehen. Der Lieferschein ist der passende Beleg für die Mengenprüfung. Die Empfangsbestätigung zeigt, was quittiert wurde; der Frachtbrief wird nur für das Verhältnis zum Transporteur herangezogen. Die Rechnung wird erst danach auf die geschuldete Zahlung geprüft.",
+        "typische_fehler": "Der Lieferschein wird als Rechnung ohne Preis verstanden oder der Frachtbrief als Beleg des Kaufvertrags. Außerdem wird die Lieferung mit dem Eigentumsübergang gleichgesetzt, obwohl ein Eigentumsvorbehalt vereinbart sein kann.",
+        "verstaendnisfragen": [
+          "Warum stehen auf dem Lieferschein keine Preise? Er soll den Sendungsinhalt nachweisen und wird von mehreren Stellen gesehen.",
+          "Wem ordnest du den Frachtbrief zu? Dem Verhältnis zwischen Absender und Frachtführer."
+        ],
+        "pruefungsbezug": "Ordne in Belegaufgaben immer Zweck und Beteiligte zu. Bei Eigentumsvorbehalt zusätzlich prüfen, ob die Ware trotz Lieferung noch dem Verkäufer gehört.",
+        "merksatz": "Lieferschein prüft Inhalt, Empfangsbestätigung den Erhalt, Frachtbrief den Transport und Rechnung die Zahlung."
+      },
+      {
+        "abschnitt": "e2",
+        "vorauswissen": [
+          "Eine Rechnung belegt die Leistung und ermöglicht dem Empfänger den Vorsteuerabzug.",
+          "Pflichtangaben müssen vollständig und nachvollziehbar sein."
+        ],
+        "erklaerung": "§ 14 UStG verlangt unter anderem vollständige Namen und Anschriften, Steuernummer oder Umsatzsteuer-Identifikationsnummer, Ausstellungsdatum, fortlaufende Rechnungsnummer, Menge und handelsübliche Bezeichnung, Lieferzeitpunkt sowie Entgelt, Steuersatz und Steuerbetrag. Bei kleinen Beträgen genügt eine Kleinbetragsrechnung mit weniger Angaben. Fehlt eine Pflichtangabe, ist die Rechnung nicht ordnungsgemäß und der Vorsteuerabzug des Empfängers kann gefährdet sein.",
+        "beispiele": [
+          "Fehlt auf einer Rechnung der Lieferzeitpunkt, wird eine berichtigte Rechnung mit eindeutiger Bezugnahme auf die ursprüngliche Rechnung erstellt.",
+          "Eine Rechnungsnummer wird einmalig und fortlaufend vergeben; die Bezeichnung ‚Diverses‘ reicht als handelsübliche Leistungsbeschreibung nicht aus."
+        ],
+        "fallbeispiel": "Bei der Rechnungsprüfung fehlt der Lieferzeitpunkt. Die Angabe gehört zu den Pflichtangaben nach § 14 UStG. Deshalb wird eine berichtigte Rechnung erstellt, die eindeutig auf die ursprüngliche Rechnung Bezug nimmt. Stimmen Liefer- und Rechnungsdatum überein, kann ein entsprechender Hinweis den Zeitpunkt belegen; die übrigen Pflichtangaben werden ebenfalls kontrolliert.",
+        "typische_fehler": "Nur Name, Datum und Betrag werden geprüft. Häufig fehlen Lieferzeitpunkt, fortlaufende Nummer oder die handelsübliche Bezeichnung. Kleinbetragsregel und vollständige Rechnung werden außerdem verwechselt.",
+        "verstaendnisfragen": [
+          "Welche Angabe fehlt besonders häufig? Der Zeitpunkt der Lieferung oder Leistung.",
+          "Was ist die Folge einer fehlenden Pflichtangabe? Die Rechnung ist nicht ordnungsgemäß; der Empfänger kann den Vorsteuerabzug verlieren, bis berichtigt wird."
+        ],
+        "pruefungsbezug": "Prüfe in der Reihenfolge Anschriften, Steuerangabe, Datum, Nummer, Leistung, Lieferzeitpunkt, Entgelt und Steuer. Danach klären, ob die Kleinbetragsrechnung anwendbar ist.",
+        "merksatz": "Eine Rechnung ist erst prüffähig, wenn Leistung, Beteiligte, Zeit, Nummer und Steuer vollständig erkennbar sind."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

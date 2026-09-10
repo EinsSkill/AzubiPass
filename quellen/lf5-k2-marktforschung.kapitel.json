@@ -5,6 +5,70 @@
   "titel": "Marktforschung",
   "untertitel": "Woher du weißt, was Kunden wollen — statt es zu vermuten.",
   "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Marketingentscheidungen brauchen Informationen über Markt und Kunden.",
+          "Daten können bereits vorhanden oder neu erhoben worden sein."
+        ],
+        "erklaerung": "Sekundärforschung wertet vorhandene interne und externe Daten aus. Sie ist meist schnell und günstig. Primärforschung erhebt neue Daten durch Befragung, Beobachtung, Test oder Experiment. Sinnvoll ist die Reihenfolge: zuerst die vorhandenen Daten nutzen und danach nur die verbleibende Informationslücke neu erforschen.",
+        "beispiele": [
+          "Interne Verkaufszahlen und Reklamationen sind Sekundärdaten, weil sie bereits im Betrieb vorliegen.",
+          "Eine neue Kundenbefragung oder ein Test mit zwei Varianten ist Primärforschung, weil die Daten für die konkrete Frage erhoben werden."
+        ],
+        "fallbeispiel": "Ein Betrieb möchte wissen, warum eine Produktgruppe weniger nachgefragt wird. Zuerst werden vorhandene Verkaufsdaten, Reklamationen und externe Marktinformationen ausgewertet. Bleibt offen, welche Kundenanforderung fehlt, wird eine Befragung oder Beobachtung durchgeführt. So wird die teurere Primärforschung auf die echte Lücke begrenzt.",
+        "typische_fehler": "Jede Internetrecherche wird als Primärforschung bezeichnet oder eine neue Befragung gestartet, obwohl interne Daten die Frage bereits beantworten. Auch wird Primärforschung nur mit Befragung gleichgesetzt.",
+        "verstaendnisfragen": [
+          "Was ist der Kernunterschied? Sekundärforschung nutzt vorhandene Daten; Primärforschung erhebt neue.",
+          "Welche Reihenfolge spart Aufwand? Erst Sekundärforschung, dann Primärforschung für die verbleibende Lücke."
+        ],
+        "pruefungsbezug": "Ordne die konkrete Datenquelle zu und begründe die Reihenfolge. Nenne bei Primärforschung nicht nur Befragung, sondern auch Beobachtung, Test und Experiment.",
+        "merksatz": "Sekundär ist schon da, primär wird neu erhoben."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Eine Befragung soll Aussagen über eine größere Zielgruppe ermöglichen.",
+          "Die Auswahl der Befragten beeinflusst die Aussagekraft."
+        ],
+        "erklaerung": "Eine Stichprobe muss repräsentativ sein, nicht bloß groß. Zufalls- und Quotenauswahl können die Zielgruppe angemessen abbilden; eine willkürliche Auswahl verzerrt das Ergebnis. Vor der Auswahl wird deshalb festgelegt, welche Zielgruppe untersucht wird und welche Merkmale in der Stichprobe vorkommen müssen.",
+        "beispiele": [
+          "Eine zufällig ausgewählte Gruppe kann die Zielgruppe besser abbilden als eine große Gruppe, die nur aus zufällig erreichbaren Personen besteht.",
+          "Bei einer Quotenauswahl werden vorher passende Anteile der Zielgruppe festgelegt und bei der Befragung berücksichtigt."
+        ],
+        "fallbeispiel": "Ein Fragebogen wird nur an die Personen verteilt, die gerade im Eingangsbereich erreichbar sind. Obwohl viele Antworten eingehen, ist die Auswahl willkürlich. Für eine belastbarere Aussage wird die Zielgruppe beschrieben und eine Zufalls- oder Quotenauswahl verwendet. Die Entscheidung lautet daher nicht ‚mehr Antworten‘, sondern ‚passendere Stichprobe‘.",
+        "typische_fehler": "Die Stichprobengröße wird mit Repräsentativität gleichgesetzt. Außerdem wird eine willkürliche Auswahl als Zufallsauswahl bezeichnet, obwohl nicht jede Person der Zielgruppe dieselbe Chance hatte.",
+        "verstaendnisfragen": [
+          "Was ist wichtiger als eine bloße große Zahl? Dass die Stichprobe die Zielgruppe repräsentativ abbildet.",
+          "Welche Auswahlverfahren nennt der Inhalt als repräsentativ? Zufallsauswahl und Quotenauswahl."
+        ],
+        "pruefungsbezug": "Prüfe bei Stichproben zuerst Zielgruppe und Auswahlverfahren. Begründe die Qualität mit Repräsentativität, nicht mit der Anzahl allein.",
+        "merksatz": "Nicht die größte, sondern die passende Stichprobe liefert brauchbare Aussagen."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Fragen müssen die gewünschte Information eindeutig erfassen.",
+          "Befragte brauchen eine verständliche und faire Antwortmöglichkeit."
+        ],
+        "erklaerung": "Ein Fragebogen beginnt mit Einleitung und Eisbrecherfragen, führt zu den Sachfragen, fragt statistische Angaben am Ende ab und schließt mit Dank. Suggestivfragen lenken die Antwort, Doppelfragen verlangen zwei Antworten zugleich. Fachjargon und fehlende Ausweichmöglichkeiten können ebenfalls die Aussage verzerren.",
+        "beispiele": [
+          "‚Wie zufrieden sind Sie mit Preis und Service?‘ ist eine Doppelfrage; Preis und Service sollten getrennt gefragt werden.",
+          "Eine Einleitung erklärt Zweck und Ablauf, bevor die Sachfragen beginnen; statistische Angaben werden erst am Ende erhoben."
+        ],
+        "fallbeispiel": "Ein Fragebogen enthält die Frage ‚Sie finden unseren schnellen und günstigen Service doch gut, oder?‘. Sie ist suggestiv und enthält zwei bewertende Eigenschaften. Die Überarbeitung trennt die Aspekte, formuliert neutral und bietet eine passende Antwortskala sowie eine Ausweichmöglichkeit an.",
+        "typische_fehler": "Zwei Themen werden in eine Frage gepackt, die gewünschte Antwort wird sprachlich vorgegeben oder Fachbegriffe werden ohne Erklärung verwendet.",
+        "verstaendnisfragen": [
+          "Warum ist eine Doppelfrage problematisch? Weil nicht erkennbar ist, worauf sich die Antwort bezieht.",
+          "Wozu dient eine Ausweichmöglichkeit? Sie verhindert, dass Befragte eine unpassende Antwort erzwingen müssen."
+        ],
+        "pruefungsbezug": "Streiche in Überarbeitungsaufgaben wertende Wörter, trenne mehrere Sachverhalte und prüfe, ob jede Frage mit den vorhandenen Antwortmöglichkeiten beantwortbar ist.",
+        "merksatz": "Eine gute Frage ist neutral, eindeutig, verständlich und lässt eine passende Antwort zu."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

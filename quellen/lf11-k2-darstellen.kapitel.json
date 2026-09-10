@@ -4,7 +4,71 @@
   "nummer": 2,
   "titel": "Prozesse darstellen",
   "untertitel": "Ein Bild, über das drei Abteilungen streiten können — das ist der Sinn.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ein Flussdiagramm macht Reihenfolge und Entscheidungen sichtbar.",
+          "Jeder Prozess braucht einen klaren Start und mindestens ein Ende."
+        ],
+        "erklaerung": "Im Flussdiagramm steht das abgerundete Rechteck für Start oder Ende, das Rechteck für eine Tätigkeit und die Raute für eine Entscheidung. Das Parallelogramm steht für Ein- und Ausgaben wie Formulare, Belege oder Daten. Tätigkeiten werden als Verb plus Gegenstand formuliert; Entscheidungen werden als eindeutig beantwortbare Frage mit beschrifteten Ausgängen dargestellt.",
+        "beispiele": [
+          "‚Angebot erstellen‘ ist eine passende Tätigkeitsbezeichnung aus Verb und Gegenstand.",
+          "Eine Raute ‚Unterlagen vollständig?‘ führt über beschriftete Wege wie Ja und Nein weiter."
+        ],
+        "fallbeispiel": "Ein Urlaubsprozess beginnt mit dem eingereichten Antrag und endet mit genehmigtem oder abgelehntem, erfasstem Urlaub. Die Entscheidung ‚genehmigt?‘ erhält die Ausgänge Ja und Nein; beide Wege werden bis zu einem Ende verfolgt. Es gibt genau einen Start.",
+        "typische_fehler": "Entscheidungsausgänge bleiben unbeschriftet oder ein Pfeil endet im Nichts. Auch werden mehrere Tätigkeiten in einem Rechteck versteckt.",
+        "verstaendnisfragen": [
+          "Welche Form hat eine Entscheidung? Eine Raute.",
+          "Welche Regel gilt für jeden Weg? Jeder Weg muss an einem Ende ankommen und jeder Entscheidungsausgang beschriftet sein."
+        ],
+        "pruefungsbezug": "Kontrolliere Diagramme mit drei Fragen: genau ein Start, beschriftete Rautenwege, kein offener Pfeil.",
+        "merksatz": "Ein Diagramm ist erst vollständig, wenn jeder mögliche Weg verständlich bis zu einem Ende führt."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Prozessdarstellung soll den tatsächlichen Ablauf zeigen.",
+          "Beteiligte wechseln an Schnittstellen."
+        ],
+        "erklaerung": "Bei der Aufnahme werden zuerst Grenzen, Auslöser und Ergebnis festgelegt. Danach werden Beteiligte zum tatsächlichen Ablauf befragt, die Schritte geordnet und Sonderfälle ergänzt. Bahnen je Beteiligtem machen Zuständigkeiten und Schnittstellen sichtbar. Zum Schluss wird die Darstellung gemeinsam geprüft.",
+        "beispiele": [
+          "Für einen Urlaubsantrag werden antragstellende Person, Führungskraft und Personalabteilung als Bahnen dargestellt.",
+          "Fehlende Unterlagen, Abwesenheit und Reklamation werden als Sonderfälle aufgenommen, obwohl sie nicht im Normalablauf liegen."
+        ],
+        "fallbeispiel": "Der Urlaubsprozess wird in drei Bahnen aufgenommen: Antrag einreichen und Rückmeldung, Prüfung und Entscheidung, Erfassung. Neben dem Normalweg werden fehlender Resturlaub, abwesende Führungskraft, überschneidende Anträge und Rückzug des Antrags ergänzt. Alle Beteiligten prüfen anschließend, ob die Darstellung ihrer tatsächlichen Arbeit entspricht.",
+        "typische_fehler": "Nur die Arbeitsanweisung wird abgebildet oder Sonderfälle werden weggelassen. Außerdem wird die Darstellung nicht mit den Beteiligten abgeglichen.",
+        "verstaendnisfragen": [
+          "Warum wird der tatsächliche Ablauf aufgenommen? Weil Abweichungen vom vorgeschriebenen Ablauf wichtige Probleme sichtbar machen.",
+          "Was machen Bahnen sichtbar? Zuständigkeiten und Schnittstellen zwischen Beteiligten."
+        ],
+        "pruefungsbezug": "Beschreibe die Aufnahme in der Reihenfolge Grenzen, Befragung, Schritte, Sonderfälle und gemeinsame Prüfung.",
+        "merksatz": "Ein Prozessbild muss die Wirklichkeit und ihre Ausnahmen zeigen, nicht nur die ideale Arbeitsanweisung."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Die passende Darstellung hängt von Prozessumfang und Beteiligten ab.",
+          "Ein Bild soll verständlich und auf eine Seite begrenzt bleiben."
+        ],
+        "erklaerung": "Die Darstellung wird nach Zweck gewählt. Bahnen eignen sich für abteilungsübergreifende Abläufe, weil sie Zuständigkeiten und Übergaben zeigen. Ein Prozessbild sollte auf eine Seite passen und die wichtigsten Regeln, Sonderfälle und Verantwortlichkeiten lesbar halten.",
+        "beispiele": [
+          "Für den Urlaubsantrag sind Bahnen für antragstellende Person, Führungskraft und Personalabteilung passend.",
+          "Ein kompakter Fluss zeigt Start, Prüfung, Entscheidung und Ende; lange Nebenerklärungen gehören nicht in jeden Prozesskasten."
+        ],
+        "fallbeispiel": "Ein zu großes Prozessbild enthält jede Ausnahme als Detail und ist nicht mehr lesbar. Die Darstellung wird auf die Prozessgrenzen, Hauptschritte und entscheidenden Sonderfälle konzentriert. Zuständigkeiten bleiben in Bahnen sichtbar; ergänzende Erläuterungen werden außerhalb des Bildes dokumentiert.",
+        "typische_fehler": "Die Form wird nach Software statt nach Zweck gewählt oder das Bild wird mit Text überfüllt. Ein Prozessbild ohne Zuständigkeiten bleibt bei Übergaben unklar.",
+        "verstaendnisfragen": [
+          "Welche Form ist bei abteilungsübergreifenden Abläufen besonders geeignet? Die Bahnendarstellung.",
+          "Warum sollte ein Prozessbild auf eine Seite passen? Damit der Ablauf als Ganzes erfassbar und prüfbar bleibt."
+        ],
+        "pruefungsbezug": "Begründe die Darstellungsform mit dem Zweck und prüfe immer Lesbarkeit, Zuständigkeit und Sonderfälle.",
+        "merksatz": "Die beste Darstellung ist die kleinste, die Ablauf, Entscheidung und Zuständigkeit vollständig sichtbar macht."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

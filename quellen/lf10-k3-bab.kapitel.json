@@ -4,7 +4,71 @@
   "nummer": 3,
   "titel": "Der Betriebsabrechnungsbogen",
   "untertitel": "Wo die Gemeinkosten hingehören — und wie man daraus Prozentsätze macht.",
-  "minuten": 30,
+ "minuten": 30,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Gemeinkosten sind nicht direkt einzelnen Produkten zurechenbar.",
+          "Kostenarten und Kostenstellen werden in der inneren Rechnung verbunden."
+        ],
+        "erklaerung": "Der Betriebsabrechnungsbogen verteilt Gemeinkosten auf Kostenstellen und liefert Zuschlagssätze. Er verbindet Kostenarten- und Kostenträgerrechnung. Die Kostenstelle zeigt, wo Kosten anfallen; der spätere Zuschlag führt sie auf das Produkt zurück.",
+        "beispiele": [
+          "Miete wird auf Kostenstellen nach Fläche verteilt.",
+          "Nach der Verteilung ergeben Material-, Fertigungs-, Verwaltungs- und Vertriebsstellen die Bezugsgrößen für die Kalkulation."
+        ],
+        "fallbeispiel": "Ein Betrieb sammelt Gemeinkosten und ordnet sie zunächst den passenden Kostenstellen zu. Erst danach werden Zuschlagssätze berechnet. Ohne BAB blieben die Gemeinkosten zwar insgesamt richtig, wären aber nicht verursachungsgerecht auf die Produkte verteilt.",
+        "typische_fehler": "Der BAB wird als bloße Buchhaltungstabelle behandelt oder Gemeinkosten werden direkt ohne Kostenstellen auf Produkte verteilt.",
+        "verstaendnisfragen": [
+          "Was leistet der BAB? Verteilung von Gemeinkosten auf Kostenstellen und Berechnung von Zuschlagssätzen.",
+          "Welche Rechnungen verbindet er? Kostenartenrechnung und Kostenträgerrechnung."
+        ],
+        "pruefungsbezug": "Ordne jede BAB-Spalte einer Kostenstelle und einer Bezugsgröße zu, bevor du den Zuschlag berechnest.",
+        "merksatz": "Der BAB macht aus Gemeinkosten verursachungsgerechte Zuschlagssätze."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Ein Verteilungsschlüssel soll die Kostenverursachung abbilden.",
+          "Unterschiedliche Kostenarten brauchen unterschiedliche Schlüssel."
+        ],
+        "erklaerung": "Miete wird nach Fläche, Strom nach Leistung oder Laufstunden, Sozialkosten nach Köpfen und Abschreibungen nach Anlagenwert verteilt. Ein unpassender Schlüssel verschiebt Kosten zwischen Stellen und verzerrt die Kalkulation dauerhaft, obwohl die Gesamtsumme unverändert bleibt.",
+        "beispiele": [
+          "Miete nach Quadratmetern verteilt die Raumkosten nach beanspruchter Fläche.",
+          "Sozialkosten nach Köpfen und Abschreibungen nach Anlagenwert ordnen die Gemeinkosten unterschiedlichen Ursachen zu."
+        ],
+        "fallbeispiel": "Ein Betrieb legt für alle Gemeinkosten denselben Schlüssel fest. Die Miete wird dadurch nicht nach Fläche, die Maschinenenergie nicht nach Leistung und Sozialkosten nicht nach Beschäftigten verteilt. Der BAB wird mit passenden Schlüsseln neu aufgebaut, damit Produkte nicht dauerhaft zu billig oder zu teuer erscheinen.",
+        "typische_fehler": "Ein bequemer, aber unpassender Schlüssel wird gewählt, weil die Gesamtsumme stimmt. Gerade der unsichtbare Fehler bleibt in der Summe unauffällig.",
+        "verstaendnisfragen": [
+          "Woran orientiert sich ein guter Schlüssel? An der Kostenverursachung.",
+          "Welcher Schlüssel passt zu Maschinenstrom? Leistung oder Laufstunden."
+        ],
+        "pruefungsbezug": "Begründe den Schlüssel nicht mit Gewohnheit, sondern mit der Ursache der jeweiligen Gemeinkosten.",
+        "merksatz": "Ein Schlüssel ist gut, wenn er die Ursache der Gemeinkosten abbildet."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Zuschlagssätze setzen Gemeinkosten ins Verhältnis zu einer Bezugsgröße.",
+          "Jede Kostenstelle hat eine eigene passende Bezugsgröße."
+        ],
+        "erklaerung": "Der Zuschlagssatz lautet Gemeinkosten ÷ Bezugsgröße × 100. Materialgemeinkosten beziehen sich auf Fertigungsmaterial, Fertigungsgemeinkosten auf Fertigungslöhne. Verwaltungs- und Vertriebsgemeinkosten beziehen sich beide auf die Herstellkosten.",
+        "beispiele": [
+          "18.000 € Materialgemeinkosten ÷ 120.000 € Fertigungsmaterial × 100 = 15 %.",
+          "96.000 € Fertigungsgemeinkosten ÷ 80.000 € Fertigungslöhne × 100 = 120 %."
+        ],
+        "fallbeispiel": "Ein Betrieb hat 18.000 € Materialgemeinkosten bei 120.000 € Fertigungsmaterial und 96.000 € Fertigungsgemeinkosten bei 80.000 € Fertigungslöhnen. Die Sätze werden getrennt berechnet: 15 % Material und 120 % Fertigung. Erst diese Werte werden in der Kalkulation verwendet.",
+        "typische_fehler": "Verwaltung und Vertrieb werden auf Löhne statt auf Herstellkosten bezogen oder der Prozentsatz ohne ×100 angegeben. Auch werden Gemeinkosten verschiedener Stellen zusammengelegt.",
+        "verstaendnisfragen": [
+          "Wie lautet die Zuschlagsformel? Gemeinkosten ÷ Bezugsgröße × 100.",
+          "Worauf beziehen sich Verwaltung und Vertrieb? Beide auf die Herstellkosten."
+        ],
+        "pruefungsbezug": "Schreibe vor jedem Satz Zähler und Bezugsgröße aus und rechne erst danach den Prozentsatz.",
+        "merksatz": "Material auf Material, Fertigung auf Löhne, Verwaltung und Vertrieb auf Herstellkosten."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

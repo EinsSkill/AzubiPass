@@ -6,6 +6,92 @@
   "untertitel": "Aufbau, Bilanzgleichung und die vier Veränderungsarten.",
   "minuten": 20,
 
+  "ausfuehrlich": {
+    "einleitung": "Die Bilanz wird verständlich, wenn du sie nicht als bloße Tabelle, sondern als zwei Fragen liest: Was ist im Betrieb vorhanden und woher wurde es finanziert? Die vier Bilanzveränderungsarten zeigen anschließend, wie Geschäftsvorfälle diese beiden Seiten verändern, ohne dass die Bilanzgleichung verletzt wird.",
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Ein Geschäftsvorfall verändert mindestens zwei Werte der Buchführung.",
+          "Aktiva und Passiva sind zwei Seiten desselben betrieblichen Kapitals."
+        ],
+        "erklaerung": "Die Bilanz ordnet dieselbe wirtschaftliche Situation aus zwei Blickwinkeln. Auf der Aktivseite steht, in welcher Form das Kapital im Unternehmen gebunden ist. Auf der Passivseite steht, aus welchen Quellen dieses Kapital stammt. Deshalb ist die Gleichheit nicht nur eine Rechenregel: Jede Finanzierung muss irgendwo im Vermögen wiederzufinden sein.",
+        "beispiele": [
+          "Finanziert ein Betrieb eine Maschine mit einem Bankdarlehen, erscheint die Maschine auf der Aktivseite und das Darlehen auf der Passivseite.",
+          "Kauft der Betrieb Waren auf Rechnung, steigen die Vorräte auf der Aktivseite und die Verbindlichkeiten aus Lieferungen und Leistungen auf der Passivseite."
+        ],
+        "fallbeispiel": "In der Ausgangsbilanz der Grafik stehen auf der Aktivseite Anlagevermögen von 60.000 €, Waren von 20.000 €, Bank von 18.000 € und Kasse von 2.000 €. Zusammen ergibt das 100.000 €. Auf der Passivseite stehen Eigenkapital von 55.000 €, ein langfristiges Darlehen von 30.000 € und Verbindlichkeiten von 15.000 €. Auch hier lautet die Summe 100.000 €. Die Bilanz ist ausgeglichen, weil beide Seiten dasselbe Kapital beschreiben.",
+        "typische_fehler": "Aktiva und Passiva werden als ‚gut‘ und ‚schlecht‘ missverstanden. Außerdem wird die Passivseite manchmal mit den Kontoständen verwechselt. Sie zeigt aber nicht nur Schulden, sondern auch das Eigenkapital als Herkunft des Kapitals.",
+        "verstaendnisfragen": [
+          "Warum muss eine Bilanz immer ausgeglichen sein? Weil jeder Vermögensposten durch Eigen- oder Fremdkapital finanziert ist und beide Seiten dieselbe Gesamtsumme darstellen.",
+          "Was bedeutet die Aussage ‚Aktiva zeigt die Mittelverwendung‘? Sie beschreibt, worin das Kapital steckt, zum Beispiel in Maschinen, Waren, Bankguthaben oder Kasse."
+        ],
+        "pruefungsbezug": "Bei einer Bilanzaufgabe zuerst die Seiten benennen und anschließend die Summe jeder Seite prüfen. Eine nicht ausgeglichene Summe weist auf einen Zuordnungs- oder Rechenfehler hin.",
+        "merksatz": "Aktiva zeigt, wo das Kapital steckt; Passiva zeigt, woher es stammt."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Die Aktivseite enthält Vermögenswerte des Betriebs.",
+          "Anlage- und Umlaufvermögen unterscheiden sich durch ihre betriebliche Verwendung und Verweildauer."
+        ],
+        "erklaerung": "Anlagevermögen dient dem Betrieb dauerhaft, während Umlaufvermögen kurzfristig verbraucht, verkauft oder in eine andere Form umgewandelt wird. Die Einteilung ist wichtig, weil sich daran die weitere Behandlung orientiert: Anlagevermögen wird über die Nutzungsdauer abgeschrieben, Umlaufvermögen wird nicht nach demselben Schema behandelt.",
+        "beispiele": [
+          "Ein Fahrzeug ist beim Autohändler eine Ware zum Weiterverkauf und damit Umlaufvermögen. Bei einer Spedition dient es dauerhaft dem Betriebszweck und ist Anlagevermögen.",
+          "Eine Maschine gehört zum Anlagevermögen, Waren im Lager sowie Bank- und Kassenbestände zum Umlaufvermögen."
+        ],
+        "fallbeispiel": "Ordne vier Positionen ein: Eine dauerhaft eingesetzte Maschine gehört zum Anlagevermögen. Waren, die verkauft werden sollen, gehören zum Umlaufvermögen. Ein Bankguthaben und der Kassenbestand gehören ebenfalls zum Umlaufvermögen. Entscheidend ist bei jeder Position die Frage: Soll sie dem Betrieb dauerhaft dienen oder kurzfristig umgesetzt werden?",
+        "typische_fehler": "Nicht die äußere Art des Gegenstands entscheidet. Besonders häufig wird jedes Fahrzeug automatisch als Anlagevermögen bezeichnet oder jede Maschine als Umlaufvermögen, ohne die betriebliche Absicht zu prüfen.",
+        "verstaendnisfragen": [
+          "Warum ist die Zuordnung für Abschreibungen wichtig? Weil die Nutzungsdauer bei Anlagevermögen die Verteilung des Aufwands bestimmt.",
+          "Kann derselbe Gegenstand in zwei Betrieben unterschiedlich eingeordnet werden? Ja. Die betriebliche Zweckbestimmung entscheidet, nicht allein die Bezeichnung des Gegenstands."
+        ],
+        "pruefungsbezug": "Bei Zuordnungsaufgaben nicht nur den Gegenstand lesen, sondern den Verwendungszweck markieren. Formulierungen wie ‚zum Weiterverkauf‘ sprechen für Umlaufvermögen; ‚dauerhaft im Betrieb eingesetzt‘ für Anlagevermögen.",
+        "merksatz": "Nicht der Gegenstand entscheidet, sondern die Absicht und die Verweildauer im Betrieb."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Die Passivseite beschreibt die Herkunft des Kapitals.",
+          "Schulden und Eigenkapital sind wirtschaftlich nicht dasselbe."
+        ],
+        "erklaerung": "Eigenkapital gehört den Eigentümern und verändert sich unter anderem durch Gewinn oder Verlust. Fremdkapital stammt von Dritten. Innerhalb des Fremdkapitals muss zwischen sicheren Verbindlichkeiten und Rückstellungen unterschieden werden: Bei einer Verbindlichkeit stehen Betrag und Fälligkeit fest; bei einer Rückstellung ist die Verpflichtung bereits entstanden, aber Höhe oder Zeitpunkt sind noch ungewiss.",
+        "beispiele": [
+          "Ein Bankdarlehen mit feststehendem Betrag und vereinbarter Rückzahlung ist eine Verbindlichkeit.",
+          "Offene Urlaubstage am Bilanzstichtag führen zu einer Rückstellung, weil der Anspruch besteht, aber Zeitpunkt und genaue Kosten der Inanspruchnahme offen sind."
+        ],
+        "fallbeispiel": "Ein Mitarbeiter hat zum 31.12. noch acht Urlaubstage offen. Die Verpflichtung gehört wirtschaftlich in das laufende Jahr. Weil noch nicht feststeht, wann der Urlaub genommen wird und welche Kosten genau entstehen, wird der Betrag als Rückstellung und nicht als Verbindlichkeit erfasst. ‚Noch nicht bezahlt‘ ist also kein Grund, den Sachverhalt wegzulassen.",
+        "typische_fehler": "Rückstellungen werden mit Verbindlichkeiten gleichgesetzt oder erst bei Zahlung berücksichtigt. Der entscheidende Prüfbegriff ist die Gewissheit: sicherer Betrag und bekannte Fälligkeit sprechen für Verbindlichkeit, Unsicherheit für Rückstellung.",
+        "verstaendnisfragen": [
+          "Warum reicht es nicht aus, dass noch kein Geld geflossen ist? Weil die Buchführung wirtschaftliche Verpflichtungen periodengerecht abbildet.",
+          "Was ist das einzige zentrale Unterscheidungsmerkmal zwischen Rückstellung und Verbindlichkeit? Der Grad der Gewissheit über Höhe und Zeitpunkt."
+        ],
+        "pruefungsbezug": "In Fällen zuerst prüfen, ob die Verpflichtung bereits besteht. Danach fragen: Sind Betrag und Fälligkeit sicher? Wenn nein, ist die Rückstellung die passende Bilanzposition.",
+        "merksatz": "Verbindlichkeit = sicher; Rückstellung = Verpflichtung mit ungewisser Höhe oder ungewissem Zeitpunkt."
+      },
+      {
+        "abschnitt": "b4",
+        "vorauswissen": [
+          "Jede Buchung betrifft mindestens zwei Konten.",
+          "Aktivkonten stehen auf der linken, Passivkonten auf der rechten Bilanzseite."
+        ],
+        "erklaerung": "Für die vier Bilanzveränderungsarten musst du nicht sofort den vollständigen Buchungssatz bilden. Es reicht zunächst, die beiden betroffenen Bilanzpositionen zu finden und ihre Seiten zu vergleichen. Liegen beide Positionen auf derselben Seite, handelt es sich um einen Tausch. Liegt je eine Position auf Aktiva und Passiva, steigt oder sinkt die Bilanzsumme.",
+        "beispiele": [
+          "Bei einer Abhebung von 5.000 € sinkt Bank und Kasse steigt. Beide Konten liegen auf der Aktivseite: Aktiv-Tausch, Bilanzsumme unverändert.",
+          "Beim Kauf von Waren für 8.000 € auf Ziel steigen Waren und Verbindlichkeiten. Je eine Position auf jeder Seite steigt: Aktiv-Passiv-Mehrung, Bilanzsumme plus 8.000 €."
+        ],
+        "fallbeispiel": "Ein Laptop für 1.200 € wird auf Ziel gekauft. Der Laptop beziehungsweise die Betriebs- und Geschäftsausstattung steigt auf der Aktivseite um 1.200 €. Gleichzeitig steigen die Verbindlichkeiten auf der Passivseite um 1.200 €. Damit liegt eine Aktiv-Passiv-Mehrung vor und die Bilanzsumme wächst um 1.200 €. Das Eigenkapital bleibt unverändert, weil der Vorgang noch keinen Aufwand oder Ertrag darstellt.",
+        "typische_fehler": "Eine steigende Bilanzsumme wird vorschnell als Gewinn gedeutet. Ebenso wird eine Zahlung an einen Lieferanten als Aufwand behandelt, obwohl bei der reinen Begleichung nur Bank und Verbindlichkeit sinken.",
+        "verstaendnisfragen": [
+          "Wie unterscheidest du Aktiv-Tausch und Aktiv-Passiv-Mehrung? Beim Aktiv-Tausch ändern sich zwei Aktivposten; bei der Mehrung steigen ein Aktiv- und ein Passivposten.",
+          "Warum kann eine Bilanzverkürzung neutral sein? Bei der Begleichung einer Schuld sinken Bank und Verbindlichkeit gleichzeitig; Vermögen und Schulden nehmen im gleichen Umfang ab."
+        ],
+        "pruefungsbezug": "Arbeite immer in zwei Schritten: betroffene Konten und Kontoseiten bestimmen, anschließend Richtung der Veränderung prüfen. Erst danach die Bezeichnung Aktiv-Tausch, Passiv-Tausch, Mehrung oder Minderung wählen.",
+        "merksatz": "Zwei Positionen finden, Seiten vergleichen, Richtung prüfen — so entsteht die richtige Veränderungsart."
+      }
+    ]
+  },
+
   "lernziele": [
     { "id": "lz1", "text": "Den Aufbau einer Bilanz aus Aktiva und Passiva beschreiben können", "abschnitt": "b1" },
     { "id": "lz2", "text": "Aktiva korrekt in Anlage- und Umlaufvermögen einteilen", "abschnitt": "b2" },

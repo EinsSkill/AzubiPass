@@ -4,7 +4,71 @@
   "nummer": 1,
   "titel": "Wozu eine zweite Rechnung",
   "untertitel": "Die Buchführung schreibt fürs Finanzamt. Die Kostenrechnung für dich.",
-  "minuten": 25,
+ "minuten": 25,
+  "ausfuehrlich": {
+    "abschnitte": [
+      {
+        "abschnitt": "b1",
+        "vorauswissen": [
+          "Buchführung erfasst den Werteverzehr einer Periode.",
+          "Kostenrechnung beantwortet innerbetriebliche Entscheidungsfragen."
+        ],
+        "erklaerung": "Die Buchführung richtet sich nach außen und ist gesetzlich geregelt. Die Kostenrechnung richtet sich nach innen und ist frei gestaltbar. Sie fragt, was ein Stück kostet, welcher Bereich sich trägt und ob ein Auftrag lohnt. Buchführungsaufwand und Kosten sind deshalb nicht automatisch identisch.",
+        "beispiele": [
+          "Materialverbrauch und Fertigungslöhne sind Zweckaufwand und zugleich Kosten, weil sie der betrieblichen Leistung dienen.",
+          "Eine Spende ist betriebsfremder neutraler Aufwand und gehört nicht in die Kalkulation."
+        ],
+        "fallbeispiel": "Ein Einzelunternehmer übernimmt seine Buchführungszahlen unverändert in die Kalkulation. Zuerst wird neutraler Aufwand — betriebsfremd, außerordentlich und periodenfremd — herausgenommen. Danach werden kalkulatorische Kosten ergänzt, etwa der Unternehmerlohn. Erst dann zeigt die Rechnung den leistungsbezogenen Werteverzehr.",
+        "typische_fehler": "Aufwand und Kosten werden als Synonyme behandelt. Außerdem wird die Kostenrechnung als gesetzlich identische zweite Buchführung verstanden.",
+        "verstaendnisfragen": [
+          "An wen richtet sich die Buchführung, an wen die Kostenrechnung? Buchführung nach außen, Kostenrechnung nach innen.",
+          "Was ist Zweckaufwand? Aufwand, der zugleich für die betriebliche Leistung anfällt und damit Kosten ist."
+        ],
+        "pruefungsbezug": "Ordne jeden Betrag zuerst nach seiner Beziehung zur betrieblichen Leistung ein, bevor du ihn in die Kostenrechnung übernimmst.",
+        "merksatz": "Buchführung zeigt den Aufwand nach außen; Kostenrechnung zeigt die Kosten der Leistung nach innen."
+      },
+      {
+        "abschnitt": "b2",
+        "vorauswissen": [
+          "Nicht jeder Aufwand gehört zur betrieblichen Leistung.",
+          "Kalkulatorische Kosten ergänzen den Aufwand um wirtschaftlich nötige Kosten."
+        ],
+        "erklaerung": "Neutraler Aufwand ist betriebsfremd, außerordentlich oder periodenfremd und wird aus der Kostenrechnung ausgesondert. Kalkulatorische Kosten haben keinen Aufwand in gleicher Höhe. Der kalkulatorische Unternehmerlohn macht Einzelunternehmen mit Betrieben anderer Rechtsform vergleichbar; auch kalkulatorische Zinsen und Wagnisse können ergänzt werden.",
+        "beispiele": [
+          "Ein Brandschaden ist außerordentlicher Aufwand und kein normaler Leistungskostenbestandteil.",
+          "Der Unternehmerlohn wird kalkulatorisch angesetzt, obwohl der Einzelunternehmer kein Gehalt wie ein Angestellter bucht."
+        ],
+        "fallbeispiel": "Ein Einzelunternehmer arbeitet im Betrieb, zahlt sich aber kein Gehalt. Würde der Unternehmerlohn fehlen, erschiene das Produkt zu billig und der Betrieb wäre nicht mit einem Unternehmen vergleichbar, das für diese Arbeit ein Gehalt zahlt. Deshalb wird der kalkulatorische Unternehmerlohn als Kosten ergänzt; betriebsfremde Spenden werden dagegen ausgesondert.",
+        "typische_fehler": "Kalkulatorische Kosten werden als zusätzlicher Buchführungsaufwand verstanden. Außerdem wird jeder außergewöhnliche Betrag als Kosten angesetzt, obwohl neutraler Aufwand gerade herausgerechnet wird.",
+        "verstaendnisfragen": [
+          "Welche drei Gruppen hat neutraler Aufwand? Betriebsfremd, außerordentlich und periodenfremd.",
+          "Warum wird der kalkulatorische Unternehmerlohn angesetzt? Damit die Leistung des Unternehmers als Kosten erscheint und Rechtsformen vergleichbar werden."
+        ],
+        "pruefungsbezug": "Nenne die drei Gruppen neutralen Aufwands vollständig und begründe kalkulatorische Kosten mit Vergleichbarkeit oder wirtschaftlichem Werteverzehr.",
+        "merksatz": "Neutralen Aufwand herausnehmen, kalkulatorische Kosten ergänzen — erst dann ist die Kalkulation belastbar."
+      },
+      {
+        "abschnitt": "b3",
+        "vorauswissen": [
+          "Kosten können nach Art, Ort und Verwendungszweck weiterverarbeitet werden.",
+          "Gemeinkosten brauchen eine Verteilung, Einzelkosten können direkt zugerechnet werden."
+        ],
+        "erklaerung": "Die Kostenartenrechnung fragt, welche Kosten in welcher Höhe angefallen sind. Die Kostenstellenrechnung fragt, wo sie angefallen sind und verteilt Gemeinkosten, etwa mit dem BAB. Die Kostenträgerrechnung fragt, wofür sie angefallen sind und ermittelt über Einzelkosten und Zuschlagssätze die Selbstkosten je Stück.",
+        "beispiele": [
+          "Material, Personal und Abschreibungen werden in der Kostenartenrechnung nach Arten erfasst.",
+          "Im BAB werden Gemeinkosten auf Material, Fertigung, Verwaltung und Vertrieb verteilt; anschließend werden sie Produkten als Kostenträger zugerechnet."
+        ],
+        "fallbeispiel": "Für ein Produkt werden zuerst Material- und Fertigungskosten erfasst. Danach werden Gemeinkosten im BAB den Kostenstellen zugeordnet und Zuschlagssätze ermittelt. In der Kostenträgerrechnung werden Einzelkosten direkt und Gemeinkosten über diese Sätze auf das Produkt gerechnet. Das Ergebnis sind die Selbstkosten je Stück.",
+        "typische_fehler": "Die drei Stufen werden als drei verschiedene Kostenarten verstanden oder die Reihenfolge vertauscht. Auch werden Gemeinkosten direkt einem Produkt zugerechnet, ohne einen passenden Schlüssel.",
+        "verstaendnisfragen": [
+          "Welche Frage beantwortet jede Stufe? Kostenarten = was, Kostenstellen = wo, Kostenträger = wofür.",
+          "Wozu führt die Kostenträgerrechnung? Zu den Selbstkosten je Stück als Grundlage der Kalkulation."
+        ],
+        "pruefungsbezug": "Merke die Fragewörter was–wo–wofür und ordne Tabellen beziehungsweise BAB-Zahlen der passenden Stufe zu.",
+        "merksatz": "Was angefallen ist, wo es anfällt und wofür es anfällt — das sind die drei Stufen."
+      }
+    ]
+  },
   "lernziele": [
     {
       "id": "lz1",

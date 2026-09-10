@@ -6,6 +6,79 @@
   "untertitel": "Abschlussschritte, Rückstellungen und Rechnungsabgrenzung — das Jahr sauber zumachen.",
   "minuten": 30,
 
+  "ausfuehrlich": {
+    "einleitung": "Ein Jahresabschluss bringt die laufende Buchführung in die Form eines vollständigen Jahresbildes. Dazu werden zuerst tatsächliche Bestände festgestellt, dann notwendige Korrekturen vorgenommen und erst anschließend Erfolgskonten, Eigenkapital und Bestandskonten abgeschlossen.",
+    "abschnitte": [
+      {
+        "abschnitt": "i1",
+        "vorauswissen": [
+          "Die Inventur aus K1 stellt die tatsächlich vorhandenen Bestände fest.",
+          "Erfolgskonten und Bestandskonten werden in unterschiedlichen Schritten abgeschlossen."
+        ],
+        "ablauf": [
+          "Inventur durchführen und tatsächliche Bestände feststellen.",
+          "Korrekturbuchungen wie AfA, Rückstellungen und Rechnungsabgrenzung vornehmen.",
+          "Erfolgskonten über die GuV abschließen.",
+          "Jahresergebnis in das Eigenkapital übertragen.",
+          "Bestandskonten über das SBK abschließen."
+        ],
+        "erklaerung": "Die Reihenfolge ist eine fachliche Abhängigkeit und keine bloße Merkhilfe. Ohne Inventur fehlen die tatsächlichen Werte. Ohne Korrekturbuchungen wären Aufwand, Ertrag und Bilanzbestände nicht periodengerecht. Erst wenn das Ergebnis im Eigenkapital enthalten ist, kann die Schlussbilanz vollständig aufgestellt werden.",
+        "beispiele": [
+          "Die Inventur steht in der Grafik an erster Stelle, weil erst danach bekannt ist, was tatsächlich vorhanden ist.",
+          "Abschreibungen, Rückstellungen und Rechnungsabgrenzung werden vor dem Abschluss der Erfolgskonten vorgenommen."
+        ],
+        "fallbeispiel": "Ordne die fünf vorhandenen Schritte: 1. Inventur, 2. Korrekturbuchungen für AfA, Rückstellungen und RAP, 3. Erfolgskonten über die GuV, 4. Ergebnis ins Eigenkapital, 5. Bestandskonten über SBK. Würde die AfA erst nach dem GuV-Abschluss gebucht, müsste der Jahreserfolg erneut korrigiert werden.",
+        "typische_fehler": "Die Bestandskonten werden zu früh abgeschlossen oder die Korrekturbuchungen vergessen. Häufig wird außerdem die Inventur mit dem fertigen Inventar verwechselt.",
+        "verstaendnisfragen": [
+          "Warum kommt die Inventur vor den Buchungen? Sie liefert die tatsächliche Grundlage für die Korrektur der Buchwerte.",
+          "Warum wird das Eigenkapital vor dem SBK aktualisiert? Weil der Jahreserfolg erst dort enthalten sein muss, bevor der endgültige Bestand abgeschlossen wird."
+        ],
+        "pruefungsbezug": "Bei Reihenfolgeaufgaben die fünf Stationen auswendig als Kette notieren. Das Schlüsselwort für den Anfang ist ‚Inventur‘; das Schlüsselwort vor dem SBK ist ‚Jahresergebnis ins Eigenkapital‘.",
+        "merksatz": "Inventur, Korrektur, GuV, Eigenkapital, SBK — diese Reihenfolge trägt den Jahresabschluss."
+      },
+      {
+        "abschnitt": "i2",
+        "vorauswissen": [
+          "Eine Rückstellung betrifft eine bereits entstandene, aber noch ungewisse Verpflichtung.",
+          "Rückstellungen gehören in die Periode, in der die wirtschaftliche Ursache liegt."
+        ],
+        "erklaerung": "Eine Rückstellung bildet eine absehbare Belastung ab, obwohl Betrag oder Zeitpunkt noch nicht sicher feststehen. Dadurch wird der Aufwand dem richtigen Geschäftsjahr zugeordnet. Bei der späteren Auflösung wird die Rückstellung mit der tatsächlichen Zahlung verglichen: Ist die Zahlung niedriger, entsteht ein Ertrag; ist sie höher, entsteht zusätzlicher Aufwand.",
+        "beispiele": [
+          "Offene Urlaubstage führen zu einer Urlaubsrückstellung, weil Anspruch und wirtschaftliche Ursache bereits bestehen.",
+          "Bei einer Rückstellung von 5.000 € und tatsächlicher Zahlung von 4.800 € werden 200 € als sonstiger Ertrag aufgelöst."
+        ],
+        "fallbeispiel": "Bilde eine Rückstellung von 5.000 €: Rückstellungsaufwand 5.000 € an Rückstellungen 5.000 €. Wird später 4.800 € gezahlt, lautet die Auflösung Rückstellungen 5.000 € an Bank 4.800 € + sonstige Erträge 200 €. Wird dagegen 5.300 € gezahlt, werden Rückstellungen 5.000 € und sonstiger Aufwand 300 € an Bank 5.300 € gebucht. So wird die Differenz nicht unterschlagen.",
+        "typische_fehler": "Eine unsichere Verpflichtung wird erst bei Zahlung erfasst oder eine Rückstellung wird wie eine sichere Verbindlichkeit behandelt. Auch die Differenz zwischen Rückstellungsbetrag und tatsächlicher Zahlung wird oft vergessen.",
+        "verstaendnisfragen": [
+          "Was muss bei einer Rückstellung bereits feststehen? Die wirtschaftliche Verpflichtung muss entstanden oder absehbar sein; Höhe oder Zeitpunkt dürfen noch ungewiss sein.",
+          "Was passiert bei einer niedrigeren tatsächlichen Zahlung? Der nicht benötigte Teil wird als sonstiger Ertrag aufgelöst."
+        ],
+        "pruefungsbezug": "In Fällen zuerst Gewissheit und wirtschaftliche Zugehörigkeit prüfen, anschließend Bildung und Auflösung getrennt buchen. Die tatsächliche Zahlung niemals automatisch mit dem Rückstellungsbetrag gleichsetzen.",
+        "merksatz": "Rückstellung bildet die ungewisse Belastung heute ab; bei Zahlung wird mit der tatsächlichen Höhe abgerechnet."
+      },
+      {
+        "abschnitt": "i3",
+        "vorauswissen": [
+          "Aufwand und Ertrag gehören in das Jahr ihrer wirtschaftlichen Verursachung.",
+          "ARAP und PRAP verschieben einen bereits geflossenen Geldbetrag in die richtige Periode."
+        ],
+        "erklaerung": "Rechnungsabgrenzung wird notwendig, wenn Zahlung und Leistung in unterschiedliche Geschäftsjahre fallen. Beim ARAP ist Geld bereits ausgegeben, die Leistung gehört aber ins nächste Jahr. Beim PRAP ist Geld bereits eingegangen, die Leistung und damit der Ertrag gehören aber ins nächste Jahr. Die Seiten lassen sich über die Richtung des Geldflusses merken.",
+        "beispiele": [
+          "Eine Jahresversicherung wird im Dezember bezahlt, betrifft aber das Folgejahr: ARAP an Versicherungsaufwand.",
+          "Eine Januarmiete geht im Dezember ein: Mietertrag an PRAP."
+        ],
+        "fallbeispiel": "Der Betrieb zahlt am 1. Dezember 2.400 € für die Kfz-Versicherung des kompletten Folgejahres. Am 31.12. gehört der Betrag nicht zum laufenden Aufwand. Deshalb wird ARAP 2.400 € an Versicherungsaufwand 2.400 € gebucht. Geld ist herausgegangen und die Leistung kommt erst später: aktiv und abzugrenzen. Bei einer Einnahme für eine spätere Leistung wäre die Logik spiegelbildlich PRAP.",
+        "typische_fehler": "ARAP und PRAP werden allein nach dem Wort ‚Abgrenzung‘ ausgewählt, ohne den Geldfluss zu prüfen. Außerdem wird eine Zahlung als Aufwand behandelt, obwohl die Leistung erst im Folgejahr erbracht wird.",
+        "verstaendnisfragen": [
+          "Wie merkst du dir ARAP? Geld raus, Leistung später: aktiver Rechnungsabgrenzungsposten.",
+          "Wie merkst du dir PRAP? Geld rein, Leistung später: passiver Rechnungsabgrenzungsposten."
+        ],
+        "pruefungsbezug": "Zuerst zwei Fragen beantworten: Ist Geld heraus- oder hineingeflossen? Gehört die Leistung ins nächste Jahr? Nur bei ‚raus + später‘ entsteht ARAP, bei ‚rein + später‘ PRAP.",
+        "merksatz": "Geld raus und Leistung später = ARAP; Geld rein und Leistung später = PRAP."
+      }
+    ]
+  },
+
   "lernziele": [
     { "id": "lz1", "text": "Die Abschlussschritte in der richtigen Reihenfolge durchführen", "abschnitt": "i1" },
     { "id": "lz2", "text": "Rückstellungen bilden und auflösen", "abschnitt": "i2" },
