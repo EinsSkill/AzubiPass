@@ -731,7 +731,7 @@
   function uebenVokabeln(s) {
     s.appendChild(zurueckZuUeben(s));
     s.appendChild(kopfzeile("Englisch-Vokabeltrainer",
-      "Englisch ab dem zweiten Lehrjahr — mit Grundwortschatz und eigenen Testblöcken."));
+      "Wähle einen Lernbereich und übe genau die Vokabeln, die du gerade brauchst."));
 
     var bloecke = inhalt.vokabeln || [];
     function pool() {
@@ -783,7 +783,7 @@
     var wahl = el("div", "tr-wahl voc-wahl");
     wahl.appendChild(el("h3", null, "Deine Vokabelsitzung"));
     wahl.appendChild(el("p", "tr-wahl-text",
-      "Wähle einen Block, die Abfragerichtung und eine kurze Sitzung. Falsche Wörter kommen am Ende noch einmal."));
+      "Wähle einen Lernbereich, die Abfragerichtung und eine kurze Sitzung. Falsche Wörter kommen am Ende noch einmal."));
     var felder = el("div", "tr-wahl-felder voc-wahl-felder");
 
     function auswahlFeld(titel, aria, optionen, wert, beiAenderung) {
@@ -807,12 +807,12 @@
     }
 
     var fehlerGesamt = pool().filter(fehlerhaft).length;
-    var blockOptionen = [["alle", "Alle Vokabelblöcke"]];
+    var blockOptionen = [["alle", "Alle Lernbereiche"]];
     blockOptionen.push(["fehler", "Meine Fehler (" + fehlerGesamt + ")"]);
     bloecke.forEach(function (b) {
       blockOptionen.push([b.id, b.titel + " (" + (b.vokabeln || []).length + ")"]);
     });
-    auswahlFeld("Block", "Vokabelblock", blockOptionen, vokabelWahl.block,
+    auswahlFeld("Bereich", "Vokabelbereich", blockOptionen, vokabelWahl.block,
       function (v) { vokabelWahl.block = v; });
     auswahlFeld("Richtung", "Abfragerichtung",
       [["en-de", "Englisch → Deutsch"], ["de-en", "Deutsch → Englisch"]],

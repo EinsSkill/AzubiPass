@@ -3,6 +3,173 @@
   "beschreibung": "Eigener englischer Grundwortschatz für kaufmännische Ausbildung und Büroalltag.",
   "bloecke": [
     {
+      "id": "woche-1-unit-1",
+      "art": "test",
+      "titel": "Woche 1 · Unit 1 · Introducing yourself",
+      "beschreibung": "Schulvokabeln aus Unit 1: Introducing yourself.",
+      "vokabeln": [
+        {
+          "id": "woche-1-unit-1-include",
+          "en": "to include",
+          "de": "einschließen, beinhalten",
+          "beispiel": "Your duties include typing letters and answering the telephone."
+        },
+        {
+          "id": "woche-1-unit-1-casual",
+          "en": "casual",
+          "de": "zwanglos",
+          "beispiel": "She felt comfortable in casual clothes and wore them most of the time."
+        },
+        {
+          "id": "woche-1-unit-1-vocational-school",
+          "en": "vocational school",
+          "de": "Berufsschule",
+          "beispiel": "In Germany, training for many vocations is provided by means of a dual programme of training and education. Apprentices spend three to four days a week at a company providing vocational training, where they acquire the practical skills required for their field of work. The remaining one or two days are spent at a vocational school, where apprentices receive a theoretical grounding in their future job."
+        },
+        {
+          "id": "woche-1-unit-1-brief",
+          "en": "brief",
+          "de": "kurz",
+          "alternativen": [
+            "briefly"
+          ],
+          "beispiel": "He had spoken to Emma only briefly."
+        },
+        {
+          "id": "woche-1-unit-1-do-vocational-training",
+          "en": "to do vocational training",
+          "de": "eine Ausbildung machen",
+          "beispiel": "In Germany, just 20% go to university while others do vocational training."
+        },
+        {
+          "id": "woche-1-unit-1-office-administration-clerk",
+          "en": "office administration clerk",
+          "de": "Bürokaufmann/-frau",
+          "beispiel": "He started work as an office administration clerk."
+        },
+        {
+          "id": "woche-1-unit-1-statement",
+          "en": "statement",
+          "de": "Aussage, Äußerung",
+          "beispiel": "Is that a statement or a question?"
+        },
+        {
+          "id": "woche-1-unit-1-advantage",
+          "en": "advantage",
+          "de": "Vorteil",
+          "beispiel": "The new design gives us a clear advantage over our competitors."
+        },
+        {
+          "id": "woche-1-unit-1-disadvantage",
+          "en": "disadvantage",
+          "de": "Nachteil",
+          "beispiel": "Each of these systems has its advantages and disadvantages."
+        },
+        {
+          "id": "woche-1-unit-1-surname",
+          "en": "surname",
+          "de": "Familienname",
+          "beispiel": "The teacher addresses the students by their surnames."
+        },
+        {
+          "id": "woche-1-unit-1-first-name",
+          "en": "first name",
+          "de": "Vorname",
+          "beispiel": "My first name is Sally."
+        },
+        {
+          "id": "woche-1-unit-1-freight-forwarding-company",
+          "en": "freight forwarding company",
+          "de": "Spedition",
+          "beispiel": "ISCA Forwarding is a UK based independent, successful and international freight forwarding company dedicated to providing a first class import and export service."
+        },
+        {
+          "id": "woche-1-unit-1-retailer",
+          "en": "retailer",
+          "de": "Einzelhändler",
+          "beispiel": "The company is one of the country's largest food retailers."
+        },
+        {
+          "id": "woche-1-unit-1-wholesaler",
+          "en": "wholesaler",
+          "de": "Großhändler",
+          "beispiel": "A wholesaler is someone who buys and sells goods in large amounts to shops and businesses."
+        },
+        {
+          "id": "woche-1-unit-1-advertising-agency",
+          "en": "advertising agency",
+          "de": "Werbeagentur",
+          "beispiel": "Val works for an advertising agency (= a company that designs advertisements)"
+        },
+        {
+          "id": "woche-1-unit-1-insurance",
+          "en": "insurance",
+          "de": "Versicherung",
+          "beispiel": "He works in insurance."
+        },
+        {
+          "id": "woche-1-unit-1-manufacturer",
+          "en": "manufacturer",
+          "de": "Hersteller",
+          "beispiel": "a car/computer manufacturer"
+        },
+        {
+          "id": "woche-1-unit-1-trainee",
+          "en": "trainee",
+          "de": "Auszubildende/r",
+          "beispiel": "The firm recruits ten trainee accountants a year."
+        },
+        {
+          "id": "woche-1-unit-1-charity",
+          "en": "charity",
+          "de": "Wohltätigkeitsorganisation",
+          "beispiel": "She runs a charity for homeless young people."
+        },
+        {
+          "id": "woche-1-unit-1-insert",
+          "en": "to insert",
+          "de": "einfügen",
+          "beispiel": "Insert coins into the slot and press for a ticket."
+        },
+        {
+          "id": "woche-1-unit-1-training-course",
+          "en": "training course",
+          "de": "Ausbildungslehrgang",
+          "beispiel": "She had almost no computer knowledge, so she signed up for a training course."
+        },
+        {
+          "id": "woche-1-unit-1-prospect",
+          "en": "prospect",
+          "de": "Aussicht",
+          "beispiel": "She's hoping the course will improve her career prospects."
+        },
+        {
+          "id": "woche-1-unit-1-promotion",
+          "en": "promotion",
+          "de": "Aufstieg, Beförderung",
+          "beispiel": "What are the prospects of promotion in this job?"
+        },
+        {
+          "id": "woche-1-unit-1-opportunity",
+          "en": "opportunity",
+          "de": "Gelegenheit",
+          "beispiel": "The job will offer you excellent opportunities for promotion."
+        },
+        {
+          "id": "woche-1-unit-1-advise",
+          "en": "to advise",
+          "de": "beraten / benachrichtigen",
+          "beispiel": "We will be happy to advise on any financial matters. Please advise us of any changes in your personal details."
+        },
+        {
+          "id": "woche-1-unit-1-work-on-ones-own",
+          "en": "to work on one's own",
+          "de": "selbständig arbeiten",
+          "beispiel": "I can work on my own."
+        }
+      ]
+    },
+    {
       "id": "grund-buero",
       "art": "basis",
       "titel": "Büro und Kommunikation",
