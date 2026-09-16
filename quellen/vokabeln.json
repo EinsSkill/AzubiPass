@@ -5,8 +5,8 @@
     {
       "id": "woche-1-unit-1",
       "art": "test",
-      "titel": "Woche 1 · Unit 1 · Introducing yourself",
-      "beschreibung": "Schulvokabeln aus Unit 1: Introducing yourself.",
+      "titel": "Woche 1 · Test 1",
+      "beschreibung": "20er-Testblock · Unit 1 · Introducing yourself · Vokabeln 1–20.",
       "vokabeln": [
         {
           "id": "woche-1-unit-1-include",
@@ -130,7 +130,15 @@
           "en": "to insert",
           "de": "einfügen",
           "beispiel": "Insert coins into the slot and press for a ticket."
-        },
+        }
+      ]
+    },
+    {
+      "id": "woche-2",
+      "art": "test",
+      "titel": "Woche 2 · Test 2",
+      "beschreibung": "20er-Testblock · Unit 1 · Vokabeln 21–26 und Unit 3 · Vokabeln 1–14.",
+      "vokabeln": [
         {
           "id": "woche-1-unit-1-training-course",
           "en": "training course",
@@ -166,6 +174,512 @@
           "en": "to work on one's own",
           "de": "selbständig arbeiten",
           "beispiel": "I can work on my own."
+        },
+        {
+          "id": "unit-3-to-attempt",
+          "en": "to attempt",
+          "de": "versuchen, sich bemühen",
+          "beispiel": "Do not attempt to repair this yourself."
+        },
+        {
+          "id": "unit-3-old-established",
+          "en": "old-established",
+          "de": "alteingesessen",
+          "beispiel": "Herkules is an old-established company."
+        },
+        {
+          "id": "unit-3-reliable",
+          "en": "reliable",
+          "de": "zuverlässig",
+          "beispiel": "We are looking for someone who is reliable and hard-working."
+        },
+        {
+          "id": "unit-3-state-of-the-art",
+          "en": "state-of-the-art",
+          "de": "auf dem neuesten Stand (der Technik)",
+          "beispiel": "The system is state-of-the-art."
+        },
+        {
+          "id": "unit-3-brochure",
+          "en": "brochure",
+          "de": "Broschüre, Prospekt",
+          "beispiel": "The company brochure is available upon request."
+        },
+        {
+          "id": "unit-3-to-order",
+          "en": "to order",
+          "de": "bestellen",
+          "beispiel": "These boots can be ordered direct from the manufacturer."
+        },
+        {
+          "id": "unit-3-to-employ",
+          "en": "to employ",
+          "de": "beschäftigen, einstellen",
+          "beispiel": "Today Herkules employs 3,400 people."
+        },
+        {
+          "id": "unit-3-employee",
+          "en": "employee",
+          "de": "Arbeitnehmer",
+          "beispiel": "The firm has over 500 employees."
+        },
+        {
+          "id": "unit-3-employer",
+          "en": "employer",
+          "de": "Arbeitgeber",
+          "beispiel": "The company is one of the largest employers in the area."
+        },
+        {
+          "id": "unit-3-staff",
+          "en": "staff",
+          "de": "Belegschaft, Personal",
+          "beispiel": "In 1924 Mr Schuster employed a staff of 25."
+        },
+        {
+          "id": "unit-3-to-rent",
+          "en": "to rent",
+          "de": "mieten",
+          "beispiel": "In 1929 Mr Schuster rented a factory building."
+        },
+        {
+          "id": "unit-3-machinery",
+          "en": "machinery",
+          "de": "Maschinen",
+          "beispiel": "Mr Schuster bought the machinery required for industrial manufacturing."
+        },
+        {
+          "id": "unit-3-to-require",
+          "en": "to require",
+          "de": "benötigen, erfordern",
+          "beispiel": "Do you require anything else? (= in a shop, for example)"
+        },
+        {
+          "id": "unit-3-manufacturing",
+          "en": "manufacturing",
+          "de": "Fertigung, Fabrikation",
+          "beispiel": "The company has established its first manufacturing base in Europe."
+        }
+      ]
+    },
+    {
+      "id": "woche-3",
+      "art": "test",
+      "titel": "Woche 3 · Test 3",
+      "beschreibung": "20er-Testblock · Unit 3 · The company and its products and services · Vokabeln 15–34.",
+      "vokabeln": [
+        {
+          "id": "unit-3-to-prosper",
+          "en": "to prosper",
+          "de": "gedeihen, florieren",
+          "beispiel": "The economy prospered under his administration."
+        },
+        {
+          "id": "unit-3-to-take-over",
+          "en": "to take over",
+          "de": "(eine Firma) übernehmen",
+          "beispiel": "In 1948 Heinrich Schuster’s son took over the company."
+        },
+        {
+          "id": "unit-3-to-add",
+          "en": "to add",
+          "de": "hinzufügen",
+          "beispiel": "Mr Schuster added footballs to Herkules’s range of products."
+        },
+        {
+          "id": "unit-3-range-of-products",
+          "en": "range of products",
+          "de": "Produktpalette",
+          "beispiel": "Mr Schuster added footballs to Herkules’s range of products."
+        },
+        {
+          "id": "unit-3-market-leader",
+          "en": "market leader",
+          "de": "Marktführer",
+          "beispiel": "Herkules has become the market leader in the EU."
+        },
+        {
+          "id": "unit-3-to-take-up-the-production-of",
+          "en": "to take up the production of …",
+          "de": "die Produktion von … aufnehmen",
+          "beispiel": "In the early 70s Herkules took up the production of bags."
+        },
+        {
+          "id": "unit-3-production-site",
+          "en": "production site",
+          "de": "Fertigungsstätte, Produktionsbetrieb",
+          "beispiel": "Herkules has become a global player with production sites in Germany, Portugal and Taiwan."
+        },
+        {
+          "id": "unit-3-to-found-founded-founded",
+          "en": "to found (founded, founded)",
+          "de": "gründen",
+          "beispiel": "Smartmart Ltd. was founded in 1999."
+        },
+        {
+          "id": "unit-3-assortment",
+          "en": "assortment",
+          "de": "Sortiment, Kollektion, Auswahl",
+          "beispiel": "The company offers a large assortment of snacks."
+        },
+        {
+          "id": "unit-3-fair",
+          "en": "fair",
+          "de": "Messe",
+          "beispiel": "Kirsty meets Ms Dinsdale at a job fair."
+        },
+        {
+          "id": "unit-3-managing-director",
+          "en": "managing director",
+          "de": "Geschäftsführer/in",
+          "beispiel": "The managing director is responsible for running the company."
+        },
+        {
+          "id": "unit-3-workforce",
+          "en": "workforce",
+          "de": "Belegschaft, Gesamtheit der Mitarbeiter",
+          "beispiel": "By 2000 the workforce had risen to 12,500."
+        },
+        {
+          "id": "unit-3-to-provide",
+          "en": "to provide",
+          "de": "(be)liefern, zur Verfügung stellen",
+          "beispiel": "We provide legal advice and services to our clients."
+        },
+        {
+          "id": "unit-3-private-individual",
+          "en": "private individual",
+          "de": "Privatperson",
+          "beispiel": "They sell their goods to private individuals."
+        },
+        {
+          "id": "unit-3-time-consuming",
+          "en": "time-consuming",
+          "de": "zeitraubend",
+          "beispiel": "It can be very time-consuming to sell old toys on the Internet."
+        },
+        {
+          "id": "unit-3-amazing",
+          "en": "amazing",
+          "de": "erstaunlich, fantastisch",
+          "beispiel": "Their last CD sold an amazing 2 million copies."
+        },
+        {
+          "id": "unit-3-to-establish",
+          "en": "to establish",
+          "de": "einrichten, errichten",
+          "beispiel": "A proper procedure for complaints should be established."
+        },
+        {
+          "id": "unit-3-start-up-business",
+          "en": "start-up (business)",
+          "de": "Neugründung, junges Unternehmen",
+          "beispiel": "Raising funding for a start-up company is a tricky task for any entrepreneur."
+        },
+        {
+          "id": "unit-3-expenditure",
+          "en": "expenditure",
+          "de": "Ausgaben, Auslagen",
+          "beispiel": "Our biggest expenditure was for designing an attractive website."
+        },
+        {
+          "id": "unit-3-efficient",
+          "en": "efficient",
+          "de": "leistungsfähig, wirksam, tüchtig",
+          "beispiel": "We offer a fast, friendly and efficient service."
+        }
+      ]
+    },
+    {
+      "id": "woche-4",
+      "art": "test",
+      "titel": "Woche 4 · Test 4",
+      "beschreibung": "20er-Testblock · Unit 3 · The company and its products and services · Vokabeln 35–54.",
+      "vokabeln": [
+        {
+          "id": "unit-3-to-charge",
+          "en": "to charge",
+          "de": "verlangen, berechnen",
+          "beispiel": "They're charging £3 for the catalogue."
+        },
+        {
+          "id": "unit-3-commission",
+          "en": "commission",
+          "de": "Provision",
+          "beispiel": "We charge a commission of 10 %."
+        },
+        {
+          "id": "unit-3-to-go-public",
+          "en": "to go public",
+          "de": "sich in eine Aktiengesellschaft umwandeln; an die Börse gehen",
+          "beispiel": "The company is going public."
+        },
+        {
+          "id": "unit-3-brand",
+          "en": "brand",
+          "de": "(Handels-)Marke",
+          "beispiel": "You pay less for the supermarket's own brand."
+        },
+        {
+          "id": "unit-3-to-launch",
+          "en": "to launch",
+          "de": "auf den Markt bringen",
+          "beispiel": "The new model will be launched in July."
+        },
+        {
+          "id": "unit-3-to-carry-the-seal-of-approval-from",
+          "en": "to carry the seal of approval (from)",
+          "de": "das Prüfsiegel/Gütesiegel von … tragen",
+          "beispiel": "It is a soft and comfortable mattress that carries the seal of approval from Allergy UK."
+        },
+        {
+          "id": "unit-3-to-place-an-order",
+          "en": "to place an order",
+          "de": "einen Auftrag erteilen",
+          "beispiel": "I would like to place an order for ten copies of this book."
+        },
+        {
+          "id": "unit-3-public-limited-company",
+          "en": "public limited company",
+          "de": "Unternehmensform, die vergleichbar mit der deutschen Aktiengesellschaft ist",
+          "beispiel": "A public limited company is a type of limited company in the United Kingdom which is permitted to offer its shares to the public."
+        },
+        {
+          "id": "unit-3-private-limited-company",
+          "en": "private limited company",
+          "de": "Unternehmensform, die vergleichbar mit der deutschen GmbH ist",
+          "beispiel": "A private limited company is a legal entity in its own right and the company's finances are separate from its owner's finances."
+        },
+        {
+          "id": "unit-3-medium-sized",
+          "en": "medium-sized",
+          "de": "mittelständisch",
+          "beispiel": "I work for a medium-sized company manufacturing organic cosmetic preparations."
+        },
+        {
+          "id": "unit-3-major",
+          "en": "major",
+          "de": "groß, bedeutend",
+          "beispiel": "The company I work for is a major retailer of food."
+        },
+        {
+          "id": "unit-3-global-player",
+          "en": "global player",
+          "de": "Weltkonzern",
+          "beispiel": "Herkules has become a global player."
+        },
+        {
+          "id": "unit-3-family-owned",
+          "en": "family-owned",
+          "de": "familiengeführt",
+          "beispiel": "Herkules is a family-owned company."
+        },
+        {
+          "id": "unit-3-huge-multinational-company",
+          "en": "huge multinational company",
+          "de": "große multinationale Unternehmung",
+          "beispiel": "The brewery was established in Amsterdam in 1864 and today Heineken is a huge multinational company, one of the three largest beer producers in the world."
+        },
+        {
+          "id": "unit-3-all-over-europe",
+          "en": "all over Europe",
+          "de": "in ganz Europa",
+          "beispiel": "We sell our products all over Europe."
+        },
+        {
+          "id": "unit-3-founder",
+          "en": "founder",
+          "de": "Gründer",
+          "beispiel": "Heinrich Schuster is the founder and president of the company."
+        },
+        {
+          "id": "unit-3-worldwide",
+          "en": "worldwide",
+          "de": "weltweit",
+          "beispiel": "We have 2 000 employees worldwide."
+        },
+        {
+          "id": "unit-3-headquarters",
+          "en": "headquarters",
+          "de": "Hauptverwaltung",
+          "beispiel": "The firm’s headquarters is/are in London."
+        },
+        {
+          "id": "unit-3-subsidiary",
+          "en": "subsidiary",
+          "de": "Tochtergesellschaft, Niederlassung",
+          "beispiel": "She’s working for an overseas subsidiary of the company."
+        },
+        {
+          "id": "unit-3-branch",
+          "en": "branch",
+          "de": "Filiale",
+          "beispiel": "The store is opening more local branches."
+        }
+      ]
+    },
+    {
+      "id": "woche-5",
+      "art": "test",
+      "titel": "Woche 5 · Test 5",
+      "beschreibung": "20er-Testblock · Unit 3 · The company and its products and services · Vokabeln 55–74.",
+      "vokabeln": [
+        {
+          "id": "unit-3-to-merge",
+          "en": "to merge",
+          "de": "sich zusammenschließen",
+          "beispiel": "The company announced plans to merge with its biggest rival."
+        },
+        {
+          "id": "unit-3-to-purchase",
+          "en": "to purchase",
+          "de": "kaufen",
+          "beispiel": "The equipment can be purchased from your local supplier."
+        },
+        {
+          "id": "unit-3-competitor",
+          "en": "competitor",
+          "de": "Konkurrent",
+          "beispiel": "We produce cheaper goods than our competitors."
+        },
+        {
+          "id": "unit-3-sustainable",
+          "en": "sustainable",
+          "de": "nachhaltig",
+          "beispiel": "Sustainable products are those products that provide environmental, social and economic benefits while protecting public health and environment."
+        },
+        {
+          "id": "unit-3-sustainability",
+          "en": "sustainability",
+          "de": "Nachhaltigkeit",
+          "beispiel": "The great challenge faced by economies today is to integrate environmental sustainability with economic growth and welfare."
+        },
+        {
+          "id": "unit-3-to-be-dedicated-to-something",
+          "en": "to be dedicated to something",
+          "de": "sich etw. verschrieben haben, sich für etw. engagieren",
+          "beispiel": "In addition to quality, the company is dedicated to delivering cost-effective and environmentally friendly solutions."
+        },
+        {
+          "id": "unit-3-environmentally-friendly",
+          "en": "environmentally friendly",
+          "de": "umweltfreundlich",
+          "beispiel": ""
+        },
+        {
+          "id": "unit-3-commitment",
+          "en": "commitment",
+          "de": "Engagement",
+          "beispiel": "The company's commitment to providing quality at a reasonable price has been vital to its success."
+        },
+        {
+          "id": "unit-3-to-support",
+          "en": "to support",
+          "de": "unterstützen",
+          "beispiel": "We want to support farmers who grow our coffee, which means that we only sell fair-trade certified beans."
+        },
+        {
+          "id": "unit-3-fair-trade-certified",
+          "en": "fair-trade certified",
+          "de": "Fairtrade zertifiziert",
+          "beispiel": "We want to support farmers who grow our coffee, which means that we only sell fair-trade certified beans."
+        },
+        {
+          "id": "unit-3-recycled-materials",
+          "en": "recycled materials",
+          "de": "Recyclingmaterial",
+          "beispiel": "Our cosmetics are free of unnecessary packaging and the bottles are made from 100 % recycled materials."
+        },
+        {
+          "id": "unit-3-cruelty-free",
+          "en": "cruelty-free",
+          "de": "tierversuchsfrei",
+          "beispiel": "Consumers are increasingly pushing for cruelty-free products."
+        },
+        {
+          "id": "unit-3-device",
+          "en": "device",
+          "de": "Gerät, Vorrichtung",
+          "beispiel": "All new cars are now fitted with these safety devices."
+        },
+        {
+          "id": "unit-3-to-be-fitted-with-sth",
+          "en": "to be fitted with sth.",
+          "de": "mit etw. ausgestattet sein",
+          "beispiel": "All new cars are now fitted with these safety devices."
+        },
+        {
+          "id": "unit-3-local-products",
+          "en": "local products",
+          "de": "heimische Produkte",
+          "beispiel": "The company sells local products."
+        },
+        {
+          "id": "unit-3-domestic",
+          "en": "domestic",
+          "de": "inländisch, Inland…",
+          "beispiel": "The company has made losses in both its domestic and international operations."
+        },
+        {
+          "id": "unit-3-to-strive-for-sth",
+          "en": "to strive for sth.",
+          "de": "etw. anstreben, nach etw. streben",
+          "beispiel": "We encourage all employees to strive for the highest standards."
+        },
+        {
+          "id": "unit-3-to-increase",
+          "en": "to increase",
+          "de": "steigen, erhöhen",
+          "beispiel": "The rate of inflation increased by 2%. They’ve increased the price by 20 %."
+        },
+        {
+          "id": "unit-3-to-decrease",
+          "en": "to decrease",
+          "de": "abnehmen, senken",
+          "beispiel": "Donations have decreased significantly over the past few years. People should decrease the amount of fat they eat."
+        },
+        {
+          "id": "unit-3-annual-turnover",
+          "en": "(annual) turnover",
+          "de": "(Jahres-) Umsatz",
+          "beispiel": "The company generated an annual turnover of £35m."
+        }
+      ]
+    },
+    {
+      "id": "woche-6",
+      "art": "test",
+      "titel": "Woche 6 · Restblock (5 Vokabeln)",
+      "beschreibung": "5 Vokabeln aus Unit 3 · The company and its products and services · Vokabeln 75–79; wird mit den nächsten Einträgen zum nächsten 20er-Testblock ergänzt.",
+      "vokabeln": [
+        {
+          "id": "unit-3-market-share",
+          "en": "market share",
+          "de": "Marktanteil",
+          "beispiel": "They claim to have a 40% worldwide market share."
+        },
+        {
+          "id": "unit-3-supplier",
+          "en": "supplier",
+          "de": "Lieferant",
+          "beispiel": "a leading supplier of computers in the UK"
+        },
+        {
+          "id": "unit-3-to-be-awarded-sth",
+          "en": "to be awarded sth.",
+          "de": "mit etw. ausgezeichnet werden",
+          "beispiel": "As the outright test winner, new Nokian zLine SUV was awarded the overall rating \"very good\" by the 4x4 magazine OFF ROAD."
+        },
+        {
+          "id": "unit-3-to-expand-into",
+          "en": "to expand into …",
+          "de": "expandieren nach…",
+          "beispiel": "The firm is expanding into eastern Europe."
+        },
+        {
+          "id": "unit-3-overseas",
+          "en": "overseas",
+          "de": "ausländisch, Ausland",
+          "beispiel": "The firm is expanding into overseas markets."
         }
       ]
     },
