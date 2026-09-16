@@ -1424,6 +1424,7 @@ mark.such-treffer{padding:.06em .26em;color:var(--hm-grund);background:var(--hm-
 .pk-eingang-weg svg{transition:transform .2s cubic-bezier(.22,1,.36,1);}
 .pk-eingang:hover .pk-eingang-weg{color:var(--hm-gold-hell);}
 .pk-eingang:hover .pk-eingang-weg svg{transform:translateX(5px);}
+.pk-fortsetzen{border-left:3px solid var(--hm-gold);}
 @media (prefers-reduced-motion:reduce){
   .pk-eingang,.pk-eingang-weg svg{transition:none;}
   .pk-eingang:hover .pk-eingang-weg svg{transform:none;}

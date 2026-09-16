@@ -2375,6 +2375,15 @@ window.APK = (function () {
     return !!(z && z.gestartet && !z.abgegeben);
   }
 
+  /* Die Übersicht braucht eine reine Zustandsabfrage. Anders als laeuft()
+     darf sie keinen einmaligen Wiederaufnahmeimpuls verbrauchen: Ein Nutzer
+     soll die laufende Klausur sehen können, ohne automatisch hineingezogen zu
+     werden. */
+  function hatLaufende() {
+    var z = zustandLaden();
+    return !!(z && z.gestartet && !z.abgegeben);
+  }
+
   function verlassen() {
     if (uhr) { clearInterval(uhr); uhr = null; }
     if (buehne) buehne.classList.remove("pk--imbogen");
@@ -2405,6 +2414,7 @@ window.APK = (function () {
 
   return {
     zeige: zeige, verlassen: verlassen, laden: laden, laeuft: laeuft,
+    hatLaufende: hatLaufende,
     SCHLUESSEL: SCHLUESSEL, pruefstand: pruefstand
   };
 })();

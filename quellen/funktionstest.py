@@ -810,6 +810,19 @@ def probeklausur_klausur(b, w):
            "aufgabe 1 von" in pg.locator("#ueben").inner_text().lower())
     pruefe("Der Timer läuft", pg.locator("#pk-uhr").count() == 1)
 
+    # Eine offene Klausur blockiert den Üben-Bereich nicht mehr. Sie bleibt
+    # sichtbar und wird nur über den ausdrücklichen Fortsetzen-Eingang geöffnet.
+    pg.get_by_role("link", name="Üben").click()
+    pg.wait_for_timeout(400)
+    pruefe("Üben bleibt trotz offener Klausur die Übersicht",
+           pg.get_by_text("Laufende Probeklausur").count() == 1
+           and pg.locator("#pk-uhr").count() == 0)
+    pg.get_by_role("link", name="Klausur fortsetzen").click()
+    pg.wait_for_timeout(700)
+    pruefe("Klausur lässt sich bewusst fortsetzen",
+           pg.locator("#pk-uhr").count() == 1
+           and "aufgabe 1 von" in pg.locator("#ueben").inner_text().lower())
+
     text = pg.locator("#ueben").inner_text()
     pruefe("Keine Musterlösung vor der Abgabe",
            "Musterlösung" not in text

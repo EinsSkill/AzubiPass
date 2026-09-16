@@ -524,12 +524,10 @@
     if (uebenAnsicht === "quiz") return uebenQuiz(s);
     if (uebenAnsicht === "schwach") return uebenSchwach(s);
     if (uebenAnsicht === "vokabeln") return uebenVokabeln(s);
-    /* Die Probeklausur bringt ihre ganze Oberfläche selbst mit — hier steht nur
-       der Eingang. Sie ist der wichtigste Prüfungsweg und deshalb die erste
-       Zeile, aber kein eigener Reiter: Geübt wird geübt. */
-    if (uebenAnsicht === "start" && window.APK && window.APK.laeuft()) {
-      uebenAnsicht = "probeklausur";
-    }
+    /* Eine laufende Klausur wird nicht mehr ungefragt geöffnet. Der Üben-
+       Bereich bleibt eine Übersicht; weiter unten erscheint ein eigener,
+       eindeutiger Fortsetzen-Eingang. So bleibt die Klausur sicher gespeichert,
+       ohne andere Übungen jedes Mal zu blockieren. */
     if (uebenAnsicht === "probeklausur" && window.APK) {
       var mit = pkVorwahl;
       pkVorwahl = null;
@@ -556,6 +554,23 @@
         ev.preventDefault();
         location.hash = "#ueben/" + ziel;
       };
+    }
+
+    if (window.APK && window.APK.hatLaufende && window.APK.hatLaufende()) {
+      var fortsetzen = el("a", "pk-eingang pk-fortsetzen");
+      fortsetzen.href = "#ueben/probeklausur";
+      fortsetzen.appendChild(el("span", "pk-eingang-braue", "Laufende Probeklausur"));
+      fortsetzen.appendChild(el("strong", "pk-eingang-titel",
+        "Weiter an deiner Klausur."));
+      fortsetzen.appendChild(el("span", "pk-eingang-text",
+        "Deine Antworten und die Restzeit sind gespeichert. Du kannst sie jetzt "
+        + "fortsetzen oder darunter eine andere Übung auswählen."));
+      var fortsetzenWeg = el("span", "pk-eingang-weg");
+      fortsetzenWeg.appendChild(el("span", null, "Klausur fortsetzen"));
+      fortsetzenWeg.insertAdjacentHTML("beforeend", PFEIL);
+      fortsetzen.appendChild(fortsetzenWeg);
+      fortsetzen.addEventListener("click", hin("probeklausur"));
+      s.appendChild(fortsetzen);
     }
 
     /* Die Probeklausur ist der wichtigste Prüfungsweg und steht deshalb als

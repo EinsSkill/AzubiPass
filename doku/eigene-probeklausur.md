@@ -152,6 +152,13 @@ ist, führt dazu, dass es eben keine laufende Klausur gibt — nicht zum Absturz
 Eine abgeschlossene Klausur wird nicht ungefragt als laufende angezeigt. Eine
 laufende lässt sich bewusst verwerfen, nach Rückfrage.
 
+Der Bereich **Üben** bleibt auch bei einer offenen Klausur eine echte Übersicht:
+Die Klausur wird nicht automatisch geöffnet, wenn der Nutzer zu „Üben“ wechselt.
+Stattdessen steht dort ein eigener Eingang „Laufende Probeklausur“ mit
+„Klausur fortsetzen“. So bleiben Karten, Übungsfragen, Schwachstellen und
+Vokabeln direkt erreichbar, während der gespeicherte Klausurbogen jederzeit
+bewusst fortgesetzt werden kann.
+
 ## Was ausdrücklich noch nicht gebaut ist
 
 - offizielle AP1-/AP2-Simulation und feste IHK-Prüfungsblöcke
